@@ -9,7 +9,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 TODAY=$(date -u +%Y-%m-%d)
-TIMEOUT_SECONDS=300  # 5 minutes per phase
+TIMEOUT_SECONDS=600  # 10 minutes per phase (default)
 
 # Colors for output
 RED='\033[0;31m'
@@ -92,11 +92,14 @@ log_info "=========================================="
 log_info "Phase 1: COLLECT"
 log_info "=========================================="
 
-if ! run_phase 1 "COLLECT" "glm-5" "phase1-collect.md" 600; then
+if ! run_phase 1 "COLLECT" "glm-5" "phase1-collect.md" 900; then
   log_warn "Phase 1 failed. Applying fallback: copying previous day's data"
 
-  # Find the most recent collected-raw.md
-  PREV_DATE=$(ls -d Information/????-??-?? 2>/dev/null | sort -r | head -1 | xargs basename 2>/dev/null || echo "")
+  # Find the most recent collected-raw.md from a DIFFERENT date
+  PREV_DATE=$(ls -d Information/????-??-?? 2>/dev/null | sort -r | while read -r d; do
+    dname=$(basename "$d")
+    if [[ "$dname" != "$TODAY" ]]; then echo "$dname"; break; fi
+  done)
 
   if [[ -n "$PREV_DATE" && -f "Information/$PREV_DATE/collected-raw.md" ]]; then
     cp "Information/$PREV_DATE/collected-raw.md" "Information/$TODAY/collected-raw.md"
