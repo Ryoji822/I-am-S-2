@@ -71,7 +71,7 @@ run_phase() {
   # Replace YYYY-MM-DD placeholders with today's date
   prompt_content="${prompt_content//YYYY-MM-DD/$TODAY}"
 
-  if timeout "$timeout" opencode run --model "zhipu/$model" "$prompt_content" 2>&1; then
+  if timeout "$timeout" opencode run --model "zai/$model" "$prompt_content" 2>&1; then
     local end_time
     end_time=$(date +%s)
     local duration=$((end_time - start_time))
