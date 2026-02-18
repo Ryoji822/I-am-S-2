@@ -11,11 +11,11 @@ Tier 1 AI企業（OpenAI, Anthropic, Google, xAI, ByteDance）がどんな未来
 ```
 GitHub Actions (cron 08:00 JST daily)
   └── scripts/run-pipeline.sh
-       ├── Phase 1: COLLECT  (glm-4-plus, Firecrawl) → Information/YYYY-MM-DD/
+       ├── Phase 1: COLLECT  (glm-5, Firecrawl) → Information/YYYY-MM-DD/
        ├── Phase 2: ANALYZE  (glm-5, Blue Agent)     → Information/YYYY-MM-DD/processed.md
-       ├── Phase 3: RED TEAM (glm-4-plus)            → state/red-team-*.md
+       ├── Phase 3: RED TEAM (glm-5)            → state/red-team-*.md
        ├── Phase 4: ARBITER  (glm-5)                 → state/arbiter-*.md + config/ 更新
-       ├── Phase 5: STATIC   (glm-4-plus)            → static_intelligence/*.md
+       ├── Phase 5: STATIC   (glm-5)            → static_intelligence/*.md
        ├── Phase 6: REPORT   (glm-5, 日本語)         → Intelligence/YYYY-MM-DD.md
        └── Phase 7: git commit & push
 ```

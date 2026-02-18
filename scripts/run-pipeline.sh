@@ -85,14 +85,14 @@ run_phase() {
 }
 
 # =============================================================================
-# Phase 1: COLLECT (glm-4-plus)
+# Phase 1: COLLECT (glm-5)
 # =============================================================================
 
 log_info "=========================================="
 log_info "Phase 1: COLLECT"
 log_info "=========================================="
 
-if ! run_phase 1 "COLLECT" "glm-4-plus" "phase1-collect.md" 600; then
+if ! run_phase 1 "COLLECT" "glm-5" "phase1-collect.md" 600; then
   log_warn "Phase 1 failed. Applying fallback: copying previous day's data"
 
   # Find the most recent collected-raw.md
@@ -147,14 +147,14 @@ if ! run_phase 2 "ANALYZE" "glm-5" "phase2-analyze.md"; then
 fi
 
 # =============================================================================
-# Phase 3: RED TEAM (glm-4-plus)
+# Phase 3: RED TEAM (glm-5)
 # =============================================================================
 
 log_info "=========================================="
 log_info "Phase 3: RED TEAM"
 log_info "=========================================="
 
-if ! run_phase 3 "RED TEAM" "glm-4-plus" "phase3-red-team.md"; then
+if ! run_phase 3 "RED TEAM" "glm-5" "phase3-red-team.md"; then
   log_warn "Phase 3 failed. Creating minimal red team report"
   cat > "state/red-team-$TODAY.md" << EOF
 # Red Agent反証レポート: $TODAY
@@ -188,14 +188,14 @@ if ! run_phase 4 "ARBITER" "glm-5" "phase4-arbiter.md"; then
 fi
 
 # =============================================================================
-# Phase 5: STATIC UPDATE (glm-4-plus)
+# Phase 5: STATIC UPDATE (glm-5)
 # =============================================================================
 
 log_info "=========================================="
 log_info "Phase 5: STATIC UPDATE"
 log_info "=========================================="
 
-if ! run_phase 5 "STATIC UPDATE" "glm-4-plus" "phase5-static-update.md"; then
+if ! run_phase 5 "STATIC UPDATE" "glm-5" "phase5-static-update.md"; then
   log_warn "Phase 5 failed. Skipping static intelligence update"
   echo "# Static Update: $TODAY - SKIPPED (Phase 5 failure)" > "state/static-update-$TODAY.md"
 fi
