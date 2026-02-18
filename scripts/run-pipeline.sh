@@ -92,7 +92,7 @@ log_info "=========================================="
 log_info "Phase 1: COLLECT"
 log_info "=========================================="
 
-if ! run_phase 1 "COLLECT" "glm-5" "phase1-collect.md" 900; then
+if ! run_phase 1 "COLLECT" "glm-5" "phase1-collect.md" 1800; then
   log_warn "Phase 1 failed. Applying fallback: copying previous day's data"
 
   # Find the most recent collected-raw.md from a DIFFERENT date
