@@ -2,8 +2,8 @@ name: Daily Intelligence Pipeline
 
 on:
   schedule:
-    # 06:00 JST = 21:00 UTC (previous day)
-    - cron: '0 21 * * *'
+    # 08:00 JST = 23:00 UTC (previous day)
+    - cron: '0 23 * * *'
   workflow_dispatch:
     inputs:
       date:

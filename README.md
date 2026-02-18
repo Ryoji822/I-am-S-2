@@ -9,7 +9,7 @@ Tier 1 AI企業（OpenAI, Anthropic, Google, xAI, ByteDance）がどんな未来
 ## アーキテクチャ
 
 ```
-GitHub Actions (cron 06:00 JST daily)
+GitHub Actions (cron 08:00 JST daily)
   └── scripts/run-pipeline.sh
        ├── Phase 1: COLLECT  (glm-4-plus, Firecrawl) → Information/YYYY-MM-DD/
        ├── Phase 2: ANALYZE  (glm-5, Blue Agent)     → Information/YYYY-MM-DD/processed.md
@@ -97,7 +97,7 @@ bash scripts/validate-output.sh $(date +%Y-%m-%d)
 
 ### 4. GitHub Actions
 
-- 自動実行: 毎日 06:00 JST
+- 自動実行: 毎日 08:00 JST
 - 手動実行: Actions → Daily Intelligence Pipeline → Run workflow
 
 ## 技術スタック
