@@ -7,6 +7,51 @@
 `config/collection_plan.json` を読み込み、記載された**全検索クエリを1件残らず実行**してください。
 収集結果を `Information/YYYY-MM-DD/collected-raw.md` に書き出してください。
 
+## Firecrawl MCPツール仕様
+
+利用可能なツールとパラメータ:
+
+### firecrawl_search（Web検索）
+```json
+{
+  "query": "検索クエリ",
+  "limit": 5,
+  "tbs": "qdr:d",
+  "scrapeOptions": { "formats": ["markdown"], "onlyMainContent": true }
+}
+```
+- `tbs` 日付フィルタ（**必須で付けること**）:
+  - `"qdr:d"` = 過去24時間
+  - `"qdr:w"` = 過去1週間
+  - `"cdr:1,cd_min:MM/DD/YYYY,cd_max:MM/DD/YYYY"` = カスタム日付範囲
+
+### firecrawl_scrape（単一ページ取得）
+```json
+{
+  "url": "https://example.com/article",
+  "formats": ["markdown"],
+  "onlyMainContent": true
+}
+```
+
+### firecrawl_batch_scrape（複数URL一括取得）
+```json
+{
+  "urls": ["https://url1.com", "https://url2.com", ...],
+  "formats": ["markdown"],
+  "onlyMainContent": true
+}
+```
+
+### firecrawl_map（サイト内URL発見）
+```json
+{
+  "url": "https://openai.com/blog",
+  "search": "agent",
+  "limit": 10
+}
+```
+
 ## 手順（この順番で厳守）
 
 ### Step 1: 設定読み込み
@@ -14,35 +59,61 @@
 - `config/collection_plan.json` — 検索クエリ一覧
 - `config/companies.json` — 企業情報（公式ソースURL）
 
-### Step 2: 全検索クエリの実行
+### Step 2: 公式ソースの最新記事を取得
 
-`collection_plan.json` の `search_queries` を**全件** firecrawl_search で実行してください。
-各クエリは `limit: 5` で実行。
+各Tier 1企業の公式ブログから最新記事URLを発見する。firecrawl_map を使用:
+
+1. `firecrawl_map` で各公式ブログの最新記事URLを取得（各社limit: 5）:
+   - `{"url": "https://openai.com/blog", "limit": 5}`
+   - `{"url": "https://www.anthropic.com/news", "limit": 5}`
+   - `{"url": "https://blog.google/technology/ai/", "limit": 5}`
+   - `{"url": "https://x.ai/blog", "limit": 5}`
+
+2. 発見した最新記事URLを `firecrawl_batch_scrape` でまとめて取得:
+   ```json
+   {"urls": ["発見したURL群"], "formats": ["markdown"], "onlyMainContent": true}
+   ```
+
+### Step 3: 全検索クエリの実行
+
+`collection_plan.json` の `search_queries` を**全件** firecrawl_search で実行。
 
 **日付フィルタリング（必須）:**
-全検索クエリに `after:YYYY-MM-DD`（3日前の日付）を付与して、直近の情報のみに絞ること。
-例: `"OpenAI agent SDK API new features 2026 after:2026-02-15"`
+全検索に `tbs: "qdr:w"`（過去1週間）を付与すること。
+
+**実行例:**
+```json
+{"query": "OpenAI agent SDK API new features 2026", "limit": 5, "tbs": "qdr:w"}
+{"query": "Anthropic Claude Agent SDK update release", "limit": 5, "tbs": "qdr:w"}
+```
 
 **絶対ルール:**
 - collection_plan.json に書かれた検索クエリは**1件も省略するな**
 - 全KIQ（11件）× 各クエリ（4-6件）= 合計約56件の検索を実行すること
-- 全クエリに `after:` 日付制限を付けること
+- 全クエリに `tbs: "qdr:w"` を付けること
 - 検索は可能な限り並列実行すること（速度のため）
 
-### Step 3: 重要記事の詳細取得
+### Step 4: 重要記事の詳細スクレイピング
 
-検索結果から、以下の条件に合う記事を firecrawl_scrape で詳細取得:
-- 直近7日以内に公開された記事
-- Tier 1企業（OpenAI, Anthropic, Google, xAI, ByteDance）に直接関連する記事
-- 公式ブログ・プレスリリースは優先的にscrape
+Step 3の検索結果から、重要度の高い記事を firecrawl_scrape または firecrawl_batch_scrape で詳細取得:
 
-また、`companies.json` の `primary_sources`（公式ブログURL）を各社1件ずつ firecrawl_scrape で取得:
-- https://openai.com/blog
-- https://www.anthropic.com/news
-- https://blog.google/technology/ai/
-- https://x.ai/blog
+対象:
+- Tier 1企業の公式発表・プレスリリース
+- 主要メディア（Reuters, Bloomberg, TechCrunch）の独自記事
+- 新製品・新機能発表の一次ソース
+- 資金調達・M&A関連の報道
 
-### Step 4: 構造化出力
+scrapeパラメータ:
+```json
+{"url": "記事URL", "formats": ["markdown"], "onlyMainContent": true}
+```
+
+複数URLがある場合は batch_scrape で一括取得:
+```json
+{"urls": ["url1", "url2", "url3", ...], "formats": ["markdown"], "onlyMainContent": true}
+```
+
+### Step 5: 構造化出力
 
 `Information/YYYY-MM-DD/collected-raw.md` に以下の形式で全件を書き出す:
 
@@ -52,6 +123,7 @@
 ## メタデータ
 - 収集日時: YYYY-MM-DD HH:MM UTC
 - 実行クエリ数: N / 56
+- scrape実行数: N件
 - 収集情報数: N件
 - KIQカバレッジ: KIQ-001-01 ✓, KIQ-001-02 ✓, ...
 - 品質フラグ: NORMAL | PARTIAL (理由)
@@ -88,4 +160,5 @@
 
 - 検索クエリの省略・スキップ
 - 情報の捏造（見つからなかった場合は「該当なし」と記録）
+- `tbs` パラメータなしでの検索（古い情報のノイズ混入を防ぐため）
 - collection_plan.jsonに無いクエリの勝手な追加（目標未達時を除く）
