@@ -36,16 +36,8 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install OpenCode CLI
-        run: |
-          curl -fsSL https://opencode.ai/install | bash
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-          echo "$HOME/bin" >> $GITHUB_PATH
-          export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-          which opencode && opencode --version || {
-            echo "::error::OpenCode CLI installation failed"
-            exit 1
-          }
+      - name: Install OpenCode
+        run: curl -fsSL https://opencode.ai/install | bash
 
       - name: Configure Git
         run: |
