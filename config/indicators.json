@@ -9,11 +9,12 @@
       "scenario_ids": ["SCN-001"],
       "description": "MMLU、GPQA等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される",
       "threshold": "ベンチマークスコア30%以上の非連続的向上",
-      "status": "monitoring",
+      "status": "elevated",
       "last_checked": "2026-02-18",
-      "last_value": null,
-      "trend": "stable",
-      "alert_level": "normal"
+      "last_value": "IMO-ProofBench 90%、Erdős問題4問自律解決（Gemini Deep Think、研究レベル）",
+      "trend": "approaching",
+      "alert_level": "elevated",
+      "rationale": "研究レベルでの飛躍的向上確認、商用化は未確認"
     },
     {
       "indicator_id": "IND-002",
@@ -23,7 +24,7 @@
       "threshold": "市場シェア50%超過",
       "status": "monitoring",
       "last_checked": "2026-02-18",
-      "last_value": null,
+      "last_value": "競合激化、単独支配なし",
       "trend": "stable",
       "alert_level": "normal"
     },
@@ -33,11 +34,12 @@
       "scenario_ids": ["SCN-001"],
       "description": "上位3社の年間資金調達額がAI業界全体の80%以上を占める",
       "threshold": "上位3社の資金調達シェア80%超過",
-      "status": "monitoring",
+      "status": "elevated",
       "last_checked": "2026-02-18",
-      "last_value": null,
-      "trend": "stable",
-      "alert_level": "normal"
+      "last_value": "Anthropic $30B + xAI $20B = $50Bが2社に集中",
+      "trend": "approaching",
+      "alert_level": "elevated",
+      "rationale": "$50B調達が2社に集中、閾値（80%）接近監視必要"
     },
     {
       "indicator_id": "IND-004",
@@ -45,11 +47,12 @@
       "scenario_ids": ["SCN-002", "SCN-004"],
       "description": "オープンソースモデルが主要ベンチマークで商用最上位モデルの90%以上の性能を達成",
       "threshold": "商用最上位の90%性能到達",
-      "status": "monitoring",
+      "status": "elevated",
       "last_checked": "2026-02-18",
-      "last_value": null,
+      "last_value": "ByteDance Seed 2.0がGPT-5.2/Gemini 3 Pro同等（自己申告、OSSではない参考値）",
       "trend": "approaching",
-      "alert_level": "elevated"
+      "alert_level": "elevated",
+      "rationale": "自己申告ベンチマークのため確度中、第三者検証待ち"
     },
     {
       "indicator_id": "IND-005",
@@ -69,11 +72,12 @@
       "scenario_ids": ["SCN-002"],
       "description": "3つ以上の競合するAgent通信標準（MCP含む）が各々有意なエコシステムを持つ",
       "threshold": "3標準以上が各100+統合を持つ",
-      "status": "monitoring",
+      "status": "elevated",
       "last_checked": "2026-02-18",
-      "last_value": null,
-      "trend": "stable",
-      "alert_level": "normal"
+      "last_value": "MCP関連情報急増、Cloudflare/OWASP/Demandbase対応",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "rationale": "標準形成の動き活発化、3標準以上の共存状況を監視"
     },
     {
       "indicator_id": "IND-007",
@@ -81,11 +85,12 @@
       "scenario_ids": ["SCN-003"],
       "description": "Tier 2 AI企業（中堅AI企業）の買収・事業撤退が年間5件以上発生",
       "threshold": "年間買収/撤退5件以上",
-      "status": "monitoring",
+      "status": "elevated",
       "last_checked": "2026-02-18",
-      "last_value": null,
-      "trend": "stable",
-      "alert_level": "normal"
+      "last_value": "Anthropic→Bun買収、SpaceX→xAI買収",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "rationale": "Tier 2企業の買収・統合加速"
     },
     {
       "indicator_id": "IND-008",
@@ -93,11 +98,12 @@
       "scenario_ids": ["SCN-003"],
       "description": "Fortune 500企業のAI Agent導入先がTier 1の2-3社に集中（各社シェア25%以上）",
       "threshold": "上位3社合計シェア75%超過",
-      "status": "monitoring",
+      "status": "elevated",
       "last_checked": "2026-02-18",
-      "last_value": null,
-      "trend": "stable",
-      "alert_level": "normal"
+      "last_value": "Uber/Thermo Fisher/Intuit/ServiceNow等がOpenAI Frontier採用",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "rationale": "大手エンタープライズ契約がTier 1に集中"
     },
     {
       "indicator_id": "IND-009",
@@ -105,11 +111,12 @@
       "scenario_ids": ["SCN-003"],
       "description": "AI業界への年間投資額が前年比50%以上の成長を3四半期連続で維持",
       "threshold": "前年比50%以上成長を3Q連続",
-      "status": "monitoring",
+      "status": "elevated",
       "last_checked": "2026-02-18",
-      "last_value": null,
-      "trend": "stable",
-      "alert_level": "normal"
+      "last_value": "組織平均AI支出$1.2M、前年比108%増",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "rationale": "AI投資の持続的増大"
     },
     {
       "indicator_id": "IND-010",
@@ -131,9 +138,10 @@
       "threshold": "性能差5%以内",
       "status": "monitoring",
       "last_checked": "2026-02-18",
-      "last_value": null,
+      "last_value": "ByteDance Seed 2.0がGPT-5.2/Gemini 3 Pro同等（自己申告）",
       "trend": "approaching",
-      "alert_level": "normal"
+      "alert_level": "elevated",
+      "rationale": "性能差縮小の兆候、ただし自己申告のため確度中"
     },
     {
       "indicator_id": "IND-012",
@@ -141,11 +149,12 @@
       "scenario_ids": ["SCN-004"],
       "description": "単一のオープンAgent標準（MCP等）がAgent統合の70%以上で使用される",
       "threshold": "単一標準の採用率70%超過",
-      "status": "monitoring",
+      "status": "elevated",
       "last_checked": "2026-02-18",
-      "last_value": null,
-      "trend": "stable",
-      "alert_level": "normal"
+      "last_value": "OWASP/Cloudflare/Demandbase等がMCP対応",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "rationale": "MCP採用拡大中、70%閾値まで監視継続"
     },
     {
       "indicator_id": "IND-013",
@@ -155,9 +164,10 @@
       "threshold": "主要メディア5社以上で報道されるAI事故",
       "status": "monitoring",
       "last_checked": "2026-02-18",
-      "last_value": null,
+      "last_value": "Claude AIによる誤削除事例（軽微）",
       "trend": "stable",
-      "alert_level": "normal"
+      "alert_level": "normal",
+      "rationale": "軽微な事例のみ、重大事故なし"
     },
     {
       "indicator_id": "IND-014",

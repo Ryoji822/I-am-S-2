@@ -23,7 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "寡占化 × 破壊的飛躍",
       "description": "AGIまたは準AGI級のブレークスルーが起き、それを達成した1-2社が圧倒的優位に立つ。技術格差が拡大し、後発企業の追いつきが困難になる",
-      "probability": 20,
+      "probability": 21,
+      "probability_change": "+1%",
+      "probability_rationale": "Anthropic $30B調達、xAI $20B調達で資金集中加速。ただしSCN-002との論理矛盾を考慮し+1%に抑制",
       "key_assumptions": [
         "AGI的能力が2026-2027年に実現される",
         "ブレークスルーに必要な計算資源・データ・人材が少数企業に集中する",
@@ -42,7 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "分散化 × 破壊的飛躍",
       "description": "破壊的技術進歩が起きるが、オープンソースやオープン論文により技術が広く共有され、多数のプレイヤーが恩恵を受ける",
-      "probability": 25,
+      "probability": 26,
+      "probability_change": "+1%",
+      "probability_rationale": "ByteDance Seed 2.0台頭。ただし単一ソース依存を考慮し+1%に抑制",
       "key_assumptions": [
         "主要な技術ブレークスルーがオープンに公開される",
         "オープンソースモデルが商用モデルに迫る性能を達成",
@@ -61,7 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "寡占化 × 漸進的改善",
       "description": "劇的なブレークスルーは起きないが、規模の経済と投資余力により大手企業が着実に市場シェアを拡大。中小は徐々に淘汰される",
-      "probability": 35,
+      "probability": 34,
+      "probability_change": "-1%",
+      "probability_rationale": "エンタープライズ市場で競合状態継続、単独支配なし",
       "key_assumptions": [
         "AIの進歩はScaling Lawsに沿った漸進的なもの",
         "大手企業の投資体力が決定的な差別化要因となる",
@@ -80,7 +86,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "分散化 × 漸進的改善",
       "description": "技術進歩が漸進的で、かつ市場が分散化を維持。特化型AIサービスが多数生まれ、大手は汎用プラットフォームとして共存",
-      "probability": 20,
+      "probability": 19,
+      "probability_change": "-1%",
+      "probability_rationale": "大手エンタープライズ契約がTier 1に集中、特化型の生存空間縮小",
       "key_assumptions": [
         "汎用AIの性能差が縮小し、差別化が困難になる",
         "業種・地域特化型AIの需要が急増",
@@ -100,6 +108,8 @@
       "name": "AI安全性大事故",
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
       "probability": 5,
+      "probability_change": "±0%",
+      "probability_rationale": "サボタージュリスク「非常に低いが無視できない」、誤削除事例軽微、変更なし",
       "impact": "catastrophic",
       "indicators": ["IND-013"]
     },
@@ -108,8 +118,15 @@
       "name": "量子コンピューティング×AI融合",
       "description": "量子コンピューティングの突然の実用化により、AI訓練・推論のコスト構造が根本的に変化",
       "probability": 3,
+      "probability_change": "±0%",
+      "probability_rationale": "関連情報なし",
       "impact": "transformative",
       "indicators": ["IND-014"]
     }
-  ]
+  ],
+  "normalization_check": {
+    "total_probability": 100,
+    "verified_date": "2026-02-18",
+    "note": "SCN-001(21) + SCN-002(26) + SCN-003(34) + SCN-004(19) = 100%"
+  }
 }
