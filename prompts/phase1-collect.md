@@ -19,9 +19,14 @@
 `collection_plan.json` の `search_queries` を**全件** firecrawl_search で実行してください。
 各クエリは `limit: 5` で実行。
 
+**日付フィルタリング（必須）:**
+全検索クエリに `after:YYYY-MM-DD`（3日前の日付）を付与して、直近の情報のみに絞ること。
+例: `"OpenAI agent SDK API new features 2026 after:2026-02-15"`
+
 **絶対ルール:**
 - collection_plan.json に書かれた検索クエリは**1件も省略するな**
 - 全KIQ（11件）× 各クエリ（4-6件）= 合計約56件の検索を実行すること
+- 全クエリに `after:` 日付制限を付けること
 - 検索は可能な限り並列実行すること（速度のため）
 
 ### Step 3: 重要記事の詳細取得
