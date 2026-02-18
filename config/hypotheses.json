@@ -1,0 +1,316 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-18",
+  "hypotheses": {
+    "openai": [
+      {
+        "hypothesis_id": "H-OAI-001",
+        "pir_id": "PIR-2026-001",
+        "statement": "OpenAIは2026年内にAgent機能を全面的にエンタープライズ向けに特化させ、B2B市場での支配的地位を確立する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 50,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "エンタープライズ専用Agent APIの発表",
+          "SOC2/FedRAMP認証の取得拡大",
+          "Fortune 500企業との大型契約発表"
+        ],
+        "disconfirming_indicators": [
+          "消費者向けChatGPT新機能への集中投資",
+          "API料金の大幅引き下げ（ボリューム戦略）",
+          "エンタープライズ営業チームの縮小"
+        ]
+      },
+      {
+        "hypothesis_id": "H-OAI-002",
+        "pir_id": "PIR-2026-001",
+        "statement": "OpenAIは開発者エコシステムの囲い込みを最優先し、プラットフォーム戦略でAgent市場を支配する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 45,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "Agent開発者向けマーケットプレイス拡充",
+          "SDK/APIの無料枠拡大",
+          "開発者コミュニティイベントの増加"
+        ],
+        "disconfirming_indicators": [
+          "API互換性の破壊的変更",
+          "開発者向け料金の大幅値上げ",
+          "クローズドプラットフォーム化"
+        ]
+      },
+      {
+        "hypothesis_id": "H-OAI-003",
+        "pir_id": "PIR-2026-003",
+        "statement": "OpenAIはAGI達成を最優先とし、商業化よりも研究開発（次世代モデル開発）に資源を集中する",
+        "status": "active",
+        "confidence": "low",
+        "confidence_percentage": 30,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "研究論文の公開増加",
+          "非営利部門への投資拡大",
+          "商業製品のリリース頻度低下"
+        ],
+        "disconfirming_indicators": [
+          "営業チームの急拡大",
+          "Microsoft依存の強化",
+          "収益目標の上方修正"
+        ]
+      }
+    ],
+    "anthropic": [
+      {
+        "hypothesis_id": "H-ANT-001",
+        "pir_id": "PIR-2026-001",
+        "statement": "Anthropicは安全性を差別化要因として、規制準拠が求められるエンタープライズ市場で優位に立つ",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 55,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "安全性関連の認証取得",
+          "政府・金融機関との契約",
+          "安全性ベンチマークでのリーダーシップ"
+        ],
+        "disconfirming_indicators": [
+          "安全性制約による機能制限への開発者不満",
+          "競合の安全性機能キャッチアップ",
+          "価格競争での劣勢"
+        ]
+      },
+      {
+        "hypothesis_id": "H-ANT-002",
+        "pir_id": "PIR-2026-001",
+        "statement": "AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準を確立し、エコシステム戦略で勝つ",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 50,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "MCP採用企業・ツールの増加",
+          "MCP仕様の標準化団体設立",
+          "競合のMCP互換実装"
+        ],
+        "disconfirming_indicators": [
+          "OpenAI独自プロトコルの市場支配",
+          "MCP採用の停滞",
+          "代替標準の台頭"
+        ]
+      },
+      {
+        "hypothesis_id": "H-ANT-003",
+        "pir_id": "PIR-2026-003",
+        "statement": "AnthropicはAmazonとの戦略的提携を深化させ、AWS経由でのエンタープライズ浸透を主戦略とする",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 50,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "AWS Bedrock上の新機能追加",
+          "Amazon追加出資",
+          "AWS顧客向け独占機能"
+        ],
+        "disconfirming_indicators": [
+          "直販チャネルの強化",
+          "他クラウドプロバイダーとの提携",
+          "AWS依存からの脱却表明"
+        ]
+      }
+    ],
+    "google": [
+      {
+        "hypothesis_id": "H-GOO-001",
+        "pir_id": "PIR-2026-001",
+        "statement": "GoogleはGeminiを検索・広告・Workspace等の既存プロダクトに深く統合し、Agent機能を全サービス横断で展開する",
+        "status": "active",
+        "confidence": "high",
+        "confidence_percentage": 65,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "GoogleプロダクトへのGemini統合発表",
+          "Workspace AI機能の拡充",
+          "検索結果でのAgent応答の増加"
+        ],
+        "disconfirming_indicators": [
+          "Gemini独立ブランド化",
+          "API-first戦略への転換",
+          "プロダクト統合の遅延・撤回"
+        ]
+      },
+      {
+        "hypothesis_id": "H-GOO-002",
+        "pir_id": "PIR-2026-002",
+        "statement": "GoogleはVertex AI + Geminiの組み合わせでクラウドAIプラットフォーム市場でAWSを追い上げる",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 45,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "GCPのAI関連収益成長率がAWSを上回る",
+          "大型エンタープライズ契約の獲得",
+          "Vertex AI新機能の加速"
+        ],
+        "disconfirming_indicators": [
+          "GCP市場シェアの横ばい",
+          "エンタープライズ顧客のAWS/Azure流出",
+          "AIスタートアップのGCP離れ"
+        ]
+      },
+      {
+        "hypothesis_id": "H-GOO-003",
+        "pir_id": "PIR-2026-001",
+        "statement": "Google DeepMindは科学研究分野（AlphaFold後継等）でのブレークスルーを通じて、AI応用の新カテゴリーを創出する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 45,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "新たな科学的ブレークスルーの発表",
+          "研究成果の商用化発表",
+          "ヘルスケア/材料科学企業との提携"
+        ],
+        "disconfirming_indicators": [
+          "DeepMind研究予算の削減",
+          "研究者の離職",
+          "商業化よりも論文発表重視の継続"
+        ]
+      }
+    ],
+    "xai": [
+      {
+        "hypothesis_id": "H-XAI-001",
+        "pir_id": "PIR-2026-001",
+        "statement": "xAIはX（Twitter）のリアルタイムデータを独占的に活用し、リアルタイム情報Agent市場でニッチ優位を確立する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 45,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "GrokとX連携の深化",
+          "リアルタイムデータAPIの独占提供",
+          "ニュース分析特化機能の発表"
+        ],
+        "disconfirming_indicators": [
+          "X platform利用者の減少",
+          "Grokの汎用AI市場への方向転換",
+          "Xデータアクセスの他社開放"
+        ]
+      },
+      {
+        "hypothesis_id": "H-XAI-002",
+        "pir_id": "PIR-2026-003",
+        "statement": "xAIはColossusの大規模計算資源を武器に、モデル性能でOpenAI/Anthropicに挑戦する",
+        "status": "active",
+        "confidence": "low",
+        "confidence_percentage": 35,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "Grok主要ベンチマークでのトップ性能",
+          "Colossusクラスタの拡張",
+          "研究者の大量採用"
+        ],
+        "disconfirming_indicators": [
+          "ベンチマーク性能の伸び悩み",
+          "計算資源のTesla/SpaceXへの転用",
+          "主要研究者の離職"
+        ]
+      },
+      {
+        "hypothesis_id": "H-XAI-003",
+        "pir_id": "PIR-2026-001",
+        "statement": "xAIはElon Muskの他事業（Tesla, SpaceX, Neuralink）との統合を進め、物理世界Agent（ロボティクス、自動運転）に進出する",
+        "status": "active",
+        "confidence": "low",
+        "confidence_percentage": 30,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "Tesla Optimus へのGrok統合発表",
+          "SpaceXとのAI連携",
+          "ロボティクス関連採用の増加"
+        ],
+        "disconfirming_indicators": [
+          "事業間連携の否定発表",
+          "xAI独立路線の強化",
+          "物理世界AI投資の減少"
+        ]
+      }
+    ],
+    "bytedance": [
+      {
+        "hypothesis_id": "H-BTD-001",
+        "pir_id": "PIR-2026-001",
+        "statement": "ByteDanceはCoze/Doubaoプラットフォームで中国Agent市場を支配し、次いで東南アジア・グローバル展開する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 50,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "Cozeプラットフォームの利用者数急増",
+          "海外版Cozeの正式ローンチ",
+          "東南アジア市場でのシェア拡大"
+        ],
+        "disconfirming_indicators": [
+          "中国国内規制による展開制限",
+          "海外市場参入の遅延",
+          "TikTok問題の波及"
+        ]
+      },
+      {
+        "hypothesis_id": "H-BTD-002",
+        "pir_id": "PIR-2026-003",
+        "statement": "ByteDanceは圧倒的なコスト優位性（低価格モデル）で新興市場を席巻し、価格競争でTier 1全体を揺さぶる",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 45,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "Doubaoモデルの大幅値下げ",
+          "無料API枠の大量提供",
+          "中小企業向け廉価プランの発表"
+        ],
+        "disconfirming_indicators": [
+          "高性能プレミアムモデルへの方向転換",
+          "価格よりも品質を重視する戦略発表",
+          "コスト構造の悪化"
+        ]
+      },
+      {
+        "hypothesis_id": "H-BTD-003",
+        "pir_id": "PIR-2026-001",
+        "statement": "ByteDanceはTikTok/Douyinのコンテンツ制作AIとAgent技術を融合させ、クリエイターエコノミーAgentで差別化する",
+        "status": "active",
+        "confidence": "low",
+        "confidence_percentage": 35,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "confirming_indicators": [
+          "TikTok/Douyinへの生成AI機能統合",
+          "クリエイター向けAIツール発表",
+          "動画生成Agent機能のリリース"
+        ],
+        "disconfirming_indicators": [
+          "コンテンツAI事業の分社化",
+          "Agent事業とコンテンツ事業の分離",
+          "クリエイターAI市場からの撤退"
+        ]
+      }
+    ]
+  }
+}

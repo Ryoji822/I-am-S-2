@@ -1,0 +1,44 @@
+{
+  "provider": {
+    "zhipu": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "https://open.bigmodel.cn/api/paas/v4/",
+        "apiKey": "{env:GLM_API_KEY}"
+      },
+      "models": {
+        "glm-5": {
+          "limit": {
+            "context": 128000,
+            "output": 16384
+          }
+        },
+        "glm-4-plus": {
+          "limit": {
+            "context": 128000,
+            "output": 16384
+          }
+        }
+      }
+    }
+  },
+  "model": "zhipu/glm-5",
+  "small_model": "zhipu/glm-4-plus",
+  "mcp": {
+    "firecrawl": {
+      "type": "remote",
+      "url": "https://mcp.firecrawl.dev/{env:FIRECRAWL_API_KEY}/v2/mcp",
+      "enabled": true
+    }
+  },
+  "agents": {
+    "plan": {
+      "model": "zhipu/glm-5",
+      "description": "Analysis and report generation agent"
+    },
+    "build": {
+      "model": "zhipu/glm-4-plus",
+      "description": "Data collection and processing agent"
+    }
+  }
+}

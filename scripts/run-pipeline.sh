@@ -1,0 +1,339 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# =============================================================================
+# I-am-S-2 Intelligence Pipeline Orchestrator
+# FM 2-0 based daily intelligence cycle
+# =============================================================================
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+TODAY=$(date -u +%Y-%m-%d)
+TIMEOUT_SECONDS=300  # 5 minutes per phase
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+log_info()  { echo -e "${BLUE}[INFO]${NC}  $(date -u +%H:%M:%S) $*"; }
+log_ok()    { echo -e "${GREEN}[OK]${NC}    $(date -u +%H:%M:%S) $*"; }
+log_warn()  { echo -e "${YELLOW}[WARN]${NC}  $(date -u +%H:%M:%S) $*"; }
+log_error() { echo -e "${RED}[ERROR]${NC} $(date -u +%H:%M:%S) $*"; }
+
+# Track which static_intelligence files changed
+STATIC_CHANGED=false
+
+# =============================================================================
+# Setup
+# =============================================================================
+
+cd "$PROJECT_DIR"
+
+log_info "=== I-am-S-2 Intelligence Pipeline ==="
+log_info "Date: $TODAY"
+log_info "Project: $PROJECT_DIR"
+
+# Create daily directories
+mkdir -p "Information/$TODAY"
+mkdir -p "Intelligence"
+mkdir -p "state"
+mkdir -p "static_intelligence"
+
+# Record static_intelligence checksums before pipeline
+STATIC_CHECKSUM_BEFORE=""
+if ls static_intelligence/*.md 1>/dev/null 2>&1; then
+  STATIC_CHECKSUM_BEFORE=$(cat static_intelligence/*.md 2>/dev/null | shasum -a 256 | cut -d' ' -f1)
+fi
+
+# =============================================================================
+# Phase execution helper
+# =============================================================================
+
+run_phase() {
+  local phase_num="$1"
+  local phase_name="$2"
+  local model="$3"
+  local prompt_file="$4"
+  local timeout="${5:-$TIMEOUT_SECONDS}"
+
+  log_info "--- Phase $phase_num: $phase_name (model: $model) ---"
+
+  local start_time
+  start_time=$(date +%s)
+
+  # Build the opencode command
+  local prompt_content
+  prompt_content=$(cat "$PROJECT_DIR/prompts/$prompt_file")
+
+  # Replace YYYY-MM-DD placeholders with today's date
+  prompt_content="${prompt_content//YYYY-MM-DD/$TODAY}"
+
+  if timeout "$timeout" opencode -m "zhipu/$model" -p "$prompt_content" 2>&1; then
+    local end_time
+    end_time=$(date +%s)
+    local duration=$((end_time - start_time))
+    log_ok "Phase $phase_num completed in ${duration}s"
+    return 0
+  else
+    local exit_code=$?
+    log_error "Phase $phase_num failed (exit code: $exit_code)"
+    return $exit_code
+  fi
+}
+
+# =============================================================================
+# Phase 1: COLLECT (glm-4-plus)
+# =============================================================================
+
+log_info "=========================================="
+log_info "Phase 1: COLLECT"
+log_info "=========================================="
+
+if ! run_phase 1 "COLLECT" "glm-4-plus" "phase1-collect.md" 600; then
+  log_warn "Phase 1 failed. Applying fallback: copying previous day's data"
+
+  # Find the most recent collected-raw.md
+  PREV_DATE=$(ls -d Information/????-??-?? 2>/dev/null | sort -r | head -1 | xargs basename 2>/dev/null || echo "")
+
+  if [[ -n "$PREV_DATE" && -f "Information/$PREV_DATE/collected-raw.md" ]]; then
+    cp "Information/$PREV_DATE/collected-raw.md" "Information/$TODAY/collected-raw.md"
+    # Add DEGRADED flag
+    sed -i.bak '1s/^/> ⚠️ DEGRADED: Phase 1 failed. Data copied from '"$PREV_DATE"'\n\n/' \
+      "Information/$TODAY/collected-raw.md" 2>/dev/null || true
+    rm -f "Information/$TODAY/collected-raw.md.bak"
+    log_warn "Copied data from $PREV_DATE with DEGRADED flag"
+  else
+    log_error "No previous data available. Creating minimal stub."
+    cat > "Information/$TODAY/collected-raw.md" << EOF
+# 収集データ: $TODAY
+
+> ⚠️ DEGRADED: Phase 1 failed. No data collected.
+
+## メタデータ
+- 収集日時: $TODAY
+- 収集クエリ数: 0
+- 収集結果数: 0
+- 品質フラグ: DEGRADED (Phase 1 failure, no previous data available)
+
+## 収集結果
+
+データなし
+EOF
+  fi
+fi
+
+# Verify Phase 1 output exists
+if [[ ! -f "Information/$TODAY/collected-raw.md" ]]; then
+  log_error "Phase 1 output missing. Cannot continue."
+  exit 1
+fi
+
+# =============================================================================
+# Phase 2: ANALYZE - Blue Agent (glm-5)
+# =============================================================================
+
+log_info "=========================================="
+log_info "Phase 2: ANALYZE (Blue Agent)"
+log_info "=========================================="
+
+if ! run_phase 2 "ANALYZE" "glm-5" "phase2-analyze.md"; then
+  log_warn "Phase 2 failed. Using collected raw data as processed data"
+  cp "Information/$TODAY/collected-raw.md" "Information/$TODAY/processed.md"
+  echo -e "\n\n> ⚠️ DEGRADED: Blue Agent analysis failed. Raw data passed through." \
+    >> "Information/$TODAY/processed.md"
+fi
+
+# =============================================================================
+# Phase 3: RED TEAM (glm-4-plus)
+# =============================================================================
+
+log_info "=========================================="
+log_info "Phase 3: RED TEAM"
+log_info "=========================================="
+
+if ! run_phase 3 "RED TEAM" "glm-4-plus" "phase3-red-team.md"; then
+  log_warn "Phase 3 failed. Creating minimal red team report"
+  cat > "state/red-team-$TODAY.md" << EOF
+# Red Agent反証レポート: $TODAY
+
+> ⚠️ DEGRADED: Red Agent analysis failed.
+
+## 反証結果
+Red Agentが実行されなかったため、Blue Agentの分析結果を検証なしでArbiterに渡します。
+
+## バイアスチェック総合結果
+未実施（Phase 3 failure）
+EOF
+fi
+
+# =============================================================================
+# Phase 4: ARBITER (glm-5)
+# =============================================================================
+
+log_info "=========================================="
+log_info "Phase 4: ARBITER"
+log_info "=========================================="
+
+if ! run_phase 4 "ARBITER" "glm-5" "phase4-arbiter.md"; then
+  log_warn "Phase 4 failed. Using Blue Agent output directly"
+  if [[ -f "Information/$TODAY/processed.md" ]]; then
+    cp "Information/$TODAY/processed.md" "state/arbiter-$TODAY.md"
+    cp "Information/$TODAY/processed.md" "state/arbiter-latest.md"
+    echo -e "\n\n> ⚠️ DEGRADED: Arbiter failed. Blue Agent output passed through." \
+      >> "state/arbiter-$TODAY.md"
+  fi
+fi
+
+# =============================================================================
+# Phase 5: STATIC UPDATE (glm-4-plus)
+# =============================================================================
+
+log_info "=========================================="
+log_info "Phase 5: STATIC UPDATE"
+log_info "=========================================="
+
+if ! run_phase 5 "STATIC UPDATE" "glm-4-plus" "phase5-static-update.md"; then
+  log_warn "Phase 5 failed. Skipping static intelligence update"
+  echo "# Static Update: $TODAY - SKIPPED (Phase 5 failure)" > "state/static-update-$TODAY.md"
+fi
+
+# Check if static_intelligence changed
+STATIC_CHECKSUM_AFTER=""
+if ls static_intelligence/*.md 1>/dev/null 2>&1; then
+  STATIC_CHECKSUM_AFTER=$(cat static_intelligence/*.md 2>/dev/null | shasum -a 256 | cut -d' ' -f1)
+fi
+
+if [[ "$STATIC_CHECKSUM_BEFORE" != "$STATIC_CHECKSUM_AFTER" ]]; then
+  STATIC_CHANGED=true
+  log_info "Static intelligence was updated"
+fi
+
+# =============================================================================
+# Phase 6: REPORT (glm-5)
+# =============================================================================
+
+log_info "=========================================="
+log_info "Phase 6: REPORT"
+log_info "=========================================="
+
+if ! run_phase 6 "REPORT" "glm-5" "phase6-report.md"; then
+  log_warn "Phase 6 failed. Generating stub report"
+  cat > "Intelligence/$TODAY.md" << EOF
+# デイリー・インテリジェンス・ブリーフィング: $TODAY
+
+> 分類: UNCLASSIFIED
+> 品質: DEGRADED (レポート生成失敗)
+
+## エグゼクティブ・サマリー
+
+本日のレポート生成（Phase 6）が失敗しました。分析データは以下のファイルで直接確認してください:
+
+- 収集データ: Information/$TODAY/collected-raw.md
+- Blue Agent分析: Information/$TODAY/processed.md
+- Red Agent反証: state/red-team-$TODAY.md
+- Arbiter判断: state/arbiter-$TODAY.md
+
+---
+
+*このスタブレポートはI-am-S-2 Intelligence Systemにより自動生成されました。*
+EOF
+fi
+
+# =============================================================================
+# Phase 7: Output validation
+# =============================================================================
+
+log_info "=========================================="
+log_info "Phase 7: Validation"
+log_info "=========================================="
+
+if [[ -x "$SCRIPT_DIR/validate-output.sh" ]]; then
+  bash "$SCRIPT_DIR/validate-output.sh" "$TODAY" || log_warn "Validation reported issues"
+else
+  log_warn "validate-output.sh not found or not executable"
+fi
+
+# =============================================================================
+# Phase 8: Git commit & push
+# =============================================================================
+
+log_info "=========================================="
+log_info "Phase 8: Git commit & push"
+log_info "=========================================="
+
+cd "$PROJECT_DIR"
+
+# Stage all changes
+git add -A
+
+# Check if there are changes to commit
+if git diff --cached --quiet; then
+  log_info "No changes to commit"
+else
+  COMMIT_MSG="intelligence: daily report $TODAY"
+
+  # Add degraded note if applicable
+  if grep -rq "DEGRADED" "Intelligence/$TODAY.md" 2>/dev/null; then
+    COMMIT_MSG="$COMMIT_MSG [DEGRADED]"
+  fi
+
+  git commit -m "$COMMIT_MSG"
+  git push origin main || git push origin master || log_error "Push failed"
+  log_ok "Changes committed and pushed"
+fi
+
+# =============================================================================
+# Phase 9: Slack notification (if static_intelligence updated)
+# =============================================================================
+
+if [[ "$STATIC_CHANGED" == "true" ]]; then
+  log_info "=========================================="
+  log_info "Phase 9: Slack DM notification"
+  log_info "=========================================="
+
+  SLACK_USER_ID="U055AGJKZLM"
+
+  if [[ -n "${SLACK_BOT_TOKEN:-}" ]]; then
+    # Open DM channel
+    DM_CHANNEL=$(curl -s -X POST "https://slack.com/api/conversations.open" \
+      -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
+      -H "Content-Type: application/json" \
+      -d "{\"users\":\"$SLACK_USER_ID\"}" | python3 -c "import sys,json; print(json.load(sys.stdin).get('channel',{}).get('id',''))" 2>/dev/null || echo "")
+
+    if [[ -n "$DM_CHANNEL" ]]; then
+      # Get list of changed static intelligence files
+      CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- static_intelligence/ 2>/dev/null | tr '\n' ', ' | sed 's/,$//')
+
+      SLACK_MSG="📊 *I-am-S-2 Static Intelligence Updated* ($TODAY)\n\n更新されたファイル: $CHANGED_FILES\n\nリポジトリ: https://github.com/Ryoji822/I-am-S-2/tree/main/static_intelligence"
+
+      curl -s -X POST "https://slack.com/api/chat.postMessage" \
+        -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
+        -H "Content-Type: application/json" \
+        -d "{\"channel\":\"$DM_CHANNEL\",\"text\":\"$SLACK_MSG\"}" > /dev/null 2>&1
+
+      log_ok "Slack DM sent to $SLACK_USER_ID"
+    else
+      log_warn "Failed to open DM channel with $SLACK_USER_ID"
+    fi
+  else
+    log_warn "SLACK_BOT_TOKEN not set. Skipping Slack notification."
+  fi
+fi
+
+# =============================================================================
+# Summary
+# =============================================================================
+
+log_info "=========================================="
+log_ok "Pipeline completed for $TODAY"
+log_info "=========================================="
+log_info "Outputs:"
+log_info "  Report:    Intelligence/$TODAY.md"
+log_info "  Raw data:  Information/$TODAY/collected-raw.md"
+log_info "  Analysis:  Information/$TODAY/processed.md"
+log_info "  Red team:  state/red-team-$TODAY.md"
+log_info "  Arbiter:   state/arbiter-$TODAY.md"
+log_info "  Static:    static_intelligence/ (updated: $STATIC_CHANGED)"

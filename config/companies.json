@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-18",
+  "tiers": {
+    "tier1": {
+      "description": "最優先監視対象。AI市場の方向性を決定する影響力を持つ企業",
+      "monitoring_frequency": "daily",
+      "companies": [
+        {
+          "id": "openai",
+          "name": "OpenAI",
+          "aliases": ["OpenAI Inc.", "OpenAI LP"],
+          "headquarters": "San Francisco, USA",
+          "key_products": ["GPT-5", "ChatGPT", "Responses API", "Codex", "DALL-E", "Sora"],
+          "key_people": ["Sam Altman", "Mira Murati", "Greg Brockman"],
+          "primary_sources": [
+            "https://openai.com/blog",
+            "https://platform.openai.com/docs/changelog"
+          ],
+          "driving_forces": ["AGI race leadership", "enterprise expansion", "developer ecosystem"],
+          "source_reliability": "B"
+        },
+        {
+          "id": "anthropic",
+          "name": "Anthropic",
+          "aliases": ["Anthropic PBC"],
+          "headquarters": "San Francisco, USA",
+          "key_products": ["Claude", "Claude Agent SDK", "Claude Code", "MCP"],
+          "key_people": ["Dario Amodei", "Daniela Amodei", "Tom Brown"],
+          "primary_sources": [
+            "https://www.anthropic.com/news",
+            "https://docs.anthropic.com/en/docs/changelog"
+          ],
+          "driving_forces": ["AI safety leadership", "enterprise trust", "agent ecosystem via MCP"],
+          "source_reliability": "B"
+        },
+        {
+          "id": "google",
+          "name": "Google / DeepMind",
+          "aliases": ["Google DeepMind", "Alphabet", "Google AI"],
+          "headquarters": "Mountain View, USA / London, UK",
+          "key_products": ["Gemini", "Gemini API", "Vertex AI", "NotebookLM", "AlphaFold"],
+          "key_people": ["Sundar Pichai", "Demis Hassabis", "Jeff Dean"],
+          "primary_sources": [
+            "https://blog.google/technology/ai/",
+            "https://deepmind.google/discover/blog/"
+          ],
+          "driving_forces": ["search integration", "cloud AI platform", "scientific breakthroughs"],
+          "source_reliability": "B"
+        },
+        {
+          "id": "xai",
+          "name": "xAI",
+          "aliases": ["xAI Corp"],
+          "headquarters": "Austin, USA",
+          "key_products": ["Grok", "Grok API", "Colossus"],
+          "key_people": ["Elon Musk", "Igor Babuschkin"],
+          "primary_sources": [
+            "https://x.ai/blog"
+          ],
+          "driving_forces": ["X/Twitter integration", "compute scale", "real-time data advantage"],
+          "source_reliability": "C"
+        },
+        {
+          "id": "bytedance",
+          "name": "ByteDance",
+          "aliases": ["字节跳动", "ByteDance Ltd."],
+          "headquarters": "Beijing, China",
+          "key_products": ["Doubao", "Coze", "Dreamina", "ByteDance Cloud"],
+          "key_people": ["Liang Rubo", "Zhang Yiming"],
+          "primary_sources": [
+            "https://www.volcengine.com/docs/"
+          ],
+          "driving_forces": ["China market dominance", "global AI expansion", "cost leadership"],
+          "source_reliability": "C"
+        }
+      ]
+    },
+    "tier2": {
+      "description": "重要監視対象。Tier 1の動向に直接影響する企業",
+      "monitoring_frequency": "weekly",
+      "companies": [
+        {
+          "id": "meta",
+          "name": "Meta AI",
+          "key_products": ["Llama", "Meta AI Assistant"],
+          "driving_forces": ["open-source leadership", "social media AI integration"]
+        },
+        {
+          "id": "microsoft",
+          "name": "Microsoft",
+          "key_products": ["Copilot", "Azure OpenAI", "GitHub Copilot"],
+          "driving_forces": ["enterprise AI platform", "OpenAI partnership"]
+        },
+        {
+          "id": "amazon",
+          "name": "Amazon / AWS",
+          "key_products": ["Bedrock", "Q", "Titan"],
+          "driving_forces": ["cloud AI marketplace", "Anthropic partnership"]
+        },
+        {
+          "id": "mistral",
+          "name": "Mistral AI",
+          "key_products": ["Mistral Large", "Le Chat"],
+          "driving_forces": ["European AI sovereignty", "open-weight models"]
+        },
+        {
+          "id": "deepseek",
+          "name": "DeepSeek",
+          "key_products": ["DeepSeek-V3", "DeepSeek-R1"],
+          "driving_forces": ["cost-efficient training", "China open-source AI"]
+        }
+      ]
+    }
+  }
+}

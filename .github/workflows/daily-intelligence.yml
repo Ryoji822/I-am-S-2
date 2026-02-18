@@ -1,0 +1,105 @@
+name: Daily Intelligence Pipeline
+
+on:
+  schedule:
+    # 06:00 JST = 21:00 UTC (previous day)
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Override date (YYYY-MM-DD format, default: today)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+env:
+  GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+  FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+  SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+
+jobs:
+  intelligence-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install OpenCode CLI
+        run: |
+          npm install -g @anthropic-ai/opencode || npm install -g opencode || {
+            echo "::warning::OpenCode CLI installation failed. Trying alternative..."
+            curl -fsSL https://opencode.ai/install.sh | bash || true
+          }
+          which opencode && opencode --version || echo "::warning::OpenCode not found in PATH"
+
+      - name: Configure Git
+        run: |
+          git config user.name "I-am-S-2 Bot"
+          git config user.email "bot@i-am-s-2.github.io"
+
+      - name: Validate secrets
+        run: |
+          if [[ -z "$GLM_API_KEY" ]]; then
+            echo "::error::GLM_API_KEY secret is not set"
+            exit 1
+          fi
+          if [[ -z "$FIRECRAWL_API_KEY" ]]; then
+            echo "::error::FIRECRAWL_API_KEY secret is not set"
+            exit 1
+          fi
+          echo "✅ Required secrets are configured"
+          if [[ -z "${SLACK_BOT_TOKEN:-}" ]]; then
+            echo "::warning::SLACK_BOT_TOKEN is not set. Slack notifications will be skipped."
+          fi
+
+      - name: Run intelligence pipeline
+        run: |
+          chmod +x scripts/run-pipeline.sh
+          chmod +x scripts/validate-output.sh
+          bash scripts/run-pipeline.sh
+        timeout-minutes: 25
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: intelligence-${{ github.run_number }}
+          path: |
+            Intelligence/
+            Information/
+            state/
+            static_intelligence/
+          retention-days: 30
+
+      - name: Report status
+        if: always()
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          if [[ -f "Intelligence/$TODAY.md" ]]; then
+            echo "## ✅ Pipeline completed" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Files generated:" >> $GITHUB_STEP_SUMMARY
+            echo "- \`Intelligence/$TODAY.md\`" >> $GITHUB_STEP_SUMMARY
+            echo "- \`Information/$TODAY/collected-raw.md\`" >> $GITHUB_STEP_SUMMARY
+            echo "- \`Information/$TODAY/processed.md\`" >> $GITHUB_STEP_SUMMARY
+
+            # Show executive summary
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Executive Summary:" >> $GITHUB_STEP_SUMMARY
+            sed -n '/エグゼクティブ・サマリー/,/^---/p' "Intelligence/$TODAY.md" | head -10 >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ❌ Pipeline failed" >> $GITHUB_STEP_SUMMARY
+            echo "Daily intelligence report was not generated." >> $GITHUB_STEP_SUMMARY
+          fi

@@ -1,0 +1,91 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-18",
+  "pirs": [
+    {
+      "pir_id": "PIR-2026-001",
+      "question": "Tier 1企業（OpenAI, Anthropic, Google, xAI, ByteDance）は2026年内にどのようなAgent戦略を展開し、それは市場構造をどう変えるか？",
+      "type": "open",
+      "deadline": "2026-12-31",
+      "decision_context": "AI市場におけるAgent技術の進化方向を把握し、技術投資と事業戦略の判断材料とする",
+      "priority": "critical",
+      "kiq_decomposition": [
+        {
+          "kiq_id": "KIQ-001-01",
+          "question": "各社のAgent SDK/APIの機能拡張ロードマップはどうなっているか？",
+          "observable_indicators": ["SDK新バージョンリリース", "API仕様変更", "開発者ドキュメント更新"]
+        },
+        {
+          "kiq_id": "KIQ-001-02",
+          "question": "各社のAgent製品のエンタープライズ向け展開（セキュリティ認証、SLA、専用サポート）の進捗は？",
+          "observable_indicators": ["SOC2/ISO認証取得", "エンタープライズ料金プラン発表", "大型顧客事例公開"]
+        },
+        {
+          "kiq_id": "KIQ-001-03",
+          "question": "各社のAgent開発者エコシステム（サードパーティ連携、マーケットプレイス）の拡大状況は？",
+          "observable_indicators": ["パートナーシップ発表", "プラグイン/MCP対応数", "開発者イベント開催"]
+        },
+        {
+          "kiq_id": "KIQ-001-04",
+          "question": "各社のマルチモーダルAgent（音声・視覚・コード実行）統合の進捗は？",
+          "observable_indicators": ["新モダリティ対応発表", "デモ公開", "ベンチマーク結果"]
+        }
+      ]
+    },
+    {
+      "pir_id": "PIR-2026-002",
+      "question": "AI市場のエンタープライズセグメントにおける競争構造は2026年後半にかけてどう変化するか？",
+      "type": "open",
+      "deadline": "2026-09-30",
+      "decision_context": "エンタープライズ向けAI導入の加速・減速要因を特定し、市場参入タイミングを判断する",
+      "priority": "high",
+      "kiq_decomposition": [
+        {
+          "kiq_id": "KIQ-002-01",
+          "question": "主要クラウドプロバイダー（AWS, Azure, GCP）のAI Agent統合状況はどうか？",
+          "observable_indicators": ["新サービス発表", "料金改定", "パートナーシップ変更"]
+        },
+        {
+          "kiq_id": "KIQ-002-02",
+          "question": "エンタープライズ顧客のAI Agent採用率と主要ユースケースは？",
+          "observable_indicators": ["導入事例公開", "業界調査レポート", "カンファレンス発表"]
+        },
+        {
+          "kiq_id": "KIQ-002-03",
+          "question": "規制環境（EU AI Act、米国大統領令、中国AI規制）がエンタープライズAI採用にどう影響するか？",
+          "observable_indicators": ["規制文書公開", "企業コンプライアンス対応発表", "業界団体声明"]
+        }
+      ]
+    },
+    {
+      "pir_id": "PIR-2026-003",
+      "question": "Tier 1企業間の価格競争・モデル性能競争は2026年にどのような展開を見せ、市場の寡占化または分散化はどちらに進むか？",
+      "type": "open",
+      "deadline": "2026-12-31",
+      "decision_context": "AIモデル・サービスの価格動向と差別化要因を追跡し、コスト構造の変化に備える",
+      "priority": "high",
+      "kiq_decomposition": [
+        {
+          "kiq_id": "KIQ-003-01",
+          "question": "各社のAPI料金改定の頻度・方向性はどうなっているか？",
+          "observable_indicators": ["料金表更新", "新価格プラン発表", "無料枠変更"]
+        },
+        {
+          "kiq_id": "KIQ-003-02",
+          "question": "主要ベンチマーク（MMLU, HumanEval, GPQA等）における各社モデルの性能推移は？",
+          "observable_indicators": ["ベンチマーク結果公開", "新モデル発表", "技術論文公開"]
+        },
+        {
+          "kiq_id": "KIQ-003-03",
+          "question": "オープンソースモデル（Meta Llama, Mistral等）と商用モデルの性能ギャップはどう変化しているか？",
+          "observable_indicators": ["OSS新バージョンリリース", "比較ベンチマーク", "企業のOSS採用事例"]
+        },
+        {
+          "kiq_id": "KIQ-003-04",
+          "question": "各社の資金調達・投資動向は何を示唆しているか？",
+          "observable_indicators": ["資金調達ラウンド発表", "M&A", "戦略的投資", "IPO動向"]
+        }
+      ]
+    }
+  ]
+}

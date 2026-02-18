@@ -1,0 +1,158 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-18",
+  "collection_plan": [
+    {
+      "kiq_id": "KIQ-001-01",
+      "kiq": "各社のAgent SDK/APIの機能拡張ロードマップはどうなっているか？",
+      "search_queries": [
+        "OpenAI agent SDK API new features 2026",
+        "Anthropic Claude Agent SDK update release",
+        "Google Gemini agent API capabilities 2026",
+        "xAI Grok agent API development",
+        "ByteDance Coze agent platform update",
+        "AI agent framework comparison 2026"
+      ],
+      "sources": ["news", "official_blog", "developer_docs", "github"],
+      "frequency": "daily",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-001-02",
+      "kiq": "各社のAgent製品のエンタープライズ向け展開の進捗は？",
+      "search_queries": [
+        "OpenAI enterprise AI agent deployment 2026",
+        "Anthropic Claude enterprise security SOC2",
+        "Google Vertex AI agent enterprise",
+        "AI enterprise agent adoption case study",
+        "enterprise AI security compliance 2026"
+      ],
+      "sources": ["news", "official_blog", "industry_report"],
+      "frequency": "daily",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-001-03",
+      "kiq": "各社のAgent開発者エコシステムの拡大状況は？",
+      "search_queries": [
+        "AI agent developer ecosystem growth 2026",
+        "MCP model context protocol adoption",
+        "OpenAI plugin marketplace agent",
+        "AI agent integration partnership announcement",
+        "developer tools AI agent platform"
+      ],
+      "sources": ["news", "github", "developer_community"],
+      "frequency": "daily",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-001-04",
+      "kiq": "各社のマルチモーダルAgent統合の進捗は？",
+      "search_queries": [
+        "multimodal AI agent voice vision code 2026",
+        "OpenAI GPT multimodal agent capabilities",
+        "Google Gemini multimodal agent",
+        "AI agent computer use browser automation",
+        "multimodal AI benchmark results 2026"
+      ],
+      "sources": ["news", "research_paper", "official_blog"],
+      "frequency": "daily",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-002-01",
+      "kiq": "主要クラウドプロバイダーのAI Agent統合状況はどうか？",
+      "search_queries": [
+        "AWS Bedrock agent service update 2026",
+        "Azure AI agent integration enterprise",
+        "Google Cloud Vertex AI agent",
+        "cloud provider AI agent comparison 2026"
+      ],
+      "sources": ["news", "official_blog", "industry_report"],
+      "frequency": "daily",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-002-02",
+      "kiq": "エンタープライズ顧客のAI Agent採用率と主要ユースケースは？",
+      "search_queries": [
+        "enterprise AI agent adoption rate 2026",
+        "AI agent use case enterprise production",
+        "Fortune 500 AI agent deployment",
+        "AI agent ROI enterprise case study"
+      ],
+      "sources": ["news", "industry_report", "consulting_report"],
+      "frequency": "weekly",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-002-03",
+      "kiq": "規制環境がエンタープライズAI採用にどう影響するか？",
+      "search_queries": [
+        "EU AI Act enforcement impact 2026",
+        "US AI regulation executive order update",
+        "China AI regulation policy 2026",
+        "AI compliance enterprise requirement",
+        "AI agent regulation safety standard"
+      ],
+      "sources": ["news", "government", "legal_analysis"],
+      "frequency": "weekly",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-003-01",
+      "kiq": "各社のAPI料金改定の頻度・方向性はどうなっているか？",
+      "search_queries": [
+        "OpenAI API pricing change 2026",
+        "Anthropic Claude API pricing update",
+        "Google Gemini API pricing",
+        "AI API pricing comparison trend 2026",
+        "AI model cost per token trend"
+      ],
+      "sources": ["official_docs", "news", "developer_community"],
+      "frequency": "daily",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-003-02",
+      "kiq": "主要ベンチマークにおける各社モデルの性能推移は？",
+      "search_queries": [
+        "AI model benchmark MMLU GPQA 2026",
+        "LLM benchmark comparison latest results",
+        "GPT-5 Claude Gemini benchmark",
+        "AI model performance leaderboard 2026"
+      ],
+      "sources": ["research_paper", "news", "benchmark_sites"],
+      "frequency": "daily",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-003-03",
+      "kiq": "オープンソースモデルと商用モデルの性能ギャップはどう変化しているか？",
+      "search_queries": [
+        "open source LLM vs commercial model performance 2026",
+        "Meta Llama latest benchmark comparison",
+        "Mistral open weight model enterprise adoption",
+        "DeepSeek model performance commercial comparison",
+        "open source AI model enterprise deployment"
+      ],
+      "sources": ["news", "research_paper", "github"],
+      "frequency": "weekly",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-003-04",
+      "kiq": "各社の資金調達・投資動向は何を示唆しているか？",
+      "search_queries": [
+        "AI company funding round 2026",
+        "OpenAI Anthropic Google AI investment",
+        "AI startup acquisition 2026",
+        "AI company valuation trend",
+        "AI infrastructure investment data center"
+      ],
+      "sources": ["news", "financial", "crunchbase"],
+      "frequency": "daily",
+      "minimum_sources": 2
+    }
+  ]
+}
