@@ -5,7 +5,7 @@
 
 ## エグゼクティブ・サマリー
 
-2026年2月現在、AI市場は「寡占化 vs 分散化」の分岐点に直面している。Anthropic $30B、xAI $20Bの$50B調達集中で寡占化要因が強まる一方、ByteDance Seed 2.0台頭で分散化要因も同時に存在。エンタープライズAgent市場が爆発的成長（YoY 8倍、推論モデル300倍）。MCP標準化がCloudflare/OWASP/Demandbase等で加速。2026年は「エンタープライズAgent元年」の様相。
+2026年2月現在、AI市場は「寡占化 vs 分散化」の分岐点に直面している。Anthropic $30B、xAI $20Bの$50B調達集中で寡占化要因が強まる一方、ByteDance Seed 2.0台頭で分散化要因も同時に存在。エンタープライズAgent市場が爆発的成長（YoY 8倍、推論モデル300倍）。MCP標準化がCloudflare/OWASP/Demandbase等で加速。2026年は「エンタープライズAgent元年」の様相。[更新: 2026-02-18] 100%の企業が2026年アジェンティックAI拡大計画、Fortune 500の80%以上がAIエージェント展開済み [INFO-069](../Information/2026-02-18/collected-raw.md#INFO-069) [INFO-070](../Information/2026-02-18/collected-raw.md#INFO-070)。
 
 ## 市場構造概要
 
@@ -33,6 +33,11 @@
 - **組織平均AI支出$1.2M**: 前年比108%増 [INFO-037](../Information/2026-02-18/collected-raw.md#INFO-037)
 - **74%が1年以内ROI達成**: HBR調査 [INFO-023](../Information/2026-02-18/collected-raw.md#INFO-023)
 
+[更新: 2026-02-18]
+- **100%企業が拡大計画**: 全企業が2026年にアジェンティックAI採用拡大を計画 [INFO-069](../Information/2026-02-18/collected-raw.md#INFO-069)
+- **Fortune 500の80%+展開済み**: ローコード/ノーコードツールで構築 [INFO-070](../Information/2026-02-18/collected-raw.md#INFO-070)
+- **営業チーム87%がAI使用**: 54%がAIエージェント展開済み [INFO-072](../Information/2026-02-18/collected-raw.md#INFO-072)
+
 ### 2. 資金集中の加速
 
 - **Anthropic $30B**: GIC/Coatue主導 [INFO-015](../Information/2026-02-18/collected-raw.md#INFO-015)
@@ -45,6 +50,10 @@
 - **ByteDance約1桁低価格**: Seed 2.0 [INFO-017](../Information/2026-02-18/collected-raw.md#INFO-017)
 - **価格継続下落トレンド**: 業界全体
 
+[更新: 2026-02-18]
+- **推論コスト年間5-10倍削減**: 特定能力到達コストが急速低下 [INFO-080](../Information/2026-02-18/collected-raw.md#INFO-080)
+- **NVIDIA Blackwell最大10倍コスト削減**: Baseten、DeepInfra等が最適化 [INFO-078](../Information/2026-02-18/collected-raw.md#INFO-078)
+
 ### 4. 標準化の動き
 
 - **MCP採用拡大**: OWASP、Cloudflare、Demandbase対応 [INFO-029](../Information/2026-02-18/collected-raw.md#INFO-029) [INFO-030](../Information/2026-02-18/collected-raw.md#INFO-030) [INFO-032](../Information/2026-02-18/collected-raw.md#INFO-032)
@@ -56,6 +65,17 @@
 - **58%がAI統合、19%のみガバナンス枠組み**: Forbes調査 [INFO-026](../Information/2026-02-18/collected-raw.md#INFO-026)
 - **過剰権限AI: 4.5倍高インシデント率**: Teleport調査 [INFO-027](../Information/2026-02-18/collected-raw.md#INFO-027)
 - **NIST AI RMF採用拡大**: 同上
+
+[更新: 2026-02-18]
+- **EU AI法2026年8月執行**: 高リスクAIシステムの義務完全執行開始 [INFO-073](../Information/2026-02-18/collected-raw.md#INFO-073)
+- **米国大統領令14365**: 統一国家基準の確立目指す [INFO-074](../Information/2026-02-18/collected-raw.md#INFO-074)
+- **中国市場主導型規制**: EU型包括的AI法なし [INFO-075](../Information/2026-02-18/collected-raw.md#INFO-075)
+
+### 6. AI ROI実態 [更新: 2026-02-18]
+
+- **平均1.7倍ROI**: 26-31%のコスト削減達成 [INFO-071](../Information/2026-02-18/collected-raw.md#INFO-071)
+- **5%のみ実質的リターン**: 大半はスケール前に停滞 [INFO-071](../Information/2026-02-18/collected-raw.md#INFO-071)
+- **注意点**: パイロット→本番转化率の監視必要（Red Agent指摘）
 
 ## 不確実性分析
 
@@ -90,4 +110,8 @@
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-18 | エンタープライズ採用統計追加（100%拡大計画、Fortune 500 80%+展開） | INFO-069, INFO-070, INFO-072 |
+| 2026-02-18 | AI ROI実態追加（1.7倍、5%のみ実質リターン） | INFO-071 |
+| 2026-02-18 | 価格トレンド追加（年間5-10倍コスト削減） | INFO-078, INFO-080 |
+| 2026-02-18 | 規制環境追加（EU/米国/中国） | INFO-073, INFO-074, INFO-075 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |

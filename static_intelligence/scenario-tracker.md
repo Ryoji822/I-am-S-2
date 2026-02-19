@@ -98,4 +98,24 @@ AGIまたは準AGI級のブレークスルーが起き、それを達成した1-
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-18 | 市場全体の動向分析追加（100%拡大計画、80% Fortune 500展開、年間5-10倍コスト削減） | INFO-069, INFO-070, INFO-080 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |
+
+## 市場全体の動向 [更新: 2026-02-18]
+
+### エンタープライズAgent採用加速
+- **100%企業が拡大計画**: 全企業が2026年にアジェンティックAI採用拡大を計画 [INFO-069](../Information/2026-02-18/collected-raw.md#INFO-069)
+- **Fortune 500の80%+展開済み**: ローコード/ノーコードツールで構築 [INFO-070](../Information/2026-02-18/collected-raw.md#INFO-070)
+- **AI ROI実態**: 平均1.7倍リターン、5%のみ実質的リターン達成 [INFO-071](../Information/2026-02-18/collected-raw.md#INFO-071)
+
+### 価格トレンド
+- **推論コスト年間5-10倍削減**: 特定能力到達コストが急速低下 [INFO-080](../Information/2026-02-18/collected-raw.md#INFO-080)
+- **NVIDIA Blackwell最大10倍コスト削減**: トークン単価継続下落 [INFO-078](../Information/2026-02-18/collected-raw.md#INFO-078)
+
+### 規制環境
+- **EU AI法2026年8月執行**: 高リスクAI義務完全執行 [INFO-073](../Information/2026-02-18/collected-raw.md#INFO-073)
+- **米国大統領令14365**: 統一国家基準確立 [INFO-074](../Information/2026-02-18/collected-raw.md#INFO-074)
+
+### OSS動向
+- **オープンソース能力ギャップ大幅縮小**: 定義済みユースケースでプロプライエタリと同等 [INFO-086](../Information/2026-02-18/collected-raw.md#INFO-086)
+- **GLM-5がオープンソースLLMトップ**: AIW Models Ranking [INFO-084](../Information/2026-02-18/collected-raw.md#INFO-084)

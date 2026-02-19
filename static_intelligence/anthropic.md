@@ -35,10 +35,14 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 | 日付 | イベント | 信頼性 | 引用 |
 |------|---------|-------|------|
 | 2026-02-17 | Claude Agent SDK v0.2.45リリース、Sonnet 4.6対応 | A-3 | [INFO-014](../Information/2026-02-18/collected-raw.md#INFO-014) |
+| 2026-02-17 | Claude Sonnet 4.6 Bedrock提供開始 | A-3 | [INFO-063](../Information/2026-02-18/collected-raw.md#INFO-063) |
+| 2026-02-17 | GPQA Diamond新標準、Claude Opusが上位 | A-3 | [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081) [INFO-085](../Information/2026-02-18/collected-raw.md#INFO-085) |
 | 2026-02-12 | $30B Series G調達完了、評価額$380B、年間収益$14B | A-3 | [INFO-015](../Information/2026-02-18/collected-raw.md#INFO-015) |
 | 2026-02-05 | Claude Opus 4.6発表、エージェントコーディング性能トップ | A-3 | [INFO-016](../Information/2026-02-18/collected-raw.md#INFO-016) |
 | 2026-02-05 | サボタージュリスク評価公開、「非常に低いが無視できない」 | A-3 | [INFO-022](../Information/2026-02-18/collected-raw.md#INFO-022) |
 | 2025-12-03 | Bun買収、Claude Code $1B年間収益達成 | A-3 | [INFO-001](../Information/2026-02-18/collected-raw.md#INFO-001) |
+
+[更新: 2026-02-18] Claude Sonnet 4.6価格は据え置き$3/$15、能力向上のみ [INFO-079](../Information/2026-02-18/collected-raw.md#INFO-079)。
 
 ## 強み・弱み・機会・脅威（SWOT）
 
@@ -48,6 +52,10 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 - Claude Code 6ヶ月で$1B収益達成（製品市場適合性確認）
 - 安全性リーダーシップ（ASL-3、サボタージュリスク評価公開）
 - エージェントコーディング・コンピュータ使用性能トップ
+
+[更新: 2026-02-18]
+- GPQA Diamond新標準でのリーダーシップ（Gemini 3と並ぶ上位） [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081)
+- Claude Sonnet 4.6価格据え置き戦略（$3/$15） [INFO-079](../Information/2026-02-18/collected-raw.md#INFO-079)
 
 ### 弱み
 - OpenAIとのエンタープライズ市場直接競争激化
@@ -76,4 +84,7 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-18 | GPQA Diamond新標準での位置づけ追加 | INFO-081, INFO-085 |
+| 2026-02-18 | 価格据え置き戦略追加（$3/$15） | INFO-079 |
+| 2026-02-18 | Bedrock提供開始追加 | INFO-063 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |

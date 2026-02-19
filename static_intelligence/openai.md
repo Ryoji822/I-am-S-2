@@ -52,6 +52,10 @@ OpenAIは開発者エコシステムの囲い込みを最優先し、プラッ�
 - API互換性の維持プレッシャー（Enterprise延長措置）
 - Claude/MCP標準化動きへの対抗策不明確
 
+[更新: 2026-02-18]
+- 高努力設定でDeep Research精度低下の指摘（低努力0.496→高努力0.481、コスト55%増） [INFO-083](../Information/2026-02-18/collected-raw.md#INFO-083)
+- Gemini 3 Deep ThinkにARC-AGI-2で劣位 [INFO-082](../Information/2026-02-18/collected-raw.md#INFO-082)
+
 ### 機会
 - ServiceNow等とのエンタープライズ統合拡大
 - Frontierプラットフォームでの垂直統合
@@ -73,4 +77,6 @@ OpenAIは開発者エコシステムの囲い込みを最優先し、プラッ�
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-18 | 高努力設定での精度低下指摘追加 | INFO-083 |
+| 2026-02-18 | Gemini 3 Deep Think劣位追加 | INFO-082 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |

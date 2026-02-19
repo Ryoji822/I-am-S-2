@@ -30,6 +30,8 @@ GoogleはVertex AI + Geminiの組み合わせでクラウドAIプラットフォ
 **H-GOO-003: 科学研究ブレークスルー戦略**（確度: 50%）
 Google DeepMindは科学研究分野でのブレークスルーを通じて、AI応用の新カテゴリーを創出する。IMO-ProofBench 90%、Erdős問題4問解決が強力な証拠だが商用化不確実性を反映 [INFO-011](../Information/2026-02-18/collected-raw.md#INFO-011)。
 
+[更新: 2026-02-18] Gemini 3 Deep ThinkがARC-AGI-2で84.6%を記録し、GPT-5.2とClaude Opus 4.6を上回る性能 [INFO-082](../Information/2026-02-18/collected-raw.md#INFO-082)。GPQA DiamondがMMLUに代わるAI推論の新標準ベンチマークに、Gemini 3とClaude Opusが上位 [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081)。
+
 ## 主要動向タイムライン
 
 | 日付 | イベント | 信頼性 | 引用 |
@@ -39,6 +41,10 @@ Google DeepMindは科学研究分野でのブレークスルーを通じて、AI
 | 2026-02-11 | Gemini Deep ThinkがIMO-ProofBench 90%、Erdős問題4問解決 | A-3 | [INFO-011](../Information/2026-02-18/collected-raw.md#INFO-011) |
 | 2026-02-11 | Conversational Analytics APIでTHOUGHT可視化、Looker対応 | A-3 | [INFO-019](../Information/2026-02-18/collected-raw.md#INFO-019) |
 
+[更新: 2026-02-18]
+| 2026-02 | Gemini 3 Deep ThinkがARC-AGI-2で84.6%、GPT-5.2/Claude Opus 4.6を上回る | B-3 | [INFO-082](../Information/2026-02-18/collected-raw.md#INFO-082) |
+| 2026-02-17 | GPQA DiamondがAI推論新標準、Gemini 3/Claude Opusが上位 | A-3 | [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081) [INFO-085](../Information/2026-02-18/collected-raw.md#INFO-085) |
+
 ## 強み・弱み・機会・脅威（SWOT）
 
 ### 強み
@@ -46,6 +52,10 @@ Google DeepMindは科学研究分野でのブレークスルーを通じて、AI
 - Gemini Deep Thinkの研究レベル性能
 - Google Cloud Consultingのエンタープライズ変革支援
 - 自己資金による持続的投資
+
+[更新: 2026-02-18]
+- ARC-AGI-2ベンチマークで84.6%、GPT-5.2/Claude Opus 4.6を上回る [INFO-082](../Information/2026-02-18/collected-raw.md#INFO-082)
+- GPQA Diamond新標準でのリーダーシップ [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081)
 
 ### 弱み
 - DeepMind研究の商用化不確実性
@@ -72,4 +82,6 @@ Google DeepMindは科学研究分野でのブレークスルーを通じて、AI
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-18 | ARC-AGI-2性能追加（84.6%、GPT-5.2/Claude Opus 4.6を上回る） | INFO-082 |
+| 2026-02-18 | GPQA Diamond新標準追加 | INFO-081, INFO-085 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |
