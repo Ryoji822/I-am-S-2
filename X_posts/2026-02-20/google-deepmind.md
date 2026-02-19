@@ -131,3 +131,15 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**07:45 JST** | [原文](https://x.com/joshwoodward/status/2024616408391336318)
+
+> Worth a look: practical AI training with 20+ hands-on activities!
+> 
+> Lisa Gevelber: Today we are launching the Google AI Professional Certificate. Developed by Google experts with input from leading employers.
+> 
+> Learn more: http://grow.google/aiCert
+
+---
+
