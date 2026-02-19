@@ -1,6 +1,6 @@
 # Anthropic インテリジェンス・プロファイル
 
-> 最終更新: 2026-02-18
+> 最終更新: 2026-02-19
 > 確度: 高
 
 ## エグゼクティブ・サマリー
@@ -24,8 +24,8 @@ Anthropicは安全性を差別化要因として、規制準拠が求められ�
 
 ### 代替仮説
 
-**H-ANT-002: MCP標準化エコシステム戦略**（確度: 52%）
-AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準を確立し、エコシステム戦略で勝つ。Bun買収、Claude Agent SDK拡充が証拠 [INFO-001](../Information/2026-02-18/collected-raw.md#INFO-001) [INFO-014](../Information/2026-02-18/collected-raw.md#INFO-014)。
+**H-ANT-002: MCP標準化エコシステム戦略**（確度: 53%）
+AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準を確立し、エコシステム戦略で勝つ。OWASP/Cloudflare/Chrome/MoSPI公式対応で標準化進行 [INFO-024](../Information/2026-02-19/collected-raw.md#INFO-024) [INFO-026](../Information/2026-02-19/collected-raw.md#INFO-026) [INFO-035](../Information/2026-02-19/collected-raw.md#INFO-035) [INFO-042](../Information/2026-02-19/collected-raw.md#INFO-042)。[更新: 2026-02-19] 定量データ不在を考慮し+1%に抑制。
 
 **H-ANT-003: AWS提携深化戦略**（確度: 38%）
 ~~AnthropicはAmazonとの戦略的提携を深化させ、AWS経由でのエンタープライズ浸透を主戦略とする~~。$30B調達、Bun買収、独自SDKがAWS依存と矛盾。独立路線への移行が進行中 [INFO-015](../Information/2026-02-18/collected-raw.md#INFO-015) [INFO-001](../Information/2026-02-18/collected-raw.md#INFO-001) [INFO-014](../Information/2026-02-18/collected-raw.md#INFO-014)。
@@ -76,7 +76,7 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 
 | 指標 | ステータス | 傾向 | 現在値 |
 |------|-----------|------|--------|
-| IND-003 資金集中 | elevated | approaching | Anthropic $30B + xAI $20B = $50Bが2社に集中 |
+| IND-003 資金集中 | high | approaching | Anthropic $30B + xAI $20B = $50Bが2社に集中。上位3社シェア80%閾値接近 | [更新: 2026-02-19] elevated→high昇格。注意: 資金調達≠市場支配
 | IND-006 標準形成 | elevated | rising | MCP関連情報急増、Cloudflare/OWASP/Demandbase対応 |
 | IND-012 MCP採用 | elevated | rising | OWASP/Cloudflare/Demandbase等がMCP対応 |
 
@@ -84,6 +84,7 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-19 | IND-003 elevated→high昇格、H-ANT-002確度52%→53% | Arbiter判断 |
 | 2026-02-18 | GPQA Diamond新標準での位置づけ追加 | INFO-081, INFO-085 |
 | 2026-02-18 | 価格据え置き戦略追加（$3/$15） | INFO-079 |
 | 2026-02-18 | Bedrock提供開始追加 | INFO-063 |

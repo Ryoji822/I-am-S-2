@@ -1,6 +1,6 @@
 # OpenAI インテリジェンス・プロファイル
 
-> 最終更新: 2026-02-18
+> 最終更新: 2026-02-19
 > 確度: 中
 
 ## エグゼクティブ・サマリー
@@ -19,16 +19,16 @@ OpenAIはエンタープライズAgent市場での支配的地位確立を加速
 
 ### 現在の主力仮説
 
-**H-OAI-001: エンタープライズB2B特化戦略**（確度: 52%）
-OpenAIは2026年内にAgent機能を全面的にエンタープライズ向けに特化させ、B2B市場での支配的地位を確立する。Frontierプラットフォーム、100万以上のビジネス顧客分析、推論モデル300倍利用が証拠 [INFO-020](../Information/2026-02-18/collected-raw.md#INFO-020) [INFO-021](../Information/2026-02-18/collected-raw.md#INFO-021)。
+**H-OAI-001: エンタープライズB2B特化戦略**（確度: 53%）
+OpenAIは2026年内にAgent機能を全面的にエンタープライズ向けに特化させ、B2B市場での支配的地位を確立する。ServiceNow契約、Frontierプラットフォーム、アジェンティックコマース実用化が証拠 [INFO-015](../Information/2026-02-19/collected-raw.md#INFO-015) [INFO-014](../Information/2026-02-19/collected-raw.md#INFO-014) [INFO-016](../Information/2026-02-19/collected-raw.md#INFO-016)。[更新: 2026-02-19] 競合の同等展開(Anthropic-Infosys/Cognizant)を考慮し+1%に抑制。
 
 ### 代替仮説
 
-**H-OAI-002: 開発者エコシステム囲い込み**（確度: 48%）
-OpenAIは開発者エコシステムの囲い込みを最優先し、プラットフォーム戦略でAgent市場を支配する。Claude Opus 4.6発表に対抗 [INFO-016](../Information/2026-02-18/collected-raw.md#INFO-016)。
+**H-OAI-002: 開発者エコシステム囲い込み**（確度: 50%）
+OpenAIは開発者エコシステムの囲い込みを最優先し、プラットフォーム戦略でAgent市場を支配する。Agent Skills、Skills/Shell/Compactionが証拠 [INFO-004](../Information/2026-02-19/collected-raw.md#INFO-004) [INFO-005](../Information/2026-02-19/collected-raw.md#INFO-005)。[更新: 2026-02-19]
 
-**H-OAI-003: AGI優先戦略**（確度: 20%、棄却候補）
-~~OpenAIはAGI達成を最優先とし、商業化よりも研究開発に資源を集中する~~。エンタープライズ8倍成長、Frontier発表、API継続の商業化証拠3件により棄却候補 [INFO-020](../Information/2026-02-18/collected-raw.md#INFO-020) [INFO-021](../Information/2026-02-18/collected-raw.md#INFO-021) [INFO-008](../Information/2026-02-18/collected-raw.md#INFO-008)。
+**H-OAI-003: AGI優先戦略**（確度: 15%、~~棄却候補~~ → **棄却確定**）
+~~OpenAIはAGI達成を最優先とし、商業化よりも研究開発に資源を集中する~~。5件の商業化証拠により棄却確定 [INFO-014](../Information/2026-02-19/collected-raw.md#INFO-014) [INFO-015](../Information/2026-02-19/collected-raw.md#INFO-015) [INFO-016](../Information/2026-02-19/collected-raw.md#INFO-016) [INFO-004](../Information/2026-02-19/collected-raw.md#INFO-004) [INFO-051](../Information/2026-02-19/collected-raw.md#INFO-051)。[更新: 2026-02-19] Arbiter判断でrejected確定。
 
 ## 主要動向タイムライン
 
@@ -77,6 +77,8 @@ OpenAIは開発者エコシステムの囲い込みを最優先し、プラッ�
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-19 | H-OAI-003棄却確定、確度20%→15% | Arbiter判断（5件商業化証拠） |
+| 2026-02-19 | H-OAI-001確度52%→53%、H-OAI-002確度48%→50% | Arbiter判断 |
 | 2026-02-18 | 高努力設定での精度低下指摘追加 | INFO-083 |
 | 2026-02-18 | Gemini 3 Deep Think劣位追加 | INFO-082 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |

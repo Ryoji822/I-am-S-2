@@ -1,6 +1,6 @@
 # ByteDance インテリジェンス・プロファイル
 
-> 最終更新: 2026-02-18
+> 最終更新: 2026-02-19
 > 確度: 中
 
 ## エグゼクティブ・サマリー
@@ -19,13 +19,13 @@ ByteDanceがSeed 2.0で価格破壊を仕掛けている。GPT-5.2、Gemini 3 Pr
 
 ### 現在の主力仮説
 
-**H-BTD-002: コスト優位価格競争戦略**（確度: 50%）
-ByteDanceは圧倒的なコスト優位性（低価格モデル）で新興市場を席巻し、価格競争でTier 1全体を揺さぶる。約1桁低コストは有力証拠だが単一ソース・自己申告への依存リスクを反映 [INFO-017](../Information/2026-02-18/collected-raw.md#INFO-017)。
+**H-BTD-002: コスト優位価格競争戦略**（確度: 52%）
+ByteDanceは圧倒的なコスト優位性（低価格モデル）で新興市場を席巻し、価格競争でTier 1全体を揺さぶる。Seed 2.0、OSS性能ギャップ縮小が証拠 [INFO-011](../Information/2026-02-19/collected-raw.md#INFO-011) [INFO-056](../Information/2026-02-19/collected-raw.md#INFO-056)。[更新: 2026-02-19] 確度50%→52%に上昇。
 
 ### 代替仮説
 
 **H-BTD-001: 中国→グローバル展開戦略**（確度: 48%）
-ByteDanceはCoze/Doubaoプラットフォームで中国Agent市場を支配し、次いで東南アジア・グローバル展開する。LMSYSベンチマーク6位/3位はグローバル競争で劣勢 [INFO-017](../Information/2026-02-18/collected-raw.md#INFO-017)。
+ByteDanceはCoze/Doubaoプラットフォームで中国Agent市場を支配し、次いで東南アジア・グローバル展開する。Doubao 2.0、Seed 2.0 3サイズ展開が証拠 [INFO-010](../Information/2026-02-19/collected-raw.md#INFO-010) [INFO-011](../Information/2026-02-19/collected-raw.md#INFO-011)。[更新: 2026-02-19]
 
 **H-BTD-003: クリエイターエコノミー特化戦略**（確度: 35%）
 ByteDanceはTikTok/Douyinのコンテンツ制作AIとAgent技術を融合させ、クリエイターエコノミーAgentで差別化する。関連情報なし、推定ベース。
@@ -71,4 +71,5 @@ ByteDanceはTikTok/Douyinのコンテンツ制作AIとAgent技術を融合させ
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-19 | H-BTD-002確度50%→52%、H-BTD-001証拠更新 | Arbiter判断 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-02-18",
+  "last_updated": "2026-02-19",
   "description": "I&W（Indications and Warning）指標レジストリ。各指標はシナリオの進行を監視するための観測可能な兆候",
   "indicators": [
     {
@@ -10,8 +10,8 @@
       "description": "MMLU、GPQA等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される",
       "threshold": "ベンチマークスコア30%以上の非連続的向上",
       "status": "elevated",
-      "last_checked": "2026-02-18",
-      "last_value": "IMO-ProofBench 90%、Erdős問題4問自律解決（Gemini Deep Think、研究レベル）",
+      "last_checked": "2026-02-19",
+      "last_value": "Gemini 3 Deep Think研究向け大幅向上、ARC-AGI-2 84.6%>GPT-5.2/Opus 4.6",
       "trend": "approaching",
       "alert_level": "elevated",
       "rationale": "研究レベルでの飛躍的向上確認、商用化は未確認"
@@ -23,7 +23,7 @@
       "description": "Agent API呼び出し数または収益ベースで1社が市場の50%以上を占める",
       "threshold": "市場シェア50%超過",
       "status": "monitoring",
-      "last_checked": "2026-02-18",
+      "last_checked": "2026-02-19",
       "last_value": "競合激化、単独支配なし",
       "trend": "stable",
       "alert_level": "normal"
@@ -34,12 +34,12 @@
       "scenario_ids": ["SCN-001"],
       "description": "上位3社の年間資金調達額がAI業界全体の80%以上を占める",
       "threshold": "上位3社の資金調達シェア80%超過",
-      "status": "elevated",
-      "last_checked": "2026-02-18",
-      "last_value": "Anthropic $30B + xAI $20B = $50Bが2社に集中",
+      "status": "high",
+      "last_checked": "2026-02-19",
+      "last_value": "Anthropic $30B + xAI $20B = $50Bが2社に集中。上位3社シェア80%閾値接近",
       "trend": "approaching",
-      "alert_level": "elevated",
-      "rationale": "$50B調達が2社に集中、閾値（80%）接近監視必要"
+      "alert_level": "high",
+      "rationale": "high昇格妥当。注意: 資金調達≠市場支配。収益化・市場シェアへの影響を別途監視"
     },
     {
       "indicator_id": "IND-004",
@@ -48,11 +48,11 @@
       "description": "オープンソースモデルが主要ベンチマークで商用最上位モデルの90%以上の性能を達成",
       "threshold": "商用最上位の90%性能到達",
       "status": "elevated",
-      "last_checked": "2026-02-18",
-      "last_value": "ByteDance Seed 2.0がGPT-5.2/Gemini 3 Pro同等（自己申告、OSSではない参考値）",
+      "last_checked": "2026-02-19",
+      "last_value": "OSS性能ギャップ縮小（INFO-056）。GLM-5はByteDance系で純OSSではない",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "自己申告ベンチマークのため確度中、第三者検証待ち"
+      "rationale": "OSS定義見直し必要。Llama/Mistral等の純OSS第三者検証待ち"
     },
     {
       "indicator_id": "IND-005",
@@ -61,7 +61,7 @@
       "description": "AI主要カンファレンス（NeurIPS, ICML等）でTier 1企業がオープン公開する論文の割合",
       "threshold": "オープン公開率60%以上",
       "status": "monitoring",
-      "last_checked": "2026-02-18",
+      "last_checked": "2026-02-19",
       "last_value": null,
       "trend": "stable",
       "alert_level": "normal"
@@ -73,8 +73,8 @@
       "description": "3つ以上の競合するAgent通信標準（MCP含む）が各々有意なエコシステムを持つ",
       "threshold": "3標準以上が各100+統合を持つ",
       "status": "elevated",
-      "last_checked": "2026-02-18",
-      "last_value": "MCP関連情報急増、Cloudflare/OWASP/Demandbase対応",
+      "last_checked": "2026-02-19",
+      "last_value": "MCP、Gemini Interactions API、Agent Skills等複数標準共存",
       "trend": "rising",
       "alert_level": "elevated",
       "rationale": "標準形成の動き活発化、3標準以上の共存状況を監視"
@@ -86,8 +86,8 @@
       "description": "Tier 2 AI企業（中堅AI企業）の買収・事業撤退が年間5件以上発生",
       "threshold": "年間買収/撤退5件以上",
       "status": "elevated",
-      "last_checked": "2026-02-18",
-      "last_value": "Anthropic→Bun買収、SpaceX→xAI買収",
+      "last_checked": "2026-02-19",
+      "last_value": "Mistral→Koyeb買収（垂直統合）、Anthropic→Bun買収、SpaceX→xAI買収",
       "trend": "rising",
       "alert_level": "elevated",
       "rationale": "Tier 2企業の買収・統合加速"
@@ -99,11 +99,11 @@
       "description": "Fortune 500企業のAI Agent導入先がTier 1の2-3社に集中（各社シェア25%以上）",
       "threshold": "上位3社合計シェア75%超過",
       "status": "elevated",
-      "last_checked": "2026-02-18",
-      "last_value": "Uber/Thermo Fisher/Intuit/ServiceNow等がOpenAI Frontier採用",
+      "last_checked": "2026-02-19",
+      "last_value": "Fortune 500の80%がエージェント使用、OpenAI-ServiceNow契約",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "大手エンタープライズ契約がTier 1に集中"
+      "rationale": "大手エンタープライズ契約がTier 1に集中。単一ソース(Microsoft/AlphaSense)依存リスク"
     },
     {
       "indicator_id": "IND-009",
@@ -112,11 +112,11 @@
       "description": "AI業界への年間投資額が前年比50%以上の成長を3四半期連続で維持",
       "threshold": "前年比50%以上成長を3Q連続",
       "status": "elevated",
-      "last_checked": "2026-02-18",
-      "last_value": "組織平均AI支出$1.2M、前年比108%増",
+      "last_checked": "2026-02-19",
+      "last_value": "17社$100M以上調達（うち3社$1B超）、従業員AIアクセス50%増、100%拡大計画",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "AI投資の持続的増大"
+      "rationale": "AI投資の持続的増大。ROI実現5%のみ（95%失敗）を考慮"
     },
     {
       "indicator_id": "IND-010",
@@ -125,7 +125,7 @@
       "description": "業種・機能特化型Agent企業の新規設立数が四半期50社以上",
       "threshold": "新規設立50社/四半期以上",
       "status": "monitoring",
-      "last_checked": "2026-02-18",
+      "last_checked": "2026-02-19",
       "last_value": null,
       "trend": "stable",
       "alert_level": "normal"
@@ -136,12 +136,12 @@
       "scenario_ids": ["SCN-004"],
       "description": "主要ベンチマークでTier 1各社のスコア差が5%以内に収斂",
       "threshold": "性能差5%以内",
-      "status": "monitoring",
-      "last_checked": "2026-02-18",
-      "last_value": "ByteDance Seed 2.0がGPT-5.2/Gemini 3 Pro同等（自己申告）",
+      "status": "elevated",
+      "last_checked": "2026-02-19",
+      "last_value": "Gemini>GPT-5.2/Opus 4.6（差あり）、収斂していない",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "性能差縮小の兆候、ただし自己申告のため確度中"
+      "rationale": "性能差縮小の兆候あるが、Gemini Deep Thinkが先行"
     },
     {
       "indicator_id": "IND-012",
@@ -150,11 +150,11 @@
       "description": "単一のオープンAgent標準（MCP等）がAgent統合の70%以上で使用される",
       "threshold": "単一標準の採用率70%超過",
       "status": "elevated",
-      "last_checked": "2026-02-18",
-      "last_value": "OWASP/Cloudflare/Demandbase等がMCP対応",
+      "last_checked": "2026-02-19",
+      "last_value": "OWASP/Cloudflare/Chrome/MoSPI公式MCPサーバー対応",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "MCP採用拡大中、70%閾値まで監視継続"
+      "rationale": "MCP採用拡大中。ただし定量データ(企業数・ツール数)不足。IND-012 70%閾値判定にはKIQ-001-03収集必要"
     },
     {
       "indicator_id": "IND-013",
@@ -163,11 +163,11 @@
       "description": "AI Agentによる大規模な社会的損害（フェイク情報拡散、金融損失、物理的事故等）が発生し、主要メディアで報道",
       "threshold": "主要メディア5社以上で報道されるAI事故",
       "status": "monitoring",
-      "last_checked": "2026-02-18",
-      "last_value": "Claude AIによる誤削除事例（軽微）",
+      "last_checked": "2026-02-19",
+      "last_value": "Claude AI誤削除事例（軽微）、Opus 4.6脆弱性500件発見（セキュリティ向上）",
       "trend": "stable",
       "alert_level": "normal",
-      "rationale": "軽微な事例のみ、重大事故なし"
+      "rationale": "軽微な事例のみ、重大事故なし。脆弱性発見は正のシグナル"
     },
     {
       "indicator_id": "IND-014",
@@ -176,7 +176,7 @@
       "description": "量子コンピュータがAI訓練または推論タスクで実用的な優位性を実証",
       "threshold": "量子優位のAI実用化事例",
       "status": "monitoring",
-      "last_checked": "2026-02-18",
+      "last_checked": "2026-02-19",
       "last_value": null,
       "trend": "stable",
       "alert_level": "normal"

@@ -1,11 +1,11 @@
 # AI市場全体の構造分析
 
-> 最終更新: 2026-02-18
+> 最終更新: 2026-02-19
 > 確度: 高
 
 ## エグゼクティブ・サマリー
 
-2026年2月現在、AI市場は「寡占化 vs 分散化」の分岐点に直面している。Anthropic $30B、xAI $20Bの$50B調達集中で寡占化要因が強まる一方、ByteDance Seed 2.0台頭で分散化要因も同時に存在。エンタープライズAgent市場が爆発的成長（YoY 8倍、推論モデル300倍）。MCP標準化がCloudflare/OWASP/Demandbase等で加速。2026年は「エンタープライズAgent元年」の様相。[更新: 2026-02-18] 100%の企業が2026年アジェンティックAI拡大計画、Fortune 500の80%以上がAIエージェント展開済み [INFO-069](../Information/2026-02-18/collected-raw.md#INFO-069) [INFO-070](../Information/2026-02-18/collected-raw.md#INFO-070)。
+2026年2月現在、AI市場は「寡占化 vs 分散化」の分岐点に直面している。Anthropic $30B、xAI $20Bの$50B調達集中で寡占化要因が強まる一方、ByteDance Seed 2.0台頭で分散化要因も同時に存在。エンタープライズAgent市場が爆発的成長（YoY 8倍、推論モデル300倍）。MCP標準化がCloudflare/OWASP/Chrome/MoSPI等で加速。[更新: 2026-02-19] エンタープライズ判断を「転換点到達」から「パイロット大規模化段階（転換点接近）」に修正。ROI成功5%のみという数値矛盾を考慮 [INFO-045](../Information/2026-02-19/collected-raw.md#INFO-045) [INFO-047](../Information/2026-02-19/collected-raw.md#INFO-047)。
 
 ## 市場構造概要
 
@@ -71,11 +71,12 @@
 - **米国大統領令14365**: 統一国家基準の確立目指す [INFO-074](../Information/2026-02-18/collected-raw.md#INFO-074)
 - **中国市場主導型規制**: EU型包括的AI法なし [INFO-075](../Information/2026-02-18/collected-raw.md#INFO-075)
 
-### 6. AI ROI実態 [更新: 2026-02-18]
+### 6. AI ROI実態 [更新: 2026-02-19]
 
-- **平均1.7倍ROI**: 26-31%のコスト削減達成 [INFO-071](../Information/2026-02-18/collected-raw.md#INFO-071)
-- **5%のみ実質的リターン**: 大半はスケール前に停滞 [INFO-071](../Information/2026-02-18/collected-raw.md#INFO-071)
-- **注意点**: パイロット→本番转化率の監視必要（Red Agent指摘）
+- **平均1.7倍ROI**: 26-31%のコスト削減達成 [INFO-047](../Information/2026-02-19/collected-raw.md#INFO-047)
+- **5%のみ実質的リターン**: 大半はスケール前に停滞 [INFO-047](../Information/2026-02-19/collected-raw.md#INFO-047)
+- **判断修正**: 「転換点到達」→「パイロット大規模化段階（転換点接近）」[Arbiter判断]
+- **注意点**: 100%計画 vs 74%優先 vs 5%成功の数値矛盾。パイロット→本番转化率の監視必要
 
 ## 不確実性分析
 
@@ -100,7 +101,7 @@
 | 指標 | ステータス | 傾向 | 重要度 |
 |------|-----------|------|--------|
 | IND-001 AGI能力研究 | elevated | approaching | 高 |
-| IND-003 資金集中 | elevated | approaching | 高 |
+| IND-003 資金集中 | high | approaching | 高 | [更新: 2026-02-19] elevated→high昇格
 | IND-004 分散化兆候 | elevated | approaching | 高 |
 | IND-006 標準形成 | elevated | rising | 中 |
 | IND-008 大手契約集中 | elevated | rising | 高 |
@@ -110,6 +111,8 @@
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-19 | エンタープライズ判断「転換点到達」→「パイロット大規模化段階（転換点接近）」に修正 | Arbiter判断 |
+| 2026-02-19 | IND-003 elevated→high昇格 | Arbiter判断 |
 | 2026-02-18 | エンタープライズ採用統計追加（100%拡大計画、Fortune 500 80%+展開） | INFO-069, INFO-070, INFO-072 |
 | 2026-02-18 | AI ROI実態追加（1.7倍、5%のみ実質リターン） | INFO-071 |
 | 2026-02-18 | 価格トレンド追加（年間5-10倍コスト削減） | INFO-078, INFO-080 |

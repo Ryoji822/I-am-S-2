@@ -1,6 +1,6 @@
 # Google/DeepMind インテリジェンス・プロファイル
 
-> 最終更新: 2026-02-18
+> 最終更新: 2026-02-19
 > 確度: 高
 
 ## エグゼクティブ・サマリー
@@ -19,16 +19,16 @@ GoogleはGeminiを全プロダクト横断で統合する戦略を加速させ�
 
 ### 現在の主力仮説
 
-**H-GOO-001: プロダクト統合横断展開戦略**（確度: 66%）
-GoogleはGeminiを検索・広告・Workspace等の既存プロダクトに深く統合し、Agent機能を全サービス横断で展開する。Google I/O 2026発表、Conversational Analytics APIが証拠 [INFO-010](../Information/2026-02-18/collected-raw.md#INFO-010) [INFO-019](../Information/2026-02-18/collected-raw.md#INFO-019)。
+**H-GOO-001: プロダクト統合横断展開戦略**（確度: 68%）
+GoogleはGeminiを検索・広告・Workspace等の既存プロダクトに深く統合し、Agent機能を全サービス横断で展開する。Interactions API統一、Chrome Web MCPがプロダクト横断統合を強化 [INFO-007](../Information/2026-02-19/collected-raw.md#INFO-007) [INFO-034](../Information/2026-02-19/collected-raw.md#INFO-034) [INFO-035](../Information/2026-02-19/collected-raw.md#INFO-035)。[更新: 2026-02-19] 確度66%→68%に上昇。
 
 ### 代替仮説
 
-**H-GOO-002: Vertex AI クラウド追い上げ戦略**（確度: 48%）
-GoogleはVertex AI + Geminiの組み合わせでクラウドAIプラットフォーム市場でAWSを追い上げる。Conversational Analytics API、HBR提携が証拠 [INFO-019](../Information/2026-02-18/collected-raw.md#INFO-019) [INFO-023](../Information/2026-02-18/collected-raw.md#INFO-023)。
+**H-GOO-002: Vertex AI クラウド追い上げ戦略**（確度: 50%）
+GoogleはVertex AI + Geminiの組み合わせでクラウドAIプラットフォーム市場でAWSを追い上げる。Vertex AI Agent Engine、Deep Think性能向上が証拠 [INFO-019](../Information/2026-02-19/collected-raw.md#INFO-019) [INFO-055](../Information/2026-02-19/collected-raw.md#INFO-055)。[更新: 2026-02-19]
 
-**H-GOO-003: 科学研究ブレークスルー戦略**（確度: 50%）
-Google DeepMindは科学研究分野でのブレークスルーを通じて、AI応用の新カテゴリーを創出する。IMO-ProofBench 90%、Erdős問題4問解決が強力な証拠だが商用化不確実性を反映 [INFO-011](../Information/2026-02-18/collected-raw.md#INFO-011)。
+**H-GOO-003: 科学研究ブレークスルー戦略**（確度: 52%）
+Google DeepMindは科学研究分野でのブレークスルーを通じて、AI応用の新カテゴリーを創出する。ARC-AGI-2 84.6%が研究ブレークスルーを支持 [INFO-008](../Information/2026-02-19/collected-raw.md#INFO-008) [INFO-055](../Information/2026-02-19/collected-raw.md#INFO-055)。商用化不確実性を反映。[更新: 2026-02-19]
 
 [更新: 2026-02-18] Gemini 3 Deep ThinkがARC-AGI-2で84.6%を記録し、GPT-5.2とClaude Opus 4.6を上回る性能 [INFO-082](../Information/2026-02-18/collected-raw.md#INFO-082)。GPQA DiamondがMMLUに代わるAI推論の新標準ベンチマークに、Gemini 3とClaude Opusが上位 [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081)。
 
@@ -82,6 +82,7 @@ Google DeepMindは科学研究分野でのブレークスルーを通じて、AI
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-19 | H-GOO-001確度66%→68%、H-GOO-002確度48%→50%、H-GOO-003確度50%→52% | Arbiter判断 |
 | 2026-02-18 | ARC-AGI-2性能追加（84.6%、GPT-5.2/Claude Opus 4.6を上回る） | INFO-082 |
 | 2026-02-18 | GPQA Diamond新標準追加 | INFO-081, INFO-085 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |
