@@ -262,9 +262,23 @@ def main():
 
     print(f"\nSummary: {total_new} new posts, {total_skipped} skipped (not today)")
 
-    # Git commit & push if there are new posts
+    # Git sync & commit
+    os.chdir(REPO_DIR)
+
+    # Always pull remote first (Actions may have pushed)
+    pull = subprocess.run(
+        ["git", "pull", "--rebase", "--autostash"],
+        capture_output=True, text=True,
+    )
+    if pull.returncode != 0:
+        print(f"Pull --rebase failed, trying merge: {pull.stderr}")
+        subprocess.run(["git", "rebase", "--abort"], capture_output=True)
+        subprocess.run(
+            ["git", "pull", "--no-rebase", "--autostash"],
+            capture_output=True,
+        )
+
     if total_new > 0:
-        os.chdir(REPO_DIR)
         subprocess.run(["git", "add", "X_posts/"], check=False)
         diff = subprocess.run(
             ["git", "diff", "--cached", "--quiet"], capture_output=True
@@ -274,15 +288,18 @@ def main():
                 ["git", "commit", "-m", f"X posts: {today} (+{total_new} posts)"],
                 check=False,
             )
-            push = subprocess.run(
-                ["git", "push"], capture_output=True, text=True
-            )
-            if push.returncode == 0:
-                print("Committed and pushed.")
-            else:
-                print(f"Push failed: {push.stderr}")
+
+    # Always try to push (covers both new posts and synced state)
+    push = subprocess.run(
+        ["git", "push"], capture_output=True, text=True,
+    )
+    if push.returncode == 0:
+        if total_new > 0:
+            print("Committed and pushed.")
+        else:
+            print("Synced with remote (no new posts).")
     else:
-        print("No new posts. Nothing to commit.")
+        print(f"Push failed: {push.stderr}")
 
     print(f"[{datetime.now(JST).strftime('%H:%M:%S JST')}] Done.")
 
