@@ -170,13 +170,24 @@ def main():
 
     print(f"[{now.strftime('%Y-%m-%d %H:%M:%S JST')}] X posts fetch starting")
 
-    if not check_rsshub():
-        print("RSSHub is not running at localhost:1200. Skipping.")
-        sys.exit(0)
-
     if not check_internet():
         print("No internet connection. Skipping.")
         sys.exit(0)
+
+    # Wait for RSSHub to be ready (may still be booting)
+    import time
+    MAX_WAIT = 120  # seconds
+    INTERVAL = 5
+    waited = 0
+    while not check_rsshub():
+        if waited >= MAX_WAIT:
+            print(f"RSSHub not ready after {MAX_WAIT}s. Skipping.")
+            sys.exit(0)
+        print(f"  Waiting for RSSHub... ({waited}s/{MAX_WAIT}s)")
+        time.sleep(INTERVAL)
+        waited += INTERVAL
+    if waited > 0:
+        print(f"  RSSHub ready after {waited}s.")
 
     total_new = 0
     total_skipped = 0
