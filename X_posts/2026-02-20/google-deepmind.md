@@ -29,3 +29,25 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**01:43 JST** | [原文](https://x.com/demishassabis/status/2024528783487680977)
+
+> RT Jeff Dean
+> Today, we’re continuing to push the boundaries of AI with our release of Gemini 3.1 Pro.
+> 
+> This updated model scores 77.1% on ARC-AGI-2, more than double the reasoning performance of its predecessor, Gemini 3 Pro.
+> 
+> Check out the visible improvement in this side-by-side comparison, showing Gemini 3.1 Pro’s crisp animation built with pure code.
+> 
+> Read more about today’s 3.1 Pro update: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro
+
+---
+
+**01:25 JST** | [原文](https://x.com/demishassabis/status/2024530565500740071)
+
+> RT Lisan al Gaib
+> Google is now dominating ARC-AGI-2 with Gemini 3 Flash, Gemini 3.1 Pro and Gemini 3 Deep Think (Feb)
+
+---
+
