@@ -74,6 +74,7 @@ jobs:
           path: |
             Intelligence/
             Information/
+            X_posts/
             state/
             static_intelligence/
           retention-days: 30

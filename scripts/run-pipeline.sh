@@ -147,6 +147,106 @@ if [[ ! -f "Information/$TODAY/collected-raw.md" ]]; then
 fi
 
 # =============================================================================
+# Phase 1.5: Inject X_posts (local RSSHub data, no AI needed)
+# =============================================================================
+
+log_info "=========================================="
+log_info "Phase 1.5: Inject X_posts into collected-raw.md"
+log_info "=========================================="
+
+X_POSTS_DIR="$PROJECT_DIR/X_posts/$TODAY"
+if [[ -d "$X_POSTS_DIR" ]]; then
+  X_POST_COUNT=0
+  # Get current highest INFO number
+  LAST_INFO=$(grep -oP 'INFO-\K\d+' "Information/$TODAY/collected-raw.md" 2>/dev/null | sort -n | tail -1)
+  INFO_NUM=${LAST_INFO:-0}
+
+  python3 - "$X_POSTS_DIR" "$INFO_NUM" << 'PYEOF' >> "Information/$TODAY/collected-raw.md"
+import sys, os, re
+
+x_dir = sys.argv[1]
+info_num = int(sys.argv[2])
+
+company_map = {
+    "anthropic": ("Anthropic", "KIQ-001-01"),
+    "openai": ("OpenAI", "KIQ-001-01"),
+    "google-deepmind": ("Google/DeepMind", "KIQ-001-01"),
+}
+
+official_handles = {
+    "AnthropicAI", "OpenAIDevs", "GoogleDeepMind",
+    "sama", "demishassabis", "sundarpichai",
+}
+
+output_lines = []
+output_lines.append("\n\n## X (Twitter) 投稿データ（ローカルRSSHub経由）\n")
+
+for fname in sorted(os.listdir(x_dir)):
+    if not fname.endswith(".md"):
+        continue
+    company_key = fname.replace(".md", "")
+    company_name, default_kiq = company_map.get(company_key, (company_key, "KIQ-001-01"))
+
+    filepath = os.path.join(x_dir, fname)
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Parse sections: ## @handle (Name - Role)
+    sections = re.split(r'^## @', content, flags=re.MULTILINE)
+    for section in sections[1:]:  # skip header
+        # Extract handle and name
+        header_match = re.match(r'(\S+)\s+\((.+?)\s*-\s*(.+?)\)', section)
+        if not header_match:
+            continue
+        handle = header_match.group(1)
+        name = header_match.group(2)
+        role = header_match.group(3)
+
+        reliability = "A-3" if handle in official_handles else "D-3"
+
+        # Extract posts: **HH:MM JST** | [原文](URL)\n\n> content
+        posts = re.findall(
+            r'\*\*(.+?)\*\*\s*\|\s*\[原文\]\((.+?)\)\s*\n\n((?:>.*\n?)+)',
+            section
+        )
+        for time_str, url, quoted in posts:
+            info_num += 1
+            text = re.sub(r'^>\s?', '', quoted, flags=re.MULTILINE).strip()
+            # Truncate for INFO format
+            summary = text[:500] + "..." if len(text) > 500 else text
+
+            output_lines.append(f"""
+### INFO-{info_num:03d}
+- **タイトル:** @{handle} ({name}) のX投稿
+- **ソース:** X (Twitter) - @{handle} ({role})
+- **公開日:** {os.path.basename(x_dir)}
+- **信頼性コード:** {reliability}
+- **関連KIQ:** {default_kiq}
+- **関連企業:** {company_name}
+- **要約:** {summary}
+- **引用URL:** {url}
+""")
+
+print("".join(output_lines))
+PYEOF
+
+  X_POST_COUNT=$(python3 -c "
+import os, re, sys
+d = '$X_POSTS_DIR'
+c = 0
+for f in os.listdir(d):
+    if f.endswith('.md'):
+        t = open(os.path.join(d, f)).read()
+        c += len(re.findall(r'\[原文\]', t))
+print(c)
+" 2>/dev/null || echo 0)
+
+  log_ok "Injected $X_POST_COUNT X posts from $X_POSTS_DIR"
+else
+  log_info "No X_posts data for $TODAY (X_posts/$TODAY/ not found). Skipping."
+fi
+
+# =============================================================================
 # Phase 2: ANALYZE - Blue Agent (glm-5)
 # =============================================================================
 
