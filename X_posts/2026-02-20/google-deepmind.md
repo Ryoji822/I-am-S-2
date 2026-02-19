@@ -107,3 +107,11 @@
 
 ---
 
+## @thomasortk (Thomas Kurian - Google Cloud CEO)
+
+**02:26 JST** | [原文](https://x.com/ThomasOrTK/status/2024536113583706354)
+
+> Gemini 3.1 Pro is now available on Vertex AI, Gemini Enterprise, Gemini CLI, and more. Our customers are already seeing progress across industries – from clear leaps in quality to excellent execution. Read more on our blog: https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-pro-on-gemini-cli-gemini-enterprise-and-vertex-ai
+
+---
+
