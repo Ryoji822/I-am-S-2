@@ -58,30 +58,42 @@ run_phase() {
   local model="$3"
   local prompt_file="$4"
   local timeout="${5:-$TIMEOUT_SECONDS}"
+  local max_retries="${6:-0}"
 
-  log_info "--- Phase $phase_num: $phase_name (model: $model) ---"
+  local attempt=1
+  local total_attempts=$((max_retries + 1))
 
-  local start_time
-  start_time=$(date +%s)
+  while [[ $attempt -le $total_attempts ]]; do
+    if [[ $attempt -gt 1 ]]; then
+      log_warn "Phase $phase_num: retry attempt $attempt/$total_attempts"
+      sleep 5
+    fi
 
-  # Build the opencode command
-  local prompt_content
-  prompt_content=$(cat "$PROJECT_DIR/prompts/$prompt_file")
+    log_info "--- Phase $phase_num: $phase_name (model: $model, attempt: $attempt/$total_attempts) ---"
 
-  # Replace YYYY-MM-DD placeholders with today's date
-  prompt_content="${prompt_content//YYYY-MM-DD/$TODAY}"
+    local start_time
+    start_time=$(date +%s)
 
-  if timeout "$timeout" opencode run --model "zai/$model" "$prompt_content" 2>&1; then
-    local end_time
-    end_time=$(date +%s)
-    local duration=$((end_time - start_time))
-    log_ok "Phase $phase_num completed in ${duration}s"
-    return 0
-  else
-    local exit_code=$?
-    log_error "Phase $phase_num failed (exit code: $exit_code)"
-    return $exit_code
-  fi
+    local prompt_content
+    prompt_content=$(cat "$PROJECT_DIR/prompts/$prompt_file")
+    prompt_content="${prompt_content//YYYY-MM-DD/$TODAY}"
+
+    if timeout "$timeout" opencode run --model "zai/$model" "$prompt_content" 2>&1; then
+      local end_time
+      end_time=$(date +%s)
+      local duration=$((end_time - start_time))
+      log_ok "Phase $phase_num completed in ${duration}s (attempt $attempt)"
+      return 0
+    else
+      local exit_code=$?
+      log_error "Phase $phase_num attempt $attempt failed (exit code: $exit_code)"
+    fi
+
+    attempt=$((attempt + 1))
+  done
+
+  log_error "Phase $phase_num failed after $total_attempts attempts"
+  return 1
 }
 
 # =============================================================================
@@ -92,7 +104,7 @@ log_info "=========================================="
 log_info "Phase 1: COLLECT"
 log_info "=========================================="
 
-if ! run_phase 1 "COLLECT" "glm-5" "phase1-collect.md" 1800; then
+if ! run_phase 1 "COLLECT" "glm-5" "phase1-collect.md" 1800 1; then
   log_warn "Phase 1 failed. Applying fallback: copying previous day's data"
 
   # Find the most recent collected-raw.md from a DIFFERENT date
@@ -142,7 +154,7 @@ log_info "=========================================="
 log_info "Phase 2: ANALYZE (Blue Agent)"
 log_info "=========================================="
 
-if ! run_phase 2 "ANALYZE" "glm-5" "phase2-analyze.md"; then
+if ! run_phase 2 "ANALYZE" "glm-5" "phase2-analyze.md" 1200 1; then
   log_warn "Phase 2 failed. Using collected raw data as processed data"
   cp "Information/$TODAY/collected-raw.md" "Information/$TODAY/processed.md"
   echo -e "\n\n> ⚠️ DEGRADED: Blue Agent analysis failed. Raw data passed through." \
@@ -157,7 +169,7 @@ log_info "=========================================="
 log_info "Phase 3: RED TEAM"
 log_info "=========================================="
 
-if ! run_phase 3 "RED TEAM" "glm-5" "phase3-red-team.md"; then
+if ! run_phase 3 "RED TEAM" "glm-5" "phase3-red-team.md" 900 1; then
   log_warn "Phase 3 failed. Creating minimal red team report"
   cat > "state/red-team-$TODAY.md" << EOF
 # Red Agent反証レポート: $TODAY
@@ -180,7 +192,7 @@ log_info "=========================================="
 log_info "Phase 4: ARBITER"
 log_info "=========================================="
 
-if ! run_phase 4 "ARBITER" "glm-5" "phase4-arbiter.md"; then
+if ! run_phase 4 "ARBITER" "glm-5" "phase4-arbiter.md" 900 1; then
   log_warn "Phase 4 failed. Using Blue Agent output directly"
   if [[ -f "Information/$TODAY/processed.md" ]]; then
     cp "Information/$TODAY/processed.md" "state/arbiter-$TODAY.md"
@@ -198,7 +210,7 @@ log_info "=========================================="
 log_info "Phase 5: STATIC UPDATE"
 log_info "=========================================="
 
-if ! run_phase 5 "STATIC UPDATE" "glm-5" "phase5-static-update.md"; then
+if ! run_phase 5 "STATIC UPDATE" "glm-5" "phase5-static-update.md" 900 1; then
   log_warn "Phase 5 failed. Skipping static intelligence update"
   echo "# Static Update: $TODAY - SKIPPED (Phase 5 failure)" > "state/static-update-$TODAY.md"
 fi
@@ -222,7 +234,7 @@ log_info "=========================================="
 log_info "Phase 6: REPORT"
 log_info "=========================================="
 
-if ! run_phase 6 "REPORT" "glm-5" "phase6-report.md"; then
+if ! run_phase 6 "REPORT" "glm-5" "phase6-report.md" 900 1; then
   log_warn "Phase 6 failed. Generating stub report"
   cat > "Intelligence/$TODAY.md" << EOF
 # デイリー・インテリジェンス・ブリーフィング: $TODAY
