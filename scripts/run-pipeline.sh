@@ -319,10 +319,10 @@ if [[ "$STATIC_CHANGED" == "true" ]]; then
       -d "{\"users\":\"$SLACK_USER_ID\"}" | python3 -c "import sys,json; print(json.load(sys.stdin).get('channel',{}).get('id',''))" 2>/dev/null || echo "")
 
     if [[ -n "$DM_CHANNEL" ]]; then
-      # Get list of changed static intelligence files
-      CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- static_intelligence/ 2>/dev/null | tr '\n' ', ' | sed 's/,$//')
+      # Get list of changed static intelligence files as bullet list
+      CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- static_intelligence/ 2>/dev/null | sed 's/^/• /' | tr '\n' '\n')
 
-      SLACK_MSG="📊 *I-am-S-2 Static Intelligence Updated* ($TODAY)\n\n更新されたファイル: $CHANGED_FILES\n\nリポジトリ: https://github.com/Ryoji822/I-am-S-2/tree/main/static_intelligence"
+      SLACK_MSG="📊 *I-am-S-2 Static Intelligence Updated* ($TODAY)\n\n更新されたファイル:\n$CHANGED_FILES\n\nリポジトリ: https://github.com/Ryoji822/I-am-S-2/tree/main/static_intelligence"
 
       curl -s -X POST "https://slack.com/api/chat.postMessage" \
         -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
