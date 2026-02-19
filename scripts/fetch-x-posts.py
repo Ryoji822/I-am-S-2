@@ -119,17 +119,30 @@ def check_internet():
         return False
 
 
-def fetch_posts(handle):
-    """Fetch posts for a Twitter handle from local RSSHub (JSON Feed format)."""
+def fetch_posts(handle, max_retries=2):
+    """Fetch posts for a Twitter handle from local RSSHub (JSON Feed format).
+    Retries on failure with backoff. Long timeout to accommodate slow Twitter API."""
+    import time as _time
     url = f"{RSSHUB_URL}/twitter/user/{handle}?format=json&limit=40"
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "I-am-S-2/1.0"})
-        resp = urllib.request.urlopen(req, timeout=60)
-        data = json.loads(resp.read().decode())
-        return data.get("items", [])
-    except Exception as e:
-        print(f"    Warning: Failed to fetch @{handle}: {e}", file=sys.stderr)
-        return []
+    for attempt in range(max_retries + 1):
+        try:
+            t0 = _time.monotonic()
+            req = urllib.request.Request(url, headers={"User-Agent": "I-am-S-2/1.0"})
+            resp = urllib.request.urlopen(req, timeout=180)
+            data = json.loads(resp.read().decode())
+            elapsed = _time.monotonic() - t0
+            items = data.get("items", [])
+            print(f"{len(items)} items ({elapsed:.0f}s)", end=" ")
+            return items
+        except Exception as e:
+            elapsed = _time.monotonic() - t0 if 't0' in dir() else 0
+            if attempt < max_retries:
+                wait = 10 * (attempt + 1)
+                print(f"err({elapsed:.0f}s), retry in {wait}s...", end=" ")
+                _time.sleep(wait)
+            else:
+                print(f"FAILED({e})", end=" ", file=sys.stderr)
+                return []
 
 
 def get_existing_urls(filepath):
@@ -265,9 +278,9 @@ def main():
                         f.write(f"**{post['time']}** | [原文]({post['url']})\n\n")
                         f.write(f"> {quoted}\n\n---\n\n")
                 company_new += len(new_posts)
-                print(f"+{len(new_posts)} posts")
+                print(f"-> +{len(new_posts)} posts")
             else:
-                print("no new")
+                print(f"-> no new")
 
         total_new += company_new
 
