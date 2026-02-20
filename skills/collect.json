@@ -1,0 +1,13 @@
+{
+  "name": "collect",
+  "phase": 1,
+  "description": "Firecrawl MCPで最新情報を収集",
+  "model": "glm-5",
+  "prompt_file": "prompts/phase1-collect.md",
+  "timeout_seconds": 1800,
+  "max_retries": 1,
+  "inputs": ["config/collection_plan.json", "config/companies.json"],
+  "outputs": ["Information/{date}/collected-raw.md"],
+  "validation": "INFO-エントリが5件以上",
+  "fallback": "copy_previous_day"
+}

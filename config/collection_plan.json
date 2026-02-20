@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-02-18",
+  "last_updated": "2026-02-20",
   "collection_plan": [
     {
       "kiq_id": "KIQ-001-01",
@@ -56,6 +56,20 @@
         "multimodal AI benchmark results 2026"
       ],
       "sources": ["news", "research_paper", "official_blog"],
+      "frequency": "daily",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-001-05",
+      "kiq": "各社の「スキル配布と実行環境」はどう設計され、ロックインをどこで作っているか？",
+      "search_queries": [
+        "OpenAI Skills shell agent execution environment 2026",
+        "Anthropic Claude Code MCP tools execution sandbox",
+        "Google Gemini extensions actions agent skills",
+        "AI agent skill marketplace comparison 2026",
+        "AI agent vendor lock-in switching cost analysis"
+      ],
+      "sources": ["news", "official_blog", "developer_docs", "github"],
       "frequency": "daily",
       "minimum_sources": 2
     },
@@ -152,6 +166,19 @@
       ],
       "sources": ["news", "financial", "crunchbase"],
       "frequency": "daily",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-003-05",
+      "kiq": "各社のエコシステムからの離脱コスト（スイッチングコスト）はどう変化しているか？",
+      "search_queries": [
+        "AI platform switching cost analysis 2026",
+        "API migration difficulty comparison OpenAI Anthropic Google",
+        "AI vendor lock-in enterprise risk",
+        "multi-vendor AI strategy enterprise adoption"
+      ],
+      "sources": ["news", "industry_report", "developer_community"],
+      "frequency": "weekly",
       "minimum_sources": 2
     }
   ]

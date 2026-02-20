@@ -1,105 +1,105 @@
 {
-  "version": "1.0",
-  "last_updated": "2026-02-19",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。2軸の不確実要因（ドライビング・フォース）で将来を4パターンに分割する",
+  "version": "2.0",
+  "last_updated": "2026-02-20",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。X軸: ロックインの強さ（閉鎖←→開放）、Y軸: 能力差の大きさ（格差拡大←→収斂）",
   "driving_forces": {
     "axis_x": {
-      "name": "市場構造: 寡占化 ←→ 分散化",
-      "description": "AI市場がごく少数のプラットフォーマーに集約されるか、多数のプレイヤーが共存するか",
-      "left_label": "寡占化（2-3社支配）",
-      "right_label": "分散化（多数共存）"
+      "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
+      "description": "AI実行環境・データ・スキル配布が特定ベンダーに囲い込まれるか、標準化・互換性・移植性が高まるか",
+      "left_label": "閉鎖（実行環境・データ・配布の囲い込み）",
+      "right_label": "開放（標準化・互換性・移植性）"
     },
     "axis_y": {
-      "name": "技術進化: 漸進的改善 ←→ 破壊的飛躍",
-      "description": "AI技術の進化が連続的な改善に留まるか、パラダイムシフトが起きるか",
-      "bottom_label": "漸進的改善",
-      "top_label": "破壊的飛躍"
+      "name": "能力差の大きさ: 格差拡大 ←→ 収斂",
+      "description": "フロンティアモデルとOSS/後発の性能差が広がるか、性能差が縮まり差別化が困難になるか",
+      "top_label": "格差拡大（フロンティアが突出）",
+      "bottom_label": "収斂（性能差縮小）"
     }
   },
   "scenarios": [
     {
       "scenario_id": "SCN-001",
-      "name": "帝国の時代",
+      "name": "囲い込みの勝者",
       "quadrant": "top-left",
-      "quadrant_label": "寡占化 × 破壊的飛躍",
-      "description": "AGIまたは準AGI級のブレークスルーが起き、それを達成した1-2社が圧倒的優位に立つ。技術格差が拡大し、後発企業の追いつきが困難になる",
+      "quadrant_label": "閉鎖 × 格差拡大",
+      "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 22,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter判断: 資金$50Bが2社に集中継続。維持",
+      "probability_rationale": "前回からの軸変更に伴い再設定。資金$50Bが2社に集中、Skills/Shell等の囲い込み兆候が閉鎖×格差拡大を支持",
       "key_assumptions": [
-        "AGI的能力が2026-2027年に実現される",
-        "ブレークスルーに必要な計算資源・データ・人材が少数企業に集中する",
-        "規制がブレークスルー企業に有利に働く"
+        "フロンティアモデルの性能差が維持・拡大される",
+        "実行環境（Hosted Shell/Sandbox）がベンダーロックインの主戦場になる",
+        "スキル配布の審査・独占が競争を制限する"
       ],
       "implications": [
-        "後発企業はニッチ市場への特化または撤退を迫られる",
         "プラットフォーム依存リスクが急上昇",
-        "規制介入の可能性が高まる"
+        "スイッチングコストが企業の技術選択を固定化",
+        "規制介入（反トラスト）の可能性が高まる"
       ],
-      "indicators": ["IND-001", "IND-002", "IND-003"]
+      "indicators": ["IND-001", "IND-002", "IND-003", "IND-015", "IND-016"]
     },
     {
       "scenario_id": "SCN-002",
-      "name": "群雄割拠",
+      "name": "技術は開くが勝者は出る",
       "quadrant": "top-right",
-      "quadrant_label": "分散化 × 破壊的飛躍",
-      "description": "破壊的技術進歩が起きるが、オープンソースやオープン論文により技術が広く共有され、多数のプレイヤーが恩恵を受ける",
+      "quadrant_label": "開放 × 格差拡大",
+      "description": "OSSやMCP等の標準で相互運用性は高まるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 28,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter判断: OSS性能ギャップ縮小、標準乱立の証拠強化",
+      "probability_change": "±0%",
+      "probability_rationale": "MCP普及とOSS性能ギャップ縮小は開放を支持するが、Gemini Deep Thinkの突出は格差拡大も示唆",
       "key_assumptions": [
-        "主要な技術ブレークスルーがオープンに公開される",
-        "オープンソースモデルが商用モデルに迫る性能を達成",
-        "専門特化型AIが汎用AIと共存する"
+        "主要な技術ブレークスルーがオープンに公開される部分もある",
+        "標準プロトコル（MCP等）が広く採用される",
+        "フロンティアモデルの性能優位は維持される"
       ],
       "implications": [
-        "差別化はモデル性能よりもエコシステム・UX・特化領域で決まる",
-        "価格競争が激化し、AI利用の民主化が進む",
-        "多様なAgent標準が共存・競争する"
+        "差別化はモデル性能で決まるが、エコシステムは開放的",
+        "中堅企業はOSSベースで参入可能だが最先端には及ばない",
+        "Agent標準の覇権争いが続く"
       ],
-      "indicators": ["IND-004", "IND-005", "IND-006"]
+      "indicators": ["IND-004", "IND-005", "IND-006", "IND-015"]
     },
     {
       "scenario_id": "SCN-003",
-      "name": "ゆるやかな収斂",
+      "name": "静かな囲い込み",
       "quadrant": "bottom-left",
-      "quadrant_label": "寡占化 × 漸進的改善",
-      "description": "劇的なブレークスルーは起きないが、規模の経済と投資余力により大手企業が着実に市場シェアを拡大。中小は徐々に淘汰される",
+      "quadrant_label": "閉鎖 × 収斂",
+      "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、囲い込みが主戦場になる",
       "probability": 31,
-      "probability_change": "-2%",
-      "probability_rationale": "Arbiter判断: ROI 5%成功 vs 100%拡大の乖離は投資バブルリスク(Red指摘)",
+      "probability_change": "±0%",
+      "probability_rationale": "エンタープライズ契約のTier 1集中とROI 5%問題はこのシナリオを最も支持。性能収斂+囲い込みの組み合わせ",
       "key_assumptions": [
-        "AIの進歩はScaling Lawsに沿った漸進的なもの",
-        "大手企業の投資体力が決定的な差別化要因となる",
-        "エンタープライズ顧客が大手を選好する傾向が強化される"
+        "AIモデルの性能差が縮小し差別化が困難になる",
+        "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
+        "エンタープライズ顧客が既存ベンダーから離脱困難に"
       ],
       "implications": [
-        "市場参入障壁が継続的に上昇",
-        "M&Aが活発化",
-        "価格は緩やかに低下するが寡占的水準で安定"
+        "競争はモデルではなくエコシステムの深さで決まる",
+        "Googleプロダクト統合、AWS Bedrock依存等がロックインの中心に",
+        "価格競争は緩やかだがベンダー切り替えは高コスト"
       ],
-      "indicators": ["IND-007", "IND-008", "IND-009"]
+      "indicators": ["IND-007", "IND-008", "IND-009", "IND-016", "IND-017"]
     },
     {
       "scenario_id": "SCN-004",
-      "name": "百花繚乱",
+      "name": "誰でもAI",
       "quadrant": "bottom-right",
-      "quadrant_label": "分散化 × 漸進的改善",
-      "description": "技術進歩が漸進的で、かつ市場が分散化を維持。特化型AIサービスが多数生まれ、大手は汎用プラットフォームとして共存",
+      "quadrant_label": "開放 × 収斂",
+      "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化に集中する",
       "probability": 19,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter判断: 特化型AI生存機会を再評価(Red指摘)",
+      "probability_change": "±0%",
+      "probability_rationale": "OSS性能到達とMCP普及はこのシナリオを支持するが、現時点では完全な収斂+開放には至っていない",
       "key_assumptions": [
-        "汎用AIの性能差が縮小し、差別化が困難になる",
-        "業種・地域特化型AIの需要が急増",
-        "オープンソースが「十分良い」レベルに達する"
+        "汎用AIの性能差が5%以内に収斂する",
+        "オープン標準が支配的に採用される",
+        "スイッチングコストが十分に低い"
       ],
       "implications": [
         "特化型Agent市場が拡大",
         "大手の収益性は低下するが広い市場にアクセス可能",
-        "Agent標準化の重要性が増す（MCP等）"
+        "価格競争が激化しAI利用の民主化が進む"
       ],
-      "indicators": ["IND-010", "IND-011", "IND-012"]
+      "indicators": ["IND-010", "IND-011", "IND-012", "IND-017"]
     }
   ],
   "black_swan_scenarios": [
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-02-19",
+    "verified_date": "2026-02-20",
     "note": "SCN-001(22) + SCN-002(28) + SCN-003(31) + SCN-004(19) = 100%"
   }
 }

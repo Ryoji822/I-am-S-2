@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 X (Twitter) posts fetcher via local RSSHub instance.
-Saves daily posts to X_posts/YYYY-MM-DD/{company}.md.
+Saves posts to X_posts/YYYY-MM-DD/{company}.md filed by actual post date.
 Deduplicates based on tweet URL to avoid writing the same post twice.
 """
 
@@ -10,13 +10,15 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.request
 import urllib.error
+from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 from html.parser import HTMLParser
 
 RSSHUB_URL = "http://localhost:1200"
-REPO_DIR = "/Users/s18675/Desktop/I-am-S-2"
+REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 X_POSTS_DIR = os.path.join(REPO_DIR, "X_posts")
 JST = timezone(timedelta(hours=9))
 
@@ -122,39 +124,47 @@ def check_internet():
 def fetch_posts(handle, max_retries=2):
     """Fetch posts for a Twitter handle from local RSSHub (JSON Feed format).
     Retries on failure with backoff. Long timeout to accommodate slow Twitter API."""
-    import time as _time
     url = f"{RSSHUB_URL}/twitter/user/{handle}?format=json&limit=40"
     for attempt in range(max_retries + 1):
         try:
-            t0 = _time.monotonic()
+            t0 = time.monotonic()
             req = urllib.request.Request(url, headers={"User-Agent": "I-am-S-2/1.0"})
             resp = urllib.request.urlopen(req, timeout=180)
             data = json.loads(resp.read().decode())
-            elapsed = _time.monotonic() - t0
+            elapsed = time.monotonic() - t0
             items = data.get("items", [])
             print(f"{len(items)} items ({elapsed:.0f}s)", end=" ")
             return items
         except Exception as e:
-            elapsed = _time.monotonic() - t0 if 't0' in dir() else 0
+            elapsed = time.monotonic() - t0 if 't0' in dir() else 0
             if attempt < max_retries:
                 wait = 10 * (attempt + 1)
                 print(f"err({elapsed:.0f}s), retry in {wait}s...", end=" ")
-                _time.sleep(wait)
+                time.sleep(wait)
             else:
                 print(f"FAILED({e})", end=" ", file=sys.stderr)
                 return []
 
 
-def get_existing_urls(filepath):
-    """Extract all tweet URLs already present in a file to prevent duplicates."""
+def load_all_known_urls():
+    """Load all tweet URLs from all existing X_posts date directories."""
     urls = set()
-    if os.path.exists(filepath):
-        with open(filepath, "r", encoding="utf-8") as f:
-            for line in f:
-                matches = re.findall(
-                    r'https://(?:x\.com|twitter\.com)/\S+/status/\d+', line
-                )
-                urls.update(m.split(")")[0].split("]")[0] for m in matches)
+    if not os.path.exists(X_POSTS_DIR):
+        return urls
+    for date_dir in os.listdir(X_POSTS_DIR):
+        dir_path = os.path.join(X_POSTS_DIR, date_dir)
+        if not os.path.isdir(dir_path) or not re.match(r'\d{4}-\d{2}-\d{2}', date_dir):
+            continue
+        for fname in os.listdir(dir_path):
+            if not fname.endswith(".md"):
+                continue
+            fpath = os.path.join(dir_path, fname)
+            with open(fpath, "r", encoding="utf-8") as f:
+                for line in f:
+                    matches = re.findall(
+                        r'https://(?:x\.com|twitter\.com)/\S+/status/\d+', line
+                    )
+                    urls.update(m.split(")")[0].split("]")[0] for m in matches)
     return urls
 
 
@@ -167,7 +177,6 @@ def parse_date(date_str):
         return datetime.fromisoformat(date_str)
     except Exception:
         pass
-    # Try RFC 2822 style: "Thu, 20 Feb 2026 01:23:45 GMT"
     try:
         from email.utils import parsedate_to_datetime
         return parsedate_to_datetime(date_str)
@@ -175,11 +184,21 @@ def parse_date(date_str):
         return None
 
 
+def ensure_date_file(date_str, company_key, label):
+    """Ensure a date directory and company file exist, return filepath."""
+    date_dir = os.path.join(X_POSTS_DIR, date_str)
+    os.makedirs(date_dir, exist_ok=True)
+    filepath = os.path.join(date_dir, f"{company_key}.md")
+    if not os.path.exists(filepath):
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(f"# {label} X投稿 - {date_str}\n\n")
+            f.write(f"収集元: ローカルRSSHub (localhost:1200)\n\n---\n\n")
+    return filepath
+
+
 def main():
     now = datetime.now(JST)
     today = now.strftime("%Y-%m-%d")
-    today_dir = os.path.join(X_POSTS_DIR, today)
-    os.makedirs(today_dir, exist_ok=True)
 
     print(f"[{now.strftime('%Y-%m-%d %H:%M:%S JST')}] X posts fetch starting")
 
@@ -188,8 +207,7 @@ def main():
         sys.exit(0)
 
     # Wait for RSSHub to be ready (may still be booting)
-    import time
-    MAX_WAIT = 120  # seconds
+    MAX_WAIT = 120
     INTERVAL = 5
     waited = 0
     while not check_rsshub():
@@ -202,23 +220,18 @@ def main():
     if waited > 0:
         print(f"  RSSHub ready after {waited}s.")
 
+    # Load all known URLs across all dates for global dedup
+    known_urls = load_all_known_urls()
+    print(f"  Known URLs: {len(known_urls)}")
+
     total_new = 0
-    total_skipped = 0
+    # Collect posts grouped by (date, company_key) for batched writing
+    # Structure: {(date_str, company_key): [(handle, name, role, posts_list)]}
+    date_company_posts = defaultdict(list)
 
     for company_key, company_data in PERSONS.items():
         label = company_data["label"]
         accounts = company_data["accounts"]
-        filepath = os.path.join(today_dir, f"{company_key}.md")
-
-        existing_urls = get_existing_urls(filepath)
-
-        # Create file with header if it doesn't exist
-        if not os.path.exists(filepath):
-            with open(filepath, "w", encoding="utf-8") as f:
-                f.write(f"# {label} X投稿 - {today}\n\n")
-                f.write(f"収集元: ローカルRSSHub (localhost:1200)\n\n---\n\n")
-
-        company_new = 0
 
         for person in accounts:
             handle = person["handle"]
@@ -228,28 +241,26 @@ def main():
             print(f"  [{label}] @{handle} ({name})...", end=" ")
             items = fetch_posts(handle)
 
-            new_posts = []
+            person_posts_by_date = defaultdict(list)
             for item in items:
-                # Get URL and normalize
                 url = item.get("url", "") or item.get("link", "")
                 url = url.replace("twitter.com", "x.com")
 
-                if not url or url in existing_urls:
+                if not url or url in known_urls:
                     continue
 
-                # Filter to today's posts only (JST)
+                # Determine post date (JST)
                 date_str = item.get("date_published", "") or item.get("pubDate", "")
                 post_date = parse_date(date_str)
                 if post_date:
                     post_jst = post_date.astimezone(JST)
-                    if post_jst.strftime("%Y-%m-%d") != today:
-                        total_skipped += 1
-                        continue
+                    post_date_str = post_jst.strftime("%Y-%m-%d")
                     time_str = post_jst.strftime("%H:%M JST")
                 else:
+                    # Unknown date -> file under today
+                    post_date_str = today
                     time_str = "時刻不明"
 
-                # Extract content
                 content = strip_html(
                     item.get("content_html", "") or item.get("description", "")
                 )
@@ -258,33 +269,48 @@ def main():
                 if not display_text:
                     continue
 
-                # Truncate extremely long posts
                 if len(display_text) > 1500:
                     display_text = display_text[:1500] + "...(truncated)"
 
-                new_posts.append({
+                person_posts_by_date[post_date_str].append({
                     "url": url,
                     "time": time_str,
                     "text": display_text,
                 })
-                existing_urls.add(url)
+                known_urls.add(url)
 
-            if new_posts:
-                with open(filepath, "a", encoding="utf-8") as f:
-                    f.write(f"## @{handle} ({name} - {role})\n\n")
-                    for post in new_posts:
-                        # Quote each line for markdown blockquote
-                        quoted = "\n> ".join(post["text"].split("\n"))
-                        f.write(f"**{post['time']}** | [原文]({post['url']})\n\n")
-                        f.write(f"> {quoted}\n\n---\n\n")
-                company_new += len(new_posts)
-                print(f"-> +{len(new_posts)} posts")
+            person_total = sum(len(v) for v in person_posts_by_date.values())
+            if person_total > 0:
+                dates_summary = ", ".join(
+                    f"{d}:{len(ps)}" for d, ps in sorted(person_posts_by_date.items())
+                )
+                print(f"-> +{person_total} ({dates_summary})")
+                for date_str, posts in person_posts_by_date.items():
+                    date_company_posts[(date_str, company_key)].append(
+                        (handle, name, role, posts)
+                    )
+                total_new += person_total
             else:
-                print(f"-> no new")
+                print("-> no new")
 
-        total_new += company_new
+    # Write all collected posts to their respective date/company files
+    dates_touched = set()
+    for (date_str, company_key), person_entries in sorted(date_company_posts.items()):
+        label = PERSONS[company_key]["label"]
+        filepath = ensure_date_file(date_str, company_key, label)
+        dates_touched.add(date_str)
 
-    print(f"\nSummary: {total_new} new posts, {total_skipped} skipped (not today)")
+        with open(filepath, "a", encoding="utf-8") as f:
+            for handle, name, role, posts in person_entries:
+                f.write(f"## @{handle} ({name} - {role})\n\n")
+                for post in posts:
+                    quoted = "\n> ".join(post["text"].split("\n"))
+                    f.write(f"**{post['time']}** | [原文]({post['url']})\n\n")
+                    f.write(f"> {quoted}\n\n---\n\n")
+
+    if dates_touched:
+        print(f"\nDates updated: {', '.join(sorted(dates_touched))}")
+    print(f"Summary: {total_new} new posts across {len(dates_touched)} dates")
 
     # Git sync & commit
     os.chdir(REPO_DIR)
@@ -308,8 +334,10 @@ def main():
             ["git", "diff", "--cached", "--quiet"], capture_output=True
         )
         if diff.returncode != 0:
+            dates_label = ", ".join(sorted(dates_touched))
             subprocess.run(
-                ["git", "commit", "-m", f"X posts: {today} (+{total_new} posts)"],
+                ["git", "commit", "-m",
+                 f"X posts: +{total_new} posts ({dates_label})"],
                 check=False,
             )
 
@@ -321,7 +349,7 @@ def main():
         if total_new > 0:
             print("Committed and pushed.")
         else:
-            print("Synced with remote (no new posts).")
+            print("Synced with remote.")
     else:
         print(f"Push failed: {push.stderr}")
 

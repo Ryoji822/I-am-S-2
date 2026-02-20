@@ -2,8 +2,7 @@
 # Wrapper script for fetch-x-posts.py
 # Ensures proper PATH and python environment on macOS
 
-export PATH="/Users/s18675/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:$PATH"
-export HOME="/Users/s18675"
+export PATH="$HOME/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:$PATH"
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 

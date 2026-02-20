@@ -1,0 +1,19 @@
+{
+  "name": "static-update",
+  "phase": 5,
+  "description": "スタティック・インテリジェンスの増分更新",
+  "model": "glm-5",
+  "prompt_file": "prompts/phase5-static-update.md",
+  "timeout_seconds": 900,
+  "max_retries": 1,
+  "inputs": [
+    "state/arbiter-{date}.md",
+    "Information/{date}/collected-raw.md",
+    "config/hypotheses.json",
+    "config/scenarios.json",
+    "static_intelligence/"
+  ],
+  "outputs": ["static_intelligence/*.md", "state/static-update-{date}.md"],
+  "validation": "更新有無の明示",
+  "fallback": "skip"
+}

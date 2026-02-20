@@ -8,7 +8,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-TODAY=$(date -u +%Y-%m-%d)
+TODAY="${PIPELINE_DATE:-$(TZ=Asia/Tokyo date +%Y-%m-%d)}"
 TIMEOUT_SECONDS=600  # 10 minutes per phase (default)
 
 # Colors for output
@@ -18,10 +18,10 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-log_info()  { echo -e "${BLUE}[INFO]${NC}  $(date -u +%H:%M:%S) $*"; }
-log_ok()    { echo -e "${GREEN}[OK]${NC}    $(date -u +%H:%M:%S) $*"; }
-log_warn()  { echo -e "${YELLOW}[WARN]${NC}  $(date -u +%H:%M:%S) $*"; }
-log_error() { echo -e "${RED}[ERROR]${NC} $(date -u +%H:%M:%S) $*"; }
+log_info()  { echo -e "${BLUE}[INFO]${NC}  $(TZ=Asia/Tokyo date +%H:%M:%S) $*"; }
+log_ok()    { echo -e "${GREEN}[OK]${NC}    $(TZ=Asia/Tokyo date +%H:%M:%S) $*"; }
+log_warn()  { echo -e "${YELLOW}[WARN]${NC}  $(TZ=Asia/Tokyo date +%H:%M:%S) $*"; }
+log_error() { echo -e "${RED}[ERROR]${NC} $(TZ=Asia/Tokyo date +%H:%M:%S) $*"; }
 
 # Track which static_intelligence files changed
 STATIC_CHANGED=false
@@ -342,7 +342,7 @@ if ! run_phase 6 "REPORT" "glm-5" "phase6-report.md" 900 1; then
 > 分類: UNCLASSIFIED
 > 品質: DEGRADED (レポート生成失敗)
 
-## エグゼクティブ・サマリー
+## 今日のポイント
 
 本日のレポート生成（Phase 6）が失敗しました。分析データは以下のファイルで直接確認してください:
 
@@ -409,9 +409,18 @@ if [[ "$STATIC_CHANGED" == "true" ]]; then
   log_info "Phase 9: Slack DM notification"
   log_info "=========================================="
 
-  SLACK_USER_ID="U055AGJKZLM"
+  # Read notification config
+  NOTIFICATION_CONFIG="$PROJECT_DIR/config/notification.json"
+  if [[ -f "$NOTIFICATION_CONFIG" ]]; then
+    SLACK_USER_ID=$(python3 -c "import json; print(json.load(open('$NOTIFICATION_CONFIG'))['slack']['user_id'])" 2>/dev/null || echo "")
+    REPO_URL=$(python3 -c "import json; print(json.load(open('$NOTIFICATION_CONFIG'))['repo_url'])" 2>/dev/null || echo "")
+  else
+    log_warn "config/notification.json not found. Skipping Slack notification."
+    SLACK_USER_ID=""
+    REPO_URL=""
+  fi
 
-  if [[ -n "${SLACK_BOT_TOKEN:-}" ]]; then
+  if [[ -n "${SLACK_BOT_TOKEN:-}" && -n "$SLACK_USER_ID" ]]; then
     # Open DM channel
     DM_CHANNEL=$(curl -s -X POST "https://slack.com/api/conversations.open" \
       -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
@@ -422,7 +431,7 @@ if [[ "$STATIC_CHANGED" == "true" ]]; then
       # Get list of changed static intelligence files as bullet list
       CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- static_intelligence/ 2>/dev/null | sed 's/^/• /' | tr '\n' '\n')
 
-      SLACK_MSG="📊 *I-am-S-2 Static Intelligence Updated* ($TODAY)\n\n更新されたファイル:\n$CHANGED_FILES\n\nリポジトリ: https://github.com/Ryoji822/I-am-S-2/tree/main/static_intelligence"
+      SLACK_MSG="📊 *I-am-S-2 Static Intelligence Updated* ($TODAY)\n\n更新されたファイル:\n$CHANGED_FILES\n\nリポジトリ: ${REPO_URL}/tree/main/static_intelligence"
 
       curl -s -X POST "https://slack.com/api/chat.postMessage" \
         -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
@@ -434,7 +443,7 @@ if [[ "$STATIC_CHANGED" == "true" ]]; then
       log_warn "Failed to open DM channel with $SLACK_USER_ID"
     fi
   else
-    log_warn "SLACK_BOT_TOKEN not set. Skipping Slack notification."
+    log_warn "SLACK_BOT_TOKEN not set or user_id missing. Skipping Slack notification."
   fi
 fi
 

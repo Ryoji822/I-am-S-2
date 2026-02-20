@@ -1,0 +1,21 @@
+{
+  "name": "report",
+  "phase": 6,
+  "description": "日本語インテリジェンス・レポート生成",
+  "model": "glm-5",
+  "prompt_file": "prompts/phase6-report.md",
+  "timeout_seconds": 900,
+  "max_retries": 1,
+  "inputs": [
+    "state/arbiter-{date}.md",
+    "Information/{date}/processed.md",
+    "state/red-team-{date}.md",
+    "Information/{date}/collected-raw.md",
+    "config/hypotheses.json",
+    "config/scenarios.json",
+    "config/indicators.json"
+  ],
+  "outputs": ["Intelligence/{date}.md"],
+  "validation": "今日のポイントセクションが存在、1000バイト以上",
+  "fallback": "stub_report"
+}

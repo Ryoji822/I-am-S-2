@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-02-19",
+  "last_updated": "2026-02-20",
   "description": "I&W（Indications and Warning）指標レジストリ。各指標はシナリオの進行を監視するための観測可能な兆候",
   "indicators": [
     {
@@ -180,6 +180,45 @@
       "last_value": null,
       "trend": "stable",
       "alert_level": "normal"
+    },
+    {
+      "indicator_id": "IND-015",
+      "name": "実行環境のロックイン度",
+      "scenario_ids": ["SCN-001", "SCN-003"],
+      "description": "Hosted Shell/Sandbox等のAgent実行環境が特定ベンダーに囲い込まれている度合い。ローカル実行可能性、他社環境への移植性で評価",
+      "threshold": "主要3社のうち2社以上がベンダー専用実行環境を必須化",
+      "status": "elevated",
+      "last_checked": "2026-02-20",
+      "last_value": "OpenAI Skills/Shell、Anthropic Claude Code（ローカル実行可）、Google Gemini Extensions（Google環境依存）。囲い込み度は各社異なる",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "rationale": "新設指標。OpenAI Shellの囲い込み傾向とAnthropic MCPの開放傾向が対照的"
+    },
+    {
+      "indicator_id": "IND-016",
+      "name": "スキル配布の囲い込み度",
+      "scenario_ids": ["SCN-001", "SCN-003"],
+      "description": "Skills/プラグインの配布形式がベンダー固有か、他社でも利用可能な標準形式か。審査プロセスの有無も評価",
+      "threshold": "主要3社のスキル形式が互換性なし、かつ審査による制限あり",
+      "status": "elevated",
+      "last_checked": "2026-02-20",
+      "last_value": "OpenAI Skills（独自形式、審査あり）、MCP（オープン標準、審査なし）、Gemini Extensions（Google固有）。互換性は低い",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "rationale": "新設指標。3社のスキル形式が相互非互換、標準化の動きはMCPのみ"
+    },
+    {
+      "indicator_id": "IND-017",
+      "name": "データ優位の囲い込み度",
+      "scenario_ids": ["SCN-003", "SCN-004"],
+      "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）をAIの差別化に活用している度合い",
+      "threshold": "独占データを活用したAI機能が各社3つ以上",
+      "status": "elevated",
+      "last_checked": "2026-02-20",
+      "last_value": "Google（検索/Gmail/Drive）、xAI（Xデータ）、ByteDance（TikTokデータ）が独占データ活用。OpenAI/Anthropicは外部データ依存",
+      "trend": "stable",
+      "alert_level": "elevated",
+      "rationale": "新設指標。Googleのプロダクト統合自体がデータロックインとして機能"
     }
   ]
 }

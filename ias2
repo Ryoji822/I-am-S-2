@@ -1,0 +1,135 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# =============================================================================
+# I-am-S-2 CLI
+# Usage:
+#   ./ias2 run                    # 全フェーズ実行
+#   ./ias2 run collect            # Phase 1のみ
+#   ./ias2 run analyze            # Phase 2のみ
+#   ./ias2 run --date 2026-02-18  # 日付指定
+#   ./ias2 validate               # 出力検証
+#   ./ias2 validate --date 2026-02-18
+#   ./ias2 status                 # 今日の進捗確認
+# =============================================================================
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
+# Parse global options
+DATE_OVERRIDE=""
+COMMAND="${1:-help}"
+shift || true
+
+# Parse remaining args
+SUBCOMMAND=""
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --date)
+      DATE_OVERRIDE="$2"
+      shift 2
+      ;;
+    *)
+      SUBCOMMAND="$1"
+      shift
+      ;;
+  esac
+done
+
+case "$COMMAND" in
+  run)
+    if [[ -n "$DATE_OVERRIDE" ]]; then
+      export PIPELINE_DATE="$DATE_OVERRIDE"
+    fi
+
+    if [[ -z "$SUBCOMMAND" ]]; then
+      # Run full pipeline
+      exec bash scripts/run-pipeline.sh
+    else
+      # Run single skill
+      export PIPELINE_DATE="${DATE_OVERRIDE:-$(TZ=Asia/Tokyo date +%Y-%m-%d)}"
+      SKILL_FILE="skills/${SUBCOMMAND}.json"
+
+      if [[ ! -f "$SKILL_FILE" ]]; then
+        echo "Error: Unknown skill '$SUBCOMMAND'. Available skills:"
+        ls skills/*.json 2>/dev/null | xargs -I{} basename {} .json | sed 's/^/  /'
+        exit 1
+      fi
+
+      MODEL=$(python3 -c "import json; print(json.load(open('$SKILL_FILE'))['model'])" 2>/dev/null)
+      PROMPT_FILE=$(python3 -c "import json; print(json.load(open('$SKILL_FILE'))['prompt_file'])" 2>/dev/null)
+      TIMEOUT=$(python3 -c "import json; print(json.load(open('$SKILL_FILE'))['timeout_seconds'])" 2>/dev/null)
+
+      if [[ "$MODEL" == "None" || "$PROMPT_FILE" == "None" ]]; then
+        echo "Skill '$SUBCOMMAND' does not use an AI model. Skipping."
+        exit 0
+      fi
+
+      echo "Running skill: $SUBCOMMAND (model: $MODEL, date: $PIPELINE_DATE)"
+
+      PROMPT_CONTENT=$(cat "$PROMPT_FILE")
+      PROMPT_CONTENT="${PROMPT_CONTENT//YYYY-MM-DD/$PIPELINE_DATE}"
+
+      timeout "$TIMEOUT" opencode run --model "zai/$MODEL" "$PROMPT_CONTENT"
+    fi
+    ;;
+
+  validate)
+    DATE="${DATE_OVERRIDE:-$(TZ=Asia/Tokyo date +%Y-%m-%d)}"
+    exec bash scripts/validate-output.sh "$DATE"
+    ;;
+
+  status)
+    DATE="${DATE_OVERRIDE:-$(TZ=Asia/Tokyo date +%Y-%m-%d)}"
+    echo "=== I-am-S-2 Status: $DATE ==="
+    echo ""
+
+    # Check each expected output
+    for f in \
+      "Information/$DATE/collected-raw.md" \
+      "Information/$DATE/processed.md" \
+      "state/red-team-$DATE.md" \
+      "state/arbiter-$DATE.md" \
+      "Intelligence/$DATE.md"; do
+      if [[ -f "$f" ]]; then
+        SIZE=$(wc -c < "$f" | tr -d ' ')
+        echo "  ✅ $f (${SIZE} bytes)"
+      else
+        echo "  ❌ $f (missing)"
+      fi
+    done
+
+    echo ""
+    # Show degraded status
+    if [[ -f "Intelligence/$DATE.md" ]]; then
+      if grep -q "DEGRADED" "Intelligence/$DATE.md" 2>/dev/null; then
+        echo "  ⚠️  Report is DEGRADED"
+      else
+        echo "  ✅ Report quality: NORMAL"
+      fi
+    fi
+    ;;
+
+  help|--help|-h)
+    echo "I-am-S-2 CLI"
+    echo ""
+    echo "Usage:"
+    echo "  ./ias2 run                    # 全フェーズ実行"
+    echo "  ./ias2 run collect            # 収集のみ"
+    echo "  ./ias2 run analyze            # Blue Agent分析のみ"
+    echo "  ./ias2 run red-team           # Red Agent反証のみ"
+    echo "  ./ias2 run arbiter            # Arbiter統合判断のみ"
+    echo "  ./ias2 run static-update      # 静的更新のみ"
+    echo "  ./ias2 run report             # レポート生成のみ"
+    echo "  ./ias2 run --date 2026-02-18  # 日付指定で全実行"
+    echo "  ./ias2 validate               # 出力検証"
+    echo "  ./ias2 validate --date 2026-02-18"
+    echo "  ./ias2 status                 # 今日の進捗確認"
+    ;;
+
+  *)
+    echo "Unknown command: $COMMAND"
+    echo "Run './ias2 help' for usage."
+    exit 1
+    ;;
+esac

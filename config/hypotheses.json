@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-02-19",
+  "last_updated": "2026-02-20",
   "hypotheses": {
     "openai": [
       {
@@ -27,7 +27,7 @@
       {
         "hypothesis_id": "H-OAI-002",
         "pir_id": "PIR-2026-001",
-        "statement": "OpenAIは開発者エコシステムの囲い込みを最優先し、プラットフォーム戦略でAgent市場を支配する",
+        "statement": "OpenAIはSkills/Shell/Compactionで開発者の実行環境を囲い込み、プラットフォーム戦略でAgent市場を支配する",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 50,
@@ -92,7 +92,7 @@
       {
         "hypothesis_id": "H-ANT-002",
         "pir_id": "PIR-2026-001",
-        "statement": "AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準を確立し、エコシステム戦略で勝つ",
+        "statement": "AnthropicはMCPで入口（ツール連携）を開放しつつ、Claude Code/実行環境でロックインを構築する二面戦略を取る",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 51,
@@ -136,7 +136,7 @@
       {
         "hypothesis_id": "H-GOO-001",
         "pir_id": "PIR-2026-001",
-        "statement": "GoogleはGeminiを検索・広告・Workspace等の既存プロダクトに深く統合し、Agent機能を全サービス横断で展開する",
+        "statement": "GoogleはGeminiを検索・広告・Workspace等に深く統合し、Googleプロダクトのデータ（検索/Gmail/Drive）自体をロックインとして全サービス横断でAgent機能を展開する",
         "status": "active",
         "confidence": "high",
         "confidence_percentage": 68,

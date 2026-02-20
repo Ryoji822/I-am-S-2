@@ -1,0 +1,22 @@
+{
+  "collection": {
+    "provider": "firecrawl-mcp",
+    "config": {
+      "type": "remote",
+      "tools": ["firecrawl_search", "firecrawl_scrape", "firecrawl_batch_scrape", "firecrawl_map"]
+    }
+  },
+  "llm": {
+    "provider": "zai/glm-5",
+    "fallback": null,
+    "runner": "opencode"
+  },
+  "x_posts": {
+    "provider": "rsshub-local",
+    "config": {
+      "url": "http://localhost:1200",
+      "format": "json",
+      "limit": 40
+    }
+  }
+}

@@ -8,7 +8,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-DATE="${1:-$(date -u +%Y-%m-%d)}"
+DATE="${1:-$(TZ=Asia/Tokyo date +%Y-%m-%d)}"
 
 PASS=0
 FAIL=0
@@ -102,8 +102,8 @@ echo "--- Report Quality ---"
 
 REPORT="Intelligence/$DATE.md"
 if [[ -f "$REPORT" ]]; then
-  # Check for executive summary
-  if grep -q "エグゼクティブ・サマリー" "$REPORT" 2>/dev/null; then
+  # Check for executive summary (accepts both old and new heading)
+  if grep -q "エグゼクティブ・サマリー\|今日のポイント" "$REPORT" 2>/dev/null; then
     check_pass "Executive summary present"
   else
     check_fail "Executive summary MISSING"

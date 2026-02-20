@@ -1,0 +1,17 @@
+{
+  "name": "red-team",
+  "phase": 3,
+  "description": "Red Agent: Blue Agentの分析に反証を構築",
+  "model": "glm-5",
+  "prompt_file": "prompts/phase3-red-team.md",
+  "timeout_seconds": 900,
+  "max_retries": 1,
+  "inputs": [
+    "Information/{date}/processed.md",
+    "config/hypotheses.json",
+    "config/scenarios.json"
+  ],
+  "outputs": ["state/red-team-{date}.md"],
+  "validation": "バイアスチェック総合結果が存在",
+  "fallback": "stub_report"
+}

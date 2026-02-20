@@ -1,0 +1,13 @@
+{
+  "name": "inject-xposts",
+  "phase": 1.5,
+  "description": "X投稿データをcollected-raw.mdに注入（AIなし）",
+  "model": null,
+  "prompt_file": null,
+  "timeout_seconds": 60,
+  "max_retries": 0,
+  "inputs": ["X_posts/{date}/"],
+  "outputs": ["Information/{date}/collected-raw.md"],
+  "validation": "X投稿注入数が0以上",
+  "fallback": "skip"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "arbiter",
+  "phase": 4,
+  "description": "Arbiter Agent: Blue/Red統合判断、config更新",
+  "model": "glm-5",
+  "prompt_file": "prompts/phase4-arbiter.md",
+  "timeout_seconds": 900,
+  "max_retries": 1,
+  "inputs": [
+    "Information/{date}/processed.md",
+    "state/red-team-{date}.md",
+    "config/hypotheses.json",
+    "config/scenarios.json",
+    "config/indicators.json"
+  ],
+  "outputs": [
+    "state/arbiter-{date}.md",
+    "state/arbiter-latest.md",
+    "config/hypotheses.json",
+    "config/scenarios.json",
+    "config/indicators.json"
+  ],
+  "validation": "統合判断セクションが存在",
+  "fallback": "passthrough_blue"
+}
