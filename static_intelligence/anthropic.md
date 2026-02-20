@@ -19,13 +19,13 @@ Anthropicは爆発的成長を遂げている。$30B Series G調達（評価額$
 
 ### 現在の主力仮説
 
-**H-ANT-001: 安全性差別化エンタープライズ戦略**（確度: 58%）
-Anthropicは安全性を差別化要因として、規制準拠が求められるエンタープライズ市場で優位に立つ。ASL-3保護有効化（CBRN兵器悪用防止）、サボタージュリスク公開評価が証拠 [INFO-003](../Information/2026-02-18/collected-raw.md#INFO-003) [INFO-022](../Information/2026-02-18/collected-raw.md#INFO-022)。
+**H-ANT-001: 安全性差別化エンタープライズ戦略**（確度: 54%）
+Anthropicは安全性を差別化要因として、規制準拠が求められるエンタープライズ市場で優位に立つ。ASL-3保護有効化（CBRN兵器悪用防止）、サボタージュリスク公開評価が証拠 [INFO-003](../Information/2026-02-18/collected-raw.md#INFO-003) [INFO-022](../Information/2026-02-18/collected-raw.md#INFO-022)。[更新: 2026-02-19] Arbiter判断: Red Agent指摘(競合比較不在、確証バイアス)を考慮し58%→54%に引き下げ。安全性取り組みは客観的だが差別化の診断的価値は低下（競合も同等投資）。
 
 ### 代替仮説
 
-**H-ANT-002: MCP標準化エコシステム戦略**（確度: 53%）
-AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準を確立し、エコシステム戦略で勝つ。OWASP/Cloudflare/Chrome/MoSPI公式対応で標準化進行 [INFO-024](../Information/2026-02-19/collected-raw.md#INFO-024) [INFO-026](../Information/2026-02-19/collected-raw.md#INFO-026) [INFO-035](../Information/2026-02-19/collected-raw.md#INFO-035) [INFO-042](../Information/2026-02-19/collected-raw.md#INFO-042)。[更新: 2026-02-19] 定量データ不在を考慮し+1%に抑制。
+**H-ANT-002: MCP標準化エコシステム戦略**（確度: 51%）
+AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準を確立し、エコシステム戦略で勝つ。OWASP/Cloudflare/Chrome/MoSPI公式対応で標準化進行 [INFO-024](../Information/2026-02-19/collected-raw.md#INFO-024) [INFO-026](../Information/2026-02-19/collected-raw.md#INFO-026) [INFO-035](../Information/2026-02-19/collected-raw.md#INFO-035) [INFO-042](../Information/2026-02-19/collected-raw.md#INFO-042)。[更新: 2026-02-19] Arbiter判断: MCP「対応」と「採用」の区別必要(Red指摘)。採用率の定量データ不在により53%→51%に引き下げ。診断的価値低下。
 
 **H-ANT-003: AWS提携深化戦略**（確度: 38%）
 ~~AnthropicはAmazonとの戦略的提携を深化させ、AWS経由でのエンタープライズ浸透を主戦略とする~~。$30B調達、Bun買収、独自SDKがAWS依存と矛盾。独立路線への移行が進行中 [INFO-015](../Information/2026-02-18/collected-raw.md#INFO-015) [INFO-001](../Information/2026-02-18/collected-raw.md#INFO-001) [INFO-014](../Information/2026-02-18/collected-raw.md#INFO-014)。
@@ -84,7 +84,8 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
-| 2026-02-19 | IND-003 elevated→high昇格、H-ANT-002確度52%→53% | Arbiter判断 |
+| 2026-02-19 | H-ANT-001確度58%→54%、H-ANT-002確度53%→51% | Arbiter判断（競合比較不在、MCP対応≠採用） |
+| 2026-02-19 | IND-003 elevated→high昇格 | Arbiter判断 |
 | 2026-02-18 | GPQA Diamond新標準での位置づけ追加 | INFO-081, INFO-085 |
 | 2026-02-18 | 価格据え置き戦略追加（$3/$15） | INFO-079 |
 | 2026-02-18 | Bedrock提供開始追加 | INFO-063 |

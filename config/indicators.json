@@ -74,10 +74,10 @@
       "threshold": "3標準以上が各100+統合を持つ",
       "status": "elevated",
       "last_checked": "2026-02-19",
-      "last_value": "MCP、Gemini Interactions API、Agent Skills等複数標準共存",
+      "last_value": "MCP、Gemini Interactions API、Agent Skills等複数標準共存。MCP「対応」と「採用」は別問題",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "標準形成の動き活発化、3標準以上の共存状況を監視"
+      "rationale": "Arbiter判断: 標準形成の動き活発化、3標準以上の共存状況を監視。「対応」≠「採用」"
     },
     {
       "indicator_id": "IND-007",
@@ -151,10 +151,10 @@
       "threshold": "単一標準の採用率70%超過",
       "status": "elevated",
       "last_checked": "2026-02-19",
-      "last_value": "OWASP/Cloudflare/Chrome/MoSPI公式MCPサーバー対応",
+      "last_value": "OWASP/Cloudflare/Chrome/MoSPI公式MCPサーバー「対応」。採用率の定量データ不在",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "MCP採用拡大中。ただし定量データ(企業数・ツール数)不足。IND-012 70%閾値判定にはKIQ-001-03収集必要"
+      "rationale": "Arbiter判断: 「対応」企業数と「採用」率を区別必要。KIQ-001-03（MCP採用定量データ）が必須"
     },
     {
       "indicator_id": "IND-013",

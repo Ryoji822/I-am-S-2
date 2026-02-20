@@ -20,7 +20,7 @@ GoogleはGeminiを全プロダクト横断で統合する戦略を加速させ�
 ### 現在の主力仮説
 
 **H-GOO-001: プロダクト統合横断展開戦略**（確度: 68%）
-GoogleはGeminiを検索・広告・Workspace等の既存プロダクトに深く統合し、Agent機能を全サービス横断で展開する。Interactions API統一、Chrome Web MCPがプロダクト横断統合を強化 [INFO-007](../Information/2026-02-19/collected-raw.md#INFO-007) [INFO-034](../Information/2026-02-19/collected-raw.md#INFO-034) [INFO-035](../Information/2026-02-19/collected-raw.md#INFO-035)。[更新: 2026-02-19] 確度66%→68%に上昇。
+GoogleはGeminiを検索・広告・Workspace等の既存プロダクトに深く統合し、Agent機能を全サービス横断で展開する。Interactions API統一、Chrome Web MCPがプロダクト横断統合を強化 [INFO-007](../Information/2026-02-19/collected-raw.md#INFO-007) [INFO-034](../Information/2026-02-19/collected-raw.md#INFO-034) [INFO-035](../Information/2026-02-19/collected-raw.md#INFO-035)。[更新: 2026-02-19] Arbiter判断: Blue Agent +1%は過剰評価（単一証拠）。69%→68%に戻す。
 
 ### 代替仮説
 
@@ -82,7 +82,7 @@ Google DeepMindは科学研究分野でのブレークスルーを通じて、AI
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
-| 2026-02-19 | H-GOO-001確度66%→68%、H-GOO-002確度48%→50%、H-GOO-003確度50%→52% | Arbiter判断 |
+| 2026-02-19 | H-GOO-001確度69%→68%（単一証拠での過剰上昇を修正） | Arbiter判断 |
 | 2026-02-18 | ARC-AGI-2性能追加（84.6%、GPT-5.2/Claude Opus 4.6を上回る） | INFO-082 |
 | 2026-02-18 | GPQA Diamond新標準追加 | INFO-081, INFO-085 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |

@@ -19,8 +19,8 @@ OpenAIはエンタープライズAgent市場での支配的地位確立を加速
 
 ### 現在の主力仮説
 
-**H-OAI-001: エンタープライズB2B特化戦略**（確度: 53%）
-OpenAIは2026年内にAgent機能を全面的にエンタープライズ向けに特化させ、B2B市場での支配的地位を確立する。ServiceNow契約、Frontierプラットフォーム、アジェンティックコマース実用化が証拠 [INFO-015](../Information/2026-02-19/collected-raw.md#INFO-015) [INFO-014](../Information/2026-02-19/collected-raw.md#INFO-014) [INFO-016](../Information/2026-02-19/collected-raw.md#INFO-016)。[更新: 2026-02-19] 競合の同等展開(Anthropic-Infosys/Cognizant)を考慮し+1%に抑制。
+**H-OAI-001: エンタープライズB2B展開加速戦略**（確度: 49%）
+~~OpenAIは2026年内にAgent機能を全面的にエンタープライズ向けに特化させ、B2B市場での支配的地位を確立する~~。OpenAIは2026年内にAgent機能を全面的にエンタープライズ向けに特化させ、B2B市場での展開を加速させる。ServiceNow契約、Frontierプラットフォーム、アジェンティックコマース実用化が「参入」を示すが「支配」の証拠は不在 [INFO-015](../Information/2026-02-19/collected-raw.md#INFO-015) [INFO-014](../Information/2026-02-19/collected-raw.md#INFO-014) [INFO-016](../Information/2026-02-19/collected-raw.md#INFO-016)。[更新: 2026-02-19] Arbiter判断: 「支配」用語不当(Red指摘)。53%→49%に引き下げ。用語を「B2B市場支配」から「B2B展開加速」に修正。
 
 ### 代替仮説
 
@@ -77,8 +77,8 @@ OpenAIは開発者エコシステムの囲い込みを最優先し、プラッ�
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-19 | H-OAI-001確度53%→49%、用語「B2B市場支配」→「B2B展開加速」に修正 | Arbiter判断（「支配」用語不当、Red指摘妥当） |
 | 2026-02-19 | H-OAI-003棄却確定、確度20%→15% | Arbiter判断（5件商業化証拠） |
-| 2026-02-19 | H-OAI-001確度52%→53%、H-OAI-002確度48%→50% | Arbiter判断 |
 | 2026-02-18 | 高努力設定での精度低下指摘追加 | INFO-083 |
 | 2026-02-18 | Gemini 3 Deep Think劣位追加 | INFO-082 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |
