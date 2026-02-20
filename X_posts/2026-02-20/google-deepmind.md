@@ -191,3 +191,36 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**03:57 JST** | [原文](https://x.com/JeffDean/status/2024723358244618471)
+
+> RT Voxelbench
+> We have a new leader.
+> Gemini 3.1 Pro!
+
+---
+
+**03:10 JST** | [原文](https://x.com/JeffDean/status/2024724018700702091)
+
+> RT Zach Dive
+> Gemini 3.1 is SOTA at 3D spatial reasoning
+
+---
+
+**01:48 JST** | [原文](https://x.com/JeffDean/status/2024723504336396688)
+
+> RT David Hendrickson
+> 🚨 New Benchmark: I have to admit, this is a game-changer for me. TRUST ⬆️
+> 
+> While Opus 4.6 is the LLM of choice for Devs, and it appears Gemini 3.1 will not change that, this benchmark, AA-Omniscience Index from @ArtificialAnlys  is a real game changer because it;
+> 
+> "...measures knowledge reliability and hallucination. It rewards correct answers, penalizes hallucinations, and has no penalty for refusing to answer. Scores range from -100 to 100, where 0 means as many correct as incorrect answers, and negative scores mean more incorrect than correct."
+> 
+> Bottom Line: Trust ⬆️
+> Prior to version 3.1, models like Gemini 3 Pro and Gemini 3 Flash had a major flaw. While they had the highest raw factual accuracy of any models, they also had abysmal hallucination rates (around 88% to 91% in tests used to elicit hallucinations). They were highly intelligent but refused to admit when they didn't know something. 
+> 
+> Gemini 3.1's top score proves Google has successfully tuned the model's knowledge calibration, and it now successfully recognizes its own knowledge gaps and abstains rather than making things up.
+
+---
+
