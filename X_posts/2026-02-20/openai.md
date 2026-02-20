@@ -29,3 +29,16 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**05:59 JST** | [原文](https://x.com/jasonkwon/status/2024680895228367195)
+
+> RT Kate Rouch 🛡️
+> You can just build things
+> 
+> Joe Reeve - 🇬🇧/acc: I built an app that lets you talk to statues. Naturally, I took it for a spin at the British Museum.
+> 
+> Full conversations in the thread.
+
+---
+

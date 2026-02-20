@@ -143,3 +143,39 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**06:34 JST** | [原文](https://x.com/demishassabis/status/2024680624326365595)
+
+> RT Google
+> Gemini 3.1 Pro be like
+
+---
+
+**03:57 JST** | [原文](https://x.com/demishassabis/status/2024679012925108371)
+
+> RT Voxelbench
+> We have a new leader.
+> Gemini 3.1 Pro!
+
+---
+
+**02:01 JST** | [原文](https://x.com/demishassabis/status/2024683436858888326)
+
+> RT Google Labs
+> Today, we’re introducing Pomelli’s latest feature update, ‘Photoshoot’ 
+> 
+> With Photoshoot, you can start from a single image of your product and easily create high quality, customized product shots to elevate your marketing. 
+> 
+> Available free of charge in the US, Canada, Australia & New Zealand! Get started with Pomelli today at http://labs.google/pomelli
+
+---
+
+## @OfficialLoganK (Logan Kilpatrick - AI Studio / Gemini API)
+
+**12:15 JST** | [原文](https://x.com/OfficialLoganK/status/2024684385883115971)
+
+> Google AI Studio
+
+---
+
