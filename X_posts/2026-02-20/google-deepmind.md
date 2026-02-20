@@ -239,3 +239,14 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**05:57 JST** | [原文](https://x.com/demishassabis/status/2024818472136368225)
+
+> RT Leon Lin
+> gemini pro 3.1 ui gen is really cracked
+> 
+> just one shotted this
+
+---
+
