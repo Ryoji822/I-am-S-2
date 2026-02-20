@@ -232,6 +232,32 @@
       "trend": "approaching",
       "alert_level": "elevated",
       "rationale": "新設指標。個別のベンチマークではなくAGI転換点の複合兆候を追跡。現在2/5条件で閾値未達だが上昇傾向"
+    },
+    {
+      "indicator_id": "IND-019",
+      "name": "AI業務自律化の産業浸透度",
+      "scenario_ids": ["SCN-001", "SCN-003"],
+      "description": "AIエージェントが人間の業務を自律的に代替している度合い。広告運用・コーディング・カスタマーサポート等の先行領域を指標とし、エントリーレベル職の採用方針変更やAI業務時間削減率で評価",
+      "threshold": "Fortune 500の30%以上がAIによる業務自律化目標を公表、かつ先行3業界でエントリーレベル採用20%以上削減",
+      "status": "elevated",
+      "last_checked": "2026-02-20",
+      "last_value": "Klarna CS人員2/3削減、コーディングAI導入率急増、Fortune 500の80%がエージェント使用開始。ただし完全自律化事例は限定的",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "rationale": "新設指標。業務自律化はまだ部分的だが、CS・コーディング領域で加速。採用方針変更が先行指標"
+    },
+    {
+      "indicator_id": "IND-020",
+      "name": "プラットフォーマーによるバリューチェーン中抜き",
+      "scenario_ids": ["SCN-001", "SCN-003", "SCN-004"],
+      "description": "Meta/Google等のプラットフォーマーがAI統合により広告代理店・SaaS等の中間事業者のバリューチェーンを侵食している度合い。広告のインハウス化率、中間事業者の減収・事業再編が指標",
+      "threshold": "主要プラットフォーマー2社以上がAI自動化で中間工程を代替する機能を正式提供、かつ中間事業者の売上減少が業界報告で確認",
+      "status": "elevated",
+      "last_checked": "2026-02-20",
+      "last_value": "Meta Advantage+ AI広告自動化拡大、Google P-Max AI運用、広告主インハウス化傾向。代理店再編の兆候あり",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "rationale": "新設指標。スマイルカーブの中間工程圧縮として、広告業界が最も早い先行指標。SaaS領域も後追い"
     }
   ]
 }

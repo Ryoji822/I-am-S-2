@@ -129,6 +129,34 @@
       "minimum_sources": 2
     },
     {
+      "kiq_id": "KIQ-002-04",
+      "kiq": "AIエージェントによる業務自律化は、どの業界・職種で最も速く進んでいるか？",
+      "search_queries": [
+        "AI agent business automation advertising operations 2026",
+        "AI replacing entry-level jobs coding customer support 2026",
+        "enterprise AI autonomous workflow productivity gains",
+        "AI agent task completion rate human replacement statistics",
+        "Klarna AI customer service headcount reduction case study"
+      ],
+      "sources": ["news", "industry_report", "consulting_report"],
+      "frequency": "weekly",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-002-05",
+      "kiq": "プラットフォーマーのAI統合は、中間事業者のバリューチェーンをどの程度侵食しているか？",
+      "search_queries": [
+        "Meta Google AI advertising automation agency disintermediation 2026",
+        "platform AI creative generation in-house advertising shift",
+        "SaaS disruption AI agent platform integration 2026",
+        "advertising agency revenue decline AI automation impact",
+        "smile curve value chain AI middle layer compression"
+      ],
+      "sources": ["news", "industry_report", "financial"],
+      "frequency": "weekly",
+      "minimum_sources": 2
+    },
+    {
       "kiq_id": "KIQ-003-01",
       "kiq": "各社のAPI料金改定の頻度・方向性はどうなっているか？",
       "search_queries": [
