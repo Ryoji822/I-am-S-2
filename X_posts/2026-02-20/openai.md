@@ -42,3 +42,15 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**21:41 JST** | [原文](https://x.com/sama/status/2024826822060290508)
+
+> Great meeting with PM @narendramodi today to talk about the incredible energy around AI in India.
+> 
+> India is our fastest growing market for codex globally, up 4x  in weekly users in the past 2 weeks alone.
+> 
+> 🇮🇳!
+
+---
+
