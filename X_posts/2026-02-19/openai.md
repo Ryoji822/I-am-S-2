@@ -42,3 +42,16 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**23:35 JST** | [原文](https://x.com/npew/status/2024860480851026111)
+
+> RT Tibo
+> You only need your ChatGPT subscription to use Codex. It’s already included and even the plus subscription has very generous usage.
+> 
+> The reason we can do this is because gpt-5.3-codex achieves SoTA at lower cost than anything else out there.
+> 
+> https://chatgpt.com/codex
+
+---
+
