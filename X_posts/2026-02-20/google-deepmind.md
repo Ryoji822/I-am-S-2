@@ -224,3 +224,18 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**11:50 JST** | [原文](https://x.com/JeffDean/status/2024744568642830439)
+
+> RT Artificial Analysis
+> Gemini 3.1 Pro Preview scored highest in the Artificial Analysis Intelligence Index but its most significant advantage might be its price and token efficiency. Our evaluations cost <50% to run on Gemini 3.1 Pro Preview compared to Claude Opus 4.6 (max) and GPT-5.2 (xhigh)
+> 
+> Gemini 3.1 Pro Preview is priced at $2/$12 per 1M input/output tokens while Claude Opus 4.6 is priced at $5/$25 and GPT-5.2 at $1.75/$14.
+> 
+> To complete our Intelligence Index evaluations Gemini 3.1 Pro Preview used fewer tokens (high, 56M) than GPT-5.2 (xhigh, 130M) and Claude Opus 4.6 (max, 58M).
+> 
+> This results in Gemini 3.1 Pro Preview costing $892 to complete our evaluations - less than 50% of the cost of GPT-5.2 (xhigh, $2,304) and Claude Opus 4.6 (max, $2,486).
+
+---
+
