@@ -7,8 +7,8 @@
       "indicator_id": "IND-001",
       "name": "主要ベンチマーク性能の非連続的ジャンプ",
       "scenario_ids": ["SCN-001"],
-      "description": "MMLU、GPQA等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される",
-      "threshold": "ベンチマークスコア30%以上の非連続的向上",
+      "description": "MMLU、GPQA、ARC-AGI等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される。特にARC-AGI-2はAGI到達度の代理指標として重視",
+      "threshold": "ベンチマークスコア30%以上の非連続的向上、またはARC-AGI-2で90%超過",
       "status": "elevated",
       "last_checked": "2026-02-19",
       "last_value": "Gemini 3 Deep Think研究向け大幅向上、ARC-AGI-2 84.6%>GPT-5.2/Opus 4.6",
@@ -219,6 +219,19 @@
       "trend": "stable",
       "alert_level": "elevated",
       "rationale": "新設指標。Googleのプロダクト統合自体がデータロックインとして機能"
+    },
+    {
+      "indicator_id": "IND-018",
+      "name": "AGI転換点の兆候",
+      "scenario_ids": ["SCN-001", "SCN-002", "SCN-BS-001"],
+      "description": "AIが人間の専門家を代替する領域の急速な拡大、自律的科学研究の成果、自己改善能力の兆候、各社CEOのAGIタイムライン前倒し発言、AGI安全性に関する緊急政策議論など、AGI到達が近づいていることを示す複合的な兆候",
+      "threshold": "以下のうち3つ以上が同時に観測: (1) ARC-AGI-2スコア90%超 (2) AIによる査読付き論文の単独執筆 (3) 主要CEOが2年以内のAGIを公言 (4) 政府レベルのAGIモラトリアム議論 (5) AIが新薬候補を自律的に発見・検証",
+      "status": "elevated",
+      "last_checked": "2026-02-20",
+      "last_value": "ARC-AGI-2 84.6%（閾値90%に接近）、AlphaProof等の数学証明成果あり、Sam Altman/Demis HassabisがAGI接近を示唆する発言。ただし5条件中2条件のみ",
+      "trend": "approaching",
+      "alert_level": "elevated",
+      "rationale": "新設指標。個別のベンチマークではなくAGI転換点の複合兆候を追跡。現在2/5条件で閾値未達だが上昇傾向"
     }
   ]
 }

@@ -74,6 +74,21 @@
       "minimum_sources": 2
     },
     {
+      "kiq_id": "KIQ-001-06",
+      "kiq": "AGI（汎用人工知能）への到達度を示す兆候はどう変化しているか？",
+      "search_queries": [
+        "AGI breakthrough autonomous scientific research AI 2026",
+        "AI self-improvement recursive model training capability",
+        "AI replacing human experts professional tasks 2026",
+        "AGI timeline prediction Sam Altman Demis Hassabis Dario Amodei",
+        "AGI safety moratorium policy regulation debate 2026",
+        "ARC-AGI benchmark frontier model progress 2026"
+      ],
+      "sources": ["news", "research_paper", "official_blog", "government"],
+      "frequency": "daily",
+      "minimum_sources": 2
+    },
+    {
       "kiq_id": "KIQ-002-01",
       "kiq": "主要クラウドプロバイダーのAI Agent統合状況はどうか？",
       "search_queries": [
