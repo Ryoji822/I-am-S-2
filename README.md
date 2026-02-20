@@ -44,6 +44,25 @@ export FIRECRAWL_API_KEY="your-firecrawl-api-key"
 **Tier 1（日次監視）**: OpenAI, Anthropic, Google/DeepMind, xAI, ByteDance
 **Tier 2（週次監視）**: Meta AI, Microsoft, Amazon/AWS, Mistral AI, DeepSeek
 
+### X (Twitter) 投稿の自動収集
+
+ローカルの [RSSHub](https://docs.rsshub.app/) インスタンス経由で、各社キーパーソン計27アカウントの投稿を自動収集しています。
+
+- **Anthropic** (7名): @AnthropicAI, @jackclarkSF, @AmandaAskell, @janleike 他
+- **OpenAI** (11名): @OpenAIDevs, @sama, @gdb, @kevinweil, @markchen90 他
+- **Google DeepMind** (11名): @GoogleDeepMind, @demishassabis, @jeffdean, @sundarpichai 他
+
+収集の流れ:
+1. `scripts/fetch-x-posts.py` がローカルRSSHub (`localhost:1200`) から投稿を取得
+2. 投稿日（JST）ごとに `X_posts/YYYY-MM-DD/{企業}.md` に保存（URL重複排除済み）
+3. パイプラインの Phase 1.5 で `collected-raw.md` に INFO-NNN 形式で自動注入
+4. 公式アカウントは信頼性コード A-3、個人アカウントは D-3 で分類
+
+```bash
+# X投稿の手動収集（RSSHubが起動している状態で）
+bash scripts/fetch-x-posts.sh
+```
+
 ## シナリオ枠組み
 
 2つの不確実軸で4つの将来を描きます:
@@ -130,5 +149,6 @@ I-am-S-2/
 
 - **LLM**: Zhipu AI GLM-5
 - **ツール**: OpenCode CLI, Firecrawl MCP
+- **X投稿収集**: ローカルRSSHub (`localhost:1200`)
 - **CI/CD**: GitHub Actions
 - **通知**: Slack Bot API
