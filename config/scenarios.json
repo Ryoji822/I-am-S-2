@@ -36,7 +36,7 @@
         "スイッチングコストが企業の技術選択を固定化",
         "規制介入（反トラスト）の可能性が高まる"
       ],
-      "indicators": ["IND-001", "IND-002", "IND-003", "IND-015", "IND-016"]
+      "indicators": ["IND-001", "IND-002", "IND-003", "IND-015", "IND-016", "IND-018", "IND-019", "IND-020", "IND-021"]
     },
     {
       "scenario_id": "SCN-002",
@@ -57,7 +57,7 @@
         "中堅企業はOSSベースで参入可能だが最先端には及ばない",
         "Agent標準の覇権争いが続く"
       ],
-      "indicators": ["IND-004", "IND-005", "IND-006", "IND-015"]
+      "indicators": ["IND-004", "IND-005", "IND-006", "IND-018"]
     },
     {
       "scenario_id": "SCN-003",
@@ -78,7 +78,7 @@
         "Googleプロダクト統合、AWS Bedrock依存等がロックインの中心に",
         "価格競争は緩やかだがベンダー切り替えは高コスト"
       ],
-      "indicators": ["IND-007", "IND-008", "IND-009", "IND-016", "IND-017"]
+      "indicators": ["IND-007", "IND-008", "IND-009", "IND-015", "IND-016", "IND-017", "IND-019", "IND-020", "IND-021", "IND-022"]
     },
     {
       "scenario_id": "SCN-004",
@@ -99,7 +99,7 @@
         "大手の収益性は低下するが広い市場にアクセス可能",
         "価格競争が激化しAI利用の民主化が進む"
       ],
-      "indicators": ["IND-010", "IND-011", "IND-012", "IND-017"]
+      "indicators": ["IND-004", "IND-010", "IND-011", "IND-012", "IND-017", "IND-020", "IND-022"]
     }
   ],
   "black_swan_scenarios": [
@@ -111,7 +111,7 @@
       "probability_change": "±0%",
       "probability_rationale": "サボタージュリスク「非常に低いが無視できない」、誤削除事例軽微、Opus 4.6脆弱性発見は正のシグナル、変更なし",
       "impact": "catastrophic",
-      "indicators": ["IND-013"]
+      "indicators": ["IND-013", "IND-018"]
     },
     {
       "scenario_id": "SCN-BS-002",

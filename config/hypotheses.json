@@ -326,6 +326,71 @@
           "クリエイターAI市場からの撤退"
         ]
       }
+    ],
+    "career": [
+      {
+        "hypothesis_id": "H-CAR-001",
+        "pir_id": "PIR-2026-004",
+        "statement": "広告運用・CS等の先行領域でAI業務自律化は2027年末までに80%以上の定型業務を代替し、エントリーレベル職の大幅な再編が起きる",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 55,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "rationale": "サイバーエージェント2026年目標、Klarna CS人員2/3削減、KPMG調査（64%が採用方針変更）が支持。ただし完全自律化の定量的検証は未了",
+        "confirming_indicators": [
+          "企業のAI業務自律化目標の達成報告",
+          "エントリーレベル求人の前年比20%以上減少",
+          "AI業務時間削減率の定量データ公表"
+        ],
+        "disconfirming_indicators": [
+          "自律化目標の大幅延期・撤回",
+          "AIによる品質問題でのロールバック事例",
+          "エントリーレベル求人の回復・増加"
+        ]
+      },
+      {
+        "hypothesis_id": "H-CAR-002",
+        "pir_id": "PIR-2026-004",
+        "statement": "コーディング能力の差別化価値は2年以内に「書ける」から「AIに書かせて評価・方向付けできる」メタスキルに不可逆的に移行する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 50,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "rationale": "Copilot/Cursor急速普及、スマイルカーブ理論が支持。ただしジュニアエンジニア求人への定量的影響は未確認",
+        "confirming_indicators": [
+          "AIコーディングツール企業導入率50%超",
+          "求人要件の実装力→設計力シフト",
+          "ジュニアエンジニア給与の相対的低下"
+        ],
+        "disconfirming_indicators": [
+          "AIコーディングツールの品質問題による利用率低下",
+          "実装スキルを重視する求人の増加",
+          "AIツール非使用の熟練エンジニアの給与プレミアム維持"
+        ]
+      },
+      {
+        "hypothesis_id": "H-CAR-003",
+        "pir_id": "PIR-2026-004",
+        "statement": "スマイルカーブの中間圧縮により、バリューチェーン中間工程（広告運用・受託開発・レポーティング等）のビジネス職は3年以内に大規模再編され、価値は上流（戦略/課題定義）と下流（顧客接点/実行）に集中する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 48,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "rationale": "経産省/アクセンチュア分析、Forrester予測（広告業界3.2万人代替）が支持。しかし3年という時間軸の検証は不十分",
+        "confirming_indicators": [
+          "中間工程の単価がインフレ率を下回る低下を2四半期連続",
+          "上流コンサル/戦略職と中間実装職の給与格差20%以上拡大",
+          "主要企業3社以上が中間工程の自動化完了を宣言"
+        ],
+        "disconfirming_indicators": [
+          "中間工程の単価維持・上昇",
+          "自動化が品質問題で停滞",
+          "中間工程の新たな高付加価値業務の出現"
+        ]
+      }
     ]
   }
 }
