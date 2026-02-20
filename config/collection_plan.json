@@ -223,6 +223,61 @@
       "sources": ["news", "industry_report", "developer_community"],
       "frequency": "weekly",
       "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-004-01",
+      "kiq": "AI業務自律化の段階と人員配置変更シグナル",
+      "search_queries": [
+        "AI autonomous advertising operations complete automation 2026",
+        "CyberAgent AI automation advertising operations goal",
+        "KPMG AI agent entry-level hiring policy change survey 2026",
+        "AI replacing jobs layoffs restructuring advertising agency 2026",
+        "Klarna Duolingo AI headcount reduction automation results"
+      ],
+      "sources": ["news", "industry_report", "consulting_report"],
+      "frequency": "weekly",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-004-02",
+      "kiq": "コーディング能力の市場価値変動",
+      "search_queries": [
+        "GitHub Copilot Cursor AI coding tool enterprise adoption rate 2026",
+        "software engineer job market junior developer demand decline",
+        "AI coding assistant impact programmer salary skill requirements",
+        "coding skill commoditization AI meta-skill shift 2026",
+        "developer productivity AI tools impact hiring trends"
+      ],
+      "sources": ["news", "industry_report", "developer_community"],
+      "frequency": "weekly",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-004-03",
+      "kiq": "AI代替困難な能力の市場価値と新職種出現",
+      "search_queries": [
+        "AI-proof skills human irreplaceable abilities job market 2026",
+        "new AI jobs AI creative director AI strategist emerging roles",
+        "World Economic Forum future jobs report AI 2026",
+        "reskilling upskilling AI era corporate investment trends",
+        "problem definition design thinking human AI collaboration value"
+      ],
+      "sources": ["news", "industry_report", "consulting_report"],
+      "frequency": "weekly",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-004-04",
+      "kiq": "AI時代に勝つ企業の条件と所属先評価",
+      "search_queries": [
+        "companies winning AI transformation investment reskilling 2026",
+        "CyberAgent AI Lab AI investment revenue results",
+        "advertising agency AI transformation digital disruption survive",
+        "enterprise AI adoption success factors proprietary data moat"
+      ],
+      "sources": ["news", "financial", "industry_report"],
+      "frequency": "weekly",
+      "minimum_sources": 2
     }
   ]
 }
