@@ -250,3 +250,31 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**17:01 JST** | [原文](https://x.com/JeffDean/status/2024875271833424358)
+
+> RT Sayak Paul
+> Sharing on behalf of a friend:
+> 
+> """
+> New compute & funding opportunity for researchers!
+> 
+> We're launching the 2026 Google TPU Research & Education Awards.
+> 
+> We want to support researchers pushing the boundaries of ML systems, performance, and efficiency, and those working in high-impact applied science.
+> 
+> What's included:
+> - Compute: Free access to the latest generations of TPUs.
+> - Funding: An unrestricted gift to support or partially support a grad student.
+> - Credits: Google Cloud credits to support your work.
+> 
+> If you or a colleague are exploring what is possible with TPUs, we want to hear from you.
+> 
+> Read the RFP and apply here: https://goo.gle/2026-tpu-rfp
+> 
+> If you have questions, email tpu-rfp@google.com
+> """
+
+---
+
