@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 格差拡大",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 22,
-      "probability_change": "±0%",
-      "probability_rationale": "前回からの軸変更に伴い再設定。資金$50Bが2社に集中、Skills/Shell等の囲い込み兆候が閉鎖×格差拡大を支持",
+      "probability": 20,
+      "probability_change": "-2%",
+      "probability_rationale": "Arbiter: Assistants API廃止は囲い込み支持だが、Gemini性能躍進は「格差拡大」のみ支持（囲い込み不透明）。Pomelli無料ツール等は開放的側面も",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Hosted Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "OSSやMCP等の標準で相互運用性は高まるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 28,
-      "probability_change": "±0%",
-      "probability_rationale": "MCP普及とOSS性能ギャップ縮小は開放を支持するが、Gemini Deep Thinkの突出は格差拡大も示唆",
+      "probability": 31,
+      "probability_change": "+3%",
+      "probability_rationale": "Arbiter: Blue +4%/Red +2%の折衷。MCP標準化進行（Oracle公式解説、Linux Foundation AAIF寄贈）×Gemini性能リード確立。価格下落証拠も考慮",
       "key_assumptions": [
         "主要な技術ブレークスルーがオープンに公開される部分もある",
         "標準プロトコル（MCP等）が広く採用される",
@@ -65,9 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、囲い込みが主戦場になる",
-      "probability": 31,
-      "probability_change": "±0%",
-      "probability_rationale": "エンタープライズ契約のTier 1集中とROI 5%問題はこのシナリオを最も支持。性能収斂+囲い込みの組み合わせ",
+      "probability": 29,
+      "probability_change": "-2%",
+      "probability_rationale": "Arbiter: 価格年間10倍下落は収斂支持だが、Gemini性能差は収斂と矛盾。Bain Capital報告はエコシステム依存を強調",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -86,9 +86,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × 収斂",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化に集中する",
-      "probability": 19,
-      "probability_change": "±0%",
-      "probability_rationale": "OSS性能到達とMCP普及はこのシナリオを支持するが、現時点では完全な収斂+開放には至っていない",
+      "probability": 20,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter: 価格下落（年間10倍）、Copilot 2,000万人到達は開放×収斂を支持。Red指摘（価格下落証拠評価）採用",
       "key_assumptions": [
         "汎用AIの性能差が5%以内に収斂する",
         "オープン標準が支配的に採用される",
@@ -127,6 +127,6 @@
   "normalization_check": {
     "total_probability": 100,
     "verified_date": "2026-02-20",
-    "note": "SCN-001(22) + SCN-002(28) + SCN-003(31) + SCN-004(19) = 100%"
+    "note": "SCN-001(20) + SCN-002(31) + SCN-003(29) + SCN-004(20) = 100%"
   }
 }

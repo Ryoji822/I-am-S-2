@@ -1,11 +1,11 @@
 # Anthropic インテリジェンス・プロファイル
 
-> 最終更新: 2026-02-19
+> 最終更新: 2026-02-20
 > 確度: 高
 
 ## エグゼクティブ・サマリー
 
-Anthropicは爆発的成長を遂げている。$30B Series G調達（評価額$380B）、年間収益$14B、過去3年で毎年10倍以上成長。Claude Codeが6ヶ月で$1B年間収益達成。Bun買収で開発者ツールチェーン統合、Claude Agent SDK v0.2.45でエコシステム拡充中。ASL-3保護有効化とサボタージュリスク公開で安全性リーダーシップを強化。AWS依存から独自路線への移行が進行中。
+Anthropicは爆発的成長を遂げている。$30B Series G調達（評価額$380B）、年間収益$14B、過去3年で毎年10倍以上成長。Claude Codeが6ヶ月で$1B年間収益達成。**[更新: 2026-02-20] Claude Opus 4.6価格を$15/$75から$5/$25に値下げ（67%削減）。Infosysと提携し通信・金融・製造向けエージェント構築。SIチーム拡大で安全性投資継続。** Bun買収で開発者ツールチェーン統合、Claude Agent SDK v0.2.47でエコシステム拡充中。ASL-3保護有効化とサボタージュリスク公開で安全性リーダーシップを強化。
 
 ## 基本情報
 
@@ -27,13 +27,16 @@ Anthropicは安全性を差別化要因として、規制準拠が求められ�
 **H-ANT-002: MCP標準化エコシステム戦略**（確度: 51%）
 AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準を確立し、エコシステム戦略で勝つ。OWASP/Cloudflare/Chrome/MoSPI公式対応で標準化進行 [INFO-024](../Information/2026-02-19/collected-raw.md#INFO-024) [INFO-026](../Information/2026-02-19/collected-raw.md#INFO-026) [INFO-035](../Information/2026-02-19/collected-raw.md#INFO-035) [INFO-042](../Information/2026-02-19/collected-raw.md#INFO-042)。[更新: 2026-02-19] Arbiter判断: MCP「対応」と「採用」の区別必要(Red指摘)。採用率の定量データ不在により53%→51%に引き下げ。診断的価値低下。
 
-**H-ANT-003: AWS提携深化戦略**（確度: 38%）
-~~AnthropicはAmazonとの戦略的提携を深化させ、AWS経由でのエンタープライズ浸透を主戦略とする~~。$30B調達、Bun買収、独自SDKがAWS依存と矛盾。独立路線への移行が進行中 [INFO-015](../Information/2026-02-18/collected-raw.md#INFO-015) [INFO-001](../Information/2026-02-18/collected-raw.md#INFO-001) [INFO-014](../Information/2026-02-18/collected-raw.md#INFO-014)。
+**H-ANT-003: AWS提携深化戦略**（確度: 33%、~~38%~~ → **33%**）[更新: 2026-02-20]
+~~AnthropicはAmazonとの戦略的提携を深化させ、AWS経由でのエンタープライズ浸透を主戦略とする~~。**Infosys直販提携はAWS依存と矛盾（-5%）。** [INFO-003](../Information/2026-02-20/collected-raw.md#INFO-003)。$30B調達、Bun買収、独自SDKもAWS依存と矛盾。棄却候補として監視継続（Arbiter判断）。
 
 ## 主要動向タイムライン
 
 | 日付 | イベント | 信頼性 | 引用 |
 |------|---------|-------|------|
+| 2026-02-19 | Claude Agent SDK v0.2.47リリース、高頻度更新継続 | A-3 | [INFO-006](../Information/2026-02-20/collected-raw.md#INFO-006) |
+| 2026-02-18 | Claude Opus 4.6値下げ（$15/$75→$5/$25、67%削減） | C-3 | [INFO-022](../Information/2026-02-20/collected-raw.md#INFO-022) |
+| 2026-02-17 | Infosys提携、通信・金融・製造向けエージェント構築 | A-3 | [INFO-003](../Information/2026-02-20/collected-raw.md#INFO-003) |
 | 2026-02-17 | Claude Agent SDK v0.2.45リリース、Sonnet 4.6対応 | A-3 | [INFO-014](../Information/2026-02-18/collected-raw.md#INFO-014) |
 | 2026-02-17 | Claude Sonnet 4.6 Bedrock提供開始 | A-3 | [INFO-063](../Information/2026-02-18/collected-raw.md#INFO-063) |
 | 2026-02-17 | GPQA Diamond新標準、Claude Opusが上位 | A-3 | [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081) [INFO-085](../Information/2026-02-18/collected-raw.md#INFO-085) |
@@ -42,7 +45,7 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 | 2026-02-05 | サボタージュリスク評価公開、「非常に低いが無視できない」 | A-3 | [INFO-022](../Information/2026-02-18/collected-raw.md#INFO-022) |
 | 2025-12-03 | Bun買収、Claude Code $1B年間収益達成 | A-3 | [INFO-001](../Information/2026-02-18/collected-raw.md#INFO-001) |
 
-[更新: 2026-02-18] Claude Sonnet 4.6価格は据え置き$3/$15、能力向上のみ [INFO-079](../Information/2026-02-18/collected-raw.md#INFO-079)。
+[更新: 2026-02-20] Claude Opus 4.6値下げ、Infosys提携、Claude Agent SDK v0.2.47追加
 
 ## 強み・弱み・機会・脅威（SWOT）
 
@@ -72,6 +75,10 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 - ByteDance Seed 2.0のコスト競争
 - 価格競争激化（Claude高価格ポジション）
 
+[更新: 2026-02-20]
+- **Gemini 3.1 ProがArtificial Analysis指数で4ptリード、性能競争激化** [INFO-028](../Information/2026-02-20/collected-raw.md#INFO-028)
+- **価格年間10倍下落傾向、Claude Opus 4.6も$15/$75→$5/$25に値下げ対応** [INFO-022](../Information/2026-02-20/collected-raw.md#INFO-022)
+
 ## I&W監視ポイント
 
 | 指標 | ステータス | 傾向 | 現在値 |
@@ -84,6 +91,10 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-20 | H-ANT-003確度38%→33%、Infosys直販提携がAWS依存と矛盾 | Arbiter判断 |
+| 2026-02-20 | エグゼクティブ・サマリーにClaude Opus値下げ、Infosys提携追加 | INFO-003, INFO-022 |
+| 2026-02-20 | タイムラインに値下げ、Infosys提携、SDK v0.2.47追加 | INFO-003, INFO-006, INFO-022 |
+| 2026-02-20 | 脅威にGemini性能リード、価格競争激化追加 | INFO-022, INFO-028 |
 | 2026-02-19 | H-ANT-001確度58%→54%、H-ANT-002確度53%→51% | Arbiter判断（競合比較不在、MCP対応≠採用） |
 | 2026-02-19 | IND-003 elevated→high昇格 | Arbiter判断 |
 | 2026-02-18 | GPQA Diamond新標準での位置づけ追加 | INFO-081, INFO-085 |

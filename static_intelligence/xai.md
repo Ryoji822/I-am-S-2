@@ -1,6 +1,6 @@
 # xAI インテリジェンス・プロファイル
 
-> 最終更新: 2026-02-19
+> 最終更新: 2026-02-20
 > 確度: 中
 
 ## エグゼクティブ・サマリー
@@ -27,8 +27,8 @@ xAIはElon Muskの他事業（Tesla, SpaceX, Neuralink）との統合を進め�
 **H-XAI-001: Xリアルタイムデータニッチ戦略**（確度: 39%）
 ~~xAIはX（Twitter）のリアルタイムデータを独占的に活用し、リアルタイム情報Agent市場でニッチ優位を確立する~~。$20B調達がニッチ戦略と矛盾。使途不明を考慮し確度引き下げ [INFO-060](../Information/2026-02-19/collected-raw.md#INFO-060)。[更新: 2026-02-19] 確度維持（前回42%→39%引き下げ済み）。
 
-**H-XAI-002: Colossus計算資源性能戦略**（確度: 38%）
-xAIはColossusの大規模計算資源を武器に、モデル性能でOpenAI/Anthropicに挑戦する。Grok 4.20 Agentic Swarms、$20B調達が証拠 [INFO-009](../Information/2026-02-19/collected-raw.md#INFO-009) [INFO-060](../Information/2026-02-19/collected-raw.md#INFO-060)。[更新: 2026-02-19]
+**H-XAI-002: Colossus計算資源性能戦略**（確度: 40%、~~38%~~ → **40%**）[更新: 2026-02-20]
+xAIはColossusの大規模計算資源を武器に、モデル性能でOpenAI/Anthropicに挑戦する。**推論コンピュート重要性の高まりが計算資源戦略を支持（+2%）。** [INFO-044](../Information/2026-02-20/collected-raw.md#INFO-044)。Grok 4.20 Agentic Swarms、$20B調達が証拠 [INFO-009](../Information/2026-02-20/collected-raw.md#INFO-009)。Arbiter判断。
 
 ## 主要動向タイムライン
 
@@ -74,6 +74,7 @@ xAIはColossusの大規模計算資源を武器に、モデル性能でOpenAI/An
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-20 | H-XAI-002確度38%→40%（推論コンピュート重要性） | Arbiter判断 |
 | 2026-02-19 | H-XAI-003確度48%→50%（垂直統合可能性評価） | Arbiter判断 |
 | 2026-02-19 | IND-003 elevated→high昇格 | Arbiter判断 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |

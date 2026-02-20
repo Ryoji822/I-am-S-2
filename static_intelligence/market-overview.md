@@ -1,11 +1,11 @@
 # AI市場全体の構造分析
 
-> 最終更新: 2026-02-19
+> 最終更新: 2026-02-20
 > 確度: 高
 
 ## エグゼクティブ・サマリー
 
-2026年2月現在、AI市場は「寡占化 vs 分散化」の分岐点に直面している。Anthropic $30B、xAI $20Bの$50B調達集中で寡占化要因が強まる一方、ByteDance Seed 2.0台頭で分散化要因も同時に存在。エンタープライズAgent市場が爆発的成長（YoY 8倍、推論モデル300倍）。MCP標準化がCloudflare/OWASP/Chrome/MoSPI等で加速。[更新: 2026-02-19] エンタープライズ判断を「転換点到達」から「パイロット大規模化段階（転換点接近）」に修正。ROI成功5%のみという数値矛盾を考慮 [INFO-045](../Information/2026-02-19/collected-raw.md#INFO-045) [INFO-047](../Information/2026-02-19/collected-raw.md#INFO-047)。
+2026年2月現在、AI市場は「開放×格差拡大」に向かう確率が上昇している。**[更新: 2026-02-20] Gemini 3.1 ProがARC-AGI-2で77.1%（Gemini 3 Pro比146%向上）を記録し、技術優位が確立。価格は同等品質で年間10倍下落中。** Anthropic $30B、xAI $20Bの$50B調達集中で寡占化要因も存在。エンタープライズAgent市場が爆発的成長（YoY 8倍、推論モデル300倍）。MCP標準化がOracle/OWASP/Cloudflare/Chrome等で加速。[更新: 2026-02-19] エンタープライズ判断は「パイロット大規模化段階（転換点接近）」。
 
 ## 市場構造概要
 
@@ -54,6 +54,11 @@
 - **推論コスト年間5-10倍削減**: 特定能力到達コストが急速低下 [INFO-080](../Information/2026-02-18/collected-raw.md#INFO-080)
 - **NVIDIA Blackwell最大10倍コスト削減**: Baseten、DeepInfra等が最適化 [INFO-078](../Information/2026-02-18/collected-raw.md#INFO-078)
 
+[更新: 2026-02-20]
+- **価格年間約10倍下落**: 同等品質で価格が急速低下 [INFO-022](../Information/2026-02-20/collected-raw.md#INFO-022)
+- **Claude Opus 4.6値下げ**: $15/$75→$5/$25（67%削減）[INFO-022](../Information/2026-02-20/collected-raw.md#INFO-022)
+- **収斂圧力と格差拡大のパラドックス**: 価格下落は収斂を示すが、Gemini性能躍進は格差拡大を示す
+
 ### 4. 標準化の動き
 
 - **MCP採用拡大**: OWASP、Cloudflare、Demandbase対応 [INFO-029](../Information/2026-02-18/collected-raw.md#INFO-029) [INFO-030](../Information/2026-02-18/collected-raw.md#INFO-030) [INFO-032](../Information/2026-02-18/collected-raw.md#INFO-032)
@@ -94,23 +99,31 @@
 
 ### 現状評価
 
-**寡占化 vs 分散化の不確実性増大** - 相反するシグナルの帰結は不明。SCN-001（寡占化）とSCN-002（分散化）の同時確率上昇は「どちらに転ぶか不明」の表現。
+**[更新: 2026-02-20] 開放×格差拡大（SCN-002）確率上昇** - Gemini 3.1 Proの性能躍進とMCP標準化進行が「開放×格差拡大」を支持。価格下落は収斂圧力だが、フロンティア性能差は維持・拡大のパラドックス。SCN-002（31%）が最も確からしいシナリオに。
+
+~~寡占化 vs 分散化の不確実性増大~~ - 相反するシグナルの帰結は不明。SCN-001（寡占化）とSCN-002（分散化）の同時確率上昇は「どちらに転ぶか不明」の表現。
 
 ## I&W監視ポイント
 
 | 指標 | ステータス | 傾向 | 重要度 |
 |------|-----------|------|--------|
-| IND-001 AGI能力研究 | elevated | approaching | 高 |
+| IND-001 主要ベンチマーク性能の非連続的ジャンプ | ~~elevated~~ → **high** | approaching | 高 | [更新: 2026-02-20] Gemini 3.1 Pro ARC-AGI-2 77.1%（146%向上）、30%閾値達成
 | IND-003 資金集中 | high | approaching | 高 | [更新: 2026-02-19] elevated→high昇格
 | IND-004 分散化兆候 | elevated | approaching | 高 |
 | IND-006 標準形成 | elevated | rising | 中 |
 | IND-008 大手契約集中 | elevated | rising | 高 |
 | IND-009 AI投資持続増大 | elevated | rising | 中 |
+| IND-011 汎用AIモデル間性能収斂 | elevated | approaching | 中 | [更新: 2026-02-20] Gemini 3.1 Proが4ptリードだが収斂判定根拠不明確（Arbiter）
+| IND-018 AGI転換点兆候 | elevated | approaching | 高 | [更新: 2026-02-20] ARC-AGI-2 77.1%（閾値90%に13.9%不足）。Hassabis 5-8年予測は2年以内AGIを否定
 
 ## 変更履歴
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-20 | IND-001 elevated→high昇格、IND-011/IND-018ステータス追加 | Arbiter判断（Gemini 3.1 Pro躍進） |
+| 2026-02-20 | エグゼクティブ・サマリーにGemini躍進、価格10倍下落追加 | INFO-008, INFO-022, INFO-028 |
+| 2026-02-20 | 価格競争に年間10倍下落、Claude Opus値下げ追加 | INFO-022 |
+| 2026-02-20 | 現状評価を「開放×格差拡大」確率上昇に更新 | Arbiter判断（SCN-002 +3%） |
 | 2026-02-19 | エンタープライズ判断「転換点到達」→「パイロット大規模化段階（転換点接近）」に修正 | Arbiter判断 |
 | 2026-02-19 | IND-003 elevated→high昇格 | Arbiter判断 |
 | 2026-02-18 | エンタープライズ採用統計追加（100%拡大計画、Fortune 500 80%+展開） | INFO-069, INFO-070, INFO-072 |
