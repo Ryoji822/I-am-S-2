@@ -179,3 +179,15 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**12:48 JST** | [原文](https://x.com/demishassabis/status/2024692518256808366)
+
+> This is incredible btw - using Gemini 3.1 as a city builder. I used to dream about this when painstakingly making virtual cities for simulation games like Republic.
+> 
+> Google DeepMind: We used Gemini 3.1 Pro to build a realistic city planner app. 🏙️
+> 
+> Watch how the model tackles complex terrain, maps out infrastructure, and simulates traffic to generate a high-quality visualization.
+
+---
+
