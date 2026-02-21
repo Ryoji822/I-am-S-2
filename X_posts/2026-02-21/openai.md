@@ -56,3 +56,12 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**16:31 JST** | [原文](https://x.com/npew/status/2025348028824186935)
+
+> RT Victoriano Izquierdo
+> In 20 years, vibe coders will look at the Linux kernel repo the way we look at the pyramids. In awe, unable to imagine how they managed to drag all those giant stones and pile them up in the middle of the desert.
+
+---
+
