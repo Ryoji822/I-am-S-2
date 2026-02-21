@@ -45,3 +45,13 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**05:25 JST** | [原文](https://x.com/kevinweil/status/2025305926433988848)
+
+> Daniel has a really interesting perspective on the future of Math and AI—well worth a read 👇
+> 
+> Daniel Litt: Some thoughts on AI and mathematics, inspired by "First Proof."
+
+---
+
