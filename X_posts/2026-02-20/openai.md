@@ -67,3 +67,13 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**07:24 JST** | [原文](https://x.com/gdb/status/2024611138760298999)
+
+> it’s a good model
+> 
+> Yam Peleg: gpt-5.3-codex is insane
+
+---
+
