@@ -16,3 +16,18 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**02:45 JST** | [原文](https://x.com/gdb/status/2025265698587734432)
+
+> codex provides a very nice api, accessible by running “codex app-server”:
+> 
+> SIGKITTEN: codex app-server is legit af
+> 
+> i was just looking into it for a project and accidentally ended up making an actual native codex iphone app
+> 
+> i can spawn and talk to codexes anywhere on my network
+> and one of the best parts... I built and linked codex into the actual iphone app and
+
+---
+
