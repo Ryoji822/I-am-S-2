@@ -31,3 +31,17 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**03:16 JST** | [原文](https://x.com/OpenAIDevs/status/2025273441826517370)
+
+> 🎨 Generating or editing images at scale?
+> 
+> Batch API now supports GPT Image models: gpt-image-1.5, chatgpt-image-latest, gpt-image-1, gpt-image-1-mini.
+> 
+> Submit up to 50,000 generations or edits as async jobs at 50% lower cost with separate rate limits.
+> 
+> https://developers.openai.com/api/docs/guides/batch/
+
+---
+
