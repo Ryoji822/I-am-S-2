@@ -44,3 +44,15 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**18:35 JST** | [原文](https://x.com/gdb/status/2025142427380765036)
+
+> codex app is great!
+> 
+> Paul Solt: I’m curious. 🧐 
+> 
+> What model harness is working best for you?
+
+---
+
