@@ -5,7 +5,8 @@
 ## 何をするか
 
 1. `config/collection_plan.json` を読み、記載された**全検索クエリを1件残らず実行**する
-2. 結果を `Information/YYYY-MM-DD/collected-raw.md` に**KIQごとに逐次追記**する（最後に一括で書かない）
+2. `state/arbiter-latest.md` を読み、**「明日の収集で優先すべきKIQ」セクションの指示に従って追加収集**を行う（詳細はStep 1.5参照）
+3. 結果を `Information/YYYY-MM-DD/collected-raw.md` に**KIQごとに逐次追記**する（最後に一括で書かない）
 
 ## Firecrawl MCPツール仕様
 
@@ -58,6 +59,7 @@
 1. 以下を読み込む:
    - `config/collection_plan.json` — 検索クエリ一覧
    - `config/companies.json` — 企業情報
+   - `state/arbiter-latest.md` — 前日のArbiter統合判断（**存在する場合は必ず読む**）
 
 2. 出力ディレクトリとファイルのヘッダーを作成:
 ```bash
@@ -73,6 +75,22 @@ mkdir -p Information/YYYY-MM-DD
 - 品質フラグ: COLLECTING
 
 ## 収集結果
+```
+
+### Step 1.5: Arbiterフィードバックに基づく動的クエリ生成
+
+`state/arbiter-latest.md` の「明日の収集で優先すべきKIQ」セクションを確認し、以下を実行する:
+
+1. **既存KIQの優先強化**: 優先指定されたKIQ-IDが `collection_plan.json` に存在する場合、そのKIQの検索では `limit` を `5` → `10` に引き上げる
+2. **動的KIQの追加収集**: `KIQ-NEW-XXX` など `collection_plan.json` に存在しないKIQ-IDがある場合、Arbiterの記述からテーマを読み取り、**検索クエリを3-5件自動生成**して実行する。生成したクエリは `collected-raw.md` のメタデータセクションに `動的追加クエリ` として記録する
+3. **arbiter-latest.mdが存在しない場合**（初回実行時など）はこのステップをスキップする
+
+**動的クエリの例:**
+Arbiterが `KIQ-NEW-07: Gemini 3.1 Proの商用展開影響` を優先指定した場合:
+```json
+{"query": "Gemini 3.1 Pro commercial launch enterprise impact 2026", "limit": 5, "tbs": "qdr:w"}
+{"query": "Gemini 3.1 Pro API pricing availability", "limit": 5, "tbs": "qdr:w"}
+{"query": "Gemini 3.1 Pro benchmark ARC-AGI developer reaction", "limit": 5, "tbs": "qdr:w"}
 ```
 
 ### Step 2: 公式ソースの最新記事を取得
@@ -181,5 +199,5 @@ Step 3の検索結果で特に重要な記事（最大10件）を firecrawl_scra
 - 検索クエリの省略・スキップ
 - 情報の捏造（見つからなかった場合は「該当なし」と記録）
 - `tbs` パラメータなしでの検索（古い情報のノイズ混入を防ぐため）
-- collection_plan.jsonに無いクエリの勝手な追加（目標未達時を除く）
+- collection_plan.jsonに無いクエリの勝手な追加（**目標未達時およびStep 1.5の動的クエリを除く**）
 - **全データを最後に一括書き込みすること（必ず逐次追記せよ）**

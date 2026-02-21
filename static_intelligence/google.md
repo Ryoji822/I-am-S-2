@@ -1,108 +1,61 @@
-# Google/DeepMind インテリジェンス・プロファイル
+# Google / DeepMind
 
 > 最終更新: 2026-02-21
-> 確度: 高
 
-## エグゼクティブ・サマリー
+**今ベンチマーク性能でいちばん強い。Gemini 3.1 ProがARC-AGI-2で77.1%を叩き出し、他社を引き離している。しかしGoogleの本当の強みはそこではなく、検索・Gmail・Drive・Workspaceという「みんなが既に使っている」プロダクトにGeminiを溶かし込めること。APIを売る競合と違い、ユーザーが意識しないうちにAIを使わせる構造を作れる。自己資金で回せるため外部調達も不要。研究・クラウド・プロダクト・ロボティクスを一社で全方位展開できるのはGoogleだけ。**
 
-GoogleはGeminiを全プロダクト横断で統合する戦略を加速させている。**[更新: 2026-02-21] Gemini 3.1 Pro Previewリリース、思考能力向上・エージェントツール使用対応。Chrome Web MCPでAIエージェントのブラウザ直接操作を実現。Gemini Robotics Previewで物理空間理解とロボットエージェント対応。** Gemini 3.1 ProがARC-AGI-2で77.1%を記録。Vertex AI Agent Builderでエンタープライズ向けエージェント構築スイート提供。74%が1年以内にアジェンティックAI投資でROI達成と報告。
+## この会社は何者か
 
-## 基本情報
+Sundar Pichai率いるテクノロジー企業。主力はGemini 3シリーズ、Vertex AI、Google Workspace、Google Cloud。従業員180,000人以上。
 
-- 本社: 米国カリフォルニア州マウンテンビュー
-- CEO: Sundar Pichai
-- 主力製品: Gemini 3シリーズ、Vertex AI、Google Workspace、Google Cloud
-- 推定従業員数: 180,000+
-- 直近の資金調達: なし（自己資金）
+他のAI企業と根本的に違うのは、外部の資金調達が要らないこと。OpenAIは$1000億、Anthropicは$300億を投資家から集めたが、Googleは自分の稼ぎでAI開発を回せる。開発競争が長引くほど有利になる構造的な強み。
 
-## 戦略方向性
+性能面での実績が突出している。Gemini 3.1 ProがARC-AGI-2で77.1%（前世代Gemini 3 Pro 31.1%から146%向上）[INFO-008](../Information/2026-02-20/collected-raw.md#INFO-008)。Gemini 3 Deep ThinkはARC-AGI-2で84.6%に達しGPT-5.2/Claude Opus 4.6を上回る [INFO-082](../Information/2026-02-18/collected-raw.md#INFO-082)。Artificial Analysis指数でClaude Opus 4.6を4ptリード [INFO-028](../Information/2026-02-20/collected-raw.md#INFO-028)。数学ではGemini Deep ThinkがIMO-ProofBench 90%達成、Erdős問題4問解決 [INFO-011](../Information/2026-02-18/collected-raw.md#INFO-011)。MMMU-Pro（画像を含む複合的な理解力テスト）でも1位 [INFO-033](../Information/2026-02-21/collected-raw.md#INFO-033)。GPQA Diamond新標準でもリーダーポジション [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081)。
 
-### 現在の主力仮説
+直近の展開が幅広い。(1) Gemini 3.1 Pro Preview（思考能力・エージェントツール使用対応）[INFO-008](../Information/2026-02-21/collected-raw.md#INFO-008)。(2) Chrome Web MCPでAIエージェントがブラウザを直接操作可能に [INFO-035](../Information/2026-02-21/collected-raw.md#INFO-035)。(3) Gemini Robotics Previewで物理空間の理解に進出 [INFO-034](../Information/2026-02-21/collected-raw.md#INFO-034)。(4) Vertex AI Agent Builderでエンタープライズ向けエージェント構築スイートを提供 [INFO-017](../Information/2026-02-21/collected-raw.md#INFO-017)。価格も$1.6/Mと業界最安水準 [INFO-090](../Information/2026-02-21/collected-raw.md#INFO-090)（xAI $30/Mの19分の1）。
 
-**H-GOO-001: プロダクト統合横断展開戦略**（確度: 71%、~~70%~~ → **71%**）[更新: 2026-02-21]
-GoogleはGeminiを検索・広告・Workspace等の既存プロダクトに深く統合し、Agent機能を全サービス横断で展開する。**Gemini 3.1 Pro性能躍進（ARC-AGI-2 77.1%）は客観的事実だが、統合戦略成功とは別問題（+1%）。** [INFO-008](../Information/2026-02-21/collected-raw.md#INFO-008) [INFO-033](../Information/2026-02-21/collected-raw.md#INFO-033) [INFO-035](../Information/2026-02-21/collected-raw.md#INFO-035)。単一ベンチマーク依存リスク考慮（Arbiter判断）。
+研究・クラウド・プロダクト・ロボティクスの全方面を一社で同時に動かせるのは、この規模のGoogleだけ。
 
-### 代替仮説
+## 何をやろうとしているか
 
-**H-GOO-002: Vertex AI クラウド追い上げ戦略**（確度: 55%、~~53%~~ → **55%**）[更新: 2026-02-21]
-GoogleはVertex AI + Geminiの組み合わせでクラウドAIプラットフォーム市場でAWSを追い上げる。**Vertex AI Agent Builder展開・Gemini 3.1 Pro性能向上・価格競争力$1.6/Mがクラウド競争力を支持（+2%）。** [INFO-017](../Information/2026-02-21/collected-raw.md#INFO-017) [INFO-058](../Information/2026-02-21/collected-raw.md#INFO-058)。Arbiter判断。
+Googleの動きは一貫性が高く、1つの主戦略が他社より突出して明確。
 
-**H-GOO-003: 科学研究ブレークスルー戦略**（確度: 56%、~~54%~~ → **56%**）[更新: 2026-02-21]
-Google DeepMindは科学研究分野でのブレークスルーを通じて、AI応用の新カテゴリーを創出する。**Gemini 3.1 Pro ARC-AGI-2 77.1%・Gemini Robotics Previewが研究ブレークスルーを支持（+2%）。** [INFO-008](../Information/2026-02-21/collected-raw.md#INFO-008) [INFO-034](../Information/2026-02-21/collected-raw.md#INFO-034)。商用化不確実性を反映（Arbiter判断）。
+**本命: 全プロダクトにGeminiを溶かし込んで囲い込む（H-GOO-001, 確度71%）**
 
-[更新: 2026-02-18] Gemini 3 Deep ThinkがARC-AGI-2で84.6%を記録し、GPT-5.2とClaude Opus 4.6を上回る性能 [INFO-082](../Information/2026-02-18/collected-raw.md#INFO-082)。GPQA DiamondがMMLUに代わるAI推論の新標準ベンチマークに、Gemini 3とClaude Opusが上位 [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081)。
+Geminiを検索・広告・Workspace・Cloudに深く統合し、Googleプロダクト群のデータ（検索履歴/Gmail/Drive）自体をロックインとして機能させる。OpenAIやAnthropicが「APIを売る」ビジネスなのに対し、Googleは「ユーザーが既に使っているプロダクトにAIを溶かし込む」戦略。
 
-## 主要動向タイムライン
+確度71%は全仮説の中で最高。これほど高いのは、Gemini 3.1 Proの性能躍進だけでなく、Chrome Web MCP [INFO-035](../Information/2026-02-21/collected-raw.md#INFO-035)、Gemini Robotics [INFO-034](../Information/2026-02-21/collected-raw.md#INFO-034)、Vertex AI Agent Builder [INFO-017](../Information/2026-02-21/collected-raw.md#INFO-017) などプロダクト統合の証拠が多方面から出ていることによる。ただし性能が高いことと統合戦略が成功することは別問題で、単一ベンチマーク（ARC-AGI-2）への依存リスクもある。
 
-| 日付 | イベント | 信頼性 | 引用 |
-|------|---------|-------|------|
-| 2026-02-21 | Gemini 3.1 Pro Previewリリース、思考能力・エージェントツール使用対応 | A-3 | [INFO-008](../Information/2026-02-21/collected-raw.md#INFO-008) |
-| 2026-02-21 | Gemini 3.1 Pro、MMMU-Pro（マルチモーダル理解）で#1 | A-3 | [INFO-033](../Information/2026-02-21/collected-raw.md#INFO-033) |
-| 2026-02-21 | Chrome Web MCP、AIエージェントのブラウザ直接操作実現 | B-3 | [INFO-035](../Information/2026-02-21/collected-raw.md#INFO-035) |
-| 2026-02-21 | Gemini Robotics Preview、物理空間理解とロボットエージェント | A-3 | [INFO-034](../Information/2026-02-21/collected-raw.md#INFO-034) |
-| 2026-02-21 | Vertex AI Agent Builder、エンタープライズ向けエージェント構築スイート | A-3 | [INFO-017](../Information/2026-02-21/collected-raw.md#INFO-017) |
-| 2026-02-21 | Vertex AI Data Agents、BigQueryエージェント分析プラグイン | A-3 | [INFO-058](../Information/2026-02-21/collected-raw.md#INFO-058) |
-| 2026-02-21 | Loblaw協業、カナダで会話型AIコマース | A-3 | [INFO-028](../Information/2026-02-21/collected-raw.md#INFO-028) |
-| 2026-02-19 | Gemini 3.1 Pro Previewリリース、ARC-AGI-2 77.1%（Gemini 3 Pro比2.5倍） | A-3 | [INFO-007](../Information/2026-02-20/collected-raw.md#INFO-007) [INFO-008](../Information/2026-02-20/collected-raw.md#INFO-008) |
-| 2026-02-19 | Gemini 3.1 Pro、Artificial Analysis指数でClaude Opus 4.6を4ptリード | A-3 | [INFO-028](../Information/2026-02-20/collected-raw.md#INFO-028) |
-| 2026-02-17 | Google I/O 2026開催決定（5月19-20日） | A-3 | [INFO-010](../Information/2026-02-18/collected-raw.md#INFO-010) |
-| 2026-02-12 | HBRでエンタープライズアジェンティックAI変革ブループリント発表 | B-3 | [INFO-023](../Information/2026-02-18/collected-raw.md#INFO-023) |
-| 2026-02-11 | Gemini Deep ThinkがIMO-ProofBench 90%、Erdős問題4問解決 | A-3 | [INFO-011](../Information/2026-02-18/collected-raw.md#INFO-011) |
+この方向が正しければ、Google I/O 2026（5/19-20）[INFO-010](../Information/2026-02-18/collected-raw.md#INFO-010) でプロダクト統合の全貌が発表される。間違いなら、Geminiが独立ブランドとして切り出されたりAPI販売中心に転換したりする。
 
-[更新: 2026-02-21] Gemini 3.1 Pro Preview、Chrome Web MCP、Gemini Robotics、Vertex AI Agent Builder追加
+**もう一つの読み: Vertex AIでクラウド市場を追い上げる（H-GOO-002, 確度55%）**
 
-[更新: 2026-02-18]
-| 2026-02 | Gemini 3 Deep ThinkがARC-AGI-2で84.6%、GPT-5.2/Claude Opus 4.6を上回る | B-3 | [INFO-082](../Information/2026-02-18/collected-raw.md#INFO-082) |
-| 2026-02-17 | GPQA DiamondがAI推論新標準、Gemini 3/Claude Opusが上位 | A-3 | [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081) [INFO-085](../Information/2026-02-18/collected-raw.md#INFO-085) |
+Vertex AI + Geminiの組み合わせでクラウドAI市場のシェアを拡大する。Vertex AI Agent Builderの展開 [INFO-017](../Information/2026-02-21/collected-raw.md#INFO-017) と$1.6/Mの価格競争力 [INFO-090](../Information/2026-02-21/collected-raw.md#INFO-090) がこの方向を支持。Google Cloudは現在AWSの後塵を拝しているが、AIの性能と価格で巻き返しを図る。
 
-## 強み・弱み・機会・脅威（SWOT）
+**もう一つの読み: 研究ブレークスルーで新カテゴリを作る（H-GOO-003, 確度56%）**
 
-### 強み
-- 既存プロダクトへの深い統合（検索・Workspace・広告）
-- Gemini Deep Thinkの研究レベル性能
-- Google Cloud Consultingのエンタープライズ変革支援
-- 自己資金による持続的投資
+DeepMindの科学研究ブレークスルー（AlphaFold後継等）でAIの応用先を新しく作り出す。ARC-AGI-2 77.1% [INFO-008](../Information/2026-02-20/collected-raw.md#INFO-008)、Gemini Robotics [INFO-034](../Information/2026-02-21/collected-raw.md#INFO-034) が研究力の証拠。最大のリスクは「研究は凄いが商用化できない」パターン。AlphaFoldは偉大だったが、直接的な収益にはなっていない。
 
-[更新: 2026-02-18]
-- ARC-AGI-2ベンチマークで84.6%、GPT-5.2/Claude Opus 4.6を上回る [INFO-082](../Information/2026-02-18/collected-raw.md#INFO-082)
-- GPQA Diamond新標準でのリーダーシップ [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081)
+## 強みと弱み
 
-[更新: 2026-02-20]
-- **Gemini 3.1 Pro ARC-AGI-2 77.1%（Gemini 3 Pro比146%向上）、30%非連続向上閾値達成** [INFO-008](../Information/2026-02-20/collected-raw.md#INFO-008)
-- **Artificial Analysis Intelligence Indexで4ptリード、Claude Opus 4.6を上回る** [INFO-028](../Information/2026-02-20/collected-raw.md#INFO-028)
+**強み:**
+- **ベンチマーク性能トップ**: ARC-AGI-2 77.1%（146%向上）[INFO-008](../Information/2026-02-20/collected-raw.md#INFO-008)、Artificial Analysis 4ptリード [INFO-028](../Information/2026-02-20/collected-raw.md#INFO-028)、MMMU-Pro 1位 [INFO-033](../Information/2026-02-21/collected-raw.md#INFO-033)、GPQA Diamondリーダー [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081)
+- **プロダクト統合力**: 検索・Gmail・Drive・Workspaceを使っている人は既にGoogleの中にいる。そこにGeminiを入れるだけ
+- **自己資金**: 外部調達不要で長期戦に強い
+- **価格競争力**: $1.6/Mは業界最安水準 [INFO-090](../Information/2026-02-21/collected-raw.md#INFO-090)
+- **全方位展開**: 研究（DeepMind）・クラウド（Vertex AI）・プロダクト（Workspace）・ロボティクス（Gemini Robotics）を一社で同時展開
 
-### 弱み
-- DeepMind研究の商用化不確実性
-- OpenAI/Anthropicのエンタープライズ直接競争
-- Gemini 3 Flashの無料枠による収益圧迫
+**弱み:**
+- **研究→商用化の不確実性**: DeepMindの成果が収益に結びつくかは不明。AlphaFoldは偉大だったが直接的な収益にはなっていない
+- **エンタープライズ直接営業力**: OpenAI（Microsoft販路）やAnthropic（Infosys提携）に対し、Google Cloudの営業力は未知数
+- **無料枠の収益圧迫**: Gemini 3 Flashの無料枠は開発者獲得に有効だが、収益を圧迫するリスク
+- **単一ベンチマーク依存**: ARC-AGI-2でのリードが持続するかは不明
 
-### 機会
-- Google I/O 2026での統合発表
-- 74%の企業がROI達成（成功事例蓄積）
-- Vertex AI Agent Builder開発者獲得
+## 何を監視すべきか
 
-### 脅威
-- MCP標準化でのAnthropic優位
-- OpenAI FrontierのServiceNow統合
-- ByteDanceのコスト競争
-
-## I&W監視ポイント
-
-| 指標 | ステータス | 傾向 | 現在値 |
-|------|-----------|------|--------|
-| IND-001 主要ベンチマーク性能の非連続的ジャンプ | ~~elevated~~ → **high** | approaching | Gemini 3.1 Pro ARC-AGI-2 77.1%（Gemini 3 Pro 31.1%比146%向上）。30%非連続向上閾値達成。[更新: 2026-02-20] Arbiter判断: high昇格妥当。単一ベンチマーク依存リスクあるが閾値達成は客観的事実。
-
-## 変更履歴
-
-| 日付 | 変更内容 | 根拠 |
-|------|---------|------|
-| 2026-02-21 | H-GOO-001確度70%→71%、H-GOO-002 53%→55%、H-GOO-003 54%→56% | Arbiter判断（Gemini 3.1 Pro性能躍進、単一ベンチマーク依存リスク考慮） |
-| 2026-02-21 | タイムラインにGemini 3.1 Pro Preview、Chrome Web MCP、Gemini Robotics、Vertex AI Agent Builder追加 | INFO-008, INFO-017, INFO-028, INFO-033, INFO-034, INFO-035, INFO-058 |
-| 2026-02-20 | H-GOO-001確度68%→70%、H-GOO-002 50%→53%、H-GOO-003 52%→54% | Arbiter判断（Gemini 3.1 Pro性能躍進） |
-| 2026-02-20 | IND-001 elevated→high昇格 | Arbiter判断（ARC-AGI-2 146%向上、閾値達成） |
-| 2026-02-20 | エグゼクティブ・サマリーにGemini 3.1 Pro躍進を追加 | INFO-007, INFO-008, INFO-028 |
-| 2026-02-20 | タイムラインにGemini 3.1 Pro関連イベント追加 | INFO-007, INFO-008, INFO-028, INFO-036 |
-| 2026-02-19 | H-GOO-001確度69%→68%（単一証拠での過剰上昇を修正） | Arbiter判断 |
-| 2026-02-18 | ARC-AGI-2性能追加（84.6%、GPT-5.2/Claude Opus 4.6を上回る） | INFO-082 |
-| 2026-02-18 | GPQA Diamond新標準追加 | INFO-081, INFO-085 |
-| 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |
+| 何を | なぜ | 今の状態 |
+|------|------|---------|
+| ARC-AGI-2スコアの持続性 | 77.1%が一時的突出か持続的優位かで評価が変わる | IND-001, high（146%向上） |
+| Google I/O 2026（5/19-20） | プロダクト統合の全貌が発表される可能性大 | 開催決定 [INFO-010](../Information/2026-02-18/collected-raw.md#INFO-010) |
+| Vertex AI Agent Builder開発者数 | クラウド追い上げ仮説の検証指標 | リリース済み、採用数不明 |
+| Gemini Roboticsの商用化 | Preview→プロダクトに進むかどうか | Preview公開 |
