@@ -28,7 +28,7 @@ OpenAI・Anthropic・Googleの3社がフロンティアを形成し、xAIとByte
 
 ### 2. 資金が2社に集中している
 
-OpenAIが$1000億（NVIDIA $300億、Amazon、SoftBank、Microsoft参加）[INFO-102](../Information/2026-02-21/collected-raw.md#INFO-102)、Anthropicが$300億（GIC/Coatue主導）[INFO-015](../Information/2026-02-18/collected-raw.md#INFO-015)。合計$1300億がこの2社に集中している。これだけ見ると寡占化のシグナルに見えるが、**資金調達と市場支配は同じではない**。SoftBank Vision FundがWeWork等に巨額投資して失敗した前例がある。お金が集まったことは投資家が賭けたという意味であって、市場を取ったという意味ではない。IND-003はhighだが、critical昇格はこの理由で却下されている。
+OpenAIが$1000億（NVIDIA $300億、Amazon、SoftBank、Microsoft参加）[INFO-102](../Information/2026-02-21/collected-raw.md#INFO-102)、Anthropicが$300億（GIC/Coatue主導）[INFO-015](../Information/2026-02-18/collected-raw.md#INFO-015)。合計$1300億がこの2社に集中している。これだけ見ると寡占化のシグナルに見えるが、**資金調達と市場支配は同じではない**。SoftBank Vision FundがWeWork等に巨額投資して失敗した前例がある。お金が集まったことは投資家が賭けたという意味であって、市場を取ったという意味ではない。[IND-003](../config/indicators.json)はhighだが、critical昇格はこの理由で却下されている。
 
 ### 3. 価格が年10倍のペースで下がっている
 
@@ -42,7 +42,7 @@ AIの利用コストは劇的に下がり続けている。GPT-4相当の品質�
 
 AIエージェントが他のツールやサービスと接続するための標準プロトコルをめぐる争いが始まった。AnthropicのMCP（Model Context Protocol）がリード中で、OWASP、Cloudflare、Demandbase [INFO-029](../Information/2026-02-18/collected-raw.md#INFO-029) [INFO-030](../Information/2026-02-18/collected-raw.md#INFO-030) [INFO-032](../Information/2026-02-18/collected-raw.md#INFO-032)、Chrome、Oracle [INFO-024](../Information/2026-02-21/collected-raw.md#INFO-024) [INFO-035](../Information/2026-02-21/collected-raw.md#INFO-035) が対応。Linux Foundation AAIFへの寄贈も完了し10,000以上のサーバーが公開されている。
 
-一方でOpenAIはSkills/Shell/Compactionという独自の仕組みを推進 [INFO-038](../Information/2026-02-21/collected-raw.md#INFO-038)、GoogleもGemini Interactionsを持つ。現在3つ以上の標準が共存中（IND-006, elevated）。ここが「開放」に収まるか「各社バラバラの囲い込み」になるかで、シナリオの方向が大きく変わる。
+一方でOpenAIはSkills/Shell/Compactionという独自の仕組みを推進 [INFO-038](../Information/2026-02-21/collected-raw.md#INFO-038)、GoogleもGemini Interactionsを持つ。現在3つ以上の標準が共存中（[IND-006](../config/indicators.json), elevated）。ここが「開放」に収まるか「各社バラバラの囲い込み」になるかで、シナリオの方向が大きく変わる。
 
 注意すべきは「対応した」と「実際に業務で使っている」は違うということ。MCPの対応企業数は増えているが、実際の採用率の定量データはまだない。またCloudflareが「Shadow MCP」（非公式・未検証のMCPサーバー）のセキュリティリスクを警告しており [INFO-032](../Information/2026-02-18/collected-raw.md#INFO-032)、標準が広がるほどセキュリティの穴も広がる問題がある。
 
@@ -56,7 +56,7 @@ AIを導入する企業は増えているが、管理体制が追いついてい
 
 OSSのAIモデルが商用モデルとの性能差を急速に縮めている。定型的なユースケースではOSSが商用モデルと同等の性能を発揮できるようになった [INFO-086](../Information/2026-02-18/collected-raw.md#INFO-086)。Llama 4が85.5%、GLM-5がオープンソースLLMのトップ [INFO-099](../Information/2026-02-21/collected-raw.md#INFO-099) [INFO-084](../Information/2026-02-18/collected-raw.md#INFO-084)。GitHub Copilotは2,000万人到達でコーディングAIの民主化が進んでいる [INFO-025](../Information/2026-02-20/collected-raw.md#INFO-025)。
 
-ただしGemini 3.1 ProのARC-AGI-2 77.1%のような突出した性能はまだOSSでは実現できていない。商用最上位の90%性能到達の閾値（IND-004）も未達成。「普通の用途なら十分」だが「最先端が必要なら商用モデルが必要」という状況は変わっていない。
+ただしGemini 3.1 ProのARC-AGI-2 77.1%のような突出した性能はまだOSSでは実現できていない。商用最上位の90%性能到達の閾値（[IND-004](../config/indicators.json)）も未達成。「普通の用途なら十分」だが「最先端が必要なら商用モデルが必要」という状況は変わっていない。
 
 ## どこが不確実か
 
@@ -72,13 +72,13 @@ OSSのAIモデルが商用モデルとの性能差を急速に縮めている。
 
 | 指標 | 何を見ているか | 今の状態 | レベル |
 |------|--------------|---------|--------|
-| IND-001 性能の非連続ジャンプ | ベンチマークで前世代比30%超の性能向上 | Gemini 3.1 Pro ARC-AGI-2 77.1%（146%向上）。30%閾値大幅超過 | **high** |
-| IND-003 資金集中 | 上位3社が業界調達額の80%超を占めるか | $1300億が2社に集中。ただし資金調達≠市場構造変化 | **high** |
-| IND-004 OSS性能到達 | OSSが商用モデルの90%性能に達するか | Llama 4 85.5%、GLM5トップ。90%閾値は未達 | elevated |
-| IND-006 標準乱立 | 3つ以上のAgent標準が競合するか | MCP、OpenAI Skills、Gemini Interactionsが共存中 | elevated |
-| IND-008 大企業の集中 | Fortune 500のAI導入先が2-3社に集中するか | 80%がエージェント使用開始。ただし「使用」≠「1社に集中」 | elevated |
-| IND-009 AI投資持続 | 年間投資が前年比50%超成長を維持するか | 17社$100M超調達、CAPEX増加。ROI実現は5%のみ | elevated |
-| IND-011 性能収斂 | Tier 1各社のスコア差が5%以内に縮まるか | Gemini 4ptリード。価格下落は収斂圧力だが性能差は拡大中 | elevated |
-| IND-018 AGI兆候 | AGI到達を示す複合的な兆候 | ARC-AGI-2 77.1%（閾値90%に13.9%不足）。Hassabis予測5-8年 | elevated |
-| IND-019 AI業務自律化 | AIが人間の業務を自律的に代替しているか | 80%「使用」開始だが2.5%のみ人間品質完了。「浸透」≠「成功」 | elevated |
-| IND-022 スキル再定義 | コーディングの価値がAI管理能力にシフト | ジュニア開発者雇用20%減、AIスキル給与+$15-25K | **high** |
+| [IND-001](../config/indicators.json) 性能の非連続ジャンプ | ベンチマークで前世代比30%超の性能向上 | Gemini 3.1 Pro ARC-AGI-2 77.1%（146%向上）。30%閾値大幅超過 | **high** |
+| [IND-003](../config/indicators.json) 資金集中 | 上位3社が業界調達額の80%超を占めるか | $1300億が2社に集中。ただし資金調達≠市場構造変化 | **high** |
+| [IND-004](../config/indicators.json) OSS性能到達 | OSSが商用モデルの90%性能に達するか | Llama 4 85.5%、GLM5トップ。90%閾値は未達 | elevated |
+| [IND-006](../config/indicators.json) 標準乱立 | 3つ以上のAgent標準が競合するか | MCP、OpenAI Skills、Gemini Interactionsが共存中 | elevated |
+| [IND-008](../config/indicators.json) 大企業の集中 | Fortune 500のAI導入先が2-3社に集中するか | 80%がエージェント使用開始。ただし「使用」≠「1社に集中」 | elevated |
+| [IND-009](../config/indicators.json) AI投資持続 | 年間投資が前年比50%超成長を維持するか | 17社$100M超調達、CAPEX増加。ROI実現は5%のみ | elevated |
+| [IND-011](../config/indicators.json) 性能収斂 | Tier 1各社のスコア差が5%以内に縮まるか | Gemini 4ptリード。価格下落は収斂圧力だが性能差は拡大中 | elevated |
+| [IND-018](../config/indicators.json) AGI兆候 | AGI到達を示す複合的な兆候 | ARC-AGI-2 77.1%（閾値90%に13.9%不足）。Hassabis予測5-8年 | elevated |
+| [IND-019](../config/indicators.json) AI業務自律化 | AIが人間の業務を自律的に代替しているか | 80%「使用」開始だが2.5%のみ人間品質完了。「浸透」≠「成功」 | elevated |
+| [IND-022](../config/indicators.json) スキル再定義 | コーディングの価値がAI管理能力にシフト | ジュニア開発者雇用20%減、AIスキル給与+$15-25K | **high** |

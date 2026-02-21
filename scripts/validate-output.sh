@@ -163,6 +163,18 @@ if [[ -f "$REPORT" ]]; then
     check_warn "Report is DEGRADED"
   fi
 
+  # Check for unlinked IND-XXX references (should be [IND-XXX](../config/indicators.json))
+  BARE_IND=$(grep -oP '(?<!\[)IND-\d{3}(?!\]\()' "$REPORT" 2>/dev/null | wc -l | tr -d ' ')
+  if [[ "$BARE_IND" -gt 0 ]]; then
+    check_warn "$BARE_IND bare IND-XXX reference(s) without Markdown link in report"
+  fi
+
+  # Check for unlinked INFO-XXX references (should be [INFO-XXX](...))
+  BARE_INFO=$(grep -oP '(?<!\[)INFO-\d{3}(?!\]\()' "$REPORT" 2>/dev/null | wc -l | tr -d ' ')
+  if [[ "$BARE_INFO" -gt 0 ]]; then
+    check_warn "$BARE_INFO bare INFO-XXX reference(s) without Markdown link in report"
+  fi
+
   # Check file size (should be meaningful content)
   REPORT_SIZE=$(wc -c < "$REPORT")
   if [[ "$REPORT_SIZE" -gt 1000 ]]; then
@@ -173,6 +185,25 @@ if [[ -f "$REPORT" ]]; then
     check_fail "Report size: ${REPORT_SIZE} bytes (likely stub/empty)"
   fi
 fi
+
+# =============================================================================
+# 3.5. Link quality checks - static_intelligence
+# =============================================================================
+
+echo ""
+echo "--- Static Intelligence Link Quality ---"
+
+for si_file in static_intelligence/*.md; do
+  if [[ -f "$si_file" ]]; then
+    SI_BARE_IND=$(grep -oP '(?<!\[)IND-\d{3}(?!\]\()' "$si_file" 2>/dev/null | wc -l | tr -d ' ')
+    SI_BARE_INFO=$(grep -oP '(?<!\[)INFO-\d{3}(?!\]\()' "$si_file" 2>/dev/null | wc -l | tr -d ' ')
+    if [[ "$SI_BARE_IND" -gt 0 || "$SI_BARE_INFO" -gt 0 ]]; then
+      check_warn "$(basename "$si_file"): $SI_BARE_IND bare IND + $SI_BARE_INFO bare INFO reference(s)"
+    else
+      check_pass "$(basename "$si_file"): all references linked"
+    fi
+  fi
+done
 
 # =============================================================================
 # 4. Config integrity checks

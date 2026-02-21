@@ -36,6 +36,12 @@
 ```
 `[INFO-042]` のようなリンクなしテキストは**禁止**。リンク先が分からない引用は引用として機能しない。
 
+指標IDに言及する場合は、**必ず `indicators.json` へのMarkdownリンク**にすること:
+```
+[IND-001](../config/indicators.json)
+```
+`IND-001` のようなリンクなしテキストは**禁止**。
+
 ### 確度を必ず付ける
 全ての判断にICD 203準拠の確度を付与:
 - **高**: 75%±12% — 複数の信頼性の高い独立ソースで裏付け
@@ -153,4 +159,5 @@
 - [ ] 変化がない情報が含まれていないか
 - [ ] 全ての INFO-XXX が `[INFO-XXX](Information/YYYY-MM-DD/collected-raw.md#INFO-XXX)` 形式のMarkdownリンクになっているか（リンクなしテキストは不可）
 - [ ] 全ての KIQ-XXX が `[KIQ-XXX](config/collection_plan.json)` 形式のMarkdownリンクになっているか
+- [ ] 全ての IND-XXX が `[IND-XXX](../config/indicators.json)` 形式のMarkdownリンクになっているか
 - [ ] 日本語として自然か

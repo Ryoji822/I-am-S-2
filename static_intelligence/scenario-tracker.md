@@ -39,7 +39,7 @@ Geminiのような最先端モデルが他社を大きく引き離す「格差�
 **確率が上がる条件:** Skills/Shellが開発者に定着する、エンタープライズ顧客のベンダー集中が進む、性能リードが持続しGoogle製品ロックインが強化。
 **確率が下がる条件:** MCPが広く採用されロックイン解消、OSSがフロンティアに近づく、反トラスト規制介入。
 
-**監視指標:** IND-001, IND-002, IND-003, IND-015, IND-016, IND-018, IND-019, IND-020, IND-021
+**監視指標:** [IND-001](../config/indicators.json), [IND-002](../config/indicators.json), [IND-003](../config/indicators.json), [IND-015](../config/indicators.json), [IND-016](../config/indicators.json), [IND-018](../config/indicators.json), [IND-019](../config/indicators.json), [IND-020](../config/indicators.json), [IND-021](../config/indicators.json)
 
 ### SCN-002 技術は開くが勝者は出る（32%）— 開放 × 格差拡大 ★現在最有力★
 
@@ -55,7 +55,7 @@ Geminiのような最先端モデルが他社を大きく引き離す「格差�
 **確率が上がる条件:** MCP採用率の定量データが高い、OSSが向上するがフロンティアには及ばない、価格下落継続。
 **確率が下がる条件:** OpenAI Skills/Shellが支配的になりMCPが廃れる（→SCN-001）、OSSがフロンティアに追いつく（→SCN-004）。
 
-**監視指標:** IND-004, IND-005, IND-006, IND-018
+**監視指標:** [IND-004](../config/indicators.json), [IND-005](../config/indicators.json), [IND-006](../config/indicators.json), [IND-018](../config/indicators.json)
 
 ### SCN-003 静かな囲い込み（26%）— 閉鎖 × 収斂
 
@@ -65,7 +65,7 @@ Geminiのような最先端モデルが他社を大きく引き離す「格差�
 
 **しかし直近で下降傾向（33%→26%）。** Gemini 3.1 Proの性能躍進は「収斂」ではなく「格差拡大」であり、このシナリオの前提（性能差が小さい）と矛盾している。
 
-**監視指標:** IND-007, IND-008, IND-009, IND-015, IND-016, IND-017, IND-019, IND-020, IND-021, IND-022
+**監視指標:** [IND-007](../config/indicators.json), [IND-008](../config/indicators.json), [IND-009](../config/indicators.json), [IND-015](../config/indicators.json), [IND-016](../config/indicators.json), [IND-017](../config/indicators.json), [IND-019](../config/indicators.json), [IND-020](../config/indicators.json), [IND-021](../config/indicators.json), [IND-022](../config/indicators.json)
 
 ### SCN-004 誰でもAI（20%）— 開放 × 収斂
 
@@ -75,7 +75,7 @@ Geminiのような最先端モデルが他社を大きく引き離す「格差�
 
 **しかし最も確率が低い（20%）。** Gemini 3.1 Proの性能躍進はフロンティアの格差拡大を示しており、「誰でも同じ」にはまだ遠い。
 
-**監視指標:** IND-004, IND-010, IND-011, IND-012, IND-017, IND-020, IND-022
+**監視指標:** [IND-004](../config/indicators.json), [IND-010](../config/indicators.json), [IND-011](../config/indicators.json), [IND-012](../config/indicators.json), [IND-017](../config/indicators.json), [IND-020](../config/indicators.json), [IND-022](../config/indicators.json)
 
 ## ブラックスワン（低確率・高影響）
 

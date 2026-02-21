@@ -61,6 +61,12 @@ Static Intelligenceは**構造的変化**が起きたときだけ更新する。
 Anthropicは2026年2月にMCPの新バージョンを発表した [INFO-042](Information/2026-02-18/collected-raw.md#INFO-042)
 ```
 
+指標IDに言及する場合は、必ず `indicators.json` へのMarkdownリンクにする:
+```markdown
+[IND-001](../config/indicators.json)
+```
+`IND-001` のようなリンクなしテキストは**禁止**。
+
 ### 3. ドキュメント構造
 
 各企業ファイルは以下の構造を維持:

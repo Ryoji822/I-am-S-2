@@ -58,7 +58,7 @@ Skills/Shell/Compaction [INFO-038](../Information/2026-02-21/collected-raw.md#IN
 
 | 何を | なぜ | 今の状態 |
 |------|------|---------|
-| Frontier大企業契約数 | B2B仮説の成否が直接わかる | HP/Intuit/Oracle/Uber採用済み（IND-008, elevated） |
-| Skills/Shell開発者定着度 | 囲い込み成否の鍵。定着すればMCPの対抗軸に | SDK v0.8.4リリース、CrewAI 10万人認定（IND-015, elevated） |
+| Frontier大企業契約数 | B2B仮説の成否が直接わかる | HP/Intuit/Oracle/Uber採用済み（[IND-008](../config/indicators.json), elevated） |
+| Skills/Shell開発者定着度 | 囲い込み成否の鍵。定着すればMCPの対抗軸に | SDK v0.8.4リリース、CrewAI 10万人認定（[IND-015](../config/indicators.json), elevated） |
 | Assistants API廃止後の動向 | 8月の強制移行で開発者が残るか離れるか | 8月廃止予定 |
-| エンタープライズAI投資の持続性 | YoY 8倍が続くか。ROI達成は5%のみ | 組織平均$1.2M、前年比108%増（IND-009, elevated） |
+| エンタープライズAI投資の持続性 | YoY 8倍が続くか。ROI達成は5%のみ | 組織平均$1.2M、前年比108%増（[IND-009](../config/indicators.json), elevated） |

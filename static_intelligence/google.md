@@ -55,7 +55,7 @@ DeepMindの科学研究ブレークスルー（AlphaFold後継等）でAIの応�
 
 | 何を | なぜ | 今の状態 |
 |------|------|---------|
-| ARC-AGI-2スコアの持続性 | 77.1%が一時的突出か持続的優位かで評価が変わる | IND-001, high（146%向上） |
+| ARC-AGI-2スコアの持続性 | 77.1%が一時的突出か持続的優位かで評価が変わる | [IND-001](../config/indicators.json), high（146%向上） |
 | Google I/O 2026（5/19-20） | プロダクト統合の全貌が発表される可能性大 | 開催決定 [INFO-010](../Information/2026-02-18/collected-raw.md#INFO-010) |
 | Vertex AI Agent Builder開発者数 | クラウド追い上げ仮説の検証指標 | リリース済み、採用数不明 |
 | Gemini Roboticsの商用化 | Preview→プロダクトに進むかどうか | Preview公開 |
