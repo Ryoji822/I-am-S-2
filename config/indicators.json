@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-02-20",
+  "last_updated": "2026-02-21",
   "description": "I&W（Indications and Warning）指標レジストリ。各指標はシナリオの進行を監視するための観測可能な兆候",
   "indicators": [
     {
@@ -10,11 +10,11 @@
       "description": "MMLU、GPQA、ARC-AGI等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される。特にARC-AGI-2はAGI到達度の代理指標として重視",
       "threshold": "ベンチマークスコア30%以上の非連続的向上、またはARC-AGI-2で90%超過",
       "status": "high",
-      "last_checked": "2026-02-20",
+      "last_checked": "2026-02-21",
       "last_value": "Gemini 3.1 Pro ARC-AGI-2 77.1%（Gemini 3 Pro 31.1%比2.5倍、+146%向上）。30%非連続向上閾値達成",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter: high昇格妥当。31.1%→77.1%は146%向上で30%閾値大幅超過。ただし単一ベンチマーク依存リスクあり、持続性監視必要"
+      "rationale": "Arbiter: high維持妥当。31.1%→77.1%は146%向上で30%閾値大幅超過。ただし単一ベンチマーク依存リスクあり、持続性監視必要"
     },
     {
       "indicator_id": "IND-002",
@@ -23,7 +23,7 @@
       "description": "Agent API呼び出し数または収益ベースで1社が市場の50%以上を占める",
       "threshold": "市場シェア50%超過",
       "status": "monitoring",
-      "last_checked": "2026-02-20",
+      "last_checked": "2026-02-21",
       "last_value": "競合激化、単独支配なし",
       "trend": "stable",
       "alert_level": "normal"
@@ -35,11 +35,11 @@
       "description": "上位3社の年間資金調達額がAI業界全体の80%以上を占める",
       "threshold": "上位3社の資金調達シェア80%超過",
       "status": "high",
-      "last_checked": "2026-02-20",
-      "last_value": "Anthropic $30B + xAI $20B = $50Bが2社に集中。上位3社シェア80%閾値接近",
+      "last_checked": "2026-02-21",
+      "last_value": "OpenAI $1000億 + Anthropic $300億 = $1300億が2社に集中。上位3社シェア80%閾値接近",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "high昇格妥当。注意: 資金調達≠市場支配。収益化・市場シェアへの影響を別途監視"
+      "rationale": "Arbiter: Blue critical昇格却下、high維持。$1300億調達は事実だが「資金調達≠市場構造変化」。投資家の期待と実現価値を区別すべき。追加収集: 調達資金の使途明細、ROI実績"
     },
     {
       "indicator_id": "IND-004",
@@ -48,11 +48,11 @@
       "description": "オープンソースモデルが主要ベンチマークで商用最上位モデルの90%以上の性能を達成",
       "threshold": "商用最上位の90%性能到達",
       "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "OSS性能ギャップ縮小傾向。GPT-OSS-20B $0.05/M（最安値）。GLM-5はByteDance系で純OSSではない",
+      "last_checked": "2026-02-21",
+      "last_value": "OSS（Llama 4 85.5%、GLM5）がプロプライエタリと互角競争開始。90%閾値到達未確認",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "OSS定義見直し必要。Llama/Mistral等の純OSS第三者検証待ち"
+      "rationale": "Arbiter: elevated維持。OSS台頭は支持されるが90%閾値到達未確認。純OSS第三者検証待ち"
     },
     {
       "indicator_id": "IND-005",
@@ -61,7 +61,7 @@
       "description": "AI主要カンファレンス（NeurIPS, ICML等）でTier 1企業がオープン公開する論文の割合",
       "threshold": "オープン公開率60%以上",
       "status": "monitoring",
-      "last_checked": "2026-02-20",
+      "last_checked": "2026-02-21",
       "last_value": null,
       "trend": "stable",
       "alert_level": "normal"
@@ -73,11 +73,11 @@
       "description": "3つ以上の競合するAgent通信標準（MCP含む）が各々有意なエコシステムを持つ",
       "threshold": "3標準以上が各100+統合を持つ",
       "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "MCP（Oracle/OWASP/Cloudflare/Chrome/MoSPI公式サーバー対応）、Gemini Interactions API、OpenAI Agent Skills等複数標準共存。MCP「対応」と「採用」は別問題",
+      "last_checked": "2026-02-21",
+      "last_value": "MCP（Chrome/OWASP/Oracle/MoSPI公式サーバー対応）、Gemini Interactions API、OpenAI Agent Skills等複数標準共存。3標準以上の共存状況維持",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter: 標準形成の動き活発化、3標準以上の共存状況を監視。「対応」≠「採用」"
+      "rationale": "Arbiter: elevated維持。標準形成の動き活発化、3標準以上の共存状況を監視。「対応」≠「採用」の区別必要"
     },
     {
       "indicator_id": "IND-007",
@@ -86,11 +86,10 @@
       "description": "Tier 2 AI企業（中堅AI企業）の買収・事業撤退が年間5件以上発生",
       "threshold": "年間買収/撤退5件以上",
       "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "Mistral→Koyeb買収（垂直統合）、Anthropic→Bun買収、SpaceX→xAI買収",
+      "last_checked": "2026-02-21",
+      "last_value": "Mistral→Koyeb買収、Anthropic→Bun買収、SpaceX→xAI買収。Tier 2企業の買収・統合加速",
       "trend": "rising",
-      "alert_level": "elevated",
-      "rationale": "Tier 2企業の買収・統合加速"
+      "alert_level": "elevated"
     },
     {
       "indicator_id": "IND-008",
@@ -99,11 +98,11 @@
       "description": "Fortune 500企業のAI Agent導入先がTier 1の2-3社に集中（各社シェア25%以上）",
       "threshold": "上位3社合計シェア75%超過",
       "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "Fortune 500の80%がエージェント使用、OpenAI Frontier Platform（HP/Intuit/Oracle/Uber初期導入）、Snowflake 6,000ユーザー展開",
+      "last_checked": "2026-02-21",
+      "last_value": "Fortune 500の80%がエージェント「使用」開始。OpenAI Frontier Platform初期導入、Snowflake 6,000ユーザー展開。「集中」の定量データ不在",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "大手エンタープライズ契約がTier 1に集中。単一ソース依存リスク"
+      "rationale": "Arbiter: Blue high昇格却下、elevated維持。「使用」≠「集中」。Fortune 500の80%がエージェント使用しても単一ベンダー集中とは限らない（マルチベンダー戦略の可能性）。定量根拠不足"
     },
     {
       "indicator_id": "IND-009",
@@ -112,11 +111,11 @@
       "description": "AI業界への年間投資額が前年比50%以上の成長を3四半期連続で維持",
       "threshold": "前年比50%以上成長を3Q連続",
       "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "17社$100M以上調達（うち3社$1B超）、従業員AIアクセス50%増、100%拡大計画",
+      "last_checked": "2026-02-21",
+      "last_value": "17社$100M以上調達（うち3社$1B超）、Alphabet +$100億・Meta +$200億 CAPEX増、従業員AIアクセス50%増",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "AI投資の持続的増大。ROI実現5%のみ（95%失敗）を考慮"
+      "rationale": "AI投資の持続的増大。ROI実現5%のみ（95%失敗、Bain Capital）を考慮"
     },
     {
       "indicator_id": "IND-010",
@@ -125,7 +124,7 @@
       "description": "業種・機能特化型Agent企業の新規設立数が四半期50社以上",
       "threshold": "新規設立50社/四半期以上",
       "status": "monitoring",
-      "last_checked": "2026-02-20",
+      "last_checked": "2026-02-21",
       "last_value": null,
       "trend": "stable",
       "alert_level": "normal"
@@ -137,11 +136,11 @@
       "description": "主要ベンチマークでTier 1各社のスコア差が5%以内に収斂",
       "threshold": "性能差5%以内",
       "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "Gemini 3.1 ProがClaude Opus 4.6を4ptリード（Artificial Analysis指数）。収斂傾向あるが格差拡大判定は過剰（Arbiter）",
+      "last_checked": "2026-02-21",
+      "last_value": "Gemini 3.1 ProがClaude Opus 4.6を4ptリード（Artificial Analysis指数）。価格下落（年間10倍）は収斂圧力だが、Gemini性能躍進は格差拡大の反証",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "Arbiter: 4pt差の「格差拡大」判定根拠不明確。価格下落（年間10倍）は収斂圧力。Blue high昇格却下、elevated維持"
+      "rationale": "Arbiter: elevated維持。4pt差の「格差拡大」判定根拠不明確。価格下落は収斂圧力、Gemini躍進は格差拡大。双方の証拠が共存"
     },
     {
       "indicator_id": "IND-012",
@@ -150,11 +149,11 @@
       "description": "単一のオープンAgent標準（MCP等）がAgent統合の70%以上で使用される",
       "threshold": "単一標準の採用率70%超過",
       "status": "elevated",
-      "last_checked": "2026-02-20",
+      "last_checked": "2026-02-21",
       "last_value": "OWASP/Cloudflare/Chrome/MoSPI公式MCPサーバー「対応」。Oracle公式解説、Linux Foundation AAIF寄贈、10,000+サーバー。採用率の定量データ不在",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter: 「対応」企業数と「採用」率を区別必要。KIQ-001-03（MCP採用定量データ）が必須"
+      "rationale": "Arbiter: elevated維持。「対応」企業数と「採用」率を区別必要。KIQ-001-03（MCP採用定量データ）が必須"
     },
     {
       "indicator_id": "IND-013",
@@ -163,8 +162,8 @@
       "description": "AI Agentによる大規模な社会的損害（フェイク情報拡散、金融損失、物理的事故等）が発生し、主要メディアで報道",
       "threshold": "主要メディア5社以上で報道されるAI事故",
       "status": "monitoring",
-      "last_checked": "2026-02-20",
-      "last_value": "Claude AI誤削除事例（軽微）、Opus 4.6脆弱性500件発見（セキュリティ向上）",
+      "last_checked": "2026-02-21",
+      "last_value": "Claude AI誤削除事例（軽微）、Opus 4.6脆弱性500件発見（セキュリティ向上）。重大事故なし",
       "trend": "stable",
       "alert_level": "normal",
       "rationale": "軽微な事例のみ、重大事故なし。脆弱性発見は正のシグナル"
@@ -176,7 +175,7 @@
       "description": "量子コンピュータがAI訓練または推論タスクで実用的な優位性を実証",
       "threshold": "量子優位のAI実用化事例",
       "status": "monitoring",
-      "last_checked": "2026-02-20",
+      "last_checked": "2026-02-21",
       "last_value": null,
       "trend": "stable",
       "alert_level": "normal"
@@ -188,11 +187,11 @@
       "description": "Hosted Shell/Sandbox等のAgent実行環境が特定ベンダーに囲い込まれている度合い。ローカル実行可能性、他社環境への移植性で評価",
       "threshold": "主要3社のうち2社以上がベンダー専用実行環境を必須化",
       "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "OpenAI Skills/Shell（囲い込み）、Anthropic Claude Code（ローカル実行可）、Google Gemini Extensions（Google環境依存）。OpenAI Assistants API廃止予定（INFO-019）",
+      "last_checked": "2026-02-21",
+      "last_value": "OpenAI Skills/Shell（囲い込み）、Anthropic Claude Code（ローカル実行可）、Google Gemini Extensions（Google環境依存）。OpenAI Assistants API廃止予定",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "OpenAI Shellの囲い込み傾向とAnthropic MCPの開放傾向が対照的。Assistants API廃止は囲い込み兆候"
+      "rationale": "Arbiter: OpenAI Shellの囲い込み傾向とAnthropic MCPの開放傾向が対照的。H-OAI-002確度52%（±0%）と整合"
     },
     {
       "indicator_id": "IND-016",
@@ -201,7 +200,7 @@
       "description": "Skills/プラグインの配布形式がベンダー固有か、他社でも利用可能な標準形式か。審査プロセスの有無も評価",
       "threshold": "主要3社のスキル形式が互換性なし、かつ審査による制限あり",
       "status": "elevated",
-      "last_checked": "2026-02-20",
+      "last_checked": "2026-02-21",
       "last_value": "OpenAI Skills（独自形式、審査あり）、MCP（オープン標準、審査なし）、Gemini Extensions（Google固有）。互換性は低い",
       "trend": "rising",
       "alert_level": "elevated",
@@ -214,7 +213,7 @@
       "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）をAIの差別化に活用している度合い",
       "threshold": "独占データを活用したAI機能が各社3つ以上",
       "status": "elevated",
-      "last_checked": "2026-02-20",
+      "last_checked": "2026-02-21",
       "last_value": "Google（検索/Gmail/Drive）、xAI（Xデータ）、ByteDance（TikTokデータ）が独占データ活用。OpenAI/Anthropicは外部データ依存",
       "trend": "stable",
       "alert_level": "elevated",
@@ -227,11 +226,11 @@
       "description": "AIが人間の専門家を代替する領域の急速な拡大、自律的科学研究の成果、自己改善能力の兆候、各社CEOのAGIタイムライン前倒し発言、AGI安全性に関する緊急政策議論など、AGI到達が近づいていることを示す複合的な兆候",
       "threshold": "以下のうち3つ以上が同時に観測: (1) ARC-AGI-2スコア90%超 (2) AIによる査読付き論文の単独執筆 (3) 主要CEOが2年以内のAGIを公言 (4) 政府レベルのAGIモラトリアム議論 (5) AIが新薬候補を自律的に発見・検証",
       "status": "elevated",
-      "last_checked": "2026-02-20",
+      "last_checked": "2026-02-21",
       "last_value": "ARC-AGI-2 77.1%（閾値90%に13.9%不足）。Hassabis 5-8年予測は「2年以内AGI」を否定。現在2/5条件以下",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "Arbiter: Blue「3/5達成」は過大評価。Hassabis「5-8年」発言は条件3（2年以内AGI公言）を否定。Blue high昇格却下、elevated維持"
+      "rationale": "Arbiter: elevated維持。Blue「3/5達成」は過大評価。Hassabis「5-8年」発言は条件3（2年以内AGI公言）を否定。単一ベンチマーク依存リスク考慮"
     },
     {
       "indicator_id": "IND-019",
@@ -240,11 +239,11 @@
       "description": "AIエージェントが人間の業務を自律的に代替している度合い。広告運用・コーディング・カスタマーサポート等の先行領域を指標とし、エントリーレベル職の採用方針変更やAI業務時間削減率で評価",
       "threshold": "Fortune 500の30%以上がAIによる業務自律化目標を公表、かつ先行3業界でエントリーレベル採用20%以上削減",
       "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "Snowflake 6,000ユーザー展開（5x ROI、92% NPS）、Fortune 500の80%がエージェント使用開始。ただし完全自律化事例は限定的。Bain Capital報告は失敗パターン分析",
+      "last_checked": "2026-02-21",
+      "last_value": "Fortune 500の80%がエージェント使用開始。Remote Labor Index: 2.5%のみ人間品質完了。Bain Capital: 95%失敗。「浸透」≠「成功」の区別必要",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "業務自律化はまだ部分的だが、CS・コーディング領域で加速。採用方針変更が先行指標"
+      "rationale": "Arbiter: Blue high昇格却下、elevated維持。「浸透」≠「成功」。Fortune 500の80%「使用」≠「自律化完了」。ROI達成率等の成功指標が必要"
     },
     {
       "indicator_id": "IND-020",
@@ -253,8 +252,8 @@
       "description": "Meta/Google等のプラットフォーマーがAI統合により広告代理店・SaaS等の中間事業者のバリューチェーンを侵食している度合い。広告のインハウス化率、中間事業者の減収・事業再編が指標",
       "threshold": "主要プラットフォーマー2社以上がAI自動化で中間工程を代替する機能を正式提供、かつ中間事業者の売上減少が業界報告で確認",
       "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "Meta Advantage+ AI広告自動化拡大、Google P-Max AI運用、広告主インハウス化傾向。代理店再編の兆候あり",
+      "last_checked": "2026-02-21",
+      "last_value": "Meta Advantage+ AI広告自動化拡大、Google P-Max AI運用、広告主インハウス化傾向。Alphabet/Meta CAPEX増。IPA代理店14%削減",
       "trend": "rising",
       "alert_level": "elevated",
       "rationale": "スマイルカーブの中間工程圧縮として、広告業界が最も早い先行指標。SaaS領域も後追い"
@@ -266,24 +265,24 @@
       "description": "バリューチェーンの中間工程（プログラミング・広告運用・レポーティング等）の付加価値が急減し、両端（戦略/R&Dと顧客接点/実行）の価値が増大する構造変化の進行度。広告・SaaS・SI業界を横断的に監視",
       "threshold": "以下のうち2つ以上が同時に観測: (1) 中間工程の単価がインフレ率を下回って2四半期連続低下 (2) 上流コンサル/戦略職と中間実装職の給与格差が20%以上拡大 (3) 主要企業3社以上が中間工程の自動化完了を宣言",
       "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "広告レポート作成2分化（サイバーエージェント）、コーディングAI導入率急増、Bain Capital失敗パターン分析。ただし中間工程単価の定量的低下データは未取得",
+      "last_checked": "2026-02-21",
+      "last_value": "広告レポート作成2分化（サイバーエージェント）、コーディングAI導入率急増、Bain Capital失敗パターン分析、IPA 14%削減。中間工程単価の定量的低下データは未取得",
       "trend": "approaching",
       "alert_level": "elevated",
       "rationale": "IND-020（プラットフォーマー中抜き）の構造的原因として独立追跡。広告・コーディング・SIが先行指標"
     },
     {
       "indicator_id": "IND-022",
-      "name": "コーディング能力のコモディティ化",
+      "name": "コーディング能力のスキル再定義",
       "scenario_ids": ["SCN-003", "SCN-004"],
       "description": "AIコーディングツールの普及により「コードを書く能力」自体の差別化価値が低下し、「AIに書かせて評価・方向付けする能力」への価値シフトが進行している度合い",
       "threshold": "以下のうち2つ以上が同時に観測: (1) AIコーディングツール企業導入率50%超 (2) ジュニアエンジニア求人が前年比20%以上減少 (3) 求人票の必須スキルが実装力から設計力・評価力にシフト（主要求人サイト3社以上で確認）",
-      "status": "elevated",
-      "last_checked": "2026-02-20",
-      "last_value": "GitHub Copilot 2,000万人到達、Cursor急速普及、SFエンジニアからスキルコモディティ化の声あり。ただし求人数への定量的影響は未確認",
+      "status": "high",
+      "last_checked": "2026-02-21",
+      "last_value": "ジュニア開発者（25歳以下）雇用20%減（Stanford調査）、AIスキル給与+$15-25K。GitHub Copilot 2,000万人到達",
       "trend": "rising",
-      "alert_level": "elevated",
-      "rationale": "キャリアPIR-004の中核指標。「書ける」→「メタスキル」への移行速度を追跡"
+      "alert_level": "high",
+      "rationale": "Arbiter: Blue high昇格採用。ジュニア雇用20%減・AIスキル給与+$15-25Kは客観的事実。表現を「コモディティ化」から「スキル再定義」に修正"
     }
   ]
 }

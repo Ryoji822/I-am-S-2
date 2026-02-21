@@ -1,11 +1,11 @@
 # ByteDance インテリジェンス・プロファイル
 
-> 最終更新: 2026-02-20
+> 最終更新: 2026-02-21 [Arbiter更新]
 > 確度: 中
 
 ## エグゼクティブ・サマリー
 
-ByteDanceがSeed 2.0で価格破壊を仕掛けている。GPT-5.2、Gemini 3 Pro同等性能で約1桁低コスト。155M週間アクティブユーザー（Doubao）、LMSYS Text Arena 6位、Vision Arena 3位。ただし自己申告ベンチマーク・単一ソース依存の確度中。コスト優位性で新興市場・価格競争への影響力が増大中。第三者検証が次の重要指標。
+ByteDanceがSeed 2.0で価格破壊を仕掛けている。**[更新: 2026-02-21] Doubao 2.0がエンドツーエンド実行可能な自律エージェントへ進化 [INFO-011](../Information/2026-02-21/collected-raw.md#INFO-011)。Seed 2.0（Pro/Lite/Mini/Code）3種類のAgent専用モデルを正式発表 [INFO-012](../Information/2026-02-21/collected-raw.md#INFO-012)。** GPT-5.2、Gemini 3 Pro同等性能で約1桁低コスト。155M週間アクティブユーザー（Doubao）。ただし自己申告ベンチマーク・単一ソース依存の確度中。第三者検証が次の重要指標。
 
 ## 基本情報
 
@@ -19,13 +19,13 @@ ByteDanceがSeed 2.0で価格破壊を仕掛けている。GPT-5.2、Gemini 3 Pr
 
 ### 現在の主力仮説
 
-**H-BTD-002: コスト優位価格競争戦略**（確度: 51%、~~50%~~ → **51%**）[更新: 2026-02-20]
-ByteDanceは圧倒的なコスト優位性（低価格モデル）で新興市場を席巻し、価格競争でTier 1全体を揺さぶる。**Doubao 2.0「1/10コスト」主張、価格年間10倍下落が価格競争激化を支持（+1%）。** 第三者検証なし企業発表だが価格競争激化は客観的事実（Arbiter判断）。[INFO-011](../Information/2026-02-20/collected-raw.md#INFO-011) [INFO-022](../Information/2026-02-20/collected-raw.md#INFO-022)。
+**H-BTD-002: コスト優位価格競争戦略**（確度: 51%）[更新: 2026-02-21]
+ByteDanceは圧倒的なコスト優位性（低価格モデル）で新興市場を席巻し、価格競争でTier 1全体を揺さぶる。**価格1/10は第三者検証（INFO-093）だが品質同等が未検証（±0%）。** [INFO-011](../Information/2026-02-21/collected-raw.md#INFO-011) [INFO-093](../Information/2026-02-21/collected-raw.md#INFO-093)。価格優位は「品質同等」を前提とする仮説（Arbiter判断）。
 
 ### 代替仮説
 
-**H-BTD-001: 中国→グローバル展開戦略**（確度: 46%、~~45%~~ → **46%**）[更新: 2026-02-20]
-ByteDanceはCoze/Doubaoプラットフォームで中国Agent市場を支配し、次いで東南アジア・グローバル展開する。**Doubao 2.0エージェント時代宣言が市場展開を支持（+1%）。** [INFO-010](../Information/2026-02-20/collected-raw.md#INFO-010) [INFO-011](../Information/2026-02-20/collected-raw.md#INFO-011)。規制リスク継続考慮（Arbiter判断）。
+**H-BTD-001: 中国→グローバル展開戦略**（確度: 48%、~~46%~~ → **48%**）[更新: 2026-02-21]
+ByteDanceはCoze/Doubaoプラットフォームで中国Agent市場を支配し、次いで東南アジア・グローバル展開する。**Doubao 2.0エージェント時代宣言・Seed 2.0正式発表が市場展開を支持（+2%）。** [INFO-011](../Information/2026-02-21/collected-raw.md#INFO-011) [INFO-012](../Information/2026-02-21/collected-raw.md#INFO-012)。規制リスク継続考慮（Arbiter判断）。
 
 **H-BTD-003: クリエイターエコノミー特化戦略**（確度: 35%）
 ByteDanceはTikTok/Douyinのコンテンツ制作AIとAgent技術を融合させ、クリエイターエコノミーAgentで差別化する。関連情報なし、推定ベース。
@@ -34,7 +34,11 @@ ByteDanceはTikTok/Douyinのコンテンツ制作AIとAgent技術を融合させ
 
 | 日付 | イベント | 信頼性 | 引用 |
 |------|---------|-------|------|
+| 2026-02-15 | Doubao 2.0、エンドツーエンド実行可能な自律エージェントへ進化 | B-3 | [INFO-011](../Information/2026-02-21/collected-raw.md#INFO-011) |
+| 2026-02 | Seed 2.0正式発表、Agent専用モデル（Pro/Lite/Mini/Code） | A-3 | [INFO-012](../Information/2026-02-21/collected-raw.md#INFO-012) |
 | 2026-02-14 | Seed 2.0正式発表、GPT-5.2/Gemini 3 Pro同等・約1桁低コスト | A-3 | [INFO-017](../Information/2026-02-18/collected-raw.md#INFO-017) |
+
+[更新: 2026-02-21] Doubao 2.0自律エージェント進化、Seed 2.0正式発表追加
 
 ## 強み・弱み・機会・脅威（SWOT）
 
@@ -71,6 +75,8 @@ ByteDanceはTikTok/Douyinのコンテンツ制作AIとAgent技術を融合させ
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-21 | H-BTD-001確度46%→48%（Doubao 2.0/Seed 2.0正式発表）、H-BTD-002確度51%（±0%、品質同等未検証） | Arbiter判断 |
+| 2026-02-21 | タイムラインにDoubao 2.0自律エージェント進化、Seed 2.0正式発表追加 | INFO-011, INFO-012 |
 | 2026-02-20 | H-BTD-001確度45%→46%、H-BTD-002確度50%→51% | Arbiter判断（価格競争激化、エージェント時代宣言） |
 | 2026-02-19 | H-BTD-001確度48%→45%（規制リスク考慮）、H-BTD-002確度52%→50%（OSS定義曖昧性） | Arbiter判断 |
 | 2026-02-18 | 初版作成 | Arbiter判断に基づく統合分析 |

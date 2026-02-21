@@ -1,11 +1,11 @@
 # Anthropic インテリジェンス・プロファイル
 
-> 最終更新: 2026-02-20
+> 最終更新: 2026-02-21
 > 確度: 高
 
 ## エグゼクティブ・サマリー
 
-Anthropicは爆発的成長を遂げている。$30B Series G調達（評価額$380B）、年間収益$14B、過去3年で毎年10倍以上成長。Claude Codeが6ヶ月で$1B年間収益達成。**[更新: 2026-02-20] Claude Opus 4.6価格を$15/$75から$5/$25に値下げ（67%削減）。Infosysと提携し通信・金融・製造向けエージェント構築。SIチーム拡大で安全性投資継続。** Bun買収で開発者ツールチェーン統合、Claude Agent SDK v0.2.47でエコシステム拡充中。ASL-3保護有効化とサボタージュリスク公開で安全性リーダーシップを強化。
+Anthropicは爆発的成長を遂げている。$30B Series G調達（評価額$380B）、年間収益$14B、過去3年で毎年10倍以上成長。Claude Codeが6ヶ月で$1B年間収益達成。**[更新: 2026-02-21] Infosysと提携し通信・金融・製造向けエージェント構築。SOC2準拠のエンタープライズグレードセキュリティで規制業界戦略を強化。Claude Code SDKがClaude Agent SDKに名称変更。Computer Use Agents構築パターン公開。** MCP標準化がChrome/OWASP/Oracle対応で加速。Bun買収で開発者ツールチェーン統合中。ASL-3保護有効化とサボタージュリスク公開で安全性リーダーシップを強化。
 
 ## 基本情報
 
@@ -19,24 +19,26 @@ Anthropicは爆発的成長を遂げている。$30B Series G調達（評価額$
 
 ### 現在の主力仮説
 
-**H-ANT-001: 安全性差別化エンタープライズ戦略**（確度: 54%）
-Anthropicは安全性を差別化要因として、規制準拠が求められるエンタープライズ市場で優位に立つ。ASL-3保護有効化（CBRN兵器悪用防止）、サボタージュリスク公開評価が証拠 [INFO-003](../Information/2026-02-18/collected-raw.md#INFO-003) [INFO-022](../Information/2026-02-18/collected-raw.md#INFO-022)。[更新: 2026-02-19] Arbiter判断: Red Agent指摘(競合比較不在、確証バイアス)を考慮し58%→54%に引き下げ。安全性取り組みは客観的だが差別化の診断的価値は低下（競合も同等投資）。
+**H-ANT-001: 安全性差別化エンタープライズ戦略**（確度: 55%、~~54%~~ → **55%**）[更新: 2026-02-21]
+Anthropicは安全性を差別化要因として、規制準拠が求められるエンタープライズ市場で優位に立つ。**SOC2準拠・Compliance API・Infosys提携が規制業界戦略を支持（+1%）。** [INFO-001](../Information/2026-02-21/collected-raw.md#INFO-001) [INFO-003](../Information/2026-02-21/collected-raw.md#INFO-003) [INFO-016](../Information/2026-02-21/collected-raw.md#INFO-016)。競合比較不在だが方向性は正しい（Arbiter判断）。
 
 ### 代替仮説
 
-**H-ANT-002: MCP標準化エコシステム戦略**（確度: 51%）
-AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準を確立し、エコシステム戦略で勝つ。OWASP/Cloudflare/Chrome/MoSPI公式対応で標準化進行 [INFO-024](../Information/2026-02-19/collected-raw.md#INFO-024) [INFO-026](../Information/2026-02-19/collected-raw.md#INFO-026) [INFO-035](../Information/2026-02-19/collected-raw.md#INFO-035) [INFO-042](../Information/2026-02-19/collected-raw.md#INFO-042)。[更新: 2026-02-19] Arbiter判断: MCP「対応」と「採用」の区別必要(Red指摘)。採用率の定量データ不在により53%→51%に引き下げ。診断的価値低下。
+**H-ANT-002: MCP標準化エコシステム戦略**（確度: 52%、~~51%~~ → **52%**）[更新: 2026-02-21]
+AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準を確立し、エコシステム戦略で勝つ。**MCP採用拡大継続（Chrome/OWASP/Oracle対応）（+1%）。** [INFO-024](../Information/2026-02-21/collected-raw.md#INFO-024) [INFO-035](../Information/2026-02-21/collected-raw.md#INFO-035)。Arbiter判断: 「対応」と「採用」の区別必要。
 
-**H-ANT-003: AWS提携深化戦略**（確度: 33%、~~38%~~ → **33%**）[更新: 2026-02-20]
-~~AnthropicはAmazonとの戦略的提携を深化させ、AWS経由でのエンタープライズ浸透を主戦略とする~~。**Infosys直販提携はAWS依存と矛盾（-5%）。** [INFO-003](../Information/2026-02-20/collected-raw.md#INFO-003)。$30B調達、Bun買収、独自SDKもAWS依存と矛盾。棄却候補として監視継続（Arbiter判断）。
+**H-ANT-003: AWS提携深化戦略**（確度: 30%、~~33%~~ → **30%**）[更新: 2026-02-21]
+~~AnthropicはAmazonとの戦略的提携を深化させ、AWS経由でのエンタープライズ浸透を主戦略とする~~。**Infosys直販提携はAWS依存戦略と矛盾（-3%）。** [INFO-001](../Information/2026-02-21/collected-raw.md#INFO-001)。棄却候補として監視継続（Arbiter判断）。
 
 ## 主要動向タイムライン
 
 | 日付 | イベント | 信頼性 | 引用 |
 |------|---------|-------|------|
+| 2026-02-21 | Claude Code SDK → Claude Agent SDKに名称変更 | A-3 | [INFO-007](../Information/2026-02-21/collected-raw.md#INFO-007) |
+| 2026-02-21 | Computer Use Agents構築パターン公開 | B-3 | [INFO-036](../Information/2026-02-21/collected-raw.md#INFO-036) |
+| 2026-02-21 | Claude Code SOC2準拠（エンタープライズグレードセキュリティ） | B-3 | [INFO-016](../Information/2026-02-21/collected-raw.md#INFO-016) |
+| 2026-02-17 | Infosys提携、通信・金融・製造向けエージェント構築 | A-3 | [INFO-001](../Information/2026-02-21/collected-raw.md#INFO-001) |
 | 2026-02-19 | Claude Agent SDK v0.2.47リリース、高頻度更新継続 | A-3 | [INFO-006](../Information/2026-02-20/collected-raw.md#INFO-006) |
-| 2026-02-18 | Claude Opus 4.6値下げ（$15/$75→$5/$25、67%削減） | C-3 | [INFO-022](../Information/2026-02-20/collected-raw.md#INFO-022) |
-| 2026-02-17 | Infosys提携、通信・金融・製造向けエージェント構築 | A-3 | [INFO-003](../Information/2026-02-20/collected-raw.md#INFO-003) |
 | 2026-02-17 | Claude Agent SDK v0.2.45リリース、Sonnet 4.6対応 | A-3 | [INFO-014](../Information/2026-02-18/collected-raw.md#INFO-014) |
 | 2026-02-17 | Claude Sonnet 4.6 Bedrock提供開始 | A-3 | [INFO-063](../Information/2026-02-18/collected-raw.md#INFO-063) |
 | 2026-02-17 | GPQA Diamond新標準、Claude Opusが上位 | A-3 | [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081) [INFO-085](../Information/2026-02-18/collected-raw.md#INFO-085) |
@@ -45,7 +47,7 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 | 2026-02-05 | サボタージュリスク評価公開、「非常に低いが無視できない」 | A-3 | [INFO-022](../Information/2026-02-18/collected-raw.md#INFO-022) |
 | 2025-12-03 | Bun買収、Claude Code $1B年間収益達成 | A-3 | [INFO-001](../Information/2026-02-18/collected-raw.md#INFO-001) |
 
-[更新: 2026-02-20] Claude Opus 4.6値下げ、Infosys提携、Claude Agent SDK v0.2.47追加
+[更新: 2026-02-21] Claude Agent SDK名称変更、Computer Use Agents、SOC2準拠、Infosys提携追加
 
 ## 強み・弱み・機会・脅威（SWOT）
 
@@ -91,6 +93,8 @@ AnthropicはMCP（Model Context Protocol）を通じてAgent間連携の標準�
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-21 | H-ANT-001確度54%→55%（SOC2準拠・Infosys提携）、H-ANT-002確度51%→52%（MCP採用拡大）、H-ANT-003確度33%→30%（Infosys直販がAWS依存と矛盾） | Arbiter判断 |
+| 2026-02-21 | タイムラインにClaude Agent SDK名称変更、Computer Use Agents、SOC2準拠追加 | INFO-007, INFO-016, INFO-036 |
 | 2026-02-20 | H-ANT-003確度38%→33%、Infosys直販提携がAWS依存と矛盾 | Arbiter判断 |
 | 2026-02-20 | エグゼクティブ・サマリーにClaude Opus値下げ、Infosys提携追加 | INFO-003, INFO-022 |
 | 2026-02-20 | タイムラインに値下げ、Infosys提携、SDK v0.2.47追加 | INFO-003, INFO-006, INFO-022 |

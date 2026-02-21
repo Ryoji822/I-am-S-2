@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "last_updated": "2026-02-20",
+  "last_updated": "2026-02-21",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。X軸: ロックインの強さ（閉鎖←→開放）、Y軸: 能力差の大きさ（格差拡大←→収斂）",
   "driving_forces": {
     "axis_x": {
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 格差拡大",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 20,
-      "probability_change": "-2%",
-      "probability_rationale": "Arbiter: Assistants API廃止は囲い込み支持だが、Gemini性能躍進は「格差拡大」のみ支持（囲い込み不透明）。Pomelli無料ツール等は開放的側面も",
+      "probability": 22,
+      "probability_change": "+2%",
+      "probability_rationale": "Arbiter: Blue +2%採用。OpenClaw買収・Skills/Shell/Compaction囲い込み・NVIDIA $300億投資が囲い込みを支持。ただし「支配」レベルには至らず、複数プレイヤー共存",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Hosted Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "OSSやMCP等の標準で相互運用性は高まるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 31,
-      "probability_change": "+3%",
-      "probability_rationale": "Arbiter: Blue +4%/Red +2%の折衷。MCP標準化進行（Oracle公式解説、Linux Foundation AAIF寄贈）×Gemini性能リード確立。価格下落証拠も考慮",
+      "probability": 32,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter: Blue +2%/Red ±0%の折衷で+1%。MCP標準化進行（Chrome/OWASP/Oracle対応）×Gemini 3.1 Pro性能躍進（ARC-AGI-2 77.1%）。価格下落考慮。ただし単一ベンチマーク依存リスクあり",
       "key_assumptions": [
         "主要な技術ブレークスルーがオープンに公開される部分もある",
         "標準プロトコル（MCP等）が広く採用される",
@@ -65,9 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、囲い込みが主戦場になる",
-      "probability": 29,
-      "probability_change": "-2%",
-      "probability_rationale": "Arbiter: 価格年間10倍下落は収斂支持だが、Gemini性能差は収斂と矛盾。Bain Capital報告はエコシステム依存を強調",
+      "probability": 26,
+      "probability_change": "-3%",
+      "probability_rationale": "Arbiter: Blue -3%採用。Gemini $1.6/M最安が価格競争激化を示し収斂圧力。ただしIND-008（エンタープライズ大手集中）はelevated維持（「使用」≠「集中」）",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -87,8 +87,8 @@
       "quadrant_label": "開放 × 収斂",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化に集中する",
       "probability": 20,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter: 価格下落（年間10倍）、Copilot 2,000万人到達は開放×収斂を支持。Red指摘（価格下落証拠評価）採用",
+      "probability_change": "+0%",
+      "probability_rationale": "Arbiter: Blue -1%/Red +3%の折衷で+0%。OSS台頭（Llama 4、GLM5）は支持されるが、Gemini 3.1 Pro性能躍進は格差拡大の反証。現時点では「開放×格差拡大」（SCN-002）がより整合的",
       "key_assumptions": [
         "汎用AIの性能差が5%以内に収斂する",
         "オープン標準が支配的に採用される",
@@ -107,9 +107,9 @@
       "scenario_id": "SCN-BS-001",
       "name": "AI安全性大事故",
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
-      "probability": 5,
-      "probability_change": "±0%",
-      "probability_rationale": "サボタージュリスク「非常に低いが無視できない」、誤削除事例軽微、Opus 4.6脆弱性発見は正のシグナル、変更なし",
+      "probability": 6,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter: Red指摘採用で+1%。Skills Registry攻撃ベクトルリスク（INFO-025）・OpenClaw 700スキルマーケットプレイス審査リスク（INFO-043）。ただし重大事故発生の直接証拠なし",
       "impact": "catastrophic",
       "indicators": ["IND-013", "IND-018"]
     },
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-02-20",
-    "note": "SCN-001(20) + SCN-002(31) + SCN-003(29) + SCN-004(20) = 100%"
+    "verified_date": "2026-02-21",
+    "note": "SCN-001(22) + SCN-002(32) + SCN-003(26) + SCN-004(20) = 100%"
   }
 }

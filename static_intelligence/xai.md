@@ -1,11 +1,11 @@
 # xAI インテリジェンス・プロファイル
 
-> 最終更新: 2026-02-20
+> 最終更新: 2026-02-21
 > 確度: 中
 
 ## エグゼクティブ・サマリー
 
-xAIはElon Musk傘下での物理世界統合戦略を加速させている。SpaceXによるxAI買収完了が最大の動き。$20B Series E調達で急速なAI開発加速。Grok Business/Enterpriseでエンタープライズ市場参入、Voice Agent APIで音声エージェント機能展開。X（Twitter）データ活用から汎用エンタープライズ市場への拡張が進行中だが、製品レベルでのSpaceX統合は未確認。
+xAIはElon Musk傘下での物理世界統合戦略を加速させている。**[更新: 2026-02-21] Grok 4.20 Betaで4エージェント協調システム（Grok/Captain, Harper, Benjamin, Lucas）をリリース。Imagine APIでビデオ・画像・音声生成対応。** SpaceXによるxAI買収完了が最大の動き。$20B Series E調達で急速なAI開発加速。X（Twitter）データ活用から汎用エンタープライズ市場への拡張が進行中だが、製品レベルでのSpaceX統合は未確認。価格競争力でGemini $1.6/Mに対し$30/Mと劣勢。
 
 ## 基本情報
 
@@ -20,24 +20,28 @@ xAIはElon Musk傘下での物理世界統合戦略を加速させている。Sp
 ### 現在の主力仮説
 
 **H-XAI-003: 物理世界Agent統合戦略**（確度: 50%）
-xAIはElon Muskの他事業（Tesla, SpaceX, Neuralink）との統合を進め、物理世界Agent（ロボティクス、自動運転）に進出する。$20B調達規模は物理世界統合の可能性を示唆。製品証拠待ち [INFO-060](../Information/2026-02-19/collected-raw.md#INFO-060)。[更新: 2026-02-19] Arbiter判断: $20B規模は物理世界統合可能性を示唆(Red指摘)。48%→50%に上昇。垂直統合可能性を評価。
+xAIはElon Muskの他事業（Tesla, SpaceX, Neuralink）との統合を進め、物理世界Agent（ロボティクス、自動運転）に進出する。$20B調達規模は物理世界統合の可能性を示唆。製品証拠待ち [INFO-060](../Information/2026-02-19/collected-raw.md#INFO-060)。[更新: 2026-02-21] Grok 4.20 Agentic Swarmsがマルチエージェント協調を強化（Arbiter判断: 新規証拠なし、現状維持）。
 
 ### 代替仮説
 
-**H-XAI-001: Xリアルタイムデータニッチ戦略**（確度: 39%）
-~~xAIはX（Twitter）のリアルタイムデータを独占的に活用し、リアルタイム情報Agent市場でニッチ優位を確立する~~。$20B調達がニッチ戦略と矛盾。使途不明を考慮し確度引き下げ [INFO-060](../Information/2026-02-19/collected-raw.md#INFO-060)。[更新: 2026-02-19] 確度維持（前回42%→39%引き下げ済み）。
+**H-XAI-001: Xリアルタイムデータニッチ戦略**（確度: 37%、~~39%~~ → **37%**）[更新: 2026-02-21]
+~~xAIはX（Twitter）のリアルタイムデータを独占的に活用し、リアルタイム情報Agent市場でニッチ優位を確立する~~。**価格競争力欠如（$30/M vs Gemini $1.6/M）で優位性が相殺（-2%）。** [INFO-087](../Information/2026-02-21/collected-raw.md#INFO-087)。Arbiter判断。
 
-**H-XAI-002: Colossus計算資源性能戦略**（確度: 40%、~~38%~~ → **40%**）[更新: 2026-02-20]
-xAIはColossusの大規模計算資源を武器に、モデル性能でOpenAI/Anthropicに挑戦する。**推論コンピュート重要性の高まりが計算資源戦略を支持（+2%）。** [INFO-044](../Information/2026-02-20/collected-raw.md#INFO-044)。Grok 4.20 Agentic Swarms、$20B調達が証拠 [INFO-009](../Information/2026-02-20/collected-raw.md#INFO-009)。Arbiter判断。
+**H-XAI-002: Colossus計算資源性能戦略**（確度: 38%、~~40%~~ → **38%**）[更新: 2026-02-21]
+xAIはColossusの大規模計算資源を武器に、モデル性能でOpenAI/Anthropicに挑戦する。**価格競争力欠如（$30/M）が商用競争力を制約（-2%）。** [INFO-087](../Information/2026-02-21/collected-raw.md#INFO-087)。Arbiter判断: 計算資源はあるが商用競争力に疑問。
 
 ## 主要動向タイムライン
 
 | 日付 | イベント | 信頼性 | 引用 |
 |------|---------|-------|------|
+| 2026-02-21 | Grok 4.20 Beta、4エージェント協調システム（Grok/Captain, Harper, Benjamin, Lucas） | C-3 | [INFO-009](../Information/2026-02-21/collected-raw.md#INFO-009) |
+| 2026-02-21 | Imagine API、ビデオ・画像・音声生成対応 | A-3 | [INFO-010](../Information/2026-02-21/collected-raw.md#INFO-010) |
 | 2026-02-02 | SpaceXによるxAI買収完了 | A-3 | [INFO-004](../Information/2026-02-18/collected-raw.md#INFO-004) |
 | 2026-01-06 | Series E $20B調達 | A-3 | [INFO-005](../Information/2026-02-18/collected-raw.md#INFO-005) |
 | 2025-12-30 | Grok Business / Grok Enterprise提供開始 | A-3 | [INFO-006](../Information/2026-02-18/collected-raw.md#INFO-006) |
 | 2025-12-17 | Grok Voice Agent API提供開始 | A-3 | [INFO-007](../Information/2026-02-18/collected-raw.md#INFO-007) |
+
+[更新: 2026-02-21] Grok 4.20 Beta、Imagine API追加
 
 ## 強み・弱み・機会・脅威（SWOT）
 
@@ -74,6 +78,8 @@ xAIはColossusの大規模計算資源を武器に、モデル性能でOpenAI/An
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-21 | H-XAI-001確度39%→37%、H-XAI-002確度40%→38%（価格競争力欠如$30/M vs $1.6/M） | Arbiter判断 |
+| 2026-02-21 | タイムラインにGrok 4.20 Beta、Imagine API追加 | INFO-009, INFO-010 |
 | 2026-02-20 | H-XAI-002確度38%→40%（推論コンピュート重要性） | Arbiter判断 |
 | 2026-02-19 | H-XAI-003確度48%→50%（垂直統合可能性評価） | Arbiter判断 |
 | 2026-02-19 | IND-003 elevated→high昇格 | Arbiter判断 |

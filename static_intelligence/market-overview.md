@@ -1,11 +1,11 @@
 # AI市場全体の構造分析
 
-> 最終更新: 2026-02-20
+> 最終更新: 2026-02-21
 > 確度: 高
 
 ## エグゼクティブ・サマリー
 
-2026年2月現在、AI市場は「開放×格差拡大」に向かう確率が上昇している。**[更新: 2026-02-20] Gemini 3.1 ProがARC-AGI-2で77.1%（Gemini 3 Pro比146%向上）を記録し、技術優位が確立。価格は同等品質で年間10倍下落中。** Anthropic $30B、xAI $20Bの$50B調達集中で寡占化要因も存在。エンタープライズAgent市場が爆発的成長（YoY 8倍、推論モデル300倍）。MCP標準化がOracle/OWASP/Cloudflare/Chrome等で加速。[更新: 2026-02-19] エンタープライズ判断は「パイロット大規模化段階（転換点接近）」。
+2026年2月現在、AI市場は「開放×格差拡大」に向かう確率が上昇している。**[更新: 2026-02-21] Gemini 3.1 ProがARC-AGI-2で77.1%（Gemini 3 Pro比146%向上）を記録し、技術優位が確立。価格は同等品質で年間10倍下落中。OpenAI $1000億 + Anthropic $300億 = $1300億調達で資金集中加速。** [更新: 2026-02-21] Arbiter判断: IND-003 critical昇格却下（資金調達≠市場構造変化）、IND-008/019 high昇格却下（「使用」≠「集中」「浸透」≠「成功」）、IND-022 high昇格採用（「スキル再定義」）。エンタープライズAgent市場が爆発的成長（YoY 8倍、推論モデル300倍）。MCP標準化がOracle/OWASP/Cloudflare/Chrome等で加速。
 
 ## 市場構造概要
 
@@ -40,9 +40,10 @@
 
 ### 2. 資金集中の加速
 
-- **Anthropic $30B**: GIC/Coatue主導 [INFO-015](../Information/2026-02-18/collected-raw.md#INFO-015)
-- **xAI $20B**: Series E [INFO-005](../Information/2026-02-18/collected-raw.md#INFO-005)
-- **合計$50Bが2社に集中**: 寡占化の強いシグナル
+- **OpenAI $1000億**: NVIDIA $300億、Amazon、SoftBank、Microsoft参加 [INFO-102](../Information/2026-02-21/collected-raw.md#INFO-102)
+- **Anthropic $300億**: GIC/Coatue主導 [INFO-015](../Information/2026-02-18/collected-raw.md#INFO-015)
+- **合計$1300億が2社に集中**: 寡占化の強いシグナル
+- **[更新: 2026-02-21] Arbiter判断: IND-003 critical昇格却下** - 資金調達≠市場構造変化。SoftBank Vision Fund、WeWork等の前例：巨額資金が必ずしも勝者を生まない
 
 ### 3. 価格競争の激化
 
@@ -108,18 +109,22 @@
 | 指標 | ステータス | 傾向 | 重要度 |
 |------|-----------|------|--------|
 | IND-001 主要ベンチマーク性能の非連続的ジャンプ | ~~elevated~~ → **high** | approaching | 高 | [更新: 2026-02-20] Gemini 3.1 Pro ARC-AGI-2 77.1%（146%向上）、30%閾値達成
-| IND-003 資金集中 | high | approaching | 高 | [更新: 2026-02-19] elevated→high昇格
+| IND-003 資金集中 | high | approaching | 高 | [更新: 2026-02-21] OpenAI $1000億 + Anthropic $300億 = $1300億。**Arbiter: critical昇格却下（資金調達≠市場構造変化）**
 | IND-004 分散化兆候 | elevated | approaching | 高 |
 | IND-006 標準形成 | elevated | rising | 中 |
-| IND-008 大手契約集中 | elevated | rising | 高 |
+| IND-008 大手契約集中 | elevated | rising | 高 | [更新: 2026-02-21] **Arbiter: high昇格却下（「使用」≠「集中」）** - Fortune 500の80%がエージェント「使用」≠「集中」
 | IND-009 AI投資持続増大 | elevated | rising | 中 |
 | IND-011 汎用AIモデル間性能収斂 | elevated | approaching | 中 | [更新: 2026-02-20] Gemini 3.1 Proが4ptリードだが収斂判定根拠不明確（Arbiter）
 | IND-018 AGI転換点兆候 | elevated | approaching | 高 | [更新: 2026-02-20] ARC-AGI-2 77.1%（閾値90%に13.9%不足）。Hassabis 5-8年予測は2年以内AGIを否定
+| IND-019 AI業務自律化浸透 | elevated | rising | 高 | [更新: 2026-02-21] **Arbiter: high昇格却下（「浸透」≠「成功」）** - Remote Labor Index 2.5%のみ人間品質完了
+| IND-022 コーディングコモディティ化 | ~~elevated~~ → **high** | rising | 高 | [更新: 2026-02-21] **Arbiter: high昇格採用** - ジュニア開発者雇用20%減、AIスキル給与+$15-25K。「スキル再定義」と表現修正
 
 ## 変更履歴
 
 | 日付 | 変更内容 | 根拠 |
 |------|---------|------|
+| 2026-02-21 | IND-003根拠更新（$1300億、critical昇格却下）、IND-008/019追加（high昇格却下）、IND-022追加（high昇格採用・スキル再定義） | Arbiter判断 |
+| 2026-02-21 | 資金集中にOpenAI $1000億追加、エグゼクティブ・サマリー更新 | INFO-102 |
 | 2026-02-20 | IND-001 elevated→high昇格、IND-011/IND-018ステータス追加 | Arbiter判断（Gemini 3.1 Pro躍進） |
 | 2026-02-20 | エグゼクティブ・サマリーにGemini躍進、価格10倍下落追加 | INFO-008, INFO-022, INFO-028 |
 | 2026-02-20 | 価格競争に年間10倍下落、Claude Opus値下げ追加 | INFO-022 |
