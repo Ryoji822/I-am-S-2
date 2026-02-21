@@ -35,3 +35,12 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**10:19 JST** | [原文](https://x.com/OpenAIDevs/status/2025211648877928799)
+
+> RT Gabriel Chua
+> http://x.com/i/article/2025011017990967296
+
+---
+
