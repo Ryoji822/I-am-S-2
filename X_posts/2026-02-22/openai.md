@@ -55,3 +55,12 @@
 
 ---
 
+## @markchen90 (Mark Chen - 研究責任者)
+
+**03:31 JST** | [原文](https://x.com/markchen90/status/2025613387426566326)
+
+> RT Daniel Litt
+> Some thoughts on AI and mathematics, inspired by "First Proof."
+
+---
+
