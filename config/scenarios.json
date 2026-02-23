@@ -1,7 +1,7 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "last_updated": "2026-02-23",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。X軸: ロックインの強さ（閉鎖←→開放）、Y軸: 能力差の大きさ（格差拡大←→収斂）。v2.0: 削除・統合指標の参照を更新、規制指標IND-023を追加",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v2.1: IND-024（AI業務自律化の実効性）をSCN-001/SCN-003に追加。IND-019分離に対応",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -36,7 +36,7 @@
         "スイッチングコストが企業の技術選択を固定化",
         "規制介入（反トラスト）の可能性が高まる"
       ],
-      "indicators": ["IND-001", "IND-002", "IND-003", "IND-015", "IND-018", "IND-019", "IND-020"]
+      "indicators": ["IND-001", "IND-002", "IND-003", "IND-015", "IND-018", "IND-019", "IND-020", "IND-024"]
     },
     {
       "scenario_id": "SCN-002",
@@ -78,7 +78,7 @@
         "Googleプロダクト統合、AWS Bedrock依存等がロックインの中心に",
         "規制（データ主権）がロックインを助長する可能性"
       ],
-      "indicators": ["IND-007", "IND-008", "IND-009", "IND-011", "IND-015", "IND-017", "IND-019", "IND-020", "IND-022"]
+      "indicators": ["IND-007", "IND-008", "IND-009", "IND-011", "IND-015", "IND-017", "IND-019", "IND-020", "IND-022", "IND-024"]
     },
     {
       "scenario_id": "SCN-004",

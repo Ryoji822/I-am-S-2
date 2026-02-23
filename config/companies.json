@@ -1,6 +1,13 @@
 {
-  "version": "1.0",
-  "last_updated": "2026-02-18",
+  "version": "2.0",
+  "last_updated": "2026-02-23",
+  "structural_changes_log": [
+    "2026-02-23 v2.0: Microsoft/Amazonにcloud_ai monitoring_override (daily)を追加",
+    "2026-02-23 v2.0: source_reliabilityを削除（他ファイルで未使用。必要なら証拠重み付けシステムとして再設計）",
+    "2026-02-23 v2.0: xAIをSpaceX子会社に更新、key_productsにGrok 4シリーズ追加",
+    "2026-02-23 v2.0: ByteDanceにSeed 2.0/Seedance 2.0/CapCut追加",
+    "2026-02-23 v2.0: OpenAIのkey_peopleからMira Murati削除（2024年退社）"
+  ],
   "tiers": {
     "tier1": {
       "description": "最優先監視対象。AI市場の方向性を決定する影響力を持つ企業",
@@ -11,68 +18,64 @@
           "name": "OpenAI",
           "aliases": ["OpenAI Inc.", "OpenAI LP"],
           "headquarters": "San Francisco, USA",
-          "key_products": ["GPT-5", "ChatGPT", "Responses API", "Codex", "DALL-E", "Sora"],
-          "key_people": ["Sam Altman", "Mira Murati", "Greg Brockman"],
+          "key_products": ["GPT-5シリーズ", "ChatGPT", "Responses API", "Skills/Shell", "Codex", "Sora", "Operator"],
+          "key_people": ["Sam Altman", "Greg Brockman"],
           "primary_sources": [
             "https://openai.com/blog",
             "https://platform.openai.com/docs/changelog"
           ],
-          "driving_forces": ["AGI race leadership", "enterprise expansion", "developer ecosystem"],
-          "source_reliability": "B"
+          "driving_forces": ["AGI race leadership", "enterprise expansion", "developer ecosystem via Skills/Shell"]
         },
         {
           "id": "anthropic",
           "name": "Anthropic",
           "aliases": ["Anthropic PBC"],
           "headquarters": "San Francisco, USA",
-          "key_products": ["Claude", "Claude Agent SDK", "Claude Code", "MCP"],
+          "key_products": ["Claude 4.6シリーズ", "Claude Code", "Agent SDK", "Bun（買収）"],
           "key_people": ["Dario Amodei", "Daniela Amodei", "Tom Brown"],
           "primary_sources": [
             "https://www.anthropic.com/news",
             "https://docs.anthropic.com/en/docs/changelog"
           ],
-          "driving_forces": ["AI safety leadership", "enterprise trust", "agent ecosystem via MCP"],
-          "source_reliability": "B"
+          "driving_forces": ["AI safety leadership", "enterprise trust", "developer tools ecosystem (Claude Code + Bun + Agent SDK)"]
         },
         {
           "id": "google",
           "name": "Google / DeepMind",
           "aliases": ["Google DeepMind", "Alphabet", "Google AI"],
           "headquarters": "Mountain View, USA / London, UK",
-          "key_products": ["Gemini", "Gemini API", "Vertex AI", "NotebookLM", "AlphaFold"],
+          "key_products": ["Gemini 3シリーズ", "Gemini API", "Vertex AI", "NotebookLM", "AlphaFold", "Gemini Robotics"],
           "key_people": ["Sundar Pichai", "Demis Hassabis", "Jeff Dean"],
           "primary_sources": [
             "https://blog.google/technology/ai/",
             "https://deepmind.google/discover/blog/"
           ],
-          "driving_forces": ["search integration", "cloud AI platform", "scientific breakthroughs"],
-          "source_reliability": "B"
+          "driving_forces": ["search/product integration", "cloud AI platform", "scientific breakthroughs"]
         },
         {
           "id": "xai",
-          "name": "xAI",
+          "name": "xAI (SpaceX子会社)",
           "aliases": ["xAI Corp"],
           "headquarters": "Austin, USA",
-          "key_products": ["Grok", "Grok API", "Colossus"],
+          "note": "2026年2月2日にSpaceXが全株式交換で買収。合算評価額$1.25兆",
+          "key_products": ["Grok 4シリーズ", "Grok API", "Colossus", "Grok車載AI（Tesla統合）"],
           "key_people": ["Elon Musk", "Igor Babuschkin"],
           "primary_sources": [
             "https://x.ai/blog"
           ],
-          "driving_forces": ["X/Twitter integration", "compute scale", "real-time data advantage"],
-          "source_reliability": "C"
+          "driving_forces": ["X/Twitter + SpaceX data integration", "compute scale (Colossus + orbital)", "physical world AI (Tesla/Optimus)"]
         },
         {
           "id": "bytedance",
           "name": "ByteDance",
           "aliases": ["字节跳动", "ByteDance Ltd."],
           "headquarters": "Beijing, China",
-          "key_products": ["Doubao", "Coze", "Dreamina", "ByteDance Cloud"],
-          "key_people": ["Liang Rubo", "Zhang Yiming"],
+          "key_products": ["Doubao", "Seed 2.0シリーズ（Pro/Lite/Mini/Code）", "Coze", "Seedance 2.0", "CapCut", "Dreamina"],
+          "key_people": ["Liang Rubo"],
           "primary_sources": [
             "https://www.volcengine.com/docs/"
           ],
-          "driving_forces": ["China market dominance", "global AI expansion", "cost leadership"],
-          "source_reliability": "C"
+          "driving_forces": ["China market dominance", "global AI expansion", "cost leadership", "creator economy AI"]
         }
       ]
     },
@@ -83,20 +86,28 @@
         {
           "id": "meta",
           "name": "Meta AI",
-          "key_products": ["Llama", "Meta AI Assistant"],
+          "key_products": ["Llama 4", "Meta AI Assistant"],
           "driving_forces": ["open-source leadership", "social media AI integration"]
         },
         {
           "id": "microsoft",
           "name": "Microsoft",
-          "key_products": ["Copilot", "Azure OpenAI", "GitHub Copilot"],
-          "driving_forces": ["enterprise AI platform", "OpenAI partnership"]
+          "key_products": ["Copilot", "Azure OpenAI", "GitHub Copilot", "Agent Framework (AutoGen+Semantic Kernel)"],
+          "driving_forces": ["enterprise AI platform", "OpenAI partnership", "developer tools"],
+          "monitoring_override": {
+            "cloud_ai": "daily",
+            "reason": "PIR-2026-002がクラウドプロバイダー（AWS, Azure, GCP）を重要論点に指定。Azure AI/Copilotの変更は市場構造に直接影響するため、クラウドAI関連はdaily監視"
+          }
         },
         {
           "id": "amazon",
           "name": "Amazon / AWS",
-          "key_products": ["Bedrock", "Q", "Titan"],
-          "driving_forces": ["cloud AI marketplace", "Anthropic partnership"]
+          "key_products": ["Bedrock", "Q", "Titan", "Nova"],
+          "driving_forces": ["cloud AI marketplace", "Anthropic partnership"],
+          "monitoring_override": {
+            "cloud_ai": "daily",
+            "reason": "PIR-2026-002がクラウドプロバイダーを重要論点に指定。Bedrock/Anthropic提携の変更は市場構造に直接影響するため、クラウドAI関連はdaily監視"
+          }
         },
         {
           "id": "mistral",

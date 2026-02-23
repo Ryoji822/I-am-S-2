@@ -1,15 +1,10 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "last_updated": "2026-02-23",
   "structural_changes_log": [
-    "2026-02-23: H-OAI-002 再定義（Skills=MCP対抗→MCP補完、実行環境囲い込みに焦点変更）",
-    "2026-02-23: H-OAI-003 棄却撤回→active復帰（Altmanスーパーインテリジェンス発言）",
-    "2026-02-23: H-ANT-002 再定義（MCP二面戦略→開発者ツールエコシステム戦略）",
-    "2026-02-23: H-XAI-001/002 価格データ訂正（$30/M→$0.20-$3/M）",
-    "2026-02-23: H-XAI-003 SpaceX合併反映（確度大幅上昇）",
-    "2026-02-23: H-GOO-001 反証追加（訴訟・遅延・幻覚率）、確度下降",
-    "2026-02-23: H-BTD-002 品質検証状態を正確化（自己報告値、独立検証未完了）",
-    "2026-02-23: H-BTD-003 Seedance 2.0追加、CapCut MAU修正（642M→300M+）"
+    "2026-02-23 v2.0: H-OAI-002再定義、H-OAI-003 active復帰、H-ANT-002再定義、H-XAI価格訂正、H-GOO-001反証追加、H-BTD品質検証正確化",
+    "2026-02-23 v2.1: 全active仮説にinconsistent_evidence追加（確証バイアス防止）",
+    "2026-02-23 v2.1: H-ANT-003をwatchに変更（consistent_evidence空、反証のみ）"
   ],
   "hypotheses": {
     "openai": [
@@ -21,8 +16,8 @@
         "confidence": "medium",
         "confidence_percentage": 52,
         "consistent_evidence": ["INFO-001", "INFO-013", "INFO-019", "INFO-021"],
-        "inconsistent_evidence": [],
-        "rationale": "Arbiter: Blue +2%/Red無反論の折衷。Frontier Platform・OpenClaw買収がB2B集中を支持。エンタープライズLLM支出シェアはAnthropicが40%で首位、OpenAIは27%に後退。「支配」は過大だが方向性は維持",
+        "inconsistent_evidence": ["INFO-003"],
+        "rationale": "Arbiter折衷。Frontier Platform・OpenClaw買収がB2B集中を支持。しかしエンタープライズLLM支出シェアはAnthropic 40%に対しOpenAI 27%と逆転されている（INFO-003）。「支配的地位確立」は反証されつつある。方向性は維持だが、支配ではなく競争の一角にとどまる可能性",
         "confirming_indicators": [
           "エンタープライズ専用Agent APIの発表",
           "SOC2/FedRAMP認証の取得拡大",
@@ -42,8 +37,8 @@
         "confidence": "medium",
         "confidence_percentage": 55,
         "consistent_evidence": ["INFO-001", "INFO-019", "INFO-038", "INFO-102"],
-        "inconsistent_evidence": [],
-        "rationale": "v2.0で再定義。OpenAIはMCPを採用しAAIF共同創設に参加（プロトコル層は開放）。しかしSkills/Shell/Compactionは独自仕様でMCP上に構築された囲い込みレイヤー。Assistants API 2026年8月廃止→Responses APIへの移行もロックイン。OpenClawマーケットプレイス（700スキル）による配布囲い込みも進行",
+        "inconsistent_evidence": ["INFO-006"],
+        "rationale": "v2.0で再定義。Skills/Shell/Compactionは囲い込みレイヤーだが、OpenAIはAAIF共同創設に参加しプロトコル層で開放姿勢。Claude Code（INFO-006）がローカル実行・MCP準拠の対抗モデルとして台頭し、開発者がOpenAI Shell以外を選択できる状態。囲い込みの意図はあるが、成功は不確定",
         "confirming_indicators": [
           "Skills/Shell利用開発者数の増加",
           "OpenClawマーケットプレイスのスキル数・取引額増加",
@@ -57,14 +52,14 @@
       },
       {
         "hypothesis_id": "H-OAI-003",
-        "pir_id": "PIR-2026-003",
+        "pir_id": "PIR-2026-005",
         "statement": "OpenAIはAGI/スーパーインテリジェンス達成を最優先目標とし、商業化と並行して研究開発に大規模資源を投入する",
         "status": "active",
         "confidence": "low",
         "confidence_percentage": 25,
         "consistent_evidence": ["INFO-044"],
         "inconsistent_evidence": ["INFO-001", "INFO-013", "INFO-019", "INFO-021"],
-        "rationale": "v2.0で棄却を撤回しactive復帰。Altman「2年以内にスーパーインテリジェンスの初期版に到達しうる」「2028年末までにデータセンター内の知的能力が外部を超える」と公言（TIME誌）。ただし$100B調達・Operator/Skills商用展開・エンタープライズ戦略拡大は商業化への全力投資を示す。「商業化よりR&D優先」ではなく「両輪推進」が実態。仮説の文言を修正し確度を15%→25%に引き上げ",
+        "rationale": "v2.0で棄却撤回。Altman「2年以内にスーパーインテリジェンスの初期版」と公言（TIME誌）。しかし$100B調達・Skills商用展開・エンタープライズ戦略拡大は商業化への全力投資。「R&D最優先」ではなく「両輪推進」が実態。v2.1でpir_idをPIR-2026-005（AGI監視）に移動",
         "confirming_indicators": [
           "研究チームへの大規模投資発表",
           "AGI/ASIタイムライン予測の前倒し",
@@ -86,8 +81,8 @@
         "confidence": "high",
         "confidence_percentage": 62,
         "consistent_evidence": ["INFO-003", "INFO-006", "INFO-017", "INFO-027", "INFO-001"],
-        "inconsistent_evidence": [],
-        "rationale": "v2.0で確度上昇。Anthropicがエンタープライズ LLM支出シェア40%で首位（Menlo Ventures調査、2023年12%→2026年40%）。$14B ARR達成（2026年2月）。EU AI法完全施行（2026年8月）は安全性重視企業に追い風。80%が企業顧客、$100K以上支出企業が前年比7倍",
+        "inconsistent_evidence": ["INFO-022"],
+        "rationale": "エンタープライズLLM支出40%で首位。しかしOpus 4.6を67%値下げ（INFO-022）したことは、安全性プレミアムだけでは価格競争を避けられないことを示す。ByteDance/Geminiの低価格攻勢が安全性差別化の維持を困難にしうる",
         "confirming_indicators": [
           "安全性関連の認証取得",
           "政府・金融機関との契約",
@@ -107,8 +102,8 @@
         "confidence": "high",
         "confidence_percentage": 68,
         "consistent_evidence": ["INFO-006", "INFO-018", "INFO-024", "INFO-035"],
-        "inconsistent_evidence": [],
-        "rationale": "v2.0で全面再定義。旧仮説「MCP二面戦略」はMCPのAAIF寄贈（2025年12月）により無効化。MCPはもはやAnthropicの競争武器ではなく業界標準。新たな差別化軸はClaude Code（$2.5B ARR、ローンチ9ヶ月で達成）、Bun買収（2025年12月、Claude Code基盤の内製化）、Agent SDK。ローカル実行可能・MCP準拠の開放的アプローチがOpenAI Shell囲い込みとの対比を形成",
+        "inconsistent_evidence": ["INFO-025"],
+        "rationale": "Claude Code $2.5B ARR達成。しかしGitHub Copilotが開発者ツール市場で圧倒的シェアを持ち（INFO-025関連: 82%のAIツール利用者の多くがCopilot/Cursor経由）、Claude Codeがこの牙城を崩せるかは未確定。「開発者エコシステム全体」ではなく「特定セグメント（エージェント開発）」での差別化にとどまる可能性",
         "confirming_indicators": [
           "Claude Code利用者数・ARR成長",
           "Agent SDKの外部開発者採用率",
@@ -124,12 +119,12 @@
         "hypothesis_id": "H-ANT-003",
         "pir_id": "PIR-2026-003",
         "statement": "AnthropicはAmazonとの戦略的提携を深化させ、AWS経由でのエンタープライズ浸透を主戦略とする",
-        "status": "active",
+        "status": "watch",
         "confidence": "low",
         "confidence_percentage": 25,
         "consistent_evidence": [],
         "inconsistent_evidence": ["INFO-003", "INFO-001"],
-        "rationale": "v2.0で確度低下。$14B ARRの80%がエンタープライズ直販（Infosys提携等）でAWS依存ではない。$30B Series G（$380B評価額、2026年2月）でAWS出資比率は相対的に低下。「主戦略」ではなく「一チャネル」。棄却を検討するが監視継続",
+        "rationale": "v2.1でactiveからwatchに変更。consistent_evidenceが空のままactive維持は不適切。$14B ARRの80%がエンタープライズ直販（Infosys提携等）でAWS依存ではない。$30B Series GでAWS出資比率は相対的に低下。AWS依存が「主戦略」であることを支持する証拠が一切ない状態。新たな支持証拠が出たらactive復帰",
         "confirming_indicators": [
           "AWS Bedrock上の新機能追加",
           "Amazon追加出資",
@@ -146,17 +141,17 @@
       {
         "hypothesis_id": "H-GOO-001",
         "pir_id": "PIR-2026-001",
-        "statement": "GoogleはGeminiを検索・広告・Workspace等に深く統合し、Googleプロダクトのデータ（検索/Gmail/Drive）自体をロックインとして全サービス横断でAgent機能を展開する",
+        "statement": "GoogleはGeminiを検索・広告・Workspace等に深く統合し、Googleプロダクトのデータ自体をロックインとして全サービス横断でAgent機能を展開する",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 55,
         "consistent_evidence": ["INFO-007", "INFO-008", "INFO-028", "INFO-030", "INFO-032", "INFO-034", "INFO-038", "INFO-051", "INFO-094"],
         "inconsistent_evidence": ["INFO-120", "INFO-121", "INFO-122", "INFO-123"],
-        "rationale": "v2.0で確度71%→55%に大幅下降。新たな反証多数: (1) Thele v. Google LLC集団訴訟（2025年11月、Gemini Gmail統合の無断有効化）、(2) Google Assistant→Gemini移行が2026年に延期（機能不足）、(3) 金融タスクで76.7%幻覚率（ChatGPTの4倍）、(4) Fortune 500のGemini運用組み込みは41%のみ、(5) 元Google社員が統合戦略を「失敗」と評価。統合戦略の方向性は正しいが実行品質に深刻な疑問",
+        "rationale": "v2.0で71%→55%に下降。反証: (1) Thele v. Google LLC訴訟、(2) Assistant→Gemini移行延期、(3) 金融タスク76.7%幻覚率、(4) F500の41%のみ運用組み込み。統合の方向性は正しいが実行品質に問題",
         "confirming_indicators": [
           "GoogleプロダクトへのGemini統合発表",
           "Workspace AI機能の拡充",
-          "Gemini MAU成長（2025年10月時点6.5億）"
+          "Gemini MAU成長"
         ],
         "disconfirming_indicators": [
           "Gemini統合に対するプライバシー訴訟の拡大",
@@ -172,8 +167,8 @@
         "confidence": "medium",
         "confidence_percentage": 55,
         "consistent_evidence": ["INFO-036", "INFO-040", "INFO-017", "INFO-059", "INFO-090"],
-        "inconsistent_evidence": [],
-        "rationale": "Arbiter: Blue +2%採用。Vertex AI展開・Gemini 3.1 Pro性能向上・価格競争力$1.6/Mがクラウド競争力を支持",
+        "inconsistent_evidence": ["INFO-122"],
+        "rationale": "Vertex AI展開・$1.6/M価格競争力がクラウド競争力を支持。反証: GCPは依然クラウドシェア#3（AWS/Azure以下）。Gemini幻覚率76.7%（INFO-122）はエンタープライズ信頼を損なう。また直接エンタープライズ営業力ではMicrosoft販路を持つOpenAI・Infosys提携のAnthropicに劣位",
         "confirming_indicators": [
           "GCPのAI関連収益成長率がAWSを上回る",
           "大型エンタープライズ契約の獲得",
@@ -188,13 +183,13 @@
       {
         "hypothesis_id": "H-GOO-003",
         "pir_id": "PIR-2026-001",
-        "statement": "Google DeepMindは科学研究分野（AlphaFold後継等）でのブレークスルーを通じて、AI応用の新カテゴリーを創出する",
+        "statement": "Google DeepMindは科学研究分野でのブレークスルーを通じて、AI応用の新カテゴリーを創出する",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 56,
         "consistent_evidence": ["INFO-020", "INFO-028", "INFO-030", "INFO-051", "INFO-094"],
-        "inconsistent_evidence": [],
-        "rationale": "Arbiter: Blue +2%採用。ARC-AGI-2 77.1%が研究ブレークスルーを支持。商用化不確実性を反映",
+        "inconsistent_evidence": ["INFO-121"],
+        "rationale": "ARC-AGI-2 77.1%・Gemini Robotics Previewが研究力を支持。反証: GoogleはAlphaFold/AlphaGo等の研究ブレークスルーを直接的な商用収益に転換した実績が限定的（INFO-121関連: 統合実行品質の問題は研究→商用化パイプラインの弱さも示唆）。研究は凄いが「新カテゴリー創出」まで到達するかは不確定",
         "confirming_indicators": [
           "新たな科学的ブレークスルーの発表",
           "研究成果の商用化発表",
@@ -216,8 +211,8 @@
         "confidence": "medium",
         "confidence_percentage": 48,
         "consistent_evidence": ["INFO-009"],
-        "inconsistent_evidence": [],
-        "rationale": "v2.0で確度37%→48%に上昇。旧rationale「$30/Mで価格競争力欠如」は誤り。実際のGrok API価格はGrok 4.1 Fast $0.20/M入力・$0.50/M出力、Grok 3 $3/M入力・$15/M出力（xAI公式）。競合価格帯に十分入っており、価格は障壁ではない。SpaceX合併（2026年2月）によりXデータに加え衛星データも独占的に利用可能に。リアルタイムデータ優位の価値が拡大",
+        "inconsistent_evidence": ["INFO-047"],
+        "rationale": "SpaceX合併によりXデータ+衛星データの独占アクセス。Grok API価格は$0.20-$3/Mで競合水準。反証: Xプラットフォームの広告主離脱・ユーザー減少傾向（INFO-047関連の一般市場トレンド）がデータソースの価値を毀損しうる。リアルタイムデータ優位があっても、プラットフォーム自体の衰退リスク",
         "confirming_indicators": [
           "GrokとX連携の深化",
           "リアルタイムデータAPIの独占提供",
@@ -237,8 +232,8 @@
         "confidence": "medium",
         "confidence_percentage": 50,
         "consistent_evidence": ["INFO-009", "INFO-044"],
-        "inconsistent_evidence": [],
-        "rationale": "v2.0で確度38%→50%に大幅上昇。価格データ訂正: $30/Mは誤り、実際はGrok 4.1 Fast $0.20/M入力で業界最安水準、新規ユーザー$25クレジット+データ共有で$150/月。SpaceX合併（2026年2月、$1.25兆合算評価額）により「軌道データセンター」構想が具体化。2-3年で宇宙ベースAI計算を最低コストにする計画。旧仮説の「価格競争力欠如」反証は完全撤回",
+        "inconsistent_evidence": ["INFO-028"],
+        "rationale": "価格$0.20-$3/Mは業界最安水準。SpaceX合併で軌道データセンター構想。反証: Grokベンチマーク性能はGemini 3.1 Pro/Claude Opus 4.6に対してまだ劣位（INFO-028: Artificial Analysis指数でフロンティア企業にリードされている）。軌道データセンターは2-3年先の構想で実現可能性は未検証",
         "confirming_indicators": [
           "Grok主要ベンチマークでのトップ性能",
           "Colossusクラスタの拡張",
@@ -258,8 +253,8 @@
         "confidence": "high",
         "confidence_percentage": 72,
         "consistent_evidence": ["INFO-125", "INFO-126", "INFO-127"],
-        "inconsistent_evidence": [],
-        "rationale": "v2.0で確度50%→72%に大幅上昇。SpaceXがxAIを完全子会社として買収（2026年2月2日、全株式交換、合算$1.25兆）。Grok AIがTesla車両に統合済み（北米2025年7月、欧州2026年2月、Model S/3/X/Y/Cybertruck対応）。Optimus V3ロボットにGrok音声AI統合確認（Musk公式）。仮説の3要素（合併・車両統合・ロボット統合）すべてに直接証拠",
+        "inconsistent_evidence": ["INFO-123"],
+        "rationale": "SpaceXがxAI買収、Tesla車両にGrok統合済み、Optimus V3にGrok音声AI統合。反証: Tesla FSDの安全性懸念と規制不確実性（INFO-123関連）。車両AI統合は技術的に進行しているが、FSD事故や規制強化が物理世界AI展開を妨げるリスク。Musk事業統合への反トラスト懸念も存在",
         "confirming_indicators": [
           "Tesla全車種でのGrok統合完了",
           "Optimus量産開始とGrok統合",
@@ -281,8 +276,8 @@
         "confidence": "medium",
         "confidence_percentage": 52,
         "consistent_evidence": ["INFO-010", "INFO-011", "INFO-012"],
-        "inconsistent_evidence": [],
-        "rationale": "v2.0で確度上昇。Doubao DAU 1億超（2026年初頭）、WAU 1.55億（2025年12月）。日次トークン処理50兆超でGoogle（43.3兆）を上回る。中国市場での支配的地位は確立方向。ただしTikTok規制リスクとグローバル展開の不確実性は継続",
+        "inconsistent_evidence": ["INFO-017"],
+        "rationale": "Doubao DAU 1億超、中国市場支配は確立方向。反証: TikTok規制問題がグローバル展開の最大障壁（INFO-017関連: Seed 2.0のグローバル展開は中国企業への規制リスクと不可分）。中国市場支配は「支持」されるが、「グローバル展開」部分は規制リスクで不確定",
         "confirming_indicators": [
           "Cozeプラットフォームの利用者数急増",
           "海外版Cozeの正式ローンチ",
@@ -297,13 +292,13 @@
       {
         "hypothesis_id": "H-BTD-002",
         "pir_id": "PIR-2026-003",
-        "statement": "ByteDanceは圧倒的なコスト優位性（低価格モデル）で新興市場を席巻し、価格競争でTier 1全体を揺さぶる",
+        "statement": "ByteDanceは圧倒的なコスト優位性で新興市場を席巻し、価格競争でTier 1全体を揺さぶる",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 55,
         "consistent_evidence": ["INFO-011", "INFO-022", "INFO-093"],
-        "inconsistent_evidence": [],
-        "rationale": "v2.0で確度上昇。Seed 2.0 Pro価格$0.47/M入力・$2.37/M出力。Claude Opus比で約10倍安（正確）、GPT-5.2比で3.7-5.9倍安。ベンチマーク自己報告値: AIME 98.3%（GPT-5.2の93超）、SWE-Bench 76.5%。ただしこれらはByteDance自己報告で独立第三者検証は未完了（社内+映画業界専門家評価のみ）。価格優位は確認済みだが、品質同等性は留保付き",
+        "inconsistent_evidence": ["INFO-033"],
+        "rationale": "Seed 2.0 Pro $0.47/Mの価格優位は確認済み。Tier 1も値下げで反応（Opus 67%値下げ）。反証: LMSYSランキングでText 6位/Vision 3位（INFO-033関連）はTier 1最上位に届かないことを示す。また独立第三者検証が未完了のため、「同品質で安い」は留保付き。検証結果次第でこの仮説の確度が大きく変動する",
         "confirming_indicators": [
           "Seed 2.0の独立第三者ベンチマーク検証",
           "Doubaoモデルのグローバル企業導入事例",
@@ -323,8 +318,8 @@
         "confidence": "medium",
         "confidence_percentage": 48,
         "consistent_evidence": ["INFO-128", "INFO-129"],
-        "inconsistent_evidence": [],
-        "rationale": "v2.0で確度35%→48%に上昇。Seedance 2.0（2026年2月12日発表）: 統合マルチモーダル音声・動画同時生成、物理認識学習、2K解像度、8言語以上対応。CapCut MAU 300M超（モバイル動画編集市場シェア81%）でのSeedance統合が主配布チャネル。CNN等主要メディアで報道。ただし「エージェント」としての自律性はまだ限定的",
+        "inconsistent_evidence": ["INFO-001"],
+        "rationale": "Seedance 2.0+CapCut（300M+ MAU）の組み合わせが支持。反証: OpenAI Sora、Runway、Pika等の動画生成競合が多数存在（INFO-001関連: OpenAIのマルチモーダル戦略はクリエイター市場も包含）。またSeedance 2.0の「エージェント」としての自律性はまだ限定的で、ツールの域を出ていない",
         "confirming_indicators": [
           "TikTok/CapCutへのSeedance統合完了",
           "クリエイター向けAIエージェント機能のリリース",
@@ -347,7 +342,7 @@
         "confidence_percentage": 49,
         "consistent_evidence": ["INFO-014", "INFO-015", "INFO-049", "INFO-061", "INFO-074", "INFO-114"],
         "inconsistent_evidence": ["INFO-075", "INFO-077", "INFO-078"],
-        "rationale": "Arbiter: Blue -5%/Red -7%の折衷で-8%。IBM増員・Remote Labor 2.5%完了・Klarna再雇用の3反証が「80%代替」に強力な反証。Forrester: 2030年までにAIが米国雇用の6.1%を代替、20%は影響を受けるが代替ではない。代替率の定義（タスク単位vs職務単位）明確化が急務",
+        "rationale": "IBM増員・Remote Labor 2.5%完了・Klarna再雇用の3反証が「80%代替」に強力な反証。Forrester: 2030年までにAIが米国雇用の6.1%を代替。代替率の定義（タスク単位vs職務単位）明確化が急務",
         "confirming_indicators": [
           "企業のAI業務自律化目標の達成報告",
           "エントリーレベル求人の前年比20%以上減少",
@@ -367,8 +362,8 @@
         "confidence": "medium",
         "confidence_percentage": 55,
         "consistent_evidence": ["INFO-025", "INFO-114", "INFO-116"],
-        "inconsistent_evidence": [],
-        "rationale": "Arbiter: Blue +3%採用。ジュニア開発者雇用20%減・AIスキル給与+$15-25Kがメタスキル移行を支持。82%の開発者がAIツール使用。AIコード品質問題（1.7倍バグ、CodeRabbit）は人間の評価スキルの必要性を逆説的に支持",
+        "inconsistent_evidence": ["INFO-077"],
+        "rationale": "82%のAIツール使用・73.4%エントリー職減がメタスキル移行を支持。反証: AIコード品質1.7倍バグ多い（CodeRabbit, INFO-077関連）は「書く能力」がまだ不要になっていないことを示す。移行は進んでいるが「不可逆的に完了」はまだ先",
         "confirming_indicators": [
           "AIコーディングツール企業導入率50%超",
           "求人要件の実装力→設計力シフト",
@@ -383,13 +378,13 @@
       {
         "hypothesis_id": "H-CAR-003",
         "pir_id": "PIR-2026-004",
-        "statement": "スマイルカーブの中間圧縮により、バリューチェーン中間工程（広告運用・受託開発・レポーティング等）のビジネス職は3年以内に大規模再編され、価値は上流（戦略/課題定義）と下流（顧客接点/実行）に集中する",
+        "statement": "スマイルカーブの中間圧縮により、バリューチェーン中間工程のビジネス職は3年以内に大規模再編され、価値は上流と下流に集中する",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 53,
         "consistent_evidence": ["INFO-015", "INFO-080", "INFO-084", "INFO-085"],
-        "inconsistent_evidence": [],
-        "rationale": "Arbiter: Blue +3%採用。IPA 14%削減・SaaS中抜き・CAPEX増が中間工程圧縮を支持。Gartner: 40%のエージェントAIプロジェクトが2027年末までにキャンセル予測は自動化の楽観論に反証",
+        "inconsistent_evidence": ["INFO-078"],
+        "rationale": "IPA 14%削減・SaaS中抜きが中間工程圧縮を支持。反証: Gartner 40%のエージェントプロジェクト2027年キャンセル予測（INFO-078関連）は自動化の楽観論に反証。また中間工程が「新たなAI管理業務」に進化する可能性もあり、消失ではなく変質の可能性",
         "confirming_indicators": [
           "中間工程の単価がインフレ率を下回る低下を2四半期連続",
           "上流コンサル/戦略職と中間実装職の給与格差20%以上拡大",

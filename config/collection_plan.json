@@ -1,17 +1,24 @@
 {
-  "version": "1.0",
-  "last_updated": "2026-02-20",
+  "version": "2.0",
+  "last_updated": "2026-02-23",
+  "structural_changes_log": [
+    "2026-02-23 v2.0: KIQ文をpirs.jsonと完全一致に修正（短縮による情報欠落を防止）",
+    "2026-02-23 v2.0: ByteDance向けに中国語検索クエリを追加（現地一次情報の取得）",
+    "2026-02-23 v2.0: 検索クエリから不要な年号を削減（公式ドキュメントの取りこぼし防止）",
+    "2026-02-23 v2.0: PIR-2026-005（AGI監視）の収集計画を追加"
+  ],
   "collection_plan": [
     {
       "kiq_id": "KIQ-001-01",
       "kiq": "各社のAgent SDK/APIの機能拡張ロードマップはどうなっているか？",
       "search_queries": [
-        "OpenAI agent SDK API new features 2026",
+        "OpenAI agent SDK API new features",
         "Anthropic Claude Agent SDK update release",
-        "Google Gemini agent API capabilities 2026",
+        "Google Gemini agent API capabilities",
         "xAI Grok agent API development",
         "ByteDance Coze agent platform update",
-        "AI agent framework comparison 2026"
+        "AI agent framework comparison latest",
+        "AI agent SDK enterprise SLA incident report"
       ],
       "sources": ["news", "official_blog", "developer_docs", "github"],
       "frequency": "daily",
@@ -19,13 +26,13 @@
     },
     {
       "kiq_id": "KIQ-001-02",
-      "kiq": "各社のAgent製品のエンタープライズ向け展開の進捗は？",
+      "kiq": "各社のAgent製品のエンタープライズ向け展開（セキュリティ認証、SLA、専用サポート）の進捗は？",
       "search_queries": [
-        "OpenAI enterprise AI agent deployment 2026",
-        "Anthropic Claude enterprise security SOC2",
-        "Google Vertex AI agent enterprise",
+        "OpenAI enterprise AI agent deployment SOC2 FedRAMP",
+        "Anthropic Claude enterprise security SOC2 compliance",
+        "Google Vertex AI agent enterprise SLA",
         "AI enterprise agent adoption case study",
-        "enterprise AI security compliance 2026"
+        "enterprise AI security compliance certification"
       ],
       "sources": ["news", "official_blog", "industry_report"],
       "frequency": "daily",
@@ -33,11 +40,12 @@
     },
     {
       "kiq_id": "KIQ-001-03",
-      "kiq": "各社のAgent開発者エコシステムの拡大状況は？",
+      "kiq": "各社のAgent開発者エコシステム（サードパーティ連携、マーケットプレイス）の拡大状況は？",
       "search_queries": [
-        "AI agent developer ecosystem growth 2026",
-        "MCP model context protocol adoption",
-        "OpenAI plugin marketplace agent",
+        "AI agent developer ecosystem growth",
+        "MCP model context protocol adoption servers",
+        "AAIF agentic AI foundation standard adoption",
+        "OpenAI Skills marketplace agent",
         "AI agent integration partnership announcement",
         "developer tools AI agent platform"
       ],
@@ -47,13 +55,13 @@
     },
     {
       "kiq_id": "KIQ-001-04",
-      "kiq": "各社のマルチモーダルAgent統合の進捗は？",
+      "kiq": "各社のマルチモーダルAgent（音声・視覚・コード実行）統合の進捗は？",
       "search_queries": [
-        "multimodal AI agent voice vision code 2026",
+        "multimodal AI agent voice vision code execution",
         "OpenAI GPT multimodal agent capabilities",
-        "Google Gemini multimodal agent",
+        "Google Gemini multimodal agent robotics",
         "AI agent computer use browser automation",
-        "multimodal AI benchmark results 2026"
+        "multimodal AI benchmark results latest"
       ],
       "sources": ["news", "research_paper", "official_blog"],
       "frequency": "daily",
@@ -63,10 +71,10 @@
       "kiq_id": "KIQ-001-05",
       "kiq": "各社の「スキル配布と実行環境」はどう設計され、ロックインをどこで作っているか？",
       "search_queries": [
-        "OpenAI Skills shell agent execution environment 2026",
+        "OpenAI Skills shell agent execution environment",
         "Anthropic Claude Code MCP tools execution sandbox",
         "Google Gemini extensions actions agent skills",
-        "AI agent skill marketplace comparison 2026",
+        "AI agent skill marketplace comparison",
         "AI agent vendor lock-in switching cost analysis"
       ],
       "sources": ["news", "official_blog", "developer_docs", "github"],
@@ -74,40 +82,26 @@
       "minimum_sources": 2
     },
     {
-      "kiq_id": "KIQ-001-06",
-      "kiq": "AGI（汎用人工知能）への到達度を示す兆候はどう変化しているか？",
-      "search_queries": [
-        "AGI breakthrough autonomous scientific research AI 2026",
-        "AI self-improvement recursive model training capability",
-        "AI replacing human experts professional tasks 2026",
-        "AGI timeline prediction Sam Altman Demis Hassabis Dario Amodei",
-        "AGI safety moratorium policy regulation debate 2026",
-        "ARC-AGI benchmark frontier model progress 2026"
-      ],
-      "sources": ["news", "research_paper", "official_blog", "government"],
-      "frequency": "daily",
-      "minimum_sources": 2
-    },
-    {
       "kiq_id": "KIQ-002-01",
-      "kiq": "主要クラウドプロバイダーのAI Agent統合状況はどうか？",
+      "kiq": "主要クラウドプロバイダー（AWS, Azure, GCP）のAI Agent統合状況はどうか？",
       "search_queries": [
-        "AWS Bedrock agent service update 2026",
+        "AWS Bedrock agent service update",
         "Azure AI agent integration enterprise",
-        "Google Cloud Vertex AI agent",
-        "cloud provider AI agent comparison 2026"
+        "Google Cloud Vertex AI agent builder",
+        "cloud provider AI agent comparison"
       ],
       "sources": ["news", "official_blog", "industry_report"],
       "frequency": "daily",
-      "minimum_sources": 2
+      "minimum_sources": 2,
+      "note": "クラウド動向はdaily監視に昇格（companies.jsonのMicrosoft/Amazonにmonitoring_overrideあり）"
     },
     {
       "kiq_id": "KIQ-002-02",
       "kiq": "エンタープライズ顧客のAI Agent採用率と主要ユースケースは？",
       "search_queries": [
-        "enterprise AI agent adoption rate 2026",
-        "AI agent use case enterprise production",
-        "Fortune 500 AI agent deployment",
+        "enterprise AI agent adoption rate survey",
+        "AI agent use case enterprise production deployment",
+        "Fortune 500 AI agent deployment results",
         "AI agent ROI enterprise case study"
       ],
       "sources": ["news", "industry_report", "consulting_report"],
@@ -116,11 +110,11 @@
     },
     {
       "kiq_id": "KIQ-002-03",
-      "kiq": "規制環境がエンタープライズAI採用にどう影響するか？",
+      "kiq": "規制環境（EU AI Act、米国大統領令、中国AI規制）がエンタープライズAI採用にどう影響するか？",
       "search_queries": [
-        "EU AI Act enforcement impact 2026",
+        "EU AI Act enforcement impact enterprise",
         "US AI regulation executive order update",
-        "China AI regulation policy 2026",
+        "China AI regulation policy update",
         "AI compliance enterprise requirement",
         "AI agent regulation safety standard"
       ],
@@ -130,13 +124,13 @@
     },
     {
       "kiq_id": "KIQ-002-04",
-      "kiq": "AIエージェントによる業務自律化は、どの業界・職種で最も速く進んでいるか？",
+      "kiq": "AIエージェントによる業務自律化は、どの業界・職種で最も速く進んでいるか？（広告運用・コーディング・カスタマーサポート等を先行指標として）",
       "search_queries": [
-        "AI agent business automation advertising operations 2026",
-        "AI replacing entry-level jobs coding customer support 2026",
-        "enterprise AI autonomous workflow productivity gains",
+        "AI agent business automation advertising operations results",
+        "AI replacing entry-level jobs coding customer support",
+        "enterprise AI autonomous workflow productivity gains quantitative",
         "AI agent task completion rate human replacement statistics",
-        "Klarna AI customer service headcount reduction case study"
+        "Klarna Duolingo AI headcount reduction automation results"
       ],
       "sources": ["news", "industry_report", "consulting_report"],
       "frequency": "weekly",
@@ -144,11 +138,11 @@
     },
     {
       "kiq_id": "KIQ-002-05",
-      "kiq": "プラットフォーマーのAI統合は、中間事業者のバリューチェーンをどの程度侵食しているか？",
+      "kiq": "プラットフォーマー（Meta/Google等）のAI統合は、中間事業者（広告代理店・SaaS等）のバリューチェーンをどの程度侵食しているか？",
       "search_queries": [
-        "Meta Google AI advertising automation agency disintermediation 2026",
+        "Meta Google AI advertising automation agency disintermediation",
         "platform AI creative generation in-house advertising shift",
-        "SaaS disruption AI agent platform integration 2026",
+        "SaaS disruption AI agent platform integration",
         "advertising agency revenue decline AI automation impact",
         "smile curve value chain AI middle layer compression"
       ],
@@ -160,10 +154,10 @@
       "kiq_id": "KIQ-003-01",
       "kiq": "各社のAPI料金改定の頻度・方向性はどうなっているか？",
       "search_queries": [
-        "OpenAI API pricing change 2026",
+        "OpenAI API pricing change update",
         "Anthropic Claude API pricing update",
         "Google Gemini API pricing",
-        "AI API pricing comparison trend 2026",
+        "AI API pricing comparison trend",
         "AI model cost per token trend"
       ],
       "sources": ["official_docs", "news", "developer_community"],
@@ -172,12 +166,13 @@
     },
     {
       "kiq_id": "KIQ-003-02",
-      "kiq": "主要ベンチマークにおける各社モデルの性能推移は？",
+      "kiq": "主要ベンチマーク（MMLU, HumanEval, GPQA等）における各社モデルの性能推移は？",
       "search_queries": [
-        "AI model benchmark MMLU GPQA 2026",
+        "AI model benchmark MMLU GPQA ARC-AGI latest",
         "LLM benchmark comparison latest results",
-        "GPT-5 Claude Gemini benchmark",
-        "AI model performance leaderboard 2026"
+        "GPT Claude Gemini Grok benchmark comparison",
+        "AI model performance leaderboard",
+        "Artificial Analysis AI model ranking"
       ],
       "sources": ["research_paper", "news", "benchmark_sites"],
       "frequency": "daily",
@@ -185,9 +180,9 @@
     },
     {
       "kiq_id": "KIQ-003-03",
-      "kiq": "オープンソースモデルと商用モデルの性能ギャップはどう変化しているか？",
+      "kiq": "オープンソースモデル（Meta Llama, Mistral等）と商用モデルの性能ギャップはどう変化しているか？",
       "search_queries": [
-        "open source LLM vs commercial model performance 2026",
+        "open source LLM vs commercial model performance gap",
         "Meta Llama latest benchmark comparison",
         "Mistral open weight model enterprise adoption",
         "DeepSeek model performance commercial comparison",
@@ -201,9 +196,9 @@
       "kiq_id": "KIQ-003-04",
       "kiq": "各社の資金調達・投資動向は何を示唆しているか？",
       "search_queries": [
-        "AI company funding round 2026",
+        "AI company funding round latest",
         "OpenAI Anthropic Google AI investment",
-        "AI startup acquisition 2026",
+        "AI startup acquisition merger",
         "AI company valuation trend",
         "AI infrastructure investment data center"
       ],
@@ -215,7 +210,7 @@
       "kiq_id": "KIQ-003-05",
       "kiq": "各社のエコシステムからの離脱コスト（スイッチングコスト）はどう変化しているか？",
       "search_queries": [
-        "AI platform switching cost analysis 2026",
+        "AI platform switching cost analysis",
         "API migration difficulty comparison OpenAI Anthropic Google",
         "AI vendor lock-in enterprise risk",
         "multi-vendor AI strategy enterprise adoption"
@@ -226,12 +221,12 @@
     },
     {
       "kiq_id": "KIQ-004-01",
-      "kiq": "AI業務自律化の段階と人員配置変更シグナル",
+      "kiq": "広告運用・コーディング・CS等の先行領域で、AI業務自律化はどの段階まで進んでいるか？企業の人員配置転換・採用方針変更のシグナルは出ているか？",
       "search_queries": [
-        "AI autonomous advertising operations complete automation 2026",
+        "AI autonomous advertising operations complete automation",
         "CyberAgent AI automation advertising operations goal",
-        "KPMG AI agent entry-level hiring policy change survey 2026",
-        "AI replacing jobs layoffs restructuring advertising agency 2026",
+        "KPMG AI agent entry-level hiring policy change survey",
+        "AI replacing jobs layoffs restructuring advertising agency",
         "Klarna Duolingo AI headcount reduction automation results"
       ],
       "sources": ["news", "industry_report", "consulting_report"],
@@ -240,12 +235,12 @@
     },
     {
       "kiq_id": "KIQ-004-02",
-      "kiq": "コーディング能力の市場価値変動",
+      "kiq": "コーディング能力の市場価値はどう変化しているか？「書ける」から「AIに書かせて評価できる」への移行はどこまで進んでいるか？",
       "search_queries": [
-        "GitHub Copilot Cursor AI coding tool enterprise adoption rate 2026",
+        "GitHub Copilot Cursor AI coding tool enterprise adoption rate",
         "software engineer job market junior developer demand decline",
         "AI coding assistant impact programmer salary skill requirements",
-        "coding skill commoditization AI meta-skill shift 2026",
+        "coding skill commoditization AI meta-skill shift",
         "developer productivity AI tools impact hiring trends"
       ],
       "sources": ["news", "industry_report", "developer_community"],
@@ -254,11 +249,11 @@
     },
     {
       "kiq_id": "KIQ-004-03",
-      "kiq": "AI代替困難な能力の市場価値と新職種出現",
+      "kiq": "AI代替が困難な能力（課題定義・対人関係・異領域統合）の市場価値は上昇しているか？AI時代の新職種の出現シグナルは？",
       "search_queries": [
-        "AI-proof skills human irreplaceable abilities job market 2026",
+        "AI-proof skills human irreplaceable abilities job market",
         "new AI jobs AI creative director AI strategist emerging roles",
-        "World Economic Forum future jobs report AI 2026",
+        "World Economic Forum future jobs report AI",
         "reskilling upskilling AI era corporate investment trends",
         "problem definition design thinking human AI collaboration value"
       ],
@@ -268,9 +263,9 @@
     },
     {
       "kiq_id": "KIQ-004-04",
-      "kiq": "AI時代に勝つ企業の条件と所属先評価",
+      "kiq": "AI投資・リスキリング体制・独自データ基盤を持つ「AI時代に勝つ企業」の条件を満たす企業はどこか？所属先の条件充足度はどう変化しているか？",
       "search_queries": [
-        "companies winning AI transformation investment reskilling 2026",
+        "companies winning AI transformation investment reskilling",
         "CyberAgent AI Lab AI investment revenue results",
         "advertising agency AI transformation digital disruption survive",
         "enterprise AI adoption success factors proprietary data moat"
@@ -278,6 +273,63 @@
       "sources": ["news", "financial", "industry_report"],
       "frequency": "weekly",
       "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-005-01",
+      "kiq": "AGI到達度を示すベンチマーク指標と能力の進展はどう変化しているか？",
+      "search_queries": [
+        "AGI breakthrough autonomous scientific research AI",
+        "ARC-AGI benchmark frontier model progress latest",
+        "AI self-improvement recursive model training capability",
+        "AI replacing human experts professional tasks",
+        "artificial general intelligence capability milestone"
+      ],
+      "sources": ["news", "research_paper", "official_blog"],
+      "frequency": "daily",
+      "minimum_sources": 2,
+      "note": "v2.0で新設。旧KIQ-001-06からPIR-2026-005に移動"
+    },
+    {
+      "kiq_id": "KIQ-005-02",
+      "kiq": "主要CEO/研究者のAGIタイムライン予測はどう変化しているか？",
+      "search_queries": [
+        "AGI timeline prediction Sam Altman Demis Hassabis Dario Amodei",
+        "superintelligence timeline CEO prediction",
+        "AGI definition consensus AI research community",
+        "Yoshua Bengio Yann LeCun AGI view"
+      ],
+      "sources": ["news", "research_paper", "official_blog"],
+      "frequency": "weekly",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-005-03",
+      "kiq": "AGI安全性とガバナンスの政策議論はどう進展しているか？",
+      "search_queries": [
+        "AGI safety moratorium policy regulation debate",
+        "AI safety international treaty negotiation",
+        "AI alignment research funding trends",
+        "AI safety institute government policy update"
+      ],
+      "sources": ["news", "government", "research_paper"],
+      "frequency": "weekly",
+      "minimum_sources": 2
+    },
+    {
+      "kiq_id": "BYTEDANCE-CHINESE",
+      "kiq": "ByteDance/Doubao/Seed中国語一次情報の収集",
+      "search_queries": [
+        "字节跳动 豆包 AI 最新",
+        "ByteDance Seed 2.0 模型 发布",
+        "Coze 智能体 平台 更新",
+        "豆包 日活 用户数",
+        "Seedance 视频生成 AI",
+        "字节跳动 AI 投资 融资"
+      ],
+      "sources": ["news", "official_blog", "chinese_tech_media"],
+      "frequency": "daily",
+      "minimum_sources": 1,
+      "note": "v2.0で新設。ByteDance情報は中国語一次ソースが重要。英語報道だけでは現地動向を取りこぼす"
     }
   ]
 }

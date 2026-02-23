@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-23",
+  "description": "Blue/Red/Arbiter判断ログ。シナリオ確率・仮説確信度の更新を再現可能にするための構造。各エントリは「なぜ確率がこう変わったか」を、Blue（上昇根拠）・Red（下降根拠）・Arbiter（最終判断）の三段階で記録する",
+  "usage_rules": [
+    "確率または確信度を変更する際は、必ず本ログにエントリを追加すること",
+    "Blue/Redの根拠はINFO-IDまたは具体的観測事実を引用すること（主観判断のみは不可）",
+    "Arbiterの決定理由は、Blue/Redのどちらの論拠を採用したかを明記すること",
+    "エントリは時系列順に追加し、削除・上書きしないこと（監査証跡）"
+  ],
+  "entry_schema": {
+    "date": "YYYY-MM-DD",
+    "target_type": "scenario | hypothesis",
+    "target_id": "SCN-xxx | H-xxx-xxx",
+    "trigger": "更新のトリガー（新情報のINFO-ID、定期レビュー等）",
+    "previous_value": "変更前の確率または確信度（%）",
+    "blue_argument": "確率/確信度を上げるべき理由（事実ベース）",
+    "blue_delta": "+N%",
+    "red_argument": "確率/確信度を下げるべき理由（事実ベース）",
+    "red_delta": "-N%",
+    "arbiter_decision": "採用した変更とその根拠の要約",
+    "final_delta": "±N%",
+    "new_value": "更新後の確率または確信度（%）",
+    "evidence_cited": ["INFO-xxx", "IND-xxx"]
+  },
+  "judgments": [
+    {
+      "date": "2026-02-23",
+      "target_type": "scenario",
+      "target_id": "SCN-002",
+      "trigger": "v2.0定期レビュー（AAIF設立、フロンティア格差維持）",
+      "previous_value": 32,
+      "blue_argument": "AAIF標準化完了（2025年12月）でプロトコル「開放」が確定。Gemini 3.1 Pro ARC-AGI-2 77.1%で「格差拡大」も維持。両軸がSCN-002を支持",
+      "blue_delta": "+2%",
+      "red_argument": "Seed 2.0の低価格攻勢が格差を縮小させる方向。標準化はSCN-004（誰でもAI）も同時に支持",
+      "red_delta": "-1%",
+      "arbiter_decision": "Blue採用。AAIF標準化は事実。フロンティア格差はARC-AGI-2で実証済み。Seed 2.0は自己報告で検証未完了のため格差縮小の証拠としては弱い。+1%",
+      "final_delta": "+1%",
+      "new_value": 33,
+      "evidence_cited": ["INFO-008", "INFO-017", "IND-001", "IND-004"]
+    },
+    {
+      "date": "2026-02-23",
+      "target_type": "scenario",
+      "target_id": "SCN-003",
+      "trigger": "v2.0定期レビュー（プロトコル標準化の影響）",
+      "previous_value": 26,
+      "blue_argument": "エンタープライズ3社88%集中（IND-008）とデータロックイン（Google/xAI/ByteDance独占データ）は「囲い込み」を支持",
+      "blue_delta": "+0%",
+      "red_argument": "AAIF標準化完了でプロトコル層のロックインが困難に。「静かな囲い込み」がプロトコル層で実現できなくなった",
+      "red_delta": "-1%",
+      "arbiter_decision": "Red採用。プロトコル標準化は事実で、SCN-003の実現難度を上昇させた。ただしデータ/コンテキスト層のロックインは依然有力。-1%",
+      "final_delta": "-1%",
+      "new_value": 25,
+      "evidence_cited": ["IND-008", "IND-017", "IND-015"]
+    },
+    {
+      "date": "2026-02-23",
+      "target_type": "hypothesis",
+      "target_id": "H-GOO-001",
+      "trigger": "v2.0反証追加（訴訟・移行延期・幻覚率・運用浸透度）",
+      "previous_value": 71,
+      "blue_argument": "ベンチマーク首位（ARC-AGI-2 77.1%）、Gemini MAU 6.5億、プロダクト統合発表は継続",
+      "blue_delta": "+0%",
+      "red_argument": "4件の重大反証: (1) Thele v. Google LLC訴訟 (2) Assistant→Gemini移行延期 (3) 金融タスク76.7%幻覚率 (4) F500運用組み込み41%のみ",
+      "red_delta": "-16%",
+      "arbiter_decision": "Red大幅採用。4件の反証はいずれも統合戦略の「実行品質」に直結する具体的問題。方向性は正しいが実行が追いついていない。-16%",
+      "final_delta": "-16%",
+      "new_value": 55,
+      "evidence_cited": ["INFO-120", "INFO-121", "INFO-122", "INFO-123"]
+    }
+  ]
+}

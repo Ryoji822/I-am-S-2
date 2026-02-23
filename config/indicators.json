@@ -1,13 +1,13 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "last_updated": "2026-02-23",
-  "description": "I&W（Indications and Warning）指標レジストリ。各指標はシナリオの進行を監視するための観測可能な兆候。v2.0: プロトコル層標準化完了を反映し、競争の焦点を実行環境・データ・ガバナンスレイヤーに移行。重複指標を統合、運用不能指標を休止、規制指標を新設",
+  "description": "I&W（Indications and Warning）指標レジストリ。各指標はシナリオの進行を監視するための観測可能な兆候。v2.1: 複合条件のcondition_status分解、IND-003分母追加、IND-019分割（浸透→IND-019、成功→IND-024）、IND-011 scenario_ids修正",
   "structural_changes_log": [
-    "2026-02-23: IND-006+IND-012統合（プロトコル戦争終結→上位レイヤー競争に再定義）",
-    "2026-02-23: IND-015+IND-016統合（実行環境+スキル配布の囲い込みを一本化）",
-    "2026-02-23: IND-020+IND-021統合（バリューチェーン中間工程再編を一本化）",
-    "2026-02-23: IND-005,IND-010休止（データ取得不能）",
-    "2026-02-23: IND-023新設（規制・データ主権）"
+    "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
+    "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
+    "2026-02-23 v2.1: IND-003に分母（業界全体調達額）追加",
+    "2026-02-23 v2.1: IND-019を「産業採用率」に再定義、「実効性（ROI・品質）」をIND-024として分離",
+    "2026-02-23 v2.1: IND-011のscenario_idsにSCN-003追加（収斂シナリオに収斂指標を紐付け）"
   ],
   "indicators": [
     {
@@ -41,12 +41,18 @@
       "scenario_ids": ["SCN-001"],
       "description": "上位3社の年間資金調達額がAI業界全体の80%以上を占める",
       "threshold": "上位3社の資金調達シェア80%超過",
+      "denominator": {
+        "description": "AI業界全体の年間資金調達額（分母）",
+        "estimated_value": "$150-175B（2025年推定）",
+        "source": "PitchBook/CB Insights年次レポートで正確な数値を確認必要。2025年はAIバブルで前年比大幅増",
+        "note": "分母が不明確な間はシェア判定を「推定」として扱う"
+      },
       "status": "high",
       "last_checked": "2026-02-21",
-      "last_value": "OpenAI $1000億 + Anthropic $300億 = $1300億が2社に集中。上位3社シェア80%閾値接近",
+      "last_value": "OpenAI $1000億 + Anthropic $300億 = $1300億が2社に集中。業界全体推定$150-175Bに対し、上位2社だけで74-87%。閾値接近だが分母の精度に依存",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter: Blue critical昇格却下、high維持。$1300億調達は事実だが「資金調達≠市場構造変化」。投資家の期待と実現価値を区別すべき"
+      "rationale": "Arbiter: high維持。$1300億は事実だが「資金調達≠市場構造変化」。分母（業界全体）の正確な数値を次回収集で取得必要"
     },
     {
       "indicator_id": "IND-004",
@@ -82,10 +88,10 @@
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
       "status": "elevated",
       "last_checked": "2026-02-23",
-      "last_value": "プロトコル層: MCP+A2AがLinux Foundation AAIF傘下で標準化完了。OpenAI/Google/Anthropic/Microsoft/AWSが共同創設。実行環境層: OpenAI Shell（囲い込み）、E2B/Modal（独立）が競合。オーケストレーション層: LangGraph/CrewAI/Microsoft Agent Framework（AutoGen+Semantic Kernel統合）が三つ巴",
+      "last_value": "プロトコル層: MCP+A2AがLinux Foundation AAIF傘下で標準化完了。実行環境層: OpenAI Shell（囲い込み）、E2B/Modal（独立）が競合。オーケストレーション層: LangGraph/CrewAI/Microsoft Agent Framework（AutoGen+Semantic Kernel統合）が三つ巴",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で再定義。旧IND-006（プロトコル乱立）+旧IND-012（MCP支配的採用）を統合。プロトコル戦争はAAIF設立で実質終結。競争は実行環境・オーケストレーション・ガバナンスの上位レイヤーに移行"
+      "rationale": "v2.0で再定義。旧IND-006+旧IND-012を統合。プロトコル戦争はAAIF設立で実質終結。競争は上位レイヤーに移行"
     },
     {
       "indicator_id": "IND-007",
@@ -110,7 +116,7 @@
       "last_value": "エンタープライズLLM支出: Anthropic 40%、OpenAI 27%、Google 21%（合計88%）。上位3社75%閾値超過。ただしCIO予測2026年はOpenAI 53%回復を見込む",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で更新。定量データ入手（Anthropic 40%/OpenAI 27%/Google 21%）により、上位3社合計88%で閾値超過。high昇格を検討すべき"
+      "rationale": "v2.0で更新。上位3社合計88%で閾値超過。high昇格を検討すべき"
     },
     {
       "indicator_id": "IND-009",
@@ -123,7 +129,7 @@
       "last_value": "17社$100M以上調達（うち3社$1B超）、Alphabet +$100億・Meta +$200億 CAPEX増、従業員AIアクセス50%増",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "AI投資の持続的増大。ROI実現5%のみ（95%失敗、Bain Capital）を考慮。Gartner: 40%のエージェントプロジェクトが2027年末までにキャンセル"
+      "rationale": "AI投資の持続的増大。ROI実現5%のみ（Bain Capital）。Gartner: 40%のエージェントプロジェクトが2027年末までにキャンセル"
     },
     {
       "indicator_id": "IND-010",
@@ -136,12 +142,12 @@
       "last_value": null,
       "trend": "stable",
       "alert_level": "normal",
-      "rationale": "v2.0で休止。Crunchbase/PitchBook等の定量データ源が未接続で運用不能。データ源確保次第再開"
+      "rationale": "v2.0で休止。定量データ源が未接続で運用不能。データ源確保次第再開"
     },
     {
       "indicator_id": "IND-011",
       "name": "汎用AIモデル間の性能収斂",
-      "scenario_ids": ["SCN-002", "SCN-004"],
+      "scenario_ids": ["SCN-002", "SCN-003", "SCN-004"],
       "description": "主要ベンチマークでTier 1各社のスコア差が5%以内に収斂",
       "threshold": "性能差5%以内",
       "status": "elevated",
@@ -149,7 +155,7 @@
       "last_value": "Gemini 3.1 ProがClaude Opus 4.6を4ptリード（Artificial Analysis指数）。ByteDance Seed 2.0がSWE-Bench 76.5%でClaude 77.2%とほぼ同等（ただし自己報告値、独立第三者検証なし）。フロンティアは格差拡大だが、Tier 2が急速に追い上げ",
       "trend": "mixed",
       "alert_level": "elevated",
-      "rationale": "v2.0で更新。Seed 2.0のベンチマーク値（AIME 98.3%、SWE-Bench 76.5%）はByteDance自己報告。独立第三者検証は未完了（社内+映画業界専門家評価のみ）。品質の定量的確認は進行中だが完了ではない"
+      "rationale": "v2.1で更新。scenario_idsにSCN-003を追加（収斂シナリオに収斂指標が欠落していた）。Seed 2.0は自己報告。独立検証未完了"
     },
     {
       "indicator_id": "IND-013",
@@ -162,7 +168,7 @@
       "last_value": "MCP実装の43%にコマンドインジェクション脆弱性（Equixly調査）。OpenClaw ClawHubで341の悪意あるスキル検出（12%汚染率）。重大事故未発生だがセキュリティリスク上昇",
       "trend": "rising",
       "alert_level": "normal",
-      "rationale": "v2.0で更新。MCP/Skills両方にセキュリティ問題が報告されているが、重大事故（社会的損害）には至っていない"
+      "rationale": "v2.0で更新。セキュリティ問題は報告されているが、重大事故（社会的損害）には至っていない"
     },
     {
       "indicator_id": "IND-014",
@@ -180,92 +186,180 @@
       "indicator_id": "IND-015",
       "name": "実行環境・エコシステムの囲い込み度",
       "scenario_ids": ["SCN-001", "SCN-003"],
-      "description": "Agent実行環境（Shell/Sandbox）およびスキル/プラグイン配布形式がベンダー固有か、標準化・互換性があるか。実行環境のロックインとスキル形式の囲い込みを統合的に追跡",
+      "description": "Agent実行環境（Shell/Sandbox）およびスキル/プラグイン配布形式がベンダー固有か、標準化・互換性があるか",
       "threshold": "主要3社のうち2社以上がベンダー専用実行環境を必須化し、かつスキル形式が相互非互換",
       "status": "elevated",
       "last_checked": "2026-02-23",
-      "last_value": "OpenAI: Skills/Shell（独自形式、審査あり、囲い込み方向）。Anthropic: Claude Code（ローカル実行可、MCP準拠、開放方向）。Google: Gemini Extensions+Vertex Agent Builder（Google環境依存）。3社のスキル形式は相互非互換。OpenAI Assistants API 2026年8月廃止予定",
+      "last_value": "OpenAI: Skills/Shell（独自形式、審査あり、囲い込み方向）。Anthropic: Claude Code（ローカル実行可、MCP準拠、開放方向）。Google: Gemini Extensions+Vertex Agent Builder（Google環境依存）。3社のスキル形式は相互非互換。Assistants API 2026年8月廃止予定",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で旧IND-015（実行環境ロックイン）+旧IND-016（スキル配布囲い込み）を統合。同じ3社の同じ動きを追跡しており、分離の意義が薄かった"
+      "rationale": "v2.0で旧IND-015+旧IND-016を統合。同じ3社の動きを追跡"
     },
     {
       "indicator_id": "IND-017",
       "name": "データ優位の囲い込み度",
       "scenario_ids": ["SCN-001", "SCN-003", "SCN-004"],
-      "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）やコンテキスト蓄積をAIの差別化に活用している度合い。ベクトルDB、会話履歴、カスタム学習データも含む",
+      "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）やコンテキスト蓄積をAIの差別化に活用している度合い",
       "threshold": "独占データを活用したAI機能が各社3つ以上、かつエンタープライズのデータ移行コストが高コスト化",
       "status": "elevated",
       "last_checked": "2026-02-23",
-      "last_value": "Google（検索/Gmail/Drive）、xAI（Xデータ+SpaceX衛星データ）、ByteDance（TikTok/Douyinデータ）が独占データ活用。Gartner: 2027年までに35%の国が地域固有AIプラットフォームにロックイン（現在5%）。国レベルのデータ主権がベンダー選択を制約",
+      "last_value": "Google（検索/Gmail/Drive）、xAI（Xデータ+SpaceX衛星データ）、ByteDance（TikTok/Douyinデータ）が独占データ活用。Gartner: 2027年までに35%の国が地域固有AIプラットフォームにロックイン（現在5%）",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で更新。アナリスト共通見解: データ/コンテキスト層が最も強いロックイン要因。Gartnerプラットフォームロックイン予測を追加"
+      "rationale": "v2.0で更新。データ/コンテキスト層が最も強いロックイン要因"
     },
     {
       "indicator_id": "IND-018",
       "name": "AGI転換点の兆候",
       "scenario_ids": ["SCN-001", "SCN-002", "SCN-BS-001"],
-      "description": "AGI到達が近づいていることを示す複合的な兆候",
-      "threshold": "以下のうち3つ以上が同時に観測: (1) ARC-AGI-2スコア90%超 (2) AIによる査読付き論文の単独執筆 (3) 主要CEOが2年以内のAGIを公言 (4) 政府レベルのAGIモラトリアム議論 (5) AIが新薬候補を自律的に発見・検証",
+      "description": "AGI到達が近づいていることを示す複合的な兆候。5条件のうち3つ以上の同時観測でhigh",
+      "threshold": "以下のうち3つ以上が同時に観測される",
+      "condition_status": [
+        {
+          "id": 1,
+          "description": "ARC-AGI-2スコア90%超",
+          "met": false,
+          "evidence": "現在77.1%（Gemini 3.1 Pro）。閾値まで13pt不足"
+        },
+        {
+          "id": 2,
+          "description": "AIによる査読付き論文の単独執筆",
+          "met": false,
+          "evidence": "未観測。AI支援での共著はあるが単独執筆事例なし"
+        },
+        {
+          "id": 3,
+          "description": "主要CEOが2年以内のAGIを公言",
+          "met": "partial",
+          "evidence": "Altman「2年以内にスーパーインテリジェンスの初期版」（TIME誌）→該当。Hassabis「5-10年」→非該当。CEO間で見解分裂"
+        },
+        {
+          "id": 4,
+          "description": "政府レベルのAGIモラトリアム議論",
+          "met": false,
+          "evidence": "EU AI法は汎用AI規制だがAGI特化のモラトリアム議論は未発生"
+        },
+        {
+          "id": 5,
+          "description": "AIが新薬候補を自律的に発見・検証",
+          "met": false,
+          "evidence": "AI支援での創薬事例はあるが「自律的に発見・検証」は未達"
+        }
+      ],
+      "conditions_met_count": "1-2/5（条件3のみ部分的該当）",
       "status": "elevated",
       "last_checked": "2026-02-23",
-      "last_value": "ARC-AGI-2 77.1%（閾値90%に13pt不足）。Altman「2年以内にスーパーインテリジェンスの初期版」→条件3該当。Hassabis「5-10年」は反証。現在1-2/5条件",
+      "last_value": "5条件中1-2条件が部分的に該当（条件3: Altman発言）。閾値3条件には未到達",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "v2.0で更新。Altman発言により条件3が部分的に該当（ただしHassabisは反証）。CEO間で見解が分かれている状態"
+      "rationale": "v2.1で条件分解追加。条件ごとのtrue/false判定により、更新の根拠が再現可能に。Altman発言のみ部分的該当、他4条件は未達"
     },
     {
       "indicator_id": "IND-019",
-      "name": "AI業務自律化の産業浸透度",
+      "name": "AI業務自律化の産業採用率",
       "scenario_ids": ["SCN-001", "SCN-003"],
-      "description": "AIエージェントが人間の業務を自律的に代替している度合い。エントリーレベル職の採用方針変更やAI業務時間削減率で評価",
-      "threshold": "Fortune 500の30%以上がAIによる業務自律化目標を公表、かつ先行3業界でエントリーレベル採用20%以上削減",
+      "description": "AIエージェントが企業業務に導入されている度合い（採用率）。導入の成否は別指標IND-024で測定",
+      "threshold": "Fortune 500の50%以上がAIエージェントを業務プロセスに正式導入（PoC・パイロットを除く）",
       "status": "elevated",
       "last_checked": "2026-02-23",
-      "last_value": "Fortune 500の80%がエージェント使用開始。ただしRemote Labor Index: 2.5%のみ人間品質完了。全米で6%の雇用（920万人）のみが50%以上自動化可能かつ非技術的障壁なし",
+      "last_value": "Fortune 500の80%がエージェント使用開始。ただし「正式導入」と「PoC/パイロット」の区別が不明確。正式導入ベースでの定量データは未取得",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で更新。「浸透」≠「成功」。6%の雇用のみが完全代替可能（MIT研究）という定量データを追加"
+      "rationale": "v2.1で再定義。旧IND-019は「浸透」と「成功」を1指標で混在させていた。採用率（本指標）と実効性（IND-024）に分離。採用は進んでいるが、正式導入vsパイロットの区別を定量化する必要あり"
     },
     {
       "indicator_id": "IND-020",
       "name": "バリューチェーン中間工程の再編",
       "scenario_ids": ["SCN-001", "SCN-003", "SCN-004"],
-      "description": "プラットフォーマーのAI統合および自動化により、バリューチェーン中間工程（広告運用・受託開発・レポーティング等）の価値が急減し、上流（戦略/R&D）と下流（顧客接点/実行）に価値が集中する構造変化",
-      "threshold": "以下のうち2つ以上: (1) 主要プラットフォーマー2社以上がAI自動化で中間工程代替機能を正式提供 (2) 中間事業者の売上減少が業界報告で確認 (3) 上流/中間職の給与格差20%以上拡大",
+      "description": "プラットフォーマーのAI統合により中間工程（広告運用・受託開発等）の価値が急減し、上流と下流に価値集中する構造変化",
+      "threshold": "以下のうち2つ以上",
+      "condition_status": [
+        {
+          "id": 1,
+          "description": "主要プラットフォーマー2社以上がAI自動化で中間工程代替機能を正式提供",
+          "met": true,
+          "evidence": "Meta Advantage+ AI広告自動化拡大、Google P-Max AI運用。2社以上が正式提供済み"
+        },
+        {
+          "id": 2,
+          "description": "中間事業者の売上減少が業界報告で確認",
+          "met": "partial",
+          "evidence": "IPA代理店14%削減は間接指標。中間事業者の売上減少を直接報告した業界レポートは未取得"
+        },
+        {
+          "id": 3,
+          "description": "上流/中間職の給与格差20%以上拡大",
+          "met": false,
+          "evidence": "定量データ未取得。次回収集で確認必要"
+        }
+      ],
+      "conditions_met_count": "1-2/3（条件1達成、条件2部分的）",
       "status": "elevated",
       "last_checked": "2026-02-23",
-      "last_value": "Meta Advantage+ AI広告自動化拡大、Google P-Max AI運用（条件1達成）。IPA代理店14%削減（条件2接近）。中間工程単価の定量的低下データは未取得",
+      "last_value": "条件1達成（Meta Advantage+、Google P-Max）。条件2接近（IPA 14%削減は間接指標）。条件3未判定",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で旧IND-020（プラットフォーマー中抜き）+旧IND-021（スマイルカーブ中間工程消失）を統合。同じ証拠プールで同時に動く重複指標だった"
+      "rationale": "v2.1で条件分解追加。v2.0で旧IND-020+旧IND-021を統合済み"
     },
     {
       "indicator_id": "IND-022",
       "name": "コーディング能力のスキル再定義",
       "scenario_ids": ["SCN-003", "SCN-004"],
-      "description": "AIコーディングツールの普及により「コードを書く能力」の差別化価値が低下し、「設計・評価・方向付けする能力」への価値シフトが進行している度合い",
-      "threshold": "以下のうち2つ以上: (1) AIコーディングツール企業導入率50%超 (2) ジュニアエンジニア求人が前年比20%以上減少 (3) 求人票の必須スキルが実装力から設計力・評価力にシフト",
+      "description": "AIコーディングツールの普及により「書く能力」の差別化価値が低下し、「設計・評価・方向付けする能力」への価値シフトが進行",
+      "threshold": "以下のうち2つ以上",
+      "condition_status": [
+        {
+          "id": 1,
+          "description": "AIコーディングツール企業導入率50%超",
+          "met": true,
+          "evidence": "82%の開発者がAIツール使用。80%の新規開発者が初週でCopilot使用"
+        },
+        {
+          "id": 2,
+          "description": "ジュニアエンジニア求人が前年比20%以上減少",
+          "met": true,
+          "evidence": "エントリーレベル技術職73.4%減（前年比）。20%閾値を大幅超過"
+        },
+        {
+          "id": 3,
+          "description": "求人票の必須スキルが実装力から設計力・評価力にシフト",
+          "met": "partial",
+          "evidence": "AIスキル保有者に給与プレミアム+$15-25K。ただし求人票要件変化の体系的データは未取得"
+        }
+      ],
+      "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
       "status": "high",
       "last_checked": "2026-02-23",
-      "last_value": "82%の開発者がAIツール使用。80%の新規開発者が初週でCopilot使用。エントリーレベル技術職73.4%減（前年比）。ただしAIコード品質は1.7倍バグ多い（CodeRabbit）",
+      "last_value": "条件1達成（82%導入率）。条件2達成（73.4%減）。条件3部分的（給与プレミアムは確認、求人票変化の体系データ未取得）。2条件達成でhigh妥当",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "v2.0で更新。シフトの実態は「書く→評価」よりも「書く→設計+評価+統合」のより広いスキルセット移行。AIコード品質問題（1.7倍バグ）は人間スキルの必要性を示す反証"
+      "rationale": "v2.1で条件分解追加。2/3条件達成でhighは閾値ルールに合致。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
     },
     {
       "indicator_id": "IND-023",
       "name": "AI規制・データ主権の市場構造への影響",
       "scenario_ids": ["SCN-002", "SCN-004", "SCN-BS-001"],
-      "description": "EU AI法（2026年8月完全施行）、反トラスト規制、データ主権法がAI市場の構造と競争に与える影響。地域別プラットフォームロックインの進行度も含む",
-      "threshold": "以下のうち2つ以上: (1) EU AI法によりTier 1企業の欧州戦略に重大変更 (2) 反トラスト訴訟/調査が主要AI企業に対して開始 (3) 3カ国以上がAIデータ主権法を施行しプラットフォーム選択を制限",
+      "description": "EU AI法、反トラスト規制、データ主権法がAI市場の構造と競争に与える影響",
+      "threshold": "以下のうち2つ以上: (1) EU AI法によりTier 1企業の欧州戦略に重大変更 (2) 反トラスト訴訟/調査が主要AI企業に対して開始 (3) 3カ国以上がAIデータ主権法を施行",
       "status": "elevated",
       "last_checked": "2026-02-23",
-      "last_value": "EU AI法2026年8月完全施行予定。Gemini Gmail統合に対するプライバシー集団訴訟。Gartner: 2027年までに35%の国が地域固有AIプラットフォームにロックイン（現在5%）。AI governance市場2026年$492M→2030年$1B超",
+      "last_value": "EU AI法2026年8月完全施行予定。Thele v. Google LLCプライバシー集団訴訟。Gartner: 35%の国が地域固有AIプラットフォームにロックイン予測",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で新設。従来の指標セットに規制・アンチトラスト観点が欠落していた。安全性を武器にするAnthropicに追い風、規制コストが高い新興企業には参入障壁"
+      "rationale": "v2.0で新設。規制・アンチトラスト観点の補完"
+    },
+    {
+      "indicator_id": "IND-024",
+      "name": "AI業務自律化の実効性（ROI・品質）",
+      "scenario_ids": ["SCN-001", "SCN-003"],
+      "description": "AIエージェントを導入した企業が実際にROI正を達成しているか、タスク完了品質は十分か。採用率はIND-019で別途測定",
+      "threshold": "AI導入企業のうち20%以上がROI正を報告、かつ先行3業界でAIタスク完了率30%超",
+      "status": "monitoring",
+      "last_checked": "2026-02-23",
+      "last_value": "ROI正は5%のみ（Bain Capital調査）。Remote Labor Index: 2.5%のみ人間品質完了。Gartner: 40%のエージェントプロジェクトが2027年末までにキャンセル予測。閾値に大幅未達",
+      "trend": "stable",
+      "alert_level": "normal",
+      "rationale": "v2.1で新設。旧IND-019は「浸透（採用）」と「成功（ROI/品質）」を混在させていたため分離。現在の実効性は極めて低く（5% ROI正）、採用率80%との乖離が際立つ。この乖離自体がシグナル"
     }
   ]
 }

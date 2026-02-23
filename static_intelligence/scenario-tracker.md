@@ -39,7 +39,7 @@ Gemini 3.1 ProのARC-AGI-2 77.1%（前世代比146%向上）はフロンティ�
 **確率が上がる条件:** Skills/Shellが開発者に定着、エンタープライズ顧客のベンダー集中が進む、実行環境の標準化が進まない。
 **確率が下がる条件:** 実行環境の標準化が進む、反トラスト規制介入、Seed 2.0級の価格破壊でロックイン解消。
 
-**監視指標:** [IND-001](../config/indicators.json), [IND-002](../config/indicators.json), [IND-003](../config/indicators.json), [IND-015](../config/indicators.json), [IND-018](../config/indicators.json), [IND-019](../config/indicators.json), [IND-020](../config/indicators.json)
+**監視指標:** [IND-001](../config/indicators.json), [IND-002](../config/indicators.json), [IND-003](../config/indicators.json), [IND-015](../config/indicators.json), [IND-018](../config/indicators.json), [IND-019](../config/indicators.json), [IND-020](../config/indicators.json), [IND-024](../config/indicators.json)
 
 ### SCN-002 技術は開くが勝者は出る（33%）— 開放 × 格差拡大 ★現在最有力★
 
@@ -66,7 +66,7 @@ Gemini 3.1 ProのARC-AGI-2 77.1%（前世代比146%向上）はフロンティ�
 
 **しかしプロトコル標準化（AAIF）により、プロトコル層でのロックインは困難に。** 囲い込みが成立するにはデータ/コンテキスト層（[IND-017](../config/indicators.json)）での優位が必要。Google（検索/Gmail/Drive）、xAI（X+SpaceX衛星データ）、ByteDance（TikTok/Douyin）が独占データを持つ。
 
-**監視指標:** [IND-007](../config/indicators.json), [IND-008](../config/indicators.json), [IND-009](../config/indicators.json), [IND-011](../config/indicators.json), [IND-015](../config/indicators.json), [IND-017](../config/indicators.json), [IND-019](../config/indicators.json), [IND-020](../config/indicators.json), [IND-022](../config/indicators.json)
+**監視指標:** [IND-007](../config/indicators.json), [IND-008](../config/indicators.json), [IND-009](../config/indicators.json), [IND-011](../config/indicators.json), [IND-015](../config/indicators.json), [IND-017](../config/indicators.json), [IND-019](../config/indicators.json), [IND-020](../config/indicators.json), [IND-022](../config/indicators.json), [IND-024](../config/indicators.json)
 
 ### SCN-004 誰でもAI（20%）— 開放 × 収斂
 
