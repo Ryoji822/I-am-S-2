@@ -396,6 +396,7 @@ else
   fi
 
   git commit -m "$COMMIT_MSG"
+  git pull --rebase origin main 2>/dev/null || true
   git push origin main || git push origin master || log_error "Push failed"
   log_ok "Changes committed and pushed"
 fi
