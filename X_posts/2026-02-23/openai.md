@@ -22,3 +22,12 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**07:47 JST** | [原文](https://x.com/jasonkwon/status/2025726668313350539)
+
+> RT Michael Wall
+> http://x.com/i/article/2025688773837856768
+
+---
+
