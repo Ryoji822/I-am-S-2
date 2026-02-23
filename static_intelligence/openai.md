@@ -1,64 +1,64 @@
 # OpenAI
 
-> 最終更新: 2026-02-21
+> 最終更新: 2026-02-23
 
-**かつて「AGIを作る」と言っていた会社が、大企業向けAIプラットフォームの会社に変わった。$1000億を調達し、Frontierプラットフォームで大企業を取り込みつつ、Skills/Shell/Compactionで開発者環境も押さえようとしている。ベンチマーク性能ではGemini 3.1 Proに4pt差をつけられているが、エンタープライズ市場での先行者利益は大きい。最大の不確実性は、独自の囲い込み路線がAnthropicのMCPオープン標準に勝てるかどうか。**
+**$100B+調達（史上最大、$850B+評価額）でAI業界最大の資金力を持つ。Frontierプラットフォームでエンタープライズを取りつつ、Skills/Shell/CompactionでMCP上に独自の実行環境レイヤーを構築する二層戦略。注目すべきはOpenAIがMCPを採用しAAIF共同創設に参加した事実——Skills/ShellはMCPの「対抗」ではなくMCP上に構築された「囲い込みの上位レイヤー」。エンタープライズLLM支出ではAnthropicに首位を奪われ27%に後退。ベンチマークでもGemini 3.1 Proに4pt差。しかしAltmanは「2年以内にスーパーインテリジェンスの初期版」と公言し、R&D投資と商業化の両輪推進を明確化した。**
 
 ## この会社は何者か
 
-Sam Altman率いるAI企業。主力はChatGPT、GPT-5シリーズ、OpenAI Agents SDK、大企業向けのFrontierプラットフォーム。
+Sam Altman率いるAI企業。主力はChatGPT、GPT-5シリーズ、OpenAI Agents SDK、Frontierプラットフォーム、Operator（CUA）。
 
-資金調達が$1000億と巨額で、NVIDIA $300億、Amazon、SoftBank、Microsoftが参加 [INFO-102](../Information/2026-02-21/collected-raw.md#INFO-102)。Anthropicの$300億の3倍以上で、AI業界最大の調達額。
+$100B+の調達が最終段階（2026年2月、Bloomberg/TechCrunch報道）。Amazon $50B、SoftBank $30B、NVIDIA $20B、Microsoft参加。評価額$850B+。AI業界最大の資金力。Anthropicの$30Bの3倍以上。
 
-事業の勢いは強い。エンタープライズAI利用がYoY 8倍、推論モデル利用は300倍に増加 [INFO-020](../Information/2026-02-18/collected-raw.md#INFO-020)。社内では95%のエンジニアがCodexを使い、一人あたり10-20の並列エージェントを管理する体制を確立している [INFO-013](../Information/2026-02-18/collected-raw.md#INFO-013)。自分たちが売る製品を自分たちが一番使っている（dogfooding）のは、製品品質を裏付ける強い証拠。
+エンタープライズAI利用がYoY 8倍、推論モデル利用は300倍に増加 [INFO-020](../Information/2026-02-18/collected-raw.md#INFO-020)。社内では95%のエンジニアがCodexを使い、一人あたり10-20の並列エージェントを管理する体制 [INFO-013](../Information/2026-02-18/collected-raw.md#INFO-013)。ただしエンタープライズLLM支出シェアは27%でAnthropic（40%）に首位を奪われた（Menlo Ventures調査）。
 
-直近の動きは3つ。(1) OpenClaw買収でPeter Steinbergerを雇い、クロスプラットフォームのワークフロー連携を強化 [INFO-015](../Information/2026-02-21/collected-raw.md#INFO-015)。(2) GPT-5.3-Codex-Sparkをリリースし、15倍の高速生成と128kコンテキストを実現 [INFO-032](../Information/2026-02-21/collected-raw.md#INFO-032)。(3) Agents SDK v0.8.4でホスト型コンテナツールとSkills bundlesを追加 [INFO-005](../Information/2026-02-21/collected-raw.md#INFO-005)。
-
-OpenAIの方向転換を象徴する出来事がある。ChatGPTからGPT-4o、GPT-4.1シリーズ、o4-miniを廃止した [INFO-008](../Information/2026-02-18/collected-raw.md#INFO-008)。21,900件の反対署名があったが、廃止モデルの利用率はわずか0.1%。消費者の声よりエンタープライズにリソースを集中する判断を選んだ。この一件がOpenAIの変質を最もよく表している。
+直近の重要な動き: (1) Assistants API 2026年8月26日廃止決定。Responses APIに一本化（OpenAI公式）。(2) OperatorがChatGPTの「エージェントモード」として統合（CUAモデル搭載、DoorDash/Instacart/Uber等と提携）。(3) Skills/Shell/Compactionの3要素をMCP上に構築（MCPを採用した上で独自レイヤーを追加）。
 
 ## 何をやろうとしているか
 
-OpenAIの動きから、2つの戦略が同時に読み取れる。どちらも確度52%で甲乙つけがたい。
+OpenAIの動きから、2つの戦略と1つの野望が同時に読み取れる。
 
 **方向1: 大企業向けAIプラットフォームになる（H-OAI-001, 確度52%）**
 
-Frontierプラットフォームを立ち上げ、HP、Intuit、Oracle、Uberが初期顧客として採用済み [INFO-013](../Information/2026-02-21/collected-raw.md#INFO-013)。古いAssistants APIを2026年8月に廃止予定で [INFO-019](../Information/2026-02-20/collected-raw.md#INFO-019)、旧アーキテクチャを捨てて新しいResponses APIに一本化する。OpenClaw買収もワークフロー連携強化の一環で、大企業の業務に入り込むための基盤作り。
+Frontierプラットフォームを立ち上げ、HP、Intuit、Oracle、Uberが初期顧客として採用済み [INFO-013](../Information/2026-02-21/collected-raw.md#INFO-013)。Assistants API 2026年8月廃止→Responses API一本化。古いアーキテクチャを捨てて新しいインターフェースに移行する。
 
-この方向が正しければ、Fortune 500との大型契約がさらに増え、SOC2/FedRAMP認証を取得していく。間違いなら、消費者向け新機能への投資再開やAPI料金の大幅引き下げが見える。
+エンタープライズLLMシェア27%はAnthropicの40%に対して劣位だが、CIO予測では2026年にOpenAIが53%回復を見込むとする調査もある。$100B+の資金力で巻き返しを図る。
 
-**方向2: 開発者環境を囲い込む（H-OAI-002, 確度52%）**
+**方向2: MCP上に独自実行環境を構築し囲い込む（H-OAI-002, 確度55%）**
 
-Skills/Shell/Compaction [INFO-038](../Information/2026-02-21/collected-raw.md#INFO-038) で開発者の実行環境を押さえようとしている。Skillsはエージェントに機能を追加するパッケージ、Shellはエージェントが動くサーバー環境、Compactionは長いやり取りを圧縮する技術。全部OpenAI独自の形式で、一度このエコシステムに入ると他社に移りにくくなる。
+**v2.0で再定義。** 重要な事実: OpenAIはMCPを採用しAAIF共同創設に参加した（2025年12月、Linux Foundation）。Skills/ShellはMCPの「対抗」ではなく、**MCP上に構築された独自の上位レイヤー**。
 
-ただし矛盾もある。OpenClaw買収はクロスプラットフォーム志向（囲い込みの逆）であり、OpenAI自身もまだどちらに振り切るか決めきれていない可能性がある。
+- **Skills**: エージェントに機能を追加するパッケージ（SKILL.md マニフェスト付き）。OpenAI独自形式
+- **Shell**: エージェントが動くホスト型サーバー環境。クラウド依存（AnthropicのClaude Codeローカル実行との対比）
+- **Compaction**: 長時間実行のコンテキスト圧縮技術
 
-この囲い込み路線の最大の敵がAnthropicのMCP。MCPはオープン標準としてChrome/OWASP/Oracle/Cloudflareが対応済みで、業界標準になればOpenAI独自のSkills/Shellは「ガラパゴス」になるリスクがある。
+OpenClawマーケットプレイス（700スキル）での配布囲い込みも進行中。プロトコル層は開放（MCP）だが実行環境層で囲い込むという戦略。
 
-**棄却済み: AGI優先戦略（H-OAI-003, 確度15%）**
+**復帰した野望: AGI/スーパーインテリジェンス（H-OAI-003, 確度25%, active復帰）**
 
-かつてのOpenAIの看板「AGI最優先」路線は、5件の商業化証拠（Frontier Platform、Assistants API廃止、Codexスキルシステム等）により棄却された [INFO-014](../Information/2026-02-19/collected-raw.md#INFO-014)。OpenAIはもうAGIの会社ではなく、エンタープライズAIプラットフォームの会社になった。
+**v2.0で棄却を撤回。** Altmanが「2年以内にスーパーインテリジェンスの初期版に到達しうる」「2028年末までにデータセンター内の知的能力が外部を超える」と公言（TIME誌）。ただし$100B調達・Operator商用化・Skills展開は商業化への全力投資を同時に示す。「商業化よりR&D優先」ではなく「両輪推進」が実態。
 
 ## 強みと弱み
 
 **強み:**
-- **エンタープライズ先行者利益**: YoY 8倍成長は製品が実際に使われている証拠 [INFO-020](../Information/2026-02-18/collected-raw.md#INFO-020)
-- **圧倒的な資金力**: $1000億はAnthropicの3倍以上。開発競争で息切れしない [INFO-102](../Information/2026-02-21/collected-raw.md#INFO-102)
+- **圧倒的な資金力**: $100B+はAnthropicの3倍以上。開発競争で息切れしない
+- **エンタープライズ先行者利益**: YoY 8倍成長は製品が実際に使われている証拠
 - **Microsoftとの販路**: 企業へのセールスチャネルが確保済み
-- **dogfoodingの強さ**: 社内95%がCodex使用。製品品質の裏付け [INFO-013](../Information/2026-02-18/collected-raw.md#INFO-013)
-- **初期顧客の質**: HP/Intuit/Oracle/Uberの採用実績 [INFO-013](../Information/2026-02-21/collected-raw.md#INFO-013)
+- **dogfoodingの強さ**: 社内95%がCodex使用。製品品質の裏付け
+- **Operator/CUA**: ブラウザ操作エージェントの先行投入。DoorDash/Uber等との提携
 
 **弱み:**
-- **ベンチマーク性能で後退中**: Gemini 3.1 ProにArtificial Analysis指数で4ptリードされている [INFO-028](../Information/2026-02-20/collected-raw.md#INFO-028)。技術力アピールが必要な営業で不利
-- **Deep Researchの品質問題**: 高努力設定で精度が低下する報告 [INFO-083](../Information/2026-02-18/collected-raw.md#INFO-083)
+- **エンタープライズシェア後退**: 27%でAnthropicの40%に逆転された（Menlo Ventures）
+- **ベンチマーク性能で後退中**: Gemini 3.1 ProにArtificial Analysis指数で4ptリード
+- **Assistants API廃止リスク**: 2026年8月の強制移行で開発者離れの可能性
 - **消費者の不満蓄積**: GPT-4o廃止に21,900件の反対署名 [INFO-008](../Information/2026-02-18/collected-raw.md#INFO-008)
-- **MCP vs Skills/Shellの標準争い**: MCPがChrome/OWASP/Oracle/Cloudflare対応済み [INFO-024](../Information/2026-02-21/collected-raw.md#INFO-024) [INFO-035](../Information/2026-02-21/collected-raw.md#INFO-035)。MCPが標準化すればOpenAI独自路線は孤立する
-- **戦略の矛盾**: OpenClaw買収（開放志向）とSkills/Shell（囲い込み志向）が同居
+- **Skills/Shell囲い込みの不確実性**: MCP上の上位レイヤーが開発者に受け入れられるか未知数
 
 ## 何を監視すべきか
 
 | 何を | なぜ | 今の状態 |
 |------|------|---------|
-| Frontier大企業契約数 | B2B仮説の成否が直接わかる | HP/Intuit/Oracle/Uber採用済み（[IND-008](../config/indicators.json), elevated） |
-| Skills/Shell開発者定着度 | 囲い込み成否の鍵。定着すればMCPの対抗軸に | SDK v0.8.4リリース、CrewAI 10万人認定（[IND-015](../config/indicators.json), elevated） |
-| Assistants API廃止後の動向 | 8月の強制移行で開発者が残るか離れるか | 8月廃止予定 |
-| エンタープライズAI投資の持続性 | YoY 8倍が続くか。ROI達成は5%のみ | 組織平均$1.2M、前年比108%増（[IND-009](../config/indicators.json), elevated） |
+| エンタープライズLLMシェア推移 | 27%→回復するか。Anthropic 40%への対抗策の効果 | Anthropic首位（[IND-008](../config/indicators.json), elevated） |
+| Skills/Shell開発者定着度 | MCP上の囲い込みレイヤーが受け入れられるか | SDK v0.8.4リリース（[IND-015](../config/indicators.json), elevated） |
+| Assistants API廃止後の動向 | 8月の強制移行で開発者が残るか離れるか | 8月26日廃止確定 |
+| $100B調達の完了と使途 | 資金がR&Dと商業化にどう配分されるか | 最終段階（[IND-003](../config/indicators.json), high） |

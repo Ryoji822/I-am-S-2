@@ -1,63 +1,68 @@
 # Anthropic
 
-> 最終更新: 2026-02-21
+> 最終更新: 2026-02-23
 
-**安全性を最大の武器にして、規制が厳しいエンタープライズ市場を狙っている。同時にMCPというオープン標準で業界の接続方式を握り、Claude Codeで開発者を繋ぎ止める二面戦略。$300億調達、年間収益$14B（3年連続10倍以上成長）。Claude Codeは開始6ヶ月で年間$1B収益に到達。ベンチマーク首位ではなくなった（Geminiに4pt差）が、安全性と開発者体験では他社に真似しにくいポジションを持つ。**
+**エンタープライズLLM支出シェア40%で業界首位に立ったAI企業。Claude Code $2.5B ARR（ローンチ9ヶ月で達成）、年間収益$14B、$30B Series G（評価額$380B）。MCPは2025年12月にLinux Foundation AAIFに寄贈し業界標準となった——もはやAnthropicの競争武器ではなく共有インフラ。新たな差別化軸はClaude Code + Bun買収（2025年12月）+ Agent SDKの開発者ツールエコシステムと、安全性による規制業界での優位性。**
 
 ## この会社は何者か
 
-Dario Amodei率いるAI企業。主力はClaude 4.6シリーズ（Opus/Sonnet/Haiku）とClaude Agent SDK。
+Dario Amodei率いるAI企業。主力はClaude 4.6シリーズ（Opus/Sonnet/Haiku）、Claude Code、Claude Agent SDK。
 
-資金面では、Series Gで$300億を調達（評価額$380B、GIC/Coatue主導）[INFO-015](../Information/2026-02-18/collected-raw.md#INFO-015)。年間収益$14Bで、過去3年間毎年10倍以上の成長を維持 [INFO-001](../Information/2026-02-18/collected-raw.md#INFO-001)。Claude Codeは提供開始6ヶ月で年間$1B収益に到達しており、プロダクトが市場にフィットしている証拠 [INFO-001](../Information/2026-02-18/collected-raw.md#INFO-001)。2025年12月にBunを買収し、JavaScript開発者ツールチェーンに進出。Claude Codeを軸に開発者ツールのエコシステムを作ろうとする動き。
+資金面では、Series Gで$30Bを調達（評価額$380B、2026年2月）。年間収益$14Bで、過去3年間毎年10倍以上の成長を維持。80%がエンタープライズ直販、$100K以上支出企業が前年比7倍成長。エンタープライズLLM支出シェア40%で首位（Menlo Ventures調査、2023年12%→2026年40%、OpenAI 27%に逆転）。
 
-直近の動きは4つ。(1) Claude Agent SDKへの名称変更でエージェント開発の軸であることを明示 [INFO-007](../Information/2026-02-21/collected-raw.md#INFO-007)。(2) Computer Use Agentsの構築パターンを公開し、AIにパソコンを操作させる方法を標準化 [INFO-036](../Information/2026-02-21/collected-raw.md#INFO-036)。(3) SOC2準拠のエンタープライズグレードセキュリティを確立 [INFO-016](../Information/2026-02-21/collected-raw.md#INFO-016)。(4) Infosysとの直販提携で通信・金融・製造向けに直接売り込みを開始 [INFO-001](../Information/2026-02-21/collected-raw.md#INFO-001)。
+**Claude Codeが最大の成長ドライバー。** ローンチ6ヶ月で$1B ARR到達、2026年2月時点で$2.5B ARR（1月1日から倍増）。ビジネスサブスクリプションは2026年初頭から4倍成長。エンタープライズが収益の50%超。GitHub Copilotに並ぶAIコーディング3大ツールの一つ。
+
+2025年12月にBun（JavaScriptランタイム）を買収。Claude Codeの基盤インフラを内製化する戦略的動き。Bunはオープンソース（MIT）を維持。
+
+直近の動き: (1) Claude Agent SDKへの名称変更でエージェント開発の軸であることを明示 [INFO-007](../Information/2026-02-21/collected-raw.md#INFO-007)。(2) Computer Use Agentsの構築パターンを公開 [INFO-036](../Information/2026-02-21/collected-raw.md#INFO-036)。(3) SOC2準拠のエンタープライズグレードセキュリティを確立 [INFO-016](../Information/2026-02-21/collected-raw.md#INFO-016)。(4) Infosysとの直販提携で通信・金融・製造向けに直接営業 [INFO-001](../Information/2026-02-21/collected-raw.md#INFO-001)。
 
 価格は、Sonnet 4.6が$3/$15 [INFO-079](../Information/2026-02-18/collected-raw.md#INFO-079)、Opus 4.6は$15/$75→$5/$25に67%値下げ済み [INFO-022](../Information/2026-02-20/collected-raw.md#INFO-022)。
 
 ## 何をやろうとしているか
 
-Anthropicの戦略は「安全性」と「MCP」の2つの武器を使い分ける二面作戦として読める。
+Anthropicの戦略は「安全性」と「開発者ツール」の2つの武器を使い分ける構造。MCPはもはやAnthropicの武器ではなく業界の共有インフラとなった。
 
-**方向1: 安全性でエンタープライズを取る（H-ANT-001, 確度55%）**
+**方向1: 安全性でエンタープライズを取る（H-ANT-001, 確度62%）**
 
-Anthropicの最大の差別化は安全性。SOC2準拠 [INFO-016](../Information/2026-02-21/collected-raw.md#INFO-016)、Compliance API、ASL-3保護の有効化、サボタージュリスク評価の公開 [INFO-022](../Information/2026-02-18/collected-raw.md#INFO-022) など、「安全性で一歩先を行く」ポジションは他社が簡単には真似できない。金融や政府のように規制が厳しい業界では、この安全性の実績が決定的な差になる。
+Anthropicの最大の差別化は安全性。SOC2準拠、Compliance API、ASL-3保護。金融や政府のように規制が厳しい業界では、この安全性の実績が決定的な差になる。EU AI法完全施行（2026年8月）は安全性重視企業に追い風。
 
-Infosysとの直販提携 [INFO-001](../Information/2026-02-21/collected-raw.md#INFO-001) は通信・金融・製造に直接売り込む動き。AWS経由だけでなく自前の販路を作ろうとしている（これはAWS依存仮説H-ANT-003の反証でもある）。
+エンタープライズLLM支出40%シェアはこの戦略が機能している証拠。Infosysとの直販提携は通信・金融・製造に直接売り込む動き。
 
-この方向が正しければ、FedRAMPなどの追加認証取得や政府・金融機関との大型契約が見えてくる。間違いなら、安全性の制約が開発者体験を損ね、競合がセキュリティでキャッチアップしてくる。
+**方向2: 開発者ツールエコシステムで差別化する（H-ANT-002, 確度68%）★全社仮説中最高★**
 
-**方向2: MCPで入口を開き、Claude Codeで出口を押さえる（H-ANT-002, 確度52%）**
+**v2.0で全面再定義。** 旧仮説「MCP二面戦略」はMCPのAAIF寄贈（2025年12月）により無効化された。MCPはAnthropic、OpenAI、Google、Microsoft、AWSが共同創設したLinux Foundation傘下のオープン標準であり、もはや特定企業の競争武器ではない。
 
-MCP（Model Context Protocol）というオープン標準でAIエージェントとツールの接続方式を業界標準にし、同時にClaude Codeで顧客を繋ぎ止める。「入口はオープン、出口はAnthropic」という二面戦略。
+新たな差別化軸はClaude Code + Bun + Agent SDKの開発者ツールエコシステム:
+- **Claude Code $2.5B ARR**: ターミナルで直接動作、ファイルシステム・CLIアクセスが特徴。ローカル実行可能でOpenAI Shell（クラウド依存）との対比を形成
+- **Bun買収（2025年12月）**: Claude Codeの基盤インフラを内製化。$1B+ 製品が依存するOSSを自社管理にする戦略的合理性
+- **Agent SDK**: エージェント開発の標準SDKとしてポジショニング
 
-MCPの広がりは確か。Chrome、OWASP、Oracle、Cloudflareが対応 [INFO-024](../Information/2026-02-21/collected-raw.md#INFO-024) [INFO-035](../Information/2026-02-21/collected-raw.md#INFO-035)。Linux Foundation AAIFへの寄贈も完了し、10,000以上のMCPサーバーが公開されている。
+この方向が正しければ、Claude Code利用者のさらなる急増やAgent SDKの外部開発者採用が見える。間違いなら、GitHub CopilotやCursorへの利用者流出が見える。
 
-ただし重要な注意点がある。「対応した」と「実際に業務で使っている」は別物。MCPの対応企業数は増えているが、実際の採用率の定量データはまだない。MCPが「名前だけ対応」で終わるか「本当の業界標準」になるかで、この仮説の強さが全く変わる。
+**弱まっている読み: AWSに乗る（H-ANT-003, 確度25%, 棄却候補）**
 
-**弱まっている読み: AWSに乗る（H-ANT-003, 確度30%, 棄却候補）**
-
-AWS経由でエンタープライズに浸透する戦略。しかしInfosysとの直販提携 [INFO-001](../Information/2026-02-21/collected-raw.md#INFO-001) がAWS依存と矛盾しており、棄却に近い。
+AWS経由でエンタープライズに浸透する戦略。しかし$14B ARRの80%がエンタープライズ直販であり、$30B Series Gの$380B評価額でAWS出資比率も相対的に低下。「主戦略」ではなく「一チャネル」にすぎない。
 
 ## 強みと弱み
 
 **強み:**
-- **成長速度**: 年間収益$14B、3年連続10倍以上。Claude Code $1Bは「製品が売れる」証明 [INFO-001](../Information/2026-02-18/collected-raw.md#INFO-001)
-- **安全性リーダーシップ**: SOC2準拠、ASL-3保護。規制業界で武器になる [INFO-016](../Information/2026-02-21/collected-raw.md#INFO-016) [INFO-022](../Information/2026-02-18/collected-raw.md#INFO-022)
-- **MCPの広がり**: Chrome/OWASP/Oracle/Cloudflare対応。業界標準を取れれば巨大な競争優位 [INFO-024](../Information/2026-02-21/collected-raw.md#INFO-024)
-- **ベンチマーク実力**: GPQA Diamond新標準でリーダーポジション [INFO-081](../Information/2026-02-18/collected-raw.md#INFO-081)
-- **価格戦略**: Sonnet 4.6が$3/$15で性能と価格のバランスが良い [INFO-079](../Information/2026-02-18/collected-raw.md#INFO-079)。Opus 4.6は67%値下げで$5/$25 [INFO-022](../Information/2026-02-20/collected-raw.md#INFO-022)
+- **エンタープライズ首位**: LLM支出40%シェア。2023年12%→2026年40%の急成長（Menlo Ventures）
+- **Claude Code**: $2.5B ARR。9ヶ月で$0→$2.5Bは異常な成長速度。製品市場適合の決定的証拠
+- **安全性リーダーシップ**: SOC2準拠、ASL-3保護。EU AI法施行で追い風
+- **Bun買収**: 開発者ツール基盤の内製化で長期的な競争優位を構築
+- **価格と性能のバランス**: Sonnet 4.6 $3/$15は性能対価格で優秀
 
 **弱み:**
-- **ベンチマーク首位ではない**: Gemini 3.1 ProにArtificial Analysis指数で4ptリードされている [INFO-028](../Information/2026-02-20/collected-raw.md#INFO-028)
-- **MCP標準化の不確実性**: 標準は「推す」ことはできるが「採用を強制」はできない。対応数と実採用率は別物
-- **OpenAI独自路線との競争**: OpenAIがSkills/Shell路線を成功させればMCPの意味が薄れる [INFO-038](../Information/2026-02-21/collected-raw.md#INFO-038)
+- **ベンチマーク首位ではない**: Gemini 3.1 ProにArtificial Analysis指数で4ptリード [INFO-028](../Information/2026-02-20/collected-raw.md#INFO-028)
+- **MCP寄贈の代償**: 標準化は業界全体に利益をもたらしたが、Anthropic独自の競争優位にはならなくなった
 - **価格競争の激化**: 業界全体で年10倍の価格下落。安全性だけで価格プレミアムを維持できるかが問題
+- **OpenAI Skills/Shellとの実行環境競争**: OpenAIがSkills/Shellで囲い込みに成功すれば、Claude Codeのローカル実行モデルが不利になる可能性
 
 ## 何を監視すべきか
 
 | 何を | なぜ | 今の状態 |
 |------|------|---------|
-| MCP採用率の定量データ | 「対応」数でなく実際の「採用」率がわかれば仮説の強度が判定できる | 10,000+サーバー公開、定量データなし（[IND-012](../config/indicators.json), elevated） |
-| 安全性認証の追加取得 | FedRAMP等が取れれば安全性差別化が決定的に強化される | SOC2取得済み |
-| OpenAIの囲い込み進捗 | Skills/Shellが定着すればMCPの意味が薄れる | SDK v0.8.4リリース（[IND-015](../config/indicators.json), elevated） |
-| 資金集中の帰結 | $1300億が2社に集中。ただし資金≠市場支配 | [IND-003](../config/indicators.json), high |
+| Claude Code ARR推移 | 開発者ツール戦略の成否を直接示す | $2.5B ARR（2026年2月）、1月から倍増 |
+| エンタープライズLLMシェア推移 | 40%が持続するか。OpenAI反攻の兆候はないか | 40%首位（[IND-008](../config/indicators.json), elevated） |
+| OpenAI Skills/Shell囲い込み進捗 | 成功すればClaude Codeモデルの脅威に | SDK v0.8.4リリース（[IND-015](../config/indicators.json), elevated） |
+| EU AI法施行後の市場変化 | 安全性差別化が決定的に強化されるか | 2026年8月完全施行予定（[IND-023](../config/indicators.json), elevated） |
