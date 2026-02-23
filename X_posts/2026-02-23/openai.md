@@ -14,3 +14,11 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**08:19 JST** | [原文](https://x.com/OpenAIDevs/status/2025712197100589353)
+
+> What did you build with Codex this weekend?
+
+---
+
