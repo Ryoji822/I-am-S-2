@@ -31,3 +31,13 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**09:06 JST** | [原文](https://x.com/gdb/status/2025723937540485506)
+
+> weekend projects are so much more fun with codex
+> 
+> OpenAI Developers: What did you build with Codex this weekend?
+
+---
+
