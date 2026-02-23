@@ -66,7 +66,7 @@ Gemini 3.1 ProのARC-AGI-2 77.1%（前世代比146%向上）はフロンティ�
 
 **しかしプロトコル標準化（AAIF）により、プロトコル層でのロックインは困難に。** 囲い込みが成立するにはデータ/コンテキスト層（[IND-017](../config/indicators.json)）での優位が必要。Google（検索/Gmail/Drive）、xAI（X+SpaceX衛星データ）、ByteDance（TikTok/Douyin）が独占データを持つ。
 
-**監視指標:** [IND-007](../config/indicators.json), [IND-008](../config/indicators.json), [IND-009](../config/indicators.json), [IND-015](../config/indicators.json), [IND-017](../config/indicators.json), [IND-019](../config/indicators.json), [IND-020](../config/indicators.json), [IND-022](../config/indicators.json)
+**監視指標:** [IND-007](../config/indicators.json), [IND-008](../config/indicators.json), [IND-009](../config/indicators.json), [IND-011](../config/indicators.json), [IND-015](../config/indicators.json), [IND-017](../config/indicators.json), [IND-019](../config/indicators.json), [IND-020](../config/indicators.json), [IND-022](../config/indicators.json)
 
 ### SCN-004 誰でもAI（20%）— 開放 × 収斂
 

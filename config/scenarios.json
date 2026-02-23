@@ -78,7 +78,7 @@
         "Googleプロダクト統合、AWS Bedrock依存等がロックインの中心に",
         "規制（データ主権）がロックインを助長する可能性"
       ],
-      "indicators": ["IND-007", "IND-008", "IND-009", "IND-015", "IND-017", "IND-019", "IND-020", "IND-022"]
+      "indicators": ["IND-007", "IND-008", "IND-009", "IND-011", "IND-015", "IND-017", "IND-019", "IND-020", "IND-022"]
     },
     {
       "scenario_id": "SCN-004",
