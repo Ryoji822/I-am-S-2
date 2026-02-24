@@ -34,3 +34,12 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**07:18 JST** | [原文](https://x.com/GoogleDeepMind/status/2026205741657268671)
+
+> RT Flow by Google
+> The credits are rolling on an epic 6 weeks with our second #FlowSessions cohort. 10 artists were gifted free access to Flow to explore, innovate, and create. We'll be sharing their full films and exclusive behind-the-scenes tips on how their workFlows, so stay tuned!
+
+---
+
