@@ -42,3 +42,15 @@
 
 ---
 
+## @AnthropicAI (Anthropic - 公式アカウント)
+
+**09:45 JST** | [原文](https://x.com/AnthropicAI/status/2026096054253564002)
+
+> We're proud to support @LACMA's Art + Technology Lab—a program that empowers artists to prototype ideas at the edges of art, science, and emerging technology.
+> 
+> The 2026 call for proposals is open to artists worldwide. Grants up to $50K.
+> 
+> Apply by Apr 22: http://lacma.org/art/lab/grants
+
+---
+
