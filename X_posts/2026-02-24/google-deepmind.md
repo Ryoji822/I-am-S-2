@@ -25,3 +25,12 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**02:02 JST** | [原文](https://x.com/JeffDean/status/2026136268145643647)
+
+> RT Waymo
+> Over 200 million fully autonomous miles wrapped and millions to go! ✨ A huge thank you to our riders for helping us make roads safer for all.
+
+---
+

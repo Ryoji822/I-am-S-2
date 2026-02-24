@@ -34,3 +34,23 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**12:57 JST** | [原文](https://x.com/gdb/status/2026144423793582156)
+
+> welcome to the team!
+> 
+> Rohan Varma: I’m joining OpenAI Codex to work on the future of agentic development!
+> 
+> At Cursor, I got to see the shift from autocomplete to agents. The next step isn’t a better IDE. It’s an Agent Development Environment (ADE): systems and tools for orchestrating agents, reasoning over their
+
+---
+
+**12:57 JST** | [原文](https://x.com/gdb/status/2026144325198111072)
+
+> codex app is so good
+> 
+> Soumitra Shukla: I have to say the OpenAI folks completely cooked with the Codex App. There's nothing like it and CC has a lot to do to catch up, as their current offering simply doesn't cut it. It is not even in the same league. Congrats to my friends @tszzl
+
+---
+
