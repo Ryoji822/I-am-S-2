@@ -43,3 +43,12 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**15:55 JST** | [原文](https://x.com/demishassabis/status/2026292178356478186)
+
+> RT Meng To
+> Can we talk about how insane Gemini 3.1 Pro is at webgl
+
+---
+
