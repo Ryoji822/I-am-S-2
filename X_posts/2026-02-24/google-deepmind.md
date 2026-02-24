@@ -76,3 +76,12 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**23:05 JST** | [原文](https://x.com/JeffDean/status/2026327699544068110)
+
+> RT Waymo
+> Starting today, we’re welcoming our first riders in Dallas, Houston, San Antonio, Orlando. ✨Be one of them — download the Waymo app today & sign up.
+
+---
+
