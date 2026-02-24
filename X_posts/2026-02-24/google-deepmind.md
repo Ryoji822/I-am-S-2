@@ -52,3 +52,27 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**23:01 JST** | [原文](https://x.com/GoogleDeepMind/status/2026296347020677376)
+
+> RT @GoogleLabs: 🚨 Big news: @producer_ai is officially joining Google Labs! 🎶
+> 
+> ProducerAI is a creative collaborator, whether you’re writin…
+
+---
+
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**23:55 JST** | [原文](https://x.com/joshwoodward/status/2026310071022694479)
+
+> Welcome @producer_ai team!
+> 
+> Google Labs: 🚨 Big news: @producer_ai is officially joining Google Labs! 🎶 
+> 
+> ProducerAI is a creative collaborator, whether you’re writing lyrics, developing a melody or experimenting with genres. With ProducerAI, you can turn your imagination into dynamic tracks.
+> 
+> We share ProducerAI’s
+
+---
+
