@@ -16,3 +16,29 @@
 
 ---
 
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**07:43 JST** | [原文](https://x.com/sleepinyourhat/status/2026075018137079977)
+
+> RT Chris Olah
+> I'm increasingly taking pretty strong versions of this view seriously.
+> 
+> Anthropic: AI assistants like Claude can seem shockingly human—expressing joy or distress, and using anthropomorphic language to describe themselves. Why?
+> 
+> In a new post we describe a theory that explains why AIs act like humans: the persona selection model.
+> 
+> https://www.anthropic.com/research/persona-selection-model
+
+---
+
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**03:15 JST** | [原文](https://x.com/EthanJPerez/status/2026050810191495677)
+
+> RT Anthropic
+> We’ve identified industrial-scale distillation attacks on our models by DeepSeek, Moonshot AI, and MiniMax.
+> 
+> These labs created over 24,000 fraudulent accounts and generated over 16 million exchanges with Claude, extracting its capabilities to train and improve their own models.
+
+---
+
