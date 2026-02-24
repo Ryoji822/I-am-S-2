@@ -18,3 +18,13 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**23:02 JST** | [原文](https://x.com/demishassabis/status/2026177032208478229)
+
+> RT Junior García
+> I'm building a node-based tool that turns any SVG into animated SVGs using Gemini 3.1 Pro
+> it preserves the original aesthetics and the results are insane
+
+---
+

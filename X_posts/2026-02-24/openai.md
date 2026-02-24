@@ -54,3 +54,28 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**15:05 JST** | [原文](https://x.com/gdb/status/2026176652724809852)
+
+> Improved realtime API:
+> 
+> Justin Uberti: Just released gpt-realtime-1.5 with improved intelligence, instruction following, and voice quality.
+> Try it out today at http://hello-realtime.val.run (or call 425-800-0042)!
+
+---
+
+**06:08 JST** | [原文](https://x.com/gdb/status/2026041531485094021)
+
+> lots of people having this experience:
+> 
+> Dan McAteer: GPT-5.3-Codex + the Codex app is the best AI coding tool available right now.
+> 
+> Slept on it for a bit.
+> 
+> Likely going to move back to a ChatGPT Pro sub from Claude MAX because of how good it is.
+> 
+> It's so precise, accurate and excellent at following instructions. There are
+
+---
+
