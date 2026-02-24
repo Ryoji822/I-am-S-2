@@ -1,13 +1,14 @@
 {
-  "version": "2.1",
-  "last_updated": "2026-02-23",
-  "description": "I&W（Indications and Warning）指標レジストリ。各指標はシナリオの進行を監視するための観測可能な兆候。v2.1: 複合条件のcondition_status分解、IND-003分母追加、IND-019分割（浸透→IND-019、成功→IND-024）、IND-011 scenario_ids修正",
+  "version": "2.2",
+  "last_updated": "2026-02-24",
+  "description": "I&W（Indications and Warning）指標レジストリ。v2.2: Arbiter統合判断反映。IND-006/015/019 high昇格を見送り（Red指摘採用）",
   "structural_changes_log": [
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
     "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
     "2026-02-23 v2.1: IND-003に分母（業界全体調達額）追加",
     "2026-02-23 v2.1: IND-019を「産業採用率」に再定義、「実効性（ROI・品質）」をIND-024として分離",
-    "2026-02-23 v2.1: IND-011のscenario_idsにSCN-003追加（収斂シナリオに収斂指標を紐付け）"
+    "2026-02-23 v2.1: IND-011のscenario_idsにSCN-003追加（収斂シナリオに収斂指標を紐付け）",
+    "2026-02-24 v2.2: Arbiter統合判断反映。IND-006/015/019はhigh昇格を見送りelevated維持（Red指摘採用：質的評価不足、時期尚早、ROI乖離深刻）"
   ],
   "indicators": [
     {
@@ -87,11 +88,11 @@
       "description": "プロトコル層はMCP+A2AでLinux Foundation傘下に標準化済み（2025年12月AAIF設立）。競争の焦点は実行環境（Shell/Sandbox）、オーケストレーション（LangGraph/CrewAI/Semantic Kernel）、ガバナンス層に移行。各社がこれらの上位レイヤーでどの程度囲い込みを構築しているかを追跡",
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
       "status": "elevated",
-      "last_checked": "2026-02-23",
-      "last_value": "プロトコル層: MCP+A2AがLinux Foundation AAIF傘下で標準化完了。実行環境層: OpenAI Shell（囲い込み）、E2B/Modal（独立）が競合。オーケストレーション層: LangGraph/CrewAI/Microsoft Agent Framework（AutoGen+Semantic Kernel統合）が三つ巴",
+      "last_checked": "2026-02-24",
+      "last_value": "MCP 5,500+サーバー、97M DL/月、Linux Foundation AAIF管理（INFO-015/016）。プロトコル層の標準化方向は確定。ただしRed指摘: アクティブ率・本番利用率の質的評価が欠如、「完了」断定は時期尚早",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で再定義。旧IND-006+旧IND-012を統合。プロトコル戦争はAAIF設立で実質終結。競争は上位レイヤーに移行"
+      "rationale": "v2.2 Arbiter: Blue high→elevated維持。プロトコル層の標準化は進行中・方向性確定だが「完了」は過剰断定。MCPサーバーアクティブ率・企業別採用率の追加収集必要（KIQ-RED-001）"
     },
     {
       "indicator_id": "IND-007",
@@ -189,11 +190,11 @@
       "description": "Agent実行環境（Shell/Sandbox）およびスキル/プラグイン配布形式がベンダー固有か、標準化・互換性があるか",
       "threshold": "主要3社のうち2社以上がベンダー専用実行環境を必須化し、かつスキル形式が相互非互換",
       "status": "elevated",
-      "last_checked": "2026-02-23",
-      "last_value": "OpenAI: Skills/Shell（独自形式、審査あり、囲い込み方向）。Anthropic: Claude Code（ローカル実行可、MCP準拠、開放方向）。Google: Gemini Extensions+Vertex Agent Builder（Google環境依存）。3社のスキル形式は相互非互換。Assistants API 2026年8月廃止予定",
+      "last_checked": "2026-02-24",
+      "last_value": "OpenAI: Skills/Shell（独自形式、審査あり、囲い込み方向、02-23正式リリース INFO-020）。Anthropic: Claude Code（ローカル実行可、MCP準拠、開放方向）。Google: Gemini Extensions+Vertex Agent Builder（Google環境依存）。Red指摘: 採用率・開発者ロックイン度は未計測、「確立」は時期尚早",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で旧IND-015+旧IND-016を統合。同じ3社の動きを追跡"
+      "rationale": "v2.2 Arbiter: Blue high→elevated維持。囲い込み「意図」は明確だが「成功・確立」は未検証。Skills採用率・Claude Code対抗データの追加収集必要（KIQ-RED-002）"
     },
     {
       "indicator_id": "IND-017",
@@ -202,11 +203,11 @@
       "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）やコンテキスト蓄積をAIの差別化に活用している度合い",
       "threshold": "独占データを活用したAI機能が各社3つ以上、かつエンタープライズのデータ移行コストが高コスト化",
       "status": "elevated",
-      "last_checked": "2026-02-23",
-      "last_value": "Google（検索/Gmail/Drive）、xAI（Xデータ+SpaceX衛星データ）、ByteDance（TikTok/Douyinデータ）が独占データ活用。Gartner: 2027年までに35%の国が地域固有AIプラットフォームにロックイン（現在5%）",
+      "last_checked": "2026-02-24",
+      "last_value": "xAI Xデータ活用明確化（INFO-008 Harperエージェント）。Google（検索/Gmail/Drive）、ByteDance（TikTok/Douyinデータ）が独占データ活用。Red指摘: Xプラットフォーム衰退リスク監視必要",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で更新。データ/コンテキスト層が最も強いロックイン要因"
+      "rationale": "v2.2 Arbiter: elevated維持。Xデータ独占は確認だがプラットフォーム衰退リスク（KIQ-RED-004）監視必要"
     },
     {
       "indicator_id": "IND-018",
@@ -261,11 +262,11 @@
       "description": "AIエージェントが企業業務に導入されている度合い（採用率）。導入の成否は別指標IND-024で測定",
       "threshold": "Fortune 500の50%以上がAIエージェントを業務プロセスに正式導入（PoC・パイロットを除く）",
       "status": "elevated",
-      "last_checked": "2026-02-23",
-      "last_value": "Fortune 500の80%がエージェント使用開始。ただし「正式導入」と「PoC/パイロット」の区別が不明確。正式導入ベースでの定量データは未取得",
+      "last_checked": "2026-02-24",
+      "last_value": "85%エンタープライズ導入検討中（Technavio INFO-013）。ただしIND-024（ROI正5%）との乖離が拡大。Red指摘: 95%の企業がPoCで失敗または価値実証できていない。「エージェント成熟」の前提を弱体化",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.1で再定義。旧IND-019は「浸透」と「成功」を1指標で混在させていた。採用率（本指標）と実効性（IND-024）に分離。採用は進んでいるが、正式導入vsパイロットの区別を定量化する必要あり"
+      "rationale": "v2.2 Arbiter: Blue high→elevated維持。採用意向85%は事実だが実効性5%との乖離が「成熟」を否定。ROI正5%定義・PoC失敗理由の追加収集必要（KIQ-RED-005）"
     },
     {
       "indicator_id": "IND-020",
@@ -324,16 +325,16 @@
           "id": 3,
           "description": "求人票の必須スキルが実装力から設計力・評価力にシフト",
           "met": "partial",
-          "evidence": "AIスキル保有者に給与プレミアム+$15-25K。ただし求人票要件変化の体系的データは未取得"
+          "evidence": "AIスキル保有者に給与プレミアム+$15-25K。Claude Code Security（INFO-011）が評価能力重要性を示唆。ただし求人票要件変化の体系的データは未取得"
         }
       ],
       "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
       "status": "high",
-      "last_checked": "2026-02-23",
-      "last_value": "条件1達成（82%導入率）。条件2達成（73.4%減）。条件3部分的（給与プレミアムは確認、求人票変化の体系データ未取得）。2条件達成でhigh妥当",
+      "last_checked": "2026-02-24",
+      "last_value": "条件1達成（82%導入率）。条件2達成（73.4%減）。条件3部分的（Claude Code Security INFO-011が評価能力重要性を示唆）。2条件達成でhigh妥当",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "v2.1で条件分解追加。2/3条件達成でhighは閾値ルールに合致。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
+      "rationale": "v2.2 Arbiter: high維持妥当。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
     },
     {
       "indicator_id": "IND-023",
@@ -342,11 +343,11 @@
       "description": "EU AI法、反トラスト規制、データ主権法がAI市場の構造と競争に与える影響",
       "threshold": "以下のうち2つ以上: (1) EU AI法によりTier 1企業の欧州戦略に重大変更 (2) 反トラスト訴訟/調査が主要AI企業に対して開始 (3) 3カ国以上がAIデータ主権法を施行",
       "status": "elevated",
-      "last_checked": "2026-02-23",
-      "last_value": "EU AI法2026年8月完全施行予定。Thele v. Google LLCプライバシー集団訴訟。Gartner: 35%の国が地域固有AIプラットフォームにロックイン予測",
+      "last_checked": "2026-02-24",
+      "last_value": "EU AI法2026年8月完全施行予定。ISO 42001認証普及（INFO-014: Dubai Police世界初）。Thele v. Google LLCプライバシー集団訴訟。Gartner: 35%の国が地域固有AIプラットフォームにロックイン予測",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.0で新設。規制・アンチトラスト観点の補完"
+      "rationale": "v2.2 Arbiter: elevated維持。規制・アンチトラスト観点を継続監視"
     },
     {
       "indicator_id": "IND-024",
@@ -355,11 +356,11 @@
       "description": "AIエージェントを導入した企業が実際にROI正を達成しているか、タスク完了品質は十分か。採用率はIND-019で別途測定",
       "threshold": "AI導入企業のうち20%以上がROI正を報告、かつ先行3業界でAIタスク完了率30%超",
       "status": "monitoring",
-      "last_checked": "2026-02-23",
-      "last_value": "ROI正は5%のみ（Bain Capital調査）。Remote Labor Index: 2.5%のみ人間品質完了。Gartner: 40%のエージェントプロジェクトが2027年末までにキャンセル予測。閾値に大幅未達",
+      "last_checked": "2026-02-24",
+      "last_value": "ROI正は5%のみ（Bain Capital調査）。Remote Labor Index: 2.5%のみ人間品質完了。Gartner: 40%のエージェントプロジェクトが2027年末までにキャンセル予測。閾値に大幅未達。IND-019（85%採用）との乖離が最重要シグナル",
       "trend": "stable",
       "alert_level": "normal",
-      "rationale": "v2.1で新設。旧IND-019は「浸透（採用）」と「成功（ROI/品質）」を混在させていたため分離。現在の実効性は極めて低く（5% ROI正）、採用率80%との乖離が際立つ。この乖離自体がシグナル"
+      "rationale": "v2.2 Arbiter: monitoring維持。85% vs 5%乖離は「PoC泡沫」リスクを示す。この乖離自体が最重要ウォッチ項目"
     }
   ]
 }

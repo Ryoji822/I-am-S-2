@@ -1,7 +1,7 @@
 {
-  "version": "2.1",
-  "last_updated": "2026-02-23",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v2.1: IND-024（AI業務自律化の実効性）をSCN-001/SCN-003に追加。IND-019分離に対応",
+  "version": "2.2",
+  "last_updated": "2026-02-24",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v2.2: Arbiter統合判断反映。SCN-001 +1%、SCN-002 +2%、SCN-003 -2%、SCN-004 +1%",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 格差拡大",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 22,
-      "probability_change": "+0%",
-      "probability_rationale": "v2.0: 構造変化なし。OpenAI Skills/Shell囲い込みは実行環境レイヤーに限定。プロトコル層はAAIFで標準化済みのため、完全囲い込みの難度は上昇",
+      "probability": 23,
+      "probability_change": "+1%",
+      "probability_rationale": "v2.2 Arbiter: OpenAI Skills/Shell囲い込み意図は明確（INFO-020）。ただしRed指摘（成功・確立は不確定、リリース直後）を考慮しBlue +2%→+1%",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 33,
-      "probability_change": "+1%",
-      "probability_rationale": "v2.0: AAIF設立でプロトコル標準化は事実上完了。ただしGemini 3.1 Pro/Claude Opus 4.6/GPT-5.2間の性能格差は維持。標準化（開放）×性能格差（勝者）の最も蓋然性高いシナリオ",
+      "probability": 35,
+      "probability_change": "+2%",
+      "probability_rationale": "v2.2 Arbiter: MCP 5,500+サーバー・AAIF管理（INFO-015/016）が開放トレンドを支持。Gemini 3.1 Pro性能躍進（INFO-007）が格差拡大を支持。Red指摘（SCN-001移行リスク）を監視",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -65,9 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 25,
-      "probability_change": "-1%",
-      "probability_rationale": "v2.0: Seed 2.0がフロンティア追い上げ（収斂圧力）だが、プロトコル標準化完了はロックイン困難度を上昇させた。データ層のロックインは依然有力だが、プロトコル層の開放がこのシナリオの確率を若干下げる",
+      "probability": 23,
+      "probability_change": "-2%",
+      "probability_rationale": "v2.2 Arbiter: MCP開放化進展・85%企業がマルチベンダー検討（INFO-013）がデータロックイン回避志向を示す",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -86,9 +86,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × 収斂",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 20,
-      "probability_change": "+0%",
-      "probability_rationale": "v2.0: Seed 2.0の低価格+高性能（自己報告）がこのシナリオを支持。ただしフロンティア格差（ARC-AGI-2で77%到達はAnthropicのみ）は収斂を否定する反証。規制コスト（EU AI法）が小規模参入者に不利",
+      "probability": 19,
+      "probability_change": "+1%",
+      "probability_rationale": "v2.2 Arbiter: Red指摘（特化型Agent台頭過小評価）を採用。Glean $200M ARR（INFO-018）・Technavio $24B市場に特化型含む。ただしGemini性能躍進が収斂を弱化させるため+1%に留める",
       "key_assumptions": [
         "汎用AIの性能差が5%以内に収斂する",
         "AAIF標準が支配的に採用される",
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-02-23",
-    "note": "SCN-001(22) + SCN-002(33) + SCN-003(25) + SCN-004(20) = 100%"
+    "verified_date": "2026-02-24",
+    "note": "SCN-001(23) + SCN-002(35) + SCN-003(23) + SCN-004(19) = 100%"
   }
 }
