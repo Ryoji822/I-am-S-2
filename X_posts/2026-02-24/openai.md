@@ -79,3 +79,12 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**12:20 JST** | [原文](https://x.com/OpenAIDevs/status/2026387786245501386)
+
+> RT Andrew Ambrosino
+> Windows devs– what env do you develop in? What should we polish most in the Codex app?
+
+---
+

@@ -54,3 +54,12 @@
 
 ---
 
+## @AmandaAskell (Amanda Askell - Claudeの人格設計研究者)
+
+**05:16 JST** | [原文](https://x.com/AmandaAskell/status/2026422460850254279)
+
+> RT Joe Carlsmith
+> .@AmandaAskell and I are recording an audio version of Claude’s Constitution, and we’re planning to include an additional section where we answer some questions about the document. If you have questions you’re especially curious about, feel free to drop them in the replies.
+
+---
+
