@@ -109,3 +109,12 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**23:54 JST** | [原文](https://x.com/npew/status/2026526728282427659)
+
+> RT Indra
+> almost fully on gpt-5.3-codex for coding now. openai really cooked. sorry opus but i’ve moved on
+
+---
+

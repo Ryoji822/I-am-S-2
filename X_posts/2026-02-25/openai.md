@@ -66,3 +66,27 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**14:14 JST** | [原文](https://x.com/npew/status/2026526225704124824)
+
+> I love using this model.
+> 
+> OpenAI: GPT-5.3-Codex is now available in Codex.
+> 
+> You can just build things.
+> https://openai.com/index/introducing-gpt-5-3-codex/
+
+---
+
+**09:39 JST** | [原文](https://x.com/npew/status/2026526676251980223)
+
+> RT adi
+> uhhh WTF?!
+> 
+> gpt-5.3-codex gets 86% on IBench, beating out all other models massively.
+> 
+> I was NOT expecting this
+
+---
+
