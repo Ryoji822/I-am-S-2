@@ -63,3 +63,18 @@
 
 ---
 
+## @AmandaAskell (Amanda Askell - Claudeの人格設計研究者)
+
+**07:43 JST** | [原文](https://x.com/AmandaAskell/status/2026706321236795600)
+
+> RT Chris Olah
+> I'm increasingly taking pretty strong versions of this view seriously.
+> 
+> Anthropic: AI assistants like Claude can seem shockingly human—expressing joy or distress, and using anthropomorphic language to describe themselves. Why?
+> 
+> In a new post we describe a theory that explains why AIs act like humans: the persona selection model.
+> 
+> https://www.anthropic.com/research/persona-selection-model
+
+---
+
