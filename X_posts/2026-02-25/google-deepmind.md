@@ -13,3 +13,12 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**01:57 JST** | [原文](https://x.com/GoogleDeepMind/status/2026386439307395457)
+
+> RT Google Gemini
+> http://x.com/i/article/2026004095618998272
+
+---
+

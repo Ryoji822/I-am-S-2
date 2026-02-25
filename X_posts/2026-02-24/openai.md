@@ -88,3 +88,24 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**04:34 JST** | [原文](https://x.com/jasonkwon/status/2026489757451301133)
+
+> RT Rohan Varma
+> I’m joining OpenAI Codex to work on the future of agentic development!
+> 
+> At Cursor, I got to see the shift from autocomplete to agents. The next step isn’t a better IDE. It’s an Agent Development Environment (ADE): systems and tools for orchestrating agents, reasoning over their outputs, and making them autonomous enough to reliably complete ambitious work.
+> 
+> After chatting with @embirico and @thsottiaux, it was clear that Codex is the best place to realize this vision. The team has consistently shipped SOTA models for agentic coding (check out gpt-5.3-codex) and I’m pumped for the future that the new Codex App points to.
+> 
+> What I’m most excited about is the broader mission: accelerating the knowledge work economy. All agents are coding agents, and we’re already seeing Codex used across every job function within organizations.
+> 
+> I’m extremely grateful for my time at Cursor, working with the incredible team, and I’m proud of what we built together. I’m excited to take an even bigger swing with Codex.
+> 
+> If you’re curious to get a glimpse of where we are headed, download the Codex App! If you want to work on this mission, please apply or reach out - we are hiring across all functions!
+> 
+> You can just build things.
+
+---
+
