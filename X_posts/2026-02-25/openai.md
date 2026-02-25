@@ -90,3 +90,12 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**06:55 JST** | [原文](https://x.com/npew/status/2026656753375654112)
+
+> RT Mariusz Kurman
+> Those who wrote "Try Codex" when I was hyping CC were right. Codex 5.3 is another level. It delivers so much with such high quality - I'm literally shocked. 5.2 was a mess; 5.3 is in another league.
+
+---
+

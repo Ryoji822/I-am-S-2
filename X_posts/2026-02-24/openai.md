@@ -118,3 +118,12 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**17:51 JST** | [原文](https://x.com/npew/status/2026666098905792518)
+
+> RT Lovable
+> Lovable now uses GPT-5.3-Codex for solving the most complex problems. It is significantly stronger and 3-4x more token-efficient than GPT-5.2.
+
+---
+

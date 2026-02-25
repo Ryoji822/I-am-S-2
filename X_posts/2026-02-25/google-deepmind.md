@@ -57,3 +57,12 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**02:04 JST** | [原文](https://x.com/GoogleDeepMind/status/2026665349811204240)
+
+> RT The Align Foundation
+> Align and @GoogleDeepMind are partnering to build AI-ready datasets & evaluations for the future of predictive #AMR biology. Researchers worldwide can submit concepts through March 31 w/ roadmapping workshops coming to North America + APAC this spring. 🔗  https://hubs.la/Q044rDpL0
+
+---
+
