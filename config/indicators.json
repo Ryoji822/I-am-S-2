@@ -1,14 +1,15 @@
 {
-  "version": "2.2",
-  "last_updated": "2026-02-24",
-  "description": "I&W（Indications and Warning）指標レジストリ。v2.2: Arbiter統合判断反映。IND-006/015/019 high昇格を見送り（Red指摘採用）",
+  "version": "2.3",
+  "last_updated": "2026-02-25",
+  "description": "I&W（Indications and Warning）指標レジストリ。v2.3: Arbiter統合判断反映。IND-018 approaching昇格見送り（elevated維持）、IND-006/015/019 elevated維持（Red指摘採用）",
   "structural_changes_log": [
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
     "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
     "2026-02-23 v2.1: IND-003に分母（業界全体調達額）追加",
     "2026-02-23 v2.1: IND-019を「産業採用率」に再定義、「実効性（ROI・品質）」をIND-024として分離",
     "2026-02-23 v2.1: IND-011のscenario_idsにSCN-003追加（収斂シナリオに収斂指標を紐付け）",
-    "2026-02-24 v2.2: Arbiter統合判断反映。IND-006/015/019はhigh昇格を見送りelevated維持（Red指摘採用：質的評価不足、時期尚早、ROI乖離深刻）"
+    "2026-02-24 v2.2: Arbiter統合判断反映。IND-006/015/019はhigh昇格を見送りelevated維持（Red指摘採用：質的評価不足、時期尚早、ROI乖離深刻）",
+    "2026-02-25 v2.3: Arbiter統合判断反映。IND-018 approaching昇格見送り（CEO発言過信リスク）、IND-011 mixed（Gemini躍進で格差拡大）、IND-017 elevated（Xデータ活用明確化）"
   ],
   "indicators": [
     {
@@ -18,11 +19,11 @@
       "description": "MMLU、GPQA、ARC-AGI等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される。特にARC-AGI-2はAGI到達度の代理指標として重視",
       "threshold": "ベンチマークスコア30%以上の非連続的向上、またはARC-AGI-2で90%超過",
       "status": "high",
-      "last_checked": "2026-02-21",
-      "last_value": "Gemini 3.1 Pro ARC-AGI-2 77.1%（Gemini 3 Pro 31.1%比2.5倍、+146%向上）。30%非連続向上閾値達成",
+      "last_checked": "2026-02-25",
+      "last_value": "Gemini 3.1 Pro ARC-AGI-2 77.1%、Deep Think ~85%。146%向上で30%閾値大幅超過。90%閾値に接近（あと5pt）",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter: high維持妥当。31.1%→77.1%は146%向上で30%閾値大幅超過。ただし単一ベンチマーク依存リスクあり、持続性監視必要"
+      "rationale": "Arbiter v2.3: high維持。85%は90%閾値に接近。但し単一ベンチマーク依存リスクあり（Red指摘）、持続性監視必要"
     },
     {
       "indicator_id": "IND-002",
@@ -88,11 +89,11 @@
       "description": "プロトコル層はMCP+A2AでLinux Foundation傘下に標準化済み（2025年12月AAIF設立）。競争の焦点は実行環境（Shell/Sandbox）、オーケストレーション（LangGraph/CrewAI/Semantic Kernel）、ガバナンス層に移行。各社がこれらの上位レイヤーでどの程度囲い込みを構築しているかを追跡",
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
       "status": "elevated",
-      "last_checked": "2026-02-24",
-      "last_value": "MCP 5,500+サーバー、97M DL/月、Linux Foundation AAIF管理（INFO-015/016）。プロトコル層の標準化方向は確定。ただしRed指摘: アクティブ率・本番利用率の質的評価が欠如、「完了」断定は時期尚早",
+      "last_checked": "2026-02-25",
+      "last_value": "MCP 5,500+サーバー、97M DL/月、Linux Foundation AAIF管理。プロトコル層の標準化方向は確定。ただしRed指摘: アクティブ率・本番利用率の質的評価が欠如、「完了」断定は時期尚早",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.2 Arbiter: Blue high→elevated維持。プロトコル層の標準化は進行中・方向性確定だが「完了」は過剰断定。MCPサーバーアクティブ率・企業別採用率の追加収集必要（KIQ-RED-001）"
+      "rationale": "v2.3 Arbiter: elevated維持。プロトコル層の標準化は進行中・方向性確定だが「完了」は過剰断定。MCPサーバーアクティブ率・企業別採用率の追加収集必要（KIQ-RED-001）"
     },
     {
       "indicator_id": "IND-007",
@@ -152,11 +153,11 @@
       "description": "主要ベンチマークでTier 1各社のスコア差が5%以内に収斂",
       "threshold": "性能差5%以内",
       "status": "elevated",
-      "last_checked": "2026-02-23",
-      "last_value": "Gemini 3.1 ProがClaude Opus 4.6を4ptリード（Artificial Analysis指数）。ByteDance Seed 2.0がSWE-Bench 76.5%でClaude 77.2%とほぼ同等（ただし自己報告値、独立第三者検証なし）。フロンティアは格差拡大だが、Tier 2が急速に追い上げ",
+      "last_checked": "2026-02-25",
+      "last_value": "Gemini 3.1 Pro ARC-AGI-2躍進でフロンティア格差拡大。ByteDance Seed 2.0がTier 2追い上げ（自己報告値、独立検証なし）。収斂は逆行中",
       "trend": "mixed",
       "alert_level": "elevated",
-      "rationale": "v2.1で更新。scenario_idsにSCN-003を追加（収斂シナリオに収斂指標が欠落していた）。Seed 2.0は自己報告。独立検証未完了"
+      "rationale": "v2.3 Arbiter: mixed。フロンティア格差拡大 vs Tier 2追い上げ。Seed 2.0は自己報告、独立検証未完了"
     },
     {
       "indicator_id": "IND-013",
@@ -190,11 +191,11 @@
       "description": "Agent実行環境（Shell/Sandbox）およびスキル/プラグイン配布形式がベンダー固有か、標準化・互換性があるか",
       "threshold": "主要3社のうち2社以上がベンダー専用実行環境を必須化し、かつスキル形式が相互非互換",
       "status": "elevated",
-      "last_checked": "2026-02-24",
-      "last_value": "OpenAI: Skills/Shell（独自形式、審査あり、囲い込み方向、02-23正式リリース INFO-020）。Anthropic: Claude Code（ローカル実行可、MCP準拠、開放方向）。Google: Gemini Extensions+Vertex Agent Builder（Google環境依存）。Red指摘: 採用率・開発者ロックイン度は未計測、「確立」は時期尚早",
+      "last_checked": "2026-02-25",
+      "last_value": "OpenAI: Skills/Shell（独自形式、審査あり、囲い込み方向 INFO-026/027）。Anthropic: Claude Code（ローカル実行可、MCP準拠、開放方向）。Google: Gemini Extensions+Vertex Agent Builder（Google環境依存）。採用率・開発者ロックイン度は未計測",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.2 Arbiter: Blue high→elevated維持。囲い込み「意図」は明確だが「成功・確立」は未検証。Skills採用率・Claude Code対抗データの追加収集必要（KIQ-RED-002）"
+      "rationale": "v2.3 Arbiter: elevated維持。囲い込み「意図」は明確だが「成功・確立」は未検証。Skills採用率・Claude Code対抗データの追加収集必要（KIQ-RED-002）"
     },
     {
       "indicator_id": "IND-017",
@@ -203,11 +204,11 @@
       "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）やコンテキスト蓄積をAIの差別化に活用している度合い",
       "threshold": "独占データを活用したAI機能が各社3つ以上、かつエンタープライズのデータ移行コストが高コスト化",
       "status": "elevated",
-      "last_checked": "2026-02-24",
-      "last_value": "xAI Xデータ活用明確化（INFO-008 Harperエージェント）。Google（検索/Gmail/Drive）、ByteDance（TikTok/Douyinデータ）が独占データ活用。Red指摘: Xプラットフォーム衰退リスク監視必要",
+      "last_checked": "2026-02-25",
+      "last_value": "xAI Xリアルタイムデータ活用明確化（Harperエージェント INFO-008）。Google（検索/Gmail/Drive）、ByteDance（TikTok/Douyinデータ）が独占データ活用。Xプラットフォーム衰退リスク監視必要",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.2 Arbiter: elevated維持。Xデータ独占は確認だがプラットフォーム衰退リスク（KIQ-RED-004）監視必要"
+      "rationale": "v2.3 Arbiter: elevated維持。Xデータ独占は確認だがプラットフォーム衰退リスク監視必要"
     },
     {
       "indicator_id": "IND-018",
@@ -220,8 +221,41 @@
           "id": 1,
           "description": "ARC-AGI-2スコア90%超",
           "met": false,
-          "evidence": "現在77.1%（Gemini 3.1 Pro）。閾値まで13pt不足"
+          "evidence": "現在77.1%（Gemini 3.1 Pro）、~85%（Deep Talk推定）。閾値まで5-13pt不足"
         },
+        {
+          "id": 2,
+          "description": "AIによる査読付き論文の単独執筆",
+          "met": false,
+          "evidence": "未観測。AI支援での共著はあるが単独執筆事例なし"
+        },
+        {
+          "id": 3,
+          "description": "主要CEOが2年以内のAGIを公言",
+          "met": "partial",
+          "evidence": "Altman「2028年スーパーインテリジェンス初期版」。Hassabis「5-7年」。CEO間で見解分裂。Red指摘: 自己奉仕的バイアスリスク"
+        },
+        {
+          "id": 4,
+          "description": "政府レベルのAGIモラトリアム議論",
+          "met": false,
+          "evidence": "EU AI法は汎用AI規制だがAGI特化のモラトリアム議論は未発生"
+        },
+        {
+          "id": 5,
+          "description": "AIが新薬候補を自律的に発見・検証",
+          "met": false,
+          "evidence": "AI支援での創薬事例はあるが「自律的に発見・検証」は未達"
+        }
+      ],
+      "conditions_met_count": "1-2/5（条件3のみ部分的該当）",
+      "status": "elevated",
+      "last_checked": "2026-02-25",
+      "last_value": "5条件中1-2条件が部分的に該当（条件3: Altman発言のみ）。閾値3条件には未到達。Red指摘: CEO発言過信リスク、過去AI予測精度低",
+      "trend": "approaching",
+      "alert_level": "elevated",
+      "rationale": "v2.3 Arbiter: elevated維持。Blue approaching昇格→Red指摘採用で見送り。CEO発言への過度な信頼リスク。5条件中3条件達成で昇格"
+    },
         {
           "id": 2,
           "description": "AIによる査読付き論文の単独執筆",
@@ -262,11 +296,11 @@
       "description": "AIエージェントが企業業務に導入されている度合い（採用率）。導入の成否は別指標IND-024で測定",
       "threshold": "Fortune 500の50%以上がAIエージェントを業務プロセスに正式導入（PoC・パイロットを除く）",
       "status": "elevated",
-      "last_checked": "2026-02-24",
-      "last_value": "85%エンタープライズ導入検討中（Technavio INFO-013）。ただしIND-024（ROI正5%）との乖離が拡大。Red指摘: 95%の企業がPoCで失敗または価値実証できていない。「エージェント成熟」の前提を弱体化",
+      "last_checked": "2026-02-25",
+      "last_value": "85%エンタープライズ導入検討中（Technavio）。IND-024（ROI正5%）との乖離拡大。95%の企業がPoCで失敗または価値実証できていない",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.2 Arbiter: Blue high→elevated維持。採用意向85%は事実だが実効性5%との乖離が「成熟」を否定。ROI正5%定義・PoC失敗理由の追加収集必要（KIQ-RED-005）"
+      "rationale": "v2.3 Arbiter: elevated維持。採用意向85%は事実だが実効性5%との乖離が「成熟」を否定。ROI正5%定義・PoC失敗理由の追加収集必要（KIQ-RED-005）"
     },
     {
       "indicator_id": "IND-020",
@@ -330,6 +364,27 @@
       ],
       "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
       "status": "high",
+      "last_checked": "2026-02-25",
+      "last_value": "条件1達成（82%導入率）。条件2達成（73.4%減）。条件3部分的（Claude Code Security INFO-011が評価能力重要性を示唆）。2条件達成でhigh妥当",
+      "trend": "rising",
+      "alert_level": "high",
+      "rationale": "v2.3 Arbiter: high維持妥当。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
+    },
+        {
+          "id": 2,
+          "description": "ジュニアエンジニア求人が前年比20%以上減少",
+          "met": true,
+          "evidence": "エントリーレベル技術職73.4%減（前年比）。20%閾値を大幅超過"
+        },
+        {
+          "id": 3,
+          "description": "求人票の必須スキルが実装力から設計力・評価力にシフト",
+          "met": "partial",
+          "evidence": "AIスキル保有者に給与プレミアム+$15-25K。Claude Code Security（INFO-011）が評価能力重要性を示唆。ただし求人票要件変化の体系的データは未取得"
+        }
+      ],
+      "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
+      "status": "high",
       "last_checked": "2026-02-24",
       "last_value": "条件1達成（82%導入率）。条件2達成（73.4%減）。条件3部分的（Claude Code Security INFO-011が評価能力重要性を示唆）。2条件達成でhigh妥当",
       "trend": "rising",
@@ -356,11 +411,11 @@
       "description": "AIエージェントを導入した企業が実際にROI正を達成しているか、タスク完了品質は十分か。採用率はIND-019で別途測定",
       "threshold": "AI導入企業のうち20%以上がROI正を報告、かつ先行3業界でAIタスク完了率30%超",
       "status": "monitoring",
-      "last_checked": "2026-02-24",
+      "last_checked": "2026-02-25",
       "last_value": "ROI正は5%のみ（Bain Capital調査）。Remote Labor Index: 2.5%のみ人間品質完了。Gartner: 40%のエージェントプロジェクトが2027年末までにキャンセル予測。閾値に大幅未達。IND-019（85%採用）との乖離が最重要シグナル",
       "trend": "stable",
       "alert_level": "normal",
-      "rationale": "v2.2 Arbiter: monitoring維持。85% vs 5%乖離は「PoC泡沫」リスクを示す。この乖離自体が最重要ウォッチ項目"
+      "rationale": "v2.3 Arbiter: monitoring維持。85% vs 5%乖離は「PoC泡沫」または「初期段階」の両解釈可能。この乖離自体が最重要ウォッチ項目"
     }
   ]
 }
