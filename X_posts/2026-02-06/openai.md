@@ -126,3 +126,21 @@
 
 ---
 
+## @bradlightcap (Brad Lightcap - 業務執行)
+
+**03:12 JST** | [原文](https://x.com/bradlightcap/status/2026477891161305151)
+
+> RT OpenAI Developers
+> GPT-5.3-Codex is here.
+> 
+> It advances both frontier coding performance and professional knowledge capabilities together in a single model.
+> 
+> http://openai.com/index/introducing-gpt-5-3-codex/
+> 
+> OpenAI: GPT-5.3-Codex is now available in Codex.
+> 
+> You can just build things.
+> https://openai.com/index/introducing-gpt-5-3-codex/
+
+---
+
