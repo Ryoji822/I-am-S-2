@@ -47,3 +47,13 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**16:54 JST** | [原文](https://x.com/JeffDean/status/2026566490619879574)
+
+> Agreed.  Mass surveillance violates the Fourth Amendment and has a chilling effect on freedom of expression. Surveillance systems are prone to misuse for political or discriminatory purposes.
+> 
+> Boaz Barak: As an American citizen, the last thing I want is government using AI for mass surveillance of Americans.
+
+---
+
