@@ -37,3 +37,13 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**15:23 JST** | [原文](https://x.com/joshwoodward/status/2026543481163059696)
+
+> True!
+> 
+> Meng To: Can we talk about how insane Gemini 3.1 Pro is at webgl
+
+---
+

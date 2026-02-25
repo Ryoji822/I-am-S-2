@@ -85,3 +85,14 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**03:29 JST** | [原文](https://x.com/joshwoodward/status/2026542305541501197)
+
+> RT Google Gemini
+> New templates for Veo 3.1 in the Gemini app are rolling out today. 
+> 
+> To give them a try, go to http://gemini.google or open the app, select “Create videos” in the tools menu, and pick a template from the gallery. Then make it your own with a reference photo and/or description.
+
+---
+
