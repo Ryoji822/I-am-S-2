@@ -44,3 +44,18 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**08:11 JST** | [原文](https://x.com/EthanJPerez/status/2026908385137095165)
+
+> RT Sam Bowman
+> I endorse the top-level post in this thread. 
+> 
+> The Anthropic RSP changes are an attempt to work out what kinds of firm commitments have the most leverage in an environment that's less promising than we'd expected for policy and coordination.
+> 
+> davidad 🎇: Voluntary commitments to AI slowdowns were a nice idea in 2024 when it was plausible that they could be baby steps toward a multilateral agreement that would contain the intelligence explosion. For a variety of reasons this is no longer plausible. 
+> 
+> Anthropic is doing good here.
+
+---
+
