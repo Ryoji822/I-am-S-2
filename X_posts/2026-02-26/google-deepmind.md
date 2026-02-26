@@ -68,3 +68,12 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**04:08 JST** | [原文](https://x.com/JeffDean/status/2026882776142852342)
+
+> RT Nano Banana Pro
+> Prompt: Make a photo of a half peeled banana plushie, the plushie is also a sauropod
+
+---
+
