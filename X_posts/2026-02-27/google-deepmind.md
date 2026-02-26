@@ -92,3 +92,21 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**06:01 JST** | [原文](https://x.com/joshwoodward/status/2027126982778200210)
+
+> Nano Banana 2 (today) + Flow redesign (yesterday) = 🔥
+> 
+> Flow by Google: Nano Banana 2 has officially arrived! What does this mean for Flow?
+> 
+> 0️⃣ Zero credits for all users
+> 
+> 📸 Advanced character and scene consistency
+> 
+> 🖼️ 2K & 4K image upscaling is now available for everyone
+> 
+> Try it today!
+
+---
+
