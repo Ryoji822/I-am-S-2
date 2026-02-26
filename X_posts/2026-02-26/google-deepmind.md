@@ -51,3 +51,12 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**01:02 JST** | [原文](https://x.com/demishassabis/status/2026820866018103551)
+
+> RT Thang Luong
+> Thrilled to share: #Aletheia, our math research agent, just solved 6/10 notoriously hard FirstProof problems autonomously, the best result in the inaugural challenge! To me, this is even bigger than our historic IMO-gold achievement last year; these problems challenge even top mathematicians. We share our results transparently, see paper and full thoughts in the thread. 👇
+
+---
+

@@ -21,3 +21,15 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**07:18 JST** | [原文](https://x.com/OpenAIDevs/status/2026783875003985977)
+
+> Design 🤝 code
+> 
+> Figma: Join us tomorrow for a special livestream with our friends over at OpenAI.
+> 
+> February 26, 9:10AM PST / 12:10PM EST
+
+---
+

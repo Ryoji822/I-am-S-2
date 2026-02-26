@@ -96,3 +96,14 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**21:08 JST** | [原文](https://x.com/demishassabis/status/2026813000968020221)
+
+> RT Google DeepMind
+> We’re scaling up robotics in Europe. 🤖
+> 
+> Our Robotics Accelerator is tailored for startups and designed to bridge the gap between technology and business, powering the next generation of physical agents.
+
+---
+
