@@ -33,3 +33,13 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**09:50 JST** | [原文](https://x.com/gdb/status/2026822095079092330)
+
+> always run with xhigh reasoning
+> 
+> Sherwin Wu: This matches my own experience with GPT-5.3-Codex – I basically only run it on xhigh nowadays for all coding tasks. With all the speed improvements too, it doesn't even feel that slow, even at `xhigh`.
+
+---
+

@@ -77,3 +77,18 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**04:51 JST** | [原文](https://x.com/demishassabis/status/2027109383922933863)
+
+> top 🍌
+> 
+> Arena.ai: 🚨BREAKING: Nano Banana 2 debuts at #1 in Image Arena, and it changes the game again 🍌🍌
+> 
+> Officially released as Gemini 3.1 Flash Image Preview, it is powered by real-time information and images from web search.
+> 
+> Highlights:
+> - #1 Text-to-Image scoring 1279, surpassing
+
+---
+
