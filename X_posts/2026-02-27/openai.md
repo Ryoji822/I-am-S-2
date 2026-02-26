@@ -15,3 +15,33 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**03:25 JST** | [原文](https://x.com/sama/status/2027087700214591913)
+
+> We often get asked how people who are not technical can contribute to AGI. One area is research recruiting. 
+> 
+> Tifa (@tifafafafa) is looking for exceptional recruiters from non-traditional backgrounds, former founders especially.
+> 
+> We believe the best research teams are built through context, taste and a real feel for where the field is headed next; research recruiting is about finding people who will move the frontier forward, not just filling roles.
+> 
+> Should be an interesting thing!
+
+---
+
+**03:25 JST** | [原文](https://x.com/sama/status/2027087689359753483)
+
+> Thank you and will work hard to continue to earn your tokens!
+> 
+> Mitchell Hashimoto: I know this is pretty well established at this point, but Codex 5.3 is a much more effective model than Opus 4.6. I went back and forth on both for a bit, but haven’t touched Opus at all now for a full week. First model to get me off of Opus… ever. Good job Codex team.
+
+---
+
+**03:23 JST** | [原文](https://x.com/sama/status/2027087128514183553)
+
+> Many times, Greg has shown clear conviction in doing whatever he thought would be important to defend the mission and people of OpenAI, especially when it was hard. Here he talks about many of those moments.
+> 
+> Rick Rubin: NEW EPISODE: “At every single stage of OpenAI, the way that I operate, I've learned, changed, and grown. There's so much of how I work today, and when I look back at last-year me and five-year-ago me, I realize I knew nothing. I go back to the very beginning, having the humility
+
+---
+

@@ -48,3 +48,17 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**03:23 JST** | [原文](https://x.com/joshwoodward/status/2027087186005496121)
+
+> True
+> 
+> Karan: Pomelli can be a game changer for local brands or startups that can’t afford professional photoshoots
+> 
+> It can also create social media posts for your products
+> 
+> And if that wasn’t enough you can use Google Veo 3 to turn these images into video ads.
+
+---
+
