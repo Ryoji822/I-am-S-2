@@ -1,8 +1,8 @@
 # Anthropic
 
-> 最終更新: 2026-02-23
+> 最終更新: 2026-02-26
 
-**エンタープライズLLM支出シェア40%で業界首位に立ったAI企業。Claude Code $2.5B ARR（ローンチ9ヶ月で達成）、年間収益$14B、$30B Series G（評価額$380B）。MCPは2025年12月にLinux Foundation AAIFに寄贈し業界標準となった——もはやAnthropicの競争武器ではなく共有インフラ。新たな差別化軸はClaude Code + Bun買収（2025年12月）+ Agent SDKの開発者ツールエコシステムと、安全性による規制業界での優位性。**
+**エンタープライズLLM支出シェア40%で業界首位に立ったAI企業。Claude Code $2.5B ARR（ローンチ9ヶ月で達成）、年間収益$14B、$30B Series G（評価額$380B）。MCPは2025年12月にLinux Foundation AAIFに寄贈し業界標準となった——もはやAnthropicの競争武器ではなく共有インフラ。新たな差別化軸はClaude Code + Bun買収（2025年12月）+ Agent SDKの開発者ツールエコシステムと、安全性による規制業界での優位性。2026年2月にVercept買収でComputer Use能力を強化し、UI操作エージェント分野に本格参入 [INFO-052](../Information/2026-02-26/collected-raw.md#INFO-052)。**
 
 ## この会社は何者か
 
@@ -14,7 +14,7 @@ Dario Amodei率いるAI企業。主力はClaude 4.6シリーズ（Opus/Sonnet/Ha
 
 2025年12月にBun（JavaScriptランタイム）を買収。Claude Codeの基盤インフラを内製化する戦略的動き。Bunはオープンソース（MIT）を維持。
 
-直近の動き: (1) Claude Agent SDKへの名称変更でエージェント開発の軸であることを明示 [INFO-007](../Information/2026-02-21/collected-raw.md#INFO-007)。(2) Computer Use Agentsの構築パターンを公開 [INFO-036](../Information/2026-02-21/collected-raw.md#INFO-036)。(3) SOC2準拠のエンタープライズグレードセキュリティを確立 [INFO-016](../Information/2026-02-21/collected-raw.md#INFO-016)。(4) Infosysとの直販提携で通信・金融・製造向けに直接営業 [INFO-001](../Information/2026-02-21/collected-raw.md#INFO-001)。
+直近の動き: (1) Vercept買収でComputer Use能力を強化 [INFO-052](../Information/2026-02-26/collected-raw.md#INFO-052)。(2) RSP v3.0公開、ASL-3セーフガード有効化、Frontier Safety Roadmap導入 [INFO-047](../Information/2026-02-26/collected-raw.md#INFO-047)。(3) Claude Agent SDK v0.2.58でClaude Code v2.1.58とパリティ達成 [INFO-005](../Information/2026-02-26/collected-raw.md#INFO-005)。(4) Coworkプラグインエコシステム拡張、Google Workspace/Salesforce/DocuSign統合 [INFO-011](../Information/2026-02-26/collected-raw.md#INFO-011)。
 
 価格は、Sonnet 4.6が$3/$15 [INFO-079](../Information/2026-02-18/collected-raw.md#INFO-079)、Opus 4.6は$15/$75→$5/$25に67%値下げ済み [INFO-022](../Information/2026-02-20/collected-raw.md#INFO-022)。
 
@@ -48,8 +48,9 @@ AWS経由でエンタープライズに浸透する戦略。しかし$14B ARRの
 **強み:**
 - **エンタープライズ首位**: LLM支出40%シェア。2023年12%→2026年40%の急成長（Menlo Ventures）
 - **Claude Code**: $2.5B ARR。9ヶ月で$0→$2.5Bは異常な成長速度。製品市場適合の決定的証拠
-- **安全性リーダーシップ**: SOC2準拠、ASL-3保護。EU AI法施行で追い風
+- **安全性リーダーシップ**: SOC2準拠、ASL-3保護、RSP v3.0。EU AI法施行で追い風
 - **Bun買収**: 開発者ツール基盤の内製化で長期的な競争優位を構築
+- **Vercept買収**: Computer Use（UI操作エージェント）能力の強化。Microsoft CUAに対抗 [INFO-052](../Information/2026-02-26/collected-raw.md#INFO-052)
 - **価格と性能のバランス**: Sonnet 4.6 $3/$15は性能対価格で優秀
 
 **弱み:**
@@ -64,5 +65,12 @@ AWS経由でエンタープライズに浸透する戦略。しかし$14B ARRの
 |------|------|---------|
 | Claude Code ARR推移 | 開発者ツール戦略の成否を直接示す | $2.5B ARR（2026年2月）、1月から倍増 |
 | エンタープライズLLMシェア推移 | 40%が持続するか。OpenAI反攻の兆候はないか | 40%首位（[IND-008](../config/indicators.json), elevated） |
-| OpenAI Skills/Shell囲い込み進捗 | 成功すればClaude Codeモデルの脅威に | SDK v0.8.4リリース（[IND-015](../config/indicators.json), elevated） |
+| Computer Use vs Microsoft CUA | Vercept買収が実効性ある差別化になるか | Vercept買収完了、統合進行中 [INFO-052](../Information/2026-02-26/collected-raw.md#INFO-052) |
 | EU AI法施行後の市場変化 | 安全性差別化が決定的に強化されるか | 2026年8月完全施行予定（[IND-023](../config/indicators.json), elevated） |
+
+## 変更履歴
+
+| 日付 | 変更内容 |
+|------|---------|
+| 2026-02-26 | Vercept買収（M&A）を追記。RSP v3.0・Cowork拡張を反映。直近動向を更新 |
+| 2026-02-23 | 初版作成（Bun買収・MCP寄贈後の戦略再定義）

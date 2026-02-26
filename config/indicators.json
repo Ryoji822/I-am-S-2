@@ -1,7 +1,7 @@
 {
-  "version": "2.3",
-  "last_updated": "2026-02-25",
-  "description": "I&W（Indications and Warning）指標レジストリ。v2.3: Arbiter統合判断反映。IND-018 approaching昇格見送り（elevated維持）、IND-006/015/019 elevated維持（Red指摘採用）",
+  "version": "2.4",
+  "last_updated": "2026-02-26",
+  "description": "I&W（Indications and Warning）指標レジストリ。v2.4: Arbiter統合判断反映。IND-018 elevated維持（approaching昇格見送り）、IND-006/019 elevated維持、IND-022 high維持",
   "structural_changes_log": [
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
     "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
@@ -9,7 +9,8 @@
     "2026-02-23 v2.1: IND-019を「産業採用率」に再定義、「実効性（ROI・品質）」をIND-024として分離",
     "2026-02-23 v2.1: IND-011のscenario_idsにSCN-003追加（収斂シナリオに収斂指標を紐付け）",
     "2026-02-24 v2.2: Arbiter統合判断反映。IND-006/015/019はhigh昇格を見送りelevated維持（Red指摘採用：質的評価不足、時期尚早、ROI乖離深刻）",
-    "2026-02-25 v2.3: Arbiter統合判断反映。IND-018 approaching昇格見送り（CEO発言過信リスク）、IND-011 mixed（Gemini躍進で格差拡大）、IND-017 elevated（Xデータ活用明確化）"
+    "2026-02-25 v2.3: Arbiter統合判断反映。IND-018 approaching昇格見送り（CEO発言過信リスク）、IND-011 mixed（Gemini躍進で格差拡大）、IND-017 elevated（Xデータ活用明確化）",
+    "2026-02-26 v2.4: Arbiter統合判断反映。IND-018 elevated維持（FirstProof 6/10=60%は未達、Erdos査読不明）、高優先監視昇格"
   ],
   "indicators": [
     {
@@ -89,11 +90,11 @@
       "description": "プロトコル層はMCP+A2AでLinux Foundation傘下に標準化済み（2025年12月AAIF設立）。競争の焦点は実行環境（Shell/Sandbox）、オーケストレーション（LangGraph/CrewAI/Semantic Kernel）、ガバナンス層に移行。各社がこれらの上位レイヤーでどの程度囲い込みを構築しているかを追跡",
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
       "status": "elevated",
-      "last_checked": "2026-02-25",
-      "last_value": "MCP 5,500+サーバー、97M DL/月、Linux Foundation AAIF管理。プロトコル層の標準化方向は確定。ただしRed指摘: アクティブ率・本番利用率の質的評価が欠如、「完了」断定は時期尚早",
+      "last_checked": "2026-02-26",
+      "last_value": "MCP 3大クラウド対応完了（INFO-013）。プロトコル層標準化方向確定。ただしアクティブ率・本番利用率未検証（KIQ-RED-001）",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.3 Arbiter: elevated維持。プロトコル層の標準化は進行中・方向性確定だが「完了」は過剰断定。MCPサーバーアクティブ率・企業別採用率の追加収集必要（KIQ-RED-001）"
+      "rationale": "v2.4 Arbiter: elevated維持。標準化進展は確実だが質的評価不足。high昇格にはMCPアクティブ率データ必要"
     },
     {
       "indicator_id": "IND-007",
@@ -221,13 +222,13 @@
           "id": 1,
           "description": "ARC-AGI-2スコア90%超",
           "met": false,
-          "evidence": "現在77.1%（Gemini 3.1 Pro）、~85%（Deep Talk推定）。閾値まで5-13pt不足"
+          "evidence": "現在77.1%（Gemini 3.1 Pro）、~85%（Deep Think推定）。閾値まで5-13pt不足"
         },
         {
           "id": 2,
           "description": "AIによる査読付き論文の単独執筆",
           "met": false,
-          "evidence": "未観測。AI支援での共著はあるが単独執筆事例なし"
+          "evidence": "部分的進展。FirstProof 6/10（60%）、Erdos #846解決（査読状況不明）。単独執筆事例未確認"
         },
         {
           "id": 3,
@@ -248,13 +249,14 @@
           "evidence": "AI支援での創薬事例はあるが「自律的に発見・検証」は未達"
         }
       ],
-      "conditions_met_count": "1-2/5（条件3のみ部分的該当）",
+      "conditions_met_count": "1-2/5（条件3のみ部分的該当、条件2部分的進展）",
+      "priority": "高優先監視",
       "status": "elevated",
-      "last_checked": "2026-02-25",
-      "last_value": "5条件中1-2条件が部分的に該当（条件3: Altman発言のみ）。閾値3条件には未到達。Red指摘: CEO発言過信リスク、過去AI予測精度低",
+      "last_checked": "2026-02-26",
+      "last_value": "5条件中1-2条件が部分的に該当。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。閾値3条件には未到達",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "v2.3 Arbiter: elevated維持。Blue approaching昇格→Red指摘採用で見送り。CEO発言への過度な信頼リスク。5条件中3条件達成で昇格"
+      "rationale": "v2.4 Arbiter: elevated維持。Blue approaching昇格→Red指摘採用で見送り。60%は未達、Erdos査読状況不明。3/5閾値未到達。高優先監視に昇格"
     },
         {
           "id": 2,
@@ -296,11 +298,11 @@
       "description": "AIエージェントが企業業務に導入されている度合い（採用率）。導入の成否は別指標IND-024で測定",
       "threshold": "Fortune 500の50%以上がAIエージェントを業務プロセスに正式導入（PoC・パイロットを除く）",
       "status": "elevated",
-      "last_checked": "2026-02-25",
-      "last_value": "85%エンタープライズ導入検討中（Technavio）。IND-024（ROI正5%）との乖離拡大。95%の企業がPoCで失敗または価値実証できていない",
+      "last_checked": "2026-02-26",
+      "last_value": "85%エンタープライズ導入検討中（Technavio）。IND-024（ROI正5%）との乖離拡大。95%の企業がPoCで失敗または価値実証できていない。Klarna逆転（INFO-040）、AI関連削減7%のみ（INFO-041）、成功率12.5%（INFO-043）",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.3 Arbiter: elevated維持。採用意向85%は事実だが実効性5%との乖離が「成熟」を否定。ROI正5%定義・PoC失敗理由の追加収集必要（KIQ-RED-005）"
+      "rationale": "v2.4 Arbiter: elevated維持。採用意向85%は事実だが実効性5%との乖離が「成熟」を否定。ROI正5%定義・PoC失敗理由の追加収集必要（KIQ-RED-005）"
     },
     {
       "indicator_id": "IND-020",
