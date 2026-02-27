@@ -122,3 +122,13 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**13:31 JST** | [原文](https://x.com/JeffDean/status/2027240104155377727)
+
+> Great to see us using innovative battery technology and wind+solar to create more data centers with carbon-free energy.
+> 
+> https://techcrunch.com/2026/02/26/google-paid-startup-form-energy-1b-for-its-massive-100-hour-battery/
+
+---
+

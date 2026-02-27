@@ -45,3 +45,13 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**13:37 JST** | [原文](https://x.com/gdb/status/2027241615992225930)
+
+> First steel beams went up today at our Stargate site in Milam County, Texas.
+> 
+> Exciting to see this project taking shape with @SoftBank and @SBEnergy.
+
+---
+
