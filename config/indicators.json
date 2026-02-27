@@ -1,7 +1,7 @@
 {
-  "version": "2.4",
-  "last_updated": "2026-02-26",
-  "description": "I&W（Indications and Warning）指標レジストリ。v2.4: Arbiter統合判断反映。IND-018 elevated維持（approaching昇格見送り）、IND-006/019 elevated維持、IND-022 high維持",
+  "version": "2.5",
+  "last_updated": "2026-02-27",
+  "description": "I&W（Indications and Warning）指標レジストリ。v2.5: Arbiter統合判断反映。IND-015 elevated維持（Red指摘採用: 買収≠確立）、IND-001 high維持（Nano Banana 2）、IND-006/017/018/022/023更新",
   "structural_changes_log": [
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
     "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
@@ -10,7 +10,8 @@
     "2026-02-23 v2.1: IND-011のscenario_idsにSCN-003追加（収斂シナリオに収斂指標を紐付け）",
     "2026-02-24 v2.2: Arbiter統合判断反映。IND-006/015/019はhigh昇格を見送りelevated維持（Red指摘採用：質的評価不足、時期尚早、ROI乖離深刻）",
     "2026-02-25 v2.3: Arbiter統合判断反映。IND-018 approaching昇格見送り（CEO発言過信リスク）、IND-011 mixed（Gemini躍進で格差拡大）、IND-017 elevated（Xデータ活用明確化）",
-    "2026-02-26 v2.4: Arbiter統合判断反映。IND-018 elevated維持（FirstProof 6/10=60%は未達、Erdos査読不明）、高優先監視昇格"
+    "2026-02-26 v2.4: Arbiter統合判断反映。IND-018 elevated維持（FirstProof 6/10=60%は未達、Erdos査読不明）、高優先監視昇格",
+    "2026-02-27 v2.5: Arbiter統合判断反映。IND-015 elevated維持（Red指摘採用: 買収≠確立、KIQ-RED-006収集後に再評価）、IND-001 high維持（Nano Banana 2 Image Arena #1）"
   ],
   "indicators": [
     {
@@ -20,11 +21,11 @@
       "description": "MMLU、GPQA、ARC-AGI等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される。特にARC-AGI-2はAGI到達度の代理指標として重視",
       "threshold": "ベンチマークスコア30%以上の非連続的向上、またはARC-AGI-2で90%超過",
       "status": "high",
-      "last_checked": "2026-02-25",
-      "last_value": "Gemini 3.1 Pro ARC-AGI-2 77.1%、Deep Think ~85%。146%向上で30%閾値大幅超過。90%閾値に接近（あと5pt）",
+      "last_checked": "2026-02-27",
+      "last_value": "Nano Banana 2 Image Arena #1（1279スコア）。新規ベンチマークでの非連続的向上。ARC-AGI-2: Gemini 3.1 Pro 77.1%、Deep Think ~85%",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v2.3: high維持。85%は90%閾値に接近。但し単一ベンチマーク依存リスクあり（Red指摘）、持続性監視必要"
+      "rationale": "Arbiter v2.5: high維持。単一ベンチマーク依存リスクあり（Red指摘）。持続性監視必要"
     },
     {
       "indicator_id": "IND-002",
@@ -90,11 +91,11 @@
       "description": "プロトコル層はMCP+A2AでLinux Foundation傘下に標準化済み（2025年12月AAIF設立）。競争の焦点は実行環境（Shell/Sandbox）、オーケストレーション（LangGraph/CrewAI/Semantic Kernel）、ガバナンス層に移行。各社がこれらの上位レイヤーでどの程度囲い込みを構築しているかを追跡",
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
       "status": "elevated",
-      "last_checked": "2026-02-26",
-      "last_value": "MCP 3大クラウド対応完了（INFO-013）。プロトコル層標準化方向確定。ただしアクティブ率・本番利用率未検証（KIQ-RED-001）",
+      "last_checked": "2026-02-27",
+      "last_value": "Codex Figma MCP統合・Gemini API Skillsが上位レイヤー競争を示唆。アクティブ率・本番利用率未検証（KIQ-RED-001）",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.4 Arbiter: elevated維持。標準化進展は確実だが質的評価不足。high昇格にはMCPアクティブ率データ必要"
+      "rationale": "v2.5 Arbiter: elevated維持。標準化進展は確実だが質的評価不足。high昇格にはMCPアクティブ率データ必要"
     },
     {
       "indicator_id": "IND-007",
@@ -192,11 +193,11 @@
       "description": "Agent実行環境（Shell/Sandbox）およびスキル/プラグイン配布形式がベンダー固有か、標準化・互換性があるか",
       "threshold": "主要3社のうち2社以上がベンダー専用実行環境を必須化し、かつスキル形式が相互非互換",
       "status": "elevated",
-      "last_checked": "2026-02-25",
-      "last_value": "OpenAI: Skills/Shell（独自形式、審査あり、囲い込み方向 INFO-026/027）。Anthropic: Claude Code（ローカル実行可、MCP準拠、開放方向）。Google: Gemini Extensions+Vertex Agent Builder（Google環境依存）。採用率・開発者ロックイン度は未計測",
+      "last_checked": "2026-02-27",
+      "last_value": "OpenAI: Skills/Shell（独自形式）。Anthropic: Vercept買収（Computer use 72.5% OSWorld）。Google: Gemini Extensions+Vertex Agent Builder。囲い込み「意図」明確だが「確立」未検証。Cloudflare Shadow MCP問題",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.3 Arbiter: elevated維持。囲い込み「意図」は明確だが「成功・確立」は未検証。Skills採用率・Claude Code対抗データの追加収集必要（KIQ-RED-002）"
+      "rationale": "v2.5 Arbiter: elevated維持。Red指摘採用（買収≠確立）。KIQ-RED-006（Vercept統合後の採用率）収集後に再評価"
     },
     {
       "indicator_id": "IND-017",
@@ -205,11 +206,11 @@
       "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）やコンテキスト蓄積をAIの差別化に活用している度合い",
       "threshold": "独占データを活用したAI機能が各社3つ以上、かつエンタープライズのデータ移行コストが高コスト化",
       "status": "elevated",
-      "last_checked": "2026-02-25",
-      "last_value": "xAI Xリアルタイムデータ活用明確化（Harperエージェント INFO-008）。Google（検索/Gmail/Drive）、ByteDance（TikTok/Douyinデータ）が独占データ活用。Xプラットフォーム衰退リスク監視必要",
+      "last_checked": "2026-02-27",
+      "last_value": "xAI Xリアルタイムデータ活用明確化（Grok Harper X検索 INFO-011）。Google（検索/Gmail/Drive）、ByteDance（TikTok/Douyinデータ）が独占データ活用。Xプラットフォーム衰退リスク監視必要",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.3 Arbiter: elevated維持。Xデータ独占は確認だがプラットフォーム衰退リスク監視必要"
+      "rationale": "v2.5 Arbiter: elevated維持。Xデータ独占は確認だがプラットフォーム衰退リスク監視必要"
     },
     {
       "indicator_id": "IND-018",
@@ -252,44 +253,11 @@
       "conditions_met_count": "1-2/5（条件3のみ部分的該当、条件2部分的進展）",
       "priority": "高優先監視",
       "status": "elevated",
-      "last_checked": "2026-02-26",
-      "last_value": "5条件中1-2条件が部分的に該当。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。閾値3条件には未到達",
+      "last_checked": "2026-02-27",
+      "last_value": "5条件中1-2条件が部分的に該当。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。閾値3条件には未到達。新規AGI兆候なし",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "v2.4 Arbiter: elevated維持。Blue approaching昇格→Red指摘採用で見送り。60%は未達、Erdos査読状況不明。3/5閾値未到達。高優先監視に昇格"
-    },
-        {
-          "id": 2,
-          "description": "AIによる査読付き論文の単独執筆",
-          "met": false,
-          "evidence": "未観測。AI支援での共著はあるが単独執筆事例なし"
-        },
-        {
-          "id": 3,
-          "description": "主要CEOが2年以内のAGIを公言",
-          "met": "partial",
-          "evidence": "Altman「2年以内にスーパーインテリジェンスの初期版」（TIME誌）→該当。Hassabis「5-10年」→非該当。CEO間で見解分裂"
-        },
-        {
-          "id": 4,
-          "description": "政府レベルのAGIモラトリアム議論",
-          "met": false,
-          "evidence": "EU AI法は汎用AI規制だがAGI特化のモラトリアム議論は未発生"
-        },
-        {
-          "id": 5,
-          "description": "AIが新薬候補を自律的に発見・検証",
-          "met": false,
-          "evidence": "AI支援での創薬事例はあるが「自律的に発見・検証」は未達"
-        }
-      ],
-      "conditions_met_count": "1-2/5（条件3のみ部分的該当）",
-      "status": "elevated",
-      "last_checked": "2026-02-23",
-      "last_value": "5条件中1-2条件が部分的に該当（条件3: Altman発言）。閾値3条件には未到達",
-      "trend": "approaching",
-      "alert_level": "elevated",
-      "rationale": "v2.1で条件分解追加。条件ごとのtrue/false判定により、更新の根拠が再現可能に。Altman発言のみ部分的該当、他4条件は未達"
+      "rationale": "v2.5 Arbiter: elevated維持。60%は未達、Erdos査読状況不明。3/5閾値未到達。高優先監視継続"
     },
     {
       "indicator_id": "IND-019",
@@ -361,37 +329,16 @@
           "id": 3,
           "description": "求人票の必須スキルが実装力から設計力・評価力にシフト",
           "met": "partial",
-          "evidence": "AIスキル保有者に給与プレミアム+$15-25K。Claude Code Security（INFO-011）が評価能力重要性を示唆。ただし求人票要件変化の体系的データは未取得"
+          "evidence": "Claude Code Security（INFO-016: 500件脆弱性発見）が評価能力重要性を示唆。AIスキル保有者に給与プレミアム+$15-25K。ただし求人票要件変化の体系的データは未取得"
         }
       ],
       "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
       "status": "high",
-      "last_checked": "2026-02-25",
-      "last_value": "条件1達成（82%導入率）。条件2達成（73.4%減）。条件3部分的（Claude Code Security INFO-011が評価能力重要性を示唆）。2条件達成でhigh妥当",
+      "last_checked": "2026-02-27",
+      "last_value": "条件1達成（82%導入率）。条件2達成（73.4%減）。条件3部分的（Claude Code Security INFO-016が評価能力重要性を示唆）。2条件達成でhigh妥当",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "v2.3 Arbiter: high維持妥当。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
-    },
-        {
-          "id": 2,
-          "description": "ジュニアエンジニア求人が前年比20%以上減少",
-          "met": true,
-          "evidence": "エントリーレベル技術職73.4%減（前年比）。20%閾値を大幅超過"
-        },
-        {
-          "id": 3,
-          "description": "求人票の必須スキルが実装力から設計力・評価力にシフト",
-          "met": "partial",
-          "evidence": "AIスキル保有者に給与プレミアム+$15-25K。Claude Code Security（INFO-011）が評価能力重要性を示唆。ただし求人票要件変化の体系的データは未取得"
-        }
-      ],
-      "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
-      "status": "high",
-      "last_checked": "2026-02-24",
-      "last_value": "条件1達成（82%導入率）。条件2達成（73.4%減）。条件3部分的（Claude Code Security INFO-011が評価能力重要性を示唆）。2条件達成でhigh妥当",
-      "trend": "rising",
-      "alert_level": "high",
-      "rationale": "v2.2 Arbiter: high維持妥当。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
+      "rationale": "v2.5 Arbiter: high維持妥当。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
     },
     {
       "indicator_id": "IND-023",
@@ -400,11 +347,11 @@
       "description": "EU AI法、反トラスト規制、データ主権法がAI市場の構造と競争に与える影響",
       "threshold": "以下のうち2つ以上: (1) EU AI法によりTier 1企業の欧州戦略に重大変更 (2) 反トラスト訴訟/調査が主要AI企業に対して開始 (3) 3カ国以上がAIデータ主権法を施行",
       "status": "elevated",
-      "last_checked": "2026-02-24",
-      "last_value": "EU AI法2026年8月完全施行予定。ISO 42001認証普及（INFO-014: Dubai Police世界初）。Thele v. Google LLCプライバシー集団訴訟。Gartner: 35%の国が地域固有AIプラットフォームにロックイン予測",
+      "last_checked": "2026-02-27",
+      "last_value": "ByteDance著作権問題で日本政府是正要求（INFO-014）。EU AI法2026年8月完全施行予定。ISO 42001認証普及。Gartner: 35%の国が地域固有AIプラットフォームにロックイン予測",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.2 Arbiter: elevated維持。規制・アンチトラスト観点を継続監視"
+      "rationale": "v2.5 Arbiter: elevated維持。規制リスク顕在化（著作権問題）。規制・アンチトラスト観点を継続監視"
     },
     {
       "indicator_id": "IND-024",

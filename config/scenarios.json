@@ -1,7 +1,7 @@
 {
-  "version": "2.4",
-  "last_updated": "2026-02-26",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v2.4: Arbiter統合判断反映。SCN-001 +1%、SCN-002 +1%→+1%抑制（Red指摘採用）、SCN-003 -1%、SCN-004 -1%",
+  "version": "2.5",
+  "last_updated": "2026-02-27",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v2.5: Arbiter統合判断反映。SCN-001 ±0%（Red指摘採用: 政府≠囲い込み）、SCN-002 +1%、SCN-003 -1%、SCN-004 -1%",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -24,8 +24,8 @@
       "quadrant_label": "閉鎖 × 格差拡大",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 25,
-      "probability_change": "+1%",
-      "probability_rationale": "v2.4 Arbiter: OpenAI囲い込み（INFO-018）・Anthropic Vercept買収（INFO-052）が閉鎖を支持。成功・確立は未検証のため+1%",
+      "probability_change": "±0%",
+      "probability_rationale": "v2.5 Arbiter: Red指摘採用。政府協力＝囲い込みの因果未検証。Vercept買収は囲い込みよりも競争激化の証拠とも解釈可能",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 37,
+      "probability": 38,
       "probability_change": "+1%",
-      "probability_rationale": "v2.4 Arbiter: MCP 3大クラウド対応（INFO-013）・Gemini躍進（INFO-024）が支持。Red指摘（MCPアクティブ率未検証・単一ベンチマーク依存）を考慮し+1%に抑制",
+      "probability_rationale": "v2.5 Arbiter: MCP 3大クラウド対応・Codex Figma統合が標準化を支持。Blue/Red合意で+1%",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -65,9 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 21,
+      "probability": 20,
       "probability_change": "-1%",
-      "probability_rationale": "v2.4 Arbiter: MCP開放化進展（INFO-013）がデータロックイン回避志向を示す。-1%",
+      "probability_rationale": "v2.5 Arbiter: Nano Banana 2 Image Arena #1が性能格差拡大を示唆。収斂前提と矛盾",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -88,7 +88,7 @@
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 17,
       "probability_change": "-1%",
-      "probability_rationale": "v2.4 Arbiter: Gemini躍進が収斂仮定と矛盾。-1%。Red指摘（OSSギャップ縮小トレンド・特化型Agent台頭）は監視継続",
+      "probability_rationale": "v2.5 Arbiter: ByteDance性能躍進は収斂支持だが、著作権問題でグローバル展開制限リスク",
       "key_assumptions": [
         "汎用AIの性能差が5%以内に収斂する",
         "AAIF標準が支配的に採用される",
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-02-26",
-    "note": "SCN-001(25) + SCN-002(37) + SCN-003(21) + SCN-004(17) = 100%"
+    "verified_date": "2026-02-27",
+    "note": "SCN-001(25) + SCN-002(38) + SCN-003(20) + SCN-004(17) = 100%"
   }
 }
