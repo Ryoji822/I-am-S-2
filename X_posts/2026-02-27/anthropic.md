@@ -31,3 +31,14 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**07:36 JST** | [原文](https://x.com/EthanJPerez/status/2027209394371678646)
+
+> RT Anthropic
+> A statement from Anthropic CEO, Dario Amodei, on our discussions with the Department of War.
+> 
+> https://www.anthropic.com/news/statement-department-of-war
+
+---
+
