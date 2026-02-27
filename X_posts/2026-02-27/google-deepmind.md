@@ -110,3 +110,15 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**13:14 JST** | [原文](https://x.com/JeffDean/status/2027235896802910274)
+
+> Exponential trends are very powerful: solar panel prices, transistors per mm^2, price of genomic sequencing, bits per mm^2 for hard drives, ...
+> 
+> Colin McCarthy: The cost of solar has dropped 99.8% worldwide since 1975 and 94.4% since 2008.   
+> 
+> Solar is the future.
+
+---
+

@@ -42,3 +42,14 @@
 
 ---
 
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**10:43 JST** | [原文](https://x.com/sleepinyourhat/status/2027223153005797564)
+
+> RT Ted Sumers
+> I'd strongly recommend reading this. Incredibly proud to work at Anthropic and (still) optimistic we can find a path forward to develop and use AI responsibly in collaboration with USG.
+> 
+> https://www.anthropic.com/news/statement-department-of-war
+
+---
+
