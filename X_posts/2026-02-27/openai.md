@@ -55,3 +55,18 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**02:31 JST** | [原文](https://x.com/npew/status/2027264081032622198)
+
+> RT Yana Welinder
+> Putting Nano Banana 2 to the test.
+> 
+> Nano Banana 2 vs. ChatGPT Image 1.5.
+> 
+> Same sketch. Same prompt.
+> 
+> ChatGPT Image 1.5 has stronger instruction following and better taste.
+
+---
+
