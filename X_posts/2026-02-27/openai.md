@@ -70,3 +70,14 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**23:12 JST** | [原文](https://x.com/kevinweil/status/2027392818201940009)
+
+> RT Sam Altman
+> We have raised a $110 billion round of funding from Amazon, NVIDIA, and SoftBank.
+> 
+> We are grateful for the support from our partners, and have a lot of work to do to bring you the tools you deserve.
+
+---
+
