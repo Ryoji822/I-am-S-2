@@ -106,3 +106,15 @@
 
 ---
 
+## @dpkingma (Durk Kingma - 研究者)
+
+**18:30 JST** | [原文](https://x.com/dpkingma/status/2027677726287782233)
+
+> Obviously I strongly support Anthropic's position here.
+> 
+> Anthropic: A statement on the comments from Secretary of War Pete Hegseth. 
+> 
+> https://anthropic.com/news/statement-comments-secretary-war
+
+---
+
