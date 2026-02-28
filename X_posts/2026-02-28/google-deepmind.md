@@ -28,3 +28,18 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**20:23 JST** | [原文](https://x.com/JeffDean/status/2027761548283060732)
+
+> RT Raj Dabre
+> Btw this question is a homage to @JeffDean and @GhemawatSanjay, who wrote the paper on MapReduce.
+> 
+> I wonder if there was some fun lore around this.
+> 
+> Raj Dabre: Technical interview question:
+> 
+> Suppose you have 5 TB worth of text data and you want to count the total number of words, how will you do this?
+
+---
+
