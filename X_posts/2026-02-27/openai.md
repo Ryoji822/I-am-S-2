@@ -81,3 +81,14 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**16:00 JST** | [原文](https://x.com/npew/status/2027413395226730659)
+
+> RT JB
+> Sorry for shitting on 5.3-Codex but I’ve actually seen the light today. after using it for 5 hours today im codex pilled now
+> 
+> I run it at high reasoning and it’s actually way faster at responding now.
+
+---
+

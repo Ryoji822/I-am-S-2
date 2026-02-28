@@ -132,3 +132,12 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**14:30 JST** | [原文](https://x.com/JeffDean/status/2027618717535011076)
+
+> RT ɢʀɛɛռ ɢօɖ
+> Every year, in the middle of February, the sunlight falls on this waterfall called «Horsetail,» and because of the specific angle at which the light hits, it looks like the water is on fire. The water starts to glow orange and red.
+
+---
+

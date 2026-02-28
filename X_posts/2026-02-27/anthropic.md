@@ -53,3 +53,13 @@
 
 ---
 
+## @AnthropicAI (Anthropic - 公式アカウント)
+
+**07:36 JST** | [原文](https://x.com/AnthropicAI/status/2027150818575528261)
+
+> A statement from Anthropic CEO, Dario Amodei, on our discussions with the Department of War.
+> 
+> https://www.anthropic.com/news/statement-department-of-war
+
+---
+

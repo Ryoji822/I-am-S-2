@@ -99,3 +99,21 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**04:29 JST** | [原文](https://x.com/OpenAIDevs/status/2027547408192966735)
+
+> RT OpenAI Developers
+> GPT-5.3-Codex is now available for all developers in the Responses API.
+> 
+> Start building with it today.
+> https://developers.openai.com/api/docs/models/gpt-5.3-codex
+> 
+> OpenAI Developers: GPT-5.3-Codex is here.
+> 
+> It advances both frontier coding performance and professional knowledge capabilities together in a single model.
+> 
+> http://openai.com/index/introducing-gpt-5-3-codex/
+
+---
+
