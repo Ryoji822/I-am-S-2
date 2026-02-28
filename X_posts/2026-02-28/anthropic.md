@@ -118,3 +118,18 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**12:13 JST** | [原文](https://x.com/EthanJPerez/status/2027701156768788599)
+
+> RT Michael McFaul
+> So now I’m really confused. @OpenAI got Hegseth to agree to the same 2 principles that @AnthropicAI was asking for? Can someone explain this outcome?
+> 
+> Sam Altman: Tonight, we reached an agreement with the Department of War to deploy our models in their classified network.
+> 
+> In all of our interactions, the DoW displayed a deep respect for safety and a desire to partner to achieve the best possible outcome.
+> 
+> AI safety and wide distribution of
+
+---
+
