@@ -47,3 +47,18 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**08:14 JST** | [原文](https://x.com/jasonkwon/status/2027892779796594860)
+
+> RT Tibo
+> Personal view. On the DoW deal, time and time again I witness how OpenAI operates thoughtfully and diplomatically when it comes to raising the bar on safety. I also believe that figuring out how to deploy powerful new technology in the pursuit of national security (not just the USA) is important.
+> 
+> The company deeply understands what it can and cannot reasonably have control over and focuses instead of setting the right guardrails to ensure that deployment is aligned with what is considered acceptable and safe.
+> 
+> I am proud of the level of transparency provided in the blog post, and hope that other companies, including Anthropic, were as transparent on prior and future deals they make.
+> 
+> https://openai.com/index/our-agreement-with-the-department-of-war/
+
+---
+

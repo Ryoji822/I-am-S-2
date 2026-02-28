@@ -42,3 +42,21 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**04:21 JST** | [原文](https://x.com/EthanJPerez/status/2027878295401038294)
+
+> RT jeremy
+> Re Even if it were the case that OAI’s contract with the DoW was much safer and had the key limitations (it’s not and it doesn’t), OAI shouldn’t have defected and taken the deal. Doing so undermines the solidarity of AI labs and encourages further overreaches.
+
+---
+
+**00:32 JST** | [原文](https://x.com/EthanJPerez/status/2027878994847367269)
+
+> RT Miles Brundage
+> In light of what external lawyers and the Pentagon are saying, OpenAI employees’ default assumption here should unfortunately be that OpenAI caved + framed it as not caving, and screwed Anthropic while framing it as helping them.
+> 
+> Hope that is wrong + they get evidence otherwise
+
+---
+
