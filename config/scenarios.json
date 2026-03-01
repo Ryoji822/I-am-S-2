@@ -1,7 +1,7 @@
 {
-  "version": "2.6",
-  "last_updated": "2026-02-28",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v2.6: Arbiter統合判断反映。SCN-001 -1%、SCN-002 +1%（Red指摘で+2%から抑制）、SCN-003 -1%、SCN-004 +1%（正規化）",
+  "version": "2.7",
+  "last_updated": "2026-03-01",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v2.7: Arbiter統合判断反映。SCN-001 +1%（Red指摘で+3%抑制）、SCN-002 -1%、SCN-003 ±0%、SCN-004 ±0%（正規化）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 格差拡大",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 24,
-      "probability_change": "-1%",
-      "probability_rationale": "v2.6 Arbiter: INFO-018（Claude Code > Codex）がOpenAI単独支配と矛盾。Red指摘採用：政府協力≠囲い込みの因果未検証",
+      "probability": 25,
+      "probability_change": "+1%",
+      "probability_rationale": "v2.7 Arbiter: OpenAI $110B調達は囲い込みを弱く支持。Red指摘（資金集中→囲い込み因果飛躍）採用で+3%→+1%に抑制",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 39,
-      "probability_change": "+1%",
-      "probability_rationale": "v2.6 Arbiter: MCP SDK 9,700万DL/月（INFO-017）が標準化支持。Red指摘（DL≠利用率）で+2%→+1%に抑制",
+      "probability": 38,
+      "probability_change": "-1%",
+      "probability_rationale": "v2.7 Arbiter: MCP標準化（AAIF 146メンバー）は開放を支持。資金集中が「勝者は出る」を強める。正規化で-1%",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -66,8 +66,8 @@
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 19,
-      "probability_change": "-1%",
-      "probability_rationale": "v2.6 Arbiter: Gemini 3.1 Pro躍進（INFO-011）が性能格差拡大を示唆。収斂前提と矛盾",
+      "probability_change": "±0%",
+      "probability_rationale": "v2.7 Arbiter: Gemini 3.1 Pro躍進（INFO-066）は性能格差拡大を示唆。収斂前提と矛盾するが正規化で±0%",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -87,8 +87,8 @@
       "quadrant_label": "開放 × 収斂",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 18,
-      "probability_change": "+1%",
-      "probability_rationale": "v2.6 Arbiter: ByteDanceコスト1/10（INFO-007）は収斂支持。正規化のため+1%",
+      "probability_change": "±0%",
+      "probability_rationale": "v2.7 Arbiter: DeepSeek-V3.2 $0.27/1M（INFO-071）は収斂支持。資金集中が分散前提を弱める。正規化で±0%",
       "key_assumptions": [
         "汎用AIの性能差が5%以内に収斂する",
         "AAIF標準が支配的に採用される",
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-02-28",
-    "note": "SCN-001(24) + SCN-002(39) + SCN-003(19) + SCN-004(18) = 100%"
+    "verified_date": "2026-03-01",
+    "note": "SCN-001(25) + SCN-002(38) + SCN-003(19) + SCN-004(18) = 100%"
   }
 }
