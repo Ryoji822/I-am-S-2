@@ -130,3 +130,16 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**21:29 JST** | [原文](https://x.com/EthanJPerez/status/2028233292903002345)
+
+> RT Hannah Cox
+> I’ll never use their products again.
+> 
+> They’re traitors to the American people.
+> 
+> Amy Siskind 🏳️‍🌈: OpenAI and Sam Altman did so much damage to their brand today, they will never recover. ChatGPT was already running behind Claude and Gemini. This is their Ford Pinto moment.
+
+---
+
