@@ -134,3 +134,22 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**11:02 JST** | [原文](https://x.com/jasonkwon/status/2027944526183338205)
+
+> RT NatSecKatrina
+> A lot of the concerns about the government's "all lawful use" language seem to stem from mistrust that government will follow the laws.  At the same time, people believe that Anthropic took an important stand by insisting on contract language around their redlines.  
+> 
+> We cannot have it both ways.  We cannot say that the government cannot be trusted to interpret laws and contracts the right way, but also agree that Anthropic’s policy redlines, in a contract, would have been effective.  
+> 
+> This is why our approach has been:
+> 
+> Let the democratic process decide on the legality and proper use question.  The fact that people can even say that the gov has made mistakes in the past is the process in action.  The fact that we are having this discussion on twitter is part of the process.
+> 
+> Create a reasonable contractual framework that guides expectations and the relationship, just as much if not more than the rules themselves.
+> 
+> And on top of this, have the ability to build the models the way we think is safe, along with cleared FDEs to do the real world work in partnership.
+
+---
+
