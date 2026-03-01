@@ -85,3 +85,37 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**06:29 JST** | [原文](https://x.com/EthanJPerez/status/2027920689450319918)
+
+> RT Lawrence Chan
+> Re Now, I'm sure OpenAI will claim that the real teeth of the agreement is not their contract but their deployment architecture: they have a "safety stack that includes these principles" and everything! (In other words, "trust me, bro.")
+
+---
+
+**06:26 JST** | [原文](https://x.com/EthanJPerez/status/2027920659222040652)
+
+> RT Lawrence Chan
+> Re They also make the claim that because their model lives on their cloud and isn't "edge deployment", that this by definition would not count as "fully autonomous weapons". Maybe this is _technically true_ in that the weapon needs to communicate with their server, but it does not guarantee human-in-the-loop, and does not mean that their model will not make kill decisions on behalf of drones or missiles linked to it.
+
+---
+
+**06:23 JST** | [原文](https://x.com/EthanJPerez/status/2027920576116101178)
+
+> RT Lawrence Chan
+> Re This, of course, did not stop OpenAI from blatantly misrepresenting this language in the blog post and in Sam Altman's tweets!
+
+---
+
+**06:18 JST** | [原文](https://x.com/EthanJPerez/status/2027920536857411810)
+
+> RT Lawrence Chan
+> OpenAI has released the language in their contract with the DoW, and it's exactly as Anthropic was claiming: "legalese that would allow those safeguards to be disregarded at will". 
+> 
+> Note: the first paragraph doesn't say "no autonomous weapons"! It says "AI can't control autonomous weapons as long as existing law (that doesn't exist) or the DoD says so."
+> 
+> Similarly, the mass surveillance use cases will "comply with existing law", but many forms of data collection that we'd consider "mass surveillance" are things that the NSA has consistently argued are legal under current law.
+
+---
+
