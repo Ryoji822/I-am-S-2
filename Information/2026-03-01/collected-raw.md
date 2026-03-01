@@ -1,19 +1,20 @@
 # 収集データ: 2026-03-01
 
 ## メタデータ
-- 収集日時: 2026-03-01 00:15 UTC
-- 実行クエリ数: 60 / 56+
-- scrape実行数: 5件（Anthropic公式記事）
-- 収集情報数: 92件
-- KIQカバレッジ: KIQ-001-01 ✓, KIQ-001-02 ✓, KIQ-001-03 ✓, KIQ-001-04 ✓, KIQ-001-05 ✓, KIQ-002-01 ✓, KIQ-002-02 ✓, KIQ-002-03 ✓, KIQ-002-04 ✓, KIQ-002-05 ✓, KIQ-003-01 ✓, KIQ-003-02 ✓, KIQ-003-03 ✓, KIQ-003-04 ✓, KIQ-003-05 ✓, KIQ-004-01 ✓, KIQ-004-02 ✓, KIQ-004-03 ✓, KIQ-004-04 ✓, KIQ-005-01 ✓, KIQ-005-02 ✓, KIQ-005-03 ✓, BYTEDANCE-CHINESE ✓, KIQ-RED-001 ✓, KIQ-RED-005 ✓
+- 収集日時: 2026-03-01 08:30 UTC
+- 実行クエリ数: 63 / 56+
+- scrape実行数: 5件（Anthropic公式記事）+ 追加3件
+- 収集情報数: 100件
+- KIQカバレッジ: KIQ-001-01 ✓, KIQ-001-02 ✓, KIQ-001-03 ✓, KIQ-001-04 ✓, KIQ-001-05 ✓, KIQ-002-01 ✓, KIQ-002-02 ✓, KIQ-002-03 ✓, KIQ-002-04 ✓, KIQ-002-05 ✓, KIQ-002-06 ✓, KIQ-003-01 ✓, KIQ-003-02 ✓, KIQ-003-03 ✓, KIQ-003-04 ✓, KIQ-003-05 ✓, KIQ-004-01 ✓, KIQ-004-02 ✓, KIQ-004-03 ✓, KIQ-004-04 ✓, KIQ-005-01 ✓, KIQ-005-02 ✓, KIQ-005-03 ✓, BYTEDANCE-CHINESE ✓, KIQ-RED-001 ✓, KIQ-RED-005 ✓, KIQ-RED-006 ✓, KIQ-RED-007 ✓
 - 品質フラグ: NORMAL
-- 主要発見: OpenAI $110B調達, Trump大統領Anthropic使用停止命令, ByteDance豆包DAU 1.45億, Gemini 3.1 Pro ARC-AGI-2 77.1%, Anthropic RSP v3.0, Klarna AI置換戦略撤回
+- 主要発見: OpenAI $110B調達, Trump大統領Anthropic使用停止命令, ByteDance豆包DAU 1.45億, Gemini 3.1 Pro ARC-AGI-2 77.1%, Anthropic RSP v3.0, Klarna AI置換戦略撤回, OpenAI-DoW契約（3レッドライン）, Anthropic-DoW紛争（サプライチェーンリスク指定）, OECD: AI企業が全世界VCの61%獲得（$258.7B）
 
 ## 動的追加クエリ（Arbiterフィードバック基づく）
 - KIQ-RED-001: MCP server active usage rate adoption metrics
 - KIQ-RED-005: enterprise AI ROI 6% definition methodology measurement
-- KIQ-RED-006: Vercept integration adoption success rate
-- 国防部門協力契約詳細: Anthropic defense department contract details
+- KIQ-RED-006: Vercept integration adoption success rate (INFO-106追加収集)
+- KIQ-RED-007: AI industry total investment global VC market size (INFO-101, INFO-102追加収集)
+- 国防部門協力契約詳細: OpenAI-DoW 3 red lines, Anthropic-DoW supply chain risk (INFO-103, INFO-104, INFO-105追加収集)
 - 競合安全性枠組み: Google AI Principles vs Anthropic RSP comparison
 
 ## 収集結果
@@ -1404,6 +1405,107 @@
   - 規律ある投資アプローチ
 - **引用URL:** https://kpmg.com/us/en/media/news/ai-pulse-industries.html
 
+### INFO-101
+- **タイトル:** OECD: AI Captures 61% of Global Venture Capital in 2025
+- **ソース:** OECD, Awesome Agents
+- **公開日:** 2026-02-28
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-RED-007 (AI業界全体投資額推計)
+- **関連企業:** 複数
+- **要約:** OECD報告書: AI企業が2025年に全世界VCの61%（$258.7B / $427.1B）を獲得。2022年の30%から倍増。米国が75%（$194B）、中国は5%（$13.9B）。
+- **キーファクト:**
+  - 2025年AI VC: $258.7B（全世界VCの61%）
+  - 2022年: 30% → 2025年: 61%（3年で倍増）
+  - 米国: 75%（$194B）、EU27: 6%（$15.8B）、中国: 5%（$13.9B）
+  - AIインフラ・ホスティング: $109.3B（前年比130%増）
+  - メガディール（$100M超）が投資価値の73%
+  - $1B超ディールが全体の約半分
+  - メディアンAIディール: $5M（早期段階$11.8M、後期段階$131M）
+- **引用URL:** https://awesomeagents.ai/news/oecd-ai-captures-61-percent-global-venture-capital/
+
+### INFO-102
+- **タイトル:** KPMG Venture Pulse Q4'25 - Global VC Exceeds $500B
+- **ソース:** KPMG
+- **公開日:** 2026-02-24
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-RED-007 (AI業界全体投資額推計)
+- **関連企業:** 複数
+- **要約:** KPMG Venture Pulse: 2025年グローバルVC投資は$500B超（2024年$391.9Bから）。Q4'25は$138.1B（14四半期最高）。AIが記録的投資を獲得。
+- **キーファクト:**
+  - 2025年グローバルVC: $500B超（2024年$391.9Bから増加）
+  - Q4'25: $138.1B（7,981ディール、14四半期最高）
+  - AIが2025年の最ホットセクター
+  - Q4'25に米国で8社が$1B+調達（Anthropic, Anysphere $2.3B, Reflection AI $2B等）
+  - 米国が世界最大11ディール中10を占める
+- **引用URL:** https://kpmg.com/cn/en/insights/2026/02/venture-pulse-q4-25.html
+
+### INFO-103
+- **タイトル:** OpenAI-Department of War Agreement Details - Three Red Lines
+- **ソース:** Reuters, Politico, CNN
+- **公開日:** 2026-02-28
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-002-01 (国防部門協力契約), KIQ-002-06 (政府・軍経済的圧力)
+- **関連企業:** OpenAI, Anthropic
+- **要約:** OpenAIがDoWと契約締結。3つのレッドライン（国内大量監視禁止、自律兵器システム禁止、高リスク自動決定禁止）を設定。DoWは最大$200M契約を各AIラボと締結。
+- **キーファクト:**
+  - OpenAI契約の3つのレッドライン: (1)国内大量監視禁止、(2)自律兵器システム禁止、(3)高リスク自動決定禁止
+  - 多層的アプローチ: 安全スタック完全裁量、クラウド経由デプロイ、OpenAI要員がインザループ、強力な契約保護
+  - Pentagon契約: 各AIラボと最大$200M
+  - OpenAIはAnthropicの「サプライチェーンリスク」指定に反対表明
+  - 「我々の契約はAnthropicを含む過去の機密AI契約より多くのガードレールを持つ」
+- **引用URL:** https://www.reuters.com/business/media-telecom/openai-details-layered-protections-us-defense-department-pact-2026-02-28/
+
+### INFO-104
+- **タイトル:** Anthropic Statement on Department of War - Two Exceptions Maintained
+- **ソース:** Anthropic (公式)
+- **公開日:** 2026-02-26
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-002-01 (国防部門協力契約), KIQ-002-06 (政府・軍経済的圧力), KIQ-005-03 (AGI安全性)
+- **関連企業:** Anthropic
+- **要約:** Dario Amodei CEO声明: AnthropicはDoWとの契約で2つの例外（国内大量監視、完全自律兵器）を維持。DoWは「サプライチェーンリスク」指定と国防生産法発動を脅迫。
+- **キーファクト:**
+  - Anthropicの2つの例外: (1)国内大量監視、(2)完全自律兵器
+  - Anthropicは米政府機密ネットワークに初めてモデル展開したフロンティアAI企業
+  - CCP関連企業へのClaude提供を停止（数億ドル収益放棄）
+  - DoW脅迫: サプライチェーンリスク指定（米国企業に前例なし）、国防生産法発動
+  - 「これらの脅迫は本質的に矛盾：一方で安全保障リスク、他方で国防に不可欠」
+  - ClaudeはDoWで広範に展開（情報分析、モデリング、作戦計画、サイバー作戦等）
+- **引用URL:** https://www.anthropic.com/news/statement-department-of-war
+
+### INFO-105
+- **タイトル:** Anthropic Response to Secretary Hegseth - Supply Chain Risk Designation
+- **ソース:** Anthropic (公式)
+- **公開日:** 2026-02-27
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-002-01 (国防部門協力契約), KIQ-002-06 (政府・軍経済的圧力)
+- **関連企業:** Anthropic
+- **要約:** Hegseth長官がAnthropicをサプライチェーンリスクに指定。Anthropicは法廷で争う意向。顧客への影響はDoW契約作業のみ。
+- **キーファクト:**
+  - Hegseth長官がAnthropicをサプライチェーンリスク指定
+  - 指定は米国の敵対国に予約された前例のない措置
+  - 10 USC 3252に基づく指定はDoW契約のClaude使用のみ影響
+  - 個人顧客・商用契約者への影響なし
+  - 「いかなる脅迫も国内大量監視・完全自律兵器に関する我々の立場を変えない」
+  - 法廷で指定に異議申し立て予定
+- **引用URL:** https://www.anthropic.com/news/statement-comments-secretary-war
+
+### INFO-106
+- **タイトル:** Anthropic Vercept Acquisition - Computer Use AI Integration
+- **ソース:** Computerworld, TechCrunch
+- **公開日:** 2026-02-26
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-RED-006 (Vercept統合後の採用率), KIQ-001-04 (マルチモーダルAgent)
+- **関連企業:** Anthropic
+- **要約:** AnthropicがVercept（コンピュータ使用AIスタートアップ）を買収。製品は2026年3月25日までにシャットダウン。Bun買収（12月）に続く2回目の買収。
+- **キーファクト:**
+  - Vercept: シアトル拠点、リモートMacBook制御クラウドエージェント
+  - 製品シャットダウン: 2026年3月25日
+  - A12インキュベーター出身
+  - 共同創業者Matt DeitkeはMeta超知能ラボへ移籍（$250M報酬パッケージ）
+  - 「フロンティアAIでは人材維持が新しいアップタイム」（Gartner）
+  - AIモデル企業の垂直統合トレンド加速
+- **引用URL:** https://www.computerworld.com/article/4137817/anthropic-buys-vercept-deepening-push-into-ai-task-automation.html
+
 
 ## X (Twitter) 投稿データ（ローカルRSSHub経由）
 
@@ -1515,4 +1617,343 @@ OpenAI: Yesterday we reached an agreement with the Department of War for deplo
 
 We think our deployment has more guardrails than any previous agreement for classified AI
 - **引用URL:** https://x.com/polynoamial/status/2027850059875029335
+
+
+
+## X (Twitter) 投稿データ（ローカルRSSHub経由）
+
+### INFO-107
+- **タイトル:** @AmandaAskell (Amanda Askell) のX投稿
+- **ソース:** X (Twitter) - @AmandaAskell (Claudeの人格設計研究者)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** I believe these are reasonable lines to hold. And I'm proud to work for a company willing to hold them.
+
+Anthropic: A statement on the comments from Secretary of War Pete Hegseth. 
+
+https://anthropic.com/news/statement-comments-secretary-war
+- **引用URL:** https://x.com/AmandaAskell/status/2027801122405249153
+
+### INFO-108
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT Zvi Mowshowitz
+I could be wrong, but based on what I see here I do not think it will be difficult for DoW to find lawyers saying it can do pretty much whatever it wants, and that's all they will need. If there is additional language that fixes that, please do share it.
+
+OpenAI: Yesterday we reached an agreement with the Department of War for deploying advanced AI systems in classified environments, which we requested they make available to all AI companies.
+
+We think our deployment has more g...
+- **引用URL:** https://x.com/EthanJPerez/status/2027876508065534126
+
+### INFO-109
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT Zvi Mowshowitz
+If you are an employee at OpenAI, get as much information and detail about the terms as possible. Read all of it. Run it by your lawyers and AIs. Decide whether this protects the things you care about and whether it was represented fairly.
+
+This here does not tell us enough.
+
+OpenAI: Yesterday we reached an agreement with the Department of War for deploying advanced AI systems in classified environments, which we requested they make available to all AI companies.
+
+We think our ...
+- **引用URL:** https://x.com/EthanJPerez/status/2027876411529404486
+
+### INFO-110
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT jeremy
+Re Even if it were the case that OAI’s contract with the DoW was much safer and had the key limitations (it’s not and it doesn’t), OAI shouldn’t have defected and taken the deal. Doing so undermines the solidarity of AI labs and encourages further overreaches.
+- **引用URL:** https://x.com/EthanJPerez/status/2027878295401038294
+
+### INFO-111
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT Miles Brundage
+In light of what external lawyers and the Pentagon are saying, OpenAI employees’ default assumption here should unfortunately be that OpenAI caved + framed it as not caving, and screwed Anthropic while framing it as helping them.
+
+Hope that is wrong + they get evidence otherwise
+- **引用URL:** https://x.com/EthanJPerez/status/2027878994847367269
+
+### INFO-112
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT Nate Silver
+The eagerness for OpenAI to sign the contract on the very night their rival got fired is likely to be a lot more revealing than the contract terms, which in any event are ambiguous and unlikely to be enforced by a court that gives a lot of deference to the executive.
+- **引用URL:** https://x.com/EthanJPerez/status/2027897201595404394
+
+### INFO-113
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT Ben Springwater
+Sam Altman posted three identical copies of his announcement to dilute the reactions.
+
+As of now, they have 18M, 8.8M, and 5.9M views respectively.
+- **引用URL:** https://x.com/EthanJPerez/status/2027897581968437650
+
+### INFO-114
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT Nate Silver
+One also wonders how much talent OpenAI might lose from all of this and if talent is underrated relative to capital. Anthropic had already been catching up valuation wise and Claude was increasingly considered the #1 LLM by influential users.
+- **引用URL:** https://x.com/EthanJPerez/status/2027897518156316880
+
+### INFO-115
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT Lawrence Chan
+Re Now, I'm sure OpenAI will claim that the real teeth of the agreement is not their contract but their deployment architecture: they have a "safety stack that includes these principles" and everything! (In other words, "trust me, bro.")
+- **引用URL:** https://x.com/EthanJPerez/status/2027920689450319918
+
+### INFO-116
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT Lawrence Chan
+Re They also make the claim that because their model lives on their cloud and isn't "edge deployment", that this by definition would not count as "fully autonomous weapons". Maybe this is _technically true_ in that the weapon needs to communicate with their server, but it does not guarantee human-in-the-loop, and does not mean that their model will not make kill decisions on behalf of drones or missiles linked to it.
+- **引用URL:** https://x.com/EthanJPerez/status/2027920659222040652
+
+### INFO-117
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT Lawrence Chan
+Re This, of course, did not stop OpenAI from blatantly misrepresenting this language in the blog post and in Sam Altman's tweets!
+- **引用URL:** https://x.com/EthanJPerez/status/2027920576116101178
+
+### INFO-118
+- **タイトル:** @EthanJPerez (Ethan Perez) のX投稿
+- **ソース:** X (Twitter) - @EthanJPerez (Research scientist)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** RT Lawrence Chan
+OpenAI has released the language in their contract with the DoW, and it's exactly as Anthropic was claiming: "legalese that would allow those safeguards to be disregarded at will". 
+
+Note: the first paragraph doesn't say "no autonomous weapons"! It says "AI can't control autonomous weapons as long as existing law (that doesn't exist) or the DoD says so."
+
+Similarly, the mass surveillance use cases will "comply with existing law", but many forms of data collection that we'd consi...
+- **引用URL:** https://x.com/EthanJPerez/status/2027920536857411810
+
+### INFO-119
+- **タイトル:** @OfficialLoganK (Logan Kilpatrick) のX投稿
+- **ソース:** X (Twitter) - @OfficialLoganK (AI Studio / Gemini API)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Google/DeepMind
+- **要約:** AGI wen?
+- **引用URL:** https://x.com/OfficialLoganK/status/2027867861545345280
+
+### INFO-120
+- **タイトル:** @rosterloh (Rick Osterloh) のX投稿
+- **ソース:** X (Twitter) - @rosterloh (Devices & Services責任者)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Google/DeepMind
+- **要約:** RT Sacred Heart Prep Athletics
+Congratulations to the SHP Boys Basketball team, your @cifccs Division IV Champions!
+
+The Gators defeated Half Moon Bay, in overtime, 71-64, claiming the program’s first CCS title since 2021.
+
+SHP awaits its @CIFState NorCal seed, which will be announced tomorrow afternoon.
+- **引用URL:** https://x.com/rosterloh/status/2027912113805767111
+
+### INFO-121
+- **タイトル:** @sama (Sam Altman) のX投稿
+- **ソース:** X (Twitter) - @sama (CEO)
+- **公開日:** 2026-03-01
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT OpenAI
+Yesterday we reached an agreement with the Department of War for deploying advanced AI systems in classified environments, which we requested they make available to all AI companies.
+
+We think our deployment has more guardrails than any previous agreement for classified AI deployments, including Anthropic's. Here's why: https://openai.com/index/our-agreement-with-the-department-of-war/
+- **引用URL:** https://x.com/sama/status/2027850288959525125
+
+### INFO-122
+- **タイトル:** @jasonkwon (Jason Kwon) のX投稿
+- **ソース:** X (Twitter) - @jasonkwon (戦略担当)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT OpenAI
+Yesterday we reached an agreement with the Department of War for deploying advanced AI systems in classified environments, which we requested they make available to all AI companies.
+
+We think our deployment has more guardrails than any previous agreement for classified AI deployments, including Anthropic's. Here's why: https://openai.com/index/our-agreement-with-the-department-of-war/
+- **引用URL:** https://x.com/jasonkwon/status/2027855528253395261
+
+### INFO-123
+- **タイトル:** @jasonkwon (Jason Kwon) のX投稿
+- **ソース:** X (Twitter) - @jasonkwon (戦略担当)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT Boaz Barak
+Please read this blog post. Our red lines are clear and we will protect them. Unlike other agreements, we are not working through Palantir, we are responsible for our own models and our own safety. We will have our people in place to guarantee that responsible & safe deployment.
+
+Boaz Barak: https://openai.com/index/our-agreement-with-the-department-of-war/
+- **引用URL:** https://x.com/jasonkwon/status/2027855589381132293
+
+### INFO-124
+- **タイトル:** @polynoamial (Noam Brown) のX投稿
+- **ソース:** X (Twitter) - @polynoamial (研究者)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** For those following the DoW AI drama, I highly recommend reading this post explaining how @OpenAI approached the negotiations with the DoW.
+
+OpenAI: Yesterday we reached an agreement with the Department of War for deploying advanced AI systems in classified environments, which we requested they make available to all AI companies.
+
+We think our deployment has more guardrails than any previous agreement for classified AI
+- **引用URL:** https://x.com/polynoamial/status/2027850059875029335
+
+### INFO-125
+- **タイトル:** @jasonkwon (Jason Kwon) のX投稿
+- **ソース:** X (Twitter) - @jasonkwon (戦略担当)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT Tibo
+Personal view. On the DoW deal, time and time again I witness how OpenAI operates thoughtfully and diplomatically when it comes to raising the bar on safety. I also believe that figuring out how to deploy powerful new technology in the pursuit of national security (not just the USA) is important.
+
+The company deeply understands what it can and cannot reasonably have control over and focuses instead of setting the right guardrails to ensure that deployment is aligned with what is consider...
+- **引用URL:** https://x.com/jasonkwon/status/2027892779796594860
+
+### INFO-126
+- **タイトル:** @jasonkwon (Jason Kwon) のX投稿
+- **ソース:** X (Twitter) - @jasonkwon (戦略担当)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT Dean W. Ball
+When it comes to all these contract terms and disputes about them:
+
+I really don’t know. There may be a deal to be had there, and I put a high value on putting an end to this madness. But to know whether the deal is worth taking would require serious conversations with highly specialized lawyers, and essentially no one commenting on these issues has really done that (Alan rozenshtein exempted). I am not one of those lawyers, and this is not an area of the law I’ve spent a long ti...
+- **引用URL:** https://x.com/jasonkwon/status/2027901571930157153
+
+### INFO-127
+- **タイトル:** @kevinweil (Kevin Weil) のX投稿
+- **ソース:** X (Twitter) - @kevinweil (製品責任者)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT Joshua Achiam
+A firm commitment to the principle that AGI companies have to devolve power to democracies and avoid unduly concentrating power in themselves, even when that leads to uncomfortable places, is something I will not regret.
+
+Jeremy Howard: @jachiam0 Not sure you'll ever live this down, Joshua.
+- **引用URL:** https://x.com/kevinweil/status/2027933644502012077
+
+### INFO-128
+- **タイトル:** @jasonkwon (Jason Kwon) のX投稿
+- **ソース:** X (Twitter) - @jasonkwon (戦略担当)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT Sam Altman
+Re Enforcing the SCR designation on Anthropic would be very bad for our industry and our country, and obviously their company.
+
+We said to the DoW before and after. We said that part of the reason we were willing to do this quickly was in the hopes of de-esclation.
+
+I feel competitive with Anthropic for sure, but successfully building safe superintelligence and widely sharing the benefits is way more important that any company competition. I believe they would do something to try t...
+- **引用URL:** https://x.com/jasonkwon/status/2027931165802504474
+
+### INFO-129
+- **タイトル:** @jasonkwon (Jason Kwon) のX投稿
+- **ソース:** X (Twitter) - @jasonkwon (戦略担当)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT NatSecKatrina
+Re I would gently push back on the underlying premise that if the government agrees to a usage policy restriction, that's ironclad, but if it's just a law or policy, that's no guarantee at all.  Why would Anthropic think that their earlier usage policy forbidding surveillance was sufficient to guarantee their models could not be used for this?  
+
+My main argument is that usage policies are only one part of a layered set of safeguards.  Here's how I think about this:
+
+1. The safe...
+- **引用URL:** https://x.com/jasonkwon/status/2027930931378720936
+
+### INFO-130
+- **タイトル:** @jasonkwon (Jason Kwon) のX投稿
+- **ソース:** X (Twitter) - @jasonkwon (戦略担当)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT NatSecKatrina
+Re Anthropic has primarily been concerned with usage policies, which is because their existing classified deployments involve reduced or removed safety guardrails (making usage policies the primary safeguards in national security deployments). Usage policies, on their own, are not a guarantee of anything.  Any responsible deployment of AI in classified environments should involve layered safeguards including a prudent safety stack, limits on deployment architecture, and the dire...
+- **引用URL:** https://x.com/jasonkwon/status/2027931915718955232
+
+### INFO-131
+- **タイトル:** @polynoamial (Noam Brown) のX投稿
+- **ソース:** X (Twitter) - @polynoamial (研究者)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT NatSecKatrina
+Re Anthropic has primarily been concerned with usage policies, which is because their existing classified deployments involve reduced or removed safety guardrails (making usage policies the primary safeguards in national security deployments). Usage policies, on their own, are not a guarantee of anything.  Any responsible deployment of AI in classified environments should involve layered safeguards including a prudent safety stack, limits on deployment architecture, and the dire...
+- **引用URL:** https://x.com/polynoamial/status/2027926465661309026
+
+### INFO-132
+- **タイトル:** @jasonkwon (Jason Kwon) のX投稿
+- **ソース:** X (Twitter) - @jasonkwon (戦略担当)
+- **公開日:** 2026-03-01
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** OpenAI
+- **要約:** RT NatSecKatrina
+A lot of the concerns about the government's "all lawful use" language seem to stem from mistrust that government will follow the laws.  At the same time, people believe that Anthropic took an important stand by insisting on contract language around their redlines.  
+
+We cannot have it both ways.  We cannot say that the government cannot be trusted to interpret laws and contracts the right way, but also agree that Anthropic’s policy redlines, in a contract, would have been effec...
+- **引用URL:** https://x.com/jasonkwon/status/2027944526183338205
 

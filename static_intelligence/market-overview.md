@@ -1,8 +1,10 @@
 # AI市場の現在地
 
-> 最終更新: 2026-02-23
+> 最終更新: 2026-03-01
 
-**2026年2月時点で、AI市場は「技術はオープンになるが、性能トップは一握り」という方向に向かっている（SCN-002「技術は開くが勝者は出る」33%が最有力）。プロトコル層の標準化戦争は2025年12月のAAIF設立で実質終結し、MCP+A2AがLinux Foundation傘下の業界標準になった。競争の焦点は実行環境・データ・ガバナンスの上位レイヤーに移行。Anthropicがエンタープライズ LLM支出40%で首位に立ち、OpenAI 27%に逆転。$1300億+が上位2社に集中（OpenAI $100B+、Anthropic $30B）。価格は年10倍ペースで下落中だが、Gemini 3.1 ProのARC-AGI-2 77.1%のようなフロンティア性能は一部企業に集中。ROIを出せているのはわずか5%。**
+**2026年3月時点で、AI市場は「技術はオープンになるが、性能トップは一握り」という方向に向かっている（SCN-002「技術は開くが勝者は出る」37%が最有力）。プロトコル層の標準化戦争は2025年12月のAAIF設立で実質終結し、MCP+A2AがLinux Foundation傘下の業界標準になった。競争の焦点は実行環境・データ・ガバナンスの上位レイヤーに移行。Anthropicがエンタープライズ LLM支出40%で首位に立ち、OpenAI 27%に逆転。$1400億+が上位2社に集中（OpenAI $110B+、Anthropic $30B）。価格は年10倍ペースで下落中だが、Gemini 3.1 ProのARC-AGI-2 77.1%のようなフロンティア性能は一部企業に集中。ROIを出せているのはわずか10%。**
+
+**【重要な構造変化: 政府介入の質的変化】** 2026-02-27、Trump政権がAnthropicをSCR指定し連邦使用を禁止——従来の「規制」フレームを超え、安全性堅持企業への経済的報復→順応企業への利益という「インセンティブ構造の歪み」が顕在化 ([IND-023](../config/indicators.json), **high**昇格)。同日夜にOpenAIがDoW契約を締結し「漁夫の利」構造が成立 ([H-GOV-001](../config/hypotheses.json), 確度58%)。**
 
 ## プレイヤー一覧
 
@@ -66,12 +68,19 @@ OSSのAIモデルが商用モデルとの性能差を急速に縮めている。
 | 指標 | 何を見ているか | 今の状態 | レベル |
 |------|--------------|---------|--------|
 | [IND-001](../config/indicators.json) 性能の非連続ジャンプ | ベンチマークで前世代比30%超の性能向上 | Gemini 3.1 Pro ARC-AGI-2 77.1%（146%向上） | **high** |
-| [IND-003](../config/indicators.json) 資金集中 | 上位3社が業界調達額の80%超を占めるか | $1300億+が2社に集中。ただし資金≠市場構造変化 | **high** |
+| [IND-003](../config/indicators.json) 資金集中 | 上位3社が業界調達額の80%超を占めるか | $140B+が2社に集中（OECD: AI企業が全世界VCの61%獲得） | **high** |
 | [IND-004](../config/indicators.json) OSS性能到達 | OSSが商用モデルの90%性能に達するか | Llama 4 85.5%、GLM5トップ。90%閾値は未達 | elevated |
 | [IND-006](../config/indicators.json) エージェントスタック上位レイヤー | プロトコル層決着後の実行環境・オーケストレーション競争 | AAIF標準化完了。Shell vs Claude Code vs 独立の三つ巴 | elevated |
 | [IND-008](../config/indicators.json) 大企業の集中 | Fortune 500のAI導入先が2-3社に集中するか | Anthropic 40%、OpenAI 27%、Google 21%（合計88%） | elevated |
-| [IND-011](../config/indicators.json) 性能収斂 | Tier 1各社のスコア差が5%以内に縮まるか | Seed 2.0がフロンティア追い上げ。ただし自己報告値 | elevated |
+| [IND-011](../config/indicators.json) 性能収斂 | Tier 1各社のスコア差が5%以内に縮まるか | Gemini躍進でフロンティア格差拡大 vs OSS Tier 2追い上げの相反 | mixed |
 | [IND-015](../config/indicators.json) 実行環境の囲い込み | 実行環境・スキル形式がベンダー固有か標準か | 3社のスキル形式は相互非互換。Assistants API 8月廃止 | elevated |
 | [IND-018](../config/indicators.json) AGI兆候 | AGI到達を示す複合的な兆候 | ARC-AGI-2 77.1%。Altman「2年以内にスーパーインテリジェンス」 | elevated |
 | [IND-022](../config/indicators.json) スキル再定義 | コーディングの価値がAI管理能力にシフト | 82%がAIツール使用。エントリー技術職73.4%減 | **high** |
-| [IND-023](../config/indicators.json) 規制・データ主権 | EU AI法・反トラスト・データ主権の市場構造影響 | EU AI法8月施行、Google訴訟、35%の国がロックイン予測 | elevated |
+| [IND-023](../config/indicators.json) 政府によるAI強制力行使 | 経済的手段でAI企業の安全性姿勢を抑圧する構造的リスク | SCR指定・連邦使用禁止・OpenAI同日DoW契約で条件1・2達成 | **high** |
+
+## 変更履歴
+
+| 日付 | 変更内容 |
+|------|---------|
+| 2026-03-01 | IND-023 high昇格と政府介入の質的変化（規制→選別的報復）を追記。資金集中$140B、OECDデータで分母改善を反映 |
+| 2026-02-23 | 初版作成（AAIF設立後の市場構造再定義）
