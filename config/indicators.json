@@ -1,7 +1,7 @@
 {
-  "version": "2.7",
+  "version": "2.8",
   "last_updated": "2026-03-01",
-  "description": "I&W（Indications and Warning）指標レジストリ。v2.7: Arbiter統合判断反映。IND-003 high維持（Red指摘でcritical見送り）、IND-001/006/008/009/011/015/017/018/019/022/023/024更新",
+  "description": "I&W（Indications and Warning）指標レジストリ。v2.8: IND-023をelevated→highに昇格・条件分解追加（Anthropic SCR指定事件で「政府による経済的報復→AI安全性萎縮効果」の構造的リスクが顕在化。指標名称・定義を「AI規制・データ主権」から「政府によるAI開発方向性への強制力行使」に拡張）",
   "structural_changes_log": [
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
     "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
@@ -12,7 +12,8 @@
     "2026-02-25 v2.3: Arbiter統合判断反映。IND-018 approaching昇格見送り（CEO発言過信リスク）、IND-011 mixed（Gemini躍進で格差拡大）、IND-017 elevated（Xデータ活用明確化）",
     "2026-02-26 v2.4: Arbiter統合判断反映。IND-018 elevated維持（FirstProof 6/10=60%は未達、Erdos査読不明）、高優先監視昇格",
     "2026-02-27 v2.5: Arbiter統合判断反映。IND-015 elevated維持（Red指摘採用: 買収≠確立、KIQ-RED-006収集後に再評価）、IND-001 high維持（Nano Banana 2 Image Arena #1）",
-    "2026-03-01 v2.7: Arbiter統合判断反映。IND-003 high維持（Red指摘: 分母不確実性でcritical見送り）、IND-001/006/008/009/011/015/017/018/019/022/023/024更新"
+    "2026-03-01 v2.7: Arbiter統合判断反映。IND-003 high維持（Red指摘: 分母不確実性でcritical見送り）、IND-001/006/008/009/011/015/017/018/019/022/023/024更新",
+    "2026-03-01 v2.8: IND-023 elevated→high昇格。名称変更「AI規制・データ主権」→「政府によるAI開発方向性への強制力行使」。条件分解追加（4条件中2達成: 経済的制裁実施+漁夫の利構造成立）。Anthropic SCR指定事件が従来想定（規制・アンチトラスト）を超える質的変化を示したため"
   ],
   "indicators": [
     {
@@ -343,16 +344,43 @@
     },
     {
       "indicator_id": "IND-023",
-      "name": "AI規制・データ主権の市場構造への影響",
-      "scenario_ids": ["SCN-002", "SCN-004", "SCN-BS-001"],
-      "description": "EU AI法、反トラスト規制、データ主権法がAI市場の構造と競争に与える影響",
-      "threshold": "以下のうち2つ以上: (1) EU AI法によりTier 1企業の欧州戦略に重大変更 (2) 反トラスト訴訟/調査が主要AI企業に対して開始 (3) 3カ国以上がAIデータ主権法を施行",
-      "status": "elevated",
+      "name": "政府によるAI開発方向性への強制力行使",
+      "scenario_ids": ["SCN-001", "SCN-002", "SCN-004", "SCN-BS-001"],
+      "description": "政府が経済的手段（調達禁止・制裁指定・法的脅迫）でAI企業の安全性姿勢を抑圧し、AI開発の方向性にバイアスをかける構造的リスク。従来の規制（EU AI法等）に加え、安全性堅持企業への経済的報復→萎縮効果→業界全体の安全性後退という因果連鎖を監視",
+      "threshold": "以下のうち2つ以上",
+      "condition_status": [
+        {
+          "id": 1,
+          "description": "政府がAI企業に対し安全性姿勢を理由とした経済的制裁（契約排除・制裁指定・調達禁止）を実施",
+          "met": true,
+          "evidence": "2026-02-27: Trump政権がAnthropicの連邦機関使用を全面禁止。DoWがSCR（Supply-Chain Risk）指定を適用（従来は中露等の敵対国企業にのみ適用）。Defense Production Act発動も示唆。理由はAnthropicが自律兵器と大量監視への使用制限を堅持したこと"
+        },
+        {
+          "id": 2,
+          "description": "制裁された企業のポジションを競合が即座に獲得（漁夫の利構造の成立）",
+          "met": true,
+          "evidence": "2026-02-27: Anthropic排除と同日夜にOpenAIがDoWと機密ネットワーク展開契約を締結。OpenAIは「Anthropicと同じレッドラインを維持」と主張しつつ契約獲得。AI安全コミュニティからは「defection（裏切り）」と批判"
+        },
+        {
+          "id": 3,
+          "description": "萎縮効果: 他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
+          "met": false,
+          "evidence": "現時点では他社の明示的な安全性方針後退は未確認。ただしOpenAIの契約締結自体が「順応すれば報われる」先例を示しており、潜在的萎縮効果の構造は成立済み"
+        },
+        {
+          "id": 4,
+          "description": "EU AI法・反トラスト・データ主権法がTier 1企業の戦略を重大変更",
+          "met": false,
+          "evidence": "EU AI法2026年8月完全施行予定。ByteDance著作権問題で日本政府是正要求。重大な戦略変更には未到達"
+        }
+      ],
+      "conditions_met_count": "2/4（条件1・2達成）",
+      "status": "high",
       "last_checked": "2026-03-01",
-      "last_value": "Trump Anthropic使用停止命令（INFO-048）。DoW協力協定（INFO-097, INFO-093）。政府介入の双方向性。Shadow MCP問題（492サーバー認証欠落 INFO-014）。ByteDance著作権問題で日本政府是正要求。EU AI法2026年8月完全施行予定",
+      "last_value": "条件1達成（Anthropic SCR指定・連邦使用禁止）。条件2達成（OpenAI同日夜にDoW契約獲得）。条件3未達（明示的萎縮効果は未確認だが構造成立済み）。条件4未達（EU AI法施行前）。2条件達成でhigh",
       "trend": "rising",
-      "alert_level": "elevated",
-      "rationale": "v2.7 Arbiter: elevated維持。規制リスク顕在化（政府介入双方向性・Shadow MCP・著作権問題）。規制・アンチトラスト観点を継続監視"
+      "alert_level": "high",
+      "rationale": "v2.8: elevated→high昇格。Anthropic事件は従来のIND-023の想定（EU規制・アンチトラスト）を超える質的変化。政府が「規制」ではなく「経済的報復」で企業倫理姿勢を抑圧する先例が確立。AI開発方向性（安全性 vs 無条件コンプライアンス）の構造的分岐点。指標名称・定義を拡張し条件分解を追加"
     },
     {
       "indicator_id": "IND-024",

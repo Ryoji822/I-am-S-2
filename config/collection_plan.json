@@ -1,11 +1,12 @@
 {
-  "version": "2.0",
-  "last_updated": "2026-02-23",
+  "version": "2.1",
+  "last_updated": "2026-03-01",
   "structural_changes_log": [
     "2026-02-23 v2.0: KIQ文をpirs.jsonと完全一致に修正（短縮による情報欠落を防止）",
     "2026-02-23 v2.0: ByteDance向けに中国語検索クエリを追加（現地一次情報の取得）",
     "2026-02-23 v2.0: 検索クエリから不要な年号を削減（公式ドキュメントの取りこぼし防止）",
-    "2026-02-23 v2.0: PIR-2026-005（AGI監視）の収集計画を追加"
+    "2026-02-23 v2.0: PIR-2026-005（AGI監視）の収集計画を追加",
+    "2026-03-01 v2.1: KIQ-002-06新設（政府・軍のAI企業への経済的圧力と萎縮効果）。2026-02 Anthropic SCR指定事件で収集計画の構造的欠陥が判明: 技術・製品・市場クエリのみで地政学的リスク（政府による経済的報復、安全性姿勢への萎縮効果、競合排除の構造）を捕捉するクエリが皆無だった"
   ],
   "collection_plan": [
     {
@@ -121,6 +122,24 @@
       "sources": ["news", "government", "legal_analysis"],
       "frequency": "weekly",
       "minimum_sources": 2
+    },
+    {
+      "kiq_id": "KIQ-002-06",
+      "kiq": "政府・軍によるAI企業への経済的圧力（契約排除・制裁指定・調達禁止）はAI業界の安全性姿勢と開発方向性にどう影響しているか？",
+      "search_queries": [
+        "AI company government contract military Pentagon",
+        "Anthropic OpenAI Pentagon Department of Defense deal",
+        "AI company federal ban supply chain risk designation",
+        "Defense Production Act AI company coercion",
+        "AI autonomous weapons military ethics corporate refusal",
+        "AI safety chilling effect government retaliation",
+        "government AI procurement ethics controversy",
+        "AI company military contract competitive displacement"
+      ],
+      "sources": ["news", "government", "legal_analysis", "policy_analysis"],
+      "frequency": "daily",
+      "minimum_sources": 2,
+      "note": "v2.1で新設。2026-02 Anthropic SCR指定事件で顕在化した構造的リスク: (1)政府が経済制裁で企業倫理姿勢を抑圧する先例、(2)安全性堅持企業が罰せられ順応企業が報われる構造がAI開発方向性にバイアスをかける萎縮効果、(3)政府契約市場での競合排除による漁夫の利。技術・製品ニュースでは捕捉不能な地政学的リスクカテゴリ"
     },
     {
       "kiq_id": "KIQ-002-04",
