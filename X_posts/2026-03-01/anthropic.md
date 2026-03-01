@@ -119,3 +119,14 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**19:04 JST** | [原文](https://x.com/EthanJPerez/status/2028221017165103330)
+
+> RT Leo Gao
+> the contract snippet from the openai dow blog post is so obviously just "all lawful use" followed by a bunch of stuff that is not really operative except as window dressing.
+> the referenced DoD Directive 3000.09 basically says the DoD gets to decide when autonomous weapons systems are deployable.
+> as others have covered, there are a ton of mass domestic surveillance loopholes not covered by the 4A, national security act, FISA, etc.
+
+---
+
