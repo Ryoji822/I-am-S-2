@@ -133,3 +133,21 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**19:23 JST** | [原文](https://x.com/EthanJPerez/status/2027898954009243847)
+
+> RT Matthew Honnibal
+> Discussion of whether OpenAI got the terms Anthropic asked for is beside the point.
+> It's absurd for @sama to agree _anything_ with the DoW while it's threatening to shut Anthropic down because Anthropic dares to assert a redline.
+> If that happens DoW can just do the same to OpenAI
+
+---
+
+**10:46 JST** | [原文](https://x.com/EthanJPerez/status/2027898329364054025)
+
+> RT Charles Curran
+> Marco Rubio finding out he has to run Anthropic now too.
+
+---
+

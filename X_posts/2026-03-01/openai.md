@@ -62,3 +62,16 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**09:05 JST** | [原文](https://x.com/jasonkwon/status/2027901571930157153)
+
+> RT Dean W. Ball
+> When it comes to all these contract terms and disputes about them:
+> 
+> I really don’t know. There may be a deal to be had there, and I put a high value on putting an end to this madness. But to know whether the deal is worth taking would require serious conversations with highly specialized lawyers, and essentially no one commenting on these issues has really done that (Alan rozenshtein exempted). I am not one of those lawyers, and this is not an area of the law I’ve spent a long time dabbling in (unlike say first amendment jurisprudence, where I’d be much more inclined to weigh in on legal matters despite not being a lawyer).
+> 
+> But in the end I feel this is all a distraction. The question here is pretty simple: should the United States government be able to use policy to destroy a law-abiding American company because it feels like it? My answer is no, and yours should be too. The rest is noise.
+
+---
+

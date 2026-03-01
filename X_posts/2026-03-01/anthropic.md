@@ -60,3 +60,28 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**07:40 JST** | [原文](https://x.com/EthanJPerez/status/2027897201595404394)
+
+> RT Nate Silver
+> The eagerness for OpenAI to sign the contract on the very night their rival got fired is likely to be a lot more revealing than the contract terms, which in any event are ambiguous and unlikely to be enforced by a court that gives a lot of deference to the executive.
+
+---
+
+**02:33 JST** | [原文](https://x.com/EthanJPerez/status/2027897581968437650)
+
+> RT Ben Springwater
+> Sam Altman posted three identical copies of his announcement to dilute the reactions.
+> 
+> As of now, they have 18M, 8.8M, and 5.9M views respectively.
+
+---
+
+**00:27 JST** | [原文](https://x.com/EthanJPerez/status/2027897518156316880)
+
+> RT Nate Silver
+> One also wonders how much talent OpenAI might lose from all of this and if talent is underrated relative to capital. Anthropic had already been catching up valuation wise and Claude was increasingly considered the #1 LLM by influential users.
+
+---
+
