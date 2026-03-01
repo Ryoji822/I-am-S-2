@@ -75,3 +75,62 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**07:01 JST** | [原文](https://x.com/kevinweil/status/2027933644502012077)
+
+> RT Joshua Achiam
+> A firm commitment to the principle that AGI companies have to devolve power to democracies and avoid unduly concentrating power in themselves, even when that leads to uncomfortable places, is something I will not regret.
+> 
+> Jeremy Howard: @jachiam0 Not sure you'll ever live this down, Joshua.
+
+---
+
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**10:24 JST** | [原文](https://x.com/jasonkwon/status/2027931165802504474)
+
+> RT Sam Altman
+> Re Enforcing the SCR designation on Anthropic would be very bad for our industry and our country, and obviously their company.
+> 
+> We said to the DoW before and after. We said that part of the reason we were willing to do this quickly was in the hopes of de-esclation.
+> 
+> I feel competitive with Anthropic for sure, but successfully building safe superintelligence and widely sharing the benefits is way more important that any company competition. I believe they would do something to try to help us in the face of great injustice if we could.
+> 
+> We should all care very much about the precedent.
+> 
+> I saw in some other tweet that I must not be willing to criticize the DoW (it said something about sucking their dick too hard to be able to say anything critical, but I assume this was the intent).
+> 
+> To say it very clearly: I think this is a very bad decision from the DoW and I hope they reverse it. If we take heat for strongly criticizing it, so be it.
+
+---
+
+**09:53 JST** | [原文](https://x.com/jasonkwon/status/2027930931378720936)
+
+> RT NatSecKatrina
+> Re I would gently push back on the underlying premise that if the government agrees to a usage policy restriction, that's ironclad, but if it's just a law or policy, that's no guarantee at all.  Why would Anthropic think that their earlier usage policy forbidding surveillance was sufficient to guarantee their models could not be used for this?  
+> 
+> My main argument is that usage policies are only one part of a layered set of safeguards.  Here's how I think about this:
+> 
+> 1. The safety stack travels with the model. The Department was not asking us to modify how our models behave. Their position was, build the model however you want, refuse whatever requests you want, just don't try to govern our operational decisions through usage policies. For whatever risk surface area remains, our safety stack, refusal policies, and guardrails become another protection. And those technical controls are often more reliable than contract clauses anyway. Our contract gives us control over the models and safety stack we deploy, and the ability to improve them over time.
+> 
+> 2. AI experts directly involved. Instead of hoping contract language will be enough, our contract allows us to embed forward deployed engineers, commits to giving us visibility into how models are being used, and we have the ability to iterate on safety safeguards over time. If our team sees that our models aren't refusing queries they should, or there's more operational risk than we expected, our contract allows u...(truncated)
+
+---
+
+**09:46 JST** | [原文](https://x.com/jasonkwon/status/2027931915718955232)
+
+> RT NatSecKatrina
+> Re Anthropic has primarily been concerned with usage policies, which is because their existing classified deployments involve reduced or removed safety guardrails (making usage policies the primary safeguards in national security deployments). Usage policies, on their own, are not a guarantee of anything.  Any responsible deployment of AI in classified environments should involve layered safeguards including a prudent safety stack, limits on deployment architecture, and the direct involvement of AI experts in consequential AI use cases.  That's what we pursued in our negotiations and that's why we think the deal we made has more guardrails than any previous agreement for classified AI deployments, including Anthropic's.
+
+---
+
+## @polynoamial (Noam Brown - 研究者)
+
+**09:46 JST** | [原文](https://x.com/polynoamial/status/2027926465661309026)
+
+> RT NatSecKatrina
+> Re Anthropic has primarily been concerned with usage policies, which is because their existing classified deployments involve reduced or removed safety guardrails (making usage policies the primary safeguards in national security deployments). Usage policies, on their own, are not a guarantee of anything.  Any responsible deployment of AI in classified environments should involve layered safeguards including a prudent safety stack, limits on deployment architecture, and the direct involvement of AI experts in consequential AI use cases.  That's what we pursued in our negotiations and that's why we think the deal we made has more guardrails than any previous agreement for classified AI deployments, including Anthropic's.
+
+---
+
