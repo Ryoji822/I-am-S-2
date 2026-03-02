@@ -1,7 +1,7 @@
 {
-  "version": "2.9",
-  "last_updated": "2026-03-01",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v2.9: Arbiter統合判断反映。SCN-001 +1%、SCN-002 -1%、SCN-003 ±0%、SCN-004 ±0%（正規化）",
+  "version": "3.0",
+  "last_updated": "2026-03-02",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.0: Arbiter統合判断反映。本日新規の決定的証拠なしのため確率変更なし",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-03-01",
+    "verified_date": "2026-03-02",
     "note": "SCN-001(26) + SCN-002(37) + SCN-003(19) + SCN-004(18) = 100%"
   }
 }

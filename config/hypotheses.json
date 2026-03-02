@@ -1,6 +1,6 @@
 {
-  "version": "2.9",
-  "last_updated": "2026-03-01",
+  "version": "3.0",
+  "last_updated": "2026-03-02",
   "structural_changes_log": [
     "2026-02-23 v2.0: H-OAI-002再定義、H-OAI-003 active復帰、H-ANT-002再定義、H-XAI価格訂正、H-GOO-001反証追加、H-BTD品質検証正確化",
     "2026-02-23 v2.1: 全active仮説にinconsistent_evidence追加（確証バイアス防止）",
@@ -12,7 +12,8 @@
     "2026-02-28 v2.6: Arbiter統合判断反映。H-CAR-001 -3%（根拠を「組織成熟度問題」に修正）、H-OAI-001 -2%→-1%抑制（INFO-018 C-3過信是正）、H-GOO-001/002/003 ±0%（確証バイアス警告と上昇の矛盾解消）、H-ANT-001 +2%、H-ANT-002 +1%、H-ANT-003 -1%、H-OAI-002 -1%、H-OAI-003 +1%、H-XAI-001/002各+1%、H-BTD-001 +2%、H-BTD-002 +1%、H-CAR-002 +1%",
     "2026-03-01 v2.7: Arbiter統合判断反映。H-OAI-001 +1%（Red指摘で+3%抑制）、H-OAI-002 +1%（同）、H-OAI-003 -3%、H-ANT-001 +2%、H-ANT-002 +2%、H-ANT-003 -2%、H-GOO-001/002/003 ±0%（確証バイアス警告）、H-XAI-001/002各+1%、H-BTD-001 +2%（Red指摘で+5%抑制）、H-BTD-002 +2%、H-BTD-003 +1%、H-CAR-001 -3%（Red指摘で-4%抑制）、H-CAR-002 +1%、H-CAR-003 +1%",
     "2026-03-01 v2.8: H-GOV-001新設（政府経済的圧力→AI安全性萎縮効果、55%）。cross_companyカテゴリ新設。H-ANT-001注記更新（SCR指定の両義性: 政府市場喪失 vs 消費者ブランド価値上昇）。IND-023 high昇格に連動",
-    "2026-03-01 v2.9: Arbiter統合判断反映。H-ANT-001 -4%（74%→70%、SCR指定市場規模非対称性考慮）、H-GOV-001 +3%（55%→58%、因果飛躍リスクで抑制）、H-GOO-001/002/003各-3%/-2%/-1%（確証バイアス警告反映）、H-OAI-001 +1%、H-OAI-002 ±0%、H-OAI-003 -2%、H-ANT-002 +1%、H-ANT-003 -3%、H-BTD-001 +2%、H-BTD-002 +1%、H-BTD-003 +1%、H-CAR-001 -3%、H-CAR-002 +1%、H-CAR-003 +1%"
+    "2026-03-01 v2.9: Arbiter統合判断反映。H-ANT-001 -4%（74%→70%、SCR指定市場規模非対称性考慮）、H-GOV-001 +3%（55%→58%、因果飛躍リスクで抑制）、H-GOO-001/002/003各-3%/-2%/-1%（確証バイアス警告反映）、H-OAI-001 +1%、H-OAI-002 ±0%、H-OAI-003 -2%、H-ANT-002 +1%、H-ANT-003 -3%、H-BTD-001 +2%、H-BTD-002 +1%、H-BTD-003 +1%、H-CAR-001 -3%、H-CAR-002 +1%、H-CAR-003 +1%",
+    "2026-03-02 v3.0: Arbiter統合判断反映。H-ANT-001 -2%（70%→68%、市場規模非対称性重視）、H-CAR-001 -5%（39%→34%、技術的限界可能性採用）、H-GOO-001/002各-2%（57%→55%、確証バイアス警告反映）、H-GOO-003 -1%（58%→57%）、H-BTD-001 -1%（62%→61%、春節ピーク不確実性）、H-GOV-001 ±0%（条件3未達注記追加）"
   ],
   "hypotheses": {
     "openai": [
@@ -90,7 +91,7 @@
         "confidence_percentage": 58,
         "consistent_evidence": ["INFO-048", "INFO-086", "INFO-093", "INFO-097"],
         "inconsistent_evidence": ["INFO-128"],
-        "rationale": "Arbiter v2.9: 構造的パターン成立だが因果飛躍リスクで+5%→+3%に抑制（55%→58%）。Sam Altman「SCR指定解除支持」（INFO-128）が「漁夫の利」説を弱める反証として機能。条件1・2達成（経済的制裁+漁夫の利）、条件3（他社萎縮効果）未確認だが構造成立済み",
+        "rationale": "Arbiter v3.0: ±0%維持（58%）。構造的パターン成立だが因果飛躍リスク存在。条件1・2達成（経済的制裁+漁夫の利）。条件3（他社萎縮効果）未確認—明示的後退は未確認だが潜在的構造成立済み。条件3の顕在化を高優先監視。Sam Altman「SCR指定解除支持」（INFO-128）が「漁夫の利」説を弱める反証",
         "confirming_indicators": [
           "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
           "AI安全性研究への民間投資の減少",
@@ -112,10 +113,10 @@
         "statement": "Anthropicは安全性を差別化要因として、規制準拠が求められるエンタープライズ市場で優位に立つ",
         "status": "active",
         "confidence": "high",
-        "confidence_percentage": 70,
+        "confidence_percentage": 68,
         "consistent_evidence": ["INFO-003", "INFO-006", "INFO-017", "INFO-027", "INFO-001", "INFO-002", "INFO-011", "INFO-047", "INFO-052", "INFO-019", "INFO-016", "INFO-086", "INFO-093"],
         "inconsistent_evidence": ["INFO-022", "INFO-048"],
-        "rationale": "Arbiter v2.9: SCR指定の市場規模非対称性（政府$100B+ vs 消費者$10B）を考慮し-4%（74%→70%）。Red指摘（致命的打撃可能性）部分採用で-6%→-4%に抑制。仮説定義「規制準拠エンタープライズ市場」に政府市場含むか解釈分岐点として記録。Nate Silver「#1 LLM by influential users」は消費者ブランド価値上昇を示すが市場規模非対称性を考慮",
+        "rationale": "Arbiter v3.0: 市場規模非対称性（政府$100-150B vs 消費者$10-15B）重視で更に-2%（70%→68%）。Red指摘（致命的打撃可能性）部分採用。消費者・民間エンタープライズ市場での安全性価値維持の可能性も考慮し過度な引き下げ抑制。仮説定義「規制準拠エンタープライズ市場」に政府市場含むか解釈分岐点として記録",
         "confirming_indicators": [
           "安全性関連の認証取得",
           "政府・金融機関との契約",
@@ -179,10 +180,10 @@
         "statement": "GoogleはGeminiを検索・広告・Workspace等に深く統合し、Googleプロダクトのデータ自体をロックインとして全サービス横断でAgent機能を展開する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 57,
+        "confidence_percentage": 55,
         "consistent_evidence": ["INFO-007", "INFO-008", "INFO-028", "INFO-030", "INFO-032", "INFO-034", "INFO-038", "INFO-051", "INFO-094", "INFO-006", "INFO-022", "INFO-080", "INFO-013", "INFO-056", "INFO-005", "INFO-011", "INFO-066"],
         "inconsistent_evidence": ["INFO-120", "INFO-121", "INFO-122", "INFO-123", "INFO-058"],
-        "rationale": "Arbiter v2.9: 確証バイアス警告発出しながら±0%維持は矛盾。Red指摘採用で-3%。欧州出版社訴訟リスク過小評価の可能性",
+        "rationale": "Arbiter v3.0: 確証バイアス警告と±0%維持の矛盾解消で-2%（57%→55%）。全証拠Cで診断的価値低。欧州出版社訴訟リスク過小評価の可能性",
         "confirming_indicators": [
           "GoogleプロダクトへのGemini統合発表",
           "Workspace AI機能の拡充",
@@ -200,10 +201,10 @@
         "statement": "GoogleはVertex AI + Geminiの組み合わせでクラウドAIプラットフォーム市場でAWSを追い上げる",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 57,
+        "confidence_percentage": 55,
         "consistent_evidence": ["INFO-036", "INFO-040", "INFO-017", "INFO-059", "INFO-090", "INFO-007", "INFO-006", "INFO-022", "INFO-012", "INFO-013", "INFO-009", "INFO-010", "INFO-011", "INFO-066"],
         "inconsistent_evidence": ["INFO-122"],
-        "rationale": "Arbiter v2.9: 全証拠Cで診断的価値低。確証バイアス警告反映で-2%",
+        "rationale": "Arbiter v3.0: 全証拠Cで診断的価値低。確証バイアス警告反映で更に-2%（57%→55%）",
         "confirming_indicators": [
           "GCPのAI関連収益成長率がAWSを上回る",
           "大型エンタープライズ契約の獲得",
@@ -221,10 +222,10 @@
         "statement": "Google DeepMindは科学研究分野でのブレークスルーを通じて、AI応用の新カテゴリーを創出する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 58,
+        "confidence_percentage": 57,
         "consistent_evidence": ["INFO-020", "INFO-028", "INFO-030", "INFO-051", "INFO-094", "INFO-007", "INFO-022", "INFO-080", "INFO-053", "INFO-066"],
         "inconsistent_evidence": ["INFO-121"],
-        "rationale": "Arbiter v2.9: 新規科学的ブレークスルーなし。確証バイアス警告反映で-1%",
+        "rationale": "Arbiter v3.0: 新規科学的ブレークスルーなし。確証バイアス警告反映で-1%（58%→57%）",
         "confirming_indicators": [
           "新たな科学的ブレークスルーの発表",
           "研究成果の商用化発表",
@@ -309,10 +310,10 @@
         "statement": "ByteDanceはCoze/Doubaoプラットフォームで中国Agent市場を支配し、次いで東南アジア・グローバル展開する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 62,
+        "confidence_percentage": 61,
         "consistent_evidence": ["INFO-010", "INFO-011", "INFO-012", "INFO-073", "INFO-075", "INFO-028", "INFO-087", "INFO-089", "INFO-090"],
         "inconsistent_evidence": ["INFO-017"],
-        "rationale": "Arbiter v2.9: 豆包DAU 1.45億（春節ピーク INFO-089）で中国市場支配再確認。Blue +2%採用（春節過大評価リスク考慮済み）",
+        "rationale": "Arbiter v3.0: 豆包DAU 1.45億（春節ピーク INFO-089）は強力だが、春節ピーク・自己報告の不確実性反映で-1%（62%→61%）。海外展開進捗不明",
         "confirming_indicators": [
           "Cozeプラットフォームの利用者数急増",
           "海外版Cozeの正式ローンチ",
@@ -374,10 +375,10 @@
         "statement": "広告運用・CS等の先行領域でAI業務自律化は2027年末までに80%以上の定型業務を代替し、エントリーレベル職の大幅な再編が起きる",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 39,
+        "confidence_percentage": 34,
         "consistent_evidence": ["INFO-014", "INFO-015", "INFO-049", "INFO-061", "INFO-074", "INFO-114", "INFO-012", "INFO-013", "INFO-048", "INFO-077"],
         "inconsistent_evidence": ["INFO-075", "INFO-077", "INFO-078", "INFO-049", "INFO-051", "INFO-022", "INFO-040", "INFO-041", "INFO-043", "INFO-009", "INFO-019", "INFO-042", "INFO-055", "INFO-056"],
-        "rationale": "Arbiter v2.7: Klarna/Duolingo AI置換撤回（INFO-056）・ROI正6%（INFO-042）・初回成功率25%（INFO-055）が強い反証。Red指摘（過度な一般化リスク）採用で-4%→-3%に抑制。原因は「技術欠陥」ではなく「組織成熟度・プロセス設計不足」。改善可能な構造的問題と改善困難な構造的制約の両可能性を記録",
+        "rationale": "Arbiter v3.0: Klarna/Duolingo撤回（INFO-056）・ROI正6%（INFO-042）・初回成功率25%（INFO-055）が強い反証。Red指摘（技術的限界可能性、ROI定義未確認）採用で-5%（39%→34%）。KIQ-RED-005（ROI定義詳細）収集後に再評価必要",
         "confirming_indicators": [
           "企業のAI業務自律化目標の達成報告",
           "エントリーレベル求人の前年比20%以上減少",

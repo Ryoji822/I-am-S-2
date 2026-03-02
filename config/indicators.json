@@ -1,7 +1,7 @@
 {
-  "version": "2.9",
-  "last_updated": "2026-03-01",
-  "description": "I&W（Indications and Warning）指標レジストリ。v2.9: Arbiter統合判断反映。IND-023 high確定（条件3未達注記付き）。IND-003/001/011等更新",
+  "version": "3.0",
+  "last_updated": "2026-03-02",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.0: Arbiter統合判断反映。IND-023条件3未達注記追加",
   "structural_changes_log": [
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
     "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
@@ -14,7 +14,8 @@
     "2026-02-27 v2.5: Arbiter統合判断反映。IND-015 elevated維持（Red指摘採用: 買収≠確立、KIQ-RED-006収集後に再評価）、IND-001 high維持（Nano Banana 2 Image Arena #1）",
     "2026-03-01 v2.7: Arbiter統合判断反映。IND-003 high維持（Red指摘: 分母不確実性でcritical見送り）、IND-001/006/008/009/011/015/017/018/019/022/023/024更新",
     "2026-03-01 v2.8: IND-023 elevated→high昇格。名称変更「AI規制・データ主権」→「政府によるAI開発方向性への強制力行使」。条件分解追加（4条件中2達成: 経済的制裁実施+漁夫の利構造成立）。Anthropic SCR指定事件が従来想定（規制・アンチトラスト）を超える質的変化を示したため",
-    "2026-03-01 v2.9: Arbiter統合判断反映。IND-023 high確定（条件3未達注記付き）。IND-003 high維持（OECD分母改善、critical見送り）。IND-001/011更新"
+    "2026-03-01 v2.9: Arbiter統合判断反映。IND-023 high確定（条件3未達注記付き）。IND-003 high維持（OECD分母改善、critical見送り）。IND-001/011更新",
+    "2026-03-02 v3.0: Arbiter統合判断反映。IND-023条件3未達注記明確化（他社の安全性方針後退を高優先監視）"
   ],
   "indicators": [
     {
@@ -377,11 +378,11 @@
       ],
       "conditions_met_count": "2/4（条件1・2達成）",
       "status": "high",
-      "last_checked": "2026-03-01",
+      "last_checked": "2026-03-02",
       "last_value": "条件1達成（Anthropic SCR指定・連邦使用禁止）。条件2達成（OpenAI同日夜にDoW契約獲得）。条件3未達（明示的萎縮効果は未確認だが構造成立済み）。条件4未達（EU AI法施行前）。2条件達成でhigh",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "v2.9 Arbiter: high昇格確定。条件1・2達成（経済的制裁+漁夫の利）。条件3（他社の安全性方針後退）未確認だが構造成立済み。条件3未達を明示注記"
+      "rationale": "v3.0 Arbiter: high維持。条件1・2達成（経済的制裁+漁夫の利）。条件3（他社の安全性方針後退）未確認—明示的後退は未確認だが潜在的構造成立済み。条件3の顕在化を高優先監視（Google/xAI等の安全性方針変化を注視）"
     },
     {
       "indicator_id": "IND-024",
