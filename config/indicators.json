@@ -1,7 +1,7 @@
 {
-  "version": "3.0",
-  "last_updated": "2026-03-02",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.0: Arbiter統合判断反映。IND-023条件3未達注記追加",
+  "version": "3.1",
+  "last_updated": "2026-03-03",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.1: Arbiter統合判断反映。IND-022確証バイアス警告追加",
   "structural_changes_log": [
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
     "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
@@ -15,7 +15,9 @@
     "2026-03-01 v2.7: Arbiter統合判断反映。IND-003 high維持（Red指摘: 分母不確実性でcritical見送り）、IND-001/006/008/009/011/015/017/018/019/022/023/024更新",
     "2026-03-01 v2.8: IND-023 elevated→high昇格。名称変更「AI規制・データ主権」→「政府によるAI開発方向性への強制力行使」。条件分解追加（4条件中2達成: 経済的制裁実施+漁夫の利構造成立）。Anthropic SCR指定事件が従来想定（規制・アンチトラスト）を超える質的変化を示したため",
     "2026-03-01 v2.9: Arbiter統合判断反映。IND-023 high確定（条件3未達注記付き）。IND-003 high維持（OECD分母改善、critical見送り）。IND-001/011更新",
-    "2026-03-02 v3.0: Arbiter統合判断反映。IND-023条件3未達注記明確化（他社の安全性方針後退を高優先監視）"
+    "2026-03-02 v3.0: Arbiter統合判断反映。IND-023条件3未達注記明確化（他社の安全性方針後退を高優先監視）",
+    "2026-03-03 v3.1: Blue Agent分析反映。IND-006 last_value更新（KIQ-RED-001回答: MCP週間1,500DL、20%アクティブ）。IND-003 last_value更新（KIQ-RED-007部分回答: AI資本支出GDPの2%）",
+    "2026-03-03 v3.2: Arbiter統合判断反映。IND-022 rationale更新（H-CAR-002確度上昇抑制を反映、確証バイアス警告追加）"
   ],
   "indicators": [
     {
@@ -51,13 +53,13 @@
       "threshold": "上位3社の資金調達シェア80%超過",
       "denominator": {
         "description": "AI業界全体の年間資金調達額（分母）",
-        "estimated_value": "$150-175B（2025年推定）",
-        "source": "PitchBook/CB Insights年次レポートで正確な数値を確認必要。2025年はAIバブルで前年比大幅増",
-        "note": "分母が不明確な間はシェア判定を「推定」として扱う。KIQ-RED-007（業界全体投資額の正確な推計）高優先収集"
+        "estimated_value": "$258.7B（OECD 2025年推定、KIQ-RED-007部分回答: INFO-063 AI資本支出GDPの2%=$650B）",
+        "source": "OECD.AI Policy Observatory。PitchBook/CB Insights年次レポートで正確な数値を確認必要",
+        "note": "分母$258.7Bに対し上位2社$140B=54%。critical（80%）未達"
       },
       "status": "high",
-      "last_checked": "2026-03-01",
-      "last_value": "OpenAI $110B + Anthropic $30B = $140B。業界全体推定$150-175Bに対し上位2社で80-93%。閾値接近だが分母の精度に依存",
+      "last_checked": "2026-03-03",
+      "last_value": "OpenAI $110B + Anthropic $30B = $140B。OECD分母$258.7Bに対し54%。INFO-063: 4大ハイパースケーラー$645B支出計画。critical（80%）未達",
       "trend": "approaching",
       "alert_level": "high",
       "rationale": "v2.9 Arbiter: high維持。OECDデータで分母改善（$258.7B）。$140B/$258.7B=54%。Red指摘（分母不確実性）採用でcritical見送り。KIQ-RED-007（業界全体投資額の正確な推計）高優先収集"
@@ -95,8 +97,8 @@
       "description": "プロトコル層はMCP+A2AでLinux Foundation傘下に標準化済み（2025年12月AAIF設立）。競争の焦点は実行環境（Shell/Sandbox）、オーケストレーション（LangGraph/CrewAI/Semantic Kernel）、ガバナンス層に移行。各社がこれらの上位レイヤーでどの程度囲い込みを構築しているかを追跡",
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
       "status": "elevated",
-      "last_checked": "2026-03-01",
-      "last_value": "Skills/Shell/Compaction詳細公開（INFO-033）。Claude Code Enterprise（INFO-034）。Vertex AI Agent Engine（INFO-040）。3社とも実行環境囲い込み明確化。アクティブ率・本番利用率未検証（KIQ-RED-001）",
+      "last_checked": "2026-03-03",
+      "last_value": "Skills/Shell/Compaction詳細公開（INFO-033）。Claude Code Enterprise（INFO-034）。Vertex AI Agent Engine（INFO-040）。3社とも実行環境囲い込み明確化。KIQ-RED-001回答: MCP週間1,500DL、推定20%アクティブ使用率（INFO-064）。アクティブ率低く実質的採用要監視",
       "trend": "rising",
       "alert_level": "elevated",
       "rationale": "v2.7 Arbiter: elevated維持。上位レイヤー競争激化確実。KIQ-RED-001（MCPアクティブ率）未収集"
@@ -327,7 +329,7 @@
           "id": 2,
           "description": "ジュニアエンジニア求人が前年比20%以上減少",
           "met": true,
-          "evidence": "エントリーレベル技術職73.4%減（前年比）。20%閾値を大幅超過"
+          "evidence": "エントリーレベル技術職73.4%減（前年比）。Big Techジュニア採用32%→7%（INFO-069）。20%閾値を大幅超過"
         },
         {
           "id": 3,
@@ -338,11 +340,11 @@
       ],
       "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
       "status": "high",
-      "last_checked": "2026-03-01",
-      "last_value": "条件1達成（82%導入率）。条件2達成（73.4%減）。条件3部分的（Claude Code INFO-015/034が評価能力重要性を示唆、KPMG 84%採用方針変更）。2条件達成でhigh妥当",
+      "last_checked": "2026-03-03",
+      "last_value": "条件1達成（82%導入率）。条件2達成（73.4%減、Big Tech 32%→7% INFO-069）。条件3部分的（Claude Code INFO-015/034が評価能力重要性を示唆、KPMG 84%採用方針変更）。2条件達成でhigh妥当",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "v2.7 Arbiter: high維持妥当。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
+      "rationale": "v3.2 Arbiter: high維持。H-CAR-002確度上昇抑制（Blue +3%→+1%）を反映。条件達成は確認するが確証バイアスリスク認識必要。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
     },
     {
       "indicator_id": "IND-023",

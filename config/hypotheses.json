@@ -1,6 +1,6 @@
 {
-  "version": "3.0",
-  "last_updated": "2026-03-02",
+  "version": "3.2",
+  "last_updated": "2026-03-03",
   "structural_changes_log": [
     "2026-02-23 v2.0: H-OAI-002再定義、H-OAI-003 active復帰、H-ANT-002再定義、H-XAI価格訂正、H-GOO-001反証追加、H-BTD品質検証正確化",
     "2026-02-23 v2.1: 全active仮説にinconsistent_evidence追加（確証バイアス防止）",
@@ -13,7 +13,9 @@
     "2026-03-01 v2.7: Arbiter統合判断反映。H-OAI-001 +1%（Red指摘で+3%抑制）、H-OAI-002 +1%（同）、H-OAI-003 -3%、H-ANT-001 +2%、H-ANT-002 +2%、H-ANT-003 -2%、H-GOO-001/002/003 ±0%（確証バイアス警告）、H-XAI-001/002各+1%、H-BTD-001 +2%（Red指摘で+5%抑制）、H-BTD-002 +2%、H-BTD-003 +1%、H-CAR-001 -3%（Red指摘で-4%抑制）、H-CAR-002 +1%、H-CAR-003 +1%",
     "2026-03-01 v2.8: H-GOV-001新設（政府経済的圧力→AI安全性萎縮効果、55%）。cross_companyカテゴリ新設。H-ANT-001注記更新（SCR指定の両義性: 政府市場喪失 vs 消費者ブランド価値上昇）。IND-023 high昇格に連動",
     "2026-03-01 v2.9: Arbiter統合判断反映。H-ANT-001 -4%（74%→70%、SCR指定市場規模非対称性考慮）、H-GOV-001 +3%（55%→58%、因果飛躍リスクで抑制）、H-GOO-001/002/003各-3%/-2%/-1%（確証バイアス警告反映）、H-OAI-001 +1%、H-OAI-002 ±0%、H-OAI-003 -2%、H-ANT-002 +1%、H-ANT-003 -3%、H-BTD-001 +2%、H-BTD-002 +1%、H-BTD-003 +1%、H-CAR-001 -3%、H-CAR-002 +1%、H-CAR-003 +1%",
-    "2026-03-02 v3.0: Arbiter統合判断反映。H-ANT-001 -2%（70%→68%、市場規模非対称性重視）、H-CAR-001 -5%（39%→34%、技術的限界可能性採用）、H-GOO-001/002各-2%（57%→55%、確証バイアス警告反映）、H-GOO-003 -1%（58%→57%）、H-BTD-001 -1%（62%→61%、春節ピーク不確実性）、H-GOV-001 ±0%（条件3未達注記追加）"
+    "2026-03-02 v3.0: Arbiter統合判断反映。H-ANT-001 -2%（70%→68%、市場規模非対称性重視）、H-CAR-001 -5%（39%→34%、技術的限界可能性採用）、H-GOO-001/002各-2%（57%→55%、確証バイアス警告反映）、H-GOO-003 -1%（58%→57%）、H-BTD-001 -1%（62%→61%、春節ピーク不確実性）、H-GOV-001 ±0%（条件3未達注記追加）",
+    "2026-03-03 v3.1: Blue Agent分析反映。H-BTD-001 -3%（61%→58%、INFO-065 DAU回落28.8%）、H-CAR-001 -4%（34%→30%、Klarna撤回累積的反証）、H-CAR-002 +3%（63%→66%、INFO-069ジュニア採用73%減）、H-ANT-001 -2%（68%→66%、SCR指定重み追加）、H-OAI-001 +2%（61%→63%、$110B調達・Amazon提携）、H-GOV-001 ±0%（条件3未確認継続）",
+    "2026-03-03 v3.2: Arbiter統合判断反映。H-BTD-001 -2%（61%→59%、Blue -3%→-2%抑制・季節性指摘採用）、H-CAR-001 -3%（34%→31%、Blue -4%→-3%抑制・Klarna過重評価回避）、H-CAR-002 +1%（63%→64%、Blue +3%→+1%抑制・確証バイアス警告反映）、H-GOV-001 -2%（58%→56%、条件3未確認重み増）、H-ANT-001 -1%（66%→65%、Blue -2%→-1%微調整）、H-OAI-001 ±0%（63%→61%、因果飛躍リスク採用で+2%見送り）"
   ],
   "hypotheses": {
     "openai": [
@@ -24,9 +26,9 @@
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 61,
-        "consistent_evidence": ["INFO-001", "INFO-013", "INFO-018", "INFO-019", "INFO-021", "INFO-004", "INFO-026", "INFO-057", "INFO-029", "INFO-027", "INFO-012", "INFO-072", "INFO-025", "INFO-097"],
+        "consistent_evidence": ["INFO-001", "INFO-013", "INFO-018", "INFO-019", "INFO-021", "INFO-004", "INFO-026", "INFO-057", "INFO-029", "INFO-027", "INFO-012", "INFO-072", "INFO-025", "INFO-097", "INFO-047", "INFO-032"],
         "inconsistent_evidence": ["INFO-003", "INFO-018"],
-        "rationale": "Arbiter v2.9: $110B調達・Amazon提携・DoW契約がB2B戦略を支持。Blue +1%採用",
+        "rationale": "Arbiter v3.2: 因果飛躍リスク採用で±0%抑制（Blue +2%→±0%）。資金調達→B2B特化の因果未確立。KIQ-OPENAI-ALLOCATION収集必要",
         "confirming_indicators": [
           "エンタープライズ専用Agent APIの発表",
           "SOC2/FedRAMP認証の取得拡大",
@@ -88,10 +90,10 @@
         "statement": "政府が経済的手段（SCR指定・調達禁止・DPA脅迫）でAI企業の安全性姿勢を抑圧する先例が確立されたことで、AI業界全体に萎縮効果が生じ、安全性研究・倫理的差別化の戦略的価値が構造的に低下する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 58,
+        "confidence_percentage": 56,
         "consistent_evidence": ["INFO-048", "INFO-086", "INFO-093", "INFO-097"],
         "inconsistent_evidence": ["INFO-128"],
-        "rationale": "Arbiter v3.0: ±0%維持（58%）。構造的パターン成立だが因果飛躍リスク存在。条件1・2達成（経済的制裁+漁夫の利）。条件3（他社萎縮効果）未確認—明示的後退は未確認だが潜在的構造成立済み。条件3の顕在化を高優先監視。Sam Altman「SCR指定解除支持」（INFO-128）が「漁夫の利」説を弱める反証",
+        "rationale": "Arbiter v3.2: -2%（58%→56%）。条件3未確認の重みを増しアンカーリング打破。構造成立だが因果確立には条件3顕在化必須",
         "confirming_indicators": [
           "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
           "AI安全性研究への民間投資の減少",
@@ -113,10 +115,10 @@
         "statement": "Anthropicは安全性を差別化要因として、規制準拠が求められるエンタープライズ市場で優位に立つ",
         "status": "active",
         "confidence": "high",
-        "confidence_percentage": 68,
-        "consistent_evidence": ["INFO-003", "INFO-006", "INFO-017", "INFO-027", "INFO-001", "INFO-002", "INFO-011", "INFO-047", "INFO-052", "INFO-019", "INFO-016", "INFO-086", "INFO-093"],
+        "confidence_percentage": 65,
+        "consistent_evidence": ["INFO-003", "INFO-006", "INFO-017", "INFO-027", "INFO-001", "INFO-002", "INFO-011", "INFO-047", "INFO-052", "INFO-019", "INFO-016", "INFO-086", "INFO-093", "INFO-004"],
         "inconsistent_evidence": ["INFO-022", "INFO-048"],
-        "rationale": "Arbiter v3.0: 市場規模非対称性（政府$100-150B vs 消費者$10-15B）重視で更に-2%（70%→68%）。Red指摘（致命的打撃可能性）部分採用。消費者・民間エンタープライズ市場での安全性価値維持の可能性も考慮し過度な引き下げ抑制。仮説定義「規制準拠エンタープライズ市場」に政府市場含むか解釈分岐点として記録",
+        "rationale": "Arbiter v3.2: -1%（66%→65%）。SCR指定重みは認めるが民間市場価値も考慮。KIQ-ANTHROPIC-MARKET収集必要",
         "confirming_indicators": [
           "安全性関連の認証取得",
           "政府・金融機関との契約",
@@ -310,10 +312,10 @@
         "statement": "ByteDanceはCoze/Doubaoプラットフォームで中国Agent市場を支配し、次いで東南アジア・グローバル展開する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 61,
-        "consistent_evidence": ["INFO-010", "INFO-011", "INFO-012", "INFO-073", "INFO-075", "INFO-028", "INFO-087", "INFO-089", "INFO-090"],
-        "inconsistent_evidence": ["INFO-017"],
-        "rationale": "Arbiter v3.0: 豆包DAU 1.45億（春節ピーク INFO-089）は強力だが、春節ピーク・自己報告の不確実性反映で-1%（62%→61%）。海外展開進捗不明",
+        "confidence_percentage": 59,
+        "consistent_evidence": ["INFO-010", "INFO-011", "INFO-012", "INFO-073", "INFO-075", "INFO-028", "INFO-087", "INFO-089", "INFO-090", "INFO-053"],
+        "inconsistent_evidence": ["INFO-017", "INFO-065"],
+        "rationale": "Arbiter v3.2: -2%（61%→59%）。DAU回落は診断的価値があるが、Redの季節性指摘採用でBlue -3%→-2%抑制。KIQ-BYTEDANCE-ENGAGEMENT高優先",
         "confirming_indicators": [
           "Cozeプラットフォームの利用者数急増",
           "海外版Cozeの正式ローンチ",
@@ -375,10 +377,10 @@
         "statement": "広告運用・CS等の先行領域でAI業務自律化は2027年末までに80%以上の定型業務を代替し、エントリーレベル職の大幅な再編が起きる",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 34,
-        "consistent_evidence": ["INFO-014", "INFO-015", "INFO-049", "INFO-061", "INFO-074", "INFO-114", "INFO-012", "INFO-013", "INFO-048", "INFO-077"],
+        "confidence_percentage": 31,
+        "consistent_evidence": ["INFO-014", "INFO-015", "INFO-049", "INFO-061", "INFO-074", "INFO-114", "INFO-012", "INFO-013", "INFO-048", "INFO-077", "INFO-068"],
         "inconsistent_evidence": ["INFO-075", "INFO-077", "INFO-078", "INFO-049", "INFO-051", "INFO-022", "INFO-040", "INFO-041", "INFO-043", "INFO-009", "INFO-019", "INFO-042", "INFO-055", "INFO-056"],
-        "rationale": "Arbiter v3.0: Klarna/Duolingo撤回（INFO-056）・ROI正6%（INFO-042）・初回成功率25%（INFO-055）が強い反証。Red指摘（技術的限界可能性、ROI定義未確認）採用で-5%（39%→34%）。KIQ-RED-005（ROI定義詳細）収集後に再評価必要",
+        "rationale": "Arbiter v3.2: -3%（34%→31%）。Klarna撤回は重要だが過重評価を避けBlue -4%→-3%抑制。KIQ-RED-005高優先",
         "confirming_indicators": [
           "企業のAI業務自律化目標の達成報告",
           "エントリーレベル求人の前年比20%以上減少",
@@ -396,10 +398,10 @@
         "statement": "コーディング能力の差別化価値は2年以内に「書ける」から「AIに書かせて評価・方向付けできる」メタスキルに不可逆的に移行する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 63,
-        "consistent_evidence": ["INFO-025", "INFO-114", "INFO-116", "INFO-011", "INFO-048", "INFO-077", "INFO-026", "INFO-016", "INFO-018", "INFO-078", "INFO-080"],
+        "confidence_percentage": 64,
+        "consistent_evidence": ["INFO-025", "INFO-114", "INFO-116", "INFO-011", "INFO-048", "INFO-077", "INFO-026", "INFO-016", "INFO-018", "INFO-078", "INFO-080", "INFO-069"],
         "inconsistent_evidence": ["INFO-077"],
-        "rationale": "Arbiter v2.9: KPMG 84%採用方針変更（INFO-078）が評価能力シフトを支持。Blue +1%採用",
+        "rationale": "Arbiter v3.2: +1%（63%→64%）。確証バイアス警告を反映しBlue +3%→+1%抑制。KIQ-CODE-QUALITY・KIQ-JUNIOR-CAUSE高優先",
         "confirming_indicators": [
           "AIコーディングツール企業導入率50%超",
           "求人要件の実装力→設計力シフト",
