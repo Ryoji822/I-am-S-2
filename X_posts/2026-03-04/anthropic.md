@@ -24,3 +24,16 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**06:02 JST** | [原文](https://x.com/EthanJPerez/status/2028945024550092906)
+
+> RT Max Schwarzer
+> I've decided to leave OpenAI. I'm incredibly proud of all the work I've been part of here, from helping create the reasoning paradigm with @MillionInt, scaling up test-time compute with @polynoamial, working on RL algorithms with my fellow strawberries, shipping o1-preview (which started life as of one of my derisking runs), to post-training o1 and o3 with @ericmitchellai, @yanndubs and many others. I'm most proud of having led the post-training team here for the last year -- the team has done incredible work and shipped some really smart models, including GPT-5, 5.1, 5.2, and 5.3-Codex. OpenAI has genuinely some of the most talented researchers I have ever met, and I have learned more than I could have imagined knowing since I joined as a new grad. 
+> 
+> I want to thank @markchen90  @FidjiSimo  @sama  @merettm for all their support over my time here, and too many collaborators to name for the insights, ideas, and just plain fun we have had working together. After leading post-training for a year, though, I'm longing to start fresh and return to IC research work. I've been thinking about going back to technical research for quite some time, and I genuinely believe my colleagues and team here are set up to succeed going forward without me.
+> 
+> I'm personally very excited for my next chapter -- I'm proud to be joining @AnthropicAI  to get back into the weeds in RL research, and I'm looking forward supporting my friends there at this important time. Many of people I mo...(truncated)
+
+---
+
