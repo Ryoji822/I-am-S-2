@@ -16,3 +16,13 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**03:30 JST** | [原文](https://x.com/joshwoodward/status/2028900917786100102)
+
+> Meet Flash-Lite: the really, really fast one
+> 
+> Logan Kilpatrick: Introducing Gemini 3.1 Flash-Lite 🔦, a huge step forward on the boundary of intelligence, beating 2.5 Flash on many tasks.
+
+---
+
