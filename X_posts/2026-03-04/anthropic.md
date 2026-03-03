@@ -37,3 +37,13 @@
 
 ---
 
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**07:45 JST** | [原文](https://x.com/sleepinyourhat/status/2028965007502000434)
+
+> Woo! Welcome!
+> 
+> Max Schwarzer: I've decided to leave OpenAI. I'm incredibly proud of all the work I've been part of here, from helping create the reasoning paradigm with @MillionInt, scaling up test-time compute with @polynoamial, working on RL algorithms with my fellow strawberries, shipping o1-preview (which
+
+---
+

@@ -17,3 +17,18 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**07:34 JST** | [原文](https://x.com/OpenAIDevs/status/2028962246618230808)
+
+> brb building a new app for @ChatGPTapp with this new Codex skill:
+> 
+> corey.ching: Shipped a new $chatgpt-apps skill — now available in the Codex app.
+> 
+> It’s purpose-built for building @ChatGPTapp apps with the Apps SDK: scaffold projects, wire tools to widget resources, and iterate toward polished, host-aware UI inside ChatGPT.
+> 
+> Especially useful for:
+> •
+
+---
+
