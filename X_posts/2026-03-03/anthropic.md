@@ -68,3 +68,25 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**13:25 JST** | [原文](https://x.com/EthanJPerez/status/2028691061913366814)
+
+> RT Nathan Calvin
+> Can't emphasize this enough - it is encouraging to see so many OAI employees care about this agreement with the Pentagon and want to get it right. It would also be great to see a similar level of interest and questions on the pernicious influence of OAI's Superpac LTF.
+> 
+> Miles Brundage: Besides the negotiation stuff,* the biggest thing OpenAI could do re: domestic mass surveillance is change its political approach: switch Super PACs (anti AI regulation to pro) + make clear that this needs to be covered in any federal framework.
+> 
+> *maybe more important than this
+
+---
+
+**13:17 JST** | [原文](https://x.com/EthanJPerez/status/2028690842450641194)
+
+> RT Miles Brundage
+> Besides the negotiation stuff,* the biggest thing OpenAI could do re: domestic mass surveillance is change its political approach: switch Super PACs (anti AI regulation to pro) + make clear that this needs to be covered in any federal framework.
+> 
+> *maybe more important than this
+
+---
+
