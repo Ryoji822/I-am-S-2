@@ -80,3 +80,21 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**08:00 JST** | [原文](https://x.com/EthanJPerez/status/2029050511819968591)
+
+> RT Veronica 💫
+> This profile of Chris Lehane in Transformer today is a must-read for anyone interested in AI policy, especially the political maneuvering that’s happening ahead of the November midterms. 
+> 
+> https://www.transformernews.ai/p/the-guerilla-warrior-who-taught-openai-chris-lehane
+
+---
+
+**02:14 JST** | [原文](https://x.com/EthanJPerez/status/2029052458098741334)
+
+> RT Shakeel
+> New on Transformer: @issielapowsky has written an excellent, deeply reported piece on Chris Lehane — the man who taught OpenAI how to fight.
+
+---
+
