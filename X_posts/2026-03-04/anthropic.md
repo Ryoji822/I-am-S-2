@@ -109,3 +109,18 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**08:42 JST** | [原文](https://x.com/EthanJPerez/status/2029107665503437032)
+
+> RT Rogue Nox
+> He totally flipped. 
+> 
+> "In an all-hands meetings with OpenAI employees on Tuesday, CEO Sam Altman said his company doesn’t get to choose how the military uses its technology."
+> 
+> #QuitGPT 
+> 
+> https://www.cnbc.com/2026/03/03/sam-altman-tells-openai-staff-operational-decisions-up-to-government.html
+
+---
+
