@@ -33,3 +33,22 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**14:38 JST** | [原文](https://x.com/OpenAIDevs/status/2029037174226862543)
+
+> RT Lena Hall
+> This is wild 🤯
+> 
+> My 5-year-old just built his FIRST GAME ever with Codex using only dictation mode.
+> 
+> He wanted a game where you type in a word and transform into any character you want to be ✨ so he dictated it to Codex.
+> 
+> Then he upgraded it to a game where that character jumps and collects coins.
+> 
+> Hello World to the youngest AI engineer ever❤️‍🔥 @OpenAI @OpenAIDevs 
+> 
+> Codex needs an interactive voice mode ASAP
+
+---
+
