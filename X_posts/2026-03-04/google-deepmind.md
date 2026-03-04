@@ -26,3 +26,23 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**06:39 JST** | [原文](https://x.com/JeffDean/status/2029210865027956824)
+
+> RT Arena.ai
+> Gemini-3.1-Flash-Lite-Preview by @GoogleDeepMind moves the Pareto frontier as one of the most efficient models in its tier ($0.25 in / $1.50 out per MTokens). 
+> 
+> As a family, Gemini-3.1 offers a clear cost-to-quality ladder, with both variants leading within their price bands.
+> 
+> - Gemini-3.1 Pro leads with models priced higher
+> - Gemini-3.1 Flash Lite leads in a lower cost band
+> - Older variant Gemini 3 Flash also sits on the frontier in between
+> 
+> Arena.ai: Gemini-3.1-Flash-Lite-Preview by @GoogleDeepMind is in Text and Code Arena! This is the most efficient Gemini 3.1 ($0.25 in / $1.5 out per MTokens) on the cost-performance frontier.
+> 
+> Highlights:
+> - ranks #36 in Text, scoring 1432, on par with Grok-4.1-fast, strong in Creative
+
+---
+
