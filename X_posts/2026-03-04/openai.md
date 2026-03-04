@@ -42,3 +42,12 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**13:31 JST** | [原文](https://x.com/kevinweil/status/2029065518762852489)
+
+> RT Mehtaab Sawhney
+> Last week in a beautiful preprint, Dmitrii Zakharov proved a bound for a two-family version of a word-overlap problem, but the first version left a constant factor gap of e. That gap was quickly improved by a mix of GPT-5.2 Pro and human collaborators. Even more recently, an internal OpenAI model obtained the asymptotically sharp bound. Dmitrii incorporated the argument into v2 of his paper https://arxiv.org/pdf/2602.20143; see his AI statement for more details.
+
+---
+

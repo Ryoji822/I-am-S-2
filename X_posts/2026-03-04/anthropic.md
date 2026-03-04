@@ -98,3 +98,14 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**09:47 JST** | [原文](https://x.com/EthanJPerez/status/2029061946100859215)
+
+> RT Michael Huang ⏸️
+> OpenAI has a new slogan
+> 
+> Shakeel: New on Transformer: @issielapowsky has written an excellent, deeply reported piece on Chris Lehane — the man who taught OpenAI how to fight.
+
+---
+
