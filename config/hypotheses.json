@@ -1,6 +1,6 @@
 {
-  "version": "3.2",
-  "last_updated": "2026-03-03",
+  "version": "3.3",
+  "last_updated": "2026-03-04",
   "structural_changes_log": [
     "2026-02-23 v2.0: H-OAI-002再定義、H-OAI-003 active復帰、H-ANT-002再定義、H-XAI価格訂正、H-GOO-001反証追加、H-BTD品質検証正確化",
     "2026-02-23 v2.1: 全active仮説にinconsistent_evidence追加（確証バイアス防止）",
@@ -15,7 +15,8 @@
     "2026-03-01 v2.9: Arbiter統合判断反映。H-ANT-001 -4%（74%→70%、SCR指定市場規模非対称性考慮）、H-GOV-001 +3%（55%→58%、因果飛躍リスクで抑制）、H-GOO-001/002/003各-3%/-2%/-1%（確証バイアス警告反映）、H-OAI-001 +1%、H-OAI-002 ±0%、H-OAI-003 -2%、H-ANT-002 +1%、H-ANT-003 -3%、H-BTD-001 +2%、H-BTD-002 +1%、H-BTD-003 +1%、H-CAR-001 -3%、H-CAR-002 +1%、H-CAR-003 +1%",
     "2026-03-02 v3.0: Arbiter統合判断反映。H-ANT-001 -2%（70%→68%、市場規模非対称性重視）、H-CAR-001 -5%（39%→34%、技術的限界可能性採用）、H-GOO-001/002各-2%（57%→55%、確証バイアス警告反映）、H-GOO-003 -1%（58%→57%）、H-BTD-001 -1%（62%→61%、春節ピーク不確実性）、H-GOV-001 ±0%（条件3未達注記追加）",
     "2026-03-03 v3.1: Blue Agent分析反映。H-BTD-001 -3%（61%→58%、INFO-065 DAU回落28.8%）、H-CAR-001 -4%（34%→30%、Klarna撤回累積的反証）、H-CAR-002 +3%（63%→66%、INFO-069ジュニア採用73%減）、H-ANT-001 -2%（68%→66%、SCR指定重み追加）、H-OAI-001 +2%（61%→63%、$110B調達・Amazon提携）、H-GOV-001 ±0%（条件3未確認継続）",
-    "2026-03-03 v3.2: Arbiter統合判断反映。H-BTD-001 -2%（61%→59%、Blue -3%→-2%抑制・季節性指摘採用）、H-CAR-001 -3%（34%→31%、Blue -4%→-3%抑制・Klarna過重評価回避）、H-CAR-002 +1%（63%→64%、Blue +3%→+1%抑制・確証バイアス警告反映）、H-GOV-001 -2%（58%→56%、条件3未確認重み増）、H-ANT-001 -1%（66%→65%、Blue -2%→-1%微調整）、H-OAI-001 ±0%（63%→61%、因果飛躍リスク採用で+2%見送り）"
+    "2026-03-03 v3.2: Arbiter統合判断反映。H-BTD-001 -2%（61%→59%、Blue -3%→-2%抑制・季節性指摘採用）、H-CAR-001 -3%（34%→31%、Blue -4%→-3%抑制・Klarna過重評価回避）、H-CAR-002 +1%（63%→64%、Blue +3%→+1%抑制・確証バイアス警告反映）、H-GOV-001 -2%（58%→56%、条件3未確認重み増）、H-ANT-001 -1%（66%→65%、Blue -2%→-1%微調整）、H-OAI-001 ±0%（63%→61%、因果飛躍リスク採用で+2%見送り）",
+    "2026-03-04 v3.3: Arbiter統合判断反映。H-ANT-002 -3%（81%→78%、Red指摘: 確証バイアスリスク高・市場シェアデータ不在を部分採用）、H-GOV-001 -2%（57%→55%、Red指摘: 相関≠因果・政治的文脈過小評価を反映）、H-OAI-003 +1%（12%→13%、Red指摘: 商業化とAGI排他でないを部分採用）、H-CAR-003 -1%（61%→60%、確証バイアス警告反映）、H-OAI-001 ±0%（Blue ±0%採用）、H-OAI-002 -1%（62%→62%、Blue -1%採用）、H-ANT-001 -1%（65%→64%、Blue -1%採用）、H-BTD-001 -1%（59%→58%、Blue -1%採用）、H-CAR-001 -1%（31%→30%、Blue -1%採用）、H-CAR-002 +1%（64%→65%、Blue +1%採用・確証バイアス警告強化）"
   ],
   "hypotheses": {
     "openai": [
@@ -28,7 +29,7 @@
         "confidence_percentage": 61,
         "consistent_evidence": ["INFO-001", "INFO-013", "INFO-018", "INFO-019", "INFO-021", "INFO-004", "INFO-026", "INFO-057", "INFO-029", "INFO-027", "INFO-012", "INFO-072", "INFO-025", "INFO-097", "INFO-047", "INFO-032"],
         "inconsistent_evidence": ["INFO-003", "INFO-018"],
-        "rationale": "Arbiter v3.2: 因果飛躍リスク採用で±0%抑制（Blue +2%→±0%）。資金調達→B2B特化の因果未確立。KIQ-OPENAI-ALLOCATION収集必要",
+        "rationale": "Arbiter v3.3: 因果飛躍リスク採用で±0%抑制（Blue ±0%採用）。資金調達→B2B特化の因果未確立。KIQ-OPENAI-ALLOCATION収集必要",
         "confirming_indicators": [
           "エンタープライズ専用Agent APIの発表",
           "SOC2/FedRAMP認証の取得拡大",
@@ -46,10 +47,10 @@
         "statement": "OpenAIはSkills/Shell/Compactionの独自実行環境でAgent開発者を囲い込み、MCP準拠の開放エコシステム上にプロプライエタリな上位レイヤーを構築する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 63,
+        "confidence_percentage": 62,
         "consistent_evidence": ["INFO-001", "INFO-019", "INFO-038", "INFO-102", "INFO-020", "INFO-026", "INFO-027", "INFO-057", "INFO-018", "INFO-004", "INFO-012", "INFO-033"],
         "inconsistent_evidence": ["INFO-006", "INFO-018"],
-        "rationale": "Arbiter v2.7: Skills/Shell/Compaction詳細は囲い込み支持。Red指摘（Amazon提携は囲い込みの逆の可能性）採用で+1%に抑制",
+        "rationale": "Arbiter v3.3: -1%（63%→62%）。Amazon提携が囲い込みと矛盾する可能性を反映（Blue -1%採用）。Skills/Shell囲い込みは継続",
         "confirming_indicators": [
           "Skills/Shell利用開発者数の増加",
           "OpenClawマーケットプレイスのスキル数・取引額増加",
@@ -67,10 +68,10 @@
         "statement": "OpenAIはAGI/スーパーインテリジェンス達成を最優先目標とし、商業化と並行して研究開発に大規模資源を投入する",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 15,
+        "confidence_percentage": 13,
         "consistent_evidence": ["INFO-044", "INFO-081", "INFO-058", "INFO-028", "INFO-013"],
         "inconsistent_evidence": ["INFO-001", "INFO-013", "INFO-019", "INFO-021", "INFO-020", "INFO-026", "INFO-027", "INFO-057", "INFO-018", "INFO-072", "INFO-025", "INFO-097"],
-        "rationale": "Arbiter v2.9: $110B調達・エンタープライズ収益急増・DoW協力はAGI優先と矛盾。-2%",
+        "rationale": "Arbiter v3.3: +1%（12%→13%）。Red指摘（商業化とAGI排他でない）を部分採用。ただし依然として低確度",
         "confirming_indicators": [
           "研究チームへの大規模投資発表",
           "AGI/ASIタイムライン予測の前倒し",
@@ -90,10 +91,10 @@
         "statement": "政府が経済的手段（SCR指定・調達禁止・DPA脅迫）でAI企業の安全性姿勢を抑圧する先例が確立されたことで、AI業界全体に萎縮効果が生じ、安全性研究・倫理的差別化の戦略的価値が構造的に低下する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 56,
+        "confidence_percentage": 55,
         "consistent_evidence": ["INFO-048", "INFO-086", "INFO-093", "INFO-097"],
         "inconsistent_evidence": ["INFO-128"],
-        "rationale": "Arbiter v3.2: -2%（58%→56%）。条件3未確認の重みを増しアンカーリング打破。構造成立だが因果確立には条件3顕在化必須",
+        "rationale": "Arbiter v3.3: -2%（57%→55%）。Red指摘（相関≠因果、政治的文脈過小評価）を反映。条件3未確認継続",
         "confirming_indicators": [
           "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
           "AI安全性研究への民間投資の減少",
@@ -118,7 +119,7 @@
         "confidence_percentage": 65,
         "consistent_evidence": ["INFO-003", "INFO-006", "INFO-017", "INFO-027", "INFO-001", "INFO-002", "INFO-011", "INFO-047", "INFO-052", "INFO-019", "INFO-016", "INFO-086", "INFO-093", "INFO-004"],
         "inconsistent_evidence": ["INFO-022", "INFO-048"],
-        "rationale": "Arbiter v3.2: -1%（66%→65%）。SCR指定重みは認めるが民間市場価値も考慮。KIQ-ANTHROPIC-MARKET収集必要",
+        "rationale": "Arbiter v3.3: -1%（65%→64%）。SCR指定重みは認めるが民間市場価値も考慮（Blue -1%採用）。KIQ-ANTHROPIC-MARKET収集必要",
         "confirming_indicators": [
           "安全性関連の認証取得",
           "政府・金融機関との契約",
@@ -138,10 +139,10 @@
         "statement": "Anthropicは開発者ツールエコシステム（Claude Code + Bun + Agent SDK）で開発者ワークフローを獲得し、実行環境レイヤーで差別化する",
         "status": "active",
         "confidence": "high",
-        "confidence_percentage": 80,
+        "confidence_percentage": 78,
         "consistent_evidence": ["INFO-006", "INFO-018", "INFO-024", "INFO-035", "INFO-001", "INFO-002", "INFO-005", "INFO-052", "INFO-008", "INFO-007", "INFO-026", "INFO-027", "INFO-034"],
         "inconsistent_evidence": ["INFO-025"],
-        "rationale": "Arbiter v2.9: Vercept買収・開発者評価が支持。Blue +1%採用",
+        "rationale": "Arbiter v3.3: -3%（81%→78%）。Red指摘（確証バイアスリスク高、市場シェアデータ不在）を部分採用。Claude Code・Agent SDK採用率収集必要",
         "confirming_indicators": [
           "Claude Code利用者数・ARR成長",
           "Agent SDKの外部開発者採用率",
@@ -315,7 +316,7 @@
         "confidence_percentage": 59,
         "consistent_evidence": ["INFO-010", "INFO-011", "INFO-012", "INFO-073", "INFO-075", "INFO-028", "INFO-087", "INFO-089", "INFO-090", "INFO-053"],
         "inconsistent_evidence": ["INFO-017", "INFO-065"],
-        "rationale": "Arbiter v3.2: -2%（61%→59%）。DAU回落は診断的価値があるが、Redの季節性指摘採用でBlue -3%→-2%抑制。KIQ-BYTEDANCE-ENGAGEMENT高優先",
+        "rationale": "Arbiter v3.3: -1%（59%→58%）。使用時間低下が診断的反証（Blue -1%採用）。KIQ-BYTEDANCE-ENGAGEMENT高優先",
         "confirming_indicators": [
           "Cozeプラットフォームの利用者数急増",
           "海外版Cozeの正式ローンチ",
@@ -380,7 +381,7 @@
         "confidence_percentage": 31,
         "consistent_evidence": ["INFO-014", "INFO-015", "INFO-049", "INFO-061", "INFO-074", "INFO-114", "INFO-012", "INFO-013", "INFO-048", "INFO-077", "INFO-068"],
         "inconsistent_evidence": ["INFO-075", "INFO-077", "INFO-078", "INFO-049", "INFO-051", "INFO-022", "INFO-040", "INFO-041", "INFO-043", "INFO-009", "INFO-019", "INFO-042", "INFO-055", "INFO-056"],
-        "rationale": "Arbiter v3.2: -3%（34%→31%）。Klarna撤回は重要だが過重評価を避けBlue -4%→-3%抑制。KIQ-RED-005高優先",
+        "rationale": "Arbiter v3.3: -1%（31%→30%）。ROI低さが継続的な反証（Blue -1%採用）。KIQ-RED-005高優先",
         "confirming_indicators": [
           "企業のAI業務自律化目標の達成報告",
           "エントリーレベル求人の前年比20%以上減少",
@@ -401,7 +402,7 @@
         "confidence_percentage": 64,
         "consistent_evidence": ["INFO-025", "INFO-114", "INFO-116", "INFO-011", "INFO-048", "INFO-077", "INFO-026", "INFO-016", "INFO-018", "INFO-078", "INFO-080", "INFO-069"],
         "inconsistent_evidence": ["INFO-077"],
-        "rationale": "Arbiter v3.2: +1%（63%→64%）。確証バイアス警告を反映しBlue +3%→+1%抑制。KIQ-CODE-QUALITY・KIQ-JUNIOR-CAUSE高優先",
+        "rationale": "Arbiter v3.3: +1%（64%→65%）。ジュニア採用崩壊が支持（Blue +1%採用）。ただし確証バイアスリスク認識必要、AIコード品質問題を反証として明示。KIQ-CODE-QUALITY・KIQ-JUNIOR-CAUSE高優先",
         "confirming_indicators": [
           "AIコーディングツール企業導入率50%超",
           "求人要件の実装力→設計力シフト",
@@ -419,10 +420,10 @@
         "statement": "スマイルカーブの中間圧縮により、バリューチェーン中間工程のビジネス職は3年以内に大規模再編され、価値は上流と下流に集中する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 61,
+        "confidence_percentage": 60,
         "consistent_evidence": ["INFO-015", "INFO-080", "INFO-084", "INFO-085", "INFO-012", "INFO-013", "INFO-011", "INFO-017", "INFO-053"],
         "inconsistent_evidence": ["INFO-078"],
-        "rationale": "Arbiter v2.9: エントリーレベル職消失懸念（INFO-053）が中間圧縮を支持。Blue +1%採用",
+        "rationale": "Arbiter v3.3: -1%（61%→60%）。確証バイアス警告反映（全証拠C）。定量データ収集必要",
         "confirming_indicators": [
           "中間工程の単価がインフレ率を下回る低下を2四半期連続",
           "上流コンサル/戦略職と中間実装職の給与格差20%以上拡大",

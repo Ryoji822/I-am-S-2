@@ -1,7 +1,7 @@
 {
-  "version": "3.1",
-  "last_updated": "2026-03-03",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.1: Arbiter統合判断反映。IND-022確証バイアス警告追加",
+  "version": "3.2",
+  "last_updated": "2026-03-04",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.2: Arbiter統合判断反映。IND-019/024乖離分析の再評価（ROI定義不一致・タイムラグ考慮不足を注記）",
   "structural_changes_log": [
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
     "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
@@ -17,7 +17,8 @@
     "2026-03-01 v2.9: Arbiter統合判断反映。IND-023 high確定（条件3未達注記付き）。IND-003 high維持（OECD分母改善、critical見送り）。IND-001/011更新",
     "2026-03-02 v3.0: Arbiter統合判断反映。IND-023条件3未達注記明確化（他社の安全性方針後退を高優先監視）",
     "2026-03-03 v3.1: Blue Agent分析反映。IND-006 last_value更新（KIQ-RED-001回答: MCP週間1,500DL、20%アクティブ）。IND-003 last_value更新（KIQ-RED-007部分回答: AI資本支出GDPの2%）",
-    "2026-03-03 v3.2: Arbiter統合判断反映。IND-022 rationale更新（H-CAR-002確度上昇抑制を反映、確証バイアス警告追加）"
+    "2026-03-03 v3.2: Arbiter統合判断反映。IND-022 rationale更新（H-CAR-002確度上昇抑制を反映、確証バイアス警告追加）",
+    "2026-03-04 v3.3: Arbiter統合判断反映。IND-019/024 rationale更新（乖離分析の再評価: ROI定義不一致・タイムラグ考慮不足を注記、KIQ-RED-005最高優先）"
   ],
   "indicators": [
     {
@@ -276,7 +277,7 @@
       "last_value": "85%エンタープライズ導入検討中（INFO-009）。Fortune 500の80%アクティブエージェント展開（INFO-045）。IND-024（ROI正6%）との乖離79pt継続",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.7 Arbiter: elevated維持。乖離は事実。KIQ-RED-005（ROI定義詳細）高優先収集"
+      "rationale": "v3.3 Arbiter: elevated維持。乖離は事実だが「構造的問題」と断定する確度を引き下げ（Red指摘: ROI定義不一致、タイムラグ考慮不足）。KIQ-RED-005（ROI定義詳細）最高優先収集"
     },
     {
       "indicator_id": "IND-020",
