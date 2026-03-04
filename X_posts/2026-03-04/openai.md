@@ -32,3 +32,13 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**09:47 JST** | [原文](https://x.com/OpenAIDevs/status/2028995695425011949)
+
+> Try our handoff workflow to move threads between Local and Worktree
+> 
+> Guinness Chen: Today we shipped Handoff in the Codex app: a simpler way to move a thread between Local and Worktree.
+
+---
+
