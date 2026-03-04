@@ -67,3 +67,16 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**10:18 JST** | [原文](https://x.com/EthanJPerez/status/2029013911505416203)
+
+> RT Amy Siskind 🏳️‍🌈
+> So basically Altman lied here on X:
+> 
+> “OpenAI Chief Executive Officer Sam Altman told employees that the company doesn’t get to make the call about what the Defense Department does with its artificial intelligence software.”
+> 
+> https://www.bloomberg.com/news/articles/2026-03-04/altman-tells-staff-openai-has-no-say-over-pentagon-decisions
+
+---
+
