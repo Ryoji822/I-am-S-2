@@ -47,3 +47,23 @@
 
 ---
 
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**04:40 JST** | [原文](https://x.com/sleepinyourhat/status/2028985604747477231)
+
+> RT Robert Long
+> I had a blast talking to Luisa for 3.5+ hours about AI welfare, consciousness, and why this might be one of the most important and neglected problems out there. 
+> 
+> Some key bits:
+> -AI identity
+> -welfare implications of alignment
+> -does consciousness require biology?
+> 
+> 🧵
+> 
+> Rob Wiblin: Philosopher Robert Long (@rgblong) is maybe the sharpest thinker on AI consciousness and sharing the world with digital minds. In our new interview he covers:
+> 
+> • Is it bad that when you ask Claude what it's like to be Claude, one of its top activations is 'gives a positive but
+
+---
+
