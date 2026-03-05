@@ -52,3 +52,18 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**06:06 JST** | [原文](https://x.com/OpenAIDevs/status/2029239288450429337)
+
+> RT OpenAI Developers
+> Soon.
+
+---
+
+**06:06 JST** | [原文](https://x.com/OpenAIDevs/status/2028577643113922944)
+
+> Soon.
+
+---
+
