@@ -73,3 +73,12 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**14:11 JST** | [原文](https://x.com/demishassabis/status/2029539647441797445)
+
+> RT Josh Woodward
+> Just got this amazing @NotebookLM cinematic video on the history of Rome, loving it!
+
+---
+
