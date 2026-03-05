@@ -38,3 +38,20 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**09:07 JST** | [原文](https://x.com/npew/status/2029372701035651353)
+
+> RT Mitchell Hashimoto
+> Ahhhh, Codex 5.3 (xhigh) with a vague prompt just solved a bug that I and others have been struggling to fix for over 6 months. Other reasoning levels with Codex failed, Opus 4.6 failed. Cost $4.14 and 45 minutes. Full trace plus includes original issue: https://ampcode.com/threads/T-019cbadf-cb5a-742e-b0e3-2d7164de743f
+> 
+> I know this prompt is relatively bad. Honestly, our stable release is in a week, and I was throwing some Hail Marys at the frontier models to see if I could get a clean, understandable fix for some of these bugs. By using `gh`, it grabs much better context from the issue, so its not terrible.
+> 
+> The best thing that Codex did was eventually start reading GTK4 source code. That's where I ended up (see my GH issue), and I knew the answer was somewhere in there, but I didn't have the time or motivation to do it myself. The other models never went there, and lower reasoning efforts with 5.3 didn't go there either. Only xhigh went there. I think that was a critical difference.
+> 
+> The final fix was decent. It was small, all in a single file, and very understandable. It had one bug I identified (you can see in the trace), and then I manually cleaned up some style. But, it did a great job.
+> 
+> Definitely an "it's so over" moment. But at the same time, it feels amazing because now our next stable release will have this fix and I was able to spend the time working on other fixes as it went.
+
+---
+
