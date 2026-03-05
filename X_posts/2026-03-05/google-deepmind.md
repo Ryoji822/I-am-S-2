@@ -53,3 +53,23 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**14:11 JST** | [原文](https://x.com/joshwoodward/status/2029424537331482672)
+
+> Just got this amazing @NotebookLM cinematic video on the history of Rome, loving it!
+
+---
+
+**14:05 JST** | [原文](https://x.com/joshwoodward/status/2029422976744210934)
+
+> "Flow helps creatives explore what's possible"
+> 
+> Excellent walkthrough on the new design that dropped last week 👇
+> 
+> Flow by Google: Flow just dropped an exciting update last week, so let’s dive in and explore what’s possible.
+> 
+> In this tutorial, you will learn to seamlessly create, refine, and compose your stories. With Flow, you can generate and edit images and videos in a single workflow, allowing you to
+
+---
+
