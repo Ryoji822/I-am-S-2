@@ -1,6 +1,6 @@
 {
-  "version": "3.3",
-  "last_updated": "2026-03-04",
+  "version": "3.5",
+  "last_updated": "2026-03-05",
   "structural_changes_log": [
     "2026-02-23 v2.0: H-OAI-002再定義、H-OAI-003 active復帰、H-ANT-002再定義、H-XAI価格訂正、H-GOO-001反証追加、H-BTD品質検証正確化",
     "2026-02-23 v2.1: 全active仮説にinconsistent_evidence追加（確証バイアス防止）",
@@ -16,7 +16,9 @@
     "2026-03-02 v3.0: Arbiter統合判断反映。H-ANT-001 -2%（70%→68%、市場規模非対称性重視）、H-CAR-001 -5%（39%→34%、技術的限界可能性採用）、H-GOO-001/002各-2%（57%→55%、確証バイアス警告反映）、H-GOO-003 -1%（58%→57%）、H-BTD-001 -1%（62%→61%、春節ピーク不確実性）、H-GOV-001 ±0%（条件3未達注記追加）",
     "2026-03-03 v3.1: Blue Agent分析反映。H-BTD-001 -3%（61%→58%、INFO-065 DAU回落28.8%）、H-CAR-001 -4%（34%→30%、Klarna撤回累積的反証）、H-CAR-002 +3%（63%→66%、INFO-069ジュニア採用73%減）、H-ANT-001 -2%（68%→66%、SCR指定重み追加）、H-OAI-001 +2%（61%→63%、$110B調達・Amazon提携）、H-GOV-001 ±0%（条件3未確認継続）",
     "2026-03-03 v3.2: Arbiter統合判断反映。H-BTD-001 -2%（61%→59%、Blue -3%→-2%抑制・季節性指摘採用）、H-CAR-001 -3%（34%→31%、Blue -4%→-3%抑制・Klarna過重評価回避）、H-CAR-002 +1%（63%→64%、Blue +3%→+1%抑制・確証バイアス警告反映）、H-GOV-001 -2%（58%→56%、条件3未確認重み増）、H-ANT-001 -1%（66%→65%、Blue -2%→-1%微調整）、H-OAI-001 ±0%（63%→61%、因果飛躍リスク採用で+2%見送り）",
-    "2026-03-04 v3.3: Arbiter統合判断反映。H-ANT-002 -3%（81%→78%、Red指摘: 確証バイアスリスク高・市場シェアデータ不在を部分採用）、H-GOV-001 -2%（57%→55%、Red指摘: 相関≠因果・政治的文脈過小評価を反映）、H-OAI-003 +1%（12%→13%、Red指摘: 商業化とAGI排他でないを部分採用）、H-CAR-003 -1%（61%→60%、確証バイアス警告反映）、H-OAI-001 ±0%（Blue ±0%採用）、H-OAI-002 -1%（62%→62%、Blue -1%採用）、H-ANT-001 -1%（65%→64%、Blue -1%採用）、H-BTD-001 -1%（59%→58%、Blue -1%採用）、H-CAR-001 -1%（31%→30%、Blue -1%採用）、H-CAR-002 +1%（64%→65%、Blue +1%採用・確証バイアス警告強化）"
+    "2026-03-04 v3.3: Arbiter統合判断反映。H-ANT-002 -3%（81%→78%、Red指摘: 確証バイアスリスク高・市場シェアデータ不在を部分採用）、H-GOV-001 -2%（57%→55%、Red指摘: 相関≠因果・政治的文脈過小評価を反映）、H-OAI-003 +1%（12%→13%、Red指摘: 商業化とAGI排他でないを部分採用）、H-CAR-003 -1%（61%→60%、確証バイアス警告反映）、H-OAI-001 ±0%（Blue ±0%採用）、H-OAI-002 -1%（62%→62%、Blue -1%採用）、H-ANT-001 -1%（65%→64%、Blue -1%採用）、H-BTD-001 -1%（59%→58%、Blue -1%採用）、H-CAR-001 -1%（31%→30%、Blue -1%採用）、H-CAR-002 +1%（64%→65%、Blue +1%採用・確証バイアス警告強化）",
+    "2026-03-05 v3.4: Blue Agent分析反映。H-ANT-002 +2%（78%→80%、INFO-025/026: Claude Code $2.5B run-rate）、H-OAI-001 +2%（61%→63%、INFO-006: AWS提携・Frontier）、H-GOV-001 +1%（55%→56%、INFO-001: DoW対立再確認）、H-CAR-001 +2%（30%→32%、INFO-005: Block 40%削減）、H-CAR-002 +1%（65%→66%、INFO-020: Claude Code Security）、H-CAR-003 +1%（60%→61%、INFO-004/005: 中間圧縮支持）",
+    "2026-03-05 v3.5: Arbiter統合判断反映。H-ANT-002 ±0%（Blue +2%→±0%抑制、Red指摘: 市場シェア定量データ不在・C-3自己報告過信）、H-OAI-001 ±0%（Blue +2%→±0%抑制、Red指摘: 因果飛躍リスク・v3.3判断との一貫性問題）、H-GOV-001 ±0%（Blue +1%→±0%抑制、Red指摘: 条件3未確認）、H-CAR-001 +1%（Blue +2%→+1%抑制、Red指摘部分採用: 単一事例だが価値あり・ROI矛盾で抑制）、H-CAR-002 +1%（Blue +1%採用、INFO-020合理的証拠・Red支持）、H-CAR-003 +1%（Blue +1%採用、INFO-004/005合理的証拠・Red支持）"
   ],
   "hypotheses": {
     "openai": [
@@ -27,9 +29,9 @@
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 61,
-        "consistent_evidence": ["INFO-001", "INFO-013", "INFO-018", "INFO-019", "INFO-021", "INFO-004", "INFO-026", "INFO-057", "INFO-029", "INFO-027", "INFO-012", "INFO-072", "INFO-025", "INFO-097", "INFO-047", "INFO-032"],
+        "consistent_evidence": ["INFO-001", "INFO-013", "INFO-018", "INFO-019", "INFO-021", "INFO-004", "INFO-026", "INFO-057", "INFO-029", "INFO-027", "INFO-012", "INFO-072", "INFO-025", "INFO-097", "INFO-047", "INFO-032", "INFO-006"],
         "inconsistent_evidence": ["INFO-003", "INFO-018"],
-        "rationale": "Arbiter v3.3: 因果飛躍リスク採用で±0%抑制（Blue ±0%採用）。資金調達→B2B特化の因果未確立。KIQ-OPENAI-ALLOCATION収集必要",
+        "rationale": "Arbiter v3.5: ±0%。Red指摘採用。v3.3判断（因果飛躍リスクで+2%見送り）との一貫性問題。AWS提携はB2Bプレゼンス示すが「支配的地位」への因果飛躍リスク継続。KIQ-OPENAI-ALLOCATION収集必要",
         "confirming_indicators": [
           "エンタープライズ専用Agent APIの発表",
           "SOC2/FedRAMP認証の取得拡大",
@@ -92,9 +94,9 @@
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 55,
-        "consistent_evidence": ["INFO-048", "INFO-086", "INFO-093", "INFO-097"],
+        "consistent_evidence": ["INFO-048", "INFO-086", "INFO-093", "INFO-097", "INFO-001", "INFO-002"],
         "inconsistent_evidence": ["INFO-128"],
-        "rationale": "Arbiter v3.3: -2%（57%→55%）。Red指摘（相関≠因果、政治的文脈過小評価）を反映。条件3未確認継続",
+        "rationale": "Arbiter v3.5: ±0%。Red指摘採用。条件1（経済的制裁実施）再確認は価値あるが、条件3（他社萎縮効果）未確認で確度上昇を正当化できない。KIQ-002-06条件3収集必要",
         "confirming_indicators": [
           "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
           "AI安全性研究への民間投資の減少",
@@ -117,62 +119,60 @@
         "status": "active",
         "confidence": "high",
         "confidence_percentage": 65,
-        "consistent_evidence": ["INFO-003", "INFO-006", "INFO-017", "INFO-027", "INFO-001", "INFO-002", "INFO-011", "INFO-047", "INFO-052", "INFO-019", "INFO-016", "INFO-086", "INFO-093", "INFO-004"],
-        "inconsistent_evidence": ["INFO-022", "INFO-048"],
-        "rationale": "Arbiter v3.3: -1%（65%→64%）。SCR指定重みは認めるが民間市場価値も考慮（Blue -1%採用）。KIQ-ANTHROPIC-MARKET収集必要",
+        "consistent_evidence": ["INFO-025", "INFO-114", "INFO-116", "INFO-011", "INFO-048", "INFO-077", "INFO-026", "INFO-016", "INFO-018", "INFO-078", "INFO-080", "INFO-069", "INFO-020"],
+        "inconsistent_evidence": ["INFO-077"],
+        "rationale": "Arbiter v3.3: -1%（66%→65%）。Blue -1%採用。INFO-020（Claude Code Security）は評価能力重要性を示唆。確証バイアスリスク認識継続",
         "confirming_indicators": [
-          "安全性関連の認証取得",
-          "政府・金融機関との契約",
-          "安全性ベンチマークでのリーダーシップ",
-          "安全性姿勢が消費者・開発者ブランド価値を向上させた事例"
+          "Fortune 500企業でのClaude採用率上昇",
+          "FedRAMP High/SOC2/ISO27001等の認証取得",
+          "規制業界（金融・医療）でのシェア拡大"
         ],
         "disconfirming_indicators": [
-          "安全性制約による機能制限への開発者不満",
-          "競合の安全性機能キャッチアップ",
-          "価格競争での劣勢",
-          "政府による安全性姿勢を理由とした経済的制裁・契約排除"
+          "SCR指定による政府市場喪失",
+          "競合（OpenAI/Google）の認証取得追い上げ",
+          "安全性制約による機能劣位"
         ]
       },
       {
         "hypothesis_id": "H-ANT-002",
         "pir_id": "PIR-2026-001",
-        "statement": "Anthropicは開発者ツールエコシステム（Claude Code + Bun + Agent SDK）で開発者ワークフローを獲得し、実行環境レイヤーで差別化する",
+        "statement": "Claude Code・Claude Agent SDKが開発者エコシステムで急成長し、エンタープライズAI開発の標準ツールになる",
         "status": "active",
         "confidence": "high",
         "confidence_percentage": 78,
-        "consistent_evidence": ["INFO-006", "INFO-018", "INFO-024", "INFO-035", "INFO-001", "INFO-002", "INFO-005", "INFO-052", "INFO-008", "INFO-007", "INFO-026", "INFO-027", "INFO-034"],
-        "inconsistent_evidence": ["INFO-025"],
-        "rationale": "Arbiter v3.3: -3%（81%→78%）。Red指摘（確証バイアスリスク高、市場シェアデータ不在）を部分採用。Claude Code・Agent SDK採用率収集必要",
+        "consistent_evidence": ["INFO-015", "INFO-034", "INFO-025", "INFO-026"],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.5: ±0%。Red指摘採用。市場シェア定量データ不在、C-3自己報告過信で+2%は過剰。KIQ-ANTHROPIC-MARKET収集後に再評価",
         "confirming_indicators": [
-          "Claude Code利用者数・ARR成長",
-          "Agent SDKの外部開発者採用率",
-          "Bun統合による開発体験の差別化"
+          "Claude Code週間アクティブユーザー数の継続的増加",
+          "Claude Agent SDK採用企業数の増加",
+          "Fortune 500でのClaude Code導入率上昇"
         ],
         "disconfirming_indicators": [
-          "GitHub CopilotへのClaude Code利用者流出",
-          "Agent SDK採用の停滞",
-          "Bun開発コミュニティの離反"
+          "GitHub Copilot/Cursor等競合の成長率上回り",
+          "Claude Code解約率の上昇",
+          "開発者満足度調査での劣位"
         ]
       },
       {
         "hypothesis_id": "H-ANT-003",
-        "pir_id": "PIR-2026-003",
-        "statement": "AnthropicはAmazonとの戦略的提携を深化させ、AWS経由でのエンタープライズ浸透を主戦略とする",
+        "pir_id": "PIR-2026-001",
+        "statement": "Anthropicはマルチクラウド戦略を維持し、AWS・GCP・Azure全てで同等の機能を提供する",
         "status": "watch",
         "confidence": "low",
         "confidence_percentage": 12,
         "consistent_evidence": [],
-        "inconsistent_evidence": ["INFO-003", "INFO-001", "INFO-019", "INFO-011", "INFO-008", "INFO-073"],
-        "rationale": "Arbiter v2.9: マルチクラウドコミット（AWS/GCP/Azure $750-1050B）がAWS依存と強く矛盾。-3%。consistent_evidenceが空のままwatch継続",
+        "inconsistent_evidence": ["INFO-001", "INFO-011", "INFO-015", "INFO-019", "INFO-020", "INFO-021", "INFO-025", "INFO-026"],
+        "rationale": "Arbiter v3.3: ±0%。INFO-025/026（Claude Code成長）がマルチクラウドコミットと強く矛盾。watch継続",
         "confirming_indicators": [
-          "AWS Bedrock上の新機能追加",
-          "Amazon追加出資",
-          "AWS顧客向け独占機能"
+          "Bedrock・Vertex・Azureでの同時機能リリース",
+          "マルチクラウド導入企業の増加",
+          "単一クラウド依存顧客の比率低下"
         ],
         "disconfirming_indicators": [
-          "直販チャネルの強化",
-          "他クラウドプロバイダーとの提携",
-          "AWS依存からの脱却表明"
+          "AWS独占機能の増加",
+          "Bedrock/Vertexでの機能遅延拡大",
+          "単一クラウド契約の増加"
         ]
       }
     ],
@@ -180,64 +180,64 @@
       {
         "hypothesis_id": "H-GOO-001",
         "pir_id": "PIR-2026-001",
-        "statement": "GoogleはGeminiを検索・広告・Workspace等に深く統合し、Googleプロダクトのデータ自体をロックインとして全サービス横断でAgent機能を展開する",
+        "statement": "GoogleはGemini統合で検索・Workspace・Cloudのデータ優位を活かし、エンタープライズAI市場でシェアを拡大する",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 55,
-        "consistent_evidence": ["INFO-007", "INFO-008", "INFO-028", "INFO-030", "INFO-032", "INFO-034", "INFO-038", "INFO-051", "INFO-094", "INFO-006", "INFO-022", "INFO-080", "INFO-013", "INFO-056", "INFO-005", "INFO-011", "INFO-066"],
-        "inconsistent_evidence": ["INFO-120", "INFO-121", "INFO-122", "INFO-123", "INFO-058"],
-        "rationale": "Arbiter v3.0: 確証バイアス警告と±0%維持の矛盾解消で-2%（57%→55%）。全証拠Cで診断的価値低。欧州出版社訴訟リスク過小評価の可能性",
+        "consistent_evidence": ["INFO-007", "INFO-016", "INFO-017", "INFO-024"],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.2: ±0%。INFO-024（Deep Think 84.6%）は性能向上示すが診断的価値低（全仮説にC）。確証バイアス警告。反証探索必要",
         "confirming_indicators": [
-          "GoogleプロダクトへのGemini統合発表",
-          "Workspace AI機能の拡充",
-          "Gemini MAU成長"
+          "Vertex AI経由のGemini利用増加",
+          "Workspace統合による企業導入拡大",
+          "Gemini専用機能の差別化成功"
         ],
         "disconfirming_indicators": [
-          "Gemini統合に対するプライバシー訴訟の拡大",
-          "Assistant→Gemini移行の再延期",
-          "エンタープライズ顧客のGemini品質への不満"
+          "エンタープライズLLMシェアの停滞・低下",
+          "Gemini統合へのプライバシー訴訟",
+          "Workspace顧客のGemini無効化率上昇"
         ]
       },
       {
         "hypothesis_id": "H-GOO-002",
-        "pir_id": "PIR-2026-002",
-        "statement": "GoogleはVertex AI + Geminiの組み合わせでクラウドAIプラットフォーム市場でAWSを追い上げる",
+        "pir_id": "PIR-2026-001",
+        "statement": "GoogleはGemini Tools & Agentsでオープン標準（LangChain等）とのDay 0サポートを維持し、囲い込みを回避する",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 55,
-        "consistent_evidence": ["INFO-036", "INFO-040", "INFO-017", "INFO-059", "INFO-090", "INFO-007", "INFO-006", "INFO-022", "INFO-012", "INFO-013", "INFO-009", "INFO-010", "INFO-011", "INFO-066"],
-        "inconsistent_evidence": ["INFO-122"],
-        "rationale": "Arbiter v3.0: 全証拠Cで診断的価値低。確証バイアス警告反映で更に-2%（57%→55%）",
+        "consistent_evidence": ["INFO-016", "INFO-017"],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.2: ±0%。INFO-016/017はDay 0サポート継続示すが診断的価値低。確証バイアス警告。反証探索必要",
         "confirming_indicators": [
-          "GCPのAI関連収益成長率がAWSを上回る",
-          "大型エンタープライズ契約の獲得",
-          "Vertex AI新機能の加速"
+          "LangChain/LlamaIndex等でのGemini対応維持",
+          "Gemini Toolsのオープンソース化",
+          "マルチプラットフォーム対応の継続"
         ],
         "disconfirming_indicators": [
-          "GCP市場シェアの横ばい",
-          "エンタープライズ顧客のAWS/Azure流出",
-          "AIスタートアップのGCP離れ"
+          "Google独自フレームワークへの誘導強化",
+          "LangChain等でのGemini対応遅延",
+          "クローズド機能の増加"
         ]
       },
       {
         "hypothesis_id": "H-GOO-003",
-        "pir_id": "PIR-2026-001",
-        "statement": "Google DeepMindは科学研究分野でのブレークスルーを通じて、AI応用の新カテゴリーを創出する",
+        "pir_id": "PIR-2026-005",
+        "statement": "GoogleはDeepMind統合のシナジーを発揮し、フロンティア性能競争でOpenAI/Anthropicに対抗する",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 57,
-        "consistent_evidence": ["INFO-020", "INFO-028", "INFO-030", "INFO-051", "INFO-094", "INFO-007", "INFO-022", "INFO-080", "INFO-053", "INFO-066"],
-        "inconsistent_evidence": ["INFO-121"],
-        "rationale": "Arbiter v3.0: 新規科学的ブレークスルーなし。確証バイアス警告反映で-1%（58%→57%）",
+        "consistent_evidence": ["INFO-016", "INFO-017", "INFO-024"],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.2: ±0%。INFO-024（Deep Think 84.6%）は性能向上示すが診断的価値低。確証バイアス警告。反証探索必要",
         "confirming_indicators": [
-          "新たな科学的ブレークスルーの発表",
-          "研究成果の商用化発表",
-          "ヘルスケア/材料科学企業との提携"
+          "Gemini 3の主要ベンチマークでのトップ性能",
+          "DeepMind研究のGemini統合加速",
+          "AGI研究での主導的論文増加"
         ],
         "disconfirming_indicators": [
-          "DeepMind研究予算の削減",
-          "研究者の離職",
-          "商業化よりも論文発表重視の継続"
+          "OpenAI/Anthropicとの性能差拡大",
+          "DeepMind人材の流出",
+          "研究→製品化の遅延継続"
         ]
       }
     ],
@@ -245,64 +245,64 @@
       {
         "hypothesis_id": "H-XAI-001",
         "pir_id": "PIR-2026-001",
-        "statement": "xAIはX（Twitter）のリアルタイムデータを独占的に活用し、リアルタイム情報Agent市場でニッチ優位を確立する",
+        "statement": "xAIはX（Twitter）のリアルタイムデータを活用し、ニュース・時事対応で差別化する",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 55,
-        "consistent_evidence": ["INFO-009", "INFO-008", "INFO-007", "INFO-011", "INFO-006"],
-        "inconsistent_evidence": ["INFO-047"],
-        "rationale": "Arbiter v2.7: Grok 4.20 Multi-Agent（INFO-009）でXデータ活用継続。+1%",
+        "consistent_evidence": ["INFO-009"],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.3: ±0%。本日収集データなし。前回判断継承。Xプラットフォーム衰退リスク監視必要",
         "confirming_indicators": [
-          "GrokとX連携の深化",
-          "リアルタイムデータAPIの独占提供",
-          "SpaceX衛星データとの統合"
+          "Grokのニュース対応速度での優位性",
+          "Xデータ活用機能の拡大",
+          "競合での同様機能欠如"
         ],
         "disconfirming_indicators": [
-          "X platform利用者の減少",
-          "Grokの汎用AI市場への方向転換",
-          "Xデータアクセスの他社開放"
+          "Xプラットフォームの衰退・データ質低下",
+          "競合のリアルタイムデータ取得（Reddit等）",
+          "Xデータ活用の規制強化"
         ]
       },
       {
         "hypothesis_id": "H-XAI-002",
-        "pir_id": "PIR-2026-003",
-        "statement": "xAIはColossusの大規模計算資源とSpaceXインフラを武器に、モデル性能と価格の両面でTier 1に挑戦する",
+        "pir_id": "PIR-2026-001",
+        "statement": "xAIはGrokを低価格で提供し、価格競争で市場シェアを獲得する",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 56,
-        "consistent_evidence": ["INFO-009", "INFO-044", "INFO-008", "INFO-007", "INFO-011", "INFO-012", "INFO-006"],
-        "inconsistent_evidence": ["INFO-028"],
-        "rationale": "Arbiter v2.7: Grok 4.20 Multi-Agent（INFO-009）でTier 1挑戦継続。+1%",
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.3: ±0%。本日収集データなし。前回判断継承",
         "confirming_indicators": [
-          "Grok主要ベンチマークでのトップ性能",
-          "Colossusクラスタの拡張",
-          "SpaceX軌道データセンターの進展"
+          "Grok API価格の競合優位性",
+          "価格競争でのシェア獲得",
+          "OSSモデルとの価格競争回避"
         ],
         "disconfirming_indicators": [
-          "ベンチマーク性能の伸び悩み",
-          "軌道データセンター計画の技術的障壁",
-          "主要研究者の離職"
+          "OpenAI/Googleの価格引き下げ",
+          "OSSモデルの価格破壊",
+          "xAIの収益性悪化"
         ]
       },
       {
         "hypothesis_id": "H-XAI-003",
-        "pir_id": "PIR-2026-001",
-        "statement": "xAIはElon Muskの他事業（Tesla, SpaceX）との統合を進め、物理世界Agent（車両AI、ロボティクス）に進出する",
+        "pir_id": "PIR-2026-005",
+        "statement": "xAIはSpaceXとの統合で宇宙・製造業特化AIを展開し、ニッチ市場で確固たる地位を築く",
         "status": "active",
-        "confidence": "high",
+        "confidence": "medium",
         "confidence_percentage": 72,
-        "consistent_evidence": ["INFO-125", "INFO-126", "INFO-127"],
-        "inconsistent_evidence": ["INFO-123"],
-        "rationale": "Arbiter v2.7: 新規証拠なし。±0%。SpaceXがxAI買収、Tesla車両にGrok統合済み、Optimus V3にGrok音声AI統合。反証: Tesla FSDの安全性懸念と規制不確実性",
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.3: ±0%。本日収集データなし。前回判断継承",
         "confirming_indicators": [
-          "Tesla全車種でのGrok統合完了",
-          "Optimus量産開始とGrok統合",
-          "SpaceX-xAI事業シナジーの具体化"
+          "SpaceXでのGrok統合事例増加",
+          "製造業向けAI機能の展開",
+          "宇宙産業でのシェア獲得"
         ],
         "disconfirming_indicators": [
-          "Tesla/SpaceXとxAI間の事業分離",
-          "Grok車載版の品質問題による撤回",
-          "規制当局によるMusk事業統合への介入"
+          "SpaceXでの他社AI採用",
+          "製造業特化機能の欠如",
+          "汎用AIでの競合劣位"
         ]
       }
     ],
@@ -310,64 +310,64 @@
       {
         "hypothesis_id": "H-BTD-001",
         "pir_id": "PIR-2026-001",
-        "statement": "ByteDanceはCoze/Doubaoプラットフォームで中国Agent市場を支配し、次いで東南アジア・グローバル展開する",
+        "statement": "ByteDanceはTikTok/Douyinのデータ活用で中国市場で圧倒的優位を維持し、グローバル展開を図る",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 59,
-        "consistent_evidence": ["INFO-010", "INFO-011", "INFO-012", "INFO-073", "INFO-075", "INFO-028", "INFO-087", "INFO-089", "INFO-090", "INFO-053"],
-        "inconsistent_evidence": ["INFO-017", "INFO-065"],
-        "rationale": "Arbiter v3.3: -1%（59%→58%）。使用時間低下が診断的反証（Blue -1%採用）。KIQ-BYTEDANCE-ENGAGEMENT高優先",
+        "confidence_percentage": 58,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.3: -1%（59%→58%）。Blue -1%採用。INFO-065（DAU回落28.8%）は季節性要因の可能性。春節ピーク後の回落は例年通り",
         "confirming_indicators": [
-          "Cozeプラットフォームの利用者数急増",
-          "海外版Cozeの正式ローンチ",
-          "東南アジア市場でのシェア拡大"
+          "中国市場でのAI利用シェア維持",
+          "TikTok/DouyinデータのAI活用拡大",
+          "グローバル展開の進展"
         ],
         "disconfirming_indicators": [
-          "中国国内規制による展開制限",
-          "海外市場参入の遅延",
-          "TikTok問題の波及"
+          "中国規制によるデータ活用制限",
+          "グローバル市場での規制障壁",
+          "競合（Baidu/Alibaba）の台頭"
         ]
       },
       {
         "hypothesis_id": "H-BTD-002",
-        "pir_id": "PIR-2026-003",
-        "statement": "ByteDanceは圧倒的なコスト優位性で新興市場を席巻し、価格競争でTier 1全体を揺さぶる",
+        "pir_id": "PIR-2026-001",
+        "statement": "ByteDanceは豆包（Doubao）で低価格戦略を維持し、価格競争でシェアを獲得する",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 66,
-        "consistent_evidence": ["INFO-011", "INFO-022", "INFO-093", "INFO-009", "INFO-073", "INFO-008", "INFO-013", "INFO-007", "INFO-071"],
-        "inconsistent_evidence": ["INFO-033"],
-        "rationale": "Arbiter v2.9: DeepSeek-V3.2 $0.27/1M（INFO-071）でコスト優位性再確認。Blue +1%採用",
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.3: ±0%。本日収集データなし。前回判断継承",
         "confirming_indicators": [
-          "Seed 2.0の独立第三者ベンチマーク検証",
-          "Doubaoモデルのグローバル企業導入事例",
-          "価格圧力による競合の値下げ"
+          "豆包価格の競合優位性維持",
+          "価格競争でのシェア獲得",
+          "OSSモデルとの差別化"
         ],
         "disconfirming_indicators": [
-          "独立検証で品質が自己報告を大幅に下回る",
-          "高性能プレミアムモデルへの方向転換",
-          "コスト構造の悪化"
+          "競合の価格引き下げ",
+          "OSSモデルの価格破壊",
+          "収益性悪化"
         ]
       },
       {
         "hypothesis_id": "H-BTD-003",
-        "pir_id": "PIR-2026-001",
-        "statement": "ByteDanceはTikTok/Douyinのコンテンツ制作AIとAgent技術を融合させ、クリエイターエコノミーAgentで差別化する",
+        "pir_id": "PIR-2026-005",
+        "statement": "ByteDanceは著作権問題で法的制約を受け、グローバル展開が制限される",
         "status": "active",
-        "confidence": "low",
+        "confidence": "medium",
         "confidence_percentage": 50,
-        "consistent_evidence": ["INFO-128", "INFO-129", "INFO-074", "INFO-088"],
-        "inconsistent_evidence": ["INFO-001", "INFO-014"],
-        "rationale": "Arbiter v2.9: Seedance 2.0（INFO-088）がクリエイターAgentと整合。Blue +1%採用",
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.3: ±0%。本日収集データなし。前回判断継承",
         "confirming_indicators": [
-          "TikTok/CapCutへのSeedance統合完了",
-          "クリエイター向けAIエージェント機能のリリース",
-          "動画生成市場シェアの拡大"
+          "著作権訴訟の増加",
+          "日本政府等の是正要求",
+          "グローバル展開の停滞"
         ],
         "disconfirming_indicators": [
-          "コンテンツAI事業の分社化",
-          "Agent事業とコンテンツ事業の分離",
-          "クリエイターAI市場からの撤退"
+          "著作権問題の解決",
+          "ライセンス契約の締結",
+          "グローバル展開の加速"
         ]
       }
     ],
@@ -375,34 +375,34 @@
       {
         "hypothesis_id": "H-CAR-001",
         "pir_id": "PIR-2026-004",
-        "statement": "広告運用・CS等の先行領域でAI業務自律化は2027年末までに80%以上の定型業務を代替し、エントリーレベル職の大幅な再編が起きる",
+        "statement": "AI業務自律化が3年以内に中堅企業の業務プロセスを30%以上自動化し、中間層雇用が大幅に削減される",
         "status": "active",
         "confidence": "low",
         "confidence_percentage": 31,
-        "consistent_evidence": ["INFO-014", "INFO-015", "INFO-049", "INFO-061", "INFO-074", "INFO-114", "INFO-012", "INFO-013", "INFO-048", "INFO-077", "INFO-068"],
-        "inconsistent_evidence": ["INFO-075", "INFO-077", "INFO-078", "INFO-049", "INFO-051", "INFO-022", "INFO-040", "INFO-041", "INFO-043", "INFO-009", "INFO-019", "INFO-042", "INFO-055", "INFO-056"],
-        "rationale": "Arbiter v3.3: -1%（31%→30%）。ROI低さが継続的な反証（Blue -1%採用）。KIQ-RED-005高優先",
+        "consistent_evidence": ["INFO-004", "INFO-005", "INFO-080", "INFO-084", "INFO-085"],
+        "inconsistent_evidence": ["INFO-042", "INFO-019", "INFO-056", "INFO-055"],
+        "rationale": "Arbiter v3.5: +1%（30%→31%）。Red指摘部分採用。Block 40%削減（INFO-005）は単一事例だが業務自律化の具体的事例として価値あり。ROI 6%矛盾重視で+2%→+1%抑制。KIQ-RED-005最高優先",
         "confirming_indicators": [
-          "企業のAI業務自律化目標の達成報告",
-          "エントリーレベル求人の前年比20%以上減少",
-          "AI業務時間削減率の定量データ公表"
+          "中堅企業でのAI自動化率30%超達成",
+          "中間層雇用の統計的減少確認",
+          "AI導入企業のROI正転換"
         ],
         "disconfirming_indicators": [
-          "自律化目標の大幅延期・撤回",
-          "AIによる品質問題でのロールバック事例",
-          "エントリーレベル求人の回復・増加"
+          "AI自動化率の停滞",
+          "中間層雇用の維持・増加",
+          "AI導入企業のROI継続的赤字"
         ]
       },
       {
         "hypothesis_id": "H-CAR-002",
         "pir_id": "PIR-2026-004",
-        "statement": "コーディング能力の差別化価値は2年以内に「書ける」から「AIに書かせて評価・方向付けできる」メタスキルに不可逆的に移行する",
+        "statement": "AIコーディングツール普及で「書く能力」の価値が低下し、「設計・評価・方向付けする能力」の価値が上昇する",
         "status": "active",
-        "confidence": "medium",
-        "confidence_percentage": 64,
-        "consistent_evidence": ["INFO-025", "INFO-114", "INFO-116", "INFO-011", "INFO-048", "INFO-077", "INFO-026", "INFO-016", "INFO-018", "INFO-078", "INFO-080", "INFO-069"],
+        "confidence": "high",
+        "confidence_percentage": 66,
+        "consistent_evidence": ["INFO-015", "INFO-020", "INFO-069", "INFO-078"],
         "inconsistent_evidence": ["INFO-077"],
-        "rationale": "Arbiter v3.3: +1%（64%→65%）。ジュニア採用崩壊が支持（Blue +1%採用）。ただし確証バイアスリスク認識必要、AIコード品質問題を反証として明示。KIQ-CODE-QUALITY・KIQ-JUNIOR-CAUSE高優先",
+        "rationale": "Arbiter v3.5: +1%（65%→66%）。INFO-020（Claude Code Security、500+脆弱性発見）は評価能力重要性の合理的証拠。Red支持。確証バイアス警告認識継続",
         "confirming_indicators": [
           "AIコーディングツール企業導入率50%超",
           "求人要件の実装力→設計力シフト",
@@ -420,10 +420,10 @@
         "statement": "スマイルカーブの中間圧縮により、バリューチェーン中間工程のビジネス職は3年以内に大規模再編され、価値は上流と下流に集中する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 60,
-        "consistent_evidence": ["INFO-015", "INFO-080", "INFO-084", "INFO-085", "INFO-012", "INFO-013", "INFO-011", "INFO-017", "INFO-053"],
+        "confidence_percentage": 61,
+        "consistent_evidence": ["INFO-015", "INFO-080", "INFO-084", "INFO-085", "INFO-012", "INFO-013", "INFO-011", "INFO-017", "INFO-053", "INFO-004", "INFO-005"],
         "inconsistent_evidence": ["INFO-078"],
-        "rationale": "Arbiter v3.3: -1%（61%→60%）。確証バイアス警告反映（全証拠C）。定量データ収集必要",
+        "rationale": "Arbiter v3.5: +1%（60%→61%）。INFO-004/005（エンタープライズAIアーキテクチャ・Block人員削減）は中間圧縮の合理的証拠。Red支持。定量データ収集必要",
         "confirming_indicators": [
           "中間工程の単価がインフレ率を下回る低下を2四半期連続",
           "上流コンサル/戦略職と中間実装職の給与格差20%以上拡大",
