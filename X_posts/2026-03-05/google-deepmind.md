@@ -36,3 +36,20 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**09:41 JST** | [原文](https://x.com/demishassabis/status/2029396139376554073)
+
+> RT Guillermo Rauch
+> Google has shipped a CLI for Google Workspace (Drive, Gmail, Calendar, Sheets, Docs, …) Huge!
+> 
+> Written in Rust, distributed through npm & http://skills.sh
+> 
+> $ npm i -g @⁠googleworkspace/cli
+> $ npx skills add github:googleworkspace/cli
+> 
+> 2026 is the year of Skills & CLIs
+> http://github.com/googleworkspace/cli
+
+---
+
