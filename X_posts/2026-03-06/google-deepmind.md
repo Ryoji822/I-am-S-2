@@ -16,3 +16,16 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**00:00 JST** | [原文](https://x.com/JeffDean/status/2029824309347356940)
+
+> RT Y Combinator
+> Startup School is back!
+> 
+> Hear from Jensen Huang, @sama, @alexandr_wang, @JeffDean, and more.
+> 
+> Join a hand-selected group of top CS students, researchers, and engineers for two days of talks, sessions with YC partners, and hands-on robotics demos, right here in San Francisco.
+
+---
+
