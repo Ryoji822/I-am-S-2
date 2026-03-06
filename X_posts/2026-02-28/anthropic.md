@@ -151,3 +151,13 @@
 
 ---
 
+## @AnthropicAI (Anthropic - 公式アカウント)
+
+**10:24 JST** | [原文](https://x.com/AnthropicAI/status/2027555481699446918)
+
+> A statement on the comments from Secretary of War Pete Hegseth. 
+> 
+> https://anthropic.com/news/statement-comments-secretary-war
+
+---
+
