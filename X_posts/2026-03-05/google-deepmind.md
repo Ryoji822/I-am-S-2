@@ -82,3 +82,12 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**22:39 JST** | [原文](https://x.com/demishassabis/status/2029780047020584999)
+
+> RT Carlos E. Perez
+> This is one banger of an explanation of the time-slit experiments.  What I find interesting is that #NotebookLM introduced additional explanation to the original source material.  Very impressive indeed!
+
+---
+

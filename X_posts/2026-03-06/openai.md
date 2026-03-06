@@ -288,3 +288,12 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**00:15 JST** | [原文](https://x.com/npew/status/2029786158516031722)
+
+> RT Dev Ed
+> codex 5.3 literally gives me the same amount of usage on the $20 plan as claude max lol
+
+---
+
