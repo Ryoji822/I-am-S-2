@@ -1,7 +1,7 @@
 {
-  "version": "3.5",
-  "last_updated": "2026-03-05",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.5: Arbiter統合判断反映。IND-003 last_value更新（上位2社シェア69.2%）、IND-019 rationale更新（Arbiter判断反映）",
+  "version": "3.6",
+  "last_updated": "2026-03-06",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.6: Arbiter統合判断反映。IND-003 last_value更新（上位2社シェア69.2%）、IND-018 last_value更新（ARC-AGI-2 84.6%）、IND-023 last_value更新（条件1・2達成）",
   "structural_changes_log": [
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
     "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
@@ -20,7 +20,8 @@
     "2026-03-03 v3.2: Arbiter統合判断反映。IND-022 rationale更新（H-CAR-002確度上昇抑制を反映、確証バイアス警告追加）",
     "2026-03-04 v3.3: Arbiter統合判断反映。IND-019/024 rationale更新（乖離分析の再評価: ROI定義不一致・タイムラグ考慮不足を注記、KIQ-RED-005最高優先）",
     "2026-03-05 v3.4: Blue Agent分析反映。IND-003 last_value更新（Anthropic $30B調達、調達総額$69.1B、上位2社シェア69.2%）。IND-019 last_value更新（Block 40%人員削減）。IND-001 last_value更新（Gemini 3 Deep Think ARC-AGI-2 84.6%）",
-    "2026-03-05 v3.5: Arbiter統合判断反映。IND-003 high維持（上位2社シェア69.2%、critical 80%に接近）。IND-019 elevated維持（Block人員削減は単一事例、ROI乖離79pt継続）"
+    "2026-03-05 v3.5: Arbiter統合判断反映。IND-003 high維持（上位2社シェア69.2%、critical 80%に接近）。IND-019 elevated維持（Block人員削減は単一事例、ROI乖離79pt継続）",
+    "2026-03-06 v3.6: Arbiter統合判断反映。IND-003 last_value更新（OpenAI $110B追加）。IND-018 last_value更新（Gemini 3.1 Pro ARC-AGI-2 84.6%）。IND-023 last_value更新（条件1・2達成再確認）"
   ],
   "indicators": [
     {
@@ -30,11 +31,11 @@
       "description": "MMLU、GPQA、ARC-AGI等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される。特にARC-AGI-2はAGI到達度の代理指標として重視",
       "threshold": "ベンチマークスコア30%以上の非連続的向上、またはARC-AGI-2で90%超過",
       "status": "high",
-      "last_checked": "2026-03-05",
-      "last_value": "Gemini 3 Deep Think ARC-AGI-2 84.6%（INFO-024、前世代77.1%から7.5pt向上）。30%非連続的ジャンプ未満だがapproaching継続。フロンティア性能格差拡大継続",
+      "last_checked": "2026-03-06",
+      "last_value": "Gemini 3.1 Pro Deep Think ARC-AGI-2 84.6%（INFO-054、前世代77.1%から7.5pt向上）。GPT-5.4 ARC-AGI-1 93.7%、ARC-AGI-2 73.3%（Pro: 83.3%）。30%非連続的ジャンプ未満だがapproaching継続。フロンティア性能格差拡大継続",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v3.5: high維持。Gemini 3 Deep Talk躍進でフロンティア性能格差拡大継続"
+      "rationale": "Arbiter v3.6: high維持。Gemini 3.1 Pro Deep Think躍進でフロンティア性能格差拡大継続"
     },
     {
       "indicator_id": "IND-002",
@@ -61,11 +62,11 @@
         "note": "分母$258.7Bに対し上位2社$179.1B=69.2%。critical（80%）未達"
       },
       "status": "high",
-      "last_checked": "2026-03-05",
-      "last_value": "OpenAI $110B + Anthropic $69.1B（調達総額、INFO-025）= $179.1B。OECD分母$258.7Bに対し69.2%。前回54%から大幅上昇。critical（80%）未達継続",
+      "last_checked": "2026-03-06",
+      "last_value": "OpenAI $110B（INFO-053）+ Anthropic $69.1B（調達総額）= $179.1B。OECD分母$258.7Bに対し69.2%。前回54%から大幅上昇。critical（80%）未達継続",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v3.5: high維持。Anthropic調達総額$69.1BでOpenAI $66.4Bを逆転。上位2社シェア69.2%（前回54%から大幅上昇）。critical（80%）まで10.8pt。資金集中の加速監視必要"
+      "rationale": "Arbiter v3.6: high維持。上位2社シェア69.2%（前回54%から大幅上昇）。critical（80%）まで10.8pt。資金集中の加速監視必要"
     },
     {
       "indicator_id": "IND-004",
@@ -262,11 +263,11 @@
       "conditions_met_count": "1-2/5（条件3のみ部分的該当、条件2部分的進展）",
       "priority": "高優先監視",
       "status": "elevated",
-      "last_checked": "2026-03-05",
-      "last_value": "5条件中1-2条件が部分的に該当。条件1: Deep Talk 84.6%（INFO-024、閾値まで5.4pt不足）。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。条件3: Altman 2028予測（INFO-013）。閾値3条件には未到達",
+      "last_checked": "2026-03-06",
+      "last_value": "条件1: ARC-AGI-2 84.6%（INFO-054、閾値90%まで5.4pt）。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。条件3: Altman 2028予測（INFO-013）。条件4: 政府モラトリアム議論未発生。条件5: 自律的創薬未達。3/5閾値未到達だが条件1接近",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.5: elevated維持。条件1（ARC-AGI-2 90%超）が84.6%に接近（INFO-024）。3/5閾値未到達だが高優先監視継続"
+      "rationale": "Arbiter v3.6: elevated維持。条件1（ARC-AGI-2 90%超）が84.6%に接近（INFO-054）。3/5閾値未到達だが高優先監視継続"
     },
     {
       "indicator_id": "IND-019",
@@ -275,11 +276,11 @@
       "description": "AIエージェントが企業業務に導入されている度合い（採用率）。導入の成敗は別指標IND-024で測定",
       "threshold": "Fortune 500の50%以上がAIエージェントを業務プロセスに正式導入（PoC・パイロットを除く）",
       "status": "elevated",
-      "last_checked": "2026-03-05",
-      "last_value": "85%エンタープライズ導入検討中（INFO-009）。Fortune 500の80%アクティブエージェント展開（INFO-045）。INFO-005: Block 40%人員削減（AI生産性向上理由）。IND-024（ROI正6%）との乖離79pt継続",
+      "last_checked": "2026-03-06",
+      "last_value": "85%エンタープライズ導入検討中（INFO-017）。Fortune 500の80%アクティブエージェント展開（INFO-018）。INFO-027: Block 40%人員削減（AI生産性向上理由）。IND-024（ROI正6%）との乖離79pt継続",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.5: elevated維持。Block人員削減（INFO-005）は採用加速の追加証拠だが単一事例。ROI 6%との乖離79pt継続。KIQ-RED-005（ROI定義詳細）最高優先収集必要"
+      "rationale": "Arbiter v3.6: elevated維持。Block人員削減（INFO-027）は採用加速の追加証拠だが単一事例。ROI 6%との乖離79pt継続。KIQ-RED-005（ROI定義詳細）最高優先収集必要"
     },
     {
       "indicator_id": "IND-020",
@@ -383,11 +384,11 @@
       ],
       "conditions_met_count": "2/4（条件1・2達成）",
       "status": "high",
-      "last_checked": "2026-03-05",
-      "last_value": "条件1達成（Anthropic SCR指定・連邦使用禁止）。条件2達成（OpenAI同日夜にDoW契約獲得）。条件3未達（明示的萎縮効果は未確認だが構造成立済み）。条件4未達（EU AI法施行前）。2条件達成でhigh",
+      "last_checked": "2026-03-06",
+      "last_value": "条件1達成（Anthropic SCR指定・連邦使用禁止 INFO-022）。条件2達成（OpenAI同日夜にDoW契約獲得 INFO-026）。条件3未達（明示的萎縮効果は未確認だが構造成立済み、INFO-058消費者支持拡大は反証可能性）。条件4未達（EU AI法施行前）。2条件達成でhigh",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "Arbiter v3.5: high維持。条件1・2達成（経済的制裁+漁夫の利）。条件3（他社の安全性方針後退）未確認—明示的後退は未確認だが潜在的構造成立済み。条件3の顕在化を高優先監視（Google/xAI等の安全性方針変化を注視）"
+      "rationale": "Arbiter v3.6: high維持。条件1・2達成（経済的制裁+漁夫の利）。条件3（他社の安全性方針後退）未確認—明示的後退は未確認だが潜在的構造成立済み。条件3の顕在化を高優先監視（Google/xAI等の安全性方針変化を注視）"
     },
     {
       "indicator_id": "IND-024",
