@@ -25,3 +25,26 @@
 
 ---
 
+## @jackclarkSF (Jack Clark - 共同創業者 / Policy)
+
+**10:29 JST** | [原文](https://x.com/jackclarkSF/status/2029738866958295084)
+
+> RT Brendan McCord 🏛️ x 🤖
+> Mockup of how would @AnthropicAI's new labor automation chart would've looked 200 years ago.
+> 
+> For our ancestors, the outer ring would be almost unrecognizable. 
+> 
+> "Computer & math" was nonsensical. Medicine and law were tiny and barely professionalized.
+> 
+> The first photo was just about to be taken, so it would have been unfathomable to have a single blockbuster gross more than the entire gross national product of that period.
+> 
+> "Office & admin" barely existed as a concept; counting-houses employ a tiny literate class.
+> 
+> Agriculture alone consumed maybe 70-80% of the labor force in the US.
+> 
+> There was a thick band of artisanal trades that don't map onto any single modern category: coopering, blacksmithing, weaving, tanning, milling. 
+> 
+> Clergy was a major professional category and Maritime labor was its own significant sector.
+
+---
+

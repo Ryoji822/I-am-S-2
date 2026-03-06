@@ -277,3 +277,14 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**05:49 JST** | [原文](https://x.com/npew/status/2029734810823066095)
+
+> RT Michał Podlewski
+> This is huge. Bartosz Naskręcki is a top-tier mathematician. He just said his "personal Move 37" happened. GPT 5.4 just solved a task he has curated for 20 years. When an expert of this caliber says "the singularity has just happened," we are officially in a new era of science.
+> 
+> Bartosz Naskręcki: It finally happened-my personal move 37 or more. I am deeply impressed. The solution is very nice, clean, and feels almost human. While testing new models in the last few weeks, I felt this coming, but it's an eerie feeling to see an algorithm solve a task one has curated for
+
+---
+
