@@ -62,3 +62,34 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**04:29 JST** | [原文](https://x.com/sama/status/2030326937869242487)
+
+> RT Rohan Varma
+> We just launched Codex Security! 
+> 
+> Probably a no-brainer for most teams to turn on. Some things I'm excited about it:
+> - Agentic security review leveraging our SOTA models
+> - Always on codebase scanning 
+> - Detailed reports with code paths on vulnerabilities
+> - Auto-fix any report with a PR
+> 
+> Teams and enterprises can try it out through Codex web.
+
+---
+
+## @gdb (Greg Brockman - 共同創業者)
+
+**06:12 JST** | [原文](https://x.com/gdb/status/2030028839074812177)
+
+> GPT-5.4 is a big step forward
+> 
+> Eric Hartford: GPT-5.4 is really good.
+> 
+> I immediately notice its boost in understanding and ability to solve problems quickly and completely.
+> 
+> Using it to create a compiler, Claude Code is pretty much stumped.  GPT-5.3 was making slow progress.  But GPT-5.4 just *gets* it.
+
+---
+

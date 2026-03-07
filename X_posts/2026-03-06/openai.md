@@ -315,3 +315,16 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**03:11 JST** | [原文](https://x.com/jasonkwon/status/2030341793137766877)
+
+> RT ben
+> i’ve been using gpt 5.4 for the past few weeks.
+> 
+> in a sea of endless model drops and benchmark maxxing, this model is the first in a long time to be worth your time to try.
+> 
+> honestly didn’t expect openai to pull this off.
+
+---
+

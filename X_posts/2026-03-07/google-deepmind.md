@@ -64,3 +64,19 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**01:22 JST** | [原文](https://x.com/demishassabis/status/2030336311639310586)
+
+> RT Christopher Fryant
+> I can't stop messing with this Nano Banana 2 prompt!
+> 
+> Give it a try.  More examples in the post.  
+> 
+> Prompt:
+> You've never seen it from this angle before!
+> 
+> @NanoBanana
+
+---
+
