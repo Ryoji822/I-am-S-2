@@ -125,3 +125,15 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**01:16 JST** | [原文](https://x.com/gdb/status/2027417577597898837)
+
+> towards AGI that benefits all of humanity
+> 
+> Sam Altman: We have raised a $110 billion round of funding from Amazon, NVIDIA, and SoftBank.
+> 
+> We are grateful for the support from our partners, and have a lot of work to do to bring you the tools you deserve.
+
+---
+

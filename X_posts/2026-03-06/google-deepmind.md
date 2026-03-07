@@ -29,3 +29,20 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**03:05 JST** | [原文](https://x.com/demishassabis/status/2030080669108294060)
+
+> RT Trung Phan
+> McDonald’s CEO is playing 10D chess.
+> 
+> Sets the bar low with Big Arch review. Comes back talking “beef notes” and “‘mouth feel” on McChicken Big Mac.
+> 
+> Turns out he’s a Harvard MBA and latest IG post is about how he’s been asking Gemini to pitch new product ideas and it suggested McRib Nuggets (!!!) and more Korean sauces.
+> 
+> Now, McDonald’s stock has an AI narrative and we all know about it because of the viral attention his Big Arch stunt has created.
+> 
+> We all been played like a fiddle. Respect.
+
+---
+

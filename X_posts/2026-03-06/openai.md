@@ -297,3 +297,21 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**15:44 JST** | [原文](https://x.com/kevinweil/status/2029945530680520876)
+
+> RT Daniel McAuley
+> some psychopath on the internal codex leaderboard hit 100B tokens in the last week
+
+---
+
+## @markchen90 (Mark Chen - 研究責任者)
+
+**10:22 JST** | [原文](https://x.com/markchen90/status/2030141109171802342)
+
+> RT Aidan McLaughlin
+> research has really been cooking with gas lately. feels like playing with a great orchestra
+
+---
+
