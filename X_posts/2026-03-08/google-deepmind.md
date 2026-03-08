@@ -16,3 +16,13 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**11:00 JST** | [原文](https://x.com/JeffDean/status/2030463719130702066)
+
+> You don't have many shots at a world championship.  Unless you're Italy!
+> 
+> Jomboy Media: Because of course Team Italy has a full coffee and espresso station in their dugout
+
+---
+

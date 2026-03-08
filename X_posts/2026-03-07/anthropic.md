@@ -42,3 +42,16 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**18:50 JST** | [原文](https://x.com/EthanJPerez/status/2030390851051135241)
+
+> RT Rutger Bregman
+> BOMBSHELL: Sam Altman, Marc Andreessen & Joe Lonsdale's $125M SuperPAC has a simple strategy. 
+> 
+> Destroy *anyone* who tries to regulate AI. 
+> 
+> They want to make an example of AI safety advocates so brutal that no politician dares touch the issue again.
+
+---
+

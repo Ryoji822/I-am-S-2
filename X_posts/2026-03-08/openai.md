@@ -88,3 +88,78 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**04:40 JST** | [原文](https://x.com/OpenAIDevs/status/2030367900285251834)
+
+> http://x.com/i/article/2030030390136819713
+
+---
+
+## @gdb (Greg Brockman - 共同創業者)
+
+**15:54 JST** | [原文](https://x.com/gdb/status/2030537511030915074)
+
+> gpt-5.4 pro for research-level physics problems:
+> 
+> Haider.: the progress is way faster than i expected
+> 
+> gpt-5.4 pro (xhigh) is making a big jump in research-level physics reasoning
+> 
+> the model improved by 10 points on the critpt benchmark, where the top score was only 9% in nov 2025 and has now reached 30% by march 2026
+> 
+> i think this fits
+
+---
+
+**09:50 JST** | [原文](https://x.com/gdb/status/2030446104295391499)
+
+> GPT-5.4 feels like “talking to a smart friend”
+> 
+> Justine Moore: GPT 5.4 is a really special model.
+> 
+> I think the tweet below is about coding, but IMO it also holds for general use (like explaining concepts or talking through issues).
+> 
+> It’s tough to get the personality right - this model genuinely feels like talking to a smart friend.
+
+---
+
+**05:46 JST** | [原文](https://x.com/gdb/status/2030384504624607532)
+
+> GPT-5.4 for catching outdated docs:
+> 
+> Yam Peleg: GPT-5.4 just randomly caught outdated sections in some .md files and also suggested moving them so other agents wouldn’t treat these as truth.
+> 
+> Which means every agent before it made this mistake.
+> 
+> I’m impressed.
+
+---
+
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**13:51 JST** | [原文](https://x.com/jasonkwon/status/2030536925103243368)
+
+> RT gabriel
+> 
+> Tibo: We don’t have evidence of a widespread issue with codex usage being drained faster than it should but there are enough reports and we have reset rate limits for plus & pro subscriptions while we work towards wrapping up our investigation over the coming 1-3 days.
+
+---
+
+**06:12 JST** | [原文](https://x.com/jasonkwon/status/2030459288943206455)
+
+> RT Justine Moore
+> GPT 5.4 is a really special model.
+> 
+> I think the tweet below is about coding, but IMO it also holds for general use (like explaining concepts or talking through issues).
+> 
+> It’s tough to get the personality right - this model genuinely feels like talking to a smart friend.
+> 
+> ben: i’ve been using gpt 5.4 for the past few weeks.
+> 
+> in a sea of endless model drops and benchmark maxxing, this model is the first in a long time to be worth your time to try.
+> 
+> honestly didn’t expect openai to pull this off.
+
+---
+

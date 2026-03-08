@@ -48,3 +48,12 @@
 
 ---
 
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**00:17 JST** | [原文](https://x.com/sleepinyourhat/status/2030495805812117565)
+
+> RT Ajeya Cotra
+> New post: on Jan 14, I predicted that SWE time horizon by EOY would be ~24 hours. Now I think it'll be >100 hours, and maybe unbounded. For the first time, I don't see solid evidence against AI R&D automation *this year.* Link below.
+
+---
+
