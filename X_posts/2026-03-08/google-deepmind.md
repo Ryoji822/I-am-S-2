@@ -26,3 +26,21 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**23:04 JST** | [原文](https://x.com/demishassabis/status/2030692441095868778)
+
+> RT Similarweb
+> Gemini was the fastest-growing Gen AI tool in year-over-year website visits in February 2026.
+
+---
+
+## @sundarpichai (Sundar Pichai - Google CEO)
+
+**23:04 JST** | [原文](https://x.com/sundarpichai/status/2030663743512961180)
+
+> RT Similarweb
+> Gemini was the fastest-growing Gen AI tool in year-over-year website visits in February 2026.
+
+---
+
