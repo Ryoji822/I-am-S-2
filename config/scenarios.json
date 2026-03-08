@@ -1,7 +1,7 @@
 {
-  "version": "3.7",
-  "last_updated": "2026-03-07",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.7: Arbiter統合判断反映。SCN-001 -1%（Nvidia撤退・スキル市場断片化）、SCN-002 +1%（Gemini躍進・単一ベンチマーク過信抑制）、SCN-003 ±0%（支持証拠なし）、SCN-004 ±0%（DeepSeek支持・Gemini矛盾）",
+  "version": "3.8",
+  "last_updated": "2026-03-08",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.8: Arbiter統合判断反映。SCN-001 -1%（囲い込み抑制）、SCN-002 +1%（性能格差拡大・単一ベンチマーク過信抑制）、SCN-003 ±0%（支持証拠なし）、SCN-004 ±0%（格差拡大と矛盾）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 格差拡大",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 24,
+      "probability": 23,
       "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.7: -1%（25%→24%）。Blue -1%採用。INFO-038（Nvidia撤退）・INFO-016（スキル市場断片化）は囲い込み抑制。INFO-009/039（AWS提携・Bedrock Stateful Runtime）は開放的側面支持",
+      "probability_rationale": "Arbiter v3.8: -1%（24%→23%）。Blue -1%採用。INFO-025/033（Google Workspace CLI MCP統合）は開放的側面支持。INFO-032（AARTS標準）も囲い込み抑制。INFO-001（GPT-5.4 Skills/Shell）囲い込みは継続",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 41,
+      "probability": 42,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.7: +1%（40%→41%）。Blue +2%→+1%抑制。Red指摘採用。INFO-017（Gemini 3.1 Pro ARC-AGI-2 77.1%）は客観的性能格差拡大証拠だが単一ベンチマーク過信抑制。INFO-014（ADK 25以上パートナー統合）は開放的エコシステム支持",
+      "probability_rationale": "Arbiter v3.8: +1%（41%→42%）。Blue +2%→+1%抑制。Red指摘採用。INFO-015（GPT-5.4 Pro ARC-AGI-2 83.3%）・INFO-043（Gemini 3.1 Pro 77.1%）で性能格差拡大の客観的証拠。ただし単一ベンチマーク過信抑制。INFO-025/033（Workspace CLI MCP統合）は開放性支持",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -67,7 +67,7 @@
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 17,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.7: ±0%（17%維持）。INFO-020（ROI測定ギャップ）は性能差縮小前提と部分的矛盾。明確な支持証拠なし",
+      "probability_rationale": "Arbiter v3.8: ±0%（17%維持）。INFO-011/012（雇用圧縮）・INFO-034（広告自動化）は中間圧縮進行を示すが、INFO-020（ROI測定ギャップ）は性能差縮小前提と矛盾。明確な支持証拠なし",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -88,7 +88,7 @@
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 18,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.7: ±0%（18%維持）。INFO-045（DeepSeek台頭）は支持するが、INFO-017（Gemini躍進）は格差拡大と矛盾",
+      "probability_rationale": "Arbiter v3.8: ±0%（18%維持）。INFO-027（ByteDance低価格）・INFO-045（騰訣台頭）は収斂支持するが、INFO-015（GPT-5.4 Pro 83.3%）は格差拡大と矛盾",
       "key_assumptions": [
         "汎用AIの性能差が5%以内に収斂する",
         "AAIF標準が支配的に採用される",
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-03-07",
-    "note": "SCN-001(24) + SCN-002(41) + SCN-003(17) + SCN-004(18) = 100%"
+    "verified_date": "2026-03-08",
+    "note": "SCN-001(23) + SCN-002(42) + SCN-003(17) + SCN-004(18) = 100%"
   }
 }
