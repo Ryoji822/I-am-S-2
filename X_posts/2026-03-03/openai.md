@@ -67,3 +67,12 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**00:29 JST** | [原文](https://x.com/jasonkwon/status/2030836175695380941)
+
+> RT Apoorv Agrawal
+> http://x.com/i/article/2027577972019056640
+
+---
+
