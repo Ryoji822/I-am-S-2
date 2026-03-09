@@ -28,3 +28,12 @@
 
 ---
 
+## @markchen90 (Mark Chen - 研究責任者)
+
+**09:12 JST** | [原文](https://x.com/markchen90/status/2030813359155912820)
+
+> RT Tibo
+> Re @0thernet Just use Codex. That might have been a single prompt and worked within your $20 sub
+
+---
+
