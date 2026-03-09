@@ -12,3 +12,11 @@
 
 ---
 
+## @OfficialLoganK (Logan Kilpatrick - AI Studio / Gemini API)
+
+**07:56 JST** | [原文](https://x.com/OfficialLoganK/status/2030779838752006286)
+
+> Most people don’t want to go the extra mile, but the extra mile is where all the upside is.
+
+---
+

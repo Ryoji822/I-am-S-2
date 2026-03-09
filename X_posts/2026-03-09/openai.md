@@ -20,3 +20,11 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**06:30 JST** | [原文](https://x.com/gdb/status/2030757996595437821)
+
+> Benchmarks? Where we’re going, we don’t need benchmarks.
+
+---
+
