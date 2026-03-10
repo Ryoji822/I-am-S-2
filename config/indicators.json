@@ -1,7 +1,7 @@
 {
-  "version": "3.9",
-  "last_updated": "2026-03-09",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.9: Arbiter統合判断反映。IND-001/003/006/017/018/019/022/023/024更新（2026-03-09 Blue Agent分析反映・Red反証統合）",
+  "version": "3.10",
+  "last_updated": "2026-03-10",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.10: Arbiter統合判断反映。Red指摘6件採用（単一ベンチマーク過信抑制・分母定義欠陥・因果解釈留保・出典不明除外）。IND-001/003/004/006/017/018/019/022/023/024更新",
   "structural_changes_log": [
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
     "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
