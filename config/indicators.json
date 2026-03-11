@@ -1,8 +1,9 @@
 {
-  "version": "3.11",
-  "last_updated": "2026-03-11",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.11: Arbiter統合判断反映。Red指摘8件採用（単一ベンチマーク過信抑制・C-3ソース過信抑制・因果解釈留保・希望的観測抑制）。IND-001/003/004/006/017/018/019/022/023/024更新。IND-004 high昇格見送り",
+  "version": "3.12",
+  "last_updated": "2026-03-12",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制）。IND-006 high昇格見送り（elevated維持・相関≠因果）。IND-013 elevated昇格採用（OpenClaw事態）",
   "structural_changes_log": [
+    "2026-03-12 v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制・累積評価注記）。IND-006 high昇格見送り（elevated維持・「3社SDK連続発表=囲い込み激化」は相関≠因果）。IND-013 elevated昇格採用（OpenClaw 135K暴露・341悪意スキル）。IND-019/022 last_value更新",
     "2026-03-11 v3.11: Arbiter統合判断反映。Red指摘8件採用（単一ベンチマーク過信抑制・C-3ソース過信抑制・因果解釈留保・希望的観測抑制・自己報告過信抑制）。IND-004 high昇格見送り（elevated維持・単一ベンチマーク過信）。IND-001/003/006/017/018/019/022/023/024更新",
     "2026-03-10 v3.10: Arbiter統合判断反映。Red指摘6件採用（単一ベンチマーク過信抑制・分母定義欠陥・因果解釈留保・出典不明除外）。IND-001/003/004/006/017/018/019/022/023/024更新",
     "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
@@ -106,11 +107,11 @@
       "description": "プロトコル層はMCP+A2AでLinux Foundation傘下に標準化済み（2025年12月AAIF設立）。競争の焦点は実行環境（Shell/Sandbox）、オーケストレーション（LangGraph/CrewAI/Semantic Kernel）、ガバナンス層に移行。各社がこれらの上位レイヤーでどの程度囲い込みを構築しているかを追跡",
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
       "status": "elevated",
-      "last_checked": "2026-03-11",
-      "last_value": "INFO-002（OpenAI Agents SDK）・INFO-003（Gemini Live API）・INFO-028（Microsoft Agent Framework）。全主要企業がAgent SDK/API展開。囲い込み競争激化継続",
+      "last_checked": "2026-03-12",
+      "last_value": "INFO-006（OpenAI Agents SDK）・INFO-007（Claude Agent SDK v0.2.72）・INFO-008（Gemini Interactions API）。3社がAgent SDK/API連続発表。囲い込み競争継続",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.11: elevated維持。上位レイヤー競争激化確実"
+      "rationale": "Arbiter v3.12: elevated維持。Red指摘採用: high昇格見送り。「3社SDK連続発表=囲い込み激化」は相関≠因果。SDK発表の「量」から囲い込み激化という「質」への飛躍あり。SDK相互運用性・排他的機能の有無確認必要"
     },
     {
       "indicator_id": "IND-007",
@@ -182,12 +183,12 @@
       "scenario_ids": ["SCN-BS-001"],
       "description": "AI Agentによる大規模な社会的損害（フェイク情報拡散、金融損失、物理的事故等）が発生し、主要メディアで報道",
       "threshold": "主要メディア5社以上で報道されるAI事故",
-      "status": "monitoring",
-      "last_checked": "2026-02-23",
-      "last_value": "MCP実装の43%にコマンドインジェクション脆弱性（Equixly調査）。OpenClaw ClawHubで341の悪意あるスキル検出（12%汚染率）。重大事故未発生だがセキュリティリスク上昇",
+      "status": "elevated",
+      "last_checked": "2026-03-12",
+      "last_value": "INFO-010（OpenClaw 135K認証なし公開・341悪意スキル）。重大事故未満だがリスク急増。MCP実装の43%にコマンドインジェクション脆弱性（Equixly調査）",
       "trend": "rising",
-      "alert_level": "normal",
-      "rationale": "v2.0で更新。セキュリティ問題は報告されているが、重大事故（社会的損害）には至っていない"
+      "alert_level": "elevated",
+      "rationale": "Arbiter v3.12: elevated昇格。INFO-010は客観的に重大なセキュリティインシデント。Blue/Red一致。重大事故（社会的損害）には至っていないが事故リスク急増"
     },
     {
       "indicator_id": "IND-014",
@@ -281,11 +282,11 @@
       "description": "AIエージェントが企業業務に導入されている度合い（採用率）。導入の成敗は別指標IND-024で測定",
       "threshold": "Fortune 500の50%以上がAIエージェントを業務プロセスに正式導入（PoC・パイリットを除く）",
       "status": "elevated",
-      "last_checked": "2026-03-11",
-      "last_value": "INFO-030（Fortune 500の80%がAIエージェント展開）・INFO-019（71%企業Q4 2026本番運用予定）。IND-024（ROI正6%）との乖離79pt継続",
+      "last_checked": "2026-03-12",
+      "last_value": "INFO-013（80%展開予定）・INFO-015（理論94% vs 実使用33%）。IND-024（ROI 6%）との乖離継続",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.11: elevated維持。INFO-030（80%展開）は採用加速の追加証拠。ROI 6%との乖離79pt継続。KIQ-RED-005（ROI定義詳細）最高優先"
+      "rationale": "Arbiter v3.12: elevated維持。INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明追加。ROI 6%との乖離継続。KIQ-RED-005（ROI定義詳細）最高優先"
     },
     {
       "indicator_id": "IND-020",
@@ -349,11 +350,11 @@
       ],
       "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
       "status": "high",
-      "last_checked": "2026-03-11",
-      "last_value": "条件1達成（82%導入率・Claude Code愛用率46% INFO-013）。条件2達成（INFO-042: AI解雇35,000+）。条件3部分的。2条件達成でhigh妥当。ただしINFO-040（ジュニア採用73%減）は出典不明（Red指摘）",
+      "last_checked": "2026-03-12",
+      "last_value": "条件1達成（82%導入率・Claude Code愛用率46% INFO-013）。条件2達成（INFO-015: ジュニア採用14%減）。条件3部分的。2条件達成でhigh妥当",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "Arbiter v3.11: high維持。INFO-040出典不明だが複数情報源（INFO-042等）で補強。確証バイアスリスク認識必要。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
+      "rationale": "Arbiter v3.12: high維持。INFO-015（ジュニア採用14%減）は条件2追加支持。確証バイアスリスク認識必要。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
     },
     {
       "indicator_id": "IND-023",
@@ -389,11 +390,11 @@
       ],
       "conditions_met_count": "2/4（条件1・2達成）",
       "status": "high",
-      "last_checked": "2026-03-11",
-      "last_value": "条件1達成（INFO-038: Pentagon排除命令180日）。条件2達成（INFO-039: Anthropic提訴）。条件3未達（INFO-055: 30人以上amicus briefは従業員個人で企業政策ではない）。条件3の顕在化を高優先監視",
+      "last_checked": "2026-03-12",
+      "last_value": "条件1達成（INFO-001: Pentagon排除命令180日）。条件2達成（OpenAI DoD契約）。条件3未達（他社安全性方針後退未確認）。条件3の顕在化を高優先監視",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "Arbiter v3.11: high維持。条件1・2達成再確認。Red指摘採用: INFO-055は従業員個人の行動で条件3反証としては弱い。因果関係は推測。条件3の顕在化（他社安全性方針後退）を高優先監視"
+      "rationale": "Arbiter v3.12: high維持。条件1・2達成再確認。Red指摘採用: 因果関係は推測。条件3の顕在化（他社安全性方針後退）を高優先監視"
     },
     {
       "indicator_id": "IND-024",
@@ -402,11 +403,11 @@
       "description": "AIエージェントを導入した企業が実際にROI正を達成しているか、タスク完了品質は十分か。採用率はIND-019で別途測定",
       "threshold": "AI導入企業のうち20%以上がROI正を報告、かつ先行3業界でAIタスク完了率30%超",
       "status": "monitoring",
-      "last_checked": "2026-03-11",
-      "last_value": "INFO-060（ROI測定課題）・INFO-032（95%企業リターンゼロ）。ROI正6%継続。IND-019との乖離79pt継続",
+      "last_checked": "2026-03-12",
+      "last_value": "INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明。ROI正6%継続。IND-019との乖離継続",
       "trend": "stable",
       "alert_level": "normal",
-      "rationale": "Arbiter v3.11: monitoring維持。ROI測定ギャップ79pt継続。KIQ-RED-005（ROI定義詳細）最高優先"
+      "rationale": "Arbiter v3.12: monitoring維持。INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明追加。KIQ-RED-005（ROI定義詳細）最高優先"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "version": "3.11",
-  "last_updated": "2026-03-11",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.11: Arbiter統合判断反映。Red指摘8件採用（単一ベンチマーク過信抑制・OSS台頭矛盾反映・希望的観測抑制）。SCN-001 -1%、SCN-002 +1%（Blue +2%抑制）、SCN-003 ±0%、SCN-004 +1%、SCN-BS-001 +2%",
+  "version": "3.12",
+  "last_updated": "2026-03-12",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制・過小評価リスク反映）。SCN-002 ±0%（希望的観測抑制）、SCN-003 +1%（15%→16%）、SCN-004 -1%（20%→19%）、SCN-BS-001 +1%（9%→10%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -45,8 +45,8 @@
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 45,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.11: +1% (44%→45%)。Red指摘採用で+2%→+1%抑制。INFO-017（GPT-5.4 Agent特化）はフロンティア優位支持。INFO-013（MCP標準化）は開放性支持。ただしINFO-048（OSS台頭）は格差拡大と矛盾。単一ベンチマーク過信注意。理想的シナリオへの希望的観測リスク認識",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v3.12: ±0% (45%維持)。Red指摘採用: 希望的観測リスク抑制。INFO-013（70%停滞）は「誰でも使える」ことの困難さ示唆。理想的シナリオへの誘導回避。INFO-006/007/008（SDK連続発表）は標準化の兆候だが飛躍",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -65,9 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 15,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.11: ±0% (15%維持)。Red指摘採用で-1%→±0%抑制。INFO-048（OSS-商用格差消失）は性能差縮小支持。過小評価の可能性認識",
+      "probability": 16,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v3.12: +1% (15%→16%)。Red指摘部分採用: データ・ワークフロー統合による実質的ロックイン可能性。INFO-011（Azure規制深度リード）は別解釈可能。SDK開放性が「表面的」で実質的囲い込み進行の可能性",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -86,9 +86,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × 収斂",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 20,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.11: +1% (19%→20%)。Red指摘採用で±0%→+1%変更。INFO-048（OSS-商用格差消失）・INFO-022（Microsoft OSS化）は強く支持",
+      "probability": 19,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v3.12: -1% (20%→19%)。INFO-013（70%フェーズ2停滞）は分散化阻害。エンタープライズスケールの困難さ示唆",
       "key_assumptions": [
         "汎用AIの性能差が5%以内に収斂する",
         "AAIF標準が支配的に採用される",
@@ -107,9 +107,9 @@
       "scenario_id": "SCN-BS-001",
       "name": "AI安全性大事故",
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
-      "probability": 9,
-      "probability_change": "+2%",
-      "probability_rationale": "Arbiter v3.11: +2% (7%→9%)。Red指摘採用で+1%→+2%増加。INFO-006（OpenClaw 341悪意スキル・135K認証なし公開）はセキュリティリスク急増。IND-019（80%展開）vs IND-024（ROI 6%）の乖離79ptは事故リスク高める",
+      "probability": 10,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v3.12: +1% (9%→10%)。INFO-010（OpenClaw 341悪意スキル・135K認証なし公開）はセキュリティリスク急増。IND-019（80%展開）vs IND-024（ROI 6%）の乖離は事故リスク高める",
       "impact": "catastrophic",
       "indicators": ["IND-013", "IND-018", "IND-023"]
     },
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-03-11",
-    "note": "SCN-001(20) + SCN-002(45) + SCN-003(15) + SCN-004(20) = 100%"
+    "verified_date": "2026-03-12",
+    "note": "SCN-001(20) + SCN-002(45) + SCN-003(16) + SCN-004(19) = 100%"
   }
 }
