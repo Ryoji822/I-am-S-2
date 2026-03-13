@@ -1,7 +1,7 @@
 {
-  "version": "3.12",
-  "last_updated": "2026-03-12",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制・過小評価リスク反映）。SCN-002 ±0%（希望的観測抑制）、SCN-003 +1%（15%→16%）、SCN-004 -1%（20%→19%）、SCN-BS-001 +1%（9%→10%）",
+  "version": "3.13",
+  "last_updated": "2026-03-13",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.13: DEGRADED状態（Phase 1収集失敗）。全シナリオ確率±0%。v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制・過小評価リスク反映）。SCN-002 ±0%（希望的観測抑制）、SCN-003 +1%（15%→16%）、SCN-004 -1%（20%→19%）、SCN-BS-001 +1%（9%→10%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -46,7 +46,7 @@
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 45,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.12: ±0% (45%維持)。Red指摘採用: 希望的観測リスク抑制。INFO-013（70%停滞）は「誰でも使える」ことの困難さ示唆。理想的シナリオへの誘導回避。INFO-006/007/008（SDK連続発表）は標準化の兆候だが飛躍",
+      "probability_rationale": "Arbiter v3.13: ±0% (45%維持)。Phase 1収集失敗（2026-03-13）により新規証拠なし。v3.12: Red指摘採用: 希望的観測リスク抑制。INFO-013（70%停滞）は「誰でも使える」ことの困難さ示唆。理想的シナリオへの誘導回避。INFO-006/007/008（SDK連続発表）は標準化の兆候だが飛躍",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-03-12",
-    "note": "SCN-001(20) + SCN-002(45) + SCN-003(16) + SCN-004(19) = 100%"
+    "verified_date": "2026-03-13",
+    "note": "SCN-001(20) + SCN-002(45) + SCN-003(16) + SCN-004(19) = 100%. DEGRADED状態（Phase 1収集失敗）での確認"
   }
 }
