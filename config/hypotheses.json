@@ -1,7 +1,8 @@
 {
-  "version": "3.14",
-  "last_updated": "2026-03-14",
+  "version": "3.15",
+  "last_updated": "2026-03-15",
   "structural_changes_log": [
+    "2026-03-15 v3.15: Arbiter統合判断（DEGRADED状態）。Phase 1成功（79件）したがPhase 2/3未実行。Red指摘2件採用（consistent_evidence空欄是正・C-3ソース過信抑制）。H-XAI-003 -8%（73%→65%）、H-ANT-002 -2%（76%→74%）。他指摘は見送り（条件3未確認認識済み・証拠不足・乖離認識済み）。Blue Agent実行後に再評価推奨",
     "2026-03-14 v3.14: Arbiter統合判断（DEGRADED状態）。Phase 1成功（57件）したがPhase 2/3未実行。全仮説確度±0%。last_updated更新のみ。Blue/Red実行後に再評価推奨",
     "2026-03-13 v3.13: Arbiter統合判断（DEGRADED状態）。Phase 1収集失敗により新規証拠なし。全仮説確度±0%。Red指摘のアンカリング・確証バイアスリスク認識しつつ、証拠なしでの変更は見送り。高確度仮説（H-ANT-002/H-XAI-003/H-CAR-002）に不確実性注記追加。代替分析手法確立をPhase 1へ申し送り",
     "2026-03-12 v3.12: Arbiter統合判断反映。Red指摘6件採用（単一企業事例過信抑制・相関≠因果採用・希望的観測抑制・累積評価注記）。H-XAI-003 +1%（72%→73%・Blue +2%抑制）、H-ANT-001 -1%（58%→57%・累積評価注記追加）、H-CAR-001 -1%（29%→28%）、H-CAR-002 +1%（72%→73%）、H-CAR-003 -1%（62%→61%）。IND-006 high昇格見送り（相関≠因果）・IND-013 elevated昇格採用。SCN-002 ±0%（希望的観測抑制）・SCN-003 +1%（15%→16%）・SCN-004 -1%（20%→19%）",
@@ -148,10 +149,10 @@
         "statement": "Claude Code・Claude Agent SDKが開発者エコシステムで急成長し、エンタープライズAI開発の標準ツールになる",
         "status": "active",
         "confidence": "high",
-        "confidence_percentage": 76,
+        "confidence_percentage": 74,
         "consistent_evidence": ["INFO-015", "INFO-034", "INFO-025", "INFO-026", "INFO-003", "INFO-005", "INFO-001", "INFO-013", "INFO-018", "INFO-021", "INFO-039", "INFO-048", "INFO-044"],
         "inconsistent_evidence": ["INFO-010", "INFO-031", "INFO-014"],
-        "rationale": "Arbiter v3.13: ±0% (76%維持)。Phase 1収集失敗（2026-03-13）による不確実性注記追加。Red指摘採用: INFO-044（Claude Code $83M収益）はC-3ソース（自己報告・推定）で過信リスク。KIQ-RED-006（解約率・Fortune 500導入率）未解決継続",
+        "rationale": "Arbiter v3.15: -2% (76%→74%)。Red指摘採用: INFO-069（$2.5B ARR）はC-3ソースで過信リスク。小幅引き下げ。KIQ-RED-006（解約率・Fortune 500導入率）未解決継続",
         "confirming_indicators": [
           "Claude Code週間アクティブユーザー数の継続的増加",
           "Claude Agent SDK採用企業数の増加",
@@ -299,10 +300,10 @@
         "statement": "xAIはSpaceXとの統合で宇宙・製造業特化AIを展開し、ニッチ市場で確固たる地位を築く",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 73,
+        "confidence_percentage": 65,
         "consistent_evidence": [],
         "inconsistent_evidence": [],
-        "rationale": "Arbiter v3.13: ±0% (73%維持)。Phase 1収集失敗（2026-03-13）による不確実性注記追加。INFO-004/005の3証拠は同一ソース派生（Musk関連）で確証バイアスリスク。DoD契約・SpaceX統合は客観的に重要だが過信回避",
+        "rationale": "Arbiter v3.15: -8% (73%→65%)。Red指摘採用: consistent_evidence空欄なのに73%は構造的欠陥。急激な引き下げ回避で段階的調整。新規証拠収集後に再評価（KIQ-RED-007）",
         "confirming_indicators": [
           "SpaceXでのGrok統合事例増加",
           "製造業向けAI機能の展開",

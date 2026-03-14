@@ -1,7 +1,7 @@
 {
-  "version": "3.14",
-  "last_updated": "2026-03-14",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.14: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（57件）。全シナリオ確率±0%。v3.13: DEGRADED状態（Phase 1収集失敗）。全シナリオ確率±0%。v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制・過小評価リスク反映）。SCN-002 ±0%（希望的観測抑制）、SCN-003 +1%（15%→16%）、SCN-004 -1%（20%→19%）、SCN-BS-001 +1%（9%→10%）",
+  "version": "3.15",
+  "last_updated": "2026-03-15",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.15: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（79件）。Red指摘検討したが確率変更見送り（証拠不足）。全シナリオ確率±0%。v3.14: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（57件）。全シナリオ確率±0%。v3.13: DEGRADED状態（Phase 1収集失敗）。全シナリオ確率±0%。v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制・過小評価リスク反映）。SCN-002 ±0%（希望的観測抑制）、SCN-003 +1%（15%→16%）、SCN-004 -1%（20%→19%）、SCN-BS-001 +1%（9%→10%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-03-14",
+    "verified_date": "2026-03-15",
     "note": "SCN-001(20) + SCN-002(45) + SCN-003(16) + SCN-004(19) = 100%. DEGRADED状態（Phase 2/3未実行）での確認"
   }
 }

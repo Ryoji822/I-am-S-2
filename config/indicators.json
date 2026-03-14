@@ -1,8 +1,9 @@
 {
-  "version": "3.14",
-  "last_updated": "2026-03-14",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.14: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（57件）。全指標状態変更なし。last_checked更新。v3.13: DEGRADED状態（Phase 1収集失敗）。全指標状態変更なし。v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制）。IND-006 high昇格見送り（elevated維持・相関≠因果）。IND-013 elevated昇格採用（OpenClaw事態）",
+  "version": "3.15",
+  "last_updated": "2026-03-15",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.15: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（79件）。Red指摘検討したがIND-024昇格見送り（乖離認識済み）。全指標状態変更なし。v3.14: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（57件）。全指標状態変更なし。last_checked更新。v3.13: DEGRADED状態（Phase 1収集失敗）。全指標状態変更なし。v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制）。IND-006 high昇格見送り（elevated維持・相関≠因果）。IND-013 elevated昇格採用（OpenClaw事態）",
   "structural_changes_log": [
+    "2026-03-15 v3.15: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（79件）。Red指摘検討したがIND-024昇格見送り（乖離認識済み）。全指標状態変更なし。last_checked更新（2026-03-15）",
     "2026-03-14 v3.14: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（57件）。全指標状態変更なし。last_checked更新（2026-03-14）",
     "2026-03-13 v3.13: DEGRADED状態（Phase 1収集失敗）。全指標状態変更なし。last_checked更新（2026-03-13）。Phase 1復旧後に再評価",
     "2026-03-12 v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制・累積評価注記）。IND-006 high昇格見送り（elevated維持・「3社SDK連続発表=囲い込み激化」は相関≠因果）。IND-013 elevated昇格採用（OpenClaw 135K暴露・341悪意スキル）。IND-019/022 last_value更新",
@@ -405,11 +406,11 @@
       "description": "AIエージェントを導入した企業が実際にROI正を達成しているか、タスク完了品質は十分か。採用率はIND-019で別途測定",
       "threshold": "AI導入企業のうち20%以上がROI正を報告、かつ先行3業界でAIタスク完了率30%超",
       "status": "monitoring",
-      "last_checked": "2026-03-14",
-      "last_value": "INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明。ROI正6%継続。IND-019との乖離継続",
+      "last_checked": "2026-03-15",
+      "last_value": "INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明。ROI正6%継続。IND-019（80%展開予定）との乖離継続。KIQ-RED-005（ROI定義詳細）最高優先",
       "trend": "stable",
       "alert_level": "normal",
-      "rationale": "Arbiter v3.12: monitoring維持。INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明追加。KIQ-RED-005（ROI定義詳細）最高優先"
+      "rationale": "Arbiter v3.15: monitoring維持。Red指摘検討したがelevated昇格見送り（乖離認識済み・新規証拠なし）。INFO-015（理論94% vs 実使用33%）で構造的説明追加済み。KIQ-RED-005完了後に再評価"
     }
   ]
 }
