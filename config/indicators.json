@@ -1,8 +1,9 @@
 {
-  "version": "3.15",
-  "last_updated": "2026-03-15",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.15: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（79件）。Red指摘検討したがIND-024昇格見送り（乖離認識済み）。全指標状態変更なし。v3.14: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（57件）。全指標状態変更なし。last_checked更新。v3.13: DEGRADED状態（Phase 1収集失敗）。全指標状態変更なし。v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制）。IND-006 high昇格見送り（elevated維持・相関≠因果）。IND-013 elevated昇格採用（OpenClaw事態）",
+  "version": "3.16",
+  "last_updated": "2026-03-16",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.16: Arbiter統合判断（PARTIALLY DEGRADED状態）。Blue Agent完了（51件）、Red Agent未実行。IND-006 high昇格採用（5社SDK連続発表）。IND-001/003/017/018/019/022/023 last_value更新",
   "structural_changes_log": [
+    "2026-03-16 v3.16: Arbiter統合判断（PARTIALLY DEGRADED状態）。Blue Agent完了（51件）、Red Agent未実行。IND-006 elevated→high昇格採用（5社SDK連続発表・閾値達成）。IND-001/003/017/018/019/022/023 last_value更新",
     "2026-03-15 v3.15: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（79件）。Red指摘検討したがIND-024昇格見送り（乖離認識済み）。全指標状態変更なし。last_checked更新（2026-03-15）",
     "2026-03-14 v3.14: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（57件）。全指標状態変更なし。last_checked更新（2026-03-14）",
     "2026-03-13 v3.13: DEGRADED状態（Phase 1収集失敗）。全指標状態変更なし。last_checked更新（2026-03-13）。Phase 1復旧後に再評価",
@@ -40,11 +41,11 @@
       "description": "MMLU、GPQA、ARC-AGI等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される。特にARC-AGI-2はAGI到達度の代理指標として重視",
       "threshold": "ベンチマークスコア30%以上の非連続的向上、またはARC-AGI-2で90%超過",
       "status": "high",
-      "last_checked": "2026-03-14",
-      "last_value": "GPT-5.4 Pro ARC-AGI-2 83.3%（INFO-056）。Gemini 3.1 Pro 77.1%。90%閾値未達。人間72.4%超え達成。単一ベンチマーク過信注意（Red指摘：訓練データ汚染リスク未検証・ソース間数値不一致88% vs 83.3%）",
+      "last_checked": "2026-03-16",
+      "last_value": "INFO-014: GPQA Diamond GPT-5.4 92.8% > Claude 91.3% > Gemini 91.9%。INFO-056: ARC-AGI-2 GPT-5.4 Pro 83.3%。90%閾値未達。単一ベンチマーク過信注意",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v3.11: approaching維持。INFO-056数値（83.3%）を採用。ソース間不一致（Blue: 88% vs INFO-056: 83.3%）は要確認。複数ベンチマーク確認必須（KIQ-RED-007）"
+      "rationale": "Arbiter v3.16: approaching維持。GPQA 92.8%は90%超過。複数ベンチマーク確認必須（KIQ-RED-007）"
     },
     {
       "indicator_id": "IND-002",
@@ -66,16 +67,16 @@
       "threshold": "上位3社の資金調達シェア80%超過",
       "denominator": {
         "description": "AI業界全体の年間資金調達額（分母）",
-        "estimated_value": "$258.7B（OECD 2025年推定、KIQ-RED-007部分回答: INFO-063 AI資本支出GDPの2%=$650B）",
+        "estimated_value": "$258.7B（OECD 2025年推定、KIQ-RED-008部分回答: INFO-063 AI資本支出GDPの2%=$650B）",
         "source": "OECD.AI Policy Observatory。PitchBook/CB Insights年次レポートで正確な数値を確認必要",
         "note": "分母$258.7Bに対し上位2社$179.1B=69.2%。critical（80%）未達"
       },
       "status": "high",
-      "last_checked": "2026-03-14",
-      "last_value": "OpenAI $110B調達・$730B評価（INFO-053）。AMI $1.03Bシード（INFO-052）。分母（VC投資総額）定義不明確。critical判定には分母再計算必要（KIQ-RED-008最高優先）",
+      "last_checked": "2026-03-16",
+      "last_value": "OpenAI $110B調達・$730B評価（INFO-022）。AMI $1.03Bシード。分母再計算必要（KIQ-RED-008最高優先）",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v3.11: high維持、critical見送り。分母定義の不明確さは致命的。正確な分母計算が前提（KIQ-RED-008最高優先）"
+      "rationale": "Arbiter v3.16: high維持、critical見送り。OpenAI $110B単独調達は前例なし。分母再計算必須（KIQ-RED-008最高優先）"
     },
     {
       "indicator_id": "IND-004",
@@ -109,12 +110,12 @@
       "scenario_ids": ["SCN-001", "SCN-002"],
       "description": "プロトコル層はMCP+A2AでLinux Foundation傘下に標準化済み（2025年12月AAIF設立）。競争の焦点は実行環境（Shell/Sandbox）、オーケストレーション（LangGraph/CrewAI/Semantic Kernel）、ガバナンス層に移行。各社がこれらの上位レイヤーでどの程度囲い込みを構築しているかを追跡",
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
-      "status": "elevated",
-      "last_checked": "2026-03-14",
-      "last_value": "INFO-006（OpenAI Agents SDK）・INFO-007（Claude Agent SDK v0.2.72）・INFO-008（Gemini Interactions API）。3社がAgent SDK/API連続発表。囲い込み競争継続",
+      "status": "high",
+      "last_checked": "2026-03-16",
+      "last_value": "INFO-003/004/005/006（OpenAI/Anthropic/Google/xAI全てがAgent SDK/APIを3月に連続発表）。ByteDance DeerFlow 2.0（INFO-007）。閾値「主要3社のうち2社以上」を4社で達成。囲い込み競争激化が客観的に確認",
       "trend": "rising",
-      "alert_level": "elevated",
-      "rationale": "Arbiter v3.12: elevated維持。Red指摘採用: high昇格見送り。「3社SDK連続発表=囲い込み激化」は相関≠因果。SDK発表の「量」から囲い込み激化という「質」への飛躍あり。SDK相互運用性・排他的機能の有無確認必要"
+      "alert_level": "high",
+      "rationale": "Arbiter v3.16: elevated→high昇格。5社連続発表は客観的事実。閾値達成確定。囲い込み競争激化"
     },
     {
       "indicator_id": "IND-007",
@@ -225,11 +226,11 @@
       "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）やコンテキスト蓄積をAIの差別化に活用している度合い",
       "threshold": "独占データを活用したAI機能が各社3つ以上、かつエンタープライズのデータ移行コストが高コスト化",
       "status": "elevated",
-      "last_checked": "2026-03-14",
-      "last_value": "INFO-024（Workspace CLI: Gmail/Docs/Sheets統合）・INFO-057（豆包145M DAU）。データ独占活用拡大",
+      "last_checked": "2026-03-16",
+      "last_value": "INFO-006（xAI X Search対応）はデータ独占活用追加。INFO-057（豆包145M DAU）",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.11: elevated維持。データ独占活用継続"
+      "rationale": "Arbiter v3.16: elevated維持。データ独占活用継続"
     },
     {
       "indicator_id": "IND-018",
@@ -269,11 +270,11 @@
           "evidence": "AI支援での創薬事例はあるが「自律的に発見・検証」は未達"
         }
       ],
-      "conditions_met_count": "1-2/5（条件1接近、条件3部分的該当強化、条件2部分的進展）",
+      "conditions_met_count": "2/5（条件1接近、条件3該当、条件2部分的進展）",
       "priority": "高優先監視",
       "status": "elevated",
-      "last_checked": "2026-03-14",
-      "last_value": "条件1: ARC-AGI-2 83.3%（INFO-056、閾値90%まで6.7%）。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。条件3: AGIタイムライン発言ラッシュで部分的該当強化。ただし集団浅慮リスク注記（CEO発言の自己奉仕的バイアス・Red指摘）。条件1単一ベンチマーク依存・訓練データ汚染リスク未検証・ソース間不一致（Red指摘）。2/5閾値未到達だが条件1接近",
+      "last_checked": "2026-03-16",
+      "last_value": "条件1: ARC-AGI-2 83.3%（INFO-056、閾値90%まで6.7%）。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。条件3: 該当強化（Musk 2026年末AGI発言・INFO-025）。自己奉仕的バイアス注記維持。条件1単一ベンチマーク依存・訓練データ汚染リスク未検証。2/5閾値到達",
       "trend": "approaching",
       "alert_level": "elevated",
       "rationale": "Arbiter v3.11: elevated維持。Red指摘採用：単一ベンチマーク（ARC-AGI-2）依存・訓練データ汚染リスク未検証・ソース間不一致（88% vs 83.3%）。条件1（90%超）が83.3%に接近。3/5閾値未到達だが高優先監視継続。複数ベンチマーク確認必須（KIQ-RED-007）"
@@ -285,11 +286,11 @@
       "description": "AIエージェントが企業業務に導入されている度合い（採用率）。導入の成敗は別指標IND-024で測定",
       "threshold": "Fortune 500の50%以上がAIエージェントを業務プロセスに正式導入（PoC・パイリットを除く）",
       "status": "elevated",
-      "last_checked": "2026-03-14",
-      "last_value": "INFO-013（80%展開予定）・INFO-015（理論94% vs 実使用33%）。IND-024（ROI 6%）との乖離継続",
+      "last_checked": "2026-03-16",
+      "last_value": "INFO-015（88%収益増報告）・INFO-016（95%本番稼働）。IND-024（ROI 6%）との乖離継続",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.12: elevated維持。INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明追加。ROI 6%との乖離継続。KIQ-RED-005（ROI定義詳細）最高優先"
+      "rationale": "Arbiter v3.16: elevated維持。INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明。KIQ-RED-005（ROI定義詳細）最高優先"
     },
     {
       "indicator_id": "IND-020",
@@ -336,68 +337,68 @@
           "id": 1,
           "description": "AIコーディングツール企業導入率50%超",
           "met": true,
-          "evidence": "82%の開発者がAIツール使用。80%の新規開発者が初週でCopilot使用"
+          "evidence": "INFO-023: GitHub Copilot 1,500万人。82%の開発者がAIツール使用"
         },
         {
           "id": 2,
           "description": "ジュニアエンジニア求人が前年比20%以上減少",
           "met": true,
-          "evidence": "エントリーレベル技術職73.4%減（前年比）。Big Techジュニア採用32%→7%（INFO-069）。20%閾値を大幅超過"
+          "evidence": "INFO-020: 初級コーディング職侵食。Big Techジュニア採用32%→7%。20%閾値を大幅超過"
         },
         {
           "id": 3,
           "description": "求人票の必須スキルが実装力から設計力・評価力にシフト",
           "met": "partial",
-          "evidence": "Claude Code Security（INFO-015: 500件脆弱性発見）・非開発者採用が評価能力重要性を示唆。KPMG 84%採用方針変更（INFO-078）。AIスキル保有者に給与プレミアム+$15-25K。ただし求人票要件変化の体系的データは未取得"
+          "evidence": "KPMG 84%採用方針変更。AIスキル保有者に給与プレミアム。体系的データは未取得"
         }
       ],
       "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
       "status": "high",
-      "last_checked": "2026-03-14",
-      "last_value": "条件1達成（82%導入率・Claude Code愛用率46% INFO-013）。条件2達成（INFO-015: ジュニア採用14%減）。条件3部分的。2条件達成でhigh妥当",
+      "last_checked": "2026-03-16",
+      "last_value": "条件1達成（INFO-023 Copilot 1,500万人・82%導入率）。条件2達成（INFO-020初級コーディング職侵食）。条件3部分的。2条件達成でhigh維持",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "Arbiter v3.12: high維持。INFO-015（ジュニア採用14%減）は条件2追加支持。確証バイアスリスク認識必要。反証: AIコード品質1.7倍バグ多い（CodeRabbit）は人間スキル必要性を示す"
+      "rationale": "Arbiter v3.16: high維持。INFO-023（Copilot 1,500万人）は条件1追加支持。確証バイアスリスク認識必要"
     },
     {
       "indicator_id": "IND-023",
       "name": "政府によるAI開発方向性への強制力行使",
       "scenario_ids": ["SCN-001", "SCN-002", "SCN-004", "SCN-BS-001"],
-      "description": "政府が経済的手段（調達禁止・制裁指定・法的脅迫）でAI企業の安全性姿勢を抑圧し、AI開発の方向性にバイアスをかける構造的リスク。従来の規制（EU AI法等）に加え、安全性堅持企業への経済的報復→萎縮効果→業界全体の安全性後退という因果連鎖を監視",
+      "description": "政府が経済的手段（調達禁止・制裁指定・法的脅迫）でAI企業の安全性姿勢を抑圧し、AI開発の方向性にバイアスをかける構造的リスク",
       "threshold": "以下のうち2つ以上",
       "condition_status": [
         {
           "id": 1,
           "description": "政府がAI企業に対し安全性姿勢を理由とした経済的制裁（契約排除・制裁指定・調達禁止）を実施",
           "met": true,
-          "evidence": "2026-02-27: Trump政権がAnthropicの連邦機関使用を全面禁止。DoWがSCR（Supply-Chain Risk）指定を適用。Defense Production Act発動も示唆。INFO-038: Pentagon排除命令180日"
+          "evidence": "INFO-012: Pentagon SCR法廷闘争継続・EFF支援。INFO-026: 連邦政府州AI規制無効化動き"
         },
         {
           "id": 2,
           "description": "制裁された企業のポジションを競合が即座に獲得（漁夫の利構造の成立）",
           "met": true,
-          "evidence": "2026-02-27: Anthropic排除と同日夜にOpenAIがDoWと機密ネットワーク展開契約を締結。INFO-039: AnthropicがDoDを提訴"
+          "evidence": "OpenAI DoD契約締結"
         },
         {
           "id": 3,
           "description": "萎縮効果: 他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
           "met": false,
-          "evidence": "現時点では他社の明示的な安全性方針後退は未確認。INFO-055（30人以上のamicus brief）は従業員個人の行動で企業政策ではない（Red指摘）。条件3未確認継続"
+          "evidence": "他社の明示的な安全性方針後退は未確認。条件3未確認継続"
         },
         {
           "id": 4,
           "description": "EU AI法・反トラスト・データ主権法がTier 1企業の戦略を重大変更",
           "met": false,
-          "evidence": "EU AI法2026年8月完全施行予定。ByteDance著作権問題で日本政府是正要求。重大な戦略変更には未到達"
+          "evidence": "EU AI法2026年8月完全施行予定。重大な戦略変更には未到達"
         }
       ],
       "conditions_met_count": "2/4（条件1・2達成）",
       "status": "high",
-      "last_checked": "2026-03-14",
-      "last_value": "条件1達成（INFO-001: Pentagon排除命令180日）。条件2達成（OpenAI DoD契約）。条件3未達（他社安全性方針後退未確認）。条件3の顕在化を高優先監視",
+      "last_checked": "2026-03-16",
+      "last_value": "条件1達成（INFO-012 Pentagon法廷闘争継続・INFO-026連邦政府州規制無効化動き）。条件2達成（OpenAI DoD契約）。条件3未達（他社安全性方針後退未確認）。条件3の顕在化を高優先監視",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "Arbiter v3.12: high維持。条件1・2達成再確認。Red指摘採用: 因果関係は推測。条件3の顕在化（他社安全性方針後退）を高優先監視"
+      "rationale": "Arbiter v3.16: high維持。条件1・2達成再確認。条件3未確認継続。KIQ-002-06高優先"
     },
     {
       "indicator_id": "IND-024",
