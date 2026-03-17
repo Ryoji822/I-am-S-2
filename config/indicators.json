@@ -1,8 +1,9 @@
 {
-  "version": "3.16",
-  "last_updated": "2026-03-16",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.16: Arbiter統合判断（PARTIALLY DEGRADED状態）。Blue Agent完了（51件）、Red Agent未実行。IND-006 high昇格採用（5社SDK連続発表）。IND-001/003/017/018/019/022/023 last_value更新",
+  "version": "3.17",
+  "last_updated": "2026-03-17",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.17: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。IND-006 elevated維持（high昇格見送り・因果飛躍リスク）。IND-001/003/017/018/019/022/023 last_value更新",
   "structural_changes_log": [
+    "2026-03-17 v3.17: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。IND-006 elevated維持（high昇格見送り・Red指摘採用: SDK発表≠囲い込み確立の因果飛躍リスク）。IND-001/003/017/018/019/022/023 last_checked更新",
     "2026-03-16 v3.16: Arbiter統合判断（PARTIALLY DEGRADED状態）。Blue Agent完了（51件）、Red Agent未実行。IND-006 elevated→high昇格採用（5社SDK連続発表・閾値達成）。IND-001/003/017/018/019/022/023 last_value更新",
     "2026-03-15 v3.15: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（79件）。Red指摘検討したがIND-024昇格見送り（乖離認識済み）。全指標状態変更なし。last_checked更新（2026-03-15）",
     "2026-03-14 v3.14: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（57件）。全指標状態変更なし。last_checked更新（2026-03-14）",
@@ -41,11 +42,11 @@
       "description": "MMLU、GPQA、ARC-AGI等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される。特にARC-AGI-2はAGI到達度の代理指標として重視",
       "threshold": "ベンチマークスコア30%以上の非連続的向上、またはARC-AGI-2で90%超過",
       "status": "high",
-      "last_checked": "2026-03-16",
+      "last_checked": "2026-03-17",
       "last_value": "INFO-014: GPQA Diamond GPT-5.4 92.8% > Claude 91.3% > Gemini 91.9%。INFO-056: ARC-AGI-2 GPT-5.4 Pro 83.3%。90%閾値未達。単一ベンチマーク過信注意",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v3.16: approaching維持。GPQA 92.8%は90%超過。複数ベンチマーク確認必須（KIQ-RED-007）"
+      "rationale": "Arbiter v3.17: approaching維持。GPQA 92.8%は90%超過。複数ベンチマーク確認必須（KIQ-RED-007）"
     },
     {
       "indicator_id": "IND-002",
@@ -72,11 +73,11 @@
         "note": "分母$258.7Bに対し上位2社$179.1B=69.2%。critical（80%）未達"
       },
       "status": "high",
-      "last_checked": "2026-03-16",
+      "last_checked": "2026-03-17",
       "last_value": "OpenAI $110B調達・$730B評価（INFO-022）。AMI $1.03Bシード。分母再計算必要（KIQ-RED-008最高優先）",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v3.16: high維持、critical見送り。OpenAI $110B単独調達は前例なし。分母再計算必須（KIQ-RED-008最高優先）"
+      "rationale": "Arbiter v3.17: high維持、critical見送り。OpenAI $110B単独調達は前例なし。分母再計算必須（KIQ-RED-008最高優先）"
     },
     {
       "indicator_id": "IND-004",
@@ -110,12 +111,12 @@
       "scenario_ids": ["SCN-001", "SCN-002"],
       "description": "プロトコル層はMCP+A2AでLinux Foundation傘下に標準化済み（2025年12月AAIF設立）。競争の焦点は実行環境（Shell/Sandbox）、オーケストレーション（LangGraph/CrewAI/Semantic Kernel）、ガバナンス層に移行。各社がこれらの上位レイヤーでどの程度囲い込みを構築しているかを追跡",
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
-      "status": "high",
-      "last_checked": "2026-03-16",
-      "last_value": "INFO-003/004/005/006（OpenAI/Anthropic/Google/xAI全てがAgent SDK/APIを3月に連続発表）。ByteDance DeerFlow 2.0（INFO-007）。閾値「主要3社のうち2社以上」を4社で達成。囲い込み競争激化が客観的に確認",
+      "status": "elevated",
+      "last_checked": "2026-03-17",
+      "last_value": "INFO-003/004/005/006（OpenAI/Anthropic/Google/xAI全てがAgent SDK/APIを3月に連続発表）。ByteDance DeerFlow 2.0（INFO-007）。閾値「主要3社のうち2社以上」を4社で達成。囲い込み競争激化は客観的だが囲い込み確立は未検証。SDK相互運用性の定量分析（新規KIQ）必要",
       "trend": "rising",
-      "alert_level": "high",
-      "rationale": "Arbiter v3.16: elevated→high昇格。5社連続発表は客観的事実。閾値達成確定。囲い込み競争激化"
+      "alert_level": "elevated",
+      "rationale": "Arbiter v3.17: elevated維持（high見送り）。Red指摘採用: SDK発表≠囲い込み確立の因果飛躍リスク。MCP準拠度・API互換性・データ移植性の定量分析（新規KIQ）完了後に再評価"
     },
     {
       "indicator_id": "IND-007",
@@ -226,11 +227,11 @@
       "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）やコンテキスト蓄積をAIの差別化に活用している度合い",
       "threshold": "独占データを活用したAI機能が各社3つ以上、かつエンタープライズのデータ移行コストが高コスト化",
       "status": "elevated",
-      "last_checked": "2026-03-16",
+      "last_checked": "2026-03-17",
       "last_value": "INFO-006（xAI X Search対応）はデータ独占活用追加。INFO-057（豆包145M DAU）",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.16: elevated維持。データ独占活用継続"
+      "rationale": "Arbiter v3.17: elevated維持。データ独占活用継続"
     },
     {
       "indicator_id": "IND-018",
@@ -273,11 +274,11 @@
       "conditions_met_count": "2/5（条件1接近、条件3該当、条件2部分的進展）",
       "priority": "高優先監視",
       "status": "elevated",
-      "last_checked": "2026-03-16",
+      "last_checked": "2026-03-17",
       "last_value": "条件1: ARC-AGI-2 83.3%（INFO-056、閾値90%まで6.7%）。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。条件3: 該当強化（Musk 2026年末AGI発言・INFO-025）。自己奉仕的バイアス注記維持。条件1単一ベンチマーク依存・訓練データ汚染リスク未検証。2/5閾値到達",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.11: elevated維持。Red指摘採用：単一ベンチマーク（ARC-AGI-2）依存・訓練データ汚染リスク未検証・ソース間不一致（88% vs 83.3%）。条件1（90%超）が83.3%に接近。3/5閾値未到達だが高優先監視継続。複数ベンチマーク確認必須（KIQ-RED-007）"
+      "rationale": "Arbiter v3.17: elevated維持。Red指摘採用：単一ベンチマーク（ARC-AGI-2）依存・訓練データ汚染リスク未検証・ソース間不一致（88% vs 83.3%）。条件1（90%超）が83.3%に接近。3/5閾値未到達だが高優先監視継続。複数ベンチマーク確認必須（KIQ-RED-007）"
     },
     {
       "indicator_id": "IND-019",
@@ -286,11 +287,11 @@
       "description": "AIエージェントが企業業務に導入されている度合い（採用率）。導入の成敗は別指標IND-024で測定",
       "threshold": "Fortune 500の50%以上がAIエージェントを業務プロセスに正式導入（PoC・パイリットを除く）",
       "status": "elevated",
-      "last_checked": "2026-03-16",
+      "last_checked": "2026-03-17",
       "last_value": "INFO-015（88%収益増報告）・INFO-016（95%本番稼働）。IND-024（ROI 6%）との乖離継続",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.16: elevated維持。INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明。KIQ-RED-005（ROI定義詳細）最高優先"
+      "rationale": "Arbiter v3.17: elevated維持。INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明。KIQ-RED-005（ROI定義詳細）最高優先"
     },
     {
       "indicator_id": "IND-020",
@@ -354,11 +355,11 @@
       ],
       "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
       "status": "high",
-      "last_checked": "2026-03-16",
+      "last_checked": "2026-03-17",
       "last_value": "条件1達成（INFO-023 Copilot 1,500万人・82%導入率）。条件2達成（INFO-020初級コーディング職侵食）。条件3部分的。2条件達成でhigh維持",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "Arbiter v3.16: high維持。INFO-023（Copilot 1,500万人）は条件1追加支持。確証バイアスリスク認識必要"
+      "rationale": "Arbiter v3.17: high維持。INFO-023（Copilot 1,500万人）は条件1追加支持。確証バイアスリスク認識必要"
     },
     {
       "indicator_id": "IND-023",
@@ -394,11 +395,11 @@
       ],
       "conditions_met_count": "2/4（条件1・2達成）",
       "status": "high",
-      "last_checked": "2026-03-16",
+      "last_checked": "2026-03-17",
       "last_value": "条件1達成（INFO-012 Pentagon法廷闘争継続・INFO-026連邦政府州規制無効化動き）。条件2達成（OpenAI DoD契約）。条件3未達（他社安全性方針後退未確認）。条件3の顕在化を高優先監視",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "Arbiter v3.16: high維持。条件1・2達成再確認。条件3未確認継続。KIQ-002-06高優先"
+      "rationale": "Arbiter v3.17: high維持。条件1・2達成再確認。条件3未確認継続。KIQ-002-06高優先"
     },
     {
       "indicator_id": "IND-024",
@@ -407,11 +408,11 @@
       "description": "AIエージェントを導入した企業が実際にROI正を達成しているか、タスク完了品質は十分か。採用率はIND-019で別途測定",
       "threshold": "AI導入企業のうち20%以上がROI正を報告、かつ先行3業界でAIタスク完了率30%超",
       "status": "monitoring",
-      "last_checked": "2026-03-15",
+      "last_checked": "2026-03-17",
       "last_value": "INFO-015（理論94% vs 実使用33%）はROI低調の構造的説明。ROI正6%継続。IND-019（80%展開予定）との乖離継続。KIQ-RED-005（ROI定義詳細）最高優先",
       "trend": "stable",
       "alert_level": "normal",
-      "rationale": "Arbiter v3.15: monitoring維持。Red指摘検討したがelevated昇格見送り（乖離認識済み・新規証拠なし）。INFO-015（理論94% vs 実使用33%）で構造的説明追加済み。KIQ-RED-005完了後に再評価"
+      "rationale": "Arbiter v3.17: monitoring維持。Red指摘検討したがelevated昇格見送り（乖離認識済み・新規証拠なし）。INFO-015（理論94% vs 実使用33%）で構造的説明追加済み。KIQ-RED-005完了後に再評価"
     }
   ]
 }
