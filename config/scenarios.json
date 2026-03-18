@@ -1,7 +1,7 @@
 {
-  "version": "3.17",
-  "last_updated": "2026-03-17",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.17: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。4シナリオ更新（合計100%確認）。IND-006 high昇格見送り（elevated維持）に連動しSCN-001 ±0%。v3.16: PARTIALLY DEGRADED状態",
+  "version": "3.18",
+  "last_updated": "2026-03-18",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.18: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。4シナリオ更新（合計100%確認）。Red指摘採用でSCN-002 -1%抑制（希望的観測抑制）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -25,7 +25,7 @@
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 20,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.17: ±0%（20%維持）。IND-006 high昇格見送りと連動。SDK発表≠囲い込み確立の因果飛躍リスクあり",
+      "probability_rationale": "Arbiter v3.18: ±0%（20%維持）。IND-006 high見送りと整合。囲い込み証拠（INFO-001/006）と開放証拠（INFO-015）が相殺",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 44,
+      "probability": 43,
       "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.17: -1%（45%→44%）。INFO-008（MCP 6400+）は開放支持だがINFO-014（性能差維持）は格差支持。相殺",
+      "probability_rationale": "Arbiter v3.18: -1%（44%→43%）。Red指摘採用: 希望的観測抑制。INFO-007（AGI認知フレームワーク）は研究リーダーシップ支持",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -65,9 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 17,
+      "probability": 18,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.17: +1%（16%→17%）。INFO-027（Seedance一時停止）は実質的囲い込み兆候",
+      "probability_rationale": "Arbiter v3.18: +1%（17%→18%）。INFO-014（Wukong + DingTalk 2,000万法人）はエコシステム囲い込み。INFO-011（Amazon提携）もクラウド依存深める",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -87,8 +87,8 @@
       "quadrant_label": "開放 × 収斂",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 19,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.17: -1%（20%→19%）。INFO-014（フロンティア性能優位維持）は収斂と矛盾",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v3.18: ±0%（19%維持）。INFO-004（GPT-5.4 mini/nano）はエッジ普及。INFO-015（DeerFlow OSS化、25K★）は開放加速。ただしINFO-014（フロンティア性能優位維持）は収斂と矛盾",
       "key_assumptions": [
         "汎用AIの性能差が5%以内に収斂する",
         "AAIF標準が支配的に採用される",
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-03-17",
-    "note": "SCN-001(20) + SCN-002(44) + SCN-003(17) + SCN-004(19) = 100%. Arbiter統合判断確認済み"
+    "verified_date": "2026-03-18",
+    "note": "SCN-001(20) + SCN-002(43) + SCN-003(18) + SCN-004(19) = 100%. Arbiter統合判断確認済み"
   }
 }
