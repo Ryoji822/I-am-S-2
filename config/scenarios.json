@@ -1,7 +1,7 @@
 {
-  "version": "3.23",
-  "last_updated": "2026-03-21",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.23: Arbiter統合判断（COMPLETE状態）。全シナリオ±0%。Red指摘採用: 資金集中≠市場支配、開放vs囲い込み証拠のバランス再評価。合計100%確認",
+  "version": "3.25",
+  "last_updated": "2026-03-22",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.25: Arbiter統合判断完了。10仮説確度更新。シナリオ2件更新（SCN-002 -1%・SCN-003 +1%）。合計100%確認",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -25,7 +25,7 @@
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 20,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.22: ±0%（20%維持）。Red指摘採用: 資金集中≠市場支配。INFO-078（$110B調達）は資金力だが市場シェアとは直結せず。囲い込み証拠と開放証拠が相殺",
+      "probability_rationale": "Arbiter v3.25: ±0%（20%維持）。資金集中≠市場支配。INFO-032（$110B調達）は資金力だが市場シェアとは直結せず。囲い込み証拠と開放証拠が相殺",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -45,8 +45,8 @@
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 41,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.22: ±0%（41%維持）。Red指摘採用: 開放証拠（MCP標準化）と囲い込み証拠（政府選別的承認）のバランス。現状確率は妥当",
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v3.25: -1%（42%→41%）。Red指摘採用: 単一ベンチマーク依存（INFO-048）・標準化乱立リスク。ただしINFO-029（6プロトコル標準化）・INFO-018（MCP Roadmap）・INFO-046（Colab MCP Server）は開放トレンド支持",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -65,9 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 20,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.22: ±0%（20%維持）。Red指摘採用: INFO-114（豆包MAU 2.26億）はエコシステム依存深化。ただし確度変更は過度。現状確率は妥当",
+      "probability": 21,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v3.25: +1%（20%→21%）。H-ANT-002引き下げ（76%→74%）は囲い込みトレンド弱さ示唆。INFO-033（Anthropic新規採用70%）はエコシステム依存深化。ただし確度変更は抑制",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -86,9 +86,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × 収斂",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 19,
+      "probability": 18,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.22: ±0%（19%維持）。Red指摘採用: INFO-065/076（トークンコスト急落・OSS追い上げ）は参入障壁低下を示すが、INFO-078（$110B調達）・INFO-044/046（政府選別的承認）が対抗。分散化より集中化が優勢",
+      "probability_rationale": "Arbiter v3.25: ±0%（18%維持）。INFO-026/035（GPT-5.4 mini低価格・67%価格削減）は参入障壁低下を示すが、INFO-032（$110B調達）・INFO-042（8,000人倍増）が対抗。分散化より集中化が優勢",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -107,9 +107,9 @@
       "scenario_id": "SCN-BS-001",
       "name": "AI安全性大事故",
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
-      "probability": 10,
+      "probability": 11,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.12: +1% (9%→10%)。INFO-010（OpenClaw 341悪意スキル・135K認証なし公開）はセキュリティリスク急増。IND-019（80%展開）vs IND-024（ROI 6%）の乖離は事故リスク高める",
+      "probability_rationale": "Arbiter v3.25: +1%（10%→11%）。INFO-014/027（Claudy Day脆弱性）・INFO-031（MCP Shadow IT、10,000+サーバー、53%静的シークレット依存）で事故リスク上昇。IND-019 vs IND-024乖離は事故リスク高める",
       "impact": "catastrophic",
       "indicators": ["IND-013", "IND-018", "IND-023"]
     },
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-03-21",
-    "note": "SCN-001(20) + SCN-002(41) + SCN-003(20) + SCN-004(19) = 100%. Arbiter完了（COMPLETE状態、全シナリオ±0%）"
+    "verified_date": "2026-03-22",
+    "note": "SCN-001(20) + SCN-002(41) + SCN-003(21) + SCN-004(18) = 100%. Arbiter完了（SCN-002 -1%、SCN-003 +1%）"
   }
 }

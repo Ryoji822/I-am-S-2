@@ -1,8 +1,9 @@
 {
-  "version": "3.23",
-  "last_updated": "2026-03-21",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.23: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。IND-001/003/004/006/017/018/019/022/023/024 last_checked更新（2026-03-21）。IND-018条件1更新（o3 ARC-AGI 87.5%）、条件3更新（CEO AGI予測3社、自己奉仕的バイアス注記追加）",
+  "version": "3.25",
+  "last_updated": "2026-03-22",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.25: Arbiter統合判断完了。10指標のlast_checked更新。IND-018条件3を「参考情報（自己奉仕的バイアス注意）」に格下げ。IND-001/003/006/017/019/022/023 last_value更新",
   "structural_changes_log": [
+    "2026-03-22 v3.25: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。10指標のlast_checked更新。IND-018条件3を「参考情報（自己奉仕的バイアス注意）」に格下げ。IND-001 last_value更新（GPT-5.4 mini GPQA 88.0%、Gemini 3 Pro MMLU-Pro 89.8%）。IND-003 last_value更新（$110B調達、8,000人倍増）。IND-017 last_value更新（xAI x_search内蔵・OpenClaw展開）",
     "2026-03-21 v3.23: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。10指標のlast_checked更新。IND-018条件1更新（o3 ARC-AGI 87.5%）、条件3更新（CEO AGI予測3社、自己奉仕的バイアス注記追加）。状態変更なし（Red指摘採用: 単一ベンチマーク過信・自己奉仕的バイアスリスク）",
     "2026-03-18 v3.18: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。IND-006 elevated維持（high見送り・Red指摘採用: SDK発表≠囲い込み確立の因果飛躍リスク）。IND-001/003/006/017/018/019/022/023 last_checked更新（2026-03-18）",
     "2026-03-17 v3.17: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。IND-006 elevated維持（high昇格見送り・Red指摘採用: SDK発表≠囲い込み確立の因果飛躍リスク）。IND-001/003/017/018/019/022/023 last_checked更新",
@@ -11,30 +12,7 @@
     "2026-03-14 v3.14: DEGRADED状態（Phase 2/3未実行）。Phase 1成功（57件）。全指標状態変更なし。last_checked更新（2026-03-14）",
     "2026-03-13 v3.13: DEGRADED状態（Phase 1収集失敗）。全指標状態変更なし。last_checked更新（2026-03-13）。Phase 1復旧後に再評価",
     "2026-03-12 v3.12: Arbiter統合判断反映。Red指摘6件採用（相関≠因果採用・希望的観測抑制・累積評価注記）。IND-006 high昇格見送り（elevated維持・「3社SDK連続発表=囲い込み激化」は相関≠因果）。IND-013 elevated昇格採用（OpenClaw 135K暴露・341悪意スキル）。IND-019/022 last_value更新",
-    "2026-03-11 v3.11: Arbiter統合判断反映。Red指摘8件採用（単一ベンチマーク過信抑制・C-3ソース過信抑制・因果解釈留保・希望的観測抑制・自己報告過信抑制）。IND-004 high昇格見送り（elevated維持・単一ベンチマーク過信）。IND-001/003/006/017/018/019/022/023/024更新",
-    "2026-03-10 v3.10: Arbiter統合判断反映。Red指摘6件採用（単一ベンチマーク過信抑制・分母定義欠陥・因果解釈留保・出典不明除外）。IND-001/003/004/006/017/018/019/022/023/024更新",
-    "2026-02-23 v2.0: IND-006+IND-012統合、IND-015+IND-016統合、IND-020+IND-021統合、IND-005/IND-010休止、IND-023新設",
-    "2026-02-23 v2.1: IND-018/020/022に複合条件分解（condition_status）追加",
-    "2026-02-23 v2.1: IND-003に分母（業界全体調達額）追加",
-    "2026-02-23 v2.1: IND-019を「産業採用率」に再定義、「実効性（ROI・品質）」をIND-024として分離",
-    "2026-02-23 v2.1: IND-011のscenario_idsにSCN-003追加（収斂シナリオに収斂指標を紐付け）",
-    "2026-02-24 v2.2: Arbiter統合判断反映。IND-006/015/019はhigh昇格を見送りelevated維持（Red指摘採用：質的評価不足、時期尚早、ROI乖離深刻）",
-    "2026-02-25 v2.3: Arbiter統合判断反映。IND-018 approaching昇格見送り（CEO発言過信リスク）、IND-011 mixed（Gemini躍進で格差拡大）、IND-017 elevated（Xデータ活用明確化）",
-    "2026-02-26 v2.4: Arbiter統合判断反映。IND-018 elevated維持（FirstProof 6/10=60%は未達、Erdos査読不明）、高優先監視昇格",
-    "2026-02-27 v2.5: Arbiter統合判断反映。IND-015 elevated維持（Red指摘採用: 買収≠確立、KIQ-RED-006収集後に再評価）、IND-001 high維持（Nano Banana 2 Image Arena #1）",
-    "2026-03-01 v2.7: Arbiter統合判断反映。IND-003 high維持（Red指摘: 分母不確実性でcritical見送り）、IND-001/006/008/009/011/015/017/018/019/022/023/024更新",
-    "2026-03-01 v2.8: IND-023 elevated→high昇格。名称変更「AI規制・データ主権」→「政府によるAI開発方向性への強制力行使」。条件分解追加（4条件中2達成: 経済的制裁実施+漁夫の利構造成立）。Anthropic SCR指定事件が従来想定（規制・アンチトラスト）を超える質的変化を示したため",
-    "2026-03-01 v2.9: Arbiter統合判断反映。IND-023 high確定（条件3未達注記付き）。IND-003 high維持（OECD分母改善、critical見送り）。IND-001/011更新",
-    "2026-03-02 v3.0: Arbiter統合判断反映。IND-023条件3未達注記明確化（他社の安全性方針後退を高優先監視）",
-    "2026-03-03 v3.1: Blue Agent分析反映。IND-006 last_value更新（KIQ-RED-001回答: MCP週間1,500DL、20%アクティブ）。IND-003 last_value更新（KIQ-RED-007部分回答: AI資本支出GDPの2%）",
-    "2026-03-03 v3.2: Arbiter統合判断反映。IND-022 rationale更新（H-CAR-002確度上昇抑制を反映、確証バイアス警告追加）",
-    "2026-03-04 v3.3: Arbiter統合判断反映。IND-019/024 rationale更新（乖離分析の再評価: ROI定義不一致・タイムラグ考慮不足を注記、KIQ-RED-005最高優先）",
-    "2026-03-05 v3.4: Blue Agent分析反映。IND-003 last_value更新（Anthropic $30B調達、調達総額$69.1B、上位2社シェア69.2%）。IND-019 last_value更新（Block 40%人員削減）。IND-001 last_value更新（Gemini 3 Deep Think ARC-AGI-2 84.6%）",
-    "2026-03-05 v3.5: Arbiter統合判断反映。IND-003 high維持（上位2社シェア69.2%、critical 80%に接近）。IND-019 elevated維持（Block人員削減は単一事例、ROI乖離79pt継続）",
-    "2026-03-06 v3.6: Arbiter統合判断反映。IND-003 last_value更新（OpenAI $110B追加）。IND-018 last_value更新（Gemini 3.1 Pro ARC-AGI-2 84.6%）。IND-023 last_value更新（条件1・2達成再確認）",
-    "2026-03-07 v3.7: Arbiter統合判断反映。IND-001 last_value更新（Gemini 3.1 Pro ARC-AGI-2 77.1%）。IND-018 last_value更新（AGIタイムライン発言ラッシュ・集団浅慮リスク注記）。IND-019 last_value更新（71%企業Q4 2026本番運用予定）。IND-022 last_value更新（ジュニア求人減少）。IND-023 last_value更新（条件1・2再確認・条件3未確認継続）",
-    "2026-03-08 v3.8: Arbiter統合判断反映。IND-001 approaching維持（強化見送り・単一ベンチマーク過信注記）。IND-003 high維持（critical見送り・分母再計算必要）。IND-006/017/018/019/022/023 last_value更新。IND-018条件3に集団浅慮リスク注記追加",
-    "2026-03-09 v3.9: Arbiter統合判断反映。Red指摘6件採用（単一ベンチマーク過信抑制・因果解釈留保）。IND-001/003/006/017/018/019/022/023/024更新。IND-018単一ベンチマーク過信注記強化・訓練データ汚染リスク注記追加。IND-023因果関係推測留保"
+    "2026-03-11 v3.11: Arbiter統合判断反映。Red指摘8件採用（単一ベンチマーク過信抑制・C-3ソース過信抑制・因果解釈留保・希望的観測抑制・自己報告過信抑制）。IND-004 high昇格見送り（elevated維持・単一ベンチマーク過信）。IND-001/003/006/017/018/019/022/023/024更新"
   ],
   "indicators": [
     {
@@ -44,11 +22,11 @@
       "description": "MMLU、GPQA、ARC-AGI等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される。特にARC-AGI-2はAGI到達度の代理指標として重視",
       "threshold": "ベンチマークスコア30%以上の非連続的向上、またはARC-AGI-2で90%超過",
       "status": "high",
-      "last_checked": "2026-03-21",
-      "last_value": "INFO-068: o3 ARC-AGI 87.5%（閾値90%まで2.5%）。INFO-069: GPQA Gemini 3.1 Pro 94.3%首位。単一ベンチマーク過信注意",
+      "last_checked": "2026-03-22",
+      "last_value": "INFO-026: GPT-5.4 mini GPQA Diamond 88.0%、SWE-Bench Pro 54.4%。INFO-048: Gemini 3 Pro MMLU-Pro 89.8%首位。INFO-045: DeepSeek V4内部ベンチマークHumanEval 90%。単一ベンチマーク過信注意",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v3.22: approaching維持。o3 ARC-AGI 87.5%は90%閾値まで2.5%。GPQA 94.3%は90%超過。複数ベンチマーク確認必須（KIQ-RED-007）"
+      "rationale": "Arbiter v3.25: approaching維持。GPT-5.4 mini GPQA 88.0%は90%閾値まで2%。Gemini 3 Pro MMLU-Pro 89.8%首位。複数ベンチマーク確認必須（KIQ-RED-007）"
     },
     {
       "indicator_id": "IND-002",
@@ -75,11 +53,11 @@
         "note": "分母$258.7Bに対し上位2社$179.1B=69.2%。critical（80%）未達"
       },
       "status": "high",
-      "last_checked": "2026-03-21",
-      "last_value": "INFO-078: OpenAI $110B調達（史上最大級）。INFO-079: AIスタートアップVC$128Bの41%占める。分母再計算必要（KIQ-RED-008最高優先）",
+      "last_checked": "2026-03-22",
+      "last_value": "INFO-032: OpenAI $110B調達（史上最大級、$840B評価）。INFO-042: 従業員8,000人に倍増予定。AIスタートアップVC$128Bの41%占める。分母再計算必要（KIQ-RED-008最高優先）",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v3.22: high維持、critical見送り。OpenAI $110B単独調達は前例なし。分母再計算必須（KIQ-RED-008最高優先）"
+      "rationale": "Arbiter v3.25: high維持、critical見送り。OpenAI $110B単独調達は前例なし。分母再計算必須（KIQ-RED-008最高優先）"
     },
     {
       "indicator_id": "IND-004",
@@ -88,11 +66,11 @@
       "description": "オープンソースモデルが主要ベンチマークで商用最上位モデルの90%以上の性能を達成",
       "threshold": "商用最上位の90%性能到達",
       "status": "elevated",
-      "last_checked": "2026-03-21",
-      "last_value": "INFO-071: 32BパラメータOSSが671B商用超え（数学・コーディング）。INFO-076: Llama 4 Scout 3011% cheaper than Gemini 3 Pro。INFO-075: 80%エンタープライズユースケースはフロンティア不要。単一ベンチマーク過信注意（Red指摘）",
+      "last_checked": "2026-03-22",
+      "last_value": "INFO-045: DeepSeek V4内部ベンチマークHumanEval 90%、SWE-bench 80%超噂。INFO-076: Llama 4 Scout 3011% cheaper than Gemini 3 Pro。INFO-075: 80%エンタープライズユースケースはフロンティア不要。単一ベンチマーク過信注意（Red指摘）",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.22: elevated維持。Red指摘採用: high昇格見送り。INFO-071/076はOSS追い上げの強力な証拠だが、単一ベンチマーク依存。複数ベンチマーク比較（KIQ-RED-007）完了まで保留"
+      "rationale": "Arbiter v3.25: elevated維持。Red指摘採用: high昇格見送り。INFO-071/076はOSS追い上げの強力な証拠だが、単一ベンチマーク依存。複数ベンチマーク比較（KIQ-RED-007）完了まで保留"
     },
     {
       "indicator_id": "IND-005",
@@ -114,11 +92,11 @@
       "description": "プロトコル層はMCP+A2AでLinux Foundation傘下に標準化済み（2025年12月AAIF設立）。競争の焦点は実行環境（Shell/Sandbox）、オーケストレーション（LangGraph/CrewAI/Semantic Kernel）、ガバナンス層に移行。各社がこれらの上位レイヤーでどの程度囲い込みを構築しているかを追跡",
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
       "status": "elevated",
-      "last_checked": "2026-03-21",
-      "last_value": "INFO-005: OpenAI Agents SDK .NET追加。5社（OpenAI/Anthropic/Google/xAI/ByteDance）が3月にAgent SDK/API連続発表。閾値「主要3社のうち2社以上」を4社で達成。囲い込み競争激化は客観的だが囲い込み確立は未検証",
+      "last_checked": "2026-03-22",
+      "last_value": "INFO-008: OpenAI Agents SDK v0.7.2（Computer Use Tool GA）。INFO-009/020: Claude Agent SDK v0.2.79/81。INFO-010/025: Gemini API Tooling（クロスツールコンテキスト循環）。INFO-011: xAI Multi-Agent Research（4/16エージェント構成）。INFO-022: Feishu Aily。6社が3月にAgent SDK/API連続発表",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.22: elevated維持（high見送り）。Red指摘採用: SDK発表≠囲い込み確立の因果飛躍リスク。MCP準拠度・API互換性・データ移植性の定量分析（新規KIQ-NEW-SDK）完了後に再評価"
+      "rationale": "Arbiter v3.25: elevated維持（high見送り）。Red指摘採用: SDK発表≠囲い込み確立の因果飛躍リスク。MCP準拠度・API互換性・データ移植性の定量分析（新規KIQ-NEW-SDK）完了後に再評価"
     },
     {
       "indicator_id": "IND-007",
@@ -191,11 +169,11 @@
       "description": "AI Agentによる大規模な社会的損害（フェイク情報拡散、金融損失、物理的事故等）が発生し、主要メディアで報道",
       "threshold": "主要メディア5社以上で報道されるAI事故",
       "status": "elevated",
-      "last_checked": "2026-03-14",
-      "last_value": "INFO-010（OpenClaw 135K認証なし公開・341悪意スキル）。重大事故未満だがリスク急増。MCP実装の43%にコマンドインジェクション脆弱性（Equixly調査）",
+      "last_checked": "2026-03-22",
+      "last_value": "INFO-014/027（Claudy Day脆弱性・修正済み）。INFO-031（MCP Shadow IT、10,000+サーバー、53%静的シークレット依存）。重大事故未満だがリスク急増",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.12: elevated昇格。INFO-010は客観的に重大なセキュリティインシデント。Blue/Red一致。重大事故（社会的損害）には至っていないが事故リスク急増"
+      "rationale": "Arbiter v3.25: elevated維持。INFO-014/027/031は客観的に重大なセキュリティインシデント。重大事故（社会的損害）には至っていないが事故リスク急増"
     },
     {
       "indicator_id": "IND-014",
@@ -229,11 +207,11 @@
       "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）やコンテキスト蓄積をAIの差別化に活用している度合い",
       "threshold": "独占データを活用したAI機能が各社3つ以上、かつエンタープライズのデータ移行コストが高コスト化",
       "status": "elevated",
-      "last_checked": "2026-03-21",
-      "last_value": "INFO-008（xAIリアルタイムマルチエージェント研究）はXデータ独占活用を暗示。INFO-114（豆包MAU 2.26億）は中国市場での圧倒的データ優位。5社が独自データ活用明確化",
+      "last_checked": "2026-03-22",
+      "last_value": "INFO-011（xAI Multi-Agent Researchのx_search内蔵）はXデータ独占活用の直接証拠。INFO-024（OpenClaw/ArkClaw展開）。INFO-033（Anthropic新規採用70%）。INFO-005/006（Google Personal Intelligence + Fitbit連携）。5社が独自データ活用明確化",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.22: elevated維持。データ独占活用継続。xAI X Search、ByteDance TikTok/豆包データ等の活用が明確化"
+      "rationale": "Arbiter v3.25: elevated維持。データ独占活用継続。xAI X Search、ByteDance TikTok/豆包データ、Google Personal Intelligence等の活用が明確化"
     },
     {
       "indicator_id": "IND-018",
@@ -246,7 +224,7 @@
           "id": 1,
           "description": "ARC-AGI-2スコア90%超",
           "met": false,
-          "evidence": "INFO-068: o3 ARC-AGI 87.5%（閾値90%まで2.5%）。単一ベンチマーク依存・訓練データ汚染リスク未検証（Red指摘）"
+          "evidence": "INFO-026: GPT-5.4 mini GPQA Diamond 88.0%。INFO-048: Gemini 3 Pro MMLU-Pro 89.8%。INFO-045: DeepSeek V4内部ベンチマークHumanEval 90%。単一ベンチマーク依存・訓練データ汚染リスク未検証（Red指摘）"
         },
         {
           "id": 2,
@@ -257,8 +235,8 @@
         {
           "id": 3,
           "description": "主要CEOが2年以内のAGIを公言",
-          "met": "partial",
-          "evidence": "INFO-105: Amodei「2026-2027年ノーベル賞受賞者以上」。INFO-106: Altman「2028年初頭AGI」。INFO-107: Hassabis「5-10年AGI」。3社CEO一致。Red指摘: 自己奉仕的バイアスリスク高・集団浅慮警告"
+          "met": "reference",
+          "evidence": "INFO-036: Amodei「2026-2027年ノーベル賞受賞者以上」、Altman「2028年ASI」、Hassabis「5-10年」。3社CEO一致。Arbiter判断: 自己奉仕的バイアスリスク高のため「参考情報（バイアス注意）」に格下げ"
         },
         {
           "id": 4,
@@ -273,48 +251,14 @@
           "evidence": "AI支援での創薬事例はあるが「自律的に発見・検証」は未達"
         }
       ],
-      "conditions_met_count": "2/5（条件1接近、条件3該当、条件2部分的進展）",
+      "conditions_met_count": "1-2/5（条件1接近、条件3参考情報、条件2部分的進展）",
       "priority": "高優先監視",
       "status": "elevated",
-      "last_checked": "2026-03-21",
-      "last_value": "条件1: o3 ARC-AGI 87.5%（INFO-068、閾値90%まで2.5%）。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。条件3: 該当強化（Amodei/Altman/Hassabis 3社CEO一致・INFO-105/106/107）。INFO-104（AGI認知フレームワーク）は条件1の標準化進展。自己奉仕的バイアス注記維持。条件1単一ベンチマーク依存・訓練データ汚染リスク未検証。2/5閾値到達",
+      "last_checked": "2026-03-22",
+      "last_value": "条件1: GPQA 88.0%・MMLU-Pro 89.8%（閾値90%まで1-2%）。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。条件3: 参考情報に格下げ（自己奉仕的バイアス注意）。条件1単一ベンチマーク依存・訓練データ汚染リスク未検証。1-2/5閾値到達",
       "trend": "approaching",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.22: elevated維持。Red指摘採用: 単一ベンチマーク（ARC-AGI）依存・訓練データ汚染リスク未検証。条件3（CEO予測）は自己奉仕的バイアスリスク高。INFO-104（AGI認知フレームワーク）は条件1（ベンチマーク）の標準化進展だが90%超未達。3/5閾値未到達だが高優先監視継続。複数ベンチマーク確認必須（KIQ-RED-007）"
-    },
-        {
-          "id": 2,
-          "description": "AIによる査読付き論文の単独執筆",
-          "met": false,
-          "evidence": "部分的進展。FirstProof 6/10（60%）、Erdos #846解決（査読状況不明）。単独執筆事例未確認"
-        },
-        {
-          "id": 3,
-          "description": "主要CEOが2年以内のAGIを公言",
-          "met": "partial",
-          "evidence": "Altman「2028年スーパーインテリジェンス初期版」（INFO-013）。Hassabis「5-7年」。CEO間で見解分裂。Red指摘: 自己奉仕的バイアスリスク・集団浅慮"
-        },
-        {
-          "id": 4,
-          "description": "政府レベルのAGIモラトリアム議論",
-          "met": false,
-          "evidence": "EU AI法は汎用AI規制だがAGI特化のモラトリアム議論は未発生"
-        },
-        {
-          "id": 5,
-          "description": "AIが新薬候補を自律的に発見・検証",
-          "met": false,
-          "evidence": "AI支援での創薬事例はあるが「自律的に発見・検証」は未達"
-        }
-      ],
-      "conditions_met_count": "2/5（条件1接近、条件3該当、条件2部分的進展）",
-      "priority": "高優先監視",
-      "status": "elevated",
-      "last_checked": "2026-03-18",
-      "last_value": "条件1: ARC-AGI-2 83.3%（INFO-056、閾値90%まで6.7%）。条件2: FirstProof 6/10（60%）、Erdos #846（査読不明）。条件3: 該当強化（Musk 2026年末AGI発言・INFO-025）。INFO-007（AGI認知フレームワーク）は条件1の標準化進展。自己奉仕的バイアス注記維持。条件1単一ベンチマーク依存・訓練データ汚染リスク未検証。2/5閾値到達",
-      "trend": "approaching",
-      "alert_level": "elevated",
-      "rationale": "Arbiter v3.18: elevated維持。Red指摘採用: 単一ベンチマーク（ARC-AGI-2）依存・訓練データ汚染リスク未検証。INFO-007（AGI認知フレームワーク）は条件1（ベンチマーク）の標準化進展だが90%超未達。3/5閾値未到達だが高優先監視継続。複数ベンチマーク確認必須（KIQ-RED-007）"
+      "rationale": "Arbiter v3.25: elevated維持。Red指摘強く採用: 条件3（CEO予測）は自己奉仕的バイアスリスク高のため「参考情報（バイアス注意）」に格下げ。条件1単一ベンチマーク依存・訓練データ汚染リスク未検証。3/5閾値未到達だが高優先監視継続。複数ベンチマーク確認必須（KIQ-RED-007）"
     },
     {
       "indicator_id": "IND-019",
@@ -323,11 +267,11 @@
       "description": "AIエージェントが企業業務に導入されている度合い（採用率）。導入の成敗は別指標IND-024で測定",
       "threshold": "Fortune 500の50%以上がAIエージェントを業務プロセスに正式導入（PoC・パイリットを除く）",
       "status": "elevated",
-      "last_checked": "2026-03-21",
-      "last_value": "INFO-012: マルチエージェント採用4ヶ月で327%増加。INFO-035: 43%組織がアジェンティックAI導入検討。INFO-028: 80-90%エージェントプロジェクト失敗率（RAND）。IND-024（ROI 6%）との乖離継続",
+      "last_checked": "2026-03-22",
+      "last_value": "INFO-016: マルチエージェント採用4ヶ月で327%増加。INFO-040: 労働者AIアクセス50%増。INFO-041: 37%組織がアジェンティックAI導入検討。INFO-051: AIセキュリティがトップ優先事項に。IND-024（ROI 6%）との乖離継続",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.22: elevated維持。INFO-012（327%増）は採用拡大の客観的証拠。IND-024（ROI 6%）との乖離継続。KIQ-RED-005（ROI定義詳細）最高優先"
+      "rationale": "Arbiter v3.25: elevated維持。INFO-016（327%増）・INFO-040（50%増）は採用拡大の客観的証拠。IND-024（ROI 6%）との乖離継続。KIQ-RED-005（ROI定義詳細）最高優先"
     },
     {
       "indicator_id": "IND-020",
@@ -391,11 +335,11 @@
       ],
       "conditions_met_count": "2-3/3（条件1・2達成、条件3部分的）",
       "status": "high",
-      "last_checked": "2026-03-18",
-      "last_value": "条件1達成（INFO-012/013/015 エージェントツール拡大・Copilot 1,500万人・82%導入率）。条件2達成（INFO-020初級コーディング職侵食・ジュニア採用73%減）。条件3部分的。2条件達成でhigh維持",
+      "last_checked": "2026-03-22",
+      "last_value": "条件1達成（INFO-008/009/010/011エージェントツール拡大・Copilot 1,500万人・82%導入率）。条件2達成（INFO-020初級コーディング職侵食・ジュニア採用73%減）。条件3部分的（KPMG 84%採用方針変更・INFO-051 AIセキュリティがトップ優先事項）。2条件達成でhigh維持",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "Arbiter v3.18: high維持。INFO-012/013/015（エージェントツール拡大）は条件1追加支持。確証バイアスリスク認識必要"
+      "rationale": "Arbiter v3.25: high維持。INFO-008/009/010/011/022（エージェントツール拡大）は条件1追加支持。INFO-051（AIセキュリティがトップ優先事項）は条件3部分的支持。確証バイアスリスク認識必要"
     },
     {
       "indicator_id": "IND-023",
@@ -408,13 +352,13 @@
           "id": 1,
           "description": "政府がAI企業に対し安全性姿勢を理由とした経済的制裁（契約排除・制裁指定・調達禁止）を実施",
           "met": true,
-          "evidence": "INFO-012: Pentagon SCR法廷闘争継続・EFF支援。INFO-026: 連邦政府州AI規制無効化動き"
+          "evidence": "INFO-034: Pentagon SCR法廷闘争継続・EFF支援。INFO-026: 連邦政府州AI規制無効化動き"
         },
         {
           "id": 2,
           "description": "制裁された企業のポジションを競合が即座に獲得（漁夫の利構造の成立）",
           "met": true,
-          "evidence": "OpenAI DoD契約締結"
+          "evidence": "INFO-034: OpenAI Pentagon契約締結"
         },
         {
           "id": 3,
@@ -431,11 +375,11 @@
       ],
       "conditions_met_count": "2/4（条件1・2達成）",
       "status": "high",
-      "last_checked": "2026-03-18",
-      "last_value": "条件1達成（INFO-010 Pentagon契約）。条件2達成（OpenAI DoD契約）。条件3未達（他社安全性方針後退未確認）。条件3の顕在化を高優先監視",
+      "last_checked": "2026-03-22",
+      "last_value": "条件1達成（INFO-034 Pentagon SCR指定・180日以内削除命令）。条件2達成（INFO-034 OpenAI Pentagon契約）。条件3未達（他社安全性方針後退未確認）。条件3の顕在化を高優先監視",
       "trend": "rising",
       "alert_level": "high",
-      "rationale": "Arbiter v3.18: high維持。条件1・2達成再確認。条件3未確認継続。KIQ-002-06高優先"
+      "rationale": "Arbiter v3.25: high維持。条件1・2達成再確認。条件3未確認継続。KIQ-002-06高優先"
     },
     {
       "indicator_id": "IND-024",
@@ -444,11 +388,11 @@
       "description": "AIエージェントを導入した企業が実際にROI正を達成しているか、タスク完了品質は十分か。採用率はIND-019で別途測定",
       "threshold": "AI導入企業のうち20%以上がROI正を報告、かつ先行3業界でAIタスク完了率30%超",
       "status": "monitoring",
-      "last_checked": "2026-03-18",
-      "last_value": "ROI正6%継続。IND-019（Claude Code $1B ARR）との乖離継続。INFO-015（理論94% vs 実使用33%）で構造的説明追加済み。KIQ-RED-005（ROI定義詳細）最高優先",
+      "last_checked": "2026-03-22",
+      "last_value": "ROI正6%継続。IND-019（Claude Code $2.5B run rate）との乖離継続。INFO-015（理論94% vs 実使用33%）で構造的説明追加済み。KIQ-RED-005（ROI定義詳細）最高優先",
       "trend": "stable",
       "alert_level": "normal",
-      "rationale": "Arbiter v3.18: monitoring維持。Red指摘検討したがelevated昇格見送り（乖離認識済み・新規証拠なし）。INFO-015（理論94% vs 実使用33%）で構造的説明追加済み。KIQ-RED-005完了後に再評価"
+      "rationale": "Arbiter v3.25: monitoring維持。Red指摘検討したがelevated昇格見送り（乖離認識済み・新規証拠なし）。INFO-015（理論94% vs 実使用33%）で構造的説明追加済み。KIQ-RED-005完了後に再評価"
     }
   ]
 }
