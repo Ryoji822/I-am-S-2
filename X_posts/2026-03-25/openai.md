@@ -30,3 +30,13 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**04:14 JST** | [原文](https://x.com/OpenAIDevs/status/2036522094218060241)
+
+> With Codex, Ryan built @NotionHQ’s AI Voice Input feature entirely by himself.
+> 
+> @ryannystrom used Codex to understand the context, point Codex to an existing mobile feature, and ship it to web and desktop while still managing a team.
+
+---
+
