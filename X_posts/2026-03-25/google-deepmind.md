@@ -30,3 +30,13 @@
 
 ---
 
+## @OfficialLoganK (Logan Kilpatrick - AI Studio / Gemini API)
+
+**05:48 JST** | [原文](https://x.com/OfficialLoganK/status/2036545823027126759)
+
+> we are designing something special for Google IO and we want you to be part of it
+> 
+> reply with your AI Studio app, along with a 1-sentence story on how and why you vibe coded it
+
+---
+
