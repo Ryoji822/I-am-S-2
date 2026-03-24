@@ -12,3 +12,15 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**21:21 JST** | [原文](https://x.com/GoogleDeepMind/status/2036418139672482229)
+
+> Google DeepMind 🤝 Agile Robots
+> 
+> Our new research partnership will integrate the Gemini foundation models with their hardware to help build the next generation of more helpful and useful robots. 
+> 
+> Find out more → https://goo.gle/4lKu7de
+
+---
+
