@@ -1,74 +1,60 @@
 # OpenAI
 
-> 最終更新: 2026-03-09
+> 最終更新: 2026-03-24
 
-**$110B調達完了（評価額$730B）でAI業界最大の資金力を確立。GPT-5.4 ProがARC-AGI-2で83.3%を達成し、初めて人間（72.4%）を超過——フロンティア性能でGemini 3.1 Pro（77.1%）を6.2pt引き離しベンチマーク首位を奪還 [INFO-015](../Information/2026-03-08/collected-raw.md#INFO-015)。年間収益$25Bだが黒字化見通しは立たず [INFO-022](../Information/2026-03-08/collected-raw.md#INFO-022)。Frontierプラットフォームでエンタープライズを取りつつ、Skills/Shell/CompactionでMCP上に独自の実行環境レイヤーを構築する二層戦略は継続。DoW契約締結 [INFO-002](../Information/2026-03-08/collected-raw.md#INFO-002) でAnthropic SCR指定の「漁夫の利」を獲得したが、ChatGPTアンインストール295%急増 [INFO-037](../Information/2026-03-07/collected-raw.md#INFO-037) で消費者ブランドに傷。エンタープライズLLM支出シェアは27%でAnthropic（40%）に劣後のまま。**
+AIとして初めて人間を超えるベンチマーク（ARC-AGI-2 83.3%）を出し、$110Bの調達を完了し、政府契約も取った。だがエンタープライズLLMシェアはAnthropicの40%に対して27%で負けたまま。$25B年間収益で黒字化できていない。技術と金では勝っているのに、市場では追いついていない。
 
 ## この会社は何者か
 
-Sam Altman率いるAI企業。主力はChatGPT、GPT-5.4シリーズ（GPT-5.4 Pro含む）、OpenAI Agents SDK、Frontierプラットフォーム、Operator（CUA）。
+Sam Altman率いるAI企業。主力はChatGPT、GPT-5.4シリーズ（Pro/mini/nano）、Agents SDK、Frontierプラットフォーム、Codex、Operator（CUA）。
 
-$110Bの調達が完了（2026年3月、評価額$730B） [INFO-009](../Information/2026-03-08/collected-raw.md#INFO-009)。年間収益$25B [INFO-022](../Information/2026-03-08/collected-raw.md#INFO-022)。AI業界最大の資金力。Anthropicの$30Bの約3.7倍。
+資金力はAI業界最大。$110B調達が完了（2026年2月、$840B評価額）[INFO-042](../Information/2026-03-22/collected-raw.md#INFO-042)。年間収益$25B。Anthropic $30Bの約3.7倍。H2 2026にIPOを検討中。従業員は年末までに8,000人に倍増予定。ただし黒字化は未達。
 
-GPT-5.4 Proは2026年3月にリリースされ、ARC-AGI-2で83.3%を達成——人間ベースライン（72.4%）を初めて超過した [INFO-015](../Information/2026-03-08/collected-raw.md#INFO-015)。前世代GPT-5.2からの明確な性能向上で、Gemini 3.1 Pro（77.1%）を6.2pt引き離しベンチマーク首位を奪還。AGI転換点指標（[IND-001](../config/indicators.json)）の90%閾値まで6.7pt。
+GPT-5.4 ProはARC-AGI-2で83.3%を記録し人間（72.4%）を超えた [INFO-015](../Information/2026-03-08/collected-raw.md#INFO-015)。GPQA Diamond 92.8%。OSWorld-Verified 75.0%。GPT-5.4 miniは$0.75/$4.50で400Kコンテキスト、GPT-5.4 nanoは$0.20/$1.25でサブエージェント最適化 [INFO-026](../Information/2026-03-22/collected-raw.md#INFO-026)。nanoはCodexクオータの30%しか消費しない。
 
-エンタープライズAI利用がYoY 8倍、推論モデル利用は300倍に増加 [INFO-020](../Information/2026-02-18/collected-raw.md#INFO-020)。ただしエンタープライズLLM支出シェアは27%でAnthropic（40%）に首位を奪われたまま（Menlo Ventures調査）。
+エンタープライズAI利用はYoY 8倍。ただしLLM支出シェアは27%でAnthropic（40%）に逆転されたまま。Rampデータでは34.4%のビジネスがOpenAIに支払っているが、2月にOpenAIは-1.5%（過去最大の月間減少）を記録 [INFO-033](../Information/2026-03-22/collected-raw.md#INFO-033)。
 
-直近の重要な動き: (1) GPT-5.4 / GPT-5.4 Proリリース（ARC-AGI-2人間超え） [INFO-001](../Information/2026-03-08/collected-raw.md#INFO-001)。(2) DoWと機密ネットワーク展開契約を締結（国内監視禁止条項付き） [INFO-002](../Information/2026-03-08/collected-raw.md#INFO-002)。(3) AWS提携でBedrockにStateful Runtime展開 [INFO-039](../Information/2026-03-07/collected-raw.md#INFO-039)。(4) Assistants API 2026年8月26日廃止決定、Responses APIに一本化。(5) Skills/Shell/Compactionの3要素をMCP上に構築。
+直近の動き: (1) GPT-5.4 mini/nanoリリース。(2) Agents SDK v0.7.2（WebSocket、computer-use GA）。(3) Promptfoo買収（AI評価・レッドチーミング）[INFO-006](../Information/2026-03-18/collected-raw.md#INFO-006)。(4) Codex自律コーディングエージェント。(5) 政府向けAWS提携で機密・非機密の両方をカバー [INFO-023](../Information/2026-03-20/collected-raw.md#INFO-023)。(6) Assistants API 2026年8月26日廃止、Responses APIに一本化。
 
 ## 何をやろうとしているか
 
-OpenAIの動きから、2つの戦略と1つの野望が同時に読み取れる。
+### 大企業向けAIプラットフォームになる（H-OAI-001、確度63%）
 
-**方向1: 大企業向けAIプラットフォームになる（H-OAI-001, 確度61%）**
+Frontierプラットフォーム（HP、Intuit、Oracle、Uber採用）とResponses API一本化でエンタープライズ基盤を固める。$110Bと$25B年間収益が資金基盤。GPT-5.4 mini/nanoの積極的な価格設定（$0.20〜$0.75/M入力）は、サブエージェント層でのコスト競争力を確保する動き。
 
-Frontierプラットフォームを立ち上げ、HP、Intuit、Oracle、Uberが初期顧客として採用済み [INFO-013](../Information/2026-02-21/collected-raw.md#INFO-013)。Assistants API 2026年8月廃止→Responses API一本化。$110B調達と$25B年間収益がこの戦略の資金基盤。
+DoW契約でAnthropic SCR指定の間隙を突き政府市場に参入。AWS提携で機密業務にも拡大 [INFO-023](../Information/2026-03-20/collected-raw.md#INFO-023)。ただしDoW契約後にChatGPTアンインストールが295%急増 [INFO-037](../Information/2026-03-07/collected-raw.md#INFO-037)。Greg Brockman（社長）のMAGA Super PAC $25M寄付も報じられ [INFO-020](../Information/2026-03-20/collected-raw.md#INFO-020)、政府に近づくほど一部ユーザーが離れる構造が見えている。
 
-エンタープライズLLMシェア27%はAnthropicの40%に対して劣位だが、DoW契約はAnthropic SCR指定の隙間を突いた政府市場参入（「漁夫の利」構造 [H-GOV-001](../config/hypotheses.json)）。一方でChatGPTアンインストール295%急増 [INFO-037](../Information/2026-03-07/collected-raw.md#INFO-037) は消費者ブランドへの逆風。
+### MCP上に独自実行環境を構築して囲い込む（H-OAI-002、確度59%）
 
-**方向2: MCP上に独自実行環境を構築し囲い込む（H-OAI-002, 確度59%）**
+Skills/ShellはMCPに対抗するものではなく、MCP上に構築された独自の上位レイヤー。Skillsはエージェント機能パッケージ（SKILL.mdマニフェスト付き、OpenAI独自形式）。Shellはクラウド実行環境で、Claude Codeのローカル実行と対照的。OpenClaw Skills Registryは5,400超に成長。
 
-重要な事実: OpenAIはMCPを採用しAAIF共同創設に参加した（2025年12月、Linux Foundation）。Skills/ShellはMCPの「対抗」ではなく、**MCP上に構築された独自の上位レイヤー**。
+Agents SDK v0.7.2はPython月間1470万DL、TypeScript 150万DL [INFO-006](../Information/2026-03-12/collected-raw.md#INFO-006)。GitHub Stars 2,500はClaude SDK（992）の2.5倍。.NET対応も追加。ただしAWS提携（Bedrockへのstateful runtime展開）[INFO-039](../Information/2026-03-07/collected-raw.md#INFO-039) は囲い込みと矛盾する開放的側面でもある。
 
-- **Skills**: エージェントに機能を追加するパッケージ（SKILL.md マニフェスト付き）。OpenAI独自形式
-- **Shell**: エージェントが動くホスト型サーバー環境。クラウド依存（AnthropicのClaude Codeローカル実行との対比）
-- **Compaction**: 長時間実行のコンテキスト圧縮技術
+### AGI/スーパーインテリジェンス（H-OAI-003、確度2%、棄却候補）
 
-ただしAWS提携（Bedrockへのstateful runtime展開） [INFO-039](../Information/2026-03-07/collected-raw.md#INFO-039) はOpenClawの囲い込みと矛盾する開放的側面も見せており、確度は59%に微減。
-
-**弱まった野望: AGI/スーパーインテリジェンス（H-OAI-003, 確度7%, low）**
-
-Altmanが「2年以内にスーパーインテリジェンスの初期版」と公言するが、$110B調達・$25B年間収益（黒字化未達）・DoW契約は商業化への全力投資を示す。「商業化よりR&D優先」は確度7%まで低下。GPT-5.4 ProのARC-AGI-2 83.3%はAGI接近の技術的証拠だが、経営行動は商業化優先が明白。
+Altmanは「2028年早期にASI」と公言 [INFO-106](../Information/2026-03-21/collected-raw.md#INFO-106) するが、$110B調達、8,000人増員、政府契約拡大——経営行動はすべて商業化に向いている。言っていることと、やっていることが違う。確度2%で棄却候補。
 
 ## 強みと弱み
 
-**強み:**
-- **圧倒的な資金力**: $110B調達完了（$730B評価額）。開発競争で息切れしない
-- **ベンチマーク首位奪還**: GPT-5.4 Pro ARC-AGI-2 83.3%で人間超え。Gemini 3.1 Proを6.2ptリード [INFO-015](../Information/2026-03-08/collected-raw.md#INFO-015)
-- **政府市場参入**: DoW契約でAnthropic SCR指定の隙間を突き参入 [INFO-002](../Information/2026-03-08/collected-raw.md#INFO-002)
-- **Microsoftとの販路**: 企業へのセールスチャネルが確保済み
-- **Operator/CUA**: ブラウザ操作エージェントの先行投入。DoorDash/Uber等との提携
+OpenAIの強みは圧倒的な資金力（$110B、$840B評価額）と多層的なモデルラインナップ。GPT-5.4 Proで人間超えベンチマーク、mini/nanoで低価格帯もカバー。政府向けAWS提携で機密市場に参入。Agents SDKのGitHub Stars 2,500とNPM dependents 124はオープンソースでの訴求力を示す。Promptfoo買収でAI評価能力を内製化。
 
-**弱み:**
-- **エンタープライズシェア後退**: 27%でAnthropicの40%に逆転されたまま（Menlo Ventures）
-- **消費者ブランド毀損**: DoW契約後にChatGPTアンインストール295%急増 [INFO-037](../Information/2026-03-07/collected-raw.md#INFO-037)
-- **黒字化未達**: $25B年間収益でも黒字化見通しが立っていない [INFO-022](../Information/2026-03-08/collected-raw.md#INFO-022)
-- **Assistants API廃止リスク**: 2026年8月の強制移行で開発者離れの可能性
-- **Skills/Shell囲い込みの不確実性**: MCP上の上位レイヤーが開発者に受け入れられるか未知数。AWS提携は囲い込みと矛盾
+弱みは、技術的優位が市場シェアに転換できていない点。エンタープライズ27%はAnthropicの40%に劣後し、Rampデータでも2月に-1.5%と過去最大の月間減少。$25B年間収益で黒字化未達。ChatGPTアンインストール295%急増と政治的論争（Brockman MAGA寄付）が消費者ブランドを傷つけている。Assistants API 8月廃止は開発者離れのリスク。GitHub Copilotは2000万ユーザーだが満足度9%——「使っている」と「好んで使っている」の差が大きい。
 
 ## 何を監視すべきか
 
 | 何を | なぜ | 今の状態 |
 |------|------|---------|
-| ARC-AGI-2 90%閾値への接近 | AGI転換点指標の鍵。83.3%から6.7pt | 83.3%（[IND-001](../config/indicators.json), high approaching） |
-| エンタープライズLLMシェア推移 | 27%→回復するか。Anthropic 40%への対抗策の効果 | Anthropic首位（[IND-008](../config/indicators.json), elevated） |
-| DoW契約の規模と影響 | 政府市場での収益化がエンタープライズ戦略を補完するか | 契約締結済み。消費者反発との両立が課題 |
-| Skills/Shell開発者定着度 | MCP上の囲い込みレイヤーが受け入れられるか。AWS提携との整合性 | OpenClaw拡大中（[IND-015](../config/indicators.json), elevated） |
+| ARC-AGI-2の90%閾値 | AGI転換点指標の鍵。o3で87.5%まで到達 | 83.3%（Pro）/ 87.5%（o3）。あと2.5pt ([IND-001](../config/indicators.json), high approaching) |
+| エンタープライズLLMシェア | 27%から回復するか。Rampでの-1.5%減少が続くか | Anthropic首位 ([IND-008](../config/indicators.json), elevated) |
+| GPT-5.4 mini/nanoの浸透 | 低価格帯モデルがサブエージェント市場を取るか | $0.20/M入力。Codexクオータ30%消費 |
+| Skills/Shell開発者定着 | MCP上の囲い込みレイヤーが受け入れられるか | OpenClaw 5,400+スキル ([IND-015](../config/indicators.json), elevated) |
 | Assistants API廃止後の動向 | 8月の強制移行で開発者が残るか離れるか | 8月26日廃止確定 |
+| IPO動向 | H2 2026に検討中。公開企業としての透明性要件 | $840B評価額、8,000人増員計画 |
 
 ## 変更履歴
 
 | 日付 | 変更内容 |
 |------|---------|
-| 2026-03-09 | GPT-5.4 Proリリース（ARC-AGI-2 83.3%人間超え）、$110B調達完了（$730B評価額）、$25B年間収益、DoW契約締結を反映。ベンチマーク首位奪還と消費者ブランド毀損の両面を記録 |
-| 2026-02-23 | 初版作成（$100B+調達・Skills/Shell戦略・MCP採用の三面分析）
+| 2026-03-24 | 2週間分統合。GPT-5.4 mini/nano、Agents SDK v0.7.2、Promptfoo買収を追加。H-OAI-001 63%に微増。H-OAI-003 2%棄却候補。評価額$840Bに更新。政府向けAWS提携（機密対応）追加。Rampデータ（OpenAI -1.5%月間減少）追加。8,000人増員・IPO検討。o3 ARC-AGI 87.5%追加。GitHub Copilot 20M/満足度9%データ |
+| 2026-03-09 | GPT-5.4 Proリリース（ARC-AGI-2 83.3%）、$110B調達完了 |
+| 2026-02-23 | 初版作成

@@ -1,90 +1,87 @@
 # Anthropic
 
-> 最終更新: 2026-03-09
+> 最終更新: 2026-03-24
 
-**エンタープライズLLM支出シェア40%で業界首位に立ったAI企業。Claude Codeが開発者愛用率46%で首位を獲得（Pragmatic Engineer調査） [INFO-013](../Information/2026-03-08/collected-raw.md#INFO-013)、$2.5B ARR（ローンチ9ヶ月で達成）。年間収益$14B、$30B Series G（評価額$380B）。MCPは2025年12月にLinux Foundation AAIFに寄贈し業界標準となった。新たな差別化軸はClaude Code + Bun買収 + Agent SDKの開発者ツールエコシステムと、安全性による規制業界での優位性。SCR指定後、Pentagon交渉を再開し安全性妥協の可能性も浮上 [INFO-024](../Information/2026-03-08/collected-raw.md#INFO-024)。サンドボックス脱出脆弱性 [INFO-031](../Information/2026-03-08/collected-raw.md#INFO-031) は安全性リーダーシップの主張と矛盾するリスク要因。**
+エンタープライズLLM支出40%で首位。Claude Code愛用率46%。SWE-bench Verified 80.9%で首位。だがPentagonは$200M契約を正式終了し、Senateは3大AIツールの承認からClaudeだけを除外した。
 
-**【2026-02-27 政府経済的圧力イベント】** Trump政権がAnthropicの連邦政府機関での使用を全面禁止（6ヶ月以内段階的廃止） [INFO-048](../Information/2026-03-01/collected-raw.md#INFO-048)。DoWがAnthropicを「サプライチェーンリスク（SCR）」に指定——従来は中露等の敵対国企業にのみ適用された前例のない措置 [INFO-105](../Information/2026-03-01/collected-raw.md#INFO-105)。理由は自律兵器と大量監視への使用制限を堅持したこと [INFO-086](../Information/2026-03-01/collected-raw.md#INFO-086)。同日夜、OpenAIがDoWと機密ネットワーク展開契約を締結し「漁夫の利」構造が成立 [INFO-097](../Information/2026-03-01/collected-raw.md#INFO-097)。**
+逆説的に、政府排除が民間市場を押し上げている。ビジネスサブスクリプションシェアは24.4%（+4.9pt）で、新規AI導入企業の70%がAnthropicを選んでいる [INFO-033](../Information/2026-03-22/collected-raw.md#INFO-033)。安全性を貫いたことで政府に排除され、排除されたことで民間の信頼を獲得する——この矛盾した構造がAnthropicの現在地。
+
+## 政府との対立（進行中）
+
+時系列で追うと構造が見える。
+
+- **2月27日**: Trump政権がSCR指定・連邦使用禁止。理由は自律兵器と大量監視への制限を貫いたこと [INFO-048](../Information/2026-03-01/collected-raw.md#INFO-048)
+- **同日夜**: OpenAIがDoWと契約締結 [INFO-097](../Information/2026-03-01/collected-raw.md#INFO-097)
+- **3月9日**: Anthropicが憲法修正第1条に基づきDoD提訴
+- **3月11日**: Google・OpenAI社員30名超がAmicus briefを提出 [INFO-055](../Information/2026-03-11/collected-raw.md#INFO-055)
+- **3月14日**: 米国テック労働者70万人がAmazon/Google/Microsoftに安全ガードレール維持を要請 [INFO-056](../Information/2026-03-14/collected-raw.md#INFO-056)
+- **3月20日**: SenateがChatGPT/Gemini/CopilotをTier 2承認。Claudeは「評価中」として除外 [INFO-008](../Information/2026-03-20/collected-raw.md#INFO-008)。提訴翌日のタイミングは政治的
+- **3月21日**: Pentagon、$200M契約を正式終了 [INFO-044](../Information/2026-03-21/collected-raw.md#INFO-044)。同日Googleが2018年のProject Maven撤退を覆し再参入
+
+LA Timesは「シリコンバレーに萎縮効果」と報道 [INFO-052](../Information/2026-03-21/collected-raw.md#INFO-052)。ただし[IND-023](../config/indicators.json)の条件3（他社の安全姿勢後退）は明確に確認されていない。
 
 ## この会社は何者か
 
-Dario Amodei率いるAI企業。主力はClaude 4.6シリーズ（Opus/Sonnet/Haiku）、Claude Code、Claude Agent SDK。
+Dario Amodei率いるAI企業。主力はClaude 4.6シリーズ（Opus/Sonnet/Haiku）、Claude Code、Agent SDK。
 
-資金面では、Series Gで$30Bを調達（評価額$380B、2026年2月）。年間収益$14Bで、過去3年間毎年10倍以上の成長を維持。80%がエンタープライズ直販、$100K以上支出企業が前年比7倍成長。エンタープライズLLM支出シェア40%で首位（Menlo Ventures調査、2023年12%→2026年40%、OpenAI 27%に逆転）。
+資金は$30B（Series G、$380B評価額、2026年2月）。年間収益$14B、80%がB2B（$11.2B）。$100K以上支出の企業は前年比7倍。エンタープライズLLM支出シェアは40%で首位（2023年の12%から急成長、OpenAIの27%に逆転）。Rampデータでは24.4%のビジネスがAnthropicに支払っており、1年前の「25社に1社」から「4社に1社」に [INFO-033](../Information/2026-03-22/collected-raw.md#INFO-033)。
 
-**Claude Codeが最大の成長ドライバー。** ローンチ6ヶ月で$1B ARR到達、2026年2月時点で$2.5B ARR（1月1日から倍増）。ビジネスサブスクリプションは2026年初頭から4倍成長。エンタープライズが収益の50%超。GitHub Copilotに並ぶAIコーディング3大ツールの一つ。
+**Claude Code**: 開発者愛用率46%でCursor（19%）、GitHub Copilot（9%）を大きく引き離す [INFO-013](../Information/2026-03-08/collected-raw.md#INFO-013)。v2.1.76でMCP elicitation対応、1Mコンテキスト標準化、SOC2 Type II準拠 [INFO-012](../Information/2026-03-18/collected-raw.md#INFO-012)。長文コンテキストの価格サーチャージ撤廃（Opus/Sonnet 4.6） [INFO-020](../Information/2026-03-23/collected-raw.md#INFO-020)。70%のFortune 100が採用との報告があるが、ソースはLinkedIn（B-2）で要確認。
 
-2025年12月にBun（JavaScriptランタイム）を買収。Claude Codeの基盤インフラを内製化する戦略的動き。Bunはオープンソース（MIT）を維持。
+**Agent SDK**: TypeScript v0.2.81でforkSession、cancel_async_message、MCP elicitation hooks対応。GitHub Stars 992（OpenAIの2,500に対して弱い）。
 
-直近の動き: (1) Vercept買収でComputer Use能力を強化 [INFO-052](../Information/2026-02-26/collected-raw.md#INFO-052)。(2) RSP v3.0公開、ASL-3セーフガード有効化、Frontier Safety Roadmap導入 [INFO-047](../Information/2026-02-26/collected-raw.md#INFO-047)。(3) Claude Agent SDK v0.2.58でClaude Code v2.1.58とパリティ達成 [INFO-005](../Information/2026-02-26/collected-raw.md#INFO-005)。(4) Coworkプラグインエコシステム拡張、Google Workspace/Salesforce/DocuSign統合 [INFO-011](../Information/2026-02-26/collected-raw.md#INFO-011)。
+**Claude Partner Network**: $100M初期投資。Accentureが30,000人にClaude研修 [INFO-001](../Information/2026-03-21/collected-raw.md#INFO-001)。Claude Certified Architect認定プログラム開始。
 
-価格は、Sonnet 4.6が$3/$15 [INFO-079](../Information/2026-02-18/collected-raw.md#INFO-079)、Opus 4.6は$15/$75→$5/$25に67%値下げ済み [INFO-022](../Information/2026-02-20/collected-raw.md#INFO-022)。
+直近の動き: Vercept買収でOSWorld 72.5%達成 [INFO-002](../Information/2026-03-10/collected-raw.md#INFO-002)。Sydney開設（APAC 4拠点目）。インド#2市場、元Microsoft India MDのIrina Ghoseを起用。Coworkに永続エージェントスレッド追加（Pro/Max）。Claude Opus 4.6がFirefox脆弱性22件を発見（14件が高深刻度）[INFO-012](../Information/2026-03-12/collected-raw.md#INFO-012)。
+
+**セキュリティ課題**: 「Claudy Day」脆弱性チェーン（OASIS Security発見）——URLパラメータ経由プロンプトインジェクション→Files APIデータ窃取→claude.comオープンリダイレクト。Google Ads経由の攻撃ベクトル。Anthropicは責任ある開示で修正済み [INFO-042](../Information/2026-03-23/collected-raw.md#INFO-042)。Coworkプロンプトインジェクション脆弱性（悪意ファイル→隠しプロンプト注入→ファイル窃取）も報告 [INFO-036](../Information/2026-03-23/collected-raw.md#INFO-036)。
 
 ## 何をやろうとしているか
 
-Anthropicの戦略は「安全性」と「開発者ツール」の2つの武器を使い分ける構造。MCPはもはやAnthropicの武器ではなく業界の共有インフラとなった。
+### 安全性でエンタープライズを取る（H-ANT-001、確度51%）
 
-**方向1: 安全性でエンタープライズを取る（H-ANT-001, 確度60%）**
+SOC2準拠、Compliance API、ASL-3保護で規制業界を取る戦略。エンタープライズ40%シェアとRampデータ（新規70%がAnthropic選択）は、民間ではこの戦略が機能している証拠。EU AI法完全施行（2026年8月）は追い風。NBIM（ノルウェー年金基金）が生産性20%向上、AIG引受時間5倍短縮と具体的な成果も出始めている [INFO-003](../Information/2026-03-20/collected-raw.md#INFO-003)。
 
-Anthropicの最大の差別化は安全性。SOC2準拠、Compliance API、ASL-3保護。金融や政府のように規制が厳しい業界では、この安全性の実績が決定的な差になる。EU AI法完全施行（2026年8月）は安全性重視企業に追い風。
+しかし確度は60%→51%に急落した。Pentagon $200M契約終了とSenate除外で、政府市場（推定$100B超）の扉が閉まりつつある。Pentagon交渉再開の報 [INFO-024](../Information/2026-03-08/collected-raw.md#INFO-024) も、契約終了で実質的に上書きされた。
 
-エンタープライズLLM支出40%シェアはこの戦略が機能している証拠。Infosysとの直販提携は通信・金融・製造に直接売り込む動き。
+安全性堅持が政府で罰になり、民間で報われる——この二極化がどちらに傾くかで仮説の行方が決まる。
 
-**ただし2026-02-27のSCR指定・連邦使用禁止は重要な逆風。** 政府市場（推定$100B+）と消費者App Store市場（~$10B）の規模非対称性を考慮すると、安全性堅持が政府市場では致命的なペナルティになる可能性。一方でNate Silver「Claudeはinfluential usersの間で#1 LLM」との評価 [INFO-114](../Information/2026-03-01/collected-raw.md#INFO-114) は消費者・開発者ブランド価値の上昇を示唆。
+### 開発者ツールで差別化する（H-ANT-002、確度73%）— 全仮説中最高
 
-**新たな展開: Pentagon交渉再開。** SCR指定後にもかかわらず交渉を再開 [INFO-024](../Information/2026-03-08/collected-raw.md#INFO-024)。これは安全性堅持の方針に柔軟性が出てきた可能性を示す——確度が70%→60%に下降した主因。**政府市場喪失 vs 消費者ブランド価値上昇 vs 安全性妥協リスク**の三面がH-ANT-001の解釈分岐点。
+Claude Code + Bun + Agent SDKの3点セットによる差別化。Claude Codeはターミナルで直接動き、ローカル実行が可能な点でクラウド依存のOpenAI Shellと対照的。
 
-**方向2: 開発者ツールエコシステムで差別化する（H-ANT-002, 確度78%）★全社仮説中最高★**
+SWE-bench Verified 80.9%で首位（GPT-5.4 71.7%、Gemini 3.1 Pro 63.8%）はコーディング性能での優位を示す。Menlo Ventures調査ではAIコーディング市場の50%超を獲得。
 
-**v2.0で全面再定義。** 旧仮説「MCP二面戦略」はMCPのAAIF寄贈（2025年12月）により無効化された。MCPはAnthropic、OpenAI、Google、Microsoft、AWSが共同創設したLinux Foundation傘下のオープン標準であり、もはや特定企業の競争武器ではない。
+ただし確度は78%→73%に低下。GitHub Stars（992 vs OpenAI 2,500）、SDK dependents（Claude少 vs OpenAI 124 NPM）の差はオープンソースコミュニティでの訴求力の弱さを示す。Pragmatic Engineer調査は早期採用者に偏ったC-3ソース。「愛用率46%」と「エンタープライズ標準」の間には因果の飛躍がある。
 
-新たな差別化軸はClaude Code + Bun + Agent SDKの開発者ツールエコシステム:
-- **Claude Code $2.5B ARR**: ターミナルで直接動作、ファイルシステム・CLIアクセスが特徴。ローカル実行可能でOpenAI Shell（クラウド依存）との対比を形成
-- **Bun買収（2025年12月）**: Claude Codeの基盤インフラを内製化。$1B+ 製品が依存するOSSを自社管理にする戦略的合理性
-- **Agent SDK**: エージェント開発の標準SDKとしてポジショニング
+この仮説が正しければ、Fortune 500での標準採用とAgent SDK外部開発者の急増が見える。間違いなら、Copilot/Cursor/Codexへの流出が見える。
 
-Claude Codeが開発者愛用率46%で首位（Cursor 19%、GitHub Copilot 9%）を獲得 [INFO-013](../Information/2026-03-08/collected-raw.md#INFO-013)。ただしPragmatic Engineer調査は早期採用者・スタートアップ偏重のC-3ソースであり、Fortune 500導入率・解約率データは不在。「愛用率46%」と「エンタープライズ標準ツール化」の間に因果飛躍がある。サンドボックス脱出脆弱性 [INFO-031](../Information/2026-03-08/collected-raw.md#INFO-031) はセキュリティ面での課題を示すが、ツール市場での優位性の証拠は強い。
+### マルチクラウドで広げる（H-ANT-003、確度10%、watch）
 
-この方向が正しければ、Fortune 500でのClaude Code標準採用やAgent SDKの外部開発者急増が見える。間違いなら、GitHub CopilotやCursorへの利用者流出が見える。
-
-**弱まっている読み: AWSに乗る（H-ANT-003, 確度8%, watch）**
-
-AWS経由でエンタープライズに浸透する戦略。しかし$14B ARRの80%がエンタープライズ直販であり、$30B Series Gの$380B評価額でAWS出資比率も相対的に低下。「主戦略」ではなく「一チャネル」にすぎない。
+Claudeは唯一、3大クラウド（AWS、GCP、Azure）全てで利用可能なフロンティアAIモデル [INFO-003](../Information/2026-03-20/collected-raw.md#INFO-003)。主戦略ではないが、配布チャネルとしての意味はある。
 
 ## 強みと弱み
 
-**強み:**
-- **エンタープライズ首位**: LLM支出40%シェア。2023年12%→2026年40%の急成長（Menlo Ventures）
-- **Claude Code**: $2.5B ARR。9ヶ月で$0→$2.5Bは異常な成長速度。製品市場適合の決定的証拠
-- **安全性リーダーシップ**: SOC2準拠、ASL-3保護、RSP v3.0。EU AI法施行で追い風
-- **Bun買収**: 開発者ツール基盤の内製化で長期的な競争優位を構築
-- **Vercept買収**: Computer Use（UI操作エージェント）能力の強化。Microsoft CUAに対抗 [INFO-052](../Information/2026-02-26/collected-raw.md#INFO-052)
-- **価格と性能のバランス**: Sonnet 4.6 $3/$15は性能対価格で優秀
+Anthropicの強みは、エンタープライズでの地位、Claude Codeのコーディング性能、そして逆説的に政府排除が生んだ民間の信頼。LLM支出40%シェア、新規の70%がAnthropic選択という数字は強力。SWE-bench Verified 80.9%首位はコーディングツールとしての実力の裏付け。3大クラウド全対応は配布面での優位。Partner Networkの$100M投資とAccenture 30,000人研修はエコシステム構築が進んでいる証拠。
 
-**弱み:**
-- **政府による経済的報復リスク**: 2026-02-27に連邦使用禁止・SCR指定を受け、政府市場（推定$100B+）へのアクセスを喪失。消費者App Store市場（~$10B）とは規模が非対称 [INFO-048](../Information/2026-03-01/collected-raw.md#INFO-048)。安全性堅持が経済的ペナルティになる構造的リスク ([IND-023](../config/indicators.json), **high**)
-- **ベンチマーク大幅劣位**: GPT-5.4 Pro 83.3%、Gemini 3.1 Pro 77.1%に対しClaude Opus 4.5は37% [INFO-084](../Information/2026-03-01/collected-raw.md#INFO-084)。フロンティア性能での競争力が問題
-- **サンドボックス脱出脆弱性**: Claude Codeのセキュリティ課題が報告 [INFO-031](../Information/2026-03-08/collected-raw.md#INFO-031)。安全性リーダーシップの主張と矛盾
-- **MCP寄贈の代償**: 標準化は業界全体に利益をもたらしたが、Anthropic独自の競争優位にはならなくなった
-- **価格競争の激化**: 業界全体で年10倍の価格下落。安全性だけで価格プレミアムを維持できるかが問題
-- **OpenAI Skills/Shellとの実行環境競争**: OpenAIがSkills/Shellで囲い込みに成功すれば、Claude Codeのローカル実行モデルが不利になる可能性
+弱みは3つの構造的課題。まず政府市場の喪失——Pentagon $200M終了、Senate除外、$13.4Bの自律兵器予算からの排除 ([IND-023](../config/indicators.json), **high**)。安全性が強みであるはずの場所で、安全性ゆえに排除された。次に、ARC-AGI-2での性能劣位。Claude Opus 4.5は37%で、GPT-5.4 Pro（83.3%）やGemini 3.1 Pro（77.1%）に遠く及ばない（ただしGPQAやSWE-benchでは競争力あり）。最後に、セキュリティ脆弱性の連鎖。Claudy Day、Coworkプロンプトインジェクション、サンドボックス脱出——安全性を看板にする企業にとって矛盾が目立つ。
 
 ## 何を監視すべきか
 
 | 何を | なぜ | 今の状態 |
 |------|------|---------|
-| Claude Code ARR推移 | 開発者ツール戦略の成否を直接示す | $2.5B ARR（2026年2月）、1月から倍増 |
-| エンタープライズLLMシェア推移 | 40%が持続するか。OpenAI反攻の兆候はないか | 40%首位（[IND-008](../config/indicators.json), elevated） |
-| Computer Use vs Microsoft CUA | Vercept買収が実効性ある差別化になるか | Vercept買収完了、製品は3/25シャットダウン予定 [INFO-106](../Information/2026-03-01/collected-raw.md#INFO-106) |
-| 政府経済的圧力の他社への波及 | 萎縮効果が業界全体に広がるか（[H-GOV-001](../config/hypotheses.json)） | 条件1・2達成（経済的制裁+漁夫の利）、条件3（他社萎縮）未確認 ([IND-023](../config/indicators.json), **high**) |
-| SCR指定解除・法廷闘争の行方 | 政府の報復措置が撤回されるか | Anthropicは法廷で争う意向 [INFO-105](../Information/2026-03-01/collected-raw.md#INFO-105) |
-| EU AI法施行後の市場変化 | 安全性差別化が決定的に強化されるか | 2026年8月完全施行予定 |
+| Claude Code ARR・市場シェア推移 | 開発者ツール戦略の成否 | 愛用率46%首位。SWE-bench 80.9%首位。ただしGitHub Stars 992はOpenAI 2,500に劣後 |
+| エンタープライズLLMシェア | 40%を維持するか。OpenAI反攻の兆候は | 40%首位。新規70%がAnthropic選択 ([IND-008](../config/indicators.json), elevated) |
+| Anthropic vs DoD訴訟の行方 | 安全性方針が法的に支持されるか | 憲法修正第1条に基づき提訴中 |
+| 他社の安全姿勢の変化 | 萎縮効果（[IND-023](../config/indicators.json)条件3）が確認されるか | 70万人請願。Google Maven再参入は部分的な証拠 |
+| EU AI法施行後の市場変化 | 安全性差別化が国際市場で強化されるか | 2026年8月完全施行予定 |
+| セキュリティ脆弱性の改善 | Claudy Day等の修正後、新たな問題が出ないか | 修正済みだが、安全性ブランドへの影響は残る |
 
 ## 変更履歴
 
 | 日付 | 変更内容 |
 |------|---------|
-| 2026-03-09 | Claude Code愛用率46%首位を反映。H-ANT-002確度78%に上昇。Pentagon交渉再開でH-ANT-001確度60%に下降。サンドボックス脱出脆弱性を弱みに追加 |
-| 2026-03-01 | SCR指定・連邦使用禁止イベントを追記。H-ANT-001確度62%→70%と市場規模非対称性を反映。IND-023 high昇格を監視項目に追加 |
-| 2026-02-26 | Vercept買収（M&A）を追記。RSP v3.0・Cowork拡張を反映。直近動向を更新 |
-| 2026-02-23 | 初版作成（Bun買収・MCP寄贈後の戦略再定義）
+| 2026-03-24 | 2週間分統合。Pentagon $200M契約正式終了、Senate Claude除外を反映。H-ANT-001 51%に低下、H-ANT-002 73%に低下。Rampデータ（24.4%シェア、新規70%選択）追加。Claudy Day/Cowork脆弱性追加。SWE-bench 80.9%首位。Partner Network $100M。Agent SDK v0.2.81。APAC展開（Sydney/India）。マルチクラウド全対応を記録 |
+| 2026-03-09 | Claude Code愛用率46%首位。H-ANT-002 78%。Pentagon交渉再開でH-ANT-001 60%に下降 |
+| 2026-03-01 | SCR指定・連邦使用禁止イベントを追記 |
+| 2026-02-23 | 初版作成
