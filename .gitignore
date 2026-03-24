@@ -1,0 +1,5 @@
+# claude-mem auto-generated context files
+**/CLAUDE.md
+
+# OpenCode skill .env files
+.opencode/skills/**/.env

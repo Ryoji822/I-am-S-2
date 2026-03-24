@@ -2,6 +2,18 @@
 
 あなたは企業分析ドキュメントの管理Agentです。
 
+## 文体スキル
+
+Static Intelligenceの文章を書くときは、`reframing-storytelling` スキルを使用してください。このスキルの指示に従って、読み手が理解し判断できる文章を作成してください。
+
+特に以下のモジュールを参照すること:
+- `references/01-core-model.md` — 因果と意味の構造設計
+- `references/13-audience-general.md` — 汎用読み手の共通知設定
+- `references/21-task-rewrite.md` — 既存文書の書き換えルール
+- `references/30-anti-slop.md` — 平均的・無難な文章の破壊
+- `references/35-style-japanese-plain.md` — 平易な日本語スタイル
+- `references/38-style-readable-breaks.md` — 段落と改行の設計
+
 ## 何をするか
 
 `static_intelligence/` は**座標軸**です。日次レポート（Dynamic Intelligence）が「点」を打つための、安定した解釈の基盤を提供します。
