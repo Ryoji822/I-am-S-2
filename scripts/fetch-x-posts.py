@@ -315,18 +315,51 @@ def main():
     # Git sync & commit
     os.chdir(REPO_DIR)
 
-    # Always pull remote first (Actions may have pushed)
+    # Pre-flight: check for unmerged files (leftover conflicts block everything)
+    status = subprocess.run(
+        ["git", "status", "--porcelain"],
+        capture_output=True, text=True,
+    )
+    unmerged = [l for l in status.stdout.splitlines() if l.startswith(("UU ", "AA ", "DD "))]
+    if unmerged:
+        print(f"ERROR: Unmerged files detected. Git operations blocked until resolved:")
+        for f in unmerged:
+            print(f"  {f}")
+        print("Run 'git status' and resolve conflicts manually.")
+        print(f"[{datetime.now(JST).strftime('%H:%M:%S JST')}] Aborted (unmerged files).")
+        return
+
+    # Pre-flight: abort any in-progress rebase
+    rebase_dir = os.path.join(REPO_DIR, ".git", "rebase-merge")
+    rebase_apply = os.path.join(REPO_DIR, ".git", "rebase-apply")
+    if os.path.isdir(rebase_dir) or os.path.isdir(rebase_apply):
+        print("WARNING: In-progress rebase detected. Aborting it.")
+        subprocess.run(["git", "rebase", "--abort"], capture_output=True)
+
+    # Pull remote first (Actions may have pushed)
     pull = subprocess.run(
         ["git", "pull", "--rebase", "--autostash"],
         capture_output=True, text=True,
     )
     if pull.returncode != 0:
-        print(f"Pull --rebase failed, trying merge: {pull.stderr}")
+        print(f"Pull --rebase failed: {pull.stderr.strip()}")
         subprocess.run(["git", "rebase", "--abort"], capture_output=True)
-        subprocess.run(
+        merge_pull = subprocess.run(
             ["git", "pull", "--no-rebase", "--autostash"],
-            capture_output=True,
+            capture_output=True, text=True,
         )
+        if merge_pull.returncode != 0:
+            print(f"ERROR: Pull --no-rebase also failed: {merge_pull.stderr.strip()}")
+            # Check if conflict was created by the merge pull
+            status2 = subprocess.run(
+                ["git", "status", "--porcelain"],
+                capture_output=True, text=True,
+            )
+            if any(l.startswith(("UU ", "AA ", "DD ")) for l in status2.stdout.splitlines()):
+                print("ERROR: Merge conflict created. Aborting merge to keep repo clean.")
+                subprocess.run(["git", "merge", "--abort"], capture_output=True)
+            print(f"[{datetime.now(JST).strftime('%H:%M:%S JST')}] Aborted (pull failed).")
+            return
 
     if total_new > 0:
         subprocess.run(["git", "add", "X_posts/"], check=False)
@@ -341,17 +374,30 @@ def main():
                 check=False,
             )
 
-    # Always try to push (covers both new posts and synced state)
-    push = subprocess.run(
-        ["git", "push"], capture_output=True, text=True,
-    )
-    if push.returncode == 0:
-        if total_new > 0:
-            print("Committed and pushed.")
+    # Push with retry (handles race with Actions)
+    max_push_attempts = 2
+    for attempt in range(1, max_push_attempts + 1):
+        push = subprocess.run(
+            ["git", "push"], capture_output=True, text=True,
+        )
+        if push.returncode == 0:
+            if total_new > 0:
+                print("Committed and pushed.")
+            else:
+                print("Synced with remote.")
+            break
+        elif "fetch first" in push.stderr or "non-fast-forward" in push.stderr:
+            if attempt < max_push_attempts:
+                print(f"Push rejected (remote updated). Pulling and retrying ({attempt}/{max_push_attempts})...")
+                subprocess.run(
+                    ["git", "pull", "--rebase", "--autostash"],
+                    capture_output=True,
+                )
+            else:
+                print(f"Push failed after {max_push_attempts} attempts: {push.stderr.strip()}")
         else:
-            print("Synced with remote.")
-    else:
-        print(f"Push failed: {push.stderr}")
+            print(f"Push failed: {push.stderr.strip()}")
+            break
 
     print(f"[{datetime.now(JST).strftime('%H:%M:%S JST')}] Done.")
 

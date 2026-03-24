@@ -396,9 +396,31 @@ else
   fi
 
   git commit -m "$COMMIT_MSG"
-  git pull --rebase origin main 2>/dev/null || true
-  git push origin main || git push origin master || log_error "Push failed"
-  log_ok "Changes committed and pushed"
+
+  # Pull with conflict detection (local X post fetcher may have pushed)
+  PUSH_MAX=3
+  for attempt in $(seq 1 $PUSH_MAX); do
+    if git push origin main 2>/dev/null; then
+      log_ok "Changes committed and pushed (attempt $attempt)"
+      break
+    else
+      if [[ $attempt -lt $PUSH_MAX ]]; then
+        log_warn "Push rejected. Pulling and retrying ($attempt/$PUSH_MAX)..."
+        if ! git pull --rebase origin main 2>&1; then
+          log_error "Pull --rebase failed. Aborting rebase and trying merge..."
+          git rebase --abort 2>/dev/null || true
+          if ! git pull --no-rebase origin main 2>&1; then
+            # If merge also fails, abort merge to keep repo clean
+            git merge --abort 2>/dev/null || true
+            log_error "Pull failed. Push aborted to avoid corrupted state."
+            break
+          fi
+        fi
+      else
+        log_error "Push failed after $PUSH_MAX attempts"
+      fi
+    fi
+  done
 fi
 
 # =============================================================================
