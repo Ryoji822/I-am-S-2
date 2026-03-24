@@ -16,3 +16,18 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**01:42 JST** | [原文](https://x.com/EthanJPerez/status/2036553587980116371)
+
+> RT Wojciech Zaremba
+> Life update — I’m moving to the OpenAI Foundation to lead AI resilience.
+> 
+> AGI will bring tremendous benefits and potential disruptions, such as impacts on children and youth, model malfunctions, emergent bio-risks, and more.
+> 
+> AI resilience is about minimizing these disruptions so society can fully realize the benefits.
+> 
+> https://openaifoundation.org/news/update-on-the-openai-foundation
+
+---
+
