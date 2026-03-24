@@ -57,3 +57,11 @@
 
 ---
 
+## @AnthropicAI (Anthropic - 公式アカウント)
+
+**09:45 JST** | [原文](https://x.com/AnthropicAI/status/2029719864533721481)
+
+> A statement from Anthropic CEO Dario Amodei: https://www.anthropic.com/news/where-stand-department-war
+
+---
+

@@ -16,3 +16,11 @@
 
 ---
 
+## @janleike (Jan Leike - Alignment Scienceリーダー)
+
+**04:12 JST** | [原文](https://x.com/undefined/status/1993035110984376796)
+
+> More progress on Claude's alignment!
+
+---
+

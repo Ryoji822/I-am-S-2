@@ -46,3 +46,25 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**16:40 JST** | [原文](https://x.com/undefined/status/2029824309347356940)
+
+> RT @ycombinator: Startup School is back!
+> 
+> Hear from Jensen Huang, @sama, @alexandr_wang, @JeffDean, and more.
+> 
+> Join a hand-selected group o…
+
+---
+
+**07:42 JST** | [原文](https://x.com/undefined/status/2029689052929376635)
+
+> Gemini + Argentina! 🌍🏆
+> 
+> I've loved watching Lionel Messi play since his first days at Barcelona! ⚽️
+> 
+> https://www.afa.com.ar/es/posts/google-gemini-nuevo-main-sponsor-global-de-la-seleccion-argentina
+
+---
+

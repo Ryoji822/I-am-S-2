@@ -45,3 +45,11 @@
 
 ---
 
+## @janleike (Jan Leike - Alignment Scienceリーダー)
+
+**02:07 JST** | [原文](https://x.com/undefined/status/2014022012268847433)
+
+> RT @AmandaAskell: Claude's constitution is out! It's the culmination of a lot of work by many people, but it's also a work in progress that…
+
+---
+

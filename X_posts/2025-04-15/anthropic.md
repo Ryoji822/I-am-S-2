@@ -19,3 +19,11 @@
 
 ---
 
+## @dpkingma (Durk Kingma - 研究者)
+
+**23:03 JST** | [原文](https://x.com/undefined/status/1912144792038875513)
+
+> Thank you! See you guys in Singapore next week 🥳
+
+---
+

@@ -93,3 +93,16 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**04:10 JST** | [原文](https://x.com/jasonkwon/status/2031303370581876872)
+
+> RT OpenAI Developers
+> We’re launching Codex for Open Source to support the contributors who keep open-source software running.
+> 
+> Maintainers can use Codex to review code, understand large codebases, and strengthen security coverage without taking on even more invisible work.
+> 
+> http://developers.openai.com/codex/community/codex-for-oss
+
+---
+

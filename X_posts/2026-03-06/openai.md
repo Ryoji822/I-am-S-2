@@ -328,3 +328,14 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**03:12 JST** | [原文](https://x.com/OpenAIDevs/status/2031498496323518846)
+
+> RT OpenAI Developers
+> Re Migrate to GPT-5.4 with this Codex skill:
+> 
+> https://github.com/openai/skills/tree/main/skills/.system/openai-docs
+
+---
+

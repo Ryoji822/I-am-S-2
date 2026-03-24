@@ -15,3 +15,11 @@
 
 ---
 
+## @dpkingma (Durk Kingma - 研究者)
+
+**22:37 JST** | [原文](https://x.com/undefined/status/1843646902421844062)
+
+> Congrats to @geoffreyhinton for getting the Nobel! His impact is immeasurable, very much deserved.
+
+---
+

@@ -18,3 +18,13 @@
 
 ---
 
+## @janleike (Jan Leike - Alignment Scienceリーダー)
+
+**03:35 JST** | [原文](https://x.com/undefined/status/1997011950400950509)
+
+> Some people have been asking what we did to make Opus 4.5 more aligned.
+> 
+> There are lots of details we're planning to write up, but most important is that alignment researchers are pretty deeply involved in post-training and get a lot of leeway to make changes.
+
+---
+

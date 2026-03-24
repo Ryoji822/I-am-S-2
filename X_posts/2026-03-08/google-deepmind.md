@@ -44,3 +44,17 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**11:00 JST** | [原文](https://x.com/undefined/status/2030463719130702066)
+
+> You don't have many shots at a world championship.  Unless you're Italy!
+
+---
+
+**00:15 JST** | [原文](https://x.com/undefined/status/2030301440678539725)
+
+> I'm looking forward to a great discussion with Bill Dally at @nvidia 's GTC event on March 18!
+
+---
+

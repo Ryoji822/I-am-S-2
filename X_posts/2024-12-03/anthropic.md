@@ -43,3 +43,23 @@
 
 ---
 
+## @dpkingma (Durk Kingma - 研究者)
+
+**04:30 JST** | [原文](https://x.com/undefined/status/1863667152726675857)
+
+> 👇 Great work led by Yushun (@ericzhang0410) introducing Adam-mini, a version of Adam that, surprisingly, reduces Adam's memory requirement by 50% (!), without negatively affecting convergence rates. Please read Yushun's thread for details!
+
+---
+
+**04:15 JST** | [原文](https://x.com/undefined/status/1863663243828371875)
+
+> RT @sedielem: In https://arxiv.org/abs/2303.00848, @dpkingma and @RuiqiGao had suggested that noise augmentation could be used to make other likelih…
+
+---
+
+**04:14 JST** | [原文](https://x.com/undefined/status/1863662926101434594)
+
+> Great blogpost by Ruiqi (and other GDM ex-colleagues), clearly explaining the the connection between flow matching and diffusion models. Super happy they took the time to explain this topic, there's confusion on this topic, I think many will find this quite valuable!
+
+---
+

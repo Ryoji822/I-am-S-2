@@ -37,3 +37,12 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**19:09 JST** | [原文](https://x.com/npew/status/2031036873431498870)
+
+> RT Yam Peleg
+> GPT-5.4 is honestly fantastic, what a great model.
+
+---
+

@@ -15,3 +15,11 @@
 
 ---
 
+## @dpkingma (Durk Kingma - 研究者)
+
+**22:12 JST** | [原文](https://x.com/undefined/status/1978448827964154133)
+
+> I really liked this interview, where Geoff manages to explain the essential bits for a general audience.
+
+---
+

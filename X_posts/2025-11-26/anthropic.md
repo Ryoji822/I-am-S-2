@@ -15,3 +15,11 @@
 
 ---
 
+## @janleike (Jan Leike - Alignment Scienceリーダー)
+
+**05:11 JST** | [原文](https://x.com/undefined/status/1993412369062724022)
+
+> RT @rowankwang: New Anthropic research: We build a diverse suite of dishonest models and use it to systematically test methods for improvin…
+
+---
+

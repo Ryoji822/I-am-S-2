@@ -161,3 +161,19 @@
 
 ---
 
+## @dpkingma (Durk Kingma - 研究者)
+
+**18:30 JST** | [原文](https://x.com/undefined/status/2027677726287782233)
+
+> Obviously I strongly support Anthropic's position here.
+
+---
+
+## @janleike (Jan Leike - Alignment Scienceリーダー)
+
+**08:18 JST** | [原文](https://x.com/undefined/status/2027523889316999398)
+
+> Respect to Anthropic for not backing down
+
+---
+

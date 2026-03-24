@@ -55,3 +55,12 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**01:32 JST** | [原文](https://x.com/EthanJPerez/status/2035512877810069733)
+
+> RT Xander Davies
+> The Red Team at @AISecurityInst is hiring! We work with frontier AI companies to red team their misuse safeguards, control measures, and alignment techniques. As the stakes rise, we need much stronger red teaming and many more talented researchers working within gov 🧵
+
+---
+

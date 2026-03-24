@@ -80,3 +80,11 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**07:53 JST** | [原文](https://x.com/undefined/status/2030054307266187716)
+
+> We've been working on the Waxal dataset project since 2021, aiming to enhance the amount of data available for African languages.  This public speech dataset initially covers 27 Sub-Saharan African languages spoken by over 100 million speakers across more than 26 countries. 🌍
+
+---
+
