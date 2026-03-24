@@ -69,3 +69,12 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**22:27 JST** | [原文](https://x.com/OpenAIDevs/status/2036441057618173966)
+
+> RT Figma
+> Now you can use AI agents to design directly on the Figma canvas, with our new use_figma MCP tool and skills to teach them. Open beta starts today.
+
+---
+
