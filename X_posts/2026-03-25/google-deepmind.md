@@ -14,3 +14,19 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**03:38 JST** | [原文](https://x.com/joshwoodward/status/2036513009661780291)
+
+> I've been at @Google since I was an intern, and there's never been a more exciting time. The place is pulsating.
+> 
+> We're hiring :)
+> 
+> @GeminiApp or @GoogleAIStudio: https://goo.gle/applyhere
+> 
+> @GoogleLabs: https://goo.gle/googlelabsjobs
+> 
+> News from Google: Google was just named #1 in the @FastCompany 2026 World’s Most Innovative Companies list. 🎉 Google is also ranked #1 in their Artificial Intelligence category. See the full story. https://www.fastcompany.com/most-innovative-companies/list
+
+---
+
