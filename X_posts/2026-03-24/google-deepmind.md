@@ -24,3 +24,12 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**23:17 JST** | [原文](https://x.com/JeffDean/status/2036669250476331080)
+
+> RT News from Google
+> Google was just named #1 in the @FastCompany 2026 World’s Most Innovative Companies list. 🎉 Google is also ranked #1 in their Artificial Intelligence category. See the full story. https://www.fastcompany.com/most-innovative-companies/list
+
+---
+
