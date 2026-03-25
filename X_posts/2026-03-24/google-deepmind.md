@@ -33,3 +33,12 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**23:17 JST** | [原文](https://x.com/demishassabis/status/2036702876299665846)
+
+> RT News from Google
+> Google was just named #1 in the @FastCompany 2026 World’s Most Innovative Companies list. 🎉 Google is also ranked #1 in their Artificial Intelligence category. See the full story. https://www.fastcompany.com/most-innovative-companies/list
+
+---
+

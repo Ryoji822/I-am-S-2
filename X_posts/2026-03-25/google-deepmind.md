@@ -57,3 +57,14 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**01:40 JST** | [原文](https://x.com/demishassabis/status/2036701249522061566)
+
+> RT Google DeepMind
+> Watch how fast Gemini 3.1 Flash-Lite can generate websites. ⚡
+> 
+> This browser creates each page in real-time as you click, search, and navigate. Give it a try → https://goo.gle/4t9In1R
+
+---
+
