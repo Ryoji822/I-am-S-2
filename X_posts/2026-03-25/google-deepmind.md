@@ -68,3 +68,17 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**17:46 JST** | [原文](https://x.com/demishassabis/status/2036726283464581343)
+
+> Excited to partner with Agile Robots! Looking forward to seeing our models being deployed through Agile Robots incredible platform to help solve some of the most complex industrial challenges
+> 
+> Google DeepMind: Google DeepMind 🤝 Agile Robots
+> 
+> Our new research partnership will integrate the Gemini foundation models with their hardware to help build the next generation of more helpful and useful robots. 
+> 
+> Find out more → https://goo.gle/4lKu7de
+
+---
+
