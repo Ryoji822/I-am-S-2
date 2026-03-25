@@ -140,3 +140,14 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**10:20 JST** | [原文](https://x.com/OpenAIDevs/status/2036634726531031516)
+
+> RT dominik kundel
+> Little quality of life improvement in the Codex app. You can now search your threads for faster navigation.
+> 
+> And if you don't want to take your hands off the keyboard you can open it directly using Cmd+K
+
+---
+
