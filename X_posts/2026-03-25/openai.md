@@ -151,3 +151,13 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**23:16 JST** | [原文](https://x.com/kevinweil/status/2036809393405317545)
+
+> 👀
+> 
+> Jared Duker Lichtman: In the latest paper of Terry Tao
+
+---
+
