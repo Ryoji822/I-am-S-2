@@ -42,3 +42,16 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**21:21 JST** | [原文](https://x.com/JeffDean/status/2037007655835992191)
+
+> RT Google DeepMind
+> Google DeepMind 🤝 Agile Robots
+> 
+> Our new research partnership will integrate the Gemini foundation models with their hardware to help build the next generation of more helpful and useful robots. 
+> 
+> Find out more → https://goo.gle/4lKu7de
+
+---
+
