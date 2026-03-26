@@ -29,3 +29,18 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**01:02 JST** | [原文](https://x.com/joshwoodward/status/2036999432210973036)
+
+> RT Google Gemini
+> Longer tracks are here with Lyria 3 Pro in Gemini!
+> 
+> From experimenting with different styles to generating tracks with complex transitions, Lyria 3 Pro makes it easier to bring your full vision to life.
+> 
+> Rolling out today to Google AI Plus, Pro, and Ultra users. 
+> 
+> Learn more 🧵
+
+---
+
