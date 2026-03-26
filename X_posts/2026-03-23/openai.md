@@ -33,3 +33,18 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**09:17 JST** | [原文](https://x.com/OpenAIDevs/status/2036899550276080000)
+
+> RT Ksenia_TuringPost
+> How coding agents are changing developer workflows?
+> 
+> The new inner loop of developers emerges. And the main question is how to optimize this AI-assisted coding loop centered around assistants like @OpenAI's Codex, parallel task execution and reusable skills.
+> 
+> @bolinfest (Michael Bolin), lead for open-source Codex at OpenAI, in our interview
+> 
+> Watch the full conversation about harness engineering and the real future of coding agents: https://www.youtube.com/watch?v=6BAqgT3qe98
+
+---
+
