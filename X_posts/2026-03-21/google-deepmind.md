@@ -60,3 +60,13 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**11:15 JST** | [原文](https://x.com/demishassabis/status/2035178376273547631)
+
+> It’s 2am again, my favourite time, and as always reality is still staring me in the face 🧐
+> 
+> Kpaxs: This is a man who has been haunted since childhood and built a billion dollar company as a side effect of trying to make the haunting stop.
+
+---
+
