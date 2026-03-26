@@ -1,8 +1,9 @@
 {
-  "version": "3.29",
-  "last_updated": "2026-03-25",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.29: Arbiter統合判断完了（COMPLETE状態）。9指標更新。IND-003 high維持（critical見送り・分母検証注記）。IND-018条件3客観的証拠追加",
+  "version": "3.30",
+  "last_updated": "2026-03-26",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.30: Arbiter統合判断完了（COMPLETE状態）。4指標更新（last_checked更新のみ）。状態変更なし",
   "structural_changes_log": [
+    "2026-03-26 v3.30: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。4指標更新（last_checked更新のみ）。IND-003 high維持（分母不確実性継続・KIQ-RED-008最高優先）。IND-007/015/023 last_value更新。状態変更なし",
     "2026-03-25 v3.29: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。9指標更新。IND-003 high維持（Red指摘採用: critical見送り・分母不確実性注記）。IND-018条件3に客観的証拠追加（INFO-056/059 OpenAI Foundation）。IND-019/022/023/024 last_value更新。IND-001/004/006/017/022/023 last_checked更新（2026-03-25）",
     "2026-03-22 v3.25: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。10指標のlast_checked更新。IND-018条件3を「参考情報（自己奉仕的バイアス注意）」に格下げ。IND-001 last_value更新（GPT-5.4 mini GPQA 88.0%、Gemini 3 Pro MMLU-Pro 89.8%）。IND-003 last_value更新（$110B調達、8,000人倍増）。IND-017 last_value更新（xAI x_search内蔵・OpenClaw展開）",
     "2026-03-21 v3.23: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。10指標のlast_checked更新。IND-018条件1更新（o3 ARC-AGI 87.5%）、条件3更新（CEO AGI予測3社、自己奉仕的バイアス注記追加）。状態変更なし（Red指摘採用: 単一ベンチマーク過信・自己奉仕的バイアスリスク）",
@@ -54,8 +55,8 @@
         "note": "分母$258.7Bに対し上位2社$179.1B=69.2%。critical（80%）未達"
       },
       "status": "high",
-      "last_checked": "2026-03-25",
-      "last_value": "INFO-017: Anthropic $30B調達（$380B評価）。INFO-049: OpenAI $100B協議中。INFO-028: Meta 2026年AI投資最大$135B。上位3社合計$265B。分母再計算必須（KIQ-RED-008最高優先）",
+      "last_checked": "2026-03-26",
+      "last_value": "INFO-005: xAI $20B Series E追加。INFO-017: Anthropic $30B。INFO-049: OpenAI $100B協議中。上位3社合計$285B。分母再計算必須（KIQ-RED-008最高優先）",
       "trend": "approaching",
       "alert_level": "high",
       "rationale": "Arbiter v3.29: high維持（critical見送り）。Red指摘採用: 分母（OECD推定$258.7B）不確実性・時間軸不一致（計画・協議を確定調達と同一視不可）。KIQ-RED-008完了後に再評価"
@@ -106,8 +107,8 @@
       "description": "Tier 2 AI企業（中堅AI企業）の買収・事業撤退が年間5件以上発生",
       "threshold": "年間買収/撤退5件以上",
       "status": "elevated",
-      "last_checked": "2026-02-21",
-      "last_value": "Mistral→Koyeb買収、Anthropic→Bun買収。SpaceX-xAI合併（$1.25兆、Tier 1同士）は業界再編の加速を示すが本指標のTier 2対象外。Tier 2単独では2件確認",
+      "last_checked": "2026-03-26",
+      "last_value": "INFO-004（xAI-SpaceX $1.25兆統合）・INFO-010（OpenAI-Astral買収）。Tier 1同士の統合で業界再編加速。本指標のTier 2対象外。Tier 2単独では2件確認",
       "trend": "rising",
       "alert_level": "elevated"
     },
@@ -195,8 +196,8 @@
       "description": "Agent実行環境（Shell/Sandbox）およびスキル/プラグイン配布形式がベンダー固有か、標準化・互換性があるか",
       "threshold": "主要3社のうち2社以上がベンダー専用実行環境を必須化し、かつスキル形式が相互非互換",
       "status": "elevated",
-      "last_checked": "2026-03-01",
-      "last_value": "OpenAI: Skills/Shell/Compaction（INFO-033）。Anthropic: Claude Code Enterprise + Remote Control（INFO-034）。Google: Vertex AI Agent Engine + ADK（INFO-040）。3社とも囲い込み明確化。Cloudflare Shadow MCP問題（INFO-014）",
+      "last_checked": "2026-03-26",
+      "last_value": "INFO-006: Grok Business/Enterprise（RAG API囲い込み）。INFO-001: Claude Certified Architect（認定囲い込み）。INFO-012: Gemini API tooling。3社とも囲い込み明確化",
       "trend": "rising",
       "alert_level": "elevated",
       "rationale": "v2.7 Arbiter: elevated維持。囲い込み「意図」明確だが「確立」未検証。KIQ-RED-006（Vercept統合後の採用率）収集後に再評価"
@@ -415,8 +416,8 @@
       ],
       "conditions_met_count": "22/4（条件1・2達成）",
       "status": "high",
-      "last_checked": "2026-03-25",
-      "last_value": "条件1達成（INFO-016 Palantir Maven program of record）。条件2達成（INFO-047 OpenAI Pentagon契約）。「兆候強化」（Red指摘採用: 2-3事例で「確立」は飛躍）。条件3未確認継続",
+      "last_checked": "2026-03-26",
+      "last_value": "条件1達成（INFO-016 Palantir Maven program of record）。条件2達成（INFO-047 OpenAI Pentagon契約）。INFO-007（xAI DOW契約）で条件1・2再確認。「兆候強化」（Red指摘採用: 2-3事例で「確立」は飛躍）。条件3未確認継続",
       "trend": "rising",
       "alert_level": "high",
       "rationale": "Arbiter v3.29: high維持。条件1・2再確認。「兆候強化」に表現修正。条件3未確認継続。KIQ-002-06高優先"

@@ -1,7 +1,8 @@
 {
-  "version": "3.29",
-  "last_updated": "2026-03-25",
+  "version": "3.30",
+  "last_updated": "2026-03-26",
   "structural_changes_log": [
+    "2026-03-26 v3.30: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5仮説確度更新。Red指摘4/5採用（80%）。Blue判断1/5採用（20%）。H-XAI-003 +2%（60%→62%・Red指摘採用: M&A≠製造業特化AIの飛躍・+5%→+2%抑制）・H-ANT-001 ±0%（50%維持・Red指摘採用: 自己報告事例は確度上昇根拠として弱い）・H-ANT-002 ±0%（73%維持・Red指摘採用: 単一ソース過信リスク継続）・H-GOV-001 ±0%（54%維持・Red指摘採用: 条件3未確認で確度上昇不当）・H-OAI-003 -1%（2%→1%・INFO-010 Astral買収）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 ±0%・SCN-004 ±0%）。指標4件更新（状態変更なし）。合計100%確認済み",
     "2026-03-25 v3.29: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。11仮説確度更新。Red指摘3/8採用（38%）。Blue判断3/8採用（38%）。部分採用2件。H-ANT-001 -1%（51%→50%累積的影響）・H-ANT-002 ±0%（73%維持・Red単一ソース過信指摘採用）・H-OAI-001 +1%（63%→64% Pentagon契約）・H-GOO-001 +1%（53%→54% 750Mユーザー）・H-GOO-003 ±0%（54%維持）・H-XAI-001 +1%（60%→61% x_search内蔵）・H-XAI-003 -1%（61%→60% 時間減衰）・H-BTD-001 +1%（63%→64% OpenClaw大流行）・H-BTD-003 -2%（45%→43% 韓国禁止・著作権懸念）・H-GOV-001 +1%（53%→54% 条件1・2再確認）・H-CAR-002 +1%（72%→73% AIスキル56%高給与）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 +1%・SCN-004 -1%）。指標9件更新。合計100%確認済み",
     "2026-03-24 v3.28: Arbiter統合判断（PARTIALLY DEGRADED状態）。Blue DEGRADED（新規証拠0件）、Red COMPLETE（5判断検証、4バイアス検出）。6仮説確度更新。Red指摘2/5採用（40%）。Blue判断4/5採用（80%）。H-ANT-002 -1%（74%→73%時間減衰）・H-CAR-002 -1%（73%→72%時間減衰）・H-XAI-003 -2%（63%→61%時間減衰+確証バイアス）・H-GOV-001 -1%（54%→53%時間減衰）・H-GOO-001 -1%（54%→53%確証バイアス警告ペナルティ）・H-GOO-002 -1%（53%→52%確証バイアス警告ペナルティ）。シナリオ0件更新（合計100%確認）。指標19件更新（last_checkedのみ）。Phase 1復旧最優先",
     "2026-03-23 v3.27: Arbiter統合判断（COMPLETE状態・再実行）。Blue/Red両方完了。11仮説確度更新。Red指摘5/6採用（83%）。H-ANT-002 ±0%（Red: 単一ソース過信でBlue +1%見送り）・H-GOO-001/002各-1%（Red: アンカリング）・H-XAI-003 -3%（Red: 証拠不在ペナルティ）・IND-006 high見送り（Red: 因果飛躍）。Blue判断6件採用（H-OAI-001 +1%・H-ANT-001 -1%・H-GOO-003 +1%・H-XAI-001 +1%・H-BTD-001 +1%・H-CAR-001 -2%・H-CAR-002 +1%）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 +1%・SCN-004 -1%）。指標11件更新（IND-001/003/004/006/013/017/018/019/022/023/024）。合計100%確認済み",
@@ -70,10 +71,10 @@
         "statement": "OpenAIはAGI/スーパーインテリジェンス達成を最優先目標とし、商業化と並行して研究開発に大規模資源を投入する",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 2,
+        "confidence_percentage": 1,
         "consistent_evidence": ["INFO-044", "INFO-081", "INFO-058", "INFO-028", "INFO-013", "INFO-026", "INFO-032", "INFO-042"],
-        "inconsistent_evidence": ["INFO-001", "INFO-013", "INFO-019", "INFO-021", "INFO-020", "INFO-026", "INFO-027", "INFO-057", "INFO-018", "INFO-072", "INFO-025", "INFO-097", "INFO-053", "INFO-056", "INFO-050", "INFO-022", "INFO-052", "INFO-059", "INFO-047", "INFO-007", "INFO-015", "INFO-017", "INFO-008", "INFO-023", "INFO-046", "INFO-078", "INFO-005", "INFO-022", "INFO-063"],
-        "rationale": "Arbiter v3.25: -1%採用（3%→2%）。商業化証拠継続（INFO-026/032/042）。棄却候補継続",
+        "inconsistent_evidence": ["INFO-001", "INFO-013", "INFO-019", "INFO-021", "INFO-020", "INFO-026", "INFO-027", "INFO-057", "INFO-018", "INFO-072", "INFO-025", "INFO-097", "INFO-053", "INFO-056", "INFO-050", "INFO-022", "INFO-052", "INFO-059", "INFO-047", "INFO-007", "INFO-015", "INFO-017", "INFO-008", "INFO-023", "INFO-046", "INFO-078", "INFO-005", "INFO-022", "INFO-063", "INFO-010"],
+        "rationale": "Arbiter v3.30: -1%採用（2%→1%）。INFO-010（Astral買収）が商業化優先を示唆。棄却候補継続",
         "confirming_indicators": [
           "研究チームへの大規模投資発表",
           "AGI/ASIタイムライン予測の前倒し",
@@ -94,9 +95,9 @@
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 54,
-        "consistent_evidence": ["INFO-048", "INFO-086", "INFO-093", "INFO-097", "INFO-001", "INFO-002", "INFO-022", "INFO-024", "INFO-025", "INFO-026", "INFO-010", "INFO-032", "INFO-036", "INFO-004", "INFO-035", "INFO-046", "INFO-030", "INFO-031", "INFO-038", "INFO-039", "INFO-044", "INFO-047", "INFO-052", "INFO-016", "INFO-050"],
+        "consistent_evidence": ["INFO-048", "INFO-086", "INFO-093", "INFO-097", "INFO-001", "INFO-002", "INFO-022", "INFO-024", "INFO-025", "INFO-026", "INFO-010", "INFO-032", "INFO-036", "INFO-004", "INFO-035", "INFO-046", "INFO-030", "INFO-031", "INFO-038", "INFO-039", "INFO-044", "INFO-047", "INFO-052", "INFO-016", "INFO-050", "INFO-007"],
         "inconsistent_evidence": ["INFO-128", "INFO-058", "INFO-037", "INFO-002", "INFO-055", "INFO-050", "INFO-051"],
-        "rationale": "Arbiter v3.29: +1%採用（53%→54%）。INFO-016（Palantir Maven program of record）・INFO-047（OpenAI Pentagon契約）で条件1・2再確認。「兆候強化」に表現修正（Red指摘採用: 2-3事例で「確立」は飛躍）。条件3未確認継続",
+        "rationale": "Arbiter v3.30: ±0%（54%維持）。Red指摘採用: 条件3（他社萎縮効果）未確認で確度上昇不当。INFO-007（DOW契約）で条件1・2再確認。条件3未確認継続",
         "confirming_indicators": [
           "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
           "AI安全性研究への民間投資の減少",
@@ -121,7 +122,7 @@
         "confidence_percentage": 50,
         "consistent_evidence": ["INFO-025", "INFO-114", "INFO-116", "INFO-011", "INFO-048", "INFO-077", "INFO-026", "INFO-016", "INFO-018", "INFO-078", "INFO-080", "INFO-069", "INFO-020", "INFO-003", "INFO-058", "INFO-001", "INFO-002", "INFO-036", "INFO-004", "INFO-035", "INFO-043", "INFO-019", "INFO-020", "INFO-045", "INFO-042"],
         "inconsistent_evidence": ["INFO-077", "INFO-022", "INFO-014", "INFO-010", "INFO-024", "INFO-046", "INFO-031", "INFO-034", "INFO-038", "INFO-008", "INFO-027", "INFO-044", "INFO-011", "INFO-016"],
-        "rationale": "Arbiter v3.29: -1%採用（51%→50%）。INFO-011（CVE-2025-59536 CVSS 8.7）・INFO-016（SCR指定）が安全性信頼性への累積的影響。民間市場価値維持。政府市場は政治的リスク顕在化",
+        "rationale": "Arbiter v3.30: ±0%（50%維持）。Red指摘採用: INFO-002（NBIM 20%・AIG 5倍）は自己報告・独立検証なし。確度上昇には第三者検証必要",
         "confirming_indicators": [
           "Fortune 500企業でのClaude採用率上昇",
           "FedRAMP High/SOC2/ISO27001等の認証取得",
@@ -142,7 +143,7 @@
         "confidence_percentage": 73,
         "consistent_evidence": ["INFO-015", "INFO-034", "INFO-025", "INFO-026", "INFO-003", "INFO-005", "INFO-001", "INFO-013", "INFO-018", "INFO-021", "INFO-039", "INFO-048", "INFO-044", "INFO-032", "INFO-002", "INFO-042", "INFO-009", "INFO-020"],
         "inconsistent_evidence": ["INFO-010", "INFO-031", "INFO-014"],
-        "rationale": "Arbiter v3.29: ±0%（73%維持）。Red指摘採用: INFO-036 $2.5B ARRは単一ソース（Anthropic自己報告）。独立第三者検証なし。チャーン率・NPS・競合比較データ不明。KIQ-RED-009（チャーン率・NPS・競合成長率比較）追加必須",
+        "rationale": "Arbiter v3.30: ±0%（73%維持）。Red指摘採用: 単一ソース過信リスク継続。INFO-001（Partner Network $100M）追加だが、チャーン率・NPS・競合比較データ不在（KIQ-RED-009必須）",
         "confirming_indicators": [
           "Claude Code週間アクティブユーザー数の継続的増加",
           "Claude Agent SDK採用企業数の増加",
@@ -290,10 +291,10 @@
         "statement": "xAIはSpaceXとの統合で宇宙・製造業特化AIを展開し、ニッチ市場で確固たる地位を築く",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 60,
+        "confidence_percentage": 62,
         "consistent_evidence": [],
         "inconsistent_evidence": [],
-        "rationale": "Arbiter v3.29: -1%採用（61%→60%）。時間減衰適用。consistent_evidence空欄継続は構造的問題。新規証拠収集後に再評価（KIQ-RED-007）",
+        "rationale": "Arbiter v3.30: +2%採用（60%→62%）。Red指摘採用: M&A≠製造業特化AIの飛躍。INFO-004は統合証拠だが製品証拠ではない。+5%→+2%抑制。consistent_evidence空欄継続",
         "confirming_indicators": [
           "SpaceXでのGrok統合事例増加",
           "製造業向けAI機能の展開",
