@@ -87,3 +87,19 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**14:10 JST** | [原文](https://x.com/sama/status/2037396826060673188)
+
+> The coolest meeting I had this week with was Paul, who used ChatGPT and other LLMs to create an mRNA vaccine protocol to save his dog Rosie. It is amazing story.
+> 
+> "The chat bots empowered me as an individual to act with the power of a research institute - planning, education, troubleshooting, compliance, and yes, real scientific design work in converting genomic data to a vaccine prescription and designing the treatment protocol around it. But they worked alongside humans at every step. The combination is what made it possible."
+> 
+> It immediately got me thinking "this should be a company".
+> 
+> Also, Paul is an extraordinary guy. This should be easy to do, but it is not yet.
+> 
+> Paul S. Conyngham: http://x.com/i/article/2036867394396971009
+
+---
+
