@@ -16,3 +16,12 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**05:08 JST** | [原文](https://x.com/EthanJPerez/status/2037314327569666244)
+
+> RT Alyssa Cass
+> OpenAI's Chief Futurist on President & Co-Founder Greg Brockman's $125M political strategy
+
+---
+

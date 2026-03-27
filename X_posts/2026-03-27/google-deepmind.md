@@ -84,3 +84,15 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**09:45 JST** | [原文](https://x.com/joshwoodward/status/2037330151172890643)
+
+> Useful technique for visual creation!
+> 
+> Flow by Google: 💡 Pro Tip: Try uploading a color palette into Flow as an Ingredient, then add the prompt: “Based on the provided color palette…”
+> 
+> The result? Visual consistency for all your images and videos locked into your signature aesthetic. #FindYourFlow
+
+---
+
