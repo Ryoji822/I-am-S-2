@@ -1,6 +1,6 @@
 {
-  "version": "3.30",
-  "last_updated": "2026-03-26",
+  "version": "3.31"
+  "last_updated": "2026-03-27",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.30: Arbiter統合判断完了（COMPLETE状態）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 ±0%・SCN-004 ±0%）。合計100%確認",
   "driving_forces": {
     "axis_x": {
@@ -124,9 +124,9 @@
       "indicators": ["IND-014"]
     }
   ],
-  "normalization_check": {
+"normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-03-26",
+    "verified_date": "2026-03-27",
     "note": "SCN-001(22) + SCN-002(39) + SCN-003(22) + SCN-004(17) = 100%. Arbiter完了（4シナリオ更新）"
   }
 }
