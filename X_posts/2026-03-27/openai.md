@@ -103,3 +103,15 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**15:44 JST** | [原文](https://x.com/kevinweil/status/2037420429430919674)
+
+> Paul used ChatGPT + AlphaFold to create a personalized mRNA vaccine protocol for his dog's cancer. 
+> 
+> This is a glimpse of the future, with AI accelerating personalized medicine. We have to make it easier for people to do this for people, not just dogs!
+> 
+> Paul S. Conyngham: http://x.com/i/article/2036867394396971009
+
+---
+
