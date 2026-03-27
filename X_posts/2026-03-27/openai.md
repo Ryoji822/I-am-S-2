@@ -115,3 +115,14 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**14:03 JST** | [原文](https://x.com/OpenAIDevs/status/2037559660098752604)
+
+> RT Nick
+> Living more & more in the Codex App since we rolled out plugins
+> 
+> Recently I've been using the @linear plugin to turn noisy context from anywhere into projects > milestones > issues
+
+---
+
