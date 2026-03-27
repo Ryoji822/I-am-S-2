@@ -56,3 +56,34 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**09:12 JST** | [原文](https://x.com/jasonkwon/status/2037369796078215496)
+
+> RT Lindsay McCallum Rémy
+> this was really fun and also a good example of what's possible for builders using codex
+> 
+> Rohan Varma: Our incredible comms leader, @lindsmccallum , planned a closed door dinner for the Codex team in a fraction of the time it would normally take - thanks to Codex.
+> 
+> She used the Codex App to:
+> - compile the invite list
+> - send out invitations 
+> - hourly scan of her emails to update
+
+---
+
+**08:09 JST** | [原文](https://x.com/jasonkwon/status/2037370665767215263)
+
+> RT Lindsay McCallum Rémy
+> over the past few weeks, plugins in codex have completely changed the way i work. 
+> 
+> i use codex every day to do everything from basic knowledge work to more strategic planning, analysis and even building my own personal apps. excited for everyone to get to experience this now!
+> 
+> OpenAI Developers: We're rolling out plugins in Codex.
+> 
+> Codex now works seamlessly out of the box with the most important tools builders already use, like @SlackHQ, @Figma, @NotionHQ, @gmail, and more.
+> 
+> http://developers.openai.com/codex/plugins
+
+---
+
