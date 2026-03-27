@@ -13,3 +13,17 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**10:56 JST** | [原文](https://x.com/gdb/status/2037348081684111623)
+
+> Plugins are now available in Codex:
+> 
+> OpenAI Developers: We're rolling out plugins in Codex.
+> 
+> Codex now works seamlessly out of the box with the most important tools builders already use, like @SlackHQ, @Figma, @NotionHQ, @gmail, and more.
+> 
+> http://developers.openai.com/codex/plugins
+
+---
+

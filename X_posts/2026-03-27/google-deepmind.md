@@ -96,3 +96,29 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**10:59 JST** | [原文](https://x.com/demishassabis/status/2037348762138677735)
+
+> Now it’s even easier to switch to the @GeminiApp ! 😎
+> 
+> Google Gemini: Switching to Gemini from other AI apps just got easier.
+> 
+> Starting to roll out today on desktop, you can now bring your preferences and chat history into Gemini, so you can pick up right where you left off in just a few clicks. 🧵
+
+---
+
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**09:54 JST** | [原文](https://x.com/joshwoodward/status/2037332341270733259)
+
+> New in Gemini: Import memory & chats to Gemini
+> 
+> It's now easy to transfer your chats and personal information from other chatbots directly into Gemini
+> 
+> Go to Settings > Import memory to Gemini
+> 
+> "Importing memory is surprisingly smooth"
+
+---
+
