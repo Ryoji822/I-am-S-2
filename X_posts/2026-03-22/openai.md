@@ -47,3 +47,13 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**14:37 JST** | [原文](https://x.com/gdb/status/2035591682482475414)
+
+> subagents in codex are very powerful
+> 
+> Diego | AI 🚀 - e/acc: Codex subagents game changer
+
+---
+
