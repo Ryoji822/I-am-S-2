@@ -1,7 +1,8 @@
 {
-  "version": "3.31",
-  "last_updated": "2026-03-27",
+  "version": "3.32",
+  "last_updated": "2026-03-28",
   "structural_changes_log": [
+    "2026-03-28 v3.31: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘7/8採用（88%）。Blue判断1/8採用（12%）。H-ANT-001 -1%（50%→49%・INFO-017 Claude Cowork SOC 2制限・新製品未成熟解釈採用）・H-CAR-001 -1%（30%→29%・INFO-013 80%失敗率・根拠を「技術的限界」から「実装アプローチ問題」に修正）・H-CAR-003 -1%（64%→63%・INFO-013 80%失敗率）。H-ANT-002/H-OAI-002/H-GOO-003/H-CAR-002は±0%維持（Red指摘採用: 単一調査依存・ベンチマーク差小さく根拠弱・「意図」確認だが「確立」未検証）。IND-006 elevated維持（high見送り）。シナリオ4件±0%（合計100%確認）。指標14件更新（last_checked更新のみ・状態変更なし）",
     "2026-03-26 v3.30: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5仮説確度更新。Red指摘4/5採用（80%）。Blue判断1/5採用（20%）。H-XAI-003 +2%（60%→62%・Red指摘採用: M&A≠製造業特化AIの飛躍・+5%→+2%抑制）・H-ANT-001 ±0%（50%維持・Red指摘採用: 自己報告事例は確度上昇根拠として弱い）・H-ANT-002 ±0%（73%維持・Red指摘採用: 単一ソース過信リスク継続）・H-GOV-001 ±0%（54%維持・Red指摘採用: 条件3未確認で確度上昇不当）・H-OAI-003 -1%（2%→1%・INFO-010 Astral買収）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 ±0%・SCN-004 ±0%）。指標4件更新（状態変更なし）。合計100%確認済み",
     "2026-03-25 v3.29: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。11仮説確度更新。Red指摘3/8採用（38%）。Blue判断3/8採用（38%）。部分採用2件。H-ANT-001 -1%（51%→50%累積的影響）・H-ANT-002 ±0%（73%維持・Red単一ソース過信指摘採用）・H-OAI-001 +1%（63%→64% Pentagon契約）・H-GOO-001 +1%（53%→54% 750Mユーザー）・H-GOO-003 ±0%（54%維持）・H-XAI-001 +1%（60%→61% x_search内蔵）・H-XAI-003 -1%（61%→60% 時間減衰）・H-BTD-001 +1%（63%→64% OpenClaw大流行）・H-BTD-003 -2%（45%→43% 韓国禁止・著作権懸念）・H-GOV-001 +1%（53%→54% 条件1・2再確認）・H-CAR-002 +1%（72%→73% AIスキル56%高給与）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 +1%・SCN-004 -1%）。指標9件更新。合計100%確認済み",
     "2026-03-24 v3.28: Arbiter統合判断（PARTIALLY DEGRADED状態）。Blue DEGRADED（新規証拠0件）、Red COMPLETE（5判断検証、4バイアス検出）。6仮説確度更新。Red指摘2/5採用（40%）。Blue判断4/5採用（80%）。H-ANT-002 -1%（74%→73%時間減衰）・H-CAR-002 -1%（73%→72%時間減衰）・H-XAI-003 -2%（63%→61%時間減衰+確証バイアス）・H-GOV-001 -1%（54%→53%時間減衰）・H-GOO-001 -1%（54%→53%確証バイアス警告ペナルティ）・H-GOO-002 -1%（53%→52%確証バイアス警告ペナルティ）。シナリオ0件更新（合計100%確認）。指標19件更新（last_checkedのみ）。Phase 1復旧最優先",
@@ -119,10 +120,10 @@
         "statement": "Anthropicは安全性を差別化要因として、規制準拠が求められるエンタープライズ市場で優位に立つ",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 50,
+        "confidence_percentage": 49,
         "consistent_evidence": ["INFO-025", "INFO-114", "INFO-116", "INFO-011", "INFO-048", "INFO-077", "INFO-026", "INFO-016", "INFO-018", "INFO-078", "INFO-080", "INFO-069", "INFO-020", "INFO-003", "INFO-058", "INFO-001", "INFO-002", "INFO-036", "INFO-004", "INFO-035", "INFO-043", "INFO-019", "INFO-020", "INFO-045", "INFO-042"],
-        "inconsistent_evidence": ["INFO-077", "INFO-022", "INFO-014", "INFO-010", "INFO-024", "INFO-046", "INFO-031", "INFO-034", "INFO-038", "INFO-008", "INFO-027", "INFO-044", "INFO-011", "INFO-016"],
-        "rationale": "Arbiter v3.30: ±0%（50%維持）。Red指摘採用: INFO-002（NBIM 20%・AIG 5倍）は自己報告・独立検証なし。確度上昇には第三者検証必要",
+        "inconsistent_evidence": ["INFO-077", "INFO-022", "INFO-014", "INFO-010", "INFO-024", "INFO-046", "INFO-031", "INFO-034", "INFO-038", "INFO-008", "INFO-027", "INFO-044", "INFO-011", "INFO-016", "INFO-017"],
+        "rationale": "Arbiter v3.31: -1%採用（50%→49%)。INFO-017(Claude Cowork監査ログ欠損)が安全性差別化の反証。高規制業界向け製品にコンプライアンスギャップ存在。代替説明: Claude Enterprise(主力)は対応済みだがCowork(新製品)は未対応の可能性",
         "confirming_indicators": [
           "Fortune 500企業でのClaude採用率上昇",
           "FedRAMP High/SOC2/ISO27001等の認証取得",
@@ -141,7 +142,7 @@
         "status": "active",
         "confidence": "high",
         "confidence_percentage": 73,
-        "consistent_evidence": ["INFO-015", "INFO-034", "INFO-025", "INFO-026", "INFO-003", "INFO-005", "INFO-001", "INFO-013", "INFO-018", "INFO-021", "INFO-039", "INFO-048", "INFO-044", "INFO-032", "INFO-002", "INFO-042", "INFO-009", "INFO-020", "Info-001", "Info-002", "Info-003", "Info-004", "Info-005"]
+        "consistent_evidence": ["INFO-015", "INFO-034", "INFO-025", "INFO-026", "INFO-003", "INFO-005", "INFO-001", "INFO-013", "INFO-018", "INFO-021", "INFO-039", "INFO-048", "INFO-044", "INFO-032", "INFO-002", "INFO-042", "INFO-009", "INFO-020", "Info-001", "Info-002", "Info-003", "Info-004", "Info-005"],
         "inconsistent_evidence": ["INFO-010", "INFO-031", "INFO-014"],
         "rationale": "Arbiter v3.30: ±0%（73%維持）。Red指摘採用: 単一ソース過信リスク継続。INFO-001（Partner Network $100M）追加だが、チャーン率・NPS・競合比較データ不在（KIQ-RED-009必須）",
         "confirming_indicators": [
@@ -379,10 +380,10 @@
         "statement": "AI業務自律化が3年以内に中堅企業の業務プロセスを30%以上自動化し、中間層雇用が大幅に削減される",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 30,
+        "confidence_percentage": 29,
         "consistent_evidence": ["INFO-004", "INFO-005", "INFO-080", "INFO-084", "INFO-085", "INFO-027", "INFO-030", "INFO-019", "INFO-011", "INFO-012", "INFO-046", "INFO-042", "INFO-041", "INFO-045", "INFO-025", "INFO-033"],
-        "inconsistent_evidence": ["INFO-042", "INFO-019", "INFO-056", "INFO-055", "INFO-028", "INFO-020", "INFO-023", "INFO-022", "INFO-045", "INFO-061", "INFO-060", "INFO-057", "INFO-084"],
-        "rationale": "Arbiter v3.25: ±0%（30%維持）。ROI 6%乖離未解決（KIQ-RED-005）。「採用率」≠「成功」。INFO-056（24%完了率）・INFO-057（Klarna逆効果）は技術的限界示唆。KIQ-RED-005完了後に再評価",
+        "inconsistent_evidence": ["INFO-042", "INFO-019", "INFO-056", "INFO-055", "INFO-028", "INFO-020", "INFO-023", "INFO-022", "INFO-045", "INFO-061", "INFO-060", "INFO-057", "INFO-084", "INFO-013"],
+        "rationale": "Arbiter v3.32: -1%採用（30%→29%）。INFO-013（80%失敗率）が大規模自動化の反証。根拠を「技術的限界」から「実装アプローチ問題」に修正（Red指摘採用）。KIQ-RED-005（ROI定量データ）完了後に再評価",
         "confirming_indicators": [
           "中堅企業でのAI自動化率30%超達成",
           "中間層雇用の統計的減少確認",
@@ -416,15 +417,15 @@
         ]
       },
       {
-        "hypothesis_id": "H-CAR-003",
-        "pir_id": "PIR-2026-004",
-        "statement": "スマイルカーブの中間圧縮により、バリューチェーン中間工程のビジネス職は3年以内に大規模再編され、価値は上流と下流に集中する",
-        "status": "active",
-        "confidence": "medium",
-        "confidence_percentage": 64,
+      "hypothesis_id": "H-CAR-003",
+      "pir_id": "PIR-2026-004",
+      "statement": "スマイルカーブの中間圧縮により、バリューチェーン中間工程のビジネス職は3年以内に大規模再編され、価値は上流と下流に集中する",
+      "status": "active",
+      "confidence": "medium",
+      "confidence_percentage": 63,
         "consistent_evidence": ["INFO-015", "INFO-080", "INFO-084", "INFO-085", "INFO-012", "INFO-013", "INFO-011", "INFO-017", "INFO-053", "INFO-004", "INFO-005", "INFO-027", "INFO-030", "INFO-019", "INFO-034", "INFO-020", "INFO-040", "INFO-046", "INFO-028", "INFO-033", "INFO-039"],
-        "inconsistent_evidence": ["INFO-078", "INFO-056", "INFO-022", "INFO-028", "INFO-061", "INFO-060"],
-        "rationale": "Arbiter v3.25: ±0%（64%維持）。ROI 6%乖離未解決。INFO-056（24%完了率）・INFO-057（Klarna逆効果）は技術的限界。KIQ-RED-005完了後に再評価",
+        "inconsistent_evidence": ["INFO-078", "INFO-056", "INFO-022", "INFO-028", "INFO-061", "INFO-060", "INFO-013"],
+        "rationale": "Arbiter v3.31: -1%採用（64%→63%)。INFO-013(80%失敗率)が中間圧縮の速度に疑問。自動化の実効性に限界を示唆。80%失敗は「実装アプローチの問題」であって「技術的限界」ではない可能性(Red指摘)。KIQ-RED-005完了後に再評価",
         "confirming_indicators": [
           "中間工程の単価がインフレ率を下回る低下を2四半期連続",
           "上流コンサル/戦略職と中間実装職の給与格差20%以上拡大",

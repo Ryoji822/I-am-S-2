@@ -1,10 +1,11 @@
 # Anthropic
 
-> 最終更新: 2026-03-24
+> 最終更新: 2026-03-28
+> 確度: 高
 
 エンタープライズLLM支出40%で首位。Claude Code愛用率46%。SWE-bench Verified 80.9%で首位。だがPentagonは$200M契約を正式終了し、Senateは3大AIツールの承認からClaudeだけを除外した。
 
-逆説的に、政府排除が民間市場を押し上げている。ビジネスサブスクリプションシェアは24.4%（+4.9pt）で、新規AI導入企業の70%がAnthropicを選んでいる [INFO-033](../Information/2026-03-22/collected-raw.md#INFO-033)。安全性を貫いたことで政府に排除され、排除されたことで民間の信頼を獲得する——この矛盾した構造がAnthropicの現在地。
+逆説的に、政府排除が民間市場を押し上げている。ビジネスサブスクリプションシェアは24.4%（+4.9pt）で、新規AI導入企業の70%がAnthropicを選んでいる [INFO-033](../Information/2026-03-22/collected-raw.md#INFO-033).安全性を貫いたことで政府に排除され、排除されたことで民間の信頼を獲得する——この矛盾した構造がAnthropicの現在地。
 
 ## 政府との対立（進行中）
 
@@ -32,29 +33,29 @@ Dario Amodei率いるAI企業。主力はClaude 4.6シリーズ（Opus/Sonnet/Ha
 
 **Claude Partner Network**: $100M初期投資。Accentureが30,000人にClaude研修 [INFO-001](../Information/2026-03-21/collected-raw.md#INFO-001)。Claude Certified Architect認定プログラム開始。
 
-直近の動き: Vercept買収でOSWorld 72.5%達成 [INFO-002](../Information/2026-03-10/collected-raw.md#INFO-002)。Sydney開設（APAC 4拠点目）。インド#2市場、元Microsoft India MDのIrina Ghoseを起用。Coworkに永続エージェントスレッド追加（Pro/Max）。Claude Opus 4.6がFirefox脆弱性22件を発見（14件が高深刻度）[INFO-012](../Information/2026-03-12/collected-raw.md#INFO-012)。
+直近の動き: (1) Claude Agent SDK v0.2.79リリース（Claude Code SDKからリネーム、全領域エージェント構築対応）[INFO-006](../Information/2026-03-28/collected-raw.md#INFO-006)。(2) Claude Code auto mode追加（より安全な権限スキップ）[INFO-007](../Information/2026-03-28/collected-raw.md#INFO-007)。(3) Claude CoworkのSOC 2 Type II制限が判明（Audit Logs、Compliance API、Data Exportsでキャプチャされない）[INFO-017](../Information/2026-03-28/collected-raw.md#INFO-017)。(4) Vercept買収でOSWorld 72.5%達成 [INFO-002](../Information/2026-03-10/collected-raw.md#INFO-002)。(5) Sydney開設（APAC 4拠点目）。インド#2市場、元Microsoft India MDのIrina Ghoseを起用。(6) Coworkに永続エージェントスレッド追加（Pro/Max）。(7) Claude Opus 4.6がFirefox脆弱性22件を発見（14件が高深刻度）[INFO-012](../Information/2026-03-12/collected-raw.md#INFO-012)。
 
 **セキュリティ課題**: 「Claudy Day」脆弱性チェーン（OASIS Security発見）——URLパラメータ経由プロンプトインジェクション→Files APIデータ窃取→claude.comオープンリダイレクト。Google Ads経由の攻撃ベクトル。Anthropicは責任ある開示で修正済み [INFO-042](../Information/2026-03-23/collected-raw.md#INFO-042)。Coworkプロンプトインジェクション脆弱性（悪意ファイル→隠しプロンプト注入→ファイル窃取）も報告 [INFO-036](../Information/2026-03-23/collected-raw.md#INFO-036)。
 
 ## 何をやろうとしているか
 
-### 安全性でエンタープライズを取る（H-ANT-001、確度51%）
+### 安全性でエンタープライズを取る（H-ANT-001、確度49%）
 
-SOC2準拠、Compliance API、ASL-3保護で規制業界を取る戦略。エンタープライズ40%シェアとRampデータ（新規70%がAnthropic選択）は、民間ではこの戦略が機能している証拠。EU AI法完全施行（2026年8月）は追い風。NBIM（ノルウェー年金基金）が生産性20%向上、AIG引受時間5倍短縮と具体的な成果も出始めている [INFO-003](../Information/2026-03-20/collected-raw.md#INFO-003)。
+SOC2準拠、Compliance API、ASL-3保護で規制業界を取る戦略。エンタープライズ40%シェアとRampデータ（新規70%がAnthropic選択）は、民間ではこの戦略が機能している証拠。 EU AI法完全施行（2026年8月）は追い風. NBIM（ノルウェー年金基金)が生産性20%向上、AIG引受時間5倍短縮と具体的な成果も出始めている [INFO-003](../Information/2026-03-20/collected-raw.md#INFO-003).
 
-しかし確度は60%→51%に急落した。Pentagon $200M契約終了とSenate除外で、政府市場（推定$100B超）の扉が閉まりつつある。Pentagon交渉再開の報 [INFO-024](../Information/2026-03-08/collected-raw.md#INFO-024) も、契約終了で実質的に上書きされた。
+しかし確度は50%→49%に低下した。 Pentagon $200M契約終了とSenate除外で、政府市場（推定$100B超）の扉が閉まりつつある。さらにINFO-017（Claude Cowork SOC 2制限）が安全性差別化の反証として追加された [INFO-017](../Information/2026-03-28/collected-raw.md#INFO-017)。CoworkアクティビティがAudit Logs、Compliance API、Data Exportsでキャプチャされないという制限は、高規制業界向け製品のコンプライアンスギャップを示している。 Claude Enterprise（主力製品）は対応済みの可能性があり、「新製品未成熟」解釈が妥当とArbiter判断された。
 
 安全性堅持が政府で罰になり、民間で報われる——この二極化がどちらに傾くかで仮説の行方が決まる。
 
 ### 開発者ツールで差別化する（H-ANT-002、確度73%）— 全仮説中最高
 
-Claude Code + Bun + Agent SDKの3点セットによる差別化。Claude Codeはターミナルで直接動き、ローカル実行が可能な点でクラウド依存のOpenAI Shellと対照的。
+Claude Code + Bun + Agent SDKの3点セットによる差別化。 Claude Codeはターミナルで直接動き、ローカル実行が可能な点でクラウド依存のOpenAI Shellと対照的。
 
-SWE-bench Verified 80.9%で首位（GPT-5.4 71.7%、Gemini 3.1 Pro 63.8%）はコーディング性能での優位を示す。Menlo Ventures調査ではAIコーディング市場の50%超を獲得。
+SWE-bench Verified 80.9%で首位（GPT-5.4 71.7%、Gemini 3.1 Pro 80.6%）はコーディング性能での優位を示す。 Menlo Ventures調査ではAIコーディング市場の50%超を獲得。
 
-ただし確度は78%→73%に低下。GitHub Stars（992 vs OpenAI 2,500）、SDK dependents（Claude少 vs OpenAI 124 NPM）の差はオープンソースコミュニティでの訴求力の弱さを示す。Pragmatic Engineer調査は早期採用者に偏ったC-3ソース。「愛用率46%」と「エンタープライズ標準」の間には因果の飛躍がある。
+ただし確度は73%で維持。 GitHub Stars（992 vs OpenAI 2,500）、SDK dependents（Claude少 vs OpenAI 124 NPM）の差はオープンソースコミュニティでの訴求力の弱さを示す。 Pragmatic Engineer調査は早期採用者に偏ったC-3ソース。「愛用率46%」と「エンタープライズ標準」の間には因果の飛躍がある。
 
-この仮説が正しければ、Fortune 500での標準採用とAgent SDK外部開発者の急増が見える。間違いなら、Copilot/Cursor/Codexへの流出が見える。
+Claude Agent SDK v0.2.79がリリースされ、Claude Code SDKからClaude Agent SDKにリネーム [INFO-006](../Information/2026-03-28/collected-raw.md#INFO-006)。コーディングだけでなく全領域のAIエージェント構築に対応。自動コンパクションでコンテキスト成長を処理。
 
 ### マルチクラウドで広げる（H-ANT-003、確度10%、watch）
 
