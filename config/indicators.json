@@ -1,9 +1,9 @@
 {
-  "version": "3.31",
-  "last_updated": "2026-03-28",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.31: Arbiter統合判断完了（COMPLETE状態）。Blue/Red両方完了。14指標更新（last_checked更新）。状態変更なし",
+  "version": "3.32",
+  "last_updated": "2026-03-29",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.32: Arbiter統合判断（DEGRADED状態）。Red Agent失敗。Blue Agent完了（52件収集）。5指標更新。IND-024 monitoring→elevated昇格",
   "structural_changes_log": [
-    "2026-03-28 v3.31: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。14指標更新（last_checked更新のみ）。IND-006 elevated維持（high見送り・Red指摘採用: 因果飛躍リスク未解消）。IND-001/002/003/004/006/007/008/013/015/017/018/019/022/023/024 last_checked更新（2026-03-28）。状態変更なし",
+    "2026-03-29 v3.32: Arbiter統合判断（DEGRADED状態）。Red Agent失敗。Blue Agent完了（52件収集）。5指標更新（IND-002 elevated維持・IND-003 high維持・IND-006 elevated維持・IND-019 elevated維持・IND-024 monitoring→elevated昇格）。確度変更なし（保守的アプローチ）。last_checked更新（2026-03-29）",
     "2026-03-25 v3.29: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。9指標更新。IND-003 high維持（Red指摘採用: critical見送り・分母不確実性注記）。IND-018条件3に客観的証拠追加（INFO-056/059 OpenAI Foundation）。IND-019/022/023/024 last_value更新。IND-001/004/006/017/022/023 last_checked更新（2026-03-25）",
     "2026-03-22 v3.25: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。10指標のlast_checked更新。IND-018条件3を「参考情報（自己奉仕的バイアス注意）」に格下げ。IND-001 last_value更新（GPT-5.4 mini GPQA 88.0%、Gemini 3 Pro MMLU-Pro 89.8%）。IND-003 last_value更新（$110B調達、8,000人倍増）。IND-017 last_value更新（xAI x_search内蔵・OpenClaw展開）",
     "2026-03-21 v3.23: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。10指標のlast_checked更新。IND-018条件1更新（o3 ARC-AGI 87.5%）、条件3更新（CEO AGI予測3社、自己奉仕的バイアス注記追加）。状態変更なし（Red指摘採用: 単一ベンチマーク過信・自己奉仕的バイアスリスク）",
@@ -24,11 +24,11 @@
       "description": "MMLU、GPQA、ARC-AGI等の主要ベンチマークで前世代比30%以上の性能向上が単一モデルで達成される。特にARC-AGI-2はAGI到達度の代理指標として重視",
       "threshold": "ベンチマークスコア30%以上の非連続的向上、またはARC-AGI-2で90%超過",
       "status": "high",
-      "last_checked": "2026-03-28",
-      "last_value": "INFO-037: Claude Opus 4.6コーディング最強。INFO-048: Gemini 3 Pro MMLU-Pro 89.8%首位。INFO-045: DeepSeek V4 HumanEval 90%。INFO-026: GPT-5.4 mini GPQA 88.0%。単一ベンチマーク過信注意",
+      "last_checked": "2026-03-29",
+      "last_value": "INFO-022/023: Claude Opus 4.6 Chatbot Arena 1位（1503）、SWE-bench 80.8%。INFO-022: Gemini 3.1 Pro GPQA Diamond 94.3%、ARC-AGI-2 77.1%。INFO-006: GPT-5.4 GPQA 92.8%。単一ベンチマーク過信注意（KIQ-RED-007）",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v3.29: approaching維持。GPQA 88.0%は90%閾値まで2%。Gemini 3 Pro MMLU-Pro 89.8%首位。複数ベンチマーク確認必須（KIQ-RED-007）"
+      "rationale": "Arbiter v3.33: high維持（Red失敗・検証なし）。Gemini 3.1 Pro GPQA 94.3%・ARC-AGI-2 77.1%でフロンティア性能向上継続。Claude Opus 4.6 Chatbot Arena 1位維持。複数ベンチマーク確認必須（KIQ-RED-007）"
     },
     {
       "indicator_id": "IND-002",
@@ -36,14 +36,15 @@
       "scenario_ids": ["SCN-001"],
       "description": "Agent API呼び出し数または収益ベースで1社が市場の50%以上を占める",
       "threshold": "市場シェア50%超過",
-      "status": "monitoring",
-      "last_checked": "2026-03-28",
-      "last_value": "Anthropic 40%エンタープライズLLM支出シェア（2023年ほぼ0%から急増）、OpenAI 27%、Google 21%。単独50%未達だが集中傾向",
+      "status": "elevated",
+      "last_checked": "2026-03-29",
+      "last_value": "INFO-003: Anthropic 40%エンタープライズLLM支出シェア（2023年ほぼ0%から急増）。INFO-046: AI検索シェア ChatGPT 73.3%、Gemini 15.2%、Claude 4.5%。INFO-041: ChatGPT 8.88億ユーザー。単独50%未達だがAnthropic急成長中",
       "trend": "rising",
-      "alert_level": "normal"
+      "alert_level": "elevated",
+      "rationale": "Arbiter v3.33: elevated維持（Red失敗・検証なし）。Anthropic 40%エンタープライズシェア（INFO-003）は50%閾値に接近。ChatGPT消費者シェア73.3%（INFO-046）。寡占化トレンド継続"
     },
     {
-      "indicator_id": "IND-003",
+"indicator_id": "IND-003",
       "name": "大規模資金調達の集中",
       "scenario_ids": ["SCN-001"],
       "description": "上位3社の年間資金調達額がAI業界全体の80%以上を占める",
@@ -55,11 +56,11 @@
         "note": "分母$258.7Bに対し上位2社$179.1B=69.2%。critical（80%）未達"
       },
       "status": "high",
-      "last_checked": "2026-03-28",
-      "last_value": "INFO-005: xAI $20B Series E追加。INFO-017: Anthropic $30B。INFO-049: OpenAI $100B協議中。上位3社合計$285B。分母再計算必須（KIQ-RED-008最高優先）",
+      "last_checked": "2026-03-29",
+      "last_value": "INFO-006: OpenAI $120B調達完了（評価額$730B）。INFO-043: Harvey $11B、Shield AI $12.7B、Physical Intelligence $11B。上位3社（OpenAI/Anthropic/xAI）合計推定$170B超。分母再計算必須（KIQ-RED-008最高優先）",
       "trend": "approaching",
       "alert_level": "high",
-      "rationale": "Arbiter v3.29: high維持（critical見送り）。Red指摘採用: 分母（OECD推定$258.7B）不確実性・時間軸不一致（計画・協議を確定調達と同一視不可）。KIQ-RED-008完了後に再評価"
+      "rationale": "Arbiter v3.33: high維持（Red失敗・検証なし）。INFO-006（OpenAI $120B）で大規模資金集中が加速。閾値80%には未達だがトレンドは明確。分母不確実性はKIQ-RED-008完了後に再評価"
     },
     {
       "indicator_id": "IND-004",
@@ -94,11 +95,11 @@
       "description": "プロトコル層はMCP+A2AでLinux Foundation傘下に標準化済み（2025年12月AAIF設立）。競争の焦点は実行環境（Shell/Sandbox）、オーケストレーション（LangGraph/CrewAI/Semantic Kernel）、ガバナンス層に移行。各社がこれらの上位レイヤーでどの程度囲い込みを構築しているかを追跡",
       "threshold": "主要3社のうち2社以上が上位レイヤー（実行環境またはオーケストレーション）で互換性のない独自エコシステムを確立",
       "status": "elevated",
-      "last_checked": "2026-03-28",
-      "last_value": "INFO-008: OpenAI Agents SDK v0.7.2（Computer Use Tool GA）。INFO-009/020: Claude Agent SDK v0.2.79/81。INFO-010/025: Gemini API Tooling（クロスツールコンテキスト循環）。INFO-011: xAI Multi-Agent Research（4/16エージェント構成）。INFO-022: Feishu Aily。6社が3月にAgent SDK/API連続発表",
+      "last_checked": "2026-03-29",
+      "last_value": "INFO-012: Claude Agent SDK v0.2.86. INFO-013: OpenAI Apps SDK. INFO-014: Gemini API Skills. INFO-015: Gemini 3.1 Flash Live. INFO-016: Grok 4.20. INFO-017: Feishu Aily. INFO-018: DeerFlow 2.0. 7社が3月にAgent SDK/API連続発表",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.25: elevated維持（high見送り）。Red指摘採用: SDK発表≠囲い込み確立の因果飛躍リスク。MCP準拠度・API互換性・データ移植性の定量分析（新規KIQ-NEW-SDK）完了後に再評価"
+      "rationale": "Arbiter v3.33: elevated維持（Red失敗・検証なし）。SDK発表≠囲い込み確立の因果飛躍リスク継続。MCP準拠度・API互換性・データ移植性の定量分析（KIQ-NEW-SDK）完了後に再評価"
     },
     {
       "indicator_id": "IND-007",
@@ -190,17 +191,17 @@
       "alert_level": "normal"
     },
     {
-      "indicator_id": "IND-015",
+"indicator_id": "IND-015",
       "name": "実行環境・エコシステムの囲い込み度",
       "scenario_ids": ["SCN-001", "SCN-003"],
-      "description": "Agent実行環境（Shell/Sandbox）およびスキル/プラグイン配布形式がベンダー固有か、標準化・互換性があるか",
+      "description": "Agent実行環境（Shell/Sandbox）およびスキル/プラグイン配布形式がベンダー固有か、標準化・互換性があるかを追跡",
       "threshold": "主要3社のうち2社以上がベンダー専用実行環境を必須化し、かつスキル形式が相互非互換",
       "status": "elevated",
-      "last_checked": "2026-03-28",
-      "last_value": "INFO-006: Grok Business/Enterprise（RAG API囲い込み）。INFO-001: Claude Certified Architect（認定囲い込み）。INFO-012: Gemini API tooling。3社とも囲い込み明確化",
+      "last_checked": "2026-03-29",
+      "last_value": "INFO-012: Claude Agent SDK v0.2.86（getContextUsage機能追加）。INFO-013: OpenAI Apps SDK（Plugin distribution・Codex統合）。INFO-014: Gemini API Skills（117プロンプト評価で96.6%改善）。INFO-016: Grok 4.20（2M context・$10/month・Tesla統合）。3社とも囲い込み明確化",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "v2.7 Arbiter: elevated維持。囲い込み「意図」明確だが「確立」未検証。KIQ-RED-006（Vercept統合後の採用率）収集後に再評価"
+      "rationale": "Arbiter v3.33: elevated維持（Red失敗・検証なし）。囲い込み「意図」明確化。3社が独自エコシステム構築中。 MCP準拠度確認必要（KIQ-NEW-SDK）"
     },
     {
       "indicator_id": "IND-017",
@@ -209,11 +210,11 @@
       "description": "各社が独占的データソース（検索データ、SNSデータ、エンタープライズデータ）やコンテキスト蓄積をAIの差別化に活用している度合い",
       "threshold": "独占データを活用したAI機能が各社3つ以上、かつエンタープライズのデータ移行コストが高コスト化",
       "status": "elevated",
-      "last_checked": "2026-03-28",
-      "last_value": "INFO-011（xAI Multi-Agent Researchのx_search内蔵）はXデータ独占活用の直接証拠。INFO-024（OpenClaw/ArkClaw展開）。INFO-033（Anthropic新規採用70%）。INFO-005/006（Google Personal Intelligence + Fitbit連携）。5社が独自データ活用明確化",
+      "last_checked": "2026-03-29",
+      "last_value": "INFO-016: xAI Grok 4.20（x_search内蔵・Xデータ独占）。INFO-007: Google Personal Intelligence無料化（Gmail/Photos/YouTube統合）。INFO-009: Search Live 200カ国展開。INFO-033: Anthropic新規採用70%。5社が独自データ活用明確化",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.25: elevated維持。データ独占活用継続。xAI X Search、ByteDance TikTok/豆包データ、Google Personal Intelligence等の活用が明確化"
+      "rationale": "Arbiter v3.33: elevated維持（Red失敗・検証なし）。INFO-016（Grok x_search内蔵）・INFO-007（Personal Intelligence無料化）でデータ独占活用加速。xAI X、Google Gmail/Photos/YouTube、ByteDance TikTok/豆包データの活用が明確化"
     },
     {
       "indicator_id": "IND-018",
@@ -269,11 +270,11 @@
       "description": "AIエージェントが企業業務に導入されている度合い（採用率）。導入の成敗は別指標IND-024で測定",
       "threshold": "Fortune 500の50%以上がAIエージェントを業務プロセスに正式導入（PoC・パイリットを除く）",
       "status": "elevated",
-      "last_checked": "2026-03-28",
-      "last_value": "INFO-007/008/012/041（6社SDK連続発表継続）。囲い込み意図明確、確立未検証",
+      "last_checked": "2026-03-29",
+      "last_value": "INFO-021: Gartner予測2026年末40%エンタープライズアプリがエージェント統合（<5%から8倍増）。McKinsey 23%スケール中. INFO-028: 49%の職業でタスクの25%以上がClaudeで実行. INFO-038: 92%正のROI（2.8x平均）. IND-024（ROI 6%）との乖離継続。二極化兆候認識",
       "trend": "rising",
       "alert_level": "elevated",
-      "rationale": "Arbiter v3.29: elevated維持（high見送り）。Red指摘採用: SDK発表≠囲い込み確立の因果飛躍リスク。MCP準拠度・API互換性・データ移植性の定量分析（KIQ-RED-007）完了後に再評価"
+      "rationale": "Arbiter v3.33: elevated維持（Red失敗・検証なし）。INFO-021（Gartner 40%キャンセルリスク）vs INFO-038（92%正のROI）で二極化兆候認識継続。KIQ-RED-005完了後に再評価"
     },
     {
       "indicator_id": "IND-017",
@@ -428,12 +429,12 @@
       "scenario_ids": ["SCN-001", "SCN-003"],
       "description": "AIエージェントを導入した企業が実際にROI正を達成しているか、タスク完了品質は十分か。採用率はIND-019で別途測定",
       "threshold": "AI導入企業のうち20%以上がROI正を報告、かつ先行3業界でAIタスク完了率30%超",
-      "status": "monitoring",
-      "last_checked": "2026-03-28",
-      "last_value": "INFO-035（56% CEO ROIゼロ）vs INFO-036（Claude Code $2.5B）乖離継続。二極化兆候認識。INFO-015（理論94% vs 実使用33%）で構造的説明追加済み。二極化結論抑制（KIQ-RED-005最高優先）",
-      "trend": "stable",
-      "alert_level": "normal",
-      "rationale": "Arbiter v3.29: monitoring維持。二極化兆候認識。INFO-015（理論94% vs 実使用33%）で構造的説明追加済み。二極化結論抑制。KIQ-RED-005完了後に再評価"
+      "status": "elevated",
+      "last_checked": "2026-03-29",
+      "last_value": "INFO-038: 92%企業正のROI達成（2.8x平均・IDC調査）。INFO-021: Gartner予測40%プロジェクトが2027年までキャンセル（ROI不明確・コスト増）。INFO-028: 49%職業でタスク25%以上がClaude実行。二極化兆候明確（成功組vs失敗組）。KIQ-RED-005完了後に最終評価",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "rationale": "Arbiter v3.33: elevated昇格。INFO-038（92%正のROI・2.8x平均）vs INFO-021（40%キャンセルリスク）で二極化兆候明確。成功要因分析がKIQ-RED-005完了後に必要"
     }
   ]
 }
