@@ -16,3 +16,11 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**08:12 JST** | [原文](https://x.com/OpenAIDevs/status/2038393826918952960)
+
+> What are you building this weekend?
+
+---
+
