@@ -44,3 +44,14 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**01:14 JST** | [原文](https://x.com/jasonkwon/status/2038020134720376883)
+
+> RT Internal Tech Emails
+> Mark Zuckerberg texts Elon Musk
+> 
+> February 3, 2025
+
+---
+
