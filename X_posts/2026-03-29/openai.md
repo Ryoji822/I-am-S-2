@@ -41,3 +41,17 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**15:36 JST** | [原文](https://x.com/jasonkwon/status/2038143148317397433)
+
+> incredible story.  congrats @sound4movement!
+> 
+> you can just build things
+> 
+> Michael Wall: Thank you @BenLucasSherry and @Inc for spreading the word about us mini-enterprises.
+> 
+> “Wall is even experimenting with building his own small music-generation model, though he has no plans to use AI music in his commercial work.” - https://www.inc.com/ben-sherry/his-income-fell-80-percent-last-year-this-solopreneur-says-chatgpt-kept-his-business-alive/91321662
+
+---
+
