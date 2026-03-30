@@ -14,3 +14,17 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**02:30 JST** | [原文](https://x.com/OpenAIDevs/status/2038671862616699300)
+
+> RT dominik kundel
+> I built a new plugin! You can now trigger Codex from Claude Code!
+> 
+> Use the Codex plugin for Claude Code to delegate tasks to Codex or have Codex review your changes using your ChatGPT subscription.
+> 
+> Start by installing the plugin: 
+> http://github.com/openai/codex-plugin-cc
+
+---
+
