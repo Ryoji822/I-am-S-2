@@ -1,8 +1,9 @@
 {
-  "version": "3.33",
-  "last_updated": "2026-03-29",
+  "version": "3.34",
+  "last_updated": "2026-03-30",
   "structural_changes_log": [
-    "2026-03-29 v3.33: Arbiter統合判断（DEGRADED状態）。Red Agent失敗。Blue Agent完了（52件収集）。確度変更なし（保守的アプローチ）。指標5件更新（IND-002/003/006/019/024）。IND-024 monitoring→elevated昇格（AI ROI二極化明確化）。シナリオ0件更新（合計100%維持）。KIQ-RED-005/009/007継続",
+    "2026-03-30 v3.34: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5仮説確度更新。Red指摘4/5採用（80%）。H-BTD-001 +1%（64%→65%）豆包MAU爆発的成長掯用、Red指摘部分採用（自己発表データ無批判採用抑制）・H-GOV-001 ±0%（54%維持）Red指摘採用（一時差止を歯止めと過大解釈抑制）・H-ANT-002 ±0%（73%維持）Red指摘採用（単一ソース過信見送り）・H-CAR-002 ±0%（73%維持）Red指摘採用（相関≠因果見送り）・H-GOO-002 ±0%（52%維持）Red指摘採用（切り替えコスト削減≠開放性見送り）。シナリオ2件更新（SCN-002 -1%→38%・SCN-003 +1%→23%）。指標5件更新（IND-004/017/023/024/last_checked）。合計100%確認済み",
+
     "2026-03-28 v3.31: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘7/8採用（88%）。Blue判断1/8採用（12%）。H-ANT-001 -1%（50%→49%・INFO-017 Claude Cowork SOC 2制限・新製品未成熟解釈採用）・H-CAR-001 -1%（30%→29%・INFO-013 80%失敗率・根拠を「技術的限界」から「実装アプローチ問題」に修正）・H-CAR-003 -1%（64%→63%・INFO-013 80%失敗率）。H-ANT-002/H-OAI-002/H-GOO-003/H-CAR-002は±0%維持（Red指摘採用: 単一調査依存・ベンチマーク差小さく根拠弱・「意図」確認だが「確立」未検証）。IND-006 elevated維持（high見送り）。シナリオ4件±0%（合計100%確認）。指標14件更新（last_checked更新のみ・状態変更なし）",
     "2026-03-26 v3.30: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5仮説確度更新。Red指摘4/5採用（80%）。Blue判断1/5採用（20%）。H-XAI-003 +2%（60%→62%・Red指摘採用: M&A≠製造業特化AIの飛躍・+5%→+2%抑制）・H-ANT-001 ±0%（50%維持・Red指摘採用: 自己報告事例は確度上昇根拠として弱い）・H-ANT-002 ±0%（73%維持・Red指摘採用: 単一ソース過信リスク継続）・H-GOV-001 ±0%（54%維持・Red指摘採用: 条件3未確認で確度上昇不当）・H-OAI-003 -1%（2%→1%・INFO-010 Astral買収）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 ±0%・SCN-004 ±0%）。指標4件更新（状態変更なし）。合計100%確認済み",
     "2026-03-25 v3.29: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。11仮説確度更新。Red指摘3/8採用（38%）。Blue判断3/8採用（38%）。部分採用2件。H-ANT-001 -1%（51%→50%累積的影響）・H-ANT-002 ±0%（73%維持・Red単一ソース過信指摘採用）・H-OAI-001 +1%（63%→64% Pentagon契約）・H-GOO-001 +1%（53%→54% 750Mユーザー）・H-GOO-003 ±0%（54%維持）・H-XAI-001 +1%（60%→61% x_search内蔵）・H-XAI-003 -1%（61%→60% 時間減衰）・H-BTD-001 +1%（63%→64% OpenClaw大流行）・H-BTD-003 -2%（45%→43% 韓国禁止・著作権懸念）・H-GOV-001 +1%（53%→54% 条件1・2再確認）・H-CAR-002 +1%（72%→73% AIスキル56%高給与）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 +1%・SCN-004 -1%）。指標9件更新。合計100%確認済み",
@@ -316,10 +317,9 @@
         "statement": "ByteDanceはTikTok/Douyinのデータ活用で中国市場で圧倒的優位を維持し、グローバル展開を図る",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 64,
-        "consistent_evidence": ["INFO-050", "INFO-051", "INFO-007", "INFO-023", "INFO-008", "INFO-042", "INFO-041", "INFO-044", "INFO-024", "INFO-057", "INFO-037", "INFO-068", "INFO-047", "INFO-048", "INFO-114", "INFO-117", "INFO-022", "INFO-024", "INFO-009", "INFO-026"],
+        "confidence_percentage": 65,        "consistent_evidence": ["INFO-050", "INFO-051", "INFO-007", "INFO-023", "INFO-008", "INFO-042", "INFO-041", "INFO-044", "INFO-024", "INFO-057", "INFO-037", "INFO-068", "INFO-047", "INFO-048", "INFO-114", "INFO-117", "INFO-022", "INFO-024", "INFO-009", "INFO-026"],
         "inconsistent_evidence": ["INFO-036", "INFO-035", "INFO-045", "INFO-027", "INFO-118"],
-        "rationale": "Arbiter v3.29: +1%採用（63%→64%）。INFO-008（Feishu Aily）・INFO-009（OpenClaw大流行・韓国禁止）・INFO-026（Doubao 2.0）が中国エコシステム爆発の強力な支持",
+        "rationale": "Arbiter v3.34: +1%（64%→65%）。INFO-029豆包MAU 2.3億人、日次100兆トークン）が中国市場爆発的成長の強力な証拠。 Red指摘部分採用: 自己発表データを無批判採用リスクあり, MAU定義・明確性、第三者検証が必要。 KIQ-RED-0}: ByteDance収益性・MAU定義・リテンション率調査（海外展開成功例と国内成功の収益性比較)",
         "confirming_indicators": [
           "中国市場でのAI利用シェア維持",
           "TikTok/DouyinデータのAI活用拡大",
