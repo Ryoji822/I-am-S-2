@@ -24,3 +24,12 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**04:46 JST** | [原文](https://x.com/jasonkwon/status/2038458005587398756)
+
+> RT Séb Krier
+> On Smith, Foucault, concentration of power, and public choice. 💯 https://www.liberalism.org/p/seeing-with-two-i-s-states-markets-and-some-advice-for-us-liberals
+
+---
+
