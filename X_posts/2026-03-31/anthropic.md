@@ -24,3 +24,13 @@
 
 ---
 
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**05:45 JST** | [原文](https://x.com/sleepinyourhat/status/2038719219928580492)
+
+> Good fake graphs:
+> 
+> Boaz Barak: New blog post: the state of AI safety in four fake graphs.
+
+---
+
