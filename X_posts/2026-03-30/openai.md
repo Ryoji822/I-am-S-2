@@ -33,3 +33,18 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**23:48 JST** | [原文](https://x.com/kevinweil/status/2038662255571767629)
+
+> RT Chris Hadfield
+> If schedule holds, these 3 giant rockets will launch in the next 3 weeks. 
+> From left to right:
+> New Glenn - satellite launch now, planned for the Moon
+> Starship - test flight 12 now, planned for the Moon
+> Artemis - to the Moon and back with 4 crew aboard
+> Pushing the very edge of our capability as we learn how to more safely & cheaply reach space, to explore all that exists beyond. 
+> @nasa @SpaceX @blueorigin
+
+---
+
