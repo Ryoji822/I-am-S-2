@@ -21,3 +21,17 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**12:48 JST** | [原文](https://x.com/joshwoodward/status/2038825734278639926)
+
+> New in NotebookLM: The Science Of Ben Franklin, a first-of-its-kind featured notebook
+> 
+> This featured notebook was made in collaboration with The Royal Society, the oldest scientific academy in continuous existence. This one features some of Franklin's original papers, letters, and contemporary sources. 
+> 
+> Featured notebooks allow you to learn from curated collections of high-quality sources.
+> 
+> Enjoy!
+
+---
+
