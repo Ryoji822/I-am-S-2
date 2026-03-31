@@ -28,3 +28,13 @@
 
 ---
 
+## @markchen90 (Mark Chen - 研究責任者)
+
+**12:10 JST** | [原文](https://x.com/markchen90/status/2038816186725720108)
+
+> Really proud of how our auto compaction turned out. I hope you notice a clear difference in how long Codex stays coherent!
+> 
+> alex fazio: it’s insane how codex remembers tiny details across multiple rounds of compaction
+
+---
+

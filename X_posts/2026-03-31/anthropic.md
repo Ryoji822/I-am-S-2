@@ -34,3 +34,12 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**10:00 JST** | [原文](https://x.com/EthanJPerez/status/2038812214703079750)
+
+> RT Tim Salimans
+> Touching down now in SF for onboarding at Anthropic! After 7 great years at Google, I'm excited to take on a new challenge and help make Claude even better. Grateful for everything I learned at Google DeepMind and Brain, looking forward to what's next.
+
+---
+
