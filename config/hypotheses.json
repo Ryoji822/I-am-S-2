@@ -1,7 +1,8 @@
 {
-  "version": "3.34",
-  "last_updated": "2026-03-30",
+  "version": "3.36",
+  "last_updated": "2026-03-31",
   "structural_changes_log": [
+    "2026-03-31 v3.36: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘5/7採用（71%）。H-ANT-002 +1%（73%→74%）$1B ARR直接証拠。Red指摘採用（自己発表データ+2%→+1%抑制・チャーン率未検証注記追加）・H-GOV-001 -2%（54%→52%）INFO-006判事一時差止・Red指摘部分採用（一時差止過大解釈注記追加）・H-GOO-002 ±0%（52%維持）Red指摘採用（切り替えコスト削減≠開放性）。シナリオ0件更新。指標4件更新（IND-002/015/017/023）。合計100%確認済み",
     "2026-03-30 v3.34: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5仮説確度更新。Red指摘4/5採用（80%）。H-BTD-001 +1%（64%→65%）豆包MAU爆発的成長掯用、Red指摘部分採用（自己発表データ無批判採用抑制）・H-GOV-001 ±0%（54%維持）Red指摘採用（一時差止を歯止めと過大解釈抑制）・H-ANT-002 ±0%（73%維持）Red指摘採用（単一ソース過信見送り）・H-CAR-002 ±0%（73%維持）Red指摘採用（相関≠因果見送り）・H-GOO-002 ±0%（52%維持）Red指摘採用（切り替えコスト削減≠開放性見送り）。シナリオ2件更新（SCN-002 -1%→38%・SCN-003 +1%→23%）。指標5件更新（IND-004/017/023/024/last_checked）。合計100%確認済み",
 
     "2026-03-28 v3.31: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘7/8採用（88%）。Blue判断1/8採用（12%）。H-ANT-001 -1%（50%→49%・INFO-017 Claude Cowork SOC 2制限・新製品未成熟解釈採用）・H-CAR-001 -1%（30%→29%・INFO-013 80%失敗率・根拠を「技術的限界」から「実装アプローチ問題」に修正）・H-CAR-003 -1%（64%→63%・INFO-013 80%失敗率）。H-ANT-002/H-OAI-002/H-GOO-003/H-CAR-002は±0%維持（Red指摘採用: 単一調査依存・ベンチマーク差小さく根拠弱・「意図」確認だが「確立」未検証）。IND-006 elevated維持（high見送り）。シナリオ4件±0%（合計100%確認）。指標14件更新（last_checked更新のみ・状態変更なし）",
@@ -97,27 +98,25 @@
         "statement": "政府が経済的手段（SCR指定・調達禁止・DPA脅迫）でAI企業の安全性姿勢を抑圧する先例が確立されたことで、AI業界全体に萎縮効果が生じ、安全性研究・倫理的差別化の戦略的価値が構造的に低下する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 54,
-        "consistent_evidence": ["INFO-048", "INFO-086", "INFO-093", "INFO-097", "INFO-001", "INFO-002", "INFO-022", "INFO-024", "INFO-025", "INFO-026", "INFO-010", "INFO-032", "INFO-036", "INFO-004", "INFO-035", "INFO-046", "INFO-030", "INFO-031", "INFO-038", "INFO-039", "INFO-044", "INFO-047", "INFO-052", "INFO-016", "INFO-050", "INFO-007"],
+"confidence_percentage": 52,
+        "consistent_evidence": ["INFO-048", "INFO-086", "INFO-093", "INFO-097", "INFO-001", "INFO-002", "INFO-022", "INFO-024", "INFO-025", "INFO-026", "INFO-010", "INFO-032", "INFO-036", "INFO-004", "INFO-035", "INFO-046", "INFO-030", "INFO-031", "INFO-038", "INFO-039", "INFO-044", "INFO-047", "INFO-052", "INFO-016", "INFO-050", "INFO-007", "INFO-006"],
         "inconsistent_evidence": ["INFO-128", "INFO-058", "INFO-037", "INFO-002", "INFO-055", "INFO-050", "INFO-051"],
-        "rationale": "Arbiter v3.30: ±0%（54%維持）。Red指摘採用: 条件3（他社萎縮効果）未確認で確度上昇不当。INFO-007（DOW契約）で条件1・2再確認。条件3未確認継続",
-        "confirming_indicators": [
-          "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
-          "AI安全性研究への民間投資の減少",
-          "軍事AI契約での倫理条件の形骸化",
-          "AI企業の自主的な政策声明・安全性コミットメントの減少"
-        ],
-        "disconfirming_indicators": [
-          "Anthropicの消費者・エンタープライズ市場での成長（倫理ブランド価値の証明）",
-          "他のAI企業がAnthropicに追随して倫理的姿勢を強化",
-          "議会・司法による政府の報復措置への歯止め",
-          "国際市場でEU等が安全性を要件化し、安全性が市場価値に回帰"
-        ]
-      }
-    ],
-    "anthropic": [
-      {
-        "hypothesis_id": "H-ANT-001",
+        "rationale": "Arbiter v3.36: -2%（54%→52%）。INFO-006（判事SCR指定一時差止）がdisconfirming indicator追加。Red指摘部分採用: 一時差止であり最終判断ではない点を注記。条件1・2達成済み。条件3（他社萎縮効果）未確認継続",
+      "confirming_indicators": [
+        "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
+        "AI安全性研究への民間投資の減少",
+        "軍事AI契約での倫理条件の形骸化",
+        "AI企業の自主的な政策声明・安全性コミットメントの減少"
+      ],
+      "disconfirming_indicators": [
+        "Anthropicの消費者・エンタープライズ市場での成長（倫理ブランド価値の証明）",
+        "他のAI企業がAnthropicに追随して倫理的姿勢を強化",
+        "議会・司法による政府の報復措置への歯止め",
+        "国際市場でEU等が安全性を要件化し、安全性が市場価値に回帰"
+      ]
+    },
+    {
+      "hypothesis_id": "H-ANT-001",
         "pir_id": "PIR-2026-001",
         "statement": "Anthropicは安全性を差別化要因として、規制準拠が求められるエンタープライズ市場で優位に立つ",
         "status": "active",
@@ -143,23 +142,23 @@
         "statement": "Claude Code・Claude Agent SDKが開発者エコシステムで急成長し、エンタープライズAI開発の標準ツールになる",
         "status": "active",
         "confidence": "high",
-        "confidence_percentage": 73,
-        "consistent_evidence": ["INFO-015", "INFO-034", "INFO-025", "INFO-026", "INFO-003", "INFO-005", "INFO-001", "INFO-013", "INFO-018", "INFO-021", "INFO-039", "INFO-048", "INFO-044", "INFO-032", "INFO-002", "INFO-042", "INFO-009", "INFO-020", "Info-001", "Info-002", "Info-003", "Info-004", "Info-005"],
+"confidence_percentage": 74,
+        "consistent_evidence": ["INFO-015", "INFO-034", "INFO-025", "INFO-026", "INFO-003", "INFO-005", "INFO-001", "INFO-013", "INFO-018", "INFO-021", "INFO-039", "INFO-048", "INFO-044", "INFO-032", "INFO-002", "INFO-042", "INFO-009", "INFO-020", "Info-001", "Info-002", "Info-003", "Info-004", "Info-005", "Info-001"],
         "inconsistent_evidence": ["INFO-010", "INFO-031", "INFO-014"],
-        "rationale": "Arbiter v3.30: ±0%（73%維持）。Red指摘採用: 単一ソース過信リスク継続。INFO-001（Partner Network $100M）追加だが、チャーン率・NPS・競合比較データ不在（KIQ-RED-009必須）",
-        "confirming_indicators": [
-          "Claude Code週間アクティブユーザー数の継続的増加",
-          "Claude Agent SDK採用企業数の増加",
-          "Fortune 500でのClaude Code導入率上昇"
-        ],
-        "disconfirming_indicators": [
-          "GitHub Copilot/Cursor等競合の成長率上回り",
-          "Claude Code解約率の上昇",
-          "開発者満意度調査での劣位"
-        ]
-      },
-      {
-        "hypothesis_id": "H-ANT-003",
+        "rationale": "Arbiter v3.36: +1%（73%→74%）。Info-001（$1B ARR）がClaude Code標準化の強力な直接証拠。 Red指摘採用: 自己発表データ無批判採用を抑制（ARR≠実収益・チャーン率未検証）。KIQ-RED-009（チャーン率・NPS・競合比較）必須",
+      "confirming_indicators": [
+        "Claude Code週間アクティブユーザー数の継続的増加",
+        "Claude Agent SDK採用企業数の増加",
+        "Fortune 500でのClaude Code導入率上昇"
+      ],
+      "disconfirming_indicators": [
+        "GitHub Copilot/Cursor等競合の成長率上回り",
+        "Claude Code解約率の上昇",
+        "開発者満意度調査での劣位"
+      ]
+    },
+    {
+      "hypothesis_id": "H-ANT-003",
         "pir_id": "PIR-2026-001",
         "statement": "Anthropicはマルチクラウド戦略を維持し、AWS・GCP・Azure全てで同等の機能を提供する",
         "status": "watch",
@@ -208,23 +207,23 @@
         "statement": "GoogleはGemini Tools & Agentsでオープン標準（LangChain等）とのDay 0サポートを維持し、囲い込みを回避する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 52,
+"confidence_percentage": 52,
         "consistent_evidence": ["INFO-007", "INFO-016", "INFO-017", "INFO-008", "INFO-014", "INFO-025", "INFO-033", "INFO-028", "INFO-003", "INFO-019", "INFO-040"],
         "inconsistent_evidence": [],
-        "rationale": "Arbiter v3.28: -1%採用（53%→52%）。Red指摘採用: 確証バイアス警告発出後の確度維持は認知的不協和。全証拠Cのみで52%に抑制。KIQ-RED-007必須",
-        "confirming_indicators": [
-          "LangChain/LlamaIndex等でのGemini対応維持",
-          "Gemini Toolsのオープンソース化",
-          "マルチプラットフォーム対応の継続"
-        ],
-        "disconfirming_indicators": [
-          "Google独自フレームワークへの誘導強化",
-          "LangChain等でのGemini対応遅延",
-          "クローズド機能の増加"
-        ]
-      },
-      {
-        "hypothesis_id": "H-GOO-003",
+        "rationale": "Arbiter v3.36: ±0%（52%維持）。Red指摘採用: 切り替えコスト削減≠開放性。 INFO-005（履歴移行・無料化）は流入促進戦略の可能性が高い。無料化=データ囲い込み深化の可能性",
+      "confirming_indicators": [
+        "LangChain/LlamaIndex等でのGemini対応維持",
+        "Gemini Toolsのオープンソース化",
+        "マルチプラットフォーム対応の継続"
+      ],
+      "disconfirming_indicators": [
+        "Google独自フレームワークへの誘導強化",
+        "LangChain等でのGemini対応遅延",
+        "クローズド機能の増加"
+      ]
+    },
+    {
+      "hypothesis_id": "H-GOO-003",
         "pir_id": "PIR-2026-005",
         "statement": "GoogleはDeepMind統合のシナジーを発揮し、フロンティア性能競争でOpenAI/Anthropicに対抗する",
         "status": "active",
