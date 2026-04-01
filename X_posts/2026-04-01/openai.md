@@ -41,3 +41,13 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**13:38 JST** | [原文](https://x.com/kevinweil/status/2039200605672284572)
+
+> Not only is AI solving more open problems—its proofs are getting more elegant as the models improve
+> 
+> Mehtaab Sawhney: We are excited to share a new paper solving three further problems due to Erdős; in each case the solution was found by an internal model at OpenAI. Each proof is short and elegant, and the paper is available here: https://arxiv.org/pdf/2603.29961
+
+---
+
