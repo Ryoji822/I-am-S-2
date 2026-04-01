@@ -22,3 +22,13 @@
 
 ---
 
+## @sundarpichai (Sundar Pichai - Google CEO)
+
+**08:02 JST** | [原文](https://x.com/sundarpichai/status/2039478659741049153)
+
+> And we have liftoff! 🚀 Wishing the best to the Artemis II crew on their incredible journey ahead.
+> 
+> Imagining the amazing view they have, looking down at Earth from space would be a beautiful thing.
+
+---
+
