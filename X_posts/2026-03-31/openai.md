@@ -38,3 +38,12 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**14:52 JST** | [原文](https://x.com/kevinweil/status/2039097820809187505)
+
+> RT roon
+> god I love technology
+
+---
+
