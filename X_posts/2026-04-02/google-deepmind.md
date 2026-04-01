@@ -12,3 +12,13 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**05:24 JST** | [原文](https://x.com/demishassabis/status/2039438720022065632)
+
+> Thanks for the great chat @HarryStebbings - and congrats on all your amazing successes!
+> 
+> Harry Stebbings: I am forever grateful to learn from the smartest people on the planet. @demishassabis
+
+---
+
