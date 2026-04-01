@@ -108,3 +108,47 @@
 
 ---
 
+## @sundarpichai (Sundar Pichai - Google CEO)
+
+**01:51 JST** | [原文](https://x.com/sundarpichai/status/2032137440203587726)
+
+> Re Read more here: https://blog.google/innovation-and-ai/technology/research/gemini-help-communities-predict-crisis/
+
+---
+
+**01:51 JST** | [原文](https://x.com/sundarpichai/status/2032137438089658764)
+
+> We trained a new flood forecasting model designed to predict flash floods in urban areas up to 24 hours in advance.
+> 
+> To help address a flash floods data gap, we created Groundsource: a new AI methodology using Gemini to identify 2.6M+ historical events across 150+ countries.
+> 
+> We’re open-sourcing this dataset to advance global research, and urban flash flood forecasts are live now in Flood Hub to help communities stay safe.
+
+---
+
+**00:31 JST** | [原文](https://x.com/sundarpichai/status/2032117177487417425)
+
+> Re Read more about how we’re reimagining Maps: https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/
+
+---
+
+**00:31 JST** | [原文](https://x.com/sundarpichai/status/2032117175671275669)
+
+> Re We’re also launching Immersive Navigation - our biggest navigation upgrade in over a decade!
+> 
+> A new vivid 3D view better reflects your surroundings, with helpful road details like lanes, crosswalks, traffic lights etc. Gemini models analyze real world imagery from Street View and aerial photos to give you an accurate view of landmarks along your route.
+> 
+> Starts rolling out in the US today.
+
+---
+
+**00:31 JST** | [原文](https://x.com/sundarpichai/status/2032117173750284637)
+
+> We’re bringing new capabilities powered by Gemini models to @googlemaps.
+> 
+> With Ask Maps, get answers to complex questions about any place you want. For example it can help with complex requests like "Find me the best 3-hour family hikes in the Grand Tetons and a spot for a packed lunch”. Will try this next time I'm there:)
+> 
+> Rolling out now in the US and India.
+
+---
+

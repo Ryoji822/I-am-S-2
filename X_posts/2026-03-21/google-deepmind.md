@@ -70,3 +70,51 @@
 
 ---
 
+## @sundarpichai (Sundar Pichai - Google CEO)
+
+**05:52 JST** | [原文](https://x.com/sundarpichai/status/2035097196778176617)
+
+> Re New Waymo safety data: across 170M+ miles driven through Dec 2025, the Waymo Driver was involved in 13x fewer serious injury crashes compared to human drivers in the same cities.
+> 
+> Read more: https://waymo.com/safety/impact/
+
+---
+
+**05:52 JST** | [原文](https://x.com/sundarpichai/status/2035097194605551733)
+
+> Re Excited for @YouTube to be a preferred platform for the FIFA World Cup 2026.
+> 
+> Premium content, highlights, and behind-the-scenes access - can't wait to watch.
+> 
+> https://blog.youtube/news-and-events/fifa-world-cup-2026-youtube-partnership/
+
+---
+
+**05:52 JST** | [原文](https://x.com/sundarpichai/status/2035097192076386369)
+
+> Re We’ve heard how much people appreciate getting more personalized help with things like shopping, trip planning & more with Personal Intelligence.
+> 
+> So now it’s available for US users in AI Mode in Search and expanding to more users in the US in the @Geminiapp, and Gemini in Chrome.
+> 
+>  https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/
+
+---
+
+**05:52 JST** | [原文](https://x.com/sundarpichai/status/2035097189563998224)
+
+> Re From coding to canvas @StitchbyGoogle is an experiment from Google Labs that turns natural language into UI designs.
+> 
+> "vibe designing" means you can iterate, collab, and refine your vision just by replying to the AI to make changes on the fly.
+
+---
+
+**05:52 JST** | [原文](https://x.com/sundarpichai/status/2035097187840139663)
+
+> A few updates from across Google this week🧵
+> 
+> A new full-stack vibe coding experience is now in @GoogleAIStudio with the @Antigravity coding agent and a built-in @Firebase integration.
+> 
+> Turn your prompts into amazing production-ready apps.
+
+---
+

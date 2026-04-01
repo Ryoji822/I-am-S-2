@@ -153,3 +153,23 @@
 
 ---
 
+## @sundarpichai (Sundar Pichai - Google CEO)
+
+**00:28 JST** | [原文](https://x.com/sundarpichai/status/2037189974509183340)
+
+> Re 3.1 Flash Live also powers Gemini Live and Search Live so you’ll get more helpful and natural responses. Plus we’re expanding Search Live globally to all languages and locations where AI Mode is available.
+> 
+> Read more here: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/
+
+---
+
+**00:28 JST** | [原文](https://x.com/sundarpichai/status/2037189971359261081)
+
+> Gemini 3.1 Flash Live is our highest-quality audio and voice model yet.
+> 
+> Voice capabilities have come a long way and are a big part of how we interact with AI to get things done. 3.1 Flash Live’s improved precision and reasoning make those interactions more natural and intuitive.
+> 
+> Available in @GoogleAIStudio through the Gemini Live API in preview.
+
+---
+
