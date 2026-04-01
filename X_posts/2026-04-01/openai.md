@@ -51,3 +51,14 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**16:48 JST** | [原文](https://x.com/jasonkwon/status/2039290379674038388)
+
+> RT Tibo
+> Our Codex dashboards are showing increased rate of users hitting rate limits and since we don't fully understand why I have made the cautious decision of resetting the usage limits for all plans. Enjoy.
+> 
+> I also wanted to celebrate us finding a pocket of fraudulent accounts that we banned and have helped us regain some compute. The fight against abuse never stops, but it's important to mark the moment and make it a little shared victory.
+
+---
+
