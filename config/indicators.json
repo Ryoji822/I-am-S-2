@@ -1,12 +1,22 @@
 {
-  "version": "3.33",
-  "last_updated": "2026-03-31",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.33: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。4指標更新（IND-002/015/017/023）",
+  "version": "3.34",
+  "last_updated": "2026-04-01",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.34: Blue Agent分析完了（10件収集）。1指標更新（IND-013 elevated→high）",
   "structural_changes_log": [
-    "2026-03-31 v3.33: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。 Red指摘5/7採用（71%）。H-ANT-002 +1%（73%→74%）$1B ARR達成是強力な直接证拠， 但Red指摘採用（自己発表数据无批判採用を抑制（+2%→+1%）。チャーン率・収益性数据未検証（KIQ-RED-009必須",
-        "H-GOV-001 -2%（54%→52%）INFO-006（判事SCR指定一時差止）が司法による対抗手段の存在を再確認。 ただし「一時差止であり最終判断ではない点を注記",
-        "h-goo-002 ±0%（52%維持）。Red指摘採用: 切り替えコスト削減≠開放性。 INFO-005（履歴移行・無料化）は「データ囲い込み深化」の可能性が高い。 Red指摘採用: 切り替えコスト削減≠開放性"
+    "2026-04-01 v3.34: Blue Agent分析完了（10件収集）。1指標更新（IND-013 elevated→high）。INFO-010（セキュリティ侵害急増・Meta Sev-1・150万トークン流出・OpenClaw 63%脆弱設定）でアラート発出",
+    "2026-03-31 v3.33: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘5/7採用（71%）。H-ANT-002 +1%（73%→74%）$1B ARR達成。H-GOV-001 -2%（54%→52%）INFO-006判事差止。H-GOO-002 ±0%（52%維持）"
+  ],
+  "indicators": {
+    "IND-013": {
+      "indicator_id": "IND-013",
+      "name": "セキュリティ侵害頻度",
+      "description": "AIエージェント関連のセキュリティ侵害・脆弱性の発生頻度と深刻度",
+      "current_status": "high",
+      "trend": "rising",
+      "alert_level": "high",
+      "last_value": "INFO-010: Agent関連セキュリティ侵害が全AI侵害の8分の1以上を占める。Meta Sev-1インシデント（2時間不正アクセス）・Moltbook 150万トークン流出・OpenClaw 63%脆弱設定・Snyk 36%スキル脆弱性",
+      "last_checked": "2026-04-01",
+      "rationale": "Blue Agent v3.34: elevated→high昇格。INFO-010でセキュリティ侵害急増を実証。企業レベル（Meta Sev-1）とプラットフォームレベル（OpenClaw 63%脆弱）の両面でリスク顕在化。Agent普及速度>セキュリティ成熟速度"
     }
-  ]
-}
+  }
 }
