@@ -177,3 +177,23 @@
 
 ---
 
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**10:42 JST** | [原文](https://x.com/sleepinyourhat/status/2027560040891355463)
+
+> Re https://www.anthropic.com/careers
+
+---
+
+**10:38 JST** | [原文](https://x.com/sleepinyourhat/status/2027559009658802298)
+
+> We're disappointed by these attacks, but not deterred.
+> 
+> I'm proud to work here. If you've been moved by this week's events, consider applying to join me.
+> 
+> Anthropic: A statement on the comments from Secretary of War Pete Hegseth. 
+> 
+> https://anthropic.com/news/statement-comments-secretary-war
+
+---
+
