@@ -1,8 +1,9 @@
 {
-  "version": "3.34",
-  "last_updated": "2026-04-01",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.34: Blue Agent分析完了（10件収集）。1指標更新（IND-013 elevated→high）",
+  "version": "3.35",
+  "last_updated": "2026-04-02",
+  "description": "I&W（Indications and Warning）指標レジストリ。v3.35: Arbiter統合判断完了。指標更新なし（IND-013 high維持・新規セキュリティ情報なし）",
   "structural_changes_log": [
+    "2026-04-02 v3.35: Arbiter統合判断完了。指標更新なし。IND-013（セキュリティ侵害頻度）はhigh維持。新規セキュリティ情報なし（収集空白）",
     "2026-04-01 v3.34: Blue Agent分析完了（10件収集）。1指標更新（IND-013 elevated→high）。INFO-010（セキュリティ侵害急増・Meta Sev-1・150万トークン流出・OpenClaw 63%脆弱設定）でアラート発出",
     "2026-03-31 v3.33: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘5/7採用（71%）。H-ANT-002 +1%（73%→74%）$1B ARR達成。H-GOV-001 -2%（54%→52%）INFO-006判事差止。H-GOO-002 ±0%（52%維持）"
   ],

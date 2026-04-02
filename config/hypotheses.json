@@ -1,7 +1,8 @@
 {
-  "version": "3.37",
-  "last_updated": "2026-04-01",
+  "version": "3.38",
+  "last_updated": "2026-04-02",
   "structural_changes_log": [
+    "2026-04-02 v3.38: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。1仮説確度更新（H-ANT-002 -1%時間減衰）。Red指摘1/4採用（25%）。2シナリオ更新（SCN-002 -2%・SCN-003 +2%囲い込み兆候反映）。指標0件更新。合計100%確認済み",
     "2026-04-01 v3.37: Blue Agent分析完了（10件収集）。10仮説確度更新（H-ANT-001 +2%・H-ANT-002 +1%・H-ANT-003 +5%・H-OAI-001 +1%・H-GOO-001 +1%・H-GOO-003 +1%・H-XAI-001 +1%・H-XAI-002 +3%）。パターン4件検出（エージェントSDK競争激化・セキュリティリスク顕在化・価格・コンテキスト長競争・エンタープライズエコシステム投資同時展開）。シナリオ3件更新（SCN-002 -1%・SCN-003 +1%・SCN-BS-001 +2%）。指標1件更新（IND-013 elevated→high）",
     "2026-03-31 v3.36: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘5/7採用（71%）。H-ANT-002 +1%（73%→74%）$1B ARR直接証拠。Red指摘採用（自己発表データ+2%→+1%抑制・チャーン率未検証注記追加）・H-GOV-001 -2%（54%→52%）INFO-006判事一時差止・Red指摘部分採用（一時差止過大解釈注記追加）・H-GOO-002 ±0%（52%維持）Red指摘採用（切り替えコスト削減≠開放性）。シナリオ0件更新。指標4件更新（IND-002/015/017/023）。合計100%確認済み",
     "2026-03-30 v3.34: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5仮説確度更新。Red指摘4/5採用（80%）。H-BTD-001 +1%（64%→65%）豆包MAU爆発的成長掯用、Red指摘部分採用（自己発表データ無批判採用抑制）・H-GOV-001 ±0%（54%維持）Red指摘採用（一時差止を歯止めと過大解釈抑制）・H-ANT-002 ±0%（73%維持）Red指摘採用（単一ソース過信見送り）・H-CAR-002 ±0%（73%維持）Red指摘採用（相関≠因果見送り）・H-GOO-002 ±0%（52%維持）Red指摘採用（切り替えコスト削減≠開放性見送り）。シナリオ2件更新（SCN-002 -1%→38%・SCN-003 +1%→23%）。指標5件更新（IND-004/017/023/024/last_checked）。合計100%確認済み",
@@ -138,15 +139,15 @@
         ]
       },
       {
-"hypothesis_id": "H-ANT-002",
+      "hypothesis_id": "H-ANT-002",
         "pir_id": "PIR-2026-001",
         "statement": "Claude Code・Claude Agent SDKが開発者エコシステムで急成長し、エンタープライズAI開発の標準ツールになる",
         "status": "active",
         "confidence": "high",
-        "confidence_percentage": 75,
+        "confidence_percentage": 74,
         "consistent_evidence": ["INFO-015", "INFO-034", "INFO-025", "INFO-026", "INFO-003", "INFO-005", "INFO-001", "INFO-013", "INFO-018", "INFO-021", "INFO-039", "INFO-048", "INFO-044", "INFO-032", "INFO-002", "INFO-042", "INFO-009", "INFO-020", "Info-001", "Info-002", "Info-003", "Info-004", "Info-005", "Info-001"],
         "inconsistent_evidence": ["INFO-010", "INFO-031", "INFO-014"],
-        "rationale": "Arbiter v3.36: +1%（73%→74%）。Info-001（$1B ARR）がClaude Code標準化の強力な直接証拠。 Red指摘採用: 自己発表データ無批判採用を抑制（ARR≠実収益・チャーン率未検証）。KIQ-RED-009（チャーン率・NPS・競合比較）必須",
+        "rationale": "Arbiter v3.38: -1%（75%→74%）時間減衰適用。高確度仮説で1週間以上診断的証拠なし。自己報告データ依存・チャーン率未検証注記継続。KIQ-RED-009必須",
       "confirming_indicators": [
         "Claude Code週間アクティブユーザー数の継続的増加",
         "Claude Agent SDK採用企業数の増加",
