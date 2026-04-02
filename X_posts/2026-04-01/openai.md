@@ -62,3 +62,12 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**20:05 JST** | [原文](https://x.com/OpenAIDevs/status/2039485368962289994)
+
+> RT David Ondrej
+> GPT 5.4 Mini is an incredible model.
+
+---
+

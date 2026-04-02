@@ -32,3 +32,11 @@
 
 ---
 
+## @OfficialLoganK (Logan Kilpatrick - AI Studio / Gemini API)
+
+**08:32 JST** | [原文](https://x.com/OfficialLoganK/status/2039486016751366431)
+
+> Gemma
+
+---
+

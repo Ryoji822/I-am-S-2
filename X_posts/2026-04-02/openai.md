@@ -15,3 +15,13 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**08:16 JST** | [原文](https://x.com/OpenAIDevs/status/2039482146369458526)
+
+> Keep the work and the ticket in sync.
+> 
+> @linear plugin in the Codex app.
+
+---
+
