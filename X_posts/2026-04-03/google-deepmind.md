@@ -26,3 +26,12 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**02:14 JST** | [原文](https://x.com/JeffDean/status/2039957404868350330)
+
+> RT James Garcia Alver
+> -93 bytes, one of the best Wikipedia line deletions I’ve ever seen.
+
+---
+
