@@ -40,3 +40,20 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**08:44 JST** | [原文](https://x.com/demishassabis/status/2039489134465614068)
+
+> 💎💎💎💎
+
+---
+
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**08:21 JST** | [原文](https://x.com/JeffDean/status/2039692728683155894)
+
+> RT Divy Thakkar
+> Colleagues who have no hesitation playing with your feelings 🥹
+
+---
+

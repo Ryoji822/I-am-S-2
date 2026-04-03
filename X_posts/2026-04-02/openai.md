@@ -25,3 +25,12 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**21:53 JST** | [原文](https://x.com/jasonkwon/status/2039729978355642759)
+
+> RT nic carter
+> first vibecoded billion-dollar company?
+
+---
+

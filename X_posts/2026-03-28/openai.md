@@ -71,3 +71,18 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**12:25 JST** | [原文](https://x.com/gdb/status/2037732675897770123)
+
+> Codex use cases are like Skills, but for humans
+> 
+> Romain Huet: We just launched Codex use cases!
+> 
+> It’s a gallery of practical examples across coding and non-coding tasks, with real ways to use Codex.
+> 
+> One thing I really like: if you have the app, you can open the starter prompt for each use case directly in Codex!
+> https://developers.openai.com/codex/use-cases
+
+---
+

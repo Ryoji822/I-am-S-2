@@ -71,3 +71,11 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**04:31 JST** | [原文](https://x.com/OpenAIDevs/status/2039063128072462713)
+
+> http://x.com/i/article/2038696278885101568
+
+---
+
