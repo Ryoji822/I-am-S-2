@@ -35,3 +35,12 @@
 
 ---
 
+## @pushmeet (Pushmeet Kohli - 研究リーダー)
+
+**23:01 JST** | [原文](https://x.com/pushmeet/status/2040085713459257470)
+
+> RT Demis Hassabis
+> Gemma 4 outperforms models over 10x their size! (note the x-axis is log scale!)
+
+---
+
