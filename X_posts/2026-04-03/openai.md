@@ -69,3 +69,15 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**15:17 JST** | [原文](https://x.com/gdb/status/2039950296969863283)
+
+> the codex app is growing super fast, it’s very well done
+> 
+> Tibo: The Codex App is now our most used surface, ahead of the VS Code extension and the CLI. No wonder it inspires a few others 👀
+> 
+> You can install it here https://openai.com/codex/ + you get up to $500 in credits if you are getting started as a business or enterprise.
+
+---
+
