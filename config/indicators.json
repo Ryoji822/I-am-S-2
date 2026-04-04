@@ -1,12 +1,13 @@
 {
-  "version": "3.40",
-  "last_updated": "2026-04-03",
-  "description": "I&W（Indications and Warning）指標レジストリ。v3.40: Arbiter統合判断完了。2指標更新（IND-025新規elevated・IND-013 high維持）。マルチモーダル「錯覚」問題顕在化",
+  "version": "3.41",
+  "last_updated": "2026-04-04",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.41: Arbiter統合判断完了.3指標更新. IND-013 high維持・IND-025 elevated維持. 新規IND-026 elevated（エージェント失敗率）. Agent普及速度>セキュリティ成熟速度継続",
   "structural_changes_log": [
-    "2026-04-03 v3.40: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。2指標更新。IND-025新規elevated（マルチモーダル信頼性）・IND-013 high維持（OWASPフレームワーク）。Red指摘採用: IND-025「根本的な疑義」→「重要な懸念」に表現緩和",
-    "2026-04-02 v3.35: Arbiter統合判断完了。指標更新なし。IND-013（セキュリティ侵害頻度）はhigh維持。新規セキュリティ情報なし（収集空白）",
-    "2026-04-01 v3.34: Blue Agent分析完了（10件収集）。1指標更新（IND-013 elevated→high）。INFO-010（セキュリティ侵害急増・Meta Sev-1・150万トークン流出・OpenClaw 63%脆弱設定）でアラート発出",
-    "2026-03-31 v3.33: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘5/7採用（71%）。H-ANT-002 +1%（73%→74%）$1B ARR達成。H-GOV-001 -2%（54%→52%）INFO-006判事差止。H-GOO-002 ±0%（52%維持）"
+    "2026-04-04 v3.41: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3指標更新。IND-013 high維持・IND-025 elevated維持. 新規IND-026 elevated（エージェント本番環境到達率）",
+    "2026-04-03 v3.40: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。2指標更新。IND-025新規elevated（マルチモーダル信頼性）・IND-013 high維持（OWASPフレームワーク）。攻撃ベクトル詳細化). Agent普及速度>セキュリティ成熟速度継続",
+    "2026-04-02 v3.35: Arbiter統合判断完了.指標更新なし. IND-013 high維持（新規セキュリティ情報なし（収集空白）"
+    "2026-04-01 v3.34: Blue Agent分析完了（10件収集）。1指標更新（IND-013 elevated→high）。 INFO-010（セキュリティ侵害急増・Meta Sev-1・Moltbook 150万トークン流出・OpenClaw 63%脆弱設定）でアラート発出"
+    "2026-03-31 v3.33: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了.3仮説確度更新. Red指摘5/7採用（71%）。 H-ANT-002 +1%（73%→74%）$1B ARR達成。 H-GOV-001 -2%（54%→52%）INFO-006判事差止. H-GOO-002 ±0%（52%維持）Red指摘採用（切り替えコスト削減≠開放性）"
   ],
   "indicators": {
     "IND-013": {
@@ -16,9 +17,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "INFO-065: OWASP Agentic AIセキュリティフレームワーク公開（攻撃ベクトル詳細化）。Agent関連セキュリティ侵害が全AI侵害の8分の1以上を占める。Meta Sev-1・Moltbook 150万トークン流出・OpenClaw 63%脆弱設定",
-      "last_checked": "2026-04-03",
-      "rationale": "Arbiter v3.40: high維持。INFO-065（OWASPフレームワーク）で攻撃ベクトル詳細化。Agent普及速度>セキュリティ成熟速度継続"
+      "last_value": "INFO-049: MCPセキュリティリスク増大. Agent関連セキュリティ侵害が全AI侵害の8分の1以上を占める. Meta Sev-1・Moltbook 150万トークン流出・OpenClaw 63%脆弱設定",
+      "last_checked": "2026-04-04",
+      "rationale": "Arbiter v3.41: high維持. INFO-049（MCPセキュリティリスク増大）で攻撃ベクトル詳細化. Agent普及速度>セキュリティ成熟速度継続"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -26,12 +27,21 @@
       "description": "マルチモーダルモデルの「真の理解」vs「テキストパターンマッチング」の程度",
       "current_status": "elevated",
       "trend": "rising",
-      "alert_level": "elevated",
-      "last_value": "INFO-049: GPT-5.1 93.5%・Claude Opus 4.5 86%ミラージュ率。医療ベンチマークで画像なし80-99%スコア維持",
-      "last_checked": "2026-04-03",
-      "rationale": "Arbiter v3.40: 新規指標。MIRAGE研究（Stanford・A-2）が主要モデルの「視覚理解」が実際はテキストパターンマッチングであることを実証。Red指摘採用: 「根本的な疑義」→「重要な懸念」に表現緩和。医療分野での偽陽性バイアスは安全性リスク"
+      "alert_level": "elevated"
+      "last_value": "INFO-014: ARC-AGI-3全モデル1%未満. 主要モデルの「真の理解」への懸念継続",
+      "last_checked": "2026-04-04"
+      "rationale": "Arbiter v3.41: elevated維持. INFO-014（ARC-AGI-3全モデル1%未満）で「真の理解」への懸念継続. Red指摘採用: 「重要な懸念」→「根本的な疑義」に表現緩和. 医療分野での偽陽性バイアスは安全性リスク"
+    },
+    "IND-026": {
+      "indicator_id": "IND-026",
+      "name": "エージェント本番環境到達率",
+      "description": "エージェント技術の本番環境での成功率・失敗率",
+      "current_status": "elevated",
+      "trend": "rising",
+      "alert_level": "elevated"
+      "last_value": "INFO-015（88%失敗率）・INFO-016（97.5%実タスク失敗）。採用率72%と失敗率88%の乖離が構造的問題",
+      "last_checked": "2026-04-04"
+      "rationale": "Arbiter v3.41: 新規指標. エージェント技術の成熟度と企業採用の間に大きな乖離. Red指摘注記: INFO-015/016への依存度高く、サンプリングバイアス・失敗定義の曖昧性に注意. H-CAR-001/H-CAR-003の重要な反証指標"
     }
-  }
-}
   }
 }
