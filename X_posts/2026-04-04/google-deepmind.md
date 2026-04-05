@@ -43,3 +43,16 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**08:08 JST** | [原文](https://x.com/demishassabis/status/2040834895438561739)
+
+> RT Jesse Genet
+> It’s happened.
+> 
+> Mac Studio is here. Gemma 4 31b @GoogleDeepMind installed, chatting with my main @openclaw for $0 in token expenses now...
+> 
+> I've burned $5-6k on tokens on my crazy ideas over past few months, so this mac studio should pencil out for me within 3 months or so 🤓
+
+---
+

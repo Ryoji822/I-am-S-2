@@ -32,3 +32,36 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**16:21 JST** | [原文](https://x.com/demishassabis/status/2040771521719804231)
+
+> RT Pushmeet Kohli
+> Using AI to solve the Traveling Salesman Problem at warehouse scale. 📦
+> 
+> AlphaEvolve helped FM Logistic improve its routing algorithm by 10.4%, resulting in a reduction of total warehouse travel by over 15,000 km per year. 🚚
+> 
+> A great example of how @GoogleDeepMind and @googlecloud are using AlphaEvolve to help companies become more efficient.
+> 
+> Read more at: https://cloud.google.com/blog/products/ai-machine-learning/how-fm-logistic-tackled-the-traveling-salesman-problem-at-warehouse-scale-with-alphaevolve
+
+---
+
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**23:22 JST** | [原文](https://x.com/JeffDean/status/2040845724347416880)
+
+> RT Latest in space
+> This might be the MOST STUNNING photo from Artemis II yet
+> 
+> Crescent Earth illuminated by light above  🤩
+
+---
+
+**22:34 JST** | [原文](https://x.com/JeffDean/status/2040844182051500307)
+
+> RT Christian Davenport
+> Now that’s a front-page image
+
+---
+
