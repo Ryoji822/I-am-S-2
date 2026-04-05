@@ -19,3 +19,27 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**09:18 JST** | [原文](https://x.com/demishassabis/status/2040566665449009394)
+
+> RT clem 🤗
+> llama-server -hf ggml-org/gemma-4-26b-a4b-it-GGUF:Q4_K_M
+> 
+> openclaw onboard --non-interactive \
+>   --auth-choice custom-api-key \
+>   --custom-base-url "http://127.0.0.1:8080/v1" \
+>   --custom-model-id "ggml-org-gemma-4-26b-a4b-gguf" \
+>   --custom-api-key "llama.cpp" \
+>   --secret-input-mode plaintext \
+>   --custom-compatibility openai \
+>   --accept-risk
+> 
+> Peter Steinberger 🦞: woke up and my mentions are full of these
+> 
+> Both me and @davemorin tried to talk sense into Anthropic, best we managed was delaying this for a week.
+> 
+> Funny how timings match up, first they copy some popular features into their closed harness, then they lock out open source.
+
+---
+

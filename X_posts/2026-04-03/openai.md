@@ -81,3 +81,22 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**01:56 JST** | [原文](https://x.com/gdb/status/2039748906645381633)
+
+> OpenAI for helping resolve longstanding open mathematical problems, with short elegant proofs. Feels like we are on the edge of a new age of scientific discovery.
+> 
+> Mehtaab Sawhney: We are excited to share a new paper solving three further problems due to Erdős; in each case the solution was found by an internal model at OpenAI. Each proof is short and elegant, and the paper is available here: https://arxiv.org/pdf/2603.29961
+
+---
+
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**23:44 JST** | [原文](https://x.com/jasonkwon/status/2040464126992953463)
+
+> RT Sasha Issenberg
+> Does the @nytimes know what NATO stands for?
+
+---
+

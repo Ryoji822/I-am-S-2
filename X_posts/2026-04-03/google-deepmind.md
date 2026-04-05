@@ -44,3 +44,19 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**22:57 JST** | [原文](https://x.com/demishassabis/status/2040578660063645875)
+
+> RT Sharbel
+> 🚨 Google Just Made OpenClaw Free (GEMMA 4):
+> 
+> 0:00 - Why Gemma 4 matters
+> 0:48 - #3 open model in the world
+> 1:24 - What Gemma 4 actually does
+> 2:01 - What this means for OpenClaw
+> 3:03 - How to set up Gemma 4
+> 3:58 - My honest take after running Claude for 3 months
+
+---
+
