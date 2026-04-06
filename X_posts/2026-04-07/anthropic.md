@@ -68,3 +68,16 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**02:14 JST** | [原文](https://x.com/EthanJPerez/status/2041270803782832344)
+
+> RT Tomek Korbak
+> OpenAI is spinning up an AI safety research fellowship program similar to MATS or Anthropic Fellows. People should apply!
+> 
+> OpenAI: Introducing the OpenAI Safety Fellowship, a new program supporting independent research on AI safety and alignment—and the next generation of talent.
+> 
+> https://openai.com/index/introducing-openai-safety-fellowship/
+
+---
+
