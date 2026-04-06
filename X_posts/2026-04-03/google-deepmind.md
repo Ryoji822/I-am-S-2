@@ -60,3 +60,18 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**04:07 JST** | [原文](https://x.com/demishassabis/status/2040961145800945957)
+
+> RT Sriram Krishnan
+> Really excited for this launch of Gemma 4 from @demishassabis and the DeepMind team.
+> 
+> Open source models are a key front for the west to have a lead on and this is a very key addition to the effort.
+> 
+> Excited to see what developers in SV and around the world can build using this.
+> 
+> Demis Hassabis: Excited to launch Gemma 4: the best open models in the world for their respective sizes. Available in 4 sizes that can be fine-tuned for your specific task: 31B dense for great raw performance, 26B MoE for low latency, and effective 2B & 4B for edge device use - happy building!
+
+---
+
