@@ -34,3 +34,26 @@
 
 ---
 
+## @markchen90 (Mark Chen - 研究責任者)
+
+**05:25 JST** | [原文](https://x.com/markchen90/status/2041250842255425767)
+
+> We’re excited to launch the OpenAI Safety Fellowship - supporting rigorous, independent research on AI safety and alignment, including areas like evaluation, robustness, and scalable mitigations.
+> 
+> Applications are open through May 4, 2026!
+> 
+> OpenAI: Introducing the OpenAI Safety Fellowship, a new program supporting independent research on AI safety and alignment—and the next generation of talent.
+> 
+> https://openai.com/index/introducing-openai-safety-fellowship/
+
+---
+
+**02:12 JST** | [原文](https://x.com/markchen90/status/2041250745568399819)
+
+> RT OpenAI
+> Introducing the OpenAI Safety Fellowship, a new program supporting independent research on AI safety and alignment—and the next generation of talent.
+> 
+> https://openai.com/index/introducing-openai-safety-fellowship/
+
+---
+
