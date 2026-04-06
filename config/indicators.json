@@ -1,6 +1,6 @@
 {
-  "version": "3.42",
-  "last_updated": "2026-04-05",
+  "version": "3.43",
+  "last_updated": "2026-04-06",
   "description": "I&W（Indications and Warning）指標レジストリ. v3.42: Arbiter統合判断完了.4指標更新. IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持. 新規IND-027 elevated（エコシステム標準化進展度）. Agent普及速度>セキュリティ成熟速度継続",
   "structural_changes_log": [
     "2026-04-05 v3.42: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。4指標更新。IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持. 新規IND-027 elevated（エコシステム標準化進展度・囲い込みリスク注記）",
@@ -54,6 +54,28 @@
       "last_value": "INFO-013: AAIF設立・INFO-014: 425K+スキル・INFO-015: LangChain統合",
       "last_checked": "2026-04-05",
       "rationale": "Arbiter v3.42: 新規指標。エコシステム標準化が加速。Red指摘注記: MCP標準化はAnthropic主導で囲い込みの可能性。開放性の程度を監視必要"
+    },
+    "IND-028": {
+      "indicator_id": "IND-028",
+      "name": "AGI到達度指標",
+      "description": "ARC-AGI-3等の客観的ベンチマークと主観的AGI宣言の乖離度",
+      "current_status": "elevated",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "last_value": "INFO-011: ARC-AGI-3全モデル1%未満 vs INFO-029: AGI達成宣言",
+      "last_checked": "2026-04-06",
+      "rationale": "Arbiter v3.43: 新規指標。AGI定義の不一致が顕在化。経済的能力（Huang）vs 認知能力（ARC-AGI-3）の対立"
+    },
+    "IND-029": {
+      "indicator_id": "IND-029",
+      "name": "AIインフラ制約指標",
+      "description": "データセンター建設・電力・半導体供給の制約度",
+      "current_status": "elevated",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "last_value": "INFO-028: 米国の50%が遅延・中止",
+      "last_checked": "2026-04-06",
+      "rationale": "Arbiter v3.43: 新規指標。電力・インフラ・中国部品不足がAI成長のボトルネック化。4大テック$650B+支出予測"
     }
   }
 }

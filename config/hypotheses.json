@@ -1,6 +1,6 @@
 {
-  "version": "3.42",
-  "last_updated": "2026-04-05",
+  "version": "3.43",
+  "last_updated": "2026-04-06",
   "structural_changes_log": [
     "2026-04-05 v3.42: Arbiter統合判断完了（COMPLETE状態）。Blue/Red両方完了。5仮説確度更新。Red指摘6/12採用（50%）。主要更新: H-ANT-001 +1%（52%→53%）$183B評価・ARR $5B・H-ANT-003 -1%（12%→11%）AWS依存深化・H-XAI-002 +1%（63%→64%）価格優位$0.598/M・H-CAR-001 ±0%（24%維持）Blue +1%見送り（Red指摘採用: ACH矛盾・組織的問題≠中間層削減）・H-CAR-003 ±0%（58%維持）Blue +1%見送り（Red指摘採用）。シナリオ4件更新（SCN-001 +1% 23%→24%集中化・SCN-002 +1% 36%→37%開放性進展・SCN-003 -1% 26%→25%実装ギャップ・SCN-004 -1% 15%→14%誰でも困難化）。指標4件更新（IND-027新規elevatedエコシステム標準化進展度・IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持）。合計100%確認済み（24+37+25+14=100%）",
     "2026-04-04 v3.41: Arbiter統合判断完了（COMPLETE状態）。Blue/Red両方完了。18仮説確度更新。Red指摘18/22採用（82%）。主要更新: H-GOO系/H-XAI系確証バイアス是正（±0%または-1%）・H-BTD-001 +1%（64%→65%）自己発表データ抑制・H-XAI-002 +1%（62%→63%）価格≠シェア抑制・H-GOV-001 -2%（50%→48%）一時差止反証注記・H-CAR-001 -2%（26%→24%）失敗率注記・H-CAR-003 -2%（60%→58%）・H-OAI-001 -1%（66%→65%）二次市場需要減退・H-OAI-002 -1%（57%→56%）価格競争・H-ANT-001 +1%（51%→52%）企業向け機能・H-ANT-003 -1%（13%→12%）AWS依存・H-BTD-002 +1%（68%→69%）トークン使用量・H-BTD-003 -2%（43%→41%）ガードレール実装。シナリオ4件更新（SCN-001 +1% 22%→23%集中化・SCN-002 -1% 37%→36%・SCN-003 +1% 25%→26%囲い込み・SCN-004 -1% 16%→15%）。指標3件更新（IND-026新規elevatedエージェント失敗率・IND-013 high維持・IND-025 elevated維持）。合計100%確認済み（23+36+26+15=100%）",
@@ -143,9 +143,9 @@
         "statement": "Claude Code・Claude Agent SDKが開発者エコシステムで急成長し、エンタープライズAI開発の標準ツールになる",
         "status": "active",
         "confidence": "high",
-        "confidence_percentage": 74,
+        "confidence_percentage": 73,
         "inconsistent_evidence": ["INFO-010", "INFO-031", "INFO-014"],
-        "rationale": "Arbiter v3.41: ±0%（74%維持）。Blue +1%→±0%抑制（Red指摘採用: チャーン率未検証・MCPはAnthropic主導の囲い込み可能性）。INFO-004企業向け機能は支持だが、確度上昇の根拠不十分",
+        "rationale": "Arbiter v3.43: -1%（74%→73%）。INFO-007（ソース流出512,000行）+ INFO-018（Cursor $29B競合成長）+ チャーン率未検証。Red指摘採用: 競合成長軽視・セキュリティインシデント影響",
       "confirming_indicators": [
         "Claude Code週間アクティブユーザー数の継続的増加",
         "Claude Agent SDK採用企業数の増加",
@@ -375,9 +375,9 @@
         "statement": "AI業務自律化が3年以内に中堅企業の業務プロセスを30%以上自動化し、中間層雇用が大幅に削減される",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 24,
+        "confidence_percentage": 23,
         "inconsistent_evidence": ["INFO-042", "INFO-019", "INFO-056", "INFO-055", "INFO-028", "INFO-020", "INFO-023", "INFO-022", "INFO-045", "INFO-061", "INFO-060", "INFO-057", "INFO-084", "INFO-013"],
-        "rationale": "Arbiter v3.42: ±0%（24%維持）。Blue +1%見送り。Red指摘採用: INFO-011/012は「組織的問題」を示唆し「中間層削減」の直接的支持ではない。ACHでI判定しながら確度上昇は矛盾。サンプリングバイアス（成功事例のみ）の可能性",
+        "rationale": "Arbiter v3.43: -1%（24%→23%）。INFO-014/015（実装ギャップ・Klarna再雇用）が反証的証拠。「技術的限界」ではなく「組織的問題」が主因。中間層削減の直接的支持ではない",
         "confirming_indicators": [
           "中堅企業でのAI自動化率30%超達成",
           "中間層雇用の統計的減少確認",
@@ -415,9 +415,9 @@
       "statement": "スマイルカーブの中間圧縮により、バリューチェーン中間工程のビジネス職は3年以内に大規模再編され、価値は上流と下流に集中する",
       "status": "active",
       "confidence": "medium",
-        "confidence_percentage": 58,
+        "confidence_percentage": 57,
         "inconsistent_evidence": ["INFO-078", "INFO-056", "INFO-022", "INFO-028", "INFO-061", "INFO-060", "INFO-013"],
-        "rationale": "Arbiter v3.42: ±0%（58%維持）。Blue +1%見送り。Red指摘採用: INFO-011/012は「組織的問題」を示唆し「中間層大規模再編」の直接的支持ではない。組織変革の困難さ考慮でタイムラインに疑義",
+        "rationale": "Arbiter v3.43: -1%（58%→57%）。INFO-014/015（実装ギャップ・Klarna再雇用）が反証的証拠。組織変革の困難さ考慮でタイムラインに疑義",
         "confirming_indicators": [
           "中間工程の単価がインフレ率を下回る低下を2四半期連続",
           "上流コンサル/戦略職と中間実装職の給与格差20%以上拡大",
