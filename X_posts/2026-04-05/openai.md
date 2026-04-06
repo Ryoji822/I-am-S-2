@@ -55,3 +55,14 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**02:01 JST** | [原文](https://x.com/kevinweil/status/2040830818134995284)
+
+> RT Sebastian Caliri
+> It looks like the White House is finally taking US-China biotech competition seriously. The FDA is putting forward an expedited IND pathway that would shorten time to first-in-human. 
+> 
+> Overdue, but good news for American biotech.
+
+---
+

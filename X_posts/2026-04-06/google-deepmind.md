@@ -25,3 +25,12 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**06:55 JST** | [原文](https://x.com/demishassabis/status/2040920157317406755)
+
+> RT clem 🤗
+> Gemma 4 is #1 on @huggingface!
+
+---
+
