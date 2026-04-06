@@ -24,3 +24,12 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**21:16 JST** | [原文](https://x.com/EthanJPerez/status/2041158850758480196)
+
+> RT Ronan Farrow
+> The reporting on OpenAI and Sam Altman that I've been working on for the past year and a half, for @NewYorker, with @andrewmarantz: https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted
+
+---
+
