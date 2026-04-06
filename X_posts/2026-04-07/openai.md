@@ -22,3 +22,15 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**05:10 JST** | [原文](https://x.com/OpenAIDevs/status/2041247305286996373)
+
+> Let’s talk about building with Codex.
+> 
+> Join @ryannystrom, @derrickcchoi and @varunrau for a chat about Codex workflows, from exploring feature ideas to shipping together as a team.
+> 
+> https://x.com/i/spaces/1YxNrZDqrOLxw
+
+---
+
