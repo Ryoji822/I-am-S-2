@@ -24,3 +24,12 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**22:43 JST** | [原文](https://x.com/GoogleDeepMind/status/2041535025305301393)
+
+> RT Google Gemma
+> http://x.com/i/article/2041504032410222593
+
+---
+

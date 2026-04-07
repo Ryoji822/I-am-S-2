@@ -33,3 +33,14 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**23:45 JST** | [原文](https://x.com/EthanJPerez/status/2041538596986028397)
+
+> RT Michael Huang ⏸️
+> Sam Altman tried to con the U.S. government into giving OpenAI billions of dollars. But an intelligence official investigated and found that Altman was full of shit.
+> 
+> Ronan Farrow: The reporting on OpenAI and Sam Altman that I've been working on for the past year and a half, for @NewYorker, with @andrewmarantz: https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted
+
+---
+
