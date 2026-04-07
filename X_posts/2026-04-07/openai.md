@@ -98,3 +98,18 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**12:15 JST** | [原文](https://x.com/kevinweil/status/2041382621557715045)
+
+> RT Mehtaab Sawhney
+> In a beautiful recent paper, Vishesh Jain and Clayton Mizgerd used GPT-5.4 Pro to prove a striking result in the theory of Markov chains: https://arxiv.org/pdf/2604.03937
+> 
+> They study the adjacent transposition Markov chain on the symmetric group. A conjecture of Fill, recently settled by Greaves and Zhu, determined which parameters of this chain maximize the spectral gap, a natural quantity controlling how fast the chain mixes. Jain and Mizgerd go further and characterize exactly when this extremal spectral gap is achieved, answering another question of Fill.
+> 
+> As they explain in the paper, once the first part was in place, GPT-5.4 Pro was able to one-shot generate the second part of the main result. From talking with the authors, my understanding is that this would likely have taken substantial effort without GPT. Furthermore even given the first part, several ingredients, such as the piecewise eigenvector construction in Proposition 6.6, were new to them.
+> 
+> Just another example of how AI is already changing the everyday practice of research mathematics.
+
+---
+
