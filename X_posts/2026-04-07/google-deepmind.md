@@ -14,3 +14,13 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**12:33 JST** | [原文](https://x.com/JeffDean/status/2041358751983452440)
+
+> Incredible!  The purple-ish and reddish colors don't quite come through when we look from Earth (and the  black background highlights the vastness of space)
+> 
+> Physics & Astronomy Zone: The highest quality video of the moon was just released… this is so beautiful.
+
+---
+

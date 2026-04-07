@@ -87,3 +87,14 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**12:53 JST** | [原文](https://x.com/jasonkwon/status/2041364739968929831)
+
+> RT Paul Graham
+> Since there's yet another article claiming that we "removed" Sam because partners distrusted him, no, we didn't. It's not because I want to defend Sam that I keep insisting on this. It's because it's so annoying to read false accounts of my own actions.
+> 
+> Paul Graham: I got tired of hearing that YC fired Sam, so here's what actually happened:
+
+---
+
