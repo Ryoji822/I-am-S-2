@@ -33,3 +33,12 @@
 
 ---
 
+## @sundarpichai (Sundar Pichai - Google CEO)
+
+**22:24 JST** | [原文](https://x.com/sundarpichai/status/2041542805043151296)
+
+> RT John Collison
+> .@sundarpichai joined @eladgil and me in the Cheeky Pint pub. I was excited to get into Google in 2026: how AGI-pilled Google is, compute bottlenecks, fast AI products, $180b capex, the intelligence overhang at enterprises, and deciding capital allocation at a company overflowing with ideas.
+
+---
+

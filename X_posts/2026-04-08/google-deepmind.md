@@ -47,3 +47,28 @@
 
 ---
 
+## @sundarpichai (Sundar Pichai - Google CEO)
+
+**02:14 JST** | [原文](https://x.com/sundarpichai/status/2041565389336014864)
+
+> T
+> A
+> B
+> S
+> 
+> I
+> N
+> 
+> C
+> H
+> R
+> O
+> M
+> E
+> 
+> Google: Too many @GoogleChrome tabs open? Try vertical tabs, rolling out now. 
+> 
+> Just right-click any Chrome window and select “Show Tabs Vertically” to move your tabs to the side of the browser window, making it easier to read page titles and manage tab groups.
+
+---
+
