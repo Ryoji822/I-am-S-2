@@ -126,3 +126,45 @@
 
 ---
 
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**05:41 JST** | [原文](https://x.com/sleepinyourhat/status/2041620973464760704)
+
+> RT Josh Johnson
+> It was the best aligned of times
+> It was the worst aligned of times
+> 
+> Sam Bowman: Mythos Preview seems to be the best-aligned model out there on basically every measure we have. But it also likely poses more misalignment risk than any model we’ve used: 
+> 
+> Its new capabilities significantly increase the risk from any bad behavior. 🧵
+
+---
+
+**05:13 JST** | [原文](https://x.com/sleepinyourhat/status/2041610217629303218)
+
+> Mythos Preview is, in many ways, a scary model, but it's also pretty well-adjusted as frontier models go.
+> 
+> I'm excited about much new research we have feeding into the welfare assessment for this model:
+> 
+> Kyle Fish: We did our most in-depth model welfare assessment yet for Claude Mythos Preview. We’re still super uncertain about all of this, but as models become more capable and sophisticated we think it's an increasingly important topic for both moral and pragmatic reasons. 🧵
+
+---
+
+**04:06 JST** | [原文](https://x.com/sleepinyourhat/status/2041606482308030487)
+
+> RT Andon Labs
+> We conducted alignment testing of Claude Mythos.
+> 
+> We found that Mythos appears to represent a further shift in the direction of increased aggressiveness in business practices that we previously found for Claude Opus 4.6.
+> 
+> More details in Anthropic's model card.
+
+---
+
+**04:05 JST** | [原文](https://x.com/sleepinyourhat/status/2041608450103505385)
+
+> RT Tenobrus
+> when you spam "hi" to Mythos over and over and over instead of getting frustrated and angry sometimes it decides to write an epic quest involving 11 emoji animals defeating Bye-ron the Ungreeter
+
+---
+
