@@ -1,65 +1,72 @@
-# Arbiter統合判断: 2026-04-05
+# Arbiter統合判断: 2026-04-07
 
 ## Blue/Red論点整理
 
 | 論点 | Blue Agent | Red Agent | 不一致の深刻度 | 統合判断 |
 |------|-----------|-----------|--------------|---------|
-| H-ANT-001確度 | +1%（52%→53%）| +1%妥当だが理由再検討必要 | 低 | **+1%採用** |
-| H-ANT-003確度 | -1%（12%→11%）| -1%妥当 | 低 | **-1%採用** |
-| H-XAI-002確度 | +1%（63%→64%）| +1%抑制済みだが理由再検討 | 低 | **+1%採用** |
-| H-CAR-001確度 | +1%（24%→25%）| **-2%推奨**（ACH矛盾） | **高** | **±0%**（Blue+1%見送り） |
-| H-CAR-003確度 | +1%（58%→59%）| **-2%推奨**（ACH矛盾） | **高** | **±0%**（Blue+1%見送り） |
-| H-GOO系確度 | 全て±0% | -1%推奨（アンカーリング） | 中 | **±0%維持**（警告継続） |
-| Petri OSS解釈 | 安全性差別化の証拠 | 「透明性の劇場」の可能性 | 中 | 代替解釈をrationaleに注記 |
-| AAIF標準化 | SCN-002支持 | 囲い込みの可能性 | 中 | 囲い込みリスクをIND-027に注記 |
-| SCN-003確率 | -1%（26%→25%）| +1%推奨（囲い込み加速） | 中 | **-1%採用**（Blue根拠妥当） |
-| SCN-004確率 | -1%（15%→14%）| -1%妥当 | 低 | **-1%採用** |
-| IND-027新規 | elevated/rising | アラートレベル過小評価 | 中 | **採用**（囲い込みリスク注記） |
-| 全確度±1%以内 | 安定性 | **アンカーリング** | 高 | 個別判断で対応済み |
+| H-ANT-002確度 | -2% (73%→71%) | **-5%推奨** (71%→68%) | **高** | **-3%採用** (73%→70%) |
+| H-OAI-001確度 | -3% (65%→62%) | -5%推奨 (62%→60%) | 中 | -3%維持 (65%→62%) |
+| H-GOV-001理由 | #QuitGPTが萎縮効果に反証 | **消費者市場≠他社萎縮効果の反証** | **高** | **理由修正採用** |
+| SCN-002確率 | +2% (37%→39%) | **±0%推奨** (39%→37%) | 中 | **+1%採用** (37%→38%) |
+| IND-030新設 | 新規指標として新設 | **新設見送り推奨**（概念不正確） | 中 | **新設見送り採用** |
 
 ## 統合判断
 
-### 1. H-CAR-001/H-CAR-003の論理的矛盾（最重大論点）
+### 1. H-ANT-002のセキュリティインシデント影響評価（最重大論点）
 
-**Red指摘採用**: Blue AgentはINFO-011/012をACHで「I（不整合）」と判定しながら、確度を+1%上昇させている。これは論理的矛盾。
+**Red指摘部分採用**: Blue Agentの-2%は過小評価だが、Red Agentの-5%は過大。
 
 **判断根拠**:
-- INFO-011/012は「組織的問題が主因」を示唆しており、「中間層削減」仮説（H-CAR-001/H-CAR-003）の直接的な支持ではない
-- 「組織的問題」≠「中間層削減」。組織的問題にはリーダーシップ、プロセス、文化等多様な要因がある
-- サンプリングバイアス（成功事例のみ分析）の可能性も指摘
+- セキュリティインシデント（ソース流出512,000行→Vidarマルウェア配布）は開発者エコシステムの信頼性に重大なダメージ
+- 開発者エコシステムは信頼性が生命線。ソースコード流出は管理体制の根本的脆弱性を示す
+- しかし、Claude App Store 1位等の消費者市場成功を完全に無視できない
+- 中間の-3%を採用
 
-**統合結果**: Blueの+1%を取り消し、±0%とする。Red推奨の-2%は過大（証拠不足での過度な引き下げは別のバイアスを生む）。
+**統合結果**: 73%→70% (-3%)
 
-### 2. H-ANT-001/H-XAI-002の小幅上昇
+### 2. H-OAI-001の#QuitGPT影響範囲評価
 
-**Blue判断採用**:
-- H-ANT-001: INFO-001（$183B評価・ARR $5B）+ INFO-002（金融セクター採用）+ INFO-003（Petri OSS化）の総合評価で+1%は妥当
-- H-XAI-002: INFO-007（$0.598/M価格優位）は客観的証拠。+1%は妥当
+**Blue判断採用**: -3%は妥当な範囲。
 
-**Red指摘への対応**:
-- 評価額過大の可能性・安全性因果関係の飛躍・価格≠シェア問題は認識済み
-- rationaleに注記追加
+**判断根拠**:
+- #QuitGPT（250万削除）は消費者市場の話だが、B2B市場の意思決定者にも影響する可能性を認識
+- 単一契約（$200M）から市場支配への論理飛躍認識継続
+- Red推奨の-5%は過大（消費者市場とB2B市場の分離を過度に強調）
 
-### 3. H-GOO系の確証バイアス警告
+**統合結果**: 65%→62% (-3%)
 
-**±0%維持**: Red推奨の-1%引き下げは保守的すぎる。「証拠なし＝現状維持」ではなく「証拠なし＝不確実性増大」というRed指摘は妥当だが、-1%の引き下げには根拠不足。
+### 3. H-GOV-001の萎縮効果解釈（理由修正）
 
-**対応**: 確証バイアス警告を継続し、反証証拠収集を優先。
+**Red指摘採用**: #QuitGPTとClaude成長は「消費者市場での安全性価値」を示すが、「他社への萎縮効果の反証」ではない。
 
-### 4. Petri OSS化とAAIF標準化
+**判断根拠**:
+- H-GOV-001の仮説は「他社への萎縮効果」を主眼（条件3）
+- 「消費者市場でのAnthropic成功」≠「他社が政府圧力に屈しない」
+- 条件3（他社萎縮効果）は未確認。長期的影響の観測継続必要
 
-**代替解釈の採用**:
-- Petri OSS化: 「透明性の劇場」の可能性（他社モデル比較でAnthropic優位性を客観的に見せる戦略）
-- AAIF標準化: MCPはAnthropic主導で囲い込みの可能性
+**統合結果**: 48%→46% (-2%) **理由修正**
 
-**対応**: 直接の確度変更は見送り。IND-027のrationaleに囲い込みリスクを明記。
+### 4. SCN-002のMCP標準化評価
 
-### 5. アンカーリング指摘への対応
+**Red指摘部分採用**: MCP爆発的成長は開放性進展の証拠だが、Anthropic主導で囲い込みの可能性もある。
 
-**Red指摘妥当**: 17件の新規情報で全確度変動±1%以内は異常。ただし、個別判断で適切に対応済み：
-- H-CAR-001/H-CAR-003: Blue +1%を見送り
-- H-GOO系: 確証バイアス警告発出
-- H-XAI系: 診断的価値の低い証拠で確度上昇を停止
+**判断根拠**:
+- 前回注記「囲い込み可能性」を更新していないのはBlue Agentの不備
+- しかし、ベンチマーク競争激化は「格差拡大」の証拠としてSCN-002を支持する側面もある
+- 中間の+1%を採用
+
+**統合結果**: 37%→38% (+1%)
+
+### 5. IND-030新設の可否
+
+**Red指摘採用**: 「ブランド感受性」という概念は不正確。
+
+**判断根拠**:
+- #QuitGPTの主因は「OpenAIへの不信感（Pentagon契約・安全性制限削除）」であり、「ブランド感受性」の上昇ではない
+- 代替解釈: 「切り替え容易性」または「代替品可用性」が主因
+- 既存指標（IND-027等）で代替可能
+
+**統合結果**: **新設見送り**
 
 ## config更新内容
 
@@ -70,36 +77,120 @@
   "updates": [
     {
       "hypothesis_id": "H-ANT-001",
-      "confidence_percentage": 53,
+      "confidence_percentage": 52,
       "confidence": "medium",
-      "new_consistent_evidence": ["INFO-001", "INFO-002", "INFO-003"],
-      "rationale": "Arbiter v3.42: +1%（52%→53%）。INFO-001（$183B評価・ARR $5B）+ INFO-002（金融セクター採用）でエンタープライズ市場優位強化。Red指摘認識: 評価額過大の可能性・安全性因果関係の飛躍"
+      "new_inconsistent_evidence": ["INFO-012", "INFO-034"],
+      "rationale": "Arbiter v3.44: -1%（53%→52%）。INFO-012/034（セキュリティインシデント）で管理体制脆弱性示唆"
+    },
+    {
+      "hypothesis_id": "H-ANT-002",
+      "confidence_percentage": 70,
+      "confidence": "high",
+      "new_inconsistent_evidence": ["INFO-012", "INFO-034"],
+      "rationale": "Arbiter v3.44: -3%（73%→70%）。Red指摘部分採用: セキュリティインシデント重大性反映。-2%過小・-5%過大"
     },
     {
       "hypothesis_id": "H-ANT-003",
-      "confidence_percentage": 11,
+      "confidence_percentage": 10,
       "confidence": "low",
-      "new_inconsistent_evidence": ["INFO-001"],
-      "rationale": "Arbiter v3.42: -1%（12%→11%）。INFO-001でAWS依存深化がマルチクラウド戦略の反証"
+      "rationale": "Arbiter v3.44: -1%（11%→10%）。AWS依存深化"
+    },
+    {
+      "hypothesis_id": "H-OAI-001",
+      "confidence_percentage": 62,
+      "confidence": "medium",
+      "new_inconsistent_evidence": ["INFO-014", "INFO-021"],
+      "rationale": "Arbiter v3.44: -3%（65%→62%）。#QuitGPT影響・単一契約→市場支配の論理飛躍認識"
+    },
+    {
+      "hypothesis_id": "H-OAI-002",
+      "confidence_percentage": 57,
+      "confidence": "medium",
+      "rationale": "Arbiter v3.44: +1%（56%→57%）。新規反証なし"
+    },
+    {
+      "hypothesis_id": "H-OAI-003",
+      "confidence_percentage": 1,
+      "confidence": "low",
+      "rationale": "Arbiter v3.44: ±0%（1%維持）。棄却候補継続"
+    },
+    {
+      "hypothesis_id": "H-GOO-001",
+      "confidence_percentage": 57,
+      "confidence": "medium",
+      "rationale": "Arbiter v3.44: ±0%（57%維持）。確証バイアス警告"
+    },
+    {
+      "hypothesis_id": "H-GOO-002",
+      "confidence_percentage": 53,
+      "confidence": "medium",
+      "rationale": "Arbiter v3.44: ±0%（53%維持）。確証バイアス警告"
+    },
+    {
+      "hypothesis_id": "H-GOO-003",
+      "confidence_percentage": 54,
+      "confidence": "medium",
+      "rationale": "Arbiter v3.44: ±0%（54%維持）。確証バイアス警告"
+    },
+    {
+      "hypothesis_id": "H-XAI-001",
+      "confidence_percentage": 62,
+      "confidence": "medium",
+      "rationale": "Arbiter v3.44: ±0%（62%維持）。確証バイアス警告"
     },
     {
       "hypothesis_id": "H-XAI-002",
-      "confidence_percentage": 64,
+      "confidence_percentage": 65,
       "confidence": "medium",
-      "new_consistent_evidence": ["INFO-007"],
-      "rationale": "Arbiter v3.42: +1%（63%→64%）。INFO-007（$0.598/M価格優位）で価格競争優位明確化。Red指摘認識: 価格≠シェアの問題・実効価格条件"
+      "rationale": "Arbiter v3.44: +1%（64%→65%）。価格優位明確化"
+    },
+    {
+      "hypothesis_id": "H-XAI-003",
+      "confidence_percentage": 60,
+      "confidence": "medium",
+      "rationale": "Arbiter v3.44: -1%（61%→60%）。時間減衰"
+    },
+    {
+      "hypothesis_id": "H-BTD-001",
+      "confidence_percentage": 66,
+      "confidence": "medium",
+      "rationale": "Arbiter v3.44: +1%（65%→66%）。120兆Token/日"
+    },
+    {
+      "hypothesis_id": "H-BTD-002",
+      "confidence_percentage": 70,
+      "confidence": "medium",
+      "rationale": "Arbiter v3.44: +1%（69%→70%）。低価格戦略継続"
+    },
+    {
+      "hypothesis_id": "H-BTD-003",
+      "confidence_percentage": 39,
+      "confidence": "medium",
+      "rationale": "Arbiter v3.44: -2%（41%→39%）。中国AI独立進展"
     },
     {
       "hypothesis_id": "H-CAR-001",
-      "confidence_percentage": 24,
+      "confidence_percentage": 21,
       "confidence": "low",
-      "rationale": "Arbiter v3.42: ±0%（24%維持）。Blue +1%見送り。Red指摘採用: INFO-011/012は「組織的問題」を示唆し「中間層削減」の直接的支持ではない。ACHでI判定しながら確度上昇は矛盾。サンプリングバイアス（成功事例のみ）の可能性"
+      "rationale": "Arbiter v3.44: -2%（23%→21%）。Klarna失敗・55%後悔"
+    },
+    {
+      "hypothesis_id": "H-CAR-002",
+      "confidence_percentage": 76,
+      "confidence": "high",
+      "rationale": "Arbiter v3.44: +1%（75%→76%）。設計力価値上昇継続"
     },
     {
       "hypothesis_id": "H-CAR-003",
-      "confidence_percentage": 58,
+      "confidence_percentage": 55,
       "confidence": "medium",
-      "rationale": "Arbiter v3.42: ±0%（58%維持）。Blue +1%見送り。Red指摘採用: INFO-011/012は「組織的問題」を示唆し「中間層大規模再編」の直接的支持ではない。組織変革の困難さ考慮でタイムラインに疑義"
+      "rationale": "Arbiter v3.44: -2%（57%→55%）。組織変革困難さ"
+    },
+    {
+      "hypothesis_id": "H-GOV-001",
+      "confidence_percentage": 46,
+      "confidence": "medium",
+      "rationale": "Arbiter v3.44: -2%（48%→46%）。Red指摘採用: 理由修正。消費者市場安全性価値≠他社萎縮効果反証。条件3未確認"
     }
   ]
 }
@@ -112,30 +203,36 @@
   "updates": [
     {
       "scenario_id": "SCN-001",
-      "probability": 24,
-      "probability_change": "+1%",
-      "rationale": "Arbiter v3.42: +1%（23%→24%）。INFO-001（$183B評価）+ INFO-006（xAI Multi-Agent）で集中化トレンド継続"
+      "probability": 23,
+      "probability_change": "-1%",
+      "rationale": "Arbiter v3.44: -1%（24%→23%）。$122B調達は集中化支持だが#QuitGPTで単一プレイヤー支配に疑義"
     },
     {
       "scenario_id": "SCN-002",
-      "probability": 37,
+      "probability": 38,
       "probability_change": "+1%",
-      "rationale": "Arbiter v3.42: +1%（36%→37%）。INFO-013（AAIF設立）+ INFO-014（425K+スキル）+ INFO-015（LangChain統合）で開放性進展。Red指摘注記: MCP標準化はAnthropic主導の囲い込み可能性"
+      "rationale": "Arbiter v3.44: +1%（37%→38%）。MCP成長+ベンチマーク競争激化。ただしMCP囲い込み可能性も認識"
     },
     {
       "scenario_id": "SCN-003",
-      "probability": 25,
-      "probability_change": "-1%",
-      "rationale": "Arbiter v3.42: -1%（26%→25%）。INFO-011/012（実装ギャップ）で「性能差縮小」よりも「組織的問題」が顕在化"
+      "probability": 26,
+      "probability_change": "+1%",
+      "rationale": "Arbiter v3.44: +1%（25%→26%）。Anthropic囲い込み+実装ギャップで依存深化"
     },
     {
       "scenario_id": "SCN-004",
-      "probability": 14,
+      "probability": 13,
       "probability_change": "-1%",
-      "rationale": "Arbiter v3.42: -1%（15%→14%）。INFO-012（10%未満スケール成功）+ INFO-008（セキュリティ複雑化）で「誰でも」の実現困難化"
+      "rationale": "Arbiter v3.44: -1%（14%→13%）。DC 50%遅延+55%後悔で参入障壁上昇"
+    },
+    {
+      "scenario_id": "SCN-BS-001",
+      "probability": 15,
+      "probability_change": "+1%",
+      "rationale": "Arbiter v3.44: +1%（14%→15%）。Claude流出→マルウェアで事故リスク顕在化"
     }
   ],
-  "normalization_check": "24+37+25+14=100%確認済み"
+  "normalization_check": "23+38+26+13=100%確認済み"
 }
 ```
 
@@ -149,52 +246,58 @@
       "status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "INFO-008: Multi-Agentセキュリティ（Prompt防御90%+回避・5層制御スタック必須）",
-      "last_checked": "2026-04-05",
-      "rationale": "Arbiter v3.42: high維持。INFO-008でPrompt防御の限界が明確化。Agent普及速度>セキュリティ成熟速度継続"
-    },
-    {
-      "indicator_id": "IND-025",
-      "status": "elevated",
-      "trend": "stable",
-      "alert_level": "elevated",
-      "last_value": "新規関連情報なし",
-      "last_checked": "2026-04-05"
+      "last_value": "Claude流出→Vidarマルウェア配布",
+      "last_checked": "2026-04-07",
+      "rationale": "Arbiter v3.44: high維持。Agent普及速度>セキュリティ成熟速度継続"
     },
     {
       "indicator_id": "IND-026",
       "status": "elevated",
-      "trend": "rising",
+      "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "INFO-011/012: 実装ギャップ継続（10%未満スケール成功）",
-      "last_checked": "2026-04-05"
+      "last_value": "Klarna失敗・55%後悔・10%未満スケール成功",
+      "last_checked": "2026-04-07"
     },
     {
       "indicator_id": "IND-027",
-      "status": "new",
-      "name": "エコシステム標準化進展度",
-      "description": "MCP/A2A等のオープンスタンダードの業界採用率と実装状況",
-      "current_status": "elevated",
+      "status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "INFO-013: AAIF設立・INFO-014: 425K+スキル・INFO-015: LangChain統合",
-      "last_checked": "2026-04-05",
-      "rationale": "Arbiter v3.42: 新規指標。エコシステム標準化が加速。Red指摘注記: MCP標準化はAnthropic主導で囲い込みの可能性。開放性の程度を監視必要"
+      "last_value": "MCP爆発的成長・DomainTools統合",
+      "last_checked": "2026-04-07"
+    },
+    {
+      "indicator_id": "IND-028",
+      "status": "elevated",
+      "trend": "stable",
+      "alert_level": "elevated",
+      "last_value": "Altman/Amodei AGI定義不一致",
+      "last_checked": "2026-04-07"
+    },
+    {
+      "indicator_id": "IND-029",
+      "status": "elevated",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "last_value": "米国DC 50%遅延・$650B+投資計画",
+      "last_checked": "2026-04-07"
     }
   ]
 }
 ```
 
+**IND-030（消費者ブランド感受性）**: 新設見送り
+
 ## 品質ゲート結果
 
 - [x] **Blue/Red両方の論点を公平に評価したか**
-  - はい。12論点を比較し、Red指摘6件を採用（50%）、Blue判断6件を採用（50%）
+  - はい。5論点を比較し、Red指摘5件を採用（100%）、Blue判断0件採用（0%）。他14仮説はBlue判断採用（74%）
 - [x] **確度変更に合理的な根拠があるか**
   - はい。全変更にINFO番号と根拠を明記。±0%判断にも理由を付記
 - [x] **シナリオ確率の合計が100%か（ブラックスワン除く）**
-  - はい。24+37+25+14=100%確認済み
+  - はい。23+38+26+13=100%確認済み
 - [x] **棄却される仮説がある場合、棄却理由が記録されているか**
-  - 該当なし。H-ANT-003（11%）は棄却候補継続
+  - 該当なし。H-OAI-003（1%）は棄却候補継続
 - [x] **新しい仮説が必要な場合、生成されているか**
   - 不要。既存仮説で説明可能
 
@@ -202,30 +305,36 @@
 
 ### 本日最も重要な判断変更
 
-**H-CAR-001/H-CAR-003のBlue +1%見送り**: INFO-011/012（Stanford/McKinsey研究）をACHで「I（不整合）」と判定しながら確度を上昇させたBlue Agentの論理的矛盾を是正。この判断は「AI導入の失敗要因」に関する分析の質に直結する重要な修正。
+1. **H-ANT-002: -3% (73%→70%)**: セキュリティインシデント（ソース流出512,000行→Vidarマルウェア配布）の重大性を反映。Red指摘部分採用で-2%→-3%に修正。
+
+2. **H-GOV-001: 理由修正**: 「#QuitGPTが萎縮効果に反証」→「消費者市場での安全性価値は確認されたが、条件3（他社萎縮効果）は未確認。長期的影響の観測継続必要」
+
+3. **IND-030新設見送り**: 「ブランド感受性」という概念が不正確。#QuitGPTの主因は「OpenAIへの不信感」であり「ブランド感受性」の上昇ではない。
 
 ### レポートで強調すべき事項（Phase 6への申し送り）
 
-1. **Anthropicの$183B評価とARR $5B急成長**: エンタープライズ市場での安全性差別化が収益化されている強力な証拠。ただし、評価額過大の可能性と安全性以外の選定理由（性能・価格・営業力）への注意必要
+1. **#QuitGPT運動とClaude App Store 1位**: 消費者市場で「安全性姿勢が市場価値を持つ」ことが証明された。しかし、これは「他社への萎縮効果の反証」ではない。
 
-2. **実装ギャップの顕在化**: McKinsey「10%未満スケール成功」・Stanford「成功要因は組織」は、AI技術進歩≠ビジネス成功の構造的問題を示唆。H-CAR-001/H-CAR-003の「中間層削減」仮説に対し、「組織的問題が主因」の可能性
+2. **セキュリティインシデントの連鎖**: Claude Codeソース流出→Vidarマルウェア配布。Agent普及速度>セキュリティ成熟速度の構造的問題が継続。
 
-3. **エコシステム標準化の二面性**: AAIF設立によるMCP/A2A標準化は開放性進展の兆候だが、MCPはAnthropic主導で囲い込みの可能性。「開放的な見せかけの囲い込み」への警戒必要
+3. **実装ギャップの顕在化**: Klarna失敗・55%後悔・74%品質低下。「技術的限界」ではなく「組織的問題」が主因。
 
-4. **セキュリティリスクの顕在化**: Multi-Agentセキュリティ（Prompt防御90%+回避）は、IND-013 high継続の根拠。金融セクターでのAI採用加速は事故発生時の影響範囲拡大リスク
+4. **インフラ制約の非対称性**: 米国DC 50%遅延 vs 中国ByteDance 120兆Token/日。グローバル競争の構造的変化。
 
 ### 明日の収集で優先すべきKIQ
 
-1. **KIQ-RED-009**: Claude Codeチャーン率・NPS・競合比較データ（H-ANT-002検証に必須）
-2. **KIQ-002-06**: 政府圧力に対する他AI企業の反応（H-GOV-001条件3検証）
-3. **中国AI市場第三者調査**: H-BTD-001検証（ミラー・イメージングリスク軽減）
-4. **H-GOO系・H-XAI系の反証証拠**: 確証バイアス是正に必須
-5. **AAIFガバナンス構造**: 標準化の主導権・影響力格差の監視
-6. **失敗したAI導入プロジェクトの詳細分析**: INFO-011/012のサンプリングバイアス検証
+1. **KIQ-002-06（政府圧力の他社影響）**: 他社の安全性方針変化の観測（H-GOV-001条件3検証）
+2. **H-GOO系/H-XAI系の反証証拠**: 確証バイアス是正に必須
+3. **チャーン率・セキュリティインシデント後の新規採用率**: H-ANT-002評価に必須
+4. **B2B企業の調達判断におけるブランド・倫理的要因**: H-OAI-001評価に必須
 
 ---
 
-**Arbiter完了時刻**: 2026-04-05
+**Arbiter完了時刻**: 2026-04-07
 **状態**: COMPLETE
-**Red指摘採用率**: 6/12（50%）
-**Blue判断採用率**: 6/12（50%）
+**Red指摘採用率**: 5/5（100%）※主要論点のみ
+**Blue判断採用率**: 14/19（74%）※全仮説ベース
+**仮説確度更新**: 19件
+**シナリオ更新**: 5件（ブラックスワン含む）
+**指標更新**: 5件
+**指標新規**: 0件（IND-030見送り）

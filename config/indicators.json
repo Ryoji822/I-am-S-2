@@ -1,8 +1,9 @@
 {
-  "version": "3.43",
-  "last_updated": "2026-04-06",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.42: Arbiter統合判断完了.4指標更新. IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持. 新規IND-027 elevated（エコシステム標準化進展度）. Agent普及速度>セキュリティ成熟速度継続",
+  "version": "3.44",
+  "last_updated": "2026-04-07",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.44: Arbiter統合判断完了.5指標更新. IND-013 high維持・IND-026 elevated維持・IND-027 elevated維持・IND-028 elevated維持・IND-029 elevated維持. Agent普及速度>セキュリティ成熟速度継続",
   "structural_changes_log": [
+    "2026-04-07 v3.44: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5指標更新。IND-013 high維持（Claude流出→Vidarマルウェア）・IND-026 elevated維持（Klarna失敗・55%後悔）・IND-027 elevated維持（MCP爆発的成長）・IND-028 elevated維持（AGI定義不一致）・IND-029 elevated維持（DC 50%遅延）",
     "2026-04-05 v3.42: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。4指標更新。IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持. 新規IND-027 elevated（エコシステム標準化進展度・囲い込みリスク注記）",
     "2026-04-04 v3.41: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3指標更新。IND-013 high維持・IND-025 elevated維持. 新規IND-026 elevated（エージェント本番環境到達率）",
     "2026-04-03 v3.40: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。2指標更新。IND-025新規elevated（マルチモーダル信頼性）・IND-013 high維持（OWASPフレームワーク）。攻撃ベクトル詳細化). Agent普及速度>セキュリティ成熟速度継続",
@@ -18,9 +19,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "INFO-008: Multi-Agentセキュリティ（Prompt防御90%+回避可能・5層制御スタック必須）",
-      "last_checked": "2026-04-05",
-      "rationale": "Arbiter v3.42: high維持。INFO-008でPrompt防御の限界が明確化。Agent普及速度>セキュリティ成熟速度継続"
+      "last_value": "Claude流出→Vidarマルウェア配布",
+      "last_checked": "2026-04-07",
+      "rationale": "Arbiter v3.44: high維持。INFO-012/034でセキュリティ侵害顕在化継続"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -40,9 +41,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "INFO-011/012: 実装ギャップ継続（10%未満スケール成功）",
-      "last_checked": "2026-04-05",
-      "rationale": "Arbiter v3.42: elevated維持。INFO-011/012で実装ギャップ継続。Red指摘注記: サンプリングバイアス・失敗定義の曖昧性に注意"
+      "last_value": "Klarna失敗・55%後悔・10%未満スケール成功",
+      "last_checked": "2026-04-07",
+      "rationale": "Arbiter v3.44: elevated維持。実装ギャップ継続"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -51,9 +52,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "INFO-013: AAIF設立・INFO-014: 425K+スキル・INFO-015: LangChain統合",
-      "last_checked": "2026-04-05",
-      "rationale": "Arbiter v3.42: 新規指標。エコシステム標準化が加速。Red指摘注記: MCP標準化はAnthropic主導で囲い込みの可能性。開放性の程度を監視必要"
+      "last_value": "MCP爆発的成長・DomainTools統合",
+      "last_checked": "2026-04-07",
+      "rationale": "Arbiter v3.44: elevated維持。標準化進展継続"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -62,9 +63,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "INFO-011: ARC-AGI-3全モデル1%未満 vs INFO-029: AGI達成宣言",
-      "last_checked": "2026-04-06",
-      "rationale": "Arbiter v3.43: 新規指標。AGI定義の不一致が顕在化。経済的能力（Huang）vs 認知能力（ARC-AGI-3）の対立"
+      "last_value": "Altman/Amodei AGI定義不一致",
+      "last_checked": "2026-04-07",
+      "rationale": "Arbiter v3.44: elevated維持。AGI定義乖離継続"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -73,9 +74,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "INFO-028: 米国の50%が遅延・中止",
-      "last_checked": "2026-04-06",
-      "rationale": "Arbiter v3.43: 新規指標。電力・インフラ・中国部品不足がAI成長のボトルネック化。4大テック$650B+支出予測"
+      "last_value": "米国DC 50%遅延・$650B+投資計画",
+      "last_checked": "2026-04-07",
+      "rationale": "Arbiter v3.44: elevated維持。インフラ制約継続"
     }
   }
 }
