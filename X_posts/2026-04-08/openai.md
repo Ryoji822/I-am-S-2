@@ -97,3 +97,17 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**22:52 JST** | [原文](https://x.com/sama/status/2041918495961804802)
+
+> RT Jacob Trefethen
+> Alzheimer’s is one of medicine's hardest unsolved problems, and one of the most devastating.
+> 
+> At the OpenAI Foundation, we believe AI is well suited to its complexity. We're directing over $100M to scientists mapping the disease, designing drugs, & more.
+> 
+> I wrote about it here:
+> https://openaifoundation.org/news/ai-for-alzheimers
+
+---
+

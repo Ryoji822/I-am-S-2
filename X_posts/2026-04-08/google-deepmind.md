@@ -105,3 +105,28 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**23:53 JST** | [原文](https://x.com/demishassabis/status/2041950895869497589)
+
+> RT Pushmeet Kohli
+> Just back from an inspiring trip to Singapore 🇸🇬 where I met Theodore Kwan, an 8-year-old! chemistry whiz who is already using AlphaFold to explore and learn more about conditions like cystic fibrosis with his mum. 
+> 
+> It’s great to see @GoogleDeepMind's  AlphaFold model inspiring the next generation of scientists :)
+> 
+> Read more about him at: https://www.straitstimes.com/singapore/parenting-education/meet-theodore-kwan-singapores-youngest-chemistry-whiz-who-attends-lectures-in-ntu
+
+---
+
+## @pushmeet (Pushmeet Kohli - 研究リーダー)
+
+**23:53 JST** | [原文](https://x.com/pushmeet/status/2041892307520385415)
+
+> Just back from an inspiring trip to Singapore 🇸🇬 where I met Theodore Kwan, an 8-year-old! chemistry whiz who is already using AlphaFold to explore and learn more about conditions like cystic fibrosis with his mum. 
+> 
+> It’s great to see @GoogleDeepMind's  AlphaFold model inspiring the next generation of scientists :)
+> 
+> Read more about him at: https://www.straitstimes.com/singapore/parenting-education/meet-theodore-kwan-singapores-youngest-chemistry-whiz-who-attends-lectures-in-ntu
+
+---
+

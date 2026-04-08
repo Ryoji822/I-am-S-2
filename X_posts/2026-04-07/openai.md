@@ -113,3 +113,14 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**12:08 JST** | [原文](https://x.com/OpenAIDevs/status/2042003451585163680)
+
+> RT Paul Solt
+> Get started with Plugins. 
+> 
+> The right plugins can be a big unlock outside of code.
+
+---
+
