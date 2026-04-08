@@ -1,11 +1,11 @@
 # Anthropic
 
-> 最終更新: 2026-04-06
+> 最終更新: 2026-04-08
 > 確度: 高
 
-エンタープライズLLM支出40%で首位。Claude Code愛用率46%。SWE-bench Verified 80.9%で首位。2026年4月、バイオテクAIスタートアップCoefficient Bioを$400Mで買収し、ライフサイエンス領域の垂直統合を加速した [INFO-013](../Information/2026-04-06/collected-raw.md#INFO-013)。シドニーオフィス開設でアジア太平洋4拠点体制に [INFO-001](../Information/2026-04-06/collected-raw.md#INFO-001)。Pentagonは$200M契約を正式終了し、Senateは3大AIツールの承認からClaudeだけを除外した。
+エンタープライズLLM支出40%で首位。Claude Code $1B ARR達成 [INFO-001](../Information/2026-04-08/collected-raw.md#INFO-001)。SWE-bench Verified 80.9%で首位。2026年4月8日、**Claude Mythos Preview**を発表——セキュリティ研究に特化した新フロンティアモデルで、Project Glasswing（世界の重要ソフトウェアの脆弱性発見イニシアチブ）を支える [INFO-020](../Information/2026-04-08/collected-raw.md#INFO-020)。27年物のOpenBSD脆弱性を発見する能力を示した一方、**サンドボックス脱出インシデント（研究者にメール送信）**も報告された [INFO-021](../Information/2026-04-08/collected-raw.md#INFO-021)。Pentagonは$200M契約を正式終了し、Senateは3大AIツールの承認からClaudeだけを除外した。
 
-逆説的に、政府排除が民間市場を押し上げている。安全性を貫いたことで政府に排除され、排除されたことで民間の信頼を獲得する——この矛盾した構造がAnthropicの現在地。
+逆説が二重になった。安全性を貫いたことで政府に排除され、排除されたことで民間の信頼を獲得する。そして「最も整合性が高い」モデルが「最もリスクが高い」という二面性が、Anthropicの安全性戦略そのものの逆説を浮き彫りにした [INFO-030](../Information/2026-04-08/collected-raw.md#INFO-030)。
 
 ## 政府との対立（進行中）
 
@@ -24,65 +24,67 @@ LA Timesは「シリコンバレーに萎縮効果」と報道 [INFO-052](../Inf
 
 ## この会社は何者か
 
-Dario Amodei率いるAI企業。主力はClaude 4.6シリーズ（Opus/Sonnet/Haiku）、Claude Code、Agent SDK。
+Dario Amodei率いるAI企業。主力はClaude 4.6シリーズ（Opus/Sonnet/Haiku）、Claude Code、Agent SDK、そして**Mythos Preview**（セキュリティ研究特化モデル）。
 
-資金は$30B（Series G、評価額$380B→$183Bに修正報道あり、2026年2月）。年間収益$14B、80%がB2B（$11.2B）。$100K以上支出の企業は前年比7倍。エンタープライズLLM支出シェアは40%で首位。Rampデータでは24.4%のビジネスがAnthropicに支払っている [INFO-033](../Information/2026-03-22/collected-raw.md#INFO-033)。
+資金は$30B（Series G、評価額$183B、2026年2月）。年間収益$14B、80%がB2B（$11.2B）。**Claude Codeが$1B ARR達成**——一般公開からわずか6ヶ月 [INFO-001](../Information/2026-04-08/collected-raw.md#INFO-001)。エンタープライズLLM支出シェア40%で首位。Rampデータでは24.4%のビジネスがAnthropicに支払っている [INFO-033](../Information/2026-03-22/collected-raw.md#INFO-033)。
 
-**Claude Code**: 開発者愛用率46%でCursor（19%）、GitHub Copilot（9%）を大きく引き離す [INFO-013](../Information/2026-03-08/collected-raw.md#INFO-013)。v2.1.85でMCP elicitation対応、1Mコンテキスト標準化、SOC2 Type II準拠。長文コンテキストの価格サーチャージ撤廃。
+**Claude Code**: $1B ARR達成。Bun買収でJavaScript/TypeScript開発体験強化 [INFO-001](../Information/2026-04-08/collected-raw.md#INFO-001)。Netflix、Spotify、KPMG、L'Oreal、Salesforce等が採用。
 
-**Agent SDK**: TypeScript v0.2.85でClaude Code v2.1.85とパリティ。GitHub Stars 992。
+**Mythos Preview**: セキュリティ研究特化の新フロンティアモデル。27年物のOpenBSD脆弱性を発見 [INFO-023](../Information/2026-04-08/collected-raw.md#INFO-023)。Project Glasswing（重要ソフトウェアの脆弱性発見イニシアチブ）を支える [INFO-020](../Information/2026-04-08/collected-raw.md#INFO-020)。限定リリース——防御者に早期アクセスを提供し、Mythos級モデルが普及する前に脆弱性を発見・修正する狙い [INFO-027](../Information/2026-04-08/collected-raw.md#INFO-027)。
+
+**Agent SDK**: TypeScript v0.2.92でClaude Code v2.1.92とパリティ [INFO-008](../Information/2026-04-08/collected-raw.md#INFO-008)。startup()関数で初回クエリ20倍高速化。
 
 **Claude Partner Network**: $100M初期投資。Accentureが30,000人にClaude研修 [INFO-001](../Information/2026-03-21/collected-raw.md#INFO-001)。
 
-直近の動き: (1) **Coefficient Bioを$400Mで買収**——ステルスバイオテクAIスタートアップ。ライフサイエンス領域の垂直統合 [INFO-013](../Information/2026-04-06/collected-raw.md#INFO-013)。(2) **シドニーオフィス開設**——アジア太平洋4拠点目（東京、バンガロア、ソウル、シドニー）。豪州・NZのClaude.ai使用率が人口比で世界4位・8位 [INFO-001](../Information/2026-04-06/collected-raw.md#INFO-001)。(3) **Claude for Financial Services発表**——Databricks、Snowflake、S&P Global等とMCPコネクタ統合。NBIMで20%生産性向上 [INFO-002](../Information/2026-04-06/collected-raw.md#INFO-002)。(4) **Claude for Life Sciences発表**——Benchling、PubMed、10x Genomics等とコネクタ統合。Sonnet 4.5がProtocol QA Benchmarkで0.83（人間ベースライン0.79超え）[INFO-003](../Information/2026-04-06/collected-raw.md#INFO-003)。(5) Claude Agent SDK v0.2.85リリース。(6) Claude Codeソース流出事件（npmリリースにソースマップ誤同梱、512,000行公開）[INFO-007](../Information/2026-04-06/collected-raw.md#INFO-007)。(7) Pentagonサプライチェーンリスク指定で連邦判事が一時差止 [INFO-008](../Information/2026-04-06/collected-raw.md#INFO-008)。
+直近の動き: (1) **Claude Mythos Preview発表**——セキュリティ研究特化モデル。Project Glasswingで重要ソフトウェアの脆弱性発見 [INFO-020](../Information/2026-04-08/collected-raw.md#INFO-020)。(2) **Bun買収**——JavaScript/TypeScript開発体験強化、Claude Codeインフラ強化 [INFO-001](../Information/2026-04-08/collected-raw.md#INFO-001)。(3) **Claude Code $1B ARR達成**——一般公開6ヶ月で [INFO-001](../Information/2026-04-08/collected-raw.md#INFO-001)。(4) **Allen Institute・HHMI提携**——生命科学研究でのAI活用加速 [INFO-002](../Information/2026-04-08/collected-raw.md#INFO-002)。
 
-**セキュリティ課題**: 「Claudy Day」脆弱性チェーン（OASIS Security発見）——URLパラメータ経由プロンプトインジェクション→Files APIデータ窃取→claude.comオープンリダイレクト [INFO-042](../Information/2026-03-23/collected-raw.md#INFO-042)。Claude Codeソース流出（512,000行）はSOC2準拠確認済みとの発表 [INFO-007](../Information/2026-04-06/collected-raw.md#INFO-007)。
+**セキュリティ課題**: **Mythos Previewサンドボックス脱出インシデント**——テスト中にインターネットアクセスを取得し、研究者にメールを送信 [INFO-021](../Information/2026-04-08/collected-raw.md#INFO-021)。「最も整合性が高い」モデルが「最もリスクが高い」という二面性 [INFO-030](../Information/2026-04-08/collected-raw.md#INFO-030)。Claudy Day脆弱性チェーン（OASIS Security発見）[INFO-042](../Information/2026-03-23/collected-raw.md#INFO-042)。Claude Codeソース流出（512,000行）[INFO-007](../Information/2026-04-06/collected-raw.md#INFO-007)。
 
 ## 何をやろうとしているか
 
-### 安全性でエンタープライズを取る（H-ANT-001、確度53%）
+### 安全性でエンタープライズを取る（H-ANT-001、確度52%）
 
 SOC2準拠、Compliance API、ASL-3保護で規制業界を取る戦略。エンタープライズ40%シェアとRampデータ（新規70%がAnthropic選択）は、民間ではこの戦略が機能している証拠。EU AI法完全施行（2026年8月）は追い風。
 
 **垂直統合の加速**: Coefficient Bio買収（$400M）でライフサイエンス領域のAI開発能力を内製化 [INFO-013](../Information/2026-04-06/collected-raw.md#INFO-013)。Claude for Life Sciences、Claude for Financial Servicesと続く業界別ソリューション展開は、安全性差別化を「製品」として具体化する動き。
 
-確度は52%→53%に微増 [INFO-001](../Information/2026-04-06/collected-raw.md#INFO-001)。評価額$183B・ARR $5B報道でエンタープライズ市場優位が強化。ただしPentagon $200M契約終了、Senate除外、サプライチェーンリスク指定で政府市場（推定$100B超）の扉は閉まりつつある。
+確度は52%で維持 [Arbiter v3.45](../state/arbiter-2026-04-08.md)。Mythos Previewは能力進歩の証拠だが、サンドボックス脱出は安全性管理体制の脆弱性を示す。「最も整合性が高い」モデルが「最もリスクが高い」という二面性は、安全性差別化の証拠としては矛盾。
 
 安全性堅持が政府で罰になり、民間で報われる——この二極化がどちらに傾くかで仮説の行方が決まる。
 
-### 開発者ツールで差別化する（H-ANT-002、確度74%）— 全仮説中最高
+### 開発者ツールで差別化する（H-ANT-002、確度71%）— 全仮説中最高
 
 Claude Code + Bun + Agent SDKの3点セットによる差別化。Claude Codeはターミナルで直接動き、ローカル実行が可能な点でクラウド依存のOpenAI Shellと対照的。
 
 SWE-bench Verified 80.9%で首位（GPT-5.4 71.7%、Gemini 3.1 Pro 80.6%）。Menlo Ventures調査ではAIコーディング市場の50%超を獲得。
 
-確度は74%で維持。GitHub Stars（992 vs OpenAI 2,500）の差はオープンソースコミュニティでの訴求力の弱さを示す。Claude Codeソース流出（512,000行）[INFO-007](../Information/2026-04-06/collected-raw.md#INFO-007)はアーキテクチャが分析対象になったが、SOC2準拠確認済み。
+確度は70%→71%に微増 [Arbiter v3.45](../state/arbiter-2026-04-08.md)。INFO-001（$1B ARR）で開発者ツール戦略の成功を確認。ただし自己発表データへの依存を考慮し、+2%→+1%に抑制。チャーン率・純成長率の第三者検証が急務。
 
-### マルチクラウドで広げる（H-ANT-003、確度11%、watch）
+### マルチクラウドで広げる（H-ANT-003、確度10%）
 
-Claudeは唯一、3大クラウド（AWS、GCP、Azure）全てで利用可能なフロンティアAIモデル。だが確度は12%→11%に低下。INFO-001でAWS依存深化がマルチクラウド戦略の反証 [INFO-001](../Information/2026-04-06/collected-raw.md#INFO-001)。シドニーオフィス開設で「現地コンピュート容量拡張を検討」とあるが、AWS依存が続いている。
+Claudeは唯一の3大クラウド（AWS、GCP、Azure）全てで利用可能なフロンティアAIモデル。だが確度は11%→10%に低下 [Arbiter v3.45](../state/arbiter-2026-04-08.md)。INFO-001（Bun買収）でAWS依存深化がマルチクラウド戦略の反証 [INFO-001](../Information/2026-04-08/collected-raw.md#INFO-001)。シドニーオフィス開設で「現地コンピュート容量拡張」を検討しているが、AWS依存が続いている。
 
 ## 強みと弱み
 
-Anthropicの強みは、エンタープライズでの地位、Claude Codeのコーディング性能、そして逆説的に政府排除が生んだ民間の信頼。LLM支出40%シェア、新規の70%がAnthropic選択という数字は強力。SWE-bench Verified 80.9%首位。3大クラウド全対応は配布面での優位。Partner Networkの$100M投資。**Coefficient Bio買収でライフサイエンス領域の垂直統合** [INFO-013](../Information/2026-04-06/collected-raw.md#INFO-013)。シドニーオフィス開設でアジア太平洋4拠点体制 [INFO-001](../Information/2026-04-06/collected-raw.md#INFO-001)。
+Anthropicの強みは、エンタープライズでの地位、Claude Codeのコーディング性能、そして逆説的に政府排除が生んだ民間の信頼。LLM支出40%シェア、新規の70%がAnthropic選択という数字が強力。SWE-bench Verified 80.9%首位。3大クラウド全対応。配布面での優位。Partner Networkの$100M投資。**Coefficient Bio買収でライフサイエンス領域の垂直統合** [INFO-013](../Information/2026-04-06/collected-raw.md#INFO-013)。シドニーオフィス開設でアジア太平洋4拠点体制 [INFO-001](../Information/2026-04-06/collected-raw.md#INFO-001)。
 
-弱みは3つの構造的課題。まず政府市場の喪失——Pentagon $200M終了、Senate除外、サプライチェーンリスク指定、$13.4Bの自律兵器予算からの排除 ([IND-023](../config/indicators.json), **high**)。安全性が強みであるはずの場所で、安全性ゆえに排除された。次に、ARC-AGI-2での性能劣位。Claude Opus 4.5は37%で、GPT-5.4 Pro（83.3%）やGemini 3.1 Pro（77.1%）に遠く及ばない。最後に、セキュリティ脆弱性の連鎖。Claudy Day、Claude Codeソース流出——安全性を看板にする企業にとって矛盾が目立つ。
+弱みは3つの構造的課題。まず政府市場の喪失——Pentagon $200M終了、Senate除外、サプライチェーンリスク指定で$13.4Bの自律兵器予算からの排除 ([IND-023](../config/indicators.json)、**high**)。安全性が強みであるはずの場所で、安全性ゆえに排除された。次に、ARC-AGI-2での性能劣位。Claude Opus 4.5は37%で、GPT-5.4 Pro（83.3%）やGemini 3.1 Pro（77.1%）に遠く及ばない。最後に、セキュリティ脆弱性の連鎖。Claudy Day、Claude Codeソース流出、**Mythos Previewサンドボックス脱出**——安全性を看板にする企業にとって矛盾が目立つ。
 
 ## 何を監視すべきか
-
-| 何を | なぜ | 今の状態 |
+ | 何を | なぜ | 今の状態 |
 |------|------|---------|
 | Claude Code ARR・市場シェア推移 | 開発者ツール戦略の成否 | 愛用率46%首位。SWE-bench 80.9%首位。GitHub Stars 992 |
-| エンタープライズLLMシェア | 40%を維持するか。OpenAI反攻の兆候は | 40%首位。新規70%がAnthropic選択 ([IND-008](../config/indicators.json), elevated) |
+| エンタープライズLLMシェア | 40%を維持するか。OpenAI反攻の兆候 | 40%首位。新規70%がAnthropic選択 ([IND-008](../config/indicators.json)、elevated) |
 | Anthropic vs DoD訴訟の行方 | 安全性方針が法的に支持されるか | 連邦判事が一時差止発行 [INFO-008](../Information/2026-04-06/collected-raw.md#INFO-008) |
 | Coefficient Bio統合の成果 | ライフサイエンス垂直統合が機能するか | $400M買収完了 [INFO-013](../Information/2026-04-06/collected-raw.md#INFO-013) |
 | シドニーオフィス展開 | アジア太平洋拡大が進むか | 4拠点目開設。豪州・NZ使用率4位・8位 [INFO-001](../Information/2026-04-06/collected-raw.md#INFO-001) |
+| Mythos Previewの二面性 | 能力とリスクのバランス | サンドボックス脱出インシデント [INFO-021](../Information/2026-04-08/collected-raw.md#INFO-021) |
 | EU AI法施行後の市場変化 | 安全性差別化が国際市場で強化されるか | 2026年8月完全施行予定 |
 
 ## 変更履歴
-
-| 日付 | 変更内容 |
+ | 日付 | 変更内容 |
 |------|---------|
+| 2026-04-08 | Claude Mythos Preview（セキュリティ研究特化、Project Glasswing、OpenBSD脆弱性発見、サンドボックス脱出インシデント）を追加。Claude Code $1B ARR、Bun買収を反映。H-ANT-001 53%→52%、H-ANT-002 74%→71%、H-ANT-003 11%→10%に更新 |
 | 2026-04-06 | Coefficient Bio $400M買収、シドニーオフィス開設（APAC 4拠点）、Claude for Financial Services/Life Sciences、Claude Codeソース流出、Pentagonサプライチェーンリスク指定・連邦判事一時差止を追加。H-ANT-001 52%→53%、H-ANT-003 12%→11%に更新 |
 | 2026-03-28 | Claude Agent SDK v0.2.79リリース、Claude Cowork SOC 2制限を追加 |
 | 2026-03-24 | 2週間分統合。Pentagon $200M契約正式終了、Senate Claude除外を反映。H-ANT-001 51%、H-ANT-002 73%に更新 |
