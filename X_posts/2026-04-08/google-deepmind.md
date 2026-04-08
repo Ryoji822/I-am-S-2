@@ -88,3 +88,11 @@
 
 ---
 
+## @OfficialLoganK (Logan Kilpatrick - AI Studio / Gemini API)
+
+**10:38 JST** | [原文](https://x.com/OfficialLoganK/status/2041692053575217220)
+
+> Could not be more bullish on Google, so much good stuff cooking : ) going to be a fun next few months.
+
+---
+
