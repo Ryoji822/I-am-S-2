@@ -168,3 +168,12 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**04:03 JST** | [原文](https://x.com/EthanJPerez/status/2041645982316949867)
+
+> RT Nat McAleese
+> “We found that Mythos Preview is capable of identifying and then exploiting zero-day vulnerabilities in every major operating system and every major web browser” (1/n)
+
+---
+

@@ -44,3 +44,26 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**08:25 JST** | [原文](https://x.com/sama/status/2041658719839383945)
+
+> To celebrate 3 million weekly codex users, we are resetting usage limits.
+> 
+> We will do this every million users up to 10 million.
+> 
+> Happy building!
+
+---
+
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**07:44 JST** | [原文](https://x.com/jasonkwon/status/2041665506503991709)
+
+> RT OpenAI Newsroom
+> Today, at the eleventh hour, Elon lodged a court filing pretending to change his tune about attacking the nonprofit OpenAI Foundation.
+> 
+> The truth is that this case has always been about Elon generating more power and more money for what he wants. Having increasingly realized that his attempt to damage the nonprofit OpenAI Foundation rests on a baseless legal case, Elon is once again trying to change the narrative and save face as the trial approaches. His lawsuit remains nothing more than a harassment campaign that's driven by ego, jealousy and a desire to slow down a competitor.
+
+---
+

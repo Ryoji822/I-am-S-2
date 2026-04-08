@@ -42,3 +42,39 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**22:43 JST** | [原文](https://x.com/demishassabis/status/2041672534844748065)
+
+> RT Google Gemma
+> http://x.com/i/article/2041504032410222593
+
+---
+
+**18:34 JST** | [原文](https://x.com/demishassabis/status/2041654471348846795)
+
+> RT Kevin Pietersen🦏
+> Google Gemini is my new personal trainer. The sessions it helps me with are next level! 
+> 
+> It’s UNREAL!!!! 💥
+> cc @GeminiApp
+
+---
+
+**14:18 JST** | [原文](https://x.com/demishassabis/status/2041672521628487778)
+
+> RT yazin
+> you don't get how good Gemma 4 is... 
+> 
+> it's gpt5 level performance that runs entirely ON YOUR PHONE
+> 
+> this was SOTA just 8 months ago!
+> 
+> Google: We just released Gemma 4  — our most intelligent open models to date.
+> 
+> Built from the same world-class research as Gemini 3, Gemma 4 brings breakthrough intelligence directly to your own hardware for advanced reasoning and agentic workflows.
+> 
+> Released under a commercially
+
+---
+
