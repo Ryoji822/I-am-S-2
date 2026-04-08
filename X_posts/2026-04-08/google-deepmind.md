@@ -96,3 +96,12 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**04:27 JST** | [原文](https://x.com/JeffDean/status/2041727825804427591)
+
+> RT Frank J. Fleming
+> Holy crap is this an awesome photo.
+
+---
+
