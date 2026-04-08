@@ -67,3 +67,33 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**08:13 JST** | [原文](https://x.com/OpenAIDevs/status/2041677523327881298)
+
+> RT Tibo
+> Three million people are now using Codex weekly - up from two million a little under a month ago. Incredible to see the growth. Thank you to all of you and to the ecosystem we’re part of. To celebrate, we’re resetting rate limits so you can keep building, and we’ll reset them every additional 1M users until we reach 10M, so we can keep celebrating along the way.
+> 
+> Enjoy and thank you!
+
+---
+
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**10:16 JST** | [原文](https://x.com/jasonkwon/status/2041686682752401569)
+
+> RT @awwstn: i've never met him, but sam altman has had many positive impacts on me over the years. so, i would like to weigh in with some c…
+
+---
+
+**08:25 JST** | [原文](https://x.com/jasonkwon/status/2041686291658768654)
+
+> RT Sam Altman
+> To celebrate 3 million weekly codex users, we are resetting usage limits.
+> 
+> We will do this every million users up to 10 million.
+> 
+> Happy building!
+
+---
+

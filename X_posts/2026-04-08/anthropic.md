@@ -177,3 +177,19 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**10:02 JST** | [原文](https://x.com/EthanJPerez/status/2041689813129297997)
+
+> RT Owain Evans
+> This is best way to collaborate with my group. Previous fellows have been hired for full-time roles.
+> 
+> 🚀Henry is leading AI Safety Research Programs: 🚀 Applications are now open: Constellation's Astra Fellowship 🚀
+> 
+> Fully funded, 5-month fellowship at our Berkeley research institute. Pair with mentors across empirical AI safety research, strategy, and governance at @ConstellOrg!
+> 
+> 📅 Apply by May 3rd (begins Sep 2026) 
+> 🔗
+
+---
+

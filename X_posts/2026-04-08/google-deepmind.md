@@ -72,3 +72,19 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**09:56 JST** | [原文](https://x.com/demishassabis/status/2041681474580021536)
+
+> Thanks for the great conversation @cleoabram (and some competitive Jenga)! Really enjoyed talking about all the amazing ways AI is helping to advance science & the incredible future it will enable!
+> 
+> Cleo Abram: What is the real future Google DeepMind CEO @demishassabis is trying to build? 
+> 
+> That's what we talk about in this HUGE* Conversation -- so you can decide for yourself what you think of it. 
+> 
+> If you're feeling the doom and gloom, this is the conversation to watch on AI. 
+> 
+> We get
+
+---
+
