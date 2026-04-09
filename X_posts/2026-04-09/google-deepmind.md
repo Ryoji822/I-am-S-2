@@ -110,3 +110,13 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**12:42 JST** | [原文](https://x.com/JeffDean/status/2042085829896716356)
+
+> Congratulations to @matei_zaharia on winning this year's ACM Prize in Computing!  This is very well-deserved! 🎉
+> 
+> Association for Computing Machinery: Congratulations to Matei Zaharia on receiving the 2025 #ACMPrize in #Computing! He is recognized for his visionary development of distributed data systems and computing infrastructure. Learn more: https://buff.ly/TrYHoci
+
+---
+
