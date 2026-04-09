@@ -20,3 +20,11 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**05:43 JST** | [原文](https://x.com/sama/status/2042342572958630332)
+
+> It is very nice to see Codex getting so much love. We are launching a $100 ChatGPT Pro tier by very popular demand.
+
+---
+
