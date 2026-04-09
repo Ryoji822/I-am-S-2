@@ -55,3 +55,49 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**09:05 JST** | [原文](https://x.com/JeffDean/status/2042031033303101840)
+
+> Great to see the reception for the very capable Gemma 4 models!
+> 
+> Sundar Pichai: Lots of love for Gemma 4! Team just told me it’s already had 10M+ downloads since last week’s launch. Gemma models have now been downloaded 500M+ times! Excited to see what you all are creating 👀
+
+---
+
+## @OfficialLoganK (Logan Kilpatrick - AI Studio / Gemini API)
+
+**08:44 JST** | [原文](https://x.com/OfficialLoganK/status/2042025888053702911)
+
+> Projects in the @GeminiApp are now live, with a fun twist…. Notebooks! Enjoy the NotebookLM inspired experience.
+
+---
+
+## @sundarpichai (Sundar Pichai - Google CEO)
+
+**07:57 JST** | [原文](https://x.com/sundarpichai/status/2042014040055276028)
+
+> Lots of love for Gemma 4! Team just told me it’s already had 10M+ downloads since last week’s launch. Gemma models have now been downloaded 500M+ times! Excited to see what you all are creating 👀
+
+---
+
+## @rosterloh (Rick Osterloh - Devices & Services責任者)
+
+**09:59 JST** | [原文](https://x.com/rosterloh/status/2042044702791438400)
+
+> Loving vertical tabs in @googlechrome - this is especially great for serial tab openers (like me) using a monitor.
+> 
+> Google: Too many @GoogleChrome tabs open? Try vertical tabs, rolling out now. 
+> 
+> Just right-click any Chrome window and select “Show Tabs Vertically” to move your tabs to the side of the browser window, making it easier to read page titles and manage tab groups.
+
+---
+
+**09:45 JST** | [原文](https://x.com/rosterloh/status/2042041129806479679)
+
+> In case you missed this, we are improving the Google AI Pro offering to include more storage and more AI at no additional cost per month 👀👇
+> 
+> shimrit ben-yair: Sweet news for our Google AI Pro subscribers! 🚀 We know your memories and projects need space to grow, so we’re expanding Google AI Pro’s storage offering from 2TB to 5TB — at no additional cost. Now you have a little extra room to create more with Google AI and securely store
+
+---
+
