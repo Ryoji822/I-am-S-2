@@ -28,3 +28,13 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**07:30 JST** | [原文](https://x.com/OpenAIDevs/status/2042369696608239848)
+
+> Build macOS apps with our Codex plugin:
+> 
+> Thomas Ricouard: http://x.com/i/article/2041508627807350784
+
+---
+
