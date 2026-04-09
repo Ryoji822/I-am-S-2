@@ -106,3 +106,11 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**05:55 JST** | [原文](https://x.com/OpenAIDevs/status/2041983360780939416)
+
+> Codex brings your work context together so you can make better decisions with clearer priorities.
+
+---
+
