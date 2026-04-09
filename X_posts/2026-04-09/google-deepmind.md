@@ -120,3 +120,30 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**05:54 JST** | [原文](https://x.com/demishassabis/status/2042191128368234922)
+
+> RT Google Gemini
+> Project organization is here: Introducing notebooks in Gemini.
+> 
+> You can now keep multiple projects organized and even add past chats and relevant files as sources, so you have a dedicated space to focus on the task at hand.
+> 
+> Select “New notebook” in the side panel to get started.
+
+---
+
+**01:07 JST** | [原文](https://x.com/demishassabis/status/2042231406747680797)
+
+> RT Nick Fox
+> The new AI-powered Google Finance is going global and shipping to 100+ countries… it’s a total reinvention of Google Finance with AI at the core 🚀🚀🚀
+> 
+> + AI-powered market research
+> + Advanced charting
+> + Live earnings calls
+> + Expanded real-time data
+> 
+> Try it: https://finance.google.com/beta
+
+---
+

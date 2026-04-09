@@ -130,3 +130,18 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**06:54 JST** | [原文](https://x.com/demishassabis/status/2042190965331362066)
+
+> RT Design Arena
+> BREAKING: Veo 3.1 Fast and Veo 3.1 by @GoogleDeepMind are in 1st and 2nd place on Multi-Image to Video Arena
+> 
+> These models can successfully reference multiple input images to create a video that users love
+> 
+> At an average generation time of 48 seconds, they are also the two fastest video generation models
+> 
+> Huge congrats to the @GoogleDeepMind team for this achievement!
+
+---
+
