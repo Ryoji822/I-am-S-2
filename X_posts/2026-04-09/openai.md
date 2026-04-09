@@ -60,3 +60,13 @@
 
 ---
 
+## @polynoamial (Noam Brown - 研究者)
+
+**14:59 JST** | [原文](https://x.com/polynoamial/status/2042120295449010612)
+
+> I'm surprised that, more than a year later, it's still the norm to compare reasoning models on evals by a single number.
+> 
+> Noam Brown: LLM evals are slow to adapt. MMLU/GSM8K continued to be reported long after they were obsolete. I think the next thing to go away will be comparing models on evals by a single number. Intelligence/$ is a much better metric. I loved this plot from o1-mini's launch for example:
+
+---
+
