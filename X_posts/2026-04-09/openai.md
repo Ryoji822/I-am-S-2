@@ -33,3 +33,18 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**05:03 JST** | [原文](https://x.com/jasonkwon/status/2042055749770334708)
+
+> RT Wojciech Zaremba
+> OpenAI Foundation is taking an end-to-end approach to tackling Alzheimer's with AI.
+> 
+> We're supporting the full spectrum of work — from early diagnosis and better understanding of the disease, to accelerating new drug discovery.
+> 
+> This month, we're finalizing over $100M in grants across six institutions to advance this comprehensive effort.
+> 
+> https://openaifoundation.org/news/ai-for-alzheimers
+
+---
+
