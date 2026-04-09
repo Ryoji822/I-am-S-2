@@ -48,3 +48,15 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**11:55 JST** | [原文](https://x.com/kevinweil/status/2042073869880848481)
+
+> Five Erdos problems at once! The proofs are getting more elegant as the models improve 👀
+> 
+> Mehtaab Sawhney: We’ve just released another paper solving five further Erdős problems with an internal model at OpenAI: https://arxiv.org/abs/2604.06609.
+> 
+> Several of the proofs were especially enjoyable to digest while writing the paper. My personal favorite was the solution to Erdős Problem 1091. The
+
+---
+
