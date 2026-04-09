@@ -75,3 +75,16 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**01:03 JST** | [原文](https://x.com/GoogleDeepMind/status/2042254581745258888)
+
+> RT Google Workspace
+> Google Vids is an easy-to-use video editing suite, and we just added new AI capabilities, starting with:
+> 
+> High-quality video generation with Veo 3.1, available to everyone at no cost 🎬 ✨
+> 
+> Find out what else is new 👇 then get started creating at http://vids.new
+
+---
+

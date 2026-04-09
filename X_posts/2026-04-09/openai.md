@@ -70,3 +70,39 @@
 
 ---
 
+## @markchen90 (Mark Chen - 研究責任者)
+
+**22:35 JST** | [原文](https://x.com/markchen90/status/2042267636898423176)
+
+> RT Jacob Effron
+> At @OpenAI, Chief Scientist @merettm helps lead the research roadmap to AGI including a research intern-level AI system by September 2026 and a fully automated AI researcher by March 2028.
+> 
+> I sat down with Jakub to check on those timelines and ask him all of my top-of-mind AI questions including:
+> 
+> ▪️ How OpenAI thinks about extending RL beyond code and math
+> ▪️ The current state of alignment research as more powerful models loom
+> ▪️ The future of continual learning
+> ▪️ How startups should think about building their own models/harnesses
+> 
+> And he also shared some great stories around OpenAI’s pioneering work on math.
+> 
+> YouTube: https://youtu.be/vK1qEF3a3WM
+> Spotify: https://bit.ly/4sjUyrN
+> Apple: https://bit.ly/41jAdrN
+> 
+> 0:00 Intro
+> 1:53 Research Intern Capability Timelines
+> 4:59 Math Breakthroughs
+> 7:59 RL Beyond Verifiable Tasks
+> 12:32 RL vs In-Context
+> 19:01 Allocating Compute Internally
+> 28:18 AI for Science
+> 31:40 Pattern Matching
+> 33:23 Solving the Hardest Math Problems
+> 37:40 Chain of Thought Monitoring
+> 44:33 Generalization and Value Alignment in Models
+> 47:57 Inside OpenAI
+> 51:55 Quickfire
+
+---
+
