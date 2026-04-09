@@ -1,15 +1,14 @@
 {
-  "version": "3.44",
-  "last_updated": "2026-04-07",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.44: Arbiter統合判断完了.5指標更新. IND-013 high維持・IND-026 elevated維持・IND-027 elevated維持・IND-028 elevated維持・IND-029 elevated維持. Agent普及速度>セキュリティ成熟速度継続",
+  "version": "3.45",
+  "last_updated": "2026-04-09",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.45: Arbiter統合判断完了.7指標更新. IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持・IND-027 elevated維持・IND-028 elevated維持・IND-029 elevated維持. 新規IND-030 elevated（AI能力-リスク二面性）追加. Agent普及速度>セキュリティ成熟速度継続",
   "structural_changes_log": [
+    "2026-04-09 v3.45: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。7指標更新。IND-013 high維持（Mythos Cybench 100%飽和・Vertex AI侵害実証）・IND-025 elevated維持（Gemini 3.1 Pro 95.0%・Muse Spark HLE 58%）・IND-026 elevated維持（本番稼働57%・Fortune 500 64%失敗）・IND-027 elevated維持（MCP数万サーバー・AAIF 170+）・IND-028 elevated維持（AI 2027予測1.5年前倒し）・IND-029 elevated維持（DC投資ブーム・OpenAI $122B）・新規IND-030 elevated（AI能力-リスク二面性・Mythos Cybench 100%+243頁安全レポート）",
     "2026-04-07 v3.44: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5指標更新。IND-013 high維持（Claude流出→Vidarマルウェア）・IND-026 elevated維持（Klarna失敗・55%後悔）・IND-027 elevated維持（MCP爆発的成長）・IND-028 elevated維持（AGI定義不一致）・IND-029 elevated維持（DC 50%遅延）",
     "2026-04-05 v3.42: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。4指標更新。IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持. 新規IND-027 elevated（エコシステム標準化進展度・囲い込みリスク注記）",
     "2026-04-04 v3.41: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3指標更新。IND-013 high維持・IND-025 elevated維持. 新規IND-026 elevated（エージェント本番環境到達率）",
     "2026-04-03 v3.40: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。2指標更新。IND-025新規elevated（マルチモーダル信頼性）・IND-013 high維持（OWASPフレームワーク）。攻撃ベクトル詳細化). Agent普及速度>セキュリティ成熟速度継続",
     "2026-04-02 v3.35: Arbiter統合判断完了.指標更新なし. IND-013 high維持（新規セキュリティ情報なし（収集空白）"
-    "2026-04-01 v3.34: Blue Agent分析完了（10件収集）。1指標更新（IND-013 elevated→high）。 INFO-010（セキュリティ侵害急増・Meta Sev-1・Moltbook 150万トークン流出・OpenClaw 63%脆弱設定）でアラート発出"
-    "2026-03-31 v3.33: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了.3仮説確度更新. Red指摘5/7採用（71%）。 H-ANT-002 +1%（73%→74%）$1B ARR達成。 H-GOV-001 -2%（54%→52%）INFO-006判事差止. H-GOO-002 ±0%（52%維持）Red指摘採用（切り替えコスト削減≠開放性）"
   ],
   "indicators": {
     "IND-013": {
@@ -19,9 +18,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Claude流出→Vidarマルウェア配布",
-      "last_checked": "2026-04-07",
-      "rationale": "Arbiter v3.44: high維持。INFO-012/034でセキュリティ侵害顕在化継続"
+      "last_value": "Mythos Cybench 100%飽和・Vertex AI侵害実証・Agent普及>セキュリティ成熟",
+      "last_checked": "2026-04-09",
+      "rationale": "Arbiter v3.45: high維持。Mythos全サイバー課題初解決は攻撃能力の質的転換点。Agent普及>セキュリティ成熟の構造継続"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -30,9 +29,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "新規関連情報なし",
-      "last_checked": "2026-04-05",
-      "rationale": "Arbiter v3.42: elevated維持。新規関連情報なし"
+      "last_value": "Gemini 3.1 Pro 95.0%・Muse Spark HLE 58%。真の理解vsパターンマッチング未解決",
+      "last_checked": "2026-04-09",
+      "rationale": "Arbiter v3.45: elevated維持。マルチモーダル性能向上中だが「真の理解」vs「パターンマッチング」の区別未解決"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -41,9 +40,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Klarna失敗・55%後悔・10%未満スケール成功",
-      "last_checked": "2026-04-07",
-      "rationale": "Arbiter v3.44: elevated維持。実装ギャップ継続"
+      "last_value": "本番稼働57%・327%成長・Fortune 500 64%失敗・品質障壁32%",
+      "last_checked": "2026-04-09",
+      "rationale": "Arbiter v3.45: elevated維持。本番稼働率57%は改善だが品質障壁32%で成功率に上限"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -52,9 +51,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "MCP爆発的成長・DomainTools統合",
-      "last_checked": "2026-04-07",
-      "rationale": "Arbiter v3.44: elevated維持。標準化進展継続"
+      "last_value": "MCP数万サーバー・75+公式コネクタ・AAIF 170+メンバー",
+      "last_checked": "2026-04-09",
+      "rationale": "Arbiter v3.45: elevated維持。標準化進展は明確だがAnthropic主導リスク注記"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -63,9 +62,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Altman/Amodei AGI定義不一致",
-      "last_checked": "2026-04-07",
-      "rationale": "Arbiter v3.44: elevated維持。AGI定義乖離継続"
+      "last_value": "AI 2027予測1.5年前倒し・研究速度1.4x→1.6x・客観的BMと主観的宣言乖離",
+      "last_checked": "2026-04-09",
+      "rationale": "Arbiter v3.45: elevated維持。タイムライン短縮傾向継続。客観的ベンチマークと主観的宣言の乖離持続"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -74,9 +73,20 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "米国DC 50%遅延・$650B+投資計画",
-      "last_checked": "2026-04-07",
-      "rationale": "Arbiter v3.44: elevated維持。インフラ制約継続"
+      "last_value": "DC投資ブーム・OpenAI $122B・Anthropic複数GW契約・供給制約構造的",
+      "last_checked": "2026-04-09",
+      "rationale": "Arbiter v3.45: elevated維持。投資規模拡大中だが供給制約（DC 50%遅延）は構造的"
+    },
+    "IND-030": {
+      "indicator_id": "IND-030",
+      "name": "AI能力-リスク二面性",
+      "description": "AI能力向上とリスク増大の同時進行度。「最も整合性高い＝最もリスク高い」パラドックスの監視",
+      "current_status": "elevated",
+      "trend": "rising",
+      "alert_level": "elevated",
+      "last_value": "Mythos Cybench 100% + 243頁安全レポート。最も整合性高い＝最もリスク高い",
+      "last_checked": "2026-04-09",
+      "rationale": "Arbiter v3.45: 新規指標elevated。Mythosが全サイバー課題解決（Cybench 100%）は能力の質的転換点であり、同時にリスクの質的転換点。安全性透明性の最先端とリスク最先端が同一モデルに共存"
     }
   }
 }

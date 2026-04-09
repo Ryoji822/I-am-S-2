@@ -1,35 +1,15 @@
 {
-  "version": "3.44",
-  "last_updated": "2026-04-07",
+  "version": "3.45",
+  "last_updated": "2026-04-09",
   "structural_changes_log": [
+    "2026-04-09 v3.45: Arbiter統合判断完了（COMPLETE状態）。Blue/Red両方完了。18仮説評価。Red指摘実質全件反映（8/8）。確証バイアス警告の実効性確保。主要更新: H-ANT-003 -1%（10%→9%）GCP依存深化・H-OAI-001 -1%（62%→61%）ARR逆転+消費者離反・H-OAI-002 -1%（57%→56%）MCP標準化・H-GOO-003 +1%（54%→55%）複数BM首位・H-XAI-001 -1%（62%→61%）時間減衰・H-XAI-003 -1%（60%→59%）時間減衰・H-GOV-001 -1%（46%→45%）条件3未確認+規制緩和矛盾。Red指摘採用でBlue +1%取消4件（H-ANT-002・H-CAR-002・H-GOO-001・H-BTD-001）。シナリオ3件更新（SCN-002 -1% 38%→37%・SCN-003 +1% 26%→27%・SCN-BS-001 +1% 15%→16%）。指標7件更新（6件状態変更なし・IND-030新規追加elevated）。合計100%確認済み（23+37+27+13=100%）",
     "2026-04-07 v3.44: Arbiter統合判断完了（COMPLETE状態）。Blue/Red両方完了。15仮説確度更新。Red指摘採用。主要更新: H-ANT-001 -1%（53%→52%）セキュリティインシデント・H-ANT-002 -3%（73%→70%）Red指摘採用・H-ANT-003 -1%（11%→10%）AWS依存・H-OAI-001 -3%（65%→62%）#QuitGPT・H-OAI-002 +1%（56%→57%）・H-OAI-003 ±0%（1%維持）棄却候補・H-GOO-001/002/003 ±0%確証バイアス警告・H-XAI-001 ±0%（62%維持）確証バイアス警告・H-XAI-002 +1%（64%→65%）価格優位・H-XAI-003 -1%（61%→60%）時間減衰・H-BTD-001 +1%（65%→66%）120兆Token/日・H-BTD-002 +1%（69%→70%）低価格戦略・H-BTD-003 -2%（41%→39%）中国AI独立・H-CAR-001 -2%（23%→21%）Klarna失敗・H-CAR-002 +1%（75%→76%）設計力価値・H-CAR-003 -2%（57%→55%）組織変革困難・H-GOV-001 -2%（48%→46%）Red指摘採用。シナリオ5件更新（SCN-001 -1% 24%→23%・SCN-002 +1% 37%→38%・SCN-003 +1% 25%→26%・SCN-004 -1% 14%→13%・SCN-BS-001 +1% 14%→15%）。指標5件更新（IND-013/026/027/028/029）。合計100%確認済み（23+38+26+13=100%）",
     "2026-04-05 v3.42: Arbiter統合判断完了（COMPLETE状態）。Blue/Red両方完了。5仮説確度更新。Red指摘6/12採用（50%）。主要更新: H-ANT-001 +1%（52%→53%）$183B評価・ARR $5B・H-ANT-003 -1%（12%→11%）AWS依存深化・H-XAI-002 +1%（63%→64%）価格優位$0.598/M・H-CAR-001 ±0%（24%維持）Blue +1%見送り（Red指摘採用: ACH矛盾・組織的問題≠中間層削減）・H-CAR-003 ±0%（58%維持）Blue +1%見送り（Red指摘採用）。シナリオ4件更新（SCN-001 +1% 23%→24%集中化・SCN-002 +1% 36%→37%開放性進展・SCN-003 -1% 26%→25%実装ギャップ・SCN-004 -1% 15%→14%誰でも困難化）。指標4件更新（IND-027新規elevatedエコシステム標準化進展度・IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持）。合計100%確認済み（24+37+25+14=100%）",
     "2026-04-04 v3.41: Arbiter統合判断完了（COMPLETE状態）。Blue/Red両方完了。18仮説確度更新。Red指摘18/22採用（82%）。主要更新: H-GOO系/H-XAI系確証バイアス是正（±0%または-1%）・H-BTD-001 +1%（64%→65%）自己発表データ抑制・H-XAI-002 +1%（62%→63%）価格≠シェア抑制・H-GOV-001 -2%（50%→48%）一時差止反証注記・H-CAR-001 -2%（26%→24%）失敗率注記・H-CAR-003 -2%（60%→58%）・H-OAI-001 -1%（66%→65%）二次市場需要減退・H-OAI-002 -1%（57%→56%）価格競争・H-ANT-001 +1%（51%→52%）企業向け機能・H-ANT-003 -1%（13%→12%）AWS依存・H-BTD-002 +1%（68%→69%）トークン使用量・H-BTD-003 -2%（43%→41%）ガードレール実装。シナリオ4件更新（SCN-001 +1% 22%→23%集中化・SCN-002 -1% 37%→36%・SCN-003 +1% 25%→26%囲い込み・SCN-004 -1% 16%→15%）。指標3件更新（IND-026新規elevatedエージェント失敗率・IND-013 high維持・IND-025 elevated維持）。合計100%確認済み（23+36+26+15=100%）",
     "2026-04-03 v3.40: Arbiter統合判断完了（COMPLETE状態）。Blue/Red両方完了。18仮説確度更新。Red指摘6/8採用（75%）。主要更新: H-CAR-001 -3%（29%→26%）・H-CAR-003 -3%（63%→60%）エージェント失敗率・H-GOV-001 -2%（52%→50%）一時差止反証・H-ANT-003 -2%（15%→13%）AWS依存深化・H-OAI-002 -2%（59%→57%）MCP採用・H-GOO-001 +2%（55%→57%）GPQA/ARC-AGI-2トップ・H-GOO-002 +1%（52%→53%）MCP対応・H-GOO-003 -1%（55%→54%）MIRAGE問題・H-XAI-002 +2%（60%→62%）最安値API・H-CAR-002 +1%（73%→74%）設計力価値上昇（Blue +3%→+1%抑制）・H-OAI-001 +1%（65%→66%）Responses API。シナリオ1件更新（SCN-002 +1% 36%→37%開放性進展）。指標2件更新（IND-025新規elevatedマルチモーダル信頼性・IND-013 high維持）。合計100%確認済み（22+37+25+16=100%）",
     "2026-04-02 v3.38: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。1仮説確度更新（H-ANT-002 -1%時間減衰）。Red指摘1/4採用（25%）。2シナリオ更新（SCN-002 -2%・SCN-003 +2%囲い込み兆候反映）。指標0件更新。合計100%確認済み",
     "2026-04-01 v3.37: Blue Agent分析完了（10件収集）。10仮説確度更新（H-ANT-001 +2%・H-ANT-002 +1%・H-ANT-003 +5%・H-OAI-001 +1%・H-GOO-001 +1%・H-GOO-003 +1%・H-XAI-001 +1%・H-XAI-002 +3%）。パターン4件検出（エージェントSDK競争激化・セキュリティリスク顕在化・価格・コンテキスト長競争・エンタープライズエコシステム投資同時展開）。シナリオ3件更新（SCN-002 -1%・SCN-003 +1%・SCN-BS-001 +2%）。指標1件更新（IND-013 elevated→high）",
-    "2026-03-31 v3.36: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘5/7採用（71%）。H-ANT-002 +1%（73%→74%）$1B ARR直接証拠。Red指摘採用（自己発表データ+2%→+1%抑制・チャーン率未検証注記追加）・H-GOV-001 -2%（54%→52%）INFO-006判事一時差止・Red指摘部分採用（一時差止過大解釈注記追加）・H-GOO-002 ±0%（52%維持）Red指摘採用（切り替えコスト削減≠開放性）。シナリオ0件更新。指標4件更新（IND-002/015/017/023）。合計100%確認済み",
-    "2026-03-30 v3.34: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5仮説確度更新。Red指摘4/5採用（80%）。H-BTD-001 +1%（64%→65%）豆包MAU爆発的成長掯用、Red指摘部分採用（自己発表データ無批判採用抑制）・H-GOV-001 ±0%（54%維持）Red指摘採用（一時差止を歯止めと過大解釈抑制）・H-ANT-002 ±0%（73%維持）Red指摘採用（単一ソース過信見送り）・H-CAR-002 ±0%（73%維持）Red指摘採用（相関≠因果見送り）・H-GOO-002 ±0%（52%維持）Red指摘採用（切り替えコスト削減≠開放性見送り）。シナリオ2件更新（SCN-002 -1%→38%・SCN-003 +1%→23%）。指標5件更新（IND-004/017/023/024/last_checked）。合計100%確認済み",
-
-    "2026-03-28 v3.31: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘7/8採用（88%）。Blue判断1/8採用（12%）。H-ANT-001 -1%（50%→49%・INFO-017 Claude Cowork SOC 2制限・新製品未成熟解釈採用）・H-CAR-001 -1%（30%→29%・INFO-013 80%失敗率・根拠を「技術的限界」から「実装アプローチ問題」に修正）・H-CAR-003 -1%（64%→63%・INFO-013 80%失敗率）。H-ANT-002/H-OAI-002/H-GOO-003/H-CAR-002は±0%維持（Red指摘採用: 単一調査依存・ベンチマーク差小さく根拠弱・「意図」確認だが「確立」未検証）。IND-006 elevated維持（high見送り）。シナリオ4件±0%（合計100%確認）。指標14件更新（last_checked更新のみ・状態変更なし）",
-    "2026-03-26 v3.30: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5仮説確度更新。Red指摘4/5採用（80%）。Blue判断1/5採用（20%）。H-XAI-003 +2%（60%→62%・Red指摘採用: M&A≠製造業特化AIの飛躍・+5%→+2%抑制）・H-ANT-001 ±0%（50%維持・Red指摘採用: 自己報告事例は確度上昇根拠として弱い）・H-ANT-002 ±0%（73%維持・Red指摘採用: 単一ソース過信リスク継続）・H-GOV-001 ±0%（54%維持・Red指摘採用: 条件3未確認で確度上昇不当）・H-OAI-003 -1%（2%→1%・INFO-010 Astral買収）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 ±0%・SCN-004 ±0%）。指標4件更新（状態変更なし）。合計100%確認済み",
-    "2026-03-25 v3.29: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。11仮説確度更新。Red指摘3/8採用（38%）。Blue判断3/8採用（38%）。部分採用2件。H-ANT-001 -1%（51%→50%累積的影響）・H-ANT-002 ±0%（73%維持・Red単一ソース過信指摘採用）・H-OAI-001 +1%（63%→64% Pentagon契約）・H-GOO-001 +1%（53%→54% 750Mユーザー）・H-GOO-003 ±0%（54%維持）・H-XAI-001 +1%（60%→61% x_search内蔵）・H-XAI-003 -1%（61%→60% 時間減衰）・H-BTD-001 +1%（63%→64% OpenClaw大流行）・H-BTD-003 -2%（45%→43% 韓国禁止・著作権懸念）・H-GOV-001 +1%（53%→54% 条件1・2再確認）・H-CAR-002 +1%（72%→73% AIスキル56%高給与）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 +1%・SCN-004 -1%）。指標9件更新。合計100%確認済み",
-    "2026-03-24 v3.28: Arbiter統合判断（PARTIALLY DEGRADED状態）。Blue DEGRADED（新規証拠0件）、Red COMPLETE（5判断検証、4バイアス検出）。6仮説確度更新。Red指摘2/5採用（40%）。Blue判断4/5採用（80%）。H-ANT-002 -1%（74%→73%時間減衰）・H-CAR-002 -1%（73%→72%時間減衰）・H-XAI-003 -2%（63%→61%時間減衰+確証バイアス）・H-GOV-001 -1%（54%→53%時間減衰）・H-GOO-001 -1%（54%→53%確証バイアス警告ペナルティ）・H-GOO-002 -1%（53%→52%確証バイアス警告ペナルティ）。シナリオ0件更新（合計100%確認）。指標19件更新（last_checkedのみ）。Phase 1復旧最優先",
-    "2026-03-23 v3.27: Arbiter統合判断（COMPLETE状態・再実行）。Blue/Red両方完了。11仮説確度更新。Red指摘5/6採用（83%）。H-ANT-002 ±0%（Red: 単一ソース過信でBlue +1%見送り）・H-GOO-001/002各-1%（Red: アンカリング）・H-XAI-003 -3%（Red: 証拠不在ペナルティ）・IND-006 high見送り（Red: 因果飛躍）。Blue判断6件採用（H-OAI-001 +1%・H-ANT-001 -1%・H-GOO-003 +1%・H-XAI-001 +1%・H-BTD-001 +1%・H-CAR-001 -2%・H-CAR-002 +1%）。シナリオ4件更新（SCN-001 +1%・SCN-002 -1%・SCN-003 +1%・SCN-004 -1%）。指標11件更新（IND-001/003/004/006/013/017/018/019/022/023/024）。合計100%確認済み",
-    "2026-03-22 v3.25: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。10仮説確度更新。Red指摘5件採用（H-ANT-002 -2%単一ソース過信・H-XAI-001 +2%→+1%抑制・H-GOO-001/002各-1%アンカリング・H-BTD-003 -2%→+1%是正）。Blue判断5件採用（H-OAI-001 +1%・H-OAI-003 -1%・H-GOO-003 +1%・H-BTD-001 +1%・H-ANT-001 ±0%）。シナリオ2件更新（SCN-002 -1%・SCN-003 +1%）。IND-018条件3を「参考情報」に格下げ",
-    "2026-03-22 v3.24: Blue Agent分析完了（51件収集）。9仮説確度更新（H-OAI-001 +1%・H-OAI-003 -1%・H-ANT-001 -1%・H-ANT-002 +1%・H-GOO-001 +1%・H-GOO-003 +1%・H-XAI-001 +2%・H-BTD-001 +1%・H-BTD-003 -2%）。パターン6件検出（エージェントSDK競争・市場シェアvs政府排除・セキュリティリスク顕在化・価格競争激化・Google多角化・ByteDance戦略転換）。シナリオ1件更新（SCN-002 +1%）",
-    "2026-03-21 v3.23: Arbiter統合判断（COMPLETE状態）。Blue Agent完了（118件）、Red Agent完了（8判断、6バイアス検出）。Red指摘9/11採用（82%）。2仮説確度更新（H-ANT-001 -2%セキュリティ脆弱性・SCR指定、H-BTD-001 +1%豆包MAU 2.26億）。他9仮説±0%（Red指摘採用: 確証バイアス・単一契約過信・自己報告過信等）。シナリオ全件±0%。合計100%確認済み",
-    "2026-03-21 v3.22: Arbiter統合判断（COMPLETE状態）。Blue Agent完了（118件）、Red Agent完了（8判断、6バイアス検出）。Red指摘9/11採用（82%）。2仮説確度更新（H-ANT-001 -2%セキュリティ脆弱性・SCR指定、H-BTD-001 +1%豆包MAU 2.26億）。他9仮説±0%（Red指摘採用: 確証バイアス・単一契約過信・自己報告過信等）。シナリオ全件±0%。合計100%確認済み",
-    "2026-03-20 v3.21: Arbiter統合判断（Blue Agent DEGRADEDのため推測ベース）。Red指摘6件採用（H-OAI-001 +1%、H-ANT-001 -2%理由修正、H-ANT-002 -2%定量データ不在、H-XAI-001 +2%、H-BTD-001 ±0%、H-BTD-003 -2%、H-CAR-001 ±0%、H-CAR-003 ±0%）。シナリオ3件更新（SCN-002 -1%、SCN-003 +1%、SCN-004 ±0%）。合計100%確認済み",
-    "2026-03-20 v3.20: Blue Agent完了（57件収集）。8仮説確度更新（H-OAI-001 +2%政府市場アクセス、H-ANT-001 -2%上院除外反証、H-ANT-002 +2%$100M投資、H-XAI-001 +2%x_search内蔵、H-BTD-001 +1%豆包エージェント、H-BTD-003 -2%五カ年計画緩和、H-CAR-001 +2%ジュニア職消失、H-CAR-003 +2%中間削減）。パターン5件検出（選別的承認・エンタープライズ急普及・ROI乖離・SDK競争・雇用非対称）。シナリオ3件更新（SCN-002 -1%、SCN-003 +2%静かな囲い込み、SCN-004 -1%）",
-    "2026-03-19 v3.19: Arbiter統合判断（PARTIALLY DEGRADED状態）。Blue Agent DEGRADED（Phase 1失敗、新規証拠0件）、Red Agent COMPLETE（4判断検証、5バイアス検出）。3仮説確度更新（H-OAI-001 -1%時間減衰、H-OAI-002 -1%時間減衰、H-XAI-003 -2%証拠不在）。Red指摘5件採用（時間減衰・沈黙の診断的価値・構造的問題）。シナリオ2件更新（SCN-002 -1%、SCN-003 +1%、合計100%確認）。Phase 1復旧最優先",
-    "2026-03-18 v3.18: Arbiter統合判断（COMPLETE状態）。Blue Agent完了（16件）、Red Agent完了（8判断）。6仮説確度更新（H-XAI-001 +1%、H-CAR-003 +1%、他4件見送り）。Red指摘5件採用（H-OAI-001/002/003/ANT-002見送り・H-OAI-003表現修正）。IND-006 elevated維持（因果飛躍リスク）。シナリオ4件更新（合計100%確認）",
-    "2026-03-17 v3.17: Arbiter統合判断（COMPLETE状態）。Blue Agent完了（52件）、Red Agent完了（8判断）。12仮説確度更新。Red指摘6件採用（IND-006 high昇格見送り・H-GOO各-1%・H-GOV-001 -1%・H-BTD-003 +3%→+1%抑制・H-ANT-002 ±0%・H-CAR-002 ±0%）。IND-006 elevated維持（因果飛躍リスク）。シナリオ4件更新（合計100%確認）。確証バイアス警告を確度に反映",
-    "2026-03-16 v3.16: Arbiter統合判断（PARTIALLY DEGRADED状態）。Blue Agent完了（51件）、Red Agent未実行。前回Red方法論適用。7仮説確度更新（H-OAI-003 -1%、H-ANT-002 +1%、H-XAI-001/002各+1%、H-BTD-001 -1%、H-BTD-003 +3%、H-CAR-002 +1%）。IND-006 high昇格採用。シナリオ4件更新（合計100%確認）。Blue過大推奨を抑制（+2%→+1%）",
-    "2026-03-15 v3.15: Arbiter統合判断（DEGRADED状態）。Phase 1成功（79件）したがPhase 2/3未実行。Red指摘2件採用（consistent_evidence空欄是正・C-3ソース過信抑制）。H-XAI-003 -8%（73%→65%）、H-ANT-002 -2%（76%→74%）。他指摘は見送り（条件3未確認認識済み・証拠不足・乖離認識済み）。Blue Agent実行後に再評価推奨",
-    "2026-03-14 v3.14: Arbiter統合判断（DEGRADED状態）。Phase 1成功（57件）したがPhase 2/3未実行。全仮説確度±0%。last_updated更新のみ。Blue/Red実行後に再評価推奨",
-    "2026-03-13 v3.13: Arbiter統合判断（DEGRADED状態）。Phase 1収集失敗により新規証拠なし。全仮説確度±0%。Red指摘のアンカリング・確証バイアスリスク認識しつつ、証拠なしでの変更は見送り。高確度仮説（H-ANT-002/H-XAI-003/H-CAR-002）に不確実性注記追加。代替分析手法確立をPhase 1へ申し送り",
-    "2026-03-12 v3.12: Arbiter統合判断反映。Red指摘6件採用（単一企業事例過信抑制・相関≠因果採用・希望的観測抑制・累積評価注記）。H-XAI-003 +1%（72%→73%・Blue +2%抑制）、H-ANT-001 -1%（58%→57%・累積評価注記追加）、H-CAR-001 -1%（29%→28%）、H-CAR-002 +1%（72%→73%）、H-CAR-003 -1%（62%→61%）。IND-006 high昇格見送り（相関≠因果）・IND-013 elevated昇格採用。SCN-002 ±0%（希望的観測抑制）・SCN-003 +1%（15%→16%）・SCN-004 -1%（20%→19%）"
+    "2026-03-31 v3.36: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。3仮説確度更新。Red指摘5/7採用（71%）。H-ANT-002 +1%（73%→74%）$1B ARR直接証拠。Red指摘採用（自己発表データ+2%→+1%抑制・チャーン率未検証注記追加）・H-GOV-001 -2%（54%→52%）INFO-006判事一時差止・Red指摘部分採用（一時差止過大解釈注記追加）・H-GOO-002 ±0%（52%維持）Red指摘採用（切り替えコスト削減≠開放性）。シナリオ0件更新。指標4件更新（IND-002/015/017/023）。合計100%確認済み"
   ],
   "hypotheses": {
     "openai": [
@@ -39,9 +19,9 @@
         "statement": "OpenAIは2026年内にAgent機能を全面的にエンタープライズ向けに特化させ、B2B市場での支配的地位を確立する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 62,
+        "confidence_percentage": 61,
         "inconsistent_evidence": ["INFO-003", "INFO-018", "INFO-037", "INFO-021"],
-        "rationale": "Arbiter v3.44: -3%（65%→62%）。#QuitGPT影響・単一契約→市場支配の論理飛躍認識継続",
+        "rationale": "Arbiter v3.45: -1%（62%→61%）。ARR逆転可能性+評価額-収益乖離。#QuitGPT影響は限定的（1-2%以下）と評価。Red合意（理由修正あり）",
         "confirming_indicators": [
           "エンタープライズ専用Agent APIの発表",
           "SOC2/FedRAMP認証の取得拡大",
@@ -59,9 +39,9 @@
         "statement": "OpenAIはSkills/Shell/Compactionの独自実行環境でAgent開発者を囲い込み、MCP準拠の開放エコシステム上にプロプライエタリな上位レイヤーを構築する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 57,
+        "confidence_percentage": 56,
         "inconsistent_evidence": ["INFO-006", "INFO-018", "INFO-005", "INFO-016", "INFO-009", "INFO-039", "INFO-053", "INFO-040"],
-        "rationale": "Arbiter v3.44: +1%（56%→57%）。新規反証なし",
+        "rationale": "Arbiter v3.45: -1%（57%→56%）。MCP標準化進展が囲い込み戦略を部分的無効化。Codex独自機能存在するがプロトコル層開放化が減殺",
         "confirming_indicators": [
           "Skills/Shell利用開発者数の増加",
           "OpenClawマーケットプレイスのスキル数・取引額増加",
@@ -82,7 +62,7 @@
         "confidence_percentage": 1,
         "consistent_evidence": ["INFO-044", "INFO-081", "INFO-058", "INFO-028", "INFO-013", "INFO-026", "INFO-032", "INFO-042"],
         "inconsistent_evidence": ["INFO-001", "INFO-013", "INFO-019", "INFO-021", "INFO-020", "INFO-026", "INFO-027", "INFO-057", "INFO-018", "INFO-072", "INFO-025", "INFO-097", "INFO-053", "INFO-056", "INFO-050", "INFO-022", "INFO-052", "INFO-059", "INFO-047", "INFO-007", "INFO-015", "INFO-017", "INFO-008", "INFO-023", "INFO-046", "INFO-078", "INFO-005", "INFO-022", "INFO-063", "INFO-010"],
-        "rationale": "Arbiter v3.44: ±0%（1%維持）。棄却候補継続",
+        "rationale": "Arbiter v3.45: ±0%（1%維持）。棄却候補継続。$122B調達・IPO準備で商業化超加速",
         "confirming_indicators": [
           "研究チームへの大規模投資発表",
           "AGI/ASIタイムライン予測の前倒し",
@@ -97,36 +77,36 @@
     ],
     "cross_company": [
       {
-"hypothesis_id": "H-GOV-001",
+        "hypothesis_id": "H-GOV-001",
         "pir_id": "PIR-2026-002",
         "statement": "政府が経済的手段（SCR指定・調達禁止・DPA脅迫）でAI企業の安全性姿勢を抑圧する先例が確立されたことで、AI業界全体に萎縮効果が生じ、安全性研究・倫理的差別化の戦略的価値が構造的に低下する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 46,
+        "confidence_percentage": 45,
         "inconsistent_evidence": ["INFO-128", "INFO-058", "INFO-037", "INFO-002", "INFO-055", "INFO-050", "INFO-051"],
-        "rationale": "Arbiter v3.44: -2%（48%→46%）。Red指摘採用: 理由修正。消費者市場安全性価値≠他社萎縮効果反証.条件3未確認",
-      "confirming_indicators": [
-        "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
-        "AI安全性研究への民間投資の減少",
-        "軍事AI契約での倫理条件の形骸化",
-        "AI企業の自主的な政策声明・安全性コミットメントの減少"
-      ],
-      "disconfirming_indicators": [
-        "Anthropicの消費者・エンタープライズ市場での成長（倫理ブランド価値の証明）",
-        "他のAI企業がAnthropicに追随して倫理的姿勢を強化",
-        "議会・司法による政府の報復措置への歯止め",
-        "国際市場でEU等が安全性を要件化し、安全性が市場価値に回帰"
-      ]
-    },
-    {
-      "hypothesis_id": "H-ANT-001",
+        "rationale": "Arbiter v3.45: -1%（46%→45%）。Red指摘部分採用: 条件3（他社萎縮効果）長期未確認・トランプ規制緩和方向と矛盾・#QuitGPTが安全性の市場価値示唆",
+        "confirming_indicators": [
+          "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
+          "AI安全性研究への民間投資の減少",
+          "軍事AI契約での倫理条件の形骸化",
+          "AI企業の自主的な政策声明・安全性コミットメントの減少"
+        ],
+        "disconfirming_indicators": [
+          "Anthropicの消費者・エンタープライズ市場での成長（倫理ブランド価値の証明）",
+          "他のAI企業がAnthropicに追随して倫理的姿勢を強化",
+          "議会・司法による政府の報復措置への歯止め",
+          "国際市場でEU等が安全性を要件化し、安全性が市場価値に回帰"
+        ]
+      },
+      {
+        "hypothesis_id": "H-ANT-001",
         "pir_id": "PIR-2026-001",
         "statement": "Anthropicは安全性を差別化要因として、規制準拠が求められるエンタープライズ市場で優位に立つ",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 52,
         "inconsistent_evidence": ["INFO-077", "INFO-022", "INFO-014", "INFO-010", "INFO-024", "INFO-046", "INFO-031", "INFO-034", "INFO-038", "INFO-008", "INFO-027", "INFO-044", "INFO-011", "INFO-016", "INFO-017"],
-        "rationale": "Arbiter v3.44: -1%（53%→52%）。INFO-012/034（セキュリティインシデント）で管理体制脆弱性示唆",
+        "rationale": "Arbiter v3.45: ±0%（52%維持）。SCR vs $30B相殺。Red指摘注記: SCR波及効果過小評価リスク・自己発表ARR依存。ARR第三者検証が急務",
         "confirming_indicators": [
           "Fortune 500企業でのClaude採用率上昇",
           "FedRAMP High/SOC2/ISO27001等の認証取得",
@@ -139,34 +119,34 @@
         ]
       },
       {
-      "hypothesis_id": "H-ANT-002",
+        "hypothesis_id": "H-ANT-002",
         "pir_id": "PIR-2026-001",
         "statement": "Claude Code・Claude Agent SDKが開発者エコシステムで急成長し、エンタープライズAI開発の標準ツールになる",
         "status": "active",
         "confidence": "medium",
         "confidence_percentage": 70,
         "inconsistent_evidence": ["INFO-010", "INFO-031", "INFO-014"],
-        "rationale": "Arbiter v3.44: -3%（73%→70%）。Red指摘部分採用: セキュリティインシデント重大性反映。-2%過小・-5%過大",
-      "confirming_indicators": [
-        "Claude Code週間アクティブユーザー数の継続的増加",
-        "Claude Agent SDK採用企業数の増加",
-        "Fortune 500でのClaude Code導入率上昇"
-      ],
-      "disconfirming_indicators": [
-        "GitHub Copilot/Cursor等競合の成長率上回り",
-        "Claude Code解約率の上昇",
-        "開発者満足度調査での劣位"
-      ]
-    },
-    {
-      "hypothesis_id": "H-ANT-003",
+        "rationale": "Arbiter v3.45: ±0%（70%維持）。Red指摘採用: 自己発表データ3回連続依存・Managed Agents GA前・確証バイアス警告未反映",
+        "confirming_indicators": [
+          "Claude Code週間アクティブユーザー数の継続的増加",
+          "Claude Agent SDK採用企業数の増加",
+          "Fortune 500でのClaude Code導入率上昇"
+        ],
+        "disconfirming_indicators": [
+          "GitHub Copilot/Cursor等競合の成長率上回り",
+          "Claude Code解約率の上昇",
+          "開発者満足度調査での劣位"
+        ]
+      },
+      {
+        "hypothesis_id": "H-ANT-003",
         "pir_id": "PIR-2026-001",
         "statement": "Anthropicはマルチクラウド戦略を維持し、AWS・GCP・Azure全てで同等の機能を提供する",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 10,
+        "confidence_percentage": 9,
         "inconsistent_evidence": ["INFO-001", "INFO-011", "INFO-015", "INFO-019", "INFO-020", "INFO-021", "INFO-025", "INFO-026", "INFO-022", "INFO-058", "INFO-003", "INFO-018"],
-        "rationale": "Arbiter v3.44: -1%（11%→10%）。AWS依存深化",
+        "rationale": "Arbiter v3.45: -1%（10%→9%）。Google/Broadcom複数GW TPU契約でGCP依存深化。「同等」要件から乖離",
         "confirming_indicators": [
           "Bedrock・Vertex・Azureでの同時機能リリース",
           "マルチクラウド導入企業の増加",
@@ -189,7 +169,7 @@
         "confidence_percentage": 57,
         "consistent_evidence": ["INFO-007", "INFO-016", "INFO-017", "INFO-024", "INFO-008", "INFO-034", "INFO-054", "INFO-011", "INFO-014", "INFO-028", "INFO-025", "INFO-033", "INFO-043", "INFO-013", "INFO-003", "INFO-019", "INFO-020", "INFO-040", "INFO-041", "INFO-053"],
         "inconsistent_evidence": ["INFO-041", "INFO-056"],
-        "rationale": "Arbiter v3.44: ±0%（57%維持）。確証バイアス警告",
+        "rationale": "Arbiter v3.45: ±0%（57%維持）。Red指摘採用: Arbiter抑制の再無視・BM首位≠市場シェア。確証バイアス警告ペナルティ継続",
         "confirming_indicators": [
           "Vertex AI経由のGemini利用増加",
           "Workspace統合による企業導入拡大",
@@ -202,7 +182,7 @@
         ]
       },
       {
-"hypothesis_id": "H-GOO-002",
+        "hypothesis_id": "H-GOO-002",
         "pir_id": "PIR-2026-001",
         "statement": "GoogleはGemini Tools & Agentsでオープン標準（LangChain等）とのDay 0サポートを維持し、囲い込みを回避する",
         "status": "active",
@@ -210,215 +190,216 @@
         "confidence_percentage": 53,
         "consistent_evidence": ["INFO-007", "INFO-016", "INFO-017", "INFO-008", "INFO-014", "INFO-025", "INFO-033", "INFO-028", "INFO-003", "INFO-019", "INFO-040"],
         "inconsistent_evidence": [],
-        "rationale": "Arbiter v3.44: ±0%（53%維持）。確証バイアス警告",
-      "confirming_indicators": [
-        "LangChain/LlamaIndex等でのGemini対応維持",
-        "Gemini Toolsのオープンソース化",
-        "マルチプラットフォーム対応の継続"
-      ],
-      "disconfirming_indicators": [
-        "Google独自フレームワークへの誘導強化",
-        "LangChain等でのGemini対応遅延",
-        "クローズド機能の増加"
-      ]
-    },
-    {
-      "hypothesis_id": "H-GOO-003",
-      "pir_id": "PIR-2026-005",
-      "statement": "GoogleはDeepMind統合のシナジーを発揮し、フロンティア性能競争でOpenAI/Anthropicに対抗する",
-      "status": "active",
-      "confidence": "medium",
-      "confidence_percentage": 54,
-      "consistent_evidence": ["INFO-016", "INFO-017", "INFO-024", "INFO-034", "INFO-054", "INFO-028", "INFO-043", "INFO-040", "INFO-053"],
-      "inconsistent_evidence": ["INFO-041", "INFO-013", "INFO-056"],
-      "rationale": "Arbiter v3.44: ±0%（54%維持）。確証バイアス警告",
-      "confirming_indicators": [
-        "Gemini 3の主要ベンチマークでのトップ性能",
-        "DeepMind研究のGemini統合加速",
-        "AGI研究での主導的論文増加"
-      ],
-      "disconfirming_indicators": [
-        "OpenAI/Anthropicとの性能差拡大",
-        "DeepMind人材の流出",
-        "研究→製品化の遅延継続"
-      ]
-    }
-  ],
-  "xai": [
-    {
-      "hypothesis_id": "H-XAI-001",
-      "pir_id": "PIR-2026-001",
-      "statement": "xAIはX（Twitter）のリアルタイムデータを活用し、ニュース・時事対応で差別化する",
-      "status": "active",
-      "confidence": "medium",
-      "confidence_percentage": 62,
-      "inconsistent_evidence": [],
-      "rationale": "Arbiter v3.44: ±0%（62%維持）。確証バイアス警告",
-      "confirming_indicators": [
-        "Grokのニュース対応速度での優位性",
-        "Xデータ活用機能の拡大",
-        "競合での同様機能欠如"
-      ],
-      "disconfirming_indicators": [
-        "Xプラットフォームの衰退・データ質低下",
-        "競合のリアルタイムデータ取得（Reddit等）",
-        "Xデータ活用の規制強化"
-      ]
-    },
-    {
-      "hypothesis_id": "H-XAI-002",
-      "pir_id": "PIR-2026-001",
-      "statement": "xAIはGrokを低価格で提供し、価格競争で市場シェアを獲得する",
-      "status": "active",
-      "confidence": "medium",
-      "confidence_percentage": 65,
-      "inconsistent_evidence": [],
-      "rationale": "Arbiter v3.44: +1%（64%→65%）。価格優位明確化",
-      "confirming_indicators": [
-        "Grok API価格の競合優位性",
-        "価格競争でのシェア獲得",
-        "OSSモデルとの価格競争回避"
-      ],
-      "disconfirming_indicators": [
-        "OpenAI/Googleの価格引き下げ",
-        "OSSモデルの価格破壊",
-        "xAIの収益性悪化"
-      ]
-    },
-    {
-      "hypothesis_id": "H-XAI-003",
-      "pir_id": "PIR-2026-005",
-      "statement": "xAIはSpaceXとの統合で宇宙・製造業特化AIを展開し、ニッチ市場で確固たる地位を築く",
-      "status": "active",
-      "confidence": "medium",
-      "confidence_percentage": 60,
-      "consistent_evidence": [],
-      "inconsistent_evidence": [],
-      "rationale": "Arbiter v3.44: -1%（61%→60%）。時間減衰",
-      "confirming_indicators": [
-        "SpaceXでのGrok統合事例増加",
-        "製造業向けAI機能の展開",
-        "宇宙産業でのシェア獲得"
-      ],
-      "disconfirming_indicators": [
-        "SpaceXでの他社AI採用",
-        "製造業特化機能の欠如",
-        "汎用AIでの競合劣位"
-      ]
-    }
-  ],
-  "bytedance": [
-    {
-      "hypothesis_id": "H-BTD-001",
-      "pir_id": "PIR-2026-001",
-      "statement": "ByteDanceはTikTok/Douyinのデータ活用で中国市場で圧倒的優位を維持し、グローバル展開を図る",
-      "status": "active",
-      "confidence": "medium",
-      "confidence_percentage": 66,        "consistent_evidence": ["INFO-050", "INFO-051", "INFO-007", "INFO-023", "INFO-008", "INFO-042", "INFO-041", "INFO-044", "INFO-024", "INFO-057", "INFO-037", "INFO-068", "INFO-047", "INFO-048", "INFO-114", "INFO-117", "INFO-022", "INFO-024", "INFO-009", "INFO-026"],
-      "inconsistent_evidence": ["INFO-036", "INFO-035", "INFO-045", "INFO-027", "INFO-118"],
-      "rationale": "Arbiter v3.44: +1%（65%→66%）。120兆Token/日",
-      "confirming_indicators": [
-        "中国市場でのAI利用シェア維持",
-        "TikTok/DouyinデータのAI活用拡大",
-        "グローバル展開の進展"
-      ],
-      "disconfirming_indicators": [
-        "中国規制によるデータ活用制限",
-        "グローバル市場での規制障壁",
-        "競合（Baidu/Alibaba）の台頭"
-      ]
-    },
-    {
-      "hypothesis_id": "H-BTD-002",
-      "pir_id": "PIR-2026-001",
-      "statement": "ByteDanceは豆包（Doubao）で低価格戦略を維持し、価格競争でシェアを獲得する",
-      "status": "active",
-      "confidence": "medium",
-      "confidence_percentage": 70,
-      "inconsistent_evidence": [],
-      "rationale": "Arbiter v3.44: +1%（69%→70%）。低価格戦略継続",
-      "confirming_indicators": [
-        "豆包価格の競合優位性維持",
-        "価格競争でのシェア獲得",
-        "OSSモデルとの差別化"
-      ],
-      "disconfirming_indicators": [
-        "競合の価格引き下げ",
-        "OSSモデルの価格破壊",
-        "収益性悪化"
-      ]
-    },
-    {
-      "hypothesis_id": "H-BTD-003",
-      "pir_id": "PIR-2026-005",
-      "statement": "ByteDanceは著作権問題で法的制約を受け、グローバル展開が制限される",
-      "status": "active",
-      "confidence": "medium",
-      "confidence_percentage": 39,
-      "inconsistent_evidence": ["INFO-041", "INFO-042", "INFO-057", "INFO-024"],
-      "rationale": "Arbiter v3.44: -2%（41%→39%）。中国AI独立進展",
-      "confirming_indicators": [
-        "著作権訴訟の増加",
-        "日本政府等の是正要求",
-        "グローバル展開の停滞"
-      ],
-      "disconfirming_indicators": [
-        "著作権問題の解決",
-        "ライセンス契約の締結",
-        "グローバル展開の加速"
-      ]
-    }
-  ],
-  "career": [
-    {
-      "hypothesis_id": "H-CAR-001",
-      "pir_id": "PIR-2026-004",
-      "statement": "AI業務自律化が3年以内に中堅企業の業務プロセスを30%以上自動化し、中間層雇用が大幅に削減される",
-      "status": "active",
-      "confidence": "low",
-      "confidence_percentage": 21,
-      "inconsistent_evidence": ["INFO-042", "INFO-019", "INFO-056", "INFO-055", "INFO-028", "INFO-020", "INFO-023", "INFO-022", "INFO-045", "INFO-061", "INFO-060", "INFO-057", "INFO-084", "INFO-013"],
-      "rationale": "Arbiter v3.44: -2%（23%→21%）。Klarna失敗・55%後悔",
-      "confirming_indicators": [
-        "中堅企業でのAI自動化率30%超達成",
-        "中間層雇用の統計的減少確認",
-        "AI導入企業のROI正転換"
-      ],
-      "disconfirming_indicators": [
-        "AI自動化率の停滞",
-        "中間層雇用の維持・増加",
-        "AI導入企業のROI継続的赤字"
-      ]
-    },
-    {
-      "hypothesis_id": "H-CAR-002",
-      "pir_id": "PIR-2026-004",
-      "statement": "AIコーディングツール普及で「書く能力」の価値が低下し、「設計・評価・方向付けする能力」の価値が上昇する",
-      "status": "active",
-      "confidence": "high",
-      "confidence_percentage": 76,
-      "inconsistent_evidence": ["INFO-077"],
-      "rationale": "Arbiter v3.44: +1%（75%→76%）。設計力価値上昇継続",
-      "confirming_indicators": [
-        "AIコーディングツール企業導入率50%超",
-        "求人要件の実装力→設計力シフト",
-        "ジュニアエンジニア給与の相対的低下"
-      ],
-      "disconfirming_indicators": [
-        "AIコーディングツールの品質問題による利用率低下",
-        "実装スキルを重視する求人の増加",
-        "AIツール非使用の熟練エンジニアの給与プレミアム維持"
-      ]
-    },
-    {
-      "hypothesis_id": "H-CAR-003",
-      "pir_id": "PIR-2026-004",
-      "statement": "スマイルカーブの中間圧縮により、バリューチェーン中間工程のビジネス職は3年以内に大規模再編され、価値は上流と下流に集中する",
-      "status": "active",
-      "confidence": "medium",
+        "rationale": "Arbiter v3.45: ±0%（53%維持）。MCP採用は開放性支持、エコシステム依存構造は囲い込み方向。相殺",
+        "confirming_indicators": [
+          "LangChain/LlamaIndex等でのGemini対応維持",
+          "Gemini Toolsのオープンソース化",
+          "マルチプラットフォーム対応の継続"
+        ],
+        "disconfirming_indicators": [
+          "Google独自フレームワークへの誘導強化",
+          "LangChain等でのGemini対応遅延",
+          "クローズド機能の増加"
+        ]
+      },
+      {
+        "hypothesis_id": "H-GOO-003",
+        "pir_id": "PIR-2026-005",
+        "statement": "GoogleはDeepMind統合のシナジーを発揮し、フロンティア性能競争でOpenAI/Anthropicに対抗する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 55,
+        "consistent_evidence": ["INFO-016", "INFO-017", "INFO-024", "INFO-034", "INFO-054", "INFO-028", "INFO-043", "INFO-040", "INFO-053"],
+        "inconsistent_evidence": ["INFO-041", "INFO-013", "INFO-056"],
+        "rationale": "Arbiter v3.45: +1%（54%→55%）。Gemini 3.1 Pro複数BM首位・Intelligence Index同率#1。DeepMind統合成果",
+        "confirming_indicators": [
+          "Gemini 3の主要ベンチマークでのトップ性能",
+          "DeepMind研究のGemini統合加速",
+          "AGI研究での主導的論文増加"
+        ],
+        "disconfirming_indicators": [
+          "OpenAI/Anthropicとの性能差拡大",
+          "DeepMind人材の流出",
+          "研究→製品化の遅延継続"
+        ]
+      }
+    ],
+    "xai": [
+      {
+        "hypothesis_id": "H-XAI-001",
+        "pir_id": "PIR-2026-001",
+        "statement": "xAIはX（Twitter）のリアルタイムデータを活用し、ニュース・時事対応で差別化する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 61,
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.45: -1%（62%→61%）。時間減衰。Xデータ活用の新規機能展開・競合優位性維持の証拠なし",
+        "confirming_indicators": [
+          "Grokのニュース対応速度での優位性",
+          "Xデータ活用機能の拡大",
+          "競合での同様機能欠如"
+        ],
+        "disconfirming_indicators": [
+          "Xプラットフォームの衰退・データ質低下",
+          "競合のリアルタイムデータ取得（Reddit等）",
+          "Xデータ活用の規制強化"
+        ]
+      },
+      {
+        "hypothesis_id": "H-XAI-002",
+        "pir_id": "PIR-2026-001",
+        "statement": "xAIはGrokを低価格で提供し、価格競争で市場シェアを獲得する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 65,
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.45: ±0%（65%維持）。新規価格データなし。既存価格優位に変化なし",
+        "confirming_indicators": [
+          "Grok API価格の競合優位性",
+          "価格競争でのシェア獲得",
+          "OSSモデルとの価格競争回避"
+        ],
+        "disconfirming_indicators": [
+          "OpenAI/Googleの価格引き下げ",
+          "OSSモデルの価格破壊",
+          "xAIの収益性悪化"
+        ]
+      },
+      {
+        "hypothesis_id": "H-XAI-003",
+        "pir_id": "PIR-2026-005",
+        "statement": "xAIはSpaceXとの統合で宇宙・製造業特化AIを展開し、ニッチ市場で確固たる地位を築く",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 59,
+        "consistent_evidence": [],
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.45: -1%（60%→59%）。時間減衰。SpaceX統合の具体的成果（製造業AI等）未確認",
+        "confirming_indicators": [
+          "SpaceXでのGrok統合事例増加",
+          "製造業向けAI機能の展開",
+          "宇宙産業でのシェア獲得"
+        ],
+        "disconfirming_indicators": [
+          "SpaceXでの他社AI採用",
+          "製造業特化機能の欠如",
+          "汎用AIでの競合劣位"
+        ]
+      }
+    ],
+    "bytedance": [
+      {
+        "hypothesis_id": "H-BTD-001",
+        "pir_id": "PIR-2026-001",
+        "statement": "ByteDanceはTikTok/Douyinのデータ活用で中国市場で圧倒的優位を維持し、グローバル展開を図る",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 66,
+        "consistent_evidence": ["INFO-050", "INFO-051", "INFO-007", "INFO-023", "INFO-008", "INFO-042", "INFO-041", "INFO-044", "INFO-024", "INFO-057", "INFO-037", "INFO-068", "INFO-047", "INFO-048", "INFO-114", "INFO-117", "INFO-022", "INFO-024", "INFO-009", "INFO-026"],
+        "inconsistent_evidence": ["INFO-036", "INFO-035", "INFO-045", "INFO-027", "INFO-118"],
+        "rationale": "Arbiter v3.45: ±0%（66%維持）。Red指摘採用: 自己発表データ・ミラー・イメージングリスク。ByteDanceデータ独立検証必要",
+        "confirming_indicators": [
+          "中国市場でのAI利用シェア維持",
+          "TikTok/DouyinデータのAI活用拡大",
+          "グローバル展開の進展"
+        ],
+        "disconfirming_indicators": [
+          "中国規制によるデータ活用制限",
+          "グローバル市場での規制障壁",
+          "競合（Baidu/Alibaba）の台頭"
+        ]
+      },
+      {
+        "hypothesis_id": "H-BTD-002",
+        "pir_id": "PIR-2026-001",
+        "statement": "ByteDanceは豆包（Doubao）で低価格戦略を維持し、価格競争でシェアを獲得する",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 70,
+        "inconsistent_evidence": [],
+        "rationale": "Arbiter v3.45: ±0%（70%維持）。直接価格データなし。Token量から低価格効果推測可能だが確証なし",
+        "confirming_indicators": [
+          "豆包価格の競合優位性維持",
+          "価格競争でのシェア獲得",
+          "OSSモデルとの差別化"
+        ],
+        "disconfirming_indicators": [
+          "競合の価格引き下げ",
+          "OSSモデルの価格破壊",
+          "収益性悪化"
+        ]
+      },
+      {
+        "hypothesis_id": "H-BTD-003",
+        "pir_id": "PIR-2026-005",
+        "statement": "ByteDanceは著作権問題で法的制約を受け、グローバル展開が制限される",
+        "status": "active",
+        "confidence": "medium",
+        "confidence_percentage": 39,
+        "inconsistent_evidence": ["INFO-041", "INFO-042", "INFO-057", "INFO-024"],
+        "rationale": "Arbiter v3.45: ±0%（39%維持）。規制リスク存在とグローバル展開進行の相殺",
+        "confirming_indicators": [
+          "著作権訴訟の増加",
+          "日本政府等の是正要求",
+          "グローバル展開の停滞"
+        ],
+        "disconfirming_indicators": [
+          "著作権問題の解決",
+          "ライセンス契約の締結",
+          "グローバル展開の加速"
+        ]
+      }
+    ],
+    "career": [
+      {
+        "hypothesis_id": "H-CAR-001",
+        "pir_id": "PIR-2026-004",
+        "statement": "AI業務自律化が3年以内に中堅企業の業務プロセスを30%以上自動化し、中間層雇用が大幅に削減される",
+        "status": "active",
+        "confidence": "low",
+        "confidence_percentage": 21,
+        "inconsistent_evidence": ["INFO-042", "INFO-019", "INFO-056", "INFO-055", "INFO-028", "INFO-020", "INFO-023", "INFO-022", "INFO-045", "INFO-061", "INFO-060", "INFO-057", "INFO-084", "INFO-013"],
+        "rationale": "Arbiter v3.45: ±0%（21%維持）。雇用削減データ実在（C3件）だが品質・統合の障壁（I4件）が30%+自動化達成を阻む",
+        "confirming_indicators": [
+          "中堅企業でのAI自動化率30%超達成",
+          "中間層雇用の統計的減少確認",
+          "AI導入企業のROI正転換"
+        ],
+        "disconfirming_indicators": [
+          "AI自動化率の停滞",
+          "中間層雇用の維持・増加",
+          "AI導入企業のROI継続的赤字"
+        ]
+      },
+      {
+        "hypothesis_id": "H-CAR-002",
+        "pir_id": "PIR-2026-004",
+        "statement": "AIコーディングツール普及で「書く能力」の価値が低下し、「設計・評価・方向付けする能力」の価値が上昇する",
+        "status": "active",
+        "confidence": "high",
+        "confidence_percentage": 76,
+        "inconsistent_evidence": ["INFO-077"],
+        "rationale": "Arbiter v3.45: ±0%（76%維持）。Red指摘採用: 確証バイアス警告と+1%の矛盾・I0件での上昇不当・AI使用率→設計力価値上昇の論理飛躍",
+        "confirming_indicators": [
+          "AIコーディングツール企業導入率50%超",
+          "求人要件の実装力→設計力シフト",
+          "ジュニアエンジニア給与の相対的低下"
+        ],
+        "disconfirming_indicators": [
+          "AIコーディングツールの品質問題による利用率低下",
+          "実装スキルを重視する求人の増加",
+          "AIツール非使用の熟練エンジニアの給与プレミアム維持"
+        ]
+      },
+      {
+        "hypothesis_id": "H-CAR-003",
+        "pir_id": "PIR-2026-004",
+        "statement": "スマイルカーブの中間圧縮により、バリューチェーン中間工程のビジネス職は3年以内に大規模再編され、価値は上流と下流に集中する",
+        "status": "active",
+        "confidence": "medium",
         "confidence_percentage": 55,
         "inconsistent_evidence": ["INFO-078", "INFO-056", "INFO-022", "INFO-028", "INFO-061", "INFO-060", "INFO-013"],
-        "rationale": "Arbiter v3.44: -2%（57%→55%）。組織変革困難さ",
+        "rationale": "Arbiter v3.45: ±0%（55%維持）。中間層削圧力（C3件）と中間層再投資・新職種（I3件）の相殺",
         "confirming_indicators": [
           "中間工程の単価がインフレ率を下回る低下を2四半期連続",
           "上流コンサル/戦略職と中間実装職の給与格差20%以上拡大",
