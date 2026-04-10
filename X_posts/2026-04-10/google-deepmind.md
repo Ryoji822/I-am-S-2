@@ -34,3 +34,12 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**03:21 JST** | [原文](https://x.com/JeffDean/status/2042400094423826884)
+
+> RT Andrew M. Dai
+> After almost 12 years in Brain/DeepMind, I’ve finally decided to take the leap. My cofounders: @yinfeiy, Seth and I have kicked-off @ElorianAI. The first multimodal reasoning lab founded and led by former LLM pretraining, data and multimodal leads. https://youtu.be/YlvfNpOMeOY?si=iiVTn8sbKwX239iK (1/n)
+
+---
+

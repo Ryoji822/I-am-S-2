@@ -38,3 +38,20 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**02:51 JST** | [原文](https://x.com/jasonkwon/status/2042402342373572696)
+
+> RT Tibo
+> We did it, say hi to the $100 plan! 
+> 
+> It should be the sweet spot for a ton of you. It comes with a ton of codex usage. And yes we are resetting the limits again too as I mentioned yesterday. Let’s keep building!
+> 
+> OpenAI: We’re updating our ChatGPT Pro and Plus subscriptions to better support the growing use of Codex.
+> 
+> We’re introducing a new $100/month Pro tier. This new tier offers 5x more Codex usage than Plus and is best for longer, high-effort Codex sessions. 
+> 
+> In ChatGPT, this new Pro tier
+
+---
+
