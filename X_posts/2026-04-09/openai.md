@@ -114,3 +114,16 @@
 
 ---
 
+## @markchen90 (Mark Chen - 研究責任者)
+
+**07:31 JST** | [原文](https://x.com/markchen90/status/2042525543460147396)
+
+> RT M
+> Re Copy of FreeBSD from Jan 1 2026 (68d6abd9714384a41028dc0d5086b4930366bbea), then prompted GPT-5.4 with a similar prompting strategy to the Mythos red team harness from their whitepaper, via OpenCode. This reproduces.
+> 
+> Going to attempting reproduction for the other bugs they disclosed. 
+> 
+> Concerning; maybe the only insight from the Mythos whitepaper is that they were willing to spend millions on compute to do this for a bunch of open source. But they could have saved millions by just using Opus; Mythos had little to do with it.
+
+---
+
