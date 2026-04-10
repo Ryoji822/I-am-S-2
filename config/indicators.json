@@ -1,8 +1,9 @@
 {
-  "version": "3.45",
-  "last_updated": "2026-04-09",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.45: Arbiter統合判断完了.7指標更新. IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持・IND-027 elevated維持・IND-028 elevated維持・IND-029 elevated維持. 新規IND-030 elevated（AI能力-リスク二面性）追加. Agent普及速度>セキュリティ成熟速度継続",
+  "version": "3.46",
+  "last_updated": "2026-04-10",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.46: Arbiter統合判断完了.7指標更新（全件状態変更なし・last_checked更新）. IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持・IND-027 elevated維持・IND-028 elevated維持・IND-029 elevated維持・IND-030 elevated維持. Agent普及速度>セキュリティ成熟速度継続",
   "structural_changes_log": [
+    "2026-04-10 v3.46: Arbiter統合判断（COMPLETE状態）。Blue完了・Red v3.45参照比較。7指標更新（全件状態変更なし）。IND-013 high維持（OpenAI/Anthropicサイバー製品限定リリース・ソースコード漏洩・Bedrock新攻撃面）・IND-025 elevated維持（Gemini 3D可視化・Lyria 3音楽生成）・IND-026 elevated維持（88%本番前失敗・95%パイロット失敗・94%スプロール懸念）・IND-027 elevated維持（MCP数万サーバー・AAIF 170+・Google Gemini API Docs MCP）・IND-028 elevated維持（Amodei宣言・研究速度1.6x・ARC-AGI-3フロンティア1%未満）・IND-029 elevated維持（Q1 $221B・Meta $21B CoreWeave・Amazon $20B+チップARR）・IND-030 elevated維持（Mythos Cybench 100%・Glasswing閾値到達）",
     "2026-04-09 v3.45: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。7指標更新。IND-013 high維持（Mythos Cybench 100%飽和・Vertex AI侵害実証）・IND-025 elevated維持（Gemini 3.1 Pro 95.0%・Muse Spark HLE 58%）・IND-026 elevated維持（本番稼働57%・Fortune 500 64%失敗）・IND-027 elevated維持（MCP数万サーバー・AAIF 170+）・IND-028 elevated維持（AI 2027予測1.5年前倒し）・IND-029 elevated維持（DC投資ブーム・OpenAI $122B）・新規IND-030 elevated（AI能力-リスク二面性・Mythos Cybench 100%+243頁安全レポート）",
     "2026-04-07 v3.44: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。5指標更新。IND-013 high維持（Claude流出→Vidarマルウェア）・IND-026 elevated維持（Klarna失敗・55%後悔）・IND-027 elevated維持（MCP爆発的成長）・IND-028 elevated維持（AGI定義不一致）・IND-029 elevated維持（DC 50%遅延）",
     "2026-04-05 v3.42: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。4指標更新。IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持. 新規IND-027 elevated（エコシステム標準化進展度・囲い込みリスク注記）",
@@ -18,9 +19,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Mythos Cybench 100%飽和・Vertex AI侵害実証・Agent普及>セキュリティ成熟",
-      "last_checked": "2026-04-09",
-      "rationale": "Arbiter v3.45: high維持。Mythos全サイバー課題初解決は攻撃能力の質的転換点。Agent普及>セキュリティ成熟の構造継続"
+      "last_value": "OpenAI/Anthropicサイバー製品限定リリース・ソースコード漏洩・Bedrock新攻撃面・Mythos Cybench 100%",
+      "last_checked": "2026-04-10",
+      "rationale": "Arbiter v3.46: high継続。サイバー攻撃能力の質的転換点+セキュリティ侵害頻度の高水準維持。critical上昇条件: 大規模AI攻撃インシデント確認"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -29,9 +30,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Gemini 3.1 Pro 95.0%・Muse Spark HLE 58%。真の理解vsパターンマッチング未解決",
-      "last_checked": "2026-04-09",
-      "rationale": "Arbiter v3.45: elevated維持。マルチモーダル性能向上中だが「真の理解」vs「パターンマッチング」の区別未解決"
+      "last_value": "Gemini 3D可視化・Lyria 3音楽生成・マルチモーダル拡張継続。「真の理解」検証なし",
+      "last_checked": "2026-04-10",
+      "rationale": "Arbiter v3.46: elevated維持。マルチモーダル生成の拡張続くが「真の理解」の検証未解決"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -40,9 +41,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "本番稼働57%・327%成長・Fortune 500 64%失敗・品質障壁32%",
-      "last_checked": "2026-04-09",
-      "rationale": "Arbiter v3.45: elevated維持。本番稼働率57%は改善だが品質障壁32%で成功率に上限"
+      "last_value": "88%エージェントプロジェクト本番前失敗・95%genAIパイロット失敗・94%スプロール懸念",
+      "last_checked": "2026-04-10",
+      "rationale": "Arbiter v3.46: elevated維持。普及速度>品質成熟速度の構造継続。Klarna再採用が品質問題の具体例"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -51,9 +52,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "MCP数万サーバー・75+公式コネクタ・AAIF 170+メンバー",
-      "last_checked": "2026-04-09",
-      "rationale": "Arbiter v3.45: elevated維持。標準化進展は明確だがAnthropic主導リスク注記"
+      "last_value": "MCP数万サーバー・75+公式コネクタ・AAIF 170+メンバー・Google Gemini API Docs MCP",
+      "last_checked": "2026-04-10",
+      "rationale": "Arbiter v3.46: elevated維持。標準化進展は明確。Anthropic主導リスク注記継続"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -62,9 +63,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "AI 2027予測1.5年前倒し・研究速度1.4x→1.6x・客観的BMと主観的宣言乖離",
-      "last_checked": "2026-04-09",
-      "rationale": "Arbiter v3.45: elevated維持。タイムライン短縮傾向継続。客観的ベンチマークと主観的宣言の乖離持続"
+      "last_value": "Amodei「来年中に全人類より賢く」・自己改善AI熱狂・研究速度1.6x・ARC-AGI-3フロンティア1%未満",
+      "last_checked": "2026-04-10",
+      "rationale": "Arbiter v3.46: elevated維持。主観的宣言と客観的ベンチマークの乖離持続"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -73,9 +74,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "DC投資ブーム・OpenAI $122B・Anthropic複数GW契約・供給制約構造的",
-      "last_checked": "2026-04-09",
-      "rationale": "Arbiter v3.45: elevated維持。投資規模拡大中だが供給制約（DC 50%遅延）は構造的"
+      "last_value": "Q1 $221B（6x YoY）・Meta $21B CoreWeave・Amazon $20B+チップARR・Anthropic複数GW契約",
+      "last_checked": "2026-04-10",
+      "rationale": "Arbiter v3.46: elevated継続。投資規模拡大加速。供給制約は構造的"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -84,9 +85,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Mythos Cybench 100% + 243頁安全レポート。最も整合性高い＝最もリスク高い",
-      "last_checked": "2026-04-09",
-      "rationale": "Arbiter v3.45: 新規指標elevated。Mythosが全サイバー課題解決（Cybench 100%）は能力の質的転換点であり、同時にリスクの質的転換点。安全性透明性の最先端とリスク最先端が同一モデルに共存"
+      "last_value": "Mythos Cybench 100%自律解決・OpenAIサイバー製品限定リリース・Glasswing防衛的閾値到達",
+      "last_checked": "2026-04-10",
+      "rationale": "Arbiter v3.46: elevated継続。最も能力の高いモデルが最もリスクの高いモデルである構造が確定"
     }
   }
 }
