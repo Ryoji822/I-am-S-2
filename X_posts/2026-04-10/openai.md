@@ -87,3 +87,16 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**12:16 JST** | [原文](https://x.com/OpenAIDevs/status/2043060944553808218)
+
+> RT Romain Huet
+> We recorded a Web Dev Challenge with three teams building apps with Codex in 4 hours! 🎬
+> 
+> Loved the creative energy in the room and how much they were able to create in such a short time. Way more than would have felt possible not long ago.
+> 
+> With Codex, you can just build things!
+
+---
+
