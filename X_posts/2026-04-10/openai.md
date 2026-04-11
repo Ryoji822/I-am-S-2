@@ -55,3 +55,35 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**14:15 JST** | [原文](https://x.com/jasonkwon/status/2042659196500611202)
+
+> RT Peter Welinder
+> Re It’s quite tiring to hear all disparagement of Sam. Every interaction I’ve had directly or seen others have for almost a decade, he’s been thoughtful and kind, and always trying to find solutions that work for everyone.
+> 
+> If Farrow’s approach was applied to anyone else, they’d come off as the devil too. Ironically, Farrow himself is clearly not a person that’s out for the truth.
+> 
+> Sam built the largest nonprofit in history, millions of people are being empowered every day by products he helped create, and 97% (not just a “majority” as Farrow said) of the company signed a letter to bring him back after he was fired by an inexperienced and uninvolved board.
+> 
+> I look forward to when a proper journalist actually writes the true story in the future.
+
+---
+
+## @npew (Peter Welinder - 研究・技術)
+
+**03:58 JST** | [原文](https://x.com/npew/status/2042608419358887975)
+
+> RT Dawid Moczadło
+> I will say it again, we used GPT5.4 and Opus, and we were able to autonomously find zero-days in the Linux Kernel (in the last 3 weeks)
+> 
+> Mythos is probably better at the task of finding potential issues in code, but imo the threshold for "scary" was reached in December or even earlier
+> 
+> This is a great hype machine for Anthropic, especially that they plan to do IPO eoy
+> 
+> I totally agree - this is not a new capability
+> 
+> Zack Korman: I'm extremely unconvinced that Opus wouldn't have found that 27-year-old OpenBSD bug Mythos found if they spent $20k credits on it.
+
+---
+
