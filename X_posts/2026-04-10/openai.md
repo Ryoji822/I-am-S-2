@@ -100,3 +100,14 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**20:18 JST** | [原文](https://x.com/npew/status/2043184950007275747)
+
+> RT Andy Boenau
+> Waymo: "Do you want to reduce the number of people hurt in traffic crashes?" 
+> 
+> New York: "Not if it takes away a taxi driver's job."
+
+---
+

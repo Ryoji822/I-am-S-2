@@ -35,3 +35,15 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**23:47 JST** | [原文](https://x.com/npew/status/2043340175154229524)
+
+> Everything is just accelerating, including the exploits AND fixes in security. The faster the tools are available, the more people are working on solutions to harden everything.
+> 
+> The incentive is clearly to have more secure systems. Markets and capitalism will work wonders for achieving it.
+> 
+> kache: AIs like chatgpt5.4 xhigh being used in exploit harnesses will make the world more secure, not less. Everything was already Swiss cheese. You just needed the capital expenditure on flesh and bone to hack it. But now, hacking anything is free. And defending anything, also free
+
+---
+
