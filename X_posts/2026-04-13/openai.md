@@ -25,3 +25,14 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**09:28 JST** | [原文](https://x.com/kevinweil/status/2043516955278368914)
+
+> RT Dean W. Ball
+> Today I did multiple things that would have been impossible for me to do, practically speaking, one year ago. It wasn’t that special of a day. I do things that would have been impossible for me a year ago almost every day now.
+> 
+> AI is remarkable technology.
+
+---
+
