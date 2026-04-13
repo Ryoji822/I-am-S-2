@@ -1,9 +1,9 @@
 {
-  "version": "3.48",
-  "last_updated": "2026-04-12",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.48: Arbiter統合判断完了.7指標更新（全件状態変更なし・last_checked更新）. IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持・IND-027 elevated維持・IND-028 elevated維持・IND-029 elevated維持・IND-030 elevated維持. Agent普及速度>セキュリティ成熟速度継続",
+  "version": "3.49",
+  "last_updated": "2026-04-13",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.49: Arbiter統合判断完了.7指標更新（全件状態変更なし・last_checked更新）. IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持・IND-027 elevated維持・IND-028 elevated維持・IND-029 elevated維持・IND-030 elevated維持. Agent普及速度>セキュリティ成熟速度継続",
   "structural_changes_log": [
-    "2026-04-12 v3.48: Arbiter統合判断（COMPLETE状態）。Blue完了・Red 2026-04-11参照比較。7指標更新（全件状態変更なし）。IND-013 high維持（Axios npmサプライチェーン攻撃・Mythos脆弱性発見継続）・IND-025 elevated維持（Gemini 3.1 Pro 95.0%・Mythos マルチモーダル59%乖離継続）・IND-026 elevated維持（Databricks 19%導入・Managed Agents GA・PwC本番デプロイ）・IND-027 elevated維持（MCP数万サーバー・75+コネクタ・1000+スキル・Gemma 4 Apache 2.0）・IND-028 elevated継続（ARC-AGI-3全<1%・CEO宣言乖離過去最大水準維持・RSI初期段階）・IND-029 elevated継続（Q1 $242B・AI M&A $155B・$50Bインフラ投資）・IND-030 elevated継続（Mythos一般公開中止・AI解雇25%・CEO宣言過熱）",
+    "2026-04-13 v3.49: Arbiter統合判断（COMPLETE状態）。Blue完了・Red 2026-04-11参照比較。7指標更新（全件状態変更なし）。IND-013 high継続（サプライチェーン攻撃ベクトル多様化・Mythos脆弱性発見継続）・IND-025 elevated継続（SWE-Benchとマルチモーダル乖離継続）・IND-026 elevated継続（19%導入・71%展開vs16%ガバナンスの品質ギャップ）・IND-027 elevated継続（MCP数万サーバー・75+コネクタ・1000+スキル）・IND-028 elevated継続（ARC-AGI-3全<1%・CEO宣言乖離過去最大水準・RSI初期段階学術実証）・IND-029 elevated継続（Q1 $242B・AI M&A $155B・直近4ヶ月10+件買収）・IND-030 elevated継続（能力向上とリスク増大の同時進行持続）",
     "2026-04-11 v3.47: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。7指標更新（全件状態変更なし）。IND-013 high維持（Mythos数十年未検出脆弱性発見・認証情報漏洩研究・Altman宅火炎瓶投擲）・IND-025 elevated維持（Gemini 3Dシミュレーション・Mythos マルチモーダル59%・Alibaba HappyHorse #1）・IND-026 elevated維持（88%本番前失敗・94%スプロール懸念）・IND-027 elevated維持（AAIF 170+・Gemma 4 Apache 2.0）・IND-028 elevated継続（ARC-AGI-3全<1%・主観的AGI宣言の乖離過去最大）・IND-029 elevated継続（Q1 $221B・Meta $35B+・OpenAI $122B）・IND-030 elevated継続（Mythos SWE-Bench 93%+脆弱性発見・DOD無制限アクセス要求）",
     "2026-04-10 v3.46: Arbiter統合判断（COMPLETE状態）。Blue完了・Red v3.45参照比較。7指標更新（全件状態変更なし）。IND-013 high維持（OpenAI/Anthropicサイバー製品限定リリース・ソースコード漏洩・Bedrock新攻撃面）・IND-025 elevated維持（Gemini 3D可視化・Lyria 3音楽生成）・IND-026 elevated維持（88%本番前失敗・95%パイロット失敗・94%スプロール懸念）・IND-027 elevated維持（MCP数万サーバー・AAIF 170+・Google Gemini API Docs MCP）・IND-028 elevated維持（Amodei宣言・研究速度1.6x・ARC-AGI-3フロンティア1%未満）・IND-029 elevated維持（Q1 $221B・Meta $21B CoreWeave・Amazon $20B+チップARR）・IND-030 elevated維持（Mythos Cybench 100%・Glasswing閾値到達）",
     "2026-04-09 v3.45: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。7指標更新。IND-013 high維持（Mythos Cybench 100%飽和・Vertex AI侵害実証）・IND-025 elevated維持（Gemini 3.1 Pro 95.0%・Muse Spark HLE 58%）・IND-026 elevated維持（本番稼働57%・Fortune 500 64%失敗）・IND-027 elevated維持（MCP数万サーバー・AAIF 170+）・IND-028 elevated維持（AI 2027予測1.5年前倒し）・IND-029 elevated維持（DC投資ブーム・OpenAI $122B）・新規IND-030 elevated（AI能力-リスク二面性・Mythos Cybench 100%+243頁安全レポート）",
@@ -22,8 +22,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "Axios npmサプライチェーン攻撃・macOS証明書露出・Mythos SWE-Bench 93%+脆弱性発見（継続）",
-      "last_checked": "2026-04-12",
-      "rationale": "Arbiter v3.48: high継続。サプライチェーン攻撃ベクトルの多様化。Mythos脆弱性発見能力の向上は攻撃・防御両面リスク。critical上昇条件（大規模AI攻撃インシデント）に未到達"
+      "last_checked": "2026-04-13",
+      "rationale": "Arbiter v3.49: high継続。攻撃ベクトル多様化（サプライチェーン新手法）。Mythos脆弱性発見能力は防御強化だが攻撃への悪用リスクも。critical移行条件（大規模AI攻撃インシデント）に未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -32,9 +32,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Mythos マルチモーダル59%（SWE-Bench 93.9%と乖離継続）・Gemini 3.1 Pro 95.0%・3Dシミュレーション生成",
-      "last_checked": "2026-04-12",
-      "rationale": "Arbiter v3.48: elevated継続。マルチモーダル性能向上続くが「真の理解」検証未解決。SWE-Benchとマルチモーダルスコアの乖離継続"
+      "last_value": "Mythos マルチモーダル59%（SWE-Bench 93.9%と乖離継続）・Gemini 3.1 Pro 95.0%・Gemma 4マルチモーダル対応",
+      "last_checked": "2026-04-13",
+      "rationale": "Arbiter v3.49: elevated継続。SWE-Benchとマルチモーダルスコアの乖離継続。性能向上はあるが「真の理解」検証は未解決"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -43,9 +43,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Databricks 19%導入・マルチエージェント327%成長・Managed Agents GA・PwC本番デプロイ事例",
-      "last_checked": "2026-04-12",
-      "rationale": "Arbiter v3.48: elevated継続。エージェント普及速度>品質成熟速度の構造継続。本番デプロイ事例の蓄積は前向きだが88%失敗率との矛盾未解決"
+      "last_value": "19%導入（Databricks）・71%展開済みだが16%ガバナンス有効・PwC本番デプロイ事例・マルチエージェント327%成長",
+      "last_checked": "2026-04-13",
+      "rationale": "Arbiter v3.49: elevated継続。普及速度>品質成熟速度の構造継続。71%展開vs16%ガバナンスの乖離は品質ギャップを示唆"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -55,8 +55,8 @@
       "trend": "rising",
       "alert_level": "elevated",
       "last_value": "MCP数万サーバー・75+公式コネクタ・1000+スキルマルチプラットフォーム対応・Gemma 4 Apache 2.0",
-      "last_checked": "2026-04-12",
-      "rationale": "Arbiter v3.48: elevated継続。標準化進展は明確かつ加速的。開放性シグナルの評価を適切に反映"
+      "last_checked": "2026-04-13",
+      "rationale": "Arbiter v3.49: elevated継続。標準化の加速は明確。次段階: MCP/A2Aが業界標準として定着する場合→high移行を検討"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -65,9 +65,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "ARC-AGI-3全フロンティア<1%（人間100%）・Amodei/Hassabis/Altman AGI宣言・RSI初期段階議論",
-      "last_checked": "2026-04-12",
-      "rationale": "Arbiter v3.48: elevated継続。主観的宣言と客観的ベンチマークの乖離が過去最大水準を維持。RSI議論は初期段階"
+      "last_value": "ARC-AGI-3全フロンティア<1%（人間100%）・Amodei/Altman/Andreessen AGI宣言・Apple RSI初期段階実証",
+      "last_checked": "2026-04-13",
+      "rationale": "Arbiter v3.49: elevated継続。主観-客観乖離は過去最大水準を維持。RSI議論の学術的実証（Apple）は新規要素。high移行条件: RSI実証の再現確認・ARC-AGI-3有意改善"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -76,9 +76,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Q1 AIベンチャー$242B（全体の80%）・AI M&A $155B過去1年・Anthropic $50Bインフラ投資拡大",
-      "last_checked": "2026-04-12",
-      "rationale": "Arbiter v3.48: elevated継続。投資規模拡大加速。指数関数的激化継続"
+      "last_value": "Q1 $242B AI VC・AI M&A $155B過去1年・Anthropic $50Bインフラ投資・直近4ヶ月10+件買収",
+      "last_checked": "2026-04-13",
+      "rationale": "Arbiter v3.49: elevated継続。投資規模拡大の指数関数的加速。high移行条件: データセンター電力制約の広範な稼働率低下"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -87,9 +87,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Mythos一般公開中止（破局的攻撃リスク）・AI解雇が米国レイオフ25%・CEO宣言の過熱",
-      "last_checked": "2026-04-12",
-      "rationale": "Arbiter v3.48: elevated継続。AI能力向上とリスク増大の同時進行持続"
+      "last_value": "Mythos脆弱性発見能力・AI解雇25%・RSI初期段階・CEO宣言過熱",
+      "last_checked": "2026-04-13",
+      "rationale": "Arbiter v3.49: elevated継続。能力向上（Mythos 93.9%）とリスク増大（RSI・解雇・宣言過熱）の同時進行持続"
     }
   }
 }
