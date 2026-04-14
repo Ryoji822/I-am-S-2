@@ -36,3 +36,13 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**07:12 JST** | [原文](https://x.com/OpenAIDevs/status/2043452326166528239)
+
+> Codex helps you turn requirements into working prototypes faster.
+> 
+> @eh_dubb shared how that makes quarterly planning more concrete and collaborative.
+
+---
+
