@@ -32,3 +32,12 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**12:53 JST** | [原文](https://x.com/jasonkwon/status/2043916483999477975)
+
+> RT Boaz Barak
+> In a world that is ever changing, it’s good we can rely on some things to stay the same.
+
+---
+
