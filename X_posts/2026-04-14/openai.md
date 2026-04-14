@@ -41,3 +41,15 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**15:10 JST** | [原文](https://x.com/kevinweil/status/2043934843487302114)
+
+> Could not agree more with @gdb.
+> 
+> Greg Brockman: The world is transitioning to a compute-powered economy.
+> 
+> The field of software engineering is currently undergoing a renaissance, with AI having dramatically sped up software engineering even over just the past six months. AI is now on track to bring this same transformation to
+
+---
+
