@@ -15,3 +15,12 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**21:05 JST** | [原文](https://x.com/demishassabis/status/2043684102889423066)
+
+> RT Henry Shevlin
+> Big personal news: I’ve been recruited by Google DeepMind for a new Philosopher position (actual title), focusing on machine consciousness, human-AI relationships, and AGI readiness, starting in May. I’ll continue my research & teaching at Cambridge part-time. Absolutely stoked!
+
+---
+

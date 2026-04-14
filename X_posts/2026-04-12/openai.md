@@ -47,3 +47,59 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**23:43 JST** | [原文](https://x.com/OpenAIDevs/status/2043833038828908570)
+
+> RT Gabriel Chua
+> Here’s how we use Codex to:
+> 
+> > understand large codebases
+> > review PRs faster
+> > build macOS apps
+> > turn Figma into code
+> > automate bug triage
+> > create a CLI as agent tools
+> > analyze datasets
+> > generate slide decks
+> > coordinate new-hire onboarding
+> > learn a new concept
+> 
+> …and more.
+> 
+> https://developers.openai.com/codex/use-cases
+> 
+> @kagigz , @Dimillian , @nickbaumann_  and team pulled together a great collection of Codex use cases, and based on how engineering *AND* non-engineering teams build with Codex daily at OpenAI.
+> 
+> What else should we cover?
+
+---
+
+## @npew (Peter Welinder - 研究・技術)
+
+**23:43 JST** | [原文](https://x.com/npew/status/2043852265174511984)
+
+> RT Gabriel Chua
+> Here’s how we use Codex to:
+> 
+> > understand large codebases
+> > review PRs faster
+> > build macOS apps
+> > turn Figma into code
+> > automate bug triage
+> > create a CLI as agent tools
+> > analyze datasets
+> > generate slide decks
+> > coordinate new-hire onboarding
+> > learn a new concept
+> 
+> …and more.
+> 
+> https://developers.openai.com/codex/use-cases
+> 
+> @kagigz , @Dimillian , @nickbaumann_  and team pulled together a great collection of Codex use cases, and based on how engineering *AND* non-engineering teams build with Codex daily at OpenAI.
+> 
+> What else should we cover?
+
+---
+

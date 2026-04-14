@@ -66,3 +66,17 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**01:28 JST** | [原文](https://x.com/gdb/status/2040466572158869832)
+
+> AI use is an emerging skill which improves businesses and unlocks entrepreneurship:
+> 
+> Ethan Mollick: Big deal paper here: field experiment on 515 startups, half shown case studies of how startups are successfully using AI.
+> 
+> Those firms used AI 44% more, had 1.9x higher revenue, needed 39% less capital:
+> 1) AI accelerates businesses
+> 2) The challenge is understanding how to use it
+
+---
+
