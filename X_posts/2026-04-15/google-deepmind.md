@@ -34,3 +34,14 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**00:06 JST** | [原文](https://x.com/JeffDean/status/2044284771073962168)
+
+> RT Google DeepMind
+> We’re rolling out an upgrade designed to help robots reason about the physical world. 🤖
+> 
+> Gemini Robotics-ER 1.6 has significantly better visual and spatial understanding in order to plan and complete more useful tasks. Here’s why this is important 🧵
+
+---
+
