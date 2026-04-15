@@ -45,3 +45,14 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**19:31 JST** | [原文](https://x.com/GoogleDeepMind/status/2044371975636734387)
+
+> RT André Araujo
+> True multimodal AI needs to understand the world spatially 🎯
+> 🚀 Excited to release #CVPR2026 TIPSv2 from @GoogleDeepMind, a foundational image-text encoder with spatial awareness, leading to strong overall results and massive gains on patch-text alignment. 🔥
+> 1/N
+
+---
+
