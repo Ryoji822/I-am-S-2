@@ -17,3 +17,12 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**19:00 JST** | [原文](https://x.com/demishassabis/status/2044180701168242986)
+
+> RT Waymo
+> London, we’re taking the next step! 🚙 We’re officially beginning autonomous driving with a trained specialist behind the wheel. We can’t wait to offer Londoners a quiet, convenient, and magical way to connect to the Tube, bus, or their final destination later this year.
+
+---
+

@@ -16,3 +16,21 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**05:23 JST** | [原文](https://x.com/joshwoodward/status/2044149482548580689)
+
+> New in Gemini: NEET practice tests! 🇮🇳🩺
+> 
+> Sending good luck to everyone taking India's biggest medical exam in a few weeks. You've got this!
+> 
+> We’re working on adding more practice tests for different subjects and countries. What should we add next? Let us know below 👇
+> 
+> Google India: Full length, no cost NEET UG practice tests are now in @GeminiApp, isn’t that neat? 😄
+> 
+> Say “I want to take a NEET mock test” and begin ✍️
+> 
+> Read here: http://goo.gle/NEERPrep
+
+---
+

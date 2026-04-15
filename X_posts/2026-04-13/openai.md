@@ -46,3 +46,16 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**22:51 JST** | [原文](https://x.com/OpenAIDevs/status/2044194854486585757)
+
+> RT JetBrains
+> JetBrains is hosting a hackathon with OpenAI in San Francisco on April 18–19 to explore Codex inside the IDE. Join our engineers to build new tools, workflows, and developer experiences.
+> 
+> In SF? Apply here: https://cerebralvalley.ai/e/jetbrains-x-openai-hack
+> 
+> Everyone else, stay tuned for updates!
+
+---
+
