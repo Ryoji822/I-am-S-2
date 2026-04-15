@@ -30,3 +30,26 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**16:46 JST** | [原文](https://x.com/EthanJPerez/status/2044476276556320987)
+
+> RT Aman
+> 🚨 Applications for the Anthropic Fellows Program are OPEN
+> 
+> This is not your average internship:
+> 
+> > 4 months of full-time AI research
+> > Direct mentorship from top Anthropic researchers
+> > $3,850/month stipend + $15K/month compute budget
+> > Access to global AI safety community
+> > Option to work from SF, London, or remote
+> 
+> Basically, you get paid to work on cutting-edge AI problems with insane resources.
+> 
+> If you’re even slightly into AI/ML this is a no brainer.
+> 
+> Apply before it gets crazy competitive.
+
+---
+
