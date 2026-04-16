@@ -143,3 +143,38 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**10:42 JST** | [原文](https://x.com/gdb/status/2044592321866408069)
+
+> encouraging commentary from Terence Tao!
+> 
+> Haider.: mathematician Terence Tao on the gpt-5.4 pro solving Erdős problem #1196:
+> 
+> "the AI-generated paper may have made a meaningful contribution by revealing a deeper mathematical connection that earlier work had not clearly made explicit,
+> 
+> which value beyond solving this particular
+
+---
+
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**19:12 JST** | [原文](https://x.com/kevinweil/status/2044763918330195992)
+
+> RT Jared Duker Lichtman
+> Last year, this news would have been science-fiction:
+> 
+> GPT5.4 Pro found an elegant solution to a 60 year old conjecture, Erdős Problem #1196. The proof subverted the natural human intuitions.
+> 
+> A day later, the proof was fully formalized in Lean by Gauss.
+> 
+> What a time to be alive
+> 
+> Math, Inc.: In surprising news, GPT5.4 Pro just found a solution Erdos Problem #1196.
+> 
+> Now Gauss has formalized the proof of #1196! 
+> 
+> The initial proof was 7.2K lines of Lean, done in ~5 hours. Subsequent golfing has compressed it down to 4K lines. (sorry-free, with comparator check)
+
+---
+

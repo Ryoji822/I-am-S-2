@@ -74,3 +74,51 @@
 
 ---
 
+## @AnthropicAI (Anthropic - 公式アカウント)
+
+**23:29 JST** | [原文](https://x.com/AnthropicAI/status/2044786024644301250)
+
+> RT Claude
+> Introducing Claude Opus 4.7, our most capable Opus model yet.
+> 
+> It handles long-running tasks with more rigor, follows instructions more precisely, and verifies its own outputs before reporting back.
+> 
+> You can hand off your hardest work with less supervision.
+
+---
+
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**23:50 JST** | [原文](https://x.com/sleepinyourhat/status/2044830361511985504)
+
+> RT Felix Rieseberg
+> Happy model launch day! Opus 4.7 is now available on all products and a significant step up from Opus 4.6. It's better at coding, computer use, finance, and general knowledge work.
+> 
+> 🧵 I'll put the 5 things I find most interesting in thread!
+
+---
+
+**23:29 JST** | [原文](https://x.com/sleepinyourhat/status/2044808574401188173)
+
+> RT Claude
+> Introducing Claude Opus 4.7, our most capable Opus model yet.
+> 
+> It handles long-running tasks with more rigor, follows instructions more precisely, and verifies its own outputs before reporting back.
+> 
+> You can hand off your hardest work with less supervision.
+
+---
+
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**23:29 JST** | [原文](https://x.com/EthanJPerez/status/2044817371815424078)
+
+> RT Claude
+> Introducing Claude Opus 4.7, our most capable Opus model yet.
+> 
+> It handles long-running tasks with more rigor, follows instructions more precisely, and verifies its own outputs before reporting back.
+> 
+> You can hand off your hardest work with less supervision.
+
+---
+
