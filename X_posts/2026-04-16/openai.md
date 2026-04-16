@@ -135,3 +135,11 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**14:06 JST** | [原文](https://x.com/gdb/status/2044643518891909289)
+
+> always a real feeling of magic to ask codex to perform a task that requires finding information scattered across slack, google docs, notion, and various internal tools, and it just figures it out
+
+---
+
