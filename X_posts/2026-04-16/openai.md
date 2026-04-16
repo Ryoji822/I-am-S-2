@@ -115,3 +115,23 @@
 
 ---
 
+## @bradlightcap (Brad Lightcap - 業務執行)
+
+**05:32 JST** | [原文](https://x.com/bradlightcap/status/2044629703076806822)
+
+> RT Srinivas Narayanan
+> Today we launched a major update to the OpenAI Agents SDK to help developers build and deploy long-running, durable agents in production.
+> 
+> You can now build your own Codex-style agents using powerful primitives for modern agents - file and computer use, skills, memory and compaction.
+> 
+> The harness and compute are now split - you can bring your own sandbox or use partners like Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, and Vercel for container execution.
+> 
+> The harness is open-source and so you can inspect and customize it for your needs.
+> 
+> Try it out!
+> https://openai.com/index/the-next-evolution-of-the-agents-sdk/
+> 
+> Really fantastic work by @stevendcoffey and the API team!
+
+---
+
