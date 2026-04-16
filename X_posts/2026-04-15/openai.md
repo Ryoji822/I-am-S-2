@@ -31,3 +31,17 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**12:19 JST** | [原文](https://x.com/gdb/status/2044254201505611833)
+
+> GPT-5.4 Pro for making beautiful contributions to mathematics:
+> 
+> Leeham: GPT-5.4 Pro solves Erdős Problem #1196!
+> 
+> Very pleased with this result; definitely my favourite thus far! This problem has been thought about for some time which makes this reasonably impressive and meaningful (see Lichtman's comments below). 
+> 
+> Formalisation is underway!
+
+---
+
