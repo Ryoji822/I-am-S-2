@@ -1,7 +1,7 @@
 {
-  "version": "3.50",
-  "last_updated": "2026-04-15",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.50: Arbiter統合判断完了。2件更新（SCN-001 +1% Meta囲い込み転換・SCN-003 -1% 性能差非縮小で収斂前提と矛盾）。合計100%維持（24+37+27+12=100%）",
+  "version": "3.51",
+  "last_updated": "2026-04-16",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.51: Arbiter統合判断完了。2件更新取消（SCN-001 ±0%・SCN-002 ±0%）。Red指摘でBlue提案シフト取消。IND-027 high移行とSCN-001上昇の矛盾考慮。合計100%維持（24+37+27+12=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -24,8 +24,8 @@
       "quadrant_label": "閉鎖 × 格差拡大",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 24,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.50: +1%（23→24%）。Meta Muse Sparkプロプライエタリ化（INFO-065/095）はOSS最大推進企業の囲い込み転換。OpenAI Codex従量課金もプラットフォーム囲い込みのC。MCP標準化のI相殺を上回る診断的価値",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v3.51: ±0%（24%維持）。Blue +1%をRed指摘で取消。診断的価値を「高」に引き下げたことで囲い込みシグナル弱化。IND-027 high移行とSCN-001上昇の論理的矛盾未解決。5ラウンド連続一方向シフトのアンカリングリスク考慮",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -46,7 +46,7 @@
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 37,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.50: ±0%（37%維持）。Gemma 4 Apache 2.0・MCP 177Kツールは開放性の強力なC。Gemini 3.1 Pro MMMU首位は格差拡大のC。5ラウンド連続±0%または+1%のアンカリングに注意",
+      "probability_rationale": "Arbiter v3.51: ±0%（37%維持）。Blue -1%をRed指摘で取消。IND-027 high移行はSCN-002の強力な支持。MCP 177Kツール・全主要企業対応は開放性の強力な進展。6ラウンド連続±0%または微変動のアンカリングに注意",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -66,8 +66,8 @@
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 27,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.50: -1%（28→27%）。74%ベンダー依存・エージェントコンテキスト蓄積はCだが、性能差が非縮小（Gemini 95.0%・Muse Spark HLE 58%）でSCN-003前提（収斂）と矛盾深刻化。Meta囲い込みはSCN-001のCでありSCN-003（収斂）ではない",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v3.51: ±0%（27%維持）。74%ベンダー依存・エージェントコンテキスト蓄積はCだが、性能差が非縮小（Gemini 95.0%・Muse Spark HLE 58%）でSCN-003前提（収斂）と矛盾深刻化継続",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -88,7 +88,7 @@
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 12,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.50: ±0%（12%維持）。Mistral $830M調達・Forge・OSS同等はC。Meta囲い込みは強力なI。相殺",
+      "probability_rationale": "Arbiter v3.51: ±0%（12%維持）。Mistral $830M調達・Forge・OSS同等はC。Meta囲い込みは強力なI。相殺",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -109,7 +109,7 @@
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
       "probability": 16,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.50: ±0%（16%維持）。能力向上継続するが新規大規模事故なし",
+      "probability_rationale": "Arbiter v3.51: ±0%（16%維持）。能力向上継続するが新規大規模事故なし",
       "impact": "catastrophic",
       "indicators": ["IND-013", "IND-018", "IND-023"]
     },
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-04-15",
-    "note": "SCN-001(24) + SCN-002(37) + SCN-003(27) + SCN-004(12) = 100%. Arbiter v3.50完了"
+    "verified_date": "2026-04-16",
+    "note": "SCN-001(24) + SCN-002(37) + SCN-003(27) + SCN-004(12) = 100%. Arbiter v3.51完了"
   }
 }

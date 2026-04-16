@@ -1,8 +1,9 @@
 {
-  "version": "3.50",
-  "last_updated": "2026-04-15",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.50: Arbiter統合判断完了.7指標更新（全件状態変更なし・last_checked更新）. IND-013 high維持・IND-025 elevated維持・IND-026 elevated維持・IND-027 elevated維持（high移行接近）・IND-028 elevated維持・IND-029 elevated維持・IND-030 elevated維持. Agent普及速度>セキュリティ成熟速度継続",
+  "version": "3.51",
+  "last_updated": "2026-04-16",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.51: Arbiter統合判断完了. 7指標更新（IND-027 elevated→high移行・他6件状態変更なし・last_checked更新）. MCP業界標準確定でIND-027 high移行. Agent普及速度>セキュリティ成熟速度継続",
   "structural_changes_log": [
+    "2026-04-16 v3.51: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。7指標更新。IND-027 elevated→high移行（MCP 177Kツール・10K+サーバー・97クライアント・Cloudflare/AWS参照アーキテクチャ・AAIFガバナンス・全主要AI企業対応で業界標準として臨界量超過。注記: 177Kツール品質分布確認を条件・標準化早計性リスク・断片化リスク監視継続）。IND-013 high維持（Computer Use Agent C2リスク・94%スプロール懸念で攻撃対象拡大）・IND-025 elevated維持（テキスト-マルチモーダル乖離の構造的課題継続・Gemini 3.1 Pro MMMU 88.21%）・IND-026 elevated維持（普及>品質成熟の構造強化・5社同時SDKアップデートは転換点）・IND-028 elevated継続（主観-客観乖離過去最大水準維持・ARC-AGI-3全0%）・IND-029 elevated継続（投資規模指数関数的加速・Q1 $297B記録的調達）・IND-030 elevated継続（能力向上とリスク増大の同時進行持続・社会的反発の暴力化は新局面）",
     "2026-04-15 v3.50: Arbiter統合判断（COMPLETE状態）。Blue完了・Red 2026-04-11参照比較。7指標更新（全件状態変更なし）。IND-013 high継続（AWS Agent Registry新攻撃面・採用327%急増で攻撃対象拡大）・IND-025 elevated継続（SWE-Bench 93.9%とマルチモーダル59%乖離継続・Muse Spark MMMU-Pro 80.4%）・IND-026 elevated継続（3社同時本番化は転換点・19%導入・80%データ課題）・IND-027 elevated継続（MCP 177Kツールに急拡大・high移行条件に接近）・IND-028 elevated継続（ARC-AGI-3全<1%・主観-客観乖離過去最大水準維持）・IND-029 elevated継続（Q1 $297B・AI企業$188B・ByteDance $6000億）・IND-030 elevated継続（Mythos公開見送り・SCR確定・AI解雇80K・ARC-AGI-3 0%）",
     "2026-04-11 v3.47: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。7指標更新（全件状態変更なし）。IND-013 high維持（Mythos数十年未検出脆弱性発見・認証情報漏洩研究・Altman宅火炎瓶投擲）・IND-025 elevated維持（Gemini 3Dシミュレーション・Mythos マルチモーダル59%・Alibaba HappyHorse #1）・IND-026 elevated維持（88%本番前失敗・94%スプロール懸念）・IND-027 elevated維持（AAIF 170+・Gemma 4 Apache 2.0）・IND-028 elevated継続（ARC-AGI-3全<1%・主観的AGI宣言の乖離過去最大）・IND-029 elevated継続（Q1 $221B・Meta $35B+・OpenAI $122B）・IND-030 elevated継続（Mythos SWE-Bench 93%+脆弱性発見・DOD無制限アクセス要求）",
     "2026-04-10 v3.46: Arbiter統合判断（COMPLETE状態）。Blue完了・Red v3.45参照比較。7指標更新（全件状態変更なし）。IND-013 high維持（OpenAI/Anthropicサイバー製品限定リリース・ソースコード漏洩・Bedrock新攻撃面）・IND-025 elevated維持（Gemini 3D可視化・Lyria 3音楽生成）・IND-026 elevated維持（88%本番前失敗・95%パイロット失敗・94%スプロール懸念）・IND-027 elevated維持（MCP数万サーバー・AAIF 170+・Google Gemini API Docs MCP）・IND-028 elevated維持（Amodei宣言・研究速度1.6x・ARC-AGI-3フロンティア1%未満）・IND-029 elevated維持（Q1 $221B・Meta $21B CoreWeave・Amazon $20B+チップARR）・IND-030 elevated維持（Mythos Cybench 100%・Glasswing閾値到達）",
@@ -21,9 +22,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "AWS Agent Registry新攻撃面・エージェントROI 171%採用急増で攻撃対象拡大・採用327%急増",
-      "last_checked": "2026-04-15",
-      "rationale": "Arbiter v3.50: high継続。攻撃ベクトル多様化継続。エージェント採用急増（327%）は攻撃対象の拡大を意味する。critical移行条件（大規模AI攻撃インシデント）に未到達"
+      "last_value": "Computer Use Agent C2悪用リスク・Emil Michael利益相反・94%スプロール懸念で攻撃対象拡大",
+      "last_checked": "2026-04-16",
+      "rationale": "Arbiter v3.51: high継続。攻撃ベクトル多様化継続。エージェント採用急増で攻撃対象拡大。critical移行条件（大規模AI攻撃インシデント）に未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -32,9 +33,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Mythos マルチモーダル59%（SWE-Bench 93.9%と乖離継続）・Muse Spark MMMU-Pro 80.4%・Gemini 3.1 Pro MMMU 88.21%",
-      "last_checked": "2026-04-15",
-      "rationale": "Arbiter v3.50: elevated継続。テキスト性能とマルチモーダル性能の乖離継続。性能向上はあるが「真の理解」検証は未解決"
+      "last_value": "Mythos マルチモーダル59%（SWE-Bench 93.9%と乖離継続）・Muse Spark MMMU-Pro 80.4%・Gemini 3.1 Pro MMMU 88.21%・Robotics-ER 1.6視覚空間推論改善",
+      "last_checked": "2026-04-16",
+      "rationale": "Arbiter v3.51: elevated継続。テキスト性能とマルチモーダル性能の乖離継続。性能向上はあるが「真の理解」検証は未解決"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -43,20 +44,20 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "AWS Agent Registry・Azure Agent Service・Managed Agents GAで本番化加速。採用327%急増（INFO-096）。但し19%のみデプロイ・80%データ課題",
-      "last_checked": "2026-04-15",
-      "rationale": "Arbiter v3.50: elevated継続。普及>品質成熟の構造強化。主要プラットフォーム3社同時本番化は転換点"
+      "last_value": "Fortune 500 42%デプロイ（前年18%）・5社同時SDKアップデートは転換点。但し94%スプロール懸念・DORA生産性パラドックス（バグ+9%）",
+      "last_checked": "2026-04-16",
+      "rationale": "Arbiter v3.51: elevated継続。普及>品質成熟の構造強化。5社同時SDKアップデートは転換点。但し品質指標は悪化"
     },
     "IND-027": {
       "indicator_id": "IND-027",
       "name": "エコシステム標準化進展度",
       "description": "MCP/A2A等のオープンスタンダードの業界採用率と実装状況",
-      "current_status": "elevated",
+      "current_status": "high",
       "trend": "rising",
-      "alert_level": "elevated",
-      "last_value": "MCP 10,000+サーバー・177,000ツール・97クライアント（大幅増）・Cloudflare MCP参照アーキテクチャ・AWS ECS MCPデプロイ",
-      "last_checked": "2026-04-15",
-      "rationale": "Arbiter v3.50: elevated継続。MCP 177Kツールに急拡大。high移行条件「業界標準として定着」に接近。次回high移行検討"
+      "alert_level": "high",
+      "last_value": "MCP 177,000ツール・10,000+サーバー・97クライアント・Cloudflare/AWS参照アーキテクチャ・AAIFガバナンス（Linux Foundation配下）・全主要AI企業対応",
+      "last_checked": "2026-04-16",
+      "rationale": "Arbiter v3.51: elevated→high移行。MCPが業界標準として臨界量超過（177Kツール・10K+サーバー・97クライアント）。4条件同時達成: 規模・エンタープライズ参照アーキテクチャ・ガバナンス・全主要企業対応。注記: 177Kツール品質分布確認を条件・標準化早計性リスク（公開約5ヶ月）・断片化リスク（SOAP/CORBA前例）監視継続"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -65,9 +66,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "ARC-AGI-3全フロンティア<1%・GPT-5.4/Opus 4.6は0%・Altman 2028年宣言・LeCun反論・Hassabis 2030-2035年",
-      "last_checked": "2026-04-15",
-      "rationale": "Arbiter v3.50: elevated継続。主観-客観乖離過去最大水準維持。high移行条件: RSI実証の再現確認・ARC-AGI-3有意改善"
+      "last_value": "ARC-AGI-3全フロンティア0%（GPT-5.4/Opus 4.6/3.1 Pro）・OpenAI 9月リサーチインターンレベル目標・LeCun vs Bengio見解分岐",
+      "last_checked": "2026-04-16",
+      "rationale": "Arbiter v3.51: elevated継続。主観-客観乖離過去最大水準維持。high移行条件: RSI実証の再現確認・ARC-AGI-3有意改善"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -76,9 +77,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Q1 $297B調達・AI企業$188B・OpenAI 1.9GW・Anthropic複数GW TPU・ByteDance $6000億",
-      "last_checked": "2026-04-15",
-      "rationale": "Arbiter v3.50: elevated継続。投資規模指数関数的加速。high移行条件: データセンター電力制約の広範な稼働率低下"
+      "last_value": "Gartner 2026年$1.37T支出・OpenAI 1.9GW・Anthropic複数GW TPU・Q1 $297B記録的調達",
+      "last_checked": "2026-04-16",
+      "rationale": "Arbiter v3.51: elevated継続。投資規模指数関数的加速。high移行条件: データセンター電力制約の広範な稼働率低下"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -87,9 +88,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Mythos公開見送り（能力高・リスク高）・SCR確定（政治リスク）・AI解雇80K（社会リスク）・ARC-AGI-3 0%（能力限界と宣言の乖離）",
-      "last_checked": "2026-04-15",
-      "rationale": "Arbiter v3.50: elevated継続。能力向上とリスク増大の同時進行持続。SCR確定は政治-技術リスクの融合例"
+      "last_value": "テキサスAIデータセンター火炎瓶攻撃・再帰的自己改善の初期段階・Nature論文でサブリミナル学習実証",
+      "last_checked": "2026-04-16",
+      "rationale": "Arbiter v3.51: elevated継続。能力向上とリスク増大の同時進行持続。社会的反発の暴力化は新局面"
     }
   }
 }
