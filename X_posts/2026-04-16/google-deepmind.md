@@ -31,3 +31,14 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**01:07 JST** | [原文](https://x.com/JeffDean/status/2044613378543628423)
+
+> RT Logan Kilpatrick
+> Introducing Gemini 3.1 Flash TTS 🗣️, our latest text to speech model with scene direction, speaker level specificity, audio tags, more natural + expressive voices, and support for 70 different languages.
+> 
+> Available via our new audio playground in AI Studio and in the Gemini API!
+
+---
+
