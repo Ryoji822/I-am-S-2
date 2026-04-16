@@ -19,6 +19,7 @@ env:
   GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
   FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
   SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+  SLACK_USER_ID: ${{ secrets.SLACK_USER_ID }}
 
 jobs:
   intelligence-pipeline:

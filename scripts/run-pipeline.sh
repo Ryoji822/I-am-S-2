@@ -435,11 +435,9 @@ if [[ "$STATIC_CHANGED" == "true" ]]; then
   # Read notification config
   NOTIFICATION_CONFIG="$PROJECT_DIR/config/notification.json"
   if [[ -f "$NOTIFICATION_CONFIG" ]]; then
-    SLACK_USER_ID=$(python3 -c "import json; print(json.load(open('$NOTIFICATION_CONFIG'))['slack']['user_id'])" 2>/dev/null || echo "")
     REPO_URL=$(python3 -c "import json; print(json.load(open('$NOTIFICATION_CONFIG'))['repo_url'])" 2>/dev/null || echo "")
   else
     log_warn "config/notification.json not found. Skipping Slack notification."
-    SLACK_USER_ID=""
     REPO_URL=""
   fi
 
@@ -461,9 +459,9 @@ if [[ "$STATIC_CHANGED" == "true" ]]; then
         -H "Content-Type: application/json" \
         -d "{\"channel\":\"$DM_CHANNEL\",\"text\":\"$SLACK_MSG\"}" > /dev/null 2>&1
 
-      log_ok "Slack DM sent to $SLACK_USER_ID"
+      log_ok "Slack DM sent"
     else
-      log_warn "Failed to open DM channel with $SLACK_USER_ID"
+      log_warn "Failed to open DM channel"
     fi
   else
     log_warn "SLACK_BOT_TOKEN not set or user_id missing. Skipping Slack notification."
