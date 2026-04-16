@@ -46,3 +46,31 @@
 
 ---
 
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**05:27 JST** | [原文](https://x.com/sleepinyourhat/status/2044536249810358524)
+
+> RT Richard Korzekwa
+> It's been more than a week, and @sleepinyourhat still hasn't answered this question. What is he hiding?
+> 
+> Dan McAteer: @sleepinyourhat @jaskol_ski Sam, what we all really want to know:
+> 
+> What kind of sandwich?
+
+---
+
+**04:09 JST** | [原文](https://x.com/sleepinyourhat/status/2044536319251235002)
+
+> RT Anthropic
+> Research we co-authored on subliminal learning—how LLMs can pass on traits like preferences or misalignment through hidden signals in data—was published today in @Nature. 
+> 
+> Read the paper: https://www.nature.com/articles/s41586-026-10319-8
+> 
+> Owain Evans: Our paper on Subliminal Learning was just published in Nature!
+> 
+> Last July we released our preprint. It showed that LLMs can transmit traits (e.g. liking owls) through data that is unrelated to that trait (numbers that appear meaningless).
+> 
+> What’s new?🧵
+
+---
+
