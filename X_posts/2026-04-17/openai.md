@@ -276,3 +276,14 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**23:45 JST** | [原文](https://x.com/OpenAIDevs/status/2045157461578203408)
+
+> RT Vaibhav (VB) Srivastav
+> idk what your AGI definition is but subagents & computer use in codex is pretty close!!
+> 
+> *video in realtime
+
+---
+

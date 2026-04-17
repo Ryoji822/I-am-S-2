@@ -30,3 +30,16 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**03:56 JST** | [原文](https://x.com/GoogleDeepMind/status/2045118463010545688)
+
+> RT Google AI Studio
+> [pumped] gemini 3.1 flash text-to-speech just landed in ai studio.
+> 
+> you can now trigger specific vocal delivery like pace and accent by including [tags] in front of dialogue.
+> 
+> iterate in composer view then export the code to start building.
+
+---
+
