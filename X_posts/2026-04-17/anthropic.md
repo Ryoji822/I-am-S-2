@@ -37,3 +37,20 @@
 
 ---
 
+## @jackclarkSF (Jack Clark - 共同創業者 / Policy)
+
+**13:20 JST** | [原文](https://x.com/jackclarkSF/status/2044994317106987464)
+
+> My toddler couldn't sleep so they snuggled next to me on the couch while I read an extremely dry and finicky Huawei paper on low-bit precision training. It was oddly beautiful to be pecking away at my newsletter while my kid occasionally made me take breaks to quack like a duck.
+
+---
+
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**03:14 JST** | [原文](https://x.com/EthanJPerez/status/2044996150466605418)
+
+> RT Daniel Eth (yes, Eth is my actual last name)
+> OpenAI gov affairs team be like, “at long last, we have enacted the torment policy, from OpenAI policy team’s blog post ‘Don’t Enact The Torment Policy’”
+
+---
+

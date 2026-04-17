@@ -219,3 +219,45 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**13:38 JST** | [原文](https://x.com/gdb/status/2044998874566406314)
+
+> it's the little details
+> 
+> Ed: this flow
+
+---
+
+**13:19 JST** | [原文](https://x.com/gdb/status/2044994088739749996)
+
+> imagegen in codex is easy to underestimate, but it's quite powerful:
+> 
+> Won Park: Image generation is now live in Codex!
+> 
+> You can now generate visuals, edit existing images, and create GIFs from a single image directly inside Codex.
+> 
+> I spent a lot of time testing different use cases while working on this feature, and it was genuinely impressive to see how
+
+---
+
+**04:09 JST** | [原文](https://x.com/gdb/status/2044855706273391084)
+
+> Codex is becoming a turbocharged partner for everything you want your computer to do for you:
+> 
+> OpenAI: Codex for (almost) everything.
+> 
+> It can now use apps on your Mac, connect to more of your tools, create images, learn from previous actions, remember how you like to work, and take on ongoing and repeatable tasks.
+
+---
+
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**14:02 JST** | [原文](https://x.com/kevinweil/status/2045004924682195027)
+
+> The new codex computer use is shockingly good
+> 
+> Ari Weinstein: This is the first time I've ever seen an LLM operate a GUI as fast as a person, and it's surreal.
+
+---
+
