@@ -207,3 +207,15 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**13:01 JST** | [原文](https://x.com/npew/status/2044989510984110190)
+
+> Computer Use with Codex is magical. Works in the background. Doesn't interrupt your flow.
+> 
+> OpenAI: With computer use on macOS, Codex can now use any app by seeing, clicking, and typing with its own cursor.
+> 
+> It runs in the background without taking over your computer, working on tasks like frontend iteration, app testing, or any workflow that doesn't expose an API.
+
+---
+

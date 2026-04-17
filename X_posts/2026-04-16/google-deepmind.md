@@ -94,3 +94,20 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**00:00 JST** | [原文](https://x.com/joshwoodward/status/2044986002088038502)
+
+> RT Google Gemini
+> Personal Intelligence in Gemini is expanding to more people globally. 🌏
+> 
+> Google AI Ultra, Pro, and Plus subscribers around the world can access the feature starting today, with a rollout to free users coming soon.
+> 
+> More information on where Personal Intelligence is available: http://goo.gle/422uhnd
+> 
+> Google Gemini: Personal Intelligence is rolling out to more users for free across the Gemini app and Gemini in @GoogleChrome in the U.S.
+> 
+> Access smarter responses uniquely relevant to you if you choose to connect your @Google apps like Search, @Gmail, @GooglePhotos, and @YouTube.🧵
+
+---
+
