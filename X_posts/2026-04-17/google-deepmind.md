@@ -19,3 +19,14 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**01:04 JST** | [原文](https://x.com/demishassabis/status/2044919645488939363)
+
+> RT Google Gemini
+> Personal Intelligence 🤝 Nano Banana 2
+> 
+> Personal Intelligence now gives Gemini an understanding of your preferences and interests when generating images, so you can spend more time creating and less time explaining.
+
+---
+

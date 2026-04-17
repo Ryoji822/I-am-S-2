@@ -42,3 +42,55 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**16:41 JST** | [原文](https://x.com/demishassabis/status/2044944174097563943)
+
+> RT Similarweb
+> Gen AI traffic share update
+> 
+> Main takeaways:
+> 
+> → Gemini holds a quarter of the share.
+> → Claude almost doubled its share between February and March, crossing the 6% mark.
+> → DeepSeek surpassed Grok again.
+> → We’ve added http://m365.cloud.microsoft/chat to Copilot’s share, which explains the increase from previous updates.
+> 
+> 🗓️ 12 months ago:
+> ChatGPT: 77.43% 
+> Grok: 7.03%
+> Gemini: 6.00%
+> DeepSeek: 3.73% 
+> Perplexity: 1.66% 
+> Claude: 1.40% 
+> Copilot: 1.38%
+> 
+> 🗓️ 6 months ago:
+> ChatGPT: 71.75% 
+> Gemini: 13.56% 
+> Grok: 4.08%
+> DeepSeek: 2.81% 
+> Perplexity: 2.51% 
+> Claude: 2.26% 
+> Copilot: 2.01%
+> 
+> 🗓️ 3 months ago:
+> ChatGPT: 63.19%
+> Gemini: 22.59%
+> DeepSeek: 4.08%
+> Grok: 3.26%
+> Claude: 2.22%
+> Perplexity: 1.86%
+> Copilot: 1.80%
+> 
+> 🗓️ 1 month ago:
+> ChatGPT: 56.72%
+> Gemini: 25.46%
+> Claude: 6.02%
+> DeepSeek: 3.74%
+> Grok: 3.44%
+> Copilot: 1.99%
+> Perplexity: 1.64%
+
+---
+

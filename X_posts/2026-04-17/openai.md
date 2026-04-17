@@ -87,3 +87,113 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**06:01 JST** | [原文](https://x.com/OpenAIDevs/status/2044886836573843543)
+
+> RT Juan Pa
+> http://x.com/i/article/2044648884241055745
+
+---
+
+**04:02 JST** | [原文](https://x.com/OpenAIDevs/status/2044918678991585683)
+
+> RT NVIDIA
+> Congratulations @OpenAI on bringing Codex to more of the software workflow. 🎉
+> 
+> Codex is becoming a system for more of a developer’s workflow, helping them move across tools, create richer outputs, adapt to how they work, and carry longer-running tasks forward.
+> 
+> OpenAI: Codex for (almost) everything.
+> 
+> It can now use apps on your Mac, connect to more of your tools, create images, learn from previous actions, remember how you like to work, and take on ongoing and repeatable tasks.
+
+---
+
+**03:43 JST** | [原文](https://x.com/OpenAIDevs/status/2044880946600771903)
+
+> RT Max Weinbach
+> Expo plugin for Codex is huge
+
+---
+
+**03:35 JST** | [原文](https://x.com/OpenAIDevs/status/2044889093054894217)
+
+> RT Nick
+> http://x.com/i/article/2044833644498608128
+
+---
+
+**03:00 JST** | [原文](https://x.com/OpenAIDevs/status/2044889059026424082)
+
+> RT Derrick Choi
+> Really excited about today's @OpenAI Codex release that pushes it from a coding assistant toward a real workspace for the kinds of tasks you do on your computer. 
+> 
+> The team is firing and we have even more in store.
+> 
+> 🧵Here are my 11 favorite capabilities we announced today
+
+---
+
+## @sama (Sam Altman - CEO)
+
+**08:30 JST** | [原文](https://x.com/sama/status/2044921348540264614)
+
+> I am happy everyone is switching to Codex, but Tibo if you start rate limiting me or making me use worse models...
+> 
+> Tibo: Codex
+> 
+> Compute efficient ✅
+> Always up, never down ✅
+> Best at hardcore engineering ✅
+> Crazy good app, first to escape the terminal ✅
+
+---
+
+**04:47 JST** | [原文](https://x.com/sama/status/2044920514205139430)
+
+> RT Tibo
+> Codex
+> 
+> Compute efficient ✅
+> Always up, never down ✅
+> Best at hardcore engineering ✅
+> Crazy good app, first to escape the terminal ✅
+
+---
+
+**04:33 JST** | [原文](https://x.com/sama/status/2044920923078447296)
+
+> RT OpenAI
+> Introducing GPT-Rosalind, our frontier reasoning model built to support research across biology, drug discovery, and translational medicine.
+
+---
+
+**04:09 JST** | [原文](https://x.com/sama/status/2044920562901021107)
+
+> RT James Sun
+> We are super excited to launch the in-app browser inside Codex with comment mode!   
+> 
+> View any web pages & iterate with your agent quickly with just point and click.  
+> 
+> Codex will automatically capture a screenshot, the DOM element, and feed it as precise context to your next chat.  
+> 
+> No more switching between browsers, dragging screenshots, and wrangling with underspecified prompts.   
+> 
+> It's great for front-end development of apps/pages, but also very useful if you have documentation pulled up on the side and just want to ask a question!
+
+---
+
+## @gdb (Greg Brockman - 共同創業者)
+
+**06:33 JST** | [原文](https://x.com/gdb/status/2044891908213027032)
+
+> Announcing GPT-Rosalind, our frontier model for life science research.
+> 
+> This model is a step towards one of our most important goals — accelerating science and improving human outcomes.
+> 
+> Excited to work with many amazing partners on deploying and improving this model.
+> 
+> OpenAI: Introducing GPT-Rosalind, our frontier reasoning model built to support research across biology, drug discovery, and translational medicine.
+
+---
+
