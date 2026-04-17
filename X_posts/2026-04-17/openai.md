@@ -261,3 +261,18 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**06:33 JST** | [原文](https://x.com/jasonkwon/status/2045066554308718930)
+
+> RT Greg Brockman
+> Announcing GPT-Rosalind, our frontier model for life science research.
+> 
+> This model is a step towards one of our most important goals — accelerating science and improving human outcomes.
+> 
+> Excited to work with many amazing partners on deploying and improving this model.
+> 
+> OpenAI: Introducing GPT-Rosalind, our frontier reasoning model built to support research across biology, drug discovery, and translational medicine.
+
+---
+

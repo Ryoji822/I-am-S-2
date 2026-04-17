@@ -54,3 +54,16 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**03:04 JST** | [原文](https://x.com/EthanJPerez/status/2045065063208476903)
+
+> RT Samuel Marks
+> Cool to see that Meta conducted and published a pre-deployment investigation of Muse Spark behaviors like reward hacking, honesty, and evaluation awareness!
+> 
+> Summer Yue: 🚀 Muse Spark Safety & Preparedness Report for Meta AI is out.
+> 
+> We start with our pre-deployment assessment under Meta's Advanced AI Scaling Framework, covering chemical and biological, cybersecurity, and loss of control risks. Our assessment flagged potentially elevated chem/bio
+
+---
+
