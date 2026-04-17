@@ -197,3 +197,13 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**10:12 JST** | [原文](https://x.com/OpenAIDevs/status/2044946989633482871)
+
+> RT @render: Codex writes your code → Codex ships it on Render.
+> 
+> We built a Codex plugin with @OpenAI that lets you deploy, debug, and monit…
+
+---
+
