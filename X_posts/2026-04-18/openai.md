@@ -84,3 +84,48 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**22:13 JST** | [原文](https://x.com/OpenAIDevs/status/2045490833005400458)
+
+> You can just build things.
+> 
+> Evan Bacon 🥓: Building an iPhone app directly in Codex desktop with iOS simulator
+
+---
+
+## @sama (Sam Altman - CEO)
+
+**20:20 JST** | [原文](https://x.com/sama/status/2045523881012981785)
+
+> RT Paul Graham
+> "Ron discovered how to be the investor of the future by accident. He didn't foresee the future of startup investing, realize it would pay to be upstanding, and force himself to behave that way. It would feel unnatural to him to behave any other way."
+> 
+> https://paulgraham.com/ronco.html
+
+---
+
+## @gdb (Greg Brockman - 共同創業者)
+
+**18:52 JST** | [原文](https://x.com/gdb/status/2045440270188364117)
+
+> codex makes work plain fun
+
+---
+
+## @markchen90 (Mark Chen - 研究責任者)
+
+**21:22 JST** | [原文](https://x.com/markchen90/status/2045478019079258120)
+
+> Not true. Science is more important than ever.
+> 
+> The future can’t be about dumping results on the community en masse. We need to work with scientists to use AI to accelerate discovery without stripping away the artistry. 
+> 
+> Excited for @SebastienBubeck and @ahelkky (who are both amazing scientists) to take on this mandate!
+> 
+> Hayden Field: VP of Science leaves OpenAI.
+> 
+> The company has stated in recent weeks that it's shifting its focus to coding and enterprise rather than "side quests" and has shut down existing tools like Sora & pending features like erotica. Looks like science dept was next on the chopping block.
+
+---
+
