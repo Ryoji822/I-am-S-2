@@ -67,3 +67,12 @@
 
 ---
 
+## @EthanJPerez (Ethan Perez - Research scientist)
+
+**22:36 JST** | [原文](https://x.com/EthanJPerez/status/2045201793236549799)
+
+> RT Benjamin Todd
+> Updated: how to prepare yourself for AGI
+
+---
+

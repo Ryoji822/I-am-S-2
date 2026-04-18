@@ -287,3 +287,36 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**09:36 JST** | [原文](https://x.com/jasonkwon/status/2045300232905474447)
+
+> RT OpenAI
+> To go deeper on our new Life Sciences model series, research lead @joyjiao12 and product lead Yunyun Wang joined @AndrewMayne on the OpenAI Podcast to discuss how we’re building models for biology, drug discovery, and translational medicine.
+> 
+> They cover both the opportunity and the responsibility ahead: better research workflows today, more autonomous labs over time, and careful deployment from day one.
+> 
+> OpenAI: Introducing GPT-Rosalind, our frontier reasoning model built to support research across biology, drug discovery, and translational medicine.
+
+---
+
+**04:33 JST** | [原文](https://x.com/jasonkwon/status/2045299260284158191)
+
+> RT OpenAI
+> Introducing GPT-Rosalind, our frontier reasoning model built to support research across biology, drug discovery, and translational medicine.
+
+---
+
+## @npew (Peter Welinder - 研究・技術)
+
+**23:55 JST** | [原文](https://x.com/npew/status/2045205151678685580)
+
+> RT Anthony Kroeger
+> man Codex Computer Use is actually so good
+> 
+> i've got my guy sending Slack messages, reading my Slack bookmarks, checking stuff on my browser, and i'm still trying more things
+> 
+> it's legit so good
+
+---
+
