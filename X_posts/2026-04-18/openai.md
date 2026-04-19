@@ -146,3 +146,13 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**14:34 JST** | [原文](https://x.com/gdb/status/2045375289560007029)
+
+> codex is becoming a full agentic IDE
+> 
+> Evan Bacon 🥓: Building an iPhone app directly in Codex desktop with iOS simulator
+
+---
+
