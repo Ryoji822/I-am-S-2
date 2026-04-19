@@ -1,17 +1,19 @@
 # OpenAI
 
-> 最終更新: 2026-04-17
+> 最終更新: 2026-04-19
 > 確度: 中
 
 $122B調達を完了し評価額$852Bに到達した [INFO-016](../Information/2026-04-07/collected-raw.md#INFO-016)。だが収益$13.1Bで黒字化未達、エンタープライズLLMシェア27%でAnthropic（40%）に劣後したまま。
 
-2026年4月半ば、OpenAIはCodexを「コーディングアシスタント」から**自律型開発プラットフォーム**に変えた。デスクトップアプリ操作（マウス・キーボード制御）、インアプリブラウザ、メモリ機能、111プラグイン、マルチターミナル、SSH、画像生成・編集、heartbeats（セッション間コンテキスト維持）を一挙に追加 [INFO-014](../Information/2026-04-17/collected-raw.md#INFO-014) [INFO-025](../Information/2026-04-17/collected-raw.md#INFO-025)。GPT-5.3-Codexが25時間連続稼働で30K行コードを生成し [INFO-006](../Information/2026-04-17/collected-raw.md#INFO-006)、Cursorは「OpenAIモデルは長時間自律作業で明確に優秀」と評価した。同時にAgents SDKを大幅アップデートし、7つのサンドボックスプロバイダーに対応 [INFO-010](../Information/2026-04-17/collected-raw.md#INFO-010)。囲い込みと開放が同時に進む二重運動は継続しているが、Codexの質的転換は新しいレイヤーの証拠を加えた。
+2026年4月半ば、OpenAIはCodexを「コーディングアシスタント」から**自律型開発プラットフォーム**に変えた。デスクトップアプリ操作（マウス・キーボード制御）、インアプリブラウザ、メモリ機能、111プラグイン、マルチターミナル、SSH、画像生成・編集、heartbeats（セッション間コンテキスト維持）を一挙に追加 [INFO-014](../Information/2026-04-17/collected-raw.md#INFO-014) [INFO-025](../Information/2026-04-17/collected-raw.md#INFO-025)。GPT-5.3-Codexが25時間連続稼働で30K行コードを生成し [INFO-006](../Information/2026-04-17/collected-raw.md#INFO-006)、Cursorは「OpenAIモデルは長時間自律作業で明確に優秀」と評価した。同時にAgents SDKを大幅アップデートし、7つのサンドボックスプロバイダーに対応 [INFO-010](../Information/2026-04-17/collected-raw.md#INFO-010)。
+
+そして**GPT-Rosalind**でドメイン特化モデルに乗り出した。ライフサイエンス研究向けの推論モデルで、BixBench Pass@1 0.751——人間の専門家の95%タイルを超えた [INFO-003](../Information/2026-04-19/collected-raw.md#INFO-003)。Amgen、Moderna、Allen Institute、Thermo Fisher等と提携し、Codex用Life Sciencesプラグイン（50+データベース接続）をOSS公開した。これはGPT-5.4-Cyberに続く2つ目のドメイン特化モデルで、汎用→垂直特化の製品戦略が明確になりつつある。
 
 ## 基本情報
 
 - **本社**: サンフランシスコ
 - **CEO**: Sam Altman
-- **主力製品**: ChatGPT、GPT-5.4シリーズ（Pro/mini/nano）、Agents SDK、Frontierプラットフォーム、**Codex**（desktop control・browser・memory・111 plugins・heartbeats・multi-terminal・SSH・画像生成）、Operator（CUA）、GPT-5.4-Cyber（サイバー防御特化）
+- **主力製品**: ChatGPT、GPT-5.4シリーズ（Pro/mini/nano）、Agents SDK、Frontierプラットフォーム、**Codex**（desktop control・browser・memory・111 plugins・heartbeats・multi-terminal・SSH・画像生成）、Operator（CUA）、GPT-5.4-Cyber（サイバー防御特化）、**GPT-Rosalind**（ライフサイエンス特化）
 - **推定従業員数**: 4,000人（年末までに8,000人に倍増予定）
 - **直近の資金調達**: $122B（評価額$852B）。SoftBank、Amazon（$50B）、Nvidia（$30B）、Microsoftが主要投資家
 
@@ -25,15 +27,19 @@ GPT-5.4 ProはARC-AGI-2で83.3%を記録し人間（72.4%）を超えた [INFO-0
 
 **GPT-5.3-Codex**: 25時間連続稼働で30K行コード生成を METR が検証。約7ヶ月の倍増期間を確認 [INFO-006](../Information/2026-04-17/collected-raw.md#INFO-006)。
 
-エンタープライズAI利用はYoY 8倍。**100万以上のビジネス顧客**、**300万週間アクティブCodexユーザー**に到達 [INFO-007](../Information/2026-04-16/collected-raw.md#INFO-007)。API処理は150億トークン/分。ただしLLM支出シェアは27%でAnthropic（40%）に劣後。Rampデータでは2月に-1.5%（過去最大の月間減少）を記録 [INFO-033](../Information/2026-03-22/collected-raw.md#INFO-033)。
+エンタープライズAI利用はYoY 8倍。**100万以上のビジネス顧客**、**300万週間アクティブCodexユーザー**に到達 [INFO-001](../Information/2026-04-19/collected-raw.md#INFO-001)。API処理は150億トークン/分。ただしLLM支出シェアは27%でAnthropic（40%）に劣後。Rampデータでは2月に-1.5%（過去最大の月間減少）を記録 [INFO-033](../Information/2026-03-22/collected-raw.md#INFO-033)。
+
+**GPT-Rosalind**（2026年4月16日発表）: ライフサイエンス研究向けの専門推論モデル。薬剤発見、ゲノミクス解析、タンパク質推論に最適化。BixBench Pass@1: 0.751でGemini 3.1 Pro（0.550）・GPT-5.4（0.732）を上回る [INFO-003](../Information/2026-04-19/collected-raw.md#INFO-003)。Amgen、Moderna、Allen Institute、Thermo Fisher、Los Alamos National Lab等と提携。Codex用Life Sciencesプラグイン（50+科学データベース接続）をOSS公開。Trusted Access Program（米国企業限定、研究プレビュー期間中は無料）。
 
 ## 主要動向タイムライン
 
 | 日付 | イベント | 信頼性 | 引用 |
 |------|---------|-------|------|
+| 2026-04-16 | **GPT-Rosalind**発表（ライフサイエンス特化、BixBench 0.751、人間専門家95%tile超え） | A-3 | [INFO-003](../Information/2026-04-19/collected-raw.md#INFO-003) |
 | 2026-04-16 | **Codex App大幅アップデート**（desktop control・browser・memory・111 plugins・heartbeats・multi-terminal・SSH・画像生成） | A-2 | [INFO-014](../Information/2026-04-17/collected-raw.md#INFO-014) [INFO-025](../Information/2026-04-17/collected-raw.md#INFO-025) |
-| 2026-04-17 | GPT-5.3-Codex 25hr連続稼働・METR約7ヶ月倍増期間検証 | A-1 | [INFO-006](../Information/2026-04-17/collected-raw.md#INFO-006) |
-| 2026-04-15 | Agents SDK大幅アップデート（ネイティブサンドボックス実行+7社公式パートナー） | A-3 | [INFO-010](../Information/2026-04-17/collected-raw.md#INFO-010) |
+| 2026-04-16 | Codex for (almost) everything — バックグラウンドコンピューター使用・90+新規プラグイン | A-3 | [INFO-001](../Information/2026-04-19/collected-raw.md#INFO-001) |
+| 2026-04-16 | OpenAIサイバー防衛エコシステム加速 | A-3 | [INFO-010](../Information/2026-04-19/collected-raw.md#INFO-010) |
+| 2026-04-15 | Agents SDK大幅アップデート（ネイティブサンドボックス実行+7社公式パートナー） | A-3 | [INFO-002](../Information/2026-04-19/collected-raw.md#INFO-002) [INFO-010](../Information/2026-04-17/collected-raw.md#INFO-010) |
 | 2026-04-14 | GPT-5.4-Cyber発表、TACプログラム拡大 | A-3 | [INFO-006](../Information/2026-04-16/collected-raw.md#INFO-006) |
 | 2026-04-14 | Codex価格改定（トークン使用量ベース）、$100/月Pro Tier新設 | A-3 | [INFO-045](../Information/2026-04-16/collected-raw.md#INFO-045) |
 | 2026-04-13 | Cloudflare Agent CloudにGPT-5.4/Codex統合、GA到達 | A-3 | [INFO-007](../Information/2026-04-16/collected-raw.md#INFO-007) |
@@ -51,16 +57,9 @@ GPT-5.4 ProはARC-AGI-2で83.3%を記録し人間（72.4%）を超えた [INFO-0
 
 Codexの包括的アップデートは「コーディングアシスタント」から「自律型エンタープライズ開発プラットフォーム」への質的転換を実証した [Arbiter v3.52](../state/arbiter-2026-04-17.md)。
 
-5つの機能がB2B市場での支配的地位の必要条件を満たす:
-1. Desktop control（マウス・キーボード制御）→ 企業の内部アプリケーション操作に直結 [INFO-014](../Information/2026-04-17/collected-raw.md#INFO-014)
-2. 111 plugins（CodeRabbit/GitLab等）→ エンタープライズ開発パイプライン統合 [INFO-025](../Information/2026-04-17/collected-raw.md#INFO-025)
-3. Enterprise向けpay-as-you-go → 企業向け価格設定 [INFO-014](../Information/2026-04-17/collected-raw.md#INFO-014)
-4. GPT-5.3-Codex 25hr連続稼働 → 企業ワークロード信頼性の実証 [INFO-006](../Information/2026-04-17/collected-raw.md#INFO-006)
-5. Heartbeats + memory → セッション間コンテキスト維持 [INFO-022](../Information/2026-04-17/collected-raw.md#INFO-022)
+Frontierプラットフォーム（HP、Intuit、Oracle、Uber採用）とResponses API一本化でエンタープライス基盤を固める。DoW契約でAnthropic SCR指定の間隙を突き政府市場に参入 [INFO-023](../Information/2026-03-20/collected-raw.md#INFO-023)。**Snowflake $200Mパートナーシップ**でエンタープライズデータ層への組み込みを加速 [INFO-025](../Information/2026-04-16/collected-raw.md#INFO-025)。**GPT-Rosalind**でライフサイエンス特化に進出——Amgen、Moderna等との提携で垂直市場への本格参入を開始した [INFO-003](../Information/2026-04-19/collected-raw.md#INFO-003)。GPT-5.4-Cyberと並ぶ2つ目のドメイン特化モデルで、汎用→垂直展開の戦略が形になりつつある。
 
-Frontierプラットフォーム（HP、Intuit、Oracle、Uber採用）とResponses API一本化でエンタープライス基盤を固める。DoW契約でAnthropic SCR指定の間隙を突き政府市場に参入 [INFO-023](../Information/2026-03-20/collected-raw.md#INFO-023)。**Snowflake $200Mパートナーシップ**でエンタープライズデータ層への組み込みを加速 [INFO-025](../Information/2026-04-16/collected-raw.md#INFO-025)。
-
-ただし**十分条件**（実際の市場シェアデータ・エンタープライス契約数）は依然不在。Codex WAUに消費者・個人開発者が含まれる可能性は有効。確度は62%→61%→60%→61%の推移で、Arbiterは「Codex Appの機能セットはSDKレイヤーを超えたエンタープライズ開発プラットフォーム」と判断した [Arbiter v3.52](../state/arbiter-2026-04-17.md)。
+ただし**十分条件**（実際の市場シェアデータ・エンタープライス契約数）は依然不在。Codex WAUに消費者・個人開発者が含まれる可能性は有効。確度は62%→61%→60%→61%の推移で、Arbiterは「Codex Appの機能セットはSDKレイヤーを超えたエンタープライズ開発プラットフォーム」と判断した [Arbiter v3.52](../state/arbiter-2026-04-17.md)。開発者ツール≠エンタープライズB2B、Oscar Health評価≠導入の区別は未解決 [Arbiter v3.54](../state/arbiter-2026-04-19.md)。
 
 #### MCP上に独自実行環境を構築して囲い込む（H-OAI-002、確度56%）
 
@@ -96,6 +95,7 @@ Altmanは「2028年早期にASI」と公言するが、$122B調達、8,000人増
 - **Codexが自律型開発プラットフォームに進化**——desktop control・browser・memory・111 plugins・heartbeats・SSH [INFO-014](../Information/2026-04-17/collected-raw.md#INFO-014)
 - GPT-5.3-Codex 25hr連続稼働でCursor評価「OpenAIモデルが長時間自律作業で明確に優秀」[INFO-006](../Information/2026-04-17/collected-raw.md#INFO-006)
 - GPT-5.4-Cyberでサイバー防御ドメインにも専門化 [INFO-006](../Information/2026-04-16/collected-raw.md#INFO-006)
+- **GPT-Rosalind**でライフサイエンス特化に進出（BixBench 0.751、人間専門家95%tile超え）[INFO-003](../Information/2026-04-19/collected-raw.md#INFO-003)
 - Cloudflare Agent Cloudとの統合でエッジデプロイに進出 [INFO-007](../Information/2026-04-16/collected-raw.md#INFO-007)
 
 ### 弱み
@@ -106,7 +106,8 @@ Altmanは「2028年早期にASI」と公言するが、$122B調達、8,000人増
 - Sora終了で動画生成市場から撤退、ByteDance・Googleに後れ
 - Assistants API 8月廃止は開発者離れのリスク
 - 囲い込み戦略と価格競争の二重運動が戦略の方向性を不透明にしている
-- Codex desktop controlが新たなセキュリティ攻撃表面を生む ([IND-013](../config/indicators.json)、high)
+- - Codex desktop controlが新たなセキュリティ攻撃表面を生む ([IND-013](../config/indicators.json)、high)。97%の企業が12ヶ月以内にAIエージェントインシデントを予期 [INFO-019](../Information/2026-04-19/collected-raw.md#INFO-019)
+- 43%のAI生成コード変更が本番でデバッグ必要 [INFO-019](../Information/2026-04-19/collected-raw.md#INFO-019)
 
 ### 機会
 
@@ -135,12 +136,13 @@ Altmanは「2028年早期にASI」と公言するが、$122B調達、8,000人増
 | [IND-001](../config/indicators.json) 性能の非連続ジャンプ | high | approaching | GPT-5.4 Pro ARC-AGI-2 83.3%、o3 87.5%。90%閾値まで2.5pt |
 | [IND-015](../config/indicators.json) スキル再定義 | elevated | rising | OpenClaw 5,400+スキル。Agents SDKネイティブサンドボックス追加。Codex 111 plugins |
 | [IND-008](../config/indicators.json) 大企業の集中 | elevated | — | LLM支出27%。Anthropic 40%に劣後 |
-| [IND-013](../config/indicators.json) セキュリティ侵害頻度 | high | rising | Codex desktop control新攻撃表面。Cyber Verification Programは対抗投資 |
+| [IND-013](../config/indicators.json) セキュリティ侵害頻度 | high | rising | Codex desktop control新攻撃表面。Cyber Verification Programは対抗投資。97%企業インシデント予期・43%デバッグ必要 [INFO-019](../Information/2026-04-19/collected-raw.md#INFO-019) |
 
 ## 変更履歴（直近5件のみ。詳細は git log を参照）
 
 | 日付 | 変更内容 |
 |------|---------|
+| 2026-04-19 | GPT-Rosalind（ライフサイエンス特化、BixBench 0.751、人間専門家95%tile超え）を新製品として追加。Codex "for almost everything"アップデート・Agents SDK詳細を反映。H-OAI-001 61%・H-OAI-002 56%を確認。セキュリティ指標（97%インシデント予期・43%デバッグ必要）を更新 |
 | 2026-04-17 | Codex App大幅アップデート（desktop control・browser・memory・111 plugins・heartbeats・multi-terminal・SSH・画像生成）・GPT-5.3-Codex 25hr連続稼働・7社サンドボックスパートナー（Blaxel/Cloudflare追加）を反映して戦略方向性・基本情報・タイムライン・SWOTを書き直し。H-OAI-001 60→61%に更新 |
 | 2026-04-16 | 鮮度タイムアウト対応（9日経過）。Agents SDK大幅アップデート（ネイティブサンドボックス+E2B/Daytona/Modal/Vercel 4社パートナー）、GPT-5.4-Cyber、Codex価格改定（トークン使用量ベース+$100/月Pro Tier）、100万ビジネス顧客・300万Codex WAU、Cloudflare Agent Cloud統合、Snowflake $200Mパートナーシップ、OpenAI責任制限法案支持を反映して全面書き直し。H-OAI-001 62→60%、H-OAI-002 57→56%に更新。SWOT・I&W監視ポイント・タイムライン表を新設 |
 | 2026-04-07 | $122B調達完了（評価額$852B）、#QuitGPT運動（250万削除）、Claude App Store 1位を反映。H-OAI-001 65→62%、H-OAI-002 56→57%に更新 |
