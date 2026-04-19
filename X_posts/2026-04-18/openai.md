@@ -129,3 +129,20 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**07:36 JST** | [原文](https://x.com/jasonkwon/status/2045677301225112005)
+
+> RT Tony Jacob | FindaClip.com
+> Chamath explains why Codex is better than Anthropic's Claude
+> 
+> "As it relates to complex long horizon coding tasks, what I can tell you from my team at 8090 is Codex is better generally than Anthropic." 
+> 
+> "And so what happens is for the more day-to-day work, I think it's more reliable to use the Claude ensemble of models." 
+> 
+> "But when you're dealing with something that's very tricky and very complicated, Codex is really functional and really good."
+> 
+> @chamath @theallinpod @sama @OpenAI @thsottiaux @JamesZmSun @AriX
+
+---
+
