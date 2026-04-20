@@ -27,3 +27,23 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**05:51 JST** | [原文](https://x.com/sama/status/2046330825265086712)
+
+> Tim Cook is a legend.
+> 
+> I am very thankful for everything he has done and I am very thankful for Apple.
+
+---
+
+**05:48 JST** | [原文](https://x.com/sama/status/2046330082726384051)
+
+> The internal working name for this was "telepathy", and it feels like it.
+> 
+> Tibo: We are releasing a *research preview* of Chronicle in Codex. It allows codex to build up memories based on your day to day work on your computer and then refer to these memories to be a lot more helpful.
+> 
+> Available for PRO subscriptions and on Mac to start. This is early and
+
+---
+
