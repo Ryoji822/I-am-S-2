@@ -18,3 +18,12 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**03:38 JST** | [原文](https://x.com/OpenAIDevs/status/2046298195727433731)
+
+> RT dominik kundel
+> http://x.com/i/article/2046292849482989568
+
+---
+
