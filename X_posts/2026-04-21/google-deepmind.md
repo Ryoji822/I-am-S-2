@@ -33,3 +33,30 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**06:46 JST** | [原文](https://x.com/demishassabis/status/2046380189895278775)
+
+> RT Thomas Kurian
+> Read how Google built custom silicon and infrastructure - and how it's benefiting customers today - in the latest from @Bloomberg. We'll share more updates this week at #GoogleCloudNext. 
+> https://www.bloomberg.com/news/features/2026-04-20/google-eyes-new-chips-to-speed-up-ai-results-challenging-nvidia?srnd=undefined
+
+---
+
+**06:11 JST** | [原文](https://x.com/demishassabis/status/2046394036781490445)
+
+> RT Logan Kilpatrick
+> Excited to share that Google AI subscriptions (Pro and Ultra) now work with @GoogleAIStudio!!
+> 
+> Come vibe code and use the playground with higher rate limits. Available right now!
+
+---
+
+## @OfficialLoganK (Logan Kilpatrick - AI Studio / Gemini API)
+
+**10:46 JST** | [原文](https://x.com/OfficialLoganK/status/2046405196654469256)
+
+> do everything you love with passion and cherish this moment
+
+---
+
