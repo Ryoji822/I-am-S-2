@@ -67,3 +67,15 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**21:23 JST** | [原文](https://x.com/GoogleDeepMind/status/2046927845851627657)
+
+> Only 25% of organizations have moved AI into production at scale. We’re working to change that. 🛠️
+> 
+> @Accenture, @BainandCompany, @BCG, @Deloitte, and @McKinsey are combining our research with their expertise to bring AI innovation to more industries responsibly. 🤝
+> 
+> Find out more → https://goo.gle/42kvkz1
+
+---
+

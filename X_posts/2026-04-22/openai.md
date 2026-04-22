@@ -319,3 +319,20 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**07:41 JST** | [原文](https://x.com/OpenAIDevs/status/2046933164548087842)
+
+> RT OpenArt
+> GPT Image 2 is now live on OpenArt. 🎨
+> 
+> OpenAI's newest image model - built for real creative work.
+> 
+> 🔤 Readable text
+> 🎨 Designed layouts (slides, posters, infographics)
+> ✏️ Cleaner, smarter edits
+> 🎭 Reference-driven consistency
+> 🎬 Cinematic control
+
+---
+
