@@ -1,129 +1,87 @@
 # AI市場の現在地
-> 最終更新: 2026-04-17
+> 最終更新: 2026-04-22
 
-安いAIは誰でも使える。だが最先端を作れるのは3社だけ——市場はその構造に向かっている（SCN-002、37%）。同時に、エコシステムのロックインが「静かな囲い込み」（SCN-003、27%）を押し上げている。スイッチングコスト15-20%、74%の企業がAIベンダー喪失時に業務混乱を予想——囲い込みの定量証拠が揃った [INFO-089](../Information/2026-04-10/collected-raw.md#INFO-089) [INFO-097](../Information/2026-04-10/collected-raw.md#INFO-097)。
+安いAIは誰でも使える。だが最先端を作れるのは3社だけ——市場はその構造に向かっている（SCN-002、40%）。同時に、インフラの物理的限界が投資効率を押し下げ始めた。DC約50%が遅延・中止、接続キュー2,100GWが総グリッド容量を超過 [INFO-016](../Information/2026-04-22/collected-raw.md#INFO-016)（[IND-029](../config/indicators.json)、**high**）。
 
-2026年4月15-17日、72時間の間にOpenAI（Agents SDK/Codex）、Anthropic（Opus 4.7/Agent SDK）、Google（Gemini CLI subagents）、xAI（Voice Agent API）が次々とエージェントインフラをリリースした。エージェントSDK競争が臨界質量に到達した可能性を示唆する出来事 [Arbiter v3.52](../state/arbiter-2026-04-17.md)。
-
-GPT-5.4 ProがARC-AGI-2で83.3%を記録し、AIとして初めて人間（72.4%）を超えた [INFO-015](../Information/2026-03-08/collected-raw.md#INFO-015)。Anthropicが$30B ARR到達でOpenAI $25Bを逆転したと自己発表 [INFO-001](../Information/2026-04-10/collected-raw.md#INFO-001)。Gemma 4がArena Elo 1452でオープンモデルの新基準 [INFO-006](../Information/2026-04-06/collected-raw.md#INFO-006)、Doubaoが日次トークン120兆を処理 [INFO-024](../Information/2026-04-06/collected-raw.md#INFO-024)。
-
-導入と成果の間にある断崖。埋まっていない。92%の企業が正のROIを達成（2.8x平均）[INFO-038](../Information/2026-03-29/collected-raw.md#INFO-038) する一方で、40%のプロジェクトが2027年までにキャンセルのリスク [INFO-021](../Information/2026-03-29/collected-raw.md#INFO-021)。
+2026年4月第3週は「エンタープライズ決戦クラスター」だった。全社同時にエンタープライズへ集中した——OpenAIがCodex Labs + GSI 7社提携、Anthropicが$30B確認 + 欧州銀行Mythos、Googleが27%シェア + $240Bバックログ + Pentagon契約交渉 [Arbiter v3.57](../state/arbiter-2026-04-22.md)。エージェント技術がエンタープライス実用の臨界点を通過した可能性を示唆する。
 
 ## プレイヤー一覧
 
 | 企業 | 主力 | 資金 | 今の位置 |
 |------|------|------|---------|
-| OpenAI | GPT-5.4シリーズ、Codex（desktop control・browser・memory・111 plugins・heartbeats）、Agents SDK（7社サンドボックスパートナー） | $122B調達（$852B評価額、$13.1B ARR） | ベンチマーク首位（ARC-AGI-2 83.3%）。Codexが自律型開発プラットフォームに進化。エンタープライズLLMシェア27%。**GPT-5.3-Codex 25hr連続稼働** [INFO-006](../Information/2026-04-17/collected-raw.md#INFO-006) |
-| Anthropic | **Claude Opus 4.7**、Claude Code、Managed Agents、Mythos Preview | $30B調達（$183B評価額、**$30B ARR**※自己発表） | エンタープライズLLM支出40%首位。**Opus 4.7 GA**（CursorBench 70%・XBOW 98.5%）[INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011)。SWE-bench 80.9%首位。SCR確定。Managed Agents GA。$1M+顧客1000社突破 |
-| Google | Gemini 3.1シリーズ、Vertex AI、Gemma 4 | 自己資金 | GPQA Diamond 94.3%首位。Gemini 3.1 Pro multimodal 95.0%首位。Gemma 4 Arena Elo 1452。Gemini CLI subagents追加 [INFO-012](../Information/2026-04-17/collected-raw.md#INFO-012)。Gemini 3.1 Flash TTS Elo 1,211 [INFO-008](../Information/2026-04-17/collected-raw.md#INFO-008) |
-| xAI | Grok 4.20シリーズ、Grok 3 Beta、**Voice Agent API** | $20B Series E（SpaceX $1.25兆合算） | Voice Agent API（MCP・x_search・OpenAI Realtime API互換）[INFO-013](../Information/2026-04-17/collected-raw.md#INFO-013)。マルチエージェント（4/16体協調）。H-XAI-001 55%低下・H-XAI-003 52%低下 |
-| ByteDance | Seed 2.0、Doubao、Seedance 2.0、Seeduplex | 非公開（評価額$520B） | 価格1/10。日次トークン120兆（2年で1000倍）。DAU 1.45億。Coze MCP対応 |
-| Meta | Llama 4、スーパーインテリジェンスチーム | 自己資金 + **CoreWeave $21B契約** | スーパーインテリジェンスチーム初のAIモデル発表。OSS性能ギャップ閉じる方向 |
-
-3社（OpenAI、Anthropic、Google）がフロンティアを形成し、xAIとByteDanceが異なる角度から挑む構図。Metaがスーパーインテリジェンスチームと$21B CoreWeave契約で新たな変数として台頭。各社の詳細は個別ファイルを参照。
+| OpenAI | GPT-5.4シリーズ、Codex（desktop control・browser・memory・90+ plugins・heartbeats）、**Codex Labs + GSI 7社**、Agents SDK（MCP統合・7社サンドボックスパートナー） | $122B調達（$852B評価額、$13.1B ARR） | ベンチマーク首位（ARC-AGI-2 83.3%、マルチモーダル暫定1位）。WAU 4M。**GSI 7社提携でB2Bチャネル質的転換** [INFO-001](../Information/2026-04-22/collected-raw.md#INFO-001) |
+| Anthropic | **Claude Opus 4.7**、Claude Code、Managed Agents、Mythos Preview | $30B調達（$183B評価額、**$30B ARR A-1確認**） | エンタープライズLLM支出40%首位。**Amazon提携拡大（5GW Trainium・$100B AWS投資）** [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。欧州銀行Mythos提供計画 [INFO-008](../Information/2026-04-22/collected-raw.md#INFO-008) |
+| Google | Gemini 3.1シリーズ、Vertex AI、**Deep Research Max**、Gemma 4 | 自己資金 | **MMMU-Pro 88.21%首位** [INFO-035](../Information/2026-04-22/collected-raw.md#INFO-035)。**27%トラフィックシェア** [INFO-014](../Information/2026-04-22/collected-raw.md#INFO-014)。**$240B Cloudバックログ** [INFO-013](../Information/2026-04-22/collected-raw.md#INFO-013)。**Pentagon契約交渉** [INFO-027](../Information/2026-04-22/collected-raw.md#INFO-027) |
+| xAI | Grok 4.20シリーズ、**Grok STT/TTS API** | $20B Series E（SpaceX $1.25兆合算） | STT WER 6.9%業界最良。H-XAI-004（汎用AI基盤）55%で最有力仮説 |
+| ByteDance | Seed 2.0、Doubao、Seedance 2.0、Seeduplex | 非公開（評価額$520B） | 価格1/10。日次トークン120兆。**2025年純利益70%+減少** [INFO-055](../Information/2026-04-22/collected-raw.md#INFO-055) |
+| Meta | Llama 4、スーパーインテリジェンスチーム | 自己資金 + CoreWeave $21B契約 | OSS性能ギャップ閉じる方向 |
 
 ## 今、市場で何が起きているか
 
-### 72時間でエージェント競争が臨界質量に達した
+### エンタープライズ決戦クラスターが形成された
 
-2026年4月15-17日、4社が72時間以内に重大なエージェント機能をリリースした:
+2026年4月第3週、全社が同時にエンタープライス市場に殺到した:
 
-- **4月15日**: OpenAI Agents SDK大幅アップデート（7社サンドボックスパートナー）[INFO-010](../Information/2026-04-17/collected-raw.md#INFO-010)。Google Gemini CLI subagents追加 [INFO-012](../Information/2026-04-17/collected-raw.md#INFO-012)
-- **4月16日**: Anthropic Claude Opus 4.7 GA + Claude Agent SDK TypeScript Opus 4.7対応 [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011) [INFO-016](../Information/2026-04-17/collected-raw.md#INFO-016)。OpenAI Codex App大幅アップデート [INFO-014](../Information/2026-04-17/collected-raw.md#INFO-014)
-- **4月17日**: xAI Voice Agent API [INFO-013](../Information/2026-04-17/collected-raw.md#INFO-013)。OpenAI Codex画像生成・heartbeats追加 [INFO-021](../Information/2026-04-17/collected-raw.md#INFO-021) [INFO-022](../Information/2026-04-17/collected-raw.md#INFO-022)
+- **OpenAI**: Codex Labs + GSI 7社提携（Accenture/PwC/Capgemini等）でB2Bチャネル構築の質的転換 [INFO-001](../Information/2026-04-22/collected-raw.md#INFO-001)
+- **Anthropic**: $30B ARR A-1確認 + 欧州銀行Mythos提供計画で安全性差別化の市場的証明 [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032) [INFO-008](../Information/2026-04-22/collected-raw.md#INFO-008)
+- **Google**: 27%トラフィックシェア + $240Bバックログ + Pentagon契約交渉で定量・市場両面突破 [INFO-014](../Information/2026-04-22/collected-raw.md#INFO-014) [INFO-027](../Information/2026-04-22/collected-raw.md#INFO-027)
 
-これはSCN-002（開放×格差拡大）を最も強く支持する観察。MCP全主要プレイヤー対応が継続し、エコシステム標準が事実上確定している。ただし確率変更を正当化するほどの質的変化ではなく、現状の確率分布を補強するに留まる [Arbiter v3.52](../state/arbiter-2026-04-17.md)。
+エージェント技術がエンタープライス実用の臨界点を通過したことを示唆する構造的転換 [Arbiter v3.57](../state/arbiter-2026-04-22.md)。
 
-### AIが初めて人間を超えた——ただし単一ベンチマークで
+### インフラ過熱と物理的制約の確定的化
 
-GPT-5.4 ProがARC-AGI-2で83.3%を出し、人間のベースライン（72.4%）を超えた [INFO-015](../Information/2026-03-08/collected-raw.md#INFO-015)。o3モデルも87.5%を記録し、90%閾値まで2.5ポイントに迫っている。
+資本は限界なく流入している——**Q1 2026でAIが$242Bを吸収**、2025年全体を超過 [INFO-052](../Information/2026-04-22/collected-raw.md#INFO-052)。だが物理的制約が追いつかない。DC約50%が遅延・中止 [INFO-016](../Information/2026-04-22/collected-raw.md#INFO-016)。Amazon $200Bは需要先行から供給先行型への転換 [INFO-053](../Information/2026-04-22/collected-raw.md#INFO-053)。IEA報告でDC電力消費が2025年に17%急増 [INFO-054](../Information/2026-04-22/collected-raw.md#INFO-054)。接続キュー2,100GWが総グリッド容量を超過。
 
-ベンチマーク首位は測定する対象によって変わる。GPQA DiamondではGemini 3.1 Proが94.3%で首位。SWE-bench VerifiedではClaude Opus 4.7がCursorBench 70%で首位。Gemma 4はArena Elo 1452でオープンモデルとして最高水準 [INFO-006](../Information/2026-04-06/collected-raw.md#INFO-006)。単一ベンチマークへの過度な依存は判断を歪める。
+資本流入（$242B）vs物理的制約（50%遅延）の構造的ギャップが**確定的**になった。（[IND-029](../config/indicators.json)、**high**）
 
-### 自律型エージェントが長時間稼働の壁を突破した
+### AI代替の「品質の壁」が顕在化した
 
-GPT-5.3-Codexが25時間連続稼働で約30K行コードを生成。METRの時間地平線ベンチマークで約7ヶ月の倍増期間を確認 [INFO-006](../Information/2026-04-17/collected-raw.md#INFO-006)。このペースが続けば、2026年末には1-2週間の自律稼働が可能になる。Cursorは「OpenAIモデルは長時間自律作業で明確に優秀」と評価。
+Klarnaが700人AI削減を誇示した後、「低品質」で静かに再採用 [INFO-039](../Information/2026-04-22/collected-raw.md#INFO-039)。Deloitte調査で54%が40%+のAI実験本番移行を計画するが、実際は25%のみ [INFO-037](../Information/2026-04-22/collected-raw.md#INFO-037)。**Reset to Zero問題**——エージェントが予告なく致命的に失敗——がエンタープライズ信頼性の構造的課題として浮上 [INFO-070](../Information/2026-04-22/collected-raw.md#INFO-070)。
 
-これはエージェントの本番信頼性が転換点に達したことを示唆する ([IND-026](../config/indicators.json)、elevated rising)。ただし単一事例であり、他のエージェント（Claude Code・Gemini CLI）での再現性検証が必須 [Arbiter v3.52](../state/arbiter-2026-04-17.md)。
+理論的可能性と実際の品質ギャップが構造的障壁として認識され始めた。
 
-### 企業の導入は爆発的——成果は二極化
+### Anthropic-Pentagon-Google三角関係が新変数に
 
-エンタープライズAI利用はYoY 8倍、推論モデル利用は300倍に成長。80%のFortune 500がAIエージェントを展開している。
+SCR指定→Pentagon Google転向→NSA黙的使用→裁判所介入の多層構造が浮上 [INFO-028](../Information/2026-04-22/collected-raw.md#INFO-028) [INFO-029](../Information/2026-04-22/collected-raw.md#INFO-029) [INFO-031](../Information/2026-04-22/collected-raw.md#INFO-031)。安全性企業を排除し、商業企業を優遇する政府の選別的介入が構造化した。（[IND-023](../config/indicators.json)、high）
 
-だが実態は「成功組」と「失敗組」に二極化している。
+### 導入は爆発的——成果は二極化
 
-**成功組**: 92%の企業が正のROI達成、平均2.8x（IDC調査）。49%の職業でタスクの25%以上がClaudeで実行。
+Stanford AI Index 2026: AIエージェント成功率が20%→77%に急上昇 [INFO-036](../Information/2026-04-22/collected-raw.md#INFO-036)。79%の組織がagentic AI導入中。
 
-**失敗組**: Gartnerは40%超のエージェントAIプロジェクトが2027年末までにキャンセルされると予測。PwC調査では56%が「売上増にも費用削減にもなっていない」。MIT: 95%のgenAIパイロットが失敗。88%のAIエージェントプロジェクトが本番前に失敗 [INFO-064](../Information/2026-04-10/collected-raw.md#INFO-064)。
+だが**54%計画vs25%実績**のギャップ [INFO-037](../Information/2026-04-22/collected-raw.md#INFO-037)。Klarna再採用 [INFO-039](../Information/2026-04-22/collected-raw.md#INFO-039)。Reset to Zero問題 [INFO-070](../Information/2026-04-22/collected-raw.md#INFO-070)。普及>品質成熟の構造が継続。
 
-### 資金が3社に集中し、K字型市場が形成されている
+### 「書く」から「評価する」への大転換
 
-**Q1 2026北米AI投資が$221Bに到達**——前年同期比6倍 [INFO-047](../Information/2026-04-10/collected-raw.md#INFO-047)。全ステージ（Seed〜Late Stage）で急増。
-
-OpenAI $122B、Anthropic $30B、xAI $20B、Meta CoreWeave $21B——上位4社だけで$190B超が集中。[IND-003](../config/indicators.json)はhigh維持。
-
-### 価格は年10倍のペースで下がり続けている
-
-GPT-4相当が3年前$60/Mだったのが今$0.75/M。98%の下落。GPT-5.4 nanoは$0.20/$1.25。ByteDance Seed 2.0 Pro $0.47/M。Gemini 3.1 Proは$2/$12で2Mコンテキスト。
-
-**DeepSeek V3.2がGPT-5レベル性能を$0.014/Mで提供**——GPT-4 Turboの700分の1 [INFO-089](../Information/2026-04-10/collected-raw.md#INFO-089)。
-
-### 囲い込みが定量化された
-
-**スイッチングコストが年間AI支出の15-20%**（$2M/年なら$300K-$400K）。Azure AI価格15-22%値上げ、GCP "premium inference"3倍価格 [INFO-089](../Information/2026-04-10/collected-raw.md#INFO-089)。
-
-**74%の企業がAIベンダー喪失時に業務混乱を予想** [INFO-097](../Information/2026-04-10/collected-raw.md#INFO-097)。
-
-### エコシステム標準化が臨界質量を突破した
-
-AAIFが**170+メンバー**に到達 [INFO-021](../Information/2026-04-10/collected-raw.md#INFO-021)。MCP SDKは月間9700万ダウンロード。**全主要AIプレイヤーがMCPに対応**——OpenAI Agents SDK、Anthropic Agent SDK（per-tool permission）、xAI Voice Agent API、Google Gemini API Docs MCP。([IND-027](../config/indicators.json)、high) [Arbiter v3.52](../state/arbiter-2026-04-17.md)。
-
-### セキュリティが最大の企業懸念に浮上
-
-AI securityがクラウドを抜いて企業の最優先課題になった（ETR調査）。
-
-Codex desktop control（マウス・キーボード制御）が新たな攻撃表面を生んだ。OpenAIは**Cyber Verification Program**を新設、AnthropicはMythos限定ロールアウトで対応——開発企業自身がリスクを認識している [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011)。([IND-013](../config/indicators.json)、high rising)
-
-### 政府の選別的介入が構造化した
-
-SCR連邦控訴裁敗訴でAnthropic排除が確定。DOD「全合法目的での無制限アクセス」要求 → Anthropic拒否 → SCR指定 → 控訴裁差し止め棄却 → OpenAI $200M契約。
-
-ペンタゴンは全主要AI企業に倫理ガードレール緩和を圧力 [INFO-080](../Information/2026-04-10/collected-raw.md#INFO-080)。
+AIスキル要件がエントリーレベルで3倍増 [INFO-066](../Information/2026-04-22/collected-raw.md#INFO-066)。Copilot 4.7M有料・84%開発者採用 [INFO-044](../Information/2026-04-22/collected-raw.md#INFO-044)。ジュニア開発者採用27.5-78%減 [INFO-043](../Information/2026-04-22/collected-raw.md#INFO-043) [INFO-045](../Information/2026-04-22/collected-raw.md#INFO-045)。（[IND-022](../config/indicators.json)、high）
 
 ## 寡占と分散のどちらに向かうか
 
-市場には2つの正反対の力が同時に働いている。
+**集中に向かう力**: Q1 $242BがAIに集中 [INFO-052](../Information/2026-04-22/collected-raw.md#INFO-052)。エンタープライス3社で88%シェア。政府が特定企業を選別。M&A（Anthropic-Amazon $33B、OpenAI $122B）。スイッチングコスト15-20%。
 
-**集中に向かう力:** 資金$190B超が上位4社に集中。エンタープライズ3社で88%シェア。各社のSDK/スキル形式は非互換。政府が特定企業を選別。M&Aによる垂直統合。スイッチングコスト15-20%。74%の企業がベンダー依存不安。
+**分散に向かう力**: AAIF標準化。Gemma 4（Apache 2.0）。ByteDance価格破壊。DeepSeek V4プレビュー [INFO-062](../Information/2026-04-22/collected-raw.md#INFO-062)。MCP全社対応。
 
-**分散に向かう力:** AAIF標準化（170+メンバー）。Gemma 4オープンモデル（Apache 2.0）。ByteDanceの価格破壊。DeepSeek V3.2がGPT-5レベル性能を700分の1コストで提供。193カ国グローバルAIアコード。全主要プレイヤーのMCP対応。
-
-現時点では「技術は開くが、性能トップは集中する」（SCN-002、37%）が最有力。だが「静かな囲い込み」（SCN-003、27%）が定量証拠を得て迫っている。詳細は `scenario-tracker.md` を参照。
+現時点では「技術は開くが、性能トップは集中する」（SCN-002、40%）が最有力。SCN-002が4割に到達し、最も支持されるシナリオとして確定的になった。詳細は `scenario-tracker.md` を参照。
 
 ## 主要な監視指標（I&W）
 
 | 指標 | 何を見ているか | 今の状態 | レベル |
 |------|--------------|---------|--------|
-| [IND-001](../config/indicators.json) 性能の非連続ジャンプ | 前世代比30%超の性能向上 | o3 ARC-AGI 87.5%。Gemma 4 Arena Elo 1452 | **high approaching** |
-| [IND-003](../config/indicators.json) 資金集中 | 上位3社が業界調達額の80%超を占めるか | 上位4社$190B超。Q1 AI投資$221B | **high** |
-| [IND-004](../config/indicators.json) OSS性能到達 | OSSが商用モデルの90%性能に達するか | Gemma 4 Arena Elo 1452。Veracity AI「性能ギャップは閉じた」 | elevated approaching |
-| [IND-006](../config/indicators.json) エージェントスタック上位レイヤー | 実行環境・オーケストレーション競争 | 72時間4社同時リリース。Codex desktop control。Opus 4.7 GA | elevated rising |
-| [IND-008](../config/indicators.json) 大企業の集中 | Fortune 500のAI導入先が2-3社に集中するか | Anthropic 40%、OpenAI 27%、Google 21%（合計88%） | elevated |
-| [IND-013](../config/indicators.json) AI安全性事故 | 大規模なAI関連事故 | Codex desktop control新攻撃表面。Cyber Verification Program対抗投資 | **high** rising |
-| [IND-022](../config/indicators.json) スキル再定義 | コーディングの価値がAI管理にシフト | 82%採用率。Codex 111 plugins。Opus 4.7 CursorBench 70% | **high** rising |
-| [IND-023](../config/indicators.json) 政府のAI強制力 | 経済的手段でAI安全姿勢を抑圧 | SCR連邦控訴裁敗訴で確定。全社ガードレール緩和圧力 | **high** rising |
-| [IND-026](../config/indicators.json) エージェント本番環境到達率 | エージェントの本番稼働成功率 | Codex 25hr連続稼働・heartbeats信頼性転換点 | elevated rising |
-| [IND-027](../config/indicators.json) エコシステム標準化進展度 | MCP/A2A等のオープンスタンダード採用率 | AAIF 170+メンバー。全主要プレイヤーMCP対応 | **high** rising |
-| [IND-028](../config/indicators.json) AGI自己改善速度 | 再帰的自己改善の進展 | METR約7ヶ月倍増期間。ARC-AGI-3依然0%。主観-客観乖離過去最大 | elevated rising |
-| [IND-029](../config/indicators.json) AIインフラ投資規模 | 計算能力投資の集中と規模 | OpenClaw GPU H200価格25-30%上昇。インフラ需要加速 | elevated rising |
-| [IND-030](../config/indicators.json) AI能力とリスクの二面性 | 高性能モデルが「最も整合性高い」同時に「最もリスク高い」 | Codex 25hr自律稼働。Cyber Verification Program。能力向上とリスク管理の同時進行 | elevated rising |
+| [IND-001](../config/indicators.json) 性能の非連続ジャンプ | 前世代比30%超の性能向上 | GPT-5.4 Pro ARC-AGI-2 83.3%・マルチモーダル暫定1位。Gemini MMMU-Pro 88.21% | **high approaching** |
+| [IND-003](../config/indicators.json) 資金集中 | 上位3社が業界調達額の80%超を占めるか | Q1 AI投資$242B。上位4社$190B超 | **high** |
+| [IND-013](../config/indicators.json) AI安全性事故 | 大規模なAI関連事故 | 97%インシデント予期。Cowork監査ギャップ。Reset to Zero問題 | **high** rising |
+| [IND-022](../config/indicators.json) スキル再定義 | コーディングの価値がAI管理にシフト | 84%開発者採用。スキル要件3倍増。ジュニア採用27.5-78%減 | **high** rising |
+| [IND-026](../config/indicators.json) エージェント本番環境到達率 | エージェントの本番稼働成功率 | Stanford 77%成功率 vs 54%計画/25%実績。Reset to Zero | elevated rising |
+| [IND-027](../config/indicators.json) エコシステム標準化進展度 | MCP/A2A等のオープンスタンダード採用率 | Deep Research Max MCP対応。Agents SDK MCP。Cloudflare参照アーキテクチャ | **high** rising |
+| [IND-028](../config/indicators.json) AGI到達度指標 | 主観-客観乖離 | ARC-AGI-3全0%。Amodei 6-12ヶ月予測。主観-客観乖離最大水準 | elevated rising |
+| [IND-029](../config/indicators.json) AIインフラ制約 | 計算能力投資の物理的限界 | **DC約50%遅延**。Q1 $242B。Amazon $200B供給先行。IEA 17%。接続キュー2,100GW | **high** rising |
+| [IND-030](../config/indicators.json) AI能力とリスクの二面性 | 高性能モデルが「最も整合性高い」同時に「最もリスク高い」 | Stanford 77%。97%インシデント予期。Reset to Zero。能力-リスク同時進行 | elevated rising |
 
 ## 変更履歴
 
 | 日付 | 変更内容 |
 |------|---------|
-| 2026-04-17 | 鮮度タイムアウト対応（7日経過）。72時間4社同時エージェントインフラリリース・Codex自律型開発プラットフォーム進化・Opus 4.7 GA・GPT-5.3-Codex 25hr連続稼働・Voice Agent APIを反映。SCN-002 36→37%・SCN-003 28→27%に更新。IND-026/027/028/029/030を最新値に更新 |
-| 2026-04-10 | Anthropic $30B ARR自己発表・SCR連邦控訴裁敗訴確定・Managed Agents GA・Google/Broadcom TPU契約を反映。Meta台頭を追加。SCN-002 36%・SCN-003 28%に更新。スイッチングコスト定量データ・Q1 AI投資$221B・AAIF 170+メンバーを追加 |
-| 2026-04-08 | シナリオ順位の入れ替わりを反映（SCN-003 2位上昇、SCN-001 3位後退）。MCP二面性、Mythos Preview、AI Agent Drift問題を追加 |
-| 2026-04-06 | Gemma 4、Gemini 3.1 Flash-Lite/Flash Live、Doubao日次トークン120兆、Coze MCP対応を追加 |
-| 2026-03-29 | OpenAI $120B調達、Sora終了を反映 |
+| 2026-04-22 | エンタープライズ決戦クラスター・インフラ過熱-制約確定的化（IND-029 elevated→high）・AI代替品質の壁・Anthropic-Pentagon-Google三角関係・スキル要件3倍増・Q1 $242Bを反映して全面書き直し。SCN-002 37→40%に更新 |
+| 2026-04-17 | 鮮度タイムアウト対応（7日経過）。72時間4社同時エージェントリリース・Codex進化・Opus 4.7 GAを反映 |
+| 2026-04-10 | Anthropic $30B ARR・SCR確定・スイッチングコスト定量データを反映 |
+| 2026-04-08 | シナリオ順位入れ替わり・MCP二面性を追加 |
+| 2026-04-06 | Gemma 4、Doubao日次トークン120兆を追加 |

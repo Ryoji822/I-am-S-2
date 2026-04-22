@@ -1,7 +1,7 @@
 {
-  "version": "3.56",
-  "last_updated": "2026-04-21",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.56: Arbiter統合判断完了（DEGRADED状態・Red Agent不在）。2件更新。SCN-002 +1%（38→39%）Anthropic/Google勝者浮上+開放標準維持+フロンティア収束。SCN-001 -1%（24→23%）囲い込み直接証拠弱化。合計100%維持（23+39+26+12=100%）",
+  "version": "3.57",
+  "last_updated": "2026-04-22",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.57: Arbiter統合判断完了（DEGRADED状態・Red Agent 2026-04-22/21不在）。2件更新。SCN-002 +1%（39→40%）Codex Labs GSI 7社+Anthropic $30B欧州銀行+Google 27%シェア+$240Bバックログで勝者浮出+開放維持。SCN-003 -1%（26→25%）MMMU-Pro 88.21%首位=性能格差維持=収斂前提と矛盾。合計100%維持（23+40+25+12=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -24,8 +24,8 @@
       "quadrant_label": "閉鎖 × 格差拡大",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 23,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.56: -1%（24→23%）。囲い込み直接証拠の相対的弱化。MCP全社対応+AAIF標準化+Cloudflare参照アーキテクチャで開放圧力強化。Meta Muse Spark独自化は唯一のCだが単発。AI Stack多層ロックイン（INFO-054）は構造的指摘だが新情報ではない。IND-027 highと方向整合",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v3.57: ±0%（23%維持）。MCP全社対応+AAIF標準化で開放圧力維持。Codex Labs+90+ pluginsは囲い込みCだが、MCP/AAIF標準化の勢力が上回る。DEGRADED: Red不在",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 39,
+      "probability": 40,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.56: +1%（38→39%）。Anthropic $30B B-1確認+Menlo 40%シェア+Google Cloud 48%増+大型契約で勝者浮上。MCP/AAIF標準化+Cloudflare参照アーキテクチャ（INFO-019）+AAIF 2026イベント（INFO-018）で開放維持。フロンティア収束確認（包括）+HLE有意差残存で「開放で勝者出る」構造確認。最も支持継続",
+      "probability_rationale": "Arbiter v3.57: +1%（39→40%）。Codex Labs + GSI 7社提携・Anthropic $30B + 欧州銀行Mythos・Google 27%シェア + $240Bバックログで勝者浮出。MCP/AAIF標準化 + Gemma 4で開放維持。ARC-AGI-3全0%で性能格差残存。最も支持されるシナリオ継続。DEGRADED: Red不在",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -65,9 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 26,
+      "probability": 25,
       "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.56: ±0%（26%維持）。Chrome Skills（INFO-022・ワークフローロックインC）vs Gemini 3.1 Pro MMMU-Pro 88.21%（性能格差維持＝収斂前提と矛盾I）。Google Cloud大型契約集中はエコシステム依存C。フロンティア収束の同時進行で「格差拡大」前提と一部矛盾。相殺",
+      "probability_rationale": "Arbiter v3.57: -1%（26→25%）。Gemini 3.1 Pro MMMU-Pro 88.21%首位は性能格差維持＝収斂前提と矛盾。Chrome Skills・使用量課金はエコシステム依存Cだが、収斂軸のIが強い。DEGRADED: Red不在",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -88,7 +88,7 @@
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 12,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.56: ±0%（12%維持）。フロンティア収束（INFO-040/061）は収斂軸C。Mistral $14B（INFO-062）は開放C。但しDC約半数延期（INFO-059）でインフラ集中I。Q1 $242Bメガディール集中で寡占構造強化I",
+      "probability_rationale": "Arbiter v3.57: ±0%（12%維持）。Gemma 4+DeepSeek V4（開放C）。但しQ1 $242B+DC 50%遅延（寡占強化I）。DEGRADED: Red不在",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -109,7 +109,7 @@
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
       "probability": 16,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.56: ±0%（16%維持）。97%インシデント予期（INFO-014）+Cowork監査ログギャップ（INFO-015）はリスク上昇C。CompTIA SecAI+認証（INFO-017）は業界対応C。大規模事故未到達",
+      "probability_rationale": "Arbiter v3.57: ±0%（16%維持）。97%インシデント予期+Cowork監査ログギャップ+Reset to Zero問題（INFO-070）でリスク上昇C。大規模事故未到達。CompTIA SecAI+認証で業界対応C。DEGRADED: Red不在",
       "impact": "catastrophic",
       "indicators": ["IND-013", "IND-018", "IND-023"]
     },
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-04-21",
-    "note": "SCN-001(23) + SCN-002(39) + SCN-003(26) + SCN-004(12) = 100%. Arbiter v3.56完了（DEGRADED）"
+    "verified_date": "2026-04-22",
+    "note": "SCN-001(23) + SCN-002(40) + SCN-003(25) + SCN-004(12) = 100%. Arbiter v3.57完了（DEGRADED）"
   }
 }

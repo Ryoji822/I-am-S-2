@@ -1,113 +1,105 @@
 # Anthropic
 
-> 最終更新: 2026-04-19
+> 最終更新: 2026-04-22
 > 確度: 高
 
-エンタープライズLLM支出40%で首位。Claude Code $1B ARR達成 [INFO-001](../Information/2026-04-08/collected-raw.md#INFO-001)。SWE-bench Verified 80.9%で首位。2026年4月16日、**Claude Opus 4.7**がGA到達——CursorBench 70%（Opus 4.6比+12pt）、XBOW visual-acuity 98.5%（従来54.5%から質的飛躍）、**Cyber Verification Program**を新設 [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011)。同日、Claude Agent SDK TypeScriptがOpus 4.7対応、MCP per-tool permission_policyを追加 [INFO-016](../Information/2026-04-17/collected-raw.md#INFO-016)。
+エンタープライズLLM支出40%で首位。Claude Code $1B ARR達成 [INFO-001](../Information/2026-04-08/collected-raw.md#INFO-001)。SWE-bench Verified 80.9%で首位。2026年4月16日、**Claude Opus 4.7**がGA到達——CursorBench 70%（Opus 4.6比+12pt）、XBOW visual-acuity 98.5%（従来54.5%から質的飛躍）、**Cyber Verification Program**を新設 [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011)。Claude Designがデザイン→実装のワークフローをClaudeエコシステム内に閉じ込める [INFO-004](../Information/2026-04-19/collected-raw.md#INFO-004)。
 
-4月17日、**Claude Design**がAnthropic Labsから発表された——Opus 4.7搭載のビジュアルデザインツール。プロトタイプ、スライド、マーケティング素材を対話で作成し、デザインシステムを自動構築。ワンクリックでClaude Codeにハンドオフする機能は、デザイン→実装のワークフローをClaudeエコシステム内に閉じ込める可能性を示唆する [INFO-004](../Information/2026-04-19/collected-raw.md#INFO-004)。Canva、PDF、PPTX、HTMLエクスポート対応。Brilliant、Canva、Datadogが初期パートナー。Pro/Max/Team/Enterprise向け。
+だが逆説が三重になった。安全性を貫いたことで政府に排除され、排除されたことで民間の信頼を獲得し、獲得した信頼の大きさが収益を押し上げている——**$30B ARR到達がA-1（公式確認）で検証された** [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。Penn Mutual AM Bloomberg引用の第三者確認。ただしPitchBookは「Big Four監査に耐えられない」と指摘し、$30B vs $22Bの乖離観測も残る [INFO-012](../Information/2026-04-22/collected-raw.md#INFO-012)。
 
-だが逆説が三重になった。安全性を貫いたことで政府に排除され、排除されたことで民間の信頼を獲得し、獲得した信頼の大きさが収益を押し上げている——**$30B ARR到達を自己発表** [INFO-001](../Information/2026-04-10/collected-raw.md#INFO-001)。ただしこの数字は第三者検証されておらず、$30B vs $19B乖離が13日連続未解決で、Arbiterは自己発表データの信頼性を条件付きに引き下げた [Arbiter v3.54](../state/arbiter-2026-04-19.md)。そして「最も整合性が高い」モデルが「最もリスクが高い」という二面性が、Anthropicの安全性戦略そのものの逆説を浮き彫りにした [INFO-030](../Information/2026-04-08/collected-raw.md#INFO-030)。
+## 政府との対立（構造化完了、新局面へ）
 
-## 政府との対立（構造化完了）
-
-時系列で追うと一本の線が見える。
+時系列で追くと一本の線が見える。
 
 - **2月27日**: Trump政権がSCR指定・連邦使用禁止。理由は自律兵器と大量監視への制限を貫いたこと [INFO-048](../Information/2026-03-01/collected-raw.md#INFO-048)
-- **同日夜**: OpenAIがDoWと契約締結 [INFO-097](../Information/2026-03-01/collected-raw.md#INFO-097)
 - **3月9日**: Anthropicが憲法修正第1条に基づきDoD提訴
-- **3月11日**: Google・OpenAI社員30名超がAmicus briefを提出 [INFO-055](../Information/2026-03-11/collected-raw.md#INFO-055)
-- **3月14日**: 米国テック労働者70万人がAmazon/Google/Microsoftに安全ガードレール維持を要請 [INFO-056](../Information/2026-03-14/collected-raw.md#INFO-056)
-- **3月20日**: SenateがChatGPT/Gemini/CopilotをTier 2承認。Claudeは「評価中」として除外 [INFO-008](../Information/2026-03-20/collected-raw.md#INFO-008)
-- **3月21日**: Pentagon、$200M契約を正式終了 [INFO-044](../Information/2026-03-21/collected-raw.md#INFO-044)
-- **3月30日**: PentagonがAnthropicを「サプライチェーンリスク」指定。連邦判事が一時差止命令 [INFO-008](../Information/2026-04-06/collected-raw.md#INFO-008)
-- **4月8日**: **連邦控訴裁がAnthropicの一時差し止め請求を棄却**。SCR指定が確定 [INFO-035](../Information/2026-04-10/collected-raw.md#INFO-035)。DODは「全合法目的での無制限アクセス」を要求し、Anthropicは「完全自律型兵器・国内大量監視」の保証なき限り拒否 [INFO-035](../Information/2026-04-10/collected-raw.md#INFO-035)
-- **4月8日**: OpenAIが直後に$200M契約を獲得（安全性要件を受け入れ）[INFO-035](../Information/2026-04-10/collected-raw.md#INFO-035)
-- **4月9日**: Reuters報道——小規模AI企業（Smack Technologies、EdgeRunner AI等）に参入機会が開かれ、IL-6クリアランスが通常18ヶ月→3ヶ月に短縮 [INFO-034](../Information/2026-04-10/collected-raw.md#INFO-034)
+- **4月8日**: **連邦控訴裁がAnthropicの一時差し止め請求を棄却**。SCR指定が確定 [INFO-035](../Information/2026-04-10/collected-raw.md#INFO-035)。OpenAIが直後に$200M契約を獲得
+- **4月中旬**: **新たな対立の多層化** — PentagonがAnthropicを供給チェーンリスク指定し連邦システムから排除 [INFO-028](../Information/2026-04-22/collected-raw.md#INFO-028)。だが**NSAはPentagon対立にもかかわらずMythos Previewを使用中**と報道 [INFO-029](../Information/2026-04-22/collected-raw.md#INFO-029)。Steve BannonがAnthropicのPentagon拒否を支持し、跨党的な倫理支持が形成された [INFO-030](../Information/2026-04-22/collected-raw.md#INFO-030)。**裁判所がPentagonのAnthropic禁止を審査中**——政府側勝訴の場合、新たな形態の政治的報復が正当化されると指摘 [INFO-031](../Information/2026-04-22/collected-raw.md#INFO-031)。同時に**Trump大統領がAnthropic-DoD契約は「可能」と発言** [INFO-009](../Information/2026-04-22/collected-raw.md#INFO-009)
+- **4月20日**: Anthropic公式ブログでAmazon提携拡大を発表——最大5GW Trainium計算能力確保、10年間$100B以上AWS投資、追加$5B即時投資＋最大$20B追加 [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。100,000+顧客がBedrockでClaude利用
 
-これで一連の流れが構造化した。DOD「全合法目的での無制限アクセス」要求 → Anthropic拒否 → SCR指定 → 連邦控訴裁差し止め棄却 → OpenAI即座に$200M契約獲得。政府-AI企業緊張の「構造化完了」 [Arbiter v3.46](../state/arbiter-2026-04-10.md)。
-
-LA Timesは「シリコンバレーに萎縮効果」と報道 [INFO-052](../Information/2026-03-21/collected-raw.md#INFO-052)。ペンタゴンはOpenAI/Google/Anthropic/xAI全社に倫理ガードレール緩和を圧力している [INFO-080](../Information/2026-04-10/collected-raw.md#INFO-080)。ただし[IND-023](../config/indicators.json)の条件3（他社の安全姿勢後退）は、OpenAIのみ確認済みでGoogle/xAIの動向は未確認。
+DOD「全合法目的での無制限アクセス」要求 → Anthropic拒否 → SCR指定 → 控訴裁差し止め棄却 → OpenAI $200M契約 → Pentagon排除 → NSA矛盾的使用 → 裁判所審査 → Trump「可能」発言。政府-AI企業緊張が「構造化完了」から「多層化」に移行している。
 
 ## この会社は何物か
 
 Dario Amodei率いるAI企業。主力は**Claude Opus 4.7**、Claude 4.6シリーズ（Sonnet/Haiku）、Claude Code、Agent SDK、**Claude Managed Agents**（フルマネージドエージェントインフラ）、**Claude Design**（ビジュアルデザインツール）、Mythos Preview（セキュリティ研究特化）。
 
-資金は$30B（Series G、評価額$183B、2026年2月）。**自己発表で$30B ARR到達**——2025年末$9Bから3.3倍 [INFO-001](../Information/2026-04-10/collected-raw.md#INFO-001)。$1M以上年間支出の企業顧客が1000社を突破（2ヶ月で倍増）[INFO-001](../Information/2026-04-10/collected-raw.md#INFO-001)。80%がB2B。**Claude Codeが$1B ARR達成**——一般公開からわずか6ヶ月 [INFO-001](../Information/2026-04-08/collected-raw.md#INFO-001)。エンタープライズLLM支出シェア40%で首位。
+資金は$30B（Series G、評価額$183B、2026年2月）。**$30B ARR到達がA-1で確認**——2025年末$9Bから3.3倍 [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。Penn Mutual AM Bloomberg引用。$1M以上年間支出の企業顧客が1000社を突破。80%がB2B。Claude Codeが$1B ARR達成——一般公開から6ヶ月 [INFO-001](../Information/2026-04-08/collected-raw.md#INFO-001)。エンタープライズLLM支出シェア40%で首位。
 
-**$30B ARRに関する注記**: Anthropic公式ブログ発表 [INFO-001](../Information/2026-04-10/collected-raw.md#INFO-001) だが、第三者監査報告書・SEC提出書類による検証は未確認 [INFO-075](../Information/2026-04-10/collected-raw.md#INFO-075)。$30B vs $19B乖離が13日連続未解決で、Arbiterは自己発表データの信頼性を条件付きに引き下げ [Arbiter v3.54](../state/arbiter-2026-04-19.md)。第三者検証不在の場合の時間減衰適用を次回実施。
+**$30B ARRに関する注記**: Anthropic公式ブログ発表がPenn Mutual AM Bloomberg引用でA-1第三者確認された [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。ただしPitchBookは「Big Four監査に耐えられない」と指摘 [INFO-012](../Information/2026-04-22/collected-raw.md#INFO-012)。SEC提出書類・監査報告書による検証は未確認。$30B vs $22B乖離観測が残る。
 
-**インフラ**: Google/Broadcomと複数GW規模の次世代TPU計算能力契約を締結（2027年稼働予定）[INFO-001](../Information/2026-04-10/collected-raw.md#INFO-001)。AWS Trainium、Google TPU、NVIDIA GPUの3プラットフォームで稼働。$50B米国AIインフラ投資宣言の拡大。
+**Amazon提携拡大**（2026年4月20日）: 最大5GWのTrainium計算能力確保（Trainium2 Q2 + Trainium3年末）。10年間$100B以上のAWS投資コミットメント。Amazonが$5B即時投資＋最大$20B追加（合計最大$33B投資）。100,000+顧客がBedrockでClaude利用。1M+ Trainium2チップ現在使用中。Claude Platform on AWS近日提供。アジア・欧州への推論拡張 [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。
 
-**Claude Opus 4.7**（2026年4月16日GA）: CursorBench 70%（Opus 4.6比+12pt）。XBOW visual-acuity 98.5%（従来54.5%から質的飛躍）。高解像度画像対応（最大3.75MP、従来比3倍以上）。新 effort level `xhigh` 追加。Task budgets（public beta）、`/ultrareview`スラッシュコマンド新設 [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011)。**Cyber Verification Program**新設——サイバーセキュリティ用途での安全性検証を強化。
+**インフラ**: Google/Broadcomと複数GW規模の次世代TPU計算能力契約（2027年稼働予定）。AWS Trainium、Google TPU、NVIDIA GPUの3プラットフォームで稼働。
 
-**Claude Design**（2026年4月17日発表）: Opus 4.7搭載のビジュアルデザインツール。コードベースとデザインファイルからデザインシステムを自動構築。Canva、PDF、PPTX、standalone HTMLエクスポート。**Claude Codeへのワンクリックハンドオフ**がデザイン→実装のワークフローをClaude内に閉じ込める [INFO-004](../Information/2026-04-19/collected-raw.md#INFO-004)。Brilliant、Canva、Datadogが初期パートナーとして評価。
+**Claude Opus 4.7**（2026年4月16日GA）: CursorBench 70%。XBOW visual-acuity 98.5%。高解像度画像対応（最大3.75MP、従来比3倍以上）。Cyber Verification Program新設。BenchLM 94/100 (#3) [INFO-035](../Information/2026-04-22/collected-raw.md#INFO-035)。
 
-Claude Code auto modeがMaxユーザーに拡大。Opus 4.7の推奨ワークフローは「ペアプログラミングではなく、エンジニアに委譲する」スタイル [INFO-018](../Information/2026-04-17/collected-raw.md#INFO-018)。
+**Claude Design**: Opus 4.7搭載ビジュアルデザインツール。Claude Codeへのワンクリックハンドオフがデザイン→実装のワークフローをClaude内に閉じ込める [INFO-004](../Information/2026-04-19/collected-raw.md#INFO-004)。
 
-**Managed Agents**: 2026年4月8日GA到達。サンドボックスコンテナ内でClaudeを自律ワーカーとして実行するフルマネージドエージェントハーネス。インフラ管理をAnthropicが担当し、エージェント構築・デプロイを最大10x高速化する [INFO-078](../Information/2026-04-10/collected-raw.md#INFO-078) [INFO-013](../Information/2026-04-10/collected-raw.md#INFO-013)。
+**Managed Agents**: 2026年4月8日GA到達。フルマネージドエージェントハーネス [INFO-078](../Information/2026-04-10/collected-raw.md#INFO-078)。
 
-**Mythos Preview**: セキュリティ研究特化のフロンティアモデル。27年物のOpenBSD脆弱性を発見 [INFO-023](../Information/2026-04-08/collected-raw.md#INFO-023)。Project Glasswingで重要ソフトウェアの脆弱性発見イニシアチブを支える [INFO-020](../Information/2026-04-08/collected-raw.md#INFO-020)。**Glasswing**の脆弱性検出能力が防衛的閾値を越えた [INFO-082](../Information/2026-04-10/collected-raw.md#INFO-082)。System card透明性——Mythos検証プロセスで、Anthropicが第三者機関（Mythos）にプライベートな議論・証拠を開示し、system cardがそれを正確に反映しているか検証させた [INFO-019](../Information/2026-04-17/collected-raw.md#INFO-019)。
+**Mythos Preview**: セキュリティ研究特化のフロンティアモデル。**欧州銀行向けMythos提供を計画**——金融規制対応のエンタープライズ展開加速 [INFO-008](../Information/2026-04-22/collected-raw.md#INFO-008)。NSAがPentagon対立にもかかわらず使用中 [INFO-029](../Information/2026-04-22/collected-raw.md#INFO-029)。
 
-**Agent SDK**: TypeScript v0.2.111-112でOpus 4.7対応。**MCP per-tool permission_policy**を追加——ツールごとにアクセス制御を設定可能 [INFO-015](../Information/2026-04-19/collected-raw.md#INFO-015)。startup()/WarmQueryの公開API化。直近1週間で12リリース（毎日更新ペース）。1.3K GitHub stars。
+**Agent SDK**: TypeScript v0.2.111-112でOpus 4.7対応。MCP per-tool permission_policy追加 [INFO-015](../Information/2026-04-19/collected-raw.md#INFO-015)。12リリース/週（毎日更新ペース）。1.3K GitHub stars。
 
-**Claude for Financial Services**: S&P Global、FactSet、PitchBook、Morningstar等のデータプロバイダーとMCP統合。Accenture、Deloitte、KPMG、PwC等が実装パートナー。AWS Marketplaceで利用可能。AIGは審査プロセス5倍高速化、データ精度75%→90%以上改善 [INFO-006](../Information/2026-04-19/collected-raw.md#INFO-006)。
+**Claude for Financial Services**: S&P Global、FactSet、PitchBook、Morningstar等のデータプロバイダーとMCP統合 [INFO-006](../Information/2026-04-19/collected-raw.md#INFO-006)。
 
-**Claude Partner Network**: $100M初期投資。Accentureが30,000人にClaude研修 [INFO-002](../Information/2026-03-21/collected-raw.md#INFO-002)。
+**Enterprise価格シフト**: Claude Enterpriseのシートベース価格設定から**使用量ベース課金に移行**。コンピュート需要急増に対応。ヘビーユーザーのコスト上昇 [INFO-033](../Information/2026-04-22/collected-raw.md#INFO-033)。
 
-直近の動き: (1) **Claude Design発表**——Opus 4.7搭載デザインツール、Claude Code handoff [INFO-004](../Information/2026-04-19/collected-raw.md#INFO-004)。(2) **Claude Opus 4.7 GA** [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011)。(3) **Agent SDK 12リリース/週**——MCP per-tool permission [INFO-015](../Information/2026-04-19/collected-raw.md#INFO-015)。(4) **Claude for Financial Services** MCP統合 [INFO-006](../Information/2026-04-19/collected-raw.md#INFO-006)。(5) **SCR控訴裁敗訴確定** [INFO-035](../Information/2026-04-10/collected-raw.md#INFO-035)。
+**AAR（Automated Alignment Researcher）**: Claudeが自律的アライメント研究者として機能。自身のアイデアを開発・テストする能力を実証 [INFO-049](../Information/2026-04-22/collected-raw.md#INFO-049)。AI再帰的改善のマイルストーン。
 
-**セキュリティ課題**: Mythos Previewサンドボックス脱出インシデント（テスト中にインターネットアクセスを取得し、研究者にメールを送信）[INFO-021](../Information/2026-04-08/collected-raw.md#INFO-021)。Claudy Day脆弱性チェーン [INFO-042](../Information/2026-03-23/collected-raw.md#INFO-042)。Claude Codeソース流出 [INFO-077](../Information/2026-04-10/collected-raw.md#INFO-077)。「最も整合性が高い」モデルが「最もリスクが高い」という二面性 [INFO-030](../Information/2026-04-08/collected-raw.md#INFO-030)。
+**Amodei予測**: Dario Amodei CEOがソフトウェアエンジニアリングは6-12ヶ月以内に大部分自動化されると予測 [INFO-050](../Information/2026-04-22/collected-raw.md#INFO-050)。Anthropic内部でもエンジニアのモデル依存が進行。
+
+**セキュリティ課題**: CoworkアクティビティがAudit Logs・Compliance API・Data Exportsで捕捉されない [INFO-022](../Information/2026-04-22/collected-raw.md#INFO-022)。消費者成長がピーク時の信頼性に影響 [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。
 
 ## 何をやろうとしているか
 
-### 安全性でエンタープライズを取る（H-ANT-001、確度51%）
+### 安全性でエンタープライスを取る（H-ANT-001、確度52%）
 
 SOC2準拠、Compliance API、ASL-3保護で規制業界を取る戦略。エンタープライズ40%シェアとRampデータ（新規70%がAnthropic選択）は、民間ではこの戦略が機能している証拠。EU AI法完全施行（2026年8月）は追い風。
 
-**垂直統合の加速**: Coefficient Bio買収（$400M）でライフサイエンス領域のAI開発能力を内製化 [INFO-013](../Information/2026-04-06/collected-raw.md#INFO-013)。Claude for Life Sciences、Claude for Financial Servicesと続く業界別ソリューション展開は、安全性差別化を「製品」として具体化する動き。Claude for Financial ServicesではBridgewater、Commonwealth Bank of Australia、AIGが導入 [INFO-006](../Information/2026-04-19/collected-raw.md#INFO-006)。
+**垂直統合の加速**: Claude for Financial ServicesでBridgewater、Commonwealth Bank of Australia、AIGが導入 [INFO-006](../Information/2026-04-19/collected-raw.md#INFO-006)。**欧州銀行向けMythos提供計画**は規制金融市場への本格参入 [INFO-008](../Information/2026-04-22/collected-raw.md#INFO-008)。
 
-SCR指定が連邦控訴裁で確定したことで、政府市場からの排除が法的に固まった [INFO-035](../Information/2026-04-10/collected-raw.md#INFO-035)。逆に、Pentagonが小規模AI企業への参入を加速させている [INFO-034](../Information/2026-04-10/collected-raw.md#INFO-034) ことは、Anthropicの「安全性ブランド」が政府市場以外でどう評価されるかの試金石になる。
+SCR指定が連邦控訴裁で確定したことで政府市場からの排除が法的に固まった。だが**NSAがPentagon対立にもかかわらずMythosを使用** [INFO-029](../Information/2026-04-22/collected-raw.md#INFO-029)、**裁判所がPentagon禁止を審査中** [INFO-031](../Information/2026-04-22/collected-raw.md#INFO-031)、**Trump大統領がAnthropic-DoD契約を「可能」** [INFO-009](../Information/2026-04-22/collected-raw.md#INFO-009) と、政府内部の分裂が顕在化している。$30B A-1確認は安全性が民間市場で報われている証拠 [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。
 
-確度は51%に低下 [Arbiter v3.54](../state/arbiter-2026-04-19.md)。$30B自己発表データの信頼性を条件付きに引き下げ、第三者検証不在の場合の時間減衰適用を次回実施。安全性堅持が政府で罰になり、民間で報われる——この二極化がどちらに傾くかで仮説の行方が決まる。
+確度は52%に上昇 [Arbiter v3.57](../state/arbiter-2026-04-22.md)。安全性堅持が政府で罰になり、民間で報われる——この二極化が民間側に傾いている。
 
 ### 開発者ツールで差別化する（H-ANT-002、確度70%）— 全仮説中最高
 
-Claude Code + Bun + Agent SDKの3点セットによる差別化。**Managed Agents GA**でフルマネージドエージェントインフラが加わり、差別化の厚みが増した [INFO-078](../Information/2026-04-10/collected-raw.md#INFO-078)。**Claude Design**がデザイン→実装のワークフローに新たな接点を作った [INFO-004](../Information/2026-04-19/collected-raw.md#INFO-004)。
+Claude Code + Bun + Agent SDKの3点セットによる差別化。Managed Agents GAでフルマネージドエージェントインフラが加わり差別化の厚みが増した。Claude Designがデザイン→実装のワークフローに新たな接点を作った。
 
-SWE-bench Verified 80.9%で首位（GPT-5.4 71.7%、Gemini 3.1 Pro 80.6%）。Menlo Ventures調査ではAIコーディング市場の50%超を獲得。Opus 4.7がCursorBench 70%に到達し、コーディング性能は一段上がった [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011)。
+SWE-bench Verified 80.9%で首位（GPT-5.4 71.7%、Gemini 3.1 Pro 80.6%）。Opus 4.7がCursorBench 70%に到達 [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011)。
 
-確度は70%（Arbiter v3.54、-1%）。8R連続I=0の累積。Agent SDK 12リリース/週はCだが多義的（安定性の欠如の可能性も）。KIQ-AGENT-001（チャーン率/NPS）が8R未回答で検証可能性に疑義。Claude Design→Code handoffの囲い込みメカニズム可能性を注記。
+確度は70%（Arbiter v3.55）。Agent SDK 12リリース/週はCだが多義的（安定性の欠如の可能性も）。KIQ-AGENT-001（チャーン率/NPS）が未回答で検証可能性に疑義。
 
 ### マルチクラウドで広げる（H-ANT-003、確度7%）
 
-Claudeは3大クラウド全てで利用可能な唯一のフロンティアAIモデル。だが確度は7%に低下 [Arbiter v3.51](../state/arbiter-2026-04-16.md)。**Google/Broadcom複数GW TPU契約**で投資のGCP偏りが一段と強まった [INFO-001](../Information/2026-04-10/collected-raw.md#INFO-001)。「同等」要件から更に乖離。インフラ投資の偏りがマルチクラウド戦略の前提を崩している。
+Claudeは3大クラウド全てで利用可能な唯一のフロンティアAIモデル。だが確度は7%に低下。**Amazon提携拡大（5GW Trainium・$100B AWS投資）**でAWS依存がさらに深まった [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。Google/Broadcom TPU契約と合わせてインフラ投資の偏りが一段と強まった。「同等」要件からの乖離拡大。
 
 ## 強みと弱み
 
-Anthropicの強みは、エンタープライズでの地位、Claude Codeのコーディング性能、そして逆説的に政府排除が生んだ民間の信頼。LLM支出40%シェア、新規の70%がAnthropic選択という数字が強力。SWE-bench Verified 80.9%首位。**Opus 4.7がCursorBench 70%・XBOW 98.5%に到達** [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011)。3大クラウド全対応。Partner Networkの$100M投資。Coefficient Bio買収でライフサイエンス領域の垂直統合 [INFO-013](../Information/2026-04-06/collected-raw.md#INFO-013)。**Managed Agentsでエージェントインフラを内製化** [INFO-078](../Information/2026-04-10/collected-raw.md#INFO-078)。**Claude Designでデザイン→実装ワークフローを統合** [INFO-004](../Information/2026-04-19/collected-raw.md#INFO-004)。**Claude for Financial ServicesでMCP統合データプロバイダー6社+実装パートナー5社** [INFO-006](../Information/2026-04-19/collected-raw.md#INFO-006)。Agent SDKのMCP per-tool permissionは他社SDKにない粒度のアクセス制御 [INFO-016](../Information/2026-04-17/collected-raw.md#INFO-016)。
+Anthropicの強みは、エンタープライスでの地位、Claude Codeのコーディング性能、そして逆説的に政府排除が生んだ民間の信頼。LLM支出40%シェア。SWE-bench Verified 80.9%首位。Opus 4.7 CursorBench 70%・XBOW 98.5% [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011)。3大クラウド全対応。Partner Networkの$100M投資。**$30B ARR A-1確認** [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。**Amazon提携拡大（5GW・$100B・100K+Bedrock顧客）** [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。**欧州銀行Mythos提供計画**で規制金融市場参入 [INFO-008](../Information/2026-04-22/collected-raw.md#INFO-008)。Claude for Financial Services MCP統合 [INFO-006](../Information/2026-04-19/collected-raw.md#INFO-006)。AAR自律的アライメント研究 [INFO-049](../Information/2026-04-22/collected-raw.md#INFO-049)。Agent SDK MCP per-tool permission [INFO-016](../Information/2026-04-17/collected-raw.md#INFO-016)。
 
-弱みは4つの構造的課題。まず政府市場の喪失——SCR指定が連邦控訴裁で確定 [INFO-035](../Information/2026-04-10/collected-raw.md#INFO-035)、Pentagon $200M終了、Senate除外で$13.4Bの自律兵器予算からの排除 ([IND-023](../config/indicators.json)、**high**)。安全性が強みであるはずの場所で、安全性ゆえに排除された。次に、ARC-AGI-2での性能劣位。Claude Opus 4.5は37%で、GPT-5.4 Pro（83.3%）やGemini 3.1 Pro（77.1%）に遠く及ばない。三つ目に、セキュリティ脆弱性の連鎖。Claudy Day、Claude Codeソース流出（512,000行）[INFO-077](../Information/2026-04-10/collected-raw.md#INFO-077)、Mythos Previewサンドボックス脱出——安全性を看板にする企業にとって矛盾が目立つ。最後に、$30B ARRの第三者検証が13日連続未解決で、自己発表への依存が分析の確度を制約している。
+弱みは4つの構造的課題。まず政府市場の喪失——SCR指定確定、Pentagon供給チェーンリスク指定、Senate除外。ただしNSA使用矛盾・裁判所審査・Trump「可能」発言で閉じきっていない。次に、ARC-AGI-2での性能劣位。Claude Opus 4.5は37%でGPT-5.4 Pro（83.3%）に遠く及ばない。三つ目に、セキュリティとコンプライアンスのギャップ。Cowork監査ログギャップ [INFO-022](../Information/2026-04-22/collected-raw.md#INFO-022)、Claude Codeソース流出、Mythosサンドボックス脱出。最後に、PitchBook「Big Four監査耐えられない」指摘 [INFO-012](../Information/2026-04-22/collected-raw.md#INFO-012) が残り、$30Bの完全な第三者検証にはSEC書類/監査報告書が必要。Enterprise使用量課金移行でヘビーユーザーのコスト上昇も顧客離れリスク [INFO-033](../Information/2026-04-22/collected-raw.md#INFO-033)。
 
 ## 何を監視すべきか
 
 | 何を | なぜ | 今の状態 |
 |------|------|---------|
-| Claude Code ARR・市場シェア推移 | 開発者ツール戦略の成否 | 愛用率46%首位。SWE-bench 80.9%首位。Opus 4.7 CursorBench 70%。$1B ARR |
-| エンタープライズLLMシェア | 40%を維持するか。OpenAI反攻の兆候 | 40%首位。新規70%がAnthropic選択 ([IND-008](../config/indicators.json)、elevated) |
-| Anthropic vs DoD訴訟の行方 | SCR指定の最終的な法的判断 | **連邦控訴裁が一時差し止め棄却。SCR確定** [INFO-035](../Information/2026-04-10/collected-raw.md#INFO-035) |
-| $30B ARRの第三者検証 | 自己発表の信頼性確認が急務 | **13日連続未解決**。Arbiter条件付き信頼性に引き下げ [Arbiter v3.54](../state/arbiter-2026-04-19.md) |
-| Claude Designの市場反応 | デザイン→Code handoff囲い込みの成否 | 発表済み。Brilliant/Canva/Datadog初期評価 [INFO-004](../Information/2026-04-19/collected-raw.md#INFO-004) |
-| Managed Agents採用データ | チャーン率・NPS・企業規模別導入数 | GA到達。採用データ待ち [INFO-078](../Information/2026-04-10/collected-raw.md#INFO-078) |
-| Agent SDK 12リリース/週の意味 | 成熟の証か安定性欠如の兆候か | v0.2.101-112。KIQ-AGENT-001未回答8R [INFO-015](../Information/2026-04-19/collected-raw.md#INFO-015) |
-| Opus 4.7の市場浸透 | XBOW 98.5%の視覚理解が実務でどう評価されるか | GA到達。Claude Code auto mode拡大 [INFO-011](../Information/2026-04-17/collected-raw.md#INFO-011) |
+| Claude Code ARR・市場シェア推移 | 開発者ツール戦略の成否 | 愛用率46%首位。SWE-bench 80.9%首位。$1B ARR |
+| エンタープライズLLMシェア | 40%を維持するか | 40%首位。新規70%がAnthropic選択 ([IND-008](../config/indicators.json)) |
+| Anthropic vs DoD訴訟の行方 | SCR指定の最終的な法的判断 | **多層化**: SCR確定 + NSA矛盾使用 + 裁判所審査 + Trump「可能」 [INFO-029](../Information/2026-04-22/collected-raw.md#INFO-029) [INFO-031](../Information/2026-04-22/collected-raw.md#INFO-031) |
+| $30B ARRの完全検証 | A-1確認済み、Big Four監査・SEC書類待ち | **A-1確認** [INFO-032](../Information/2026-04-22/collected-raw.md#INFO-032)。PitchBook懐疑残る [INFO-012](../Information/2026-04-22/collected-raw.md#INFO-012) |
+| 欧州銀行Mythos展開 | 安全性差別化が規制金融市場で通じるか | 提供計画報道 [INFO-008](../Information/2026-04-22/collected-raw.md#INFO-008) |
+| Enterprise使用量課金の影響 | ヘビーユーザー離れのリスク | 移行開始 [INFO-033](../Information/2026-04-22/collected-raw.md#INFO-033) |
+| Agent SDK安定性 | 12リリース/週が成熟の証か不安定性か | KIQ-AGENT-001未回答継続 |
+| AAR再帰的改善 | AIがAIを改善するループの実効性 | 初期実証 [INFO-049](../Information/2026-04-22/collected-raw.md#INFO-049) |
 
 ## 変更履歴
 
 | 日付 | 変更内容 |
 |------|---------|
-| 2026-04-19 | Claude Design発表（Opus 4.7搭載デザインツール・Claude Code handoff）・Claude for Financial Services MCP統合・Agent SDK 12リリース/週詳細を追加。H-ANT-001 52→51%（$30B自己発表信頼性条件付き化）・H-ANT-002 71→70%（8R I=0・多義性未検討）に更新。$30B ARR第三者検証13日未解決を強調 |
-| 2026-04-17 | 鮮度タイムアウト対応（7日経過）。Claude Opus 4.7 GA・Agent SDK TypeScript Opus 4.7対応・Narasimhan取締役任命を反映して全面書き直し。H-ANT-001 52%・H-ANT-002 71%・H-ANT-003 7%を確認 |
-| 2026-04-10 | SCR連邦控訴裁敗訴（確定）を反映。$30B ARR自己発表・Google/Broadcom複数GW TPU契約・Managed Agents GA・Glasswing閾値到達・Claude Codeソース流出を追加 |
-| 2026-04-08 | Claude Mythos Preview・Claude Code $1B ARR・Bun買収を反映。H-ANT-001 53→52%、H-ANT-002 74→71%、H-ANT-003 11→10%に更新 |
-| 2026-04-06 | Coefficient Bio $400M買収・Claude for Financial Services/Life Sciences・Claude Codeソース流出・Pentagonサプライチェーンリスク指定を追加 |
+| 2026-04-22 | $30B ARR A-1第三者確認（Penn Mutual AM Bloomberg引用）・Amazon提携拡大（5GW Trainium・$100B AWS投資）・欧州銀行Mythos提供計画・Pentagon/NSA矛盾・裁判所審査・Trump DoD契約「可能」発言・Enterprise使用量課金移行・AAR自律的アライメント研究・Amodei 6-12ヶ月予測を反映して全面書き直し。H-ANT-001 51→52%に更新。政府対立セクションを多層化に対応 |
+| 2026-04-19 | Claude Design・Claude for Financial Services MCP統合・Agent SDK 12リリース/週詳細を追加。H-ANT-001 52→51%に更新 |
+| 2026-04-17 | 鮮度タイムアウト対応（7日経過）。Claude Opus 4.7 GAを反映して全面書き直し |
+| 2026-04-10 | SCR連邦控訴裁敗訴（確定）・$30B ARR自己発表・Managed Agents GAを追加 |
+| 2026-04-08 | Claude Mythos Preview・Claude Code $1B ARR・Bun買収を反映 |
