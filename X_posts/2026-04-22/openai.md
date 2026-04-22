@@ -311,3 +311,11 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**15:36 JST** | [原文](https://x.com/npew/status/2046840441077948717)
+
+> Once we reach AGI, everyone will have their own neolab.
+
+---
+
