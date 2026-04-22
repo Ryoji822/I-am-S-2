@@ -47,3 +47,38 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**23:35 JST** | [原文](https://x.com/sama/status/2046598595869331894)
+
+> Really excited for this week!
+> 
+> Next up, we've got something to show you at 12 pm PT today.
+> 
+> OpenAI: This is not a screenshot.
+
+---
+
+## @gdb (Greg Brockman - 共同創業者)
+
+**03:24 JST** | [原文](https://x.com/gdb/status/2046293955009274019)
+
+> Chronicle is an experimental feature giving Codex the ability to see and have recent memory over what you see, automatically giving it full context on what you're doing. Feels surprisingly magical to use.
+> 
+> OpenAI Developers: Last week, we released a preview of memories in Codex.
+> 
+> Today, we’re expanding the experiment with Chronicle, which improves memories using recent screen context.
+> 
+> Now, Codex can help with what you’ve been working on without you restating context.
+
+---
+
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**23:52 JST** | [原文](https://x.com/jasonkwon/status/2046716625068724414)
+
+> RT Tibo
+> Happy Tuesday. Codex has hit 4M active users, adding over 1M users in less than two weeks. To celebrate we will reset the rate limits again in a few hours. Enjoy!
+
+---
+
