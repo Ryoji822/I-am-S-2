@@ -282,3 +282,32 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**08:59 JST** | [原文](https://x.com/jasonkwon/status/2046799248046616767)
+
+> RT Tibo
+> I don't know what they are doing over there, but Codex will continue to be available both in the FREE and PLUS ($20) plans. We have the compute and efficient models to support it. For important changes, we will engage with the community well ahead of making them.
+> 
+> Transparency and trust are two principles we will not break, even if it means momentarily earning less. A reminder that you vote with your subscription for the values you want to see in this world.
+> 
+> Amol Avasare: For clarity, we're running a small test on ~2% of new prosumer signups. Existing Pro and Max subscribers aren't affected.
+
+---
+
+**04:36 JST** | [原文](https://x.com/jasonkwon/status/2046802154019819896)
+
+> RT Gabriel Goh
+> this model is miraculous and i'm so proud of my team for making this possible.
+> 
+> @ayaanzhaque @BoyuanChen0 @dibyayB @jianfw @kenjihata @kiwhansong0 @liang_weixin @Marco_B_Liang @mengchaozzz @yuguang_yang (and some without x handles)
+
+---
+
+**04:01 JST** | [原文](https://x.com/jasonkwon/status/2046801644248293738)
+
+> RT OpenAI
+> Made with ChatGPT Images 2.0
+
+---
+
