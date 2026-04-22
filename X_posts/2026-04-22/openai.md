@@ -270,3 +270,15 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**12:26 JST** | [原文](https://x.com/gdb/status/2046792761735630907)
+
+> wow
+> 
+> adi: A massive pile of rice, on ONE rice grain there is text reading" wOw"
+> 
+> - images-v2 in 4k
+
+---
+
