@@ -339,3 +339,47 @@
 
 ---
 
+## @bradlightcap (Brad Lightcap - 業務執行)
+
+**07:25 JST** | [原文](https://x.com/undefined/status/2029684672343728452)
+
+> ryan and team worked extremely hard to make gpt-5.4 great for finance
+> 
+> it's much improved for financial modeling and analysis, integrates directly into excel, and connects to factiva, daloopa, s&p global, and many more
+> 
+> it does feel like a codex moment is coming here
+> 
+> Ryan Brewer: Excited to share that I’ve joined OpenAI to help build the future of financial intelligence.
+> 
+> My focus is connecting models directly to the data sources, tools, and workflows analysts use every day. My team’s first product is the Excel plugin.
+> 
+> After software engineering, finance
+
+---
+
+**03:35 JST** | [原文](https://x.com/BrendanFoody/status/2029626860083237231)
+
+> RT Brendan (can/do)
+> GPT 5.4 is the best model we’ve ever tested on APEX-Agents. It’s also the first model to pass 50% mean score.
+> 
+> A year ago, frontier models couldn’t even edit an Excel sheet and scored less than 5%. Now, in less than 3 months GPT 5.4 has improved by 15.7%.
+> 
+> ChatGPT will imminently be better than the best consulting firm, better than the best investment bank, and better than the best law firm.
+> 
+> Congrats @OpenAI on the release!
+
+---
+
+**03:16 JST** | [原文](https://x.com/polynoamial/status/2029622090152956335)
+
+> RT Noam Brown
+> GPT-5.4 is a big step up in computer use and economically valuable tasks (e.g., GDPval). We see no wall, and expect AI capabilities to continue to increase dramatically this year.
+> 
+> OpenAI: GPT-5.4 Thinking and GPT-5.4 Pro are rolling out now in ChatGPT.
+> 
+> GPT-5.4 is also now available in the API and Codex.
+> 
+> GPT-5.4 brings our advances in reasoning, coding, and agentic workflows into one frontier model.
+
+---
+

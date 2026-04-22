@@ -144,3 +144,34 @@
 
 ---
 
+## @bradlightcap (Brad Lightcap - 業務執行)
+
+**03:29 JST** | [原文](https://x.com/embirico/status/2019478580280103216)
+
+> RT Alexander Embiricos
+> GPT-5.3-Codex is out!
+> State of the art of SWEBench Pro and TBench, and a big leap in how it _feels_:
+> - Mid-turn updates tell you what it's doing
+> - Steer without interrupting
+> - 25% faster via inference improvements
+> I've been loving it. Think you will too
+> https://openai.com/index/introducing-gpt-5-3-codex/
+
+---
+
+**03:12 JST** | [原文](https://x.com/OpenAIDevs/status/2019474328577036648)
+
+> RT OpenAI Developers
+> GPT-5.3-Codex is here.
+> 
+> It advances both frontier coding performance and professional knowledge capabilities together in a single model.
+> 
+> http://openai.com/index/introducing-gpt-5-3-codex/
+> 
+> OpenAI: GPT-5.3-Codex is now available in Codex.
+> 
+> You can just build things.
+> https://openai.com/index/introducing-gpt-5-3-codex/
+
+---
+

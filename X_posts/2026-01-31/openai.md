@@ -34,3 +34,18 @@
 
 ---
 
+## @bradlightcap (Brad Lightcap - 業務執行)
+
+**05:30 JST** | [原文](https://x.com/undefined/status/2017334703452524657)
+
+> we wrote about our in-house data agent
+> 
+> used by ~4k people, from product/eng, to research, GTM, finance, and more
+> 
+> it was built with codex, and runs on codex, gpt-5, and our evals & embeddings APIs
+> 
+> like codex, it works like a teammate you can collab with
+> https://openai.com/index/inside-our-in-house-data-agent/
+
+---
+

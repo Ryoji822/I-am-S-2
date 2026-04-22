@@ -13,3 +13,12 @@
 
 ---
 
+## @bradlightcap (Brad Lightcap - 業務執行)
+
+**03:10 JST** | [原文](https://x.com/philip_bogdanov/status/2007152482850615515)
+
+> RT Philip Bogdanov
+> Applications for the next cohort of OpenAI Grove are now open. Come work with our research and applied teams in an incredibly talent-dense environment. https://openai.com/index/openai-grove/
+
+---
+

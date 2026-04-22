@@ -141,3 +141,17 @@
 
 ---
 
+## @bradlightcap (Brad Lightcap - 業務執行)
+
+**07:10 JST** | [原文](https://x.com/undefined/status/2031130515248656415)
+
+> 💡
+> 
+> Rohan Varma: If you want AI Code Review, but don't want to pay $25 per review (not a typo), check out Codex Review!
+> 
+> It leverages frontier Codex models, finds complex issues, and 100% usage based. Most runs should cost ~$1 or less
+> 
+> https://developers.openai.com/codex/integrations/github/
+
+---
+

@@ -49,3 +49,15 @@
 
 ---
 
+## @bradlightcap (Brad Lightcap - 業務執行)
+
+**03:14 JST** | [原文](https://x.com/undefined/status/2000992917251567842)
+
+> we increasingly hear from countries wanting to understand how AI fits into their economic strategy and ability to serve citizens in domains like healthcare, education, and more
+> 
+> we are thrilled to welcome @George_Osborne as our Head of OpenAI for Countries to lead our work helping governments build for the future with AI
+> 
+> George Osborne: Hi, some personal news - I’m changing job. I recently asked myself the question: what’s the most exciting and promising company in the world right now? The answer I believe is OpenAI. So it’s a privilege to be going to work for OpenAI as managing director and head of OpenAI for
+
+---
+

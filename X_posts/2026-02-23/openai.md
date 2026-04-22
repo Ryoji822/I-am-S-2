@@ -50,3 +50,12 @@
 
 ---
 
+## @bradlightcap (Brad Lightcap - 業務執行)
+
+**23:12 JST** | [原文](https://x.com/undefined/status/2025936690334875735)
+
+> we're partnering with @bcg @mckinsey @accenture and @capgemini to deploy openai frontier to enterprises globally
+> https://openai.com/index/frontier-alliance-partners
+
+---
+
