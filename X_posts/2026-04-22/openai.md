@@ -218,3 +218,55 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**07:00 JST** | [原文](https://x.com/OpenAIDevs/status/2046753891031880055)
+
+> RT Min Choi
+> ChatGPT Images 2.0 just dropped.
+> 
+> People can't believe it's 100% AI, it's insanely good.
+> 
+> 10 wild examples:
+> 
+> 1. "360 equirectangular image"
+
+---
+
+**04:07 JST** | [原文](https://x.com/OpenAIDevs/status/2046753939526459413)
+
+> RT fal
+> 🚨 GPT Image 2 is live on fal, day 0!
+> 
+> 🔤 Strong text rendering
+> 🧭 Better layout + UI adherence
+> 🛠️ Cleaner preserve-and-change edits
+> 📷 Strong everyday photoreal output
+
+---
+
+## @sama (Sam Altman - CEO)
+
+**09:46 JST** | [原文](https://x.com/sama/status/2046752492093165708)
+
+> We want you to have a lot of AI!
+> 
+> Tibo: I don't know what they are doing over there, but Codex will continue to be available both in the FREE and PLUS ($20) plans. We have the compute and efficient models to support it. For important changes, we will engage with the community well ahead of making them.
+> 
+> Transparency
+
+---
+
+## @npew (Peter Welinder - 研究・技術)
+
+**08:59 JST** | [原文](https://x.com/npew/status/2046757256155582750)
+
+> RT Tibo
+> I don't know what they are doing over there, but Codex will continue to be available both in the FREE and PLUS ($20) plans. We have the compute and efficient models to support it. For important changes, we will engage with the community well ahead of making them.
+> 
+> Transparency and trust are two principles we will not break, even if it means momentarily earning less. A reminder that you vote with your subscription for the values you want to see in this world.
+> 
+> Amol Avasare: For clarity, we're running a small test on ~2% of new prosumer signups. Existing Pro and Max subscribers aren't affected.
+
+---
+

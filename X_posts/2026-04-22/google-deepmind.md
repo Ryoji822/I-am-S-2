@@ -38,3 +38,32 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**10:31 JST** | [原文](https://x.com/joshwoodward/status/2046763674199794061)
+
+> Welcome to Europe, Pomelli!
+> 
+> Pomelli is one of our newer Labs experiments, and SMBs are running with it
+> 
+> Jaclyn Konzelmann: The wait is over. Pomelli has landed in Europe. 🇪🇺✈️
+> All our features. All our creative power. All available to you, right now:
+> 📈 Strategic Campaigns
+> 🎨 Bespoke Creative Assets
+> 📸 High-end Photoshoots
+> 🎬 Animated Creatives
+> 
+> To everyone I told "we’re working on it" when you asked
+
+---
+
+**09:53 JST** | [原文](https://x.com/joshwoodward/status/2046754179499356594)
+
+> DESIGN.md is one of my favorite things that Stitch is doing! If you know, you know.
+> 
+> Stitch by Google: Today, we’re open-sourcing the draft specification for DESIGN.md, so it can be used across any tool or platform. We’re also adding new capabilities.
+> 
+> DESIGN.md lets you easily export and import your design rules from project to project. Instead of guessing intent, agents know
+
+---
+
