@@ -62,3 +62,13 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**04:19 JST** | [原文](https://x.com/OpenAIDevs/status/2047032688331362606)
+
+> “gpt-image-2 bridges the gap between text and visual planning.”
+> 
+> @openart_ai built Smart Shot on gpt-image-2 to help creators turn a short story idea into characters, worlds, shots, and camera movement.
+
+---
+
