@@ -82,3 +82,49 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**02:45 JST** | [原文](https://x.com/jasonkwon/status/2047082966837535091)
+
+> RT OpenAI
+> Introducing workspace agents in ChatGPT—shared agents that can handle complex tasks and long-running workflows across tools and teams.
+
+---
+
+## @npew (Peter Welinder - 研究・技術)
+
+**07:43 JST** | [原文](https://x.com/npew/status/2047083944139735362)
+
+> We’ll easily get past 1 GPU per human before 2040 if energy and compute 2x every year after 2030.
+> 
+> Peter Welinder: This is is still early. 30 GW ~= 30m GPUs. Long way to go for one GPU per human.
+
+---
+
+**07:39 JST** | [原文](https://x.com/npew/status/2047084359237406941)
+
+> RT Yana Welinder
+> Remixed my @SFMOMA female founder profile.
+> 
+> ChatGPT Images 2.0 means I may never need to pose in front of a camera again 🖤
+> 
+> Yana Welinder: Founders at @SFMOMA 
+> 
+> Honored to be featured in “Female Founders in Focus,” a photography exhibit at SFMOMA highlighting visionary entrepreneurs breaking barriers and redefining industries.
+> 
+> Ever since I moved to San Francisco, SFMOMA has been a special place for me.
+> 
+> Founder
+
+---
+
+**07:33 JST** | [原文](https://x.com/npew/status/2047081499619692753)
+
+> I love Codex harness for my OpenClaw.
+> 
+> pash: I've embarked on a new sprint. My mission is to make OpenAI models feel magical in OpenClaw in the next few weeks. 
+> 
+> Diving in today, I noticed a bug. When you configured OpenClaw to use the Codex harness with OpenAI models, auth was broken, and the system was silently falling
+
+---
+
