@@ -79,3 +79,27 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**22:35 JST** | [原文](https://x.com/demishassabis/status/2046994882150154369)
+
+> RT Chandu Thota
+> At #googlecloudnext today, we are introducing Workspace Intelligence
+> 
+> Today’s digital workflows are information-rich but context-poor; project details live in Docs, trackers in Sheets, decisions are tucked in meeting notes, and updates are scattered across emails and chats. Workspace Intelligence provides a unifying semantic layer for all this information, giving you and your AI agents the context needed to drive outcomes instead of hunting for data.
+> 
+> Workspace Intelligence is generally available (GA) to all Workspace Customers and AI Ultra/AI Pro users. Here is how Workspace Intelligence transforms your favorite Workspace Apps 🧵 1/8
+
+---
+
+**21:23 JST** | [原文](https://x.com/demishassabis/status/2046994953159704919)
+
+> RT Google DeepMind
+> Only 25% of organizations have moved AI into production at scale. We’re working to change that. 🛠️
+> 
+> @Accenture, @BainandCompany, @BCG, @Deloitte, and @McKinsey are combining our research with their expertise to bring AI innovation to more industries responsibly. 🤝
+> 
+> Find out more → https://goo.gle/42kvkz1
+
+---
+

@@ -14,3 +14,30 @@
 
 ---
 
+## @demishassabis (Demis Hassabis - 共同創業者・CEO)
+
+**00:57 JST** | [原文](https://x.com/demishassabis/status/2046995068343742752)
+
+> RT Sundar Pichai
+> TPU 8t, optimized for training and TPU 8i, optimized for inference.
+> 
+> Looking good!
+
+---
+
+## @sundarpichai (Sundar Pichai - Google CEO)
+
+**01:03 JST** | [原文](https://x.com/sundarpichai/status/2046993469680624089)
+
+> RT Google Cloud
+> Google Cloud by the numbers:
+> 
+> - Nearly 75% of Google Cloud customers are using our AI products to power their business
+> - Over the past 12 months, 330 Google Cloud customers each processed over one trillion tokens
+> - 35 customers reached the 10-trillion-token milestone 
+> - Our first-party models now process over 16 billion tokens per minute via direct API use by our customers
+> 
+> #GoogleCloudNext
+
+---
+
