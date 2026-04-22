@@ -40,3 +40,25 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**03:21 JST** | [原文](https://x.com/sama/status/2047017964105597009)
+
+> These are cool! I think most companies will want to use them.
+> 
+> OpenAI: Introducing workspace agents in ChatGPT—shared agents that can handle complex tasks and long-running workflows across tools and teams.
+
+---
+
+## @gdb (Greg Brockman - 共同創業者)
+
+**03:41 JST** | [原文](https://x.com/gdb/status/2047023089087606814)
+
+> Build workspace agents for your team, on top of a cloud-hosted Codex harness. Hook them up to tools, give them recurring tasks, and talk to them from surfaces like Slack.
+> 
+> Easier than ever to bring the power of agents to your computer work.
+> 
+> OpenAI: Introducing workspace agents in ChatGPT—shared agents that can handle complex tasks and long-running workflows across tools and teams.
+
+---
+
