@@ -72,3 +72,13 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**06:27 JST** | [原文](https://x.com/gdb/status/2047064885012599168)
+
+> ChatGPT plugin now available for Google Sheets:
+> 
+> Ryan Brewer: Excited to announce ChatGPT for Google Sheets! This was a really fun one to work on. Create new sheets, ask questions across tabs and formulas, and make updates directly in your sheets https://chatgpt.com/apps/spreadsheets/
+
+---
+
