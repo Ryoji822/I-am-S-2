@@ -128,3 +128,15 @@
 
 ---
 
+## @markchen90 (Mark Chen - 研究責任者)
+
+**09:05 JST** | [原文](https://x.com/markchen90/status/2047104498817286505)
+
+> And he’s doing a phenomenal job!
+> 
+> Ashlee Vance: One of the biggest things I took away from this interview was that @gdb is back in a major way setting the strategy for @OpenAI. 
+> 
+> Full pod right here - https://www.corememory.com/p/the-great-reset-at-openai-ep-67-sam-altman-greg-brockman
+
+---
+
