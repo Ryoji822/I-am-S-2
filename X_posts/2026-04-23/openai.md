@@ -192,3 +192,18 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**23:56 JST** | [原文](https://x.com/OpenAIDevs/status/2047328878268760547)
+
+> NS41
+
+---
+
+**20:08 JST** | [原文](https://x.com/OpenAIDevs/status/2047307112766988571)
+
+> RT Chong-U
+> http://x.com/i/article/2047251857291071489
+
+---
+
