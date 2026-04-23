@@ -51,3 +51,16 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**10:03 JST** | [原文](https://x.com/GoogleDeepMind/status/2047239487445438545)
+
+> RT Radu Soricut
+> Meet Vision Banana 🍌 from @GoogleDeepMind! We provide strong evidence that image generators are generalist vision learners. Traditional computer vision tasks (segmentation, depth estimation, normal prediction) can now be performed at/near SOTA with a single generalist model derived from an image generation model.
+> 
+> 🖼️ Explore the results: http://vision-banana.github.io
+> 
+> 📄 See details at: https://arxiv.org/abs/2604.20329
+
+---
+
