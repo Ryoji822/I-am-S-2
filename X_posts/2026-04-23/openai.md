@@ -184,3 +184,11 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**13:46 JST** | [原文](https://x.com/OpenAIDevs/status/2047175344038494302)
+
+> Everyone can just build things.
+
+---
+
