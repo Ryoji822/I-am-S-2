@@ -41,3 +41,13 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**11:54 JST** | [原文](https://x.com/joshwoodward/status/2047147030351642914)
+
+> ✅ Papercut fixed: Conversation branching
+> 
+> Rolled out to 20% right now, ramping up!
+
+---
+

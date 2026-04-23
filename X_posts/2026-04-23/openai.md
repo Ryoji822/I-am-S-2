@@ -155,3 +155,32 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**08:12 JST** | [原文](https://x.com/sama/status/2047149494274515032)
+
+> RT Karan Singhal
+> Today we’re introducing two big steps for health at OpenAI:
+> 
+> - ChatGPT for Clinicians, a free version of ChatGPT designed for clinical work
+> - HealthBench Professional, a new benchmark to evaluate real clinician chat tasks
+> 
+> We’re excited about what this can unlock for care. ❤️
+
+---
+
+## @gdb (Greg Brockman - 共同創業者)
+
+**11:46 JST** | [原文](https://x.com/gdb/status/2047145125604995280)
+
+> Introducing ChatGPT for Clinicians:
+> 
+> Karan Singhal: Today we’re introducing two big steps for health at OpenAI:
+> 
+> - ChatGPT for Clinicians, a free version of ChatGPT designed for clinical work
+> - HealthBench Professional, a new benchmark to evaluate real clinician chat tasks
+> 
+> We’re excited about what this can unlock for care. ❤️
+
+---
+
