@@ -140,3 +140,18 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**02:14 JST** | [原文](https://x.com/npew/status/2047128770549789105)
+
+> RT Tibo
+> Team is hard at work together with @steipete to make OpenAI models and ecosystem be the obvious way to to enjoy your claw. A lot more to come next week, but a reminder that you can use OpenClaw as part of your ChatGPT subscription today already.
+> 
+> (also still having too much fun with ChatGPT Images 2.0 today)
+> 
+> pash: I've embarked on a new sprint. My mission is to make OpenAI models feel magical in OpenClaw in the next few weeks. 
+> 
+> Diving in today, I noticed a bug. When you configured OpenClaw to use the Codex harness with OpenAI models, auth was broken, and the system was silently falling
+
+---
+
