@@ -1,15 +1,12 @@
 {
-  "version": "3.57",
-  "last_updated": "2026-04-22",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.57: Arbiter統合判断完了（DEGRADED状態・Red Agent 2026-04-22/21不在）. 7指標更新（1件状態変更: IND-029 elevated→high. 6件last_checked更新）. DC約50%遅延+Q1 $242B+Amazon $200B供給先行+IEA 17%で構造的ギャップ確定的. Reset to Zero問題をIND-026/030に反映. 能力-リスク二面性持続",
+  "version": "3.58",
+  "last_updated": "2026-04-23",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.58: Arbiter統合判断完了（DEGRADED状態・Red Agent 4日連続不在: 04-21/22/23完全不在・04-20は04-19 Red参照）. 7指標更新（全件状態変更なし・IND-013 high強化・7件last_checked更新）. Comment and Control CVSS 9.4 Criticalでエージェントランタイム構造的脆弱性確定. Workspace Agents+Enterprise Agent Platform大量投入で普及加速",
   "structural_changes_log": [
+    "2026-04-23 v3.58: Arbiter統合判断（DEGRADED状態・Red Agent 4日連続不在: 04-21/22/23完全不在・04-20は04-19 Red参照・最後の完全Red: 2026-04-19）。7指標更新（全件状態変更なし）。IND-013 high強化（Comment and Control CVSS 9.4 Critical・3社同時API鍵漏洩・$100バグバウンティ・CVE未発行でエージェントランタイム構造的脆弱性確定的。critical移行条件: 大規模AI攻撃インシデント。未到達）・IND-025 elevated継続（新規マルチモーダルデータなし）・IND-026 elevated継続（Workspace Agents+Enterprise Agent Platform大量投下で普及加速。Comment and Control 3社同時脆弱性+Klarna再採用+Block 95%修正で品質ギャップ解消なし。普及>品質成熟継続）・IND-027 high継続（新規標準化データなし。MCP業界標準地位維持）・IND-028 elevated継続（OpenAI 30GW by 2030主観的宣言。ARC-AGI-3全0%。主観-客観乖離最大水準維持）・IND-029 high継続（DC約50%遅延+33週リードタイム+945 TWh+ハイパースケーラー4社$4,102億CapExで構造的ギャップ確定的継続）・IND-030 elevated継続（CVSS 9.4 Criticalでリスク面強化。Opus 4.7+Cyber Verification Programで能力向上+リスク対応の同時進行。能力-リスク二面性継続）",
     "2026-04-22 v3.57: Arbiter統合判断（DEGRADED状態・Red Agent 2026-04-22/21不在・最後の完全Red: 2026-04-19）。7指標更新（1件状態変更）。IND-013 high継続（97%インシデント予期+Cowork監査ギャップ+Reset to Zero脆弱性+CompTIA SecAI+。攻撃ベクトル多様化。critical未到達）・IND-025 elevated継続（Grok STT WER 6.9%+Gemini Flash TTS Elo 1,211+Robotics-ER 1.6+Seeduplex。量的向上。「真の理解」未解決）・IND-026 elevated継続（Stanford 77%+Microsoft社内展開+Codex Labs GSI 7社。vs 54%/25%ギャップ+Klarna再採用+Reset to Zero。普及>品質成熟継続）・IND-027 high継続（Cloudflare MCP+AAIF 2026+Agents SDK MCP+Deep Research Max MCP+Bedrock AgentCore GA）・IND-028 elevated継続（ARC-AGI-3全0%+DeepMind 10次元AGI認知+AAR+Amodei 6-12ヶ月。主観-客観乖離最大水準）・IND-029 **elevated→high移行**（DC約50%遅延+Q1 $242B+Amazon $200B供給先行+IEA 17%+接続キュー2,100GW。資本流入vs物理的制約の構造的ギャップ確定的。前回「high移行条件に接近」から段階的移行）・IND-030 elevated継続（Stanford 77%+Amodei 6-12ヶ月+97%インシデント予期+Reset to Zero+監査ギャップ。能力-リスク同時進行持続）",
     "2026-04-21 v3.56: Arbiter統合判断（DEGRADED状態・Red Agent不在）。7指標更新（全件状態変更なし）。IND-013 high継続（97%12ヶ月以内インシデント予期・Cowork監査ログギャップ・CompTIA SecAI+認証。攻撃対象拡大続く。critical移行条件に未到達）・IND-025 elevated継続（Grok STT WER 6.9%・Gemini Robotics ER 1.6・Gemini 3.1 Pro MMMU-Pro 88.21%。「真の理解」検証未解決）・IND-026 elevated継続（Hyatt Enterprise・Microsoft社内展開・Stanford 77%成功率。vs 54%計画vs25%実績・監査ギャップ。elevated→high方向監視）・IND-027 high継続（Cloudflare MCP参照アーキテクチャ・AAIF 2026イベント・AWS Bedrock AgentCore GA）・IND-028 elevated継続（ARC-AGI-3全0%・Stanford PhD到達・Meta Hyperagents・DeepMind AGI認知フレームワーク。主観-客観乖離最大水準）・IND-029 elevated継続（Q1 $242B・DC約半数延期・12GW稼働1/3。high移行条件に接近）・IND-030 elevated継続（Stanford 77%成功率・97%インシデント予期・監査ギャップ。能力-リスク同時進行持続）",
-    "2026-04-20 v3.55: Arbiter統合判断（COMPLETE状態）。Blue完了・Red 2026-04-19参照比較。7指標更新（全件状態変更なし）。IND-013 high継続（97%12ヶ月以内インシデント予期・Coworkセキュリティ監査ギャップ・OWASP Agentic Top 10形式化。攻撃ベクトル多様化加速。critical移行条件に未到達）・IND-025 elevated継続（Opus 4.7 Vision 3x・Grok STT/TTS・Seedance 2.0ネイティブマルチモーダル・Gemini Flash TTS Elo 1,211。「真の理解」検証未解決）・IND-026 elevated継続（Goldman Sachs本番・60% Fortune 500・43%組織で普及加速 vs Claude API障害・ROI 5%・36.3%フルタスク成功率で品質課題。転換点監視継続）・IND-027 high継続（Cloudflare MCP参照アーキテクチャ・AAIF Goose Linux Foundation・A2UI v0.9。MCP業界標準地位強化継続）・IND-028 elevated継続（AAR自律的アライメント研究・AI人間超え75%vs72.4%・MMLU飽和・ARC-AGI-3全0%。主観-客観乖離維持。high移行条件: RSI実証再現確認・ARC-AGI-3有意改善）・IND-029 elevated継続（Amazon $200B・Google $10Bインド・Microsoft オンタリオ。インフラ投資指数関数的加速継続。high移行条件に未到達）・IND-030 elevated継続（AAR・97%インシデント予期・監査ギャップ。能力-リスク同時進行持続）",
-    "2026-04-19 v3.54: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。7指標更新（全件状態変更なし）。IND-013 high継続（97%12ヶ月以内インシデント予期・OWASP Agentic Top 10形式化・43%AI生成コード本番デバッグ必要）・IND-025 elevated継続（Grok STT WER 6.9%・Gemini Flash TTS Elo 1,211・Opus 4.7 Vision 3x。音声・視覚双方性能向上）・IND-026 elevated継続（Codex 3M+週次ユーザー・Oscar Health本番評価・43%デバッグ必要・普及加速と品質課題同時進行）・IND-027 high継続（Agents SDK MCP統合・Cloudflare 12+プロバイダー/70+モデル・Microsoft Agent Framework統合。MCP業界標準地位強化継続）・IND-028 elevated継続（GPT-Rosalind BixBench 0.751人間専門家95%tile超え・ARC-AGI 3全0%・主観-客観乖離維持）・IND-029 elevated継続（新規インフラ関連データなし。DC電力17%急増・Q1 $242B調達状況変更なし）・IND-030 elevated継続（GPT-Rosalind人間専門家超え・97%インシデント予期/OWASP形式化。能力向上とリスク増大の同時進行持続）",
-    "2026-04-18 v3.53: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。7指標更新（全件状態変更なし）。IND-013 high継続（97%12ヶ月以内インシデント予期・AIガードレール4コマンド無効化・Mythos持続的脅威実証）・IND-025 elevated継続（Opus 4.7 3x Vision・Gemini Robotics-ER 1.6・Seedance 2.0ネイティブマルチモーダル・テキスト-マルチモーダル乖離継続）・IND-026 elevated継続（パイロット→本番予算化 vs 19%のみデプロイ・Klarna再採用・20%タスク代替・進展と課題の同時進行）・IND-027 high継続（Cloudflare企業MCP参照アーキテクチャ・AAIF 2026イベント・Vercel 41+ツール・1000+スキル横断プラットフォーム）・IND-028 elevated継続（METR 1h30m 80%成功率新記録・ARC-AGI 3全フロンティア0%・主観-客観乖離最大水準維持）・IND-029 elevated継続（DC電力17%急増・Q1 $242B AI資金調達・複数GW TPU契約）・IND-030 elevated継続（97%インシデント予期+Mythos脅威実証+METR新記録+ガードレール無効化の同時進行）",
-    "2026-04-17 v3.52: Arbiter統合判断（COMPLETE状態）。Blue完了・Red 2026-04-16参照比較。7指標更新（全件状態変更なし）。IND-013 high維持（Codex desktop control新攻撃表面・Cyber Verification Program対抗投資）・IND-025 elevated維持（Opus 4.7 XBOW 98.5%質的飛躍・Gemini Flash TTS Elo 1211）・IND-026 elevated維持（Codex 25hr連続稼働・heartbeats信頼性転換点・OpenClaw compute 10-50xコスト課題）・IND-027 high維持（MCP全主要プレイヤー対応継続・v3.51 high移行妥当性確認）・IND-028 elevated継続（METR約7ヶ月倍増期間確認・ARC-AGI-3依然0%・主観-客観乖離過去最大水準）・IND-029 elevated継続（OpenClaw GPU H200価格25-30%上昇・インフラ需要加速）・IND-030 elevated継続（Codex 25hr自律稼働能力向上・Cyber Verification Programリスク対応）",
-    "2026-04-16 v3.51: Arbiter統合判断（COMPLETE状態）。Blue/Red両方完了。7指標更新。IND-027 elevated→high移行（MCP 177Kツール・10K+サーバー・97クライアント・Cloudflare/AWS参照アーキテクチャ・AAIFガバナンス・全主要AI企業対応で業界標準として臨界量超過。注記: 177Kツール品質分布確認を条件・標準化早計性リスク・断片化リスク監視継続）。IND-013 high維持（Computer Use Agent C2リスク・94%スプロール懸念で攻撃対象拡大）・IND-025 elevated維持（テキスト-マルチモーダル乖離の構造的課題継続・Gemini 3.1 Pro MMMU 88.21%）・IND-026 elevated維持（普及>品質成熟の構造強化・5社同時SDKアップデートは転換点）・IND-028 elevated継続（主観-客観乖離過去最大水準維持・ARC-AGI-3全0%）・IND-029 elevated継続（投資規模指数関数的加速・Q1 $297B記録的調達）・IND-030 elevated継続（能力向上とリスク増大の同時進行持続・社会的反発の暴力化は新局面）"
+    "2026-04-20 v3.55: Arbiter統合判断（COMPLETE状態）。Blue完了・Red 2026-04-19参照比較。7指標更新（全件状態変更なし）。IND-013 high継続（97%12ヶ月以内インシデント予期・Coworkセキュリティ監査ギャップ・OWASP Agentic Top 10形式化。攻撃ベクトル多様化加速。critical移行条件に未到達）・IND-025 elevated継続（Opus 4.7 Vision 3x・Grok STT/TTS・Seedance 2.0ネイティブマルチモーダル・Gemini Flash TTS Elo 1,211。「真の理解」検証未解決）・IND-026 elevated継続（Goldman Sachs本番・60% Fortune 500・43%組織で普及加速 vs Claude API障害・ROI 5%・36.3%フルタスク成功率で品質課題。転換点監視継続）・IND-027 high継続（Cloudflare MCP参照アーキテクチャ・AAIF Goose Linux Foundation・A2UI v0.9。MCP業界標準地位強化継続）・IND-028 elevated継続（AAR自律的アライメント研究・AI人間超え75%vs72.4%・MMLU飽和・ARC-AGI-3全0%。主観-客観乖離維持。high移行条件: RSI実証再現確認・ARC-AGI-3有意改善）・IND-029 elevated継続（Amazon $200B・Google $10Bインド・Microsoft オンタリオ。インフラ投資指数関数的加速継続。high移行条件に未到達）・IND-030 elevated継続（AAR・97%インシデント予期・監査ギャップ。能力-リスク同時進行持続）"
   ],
   "indicators": {
     "IND-013": {
@@ -19,9 +16,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "97%が12ヶ月以内にAIエージェントインシデント予期（INFO-021）。Cowork監査ログギャップ: Audit Logs/Compliance API/Data Exports全て捕捉不可（INFO-022）。Reset to Zero脆弱性（INFO-070）。CompTIA SecAI+認証（INFO-023）。攻撃ベクトル多様化加速。critical移行条件（大規模AI攻撃インシデント）に未到達",
-      "last_checked": "2026-04-22",
-      "rationale": "Arbiter v3.57: high継続。97%インシデント予期+Cowork監査ログギャップ+Reset to Zero脆弱性+CompTIA SecAI+認証で攻撃ベクトル多様化加速。エージェント採用急増で攻撃対象拡大。critical移行条件（大規模AI攻撃インシデント）に未到達"
+      "last_value": "Comment and Control CVSS 9.4 Critical・3社同時API鍵漏洩（INFO-008）・$100バグバウンティ（Anthropic）vs $1,337（Google）vs $500（GitHub）・CVE未発行・エージェントランタイムの構造的セキュリティギャップ確定的。97%12ヶ月以内インシデント予期+Reset to Zero脆弱性+監査ギャップ。critical移行条件（大規模AI攻撃インシデント）に未到達",
+      "last_checked": "2026-04-23",
+      "rationale": "Arbiter v3.58: high強化。Comment and Control（CVSS 9.4 Critical・Johns Hopkins A-3）はエージェントランタイムにプロンプトインジェクション対策が構造的に欠落していることを確定的に示した。$100バグバウンティは安全性ブランドとの重大な矛盾。CVE未発行は業界全体の対応遅れ示唆。critical移行条件（大規模AI攻撃インシデント）に未到達だが、類似攻撃増加で移行可能性あり。DEGRADED: Red 4日連続不在"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -30,9 +27,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Grok STT WER 6.9%業界最良（INFO-007）。Gemini Flash TTS Elo 1,211（INFO-005）。Gemini Robotics-ER 1.6（INFO-060）。Seeduplex音声モデル（INFO-056）。各モダリティ量的向上。「真の理解」検証未解決。ARC-AGI-3全0%（INFO-047）は推論根本的限界示唆",
-      "last_checked": "2026-04-22",
-      "rationale": "Arbiter v3.57: elevated継続。Grok STT WER 6.9%+Gemini Flash TTS Elo 1,211+Robotics-ER 1.6+Seeduplexで各モダリティ量的向上。但し「真の理解」検証は未解決。ARC-AGI-3全0%は推論能力の根本的限界示唆"
+      "last_value": "新規マルチモーダル性能データなし。Opus 4.7 Vision 3x+Gemini Flash TTS Elo 1,211+Robotics-ER 1.6。「真の理解」検証未解決",
+      "last_checked": "2026-04-23",
+      "rationale": "Arbiter v3.58: elevated継続。新規マルチモーダルデータなし。各モダリティ量的向上は確認済み。「真の理解」検証は未解決"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -41,9 +38,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Stanford 77%成功率（INFO-036）+ Microsoft社内大規模展開（INFO-067）+ Codex Labs GSI 7社（INFO-001）。vs 54%計画/25%実績（INFO-037）+ Klarna再採用（INFO-039）+ Reset to Zero（INFO-070）。普及>品質成熟の構造継続",
-      "last_checked": "2026-04-22",
-      "rationale": "Arbiter v3.57: elevated継続。Stanford 77%成功率+Microsoft社内大規模展開+Codex Labs GSI 7社で普及加速。vs 54%計画/25%実績+Klarna再採用+Reset to Zeroで品質課題持続。普及>品質成熟の構造継続。DEGRADED: Red不在"
+      "last_value": "Comment and Control 3社エージェント同時脆弱性（INFO-008）+ Workspace Agents（OpenAI）+Enterprise Agent Platform（Google）大量投下で普及加速。Klarna再採用+Block 95%修正必要で品質ギャップ解消なし。Stanford 77%+Microsoft社内展開+Codex Labs GSI 7社。普及>品質成熟継続",
+      "last_checked": "2026-04-23",
+      "rationale": "Arbiter v3.58: elevated継続。Workspace Agents+Enterprise Agent Platform大量投下で普及加速。Comment and Control 3社同時脆弱性+Klarna再採用+Block 95%修正必要で品質ギャップ解消なし。普及>品質成熟の構造継続。elevated→high監視継続。DEGRADED: Red 4日連続不在"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -52,9 +49,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Cloudflare MCP参照アーキテクチャ（INFO-024）+ AAIF AGNTCon+MCPCon 2026（INFO-025）+ Agents SDK MCP統合（INFO-003）+ Deep Research Max MCP対応（INFO-004）+ Bedrock AgentCore GA（INFO-026）。業界標準地位強化継続",
-      "last_checked": "2026-04-22",
-      "rationale": "Arbiter v3.57: high継続。Cloudflare MCP参照アーキテクチャ+AAIF 2026イベント+Agents SDK MCP統合+Deep Research Max MCP対応+Bedrock AgentCore GAで業界標準地位強化継続。DEGRADED: Red不在"
+      "last_value": "MCP業界標準地位継続。Cloudflare MCP参照アーキテクチャ+AAIF 2026イベント+Agents SDK MCP統合+Deep Research Max MCP対応+Bedrock AgentCore GA",
+      "last_checked": "2026-04-23",
+      "rationale": "Arbiter v3.58: high継続。新規標準化データなし。MCP業界標準地位維持"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -63,9 +60,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "ARC-AGI-3全フロンティア0%・人間100%（INFO-047）+ DeepMind 10次元AGI認知フレームワーク（INFO-048）+ AAR自律的アライメント研究（INFO-049）+ Amodei 6-12ヶ月予測（INFO-050）。主観-客観乖離最大水準維持。high移行条件: RSI実証再現確認・ARC-AGI-3有意改善",
-      "last_checked": "2026-04-22",
-      "rationale": "Arbiter v3.57: elevated継続。ARC-AGI-3全0%+DeepMind 10次元AGI認知+AAR自律的アライメント+Amodei 6-12ヶ月予測で主観-客観乖離最大水準維持。high移行条件: RSI実証再現確認・ARC-AGI-3有意改善。DEGRADED: Red不在"
+      "last_value": "OpenAI 30GW compute by 2030計画（INFO-018）主観的宣言継続。ARC-AGI-3全0%+DeepMind 10次元AGI認知+AAR+Amodei 6-12ヶ月予測。主観-客観乖離最大水準維持",
+      "last_checked": "2026-04-23",
+      "rationale": "Arbiter v3.58: elevated継続。OpenAI 30GW by 2030は主観的宣言。ARC-AGI-3全0%で客観的AGI到達の証拠なし。主観-客観乖離最大水準維持。high移行条件: RSI実証再現確認・ARC-AGI-3有意改善"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -74,9 +71,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "DC約50%遅延/中止（INFO-016）+ Q1 $242B資金調達（INFO-052）+ Amazon $200B供給先行型投資（INFO-053）+ IEA 17%電力急増（INFO-054）+ 接続キュー2,100GW膨張。資本流入vs物理的制約の構造的ギャップ確定的",
-      "last_checked": "2026-04-22",
-      "rationale": "Arbiter v3.57: high移行。DC約50%遅延+Q1 $242B+Amazon $200B供給先行+IEA 17%+接続キュー2,100GWで資本流入vs物理的制約の構造的ギャップ確定的。前回「high移行条件に接近」から段階的移行。DEGRADED: Red不在"
+      "last_value": "DC約50%遅延/中止+33週リードタイム+945 TWh（2030年）+ハイパースケーラー4社CapEx $4,102億+Q1 $242B資金調達+Amazon $200B供給先行+IEA 17%+接続キュー2,100GW。資本流入vs物理的制約の構造的ギャップ確定的",
+      "last_checked": "2026-04-23",
+      "rationale": "Arbiter v3.58: high継続。DC約50%遅延+33週リードタイム+945 TWh（2030年）+ハイパースケーラー4社$4,102億CapExで構造的ギャップ確定的継続"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -85,9 +82,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Stanford 77%成功率（INFO-036）+ Amodei 6-12ヶ月予測（INFO-050）で能力向上。97%インシデント予期（INFO-021）+ Reset to Zero（INFO-070）+ 監査ギャップ（INFO-022）でリスク増大。能力-リスク同時進行持続",
-      "last_checked": "2026-04-22",
-      "rationale": "Arbiter v3.57: elevated継続。Stanford 77%+Amodei 6-12ヶ月予測で能力向上。97%インシデント予期+Reset to Zero+監査ギャップでリスク増大。能力-リスク同時進行持続。DEGRADED: Red不在"
+      "last_value": "CVSS 9.4 Criticalでリスク面強化（INFO-008）+Opus 4.7+Cyber Verification Programで能力向上+リスク対応の同時進行（INFO-001）。能力-リスク二面性継続",
+      "last_checked": "2026-04-23",
+      "rationale": "Arbiter v3.58: elevated継続。CVSS 9.4 Criticalでリスク面強化。Opus 4.7+Cyber Verification Programで能力向上+リスク対応の同時進行。能力-リスク二面性継続"
     }
   }
 }

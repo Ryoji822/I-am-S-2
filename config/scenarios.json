@@ -1,7 +1,7 @@
 {
-  "version": "3.57",
-  "last_updated": "2026-04-22",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.57: Arbiter統合判断完了（DEGRADED状態・Red Agent 2026-04-22/21不在）。2件更新。SCN-002 +1%（39→40%）Codex Labs GSI 7社+Anthropic $30B欧州銀行+Google 27%シェア+$240Bバックログで勝者浮出+開放維持。SCN-003 -1%（26→25%）MMMU-Pro 88.21%首位=性能格差維持=収斂前提と矛盾。合計100%維持（23+40+25+12=100%）",
+  "version": "3.58",
+  "last_updated": "2026-04-23",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.58: Arbiter統合判断完了（DEGRADED状態・Red Agent 4日連続不在: 04-21/22/23完全不在・04-20は04-19 Red参照）。2件更新。SCN-002 +1%（40→41%）Google定量データ+Anthropic $30B+OpenAI Workspace Agentsで勝者浮出+開放維持。SCN-001 -1%（23→22%）Comment and Control 3社同時脆弱性で囲い込み弱化。合計100%維持（22+41+25+12=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 格差拡大",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 23,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.57: ±0%（23%維持）。MCP全社対応+AAIF標準化で開放圧力維持。Codex Labs+90+ pluginsは囲い込みCだが、MCP/AAIF標準化の勢力が上回る。DEGRADED: Red不在",
+      "probability": 22,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v3.58: -1%（23→22%）。Comment and Control 3社同時脆弱性（CVSS 9.4 Critical）は単一ベンダー围い込みリスクを低減。MCP/AAIF標準化継続で围い込み圧力弱化。OpenAI Workspace Agents+Codex harnessは围い込みCだが標準化の勢力が上回る。DEGRADED: Red 4日連続不在",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 40,
+      "probability": 41,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.57: +1%（39→40%）。Codex Labs + GSI 7社提携・Anthropic $30B + 欧州銀行Mythos・Google 27%シェア + $240Bバックログで勝者浮出。MCP/AAIF標準化 + Gemma 4で開放維持。ARC-AGI-3全0%で性能格差残存。最も支持されるシナリオ継続。DEGRADED: Red不在",
+      "probability_rationale": "Arbiter v3.58: +1%（40→41%）。Google 27%シェア+$750M+75%AI使用+16B tokens/分（INFO-009/010/017）+ Anthropic $30B+Series G $30B（INFO-005/014）+ OpenAI Workspace Agents（INFO-021/022）で勝者浮出。MCP/AAIF標準化で開放維持。最も支持されるシナリオ継続。DEGRADED: Red 4日連続不在",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -66,8 +66,8 @@
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 25,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.57: -1%（26→25%）。Gemini 3.1 Pro MMMU-Pro 88.21%首位は性能格差維持＝収斂前提と矛盾。Chrome Skills・使用量課金はエコシステム依存Cだが、収斂軸のIが強い。DEGRADED: Red不在",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v3.58: ±0%（25%維持）。Chrome Skills/Workspace統合はエコシステム囲い込みCだが、27%シェア拡大+性能格差維持は収斂否定。相殺。DEGRADED: Red 4日連続不在",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -88,7 +88,7 @@
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 12,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.57: ±0%（12%維持）。Gemma 4+DeepSeek V4（開放C）。但しQ1 $242B+DC 50%遅延（寡占強化I）。DEGRADED: Red不在",
+      "probability_rationale": "Arbiter v3.58: ±0%（12%維持）。新規収斂証拠なし。INFRA約50%遅延（INFO-007）は寡占強化のI。維持。DEGRADED: Red 4日連続不在",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -109,7 +109,7 @@
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
       "probability": 16,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.57: ±0%（16%維持）。97%インシデント予期+Cowork監査ログギャップ+Reset to Zero問題（INFO-070）でリスク上昇C。大規模事故未到達。CompTIA SecAI+認証で業界対応C。DEGRADED: Red不在",
+      "probability_rationale": "Arbiter v3.58: ±0%（16%維持）。Comment and Control CVSS 9.4 Critical+3社同時API鍵漏洩でエージェントランタイムの構造的脆弱性確定。97%インシデント予期+監査ギャップ+Reset to Zeroでリスク上昇C。大規模事故未到達。critical移行監視強化。DEGRADED: Red 4日連続不在",
       "impact": "catastrophic",
       "indicators": ["IND-013", "IND-018", "IND-023"]
     },
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-04-22",
-    "note": "SCN-001(23) + SCN-002(40) + SCN-003(25) + SCN-004(12) = 100%. Arbiter v3.57完了（DEGRADED）"
+    "verified_date": "2026-04-23",
+    "note": "SCN-001(22) + SCN-002(41) + SCN-003(25) + SCN-004(12) = 100%. Arbiter v3.58完了（DEGRADED）"
   }
 }
