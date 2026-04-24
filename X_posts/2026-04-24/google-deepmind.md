@@ -27,3 +27,13 @@
 
 ---
 
+## @OfficialLoganK (Logan Kilpatrick - AI Studio / Gemini API)
+
+**09:34 JST** | [原文](https://x.com/OfficialLoganK/status/2047474244141928780)
+
+> We are hiring a bunch of Members of the Technical Staff for @GoogleAIStudio who can blend PM, design, eng, and more
+> 
+> If this is you, pls DM me, we will move fast for the best people.
+
+---
+

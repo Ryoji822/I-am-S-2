@@ -64,3 +64,14 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**01:31 JST** | [原文](https://x.com/GoogleDeepMind/status/2047381761861058666)
+
+> RT Google AI Developers
+> Gemini Embedding 2 is now generally available in the Gemini API and Vertex AI!
+> 
+> Start building with our first natively multimodal embedding model, now equipped with the stability and optimizations required for production apps.
+
+---
+

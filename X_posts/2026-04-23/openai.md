@@ -207,3 +207,17 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**08:09 JST** | [原文](https://x.com/gdb/status/2047090333033607399)
+
+> had a great conversation with @shaneparrish, full podcast below
+> 
+> Shane Parrish: My conversation with @OpenAI co-founder @gdb 
+> 
+> This is the most detailed first-person account of the 72 hours after Sam Altman was fired.
+> 
+> We also go deep on what comes next: the global race to AGI, why ChatGPT stopped showing reasoning, how much of OpenAI's own code is now
+
+---
+
