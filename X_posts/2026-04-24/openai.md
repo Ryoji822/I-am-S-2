@@ -502,3 +502,50 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**09:42 JST** | [原文](https://x.com/OpenAIDevs/status/2047501989836365967)
+
+> RT nico
+> We have been testing GPT 5.5 on the hardest spreadsheet tasks in the world (100k-1M+ cell complex models).
+> 
+> It is the Pareto frontier for spreadsheets -- SOTA accuracy, the fastest and the most efficient public model across effort levels.
+> 
+> OAI really cooked here
+
+---
+
+**03:28 JST** | [原文](https://x.com/OpenAIDevs/status/2047500112612769819)
+
+> RT CodeRabbit
+> We’ve been testing GPT-5.5 in early access and are excited by its performance in code review.
+> 
+> In our evaluation, it delivered a more direct review flow, stronger signal, and better performance on the issues that matter most.
+> 
+> Headline result: 79.2% Expected Issue Found vs 58.3% baseline.
+
+---
+
+## @sama (Sam Altman - CEO)
+
+**09:33 JST** | [原文](https://x.com/sama/status/2047496909452177757)
+
+> RT Bowen Baker
+> Today we open sourced many of OpenAI's monitorability evaluations. We hope that the research community and other model developers can build upon them and use them to evaluate the monitorability of their own models.
+> 
+> https://alignment.openai.com/monitorability-evals/
+
+---
+
+## @gdb (Greg Brockman - 共同創業者)
+
+**10:34 JST** | [原文](https://x.com/gdb/status/2047489218998628780)
+
+> auto-review now live in codex — using a guardian agent to evaluate the safety of proposed actions, reducing human approvals to only when they're really needed.
+> 
+> OpenAI Developers: Auto-review is a new mode that lets Codex work longer with fewer approvals and safer execution.
+> 
+> It helps Codex keep moving through tests, builds, and more, including during long tasks and automations, while a separate agent checks higher-risk steps in context before they run.
+
+---
+
