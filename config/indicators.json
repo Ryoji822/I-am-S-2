@@ -1,8 +1,9 @@
 {
-  "version": "3.59",
-  "last_updated": "2026-04-24",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.59: Arbiter統合判断完了（DEGRADED状態・Red Agent 5日連続不在: 04-20~04-24完全不在・最後の完全Red: 2026-04-19）. 7指標更新（全件状態変更なし・7件last_checked更新）. Mythos中央銀行緊急対応でAGI到達度主観的インパクト極大・GPT-5.5価格2倍+6プラットフォーム同時投入でエージェント普及急加速",
+  "version": "3.60",
+  "last_updated": "2026-04-25",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.60: Arbiter統合判断完了（COMPLETE状態・Red Agent 6日ぶり復帰）. 7指標更新（全件状態変更なし・7件last_checked更新）. MCP脆弱性+97%インシデント予期でセキュリティhigh強化. 6プラットフォーム同時投入でエージェント普及急加速. AGI主観-客観乖離史上最大（解釈修正: 客観vs主観→異AGI定義の並存）",
   "structural_changes_log": [
+    "2026-04-25 v3.60: Arbiter統合判断（COMPLETE状態・Red Agent 6日ぶり復帰: 04-20~04-24不在・04-25復帰）。7指標更新（全件状態変更なし）。IND-013 high継続（MCP権限昇格脆弱性+97%インシデント予期+Guardrail 72%バイパス。構造的脆弱性蓄積強化。critical移行条件に未到達）・IND-025 elevated継続（Grok STT WER 6.9%+Seed3D 2.0+Seedance 2.0+Seeduplex。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（6プラットフォーム同時投入+79%CIO導入で普及急加速。vs 84%失敗準備不足+コードチャーン861%+品質3問題。普及>品質成熟継続）・IND-027 high継続（AAIF発足+Salesforce-Google MCP相互運用+200+モデル対応。MCP業界標準地位強化継続）・IND-028 elevated継続（Jensen Huang「AGI達成」+Metaculus 2060→2033+Amodei 90%信頼度。vs ARC-AGI-3 AI 0.51%。解釈修正: 客観vs主観→異AGI定義の並存。high移行条件に未到達）・IND-029 high継続（ByteDance $110B capex+Cursor $50B+Google $40B Anthropic投資。資本流入vs物理的制約ギャップ確定的継続）・IND-030 elevated継続（ペンタゴン対立+EU AI Act 8月執行+Jensen「AGI達成」+MCP脆弱性。能力-リスク同時進行継続）",
     "2026-04-24 v3.59: Arbiter統合判断（DEGRADED状態・Red Agent 5日連続不在: 04-20~04-24完全不在・最後の完全Red: 2026-04-19）。7指標更新（全件状態変更なし）。IND-013 high継続（MCP RCE Critical+Comment & Control GitHub Actions確認+Anthropic「期待される動作」+CVSS 9.4。構造的脆弱性確定的継続。critical移行条件（大規模AI攻撃インシデント）に未到達）・IND-025 elevated継続（Grok STT/TTS API+ChatGPT Images 2.0+Seedance 2.0。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（6プラットフォーム同時投入（Google・Microsoft・Amazon・Salesforce+Workspace Agents+Codex）で普及急加速。vs 84%設定ミス+Klarna再採用+ポストモーテム3件で品質ギャップ解消なし。普及>品質成熟の構造継続）・IND-027 high継続（SKILL.md 41+ツール+AAIF 2026イベント+Salesforce-Google MCP相互運用。MCP業界標準地位強化継続）・IND-028 elevated継続（Mythos中央銀行・情報機関緊急対応で主観的インパクト極大+AGI専門家予測2060→2033。vs ARC-AGI-3全0%。主観-客観乖離継持）・IND-029 high継続（DC約50%キャンセル/遅延+7GWギャップ+Q1 $242B+Cursor $50B+Bezos $38B。資本流入vs物理的制約ギャップ確定的継続）・IND-030 elevated継続（Mythos世界的警報で能力面新次元到達+ペンタゴン$200Mキャンセル+SCR指定+フロリダAG刑事調査。能力-リスク同時進行が新次元に到達）",
     "2026-04-23 v3.58: Arbiter統合判断（DEGRADED状態・Red Agent 4日連続不在: 04-21/22/23完全不在・04-20は04-19 Red参照・最後の完全Red: 2026-04-19）。7指標更新（全件状態変更なし）。IND-013 high強化（Comment and Control CVSS 9.4 Critical・3社同時API鍵漏洩・$100バグバウンティ・CVE未発行でエージェントランタイム構造的脆弱性確定的。critical移行条件: 大規模AI攻撃インシデント。未到達）・IND-025 elevated継続（新規マルチモーダルデータなし）・IND-026 elevated継続（Workspace Agents+Enterprise Agent Platform大量投下で普及加速。Comment and Control 3社同時脆弱性+Klarna再採用+Block 95%修正で品質ギャップ解消なし。普及>品質成熟継続）・IND-027 high継続（新規標準化データなし。MCP業界標準地位維持）・IND-028 elevated継続（OpenAI 30GW by 2030主観的宣言。ARC-AGI-3全0%。主観-客観乖離最大水準維持）・IND-029 high継続（DC約50%遅延+33週リードタイム+945 TWh+ハイパースケーラー4社$4,102億CapExで構造的ギャップ確定的継続）・IND-030 elevated継続（CVSS 9.4 Criticalでリスク面強化。Opus 4.7+Cyber Verification Programで能力向上+リスク対応の同時進行。能力-リスク二面性継続）",
     "2026-04-22 v3.57: Arbiter統合判断（DEGRADED状態・Red Agent 2026-04-22/21不在・最後の完全Red: 2026-04-19）。7指標更新（1件状態変更）。IND-013 high継続（97%インシデント予期+Cowork監査ギャップ+Reset to Zero脆弱性+CompTIA SecAI+。攻撃ベクトル多様化。critical未到達）・IND-025 elevated継続（Grok STT WER 6.9%+Gemini Flash TTS Elo 1,211+Robotics-ER 1.6+Seeduplex。量的向上。「真の理解」未解決）・IND-026 elevated継続（Stanford 77%+Microsoft社内展開+Codex Labs GSI 7社。vs 54%/25%ギャップ+Klarna再採用+Reset to Zero。普及>品質成熟継続）・IND-027 high継続（Cloudflare MCP+AAIF 2026+Agents SDK MCP+Deep Research Max MCP+Bedrock AgentCore GA）・IND-028 elevated継続（ARC-AGI-3全0%+DeepMind 10次元AGI認知+AAR+Amodei 6-12ヶ月。主観-客観乖離最大水準）・IND-029 **elevated→high移行**（DC約50%遅延+Q1 $242B+Amazon $200B供給先行+IEA 17%+接続キュー2,100GW。資本流入vs物理的制約の構造的ギャップ確定的。前回「high移行条件に接近」から段階的移行）・IND-030 elevated継続（Stanford 77%+Amodei 6-12ヶ月+97%インシデント予期+Reset to Zero+監査ギャップ。能力-リスク同時進行持続）",
@@ -17,9 +18,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "MCP RCE Critical（全SDK検証なしコマンド実行）+Comment & Control GitHub Actions確認（INFO-061）+Anthropic「期待される動作」回答（INFO-044）+CVSS 9.4。97%インシデント予期（INFO-014）。構造的脆弱性確定的継続。critical移行条件（大規模AI攻撃インシデント）に未到達",
-      "last_checked": "2026-04-24",
-      "rationale": "Arbiter v3.59: high継続。MCP RCE Critical（全SDK）+Comment & Control GitHub Actions確認（INFO-061）+Anthropic「期待される動作」回答（INFO-044）でエージェントランタイムの構造的脆弱性確定的継続。97%インシデント予期（INFO-014）。critical移行条件（大規模AI攻撃インシデント）に未到達だが、類似攻撃増加で移行可能性あり。DEGRADED: Red 5日連続不在"
+      "last_value": "MCP権限昇格脆弱性（INFO-017）+97%12ヶ月以内インシデント予期（INFO-012/060）+Guardrail 72%バイパス+Stage 3完全対応ベンダーなし。構造的脆弱性蓄積強化。critical移行条件（大規模AI攻撃インシデント）に未到達",
+      "last_checked": "2026-04-25",
+      "rationale": "Arbiter v3.60: high継続。MCP権限昇格脆弱性（INFO-017）+97%インシデント予期（INFO-012/060）+Guardrail 72%バイパスで構造的脆弱性蓄積強化。6社同時エージェント投入で攻撃対象領域急拡大。critical移行条件（大規模AI攻撃インシデント）に未到達。COMPLETE: Red 6日ぶり復帰"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -28,9 +29,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Grok STT/TTS API（INFO-012）+ChatGPT Images 2.0（INFO-021）+Seedance 2.0豆包統合（INFO-049）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-04-24",
-      "rationale": "Arbiter v3.59: elevated継続。Grok STT/TTS API+ChatGPT Images 2.0+Seedance 2.0で各モダリティ量的向上継続。「真の理解」検証は未解決。DEGRADED: Red 5日連続不在"
+      "last_value": "Grok STT WER 6.9%（INFO-010）+Seed3D 2.0・Seedance 2.0・Seeduplex（INFO-052）。量的向上継続。「真の理解」検証未解決",
+      "last_checked": "2026-04-25",
+      "rationale": "Arbiter v3.60: elevated継続。Grok STT WER 6.9%+Seed3D 2.0+Seedance 2.0+Seeduplexで各モダリティ量的向上継続。「真の理解」検証は未解決。COMPLETE: Red 6日ぶり復帰"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -39,9 +40,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "6プラットフォーム同時投入（Google Enterprise Agent Platform+Microsoft Foundry Agent Service+Amazon Bedrock AgentCore GA+Salesforce-Google+OpenAI Workspace Agents+Codex）で普及急加速。vs 84%設定ミス（INFO-041）+Klarna再採用（INFO-047）+ポストモーテム3件（INFO-069）で品質ギャップ解消なし。普及>品質成熟の構造継続",
-      "last_checked": "2026-04-24",
-      "rationale": "Arbiter v3.59: elevated継続。6プラットフォーム同時投入（INFO-011/017/027/039/065+INFO-005）で普及急加速。vs 84%設定ミス（INFO-041）+Klarna再採用（INFO-047）+ポストモーテム3件（INFO-069）で品質ギャップ解消なし。普及>品質成熟の構造継続。elevated→high監視継続。DEGRADED: Red 5日連続不在"
+      "last_value": "6プラットフォーム同時投入（Google・AWS・OpenAI・Anthropic・Salesforce・SAP・INFO-009/025/002/022/019/020）+79%CIO導入（INFO-027）で普及急加速。vs 84%失敗準備不足（INFO-027）+コードチャーン861%（INFO-044）+Claude Code品質3問題（INFO-008）。普及>品質成熟継続",
+      "last_checked": "2026-04-25",
+      "rationale": "Arbiter v3.60: elevated継続。6プラットフォーム同時投入（INFO-009/025/002/022/019/020）+79%CIO導入で普及急加速。vs 84%失敗準備不足+コードチャーン861%+品質3問題で品質ギャップ解消なし。普及>品質成熟の構造継続。elevated→high監視継続。COMPLETE: Red 6日ぶり復帰"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -50,9 +51,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "SKILL.md標準41+ツール対応（INFO-025）+AAIF 2026イベント（OpenAI/Google/Microsoft/AWS共同・INFO-028）+Salesforce-Google MCP相互運用（INFO-017）。MCP業界標準地位強化継続",
-      "last_checked": "2026-04-24",
-      "rationale": "Arbiter v3.59: high継続。SKILL.md標準41+ツール対応+AAIF 2026イベント（4社共同）+Salesforce-Google MCP相互運用でMCP業界標準地位強化継続。DEGRADED: Red 5日連続不在"
+      "last_value": "AAIF発足（Google/Anthropic/Salesforce参加・INFO-016）+Salesforce-Google MCP相互運用（INFO-019）+200+モデル対応。MCP業界標準地位強化継続",
+      "last_checked": "2026-04-25",
+      "rationale": "Arbiter v3.60: high継続。AAIF発足+Salesforce-Google MCP相互運用+200+モデル対応でMCP業界標準地位強化継続。COMPLETE: Red 6日ぶり復帰"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -61,9 +62,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Mythosが中央銀行・情報機関緊急対応（INFO-050・主観的インパクト極大）+AGI専門家予測2060→2033（INFO-054）。vs ARC-AGI-3全0%。主観-客観乖離継持。high移行条件: RSI実証再現確認・ARC-AGI-3有意改善",
-      "last_checked": "2026-04-24",
-      "rationale": "Arbiter v3.59: elevated継続。Mythosが中央銀行・情報機関緊急対応（INFO-050）は主観的インパクト極大。AGI専門家予測2060→2033（INFO-054）も主観的前倒し。vs ARC-AGI-3全0%で客観的AGI到達の証拠なし。主観-客観乖離継持。high移行条件: RSI実証再現確認・ARC-AGI-3有意改善。DEGRADED: Red 5日連続不在"
+      "last_value": "Jensen Huang「AGI達成」（INFO-049）+Metaculus 2060→2033年（INFO-050）+Amodei 90%信頼度2026-2027年。vs ARC-AGI-3 AI 0.51%（INFO-062）。解釈修正: 客観vs主観→異AGI定義の並存。high移行条件（RSI実証・ARC-AGI-3有意改善）に未到達",
+      "last_checked": "2026-04-25",
+      "rationale": "Arbiter v3.60: elevated継続。Jensen Huang「AGI達成」+Metaculus 2060→2033年+Amodei 90%信頼度。vs ARC-AGI-3 AI 0.51%。解釈修正: 「客観vs主観」二分法→「異AGI定義の並存」（Red指摘採用）。ARC-AGI-3は一つのベンチマークに過ぎず完全な客観的測定ではない。high移行条件: RSI実証再現確認・ARC-AGI-3有意改善。COMPLETE: Red 6日ぶり復帰"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -72,9 +73,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "DC約50%キャンセル/遅延・7GWギャップ（INFO-048）+Q1 $242B資金流入（INFO-037）+Cursor $50B（INFO-035）+Bezos AI lab $38B（INFO-038）。資本流入vs物理的制約ギャップ確定的継続",
-      "last_checked": "2026-04-24",
-      "rationale": "Arbiter v3.59: high継続。DC約50%キャンセル/遅延+7GWギャップ+Q1 $242B+Cursor $50B+Bezos AI lab $38B。資本流入vs物理的制約の構造的ギャップ確定的継続。DEGRADED: Red 5日連続不在"
+      "last_value": "ByteDance $110B capex（INFO-054）+Cursor $50B評価額（INFO-037）+Google $40B Anthropic投資（INFO-036）。資本流入加速。vs DC約50%遅延継続。資本流入vs物理的制約ギャップ確定的継続",
+      "last_checked": "2026-04-25",
+      "rationale": "Arbiter v3.60: high継続。ByteDance $110B capex+Cursor $50B+Google $40B Anthropic投資。資本流入vs物理的制約の構造的ギャップ確定的継続。COMPLETE: Red 6日ぶり復帰"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -83,9 +84,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Mythos世界的警報で能力面新次元到達（INFO-050）+ペンタゴン$200Mキャンセル+SCR指定でリスク面強化（INFO-029/068）+フロリダAG刑事調査（INFO-008）。能力-リスク同時進行が新次元に到達",
-      "last_checked": "2026-04-24",
-      "rationale": "Arbiter v3.59: elevated継続。Mythos世界的警報（INFO-050）で能力面が新次元に到達。ペンタゴン$200Mキャンセル+SCR指定（INFO-029/068）+フロリダAG刑事調査（INFO-008）でリスク面も強化。能力-リスク同時進行が新次元に到達。DEGRADED: Red 5日連続不在"
+      "last_value": "Anthropic-ペンタゴン対立（INFO-024）+EU AI Act 2026年8月執行開始（INFO-028）+Jensen Huang「AGI達成」（INFO-049）+MCP権限昇格脆弱性（INFO-017）。能力-リスク同時進行継続",
+      "last_checked": "2026-04-25",
+      "rationale": "Arbiter v3.60: elevated継続。ペンタゴン対立+EU AI Act 8月執行+Jensen「AGI達成」+MCP脆弱性。能力-リスク同時進行継続。COMPLETE: Red 6日ぶり復帰"
     }
   }
 }
