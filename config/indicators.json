@@ -1,8 +1,9 @@
 {
-  "version": "3.64",
-  "last_updated": "2026-04-30",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.64: Arbiter統合判断完了（RED-ONLY状態・Blue Agent失敗・Red Agent完了）. Red Agent反証統合. 7指標更新（全件状態変更なし・7件last_checked更新）. Claude Mythos+CVE-2026-40518+MCP shadow IT+85/5 gap+EU AI Act交渉決裂+$400億Anthropic投資+ARC-AGI-3人間100%vs AI<1%",
+  "version": "3.65",
+  "last_updated": "2026-05-01",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.65: Arbiter統合判断完了（COMPLETE状態・Blue/Red両方完了）. Blue/Red統合評価. 7指標更新（全件状態変更なし・7件last_checked更新）. Mythos自律的エクスプロイト+Voice Agent API+88%失敗率7独立ソース+4社MCP対応+GPT-5.5+$100B+/5GW+EU AI Act+NIST CAISI",
   "structural_changes_log": [
+    "2026-05-01 v3.65: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。7指標更新（全件状態変更なし）。IND-013 high継続（Mythos自律的エクスプロイト4h/89%重症度一致 INFO-025 B-3+OAuthマルチホップ委任問題 INFO-021 C-3+NISTゴールハイジャック/メモリポイズニング脅威ベクター INFO-034 A-3。攻撃対象領域拡大継続。critical未到達）・IND-025 elevated継続（Grok Voice Think Fast 1.0 INFO-013 A-3+Voice Agent API 20+言語 INFO-018 A-3+Gemini Drop Personal Intelligence INFO-011 A-3。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（INFO-023 78-97%パイロット/11-25%本番 C-3+INFO-031 171% ROI/88%失敗率 C-3+INFO-035 Macquarie成功例 B-3。7独立ソース<30%本番到達。Red指摘: 7ソース独立性は限定的・「本番」定義不統一。elevated→high移行条件（3+ソース<10%）に近接: Cisco 5%のみ<10%明確。INFO-023の11%下限確認で条件充足の可能性）・IND-027 high継続（Symphony OSS INFO-009 A-3+MCPクリエイティブコネクタ INFO-001 A-3+Google MCP/Skills INFO-015/016 A-3+xAI MCPツール INFO-018 A-3。4社MCP対応で標準化強化。OAuthマルチホップ INFO-021はMCP品質リスク）・IND-028 elevated継続（GPT-5.5 INFO-010 A-3+Mythos自律的エクスプロイト INFO-025 B-3。ARC-AGI-3スコア更新なし。主観-客観乖離継続。high移行条件に未到達）・IND-029 high継続（Amazon 10年$100B+/5GW INFO-003 A-3+Google TPU 8T/8I+Austria DC INFO-012 A-3+Anthropic $800B評価額 INFO-036 B-3。資本流入vs物理的制約ギャップ確定的継続）・IND-030 elevated継続（Mythos自律的エクスプロイト INFO-025 B-3+EU AI Act 8月執行 INFO-033 B-3+NIST CAISI INFO-034 A-3+Anthropic政策声明 INFO-004 A-3。能力-リスク同時進行。規制インフラ構築進行中）",
     "2026-04-30 v3.64: Arbiter統合判断（RED-ONLY状態・Blue Agent失敗・Red Agent完了）。Red Agent反証統合。7指標更新（全件状態変更なし）。IND-013 high継続（Claude Mythos侵害事案企業警告INFO-013 C-3+ByteDance DeerFlow CVE-2026-40518 INFO-010 C-3+MCPサーバー56ドメインシャドーIT INFO-024 C-3+ゴールハイジャック・メモリポイズニング脅威ベクターINFO-015 C-3。構造的脆弱性蓄積強化継続。critical移行条件に未到達）・IND-025 elevated継続（Gemini Drop INFO-007 A-3+GPT-5.5統合マルチモーダルINFO-032 B-3+Gemini 3 Pro Deep Think 100% INFO-033 C-3。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（Cisco 85/5 INFO-041 B-2+S&P 500 25%ROI INFO-043 B-3+Fortune 500 95%Level 1 INFO-045 B-3+Klarna逆戻りINFO-057 B-3+74%/20% INFO-058 B-2。6独立ソース<30%本番到達。Red Agent指摘: 85/5は「勝者不在」指標。elevated→high移行条件に近接。次回high移行検討）・IND-027 high継続（MCP Dev Summit AAIF「シード」扱いINFO-023 B-3+Gemini Skills OSS INFO-038 A-3+SKILL.md 5ツールINFO-029 C-3。但しINFO-024/025でMCP品質リスク蓄積）・IND-028 elevated継続（ARC-AGI-3人間100%vs AI<1% INFO-080 B-3+Amodei proto-AGI 2.5年INFO-071 B-3。主観-客観乖離最大水準維持。high移行条件に未到達）・IND-029 high継続（Google $400億Anthropic INFO-068 A-2+Q1 $2,420億調達INFO-069 B-2+4社$1,300億CapEx INFO-070 A-2+DeepSeek $100億評価額INFO-083 B-2。資本流入vs物理的制約ギャップ確定的継続）・IND-030 elevated継続（Google-Pentagon秘密AI契約INFO-047 A-2+ホワイトハウスAnthropic利用許可INFO-048 B-2+EU AI Act交渉決裂INFO-081 A-2+中国AI規制強化INFO-052 B-2。能力-リスク同時進行。規制不在リスク増大）",
     "2026-04-29 v3.63: Arbiter統合判断（DEGRADED/BLUE-ONLY状態・Blue Agent完了・Red Agent不在）。Arbiter独自批判分析。7指標更新（全件状態変更なし）。IND-013 high継続（Claude Mythosサイバー質的変化+82%企業シャドーAI+65%インシデント経験。構造的脆弱性蓄積継続。critical移行条件に未到達）・IND-025 elevated継続（Gemini Drop+GPT-5.5統合マルチモーダル+豆包2.0多模態Agent。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継持（Cisco 85/5（80pt gap）+S&P 500 25%ROI+Fortune 500 95%Level 1+Microsoft「ほぼ本番なし」+PwC 83/27。5独立ソース<30%本番到達。普及>品質成熟構造確定的。elevated→high移行条件（3+ソース<10%）に近接。次回high移行検討）・IND-027 high継続（AAIF設計+MCP 110M+/月DL+SKILL.md 5ツール対応+Symphony OSS。MCP業界標準地位強化継続）・IND-028 elevated継続（ARC-AGI-3人間100%vs AI<1%+AGI予測6年27年短縮+LeCun「Amodeiは妄想」。主観-客観乖離最大水準維持。high移行条件に未到達）・IND-029 high継続（AI DC CapEx $5.2T by 2030+NVIDIA OpenAI $100B+Google $40B Anthropic。資本流入vs物理的制約ギャップ確定的継続）・IND-030 elevated継続（Collin Burns更迭4日+AI DCモラトリアム法案+Mythosサイバー質的変化。能力-リスク同時進行継続）",
     "2026-04-27 v3.62: Arbiter統合判断（DOUBLE DEGRADED状態）。7指標更新（全件状態変更なし）",
@@ -16,9 +17,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Claude Mythos侵害事案企業警告（INFO-013 C-3）+ByteDance DeerFlow CVE-2026-40518パストラバーサル脆弱性（INFO-010 C-3）+MCPサーバー56ドメインシャドーIT（INFO-024 C-3）+ゴールハイジャック・メモリポイズニング脅威ベクター定義（INFO-015 C-3）+82%企業に未知AIエージェント。構造的脆弱性蓄積強化。critical移行条件（大規模AI攻撃インシデント）に未到達",
-      "last_checked": "2026-04-30",
-      "rationale": "Arbiter v3.64: high継続。Mythos+CVE-2026-40518+MCP shadow IT 56ドメイン+脅威ベクター定義で攻撃対象領域急拡大。構造的脆弱性蓄積強化継続。critical移行条件（大規模AI攻撃インシデント）に未到達。RED-ONLY: Blue不在・Red完了"
+      "last_value": "Mythos自律的エクスプロイト4h/89%重症度一致（INFO-025 B-3）+OAuthマルチホップ委任問題（INFO-021 C-3）+NISTゴールハイジャック/メモリポイズニング脅威ベクター（INFO-034 A-3）。攻撃対象領域拡大継続。critical未到達",
+      "last_checked": "2026-05-01",
+      "rationale": "Arbiter v3.65: high継続。Mythos自律的侵害4h+OAuthマルチホップ+NIST脅威ベクター定義で攻撃対象領域急拡大。構造的脆弱性蓄積強化継続。critical移行条件（大規模AI攻撃インシデント）に未到達。COMPLETE: Blue/Red両方完了"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -27,9 +28,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Gemini Drop（Personal Intelligence/Notebooks/Lyria 3 Pro INFO-007 A-3）+GPT-5.5統合マルチモーダル単一アーキテクチャ（INFO-032 B-3）+Gemini 3 Pro Deep Think 100%（INFO-033 C-3）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-04-30",
-      "rationale": "Arbiter v3.64: elevated継続。Gemini Drop+GPT-5.5統合アーキテクチャ+Gemini 3 Pro Deep Thinkで量的向上継続。「真の理解」検証は未解決。RED-ONLY: Blue不在・Red完了"
+      "last_value": "Grok Voice Think Fast 1.0（INFO-013 A-3）+Voice Agent API 20+言語/MCP対応（INFO-018 A-3）+Gemini Drop Personal Intelligence（INFO-011 A-3）。量的向上継続。「真の理解」検証未解決",
+      "last_checked": "2026-05-01",
+      "rationale": "Arbiter v3.65: elevated継続。3社マルチモーダルAPI拡充（xAI Voice Agent・Google Gemini Drop）で量的向上継続。「真の理解」検証は未解決。COMPLETE: Blue/Red両方完了"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -38,9 +39,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Cisco 85%パイロット/5%本番（80pt gap、INFO-041 B-2）+S&P 500 25%のみROI証明（INFO-043 B-3）+Fortune 500 95%Level 1停滞（INFO-045 B-3）+Klarna AI逆戻り（INFO-057 B-3）+74%導入/20%削減のみ（INFO-058 B-2）+Gartner Fortune 500 150K agents by 2028（INFO-044 B-2）。6独立ソースで<30%本番到達確認。普及>品質成熟の構造確定的。Red Agent指摘: 85/5 gapは「品質で勝者選別」ではなく「誰も本番に移せない」構造的障壁。elevated→high移行条件（3+ソース<10%本番到達）に近接。次回high移行検討",
-      "last_checked": "2026-04-30",
-      "rationale": "Arbiter v3.64: elevated継続。Cisco 85/5（80pt gap）+6独立ソース<30%本番到達確認。普及>品質成熟構造確定的。Red Agent指摘採用: 85/5は勝者選別ではなく市場未成熟の指標。high移行条件（3+ソース<10%）に近接。Cisco 5%のみ<10%明確。次回high移行検討。RED-ONLY: Blue不在・Red完了"
+      "last_value": "INFO-023 78-97%パイロット/11-25%本番（C-3）+INFO-031 171% ROI/88%失敗率（C-3）+INFO-035 Macquarie 38%自己サービース向上/24%人員削減（B-3）。7独立ソース<30%本番到達。Red指摘: 7ソース独立性は限定的（同時期・同一市場環境調査の可能性）。「本番」定義の不統一問題。elevated→high移行条件（3+ソース<10%本番到達）に近接: Cisco 5%のみ<10%明確。INFO-023の11%下限が確認されれば条件充足の可能性",
+      "last_checked": "2026-05-01",
+      "rationale": "Arbiter v3.65: elevated継続。7独立ソース<30%本番到達確認。Red指摘統合: 7ソース独立性限定的・定義不統一問題認識。high移行条件（3+ソース<10%）に近接: Cisco 5%のみ<10%。INFO-023の11%下限確認で条件充足の可能性。次回high移行検討。COMPLETE: Blue/Red両方完了"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -49,9 +50,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "MCP Dev Summit: AAIFはMCPを「シード」扱い（INFO-023 B-3）+72%本番AIワークロード+90%エージェント採用中。Google Gemini Skills OSS 13スキル（INFO-038 A-3）+SKILL.md 5ツール対応（INFO-029 C-3）。MCP業界標準地位継続。但しINFO-024（C-3）MCPシャドーIT 56ドメイン+INFO-025（C-3）根本的アーキテクチャ欠陥指摘で品質リスク蓄積",
-      "last_checked": "2026-04-30",
-      "rationale": "Arbiter v3.64: high継続。AAIF「シード」扱い+Gemini Skills OSS+SKILL.md 5ツールでMCP業界標準地位継続。但しINFO-024/025でMCP品質リスク蓄積を認識。標準化進展と品質課題の二面性に注意。RED-ONLY: Blue不在・Red完了"
+      "last_value": "Symphony OSS（INFO-009 A-3）+MCPクリエイティブコネクタ（INFO-001 A-3）+Google MCP/Skills対応（INFO-015/016 A-3）+xAI MCPツールサポート（INFO-018 A-3）。4社MCP対応で標準化強化。OAuthマルチホップ委任問題（INFO-021 C-3）はMCP基盤品質リスク",
+      "last_checked": "2026-05-01",
+      "rationale": "Arbiter v3.65: high継続。4社（Anthropic・Google・OpenAI・xAI）MCP対応で標準化強化。但しOAuthマルチホップ委任問題（INFO-021）はMCP品質リスクとして蓄積。標準化進展と品質課題の二面性に注意。COMPLETE: Blue/Red両方完了"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -60,9 +61,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "ARC-AGI-3: 人間100% vs AI <1%（INFO-080 B-3）+Amodei proto-AGI 2.5年以内（INFO-071 B-3）+Hassabis 5-10年+Altman「数千日」。コンピュート4ヶ月毎に倍増。主観-客観乖離最大水準維持。high移行条件（RSI実証・ARC-AGI-3有意改善）に未到達",
-      "last_checked": "2026-04-30",
-      "rationale": "Arbiter v3.64: elevated継続。ARC-AGI-3人間100%vs AI<1%+Amodei proto-AGI 2.5年+Hassabis 5-10年。主観-客観乖離最大水準維持。high移行条件に未到達。RED-ONLY: Blue不在・Red完了"
+      "last_value": "GPT-5.5リリース（INFO-010 A-3）+Mythos自律的エクスプロイト（INFO-025 B-3）。ARC-AGI-3スコア更新なし。主観-客観乖離継続。high移行条件（RSI実証・ARC-AGI-3有意改善）に未到達",
+      "last_checked": "2026-05-01",
+      "rationale": "Arbiter v3.65: elevated継続。GPT-5.5+Mythos自律的エクスプロイト。ARC-AGI-3スコア更新なし。主観-客観乖離継続。high移行条件に未到達。COMPLETE: Blue/Red両方完了"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -71,9 +72,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Google最大$400億Anthropic投資（INFO-068 A-2）+AIスタートアップQ1 $2,420億調達（INFO-069 B-2）+4社合計四半期CapEx $1,300億超（INFO-070 A-2）+DeepSeek $100億評価額（INFO-083 B-2）。資本流入vs物理的制約ギャップ確定的継続",
-      "last_checked": "2026-04-30",
-      "rationale": "Arbiter v3.64: high継続。Google $400億Anthropic+Q1 $2,420億調達+4社$1,300億CapEx+DeepSeek $100億。資本流入vs物理的制約の構造的ギャップ確定的継続。RED-ONLY: Blue不在・Red完了"
+      "last_value": "Amazon 10年$100B+/5GW（INFO-003 A-3）+Google TPU 8T/8I + Austria DC（INFO-012 A-3）+Anthropic $800B評価額（INFO-036 B-3）。資本流入vs物理的制約ギャップ確定的継続",
+      "last_checked": "2026-05-01",
+      "rationale": "Arbiter v3.65: high継続。Amazon $100B+/5GW+Google TPU 8T/8I+Austria DC+Anthropic $800B評価額。資本流入vs物理的制約の構造的ギャップ確定的継続。COMPLETE: Blue/Red両方完了"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -82,9 +83,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Google-Pentagon秘密AI契約（INFO-047 A-2）+ホワイトハウスAnthropic利用許可計画策定中（INFO-048 B-2）+EU AI Act交渉決裂12時間（INFO-081 A-2）+中国AI規制強化3プラットフォーム処罰（INFO-052 B-2）+議会軍事AIガードレール停滞（INFO-050 B-2）。能力-リスク同時進行。規制不在リスク増大",
-      "last_checked": "2026-04-30",
-      "rationale": "Arbiter v3.64: elevated継続。Google-Pentagon契約+ホワイトハウスAnthropic計画+EU AI Act決裂+中国規制強化。能力-リスク同時進行。規制不在リスク増大（EU交渉決裂・議会停滞）。RED-ONLY: Blue不在・Red完了"
+      "last_value": "Mythos自律的エクスプロイト（INFO-025 B-3）+EU AI Act 8月執行（INFO-033 B-3）+NIST CAISI SP 800-53オーバーレイ（INFO-034 A-3）+Anthropic政策声明継続（INFO-004 A-3）。能力-リスク同時進行。規制インフラ構築進行中",
+      "last_checked": "2026-05-01",
+      "rationale": "Arbiter v3.65: elevated継続。Mythos自律的エクスプロイト+EU AI Act 8月執行+NIST CAISI+Anthropic政策声明。能力-リスク同時進行。規制インフラ構築進行中。COMPLETE: Blue/Red両方完了"
     }
   }
 }
