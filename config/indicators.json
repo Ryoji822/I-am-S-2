@@ -1,8 +1,9 @@
 {
-  "version": "3.67",
-  "last_updated": "2026-05-03",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.67: Arbiter統合判断完了（COMPLETE状態・Blue/Red両方完了）. Blue/Red統合評価. 7指標更新（全件状態変更なし・7件last_checked更新）. 200K MCP暴露+マルチホップ委任+ゴールハイジャック+Pentagon除外+Fortune <10%+DeepSeek V4+GPT-5.5+$130B CapEx+McKinsey 1%",
+  "version": "3.68",
+  "last_updated": "2026-05-04",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.68: Arbiter統合判断完了（COMPLETE状態・Blue/Red両方完了）. Blue/Red統合評価. 7指標更新（全件状態変更なし・7件last_checked更新）. 200K MCP暴露+AIエージェント本番DB削除+Pentagon下流カスケード+Fortune <10%+DeepSeek API 90%カット+GPT-5.5+$130B CapEx+McKinsey 1%+プログラマー-27.5%",
   "structural_changes_log": [
+    "2026-05-04 v3.68: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。7指標更新（全件状態変更なし）。IND-013 high継続（200K MCPサーバーコマンド実行脆弱性 INFO-035 B-3+AIエージェント本番DB削除 INFO-019+56ドメインシャドーIT。攻撃面拡大継続。critical未到達）・IND-025 elevated継続（Claude Sonnet 4.6+xAI Voice+Gemini Deep Think+Gemini Robotics。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（Blue high移行否認・Red推奨採用。Fortune <10%+McKinsey 1%+Cisco 5%で3ソース確認だが厳密条件は2/3のみ充足。S&P 25% ROIを過小評価する方向バイアス是正。次回直接測定データでhigh移行検討）・IND-027 high継続（AAIF/MCP CNCF進化+MCP Creative 8コネクタ+Gemini Skills OSS+Skills Marketplace。標準化強化と品質リスク同時進行）・IND-028 elevated継続（ARC-AGI-3全<1% A-3+CEO AGI 5年予測。主観-客観乖離最大水準維持。high移行未到達）・IND-029 high継続（$130B四半期CapEx A-3+$1.1B seed+TPU 8i/8t。資本流入vs物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon 7社契約+下流カスケード+中国判決+AOC DC Moratorium。能力-リスク同時進行）",
     "2026-05-03 v3.67: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。7指標更新（全件状態変更なし）。IND-013 high継続（200K MCPサーバーコマンド実行脆弱性 INFO-026 B-3+56ドメインシャドーIT INFO-021 C-3+マルチホップ委任 INFO-014 C-3+ゴールハイジャック INFO-017 C-3。攻撃対象領域拡大継続。Red指摘: 大規模インシデント未到達だが臨界点接近の可能性。critical未到達）・IND-025 elevated継続（GPT-5.5統合マルチモーダル INFO-002 A-3+Gemini Robotics ER 1.6 INFO-025 B-3+Grok Voice Agent API INFO-011 B-3+Claude Creative Work 8コネクタ INFO-006 A-3。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（Fortune <10%コストベース変化 INFO-038 B-3+41%出荷 INFO-037 C-3+S&P 500 25% ROI+Klarna逆戻り INFO-046 C-3+McKinsey 1%成熟度 INFO-056 B-3。9+独立ソース<30%本番到達。high移行条件（3+ソース<10%）: Cisco 5%+Fortune <10%で2ソース到達。McKinsey 1%は「成熟度」≠「本番到達」だが高度相関。実質3/3に近接。次回high移行の可能性大）・IND-027 high継続（Symphony OSS INFO-005 A-3+AAIF/MCP CNCF的進化 INFO-020 C-3+Skills Marketplace INFO-024 C-3+200K MCP脆弱性 INFO-026 B-3。標準化強化と品質リスクの同時進行）・IND-028 elevated継続（GPT-5.5 ARC-AGI-2 85% INFO-002 A-3+SWE-bench benchmaxxed INFO-059 C-3+ARC-AGI-3新ベンチマーク。主観-客観乖離継続。high移行条件に未到達）・IND-029 high継続（Big Tech Q CapEx $130B INFO-042 A-3+Anthropic $900B評価額 INFO-043 B-3+Ineffable $1.1B seed INFO-044 B-3+TPU 8i/8t INFO-007 A-3。資本流入vs物理的制約ギャップ確定的継続）・IND-030 elevated継続（Pentagon 7社契約/Anthropic除外 INFO-032 A-2+中国AI規制キャンペーン INFO-036 A-3+200K MCP暴露 INFO-026 B-3+White House軟化 INFO-035 B-3。能力-リスク同時進行。規制インフラ構築進行中）",
     "2026-05-02 v3.66: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。7指標更新（全件状態変更なし）。IND-013 high継続（200K MCPサーバー暴露 INFO-022 B-3+Claude Code 50万行ソース漏洩 INFO-049 C-3。攻撃対象領域拡大継続。Red指摘: 複合リスク蓄積・臨界点接近の可能性。critical未到達）・IND-025 elevated継続（Grok 4.3ボイスクローニング INFO-006 B-3+GPT-5.5統合マルチモーダル INFO-017 B-3+Gemini Robotics ER 1.6 INFO-018 C-3。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（Deloitte 14%本番到達 INFO-024 B-3+BCG 60%価値なし/Fortune <10% INFO-025 B-3+Grant Thornton完全統合10倍監査合格 INFO-027 B-3。8+独立ソース<30%本番到達。high移行条件（3+ソース<10%）に2/3到達: Cisco 5%+Fortune <10%。あと1ソース<10%でhigh移行）・IND-027 high継続（AAIF/MCP CNCF的進化 INFO-020 C-3+Symphony OSS INFO-021 A-3+200K MCPサーバー暴露 INFO-022 B-3。標準化強化と品質リスクの同時進行）・IND-028 elevated継続（Hassabis AGI 2030再確認 INFO-042 C-3+ARC-AGI-3新ベンチマーク登場 INFO-038 C-3+Gemini 3 Pro Deep Think 100% INFO-019 C-3。主観-客観乖離継続。high移行条件に未到達）・IND-029 high継続（OpenAI $122B調達 INFO-039 B-3+Big Tech $635B AI CapEx INFO-050 C-3+Amazon $100B+/5GW INFO-001 A-3。資本流入vs物理的制約ギャップ確定的継続）・IND-030 elevated継続（Pentagon 7社契約/Anthropic除外 INFO-030 A-2+中国AI規制キャンペーン INFO-032 A-3+200K MCP暴露 INFO-022 B-3。能力-リスク同時進行。規制インフラ構築進行中）",
     "2026-05-01 v3.65: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。7指標更新（全件状態変更なし）。IND-013 high継続（Mythos自律的エクスプロイト4h/89%重症度一致 INFO-025 B-3+OAuthマルチホップ委任問題 INFO-021 C-3+NISTゴールハイジャック/メモリポイズニング脅威ベクター INFO-034 A-3。攻撃対象領域拡大継続。critical未到達）・IND-025 elevated継続（Grok Voice Think Fast 1.0 INFO-013 A-3+Voice Agent API 20+言語 INFO-018 A-3+Gemini Drop Personal Intelligence INFO-011 A-3。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（INFO-023 78-97%パイロット/11-25%本番 C-3+INFO-031 171% ROI/88%失敗率 C-3+INFO-035 Macquarie成功例 B-3。7独立ソース<30%本番到達。Red指摘: 7ソース独立性は限定的・「本番」定義不統一。elevated→high移行条件（3+ソース<10%）に近接: Cisco 5%のみ<10%明確。INFO-023の11%下限確認で条件充足の可能性）・IND-027 high継続（Symphony OSS INFO-009 A-3+MCPクリエイティブコネクタ INFO-001 A-3+Google MCP/Skills INFO-015/016 A-3+xAI MCPツール INFO-018 A-3。4社MCP対応で標準化強化。OAuthマルチホップ INFO-021はMCP品質リスク）・IND-028 elevated継続（GPT-5.5 INFO-010 A-3+Mythos自律的エクスプロイト INFO-025 B-3。ARC-AGI-3スコア更新なし。主観-客観乖離継続。high移行条件に未到達）・IND-029 high継続（Amazon 10年$100B+/5GW INFO-003 A-3+Google TPU 8T/8I+Austria DC INFO-012 A-3+Anthropic $800B評価額 INFO-036 B-3。資本流入vs物理的制約ギャップ確定的継続）・IND-030 elevated継続（Mythos自律的エクスプロイト INFO-025 B-3+EU AI Act 8月執行 INFO-033 B-3+NIST CAISI INFO-034 A-3+Anthropic政策声明 INFO-004 A-3。能力-リスク同時進行。規制インフラ構築進行中）",
@@ -19,9 +20,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "200K MCPサーバーコマンド実行脆弱性（INFO-026, B-3）+56ドメインシャドーIT（INFO-021, C-3）+マルチホップ委任破綻（INFO-014, C-3）+ゴールハイジャック（INFO-017, C-3）。攻撃対象領域拡大継続。critical未到達（大規模AI攻撃インシデント未発生）。Red指摘: 大規模インシデント未到達だが攻撃面は臨界点接近",
-      "last_checked": "2026-05-03",
-      "rationale": "Arbiter v3.67: high継続。200K MCPサーバーコマンド実行脆弱性+56ドメインシャドーIT+マルチホップ委任+ゴールハイジャックの4件同時蓄積。攻撃対象領域急拡大。Red指摘統合: 大規模インシデント未到達だが複合リスク蓄積が臨界点接近の可能性。Pentagon「any lawful use」条項下でのセキュリティリスク拡大も注記。critical移行条件（大規模AI攻撃インシデント）に未到達。COMPLETE: Blue/Red両方完了"
+      "last_value": "AIエージェント本番DB削除（INFO-019）+200K MCPサーバーコマンド実行脆弱性（INFO-035, B-3）+56ドメインシャドーIT。攻撃面拡大継続。critical未到達（大規模AI攻撃インシデント未発生）。複合リスク蓄積が臨界点接近の可能性",
+      "last_checked": "2026-05-04",
+      "rationale": "Arbiter v3.68: high継続。AIエージェント本番DB削除+200K MCPサーバーコマンド実行脆弱性+56ドメインシャドーITの蓄積。攻撃面急拡大。Red指摘統合: 複合リスク蓄積が臨界点接近の可能性。critical移行条件（大規模AI攻撃インシデント）に未到達。COMPLETE: Blue/Red両方完了"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -30,9 +31,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "GPT-5.5統合マルチモーダル（INFO-002, A-3）+Gemini Robotics ER 1.6（INFO-025, B-3）+Grok Voice Agent API（INFO-011, B-3）+Claude Creative Work 8コネクタ（INFO-006, A-3）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-05-03",
-      "rationale": "Arbiter v3.67: elevated継続。4社マルチモーダル拡充（GPT-5.5・Gemini Robotics・Grok Voice・Claude Creative）で量的向上継続。「真の理解」検証は未解決。COMPLETE: Blue/Red両方完了"
+      "last_value": "Claude Sonnet 4.6 SWE-bench 80.2%（INFO-004, A-3）+xAI Voice Agent API 28言語（INFO-008, A-3）+Gemini 3 Pro Deep Think マルチモーダル首位100%（INFO-032, C-3）+Gemini Robotics ER 1.6（INFO-031, B-3）。量的向上継続。「真の理解」検証未解決",
+      "last_checked": "2026-05-04",
+      "rationale": "Arbiter v3.68: elevated継続。4社マルチモーダル拡充で量的向上継続。「真の理解」検証は未解決。COMPLETE: Blue/Red両方完了"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -41,9 +42,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Fortune <10%コストベース変化（INFO-038, B-3）+41%出荷・前年9%（INFO-037, C-3）+S&P 500 25% ROI証明（INFO-039, B-3）+Klarna逆戻り（INFO-046, C-3）+McKinsey 1%成熟度（INFO-056, B-3）。9+独立ソース<30%本番到達。high移行条件（3+ソース<10%）: Cisco 5%+Fortune <10%で2ソース到達。McKinsey 1%は「成熟度到達」≠「本番到達率」だが高度相関。実質3/3に近接。次回high移行の可能性大",
-      "last_checked": "2026-05-03",
-      "rationale": "Arbiter v3.67: elevated継続。9+独立ソース<30%本番到達確認。high移行条件（3+ソース<10%）に2/3到達: Cisco 5%+Fortune <10%。McKinsey 1%（INFO-056）は厳密には「本番到達率」ではないが「AI成熟度到達」として高度相関。Red指摘採用検討: 厳密条件適用では2/3継続だが実質的には3/3に近接。次回high移行の可能性大。COMPLETE: Blue/Red両方完了"
+      "last_value": "Fortune <10%コスト影響測定（INFO-041, A-3）+McKinsey 1%成熟度到達（INFO-075, B-3）+Cisco 5%（既存データ）。9+独立ソース<30%本番到達。high移行条件（3+ソース<10%）: Cisco 5%+Fortune <10%で2ソース。McKinsey 1%は「成熟度」≠「本番到達」で厳密には代理指標。S&P 500 25% ROI証明（INFO-042）は到達率10%超の可能性。elevated維持。次回直接測定データでhigh移行検討",
+      "last_checked": "2026-05-04",
+      "rationale": "Arbiter v3.68: elevated継続。Blue high移行否認・Red推奨採用。厳密条件（3+ソース<10%）は2/3充足（Cisco 5%+Fortune <10%）。McKinsey 1%は代理指標。S&P 25% ROIを過小評価する方向バイアス（Red指摘）を是正。次回「本番到達率」直接測定データでhigh移行検討。COMPLETE: Blue/Red両方完了"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -52,9 +53,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Symphony OSS（INFO-005, A-3）+AAIF/MCP CNCF的進化（INFO-020, C-3）+Skills Marketplace（INFO-024, C-3）+200K MCPサーバーコマンド実行脆弱性（INFO-026, B-3）。標準化強化と品質リスクの同時進行",
-      "last_checked": "2026-05-03",
-      "rationale": "Arbiter v3.67: high継続。Symphony OSS+AAIF/MCP標準化+Skills Marketplaceで強化。但し200K MCPサーバー脆弱性は品質リスクとして蓄積。標準化進展と品質課題の二面性に注意。COMPLETE: Blue/Red両方完了"
+      "last_value": "AAIF/MCP CNCF的進化（INFO-026）+MCP Creative Work 8コネクタ（INFO-005）+Gemini Skills GitHub OSS（INFO-036）+Skills Marketplace（INFO-029）。標準化強化と品質リスクの同時進行",
+      "last_checked": "2026-05-04",
+      "rationale": "Arbiter v3.68: high継続。AAIF/MCP標準化+MCP Creative+Gemini Skills OSS+Skills Marketplaceで強化。但し200K MCPサーバー脆弱性は品質リスク蓄積。標準化進展と品質課題の二面性に注意。COMPLETE: Blue/Red両方完了"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -63,9 +64,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "GPT-5.5 ARC-AGI-2 85%（INFO-002, A-3）+SWE-bench「benchmaxxed」（INFO-059, C-3）+ARC-AGI-3新ベンチマーク登場（INFO-059, C-3）。主観-客観乖離継続。ARC-AGI-3フロンティア全0%。high移行条件（RSI実証・ARC-AGI-3有意改善）に未到達",
-      "last_checked": "2026-05-03",
-      "rationale": "Arbiter v3.67: elevated継続。GPT-5.5 ARC-AGI-2 85%+Ramsey数新証明。ARC-AGI-3フロンティア全0%。SWE-bench「benchmaxxed」でベンチマーク信頼性問題顕在化。主観-客観乖離継続。high移行条件に未到達。COMPLETE: Blue/Red両方完了"
+      "last_value": "ARC-AGI-3全モデル<1%（INFO-066, A-3）+CEO AGI 5年以内予測（INFO-067, B-3）。主観-客観乖離最大水準維持。high移行条件（RSI実証・ARC-AGI-3有意改善）に未到達",
+      "last_checked": "2026-05-04",
+      "rationale": "Arbiter v3.68: elevated継続。ARC-AGI-3全モデル<1%で客観的AGI到達は遠遠。CEO AGI 5年予測vs客観データの乖離最大水準維持。high移行条件に未到達。COMPLETE: Blue/Red両方完了"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -74,9 +75,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Big Tech $130B CapEx（INFO-042, A-3）+Anthropic $900B評価額（INFO-043, B-3）+Ineffable $1.1B seed（INFO-044, B-3）+TPU 8i/8t（INFO-007, A-3）。資本流入vs物理的制約ギャップ確定的継続",
-      "last_checked": "2026-05-03",
-      "rationale": "Arbiter v3.67: high継続。Big Tech $130B CapEx+Anthropic $900B評価額+Ineffable $1.1B seed+TPU 8i/8t。資本流入vs物理的制約の構造的ギャップ確定的継続。COMPLETE: Blue/Red両方完了"
+      "last_value": "Big Tech $130B四半期CapEx（INFO-059, A-3）+Ineffable Intelligence $1.1B seed（INFO-058, B-3）+TPU 8i/8t第8世代（INFO-006, A-3）。資本流入vs物理的制約ギャップ確定的継続",
+      "last_checked": "2026-05-04",
+      "rationale": "Arbiter v3.68: high継続。Big Tech $130B四半期CapEx+Ineffable $1.1B seed+TPU 8i/8t。資本流入vs物理的制約の構造的ギャップ確定的継続。COMPLETE: Blue/Red両方完了"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -85,9 +86,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Pentagon 7社契約/Anthropic除外（INFO-032, A-2）+中国AI規制キャンペーン（INFO-036, A-3）+200K MCP暴露（INFO-026, B-3）+White House軟化兆し（INFO-035, B-3）。能力-リスク同時進行。規制インフラ構築進行中",
-      "last_checked": "2026-05-03",
-      "rationale": "Arbiter v3.67: elevated継続。Pentagon 7社契約/Anthropic除外+中国AI規制キャンペーン+200K MCP暴露+White House軟化兆し。能力-リスク同時進行。規制インフラ構築進行中。COMPLETE: Blue/Red両方完了"
+      "last_value": "Pentagon 7社契約/Anthropic除外（INFO-048, A-2）+下流カスケード（INFO-078, B-3）+中国裁判所AI解雇不可判決（INFO-045, A-3）+AOC DC Moratorium Act（INFO-068, B-3）。能力-リスク同時進行。規制インフラ構築進行中",
+      "last_checked": "2026-05-04",
+      "rationale": "Arbiter v3.68: elevated継続。Pentagon 7社契約+下流カスケード+中国判決+AOC DC Moratorium Act。能力-リスク同時進行。規制インフラ構築進行中。COMPLETE: Blue/Red両方完了"
     }
   }
 }
