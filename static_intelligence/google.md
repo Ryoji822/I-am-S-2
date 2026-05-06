@@ -1,99 +1,114 @@
 # Google / DeepMind
 
-> 最終更新: 2026-04-29
+> 最終更新: 2026-05-06
 > 確度: 高
 
-Gemini 3.1 ProがMMMU-Pro 88.21%で首位に立ち [INFO-035](../Information/2026-04-22/collected-raw.md#INFO-035)、ARC-AGI-2では77.1%でGPT-5.4 Pro（83.3%）に6.2pt差で敗れている。
+Google Cloudが初の四半期$20B超えを達成した。63%の前年比増収。GenAI製品は800% YoY成長、Gemini EnterpriseはQoQ 40%成長 [INFO-027](../Information/2026-05-06/collected-raw.md#INFO-027)。だが計算能力制約でさらに成長できた可能性を示唆。バックログは$462Bに倍増した。
 
-2026年4月下旬、Googleは二つの層で構造を変えた。**Gemini Enterprise Agent Platform**が正式リリースされ、Vertex AIから名称変更した [INFO-009](../Information/2026-04-29/collected-raw.md#INFO-009)。モデル選択・構築・デプロイの統合プラットフォームで、Interactions APIが状態管理とツールオーケストレーションを簡素化する。同時に**Agents CLI**をリリースし、Gemini CLI・Claude Code・Cursorと連携させた [INFO-024](../Information/2026-04-29/collected-raw.md#INFO-024)。エージェント開発ライフサイクル全体をCLI一つで管理する。
+Gemini Enterprise Agent Platformが正式リリースされ、エージェント構築・スケール・ガバナンスの統合プラットフォームに進化した [INFO-007](../Information/2026-05-06/collected-raw.md#INFO-007)。AIトークン処理は100億/分から160億/分に増加。**xAIのGrokモデルがGoogle Cloudで利用可能になり** [INFO-008](../Information/2026-05-06/collected-raw.md#INFO-008)、クロスプラットフォームの相互乗り入れが具体化した。
 
-そして**Anthropicに最大$40Bを投じた** [INFO-041](../Information/2026-04-29/collected-raw.md#INFO-041)。即時$10B、条件達成で追加$30B。$350B評価値。Google自身がGeminiを強化しつつ、Anthropicにも最大級の資金を投じる二面投資の構造は、AI市場の競争が単一企業の枠を超えていることを示す。
+だがBenchLM総合でGemini 3.1 Proは93。Claude Mythos Preview（99）に6pt差をつけられている [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028)。H-GOO-003（フロンティア性能競争で対抗）は49%に低下し、Arbiterから**仮説修正命令**が発出された。「性能競争で対抗」という枠組みがGoogleの実際の強み（エコシステム深度・インフラ・検索統合・マルチモーダル埋め込み）を系統的に無視してきたという指摘だ。
 
-Gemini Drop April 2026でPersonal Intelligence、Notebooks、Macネイティブアプリ、Lyria 3 Proによる3分音楽作成を追加 [INFO-005](../Information/2026-04-29/collected-raw.md#INFO-005)。Salesforce・SAP・ServiceNow・Atlassianとのパートナーシップを一斉発表 [INFO-018](../Information/2026-04-29/collected-raw.md#INFO-018)。$750MパートナーファンドとAAIF（Linux Foundation配下）でエコシステム標準化を牽引 [INFO-016](../Information/2026-04-29/collected-raw.md#INFO-016)。
+## 基本情報
 
-## この会社は何物か
-
-Sundar Pichai率いるテクノロジー企業。主力はGemini 3.1シリーズ（Pro/Flash/Flash-Lite/Flash Live/Flash TTS）、**Gemini Enterprise Agent Platform**（旧Vertex AI）、Google Workspace、Google Cloud、Gemma 4。従業員180,000人以上。
+- **本社**: カリフォルニア州マウンテンビュー
+- **CEO**: Sundar Pichai
+- **主力製品**: Gemini 3.1シリーズ（Pro/Flash/Flash-Lite）、**Gemini Enterprise Agent Platform**、Google Workspace、Google Cloud、Gemma 4、**Agent Skillsリポジトリ** [INFO-032](../Information/2026-05-06/collected-raw.md#INFO-032)
+- **推定従業員数**: 180,000人以上
+- **直近の資金調達**: 外部調達不要。Anthropicに最大$40B投資（$350B評価値）
 
 外部の資金調達が不要なこと。検索・Gmail・Drive・Workspace・Android・Chromeという20億人規模のユーザーベースがそのまま配布チャネルになること。開発競争が長期化するほど、この2つが効いてくる。
 
-Gemini 3.1 ProはARC-AGI-2で77.1%。**MMMU-Pro 88.21%で首位** [INFO-035](../Information/2026-04-22/collected-raw.md#INFO-035)。GPQA Diamond 94.3%で首位。2Mコンテキスト対応で$2/$12の価格設定。
+**Google Cloud Q1 2026**: $20.03B（63% YoY増）。GenAI製品800% YoY成長。Gemini Enterprise QoQ 40%成長。バックログ$462B（倍増）。AIトークン100億/分→160億/分 [INFO-027](../Information/2026-05-06/collected-raw.md#INFO-027)。
 
-**2026年4月下旬の新製品・機能**:
-- **Gemini Enterprise Agent Platform**: 旧Vertex AIから名称変更。エージェント構築・スケール・ガバナンスの統合プラットフォーム。Interactions APIで状態管理・ツールオーケストレーションを簡素化 [INFO-009](../Information/2026-04-29/collected-raw.md#INFO-009) [INFO-029](../Information/2026-04-29/collected-raw.md#INFO-029)
-- **Agents CLI**: エージェント開発ライフサイクル全体をCLI一つで管理。Gemini CLI・Claude Code・Cursor連携 [INFO-024](../Information/2026-04-29/collected-raw.md#INFO-024)
-- **Gemini Drop April 2026**: Personal Intelligence、Notebooks（NotebookLM統合）、Macネイティブアプリ、Lyria 3 Pro（3分音楽）、3Dモデル・チャート可視化 [INFO-005](../Information/2026-04-29/collected-raw.md#INFO-005)
-- **$750Mパートナーファンド + AAIF**: Linux Foundation配下でMCP・A2A標準化推進 [INFO-016](../Information/2026-04-29/collected-raw.md#INFO-016)
-- **Salesforce×Google・SAP×Google**: マルチエージェントAIのエンタープライズ展開 [INFO-018](../Information/2026-04-29/collected-raw.md#INFO-018)
-- **Anthropic $40B投資**: 即時$10B + 条件達成で追加$30B。$350B評価値 [INFO-041](../Information/2026-04-29/collected-raw.md#INFO-041)
+Gemini 3.1 ProはMMMU-Pro 88.21%で首位、GPQA Diamond 94.3%で首位。ARC-AGI-2では77.1%でGPT-5.4 Pro（83.3%）に6.2pt差で敗れている。2Mコンテキスト対応で$2/$12。
 
-**市場データ**: Cloud顧客の**75%がAI製品を使用**、330社が年間1T+トークン処理、API毎分**160億トークン** [INFO-017](../Information/2026-04-23/collected-raw.md#INFO-017)。Google Cloud売上バックログ$240B（前年比倍増）[INFO-013](../Information/2026-04-22/collected-raw.md#INFO-013)。Google Cloud Q4 2025過去最高$17.7B（YoY 48%増収）。
+**Pentagon 7社契約**でGoogleが選出された [INFO-073](../Information/2026-05-06/collected-raw.md#INFO-073) [INFO-074](../Information/2026-05-06/collected-raw.md#INFO-074)。だが**Google従業員600+がCEOにPentagon契約拒否を要請**している [INFO-075](../Information/2026-05-06/collected-raw.md#INFO-075)。
 
-**Pentagon契約交渉**: Anthropic排除後、PentagonがGemini AIモデルの機密設定での展開を評価中 [INFO-027](../Information/2026-04-22/collected-raw.md#INFO-027)。
+## 戦略方向性
 
-## 何をやろうとしているか
+### 全プロダクトにGeminiを溶かし込む（H-GOO-001、確度56%）
 
-### 全プロダクトにGeminiを溶かし込む（H-GOO-001、確度57%）
+Cloud顧客の**75%がAI製品を使用**。330社が年間1T+トークン処理。API毎分**160億トークン** [INFO-007](../Information/2026-05-06/collected-raw.md#INFO-007)。$20B/63% YoYでCloud収益が構造的に拡大している [INFO-027](../Information/2026-05-06/collected-raw.md#INFO-027)。
 
-Geminiを検索、Gmail、Drive、Workspace、Android、Chromeすべてに統合する戦略。Cloud Next 2026で**75%の顧客がAI製品を使用**、毎分**160億トークン**を処理 [INFO-017](../Information/2026-04-23/collected-raw.md#INFO-017)。
+Gemini Enterprise Agent Platformでエンタープライズ向けエージェントを体系化 [INFO-007](../Information/2026-05-06/collected-raw.md#INFO-007)。公式Agent Skillsリポジトリを公開 [INFO-032](../Information/2026-05-06/collected-raw.md#INFO-032)。$462B Cloudバックログは長期的な収益基盤。
 
-**Gemini Enterprise Agent Platform**の正式リリースでエンタープライズ向けエージェントを体系化 [INFO-009](../Information/2026-04-29/collected-raw.md#INFO-009)。**Agents CLI**で開発者体験をCLI中心に再編 [INFO-024](../Information/2026-04-29/collected-raw.md#INFO-024)。Salesforce・SAP・ServiceNow・Atlassianとのパートナーシップで配布チャネルを拡大 [INFO-018](../Information/2026-04-29/collected-raw.md#INFO-018)。$240B Cloudバックログは長期的な収益基盤。
+だがAnthropic 40%>Google 21%のエンタープライズLLMシェア未解決。全Cが「投入」指標（収益・成長率）であり「シェア拡大」の成果指標ではない。
 
-だがAnthropicへの$40B投資はGemini普及と矛盾する面がある。GoogleがAnthropicの14%を持ち、同時に自社のGeminiを押し込む二面性が、パートナー企業に混乱を生む可能性がある。
+確度は56% [Arbiter v3.70](../state/arbiter-2026-05-06.md)。次回A-3以上の独立確認で+1%検討。
 
-確度は57%で維持 [Arbiter v3.62](../state/arbiter-2026-04-27.md)。C/I同時蓄積で相殺。
+### Vertex AIでクラウド市場を追い上げる（H-GOO-002、確度48%）
 
-### Vertex AIでクラウド市場を追い上げる（H-GOO-002、確度52%）
+18R+連続でI=0が継続。自己認識はあるが行動変容がない。囲い込み指標の体系的設計（Workspace/Vertex/AndroidでのGemini優位定量・AAIF/MCPでのGoogle独自拡張比率）が未達成。
 
-Gemini Enterprise Agent Platformへの名称変更は、Vertex AIという技術ブランドからGemini Enterpriseというビジネスブランドへの転換 [INFO-029](../Information/2026-04-29/collected-raw.md#INFO-029)。**Agents CLI**のOSSリリースは開放性のC [INFO-024](../Information/2026-04-29/collected-raw.md#INFO-024)。$750MパートナーファンドとAAIF標準化でエコシステム構築を加速 [INFO-016](../Information/2026-04-29/collected-raw.md#INFO-016)。
+MCP全社サポート [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015)、Red Hat MCP Gateway [INFO-016](../Information/2026-05-06/collected-raw.md#INFO-016)、MCP in Visual Studio [INFO-019](../Information/2026-05-06/collected-raw.md#INFO-019) は開放性のCだが、围い込み否定の診断的証拠が独立して出ていない。
 
-ただし13R+でI=0が継続。開放行動は蓄積しているが、囲い込み否定の診断的証拠が独立して出ていない。
+確度は48% [Arbiter v3.70](../state/arbiter-2026-05-06.md)。low確定。条件付き±0%復帰: Google围い込み指標の体系的設計完了で検討。
 
-確度は52%で維持 [Arbiter v3.62](../state/arbiter-2026-04-27.md)。
+### 研究ブレークスルーで新カテゴリを作る（H-GOO-003、確度49%）— **仮説修正命令発出**
 
-### 研究ブレークスルーで新カテゴリを作る（H-GOO-003、確度51%）
+MMMU-Pro 88.21%で首位。GPQA Diamond 94.3%で首位。だがBenchLM総合でGemini 3.1 Proは93、Claude Mythos Preview（99）に6pt差 [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028)。
 
-**MMMU-Pro 88.21%で首位** [INFO-035](../Information/2026-04-22/collected-raw.md#INFO-035)。Gemini Flash TTS Elo 1,211で音声生成首位。Gemma 4はArena Elo 1452でオープンモデル最高水準。
+10R連続±0%/-1%（累積55→49%）で、仮説「フロンティア性能競争で対抗」はGoogleの実際の強み（エコシステム深度・インフラ・検索統合・マルチモーダル埋め込み）を10R+捉え損ねてきた。Arbiterから**仮説修正命令**が発出され、次回までに再構成（エコシステム深度・非性能次元への修正）または棄却の決定が必要 [Arbiter v3.70](../state/arbiter-2026-05-06.md)。
 
-だがGPT-5.5のTerminal-Bench 82.7% vs Gemini 3.1 Pro 68.5%の14.2pt差は、実用コード生成での劣位を示す。ARC-AGI-3で全フロンティアモデル0%（人間100%）は推論の根本的限界を示唆。3連続-1%各回独立I証拠。
+確度は49% [Arbiter v3.70](../state/arbiter-2026-05-06.md)。low帯。修正未実行で更なる-1%。
 
-確度は51% [Arbiter v3.62](../state/arbiter-2026-04-27.md)。
+## 強み・弱み・機会・脅威（SWOT）
 
-## 強みと弱み
+### 強み
 
-Googleの強みは、ベンチマーク性能（GPQA Diamond 94.3%首位・MMMU-Pro 88.21%首位）、配布規模（75%顧客AI使用・毎分160億トークン）、自己資金力、研究深度の4つが同時にある点。外部調達不要。**$240B Cloudバックログ** [INFO-013](../Information/2026-04-22/collected-raw.md#INFO-013)。**$750Mパートナーファンド** [INFO-016](../Information/2026-04-29/collected-raw.md#INFO-016)。**Gemini Enterprise Agent Platform**でエンタープライスAIを体系化 [INFO-009](../Information/2026-04-29/collected-raw.md#INFO-009)。**Agents CLI**で開発者体験を再編 [INFO-024](../Information/2026-04-29/collected-raw.md#INFO-024)。Anthropic $40B投資で二面投資構造 [INFO-041](../Information/2026-04-29/collected-raw.md#INFO-041)。Salesforce/SAP/ServiceNow/Atlassianパートナーシップ [INFO-018](../Information/2026-04-29/collected-raw.md#INFO-018)。Gemma 4でオープンモデル主導権。Pentagon契約交渉で政府市場参入の可能性。
+- 外部調達不要の自己資金力
+- **$20B/63% YoY** Cloud収益、$462Bバックログ [INFO-027](../Information/2026-05-06/collected-raw.md#INFO-027)
+- 20億人規模のユーザーベース（検索・Workspace・Android・Chrome）
+- MMMU-Pro 88.21%首位、GPQA Diamond 94.3%首位
+- **Gemini Enterprise Agent Platform**でエンタープライスAI体系化 [INFO-007](../Information/2026-05-06/collected-raw.md#INFO-007)
+- **公式Agent Skillsリポジトリ**公開 [INFO-032](../Information/2026-05-06/collected-raw.md#INFO-032)
+- MCP全社サポート [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015)
+- **xAI Grokモデル**のGoogle Cloud受け入れで相互乗り入れ実現 [INFO-008](../Information/2026-05-06/collected-raw.md#INFO-008)
+- Pentagon 7社契約で選出 [INFO-073](../Information/2026-05-06/collected-raw.md#INFO-073)
+- Anthropic $40B投資で二面投資構造
 
-弱みは、ARC-AGI-2で首位を失ったこと（77.1% vs 83.3%）。SWE-benchでClaude Opus 4.7に首位を明け渡したこと。Terminal-BenchでGPT-5.5に14.2pt差をつけられたこと。ARC-AGI-3で全フロンティアモデル0%。Anthropic $40B投資がGemini普及と矛盾する二面性。統合の実行品質に課題（幻覚率76.7%、集団訴訟）。トラフィックシェア≠収益の変換が未検証。
+### 弱み
+
+- BenchLM総合3位（93 vs Mythos 99 vs GPT-5.4 Pro 92）[INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028)
+- ARC-AGI-2でGPT-5.4 Proに6.2pt差（77.1% vs 83.3%）
+- エンタープライズLLMシェア21%でAnthropic（40%）に劣後
+- **従業員600+がPentagon契約拒否を要請** [INFO-075](../Information/2026-05-06/collected-raw.md#INFO-075)
+- H-GOO-003が仮説修正命令対象（10R連続±0%/-1%）
+- Anthropic $40B投資がGemini普及と矛盾する二面性
+- 統合の実行品質に課題（幻覚率76.7%、集団訴訟）
+
+### 機会
+
+- $20B Cloud収益でエンタープライズ投資を加速
+- Pentagon契約で政府市場参入
+- EU AI法完全施行（2026年8月）がWorkspace統合の強みを後押し
+- Agent Skillsリポジトリで開発者エコシステムを拡大
+
+### 脅威
+
+- Anthropicのエンタープライス猛追（40%シェア、$30B ARR）
+- BenchLM首位のClaude Mythos（99）との差が拡大方向
+- 従業員抗議がPentagon契約の実行リスクになる
+- DeepSeek V4の価格破壊が中間層を侵食
+- H-GOO-003修正命令の未実行で更なる低下
 
 ## I&W監視ポイント
 
-この企業に関連するI&W指標の状況:
-
 | 指標 | 状態 | トレンド | 現在値 |
 |------|------|---------|--------|
-| [IND-001](../config/indicators.json) 性能の非連続ジャンプ | high | approaching | Gemini 3.1 Pro MMMU-Pro 88.21%首位、ARC-AGI-2 77.1%。Terminal-BenchでGPT-5.5に14.2pt差 |
-| [IND-004](../config/indicators.json) OSS性能到達 | elevated | approaching | Gemma 4 Arena Elo 1452 |
-| [IND-006](../config/indicators.json) エージェントスタック競争 | elevated | rising | **Gemini Enterprise Agent Platform**。**Agents CLI**。Interactions API。AAIF標準化 |
-| [IND-025](../config/indicators.json) マルチモーダル信頼性 | elevated | stable | Flash TTS Elo 1,211/70+言語。Personal Intelligence。ARC-AGI-3全0%は推論限界示唆 |
-| [IND-027](../config/indicators.json) エコシステム標準化進展度 | high | rising | AAIF設立。MCP 110M+/月DL。Agents CLI OSS。SKILL.md 5主要ツール対応 |
-
-## 何を監視すべきか
-
-| 何を | なぜ | 今の状態 |
-|------|------|---------|
-| Anthropic $40B投資の影響 | Gemini普及と矛盾する二面投資がパートナーに混乱を生むか | 即時$10B・$350B評価値 [INFO-041](../Information/2026-04-29/collected-raw.md#INFO-041) |
-| Gemini Enterprise Agent Platformの定着 | Vertex AIからの名称変更がエンタープライス採用を加速するか | 正式リリース [INFO-009](../Information/2026-04-29/collected-raw.md#INFO-009) |
-| Pentagon Gemini契約の行方 | 軍事AI復帰が実現するか | 交渉中 [INFO-027](../Information/2026-04-22/collected-raw.md#INFO-027) |
-| ARC-AGI-2でのGPT-5.4 Proとの差 | 首位奪還するか | 77.1% vs 83.3%、6.2pt差 |
-| SWE-benchでのClaude Opus 4.7との差 | コード生成系で首位を取り戻せるか | Claude首位 |
-| Terminal-BenchでのGPT-5.5との差 | 実用コード生成での劣位を解消できるか | 68.5% vs 82.7%、14.2pt差 |
+| [IND-001](../config/indicators.json) 性能の非連続ジャンプ | high | approaching | MMMU-Pro 88.21%首位。ARC-AGI-2 77.1%。BenchLM 93（3位）[INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) |
+| [IND-006](../config/indicators.json) エージェントスタック競争 | elevated | rising | Gemini Enterprise Agent Platform [INFO-007](../Information/2026-05-06/collected-raw.md#INFO-007)。Agent Skills [INFO-032](../Information/2026-05-06/collected-raw.md#INFO-032) |
+| [IND-027](../config/indicators.json) エコシステム標準化進展度 | high | rising | MCP全社サポート [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015)。Red Hat MCP Gateway [INFO-016](../Information/2026-05-06/collected-raw.md#INFO-016) |
+| [IND-025](../config/indicators.json) マルチモーダル信頼性 | elevated | stable | Gemini Flash TTS。Deep Research Agent [INFO-007](../Information/2026-05-06/collected-raw.md#INFO-007) |
+| [IND-030](../config/indicators.json) AI能力とリスクの二面性 | elevated | rising | Pentagon契約+従業員抗議 [INFO-075](../Information/2026-05-06/collected-raw.md#INFO-075)。CAISI事前評価 [INFO-065](../Information/2026-05-06/collected-raw.md#INFO-065) |
 
 ## 変更履歴
 
 | 日付 | 変更内容 |
 |------|---------|
-| 2026-04-29 | **Gemini Enterprise Agent Platform正式リリース**・**Agents CLI**・**Anthropic $40B投資**・Gemini Drop April 2026・Salesforce/SAP/ServiceNowパートナーシップ・$750Mパートナーファンド・AAIF標準化を反映して全面書き直し。H-GOO-001 57%・H-GOO-002 52%・H-GOO-003 51%維持 |
-| 2026-04-23 | Cloud Next 2026定量データ・$750Mパートナーファンド・Enterprise Agent Platform・TPU 8t/8iを反映して書き直し |
-| 2026-04-22 | Deep Research Max・27%トラフィックシェア・$240B Cloudバックログ・Pentagon契約交渉・MMMU-Pro 88.21%首位を反映して全面書き直し |
-| 2026-04-19 | Gemini 3.1 Flash TTS・Chrome Skills・Grok on Vertex AIを追加 |
-| 2026-04-13 | Gemini 3.1 Pro multimodal 95.0%首位・SWE-bench首位喪失を追加 |
+| 2026-05-06 | **鮮度タイムアウト対応（7日経過）**。Google Cloud $20B/63% YoY・GenAI 800%成長・Gemini Enterprise Agent Platform詳細・xAI Grok on Google Cloud・Agent Skillsリポジトリ・Pentagon契約+従業員600+抗議・BenchLM 3位（93 vs Mythos 99）・MCP全社サポート・H-GOO-003仮説修正命令発出を反映して全面書き直し。H-GOO-001 56%・H-GOO-002 48%・H-GOO-003 49%に更新 |
+| 2026-04-29 | Gemini Enterprise Agent Platform・Agents CLI・Anthropic $40B投資を反映して全面書き直し |
+| 2026-04-23 | Cloud Next 2026定量データを反映して書き直し |
+| 2026-04-22 | Deep Research Max・$240B Cloudバックログ・Pentagon契約交渉を反映して全面書き直し |
+| 2026-04-13 | Gemini 3.1 Pro multimodal 95.0%首位を追加 |
