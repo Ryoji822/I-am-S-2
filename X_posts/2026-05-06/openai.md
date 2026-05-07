@@ -140,3 +140,17 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**05:24 JST** | [原文](https://x.com/gdb/status/2051759920467312940)
+
+> Major ChatGPT upgrade rolling out now, in the form of GPT-5.5 Instant:
+> 
+> OpenAI: GPT-5.5 Instant is starting to roll out in ChatGPT.
+> 
+> It’s a big upgrade, giving you smarter, clearer, and more personalized answers in a warmer, more natural tone.
+> 
+> And it's also more concise, which we heard you wanted. We think you'll love chatting with it.
+
+---
+

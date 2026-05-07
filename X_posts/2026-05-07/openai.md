@@ -52,3 +52,21 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**07:22 JST** | [原文](https://x.com/jasonkwon/status/2052402697849155844)
+
+> RT Zach Brock
+> congrats to anthropic for defeating grok in the market and feasting upon the compute of their fallen enemy
+
+---
+
+**04:39 JST** | [原文](https://x.com/jasonkwon/status/2052504107748143343)
+
+> RT Marina Mogilko
+> .@thsottiaux told me on my podcast this week: more than half of Codex prompts now come from non-engineers
+> 
+> As a knowledge worker, I can't be more excited about what's shipping. Testing Codex this weekend. Will report back
+
+---
+
