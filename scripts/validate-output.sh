@@ -164,13 +164,13 @@ if [[ -f "$REPORT" ]]; then
   fi
 
   # Check for unlinked IND-XXX references (should be [IND-XXX](../config/indicators.json))
-  BARE_IND=$(grep -oP '(?<!\[)IND-\d{3}(?!\]\()' "$REPORT" 2>/dev/null | wc -l | tr -d ' ')
+  BARE_IND=$( { grep -oP '(?<!\[)IND-\d{3}(?!\]\()' "$REPORT" 2>/dev/null || true; } | wc -l | tr -d ' ')
   if [[ "$BARE_IND" -gt 0 ]]; then
     check_warn "$BARE_IND bare IND-XXX reference(s) without Markdown link in report"
   fi
 
   # Check for unlinked INFO-XXX references (should be [INFO-XXX](...))
-  BARE_INFO=$(grep -oP '(?<!\[)INFO-\d{3}(?!\]\()' "$REPORT" 2>/dev/null | wc -l | tr -d ' ')
+  BARE_INFO=$( { grep -oP '(?<!\[)INFO-\d{3}(?!\]\()' "$REPORT" 2>/dev/null || true; } | wc -l | tr -d ' ')
   if [[ "$BARE_INFO" -gt 0 ]]; then
     check_warn "$BARE_INFO bare INFO-XXX reference(s) without Markdown link in report"
   fi
@@ -195,8 +195,8 @@ echo "--- Static Intelligence Link Quality ---"
 
 for si_file in static_intelligence/*.md; do
   if [[ -f "$si_file" ]]; then
-    SI_BARE_IND=$(grep -oP '(?<!\[)IND-\d{3}(?!\]\()' "$si_file" 2>/dev/null | wc -l | tr -d ' ')
-    SI_BARE_INFO=$(grep -oP '(?<!\[)INFO-\d{3}(?!\]\()' "$si_file" 2>/dev/null | wc -l | tr -d ' ')
+    SI_BARE_IND=$( { grep -oP '(?<!\[)IND-\d{3}(?!\]\()' "$si_file" 2>/dev/null || true; } | wc -l | tr -d ' ')
+    SI_BARE_INFO=$( { grep -oP '(?<!\[)INFO-\d{3}(?!\]\()' "$si_file" 2>/dev/null || true; } | wc -l | tr -d ' ')
     if [[ "$SI_BARE_IND" -gt 0 || "$SI_BARE_INFO" -gt 0 ]]; then
       check_warn "$(basename "$si_file"): $SI_BARE_IND bare IND + $SI_BARE_INFO bare INFO reference(s)"
     else
@@ -204,6 +204,170 @@ for si_file in static_intelligence/*.md; do
     fi
   fi
 done
+
+# =============================================================================
+# 3.5.1 Report v2 structure (Phase 1 readability layer)
+# All checks WARN-only until v2 template is stable. Skip silently if report
+# does not opt-in (no "品質状態:" header line).
+# =============================================================================
+
+echo ""
+echo "--- Report v2 Structure (WARN-only) ---"
+
+if [[ -f "$REPORT" ]] && grep -q '^>\s*品質状態:' "$REPORT"; then
+  # 3.5.1.1: required headings
+  declare -a REQUIRED_HEADINGS=(
+    "^## 0\. 今日のポイント"
+    "^## 1\. 主要判断"
+    "^## 5\. 低確信度の監視事項"
+    "^## 6\. まだわかっていないこと"
+    "^## 7\. やるべきこと"
+    "^## 付録A"
+    "^## 付録B"
+  )
+  MISSING=0
+  for pat in "${REQUIRED_HEADINGS[@]}"; do
+    if ! grep -qE "$pat" "$REPORT"; then
+      check_warn "report v2: heading missing: ${pat#^}"
+      MISSING=$((MISSING + 1))
+    fi
+  done
+  if [[ "$MISSING" -eq 0 ]]; then
+    check_pass "report v2: all required headings present"
+  fi
+
+  # 3.5.1.2: 品質状態 value is one of the allowed states
+  STATUS_LINE=$(grep -E '^>\s*品質状態:' "$REPORT" | head -1 || true)
+  if echo "$STATUS_LINE" | grep -qE 'GREEN|YELLOW_COLLECTION_GAP|YELLOW_RED_UNAVAILABLE|RED_QUALITY_FAIL|RED_ARBITER_FAIL'; then
+    check_pass "report v2: 品質状態 value is in the allowed set"
+  else
+    check_warn "report v2: 品質状態 value not in allowed set: $STATUS_LINE"
+  fi
+
+  # 3.5.1.3: each ### 1.x judgment block has all 6 labels
+  JUDGMENT_BLOCKS=$(grep -cE '^### 1\.[0-9]' "$REPORT" 2>/dev/null || true)
+  if [[ "$JUDGMENT_BLOCKS" -gt 0 ]]; then
+    LABELS_OK=0
+    for label in "事実 (Facts)" "仮定 (Assumptions)" "判断 (Judgment)" "不確実性 (Uncertainty)" "意思決定への含意" "次回収集要求"; do
+      COUNT=$(grep -cF "**${label}" "$REPORT" 2>/dev/null || true)
+      if [[ "$COUNT" -ge "$JUDGMENT_BLOCKS" ]]; then
+        LABELS_OK=$((LABELS_OK + 1))
+      fi
+    done
+    if [[ "$LABELS_OK" -eq 6 ]]; then
+      check_pass "report v2: all $JUDGMENT_BLOCKS judgment blocks have all 6 labels"
+    elif [[ "$LABELS_OK" -ge 3 ]]; then
+      check_warn "report v2: only $LABELS_OK of 6 labels consistently appear in judgment blocks"
+    else
+      check_warn "report v2: judgment blocks missing most 6-label structure ($LABELS_OK/6)"
+    fi
+  fi
+
+  # 3.5.1.4: bare EVD-... references should be linked
+  BARE_EVD=$( { grep -oP '(?<!\[)EVD-\d{8}-\d{4}(?!\]\()' "$REPORT" 2>/dev/null || true; } | wc -l | tr -d ' ')
+  if [[ "$BARE_EVD" -gt 0 ]]; then
+    check_warn "report v2: $BARE_EVD bare EVD-... reference(s) without Markdown link"
+  fi
+else
+  echo "  (skipped: report does not yet declare v2 品質状態 header)"
+fi
+
+# =============================================================================
+# 3.6. Evidence Layer (Phase 1 of Agentic Intelligence Redesign)
+# All checks here are WARN-level until the Evidence layer is stable.
+# Skip silently if Phase 1.6 has never been enabled for this date.
+# =============================================================================
+
+echo ""
+echo "--- Evidence Layer (Phase 1, WARN-only) ---"
+
+EVD_RAW_DIR="Information/raw/$DATE"
+EVD_INDEX="Information/evidence_index.json"
+EVD_PROCESSED="Information/processed/$DATE.jsonl"
+
+if [[ ! -d "$EVD_RAW_DIR" ]]; then
+  echo "  (skipped: $EVD_RAW_DIR not present — Phase 1.6 may not be enabled)"
+else
+  # 3.6.1: each *.jsonl is valid JSONL + schema-valid
+  for jsonl in "$EVD_RAW_DIR"/firecrawl.jsonl "$EVD_RAW_DIR"/x_posts.jsonl; do
+    [[ -f "$jsonl" ]] || continue
+    if python3 -m scripts.lib.evidence_schema validate "$jsonl" >/tmp/evd-validate.log 2>&1; then
+      check_pass "$(basename "$jsonl"): schema valid"
+    else
+      check_warn "$(basename "$jsonl"): schema errors (see /tmp/evd-validate.log)"
+    fi
+  done
+
+  # 3.6.2: evidence_index.json valid JSON + references match raw files
+  if [[ -f "$EVD_INDEX" ]]; then
+    if python3 -c "import json; json.load(open('$EVD_INDEX'))" 2>/dev/null; then
+      check_pass "evidence_index.json is valid JSON"
+      ORPHAN_COUNT=$(python3 -c "
+import json
+idx = json.load(open('$EVD_INDEX'))
+date = '$DATE'
+orphans = 0
+for eid, meta in idx.get('evidence', {}).items():
+    if meta.get('run_date') != date:
+        continue
+    raw = meta.get('raw_path', '')
+    import os
+    if raw and not os.path.exists(raw):
+        orphans += 1
+print(orphans)
+" 2>/dev/null || echo "0")
+      if [[ "$ORPHAN_COUNT" -eq 0 ]]; then
+        check_pass "evidence_index.json: all $DATE entries reference existing raw files"
+      else
+        check_warn "evidence_index.json: $ORPHAN_COUNT orphan entries for $DATE (raw_path missing)"
+      fi
+    else
+      check_warn "evidence_index.json is invalid JSON"
+    fi
+  else
+    check_warn "evidence_index.json missing (expected when Phase 1.6 ran)"
+  fi
+
+  # 3.6.3: content_hash uniqueness in processed.jsonl
+  if [[ -f "$EVD_PROCESSED" ]]; then
+    DUP=$(python3 -c "
+import json
+seen = {}
+dup = 0
+for line in open('$EVD_PROCESSED'):
+    line = line.strip()
+    if not line: continue
+    r = json.loads(line)
+    h = r.get('content_hash')
+    if h in seen:
+        dup += 1
+    else:
+        seen[h] = r.get('evidence_id')
+print(dup)
+" 2>/dev/null || echo "0")
+    if [[ "$DUP" -eq 0 ]]; then
+      check_pass "processed/$DATE.jsonl: no content_hash duplicates"
+    else
+      check_warn "processed/$DATE.jsonl: $DUP content_hash duplicate(s) (possible circular reporting)"
+    fi
+  fi
+
+  # 3.6.4: collected-raw.md INFO-NNN sections have Evidence ID lines
+  if [[ -f "$COLLECTED" ]]; then
+    INFO_TOTAL=$(grep -c "^### INFO-" "$COLLECTED" 2>/dev/null || true)
+    EVD_LINES=$(grep -c '^- \*\*Evidence ID:\*\*' "$COLLECTED" 2>/dev/null || true)
+    if [[ "$INFO_TOTAL" -gt 0 ]]; then
+      if [[ "$EVD_LINES" -ge "$INFO_TOTAL" ]]; then
+        check_pass "collected-raw.md: all $INFO_TOTAL INFO sections have Evidence ID lines"
+      elif [[ "$EVD_LINES" -gt 0 ]]; then
+        MISSING=$((INFO_TOTAL - EVD_LINES))
+        check_warn "collected-raw.md: $MISSING of $INFO_TOTAL INFO sections missing Evidence ID line"
+      else
+        check_warn "collected-raw.md: 0 of $INFO_TOTAL INFO sections have Evidence ID line (Phase 1 prompt may need update)"
+      fi
+    fi
+  fi
+fi
 
 # =============================================================================
 # 4. Config integrity checks
