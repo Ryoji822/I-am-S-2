@@ -3,3 +3,7 @@
 
 # OpenCode skill .env files
 .opencode/skills/**/.env
+
+# Python build artifacts
+__pycache__/
+*.pyc
