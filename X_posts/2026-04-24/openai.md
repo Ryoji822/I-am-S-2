@@ -549,3 +549,38 @@
 
 ---
 
+## @markchen90 (Mark Chen - 研究責任者)
+
+**04:21 JST** | [原文](https://x.com/markchen90/status/2047702886277423351)
+
+> RT Sam Altman
+> We tried a new thing with NVIDIA to roll out Codex across a whole company and it was awesome to see it work.
+> 
+> Let us know if you'd like to do it at your company!
+
+---
+
+## @npew (Peter Welinder - 研究・技術)
+
+**14:31 JST** | [原文](https://x.com/npew/status/2047709673437217120)
+
+> RT Moll
+> GPT-5.5 is a breath of fresh air. A model that feels like it absorbed the best of the previous ones: intelligence, insight, sense of humor and memory all work beautifully here. An absolutely stunning personality overall. OpenAI absolutely cooked
+
+---
+
+**12:47 JST** | [原文](https://x.com/npew/status/2047550808062128577)
+
+> RT James Sun
+> Today, we launched browser use inside Codex to further close the build & verify loop for local development!  
+> 
+> Now, you can ask Codex to build your front end, and test it like a user would by clicking through the app.  
+> 
+> Codex sees everything a user sees through vision & checks the network/console logs to help debug & fix any issues that it finds.  
+> 
+> This change brings us closer to fully autonomous coding agents that delivers high quality and tested changes. 
+> 
+> Watch Codex test my app in the browser, catch & fix a real bug, and doing that loop again with a brand new feature.
+
+---
+

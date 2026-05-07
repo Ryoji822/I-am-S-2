@@ -37,3 +37,17 @@
 
 ---
 
+## @sundarpichai (Sundar Pichai - Google CEO)
+
+**13:45 JST** | [原文](https://x.com/sundarpichai/status/2047537432548245992)
+
+> Great in depth interview with Thomas and Ben on GCP, Gemini Enterprise, Agents, TPUs etc
+> 
+> Stratechery: 4-23-2026
+> 
+> An Interview with Google Cloud CEO Thomas Kurian About the Agentic Moment
+> 
+> https://stratechery.com/2026/an-interview-with-google-cloud-ceo-thomas-kurian-about-the-agentic-moment/
+
+---
+

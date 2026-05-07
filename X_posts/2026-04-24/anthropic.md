@@ -12,3 +12,11 @@
 
 ---
 
+## @jackclarkSF (Jack Clark - 共同創業者 / Policy)
+
+**23:17 JST** | [原文](https://x.com/jackclarkSF/status/2047681248597028884)
+
+> http://x.com/i/article/2047679952846532608
+
+---
+

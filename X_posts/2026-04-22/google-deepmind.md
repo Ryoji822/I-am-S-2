@@ -103,3 +103,27 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**04:31 JST** | [原文](https://x.com/JeffDean/status/2048027153485205647)
+
+> RT Aaron Katz
+> My friend @JeffDean encouraged me to speak at this event so come join me on May 26 in San Jose! https://bauplanlabs.github.io/SAO-workshop/
+> 
+> Jacopo Tagliabue: SAO is T-5ish weeks away, and we’re excited to announce our second keynote: @ceo_clickhouse, CEO of @ClickHouseDB.
+> 
+> He has at the center of one of the best companies in modern OLAP, and has been very vocal that the agentic world requires us to rethink infrastructure!
+
+---
+
+**01:50 JST** | [原文](https://x.com/JeffDean/status/2048541668182483352)
+
+> RT NeurIPS Conference
+> Following positive feedback from other venues, like STOC and ICML, NeurIPS is pleased to announce a new initiative in partnership with Google: for NeurIPS 2026, authors will have access to Google's Paper Assistant Tool (PAT) to help improve their submissions. 
+> 
+> This program offers authors the opportunity to receive free, automated, and actionable feedback on their manuscripts before the final deadline, private to the authors. It is a completely optional service that is kept strictly private to the authors and will not be used in the review process.
+> 
+> Read more in our blog post: https://blog.neurips.cc/2026/04/21/neurips-supports-authors-with-googles-paper-assistant-tool-pat/
+
+---
+
