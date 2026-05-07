@@ -1,125 +1,88 @@
 # OpenAI
 
-> 最終更新: 2026-05-06
-> 確度: 中
+> 最終判断更新: 2026-05-06
+> 全体確信度: 中
+> 主参照: hypotheses.json#H-OAI-001/002/003, indicators.json#IND-001/IND-013/IND-026/IND-027
 
-$122B調達を完了し評価額$852Bに到達した [INFO-055](../Information/2026-05-06/collected-raw.md#INFO-055)。だが2026年の損失見込みは$14Bに膨らんでいる [INFO-048](../Information/2026-05-06/collected-raw.md#INFO-048)。収益は$13.1Bで黒字化未達、エンタープライズLLMシェア27%でAnthropic（40%）に劣後したまま。
+## 0. 一文要約
 
-2026年5月、OpenAIはエンタープライズ戦略をもう一段階深めた。**TPG/Brookfield/Advent/BainとJV「The Development Company」を設立**した [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056)。評価額$10B、$4B調達。Anthropicも同週にBlackstone/H&F/Goldman SachsとJVを設立しており [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056)、二社が同時にPalantir型のFDE（Forward-Deployed Engineer）モデルを採用した。エンタープライズAIのGo-to-Marketが「API提供」から「JV+埋め込みエンジニア」に構造的に深化している。
+我々はOpenAIを、**$852B評価額を資本として使いながら$14Bの年間損失を走らせている企業**と読んでいる。最大の根拠は2つ。$122B調達を完了してAzure・AWS・GCPの全クラウドに展開し、Codex週間ユーザー400万でエンタープライズ浸透を実証した [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024)。その一方、LLM支出シェアは27%でAnthropic（40%）に劣後したまま収益$13.1Bに対して損失$14Bが見込まれている [INFO-048](../Information/2026-05-06/collected-raw.md#INFO-048)。Microsoft提携解消、あるいは$14B損失が3期連続で続き資本市場の許容が切れる、のいずれかが観測されたら、この読みは更新が要る。
 
-Microsoft提携は根本改訂済み。OpenAI製品はAzure優先リリースを維持しつつ全クラウドで提供可能、MicrosoftのIPライセンスは2032年まで非排他化された [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024)。OpenAI on AWSでGPT-5.5・Codex・Managed AgentsがBedrockに載る [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024)。単一クラウドのロックインから解放された。
+## 1. コア判断
 
-## 基本情報
+OpenAIの現在の構図は、**スケールの正当性で赤字を走らせる賭け**に集約される。$852B評価額は「現在の利益」ではなく「市場支配を達成した場合の将来キャッシュフロー」への先払いだ。この論理が成り立つには、投資家が損失拡大に耐え続ける間に、エンタープライズ浸透が競合を引き離せるという前提が必要になる。
 
-- **本社**: サンフランシスコ
-- **CEO**: Sam Altman
-- **主力製品**: ChatGPT、**GPT-5.5**（$5/$30、400K context・Thinking/Pro変種）、GPT-5.4シリーズ（Pro/mini/nano）、Agents SDK、**Codex**（desktop control・browser・memory・90+ plugins）、**Workspace Agents**（共有エージェント・Slack連携・定期タスク）、**Symphony**（OSSエージェントオーケストレーター）、Operator（CUA）、GPT-5.4-Cyber、GPT-Rosalind（ライフサイエンス特化）、ChatGPT Images 2.0
-- **推定従業員数**: 4,000人（年末までに8,000人に倍増予定）
-- **直近の資金調達**: $122B（評価額$852B）。SoftBank、Amazon（$50B）、Nvidia（$30B）、Microsoftが主要投資家
+現時点でその前提を支える事実はある。Codex WAU 400万 [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024)、100万ビジネス顧客、ChatGPT週間アクティブユーザー9億人、JV「The Development Company」によるPEパートナーポートフォリオへの直接浸透 [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056)。Microsoft提携の非排他化でAzure・AWS・GCPに同時展開できるようになり、Anthropicが持てなかった全クラウドリーチを確保した [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024)。
 
-資金力はAI業界最大。年間収益$13.1B、月間収益$2B。ChatGPT週間アクティブユーザー9億人、5000万以上のサブスクライバー。H2 2026にIPOを検討中。
+ただし、前提が危うい事実も同様に積み上がっている。BenchLM総合でGPT-5.4 Proは92点、Claude Mythos Preview（99点）・Gemini 3.1 Pro（93点）に続く3位で技術首位を失った [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028)。エンタープライズAI本番到達率は業界全体でCisco 85%パイロット/5%本番、D&B 30%本番スケールに留まっており [INFO-034](../Information/2026-05-06/collected-raw.md#INFO-034)、Codex 4M WAUが収益貢献まで到達しているかは確認できていない。賭けが成功するかを判断する客観的指標がまだ出そろっていない。
 
-GPT-5.4 ProはARC-AGI-2で83.3%を記録し人間（72.4%）を超えた [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028)。BenchLM総合ではGPT-5.4 Proが92で、Claude Mythos Preview（99）・Gemini 3.1 Pro（93）に続く3位 [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028)。
+## 2. 判断の重心
 
-Codex週間ユーザーは**400万+**に到達 [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024)。Agents SDKにsandboxingとネイティブハーネスを追加、persisted /goalワークフローを導入 [INFO-004](../Information/2026-05-06/collected-raw.md#INFO-004)。Codexのbrowser use機能がコンピューター制御を実現 [INFO-022](../Information/2026-05-06/collected-raw.md#INFO-022)。
+| 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
+|:-:|---|---|:-:|---|
+| 高 | $122B調達完了（評価額$852B）。SoftBank・Amazon $50B・Nvidia $30B・Microsoft が主要投資家 | 損失走行を資本で支える構造の基盤。枯渇まで最低2〜3年の余裕がある | A-3 | [INFO-055](../Information/2026-05-06/collected-raw.md#INFO-055) |
+| 高 | 収益$13.1B（月$2B）に対して2026年損失見込み$14B | 赤字走行の規模を確定する。収益成長が損失拡大を上回れるかがコア判断の焦点 | B-3 | [INFO-048](../Information/2026-05-06/collected-raw.md#INFO-048) |
+| 高 | Microsoft提携改訂（非排他・全クラウド・IP非排他2032）+ OpenAI on AWS（Bedrock経由）| 単一クラウド依存からの解放。エンタープライズ到達範囲を構造的に拡大 | A-3 | [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024) |
+| 中 | Codex WAU 400万 + Agents SDK sandboxing + persisted /goal | エンタープライズ浸透の現時点の最良指標。ただし個人/法人比率・ARR換算値は非公開 | A-3 | [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024) [INFO-004](../Information/2026-05-06/collected-raw.md#INFO-004) |
+| 中 | BenchLM 3位（92点）。GPT-5.4 Pro ARC-AGI-2 83.3%で人間超え（72.4%）だが、Mythos 99点に7点差 | 技術首位喪失は差別化の弱体化。ただしARC-AGI-2の人間超えは具体的数値で計測可能な成果 | A-3 | [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) |
+| 中 | JV「The Development Company」設立（TPG/Brookfield/Advent/Bain、評価額$10B・$4B調達・FDEモデル） | エンタープライズ浸透をGSIを通じてではなくPE直接経路で加速する新構造 | B-2 | [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) |
 
-エンタープライズAI利用はYoY 8倍。**100万以上のビジネス顧客**。API処理は150億トークン/分。ただしLLM支出シェアは27%でAnthropic（40%）に劣後。
+## 3. 反証の閾値
 
-## 主要動向タイムライン
+| 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
+|---|---|:-:|---|
+| $14B損失が2026・2027と連続し、Altman or SoftBankが損失許容の打ち止めを示唆 | 「スケールで正当化された赤字走行」のコア判断が崩れ、リストラ/縮小フェーズへの移行が現実化する | 180日 | [IND-029](../config/indicators.json) |
+| LLM支出シェアが27%から20%以下に下落（Anthropic・Google双方に侵食される） | H-OAI-001（エンタープライズ支配的地位の確立）が棄却水準に達する | 90日 | [IND-008](../config/indicators.json) |
+| Microsoft提携が再度改訂され、AzureへのOpenAI独占が復活 | 全クラウド展開という構造的利点が消え、競合との対称性が回復しなくなる | 60日 | [IND-027](../config/indicators.json) |
+| Codex WAUが3四半期連続で横ばい、かつARRへの転換率が非公表のまま | 「エンタープライズ浸透を実証中」という判断の根拠が崩れる（量=質ではないことが顕在化） | 90日 | [IND-026](../config/indicators.json) |
+| GPT系モデルがBenchLM/ARC-AGI-2双方でGemini・Claude Mythosから10点以上引き離される | 性能差別化による価格維持が困難になり、DeepSeek価格帯への収束圧力が増す | 180日 | [IND-001](../config/indicators.json) |
 
-| 日付 | イベント | 信頼性 | 引用 |
-|------|---------|-------|------|
-| 2026-05-04 | **JV「The Development Company」設立**（TPG/Brookfield/Advent/Bain・$10B評価額・$4B調達・FDEモデル採用） | B-2 | [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) |
-| 2026-04-28 | **OpenAI on AWS**発表（GPT-5.5/Codex/Managed Agents on Bedrock・Codex WAU 4M+） | A-3 | [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024) |
-| 2026-04-27 | **Microsoft提携改訂**（非排他・全クラウド・IP非排他2032） | A-3 | [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024) |
-| 2026-04-27 | **Symphony** OSS化（エージェントオーケストレーター） | A-3 | — |
-| 2026-04-23 | **GPT-5.5発表**（$5/$30、400K context、Thinking/Pro変種） | A-1 | — |
-| 2026-04-23 | **Workspace Agents**発表（共有エージェント・Slack連携・定期タスク） | A-3 | — |
-| 2026-04-21 | **Codex Labs**発表 + **GSI 7社提携**（Accenture/PwC/Capgemini等） | A-3 | — |
-| 2026-04-15 | Agents SDK大幅アップデート（ネイティブサンドボックス+MCP統合） | A-3 | [INFO-004](../Information/2026-05-06/collected-raw.md#INFO-004) |
-| 2026-04-07 | $122B調達完了（評価額$852B） | A-3 | [INFO-055](../Information/2026-05-06/collected-raw.md#INFO-055) |
+## 4. 進行中の仮説
 
-## 戦略方向性
+| 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
+|---|---|:-:|---|---|---|
+| [H-OAI-001](../config/hypotheses.json) | 2026年内にAgent機能でB2B支配的地位を確立する | 63% | JV設立・全クラウド展開・Codex 4M WAUでエンタープライズ浸透のCが積み上がるが、$14B損失とLLMシェア27%で収益構造不安定化のIも同数。C/I均衡が確度を中央付近に固定している | [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024) [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) | [INFO-048](../Information/2026-05-06/collected-raw.md#INFO-048) [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) |
+| [H-OAI-002](../config/hypotheses.json) | MCP開放エコシステムの上にプロプライエタリ上位レイヤーを構築して囲い込む | 53% | 囲い込み戦略に対して Symphony OSS・Microsoft IP非排他2032・AAIF/MCP標準化の3件A-3独立反証が継続中。JVのPEポートフォリオへの優先販売アクセスは「金融次元の囲い込み」として未評価のCだが、下層開放の蓄積が上層を制約する構造は崩れていない | [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) | [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024) [INFO-004](../Information/2026-05-06/collected-raw.md#INFO-004) |
+| [H-OAI-003](../config/hypotheses.json) | AGI/スーパーインテリジェンスを最優先目標とし商業化と並行して大規模資源投入する（棄却候補） | 1% | $122B調達・JV $10B・8000人増員・Codex Labs・GSI 7社提携という経営行動がすべて商業化に向いており、AGI研究優先を示す行動証拠がない。Altman の「2028年早期ASI」発言は公言だが、発言と経営配分の方向が逆なのでCの価値がない | (なし) | [INFO-055](../Information/2026-05-06/collected-raw.md#INFO-055) [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) [INFO-048](../Information/2026-05-06/collected-raw.md#INFO-048) |
 
-### エンタープライス開発プラットフォームになる（H-OAI-001、確度63%）
+## 5. 監視指標
 
-Microsoft提携改訂で全クラウド展開が可能になり [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024)、OpenAI on AWSでGPT-5.5・Codex・Managed AgentsがBedrockに載った [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024)。Codex WAUは4M到達。JV「The Development Company」でエンタープライズ浸透を加速する構えだ [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056)。
+| 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
+|---|---|---|---|:-:|
+| [IND-001](../config/indicators.json) | 主要ベンチマーク性能の非連続ジャンプ | +5pt以上/期で high | BenchLM 92点（3位）。ARC-AGI-2 83.3%（人間超え）。90%閾値まで約2.5pt | 2026-05-06 |
+| [IND-013](../config/indicators.json) | AIエージェント関連セキュリティ侵害頻度 | 大規模インシデントで critical | AIエージェント本番DB削除 (INFO-009)。24.4%のみAI完全可視性。MCP Shadow IT継続。high水準 | 2026-05-06 |
+| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達でhigh | D&B 30%本番スケール。パイロット→本番18%。elevated（Cisco 5%・Fortune <10%で2/3条件充足） | 2026-05-06 |
+| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用でhigh | MCP全社サポート（OpenAI/Google/Microsoft/Block）。Red Hat MCP Gateway。Visual Studio統合。high水準 | 2026-05-06 |
+| [IND-029](../config/indicators.json) | AIインフラ資本投入 vs 物理制約 | 資本流入が物理制約を上回り続ける限りhigh | 3社合算CapEx ~$560B。資本流入vs物理的制約ギャップ継続。high水準 | 2026-05-06 |
 
-Codex Labs + GSI 7社提携でB2Bチャネルを開いた。Workspace Agentsでチーム向けワークフロー自動化に進出した。
+## 6. 変化履歴
 
-だが$14B損失見込み [INFO-048](../Information/2026-05-06/collected-raw.md#INFO-048) は収益構造の不安定化を示す。BenchLM 3位（92 vs Mythos 99） [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) は技術的優位の揺らぎを示唆する。C/I均衡。
+| 日付 | 変更 | きっかけ | 過去 → 現在 |
+|:-:|---|---|---|
+| 2026-05-06 | コア判断を「エンタープライズ開発プラットフォーム化」から「スケールで正当化された赤字走行の賭け」へ改訂 | $14B損失見込み [INFO-048](../Information/2026-05-06/collected-raw.md#INFO-048) + JV設立 [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) + BenchLM 3位 [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) の同時観測 | 「全クラウド展開でエンタープライズを取る企業」 → 「評価額で損失を走らせながら市場支配を狙う企業」 |
+| 2026-04-29 | Microsoft提携改訂・OpenAI on AWSを反映、全クラウド展開の構造変化を記録 | [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024) Microsoft提携非排他化 + Bedrock展開 | 「Azure依存・単一クラウドリスク」 → 「全クラウド対称展開」 |
+| 2026-04-22 | Codex Labs + GSI 7社提携、Codex WAU 3M→4Mを反映 | Codex Labs発表 + Accenture/PwC/Capgemini等7社提携 | 「API提供中心のB2Bチャネル」 → 「GSI経由のB2B営業力借用」 |
+| 2026-04-07 | $122B調達完了を反映、資本余力の評価を更新 | [INFO-055](../Information/2026-05-06/collected-raw.md#INFO-055) $122B調達完了・評価額$852B | 「資金調達中、不確定」 → 「調達完了、最低2〜3年の資本余力確保」 |
 
-確度は63% [Arbiter v3.70](../state/arbiter-2026-05-06.md)。
+## 7. ブラインドスポット
 
-### MCP上に独自実行環境を構築して囲い込む（H-OAI-002、確度53%）
+- **Codex WAUの収益転換率が非公表**。400万WAUが月次ARRにいくら寄与しているかを外部から追跡できない。ChatGPT 9億WAUとCodex 4M WAUは桁が2つ違うが、それぞれの収益貢献比率も不明で、どちらが$13.1B収益を支えているかが見えない。
+- **$14B損失の補填構造が透明でない**。$122B調達のどの部分が損失補填に充当され、どの部分がCapExに向かっているか開示がない。Microsoft・SoftBankが損失補填に合意しているのか、単なる資本参加なのかで、許容期間の試算が変わる。
+- **JV「The Development Company」の実効性が未観測**。PEパートナーのポートフォリオ企業へのOpenAI製品浸透が実際にH-OAI-001を強化するか、FDEモデルがスケールするかは、設立から6ヶ月以上のデータがないと判断不能。
+- **ChatGPT・Codexの解約率とリテンションが公表されていない**。9億WAU・100万ビジネス顧客はグロス数値。ネット維持率と有料転換率が不明なまま成長ストーリーに依存している。
+- **AGI進捗の内部評価が外部から測れない**。ARC-AGI-2でGPT-5.4 Proが83.3%を達成したが、ARC-AGI-3ではフロンティアモデルがほぼ0%。Altmanの「2028年ASI」発言と客観ベンチマークの乖離が最大水準にある (IND-028 elevated) ため、OpenAI内部のAGI定義と外部評価の差分が判断の死角になっている。
 
-囲い込み仮説は3件の独立した反証に直面した。Symphony OSS、Microsoft IP非排他2032、AAIF/MCP標準化。JVのPEパートナーポートフォリオ企業への優先販売アクセスは围い込みの新次元（金融次元）として機能する可能性がある [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056)。だが下層開放蓄積が上層囲い込み有効性を構造的に制約している。
+## 付録: 直近30日の参照Evidence
 
-確度は53% [Arbiter v3.70](../state/arbiter-2026-05-06.md)。
-
-### AGI/スーパーインテリジェンス（H-OAI-003、確度1%、棄却候補）
-
-Altmanは「2028年早期にASI」と公言するが、$122B調達、8,000人増員、Codex Labs、GSI提携、JV設立、政府契約拡大——経営行動はすべて商業化に向いている。確度1%で棄却候補。
-
-## 強み・弱み・機会・脅威（SWOT）
-
-### 強み
-
-- 圧倒的な資金力（$122B、$852B評価額）
-- 多層的なモデルラインナップ（GPT-5.5 + GPT-5.4 Pro/mini/nano + Cyber + Rosalind）
-- GPT-5.4 ProでARC-AGI-2人間超え（83.3%）
-- **100万ビジネス顧客・400万週間アクティブCodexユーザー** [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024)
-- ChatGPT週間アクティブユーザー9億人の消費者リーチ
-- **3大クラウド全対応**: Azure優先+AWS Bedrock [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024) + GCP
-- **GSI 7社提携**でB2Bチャネル構築
-- **JV「The Development Company」**でエンタープライズ特化を加速 [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056)
-- Agents SDK MCP統合 + sandboxing + persisted /goal [INFO-004](../Information/2026-05-06/collected-raw.md#INFO-004)
-
-### 弱み
-
-- 技術的優位が市場シェアに転換できていない——エンタープライズ27%でAnthropic（40%）に劣後
-- **$14B損失見込み**で収益構造が不安定化 [INFO-048](../Information/2026-05-06/collected-raw.md#INFO-048)
-- BenchLM 3位（92 vs Mythos 99 vs Gemini 93）で性能首位を失った [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028)
-- GPT-5.5価格2倍が競合に顧客を押しやるリスク
-- 43%のAI生成コード変更が本番でデバッグ必要
-- Microsoft提携改訂で「排他性」を失い、Azureとの差別化が薄まる
-
-### 機会
-
-- **JV「The Development Company」**でPEパートナーのポートフォリオ企業に優先アクセス [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056)
-- Microsoft提携改訂で全クラウド展開が可能に
-- Anthropic SCR指定の間隙を突く政府市場
-- GSI 7社チャネルでエンタープライズ営業力を借用
-- GPT-5.4-Cyber、GPT-Rosalindという垂直特化2製品
-- H2 2026 IPOが透明性と資金調達の新段階に
-- Skills Marketplaceでエージェント配布の新チャネル [INFO-017](../Information/2026-05-06/collected-raw.md#INFO-017) [INFO-029](../Information/2026-05-06/collected-raw.md#INFO-029)
-
-### 脅威
-
-- Anthropicのエンタープライズ猛追（40%シェア、$30B ARR確認）
-- MCP標準化が独自実行環境の围い込みを無効化する可能性
-- EU AI法全面執行（2026年8月）がコンプライアンスコストを増大
-- **DeepSeek V4**が$0.0036/MTokで価格破壊
-- エンタープライズ実行ギャップ: Cisco 85%パイロット/5%本番、D&B 30%のみ本番スケール [INFO-034](../Information/2026-05-06/collected-raw.md#INFO-034) [INFO-035](../Information/2026-05-06/collected-raw.md#INFO-035)
-- **AIコスト単月50%急増**の事例 [INFO-049](../Information/2026-05-06/collected-raw.md#INFO-049)
-
-## I&W監視ポイント
-
-| 指標 | 状態 | トレンド | 現在値 |
-|------|------|---------|--------|
-| [IND-001](../config/indicators.json) 性能の非連続ジャンプ | high | approaching | GPT-5.4 Pro ARC-AGI-2 83.3%。BenchLM 3位（92）。90%閾値まで2.5pt |
-| [IND-015](../config/indicators.json) スキル再定義 | elevated | rising | Agents SDK sandboxing。Skills Marketplace [INFO-017](../Information/2026-05-06/collected-raw.md#INFO-017)。Codex 90+ plugins |
-| [IND-008](../config/indicators.json) 大企業の集中 | elevated | — | LLM支出27%。Anthropic 40%に劣後 |
-| [IND-013](../config/indicators.json) セキュリティ侵害頻度 | high | rising | AIエージェント本番DB削除 [INFO-009](../Information/2026-05-06/collected-raw.md#INFO-009)。24.4%のみAI完全可視性 [INFO-036](../Information/2026-05-06/collected-raw.md#INFO-036) |
-| [IND-026](../config/indicators.json) エージェント本番環境到達率 | elevated | rising | D&B 30%本番スケール [INFO-034](../Information/2026-05-06/collected-raw.md#INFO-034)。パイロット→本番18%（過去最大）[INFO-035](../Information/2026-05-06/collected-raw.md#INFO-035) |
-| [IND-027](../config/indicators.json) エコシステム標準化進展度 | high | rising | MCP全社サポート（OpenAI/Google/Microsoft/Block）[INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015)。Red Hat MCP Gateway [INFO-016](../Information/2026-05-06/collected-raw.md#INFO-016) |
-
-## 変更履歴（直近5件のみ。詳細は git log を参照）
-
-| 日付 | 変更内容 |
-|------|---------|
-| 2026-05-06 | **鮮度タイムアウト対応（7日経過）**。JV「The Development Company」設立（TPG/Brookfield/$10B評価額・FDEモデル採用）・$14B損失見込み・Agents SDK sandboxing + persisted /goal・Codex browser use・Skills Marketplace・BenchLM 3位（92 vs Mythos 99）・MCP全社サポート・エンタープライズ実行ギャップ新データ（D&B 30%/パイロット→本番18%）を反映して全面書き直し。H-OAI-001 63%・H-OAI-002 53%に更新 |
-| 2026-04-29 | Microsoft提携改訂・OpenAI on AWS・Symphony OSS・エンタープライズ実行ギャップ5独立ソース確認を反映して全面書き直し |
-| 2026-04-24 | GPT-5.5新モデルリリース・フロリダ州AG刑事調査を反映して書き直し |
-| 2026-04-23 | Workspace Agents新製品発表・30GW compute by 2030計画を反映して書き直し |
-| 2026-04-22 | Codex Labs + GSI 7社提携・WAU 3M→4M・Agents SDK MCP統合を反映して書き直し |
+| Evidence | 用途 |
+|---|---|
+| [INFO-024](../Information/2026-05-06/collected-raw.md#INFO-024) | Microsoft提携改訂（非排他・全クラウド）、OpenAI on AWS、Codex WAU 4M+ |
+| [INFO-048](../Information/2026-05-06/collected-raw.md#INFO-048) | 2026年損失見込み$14B |
+| [INFO-055](../Information/2026-05-06/collected-raw.md#INFO-055) | $122B調達完了、評価額$852B |
+| [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) | JV「The Development Company」設立（TPG/Brookfield/Advent/Bain・$10B・FDEモデル） |
+| [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) | BenchLM 3位（92点）、GPT-5.4 Pro ARC-AGI-2 83.3%・人間超え |
+| [INFO-004](../Information/2026-05-06/collected-raw.md#INFO-004) | Agents SDK sandboxing + persisted /goal |
+| [INFO-034](../Information/2026-05-06/collected-raw.md#INFO-034) | D&B 97%活動・30%本番スケール（エンタープライズ実行ギャップ） |
+| [INFO-035](../Information/2026-05-06/collected-raw.md#INFO-035) | パイロット→本番18%（業界エージェント実行ギャップ） |
+| [INFO-009](../Information/2026-05-06/collected-raw.md#INFO-009) | AIエージェント本番DB削除事案 |
+| [Arbiter v3.70](../state/arbiter-2026-05-06.md) | H-OAI-001/002/003確度評価の完全根拠（本書から外出し） |

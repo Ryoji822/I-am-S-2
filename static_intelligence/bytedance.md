@@ -1,111 +1,88 @@
 # ByteDance
 
-> 最終更新: 2026-05-06
-> 確度: 中
+> 最終判断更新: 2026-05-06
+> 全体確信度: 中
+> 情報非対称性: 中国市場の透明性低・言論統制により、観測根拠は他社比で著しく限定的。確度%は記載するが、独立した裏付けを欠く項目が多い
+> 主参照: hypotheses.json#H-BTD-001/002/003, indicators.json#IND-011/010/030
 
-豆包MAUが3.45億で中国AIアプリ首位を維持。DAU約1.4億。日次トークン使用量120兆超。**Seed2.0が正式リリース**され [INFO-071](../Information/2026-05-06/collected-raw.md#INFO-071)、Pro/Codeモデルが豆包AppとTRAEで利用可能になった。全シリーズAPIが火山エンジンで提供開始。
+## 0. 一文要約
 
-だが逆風が三つ重なった。**中国サイバースペース規制当局（CAC）がByteDanceアプリ3つ（Jianying/Maoxiang/Jimeng AI）にAI生成コンテンツラベリング法違反で警告**を出した [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011)。**豆包が初の有料版を発表**（¥68/月〜）し [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070)、無料戦略からの転換を始めた。**DeepSeekが量的ヘッジファンドHigh-Flyer Capitalの支援で低価格を維持**しており [INFO-068](../Information/2026-05-06/collected-raw.md#INFO-068)、ByteDanceの価格優位が構造的侵食を受けている。
+我々はByteDanceを、**中国AI市場で唯一MAU 3.45億規模を取ったが、CAC規制・DeepSeek価格競合・純利益急減が同時進行しており「低価格で世界へ」戦略の持続可能性が現時点で独立裏付けを欠く企業**と読んでいる。最大の根拠は3点。Doubao MAU 3.45億という規模感 [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070)、Seed 2.0 Pro が Claude Opus 比で約10倍安という価格事実 [INFO-071](../Information/2026-05-06/collected-raw.md#INFO-071)、そして2025年純利益が70%以上減少した財務圧力 [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011)。「中国規制当局が ByteDance の AI ライセンスを取り消す」「Doubao の MAU 増加が3ヶ月停滞する」「DeepSeek が Doubao より安い価格を維持する」のいずれかが観測されたら、現在の読みは更新が要る。
 
-## 基本情報
+## 1. コア判断
 
-- **本社**: 北京
-- **CEO**: Liang Rubo（梁汝波）
-- **主力製品**: **豆包（Doubao）2.0**（多模態Agentモデル）、**Seed 2.0**（Pro/Lite/Mini/Code）[INFO-071](../Information/2026-05-06/collected-raw.md#INFO-071)、Seeduplex（全二重音声）、Cozeプラットフォーム、Seedance 2.0、Seed3D 2.0 [INFO-072](../Information/2026-05-06/collected-raw.md#INFO-072)
-- **推定従業員数**: 150,000人以上
-- **直近の資金調達**: 非公開（評価額$520B）
+ByteDance のAI事業の現構図は、**規模は本物だが、それを支える経済モデルが今まさに試されている**という局面にある。
 
-価格は確認済みの強み。Seed 2.0 Pro $0.47/M入力、$2.37/M出力。Claude Opus比で約10倍安。Doubao 2.0は¥3.2/¥16（百万トークンあたり）。
+規模の根拠は具体的だ。Doubao MAU 3.45億・DAU 1.45億。日次トークン使用量120兆超、2年で1000倍という成長率。中国AIアプリで首位の座は数字として確認できる。Seed 2.0 Pro は $0.47/M入力・$2.37/M出力と、 Claude Opus 比で約10倍安い。この低価格で日次120兆トークンを捌いていること自体が、ByteDance の規模の優位を示す。
 
-**使用量が爆発的成長**: 日次トークン使用量120兆超（2年で1000倍）。DAU 1.45億→MAU 3.45億で中国AIアプリ首位。
+だが2026年5月時点で、その優位を支える構造に3つの圧力が同時にかかっている。第一は規制。中国サイバースペース規制当局（CAC）がByteDanceのアプリ3本（Jianying/Maoxiang/Jimeng AI）にAI生成コンテンツのラベリング法違反で警告を出した [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011)。警告はアプリ単位だが、規制執行が強まる先例になる。第二は価格競合。DeepSeek が量的ヘッジファンド High-Flyer Capital の支援のもと低価格を維持しており [INFO-068](../Information/2026-05-06/collected-raw.md#INFO-068)、API価格次元での ByteDance の優位が削られている。DeepSeek V4 は $0.0036/M という価格帯まで引き下げている。第三は財務。2025年の純利益が70%以上減少し、AI投資の持続可能性に疑義がかかっている。
 
-**豆包有料版**（2026年5月）: ¥68/月〜（3段階: 標準/強化/専門）。無料版は継続提供。算力・トークン消費コストに対応する価格設定 [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070)。
+この3点は偶発的な悪材料ではない。低価格成長戦略の構造的な帰結として読める。Doubao が有料版（¥68/月〜）を発表したのは、無料戦略のままでは費用を賄えなくなった証左だ [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070)。ただし、このコア判断自体が中国国内情報源に依存している。ByteDance の月次収益も実際のAPI収益構造も、外部から独立して検証できていない。確信度は「中」にとどまる。
 
-**Seed2.0正式リリース** [INFO-071](../Information/2026-05-06/collected-raw.md#INFO-071): Pro/Codeモデルが豆包AppとTRAEで利用可能。全シリーズAPIが火山エンジンで提供開始。
+## 2. 判断の重心
 
-**Seed3D 2.0** [INFO-072](../Information/2026-05-06/collected-raw.md#INFO-072): SOTA幾何学・テクスチャ。1画像→高精度3Dモデル数秒生成。
+| 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
+|:-:|---|---|:-:|---|
+| 高 | Doubao MAU 3.45億・DAU 1.45億、日次トークン120兆超（2年で1000倍） | 中国AI市場での規模優位の直接的な数値根拠。「規模は本物」の判断の柱 | B-2 (中国発表値・独立検証なし) | [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070) |
+| 高 | 2025年純利益70%以上減少（$33B→$9B強）。数百億のAI投資が利益を圧迫 | 低価格・大規模投資戦略の継続可能性を問う財務的制約 | B-2 (非上場のため公式財務開示なし、リーク情報) | [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011) |
+| 高 | CAC がアプリ3本（Jianying/Maoxiang/Jimeng AI）にラベリング法違反で警告 | 規制執行の強化が新製品リリース速度とグローバル展開を制約する構造リスク | A-3 | [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011) |
+| 中 | Doubao 有料版 ¥68/月〜 を初発表（3段階: 標準/強化/専門）。無料版は継続 | 無料戦略の限界と収益化転換の開始。コスト圧力の顕在化を示す | A-3 | [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070) |
+| 中 | DeepSeek が High-Flyer Capital 支援で低価格を維持。V4 は $0.0036/M | ByteDance の価格優位が同一市場参加者に侵食されている | A-3 | [INFO-068](../Information/2026-05-06/collected-raw.md#INFO-068) |
+| 中 | Seed 2.0 正式リリース。Pro/Code モデルを豆包 App と TRAE で提供。API は火山エンジン経由 | 製品ラインナップの拡充がコア判断を支える。ただしベンチマーク自己報告のみ | C-2 (独立検証なし) | [INFO-071](../Information/2026-05-06/collected-raw.md#INFO-071) |
 
-**CAC警告** [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011): ByteDanceアプリ3つ（Jianying/Maoxiang/Jimeng AI）がAI生成コンテンツラベリング法違反で警告。中国AI規制の執行強化。
+## 3. 反証の閾値
 
-**2025年財務**: 純利益70%+減少（$33B→$9B強）。数百億のAI投資が利益を圧迫。
+| 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
+|---|---|:-:|---|
+| 中国規制当局が ByteDance の AI サービスライセンスを取り消す・停止する | H-BTD-001（中国から世界へ）・H-BTD-002（低価格戦略）の両方が崩れる。事業基盤そのものへの打撃 | 60日 | [IND-030](../config/indicators.json) |
+| Doubao の MAU 増加が3ヶ月連続で停滞（増加率 ≤ 1%/月） | 「中国市場での独占的規模成長」判断と H-BTD-001 の確度が崩れる。有料化への移行失敗も示唆 | 90日 | [IND-011](../config/indicators.json) |
+| DeepSeek が Doubao 有料版と同等以下の価格でコンシューマ向けサービスを展開 | H-BTD-002（低価格優位）の根拠が崩れる。ByteDance の Consumer/API 両市場での価格競争力が失われる | 60日 | [IND-010](../config/indicators.json) |
+| 2026年純利益が引き続き減少し、AI投資計画の縮小が公表される | コア判断の財務的根拠が崩れ、規模成長と投資継続の両立が困難と判断する | 180日 | [IND-011](../config/indicators.json) |
+| TikTok の米国事業売却・分離が確定し、ByteDance グローバル組織が分断される | TikTok 収益を ByteDance AI 投資に充てるという構造が崩れ、H-BTD-001 の前提が変わる | 90日 | [IND-030](../config/indicators.json) |
 
-ベンチマークは自己報告値のまま。AIME 2025で98.3%、SWE-Bench Verified 76.5%、GPQA Diamond 88.9%。独立第三者検証は完了していない。
+## 4. 進行中の仮説
 
-## 戦略方向性
+| 仮説ID | 一文要約 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
+|---|---|:-:|---|---|---|
+| [H-BTD-001](../config/hypotheses.json) | 中国で取った規模を足がかりにグローバル展開する | 66% | MAU 3.45億・Seed 2.0 リリースは肯定材料だが、TikTok 問題・CAC 警告で障壁が顕在化。中国情報源の限定により独立裏付けなし | [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070) [INFO-071](../Information/2026-05-06/collected-raw.md#INFO-071) | [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011) [INFO-068](../Information/2026-05-06/collected-raw.md#INFO-068) |
+| [H-BTD-002](../config/hypotheses.json) | 低価格で市場を獲得し続ける | 65% | 日次トークン120兆は低価格戦略の成果を示す。ただし DeepSeek V4 $0.0036/M、純利益急減、有料化開始が同時進行。中国情報源の限定により独立裏付けなし | [INFO-071](../Information/2026-05-06/collected-raw.md#INFO-071) | [INFO-068](../Information/2026-05-06/collected-raw.md#INFO-068) [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070) |
+| [H-BTD-003](../config/hypotheses.json) | 著作権・規制の制約が競争力を削ぐ | 40% | CAC 警告3アプリは規制執行強化の証拠。ただし著作権関連の新証拠はなく、警告はラベリング法違反であり著作権とは別次元。中国情報源の限定により独立裏付けなし | [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011) | (著作権領域での新証拠なし) |
 
-### 中国から世界へ（H-BTD-001、確度66%）
+## 5. 監視指標
 
-豆包MAU 3.45億で中国首位。Seed2.0正式リリースでPro/Codeモデルの配布が開始された [INFO-071](../Information/2026-05-06/collected-raw.md#INFO-071)。Seed3D 2.0で3D生成が生産利用レベルに到達 [INFO-072](../Information/2026-05-06/collected-raw.md#INFO-072)。豆包有料版の開始はエコシステムの深度を増す [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070)。
+| 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
+|---|---|---|---|:-:|
+| [IND-011](../config/indicators.json) | 中国AI性能到達（Doubao MAU・ベンチマーク動向） | Doubao MAU 3ヶ月停滞またはベンチマーク独立検証で乖離が出た場合に elevated | MAU 3.45億（中国首位）。Seed 2.0 ベンチマーク自己報告のみ | 2026-05-06 |
+| [IND-010](../config/indicators.json) | 新興国AI価格競争 | ByteDance vs DeepSeek の価格逆転で high | Seed 2.0 Pro $0.47/$2.37。DeepSeek V4 $0.0036 が下限 | 2026-05-06 |
+| [IND-030](../config/indicators.json) | AI能力とリスクの二面性（規制・政治リスク） | CAC 追加警告・ライセンス停止・TikTok 分断のいずれかで high | CAC 警告3アプリ [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011) | 2026-05-06 |
 
-ただしCAC警告は規制リスクの顕在化 [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011)。グローバル展開の障壁（TikTok問題、規制リスク）は継続。
+## 6. 変化履歴
 
-確度は66% [Arbiter v3.70](../state/arbiter-2026-05-06.md)。
+| 日付 | 変更 | きっかけ | 過去 → 現在 |
+|:-:|---|---|---|
+| 2026-05-06 | コア判断を「規模成長と低価格優位」中心から「優位の持続可能性が試されている」へ | [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011) [INFO-068](../Information/2026-05-06/collected-raw.md#INFO-068) [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070) CAC警告・DeepSeek High-Flyer支援・Doubao有料化の同時進行 | 「中国首位・低価格で成長継続」 → 「規模は確認済みだが経済モデルが試されている局面」 |
+| 2026-04-29 | Doubao MAU 3.45億・車載AI座舱助手2.0・DeepSeek V4価格破壊を反映 | 鮮度タイムアウト対応 | 「MAU規模・価格競争力に注目」 → 「DeepSeek との二軍競合が顕在化」 |
+| 2026-04-22 | 2025年純利益70%以上減少・初回株買い戻しを反映 | 財務情報リーク | 「投資継続中」 → 「AI投資コストで収益圧迫が確認」 |
 
-### 低価格で市場を揺さぶる（H-BTD-002、確度65%）
+## 7. ブラインドスポット
 
-日次トークン120兆は低価格戦略が市場を獲得している証拠。
+- **Doubao の月次収益と収益構造が不明**。中国国内アプリは収益公開義務がなく、MAU 3.45億と ¥68/月の有料版があっても、実際の課金転換率・解約率・月次収益は外部から推定不能。「規模はある、収益は不明」という状態で確度を算出している。
 
-だが**豆包有料版の開始は低価格戦略の「拡張」で「維持」ではない** [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070)。DeepSeekがHigh-Flyer Capitalの支援で低価格を維持しており [INFO-068](../Information/2026-05-06/collected-raw.md#INFO-068)、API価格次元での競合圧力が強まっている。2025年純利益70%+減少と重なり、価格戦略の持続可能性に疑義が深まる。Consumer市場とAPI市場の分離が進行中。
+- **ByteDance グローバル AI 戦略への中国共産党の介入度が見えない**。TikTok 問題では政府介入が報道されたが、AI 部門（Doubao/Seed）への介入の実態は公開情報にない。介入があれば製品ロードマップや人材配置が変わる。観測手段を持っていない。
 
-確度は65% [Arbiter v3.70](../state/arbiter-2026-05-06.md)。KIQ-BTD-PRICE 5R未回答継続。
+- **Seed モデルの学習データに含まれる検閲フィルタの実態が不明**。中国国内で運用されるモデルが何をフィルタしているかは公開されていない。グローバル展開時に同一モデルを使う場合、西側市場での規制適合と中国側フィルタが矛盾する可能性がある。独立した調査は存在しない。
 
-### 著作権と規制の制約（H-BTD-003、確度40%）
+- **米中規制摩擦（CHIPS法・Entity List）でのコンピュート調達制約の実態が不明**。ByteDance が H100 等の高性能 GPU にどこまでアクセスできているかは非公開。国内 GPU（Ascend/Biren）への切り替え進捗も外部から確認できない。ベンチマーク自己報告値が正しくても、学習インフラの持続可能性は別問題として残る。
 
-CAC警告はAIコンテンツラベリング法違反で、著作権とは別次元 [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011)。新規著作権関連証拠なし。
+- **TikTok 米国事業の動向が ByteDance 全体の AI 投資に与える影響が測れない**。TikTok の収益が ByteDance AI 部門の投資原資になっているとされるが、両者のキャッシュフロー分離の実態は外部からわからない。TikTok 分断が AI 投資に直撃するシナリオを定量化できない。
 
-確度は40% [Arbiter v3.70](../state/arbiter-2026-05-06.md)。
+## 付録: 直近30日の参照Evidence
 
-## 強み・弱み・機会・脅威（SWOT）
-
-### 強み
-
-- 中国AIアプリ首位（**MAU 3.45億**、DAU 1.45億、日次トークン120兆）
-- 確認済みの価格競争力（10倍安）
-- **Seed2.0正式リリース**でPro/Code配布開始 [INFO-071](../Information/2026-05-06/collected-raw.md#INFO-071)
-- **Seed3D 2.0**で3D生成が生産利用レベル到達 [INFO-072](../Information/2026-05-06/collected-raw.md#INFO-072)
-- 動画生成+配布チャネルの組み合わせ（Seedance + CapCut）
-- 豆包有料版でマネタイズ深度を拡大 [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070)
-- DeepSeek核心研究員の移籍獲得
-- 評価額$520B
-
-### 弱み
-
-- **DeepSeek V4価格破壞**で低価格優位が構造的侵食
-- **DeepSeek High-Flyer Capital支援**で価格競争の持続性に圧力 [INFO-068](../Information/2026-05-06/collected-raw.md#INFO-068)
-- **2025年純利益70%+減少**でAI投資の持続可能性に疑義
-- **CAC警告3アプリ**で規制リスクの顕在化 [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011)
-- 品質の独立検証が未完了
-- TikTok問題の波及によるグローバル展開リスク
-- 中国企業としての透明性の限界
-
-### 機会
-
-- Seed2.0正式リリースでAPI提供開始、企業向け収益化の新段階
-- 豆包有料版でユーザーあたり収益を向上
-- Seed3D 2.0で3D生成市場での先行
-- DeerFlow OSSでグローバル開発者コミュニティへの訴求
-
-### 脅威
-
-- DeepSeekの価格優位がByteDanceの中間帯を侵食
-- CAC規制執行の強化が新製品リリースのスピードを制約
-- 純利益減少が投資持続を脅かす
-- グローバル展開の法的障壁
-
-## I&W監視ポイント
-
-| 指標 | 状態 | トレンド | 現在値 |
-|------|------|---------|--------|
-| [IND-011](../config/indicators.json) 中国AI性能到達 | elevated | rising | Seed 2.0 Pro。自己報告のみ。独立検証待ち |
-| [IND-010](../config/indicators.json) 新興国AI価格競争 | elevated | rising | Seed 2.0 Pro $0.47/$2.37。DeepSeek V4 $0.0036が下限 |
-| [IND-030](../config/indicators.json) AI能力とリスクの二面性 | elevated | rising | CAC警告3アプリ [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011) |
-
-## 変更履歴
-
-| 日付 | 変更内容 |
-|------|---------|
-| 2026-05-06 | **鮮度タイムアウト対応（7日経過）**。Seed2.0正式リリース（Pro/Code）・豆包有料版¥68/月〜・Seed3D 2.0・CAC警告3アプリ（Jianying/Maoxiang/Jimeng AI）・DeepSeek High-Flyer Capital支援を反映して全面書き直し。H-BTD-001 66%・H-BTD-002 65%・H-BTD-003 40%維持 |
-| 2026-04-29 | 鮮度タイムアウト対応。豆包2.0・MAU 3.45億・車載AI座舱助手2.0・DeepSeek V4価格破壊を反映して全面書き直し |
-| 2026-04-22 | 2025年純利益70%+減少・初回豆包株買い戻しを反映 |
-| 2026-04-19 | 鮮度タイムアウト対応。DeerFlow 2.0詳細を追加 |
-| 2026-04-10 | Seeduplex・豆包大モデル 1.8を追加 |
+| Evidence | 用途 |
+|---|---|
+| [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070) | Doubao 有料版 ¥68/月〜 発表、MAU 3.45億確認 |
+| [INFO-071](../Information/2026-05-06/collected-raw.md#INFO-071) | Seed 2.0 正式リリース（Pro/Code）、価格 $0.47/$2.37 |
+| [INFO-072](../Information/2026-05-06/collected-raw.md#INFO-072) | Seed3D 2.0、1画像→3Dモデル数秒生成 |
+| [INFO-068](../Information/2026-05-06/collected-raw.md#INFO-068) | DeepSeek が High-Flyer Capital 支援で低価格維持 |
+| [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011) | CAC 警告3アプリ（Jianying/Maoxiang/Jimeng AI）、純利益70%+減少 |
+| [Arbiter v3.70](../state/arbiter-2026-05-06.md) | 確度評価の完全根拠（本書から外出し） |

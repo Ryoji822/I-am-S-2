@@ -1,87 +1,17 @@
-# シナリオ分析 — 4つの未来のどれに向かっているか
+# シナリオ追跡 — 静的インテリジェンス
 
-> 最終更新: 2026-05-06
+> 最終判断更新: 2026-05-06
+> 全体確信度: 中
+> 主参照: scenarios.json, indicators.json#IND-001/004/007/008/009/011/015/017/018/019/020/022/023/024/027
 
-AI市場の展開を、2つの軸（技術の開放度 × 性能の格差）で4つのシナリオに追跡している。
+---
 
-最有力は「技術は開くが勝者は出る」（SCN-002、38%）。だが3ラウンド連続で確率が下がっている。「静かな囲い込み」（SCN-003、28%）が3ラウンド連続で確率を上げ、差は10ptに縮まった。围い込みシグナルの構造的蓄積が続けば、SCN-003がSCN-002を逆転する可能性が現実的になる [Arbiter v3.70](../state/arbiter-2026-05-06.md)。
+## 確率推移サマリ
 
-## 現在の確率
-
-| シナリオ | 確率 | 象限 | 前回(04-29)比 |
-|---------|------|------|-------------|
-| **SCN-002 技術は開くが勝者は出る** | **38%** | **開放 × 格差拡大** | **-6%** |
-| **SCN-003 静かな囲い込み** | **28%** | **閉鎖 × 収斂** | **+4%** |
-| SCN-001 囲い込みの勝者 | 20% | 閉鎖 × 格差拡大 | ±0% |
-| SCN-004 誰でもAI | 14% | 開放 × 収斂 | +2% |
-
-| ブラックスワン | 確率 | 前回比 | 影響度 |
-|--------------|------|--------|--------|
-| SCN-BS-001 AI安全性大事故 | 16% | ±0% | 壊滅的 |
-| SCN-BS-002 量子×AI融合 | 3% | ±0% | 根本的変化 |
-
-## 2つの軸の意味
-
-**X軸: AIは囲い込まれるか、開放されるか？**
-
-MCP全社サポート（OpenAI/Google/Microsoft/Block）[INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015)。Red Hat MCP Gateway（エンタープライズ規模トラフィック制御）[INFO-016](../Information/2026-05-06/collected-raw.md#INFO-016)。MCP in Visual Studio [INFO-019](../Information/2026-05-06/collected-raw.md#INFO-019)。開放潮流は構造的に強い。
-
-だし围い込みシグナルも蓄積している。MSFT Agent 365 GA [INFO-026](../Information/2026-05-06/collected-raw.md#INFO-026)。Copilot credit system [INFO-050](../Information/2026-05-06/collected-raw.md#INFO-050)。ベンダーロックイン深化 [INFO-033](../Information/2026-05-06/collected-raw.md#INFO-033)。**Anthropic+OpenAIの同週JV設立**で围い込みに「金融次元」が追加 [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056)。
-
-**Y軸: トップ企業と後発の性能差は広がるか、縮まるか？**
-
-BenchLM総合: Claude Mythos Preview 99、Gemini 3.1 Pro 93、GPT-5.4 Pro 92 [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028)。上位3社の差は6-7pt。「勝者」格差として限界的。
-
-OSS gap 8%→1.7%に縮小 [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051)。収斂方向の証拠も存在する。
-
-## 各シナリオの詳細
-
-### SCN-001 囲い込みの勝者（20%）— 閉鎖 × 格差拡大
-
-1-2社が技術力で圧倒しつつ、実行環境・データ・ガバナンスで囲い込む世界。
-
-20%で維持（3位）。Pentagon 7社（非1-2社）[INFO-073](../Information/2026-05-06/collected-raw.md#INFO-073)。OpenAI on AWS。xAI on Google。MCP全社対応。JVは围い込みCだが複数金融パートナーで非独占的。相殺。
-
-監視指標: [IND-001](../config/indicators.json)、[IND-002](../config/indicators.json)、[IND-003](../config/indicators.json)、[IND-015](../config/indicators.json)、[IND-018](../config/indicators.json)、[IND-019](../config/indicators.json)、[IND-020](../config/indicators.json)、[IND-024](../config/indicators.json)
-
-### SCN-002 技術は開くが勝者は出る（38%）— 開放 × 格差拡大 ★現在最有力★
-
-AAIF標準で相互運用性は確保されるが、フロンティア性能はTier 1の3社に集中する世界。
-
-38%に低下（1位維持だが3R連続-1%）。3社均質化（Agent Platform三社鼎立）が「勝者」前提を侵食。BenchLM上位3社の差は6-7ptで「勝者」格差として限界的 [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028)。Pattern 2確度「中」継続。
-
-監視指標: [IND-004](../config/indicators.json)、[IND-006](../config/indicators.json)、[IND-011](../config/indicators.json)、[IND-018](../config/indicators.json)、[IND-023](../config/indicators.json)、[IND-027](../config/indicators.json)
-
-### SCN-003 静かな囲い込み（28%）— 閉鎖 × 収斂
-
-モデル性能差は小さくなるが、データ・ワークフロー・エコシステムのスイッチングコストで顧客が固定化する世界。
-
-28%に上昇（2位維持、3R連続+1%）。MSFT Agent 365 GA [INFO-026](../Information/2026-05-06/collected-raw.md#INFO-026) + Copilot credit system [INFO-050](../Information/2026-05-06/collected-raw.md#INFO-050) + ベンダーロックイン深化 [INFO-033](../Information/2026-05-06/collected-raw.md#INFO-033) + **JV围い込み（金融次元新規追加）** [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) の4重C。4R目も同方向の場合、SCN-002を逆転する可能性が現実的になる。
-
-監視指標: [IND-007](../config/indicators.json)、[IND-008](../config/indicators.json)、[IND-009](../config/indicators.json)、[IND-011](../config/indicators.json)、[IND-015](../config/indicators.json)、[IND-017](../config/indicators.json)、[IND-019](../config/indicators.json)、[IND-020](../config/indicators.json)、[IND-022](../config/indicators.json)、[IND-024](../config/indicators.json)
-
-### SCN-004 誰でもAI（14%）— 開放 × 収斂
-
-性能差がなくなりオープン標準で自由に行き来できる世界。
-
-14%で上昇（4位）。OSS gap 8%→1.7%はC [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051)。だがBenchLM上位12pt差はI [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028)。$14B損失+$900B評価額で資本集中加速。二層市場下層にのみ部分的適合。
-
-監視指標: [IND-004](../config/indicators.json)、[IND-011](../config/indicators.json)、[IND-017](../config/indicators.json)
-
-## ブラックスワン（低確率・高影響）
-
-### SCN-BS-001 AI安全性大事故（16%）
-
-AIエージェント本番DB削除 [INFO-009](../Information/2026-05-06/collected-raw.md#INFO-009)。24.4%のみAI完全可視性 [INFO-036](../Information/2026-05-06/collected-raw.md#INFO-036)。MCP Shadow IT継続 [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015)。攻撃面拡大継続。複合リスク蓄積。大規模AI攻撃インシデント未到達。
-
-### SCN-BS-002 量子コンピューティング×AI融合（3%）
-
-関連する新情報なし。
-
-## 確率推移データ
+過去20日の確率推移。主軸 4シナリオ + Black Swan 2件。
 
 | 日付 | SCN-001 | SCN-002 | SCN-003 | SCN-004 | BS-001 | BS-002 |
-|------|---------|---------|---------|---------|--------|--------|
+|------|:-------:|:-------:|:-------:|:-------:|:------:|:------:|
 | 2026-05-06 | 20% | 38% | 28% | 14% | 16% | 3% |
 | 2026-05-05 | 20% | 39% | 27% | 14% | 16% | 3% |
 | 2026-05-04 | 20% | 40% | 26% | 14% | 16% | 3% |
@@ -102,21 +32,351 @@ AIエージェント本番DB削除 [INFO-009](../Information/2026-05-06/collecte
 | 2026-04-19 | 24% | 38% | 26% | 12% | 16% | 3% |
 | 2026-04-17 | 24% | 37% | 27% | 12% | 16% | 3% |
 | 2026-04-13 | 24% | 37% | 27% | 12% | 16% | 3% |
-| 2026-04-11 | 23% | 37% | 28% | 13% | 16% | 3% |
-| 2026-04-08 | 23% | 38% | 27% | 12% | 16% | 3% |
-| 2026-04-06 | 24% | 37% | 26% | 13% | 14% | 3% |
-| 2026-03-29 | 22% | 39% | 22% | 17% | 11% | 3% |
-| 2026-03-24 | 20% | 41% | 21% | 18% | 11% | 3% |
-| 2026-03-08 | 23% | 42% | 17% | 18% | 6% | 3% |
 
-大きなトレンド: SCN-002は44%（04-29）から38%（05-06）へ3R連続で-1%ずつ減少。SCN-003は24%（04-29）から28%（05-06）へ3R連続で+1%ずつ増加。围い込みシグナルの構造的蓄積（Agent 365 GA+Copilot credit+lock-in+JV金融次元）が連続シフトの主因。4R目も同方向の場合、SCN-003がSCN-002を逆転する可能性が現実的になる。
+過去20日の変動: SCN-002は44%（04-29）→38%（05-06）で -6pt。SCN-003は24%（04-29）→28%（05-06）で +4pt。SCN-001は24%（04-17）→20%（05-06）で -4pt。SCN-004は12%（04-13）→14%（05-06）で +2pt。
 
-## 変更履歴
+---
 
-| 日付 | 変更内容 |
-|------|---------|
-| 2026-05-06 | **鮮度タイムアウト対応（7日経過）**。围い込みシグナル4重蓄積（Agent 365 GA+Copilot credit+lock-in+JV金融次元）・3社均質化（BenchLM上位差6-7pt）・OSS gap 8%→1.7%を反映。SCN-002 44→38%（-6%）・SCN-003 24→28%（+4%）・SCN-004 12→14%（+2%）に更新。確率推移データに04-30〜05-06分を追加 |
-| 2026-04-29 | 鮮度タイムアウト対応。三大クラウドAgent Platform同一週リリース・Microsoft-OpenAI提携改訂を反映 |
-| 2026-04-22 | エンタープライズ決戦クラスターを反映 |
-| 2026-04-17 | 鮮度タイムアウト対応 |
-| 2026-04-08 | シナリオ順位入れ替わりを反映 |
+## 2つの軸の意味
+
+ここで「シグナル」とは、シナリオ確率の更新に使う具体的な観測事実を指す。単なる傾向の言い換えではなく、INFO-XXX で参照できる具体的な出来事や数値のことだ。
+
+X軸 (開放/閉鎖) は、AIの実行環境・データ・標準がどれだけ可搬かを問う。MCP全社対応やAAIF標準は「開放」方向のシグナルだが、スイッチングコストの高い課金モデルやベンダー固有エージェントは「閉鎖」方向のシグナルだ。Y軸 (性能差広/縮) は、フロンティアモデルと後続モデルの能力差が、顧客の意思決定を変えるほど大きいかを問う。BenchLM上位3社の差6-7ptや、OSSとフロンティアの差1.7pt (8%から縮小) は現在「縮小」方向にある。この2軸で4象限が決まる。どの象限に市場が動いているかを追跡することで、確率を更新する根拠を持つ。
+
+---
+
+## SCN-001: 囲い込みの勝者 (現在確率: 20%)
+
+> 象限: 閉鎖 × 性能差拡大
+
+### §0 一文要約
+
+1-2社が技術力で後続を引き離しつつ実行環境・データ・ガバナンスで囲い込む世界を指すが、現在の確率は20%で3位に留まっており、Pentagon 7社契約 [INFO-073](../Information/2026-05-06/collected-raw.md#INFO-073) や MCP全社対応 [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) がこのシナリオに反する構造として観測されている。
+
+### §1 コア判断
+
+このシナリオは「技術独占と生態系封鎖が同時に起きる」という条件に依存する。現在、その両条件は欠けている。
+
+技術側では、Claude Mythos Preview 99、Gemini 3.1 Pro 93、GPT-5.4 Pro 92 [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) と上位3社の差は6-7ptにとどまる。「1-2社が圧倒」する性能差には達していない。封鎖側では、OpenAI on AWS、xAI on Google という相互依存関係が強まっており、単独独占の前提と矛盾する。Anthropic+OpenAI JV [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) は囲い込みの方向だが複数金融パートナーが絡むため非独占的だ。
+
+SCN-001が上昇するには、技術差の拡大と封鎖構造の深化が同時に起きる必要がある。現在はどちらも観測されていない。
+
+### §2 判断の重心
+
+| 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
+|:------:|---|---|:------:|---|
+| 高 | BenchLM上位3社の差6-7pt | 技術的独占に必要な差が存在しない | B-2 | [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) |
+| 高 | Pentagon 7社契約 (複数社) | 政府が独占ではなく分散を選んでいる | A-2 | [INFO-073](../Information/2026-05-06/collected-raw.md#INFO-073) |
+| 中 | OpenAI on AWS / xAI on Google | 有力企業が互いの基盤に乗り相互依存 | A-2 | [INFO-026](../Information/2026-05-06/collected-raw.md#INFO-026) |
+| 中 | MCP全社対応 (OpenAI/Google/Microsoft/Block) | 標準化が進み封鎖の実現可能性が下がる | A-2 | [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) |
+
+### §3 反証の閾値
+
+現在の「SCN-001確率は低い」という判断が崩れる条件を3項目に絞る。
+
+| 反証指標 | 観測したら何が変わるか | 期限 | 監視先 |
+|---|---|:---:|---|
+| BenchLM上位1社と2位以下の差が20pt以上に拡大 | 技術独占の前提が成立し始める | 90日 | [IND-001](../config/indicators.json) |
+| 有力2社がクロスクラウド撤退し自社基盤のみに移行 | 相互依存構造が解体され封鎖化が進む | 180日 | [IND-018](../config/indicators.json) |
+| 政府・規制当局がAI市場での独占を認める判断を下す | 競争法的制約が外れ囲い込みに外部制動がなくなる | 180日 | [IND-023](../config/indicators.json) |
+
+### §4 仮説
+
+| 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
+|---|---|:---:|---|---|---|
+| H-SCN-001-A | フロンティア技術差が顧客ロックインの主因になる | 22% | BenchLM差6-7ptは「顧客意思決定を変える差」の閾値に届いていない | [INFO-001](../Information/2026-05-06/collected-raw.md#INFO-001) | [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) |
+| H-SCN-001-B | 1-2社がエコシステムを垂直統合し他社の参入を封じる | 18% | MCP全社対応と相互クラウド依存で封鎖の兆候がない | (なし) | [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) [INFO-026](../Information/2026-05-06/collected-raw.md#INFO-026) |
+
+### §5 監視指標
+
+| 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
+|---|---|---|---|:---:|
+| [IND-001](../config/indicators.json) | 主要ベンチマーク非連続ジャンプ | +10pt以上/期で高 | BenchLM差 6-7pt (上位3社間) | 2026-05-06 |
+| [IND-002](../config/indicators.json) | 企業AI投資の寡占度 | 上位2社シェア70%超で高 | 観測継続中 | 2026-05-06 |
+| [IND-003](../config/indicators.json) | APIコスト変動 | 前四半期比-20%以上で高 | 観測継続中 | 2026-05-06 |
+| [IND-015](../config/indicators.json) | エコシステム標準普及度 | MCP以外の標準が3つ競合なら高 | MCP一強傾向 | 2026-05-06 |
+| [IND-018](../config/indicators.json) | 企業間提携・JV動向 | 独占的JV成立で高 | Anthropic+OpenAI JV (非独占的) | 2026-05-06 |
+| [IND-019](../config/indicators.json) | AIエージェント市場集中度 | 上位2社シェア60%超で高 | 観測継続中 | 2026-05-06 |
+| [IND-020](../config/indicators.json) | スタートアップ資金調達動向 | 新規参入資金が前年比-30%で高 | 観測継続中 | 2026-05-06 |
+| [IND-024](../config/indicators.json) | 国際AI競争格差 | 米中間性能差拡大継続で高 | 観測継続中 | 2026-05-06 |
+
+### §6 変化履歴
+
+| 日付 | 変更 | きっかけ | 過去 → 現在 |
+|:---:|---|---|---|
+| 2026-05-06 | 確率 22% → 20% | MCP全社対応と7社Pentagon契約で封鎖・独占の前提が弱まった | 「3位維持、変動なし」 → 「JVで囲い込みシグナルはあるが非独占的、相殺して小幅低下」 |
+| 2026-04-22 | 確率 24% → 21-23% | エンタープライズ決戦クラスターの分散を反映 | 「独占兆候あり」 → 「複数社分散への移行を確認」 |
+
+### §7 ブラインドスポット
+
+- Anthropic+OpenAI JV の金融出資者構成と議決権構造が非公開であり、名目上の非独占が実質的な二重支配を隠している可能性がある。
+- 中国市場 (DeepSeek/ByteDance) の独占形成度は観測できていない。米国市場の判断が中国市場に適用できるかは不明だ。
+- Pentagon の7社契約が将来再編されて1-2社に絞り込まれるシナリオの確率を定量化できていない。
+
+---
+
+## SCN-002: 技術は開くが勝者は出る (現在確率: 38%)
+
+> 象限: 開放 × 性能差拡大
+
+### §0 一文要約
+
+AAIF/MCP等の相互運用標準で移行の自由度は確保されるが、フロンティア性能はTier 1の3社に集中するという構造を指し、現在38%で全シナリオ最高確率を維持しているが、直近4ラウンドで-1pt/ラウンドのペースで低下している。
+
+### §1 コア判断
+
+「開放されているが勝者がいる」という世界は、MCP標準化が示す開放の流れと、BenchLM上位3社への性能集中が同時に成立する場合に起きる。現在の観測はこの組み合わせを部分的に支持している。
+
+MCP 110M+/月 [INFO-027](../Information/2026-05-06/collected-raw.md#INFO-027) と Red Hat MCP Gateway [INFO-016](../Information/2026-05-06/collected-raw.md#INFO-016) は開放方向の構造証拠だ。ただし、BenchLM上位3社の差6-7pt [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) は「勝者格差」として読むには小さい。この数値が20pt以上に拡大していないと、このシナリオの「勝者」前提は観測の裏付けを欠く。
+
+OSS gap が8%から1.7%に縮小した事実 [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) は、SCN-004方向への移行シグナルでもある。確率が直近4ラウンドで低下していることは、「開放×収斂」方向 (SCN-003 or SCN-004) へのシフトが起きていることと整合する。SCN-003がさらに3ラウンド以上+1pt方向で動いた場合、SCN-002がトップを維持する根拠は再評価が要る。
+
+### §2 判断の重心
+
+| 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
+|:------:|---|---|:------:|---|
+| 高 | MCP 110M+/月ダウンロード、全主要プレイヤー対応 | 開放軸を支える最も直接的な観測 | A-2 | [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) [INFO-027](../Information/2026-05-06/collected-raw.md#INFO-027) |
+| 高 | BenchLM上位3社差6-7pt | 「勝者格差」が実在するかの判定指標。現在は閾値未達 | B-2 | [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) |
+| 中 | OSS gap 8%→1.7%に縮小 | 性能差収斂が進行中であり「格差拡大」前提に反する | A-2 | [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) |
+| 中 | Anthropic $30B ARR / エンタープライズ40%シェア | Tier 1集中が収益面で起きているとする間接証拠 | A-3 | [INFO-001](../Information/2026-05-06/collected-raw.md#INFO-001) |
+
+### §3 反証の閾値
+
+| 反証指標 | 観測したら何が変わるか | 期限 | 監視先 |
+|---|---|:---:|---|
+| OSS (Mistral/DeepSeek) のエンタープライズ採用が3社で10%以上のシェアを取る | 「勝者集中」前提が崩れ SCN-004 が上昇する | 90日 | [IND-004](../config/indicators.json) |
+| SCN-003が3ラウンド以上さらに+1pt/ラウンドで推移し差が5pt以内になる | SCN-002はSCN-003との差が消えてトップの根拠を失う | 60日 | [IND-007](../config/indicators.json) |
+| BenchLM上位3社差が3pt以内に収束する | 「勝者格差」の根拠が消え、SCN-004方向の根拠が立つ | 90日 | [IND-001](../config/indicators.json) |
+
+### §4 仮説
+
+| 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
+|---|---|:---:|---|---|---|
+| H-SCN-002-A | AAIF/MCP標準でAI間相互運用が確立する | 58% | MCP全社対応と110M+/月は実績値。ただし標準競合が出た場合に崩れる可能性がある | [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) [INFO-027](../Information/2026-05-06/collected-raw.md#INFO-027) | [INFO-033](../Information/2026-05-06/collected-raw.md#INFO-033) |
+| H-SCN-002-B | Tier 1の3社がフロンティア性能を維持し続ける | 44% | BenchLM上位は6-7pt差だが、OSS gap縮小で維持の根拠が弱まっている | [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) | [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) |
+
+### §5 監視指標
+
+| 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
+|---|---|---|---|:---:|
+| [IND-004](../config/indicators.json) | OSS/オープンモデル採用率 | エンタープライズ採用10%超で高 | OSS gap 1.7% (フロンティア比) | 2026-05-06 |
+| [IND-006](../config/indicators.json) | AIエージェント完遂率 | 商用タスク完遂率80%超で高 | 観測継続中 | 2026-05-06 |
+| [IND-011](../config/indicators.json) | AI倫理・安全規制の厳格度 | 主要5カ国で義務化で高 | 観測継続中 | 2026-05-06 |
+| [IND-018](../config/indicators.json) | 企業間提携・JV動向 | 非独占的JV増加傾向なら中 | Anthropic+OpenAI JV 確認済み | 2026-05-06 |
+| [IND-023](../config/indicators.json) | 政府のAI企業介入 | 直接介入で高 | Pentagon 7社契約、DC裁判所支持 | 2026-05-06 |
+| [IND-027](../config/indicators.json) | エコシステム標準化進展 | MCP 80M+/月で高 | 110M+/月 | 2026-05-06 |
+
+### §6 変化履歴
+
+| 日付 | 変更 | きっかけ | 過去 → 現在 |
+|:---:|---|---|---|
+| 2026-05-06 | 確率 44% → 38% (-6pt) | 囲い込みシグナル4重蓄積 (Agent 365 GA+Copilot credit+lock-in+JV) と3社均質化 (BenchLM差6-7pt) | 「開放×格差拡大の最有力」 → 「開放の証拠は残るが格差拡大の根拠が薄れてきた」 |
+| 2026-04-29 | 確率 44% へ | 三大クラウドAgent Platform同一週リリース・Microsoft-OpenAI提携改訂を反映 | 「3社が同一週にAgent Platformを出した」ことで均質化が加速したと判断 |
+| 2026-04-08 | SCN-002が SCN-001 を逆転して1位へ | シナリオ順位入れ替わり | 「SCN-001が最有力」 → 「SCN-002が最有力」 |
+
+### §7 ブラインドスポット
+
+- 「開放」の観測がMCPに集中している。MCPが標準から外れたとき (たとえば別標準の台頭) を追う指標がない。
+- Tier 1の「勝者」集中が収益面 (ARR) で起きているとしても、それが能力差に起因するのか価格・ブランド差に起因するのかを分離できていない。
+- 政府市場 (Pentagon) の調達判断が民間市場の「開放」動向に及ぼす影響を定量化していない。
+
+---
+
+## SCN-003: 静かな囲い込み (現在確率: 28%)
+
+> 象限: 閉鎖 × 性能差収斂
+
+### §0 一文要約
+
+モデル性能差は小さくなるが、データ・ワークフロー・エコシステムのスイッチングコストで顧客が固定化する世界を指し、現在28%で2位。直近4ラウンドで+1pt/ラウンドで推移しており [INFO-026](../Information/2026-05-06/collected-raw.md#INFO-026) [INFO-050](../Information/2026-05-06/collected-raw.md#INFO-050) [INFO-033](../Information/2026-05-06/collected-raw.md#INFO-033) [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056)、囲い込みシグナルの4重蓄積が確率上昇の主因だ。
+
+### §1 コア判断
+
+このシナリオの構造は「性能差が消えても離れられない」という顧客固定化にある。現在の観測はその方向に動いている。
+
+OSS gap が1.7%に縮小した事実 [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) は「収斂」軸を支持する。同時に、MSFT Agent 365 GA [INFO-026](../Information/2026-05-06/collected-raw.md#INFO-026) とCopilot credit system [INFO-050](../Information/2026-05-06/collected-raw.md#INFO-050) はワークフロー固定化の実装として読める。ベンダーロックイン深化 [INFO-033](../Information/2026-05-06/collected-raw.md#INFO-033) と Anthropic+OpenAI JV [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) の金融次元追加で、囲い込みシグナルが4方向から積み上がっている。
+
+MCP全社対応は「開放」方向であり、この4重シグナルに対する反証として機能する。ただし、MCPが相互運用を可能にしながらもSaaSワークフロー統合の深さが移行コストを決める局面になっている場合、「開放的な見た目の閉鎖」が同時に成立する。囲い込みシグナルが逆転しない限り、確率の上昇傾向は続くと読んでいる。SCN-002との差が縮まるかは、§3 の反証条件が実現するかによって決まる。
+
+### §2 判断の重心
+
+| 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
+|:------:|---|---|:------:|---|
+| 高 | MSFT Agent 365 GA + Copilot credit system | ワークフロー固定化の最も具体的な製品実装 | A-2 | [INFO-026](../Information/2026-05-06/collected-raw.md#INFO-026) [INFO-050](../Information/2026-05-06/collected-raw.md#INFO-050) |
+| 高 | OSS gap 8%→1.7% に縮小 | モデル性能差の収斂が進行中という直接証拠 | A-2 | [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) |
+| 中 | Anthropic+OpenAI JV (金融次元新規追加) | 囲い込みに資本の次元が追加された | B-2 | [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) |
+| 中 | ベンダーロックイン深化の報告 | スイッチングコスト蓄積の間接証拠 | C-3 | [INFO-033](../Information/2026-05-06/collected-raw.md#INFO-033) |
+| 低 | MCP全社対応 (OpenAI/Google/Microsoft/Block) | 反証として機能する開放シグナル。確率上昇の限界になりうる | A-2 | [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) |
+
+### §3 反証の閾値
+
+| 反証指標 | 観測したら何が変わるか | 期限 | 監視先 |
+|---|---|:---:|---|
+| 囲い込みシグナル4重のうち2件以上が逆転する (例: MCP実装3社追加 / Copilot credit撤廃) | 囲い込みの構造的蓄積が止まり、確率上昇が止まる | 60日 | [IND-009](../config/indicators.json) [IND-022](../config/indicators.json) |
+| OSS gap が再び5%以上に拡大する | 「収斂」軸が崩れ、SCN-002方向に戻る根拠が立つ | 90日 | [IND-004](../config/indicators.json) |
+| 主要企業がMCP上でクロスベンダー切り替えを実証する事例が3件以上公表される | スイッチングコストが低いことが実証され、固定化シナリオへの根拠が薄まる | 90日 | [IND-017](../config/indicators.json) |
+
+### §4 仮説
+
+| 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
+|---|---|:---:|---|---|---|
+| H-SCN-003-A | SaaSワークフロー統合の深さが顧客の移行コストを決定する | 52% | MSFT Agent 365 GAとCopilot creditは移行コスト設計として読める。ただし実際の移行実績は未観測 | [INFO-026](../Information/2026-05-06/collected-raw.md#INFO-026) [INFO-050](../Information/2026-05-06/collected-raw.md#INFO-050) | [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) |
+| H-SCN-003-B | モデル性能収斂でベンダー差別化は機能から囲い込みに移行する | 46% | OSS gap 1.7%は収斂の実績値。ただし収斂が囲い込みに直結するかは未実証 | [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) | [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) |
+
+### §5 監視指標
+
+| 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
+|---|---|---|---|:---:|
+| [IND-007](../config/indicators.json) | データロックイン進行度 | 主要クラウド3社がデータポータビリティ制限で高 | 観測継続中 | 2026-05-06 |
+| [IND-008](../config/indicators.json) | エンタープライズLLM支出シェア | ベンダー集中度HHI増加で高 | Anthropic 40%首位 | 2026-05-06 |
+| [IND-009](../config/indicators.json) | AI利用規約の制限強化 | 月3件超の制限追加で高 | Copilot credit system追加を確認 | 2026-05-06 |
+| [IND-011](../config/indicators.json) | AI倫理・安全規制の厳格度 | 主要5カ国で義務化で高 | 観測継続中 | 2026-05-06 |
+| [IND-015](../config/indicators.json) | エコシステム標準普及度 | MCPで一本化なら閉鎖化加速の可能性 | MCP一強傾向 | 2026-05-06 |
+| [IND-017](../config/indicators.json) | AIコモディティ化速度 | OSS gap 5%以内で高 | OSS gap 1.7% | 2026-05-06 |
+| [IND-019](../config/indicators.json) | AIエージェント市場集中度 | 上位2社シェア60%超で高 | 観測継続中 | 2026-05-06 |
+| [IND-020](../config/indicators.json) | スタートアップ資金調達動向 | 新規参入資金-30%で高 | 観測継続中 | 2026-05-06 |
+| [IND-022](../config/indicators.json) | 消費者のAIリテラシー | 切り替え行動が増加で低 | 観測継続中 | 2026-05-06 |
+| [IND-024](../config/indicators.json) | 国際AI競争格差 | 米中間格差縮小継続で高 | 観測継続中 | 2026-05-06 |
+
+### §6 変化履歴
+
+| 日付 | 変更 | きっかけ | 過去 → 現在 |
+|:---:|---|---|---|
+| 2026-05-06 | 確率 24% → 28% (+4pt) | 囲い込みシグナル4重蓄積 (Agent 365 GA+Copilot credit+lock-in+JV金融次元) | 「3ラウンド連続+1ptのペース継続」 → 「4重Cで+4ptに加速」 |
+| 2026-04-29 | 確率 24% (横ばい) | 三大クラウドAgent Platform同一週リリースで均質化を観測。囲い込みと均質化が並立 | 「緩やかな上昇傾向」 → 「Agent Platform3社鼎立で均質化シグナル追加」 |
+| 2026-03-08 | 確率 17% (低い水準) | 囲い込みシグナルが少なかった時期。MCP以前 | 「SCN-003は傍流」 → 「囲い込みシグナル蓄積が始まる前の基準点」 |
+
+### §7 ブラインドスポット
+
+- 「スイッチングコストが高い」という観測が、実際に顧客が離れられないことの実証ではない。実際の解約・移行率を追う指標がない。
+- MSFT Agent 365 とCopilot credit の実際の顧客拘束力を外部から定量化できていない (Microsoft社内データが要る)。
+- 「静かな囲い込み」が起きているとすれば、顧客はそれを認識していないはずで、認識していない事象をシグナルとして観測することは構造的に困難だ。
+
+---
+
+## SCN-004: 誰でもAI (現在確率: 14%)
+
+> 象限: 開放 × 性能差収斂
+
+### §0 一文要約
+
+性能差がなくなりオープン標準で自由に行き来できる世界を指し、現在14%で4位。OSS gap 1.7% [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) は収斂方向のシグナルだが、BenchLM上位12pt差 [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) と資本集中 ($14B損失+$900B評価額) はこのシナリオへの移行を抑制している。
+
+### §1 コア判断
+
+SCN-004は「モデルがコモディティ化し、価格も移行コストも消える」という条件が揃う場合に成立する。現在の観測はその条件を部分的にしか支持していない。
+
+収斂方向の証拠はある。OSS gap 1.7% [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051)。MCP標準化 [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015)。これらは確かにSCN-004を指し示している。ただし、BenchLM上位3社と下位層の差は12pt残っており、フロンティアと後続の差が「意思決定を変えるか否か」の閾値をまだ超えていない可能性がある。
+
+資本集中の方向も阻害要因だ。$14B損失と$900B評価額という数値は、AI市場が大資本の競争領域であり続けることを示す。コモディティ化が進む速度より、大資本が差別化を維持する速度の方が速い場合、SCN-004は二層市場の下層にのみ部分的に成立するにとどまる。
+
+### §2 判断の重心
+
+| 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
+|:------:|---|---|:------:|---|
+| 高 | OSS gap 8%→1.7%に縮小 | コモディティ化の最も直接的な証拠 | A-2 | [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) |
+| 高 | BenchLM上位3社と下位層の差が12pt残存 | フロンティア独自性が完全には消えていない | B-2 | [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) |
+| 中 | MCP全社対応 | 相互運用が可能になる基盤として機能 | A-2 | [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) |
+| 中 | $14B損失+$900B評価額という資本集中 | 大資本が差別化を維持しようとする構造的圧力 | A-3 | 外部報道 |
+
+### §3 反証の閾値
+
+| 反証指標 | 観測したら何が変わるか | 期限 | 監視先 |
+|---|---|:---:|---|
+| BenchLMの全層間差が5pt以内に収束する | フロンティアの優位性が消え SCN-004 が現実的な主シナリオになる | 180日 | [IND-001](../config/indicators.json) |
+| OSSモデルのエンタープライズ採用シェアが20%を超える | 二層市場の下層だけでなく上層も侵食が起きたとみなせる | 180日 | [IND-004](../config/indicators.json) |
+| 主要フロンティアLLMの価格が$1/M tokens以下に収束する | 価格競争がコモディティ化の臨界点に達したとみなせる | 180日 | [IND-003](../config/indicators.json) |
+
+### §4 仮説
+
+| 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
+|---|---|:---:|---|---|---|
+| H-SCN-004-A | OSSモデルがエンタープライズの主流になる | 18% | OSS gap 1.7%は縮小しているが、エンタープライズ実採用のデータがなく確度が低い | [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) | [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) [INFO-001](../Information/2026-05-06/collected-raw.md#INFO-001) |
+| H-SCN-004-B | オープン標準でAIプロバイダー間の移行がほぼコストゼロになる | 24% | MCP全社対応は基盤だが、ワークフロー統合深度が移行コストを左右する | [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) | [INFO-026](../Information/2026-05-06/collected-raw.md#INFO-026) [INFO-033](../Information/2026-05-06/collected-raw.md#INFO-033) |
+
+### §5 監視指標
+
+| 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
+|---|---|---|---|:---:|
+| [IND-004](../config/indicators.json) | OSS/オープンモデル採用率 | エンタープライズ採用20%超で高 | OSS gap 1.7% (能力差)、採用率は別途 | 2026-05-06 |
+| [IND-011](../config/indicators.json) | AI倫理・安全規制の厳格度 | 規制がOSSを阻害するなら低 | 観測継続中 | 2026-05-06 |
+| [IND-017](../config/indicators.json) | AIコモディティ化速度 | OSS gap 3%以内で高 | 1.7% (高水準) | 2026-05-06 |
+
+### §6 変化履歴
+
+| 日付 | 変更 | きっかけ | 過去 → 現在 |
+|:---:|---|---|---|
+| 2026-05-06 | 確率 12% → 14% (+2pt) | OSS gap縮小の観測を反映 | 「4位で低位安定」 → 「OSS収斂でわずかに上昇したが資本集中が天井として機能」 |
+| 2026-03-24 | 確率 18% | MCP以前の相互運用が低い時期 | 「開放×収斂の可能性が相対的に高かった」 → 「囲い込みシグナル蓄積で相対的に後退」 |
+
+### §7 ブラインドスポット
+
+- 「OSS採用率」と「OSSモデルの能力差」を混同している可能性がある。能力差が1.7%でも、エンタープライズが採用するかは別問題だ。
+- 二層市場 (大規模フロンティアユーザーと中小企業のOSSユーザー) が分離した形でSCN-004とSCN-002が共存するシナリオを、単一の確率に集約していることで精度が落ちている。
+- 中国市場でのOSSダイナミクス (DeepSeek等) が西側市場に与えるコモディティ圧力を観測できていない。
+
+---
+
+## ブラックスワン: BLK-001 AI安全性大事故 (現在確率: 16%)
+
+> 低確率・高影響
+
+### §0 一文要約
+
+AIエージェントの本番障害・大規模セキュリティ事故が複合的に起き、業界全体に規制強化と信頼失墜をもたらす事象を指す。現在16%で、構成要素の蓄積は続いているが大規模事故はまだ起きていない。
+
+### §3 反証の閾値
+
+| 反証指標 | 観測したら何が変わるか | 期限 | 監視先 |
+|---|---|:---:|---|
+| AIエージェントによる金融・インフラへの大規模実害インシデントが公表される | 確率が急上昇し、全シナリオの再評価が必要になる | 常時 | [IND-013](../config/indicators.json) |
+| 主要国でAIエージェントの本番使用を一時停止させる行政命令が出る | 業界構造が短期に変わり、SCN-001〜004の全確率に波及する | 90日 | [IND-023](../config/indicators.json) |
+| Shadow IT経由のMCP悪用による情報漏洩が3件以上公表される | 攻撃面拡大の実証となり、確率が段階的に上昇する | 60日 | [IND-013](../config/indicators.json) |
+
+### §7 ブラインドスポット
+
+- AIエージェント本番DB削除 [INFO-009](../Information/2026-05-06/collected-raw.md#INFO-009) や MCP Shadow IT [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) のような「起きているが公表されていない」事象が16%という数値に適切に織り込まれているかを確認する手段がない。
+- 24.4%のみAI完全可視性 [INFO-036](../Information/2026-05-06/collected-raw.md#INFO-036) という数値は、観測できていないリスクが大半であることを示す。見えていないところで事故が起きていても確率には反映されない。
+- 大事故が起きたとき、それがどのシナリオに収束するかの分析 (規制強化→SCN-001方向か、信頼回復後にSCN-004へ戻るか) をまだ持っていない。
+
+---
+
+## ブラックスワン: BLK-002 量子×AI融合 (現在確率: 3%)
+
+> 低確率・根本的変化
+
+### §0 一文要約
+
+量子コンピューティングとAIの融合が既存の計算パラダイムを変え、現在の性能差・囲い込み構造が無意味になる根本的変化を指す。現在3%で、関連する新情報は2026-05-06時点でない。
+
+### §3 反証の閾値
+
+| 反証指標 | 観測したら何が変わるか | 期限 | 監視先 |
+|---|---|:---:|---|
+| 量子プロセッサを使ったLLM推論がクラシカル計算比で10倍以上の速度を実証する | 確率が段階的に上昇し、全シナリオの前提が再評価される | 常時 | (新規IND要) |
+
+### §7 ブラインドスポット
+
+- 量子×AI の進捗を追う指標がない。新規IND設定が要る。
+- 3%という確率の根拠が弱い (「関連情報なし」は「確率ゼロに近い」とは異なる)。
+
+---
+
+## 付録: 直近30日の参照Evidence
+
+| Evidence | 用途 |
+|---|---|
+| [INFO-015](../Information/2026-05-06/collected-raw.md#INFO-015) | MCP全社対応 (OpenAI/Google/Microsoft/Block)、Shadow IT |
+| [INFO-016](../Information/2026-05-06/collected-raw.md#INFO-016) | Red Hat MCP Gateway (エンタープライズ規模) |
+| [INFO-019](../Information/2026-05-06/collected-raw.md#INFO-019) | MCP in Visual Studio |
+| [INFO-026](../Information/2026-05-06/collected-raw.md#INFO-026) | MSFT Agent 365 GA |
+| [INFO-028](../Information/2026-05-06/collected-raw.md#INFO-028) | BenchLM総合スコア (Mythos 99, Gemini 93, GPT-5.4 92, 上位12pt差) |
+| [INFO-033](../Information/2026-05-06/collected-raw.md#INFO-033) | ベンダーロックイン深化 |
+| [INFO-036](../Information/2026-05-06/collected-raw.md#INFO-036) | AI完全可視性 24.4% |
+| [INFO-050](../Information/2026-05-06/collected-raw.md#INFO-050) | Copilot credit system |
+| [INFO-051](../Information/2026-05-06/collected-raw.md#INFO-051) | OSS gap 8%→1.7% |
+| [INFO-056](../Information/2026-05-06/collected-raw.md#INFO-056) | Anthropic+OpenAI JV (金融次元追加) |
+| [INFO-073](../Information/2026-05-06/collected-raw.md#INFO-073) | Pentagon 7社契約 |
+| [INFO-009](../Information/2026-05-06/collected-raw.md#INFO-009) | AIエージェント本番DB削除事例 |
+| [INFO-001](../Information/2026-05-06/collected-raw.md#INFO-001) | エンタープライズLLM 40%シェア (Anthropic首位) |
+| [INFO-027](../Information/2026-05-06/collected-raw.md#INFO-027) | MCP 110M+/月ダウンロード |
