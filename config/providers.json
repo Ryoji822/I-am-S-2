@@ -7,7 +7,7 @@
     }
   },
   "llm": {
-    "provider": "zai/glm-5",
+    "provider": "zai/glm-5.1",
     "fallback": null,
     "runner": "opencode"
   },
