@@ -247,6 +247,31 @@ else
 fi
 
 # =============================================================================
+# Phase 1.6: Build Evidence Index (Phase 1 of Agentic Intelligence Redesign)
+# =============================================================================
+# Gated by ENABLE_EVIDENCE_PHASE1=1. When enabled, parses collected-raw.md
+# INFO-NNN sections + x_posts.jsonl pending records, mints EVD-YYYYMMDD-NNNN
+# IDs, and writes Information/raw|processed/ + evidence_index.json.
+# Skipped when Phase 1 produced DEGRADED data (yesterday's URLs would map
+# to today's date and create phantom evidence).
+
+if [[ "${ENABLE_EVIDENCE_PHASE1:-0}" == "1" ]]; then
+  log_info "=========================================="
+  log_info "Phase 1.6: Build Evidence Index"
+  log_info "=========================================="
+
+  if head -5 "Information/$TODAY/collected-raw.md" 2>/dev/null | grep -q "DEGRADED"; then
+    log_warn "Phase 1.6: SKIPPED (Phase 1 was DEGRADED — phantom evidence prevented)"
+  elif python3 "$PROJECT_DIR/scripts/build-evidence-index.py" --date "$TODAY" --repo-root "$PROJECT_DIR"; then
+    log_ok "Phase 1.6: Evidence Index updated for $TODAY"
+  else
+    log_warn "Phase 1.6: build-evidence-index.py failed — pipeline continues without Evidence layer"
+  fi
+else
+  log_info "Phase 1.6: skipped (set ENABLE_EVIDENCE_PHASE1=1 to enable)"
+fi
+
+# =============================================================================
 # Phase 2: ANALYZE - Blue Agent (glm-5)
 # =============================================================================
 

@@ -5,6 +5,7 @@ Saves posts to X_posts/YYYY-MM-DD/{company}.md filed by actual post date.
 Deduplicates based on tweet URL to avoid writing the same post twice.
 """
 
+import hashlib
 import json
 import os
 import re
@@ -20,6 +21,8 @@ from html.parser import HTMLParser
 RSSHUB_URL = "http://localhost:1200"
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 X_POSTS_DIR = os.path.join(REPO_DIR, "X_posts")
+INFORMATION_RAW_DIR = os.path.join(REPO_DIR, "Information", "raw")
+EVIDENCE_SCHEMA_VERSION = "1.0"
 JST = timezone(timedelta(hours=9))
 
 PERSONS = {
@@ -196,6 +199,64 @@ def ensure_date_file(date_str, company_key, label):
     return filepath
 
 
+def _post_content_hash(post_url, post_text):
+    h = hashlib.sha256()
+    h.update((post_url or "").encode("utf-8"))
+    h.update(b"\n")
+    h.update((post_text or "").encode("utf-8"))
+    return f"sha256:{h.hexdigest()}"
+
+
+def _detect_post_language(text):
+    if text and re.search(r"[぀-ヿ一-鿿]", text):
+        return "ja"
+    return "en"
+
+
+def build_pending_x_evidence(handle, name, role, post, retrieved_at, date_str):
+    """Build a pending Evidence Record for a single X post.
+
+    Pending = no evidence_id yet; build-evidence-index.py mints IDs in Phase 1.6.
+    See docs/agentic-intelligence-redesign/EVIDENCE_RECORD_v1.md.
+    """
+    text = post.get("text") or ""
+    url = post.get("url") or ""
+    first_line = next((ln for ln in text.splitlines() if ln.strip()), "")
+    title = first_line[:120] if first_line else f"@{handle} post"
+    is_official = "公式" in (role or "")
+    return {
+        "schema_version": EVIDENCE_SCHEMA_VERSION,
+        "pending_evidence_id": None,
+        "run_date": date_str,
+        "source_url": url,
+        "source_title": title,
+        "source_type": "social",
+        "retrieved_at": retrieved_at,
+        "retrieval_method": "rsshub",
+        "content_hash": _post_content_hash(url, text),
+        "language": _detect_post_language(text),
+        "raw_path": f"Information/raw/{date_str}/x_posts.jsonl",
+        "quotable_excerpt": text[:240],
+        "summary_for_indexing": text[:500],
+        "kiq_hint": [],
+        "reliability_admiralty": "A-3" if is_official else "D-3",
+        "degraded": False,
+    }
+
+
+def append_x_evidence_jsonl(date_str, records):
+    """Append pending Evidence Records to Information/raw/<date>/x_posts.jsonl."""
+    if not records:
+        return None
+    target_dir = os.path.join(INFORMATION_RAW_DIR, date_str)
+    os.makedirs(target_dir, exist_ok=True)
+    target = os.path.join(target_dir, "x_posts.jsonl")
+    with open(target, "a", encoding="utf-8") as f:
+        for r in records:
+            f.write(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n")
+    return target
+
+
 def main():
     now = datetime.now(JST)
     today = now.strftime("%Y-%m-%d")
@@ -295,6 +356,8 @@ def main():
 
     # Write all collected posts to their respective date/company files
     dates_touched = set()
+    pending_evidence_by_date = defaultdict(list)
+    retrieved_at_iso = datetime.now(JST).isoformat(timespec="seconds")
     for (date_str, company_key), person_entries in sorted(date_company_posts.items()):
         label = PERSONS[company_key]["label"]
         filepath = ensure_date_file(date_str, company_key, label)
@@ -307,10 +370,22 @@ def main():
                     quoted = "\n> ".join(post["text"].split("\n"))
                     f.write(f"**{post['time']}** | [原文]({post['url']})\n\n")
                     f.write(f"> {quoted}\n\n---\n\n")
+                    pending_evidence_by_date[date_str].append(
+                        build_pending_x_evidence(
+                            handle, name, role, post, retrieved_at_iso, date_str
+                        )
+                    )
+
+    pending_evidence_count = 0
+    for date_str, records in pending_evidence_by_date.items():
+        append_x_evidence_jsonl(date_str, records)
+        pending_evidence_count += len(records)
 
     if dates_touched:
         print(f"\nDates updated: {', '.join(sorted(dates_touched))}")
     print(f"Summary: {total_new} new posts across {len(dates_touched)} dates")
+    if pending_evidence_count:
+        print(f"  Pending Evidence Records appended: {pending_evidence_count}")
 
     # Git sync & commit
     os.chdir(REPO_DIR)
@@ -362,7 +437,9 @@ def main():
             return
 
     if total_new > 0:
-        subprocess.run(["git", "add", "X_posts/"], check=False)
+        subprocess.run(
+            ["git", "add", "X_posts/", "Information/raw/"], check=False
+        )
         diff = subprocess.run(
             ["git", "diff", "--cached", "--quiet"], capture_output=True
         )
