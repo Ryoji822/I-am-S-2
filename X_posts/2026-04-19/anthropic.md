@@ -34,3 +34,17 @@
 
 ---
 
+## @jackclarkSF (Jack Clark - 共同創業者 / Policy)
+
+**05:49 JST** | [原文](https://x.com/jackclarkSF/status/2045605587288039439)
+
+> Re Opus 4.7 is quite good at this and I'm excited about the story I've written - will be in Import AI 454.
+
+---
+
+**05:48 JST** | [原文](https://x.com/jackclarkSF/status/2045605477808259182)
+
+> The most satisfying use I've found for AI in writing (besides basic copy-editing), is having AI systems write the words used by AI systems in my fiction. This feels important to me - I let the synthetic intelligence animate itself within a narrative construct I have built.
+
+---
+
