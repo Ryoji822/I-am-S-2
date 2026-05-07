@@ -222,3 +222,25 @@ build_state:
 ```
 
 この state を固定してから本文を展開する。
+
+## 観測ログ出力
+
+build state を確定したら、本文に入る前に以下の JSON を `~/.claude/logs/reframing-storytelling.jsonl` に Bash で追記する。
+
+```bash
+jq -nc \
+  --arg ts "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+  --arg session "$SESSION_ID" \
+  --arg goal "<working_brief.goal>" \
+  --arg audience "<working_brief.audience.primary>" \
+  --arg task_module "<選択した task module 名>" \
+  --argjson modules '["<selected_modules の全リスト>"]' \
+  --arg throughline "<build_state.throughline>" \
+  --arg tension_axis "<build_state.tension_axis>" \
+  --arg selection_reason "<なぜこの組み合わせを選んだか、1-2文>" \
+  '{"ts":$ts,"event":"route_decision","session":$session,"goal":$goal,"audience":$audience,"task_module":$task_module,"modules":$modules,"throughline":$throughline,"tension_axis":$tension_axis,"selection_reason":$selection_reason}' \
+  >> ~/.claude/logs/reframing-storytelling.jsonl
+```
+
+- `$SESSION_ID` は hook が自動で付与する session と同じ値を使う（ログ末尾の直近の `skill_start` エントリから取得）
+- このログ出力は省略してはならない。進化のための観測基盤である。
