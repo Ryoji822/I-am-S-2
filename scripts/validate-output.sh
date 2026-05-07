@@ -273,6 +273,77 @@ else
 fi
 
 # =============================================================================
+# 3.5.2 Static Intelligence v2 Structure (WARN-only)
+# Skip silently if a file does not yet declare v2 ヘッダー (`> 最終判断更新:`).
+# =============================================================================
+
+echo ""
+echo "--- Static Intelligence v2 Structure (WARN-only) ---"
+
+declare -a SI_FILES=(
+  "static_intelligence/anthropic.md"
+  "static_intelligence/openai.md"
+  "static_intelligence/google.md"
+  "static_intelligence/xai.md"
+  "static_intelligence/bytedance.md"
+  "static_intelligence/market-overview.md"
+)
+
+for si in "${SI_FILES[@]}"; do
+  [[ -f "$si" ]] || continue
+  base=$(basename "$si")
+
+  if ! grep -q '^>\s*最終判断更新:' "$si"; then
+    echo "  (skipped $base: no v2 ヘッダー)"
+    continue
+  fi
+
+  v2_missing=0
+  for pat in "^## 0\." "^## 1\." "^## 2\." "^## 3\." "^## 4\." "^## 5\." "^## 6\." "^## 7\." "^## 付録"; do
+    if ! grep -qE "$pat" "$si"; then
+      check_warn "$base: missing heading ${pat#^}"
+      v2_missing=$((v2_missing + 1))
+    fi
+  done
+  if [[ "$v2_missing" -eq 0 ]]; then
+    check_pass "$base: all 7 sections + 付録 present"
+  fi
+
+  # Header lines
+  for header in '最終判断更新:' '全体確信度:' '主参照:'; do
+    if ! grep -q "^>\s*${header}" "$si"; then
+      check_warn "$base: header line missing: $header"
+    fi
+  done
+
+  # §4 仮説表 must contain "確度の根拠" column
+  if ! grep -q '確度の根拠' "$si"; then
+    check_warn "$base: §4 仮説表に「確度の根拠」列がない"
+  fi
+
+  # §2 should be a table with the required columns
+  if ! grep -q '判断との関係' "$si"; then
+    check_warn "$base: §2 判断の重心表に「判断との関係」列がない"
+  fi
+
+  # No [Arbiter v3.NN] in body (only allowed in 付録)
+  body_arbiter=$(awk '/^## 付録/{exit} /\[Arbiter v3\.[0-9]+\]/{print}' "$si" | wc -l | tr -d ' ')
+  if [[ "$body_arbiter" -gt 0 ]]; then
+    check_warn "$base: $body_arbiter [Arbiter v3.X] reference(s) in body §0-§7 (付録移動推奨)"
+  fi
+done
+
+# scenario-tracker.md: シナリオ別ミニ構造の簡易チェック
+if [[ -f "static_intelligence/scenario-tracker.md" ]] && grep -q '^>\s*最終判断更新:' "static_intelligence/scenario-tracker.md"; then
+  scn_count=$(grep -cE '^## SCN-00[1-4]' "static_intelligence/scenario-tracker.md" 2>/dev/null || true)
+  if [[ "$scn_count" -ge 4 ]]; then
+    check_pass "scenario-tracker.md: 4 SCN sections present"
+  else
+    check_warn "scenario-tracker.md: only $scn_count SCN sections (expected 4)"
+  fi
+fi
+
+# =============================================================================
 # 3.6. Evidence Layer (Phase 1 of Agentic Intelligence Redesign)
 # All checks here are WARN-level until the Evidence layer is stable.
 # Skip silently if Phase 1.6 has never been enabled for this date.
