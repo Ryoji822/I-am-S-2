@@ -20,6 +20,8 @@ env:
   FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
   SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
   SLACK_USER_ID: ${{ secrets.SLACK_USER_ID }}
+  # Phase 1 of Agentic Intelligence Redesign — Evidence ID + raw/processed split
+  ENABLE_EVIDENCE_PHASE1: "1"
 
 jobs:
   intelligence-pipeline:
