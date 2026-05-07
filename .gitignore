@@ -7,3 +7,6 @@
 # Python build artifacts
 __pycache__/
 *.pyc
+
+# GAS viewer (deployed separately via clasp, not part of the pipeline)
+.gas-viewer/
