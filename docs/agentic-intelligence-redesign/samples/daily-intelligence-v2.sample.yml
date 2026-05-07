@@ -1,0 +1,227 @@
+name: Daily Business Intelligence Pipeline v2
+
+on:
+  schedule:
+    - cron: '0 23 * * *' # 08:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: daily-business-intelligence-v2
+  cancel-in-progress: false
+
+env:
+  RUN_DATE: ${{ github.run_id }}
+  TZ: Asia/Tokyo
+
+jobs:
+  prepare-context:
+    runs-on: ubuntu-latest
+    outputs:
+      run_dir: ${{ steps.context.outputs.run_dir }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: context
+        run: |
+          set -euo pipefail
+          RUN_DIR="run/$(date +%F)"
+          mkdir -p "$RUN_DIR"
+          echo "run_dir=$RUN_DIR" >> "$GITHUB_OUTPUT"
+          scripts/v2/prepare-context.sh "$RUN_DIR"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: prepare-context
+          path: run/
+
+  plan-collection:
+    needs: prepare-context
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: prepare-context
+      - run: scripts/v2/plan-collection.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: collection-plan
+          path: |
+            run/
+            config/pirs.json
+            config/collection_plan.json
+
+  collect-information:
+    needs: [prepare-context, plan-collection]
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: collection-plan
+      - run: scripts/v2/collect-information.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: raw-information
+          path: |
+            Information/raw/
+            run/
+
+  process-evidence:
+    needs: [prepare-context, collect-information]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: raw-information
+      - run: scripts/v2/process-evidence.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/gates/gate-evidence-integrity.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: processed-evidence
+          path: |
+            Information/processed/
+            Information/evidence_index.json
+            run/
+
+  screen-and-quality:
+    needs: [prepare-context, process-evidence]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: processed-evidence
+      - run: scripts/v2/screen-information.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/check-quality.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/gates/gate-source-quality.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screened-quality
+          path: |
+            Intelligence/work/
+            run/
+
+  structured-analysis:
+    needs: [prepare-context, screen-and-quality]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: screened-quality
+      - run: scripts/v2/structured-analysis.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/gates/gate-pir-alignment.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: structured-analysis
+          path: |
+            Intelligence/work/
+            run/
+
+  hypothesis-and-blue:
+    needs: [prepare-context, structured-analysis]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: structured-analysis
+      - run: scripts/v2/hypothesis-agent.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/blue-analyst.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/gates/gate-hypothesis-competition.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: blue-assessment
+          path: |
+            Intelligence/work/
+            run/
+
+  red-diagnostic-review:
+    needs: [prepare-context, hypothesis-and-blue]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: blue-assessment
+      - run: scripts/v2/red-devil-review.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/assumption-check.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/ach-review.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: red-review
+          path: |
+            Intelligence/work/
+            run/
+
+  arbiter-fusion:
+    needs: [prepare-context, screen-and-quality, hypothesis-and-blue, red-diagnostic-review]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: red-review
+      - run: scripts/v2/arbiter-fusion.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/gates/gate-confidence-calibration.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/gates/gate-state-update.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arbiter-fusion
+          path: |
+            Intelligence/work/
+            config/
+            run/
+
+  produce-intelligence:
+    needs: [prepare-context, arbiter-fusion]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: arbiter-fusion
+      - run: scripts/v2/produce-intelligence.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - run: scripts/v2/feedback-agent.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: intelligence-products
+          path: |
+            reports/
+            static_intelligence/
+            Intelligence/work/
+            run/
+
+  validate-and-commit:
+    needs: [prepare-context, produce-intelligence]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: intelligence-products
+      - run: scripts/v2/validate-intelligence-contracts.sh "${{ needs.prepare-context.outputs.run_dir }}"
+      - name: Commit validated intelligence outputs
+        if: success()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports static_intelligence config Information Intelligence run
+          git commit -m "chore: update daily business intelligence $(date +%F)" || echo "No changes"
+          git push
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validation-and-final-artifacts
+          path: |
+            reports/
+            static_intelligence/
+            Intelligence/work/
+            run/

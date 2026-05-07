@@ -1,0 +1,32 @@
+flowchart TD
+    A[Decision Context<br/>PIR / KIQ / Decision Owner] --> B[Collection Planner<br/>Coverage and Gap Plan]
+    B --> C[Collector<br/>Raw Information]
+    C --> D[Evidence Processor<br/>Normalize / Deduplicate / Evidence ID]
+    D --> E[Screening Agent<br/>Relevance / Freshness / Entity Match]
+    E --> F[Quality Checker<br/>Source Reliability vs Information Credibility]
+    F --> G[Structuring Agent<br/>Timeline / Matrix / Link / Ranking]
+    G --> H[Hypothesis Agent<br/>Competing Hypotheses / Indicators]
+    H --> I[Blue Analyst<br/>Main Assessment]
+    H --> J[Red / Devil Agent<br/>ACH / Assumptions / Bias / Alternatives]
+    I --> K[Arbiter / Fusion<br/>Confidence / Contradictions / State Update Plan]
+    J --> K
+    F --> K
+    K --> L{Quality Gates<br/>Pass?}
+    L -- Yes --> M[State Update<br/>Hypotheses / Indicators / Scenarios]
+    L -- Yes --> N[Production Agent<br/>Daily / Flash / Static Intelligence]
+    L -- No --> O[Degraded Output<br/>No State Update / Human Review / Retask]
+    N --> P[Feedback Agent<br/>Next Collection Requirements]
+    O --> P
+    P --> B
+
+    classDef input fill:#e8f0ff,stroke:#3366cc,stroke-width:1px,color:#111;
+    classDef process fill:#f4f7f9,stroke:#64748b,stroke-width:1px,color:#111;
+    classDef gate fill:#fff7e6,stroke:#d97706,stroke-width:2px,color:#111;
+    classDef output fill:#ecfdf5,stroke:#059669,stroke-width:1px,color:#111;
+    classDef risk fill:#fef2f2,stroke:#dc2626,stroke-width:1px,color:#111;
+
+    class A input;
+    class B,C,D,E,F,G,H,I,J,K,P process;
+    class L gate;
+    class M,N output;
+    class O risk;
