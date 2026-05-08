@@ -295,3 +295,36 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**22:08 JST** | [原文](https://x.com/OpenAIDevs/status/2052850458633621747)
+
+> RT Vaibhav (VB) Srivastav
+> it's time to double down!
+
+---
+
+**04:04 JST** | [原文](https://x.com/OpenAIDevs/status/2052738904244306178)
+
+> RT bolna
+> Indian Voice AI space just got a big update.
+> 
+> GPT-Realtime-2 (speech-to-speech) and GPT-Realtime-Whisper (speech-to-text), @OpenAI's latest voice models, are now exclusively live on @bolna_dev. 
+> 
+> Multilingual, fluent in Indian languages, and built for voice agents that can tackle complex reasoning, perform actions, handle interruptions, and keep conversations seamless.
+> 
+> If you've been building voice AI for India, you'll feel right at home with these models.
+> 
+> Try it on the Bolna dashboard and tell us what you think.
+
+---
+
+## @npew (Peter Welinder - 研究・技術)
+
+**23:16 JST** | [原文](https://x.com/npew/status/2052847133699805576)
+
+> RT DHH
+> I've been driving GPT5.5 on low reasoning for the last week+ and it's very good, very efficient. Haven't been tempted to reach for Opus at all. And it's more succinct than Kimi too. Huge leap forward for @OpenAI 👌
+
+---
+
