@@ -118,3 +118,18 @@
 
 ---
 
+## @sleepinyourhat (Sam Bowman - 技術安全性)
+
+**03:15 JST** | [原文](https://x.com/sleepinyourhat/status/2052570080219979812)
+
+> RT Ari Holtzman
+> We trained an LLM trained on an LLM trained on a…🌀🌀🌀
+> 
+> If the original model is sycophantic or just 'weird', will those traits begin to amplify?
+> 
+> Yes! But amplification is rare and typically comes at the cost of coherence—except in the case of DPO where things get dicey
+> 
+> 🧵
+
+---
+

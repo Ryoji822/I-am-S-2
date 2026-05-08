@@ -254,3 +254,18 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**10:16 JST** | [原文](https://x.com/jasonkwon/status/2052574278084862446)
+
+> RT Sam Altman
+> we'd like to help companies secure themselves and we think it's important to start work on this quickly
+> 
+> fouad: Today, we're rolling out GPT‑5.5‑Cyber in limited preview to defenders responsible for securing critical infrastructure.
+> 
+> GPT-5.5 with Trusted Access for Cyber (TAC) is still the best option for developers to find and patch vulnerabilities in their code.
+> 
+> It's a very good model.
+
+---
+
