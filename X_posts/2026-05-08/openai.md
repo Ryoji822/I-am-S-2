@@ -269,3 +269,19 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**11:56 JST** | [原文](https://x.com/gdb/status/2052583338561683775)
+
+> GPT-5.5-Cyber is now in limited preview for defenders for securing critical infrastructure.
+> 
+> It's a very capable model.
+> 
+> fouad: Today, we're rolling out GPT‑5.5‑Cyber in limited preview to defenders responsible for securing critical infrastructure.
+> 
+> GPT-5.5 with Trusted Access for Cyber (TAC) is still the best option for developers to find and patch vulnerabilities in their code.
+> 
+> It's a very good model.
+
+---
+
