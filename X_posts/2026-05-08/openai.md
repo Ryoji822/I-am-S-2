@@ -131,3 +131,126 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**08:25 JST** | [原文](https://x.com/OpenAIDevs/status/2052530378184032560)
+
+> Building voice applications with GPT-Realtime-2?
+> 
+> Our new prompting guide covers how to tune reasoning effort, use preambles, design tool behavior, handle unclear audio, capture exact entities, and maintain state in longer sessions.
+> 
+> https://developers.openai.com/api/docs/guides/realtime-models-prompting?realtime-model=gpt-realtime-2
+
+---
+
+**08:03 JST** | [原文](https://x.com/OpenAIDevs/status/2052532667753824632)
+
+> RT Genspark
+> 🚀 GPT-Realtime-2 just landed in Genspark. 
+> 
+> Our Call for Me Agent now runs on it. 
+> Genspark Realtime Voice is upgrading next. 
+> 
+> What Realtime 2 brings:
+> Sharper reasoning. Tighter instruction following. +26% effective conversation rate. Far fewer dropped calls.
+> 
+> OpenAI: Introducing GPT-Realtime-2 in the API: our most intelligent voice model yet, bringing GPT-5-class reasoning to voice agents.
+> 
+> Voice agents are now real-time collaborators that can listen, reason, and solve complex problems as conversations unfold.
+> 
+> Now available in the API
+
+---
+
+**07:49 JST** | [原文](https://x.com/OpenAIDevs/status/2052533011351228522)
+
+> RT kwindla
+> OpenAI shipped a new speech-to-speech model today: gpt-realtime-2
+> 
+> This is the first speech-to-speech model good enough to use in my voice agents that do "real work."
+> 
+> Or real play, for that matter. Here's gpt-realtime-2 as the brain of the ship AI in Gradient Bang.
+> 
+> The voice-to-voice response and tool calling times here are unedited, so you can see exactly what the interaction with the model is like in an agent with a very complex system instruction and frequent tool calls.
+> 
+> (I did clip out the subagent task execution segments, after gpt-realtime-2 starts a subagent via a tool call. Subagents in this config used gpt-5.2 "medium" effort.)
+
+---
+
+**06:51 JST** | [原文](https://x.com/OpenAIDevs/status/2052558681678729388)
+
+> RT Levin Stanley
+> Using @OpenAI gpt-realtime-2 to get a glimpse of future voice-first experiences.
+> 
+> A market dashboard you don’t click through.
+> 
+> You direct it.
+> 
+> Say, “Focus on Apple,” and the whole interface changes.
+> Ask, “How did it do over the last 30 days?” and the chart updates.
+> Say, “Go back,” and the market view returns.
+> 
+> No menus.
+> No filters.
+> No hunting around.
+> 
+> Just intent.
+> 
+> What makes this model especially interesting is the interaction loop: you can interrupt it, add more context, change direction, and it keeps reasoning in real time while updating the experience around you.
+> 
+> The interface doesn’t ask you to navigate.
+> 
+> It just takes you there.
+
+---
+
+**05:55 JST** | [原文](https://x.com/OpenAIDevs/status/2052533471437091110)
+
+> RT Diego | AI 🚀 - e/acc
+> New Voice Model from OpenAI in the API gpt-realtime-2
+> 
+> Here a quick demo I built
+> 
+> Sam Altman: people are really starting to use voice to interact with AI, especially when they have a lot of context to dump.
+> 
+> GPT-Realtime-2 comes to the API today; it is a pretty big step forward.
+> 
+> (we are working on improvements to voice in chat.)
+
+---
+
+**05:04 JST** | [原文](https://x.com/OpenAIDevs/status/2052534832090304613)
+
+> RT Ray Fernando
+> GPT-Realtime-2: Building a Live Translator https://x.com/i/broadcasts/1yKAPMyeeRMxb
+
+---
+
+## @sama (Sam Altman - CEO)
+
+**10:16 JST** | [原文](https://x.com/sama/status/2052558319940944256)
+
+> we'd like to help companies secure themselves and we think it's important to start work on this quickly
+> 
+> fouad: Today, we're rolling out GPT‑5.5‑Cyber in limited preview to defenders responsible for securing critical infrastructure.
+> 
+> GPT-5.5 with Trusted Access for Cyber (TAC) is still the best option for developers to find and patch vulnerabilities in their code.
+> 
+> It's a very good model.
+
+---
+
+## @gdb (Greg Brockman - 共同創業者)
+
+**08:04 JST** | [原文](https://x.com/gdb/status/2052525058325647693)
+
+> Codex can now drive Chrome tabs in the background:
+> 
+> James Sun: Today, we are excited to introduce Codex for Chrome!
+> 
+> Now, Codex can drive its own Chrome tabs in the background to automate tasks while you use the browser simultaneously.
+> 
+> It does this by opening up tab groups for each task, cleaning up at the end, and handing back tabs for
+
+---
+
