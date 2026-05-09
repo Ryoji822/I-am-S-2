@@ -18,3 +18,11 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**02:13 JST** | [原文](https://x.com/OpenAIDevs/status/2053161503470366881)
+
+> Here’s how you can integrate GPT-Realtime-2 to bring voice control to a CRM workflow.
+
+---
+
