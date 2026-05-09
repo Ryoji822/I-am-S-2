@@ -98,3 +98,12 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**03:55 JST** | [原文](https://x.com/jasonkwon/status/2053150808628474279)
+
+> RT Daniel Newman
+> OpenAI says not so fast Claude Code 👀🚀
+
+---
+
