@@ -88,3 +88,13 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**08:05 JST** | [原文](https://x.com/sama/status/2052887698717986956)
+
+> call me maybe
+> 
+> ChatGPT:
+
+---
+
