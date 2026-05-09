@@ -34,3 +34,12 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**04:02 JST** | [原文](https://x.com/JeffDean/status/2052989534103875803)
+
+> RT daz
+> Free Universal Healthcare is so complicated and expensive that only 32 of the 33 wealthiest countries in the world have figured it out.
+
+---
+
