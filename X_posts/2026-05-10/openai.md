@@ -45,3 +45,26 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**06:11 JST** | [原文](https://x.com/gdb/status/2053221403868922114)
+
+> Codex for expenses
+> 
+> Vaibhav (VB) Srivastav: Codex quite literally filed my reimbursements, downloaded invoices since the start of the month, updated the expenses spreadsheet and filled the actual form all by itself
+> 
+> Used Drive & Sheets plugin for state tracking
+> Gmail plugin for tracking invoices
+> Chrome extension for actual
+
+---
+
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**02:43 JST** | [原文](https://x.com/kevinweil/status/2053214758401437744)
+
+> RT Shae McLaughlin
+> It’s estimated that the Protein Data Bank (PDB) cost around $13B to create. Alphafold was only possible because of it. If we want ML to solve biology, we should be funding the creation of databases and the development of new assay technologies. ML is nothing without data.
+
+---
+
