@@ -68,3 +68,11 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**06:27 JST** | [原文](https://x.com/kevinweil/status/2053225351946682733)
+
+> This a matter of extreme importance (and some of the best writing ever) https://www.theatlantic.com/magazine/2026/05/best-free-restaurant-bread-america/686582/?gift=OqVfOH3ElmhyC4FAR8f2MaTorngzDqk8QQbmUcBF3Wk&utm_source=copy-link&utm_medium=social&utm_campaign=share
+
+---
+
