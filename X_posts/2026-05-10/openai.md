@@ -34,3 +34,14 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**04:16 JST** | [原文](https://x.com/jasonkwon/status/2053201817862119698)
+
+> RT Sam Altman
+> 5.5 is an autistic genius with very strange taste in naming
+> 
+> shocking that we would make such a thing
+
+---
+
