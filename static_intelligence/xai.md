@@ -1,92 +1,97 @@
-# xAI
+# xAI → SpaceXAI
 
-> 最終判断更新: 2026-05-02
-> 全体確信度: 中
-> 情報非対称性: Grok の正確性ベンチマークは他社比較で未公開。X データと AI 学習の寄与が分離できない
-> 主参照: hypotheses.json#H-XAI-001/002/003/004, indicators.json#IND-017/006/001/025/030
+> 最終判断更新: 2026-05-09
+> 全体確信度: 低
+> 情報非対称性: SpaceXAIはSpaceXの内部組織であり、独立企業としての財務・戦略・ロードマップ情報が構造的に入手不可。Colossus貸与条件も非公開
+> 主参照: hypotheses.json#H-XAI-001/002/003/004, indicators.json#IND-017/006/001/025/029/030
 
 ## 0. 一文要約
 
-我々は xAI を、**価格優位と政府採用で汎用 AI 基盤の地位を固めつつある企業**と読んでいる。最大の根拠は Pentagon GenAI.mil への統合 (120万ユーザー・10万エージェント) と Grok 4.3 の $1.25/$2.50 per M tokens という価格水準だ。ただし当初の差別化軸だった X データ活用仮説 (H-XAI-001) は29日以上証拠不在で確度 42% に低下しており、物理世界統合仮説 (H-XAI-003) はすでに low に再分類された。もし Grok の価格優位が他社追随で消えるか、X データアクセスポリシーが制限される観測が出れば、現在の読みは根本から見直す。
+我々はxAIを、**独立企業として解散しSpaceXの内部AI部門(SpaceXAI)に再編された元フロンティアプレイヤー**と読んでいる。最大の根拠は、2026年2月にxAIが$250BでSpaceXと合併した事実 [INFO-072](../Information/2026-05-09/collected-raw.md#INFO-072) と、Colossus 1(220K GPU)の全容量を競合のAnthropicに貸与した事実 [INFO-076](../Information/2026-05-09/collected-raw.md#INFO-076) だ。Grok 4.3の83%価格カット [INFO-020](../Information/2026-05-09/collected-raw.md#INFO-020) は価格競争力を示すが、独立企業としての価格戦略とSpaceX内部リソースの価格設定では意味が違う。SpaceXAIとしての戦略(Grokの宇宙・製造業展開、Colossus貸与の意図、Cursor $60B取得オプションの用途)が具体的に観測されたら、判断を再構築する。
 
 ## 1. コア判断
 
-xAI の現状を一言で言えば、**当初の差別化軸が証拠不在で劣化しながら、別の軸が台頭している企業**だ。
+xAIの章は終わった。我々の確信度は「低」にとどめる。
 
-X (Twitter) データを独占活用してリアルタイム性で差別化するという当初の仮説は、29日以上新規証拠が観測されないまま確度 42% に沈んだ。SpaceX との物理世界統合も同様で、29日以上支持証拠が途絶え、確度 40% で low に再分類された。これらの劣化が示すのは、仮説が崩れたという確定ではなく、「監視しているが答えが出ていない」状態が続いているという事実だ。
+2026年2月、xAIは$250B評価額でSpaceXと合併し、SpaceXAIとして再編された [INFO-072](../Information/2026-05-09/collected-raw.md#INFO-072)。この事実は、我々が蓄積してきた4つのxAI仮説の前提(独立企業としての戦略的行動)を根底から変える。合併前の観測は参照価値があるが、その意味付けをやり直す必要がある。
 
-その間に台頭したのが、汎用 AI 基盤として政府・企業市場を取るという仮説 (H-XAI-004、55%) と、純粋な価格競争での差別化 (H-XAI-002、65%) だ。Pentagon GenAI.mil でのGrok統合は、国防省が120万ユーザー規模のプラットフォームで実際に使い始めたことを意味する。Grok 4.3 は CaseLaw v2 首位・CorpFin 首位という業種特化の実績を示し、法律・金融でのエンタープライズ競争力はXデータと無関係に成立しつつある。
+合併前のxAIは、価格競争力と政府採用で存在感を示していた。Grok 4.3は出力価格を83%カット($1.25/$2.50 per M tokens)し、1Mトークンコンテキストとネイティブ動画入力を全API開発者に公開した [INFO-020](../Information/2026-05-09/collected-raw.md#INFO-020)。$200MのPentagon契約で連邦政府機関にGrokを提供していた [INFO-062](../Information/2026-05-09/collected-raw.md#INFO-062)。GenAI.milでは120万ユーザー・10万エージェント規模での採用実績があった [INFO-022](../Information/2026-04-27/collected-raw.md#INFO-022)。
 
-ただし、この読みにはまだ穴がある。エンタープライズ市場シェアの定量データが手元にない。価格の強さは DeepSeek V4 ($1.74/$3.48) が侵食しつつある。Musk 一人が Tesla・SpaceX・Neuralink・xAI を束ねる集中リスクも継続している。H-XAI-004 の確度が 55% 止まりなのは、「取りつつある」という方向性は見えるが、「取った」という確定が出ていないからだ。
+合併後の観測は、独立企業の戦略とは異なる文脈で読む必要がある。最も特徴的なのはColossus 1(220K GPU、300MW超)の全容量をAnthropicに貸与した事実 [INFO-076](../Information/2026-05-09/collected-raw.md#INFO-076) だ。元々Grok訓練用に構築された第1世代クラスタを直接競合に貸す。空き容量の有効活用、Anthropicとの関係構築、企業金融的動機のいずれかが考えられるが、外部から区別できない。第2世代Colossus 555K GPU [INFO-073](../Information/2026-05-09/collected-raw.md#INFO-073) はSpaceXAI自身がGrok訓練に使っていると推測される。
+
+SpaceXがCursor(Anysphere)の$60B取得オプションを確保した [INFO-051](../Information/2026-05-09/collected-raw.md#INFO-051) ことも、AIへの投資意欲を示すが、これがSpaceXAIの戦略なのかSpaceX本体の投資なのかが判別不能だ。Gro​k 4.3の価格戦略も、「市場シェア獲得のための攻撃的価格設定」なのか「SpaceXインフラの余剰コストを埋めるための価格設定」なのかが分からない。
+
+当初の差別化軸だったXデータ活用(H-XAI-001)は34R以上証拠不在で37%に低下し、棄却候補。物理世界統合(H-XAI-003)も35%で保留・再定義中。統合直後で時間不足のargument from ignoranceを避けるため、棄却ではなく保留としている。Arbiterは次回、SpaceXAIとしての新仮説フレーム(H-XAI-005)の定義を最優先課題としている [H-XAI-003](../config/hypotheses.json)。
 
 ## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | Pentagon GenAI.mil に Grok が統合、120万ユーザー・10万エージェント。軍事 Grok 利用に「blank check」 | 汎用 AI 基盤仮説 (H-XAI-004) の最強支持証拠。政府が規模で採用したことの確認 | A-2 | [INFO-022](../Information/2026-04-27/collected-raw.md#INFO-022) [INFO-023](../Information/2026-04-27/collected-raw.md#INFO-023) |
-| 高 | Grok 4.3: $1.25/$2.50 per M tokens。GPT-5.5 ($5/$30) の約1/4。Grok 4.2 比で入力 40%・出力 60% 安い | 価格競争仮説 (H-XAI-002) の直接根拠。構造コストがSpaceXインフラで担保されている | A-3 | [INFO-006](../Information/2026-05-02/collected-raw.md#INFO-006) |
-| 高 | Grok 4.3: CaseLaw v2 #1 (79.3%) · CorpFin #1。GDPval-AA Elo 1500 | X データ依存なしでの業種特化競争力。エンタープライズ取得の方向性を裏付ける | A-3 | [INFO-006](../Information/2026-05-02/collected-raw.md#INFO-006) |
-| 中 | Shift4 Payments が ChatGPT から Grok へ全面移行。JAMA 臨床推論 0.78 | 民間企業・医療の第三者採用実績。Pentagon 以外の汎用化証拠 | B-2 | [INFO-016](../Information/2026-04-20/collected-raw.md#INFO-016) [INFO-076](../Information/2026-04-20/collected-raw.md#INFO-076) |
-| 中 | H-XAI-001 が29日以上証拠不在で 42% に低下。H-XAI-003 が同様に 40% で low 再分類 | 当初の差別化軸が「観測限界」状態にある。H-XAI-004 が最有力に浮上した理由の裏 | B-3 | [INFO-007](../Information/2026-03-25/collected-raw.md#INFO-007) |
+| 高 | xAI解散、SpaceXに統合(SpaceXAI)。2月に$250Bで合併 | 仮説群の前提(独立企業)が崩壊。全仮説の再定義が必要 | B-1 | [INFO-072](../Information/2026-05-09/collected-raw.md#INFO-072) |
+| 高 | Colossus 1(220K GPU、300MW)の全容量をAnthropicに貸与 | SpaceXAIが「AIインフラ提供者」としての側面を持つ。競合に計算資源を貸す構造は独立企業の仮説枠組みでは説明困難 | B-1 | [INFO-076](../Information/2026-05-09/collected-raw.md#INFO-076) |
+| 高 | Grok 4.3: 出力価格83%カット($1.25/$2.50)、1M context、全API開発者公開 | 価格競争力は genuine C。ただし統合後の価格意図(市場シェア獲得か余剰活用か)が不明 | B-3 | [INFO-020](../Information/2026-05-09/collected-raw.md#INFO-020) |
+| 中 | $200M Pentagon契約でGrokを連邦政府機関に提供 | 独立企業時代の政府市場実績。統合後も有効かは未確認 | B-3 | [INFO-062](../Information/2026-05-09/collected-raw.md#INFO-062) |
+| 中 | Colossus第2世代: 555K GPU、2GW目標。$20B Series E、$230B評価額 | SpaceXAIの計算規模。第2世代はGrok訓練に使用中と推測 | C-3 | [INFO-073](../Information/2026-05-09/collected-raw.md#INFO-073) |
+| 中 | Grok 4.3はマルチモーダル・推論改善もOpenAI/Anthropic/Googleに遅れ | 価格優位はあるが性能首位ではない。ベンチマーク戦争を避ける戦略 | B-3 | [INFO-074](../Information/2026-05-09/collected-raw.md#INFO-074) |
 
 ## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
-| H-XAI-001 が次の30日 (2026-06-01 まで) でも新規証拠なし | X データ活用差別化が観測可能な差別化軸として機能していないことが確定し、low 再分類を実施する | 30日 | [IND-017](../config/indicators.json) |
-| Grok の価格優位が他社追随で消える (DeepSeek V4 等が $1.00/$2.00 以下で提供) | H-XAI-002 (価格競争) が崩れ、価格以外の差別化軸が単独で成立するかを再検証する | 90日 | [IND-001](../config/indicators.json) |
-| X のデータアクセスポリシー変更または API 課金強化で Grok の優先アクセスが消える | H-XAI-001 の観測根拠が構造ごと消え、差別化の前提が失われる | 60日 | [IND-017](../config/indicators.json) |
-| Pentagon が Grok との契約を縮小・終了、または他社に切り替え | H-XAI-004 (汎用 AI 基盤) の最強支持証拠が崩れ、確度を大幅に引き下げる | 90日 | [IND-030](../config/indicators.json) |
-| エンタープライズ市場シェア定量データで Grok が上位5社に入らないことが確認される | 「取りつつある」という方向性が否定され、H-XAI-004 の確度を 40% 以下に引き下げる | 180日 | [IND-006](../config/indicators.json) |
+| SpaceXAIが宇宙・製造業特化AI機能を具体的に発表する | H-XAI-003が「保留」から「支持」に転じる | 90日 | [IND-006](../config/indicators.json) |
+| Grokの価格が$1.00/$2.00以下に引き下げられ、SpaceXがインフラコストを補填していることが確認される | H-XAI-002が「価格競争」から「内部補填」に再定義される | 60日 | [IND-001](../config/indicators.json) |
+| Colossus貸与がAnthropic以外にも拡大し、SpaceXAIが「AIインフラプロバイダー」として定着する | H-XAI-005(新仮説フレーム)の定義が確定する | 90日 | [IND-029](../config/indicators.json) |
+| H-XAI-001が次の30日でもXデータ活用の新規証拠なし | Xデータ活用差別化が観測可能な軸として機能していないことが確定し、low再分類を実施する | 30日 | [IND-017](../config/indicators.json) |
+| GrokのAPI提供が終了または大幅に縮小される | SpaceXAIが外部市場から撤退し内部利用に特化する場合、H-XAI-002とH-XAI-004が同時に崩れる | 90日 | [IND-006](../config/indicators.json) |
 
 ## 4. 進行中の仮説
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:-:|---|---|---|
-| [H-XAI-004](../config/hypotheses.json) | 汎用 AI 基盤としてエンタープライズ・政府市場を獲得する | 55% | Pentagon統合・Shift4全面移行・JAMA 0.78・Grok 4.3業種特化首位が収束するが、市場シェア定量データ不在で上限キャップ継続 | [INFO-022](../Information/2026-04-27/collected-raw.md#INFO-022) [INFO-006](../Information/2026-05-02/collected-raw.md#INFO-006) [INFO-016](../Information/2026-04-20/collected-raw.md#INFO-016) | 市場シェア定量データの不在、エンタープライズ後発の実績差 |
-| [H-XAI-002](../config/hypotheses.json) | 価格競争力でシェアを獲得する | 65% | Grok 4.3 が $1.25/$2.50 で GPT-5.5 の約1/4。Colossus+SpaceX インフラが構造コストを担保。ただし価格と市場シェアの因果が未検証 | [INFO-006](../Information/2026-05-02/collected-raw.md#INFO-006) [INFO-008](../Information/2026-04-01/collected-raw.md#INFO-008) | [INFO-036](../Information/2026-05-02/collected-raw.md#INFO-036) DeepSeek V4 が $1.74/$3.48 で追随 |
-| [H-XAI-001](../config/hypotheses.json) | X データ活用でリアルタイム特化を差別化する | 42% | x_search 内蔵が唯一の具体的証拠だが、29日以上連続で新規支持証拠が観測されない。40% 到達で low 再分類必須 (あと 2pt) | [INFO-007](../Information/2026-03-25/collected-raw.md#INFO-007) | 29日以上の証拠不在。Grok 4.3 の新証拠はすべて H-XAI-004 を支持し H-XAI-001 とは無関係 |
-| [H-XAI-003](../config/hypotheses.json) | Tesla/SpaceX/X を統合して物理世界 AI を実現する | 40% | SpaceX合併・Tesla車両統合・Optimus V3統合という直接証拠が存在するが、29日以上 SpaceX統合の新規証拠が途絶え low 再分類実施済み | [INFO-020](../Information/2026-04-20/collected-raw.md#INFO-020) (STT/TTSの弱い傍証) | 29日以上の新規統合証拠不在。Pentagon SpaceX選出は政府軍事利用であり物理世界統合とは別軸 |
+| [H-XAI-002](../config/hypotheses.json) | 価格競争力でシェアを獲得する | 65% | Grok 4.3 $1.25/$2.50はgenuine C。ただし統合後の価格意図(市場シェア獲得かSpaceX余剰活用か)が不明で、独立企業の価格戦略とは意味が異なる | [INFO-020](../Information/2026-05-09/collected-raw.md#INFO-020) | [INFO-072](../Information/2026-05-09/collected-raw.md#INFO-072) 統合で戦略前提変更 |
+| [H-XAI-004](../config/hypotheses.json) | 汎用AI基盤としてエンタープライズ・政府市場を獲得する | 55% | $200M Pentagon契約とGrok 4.3全API公開はC。ただし統合で独立企業終了、市場シェア定量データ不在で上限キャップ | [INFO-062](../Information/2026-05-09/collected-raw.md#INFO-062) [INFO-020](../Information/2026-05-09/collected-raw.md#INFO-020) | [INFO-072](../Information/2026-05-09/collected-raw.md#INFO-072) 統合 |
+| [H-XAI-001](../config/hypotheses.json) | Xデータ活用でリアルタイム特化を差別化する | 37% | 34R以上連続でXデータ活用の新規証拠不在。時間減衰で棄却候補。xAI→SpaceXAI統合で観測の意義自体が低下 | (なし) | 34R以上の証拠不在 |
+| [H-XAI-003](../config/hypotheses.json) | SpaceX統合で宇宙・製造業特化AIを展開する | 35% | 35%到達だが統合直後のargument from ignoranceを避けるため棄却ではなく保留・再定義。宇宙・製造業特化の展開には数ヶ月〜年単位の時間が必要 | (なし) | 34R以上証拠不在。Colossus Anthropic貸与は特化不在の追加I [INFO-076](../Information/2026-05-09/collected-raw.md#INFO-076) |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-017](../config/indicators.json) | X データ独占活用が市場優位に直結するか | 新規証拠で elevated | x_search 内蔵のみ確認。29日以上新規証拠不在 | 2026-05-02 |
-| [IND-006](../config/indicators.json) | Grok エージェントスタック採用状況 | 政府・企業の大規模採用で high | Pentagon GenAI.mil 10万エージェント稼働 | 2026-05-02 |
-| [IND-001](../config/indicators.json) | Grok のベンチマーク性能がフロンティアに追いつくか | +5pt/期で high | GDPval-AA Elo 1500。ProofBench 11%、Vending-Bench 2 は回帰 | 2026-05-02 |
-| [IND-025](../config/indicators.json) | 音声認識・ボイスクローニングでの競合優位 | WER 5% 以下で high | STT WER 6.9%。Custom Voices $3.00/時間 | 2026-05-02 |
-| [IND-030](../config/indicators.json) | 軍事利用の blank check がリスク評価に与える影響 | 直接介入で high | Pentagon blank check 確認済み。用途制限なし | 2026-05-02 |
+| [IND-017](../config/indicators.json) | Xデータ独占活用の有無 | 新規証拠で elevated | 34R以上新規証拠不在 | 2026-05-09 |
+| [IND-006](../config/indicators.json) | Grokエージェントスタック採用状況 | 政府・企業の大規模採用で high | $200M Pentagon契約 [INFO-062](../Information/2026-05-09/collected-raw.md#INFO-062) | 2026-05-09 |
+| [IND-001](../config/indicators.json) | Grokのベンチマーク性能 | +5pt/期で high | BenchLM Grok 4.1: 90(4位)。Grok 4.3は改善も首位不在 [INFO-074](../Information/2026-05-09/collected-raw.md#INFO-074) | 2026-05-09 |
+| [IND-029](../config/indicators.json) | AIインフラ制約 | 資本流入 vs 物理制約で high | Colossus 555K GPU/$230B評価 [INFO-073](../Information/2026-05-09/collected-raw.md#INFO-073)。Colossus 1 220K GPU Anthropic貸与 [INFO-076](../Information/2026-05-09/collected-raw.md#INFO-076) | 2026-05-09 |
+| [IND-030](../config/indicators.json) | AI能力とリスクの二面性 | 直接介入で high | Pentagon $200M契約 [INFO-062](../Information/2026-05-09/collected-raw.md#INFO-062)。米国安全性テスト対象 [INFO-059](../Information/2026-05-09/collected-raw.md#INFO-059) | 2026-05-09 |
 
 ## 6. 変化履歴
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
-| 2026-05-02 | H-XAI-001 42% に低下。H-XAI-003 low 再分類。H-XAI-004 最有力確定 | [INFO-006](../Information/2026-05-02/collected-raw.md#INFO-006) Grok 4.3 リリース。[INFO-030](../Information/2026-05-02/collected-raw.md#INFO-030) Pentagon 7社契約 SpaceX 選出 | 「X データ差別化が中核」 → 「証拠不在で劣化継続。汎用 AI 基盤が最有力」 |
-| 2026-04-27 | H-XAI-001 45→42%。H-XAI-003 42→40% | [INFO-022](../Information/2026-04-27/collected-raw.md#INFO-022) Pentagon GenAI.mil 統合確認 | 「差別化軸が複数あり評価中」 → 「政府採用で H-XAI-004 が急浮上」 |
-| 2026-04-20 | H-XAI-004 (汎用 AI 基盤) を新設仮説として追加 | [INFO-016](../Information/2026-04-20/collected-raw.md#INFO-016) Shift4 全面移行。[INFO-076](../Information/2026-04-20/collected-raw.md#INFO-076) JAMA 0.78 | 「4仮説等重み」 → 「H-XAI-004 が新軸として台頭」 |
-| 2026-04-17 | H-XAI-001 62→55%。H-XAI-003 58→52% | 複数連続での証拠不在で鮮度タイムアウト発動 | 「差別化仮説が半数超の確度」 → 「証拠劣化で確度低下開始」 |
+| 2026-05-09 | xAI→SpaceXAI統合・Colossus Anthropic貸与・Grok 4.3リリースを反映して全面書き直し | [INFO-072](../Information/2026-05-09/collected-raw.md#INFO-072) [INFO-076](../Information/2026-05-09/collected-raw.md#INFO-076) [INFO-020](../Information/2026-05-09/collected-raw.md#INFO-020) | 「価格優位と政府採用で汎用AI基盤を固める独立企業」 → 「独立企業解散。SpaceXAIとして再編。全仮説の前提変更」 |
+| 2026-05-02 | H-XAI-001 42%に低下。H-XAI-003 low再分類。H-XAI-004 最有力確定 | [INFO-006](../Information/2026-05-02/collected-raw.md#INFO-006) Grok 4.3リリース | 「Xデータ差別化が中核」 → 「証拠不在で劣化継続。汎用AI基盤が最有力」 |
+| 2026-04-27 | H-XAI-001 45→42%。H-XAI-003 42→40% | [INFO-022](../Information/2026-04-27/collected-raw.md#INFO-022) Pentagon GenAI.mil統合確認 | 「差別化軸が複数あり評価中」 → 「政府採用でH-XAI-004が急浮上」 |
 
 ## 7. ブラインドスポット
 
-- Grok の正確性ベンチマークが他社比較で公開されていない。CaseLaw v2 首位・GDPval-AA Elo 1500 は xAI 発信のデータであり、独立第三者の再現確認がない。
-- X からのデータ取得量と AI 学習への寄与が外部から分離できない。H-XAI-001 が「証拠不在」なのか「証拠が取れない構造」なのかが判別できず、観測限界と仮説棄却が混同するリスクがある。
-- Elon Musk の経営優先度が Tesla・SpaceX・Neuralink・X・xAI に分散することの影響を定量化する手段がない。どの事業が優先されているかは発言から類推するしかなく、実際のリソース配分は不透明だ。
-- SpaceX 軌道データセンター構想の進捗が外部から追跡できない。「2-3年以内に宇宙ベース計算を最低コストに」という主張が H-XAI-002 の長期コスト優位を支えているが、構想段階であることを超えた公開情報がない。
-- Pentagon の「blank check」が実際の軍事利用でどこまで実行されているかが不明。利用量・用途・成果の開示がないため、政府採用の深さを評価できない。
+- SpaceXAIの内部戦略が外部から観測不能。Grokの価格設定、Colossusの貸与判断、Cursor $60B取得オプションの用途はすべてSpaceX内部の意思決定であり、独立企業のような公開情報や競合分析から推定できない。SpaceXは上場前であり、内部のAI戦略に関する開示義務がない。
+- Colossus 1をAnthropicに貸与した理由が不明。「第1世代クラスタの余剰活用」「Anthropicとの関係構築」「純粋な企業金融的動機」のいずれか、または複合だが、外部から区別できない。貸与期間や料金体系も非公開。
+- Xデータ活用の観測限界と仮説棄却が混同するリスクが、統合前に比べてさらに深刻化している。SpaceXAIがXデータを内部で活用していても、それが外部から確認される手段がない。
+- Grok 4.3のベンチマーク自己報告(xAI発信)の独立性が確認できない。CaseLaw v2首位等の成果は競合他社の独立検証がない。BenchLM 4位(Grok 4.1: 90)は第三者評価だが、4.3の独立評価はまだない。
+- SpaceXAIが「AIインフラプロバイダー」としてColossusを他社に貸与する事業を拡大する場合、現在の「AIモデル開発企業」枠組みでは捉えきれない。H-XAI-005の定義が急務だが、枠組み設計にはSpaceXAIの戦略方向性の確認が前提になる。
 
-## 付録: 直近30日の参照 Evidence
+## 付録: 直近30日の参照Evidence
 
 | Evidence | 用途 |
 |---|---|
-| [INFO-006](../Information/2026-05-02/collected-raw.md#INFO-006) | Grok 4.3 リリース詳細 (価格・ベンチマーク・弱点・Custom Voices) |
-| [INFO-022](../Information/2026-04-27/collected-raw.md#INFO-022) | Pentagon GenAI.mil 統合 (120万ユーザー・10万エージェント) |
-| [INFO-023](../Information/2026-04-27/collected-raw.md#INFO-023) | 軍事 Grok 利用の blank check 確認 |
-| [INFO-030](../Information/2026-05-02/collected-raw.md#INFO-030) | Pentagon 7社 AI 契約での SpaceX 選出 |
-| [INFO-016](../Information/2026-04-20/collected-raw.md#INFO-016) | Shift4 Payments が ChatGPT から Grok へ全面移行 |
-| [INFO-076](../Information/2026-04-20/collected-raw.md#INFO-076) | JAMA 臨床推論 Grok 4: 0.78 |
-| [INFO-020](../Information/2026-04-20/collected-raw.md#INFO-020) | Grok STT/TTS API (WER 6.9%)、Grok 4.20 Heavy、Vertex AI |
-| [INFO-008](../Information/2026-04-01/collected-raw.md#INFO-008) | Grok 4.20 Multi Agent 0309 価格・コンテキスト仕様 |
-| [INFO-036](../Information/2026-05-02/collected-raw.md#INFO-036) | DeepSeek V4 $1.74/$3.48 — 価格優位への構造侵食リスク |
-| [INFO-007](../Information/2026-03-25/collected-raw.md#INFO-007) | x_search 内蔵 — H-XAI-001 の現存する唯一の具体的支持証拠 |
-| [Arbiter v3.66](../state/arbiter-2026-05-02.md) | 確度評価の完全根拠 (付録のみ参照) |
+| [INFO-072](../Information/2026-05-09/collected-raw.md#INFO-072) | xAI解散、SpaceX統合(SpaceXAI)。$250B合併 |
+| [INFO-076](../Information/2026-05-09/collected-raw.md#INFO-076) | Colossus 1(220K GPU)Anthropic貸与 |
+| [INFO-020](../Information/2026-05-09/collected-raw.md#INFO-020) | Grok 4.3: 83%価格カット、1M context、全API公開 |
+| [INFO-073](../Information/2026-05-09/collected-raw.md#INFO-073) | Grok AI統計: 555K GPU、$230B評価額 |
+| [INFO-074](../Information/2026-05-09/collected-raw.md#INFO-074) | Grok 4.3マルチモーダル改善・トップモデルに遅れ |
+| [INFO-062](../Information/2026-05-09/collected-raw.md#INFO-062) | $200M Pentagon契約 |
+| [INFO-051](../Information/2026-05-09/collected-raw.md#INFO-051) | SpaceX Cursor $60B取得オプション |
+| [INFO-037](../Information/2026-05-09/collected-raw.md#INFO-037) | Pentagon 7社契約SpaceX選出 |
+| [INFO-085](../Information/2026-05-09/collected-raw.md#INFO-085) | クラウド実行収束(3社同一週移行) |
+| [INFO-059](../Information/2026-05-09/collected-raw.md#INFO-059) | 米国安全性テスト対象(Google/Microsoft/xAI) |
+| [INFO-022](../Information/2026-04-27/collected-raw.md#INFO-022) | Pentagon GenAI.mil統合(120万ユーザー・10万エージェント) |
+| [Arbiter v3.72](../state/arbiter-2026-05-09.md) | 確度評価の完全根拠(付録のみ参照) |
