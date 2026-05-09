@@ -26,3 +26,11 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**04:12 JST** | [原文](https://x.com/sama/status/2053191344999604409)
+
+> kicking off a bunch of codex tasks, running around with my kid in the sunshine, and then coming back at naptime to find them all completed makes me very optimistic for the future
+
+---
+

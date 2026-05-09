@@ -107,3 +107,16 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**02:51 JST** | [原文](https://x.com/jasonkwon/status/2053185832794943866)
+
+> RT Tibo
+> You can just migrate things
+> 
+> OpenAI: Just gonna leave this here.
+> 
+> https://chatgpt.com/codex/switch-to-codex/
+
+---
+
