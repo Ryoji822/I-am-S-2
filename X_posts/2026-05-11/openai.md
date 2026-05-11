@@ -48,3 +48,12 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**10:48 JST** | [原文](https://x.com/jasonkwon/status/2053659483717661073)
+
+> RT Dean W. Ball
+> “Making AI go well” will principally be the responsibility of the private sector, broadly construed. The solutions to AI’s problems will mostly come from the American people rather than our government. In some political theoretic sense this is probably not “ideal,” but this is the predicament one faces amid the twilight-century of the nation-state.
+
+---
+
