@@ -40,3 +40,11 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**09:41 JST** | [原文](https://x.com/gdb/status/2053636695698833563)
+
+> agents make for a surprisingly great product
+
+---
+
