@@ -1,7 +1,7 @@
 {
-  "version": "3.73",
-  "last_updated": "2026-05-10",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.73: Arbiter統合判断完了（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。2件更新（SCN-002 -1%: 36→35%Azure排他性終了+三社鼎立深化+価格30倍低下・SCN-003 +1%: 30→31%围い込み蓄積+価格差価値低下+EU緩和）。Pattern I確度「中」維持（Blue引き上げ→Arbiter見送り）。合計100%維持（20+35+31+14=100%）",
+  "version": "3.74",
+  "last_updated": "2026-05-11",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.74: Arbiter統合判断完了（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。2件更新（SCN-002 -1%: 35→34%OSSギャップ消滅+中国ギャップ縮小で格差拡大前提弱体化+9R連続シフト・SCN-003 +1%: 31→32%围い込み7重C蓄積+モデル性能差価値低下+9R連続シフト）。SCN-002/003確率差2%で分析方法論区別能力に重大な懸念。次回ArbiterでQHG象限再検討を必須条件化。合計100%維持（20+34+32+14=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -25,7 +25,7 @@
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 20,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.73: ±0%（20%維持）。Blue ±0%採用。反証: Azure排他性終了（INFO-064 C-3）+AAIF/MCP統合（INFO-030 B-2）で围い込み困難化。支持: Gemini Enterprise統合スタック（INFO-023 A-3）。相殺。COMPLETE",
+      "probability_rationale": "Arbiter v3.74: ±0%（20%維持）。Blue ±0%採用。反証: マルチクラウド展開+provider-agnostic SDK+OpenCode移行の6重I蓄積で围い込み困難化。围い込み形態変化（技術的→契約的）の可能性認識。支持: Gemini Enterprise統合スタック（INFO-019 A-3）+Doubao有料化エコシステム围い込み。相殺。COMPLETE",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 35,
+      "probability": 34,
       "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.73: -1%（36→35%）。Blue -1%採用。Azure排他性終了（INFO-064 C-3）は開放方向の強いC。三社Agent Platform鼎立更なる深化（Gemini Enterprise INFO-023+AWS Bedrock AgentCore INFO-041+Azure AI Foundry INFO-042）で「勝者」次元不明確化。LLM API価格30倍低下（INFO-059 C-2）で性能差の価値低下。8R連続同一方向シフト（統計的裥付け表現修正済み）。依然として最支持シナリオ。COMPLETE",
+      "probability_rationale": "Arbiter v3.74: -1%（35→34%）。Blue -1%採用。OSS/クローズドギャップほぼ消滅（INFO-037 C-3）+中国AI性能ギャップ急速縮小（INFO-050）が「格差拡大」前提を弱体化。Azure排他性終了+provider-agnostic SDKは開放方向C。NVIDIA中国市場シェアゼロは地政学的格差の変容。9R連続同一方向シフト（統計的裥付け表現修正済み）。依然として最支持シナリオ。**分析方法論警告**: SCN-002/003確率差2%は実質的に誤差範囲。QHG象限の区別能力に重大な懸念。次回Arbiterで再検討必須。COMPLETE",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -64,10 +64,10 @@
       "name": "静かな囲い込み",
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
-      "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークフロー・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 31,
+      "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
+      "probability": 32,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.73: +1%（30→31%）。Blue +1%採用。Gemini Enterprise Agent Platform統合（INFO-023 A-3）+Vertex→Gemini移行（INFO-029 C-3）で围い込み蓄積。LLM API価格30倍低下（INFO-059 C-2）でモデル性能差の差別化価値低下→エコシステム围い込みの重要性増。EU AI Act延期（INFO-049 B-2）で围い込みの規制障壁低下。8R連続同一方向シフト（統計的裥付け表現修正済み）。COMPLETE",
+      "probability_rationale": "Arbiter v3.74: +1%（31→32%）。Blue +1%採用。围い込み+収斂の7重C蓄積: Gemini Enterprise統合スタック（INFO-019 A-3）+Doubao有料化3段階（INFO-009 C-3）+Coze Agent Worldエコシステム（INFO-021 C-3）+エンタープライズメモリー唯一の堀（INFO-042 C-3）+EU AI Act延期（INFO-032 A-2）+OSS/クローズドギャップほぼ消滅（INFO-037 C-3）+SaaSpocalypse中間層排除（INFO-041 C-3）。モデル性能差の差別化価値低下→エコシステム围い込みの重要性増大の構造的論理が強化。9R連続同一方向シフト（統計的裥付け表現修正済み）。**分析方法論警告**: SCN-002/003確率差2%。QHG象限再検討が次回Arbiterで必須。COMPLETE",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -88,7 +88,7 @@
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 14,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.73: ±0%（14%維持）。Blue ±0%採用。DeepSeek V4 Pro 75%オフ（INFO-038 C-3）+価格30倍低下（INFO-059 C-2）は開放C。但し$3000億VC（INFO-091 C-3）+Terafab $1190億（INFO-003 B-2）+ByteDance 2000億元（INFO-070 B-3）のインフラ集中で二層市場構造継続。下層のみ部分的適合。COMPLETE",
+      "probability_rationale": "Arbiter v3.74: ±0%（14%維持）。Blue ±0%採用。OSS/クローズドギャップほぼ消滅（INFO-037 C-3）+DeepSeek 75%オフ（INFO-012 C-3）+157K OpenCode移行（INFO-015 C-3）は下層の適合性高める。但しQ1 2026 VC $2,672億（INFO-049 C-3）+ByteDance 2,000億元CAPEX（INFO-053 C-3）+SpaceX $3,500億評価額（INFO-016 C-3）のインフラ集中で二層市場構造継続。下層のみ部分的適合。COMPLETE",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -109,7 +109,7 @@
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
       "probability": 16,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.73: ±0%（16%維持）。Codex 4層防御（INFO-011 A-3）+GPT-5.5-Cyber/TAC（INFO-010 A-3）+OpenShell OSS（INFO-035 A-3）は防御側強化。Mythosパニック（INFO-019 B-2）は脆弱性認知向上。新規大規模脆弱性なし。critical移行条件未到達。但し5社同時Agent自律機能発表は未検証の自律性を一斉放出。16%は適正。COMPLETE",
+      "probability_rationale": "Arbiter v3.74: ±0%（16%維持）。新規大規模脆弱性なし。Agent SDK高頻度リリース（INFO-018 A-3）は防御側強化継続。但しCEO 83%エージェント導入予定+91%$300K+/時間ダウンタイム（INFO-024 D-3）の環境でエージェント自律実行は単一障害点影響を増幅。16%は適正。COMPLETE",
       "impact": "catastrophic",
       "indicators": ["IND-013", "IND-018", "IND-023"]
     },
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-05-10",
-    "note": "SCN-001(20) + SCN-002(35) + SCN-003(31) + SCN-004(14) = 100%. Arbiter v3.73完了（COMPLETE）"
+    "verified_date": "2026-05-11",
+    "note": "SCN-001(20) + SCN-002(34) + SCN-003(32) + SCN-004(14) = 100%. Arbiter v3.74完了（COMPLETE）"
   }
 }
