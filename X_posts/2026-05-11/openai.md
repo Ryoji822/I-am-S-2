@@ -57,3 +57,17 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**15:21 JST** | [原文](https://x.com/gdb/status/2053722156559683946)
+
+> /goal is underrated
+> 
+> james yu: We have a gnarly refactor in our codebase that I test every frontier model on. I've been doing this since the release of o1. Nothing has been able to solve it.
+> 
+> GPT-5.5 extra high thinking with /goal just did it.
+> 
+> I am floored.
+
+---
+
