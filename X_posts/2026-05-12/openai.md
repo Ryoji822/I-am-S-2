@@ -139,3 +139,13 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**15:53 JST** | [原文](https://x.com/gdb/status/2054092636659625990)
+
+> AI for helping you build apps powered by AI:
+> 
+> OpenAI Developers: Codex can now help you build AI apps and agents faster with OpenAI APIs using the OpenAI Developers plugin.
+
+---
+
