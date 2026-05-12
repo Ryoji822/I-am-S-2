@@ -108,3 +108,34 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**14:01 JST** | [原文](https://x.com/gdb/status/2054064478547775813)
+
+> Having an agent in your meeting is such a futuristic experience:
+> 
+> OpenAI Developers: What if your team gave standup updates, and GPT-Realtime-2 moved the tickets?
+
+---
+
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**13:57 JST** | [原文](https://x.com/kevinweil/status/2054063509869306204)
+
+> This from @tdrobbo is gold.
+> 
+> Tom Verrilli: http://x.com/i/article/2053668613031387136
+
+---
+
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**12:58 JST** | [原文](https://x.com/jasonkwon/status/2054062501105738089)
+
+> RT Tibo
+> Cybersecurity is changing. 
+> 
+> Daybreak brings together our most capable cyber models, Trusted Access tiers, advanced security workflows in Codex and at scale repo scanning with patch generation. With much more to come.
+
+---
+
