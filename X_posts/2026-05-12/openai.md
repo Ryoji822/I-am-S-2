@@ -98,3 +98,13 @@
 
 ---
 
+## @polynoamial (Noam Brown - 研究者)
+
+**10:34 JST** | [原文](https://x.com/polynoamial/status/2054012326249185658)
+
+> Fun fact: the fatal errors were initially flagged using @OpenAI's GPT-5.5
+> 
+> Epoch AI: We are conducting an AI-assisted review of FrontierMath: Tiers 1-4. This has flagged fatal errors in about a third of problems, and we believe most of these flags to be valid. We will release updated scores on a corrected dataset after completing a thorough human review.
+
+---
+
