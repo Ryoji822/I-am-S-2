@@ -94,3 +94,16 @@
 
 ---
 
+## @GoogleDeepMind (Google DeepMind - 公式アカウント)
+
+**22:45 JST** | [原文](https://x.com/GoogleDeepMind/status/2053889075526959593)
+
+> RT The Sainsbury Laboratory
+> New Preprint in collaboration with @GoogleDeepMind: AI-guided discovery of atypical protein assemblies
+> 
+> The @kamounlab discovered an 11-protomer complex through the Structural Novelty Index , a new way to use AlphaFold for atypical protein assemblies
+> 
+> https://buff.ly/GsF3zve
+
+---
+

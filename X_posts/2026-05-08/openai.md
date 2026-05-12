@@ -328,3 +328,17 @@
 
 ---
 
+## @gdb (Greg Brockman - 共同創業者)
+
+**03:01 JST** | [原文](https://x.com/gdb/status/2052448850796011931)
+
+> You can now just build amazing voice agents, with the GPT-Realtime-2 reasoning model in our API:
+> 
+> OpenAI: Introducing GPT-Realtime-2 in the API: our most intelligent voice model yet, bringing GPT-5-class reasoning to voice agents.
+> 
+> Voice agents are now real-time collaborators that can listen, reason, and solve complex problems as conversations unfold.
+> 
+> Now available in the API
+
+---
+

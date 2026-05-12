@@ -71,3 +71,26 @@
 
 ---
 
+## @bradlightcap (Brad Lightcap - 業務執行)
+
+**23:10 JST** | [原文](https://x.com/bradlightcap/status/2053840091140043050)
+
+> the OpenAI Deployment Company is a new company built to help businesses deploy frontier AI into the most critical work they do every day
+> 
+> OpenAI: Today we’re launching the OpenAI Deployment Company to help businesses build and deploy AI.
+> 
+> It's majority-owned and controlled by OpenAI. It brings together 19 leading investment firms, consultancies, and system integrators to help organizations deploy frontier AI to production
+
+---
+
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**22:10 JST** | [原文](https://x.com/jasonkwon/status/2053846012805148824)
+
+> RT OpenAI
+> Today we’re launching the OpenAI Deployment Company to help businesses build and deploy AI.
+> 
+> It's majority-owned and controlled by OpenAI. It brings together 19 leading investment firms, consultancies, and system integrators to help organizations deploy frontier AI to production for business impact. https://openai.com/index/openai-launches-the-deployment-company/
+
+---
+
