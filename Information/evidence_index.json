@@ -3366,8 +3366,57 @@
       "raw_path": "Information/raw/2026-05-11/firecrawl.jsonl",
       "run_date": "2026-05-11",
       "url": "https://www.instagram.com/reel/DYDYv0apP9e/"
+    },
+    "EVD-20260512-0001": {
+      "hash": "sha256:a211fdea7c3c41852b9ad37bdbebfdafcaf3a26b267944937d170b73097c4ba3",
+      "legacy_info_id": "INFO-001",
+      "raw_path": "Information/raw/2026-05-12/firecrawl.jsonl",
+      "run_date": "2026-05-12",
+      "url": "https://openai.com/index/openai-launches-the-deployment-company/"
+    },
+    "EVD-20260512-0002": {
+      "hash": "sha256:c10ea2e289a19d8213e388b4c43108043f05998ad186b18b6e1ba3141ae17289",
+      "legacy_info_id": "INFO-002",
+      "raw_path": "Information/raw/2026-05-12/firecrawl.jsonl",
+      "run_date": "2026-05-12",
+      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/"
+    },
+    "EVD-20260512-0003": {
+      "hash": "sha256:d74c87180ebf6d283f3d866b50a908befa51d7b4f69fa6703e19f43c13dff560",
+      "legacy_info_id": "INFO-003",
+      "raw_path": "Information/raw/2026-05-12/firecrawl.jsonl",
+      "run_date": "2026-05-12",
+      "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt/"
+    },
+    "EVD-20260512-0004": {
+      "hash": "sha256:809ecd2c3bbb85a7c139617fae587f4f36357c1c6002521abe821a0d5ae69910",
+      "legacy_info_id": "INFO-004",
+      "raw_path": "Information/raw/2026-05-12/firecrawl.jsonl",
+      "run_date": "2026-05-12",
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"
+    },
+    "EVD-20260512-0005": {
+      "hash": "sha256:f5d7a609849f575db25b34393eec26cf1cd3e06a076cb6fed6b5c6d1c3dc5387",
+      "legacy_info_id": "INFO-005",
+      "raw_path": "Information/raw/2026-05-12/firecrawl.jsonl",
+      "run_date": "2026-05-12",
+      "url": "https://blog.google/products-and-platforms/products/search/explore-web-generative-ai-search/"
+    },
+    "EVD-20260512-0006": {
+      "hash": "sha256:7b103398bf7b0e5a776f56fe7b75180d9795f3e753c7219ca01defc5d2b44e9b",
+      "legacy_info_id": "INFO-006",
+      "raw_path": "Information/raw/2026-05-12/firecrawl.jsonl",
+      "run_date": "2026-05-12",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/google-threat-intelligence-group-report/"
+    },
+    "EVD-20260512-0007": {
+      "hash": "sha256:140e3a0dd3dc2e3be19962d0c75d66a25774841196d157717672498879524864",
+      "legacy_info_id": "INFO-007",
+      "raw_path": "Information/raw/2026-05-12/firecrawl.jsonl",
+      "run_date": "2026-05-12",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6"
     }
   },
-  "last_updated": "2026-05-11T09:14:06+09:00",
+  "last_updated": "2026-05-12T09:15:55+09:00",
   "schema_version": "1.0"
 }

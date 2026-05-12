@@ -1,7 +1,7 @@
 {
-  "version": "3.74",
-  "last_updated": "2026-05-11",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.74: Arbiter統合判断完了（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。2件更新（SCN-002 -1%: 35→34%OSSギャップ消滅+中国ギャップ縮小で格差拡大前提弱体化+9R連続シフト・SCN-003 +1%: 31→32%围い込み7重C蓄積+モデル性能差価値低下+9R連続シフト）。SCN-002/003確率差2%で分析方法論区別能力に重大な懸念。次回ArbiterでQHG象限再検討を必須条件化。合計100%維持（20+34+32+14=100%）",
+  "version": "3.75",
+  "last_updated": "2026-05-12",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.75: Arbiter統合判断完了（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。2件更新（SCN-002 -1%: 34→33%DeployCo展開インフラ围い込み+Google AI Search围い込み深化+10R連続シフト・SCN-003 +1%: 32→33%围い込み8重C蓄積+SCN-002/003同率33%でQHG軸区別能力消失確定）。QHG再定義を次回Arbiter最優先必須条件化（3R連続未実行でシナリオ確率調整凍結ペナルティ条件設定）。合計100%維持（20+33+33+14=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -44,9 +44,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 34,
+      "probability": 33,
       "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.74: -1%（35→34%）。Blue -1%採用。OSS/クローズドギャップほぼ消滅（INFO-037 C-3）+中国AI性能ギャップ急速縮小（INFO-050）が「格差拡大」前提を弱体化。Azure排他性終了+provider-agnostic SDKは開放方向C。NVIDIA中国市場シェアゼロは地政学的格差の変容。9R連続同一方向シフト（統計的裥付け表現修正済み）。依然として最支持シナリオ。**分析方法論警告**: SCN-002/003確率差2%は実質的に誤差範囲。QHG象限の区別能力に重大な懸念。次回Arbiterで再検討必須。COMPLETE",
+      "probability_rationale": "Arbiter v3.75: -1%（34→33%）。Blue -1%採用。DeployCo展開インフラ围い込み（INFO-001 A-3）+Google AI Search围い込み深化（INFO-005 A-3）は围い込み方向C。10R連続同一方向シフト（統計的裥付け表現修正済み）。**分析方法論警告**: SCN-002/003確率33%同率（0%差）。QHG軸（围い込み←→開放 × 格差拡大←→収斂）の区別能力が実質的に消失。Red指摘: 市場の二層構造（上層围い込み+格差維持・下層開放+収斂）の可能性。QHG再定義が次回Arbiter最優先必須条件。3R連続未実行の場合はシナリオ確率±1%調整凍結ペナルティ。COMPLETE",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -65,9 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 32,
+      "probability": 33,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.74: +1%（31→32%）。Blue +1%採用。围い込み+収斂の7重C蓄積: Gemini Enterprise統合スタック（INFO-019 A-3）+Doubao有料化3段階（INFO-009 C-3）+Coze Agent Worldエコシステム（INFO-021 C-3）+エンタープライズメモリー唯一の堀（INFO-042 C-3）+EU AI Act延期（INFO-032 A-2）+OSS/クローズドギャップほぼ消滅（INFO-037 C-3）+SaaSpocalypse中間層排除（INFO-041 C-3）。モデル性能差の差別化価値低下→エコシステム围い込みの重要性増大の構造的論理が強化。9R連続同一方向シフト（統計的裥付け表現修正済み）。**分析方法論警告**: SCN-002/003確率差2%。QHG象限再検討が次回Arbiterで必須。COMPLETE",
+      "probability_rationale": "Arbiter v3.75: +1%（32→33%）。Blue +1%採用。围い込み+収斂の8重C蓄積: (1)DeployCo展開インフラ围い込み（INFO-001 A-3）(2)Google AI Search围い込み深化（INFO-005 A-3）(3)Claude Design→Code围い込み（INFO-004 A-3）(4)GPT-5.5-Cyber機関ロックイン（INFO-002 A-3）(5)Sonnet 4.6同価格で性能収斂（INFO-007 A-3）(6)Trusted Contact消費者エコシステム深化（INFO-003 A-3）(7)GTIG AI攻撃でセキュリティ围い込み必要性増（INFO-006 A-3）(8)19パートナー非技術的围い込み（INFO-001 A-3）。モデル性能差の差別化価値低下→エコシステム围い込み重要性増。10R連続同一方向シフト。**分析方法論警告**: SCN-002/003確率33%同率（0%差）。QHG軸区別能力消失確定。QHG再定義が次回Arbiter最優先必須条件。COMPLETE",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-05-11",
-    "note": "SCN-001(20) + SCN-002(34) + SCN-003(32) + SCN-004(14) = 100%. Arbiter v3.74完了（COMPLETE）"
+    "verified_date": "2026-05-12",
+    "note": "SCN-001(20) + SCN-002(33) + SCN-003(33) + SCN-004(14) = 100%. Arbiter v3.75完了（COMPLETE）. QHG再定義必須条件化"
   }
 }
