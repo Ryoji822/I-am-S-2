@@ -39,3 +39,22 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**11:43 JST** | [原文](https://x.com/OpenAIDevs/status/2054414880615354488)
+
+> RT James Sun
+> Codex can now use the in-app browser to test your app at different viewport sizes! 
+> 
+> It will control the device tool bar and click through your app at different breakpoints to validate & iterate.
+> 
+> If it's a long run, Codex will take screenshots at key moments during testing and show them to you at the end of the turn, so you can verify its work.
+> 
+> To speed up testing, Codex can hide the IAB to disable animations, and accelerate testing by 1-2x. 
+> 
+> Separately, we also made annotations send faster and consume less tokens. 
+> 
+> Hope you enjoy the updates and let us know what you think!
+
+---
+
