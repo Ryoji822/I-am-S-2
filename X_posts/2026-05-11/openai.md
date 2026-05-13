@@ -94,3 +94,14 @@
 
 ---
 
+## @npew (Peter Welinder - 研究・技術)
+
+**21:41 JST** | [原文](https://x.com/npew/status/2054316130668614072)
+
+> RT Rex Sorgatz
+> After being a Claude Code devotee for a year, I finally tried Codex on a new project this weekend. Once again, in the matter of a few months, it feels like the world changed. 
+> 
+> I can see myself doing *everything* inside of Codex this week.
+
+---
+

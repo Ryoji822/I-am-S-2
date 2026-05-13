@@ -149,3 +149,31 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**11:35 JST** | [原文](https://x.com/kevinweil/status/2054180675805491348)
+
+> RT Marc Andreessen 🇺🇸
+> Absolutely lovely. Highest recommendation.
+> 
+> John Ennis: Well, I guess the idea that humans will have nothing valuable left to do in the age of AI is going around again, so it is a good time to repost this article
+
+---
+
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**15:13 JST** | [原文](https://x.com/jasonkwon/status/2054212438002983170)
+
+> RT Tibo
+> The master becomes the mentee. At last, Claude is now copying Codex.
+> 
+> But you cannot out-accelerate GPT-5.5.
+> 
+> Daniel San: Claude Code 2.1.139 added /goal
+> 
+> You set a completion condition and Claude keeps working across turns until it's met
+> 
+> Works in interactive, -p, and Remote Control 👏
+
+---
+
