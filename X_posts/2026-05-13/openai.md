@@ -24,3 +24,18 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**06:06 JST** | [原文](https://x.com/OpenAIDevs/status/2054372200678092988)
+
+> RT dominik kundel
+> 💡 Small Codex tip:
+> 
+> You don't have to be limited to looking at one thread at a time. 
+> 
+> 🪟 Open multiple full windows in parallel
+> 💬 Use /side to fork a conversation to ask temporary follow ups
+> 🛟 You can also set a hot key for the Codex pop up Window to quickly fire off new tasks
+
+---
+

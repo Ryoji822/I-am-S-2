@@ -96,3 +96,15 @@
 
 ---
 
+## @joshwoodward (Josh Woodward - Geminiアプリ / AI Studio)
+
+**09:58 JST** | [原文](https://x.com/joshwoodward/status/2054365663297507647)
+
+> Lots of Gemini news at #TheAndroidShow!
+> 
+> More to come at I/O next week!
+> 
+> Sameer Samat: We just pulled the curtain back on some incredible news at #TheAndroidShow: I/O Edition today. We announced the biggest updates to Android ever, from Gemini Intelligence, Android platform upgrades, and what’s new beyond the phone – including the introduction of Googlebooks.
+
+---
+
