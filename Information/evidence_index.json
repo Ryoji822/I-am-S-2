@@ -3415,8 +3415,134 @@
       "raw_path": "Information/raw/2026-05-12/firecrawl.jsonl",
       "run_date": "2026-05-12",
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6"
+    },
+    "EVD-20260513-0001": {
+      "hash": "sha256:0e81ac7fc3c0fc4395e1a64b56da86fa724df84baf022cb7d4c5eed3290cf210",
+      "legacy_info_id": "INFO-001",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://openai.com/index/openai-launches-the-deployment-company/"
+    },
+    "EVD-20260513-0002": {
+      "hash": "sha256:24a51e4c128ba5805d7ed65bf42693da0db6e5a51a3b4b86133ff6701bbb79d3",
+      "legacy_info_id": "INFO-002",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://openai.com/index/what-parameter-golf-taught-us/"
+    },
+    "EVD-20260513-0003": {
+      "hash": "sha256:bd04640892b27cf752462541c1ca5c9ae7f5c913484fa1bad72f864674a9d4e3",
+      "legacy_info_id": "INFO-003",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/"
+    },
+    "EVD-20260513-0004": {
+      "hash": "sha256:22f9b8ffa68c138cbedda82a60784de220d73137a7f9283a4ef4f22961cbd671",
+      "legacy_info_id": "INFO-004",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt/"
+    },
+    "EVD-20260513-0005": {
+      "hash": "sha256:18b69e8f871ac319f2d2c6c172ba03649d4ef272fccb095d1b5c73c0b1df99c6",
+      "legacy_info_id": "INFO-005",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt/"
+    },
+    "EVD-20260513-0006": {
+      "hash": "sha256:71cf17342b1c2c55d032073bf91d1bd5e77d4c2469d0f5a8d5833da1211a3824",
+      "legacy_info_id": "INFO-006",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/"
+    },
+    "EVD-20260513-0007": {
+      "hash": "sha256:5d28339a08172ace9f3e42871765e63a738436f4521deb79feb8e950dd5c2d85",
+      "legacy_info_id": "INFO-007",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6"
+    },
+    "EVD-20260513-0008": {
+      "hash": "sha256:006d8fb1fdf2972f47d889f5270491a28da4ad800b6a9ca9626a967824cda81c",
+      "legacy_info_id": "INFO-008",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://www.anthropic.com/news/enterprise-ai-services-company"
+    },
+    "EVD-20260513-0009": {
+      "hash": "sha256:ba323d339ff993473c5195b2fd35017823b316f0fe37023b72bdd07c1140c91c",
+      "legacy_info_id": "INFO-009",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://www.anthropic.com/news/finance-agents"
+    },
+    "EVD-20260513-0010": {
+      "hash": "sha256:34148ce3fbaa51304b842149bfb7100c4680f8fd67305b03ff2b5010b32bdc70",
+      "legacy_info_id": "INFO-010",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-india/"
+    },
+    "EVD-20260513-0011": {
+      "hash": "sha256:db7be06d0f51e93c4ef377c97ecb672ad675276832d5db7a81974c7e2f904000",
+      "legacy_info_id": "INFO-011",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/"
+    },
+    "EVD-20260513-0012": {
+      "hash": "sha256:43e2c82407c40afacd245d9d21072df1c731392eb0c7af78b1f112b7547249b9",
+      "legacy_info_id": "INFO-012",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://blog.gopenai.com/how-the-openai-agents-sdk-helped-obai-scale-its-multi-agent-research-stack-f0fd73e57b34"
+    },
+    "EVD-20260513-0013": {
+      "hash": "sha256:4a25d6030b8f4060fc0efdee7371cee550082de7087b0f2d89c92f608a9dcc7c",
+      "legacy_info_id": "INFO-013",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://www.infoq.com/news/2026/05/openai-websocket-responses-api/"
+    },
+    "EVD-20260513-0014": {
+      "hash": "sha256:5a6a703da9df654a632c4fcc3cb931f3ca5b8977469b39d2e47c681f9846b0d7",
+      "legacy_info_id": "INFO-014",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://github.com/anthropics/claude-agent-sdk-typescript/releases"
+    },
+    "EVD-20260513-0015": {
+      "hash": "sha256:4740819808e14ce9ff165f4fec1bde214e21dd343a39cacf446fc737b8b79f54",
+      "legacy_info_id": "INFO-015",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://www.respan.ai/articles/best-ai-agent-frameworks-2026"
+    },
+    "EVD-20260513-0016": {
+      "hash": "sha256:05f571750c490639655d9b98adf4563893c74f1045b88c288e9d1af912cbe846",
+      "legacy_info_id": "INFO-016",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://www.kucoin.com/news/flash/bytedance-s-coze-launches-version-2-5-introduces-agent-world-ecosystem"
+    },
+    "EVD-20260513-0017": {
+      "hash": "sha256:9dcbbe478b110e967dd0b4428799a25eed94e0e47bf4de7c6420df0a84ac2ea6",
+      "legacy_info_id": "INFO-017",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/grok"
+    },
+    "EVD-20260513-0018": {
+      "hash": "sha256:cf457d73544172d8b96447f134469bbf73c6780e773aefea0771e65d22b89424",
+      "legacy_info_id": "INFO-018",
+      "raw_path": "Information/raw/2026-05-13/firecrawl.jsonl",
+      "run_date": "2026-05-13",
+      "url": "https://medium.com/@inprogrammer/i-compared-4-python-ai-agent-frameworks-langgraph-won-clearly-f5adec0e1981"
     }
   },
-  "last_updated": "2026-05-12T09:15:55+09:00",
+  "last_updated": "2026-05-13T09:58:56+09:00",
   "schema_version": "1.0"
 }

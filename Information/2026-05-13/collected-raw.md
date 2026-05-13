@@ -299,6 +299,3 @@
   - Pydantic AI: 型安全だが機能が少ない
 - **引用URL:** https://medium.com/@inprogrammer/i-compared-4-python-ai-agent-frameworks-langgraph-won-clearly-f5adec0e1981
 - **Evidence ID:** EVD-20260513-0018
-
-
-> ⚠️ DEGRADED: Blue Agent analysis failed. Raw data passed through.
