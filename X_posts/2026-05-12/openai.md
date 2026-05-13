@@ -177,3 +177,18 @@
 
 ---
 
+## @kevinweil (Kevin Weil - 製品責任者)
+
+**20:42 JST** | [原文](https://x.com/kevinweil/status/2054395543053644229)
+
+> RT Matt Smethurst
+> A news reporter asked Michael Jordan if he thought the ’90s Bulls could beat LeBron’s Lakers.
+> 
+> MJ: Yes.
+> Reporter: By how much? 
+> MJ: Two or three points.
+> Reporter: Why so close? 
+> MJ: Most of us are almost 60 now.
+
+---
+
