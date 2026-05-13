@@ -58,3 +58,20 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**00:24 JST** | [原文](https://x.com/jasonkwon/status/2054446711259697363)
+
+> RT Séb Krier
+> If anyone builds it, everyone thrives. Over the past decade, a lot of important work on AI alignment has focused on avoiding harm. But freedom from harm isn't the same as freedom to flourish.
+> 
+> In this paper, we introduce 'Positive Alignment'. A positively aligned agent is one that helps us navigate our own value trade-offs, builds our resilience, and acts as a scaffold for human flourishing. Doing this without slipping into top-down, technocratic paternalism is the great design challenge of our time.
+> 
+> We think a lot more research is now needed to explore this frontier: how do we align models that actively help us thrive?
+> 
+> Amazing work by @RubenLaukkonen, @drmichaellevin, @weballergy, @verena_rieser, @AdamCElwood, @996roma, @FranklinMatija, @shamilch, @_fernando_rosas, @scychan_brains, @matybohacek, @sudoraohacker, and others. 
+> 
+> https://arxiv.org/abs/2605.10310
+
+---
+
