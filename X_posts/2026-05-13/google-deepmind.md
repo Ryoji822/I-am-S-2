@@ -108,3 +108,14 @@
 
 ---
 
+## @jeffdean (Jeff Dean - AI研究中心人物)
+
+**03:13 JST** | [原文](https://x.com/JeffDean/status/2054430888034005225)
+
+> RT Google
+> Today, we introduced Gemini Intelligence, which brings the best of Gemini to our most advanced devices. 
+> 
+> Gemini Intelligence integrates premium hardware and innovative software to help you stay a step ahead and work proactively to get things done throughout your day. #TheAndroidShow
+
+---
+
