@@ -1,9 +1,9 @@
 {
-  "version": "3.75",
-  "last_updated": "2026-05-12",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.75: Arbiter統合判断完了（COMPLETE状態・Blue/Red両方完了）. Blue/Red統合評価. 7指標更新（全件状態変更なし・7件last_checked更新）. IND-013 high継続（GTIG AI開発ゼロデイ初検出 INFO-006 A-3は質的エスカレーション. Red指摘採用: 検出≠被害. 侵害未発生. 防御側AI強化も確認. 「大幅接近」撤回. critical移行条件未到達）・IND-025 elevated継続（Claude Design/Opus 4.7 INFO-004 A-3+Sonnet 4.6 OSWorld大幅改善 INFO-007 A-3. 量的向上継続. 「真の理解」検証未解決）・IND-026 elevated継続（新規直接関連証拠なし. 期待-実態ギャップ監視継続）・IND-027 high継続（DeployCo 19パートナー部分開放 INFO-001 A-3+Google AI Search围い込み INFO-005 A-3. 標準化加速と围い込み同時進行）・IND-028 elevated継続（新規客観的ベンチマークなし. 主観-客観乖離継続）・IND-029 high継続（DeployCo $40億+初期投資 INFO-001 A-3. 資本流入加速確認. 物理的制約ギャップ確定的継続）・IND-030 elevated継続（AI開発ゼロデイ初検出 INFO-006=能力=リスク具現化+GPT-5.5-Cyber INFO-002=防御能力. 二面性深化）",
+  "version": "3.76",
+  "last_updated": "2026-05-14",
+  "description": "I&W（Indications and Warning）指標レジストリ. v3.76: Arbiter統合判断（DEGRADED/BOTH-FAILED状態・Blue Agent失敗・Red Agent未実行）。Arbiter独自批判分析. 7指標更新（全件状態変更なし・7件last_checked更新）. IND-013 high継続（Codex 4層防御 INFO-001 A-3は防御側強化. 新規脆弱性なし. critical移行条件未到達）・IND-025 elevated継続（Grok STT/TTS INFO-005 A-3+Imagine INFO-006 A-3+Doubao全モダリティ INFO-038 B-3+Seedance 2.0 #2 INFO-039 B-3. 量的向上継続. 「真の理解」検証未解決）・IND-026 elevated継続（エージェント成功率77.3% INFO-023 B-3 vs 74%ロールバック INFO-023 B-3. 期待-実態ギャップ顕在化. high移行条件検討段階）・IND-027 high継続（MCPデファクト化 INFO-014 B-3+AAIF 97M SDK DL INFO-042 B-3+TikTok MCP INFO-011 B-3+Grok BYO MCP INFO-004 A-3+Agent Skills 1000+ INFO-015 C-3. 標準化爆発的加速）・IND-028 elevated継続（Hassabis AGI 2030 INFO-027 B-3+ARC-AGI-3 INFO-043 C-3+Meta Llama 4不正 INFO-040 C-3. 客観的ベンチマーク信頼性問題. 主観-客観乖離継続）・IND-029 high継続（Q1 AI資金調達$2555億 INFO-020 B-2+Big 4 $7250億 INFO-041 B-2+Anthropic $300億 INFO-051 B-3+Stargate $5000億 INFO-041 B-2. 資本流入加速. 物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon SCR+DPA INFO-033/046 B-2+Google秘密契約 INFO-036 B-3+Scale AI $5億 INFO-024 B-2+EU AI Act延期 INFO-028 B-2+US Safety Institute革新シフト INFO-047 B-3. 規制二方向同時深化）",
   "structural_changes_log": [
-    "2026-05-12 v3.75: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。7指標更新（全件状態変更なし）。IND-013 high継続（GTIG AI開発ゼロデイ初検出 INFO-006 A-3は質的エスカレーション。Red指摘採用: 検出≠被害。侵害未発生。防御側AI（Big Sleep/CodeMender）強化も確認。「大幅接近」撤回。critical移行条件（大規模AI攻撃インシデント）未到達）・IND-025 elevated継続（Claude Design/Opus 4.7 INFO-004 A-3+Sonnet 4.6 OSWorld大幅改善 INFO-007 A-3。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（新規直接関連証拠なし。期待-実態ギャップ監視継続）・IND-027 high継続（DeployCo 19パートナー部分開放 INFO-001 A-3+Google AI Search围い込み INFO-005 A-3。標準化加速と围い込み同時進行）・IND-028 elevated継続（新規客観的ベンチマークなし。主観-客観乖離継続。high移行条件未到達）・IND-029 high継続（DeployCo $40億+初期投資 INFO-001 A-3。資本流入加速確認。物理的制約ギャップ確定的継続）・IND-030 elevated継続（AI開発ゼロデイ初検出 INFO-006=能力=リスク具現化。GPT-5.5-Cyber INFO-002=防御能力。二面性深化）",
+    "2026-05-14 v3.76: Arbiter統合判断（DEGRADED/BOTH-FAILED状態）。Arbiter独自批判分析。7指標更新（全件状態変更なし）。IND-013 high継続（Codex 4層防御 INFO-001 A-3は防御側強化。新規脆弱性なし。critical移行条件未到達）・IND-025 elevated継続（Grok STT/TTS+Imagine+Doubao全モダリティ+Seedance 2.0 #2。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（エージェント成功率77.3% vs 74%ロールバック。期待-実態ギャップ顕在化。high移行条件検討段階）・IND-027 high継続（MCPデファクト化+AAIF 97M SDK+TikTok MCP+Grok BYO MCP+Agent Skills 1000+。標準化爆発的加速）・IND-028 elevated継続（Hassabis AGI 2030+ARC-AGI-3+Meta Llama 4不正。客観的ベンチマーク信頼性問題。主観-客観乖離継続）・IND-029 high継続（Q1 $2555億+Big 4 $7250億+Anthropic $300億+Stargate $5000億。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon SCR+DPA+Google秘密契約+Scale AI $5億+EU AI Act延期+US Safety Institute革新シフト。規制二方向同時深化。能力-リスク二面性加速）",
     "2026-05-11 v3.74: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。7指標更新（全件状態変更なし）。IND-013 high継続（Anthropicサードパーティブロック INFO-015 C-3+Claude Codeバグ INFO-008 C-3は品質問題。新規脆弱性なし。攻撃面拡大基調継続。critical移行条件未到達）・IND-025 elevated継続（Sonnet 4.6 OSWorld大幅改善 INFO-001 A-3+Doubao-Seed-2.0-lite フルマルチモーダル INFO-051 C-3+Seedance 2.0 Video Arena #2 INFO-052 C-3+Grok 4.3 ネイティブ動画 INFO-020 B-3。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（CEO 83%エージェント導入予定 INFO-033 B-2 vs CIO仅25%リアルタイム監視可能+91%ダウンタイム$300K+/時間 INFO-024 D-3。期待-実態ギャップ拡大兆候。high移行条件（3+ソース<10%）: 2ソース不適切継続）・IND-027 high継続（Azure排他性終了 INFO-003 B-2+OpenAI SDK provider-agnostic INFO-017 B-3+157K OpenCode移行 INFO-015 C-3+Multi-framework多様化 INFO-022 C-3。標準化加速。Gemini Enterprise围い込み同時進行）・IND-028 elevated継続（AGI timeline synthesis C-3+AGI arms race trial C-3+Amodei rhetoric shift D-3。客観的ベンチマーク新規なし。主観-客観乖離継続。high移行条件未到達）・IND-029 high継続（Q1 2026 VC $2,672億 C-3+ByteDance AI CAPEX 2,000億元 C-3+SpaceX $3,500億評価額 C-3+Anthropic $3,800億評価額 C-2+OpenAI $1,220億 C-3。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon 7社契約 A-2+DeepMind union 98% B-3+Scale AI $5億 A-2+EU AI Act延期 A-2+中国裁判所AI解雇不可 B-3+Sanders法案 C-3。規制二方向同時進行深化。規制インフラ構築加速）",
     "2026-05-10 v3.73: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。7指標更新（全件状態変更なし）。IND-013 high継続（Codex 4層防御 INFO-011 A-3+GPT-5.5-Cyber/TAC INFO-010 A-3+OpenShell OSS INFO-035 A-3は防御側強化。新規脆弱性なし。攻撃面拡大基調継続。critical移行条件未到達）・IND-025 elevated継続（Gemini 3 Pro Deep Think 100% INFO-033 C-3+AI Co-Clinician INFO-034 C-3+Doubao全模態 INFO-094 B-3+Grok 4.3音声 INFO-024 C-3。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（88%本番未到達 INFO-051 C-3 vs 72%導入 INFO-027 C-3の矛盾継続。high移行条件（3+ソース<10%）: 2ソース目にD&B 30%（INFO-050 B-2）は不適切。Auto Modeは自動化深化だが本番到達率に直接関係なし）・IND-027 high継続（AAIF/MCP統合 INFO-030 B-2+OpenShell OSS INFO-035 A-3+Azure排他性終了 INFO-064 C-3の3重C蓄積。Gemini Enterprise統合スタック（INFO-023 A-3）は围い込み同時進行）・IND-028 elevated継続（ARC-AGI-3全1%未満 INFO-061 C-3+Musk/Hassabis予測 INFO-067 C-3+再帰的自己改善 INFO-092 B-3+AGI-26 INFO-093 C-3。主観-客観乖離継続。high移行条件未到達）・IND-029 high継続（Terafab $550-1190億 INFO-003 B-2+Corning $32億 INFO-039 B-2+ByteDance 2000億元 INFO-070 B-3+IREN-NVIDIA INFO-078 B-2+VC $3000億 INFO-091 C-3+OpenAI $250億 INFO-074 B-2。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（中国包括的AI規制 INFO-048 B-3+EU AI Act延期 INFO-049 B-2+安全性テスト INFO-068 B-2+WH距離 INFO-047 B-2+連邦判事違憲 INFO-089 B-2。規制二方向同時進行。規制インフラ構築加速）"
   ],
@@ -15,9 +15,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "GTIG AI開発ゼロデイ初検出（INFO-006 A-3）は質的エスカレーション。Red指摘採用: 検出≠被害。侵害未発生。防御側AI（Big Sleep/CodeMender）強化も確認。GPT-5.5-Cyber/TAC（INFO-002 A-3）は防御側強化。critical移行条件（大規模AI攻撃インシデント発生）未到達",
-      "last_checked": "2026-05-12",
-      "rationale": "Arbiter v3.75: high継続。GTIG AIゼロデイ初検出は質的エスカレーション。Red指摘採用: 検出≠被害。「大幅接近」撤回。防御側AI強化も確認。侵害未発生。critical移行条件に未到達。COMPLETE"
+      "last_value": "Codex 4層防御（INFO-001 A-3）+Codex安全運用（INFO-002 A-3）は防御側強化。新規脆弱性なし。critical移行条件未到達",
+      "last_checked": "2026-05-14",
+      "rationale": "Arbiter v3.76: high継続。Codex 4層防御+Codex安全運用で防御側強化。新規脆弱性なし。critical移行条件に未到達。DEGRADED"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -26,9 +26,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Claude Design/Opus 4.7ビジュアルデザイン対応（INFO-004 A-3）+Sonnet 4.6 OSWorld大幅改善（INFO-007 A-3）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-05-12",
-      "rationale": "Arbiter v3.75: elevated継続。Claude Design+Sonnet 4.6で量的向上継続。「真の理解」検証は未解決。COMPLETE"
+      "last_value": "Grok STT/TTS（INFO-005 A-3）+Imagine Quality Mode（INFO-006 A-3）+Custom Voices（INFO-007 A-3）+Doubao全モダリティ（INFO-038 B-3）+Seedance 2.0 #2（INFO-039 B-3）+Gemini 3.1 Pro GPQA 94.3%（INFO-019 C-3）。量的向上継続。「真の理解」検証未解決",
+      "last_checked": "2026-05-14",
+      "rationale": "Arbiter v3.76: elevated継続。Grok STT/TTS+Imagine+Doubao全モダリティ+Seedance 2.0 #2。量的向上継続。「真の理解」検証は未解決。DEGRADED"
     },
     "IND-026": {
       "indicator_id": "IND-026",

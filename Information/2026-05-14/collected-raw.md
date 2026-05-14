@@ -840,6 +840,3 @@
   - アライメント研究: ネガティブ→ポジティブ転換の議論
 - **引用URL:** https://www.facebook.com/macarthurfdn/posts/-were-excited-to-share-that-humanityai-has-announced-18-million-in-new-grants-8-/1530266161794141/
 - **Evidence ID:** EVD-20260514-0052
-
-
-> ⚠️ DEGRADED: Blue Agent analysis failed. Raw data passed through.
