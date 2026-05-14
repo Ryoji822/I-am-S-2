@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-05-14T09:51:02+09:00",
-  "deduped_count": 52,
+  "built_at": "2026-05-14T13:02:49+09:00",
+  "deduped_count": 90,
   "duplicate_count": 0,
-  "firecrawl_count": 52,
-  "merged_count": 52,
+  "firecrawl_count": 79,
+  "merged_count": 90,
   "run_date": "2026-05-14",
   "schema_failures": 0,
   "schema_version": "1.0",
-  "x_posts_count": 0
+  "x_posts_count": 11
 }
