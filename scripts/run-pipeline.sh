@@ -104,7 +104,7 @@ log_info "=========================================="
 log_info "Phase 1: COLLECT"
 log_info "=========================================="
 
-if ! run_phase 1 "COLLECT" "glm-5.1" "phase1-collect.md" 1800 1; then
+if ! run_phase 1 "COLLECT" "glm-5.1" "phase1-collect.md" 1800 0; then
   log_warn "Phase 1 failed. Applying fallback: copying previous day's data"
 
   # Find the most recent collected-raw.md from a DIFFERENT date
@@ -279,7 +279,7 @@ log_info "=========================================="
 log_info "Phase 2: ANALYZE (Blue Agent)"
 log_info "=========================================="
 
-if ! run_phase 2 "ANALYZE" "glm-5.1" "phase2-analyze.md" 1200 1; then
+if ! run_phase 2 "ANALYZE" "glm-5.1" "phase2-analyze.md" 1800 0; then
   log_warn "Phase 2 failed. Using collected raw data as processed data"
   cp "Information/$TODAY/collected-raw.md" "Information/$TODAY/processed.md"
   echo -e "\n\n> ⚠️ DEGRADED: Blue Agent analysis failed. Raw data passed through." \
@@ -294,7 +294,7 @@ log_info "=========================================="
 log_info "Phase 3: RED TEAM"
 log_info "=========================================="
 
-if ! run_phase 3 "RED TEAM" "glm-5.1" "phase3-red-team.md" 900 1; then
+if ! run_phase 3 "RED TEAM" "glm-5.1" "phase3-red-team.md" 1500 0; then
   log_warn "Phase 3 failed. Creating minimal red team report"
   cat > "state/red-team-$TODAY.md" << EOF
 # Red Agent反証レポート: $TODAY
@@ -317,7 +317,7 @@ log_info "=========================================="
 log_info "Phase 4: ARBITER"
 log_info "=========================================="
 
-if ! run_phase 4 "ARBITER" "glm-5.1" "phase4-arbiter.md" 900 1; then
+if ! run_phase 4 "ARBITER" "glm-5.1" "phase4-arbiter.md" 1500 0; then
   log_warn "Phase 4 failed. Using Blue Agent output directly"
   if [[ -f "Information/$TODAY/processed.md" ]]; then
     cp "Information/$TODAY/processed.md" "state/arbiter-$TODAY.md"
@@ -335,7 +335,7 @@ log_info "=========================================="
 log_info "Phase 5: STATIC UPDATE"
 log_info "=========================================="
 
-if ! run_phase 5 "STATIC UPDATE" "glm-5.1" "phase5-static-update.md" 900 1; then
+if ! run_phase 5 "STATIC UPDATE" "glm-5.1" "phase5-static-update.md" 1200 0; then
   log_warn "Phase 5 failed. Skipping static intelligence update"
   echo "# Static Update: $TODAY - SKIPPED (Phase 5 failure)" > "state/static-update-$TODAY.md"
 fi
@@ -359,7 +359,7 @@ log_info "=========================================="
 log_info "Phase 6: REPORT"
 log_info "=========================================="
 
-if ! run_phase 6 "REPORT" "glm-5.1" "phase6-report.md" 900 1; then
+if ! run_phase 6 "REPORT" "glm-5.1" "phase6-report.md" 1200 0; then
   log_warn "Phase 6 failed. Generating stub report"
   cat > "Intelligence/$TODAY.md" << EOF
 # デイリー・インテリジェンス・ブリーフィング: $TODAY
