@@ -72,3 +72,27 @@
 
 ---
 
+## @OpenAIDevs (OpenAI Developers - 公式開発者アカウント)
+
+**10:26 JST** | [原文](https://x.com/OpenAIDevs/status/2054735161166819377)
+
+> To bring Codex to Windows, we had to answer a hard question: how do you let coding agents stay useful without forcing developers to choose between constant approval prompts and full machine access?
+> 
+> Here’s how we built the Windows sandbox for Codex:
+> https://openai.com/index/building-codex-windows-sandbox/
+
+---
+
+## @gdb (Greg Brockman - 共同創業者)
+
+**11:04 JST** | [原文](https://x.com/gdb/status/2054744721570820444)
+
+> How we built the Codex sandbox for Windows:
+> 
+> OpenAI Developers: To bring Codex to Windows, we had to answer a hard question: how do you let coding agents stay useful without forcing developers to choose between constant approval prompts and full machine access?
+> 
+> Here’s how we built the Windows sandbox for Codex:
+> https://openai.com/index/building-codex-windows-sandbox/
+
+---
+
