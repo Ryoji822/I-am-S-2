@@ -75,3 +75,35 @@
 
 ---
 
+## @jasonkwon (Jason Kwon - 戦略担当)
+
+**23:43 JST** | [原文](https://x.com/jasonkwon/status/2054664151331660155)
+
+> RT Trail of Bits
+> We were one of four initial grant recipients in @OpenAI's Trusted Access for Cyber program. 
+> 
+> Daybreak matters because frontier models now find bugs faster than maintainers can triage them, and that gap is about to get worse.                                                        
+> 
+> Next-gen models can bury open-source maintainers in reports. While working with frontier labs this year, we have seen the bottleneck shift. Bug finding is easy, but triaging, disclosing, and fixing them takes disproportionate time and effort. Each finding still needs a human to confirm the bug, a static or dynamic check to reproduce it, a working proof-of-concept, and a minimal patch. That work is heavy, and right now it falls on the maintainer.  
+> 
+> On the OSS engagements we ran this year, we prioritized minimizing maintainer workload and keeping noise out of their inboxes. Every report we sent included a PoC, a fix patch, and a regression test. Anything that did not clear that bar did not get sent.  
+> 
+> Commonly used software has never been short of bugs. Cyber-tier models will surface them at machine speed with little human effort, and the volume will overwhelm OSS projects without clear processes for disclosure, triage, and remediation. If you maintain an OSS project, do four things:
+> 
+> 1. Publish a SECURITY.md. If you already have one, verify the reporting flow still works end to end.
+> 
+> 2. Set a high bar for submissions. Require a PoC, a fix patch, and a regression test wherever poss...(truncated)
+
+---
+
+## @npew (Peter Welinder - 研究・技術)
+
+**06:59 JST** | [原文](https://x.com/npew/status/2054623877364638034)
+
+> RT Paul Graham
+> It's so weird how difficult it is for the left to understand that all you have to do to decrease housing costs is to let people build more housing.
+> 
+> M. Nolan Gray 🥑: For 45 years, Berkeley built virtually no new housing. By the mid-2010s, it was the most expensive college town in America. Shortly thereafter, YIMBYs took over and kicked off a building boom. Today, nominal rents are below 2018 rates—remarkable progress on affordability.
+
+---
+
