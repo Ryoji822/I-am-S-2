@@ -41,9 +41,12 @@ jobs:
           node-version: '22'
 
       - name: Install OpenCode
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          OPENCODE_VERSION="0.5"
-          curl -fsSL "https://opencode.ai/install?version=${OPENCODE_VERSION}" | bash
+          OPENCODE_VERSION=$(gh api repos/anomalyco/opencode/releases/latest --jq .tag_name | sed 's/^v//')
+          echo "Installing OpenCode v${OPENCODE_VERSION}"
+          curl -fsSL https://opencode.ai/install | bash -s -- --version "$OPENCODE_VERSION"
 
       - name: Configure Git
         run: |
