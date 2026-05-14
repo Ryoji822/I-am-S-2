@@ -96,3 +96,11 @@
 
 ---
 
+## @sama (Sam Altman - CEO)
+
+**12:59 JST** | [原文](https://x.com/sama/status/2054773491522822264)
+
+> being a dad is the thing that has most exceeded already-high-expectations in my whole life
+
+---
+
