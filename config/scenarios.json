@@ -1,7 +1,7 @@
 {
-  "version": "3.77",
-  "last_updated": "2026-05-14",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.77: Arbiter確認レビュー（DEGRADED/BOTH-FAILED状態・Blue/Red両方失敗・Arbiter単独確認）。v3.76の2件シナリオ更新を確認。追加変更なし。QHG再定義必須条件継続（5R目→6R目）。合計100%維持（20+32+34+14=100%）",
+  "version": "3.78",
+  "last_updated": "2026-05-15",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.78: Arbiter統合判断（DEGRADED/BLUE-ONLY状態・Blue Agent完了・Red Agent失敗）。2件シナリオ更新（SCN-003 +1%: 34→35%5重围い込みC蓄積+13R連続シフト・SCN-004 -1%: 14→13%DeepSeek V4 8ヶ月遅れ+Big 4 $7250億二層市場強化）。QHG再定義必須条件継続（6R目→7R目）。合計100%維持（20+32+35+13=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -65,9 +65,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × 収斂",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 34,
+      "probability": 35,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.77: ±0%（34%維持）。v3.76確認レビュー。围い込み9重C蓄積: (1)Google AI Search围い込み (2)Gemini Flash Lite価格围い込み（INFO-050 A-3）(3)SAP Business AI Platform围い込み（INFO-035 A-3）(4)Google秘密契約围い込み（INFO-036 B-3）(5)Scale AI $5億围い込み（INFO-024 B-2）(6)Pentagon SCR围い込み（INFO-033 B-2）(7)Agent SDKクレジット围い込み（INFO-010 B-3）(8)TikTok MCP围い込み（INFO-011 B-3）(9)AWS AgentCore围い込み（INFO-017 A-3）。モデル性能差の差別化価値低下→エコシステム围い込み重要性増。12R連続同一方向シフト。DEGRADED",
+      "probability_rationale": "Arbiter v3.78: +1%（34→35%）。5重围い込みC蓄積: (1)DeployCo $40億+JV（INFO-003 A-3）(2)Anthropic enterprise JV（INFO-006 A-3）(3)Claude for SMB 15WF統合围い込み（INFO-007 A-3）(4)AWS Agent Toolkit MCP後継（INFO-019 A-3）(5)Gemini Omni独自統合（INFO-015 B-3）。13R連続同一方向シフト。QHG再定義7R目。DEGRADED/BLUE-ONLY",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -86,9 +86,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × 収斂",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 14,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.77: ±0%（14%維持）。v3.76確認レビュー。DeepSeek V4 Pro 8ヶ月遅れ（INFO-029 B-3）+Meta Llama 4不正（INFO-040 C-3）はOSS完全追従のI。Gemma 4 MTP 3倍高速化（INFO-008 A-3）+Flash Lite $0.125（INFO-050 A-3）は下層適合C。但しQ1 $2555億（INFO-020 B-2）+Big 4 $7250億（INFO-041 B-2）のインフラ集中で二層市場構造継続。DEGRADED",
+      "probability": 13,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v3.78: -1%（14→13%）。DeepSeek V4 8ヶ月遅れ（INFO-025/035 B-3）はOSS完全追従のI。$7250億Big 4インフラ集中（INFO-034 B-2）で二層市場構造強化。DeployCo/Anthropic JVの围い込み新次元もI。DEGRADED/BLUE-ONLY",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -126,7 +126,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-05-14",
-    "note": "SCN-001(20) + SCN-002(32) + SCN-003(34) + SCN-004(14) = 100%. Arbiter v3.76完了（DEGRADED/BOTH-FAILED）. QHG再定義必須条件継続（5R目）"
+    "verified_date": "2026-05-15",
+    "note": "SCN-001(20) + SCN-002(32) + SCN-003(35) + SCN-004(13) = 100%. Arbiter v3.78完了（DEGRADED/BLUE-ONLY）. QHG再定義必須条件継続（7R目）"
   }
 }
