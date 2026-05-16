@@ -4451,8 +4451,372 @@
       "raw_path": "Information/raw/2026-05-15/firecrawl.jsonl",
       "run_date": "2026-05-15",
       "url": "https://www.cfr.org/articles/how-trump-should-approach-ai-talks-with-china-targeted-dialogue-maximum-pressure"
+    },
+    "EVD-20260516-0001": {
+      "hash": "sha256:bb12a9ba3826961688d7d7b562a168134a6b9e1eeedccb2b330ea70d42eea256",
+      "legacy_info_id": "INFO-001",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.anthropic.com/news/enterprise-ai-services-company"
+    },
+    "EVD-20260516-0002": {
+      "hash": "sha256:e0354a8ce942d779f59823648e49ea0c290332198f1883ad8e3a5c60fc82c62d",
+      "legacy_info_id": "INFO-002",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6"
+    },
+    "EVD-20260516-0003": {
+      "hash": "sha256:5aab6b64aaf84eac090008bd8711e8e41c4c8e17997f7bfad88442a0f9368436",
+      "legacy_info_id": "INFO-003",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.anthropic.com/news/claude-for-small-business"
+    },
+    "EVD-20260516-0004": {
+      "hash": "sha256:80e1ba5c1064c934063b6b346b1ad99d1fe4c22be8361cc8890443af192738ea",
+      "legacy_info_id": "INFO-004",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://x.ai/news/grok-build-cli"
+    },
+    "EVD-20260516-0005": {
+      "hash": "sha256:c59bfc6c6f6cd4e82e4e7fb44bf4f518757318488bf396a6ac5ba7482460fa86",
+      "legacy_info_id": "INFO-005",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://x.ai/news/grok-hermes"
+    },
+    "EVD-20260516-0006": {
+      "hash": "sha256:06fa9d1bcaa05eee5b665bd7991a65e5d776acc98dc8d2770c3589aca7d329dc",
+      "legacy_info_id": "INFO-006",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://x.ai/news/anthropic-compute-partnership"
+    },
+    "EVD-20260516-0007": {
+      "hash": "sha256:a7ddc48dbc305fef13f6ed90e9e75acd55ae372432ed98fc83419f379323b34f",
+      "legacy_info_id": "INFO-007",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://x.ai/news/grok-connectors"
+    },
+    "EVD-20260516-0008": {
+      "hash": "sha256:ea2ce889527b59df80a9ed27014421d474f0258ef68970fbfa8947c5e3e5d0cf",
+      "legacy_info_id": "INFO-008",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://developers.openai.com/blog/run-long-horizon-tasks-with-codex"
+    },
+    "EVD-20260516-0009": {
+      "hash": "sha256:c7651fc4e10c6d61733a7e698e59c308843283bd46a0086e671c98467e85698e",
+      "legacy_info_id": "INFO-009",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://blog.gopenai.com/how-the-openai-agents-sdk-helped-obai-scale-its-multi-agent-research-stack-f0fd73e57b34"
+    },
+    "EVD-20260516-0010": {
+      "hash": "sha256:47f3cc9fa1e28e07d71e86dd4ef2a2b5d37ba35b1322432fe67384378ac0865a",
+      "legacy_info_id": "INFO-010",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://docs.x.ai/developers/model-capabilities/text/multi-agent"
+    },
+    "EVD-20260516-0011": {
+      "hash": "sha256:ed84332889988242a69610136bfa27e1e943952e04d8db3f242436c28d373724",
+      "legacy_info_id": "INFO-011",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.kucoin.com/news/flash/bytedance-s-coze-launches-version-2-5-introduces-agent-world-ecosystem"
+    },
+    "EVD-20260516-0012": {
+      "hash": "sha256:0be248eb8a142b899416dea011b6b438d9f72b5a276908fa1a1335e4366eaff6",
+      "legacy_info_id": "INFO-012",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.speakeasy.com/blog/ai-agent-framework-comparison"
+    },
+    "EVD-20260516-0013": {
+      "hash": "sha256:e0740829d7f00a3686e9eed0ce58cfa1df473e882b3ccf9de35fe143c6c288c1",
+      "legacy_info_id": "INFO-013",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.endorlabs.com/learn/introducing-security-for-ai-coding-agents-and-workstations"
+    },
+    "EVD-20260516-0014": {
+      "hash": "sha256:cb76697e2ec07bda32245e5a3de016cc61aaf0a7e958126d0554a29df4205122",
+      "legacy_info_id": "INFO-014",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview"
+    },
+    "EVD-20260516-0015": {
+      "hash": "sha256:d3b9ad7bd0819018f28b54ff380613baa473af8c5c4827a7f3fb9b9741a81f43",
+      "legacy_info_id": "INFO-015",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.ey.com/en_se/insights/ai/building-an-enterprise-scale-agentic-ai-operating-system"
+    },
+    "EVD-20260516-0016": {
+      "hash": "sha256:10d2748714632a5e690600b8eb6953c0f88e3b70606942d73eea36cd7f0108ad",
+      "legacy_info_id": "INFO-016",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://neosalpha.com/blogs/what-is-mcp/"
+    },
+    "EVD-20260516-0017": {
+      "hash": "sha256:3221d998a3c8296f385333190f777f23de318ff0fc72e46d82291c8eadd1c066",
+      "legacy_info_id": "INFO-017",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://mygom.tech/articles/agentic-ai-lock-in-isnt-about-contracts"
+    },
+    "EVD-20260516-0018": {
+      "hash": "sha256:90a58cddd8b7bee8f9339ff29f293a8d5531fdae6cf364c009378116fb04b0a3",
+      "legacy_info_id": "INFO-018",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    },
+    "EVD-20260516-0019": {
+      "hash": "sha256:eedb13ccad9e7255cbaf043ee13e374e9a54be4ea0952361c552a7935c4e960e",
+      "legacy_info_id": "INFO-019",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/pentagon-boosts-meta-backed-scale-113113834.html"
+    },
+    "EVD-20260516-0020": {
+      "hash": "sha256:10e98893c498421fe38acf8ef0b981ac5588891042fbc750a1b2c49d4e6c5c0d",
+      "legacy_info_id": "INFO-020",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.meritalk.com/articles/pentagon-cto-says-anthropic-wont-be-dod-vendor-but-mythos-raises-national-security-stakes/"
+    },
+    "EVD-20260516-0021": {
+      "hash": "sha256:d8e5eb5cc272215a1be27f44d3275a974a98b651c5591ec6e77613a80bbb89ff",
+      "legacy_info_id": "INFO-021",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://contentbuffer.com/news/china-state-council-adds-sweeping-ai-and-cybersecurity-laws-to-2026-agenda"
+    },
+    "EVD-20260516-0022": {
+      "hash": "sha256:31a20e71992f44f44542bdd4a86734f615ecd5f0e53610f7b495e7eb5277dcec",
+      "legacy_info_id": "INFO-022",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://intinsight.com/2026/05/china-ai-layoff-ruling-2026/"
+    },
+    "EVD-20260516-0023": {
+      "hash": "sha256:8ef59f5bf36cf84c6d7b416a0abddb174d8d05385aa232f5822da450bd93966f",
+      "legacy_info_id": "INFO-023",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.miniloop.ai/blog/best-open-source-llms-2026"
+    },
+    "EVD-20260516-0024": {
+      "hash": "sha256:afd575a8f9425c030005c51652edc899cf57f6a1a9a556261662f03e1f82d609",
+      "legacy_info_id": "INFO-024",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.miniloop.ai/blog/best-open-source-llms-2026"
+    },
+    "EVD-20260516-0025": {
+      "hash": "sha256:b872f5228f95c307367be6f3b8924685f8bcd2c931d88453068ad45a0a7d753a",
+      "legacy_info_id": "INFO-025",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.freep.com/press-release/story/188888/developers-deploy-ai-agents-3x-faster-using-multi-model-api-infrastructure-new-survey-finds/"
+    },
+    "EVD-20260516-0026": {
+      "hash": "sha256:098e1fb1c2769b55149d744463e28f6917b3e45de017ab078bb96920f8a0bc5a",
+      "legacy_info_id": "INFO-026",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.get-ryze.ai/blog/meta-ai-agents-for-advertising-automation"
+    },
+    "EVD-20260516-0027": {
+      "hash": "sha256:2fe1e76aec70723add2094fe7eb196e13d8846f43a28590534d3b8f6208b4a35",
+      "legacy_info_id": "INFO-027",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.taboola.com/marketing-hub/how-autonomous-ai-is-changing-performance-marketing/"
+    },
+    "EVD-20260516-0028": {
+      "hash": "sha256:e9132e122c99365b4579cfca75e1ea9d46e022eacfb300b912862a07d5ee9f3f",
+      "legacy_info_id": "INFO-028",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://goodlandworld.com/articles/ai-code-generation-2026.html"
+    },
+    "EVD-20260516-0029": {
+      "hash": "sha256:4ccbcb221e0237b122b35400a7622900fd99a31cf2781e1aabd809967fb9a1ff",
+      "legacy_info_id": "INFO-029",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.duperrin.com/english/2026/05/13/cloudflare-ai-layoffs/"
+    },
+    "EVD-20260516-0030": {
+      "hash": "sha256:ba9a4fb2cb514904daad9ecb409e9acdc32712a5d1943513322ecf5bfb85b1a8",
+      "legacy_info_id": "INFO-030",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://grras.com/blog/ai-vs-human-jobs-most-demanded-tech-skills-in-2026/"
+    },
+    "EVD-20260516-0031": {
+      "hash": "sha256:632c047b5422ce18e4b85bdf879c84f3327b78bbdbe9e6fa19814fdb971758eb",
+      "legacy_info_id": "INFO-031",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.reddit.com/r/artificial/comments/1td99uw/anthropic_just_published_a_pretty_alarming_2028/"
+    },
+    "EVD-20260516-0032": {
+      "hash": "sha256:b752cdbb011e58c9b34e7b0074381dfb6b03659b876fc2718194991070d6c74b",
+      "legacy_info_id": "INFO-032",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.reddit.com/r/ControlProblem/comments/1te50ng/sanders_and_aoc_introduced_a_bill_to_pause_all_ai/"
+    },
+    "EVD-20260516-0033": {
+      "hash": "sha256:8e0a612446716d4616059185b6fa67a369e9e5a782e1a01020ca3e3a2f3c318c",
+      "legacy_info_id": "INFO-033",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.marketingprofs.com/opinions/2026/54786/ai-update-may-15-2026-ai-news-and-views-from-the-past-week"
+    },
+    "EVD-20260516-0034": {
+      "hash": "sha256:defdec0d830b5beb22518b735000bfad6a952ee9650f9b1ba9b58645e6ed8fce",
+      "legacy_info_id": "INFO-034",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.meritalk.com/articles/pentagon-cto-says-anthropic-wont-be-dod-vendor-but-mythos-raises-national-security-stakes/"
+    },
+    "EVD-20260516-0035": {
+      "hash": "sha256:cb60fe8f750a8718678772dcc6c45615169cd714aac3f2038fdfe57a2c31a889",
+      "legacy_info_id": "INFO-035",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.dw.com/zh/%E6%98%A5%E8%8A%82ai%E4%BA%89%E5%A4%BA%E6%88%98%E5%8D%87%E7%BA%A7%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E6%8E%A8%E5%87%BA%E8%B1%86%E5%8C%8520/a-75970344"
+    },
+    "EVD-20260516-0036": {
+      "hash": "sha256:bf32130a47c7787dbc8d828a563734b98bdc79cce9cdf16095365fdc6895ec03",
+      "legacy_info_id": "INFO-036",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://seed.bytedance.com/zh/blog/official-launch-of-seedance-2-0"
+    },
+    "EVD-20260516-0037": {
+      "hash": "sha256:20172ebb437727dcfb42a3a23ff89295c00bae7f7cd9802beb242721ecb3eb59",
+      "legacy_info_id": "INFO-037",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://pricepertoken.com/pricing-page/model/bytedance-seed-seed-2.0-lite"
+    },
+    "EVD-20260516-0038": {
+      "hash": "sha256:03cecf7aa70cd8ae93f350c29ea28cb3a65e111d6cfe6624fa566b59634ac80b",
+      "legacy_info_id": "INFO-038",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://intuitionlabs.ai/articles/claude-code-vs-codex-vs-gemini-cli-comparison"
+    },
+    "EVD-20260516-0039": {
+      "hash": "sha256:1fb92f44f921a9ccd594dbd622df9c84e0f7a6878d490b20f6cd3d4405dd8f5d",
+      "legacy_info_id": "INFO-039",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.instagram.com/reel/DYHVG3npadV/"
+    },
+    "EVD-20260516-0040": {
+      "hash": "sha256:25dbe68b44d47cacc7a2e67ba81cabec660b55701a110d044d3bafd95e2c61b2",
+      "legacy_info_id": "INFO-040",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.facebook.com/groups/claudecommunity/posts/1008702478337084/"
+    },
+    "EVD-20260516-0041": {
+      "hash": "sha256:5588d0b449d299bc4cc7dbe66ebee9cfb0ac5e29c72bdfd8d4b3e6e127023ac2",
+      "legacy_info_id": "INFO-041",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.instagram.com/p/DYQdbSFERoq/"
+    },
+    "EVD-20260516-0042": {
+      "hash": "sha256:0ed0802df3f5f5feb6a3e3f3e87f4b18f19d6fd021cf26032dc37896402e1734",
+      "legacy_info_id": "INFO-042",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://aimultiple.com/artificial-general-intelligence-singularity-timing"
+    },
+    "EVD-20260516-0043": {
+      "hash": "sha256:8e2a5bddc365c4c0d70ab0cd3af703415ab1b0b4dc5d6c6cc0bb7d37bd866018",
+      "legacy_info_id": "INFO-043",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.cnbc.com/2026/05/13/hyperscalers-ai-buildout-will-require-massive-amounts-of-energy-two-under-the-radar-stocks-will-benefit.html"
+    },
+    "EVD-20260516-0044": {
+      "hash": "sha256:b595622a8d6091d0dd58988596980a5e0c6bf299fec358e7b91ac7c60ef2f788",
+      "legacy_info_id": "INFO-044",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://fortune.com/2026/05/14/meta-data-center-tax-break-hyperion-louisiana/"
+    },
+    "EVD-20260516-0045": {
+      "hash": "sha256:efc0a2425c8e2273563c0c333a57dc382780090ec55026aae871921f37471f01",
+      "legacy_info_id": "INFO-045",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://qz.com/ai-data-centers-gigawatt-power-grid-strain-051126"
+    },
+    "EVD-20260516-0046": {
+      "hash": "sha256:dc8ee7a70a4997d41c72beeeb5929ee2ece9ca6b89841869c394763b37c5d622",
+      "legacy_info_id": "INFO-046",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md"
+    },
+    "EVD-20260516-0047": {
+      "hash": "sha256:b715db8adea4ae0313cf351f3a7eb37a6f2d169912c4bcf17ab7b116d5af5df1",
+      "legacy_info_id": "INFO-047",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.instagram.com/p/DYOan2xDGBs/"
+    },
+    "EVD-20260516-0048": {
+      "hash": "sha256:c3baa7ceab5cd82ca6453e4d5c5513e36b771e524063001e1207427a6ce746bb",
+      "legacy_info_id": "INFO-048",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.clickrank.ai/llm-leaderboard/"
+    },
+    "EVD-20260516-0049": {
+      "hash": "sha256:7c46f07122fb91d8fba819673e2d32f80e86effbcc79a89d78bd00b680921107",
+      "legacy_info_id": "INFO-049",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://artificialanalysis.ai/agents/coding-agents"
+    },
+    "EVD-20260516-0050": {
+      "hash": "sha256:f3cfaf58f32554e358a63e1ff8f11a27f274cce1c41bc1722506873be23952af",
+      "legacy_info_id": "INFO-050",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://af.net/realtime/google-to-launch-gemini-omni-video-model-what-we-know-ahead-of-google-i-o-2026/"
+    },
+    "EVD-20260516-0051": {
+      "hash": "sha256:d4cf5f39ae2f4bf3e42f0fee38c2318daae1b1c94fb363a44f22262475dcb891",
+      "legacy_info_id": "INFO-051",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.thinslices.com/insights/what-gartners-2026-tech-trends-mean-for-product-teams-not-cios"
+    },
+    "EVD-20260516-0052": {
+      "hash": "sha256:c3bad33cc470e60f020b544b9d9883829d6c6836c7a42953d13eab344e4c2540",
+      "legacy_info_id": "INFO-052",
+      "raw_path": "Information/raw/2026-05-16/firecrawl.jsonl",
+      "run_date": "2026-05-16",
+      "url": "https://www.debugliesintel.com/how-ai-platform-consolidation-is-reshaping-digital-sovereignty-strategic-osint-assessment-of-algorithmic-convergence-market-dislocation-and-governance-imperatives-2026/"
     }
   },
-  "last_updated": "2026-05-15T09:19:54+09:00",
+  "last_updated": "2026-05-16T09:13:54+09:00",
   "schema_version": "1.0"
 }
