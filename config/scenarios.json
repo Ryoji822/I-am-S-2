@@ -1,7 +1,7 @@
 {
-  "version": "3.79",
-  "last_updated": "2026-05-16",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.79: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。2件シナリオ更新（SCN-002 -1%: 32→31%格差拡大前提弱体化+14R収斂シフト・SCN-004 +1%: 13→14%OSS gap closing強化）。SCN-003 ±0%（35%維持）Blue +1%否認・14Rアンカリング懸念。QHG再定義必須条件継続（8R→9R目）。合計100%維持（20+31+35+14=100%）",
+  "version": "3.80",
+  "last_updated": "2026-05-17",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.80: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。3件シナリオ更新（SCN-002 -1%: 31→30%格差拡大前提弱体化+15R収斂シフト・SCN-003 ±0%: 35%維持 Red採用・15R連続アンカリングでBlue +1%否認・SCN-004 +1%: 14→15%Red採用・OSS gap closing強化）。QHG再定義必須条件継続（9R→11R目・未実行でシナリオ確率調整凍結）。合計100%維持（20+30+35+15=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -25,7 +25,7 @@
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 20,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.79: ±0%（20%維持）。MCP開放蓄積とEnterprise JV囲い込みが相殺。変化なし。COMPLETE",
+      "probability_rationale": "Arbiter v3.80: ±0%（20%維持）。Blue/Red一致。MCP開放蓄積とEnterprise JV囲い込みが相殺。変化なし。COMPLETE",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -53,9 +53,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 格差拡大",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 31,
+      "probability": 30,
       "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.79: -1%（32→31%）。「格差拡大」前提がOSS gap closing 2.1pt差で継続的弱体化。14R収敛方向シフト。QHG再定義9R目必須。COMPLETE",
+      "probability_rationale": "Arbiter v3.80: -1%（31→30%）。Blue/Red一致。「格差拡大」前提がOSS性能ギャップ実質消滅（Kimi K2.6>Mistral 77.6%/DeepSeek V4 $0.14）で15R連続弱体化。QHG再定義11R目必須。COMPLETE",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -82,7 +82,7 @@
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 35,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.79: ±0%（35%維持）。Blue +1%否認。14R連続同一方向シフトのアンカリング懸念。囲い込みC質的分類で不均一性確認（メソッドロジー(3)適用）。但しデプロイメント層genuine囲い込み証拠で据え置き。COMPLETE",
+      "probability_rationale": "Arbiter v3.80: ±0%（35%維持）。Red採用。3重囲い込みC（Gemini Interactions API+SDK分離課金+Bedrock決済）はgenuine。但し15R連続同一方向シフトの累積的非線形効果でBlue +1%否認。QHG再定義未実行11Rでシナリオ確率体系妥当性に疑義。次回QHG再定義実行が最優先。COMPLETE",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -112,9 +112,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × 収斂",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 14,
+      "probability": 15,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.79: +1%（13→14%）。OSS gap closing 2.1pt差+DeepSeek V4 Pro MIT完全OSSで「誰でも」前提強化。$7,250億capex囲い込みIは残存。COMPLETE",
+      "probability_rationale": "Arbiter v3.80: +1%（14→15%）。Red採用。Mistral Medium 3.5 128B Open SWE-bench 77.6%（INFO-045 B-2）+DeepSeek V4 $0.14/M tokens（INFO-044 B-2）+Gemini Flash-Lite $0.10（INFO-039 A-3）で「誰でも」前提客観的強化。$800B-$1T capex囲い込みIは残存。COMPLETE",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-05-16",
-    "note": "SCN-001(20) + SCN-002(31) + SCN-003(35) + SCN-004(14) = 100%. Arbiter v3.79完了（COMPLETE）. QHG再定義必須条件継続（9R目）"
+    "verified_date": "2026-05-17",
+    "note": "SCN-001(20) + SCN-002(30) + SCN-003(35) + SCN-004(15) = 100%. Arbiter v3.80完了（COMPLETE）. QHG再定義必須条件継続（11R目・未実行でシナリオ確率調整凍結）"
   }
 }
