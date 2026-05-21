@@ -1,6 +1,6 @@
 {
-  "version": "3.83",
-  "last_updated": "2026-05-20",
+  "version": "3.84",
+  "last_updated": "2026-05-21",
   "description": "I&W（Indications and Warning）指標レジストリ. v3.82: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（IND-030 high移行・6件last_checked更新）。IND-013 high維持（MCP token theft INFO-051 B-3+TanStack npm攻撃 INFO-052 A-3+AgentTrap 141タスク INFO-017 B-3。攻撃面拡大加速）・IND-025 elevated維持（Opus 4.6 5ベンチマーク勝利 INFO-021 B-2+DeepSeek V3.2 Speciale INFO-031 C-2。量的向上継続）・IND-026 elevated維持（METR 43%乖離 INFO-038 C-2+Klarna再採用 INFO-027 B-2。high移行4ソース到達。次回検討）・IND-027 high維持（7サンドボックス INFO-009+Grok Build ACP INFO-010+DeerFlow 2.0 INFO-008。標準化爆発的加速継続）・IND-028 elevated維持（AGIタイムライン+Opus 4.6ベンチマーク向上。主観-客観乖離継続）・IND-029 high維持（$1TNデータセンター INFO-026+Mistral $2.3B INFO-033+機関投資家必須 INFO-050。資本流入劇的加速）・IND-030 elevated→high移行（Google兵器誓約削除 INFO-037 B-3+CDT 9機関停止 INFO-019 A-2+UK改名 INFO-054 B-3+Pentagon報酬構造 INFO-016 D-3+NYT安全性限界 INFO-041 A-3。5重C蓄積・能力-リスク二面性の新段階）",
   "structural_changes_log": [
     "2026-05-14 v3.76: Arbiter統合判断（DEGRADED/BOTH-FAILED状態）。Arbiter独自批判分析。7指標更新（全件状態変更なし）。IND-013 high継続（Codex 4層防御 INFO-001 A-3は防御側強化。新規脆弱性なし。critical移行条件未到達）・IND-025 elevated継続（Grok STT/TTS+Imagine+Doubao全モダリティ+Seedance 2.0 #2。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（エージェント成功率77.3% vs 74%ロールバック。期待-実態ギャップ顕在化。high移行条件検討段階）・IND-027 high継続（MCPデファクト化+AAIF 97M SDK+TikTok MCP+Grok BYO MCP+Agent Skills 1000+。標準化爆発的加速）・IND-028 elevated継続（Hassabis AGI 2030+ARC-AGI-3+Meta Llama 4不正。客観的ベンチマーク信頼性問題。主観-客観乖離継続）・IND-029 high継続（Q1 $2555億+Big 4 $7250億+Anthropic $300億+Stargate $5000億。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon SCR+DPA+Google秘密契約+Scale AI $5億+EU AI Act延期+US Safety Institute革新シフト。規制二方向同時深化。能力-リスク二面性加速）",
@@ -16,8 +16,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "TanStack npm攻撃（INFO-008 A-3）+AgentTrap 141タスク（INFO-017 B-3）+METR 43%本番破損（INFO-049 A-3）+AWS AgentCore自律支払い（INFO-019 B-3）。攻撃面3次元同時拡大加速。critical移行条件: 大規模実被害のA-2+報告",
-      "last_checked": "2026-05-20",
-      "rationale": "Arbiter v3.83: high維持。COMPLETE。TanStack npm攻撃+AgentTrap+METR 43%破損+AWS AgentCore自律支払い。攻撃面3次元同時拡大加速。critical移行条件未到達"
+      "last_checked": "2026-05-21",
+      "rationale": "Arbiter v3.84: high維持。COMPLETE。DEGRADED条件下。新規証拠なし。TanStack npm攻撃+AgentTrap+METR 43%破損+AWS AgentCore自律支払い。攻撃面3次元同時拡大加速。critical移行条件未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -27,8 +27,8 @@
       "trend": "stable",
       "alert_level": "elevated",
       "last_value": "Opus 4.6 Gemini 2.5 Proに5ベンチマーク勝利（INFO-030 B-3）+DeepSeek R2 GPT-4o同等9ベンチマーク（INFO-031 B-3）+Gemini 3.5 Flash 4x高速（INFO-015 B-3）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-05-20",
-      "rationale": "Arbiter v3.83: elevated維持。COMPLETE。Opus 4.6 5ベンチマーク勝利+DeepSeek R2 GPT-4o同等+Gemini 3.5 Flash 4x高速。量的向上継続。「真の理解」検証未解決"
+      "last_checked": "2026-05-21",
+      "rationale": "Arbiter v3.84: elevated維持。COMPLETE。DEGRADED条件下。新規証拠なし。Opus 4.6 5ベンチマーク勝利+DeepSeek R2 GPT-4o同等+Gemini 3.5 Flash 4x高速。量的向上継続。「真の理解」検証未解決"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -38,8 +38,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "METR 43%本番破損+0%自信（INFO-049 A-3）+Klarna再採用（INFO-036 B-2）+15%のみROI（INFO-022 C-3）+Gartner 40%失敗予測（INFO-020 C-3）+76%監査不可（INFO-021 B-2）vs PwC 70%納期短縮（INFO-002 A-3）。失敗5:成功1。high移行確定。質的重量の監視継続",
-      "last_checked": "2026-05-20",
-      "rationale": "Arbiter v3.83: elevated→high移行。COMPLETE。METR 43%本番破損+Klarna再採用+15%ROI+Gartner 40%失敗+76%監査不可で失敗5:成功1。前回Arbiter条件「失敗例が一貫して成功例を上回る」充足。質的重量の監視継続"
+      "last_checked": "2026-05-21",
+      "rationale": "Arbiter v3.84: high維持。COMPLETE。DEGRADED条件下。新規証拠なし。METR 43%本番破損+Klarna再採用+15%ROI+Gartner 40%失敗+76%監査不可で失敗5:成功1。質的重量の監視継続"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -49,8 +49,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "AAIF 43新メンバー（INFO-012 B-2）+Azure MCP Server（INFO-013 B-2）+Agent Skills 500+（INFO-014 B-3）+MCP 78%導入率・9400サーバー（INFO-049 A-3）。標準化爆発的加速継続",
-      "last_checked": "2026-05-20",
-      "rationale": "Arbiter v3.83: high維持。COMPLETE。AAIF 43新メンバー+Azure MCP Server+Agent Skills 500++MCP 78%導入率。標準化爆発的加速継続"
+      "last_checked": "2026-05-21",
+      "rationale": "Arbiter v3.84: high維持。COMPLETE。DEGRADED条件下。新規証拠なし。AAIF 43新メンバー+Azure MCP Server+Agent Skills 500++MCP 78%導入率。標準化爆発的加速継続"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -60,8 +60,8 @@
       "trend": "rising",
       "alert_level": "elevated",
       "last_value": "Hassabis「あと数年」（INFO-038 B-3）+Suleyman「18ヶ月」（INFO-042 B-3）+ARC-AGI新テスト1%未満（INFO-040 B-3）。主観-客観乖離拡大継続",
-      "last_checked": "2026-05-20",
-      "rationale": "Arbiter v3.83: elevated維持。COMPLETE。Hassabis+Suleyman+ARC-AGI新テスト1%未満。主観-客観乖離拡大。AGI閾値未到達"
+      "last_checked": "2026-05-21",
+      "rationale": "Arbiter v3.84: elevated維持。COMPLETE。DEGRADED条件下。新規証拠なし。Hassabis+Suleyman+ARC-AGI新テスト1%未満。主観-客観乖離拡大。AGI閾値未到達"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -71,8 +71,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "$1Tデータセンター（INFO-034 B-2）+Anthropic $900B評価額（INFO-032 A-2）+Mistral $2.3B調達（INFO-033 A-2）+Blackstone $5B JV（INFO-055 A-2）。資本流入劇的加速継続",
-      "last_checked": "2026-05-20",
-      "rationale": "Arbiter v3.83: high維持。COMPLETE。$1T+Anthropic $900B+Mistral $2.3B+Blackstone $5B。資本流入劇的加速継続。物理的制約ギャップ確定的"
+      "last_checked": "2026-05-21",
+      "rationale": "Arbiter v3.84: high維持。COMPLETE。DEGRADED条件下。新規証拠なし。$1T+Anthropic $900B+Mistral $2.3B+Blackstone $5B。資本流入劇的加速継続。物理的制約ギャップ確定的"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -82,8 +82,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "Google/OpenAI兵器ルール後退（INFO-046 A-2）+CDT萎縮効果（INFO-025 A-3）+Trump規制転向（INFO-051 A-2）。A-2+確認充足。high維持確定",
-      "last_checked": "2026-05-20",
-      "rationale": "Arbiter v3.83: high維持。COMPLETE。Google/OpenAI兵器ルール後退（A-2）+CDT萎縮効果（A-3）+Trump規制転向（A-2）でA-2+確認充足。high維持確定"
+      "last_checked": "2026-05-21",
+      "rationale": "Arbiter v3.84: high維持。COMPLETE。DEGRADED条件下。新規証拠なし。Google/OpenAI兵器ルール後退（A-2）+CDT萎縮効果（A-3）+Trump規制転向（A-2）でA-2+確認充足。high維持確定"
     }
   }
 }

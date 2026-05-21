@@ -1,13 +1,13 @@
 # ByteDance
 
-> 最終判断更新: 2026-05-14
+> 最終判断更新: 2026-05-21
 > 全体確信度: 中
 > 情報非対称性: 中国市場の透明性低・言論統制により、観測根拠は他社比で著しく限定的。確度%は記載するが、独立した裏付けを欠く項目が多い。中国情報源の限定により独立裏付けなし
 > 主参照: hypotheses.json#H-BTD-001/002/003, indicators.json#IND-011/010/030
 
 ## 0. 一文要約
 
-我々はByteDanceを、**Doubao MAU 3.45億で中国AI市場を支配しながら、TikTok MCP・DeerFlow OSS・Seedance 2.0世界#2・Doubao全モダリティの4本柱で製品ポートフォリオを急拡充し、CAPEX 25%増額(2000億元~$30B)で投資を加速させるが、グローバル展開の証拠は依然欠落しミラーイメージング警告が継続する企業**と読んでいる。最大の根拠は4点。Doubao MAU 3.45億・DAU 1.4億・月間平均54.8回利用でQianwen+DeepSeek合計MAUを上回る規模 [INFO-063](../Information/2026-05-14/collected-raw.md#INFO-063)、Seedance 2.0がVideo Arena世界#2(ELO 1,271)に到達 [INFO-039](../Information/2026-05-14/collected-raw.md#INFO-039)、TikTokがMCP Serverで広告プラットフォームのAI連携を開始 [INFO-011](../Information/2026-05-14/collected-raw.md#INFO-011)、ByteDanceがCAPEXを25%増額して2000億元(~$30B)に投入 [INFO-065](../Information/2026-05-14/collected-raw.md#INFO-065)。ただしTikTok MCPは広告機能拡張でありDoubao/Seedの海外展開ではない。DeerFlow OSSは開発者向けだが中国外での採用実績は未確認。「ByteDanceのグローバルAI展開が独立確認される」「Doubao MAUが3ヶ月停滞する」「DeepSeekがDoubaoより安い価格を維持する」のいずれかが観測されたら、現在の読みは更新が要る。
+我々はByteDanceを、**Doubao MAU 3.45億で中国AI市場を支配しながら、TikTok MCP・DeerFlow OSS・Seedance 2.0世界#2・Doubao全モダリティの4本柱で製品ポートフォリオを急拡充し、CAPEX 25%増額(2000億元~$30B)で投資を加速させるが、グローバル展開の証拠は依然欠落しミラーイメージング警告が継続する企業**と読んでいる。最大の根拠は4点。Doubao MAU 3.45億・DAU 1.4億・月間平均54.8回利用でQianwen+DeepSeek合計MAUを上回る規模 [INFO-063](../Information/2026-05-14/collected-raw.md#INFO-063)、Seedance 2.0がVideo Arena世界#2(ELO 1,271)に到達 [INFO-039](../Information/2026-05-14/collected-raw.md#INFO-039)、TikTokがMCP Serverで広告プラットフォームのAI連携を開始 [INFO-011](../Information/2026-05-14/collected-raw.md#INFO-011)、ByteDanceがCAPEXを25%増額して2000億元(~$30B)に投入 [INFO-065](../Information/2026-05-14/collected-raw.md#INFO-065)。Seedance 2.0は動画コンテンツ産業の再構築をも加速させている。上場企業の海看股份が「Seedance 2.0に代表されるAI動画生成モデルが産業再構築を加速」と評価し、高品質プロンプトエンジニアリングコミュニティの形成も観測されている [INFO-043](../Information/2026-05-20/collected-raw.md#INFO-043)。またDeerFlow 2.0は「Docker of AI Workers」と位置付けられ、OpenClaw/Claude Code/OpenCode等との連携による収益化計画が提示された [INFO-007](../Information/2026-05-20/collected-raw.md#INFO-007)。ただしTikTok MCPは広告機能拡張でありDoubao/Seedの海外展開ではない。DeerFlow OSSは開発者向けだが中国外での採用実績は未確認。「ByteDanceのグローバルAI展開が独立確認される」「Doubao MAUが3ヶ月停滞する」「DeepSeekがDoubaoより安い価格を維持する」のいずれかが観測されたら、現在の読みは更新が要る。
 
 ## 1. コア判断
 
@@ -18,6 +18,8 @@ ByteDanceのAI事業の現構図は、規模拡大が継続し、製品ポート
 製品ポートフォリオの拡充が今回の最大の変化だ。4つの確認(confirming)証拠が同時に観測された。第一にTikTokがMCP Serverを立ち上げ、AIエージェントが広告キャンペーンの作成・管理・最適化を行えるようにした [INFO-011](../Information/2026-05-14/collected-raw.md#INFO-011)。TikTokの広告収益基盤をAI連携で強化する動きだ。第二にByteDanceがDeerFlow(Deep Exploration and Efficient Research Flow)をオープンソース化した [INFO-012](../Information/2026-05-14/collected-raw.md#INFO-012)。サブエージェントオーケストレーション・メモリ管理・サンドボックス実行を備えたディープリサーチ向けエージェントフレームワークで、開発者エコシステムへの影響が注目される。第三にSeedance 2.0がVideo Arenaで世界#2(ELO 1,271)に到達し、4モダリティ同時入力を備えるWorld Model方向を示した [INFO-039](../Information/2026-05-14/collected-raw.md#INFO-039)。Video Arenaは独立した第三者評価であり、Seed 2.0の自己報告ベンチマークとは異なる信頼性を持つ。第四にDoubao-Seed-2.0-liteが動画・画像・音声・テキストの完全マルチモーダルにアップグレードし、エージェント・コーディング・GUI能力も同時強化された [INFO-038](../Information/2026-05-14/collected-raw.md#INFO-038)。
 
 投資面でも重要な変化がある。ByteDanceがAI向けCAPEXを25%増額して2000億元(~$30B)とし、国内AIチップへの投資比率を拡大している [INFO-065](../Information/2026-05-14/collected-raw.md#INFO-065)。Cozeはスマートオフィスプラットフォームにアップグレードし、PPT作成・動画生成・企業WeChat/DingTalk連携を統合した [INFO-068](../Information/2026-05-14/collected-raw.md#INFO-068)。OpenClawのCoze/Ark経由での収益化も計画され、Claude Code・OpenCode・Trae・Hermes Agentとの統合を含むArkClawパッケージが提示されている [INFO-013](../Information/2026-05-14/collected-raw.md#INFO-013)。
+
+2026年5月20日の観測で、DeerFlow 2.0が「Docker of AI Workers」としてOpenClaw収益化の具体化が進展した [INFO-007](../Information/2026-05-20/collected-raw.md#INFO-007)。またSeedance 2.0について上場企業の海看股份が産業再構築加速を評価しており [INFO-043](../Information/2026-05-20/collected-raw.md#INFO-043)、単なるモデル性能を超えた産業への波及効果が第三者から確認された。いずれも確度の変更には至らず、既存判断の補強にとどまる。
 
 しかし構造的な制約は残る。Doubaoの有料版(68/200/500元/月)が発表され [INFO-032](../Information/2026-05-14/collected-raw.md#INFO-032)、中国AI市場の無料時代が終わった。これは低価格戦略の限界を示すH-BTD-002にとって4つ目の矛盾(indicator)証拠となる。DeepSeek V4 Proがフロンティアから8ヶ月遅れと評価されつつ [INFO-029](../Information/2026-05-14/collected-raw.md#INFO-029)、最もコスト効果の高いオープンソースモデルとして価格競争圧力を維持している。ギャップ維持はByteDanceにとって確認(confirming)材料だが、価格競争激化は矛盾(indicator)材料であり、二面性がある。MetaがLlama 4のベンチマークを不正操作したとYann LeCunが確認した事実 [INFO-040](../Information/2026-05-14/collected-raw.md#INFO-040) は、OSSモデルの信頼性全体への影響を含意し、DeerFlow OSSの評価環境にも間接的に影響する。
 
@@ -38,6 +40,8 @@ ByteDanceのAI事業の現構図は、規模拡大が継続し、製品ポート
 | 中 | DeepSeek V4 Pro: フロンティアから8ヶ月遅れ(CAISI評価)・最もコスト効果の高いOSSモデル | ギャップ維持はCだが価格競争激化はI。H-BTD-002への二面性 | B-3 (CAISI評価) | [INFO-029](../Information/2026-05-14/collected-raw.md#INFO-029) |
 | 中 | OpenClaw: Coze/Ark経由で収益化。Claude Code・OpenCode・Trae・Hermes Agent統合。ArkClawパッケージ | 西側開発ツールとの統合。クロスエコシステム連携の可能性 | B-3 | [INFO-013](../Information/2026-05-14/collected-raw.md#INFO-013) |
 | 低 | Meta Llama 4 ベンチマーク不正操作(Yann LeCun確認) | OSSモデル信頼性への影響。ByteDance直接関係はないがDeerFlow評価環境の文脈 | C-3 | [INFO-040](../Information/2026-05-14/collected-raw.md#INFO-040) |
+| 中 | Seedance 2.0: 上場企業(海看股份)が「産業再構築加速」と評価・高品質プロンプトコミュニティ形成 | 第三者(上場企業)からの産業波及効果確認。Seedance 2.0の影響がモデル性能を超えて拡大 | B-3 | [INFO-043](../Information/2026-05-20/collected-raw.md#INFO-043) |
+| 低 | DeerFlow 2.0「Docker of AI Workers」・OpenClaw収益化具体化・ArkClawパッケージ | DeerFlow OSSの進化版。収益化計画の具体化だがC-3の第三者間接情報に依存 | C-3 | [INFO-007](../Information/2026-05-20/collected-raw.md#INFO-007) |
 
 ## 3. 反証の閾値
 
@@ -54,22 +58,23 @@ ByteDanceのAI事業の現構図は、規模拡大が継続し、製品ポート
 
 | 仮説ID | 一文要約 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:-:|---|---|---|
-| [H-BTD-001](../config/hypotheses.json) | 中国で取った規模を足がかりにグローバル展開する | 66% | DeerFlow OSS + TikTok MCP + Seedance 2.0 #2 + Doubao全モダリティ = 4x C。グローバル展開証拠は欠落。ミラーイメージング警告継続。中国情報源の限定により独立裏付けなし | [INFO-012](../Information/2026-05-14/collected-raw.md#INFO-012) [INFO-011](../Information/2026-05-14/collected-raw.md#INFO-011) [INFO-039](../Information/2026-05-14/collected-raw.md#INFO-039) [INFO-038](../Information/2026-05-14/collected-raw.md#INFO-038) | (グローバル展開の直接的証拠なし) |
-| [H-BTD-002](../config/hypotheses.json) | 低価格で市場を獲得し続ける | 61% | Doubao有料版68/200/500元/月は4th I蓄積。DeepSeek V4 Pro 8ヶ月遅れ=ギャップ維持Cだが価格競争激化=I。CAPEX $30Bは規模投資C。中国情報源の限定により独立裏付けなし | [INFO-029](../Information/2026-05-14/collected-raw.md#INFO-029) [INFO-065](../Information/2026-05-14/collected-raw.md#INFO-065) | [INFO-032](../Information/2026-05-14/collected-raw.md#INFO-032) |
+| [H-BTD-001](../config/hypotheses.json) | 中国で取った規模を足がかりにグローバル展開する | 64% | DeerFlow OSS + TikTok MCP + Seedance 2.0 #2 + Doubao全モダリティ = 4x C。グローバル展開証拠は欠落。ミラーイメージング警告継続。中国情報源の限定により独立裏付けなし | [INFO-012](../Information/2026-05-14/collected-raw.md#INFO-012) [INFO-011](../Information/2026-05-14/collected-raw.md#INFO-011) [INFO-039](../Information/2026-05-14/collected-raw.md#INFO-039) [INFO-038](../Information/2026-05-14/collected-raw.md#INFO-038) | (グローバル展開の直接的証拠なし) |
+| [H-BTD-002](../config/hypotheses.json) | 低価格で市場を獲得し続ける | 56% | Doubao有料版68/200/500元/月は4th I蓄積。DeepSeek V4 Pro 8ヶ月遅れ=ギャップ維持Cだが価格競争激化=I。CAPEX $30Bは規模投資C。中国情報源の限定により独立裏付けなし | [INFO-029](../Information/2026-05-14/collected-raw.md#INFO-029) [INFO-065](../Information/2026-05-14/collected-raw.md#INFO-065) | [INFO-032](../Information/2026-05-14/collected-raw.md#INFO-032) |
 | [H-BTD-003](../config/hypotheses.json) | 著作権・規制の制約が競争力を削ぐ | 40% | CAC警告3アプリは規制執行強化の証拠。ただし著作権関連の新証拠はなく、警告はラベリング法違反であり著作権とは別次元。中国情報源の限定により独立裏付けなし | (著作権領域での新証拠なし) | (著作権領域での新証拠なし) |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-011](../config/indicators.json) | 中国AI性能到達(Doubao MAU・ベンチマーク動向) | Doubao MAU 3ヶ月停滞またはベンチマーク独立検証で乖離が出た場合に elevated | MAU 3.45億(中国首位)・DAU 1.4億・月間平均54.8回 [INFO-063](../Information/2026-05-14/collected-raw.md#INFO-063)。Seed 2.0ベンチマーク自己報告のみ。Seedance 2.0 Video Arena #2(独立検証あり) [INFO-039](../Information/2026-05-14/collected-raw.md#INFO-039) | 2026-05-14 |
-| [IND-010](../config/indicators.json) | 新興国AI価格競争 | ByteDance vs DeepSeek の価格逆転で high | Seed 2.0 Pro $0.47/$2.37。DeepSeek V4 $0.0036下限 [INFO-029](../Information/2026-05-14/collected-raw.md#INFO-029)。Doubao有料版68/200/500元/月開始 [INFO-032](../Information/2026-05-14/collected-raw.md#INFO-032) | 2026-05-14 |
-| [IND-030](../config/indicators.json) | AI能力とリスクの二面性(規制・政治リスク) | CAC追加警告・ライセンス停止・TikTok分断のいずれかで high | CAC警告3アプリ。TikTok MCP Serverは広告プラットフォーム拡張 [INFO-011](../Information/2026-05-14/collected-raw.md#INFO-011)。CAPEX $30Bで国内チップ比率拡大 [INFO-065](../Information/2026-05-14/collected-raw.md#INFO-065) | 2026-05-14 |
+| [IND-011](../config/indicators.json) | 中国AI性能到達(Doubao MAU・ベンチマーク動向) | Doubao MAU 3ヶ月停滞またはベンチマーク独立検証で乖離が出た場合に elevated | MAU 3.45億(中国首位)・DAU 1.4億・月間平均54.8回 [INFO-063](../Information/2026-05-14/collected-raw.md#INFO-063)。Seed 2.0ベンチマーク自己報告のみ。Seedance 2.0 Video Arena #2(独立検証あり) [INFO-039](../Information/2026-05-14/collected-raw.md#INFO-039) | 2026-05-21 |
+| [IND-010](../config/indicators.json) | 新興国AI価格競争 | ByteDance vs DeepSeek の価格逆転で high | Seed 2.0 Pro $0.47/$2.37。DeepSeek V4 $0.0036下限 [INFO-029](../Information/2026-05-14/collected-raw.md#INFO-029)。Doubao有料版68/200/500元/月開始 [INFO-032](../Information/2026-05-14/collected-raw.md#INFO-032) | 2026-05-21 |
+| [IND-030](../config/indicators.json) | AI能力とリスクの二面性(規制・政治リスク) | CAC追加警告・ライセンス停止・TikTok分断のいずれかで high | CAC警告3アプリ。TikTok MCP Serverは広告プラットフォーム拡張 [INFO-011](../Information/2026-05-14/collected-raw.md#INFO-011)。CAPEX $30Bで国内チップ比率拡大 [INFO-065](../Information/2026-05-14/collected-raw.md#INFO-065) | 2026-05-21 |
 
 ## 6. 変化履歴
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
+| 2026-05-21 | DeerFlow 2.0「Docker of AI Workers」収益化計画+Seedance 2.0産業再構築評価を追記。鮮度タイムアウト(7日)対応 | [INFO-007](../Information/2026-05-20/collected-raw.md#INFO-007) [INFO-043](../Information/2026-05-20/collected-raw.md#INFO-043) | 確度±0%・構造変更なし・鮮度更新のみ |
 | 2026-05-14 | TikTok MCP Server・DeerFlow OSS・Seedance 2.0世界#2・Doubao全モダリティ・CAPEX $30B増額を反映して全面書き直し | [INFO-011](../Information/2026-05-14/collected-raw.md#INFO-011) [INFO-012](../Information/2026-05-14/collected-raw.md#INFO-012) [INFO-039](../Information/2026-05-14/collected-raw.md#INFO-039) [INFO-038](../Information/2026-05-14/collected-raw.md#INFO-038) [INFO-065](../Information/2026-05-14/collected-raw.md#INFO-065) | 「規模は確認済みだが経済モデルが試されている」→「規模拡大継続。製品ポートフォリオ急拡充(TikTok MCP+DeerFlow+Seedance #2)。CAPEX 25%増額で投資加速」 |
 | 2026-05-13 | 鮮度タイムアウト(7日)。Coze 2.5 Agent World追加・H-BTD-002確度修正(65→62%)・IND最終確認日更新 | [INFO-016](../Information/2026-05-13/collected-raw.md#INFO-016)・hypotheses.json v3.75 | 「規模は確認済みだが経済モデルが試されている」→「同判断維持。Coze 2.5でエージェントエコシステムへの移行観測」 |
 | 2026-05-06 | コア判断を「規模成長と低価格優位」中心から「優位の持続可能性が試されている」へ | [INFO-011](../Information/2026-05-06/collected-raw.md#INFO-011) [INFO-068](../Information/2026-05-06/collected-raw.md#INFO-068) [INFO-070](../Information/2026-05-06/collected-raw.md#INFO-070) CAC警告・DeepSeek High-Flyer支援・Doubao有料化の同時進行 | 「中国首位・低価格で成長継続」 → 「規模は確認済みだが経済モデルが試されている局面」 |
@@ -100,4 +105,7 @@ ByteDanceのAI事業の現構図は、規模拡大が継続し、製品ポート
 | [INFO-063](../Information/2026-05-14/collected-raw.md#INFO-063) | Doubao MAU 3.45億・DAU 1.4億・月間平均54.8回・Qianwen+DeepSeek合計< Doubao |
 | [INFO-065](../Information/2026-05-14/collected-raw.md#INFO-065) | ByteDance AI CAPEX 25%増額2000億元(~$30B)・国内AIチップ比率拡大 |
 | [INFO-068](../Information/2026-05-14/collected-raw.md#INFO-068) | Cozeスマートオフィスプラットフォーム(PPT・動画・WeChat/DingTalk連携) |
+| [INFO-007](../Information/2026-05-20/collected-raw.md#INFO-007) | DeerFlow 2.0「Docker of AI Workers」・OpenClaw収益化・ArkClaw(C-3) |
+| [INFO-043](../Information/2026-05-20/collected-raw.md#INFO-043) | Seedance 2.0・動画コンテンツ産業再構築加速・上場企業評価(B-3) |
+| [Arbiter v3.84](../state/arbiter-2026-05-21.md) | 確度評価の完全根拠(付録のみ参照) |
 | [Arbiter v3.77](../state/arbiter-2026-05-14.md) | 確度評価の完全根拠(付録のみ参照) |
