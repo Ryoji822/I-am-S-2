@@ -1,6 +1,6 @@
 {
-  "version": "3.84",
-  "last_updated": "2026-05-21",
+  "version": "3.85",
+  "last_updated": "2026-05-22",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.84: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了・DEGRADED条件下）。QHG Y軸再定義採用（凍結17R→解除）。「格差拡大/収斂」→「フロンティア差別化の持続性: 持続/コモディティ化」。シナリオ4件確率全面的再配分（SCN-001 -2%: 20→18%・SCN-002 -2%: 30→28%・SCN-003 ±0%: 35%維持・SCN-004 +4%: 15→19%）。合計100%維持（18+28+35+19=100%）",
   "driving_forces": {
     "axis_x": {
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 18,
-      "probability_change": "-2%",
-      "probability_rationale": "Arbiter v3.84: -2%（20→18%）。COMPLETE。QHG Y軸再定義後の全面的確率再配分。囲い込みは強いがDeepSeek R2性能同等+MCP 78%標準化で差別化持続性に不確実性。Codex 4M+DeployCoはgenuine Cだが価格75%低下が囲い込み価値を侵食",
+      "probability": 17,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v3.85: -1%（18→17%）。COMPLETE。囲い込みC（Google I/O 100件）は強いが、-67%価格コモディティ化で差別化持続前提が侵食。IPO $730B・Pentagon契約はCだが価格構造変化が囲い込み価値を減殺",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -53,9 +53,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 差別化持続",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 28,
-      "probability_change": "-2%",
-      "probability_rationale": "Arbiter v3.84: -2%（30→28%）。COMPLETE。QHG Y軸再定義後の全面的確率再配分。MCP 78%+AAIF 43+Agent Skills 500+で開放は強力。但しDeepSeek R2性能同等は差別化薄化を示唆し差別化持続性に不確実性",
+      "probability": 27,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v3.85: -1%（28→27%）。COMPLETE。MCP 1300+WebMCP標準提案で開放は強力。但しGemini 3.5 Flash性能+Erdős突破の差別化持続 vs -67%価格+DeepSeek V4のコモディティ化の矛盾で不確実性増",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -80,9 +80,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × コモディティ化",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 35,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.84: ±0%（35%維持）。COMPLETE。QHG Y軸再定義後の全面的確率再配分。囲い込み15件蓄積は最強の蓄積証拠。性能差価値低下→エコシステム囲い込み依存度増の構造はSCN-003を最も支持。QHG新軸で「コモディティ化×囲い込み」の論理的根拠が明確化",
+      "probability": 36,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v3.85: +1%（35→36%）。COMPLETE。Red指摘で+2%→+1%に修正。囲い込み16件蓄積+-67%価格コモディティ化+METR本番ギャップはSCN-003支持。但しアトラクター効果注意。SCN-004への配分も考慮",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -112,9 +112,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 19,
-      "probability_change": "+4%",
-      "probability_rationale": "Arbiter v3.84: +4%（15→19%）。COMPLETE。Red指摘採用。QHG Y軸再定義後の全面的確率再配分。MCP 78%+DeepSeek R2+Mistral $2.3B+AAIF 43+トークン価格75%低下は一貫してSCN-004支持。15%は過小評価。$1Tインフラは分散投資なら業界全体インフラ整備。QHG新軸でSCN-004論理的根拠が明確化",
+      "probability": 20,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v3.85: +1%（19→20%）。COMPLETE。Red指摘一部採用。-67%価格+DeepSeek V4+MCP 1300+Cohere OSSはSCN-004を同程度に支持。$2.52T世界支出は分散投資なら業界全体インフラ整備を示唆",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-05-21",
-    "note": "SCN-001(18) + SCN-002(28) + SCN-003(35) + SCN-004(19) = 100%. Arbiter v3.84完了（COMPLETE・DEGRADED条件下）。QHG Y軸再定義採用（凍結17R→解除）。新Y軸: フロンティア差別化の持続性（持続/コモディティ化）。v3.84以降の確率推移はv3.83以前と直接比較不可（Y軸定義変更のため）"
+    "verified_date": "2026-05-22",
+    "note": "SCN-001(17) + SCN-002(27) + SCN-003(36) + SCN-004(20) = 100%. Arbiter v3.85完了（COMPLETE）"
   }
 }

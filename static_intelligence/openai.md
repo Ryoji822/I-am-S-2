@@ -1,89 +1,90 @@
 # OpenAI
 
-> 最終判断更新: 2026-05-19
+> 最終判断更新: 2026-05-22
 > 全体確信度: 中
 > 主参照: hypotheses.json#H-OAI-001/002/003, indicators.json#IND-001/IND-013/IND-026/IND-027/IND-029
 
 ## 0. 一文要約
 
-我々はOpenAIを、**Codexのエンタープライズ展開インフラを固めつつも、市場シェア初逆転とMicrosoft離反シグナルで支配的地位確立の確度が低下している企業**と読んでいる。最大の根拠は、Ramp AI IndexでAnthropic 32%がOpenAIを初めて上回った事実 [INFO-030](../Information/2026-05-19/collected-raw.md#INFO-030) と、MicrosoftがOpenAI後を見据えたスタートアップ買収を検討しているというReuters独占報道 [INFO-023](../Information/2026-05-19/collected-raw.md#INFO-023) だ。他方で、Codex週次400万ユーザー [INFO-004](../Information/2026-05-19/collected-raw.md#INFO-004)、Dell Technologiesとのハイブリッド/オンプレ提携 [INFO-004](../Information/2026-05-19/collected-raw.md#INFO-004)、IPO評価額$8,520億 [INFO-024](../Information/2026-05-19/collected-raw.md#INFO-024) はgenuine Cとして蓄積している。H-OAI-001は63%に低下し、初のI>Cラウンドを記録した。Anthropicが3四半期連続でエンタープライズLLMシェア首位を維持する、またはMicrosoftがOpenAI以外のAIベンダーと$10B以上の提携を発表する、のいずれかが観測されたら、この読みは変わる。
+我々はOpenAIを、Pentagon契約で政府系B2Bの足場を得たものの、API価格-67%下落が示すコモディティ化圧力の下で「支配」の定義自体が未解決な企業と読む。最大の新規CはAnthropic SCR排除の受益者としてのPentagon契約 [INFO-048](../Information/2026-05-22/collected-raw.md#INFO-048) で、25人のパワーユーザーが代替を評価中(Bloomberg A-2)。他方で全主要プロバイダー横断の-67%価格下落 [INFO-031](../Information/2026-05-22/collected-raw.md#INFO-031) は累積I 18件目であり、H-OAI-001は62%で±0%維持。Erdős予想反証 [INFO-006](../Information/2026-05-22/collected-raw.md#INFO-006) は研究面の画期的成果だが、支配的地位の直接Cではない。[H-OAI-001](../config/hypotheses.json) が50%を割る、またはAPI価格競争でGPT-5.5単価が$2/M tokensを下回る、のいずれかが観測されたら読みが変わる。
 
 ## 1. コア判断
 
-OpenAIのエンタープライス戦略は構築段階にあるが、競争圧力が初めて支配的地位の前提を侵食し始めた。
+[H-OAI-001](../config/hypotheses.json) は62%で±0%。Pentagon契約 [INFO-048](../Information/2026-05-22/collected-raw.md#INFO-048) は今ラウンドで最も強力なCだが、ArbiterはBlue +1%を否認した。理由は3つある。第一に、18件の蓄積Iに対して1ラウンドのC>Iで「打破」と評価するのは過大。第二に、-67%価格下落 [INFO-031](../Information/2026-05-22/collected-raw.md#INFO-031) が示すコモディティ化の下で「支配的地位」が何を意味するのか定義が未解決。第三に、Pentagon選択の理由は「排除の受益者」というBlue解釈に過ぎず、独立した説明可能性がある。累積I重量が依然として優勢である。
 
-CodexのDell Technologies提携は [INFO-004](../Information/2026-05-19/collected-raw.md#INFO-004)、エンタープライズ環境でのハイブリッド・オンプレ展開という具体的な配布経路を開いた。400万以上の週次アクティブ開発者がCodexを使い、ChatGPT Mobileにもローンチされた [INFO-049](../Information/2026-05-19/collected-raw.md#INFO-049)。AWS BedrockでGPT-5.5とGPT-4o miniが利用可能になり [INFO-014](../Information/2026-05-19/collected-raw.md#INFO-014)、マルチクラウド配布が進んでいる。IPOは2026年末を目指し、評価額$8,520億に達した [INFO-024](../Information/2026-05-19/collected-raw.md#INFO-024)。ChatGPT広告は5月5日から無料・低価格プランで表示を開始した [INFO-007](../Information/2026-05-19/collected-raw.md#INFO-007)。
+Pentagon Task Force [INFO-049](../Information/2026-05-22/collected-raw.md#INFO-049) はCyber Command/NSA向けAI展開の新タスクフォースで、OpenAIが参加者に含まれる。Daybreak [INFO-012](../Information/2026-05-22/collected-raw.md#INFO-012) はGPT-5.5とCodex Securityを統合したAppSecエージェントで、Codex+Dell提携 [INFO-016](../Information/2026-05-22/collected-raw.md#INFO-016) がハイブリッド/オンプレ展開の配布経路を開いている。IPOは$730Bプレマネー、$110B新規投資ラウンドで、提出が金曜日にも来る可能性がある [INFO-005](../Information/2026-05-22/collected-raw.md#INFO-005)。Erdős予想反証 [INFO-006](../Information/2026-05-22/collected-raw.md#INFO-006) はFields賞受賞者Tim Gowersが「AI数学のマイルストーン」と評価した成果で、汎用推論モデルによるものだが、H-OAI-001のエンタープライズ支配とは直接結びつかない。
 
-しかしH-OAI-001は63%に低下した。Ramp AI IndexでAnthropic 32%がOpenAIを初めて逆転した [INFO-030](../Information/2026-05-19/collected-raw.md#INFO-030)。これは8R連続の据え置き後、初めてIがCを上回ったラウンドである。Microsoftが「OpenAI後を見据えたスタートアップ買収」を検討しているというReuters A-2報道 [INFO-023](../Information/2026-05-19/collected-raw.md#INFO-023) は、パートナーシップ構造に亀裂が入った直接証拠だ。確証バイアス警告が4R連続から5Rに延長されている。H-OAI-002は46%でlow帯に確定しており、围い込み否定15件蓄積が続いている。
+[H-OAI-002](../config/hypotheses.json) は46%でlow帯確定、[H-OAI-003](../config/hypotheses.json) は3%で変化なし。
 
 ## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | Ramp AI Index初逆転: Anthropic 32% > OpenAI。8R連続据え置き後の初I>Cラウンド | H-OAI-001 -1%(64→63%)。支配的地位確立の確度低下。市場シェア損失の直接証拠 | B-2 | [INFO-030](../Information/2026-05-19/collected-raw.md#INFO-030) |
-| 高 | Microsoft「OpenAI後を見据えたスタートアップ買収」検討(Reuters独占) | パートナーシップ構造の亀裂。H-OAI-001の根拠を直接弱体化する | A-2 | [INFO-023](../Information/2026-05-19/collected-raw.md#INFO-023) |
-| 高 | Codex + Dell Technologies提携: ハイブリッド/オンプレ展開・400万WAU | エンタープライス配布インフラの物理的基盤構築。genuine C | A-3 | [INFO-004](../Information/2026-05-19/collected-raw.md#INFO-004) |
-| 高 | IPO評価額$8,520億・2026年末上場目指す(Musk訴訟敗訴で障害排除) | 資金調達規模が投資継続を可能にする。但し上場圧力が短期収益重視を加速させる可能性 | B-3 | [INFO-024](../Information/2026-05-19/collected-raw.md#INFO-024) |
-| 高 | 围い込み否定15件蓄積・H-OAI-002 46%low帯確定 | 围い込み戦略の構造的後退が確定 | A-3/B-3 | [INFO-009](../Information/2026-05-19/collected-raw.md#INFO-009) [INFO-014](../Information/2026-05-19/collected-raw.md#INFO-014) |
-| 中 | ChatGPT広告開始(5月5日)・無料/低価格プランでProduct feed対応 | 収益多様化の新段階。但しユーザー体験への影響は未評価 | D-3 | [INFO-007](../Information/2026-05-19/collected-raw.md#INFO-007) |
-| 中 | GPT-5.5価格2倍引き上げ・DeepSeek R2 OSS GPT-4oマッチ | 価格競争力の低下。OSS代替の台頭 | C-2 | [INFO-031](../Information/2026-05-19/collected-raw.md#INFO-031) |
+| 高 | Pentagon代替モデルテスト: Anthropic SCR排除の受益者としてOpenAI契約。25パワーユーザー評価中 | H-OAI-001の今ラウンド最強C。政府系B2B足場の直接証拠。但し「排除受益」は因果推論で診断的価値に上限 | A-2 | [INFO-048](../Information/2026-05-22/collected-raw.md#INFO-048) |
+| 高 | Erdős予想反証: 80年離散幾何学予想を汎用推論モデルで反証。Tim Gowers「マイルストーン」 | 研究卓越性のC。但しエンタープライズ支配との直接結びつきなし。H-OAI-003の研究面Cとしての側面 | A-3 | [INFO-006](../Information/2026-05-22/collected-raw.md#INFO-006) |
+| 高 | API価格-67%下落: 全主要プロバイダー横断 | コモディティ化の直接的I。「支配」の定義を困難にする累積I 18件目。価格差で差別化困難 | C-3 | [INFO-031](../Information/2026-05-22/collected-raw.md#INFO-031) |
+| 高 | IPO $730Bプレマネー・$110B新規投資・金曜提出可能性 | 資金調達規模は投資継続を可能にする。上場圧力による短期収益重視のリスクは未評価 | B-3 | [INFO-005](../Information/2026-05-22/collected-raw.md#INFO-005) |
+| 中 | Codex+Dell提携: ハイブリッド/オンプレ展開。Daybreak: GPT-5.5+Codex Security統合AppSec | エンタープライス配布インフラの物理的基盤。Daybreakは垂直特化の新展開 | B-3 | [INFO-016](../Information/2026-05-22/collected-raw.md#INFO-016) [INFO-012](../Information/2026-05-22/collected-raw.md#INFO-012) |
 
 ## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
-| Anthropicが3四半期連続でエンタープライズLLMシェア首位を維持する | H-OAI-001「支配的地位の確立」が棄却水準に達する | 270日 | [IND-026](../config/indicators.json) |
-| MicrosoftがOpenAI以外のAIベンダーと$10B以上の提携を発表する | H-OAI-001のパートナーシップ基盤が崩れる | 180日 | [IND-027](../config/indicators.json) |
-| LLM支出シェアが27%から20%以下に下落する | H-OAI-001が棄却水準に到達する | 90日 | [IND-026](../config/indicators.json) |
-| IPO後に短期収益圧力でCodex/DeployCoの投資が縮小する | 「エンタープライズ展開インフラ強化」の前提が崩れる | 365日 | [IND-029](../config/indicators.json) |
-| OSSモデルのエンタープライズ採用が15%を超える | 围い込み否定が更に蓄積し、H-OAI-002棄却が確定する | 180日 | [IND-004](../config/indicators.json) |
+| [H-OAI-001](../config/hypotheses.json) が50%を割る | 「支配的地位確立」仮説が棄却水準に到達する | 180日 | [H-OAI-001](../config/hypotheses.json) |
+| API価格競争でGPT-5.5単価が$2/M tokensを下回る | コモディティ化が「支配」を定義不能にする | 90日 | [IND-029](../config/indicators.json) |
+| Pentagon評価でOpenAIが選択されない | 「排除受益」Cの因果チェーンが崩れる | 180日 | [INFO-048](../Information/2026-05-22/collected-raw.md#INFO-048) |
+| IPO後Codex/Daybreak投資が縮小する | エンタープライス展開インフラ強化の前提が崩れる | 365日 | [IND-029](../config/indicators.json) |
+| OSSモデルのエンタープライス採用が20%を超える | 围い込み否定が更に蓄積し[H-OAI-002](../config/hypotheses.json)棄却確定 | 180日 | [IND-027](../config/indicators.json) |
 
 ## 4. 進行中の仮説
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:-:|---|---|---|
-| [H-OAI-001](../config/hypotheses.json) | Agent機能でB2B支配的地位を確立する | 63% | Codex 4M WAU+Dell提携+IPO $8,520億はgenuine C。市場シェア初逆転(INFO-030 B-2)+Microsoft離反(INFO-023 A-2)の2重診断的Iで初のI>Cラウンド。確証バイアス警告5R延長。次回I>C継続で更に-1% | [INFO-004](../Information/2026-05-19/collected-raw.md#INFO-004) [INFO-049](../Information/2026-05-19/collected-raw.md#INFO-049) | [INFO-030](../Information/2026-05-19/collected-raw.md#INFO-030) [INFO-023](../Information/2026-05-19/collected-raw.md#INFO-023) |
-| [H-OAI-002](../config/hypotheses.json) | MCP開放の上にプロプライエタリ上位レイヤーで围い込む | 46% | 7プロバイダー統合(INFO-009)+AWS Bedrock GPT-5.5(INFO-014)+マルチクラウド配布で围い込み否定15件蓄積。low帯確定 | [INFO-009](../Information/2026-05-19/collected-raw.md#INFO-009) [INFO-014](../Information/2026-05-19/collected-raw.md#INFO-014) | (围い込み証拠不在継続) |
-| [H-OAI-003](../config/hypotheses.json) | AGI/スーパーインテリジェンスを最優先目標とする | 3% | 商業化規模が研究出力を圧倒的に凌駕。IPO準備が更に短期収益圧力を強める。Sora 2終了も商業集中のI | (新規Cなし) | [INFO-024](../Information/2026-05-19/collected-raw.md#INFO-024) [INFO-007](../Information/2026-05-19/collected-raw.md#INFO-007) |
+| [H-OAI-001](../config/hypotheses.json) | Agent機能でB2B支配的地位を確立する | 62% | Pentagon契約(A-2)+Codex/Dell+Daybreakはgenuine C。但し-67%価格下落を含む累積I 18件が依然優勢。1ラウンドC>Iで「打破」は過大(Arbiter判断)。コモディティ化下での「支配」定義未解決 | [INFO-048](../Information/2026-05-22/collected-raw.md#INFO-048) [INFO-016](../Information/2026-05-22/collected-raw.md#INFO-016) [INFO-012](../Information/2026-05-22/collected-raw.md#INFO-012) | [INFO-031](../Information/2026-05-22/collected-raw.md#INFO-031) |
+| [H-OAI-002](../config/hypotheses.json) | MCP開放の上にプロプライエタリ上位レイヤーで围い込む | 46% | MCP 1,300本番サーバー+マルチクラウド配布+開放エコシステム推進で围い込み否定蓄積。low帯確定 | (新規Cなし) | [INFO-015](../Information/2026-05-22/collected-raw.md#INFO-015) |
+| [H-OAI-003](../config/hypotheses.json) | AGI/スーパーインテリジェンスを最優先目標とする | 3% | Erdős予想反証は研究面C。商業化規模(IPO $730B・Daybreak・広告)が圧倒的。研究Cは商業優先の文脈で限界的 | [INFO-006](../Information/2026-05-22/collected-raw.md#INFO-006) | [INFO-005](../Information/2026-05-22/collected-raw.md#INFO-005) [INFO-012](../Information/2026-05-22/collected-raw.md#INFO-012) |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-001](../config/indicators.json) | 主要ベンチマーク性能の非連続ジャンプ | +5pt以上/期で high | BenchLM 92(4位)。ARC-AGI-2 83.3%。DeepSeek R2 OSS GPT-4oマッチ [INFO-031](../Information/2026-05-19/collected-raw.md#INFO-031) | 2026-05-19 |
-| [IND-013](../config/indicators.json) | AIエージェント関連セキュリティ侵害頻度 | 大規模インシデントで critical | MCP token theft+TanStack npm攻撃+AgentTrap 141タスク [INFO-017](../Information/2026-05-19/collected-raw.md#INFO-017)。攻撃面拡大。high水準 | 2026-05-19 |
-| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達で high | METR 43%乖離+Klarna再採用+PwC 70%納期短縮。high移行4ソース到達。elevated水準 | 2026-05-19 |
-| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用で high | 7サンドボックス+Grok Build ACP+DeerFlow 2.0。標準化爆発的加速。high水準 | 2026-05-19 |
-| [IND-029](../config/indicators.json) | AIインフラ資本投入 vs 物理制約 | 資本流入が物理制約を上回り続ける限り high | $1TNデータセンター [INFO-026](../Information/2026-05-19/collected-raw.md#INFO-026)+Mistral $2.3B+IPO $8,520億。high水準 | 2026-05-19 |
+| [IND-001](../config/indicators.json) | 主要ベンチマーク性能の非連続ジャンプ | +5pt以上/期で high | Erdős予想反証(A-3)で研究面画期的成果 [INFO-006](../Information/2026-05-22/collected-raw.md#INFO-006)。但しベンチマークスコア自体の非連続ジャンプではない | 2026-05-22 |
+| [IND-013](../config/indicators.json) | AIエージェント関連セキュリティ侵害頻度 | 大規模インシデントで critical | 88%エンタープライスインシデント [INFO-011](../Information/2026-05-22/collected-raw.md#INFO-011)。high・rising水準 | 2026-05-22 |
+| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達で high | 79%導入vs11%本番+METR 43%乖離。high・rising水準 | 2026-05-22 |
+| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用で high | MCP 1,300本番サーバー+WebMCP標準提案。high・rising水準 | 2026-05-22 |
+| [IND-029](../config/indicators.json) | AIインフラ資本投入 vs 物理制約 | 資本流入が物理制約を上回り続ける限り high | $725B Big Tech投資+$2.52T世界AI支出(44% YoY)。high・rising水準 | 2026-05-22 |
 
 ## 6. 変化履歴
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
-| 2026-05-19 | 市場シェア初逆転+Microsoft離反シグナル+Dell提携+IPO $8,520億を反映して全面書き直し | [INFO-030](../Information/2026-05-19/collected-raw.md#INFO-030) [INFO-023](../Information/2026-05-19/collected-raw.md#INFO-023) [INFO-004](../Information/2026-05-19/collected-raw.md#INFO-004) [INFO-024](../Information/2026-05-19/collected-raw.md#INFO-024) | H-OAI-001 64→63%・H-OAI-002 48→46%・確証バイアス警告4→5R・「围い込み否定8重蓄積」→「市場シェア初逆転でI>C初ラウンド」 |
-| 2026-05-15 | Codexモバイル統合・ChatGPT安全性50%改善・围い込み否定8重蓄積でH-OAI-002 low帯確定移行 | 2026-05-15複数INFO | 「製品ポートフォリオ整理と新規展開が同時進行」→「CodexモバイルとDeployCoでエンタープライズ固める。围い込み否定8重蓄積でH-OAI-002 low帯確定(48%)」 |
+| 2026-05-22 | Pentagon契約(A-2)+Erdős反証(A-3)+-67%価格下落(C-3)+IPO $730B(B-3)を反映して全面書き直し | [INFO-048](../Information/2026-05-22/collected-raw.md#INFO-048) [INFO-006](../Information/2026-05-22/collected-raw.md#INFO-006) [INFO-031](../Information/2026-05-22/collected-raw.md#INFO-031) [INFO-005](../Information/2026-05-22/collected-raw.md#INFO-005) | H-OAI-001 63→62%・H-OAI-002 46%維持・H-OAI-003 3%維持・「市場シェア初逆転でI>C」→「Pentagon C最强だが累積I 18件で打破過大」 |
+| 2026-05-19 | 市場シェア初逆転+Microsoft離反+Dell提携+IPO $8,520億を反映して全面書き直し | [INFO-030](../Information/2026-05-19/collected-raw.md#INFO-030) [INFO-023](../Information/2026-05-19/collected-raw.md#INFO-023) [INFO-004](../Information/2026-05-19/collected-raw.md#INFO-004) | H-OAI-001 64→63%・H-OAI-002 48→46%・「围い込み否定8重蓄積」→「市場シェア初逆転でI>C初ラウンド」 |
+| 2026-05-15 | Codexモバイル統合・围い込み否定蓄積でH-OAI-002 low帯確定 | 2026-05-15複数INFO | 「製品ポートフォリオ整理」→「CodexモバイルとDeployCoでエンタープライス固める。围い込み否定蓄積でH-OAI-002 low帯確定」 |
 
 ## 7. ブラインドスポット
 
-- Ramp AI Indexが単一指標である。Anthropic 32% vs OpenAI の逆転が他の定量指標で確認されていない。Ramp以外のエンタープライズLLM採用データによる相互検証ができない。
-- Microsoft離反シグナル(INFO-023 A-2)はReuters独占報道で、実際の買収対象や規模が未特定。「検討」段階であり実行の確度が測れない。
-- IPO後のガバナンス変化が不確定。上場圧力がCodex/DeployCoへの長期投資を維持できるか、短期収益重視に転じるかの判別ができない。
-- 確証バイアス警告が5R連続に延長された。各ラウンドの新証拠が常に「最も強力なC」と評価される構造自体が確証バイアスの指標であり、H-OAI-001の63%が過大評価されている可能性がある。
-- ChatGPT広告開始がユーザー離反を引き起こすか、広告マーチャントのProduct feedがどの程度の収益寄与をするかが未評価。
+- Pentagon契約の因果チェーン(SCR排除→OpenAI受益)はBlue解釈であり、Pentagon自体がOpenAIを「最良」と評価したのか、Anthropicが排除された結果として選択されたのかの判別ができない。25人のパワーユーザー評価結果が未出。
+- -67%価格下落が「全主要プロバイダー横断」であるため、OpenAI固有の弱点ではなく業界全体のコモディティ化の可能性がある。コモディティ化下での「支配」の定義が未解決のまま確度評価が行われている。
+- IPO $730B評価額は前回$8,520億から低下している。評価額低下の理由(市場環境・内部要因・投資家判断)が不明。上場後のガバナンス変化も不確定。
+- Erdős予想反証が汎用推論モデルによるものであり、数学専用システムではない。この成果が製品差別化やエンタープライス契約にどう結びつくかが未検証。研究卓越性の商業的インパクト測定不能。
+- 確証バイアス警告が5R連続を超えている。「毎ラウンド最も強力なC」を特定する構造自体が確証バイアスの指標であり、62%が過大評価されている可能性がある。
 
 ## 付録: 直近30日の参照Evidence
 
 | Evidence | 用途 |
 |---|---|
+| [INFO-048](../Information/2026-05-22/collected-raw.md#INFO-048) | Pentagon代替モデルテスト・OpenAI契約(Bloomberg A-2) |
+| [INFO-049](../Information/2026-05-22/collected-raw.md#INFO-049) | Pentagon Cyber Command/NSA Task Force(Politico A-2) |
+| [INFO-006](../Information/2026-05-22/collected-raw.md#INFO-006) | Erdős予想反証・汎用推論モデル(OpenAI A-3) |
+| [INFO-031](../Information/2026-05-22/collected-raw.md#INFO-031) | API価格-67%下落・全主要プロバイダー横断(C-3) |
+| [INFO-029](../Information/2026-05-22/collected-raw.md#INFO-029) | GPT-5.5価格$5/$30 per million tokens(A-3) |
+| [INFO-005](../Information/2026-05-22/collected-raw.md#INFO-005) | IPO $730Bプレマネー・$110B新規投資(B-3) |
+| [INFO-012](../Information/2026-05-22/collected-raw.md#INFO-012) | Daybreak・GPT-5.5+Codex Security AppSec統合(B-3) |
+| [INFO-047](../Information/2026-05-22/collected-raw.md#INFO-047) | Daybreak補足情報(B-3) |
+| [INFO-016](../Information/2026-05-22/collected-raw.md#INFO-016) | Codex+Dell Technologiesハイブリッド/オンプレ提携(B-3) |
+| [INFO-011](../Information/2026-05-22/collected-raw.md#INFO-011) | 88%エンタープライスインシデント統計(C-3) |
+| [INFO-015](../Information/2026-05-22/collected-raw.md#INFO-015) | MCP 1,300本番サーバー(C-3) |
 | [INFO-030](../Information/2026-05-19/collected-raw.md#INFO-030) | Ramp AI Index初逆転(Anthropic 32% > OpenAI) |
 | [INFO-023](../Information/2026-05-19/collected-raw.md#INFO-023) | Microsoft「OpenAI後を見据えたスタートアップ買収」(Reuters) |
-| [INFO-004](../Information/2026-05-19/collected-raw.md#INFO-004) | Codex + Dell Technologiesハイブリッド/オンプレ提携 |
-| [INFO-024](../Information/2026-05-19/collected-raw.md#INFO-024) | IPO評価額$8,520億・2026年末上場目指す |
-| [INFO-007](../Information/2026-05-19/collected-raw.md#INFO-007) | ChatGPT広告開始(5月5日) |
-| [INFO-049](../Information/2026-05-19/collected-raw.md#INFO-049) | Codex ChatGPT Mobileローンチ・週次400万WAU |
-| [INFO-014](../Information/2026-05-19/collected-raw.md#INFO-014) | AWS BedrockにGPT-5.5/GPT-4o mini追加 |
-| [INFO-009](../Information/2026-05-19/collected-raw.md#INFO-009) | OpenAI Agents SDK 7サンドボックスプロバイダー統合 |
-| [INFO-031](../Information/2026-05-19/collected-raw.md#INFO-031) | DeepSeek R2 OSS GPT-4oマッチ・V3.2 $0.27/M |
-| [INFO-017](../Information/2026-05-19/collected-raw.md#INFO-017) | AgentTrap 141タスク・エージェントスキルサプライチェーンリスク |
-| [INFO-026](../Information/2026-05-19/collected-raw.md#INFO-026) | $1TNデータセンター投資計画・2030年迄 |
-| [Arbiter v3.82](../state/arbiter-2026-05-19.md) | 確度評価の完全根拠 |
+| [Arbiter v3.85](../state/arbiter-2026-05-22.md) | 確度評価の完全根拠 |
