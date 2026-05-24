@@ -1,6 +1,6 @@
 {
-  "version": "3.86",
-  "last_updated": "2026-05-23",
+  "version": "3.87",
+  "last_updated": "2026-05-24",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.84: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了・DEGRADED条件下）。QHG Y軸再定義採用（凍結17R→解除）。「格差拡大/収斂」→「フロンティア差別化の持続性: 持続/コモディティ化」。シナリオ4件確率全面的再配分（SCN-001 -2%: 20→18%・SCN-002 -2%: 30→28%・SCN-003 ±0%: 35%維持・SCN-004 +4%: 15→19%）。合計100%維持（18+28+35+19=100%）",
   "driving_forces": {
     "axis_x": {
@@ -24,8 +24,8 @@
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 16,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.86: -1%（17→16%）。COMPLETE。価格コモディティ化（9x-900x/年）が囲い込み価値基盤（差別化持続）を構造的に侵食。囲い込みCは強いが価格構造変化が囲い込み価値を減殺",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v3.87: ±0%（16%維持）。FULLY DEGRADED。同一データのため確認レビューのみ",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -55,7 +55,7 @@
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 27,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.86: ±0%（27%維持）。COMPLETE。MCP 1,300+で開放は強力。但しフロンティア差別化 vs コモディティ化の矛盾で不確実性増。相殺",
+      "probability_rationale": "Arbiter v3.87: ±0%（27%維持）。FULLY DEGRADED。同一データのため確認レビューのみ",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -82,7 +82,7 @@
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 36,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.86: ±0%（36%維持）。COMPLETE。Blue +1%否認。「10x production problem」囲い込み支持は論理的飛躍（Jevons paradox歴史比較必要）。囲い込み蓄積はgenuine支持だがコモディティ化証拠はSCN-003/004双方に等しく支持。アトラクター効果注意継続",
+      "probability_rationale": "Arbiter v3.87: ±0%（36%維持）。FULLY DEGRADED。同一データのため確認レビューのみ",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -113,8 +113,8 @@
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 21,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.86: +1%（20→21%）。COMPLETE。SCN-001 -1% redistributed。Epoch AI 9x-900x+DeepSeek V4 OSS+MCP 1,300+arXiv OSS商用競合はSCN-004を等しく支持。Red指摘SCN-004過小評価部分採用",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v3.87: ±0%（21%維持）。FULLY DEGRADED。同一データのため確認レビューのみ",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -140,7 +140,7 @@
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
       "probability": 17,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.86: ±0%（17%維持）。COMPLETE。上昇圧力（88%インシデント+Pentagon武器化+Fortune 500 10%ガバナンス）vs低下圧力（RAMPART+1Password+Glasswing）。Red指摘「対策存在≠対策有効性」記録。相殺。上昇圧力蓄積を注視",
+      "probability_rationale": "Arbiter v3.87: ±0%（17%維持）。FULLY DEGRADED。同一データのため確認レビューのみ",
       "impact": "catastrophic",
       "indicators": [
         "IND-013",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-05-23",
-    "note": "SCN-001(16) + SCN-002(27) + SCN-003(36) + SCN-004(21) = 100%. Arbiter v3.86完了（COMPLETE）"
+    "verified_date": "2026-05-24",
+    "note": "SCN-001(16) + SCN-002(27) + SCN-003(36) + SCN-004(21) = 100%. Arbiter v3.87完了（FULLY DEGRADED）"
   }
 }

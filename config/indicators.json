@@ -1,6 +1,6 @@
 {
-  "version": "3.86",
-  "last_updated": "2026-05-23",
+  "version": "3.87",
+  "last_updated": "2026-05-24",
   "description": "I&W（Indications and Warning）指標レジストリ. v3.82: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（IND-030 high移行・6件last_checked更新）。IND-013 high維持（MCP token theft INFO-051 B-3+TanStack npm攻撃 INFO-052 A-3+AgentTrap 141タスク INFO-017 B-3。攻撃面拡大加速）・IND-025 elevated維持（Opus 4.6 5ベンチマーク勝利 INFO-021 B-2+DeepSeek V3.2 Speciale INFO-031 C-2。量的向上継続）・IND-026 elevated維持（METR 43%乖離 INFO-038 C-2+Klarna再採用 INFO-027 B-2。high移行4ソース到達。次回検討）・IND-027 high維持（7サンドボックス INFO-009+Grok Build ACP INFO-010+DeerFlow 2.0 INFO-008。標準化爆発的加速継続）・IND-028 elevated維持（AGIタイムライン+Opus 4.6ベンチマーク向上。主観-客観乖離継続）・IND-029 high維持（$1TNデータセンター INFO-026+Mistral $2.3B INFO-033+機関投資家必須 INFO-050。資本流入劇的加速）・IND-030 elevated→high移行（Google兵器誓約削除 INFO-037 B-3+CDT 9機関停止 INFO-019 A-2+UK改名 INFO-054 B-3+Pentagon報酬構造 INFO-016 D-3+NYT安全性限界 INFO-041 A-3。5重C蓄積・能力-リスク二面性の新段階）",
   "structural_changes_log": [
     "2026-05-14 v3.76: Arbiter統合判断（DEGRADED/BOTH-FAILED状態）。Arbiter独自批判分析。7指標更新（全件状態変更なし）。IND-013 high継続（Codex 4層防御 INFO-001 A-3は防御側強化。新規脆弱性なし。critical移行条件未到達）・IND-025 elevated継続（Grok STT/TTS+Imagine+Doubao全モダリティ+Seedance 2.0 #2。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（エージェント成功率77.3% vs 74%ロールバック。期待-実態ギャップ顕在化。high移行条件検討段階）・IND-027 high継続（MCPデファクト化+AAIF 97M SDK+TikTok MCP+Grok BYO MCP+Agent Skills 1000+。標準化爆発的加速）・IND-028 elevated継続（Hassabis AGI 2030+ARC-AGI-3+Meta Llama 4不正。客観的ベンチマーク信頼性問題。主観-客観乖離継続）・IND-029 high継続（Q1 $2555億+Big 4 $7250億+Anthropic $300億+Stargate $5000億。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon SCR+DPA+Google秘密契約+Scale AI $5億+EU AI Act延期+US Safety Institute革新シフト。規制二方向同時深化。能力-リスク二面性加速）",
@@ -16,8 +16,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "88%エンタープライズインシデント（INFO-016 C-3）+Claude Codeサンドボックスバイパス（INFO-019 C-3）+Pentagon武器化（INFO-039 B-3）+AI認証情報漏洩（INFO-020 C-3）。攻撃面拡大加速。critical移行条件: 大規模実被害のA-2+報告",
-      "last_checked": "2026-05-23",
-      "rationale": "Arbiter v3.86: high維持。COMPLETE。88%エンタープライズインシデント+Pentagon武器化+Fortune 500 10%ガバナンスで攻撃面拡大加速。critical移行条件未到達"
+      "last_checked": "2026-05-24",
+      "rationale": "Arbiter v3.87: high維持。FULLY DEGRADED。確認レビューのみ。critical移行条件未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -27,8 +27,8 @@
       "trend": "stable",
       "alert_level": "elevated",
       "last_value": "GPT-5.5 Vals Multimodal Index 67.77%首位（INFO-026 B-3）+Nova Sonic音声Agent（INFO-027 A-3）+MMMU Pro人間専門家0.3pt差。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-05-23",
-      "rationale": "Arbiter v3.86: elevated維持。COMPLETE。GPT-5.5 Vals 67.77%+Nova Sonic+MMMU Pro人間0.3pt差。量的向上継続。「真の理解」検証未解決"
+      "last_checked": "2026-05-24",
+      "rationale": "Arbiter v3.87: elevated維持。FULLY DEGRADED。確認レビューのみ"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -38,8 +38,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "Fortune 500 150K+ Agent・10%のみガバナンス（INFO-030 C-3）+パイロット→本番失敗パターン（INFO-032 C-3）+88%インシデント（INFO-016 C-3）。無秩序拡大と本番品質の乖離拡大",
-      "last_checked": "2026-05-23",
-      "rationale": "Arbiter v3.86: high維持。COMPLETE。Fortune 500 150K+ Agent・10%ガバナンス+パイロット失敗+88%インシデントで無秩序拡大と本番品質乖離拡大。high維持"
+      "last_checked": "2026-05-24",
+      "rationale": "Arbiter v3.87: high維持。FULLY DEGRADED。確認レビューのみ"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -49,8 +49,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "MCP 1,300本番サーバー（INFO-021 C-3）+Confluent MCP GA（INFO-023 A-3）+Hugging Face Agent Leaderboard（INFO-049 A-3）+Chrome DevTools for Agents v1（INFO-022 A-3）。標準化爆発的加速継続",
-      "last_checked": "2026-05-23",
-      "rationale": "Arbiter v3.86: high維持。COMPLETE。MCP 1,300+Confluent GA+Hugging Face+Chrome DevTools。標準化爆発的加速継続"
+      "last_checked": "2026-05-24",
+      "rationale": "Arbiter v3.87: high維持。FULLY DEGRADED。確認レビューのみ"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -60,8 +60,8 @@
       "trend": "rising",
       "alert_level": "elevated",
       "last_value": "Erdős予想反証（INFO-009 A-3）+Kokotajlo 2027超人間AI警告（INFO-064 B-3）+ARC-AGI 7Mモデルがフロンティア2倍（INFO-061 C-3）。数学研究画期的。但し汎用知能では限界明確。主観-客観乖離継続",
-      "last_checked": "2026-05-23",
-      "rationale": "Arbiter v3.86: elevated維持。COMPLETE。Erdős予想反証は画際的。但し単一分野。ARC-AGI汎用知能では限界明確。主観-客観乖離継続"
+      "last_checked": "2026-05-24",
+      "rationale": "Arbiter v3.87: elevated維持。FULLY DEGRADED。確認レビューのみ"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -71,8 +71,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "米国DC電力66GW倍増（INFO-054 A-2）+Big Tech $420B（INFO-060 B-3）+OpenAI $1.4T（INFO-060 B-3）+中国AI資金$16.2B Q1（INFO-053 B-2）。Goldman Sachs A-2+Big Tech $420Bで資本流入劇的加速。物理的制約ギャップ確定的",
-      "last_checked": "2026-05-23",
-      "rationale": "Arbiter v3.86: high維持。COMPLETE。Goldman Sachs 66GW（A-2）+Big Tech $420B+OpenAI $1.4T+中国$16.2B。資本流入劇的加速。物理的制約ギャップ確定的"
+      "last_checked": "2026-05-24",
+      "rationale": "Arbiter v3.87: high維持。FULLY DEGRADED。確認レビューのみ"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -82,8 +82,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "Anthropic安全性拒否→SCR因果チェーンA-2確認（INFO-069 A-2）+Pentagon武器化（INFO-039 B-3）+7社機密契約（INFO-038 B-3）+$200M/社（INFO-071 B-3）。A-2品質因果チェーン確認で能力-リスク二面性の新段階",
-      "last_checked": "2026-05-23",
-      "rationale": "Arbiter v3.86: high維持。COMPLETE。INFO-069（A-2）因果チェーン確認+Pentagon武器化+$200M/社。A-2品質で能力-リスク二面性の新段階。high維持"
+      "last_checked": "2026-05-24",
+      "rationale": "Arbiter v3.87: high維持。FULLY DEGRADED。確認レビューのみ"
     }
   }
 }
