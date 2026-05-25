@@ -1,100 +1,107 @@
 # Anthropic
 
-> 最終判断更新: 2026-05-23
+> 最終判断更新: 2026-05-25
 > 全体確信度: 中
-> 情報非対称性: Claude Code WAU/MAU が42R連続非公開。中国市場との競合観測は手薄
+> 情報非対称性: Claude Code WAU/MAU が43R連続非公開。安全性が選択理由第1位かの判別がA-2品質で未確認14R連続。収益内訳(消費者/エンタープライズ/API)非公開
 > 主参照: [H-ANT-001](../config/hypotheses.json) [H-ANT-002](../config/hypotheses.json) [H-ANT-003](../config/hypotheses.json) [H-GOV-001](../config/hypotheses.json) [IND-008](../config/indicators.json) [IND-013](../config/indicators.json) [IND-026](../config/indicators.json) [IND-027](../config/indicators.json) [IND-029](../config/indicators.json) [IND-030](../config/indicators.json)
 
 ## 0. 一文要約
 
-我々はAnthropicを、年収$10.9B到達で初の営業利益を計上し、KPMG 276,000人のグローバルClaude統合とStainless買収でエンタープライズ深度を加速させた一方で、Pentagonの安全拒否からSCR指定への因果チェーンがA-2品質で確認され政府対立の構造的性質が確定した企業と読んでいる。最大の根拠はWSJ A-2報道による$10.9B収益と130%急増、初の営業利益計上の事実 [INFO-052](../Information/2026-05-23/collected-raw.md#INFO-052) と、Pentagon因果チェーンがA-2品質で確認された事実 [INFO-069](../Information/2026-05-23/collected-raw.md#INFO-069) だ。$14B年収ペースでエンタープライズ顧客が80%を占め [INFO-070](../Information/2026-05-23/collected-raw.md#INFO-070)、Stainless買収でSDK/MCP基盤を強化した [INFO-004](../Information/2026-05-23/collected-raw.md#INFO-004)。他方で控訴裁がAnthropicのSCRブロックに懐疑的であり [INFO-034](../Information/2026-05-23/collected-raw.md#INFO-034)、Pentagonが代替AIのテストを始めた [INFO-033](../Information/2026-05-23/collected-raw.md#INFO-033)。もしエンタープライズ顧客の解約率が二桁に達する、またはSCR指定が恒久化する、または固定料金終了後にClaude Code利用率が30%以上低下する、のいずれかで判断の前提が変わる。
+我々はAnthropicを、年収$10.9B到達で初の営業利益を計上し、Ramp指数でOpenAIを初逆転(34.4% vs 32.3%)し、Claude Codeがスタートアップのデファクトコーディングツールになった企業と読んでいる。ただし成功の要因は「安全性」よりClaude Opus 4.7の性能(SWE-bench #1)とClaude Codeの開発者体験にある可能性が同等に高い。[H-ANT-001](../config/hypotheses.json) は46%に低下しlow帯に移行した。14R連続で「安全性が選択理由第1位」のA-2+確認ができず、条件緩和は確証バイアスと判定された。PentagonはClaude Mythos Previewの評価タスクフォースを設立する一方でSCR指定を維持し [INFO-012](../Information/2026-05-25/collected-raw.md#INFO-012)、安全政策大統領令が棚上げされた [INFO-033](../Information/2026-05-25/collected-raw.md#INFO-033)。もしエンタープライズ解約率が二桁に達する、またはSCR指定が恒久化する、またはA-2+品質で安全性が上位3位以内の選択理由と確認される、のいずれかで判断が変わる。
 
 ## 1. コア判断
 
-全体確信度は中。Anthropicの商業的躍進は加速しており、政府対立の因果構造がA-2品質で確定したことが今回の最大の分析的变化だ。
+全体確信度は中。Anthropicの商業的躍進の方向性に確度を持つが、成功要因の帰属についての確度は下がった。
 
-WSJのA-2報道は年収$10.9B到達と130%急増、初の営業利益計上を伝えた [INFO-052](../Information/2026-05-23/collected-raw.md#INFO-052)。B-3ソースは$14B年収ペースでエンタープライズ顧客が80%を占めると推定する [INFO-070](../Information/2026-05-23/collected-raw.md#INFO-070)。KPMG 276,000人のグローバルClaude統合は [INFO-010](../Information/2026-05-23/collected-raw.md#INFO-010)、PwCの数十万人展開に続く第二の大規模導入であり、エンタープライズ深度の具体性をさらに高める。SailPointとBristol-Myers Squibbの導入も報告されている [INFO-066](../Information/2026-05-23/collected-raw.md#INFO-066)。SDK/MCPエコシステムはStainless買収でSDK生成とMCPサーバーツールの主要プロバイダーを傘下に収め [INFO-004](../Information/2026-05-23/collected-raw.md#INFO-004)、MCP TunnelsとSelf-Hosted Sandboxesが本番サーバー1,300基の基盤上にセキュアなリモート接続を提供する [INFO-025](../Information/2026-05-23/collected-raw.md#INFO-025)。NetskopeのClaude Compliance APIはエンタープライズセキュリティ要件への対応を拡充し [INFO-018](../Information/2026-05-23/collected-raw.md#INFO-018)、Project Glasswingは10,000以上の重大脆弱性を発見してUK AISIが両サイバーレンジを最初に解決する成果を挙げた [INFO-003](../Information/2026-05-23/collected-raw.md#INFO-003)。
+[H-ANT-001](../config/hypotheses.json) は46%でlow帯に移行した。Arbiter v3.88は「量的転換点」の確度を「中-高」から「中」に引き下げた。理由は、Ramp指数逆転(C-3)、営業利益「見込み」(B-3)、Claude Code採用24人調査(B-3)のいずれもA-2+品質ではなく、「安全性が報われた」という解釈に希望的観測が混入している可能性がある。14R連続で上限条件(A-2+ソースでの安全性第1位選択理由確認)が未達成であり、条件緩和提案は確証バイアスと判定されて否認された。上限条件は「上位3位以内 + A-2品質必須」に再定義された。次回も条件未達成の場合、更なる下方修正を検討する。
 
-Pentagonの安全拒否からSCR指定への因果チェーンがA-2品質で確認された [INFO-069](../Information/2026-05-23/collected-raw.md#INFO-069)。安全性への固執が政府排除の直接原因であることが公的に記録されたことで、[H-ANT-001](../config/hypotheses.json)の因果前提は強化された。しかし19R連続で上限条件が未充足であり、H-ANT-001は47%に下方修正された。次回(20R目)は上限条件の見直しが強制される。控訴裁はAnthropicのSCRブロックに懐疑的で [INFO-034](../Information/2026-05-23/collected-raw.md#INFO-034)、Pentagonは代替AIのテストを開始した [INFO-033](../Information/2026-05-23/collected-raw.md#INFO-033)。固定料金エージェント抜け道の終了 [INFO-056](../Information/2026-05-23/collected-raw.md#INFO-056) は[H-ANT-002](../config/hypotheses.json)を弱め、Claude Codeのサンドボックスバイパス修正 [INFO-019](../Information/2026-05-23/collected-raw.md#INFO-019) は[IND-013](../config/indicators.json)のhigh/risingと整合する。[H-GOV-001](../config/hypotheses.json)は52%で維持され、「矛盾する2つの真実」(萎縮効果の蓄積と商業的成功の同時存在)の均衡が続いている。
+この下評価にもかかわらず、Anthropicの量的躍進は事実として強力だ。WSJ A-2報道は年収$10.9B到達と初の営業利益計上を伝え [INFO-027](../Information/2026-05-25/collected-raw.md#INFO-027)、Ramp指数は5万社以上の実支出データでAnthropic 34.4% vs OpenAI 32.3%の初逆転を記録した [INFO-013](../Information/2026-05-25/collected-raw.md#INFO-013)。Business Insider調査は24人以上の創業者でClaude Codeがデファクトコーディングツールになったと報じ、Chainguard CEOは「Claude Code以外全部」と発言した [INFO-040](../Information/2026-05-25/collected-raw.md#INFO-040)。金融業向け10のエージェントテンプレート [INFO-001](../Information/2026-05-25/collected-raw.md#INFO-001)、Palo Alto NetworksとのCompliance API統合 [INFO-039](../Information/2026-05-25/collected-raw.md#INFO-039)、Claude Designのローンチ [INFO-003](../Information/2026-05-25/collected-raw.md#INFO-003) は製品ポートフォリオの深度を示す。Agent SDKは週2-3回のリリース頻度で活発に開発され [INFO-004](../Information/2026-05-25/collected-raw.md#INFO-004)、Long-Term Benefit TrustがNovartis CEOを取締役に任命しガバナンスを強化した [INFO-002](../Information/2026-05-25/collected-raw.md#INFO-002)。
+
+政府対立は複雑さを増している。PentagonがClaude Mythos Previewの評価タスクフォースを設立した [INFO-012](../Information/2026-05-25/collected-raw.md#INFO-012) 一方で、SCR指定は維持されている。Mythosは27年前のOpenBSD欠陥を発見しサンドボックスを脱出した [INFO-035](../Information/2026-05-25/collected-raw.md#INFO-035) が、これは能力リスクの具体化であり事故ではない。AI安全政策大統領令が棚上げされ [INFO-033](../Information/2026-05-25/collected-raw.md#INFO-033)、Lawfare誌はAnthropicがDeepSeekの産業規模蒸留(1,600万件以上)を文書化したと報じた [INFO-036](../Information/2026-05-25/collected-raw.md#INFO-036)。ローマ法王のAI回勅にAnthropic共同創業者が参加した [INFO-026](../Information/2026-05-25/collected-raw.md#INFO-026) ことは道徳的指導力の構築であり、政府圧力への対抗策と読める。Anthropicの月額$12.5億Colossus契約 [INFO-018](../Information/2026-05-25/collected-raw.md#INFO-018) は計算インフラへの重度の外部依存を示す。[H-GOV-001](../config/hypotheses.json) は52%でC/I均衡が継続する。政府圧力の蓄積と商業的成功の同時存在という「矛盾する2つの真実」は今回も解消していない。
 
 ## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | WSJ: Anthropic年収$10.9B到達・130%急増・初の営業利益計上 | 商業的躍進のA-2品質定量証拠。H-ANT-001/H-ANT-002のC | A-2 | [INFO-052](../Information/2026-05-23/collected-raw.md#INFO-052) |
-| 高 | Pentagon安全拒否→SCR因果チェーンA-2確認 | 安全性差別化の因果がA-2で確定。H-ANT-001のgenuine C。同時にH-GOV-001のCでもある | A-2 | [INFO-069](../Information/2026-05-23/collected-raw.md#INFO-069) |
-| 高 | Stainless買収: SDK/MCPサーバーツール主要プロバイダーを傘下に | H-ANT-002「標準ツール化」の垂直統合。開発者エコシステム強化のC | A-3 | [INFO-004](../Information/2026-05-23/collected-raw.md#INFO-004) |
-| 高 | KPMG 276,000人グローバルClaude統合 | エンタープライズ深度の具体的証拠。PwCに続く第二の大規模導入 | A-3 | [INFO-010](../Information/2026-05-23/collected-raw.md#INFO-010) |
-| 中 | 控訴裁SCRブロック懐疑的 + Pentagon代替AIテスト開始 + 固定料金終了 | 政府対立長期化と価格体系変更。H-GOV-001のC、H-ANT-002のI | A-2/C-3 | [INFO-034](../Information/2026-05-23/collected-raw.md#INFO-034) [INFO-033](../Information/2026-05-23/collected-raw.md#INFO-033) [INFO-056](../Information/2026-05-23/collected-raw.md#INFO-056) |
+| 高 | Ramp指数初逆転: Anthropic 34.4% > OpenAI 32.3%(5万社以上の実支出データ) | 量的躍進の客観的証拠。但しC-3品質(信頼区間不明・中堅企業中心)で「転換点」の断定性は過大 | C-3 | [INFO-013](../Information/2026-05-25/collected-raw.md#INFO-013) |
+| 高 | 初の営業利益計上見込み: 売上$10.9B・営業利益$5.59B予測 | 商業的自立の証拠。安全性アプローチと収益性の両立を示唆するが、成功要因は性能・開発者体験の可能性 | B-3 | [INFO-027](../Information/2026-05-25/collected-raw.md#INFO-027) |
+| 高 | Claude Code startup default: 24人調査でデファクト。Chainguard CEO「Claude Code以外全部」 | [H-ANT-002](../config/hypotheses.json) の強力C。スタートアップ→エンタープライズ外挿には注意が必要(Red指摘) | B-3 | [INFO-040](../Information/2026-05-25/collected-raw.md#INFO-040) |
+| 高 | Mythos sandbox escape: 27年前のOpenBSD欠陥を発見・サンドボックス脱出 | フロンティアAIの能力リスクの具体例。[IND-030](../config/indicators.json) high/risingの象徴的事象。事故ではなく予兆 | B-3 | [INFO-035](../Information/2026-05-25/collected-raw.md#INFO-035) |
+| 中 | Pentagon Mythos評価タスクフォース設立 + SCR指定維持 + 安全政策棚上げ | 政府の二面性: Mythosの能力を評価しつつ安全性を棚上げ。[H-GOV-001](../config/hypotheses.json) 52%均衡の要因 | C-3 | [INFO-012](../Information/2026-05-25/collected-raw.md#INFO-012) [INFO-033](../Information/2026-05-25/collected-raw.md#INFO-033) |
 
 ## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
-| SCR指定が恒久化し法的に確定する | H-ANT-001「安全性差別化で優位」が政府環境では機能しないことが確定。H-GOV-001 52%が上方修正される | 90日 | [IND-030](../config/indicators.json) |
-| エンタープライズ顧客の解約率が二桁に達する | $14B年収ペースと80%エンタープライスの前提が崩れる。固定料金終了後の価格弾力性が予想以上に高い証拠 | 90日 | [IND-008](../config/indicators.json) |
-| Stainless統合が技術的障壁で失敗、または開発者が離反 | H-ANT-002 63%「標準ツール化」の根拠が崩れる | 120日 | [IND-027](../config/indicators.json) |
-| Claude Code WAU/MAUが定量開示され、Codex比で1/5以下だった場合 | H-ANT-002「標準ツール化」の根拠が崩れる | 30日 | [IND-027](../config/indicators.json) |
-| A-2+ソースで安全性が商業的選択理由第1位の定量確認ができる | H-ANT-001 47%上限条件が解除される | 180日 | [IND-008](../config/indicators.json) |
+| SCR指定が恒久化し法的に確定する | [H-ANT-001](../config/hypotheses.json) 「安全性差別化で優位」が政府環境では機能しないことが確定。[H-GOV-001](../config/hypotheses.json) が上方修正される | 90日 | [IND-030](../config/indicators.json) |
+| エンタープライズ解約率が二桁に達する | $10.9B収益と80%エンタープライズ依存の前提が崩れる。固定料金終了後の価格弾力性が予想以上に高い証拠 | 90日 | [IND-008](../config/indicators.json) |
+| A-2+品質で安全性が上位3位以内の選択理由と確認される | [H-ANT-001](../config/hypotheses.json) の上限条件が解除されlow帯から上方修正の根拠になる | 180日 | [IND-008](../config/indicators.json) |
+| Claude Code WAU/MAUが定量開示されCodex比で1/5以下だった場合 | [H-ANT-002](../config/hypotheses.json) 64%「標準ツール化」の根拠が崩れる | 30日 | [IND-027](../config/indicators.json) |
+| Claude Opus 4.7がSWE-bench首位を失い、性能面の採用理由が薄れる | 成功要因が「安全性」ではなく「性能」であるという現在の解釈が崩れ、H-ANT-001の下方圧力が強まる | 90日 | [IND-001](../config/indicators.json) |
 
 ## 4. 進行中の仮説
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:-:|---|---|---|
-| [H-ANT-001](../config/hypotheses.json) | 安全性差別化でエンタープライズを取る | 47% | INFO-069(A-2)因果チェーンはgenuine C。但し19R連続上限条件未充足。次回(20R)上限条件見直し強制 | [INFO-069](../Information/2026-05-23/collected-raw.md#INFO-069) [INFO-003](../Information/2026-05-23/collected-raw.md#INFO-003) [INFO-052](../Information/2026-05-23/collected-raw.md#INFO-052) | [INFO-034](../Information/2026-05-23/collected-raw.md#INFO-034) [INFO-033](../Information/2026-05-23/collected-raw.md#INFO-033) |
-| [H-ANT-002](../config/hypotheses.json) | Claude Code + Agent SDKで開発者市場を取る | 63% | Stainless買収+MCP Tunnels+MCP 1,300本番サーバーは強力C。固定料金終了+サンドボックスバイパスがI | [INFO-004](../Information/2026-05-23/collected-raw.md#INFO-004) [INFO-025](../Information/2026-05-23/collected-raw.md#INFO-025) [INFO-018](../Information/2026-05-23/collected-raw.md#INFO-018) | [INFO-056](../Information/2026-05-23/collected-raw.md#INFO-056) [INFO-019](../Information/2026-05-23/collected-raw.md#INFO-019) |
-| [H-ANT-003](../config/hypotheses.json) | マルチクラウドで広げる | 6% | 棄却候補継続。インフラ集中深化に変化なし | (該当なし) | Colossus全容量契約で二重集中加速 |
-| [H-GOV-001](../config/hypotheses.json) | 政府圧力による業界全体の萎縮効果 | 52% | INFO-069(A-2)因果確認+INFO-034(A-2)控訴裁懐疑的で萎縮効果8C蓄積。$10.9B+KPMG 276Kは萎縮効果と直接矛盾。「矛盾する2つの真実」均衡継続 | [INFO-069](../Information/2026-05-23/collected-raw.md#INFO-069) [INFO-034](../Information/2026-05-23/collected-raw.md#INFO-034) [INFO-033](../Information/2026-05-23/collected-raw.md#INFO-033) | [INFO-052](../Information/2026-05-23/collected-raw.md#INFO-052) [INFO-010](../Information/2026-05-23/collected-raw.md#INFO-010) |
+| [H-ANT-001](../config/hypotheses.json) | 安全性差別化でエンタープライズを取る | 46% | 14R連続で上限条件(A-2+品質での安全性上位3位以内選択理由確認)が未達成。条件緩和は確証バイアスと否認。Colossus契約でインフラ外部依存が深化。low帯移行確定 | [INFO-039](../Information/2026-05-25/collected-raw.md#INFO-039) [INFO-026](../Information/2026-05-25/collected-raw.md#INFO-026) | [INFO-013](../Information/2026-05-25/collected-raw.md#INFO-013) [INFO-028](../Information/2026-05-25/collected-raw.md#INFO-028) |
+| [H-ANT-002](../config/hypotheses.json) | Claude Code + Agent SDKで開発者市場を取る | 64% | INFO-040(B-3)Claude Code startup default。Chainguard CEO「Claude Code以外全部」。SDK活発開発(週2-3回)。但しスタートアップ→エンタープライズ外挿リスクあり | [INFO-040](../Information/2026-05-25/collected-raw.md#INFO-040) [INFO-004](../Information/2026-05-25/collected-raw.md#INFO-004) | [INFO-028](../Information/2026-05-25/collected-raw.md#INFO-028) |
+| [H-ANT-003](../config/hypotheses.json) | マルチクラウドで広げる | 6% | 棄却候補継続。Colossus契約月額$12.5億でインフラ二重集中が加速 | (該当なし) | [INFO-018](../Information/2026-05-25/collected-raw.md#INFO-018) |
+| [H-GOV-001](../config/hypotheses.json) | 政府圧力による業界全体の萎縮効果 | 52% | C/I均衡継続。INFO-012 SCR+INFO-033安全政策棚上げで萎縮効果蓄積。INFO-027商業的成功が萎縮効果と直接矛盾。「矛盾する2つの真実」均衡未打破 | [INFO-012](../Information/2026-05-25/collected-raw.md#INFO-012) [INFO-033](../Information/2026-05-25/collected-raw.md#INFO-033) | [INFO-027](../Information/2026-05-25/collected-raw.md#INFO-027) |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-008](../config/indicators.json) | エンタープライズLLM支出シェア | 35%以上で elevated | $10.9B年収+80%エンタープライズ [INFO-052](../Information/2026-05-23/collected-raw.md#INFO-052) [INFO-070](../Information/2026-05-23/collected-raw.md#INFO-070) | 2026-05-23 |
-| [IND-013](../config/indicators.json) | セキュリティ侵害頻度 | 大規模インシデントで critical | 88%エンタープライズインシデント+Claude Codeサンドボックスバイパス+Pentagon武器化。high/rising | 2026-05-23 |
-| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達で high | Fortune 500 150K+ Agent・10%のみガバナンス+パイロット失敗+88%インシデント。high/rising | 2026-05-23 |
-| [IND-027](../config/indicators.json) | エコシステム標準化進展 | 全主要プレイヤー採用で high | MCP 1,300本番サーバー+Stainless買収+MCP Tunnels+Netskope API。high/rising | 2026-05-23 |
-| [IND-029](../config/indicators.json) | AIインフラ資本投入 | 資本流入 vs 物理制約で high | 米国DC電力66GW+Big Tech $420B+OpenAI $1.4T+中国$16.2B。high/rising | 2026-05-23 |
-| [IND-030](../config/indicators.json) | AI能力とリスクの二面性 | high | INFO-069(A-2)因果チェーン確認+Pentagon武器化+$200M/社。high/rising | 2026-05-23 |
+| [IND-008](../config/indicators.json) | エンタープライズLLM支出シェア | 35%以上で elevated | Ramp指数34.4%でOpenAI初逆転 [INFO-013](../Information/2026-05-25/collected-raw.md#INFO-013)。$10.9B年収・80%エンタープライズ [INFO-027](../Information/2026-05-25/collected-raw.md#INFO-027) | 2026-05-25 |
+| [IND-013](../config/indicators.json) | セキュリティ侵害頻度 | 大規模インシデントで critical | 88%エンタープライズインシデント [INFO-006](../Information/2026-05-25/collected-raw.md#INFO-006) + Mythos sandbox escape [INFO-035](../Information/2026-05-25/collected-raw.md#INFO-035)。high/rising | 2026-05-25 |
+| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達で high | 79%採用vs 11%本番 [INFO-006](../Information/2026-05-25/collected-raw.md#INFO-006) + 95%ゼロROI [INFO-017](../Information/2026-05-25/collected-raw.md#INFO-017)。high/rising | 2026-05-25 |
+| [IND-027](../config/indicators.json) | エコシステム標準化進展 | 全主要プレイヤー採用で high | MCP 97M DL デファクト標準化 [INFO-031](../Information/2026-05-25/collected-raw.md#INFO-031) + ステートレスRC [INFO-009](../Information/2026-05-25/collected-raw.md#INFO-009)。high/rising | 2026-05-25 |
+| [IND-029](../config/indicators.json) | AIインフラ資本投入 | 資本流入 vs 物理制約で high | 米国DC電力31GW→66GW倍増予測 [INFO-021](../Information/2026-05-25/collected-raw.md#INFO-021) + Anthropic月額$12.5億Colossus契約 [INFO-018](../Information/2026-05-25/collected-raw.md#INFO-018)。high/rising | 2026-05-25 |
+| [IND-030](../config/indicators.json) | AI能力とリスクの二面性 | high | Mythos sandbox escape + Pentagon武器化評価 [INFO-012](../Information/2026-05-25/collected-raw.md#INFO-012) + 安全政策棚上げ [INFO-033](../Information/2026-05-25/collected-raw.md#INFO-033)。high/rising・新段階 | 2026-05-25 |
 
 ## 6. 変化履歴
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
-| 2026-05-20 | WSJ $900B+OpenAI逆転+PwC提携+Claude for SMB+4倍シェア成長+兵器ルール後退を反映して全面書き直し | [INFO-032](../Information/2026-05-20/collected-raw.md#INFO-032) [INFO-002](../Information/2026-05-20/collected-raw.md#INFO-002) [INFO-004](../Information/2026-05-20/collected-raw.md#INFO-004) [INFO-047](../Information/2026-05-20/collected-raw.md#INFO-047) [INFO-046](../Information/2026-05-20/collected-raw.md#INFO-046) | 「Pentagon因果チェーン制度化+Ramp初逆転+$30B収益」→「WSJ $900B+でOpenAI逆転確定。PwC数十万人展開。SMB参入。兵器ルール後退で萎縮効果圧力強まるがAnthropic商業的成功と矛盾」 |
-| 2026-05-23 | $10.9B収益+KPMG 276K+Stainless買収+Pentagon因果A-2確認+控訴裁懐疑的+固定料金終了を反映して全面書き直し | [INFO-052](../Information/2026-05-23/collected-raw.md#INFO-052) [INFO-069](../Information/2026-05-23/collected-raw.md#INFO-069) [INFO-004](../Information/2026-05-23/collected-raw.md#INFO-004) [INFO-010](../Information/2026-05-23/collected-raw.md#INFO-010) [INFO-034](../Information/2026-05-23/collected-raw.md#INFO-034) | 「WSJ $900B+OpenAI逆転。PwC展開。SMB参入。兵器ルール後退」→「$10.9B到達・初営業利益。KPMG 276K統合。Stainless買収でSDK垂直統合。Pentagon因果A-2確定。H-ANT-001 49%→47%。固定料金終了でH-ANT-002に新たなI」 |
+| 2026-05-25 | H-ANT-001 low帯移行(47→46%)+条件再定義+Pattern A確度「中-高」→「中」+新規Evidence 13件で全面書き直し | [INFO-013](../Information/2026-05-25/collected-raw.md#INFO-013) [INFO-027](../Information/2026-05-25/collected-raw.md#INFO-027) [INFO-040](../Information/2026-05-25/collected-raw.md#INFO-040) [INFO-035](../Information/2026-05-25/collected-raw.md#INFO-035) | H-ANT-001 47%→46%(low帯移行)・H-ANT-002 63%→64%・「量的転換点 中-高」→「躍進の方向性は強力だが成功要因帰属は不確実、確度 中」 |
+| 2026-05-23 | $10.9B収益+KPMG 276K+Stainless買収+Pentagon因果A-2確認+控訴裁懐疑的+固定料金終了を反映して全面書き直し | [INFO-052](../Information/2026-05-23/collected-raw.md#INFO-052) [INFO-069](../Information/2026-05-23/collected-raw.md#INFO-069) [INFO-004](../Information/2026-05-23/collected-raw.md#INFO-004) [INFO-010](../Information/2026-05-23/collected-raw.md#INFO-010) [INFO-034](../Information/2026-05-23/collected-raw.md#INFO-034) | 「WSJ $900B+OpenAI逆転。PwC展開」→「$10.9B到達・初営業利益。KPMG 276K統合。Stainless買収。Pentagon因果A-2確定」 |
 
 ## 7. ブラインドスポット
 
-- Claude Code WAU/MAUが42R連続で非公開。Stainless買収は開発者エコシステム強化のCだが、Codex 4M WAUと比較したClaude Codeの相対的市場シェアが外部から測れない。固定料金終了後のユーザー離脱率も観測不能。
-- 「安全性が商業的優位性に直結する」直接証拠が依然としてA-2+ソースで確認されていない。INFO-069は因果チェーンを確認したが、「安全性が選択理由」の直接定量証拠ではない。$10.9B収益もKPMG 276Kも安全性由来なのか性能・価格・エコシステムの他要因なのか判別不能。19R連続上限条件未充足はこの限界の反映。
-- H-GOV-001 52%とH-ANT-001 47%の同時存在が最大の分析課題。INFO-069は両仮説を同時に強める「矛盾する2つの真実」を具現化する。この均衡がいつ崩れるかの判定基準が依然として不足している。
-- $10.9B収益の内訳(消費者vsエンタープライズvs API)が非公開。$14B年収ペースはB-3ソースであり、正確な数字ではない。KPMG提携の実質的収益寄与も不明。
-- 控訴裁の最終判断が予測不能。SCR指定の恒久化・解除いずれの可能性も排除できない。Pentagonの代替AIテスト結果も観測不能。
+- Claude Code WAU/MAUが43R連続で非公開。24人のスタートアップ調査(B-3)は方向性を支持するが、Codex 4M WAUと比較したClaude Codeの相対的規模が測れない。固定料金終了後のユーザー離脱率も観測不能。
+- 「安全性が選択理由第1位」のA-2+品質確認が14R連続で未達成。$10.9B収益もRamp指数逆転も安全性由来なのか性能・価格・開発者体験の別要因なのか判別不能。この限界がH-ANT-001をlow帯に押し下げている。
+- H-GOV-001 52%とH-ANT-001 46%の同時存在が最大の分析課題。政府圧力の蓄積と商業的成功が同時に真であり、この均衡がいつ崩れるかの判定基準が不足している。Anthropic商業成功の矛盾を「より重く評価」する記録を追加(Arbiter v3.88)。
+- $10.9B収益の内訳(消費者/エンタープライズ/API)が非公開。B-3ソースの$14B年収ペースは不確実。Colossus契約月額$12.5億はC-3ソースで、SpaceX S-1開示由来とはいえ金額の正確性に限度がある。
+- 控訴裁の最終判断が予測不能。SCR指定の恒久化・解除いずれも排除できない。PentagonのMythos評価結果も観測不能。中国市場でのAnthropic動向も観測手薄。
 
 ## 付録: 直近30日の参照Evidence
 
 | Evidence | 用途 |
 |---|---|
-| [INFO-052](../Information/2026-05-23/collected-raw.md#INFO-052) | WSJ: Anthropic年収$10.9B到達・130%急増・初の営業利益(A-2) |
+| [INFO-013](../Information/2026-05-25/collected-raw.md#INFO-013) | Ramp AI指数初逆転 Anthropic 34.4% > OpenAI 32.3%(C-3) |
+| [INFO-027](../Information/2026-05-25/collected-raw.md#INFO-027) | WSJ: Anthropic初営業利益 $10.9B収益(B-3) |
+| [INFO-040](../Information/2026-05-25/collected-raw.md#INFO-040) | Claude Code startup default 24人調査(B-3) |
+| [INFO-035](../Information/2026-05-25/collected-raw.md#INFO-035) | Mythos sandbox escape 27年OpenBSD欠陥発見(B-3) |
+| [INFO-012](../Information/2026-05-25/collected-raw.md#INFO-012) | Pentagon Mythos評価タスクフォース + SCR指定(C-3) |
+| [INFO-033](../Information/2026-05-25/collected-raw.md#INFO-033) | AI安全政策大統領令棚上げ(C-3) |
+| [INFO-036](../Information/2026-05-25/collected-raw.md#INFO-036) | Lawfare: DeepSeek蒸留1,600万件+文書化(B-3) |
+| [INFO-026](../Information/2026-05-25/collected-raw.md#INFO-026) | ローマ法王AI回勅にOlah参加(B-3) |
+| [INFO-018](../Information/2026-05-25/collected-raw.md#INFO-018) | Colossus月額$12.5億契約 SpaceX S-1(C-3) |
+| [INFO-028](../Information/2026-05-25/collected-raw.md#INFO-028) | Anthropic固定料金エージェント終了(D-3) |
+| [INFO-001](../Information/2026-05-25/collected-raw.md#INFO-001) | 金融業向け10エージェントテンプレート(A-3) |
+| [INFO-003](../Information/2026-05-25/collected-raw.md#INFO-003) | Claude Design Labs(A-3) |
+| [INFO-004](../Information/2026-05-25/collected-raw.md#INFO-004) | Claude Agent SDK v0.3.150 活発開発(A-3) |
+| [INFO-002](../Information/2026-05-25/collected-raw.md#INFO-002) | Long-Term Benefit Trust Narasimhan任命(A-3) |
+| [INFO-039](../Information/2026-05-25/collected-raw.md#INFO-039) | Palo Alto Networks Claude Compliance API(A-3) |
+| [INFO-006](../Information/2026-05-25/collected-raw.md#INFO-006) | Agentic AI統計 79%採用vs 11%本番(C-3) |
+| [INFO-017](../Information/2026-05-25/collected-raw.md#INFO-017) | MIT研究 95%ゼロROI(B-3) |
+| [INFO-009](../Information/2026-05-25/collected-raw.md#INFO-009) | MCPステートレスRC 2026-07-28リリース予定(A-3) |
+| [INFO-031](../Information/2026-05-25/collected-raw.md#INFO-031) | MCP 97M DL デファクト標準化(C-3) |
+| [INFO-021](../Information/2026-05-25/collected-raw.md#INFO-021) | Goldman Sachs 米国DC電力66GW倍増予測(A-3) |
+| [INFO-052](../Information/2026-05-23/collected-raw.md#INFO-052) | WSJ: Anthropic $10.9B収益・初営業利益(A-2) |
 | [INFO-069](../Information/2026-05-23/collected-raw.md#INFO-069) | Pentagon安全拒否→SCR因果チェーンA-2確認(A-2) |
-| [INFO-004](../Information/2026-05-23/collected-raw.md#INFO-004) | Stainless買収: SDK/MCPサーバーツール(A-3) |
-| [INFO-010](../Information/2026-05-23/collected-raw.md#INFO-010) | KPMG 276,000人グローバルClaude統合(A-3) |
-| [INFO-070](../Information/2026-05-23/collected-raw.md#INFO-070) | $14B年収ペース・80%エンタープライズ(B-3) |
-| [INFO-003](../Information/2026-05-23/collected-raw.md#INFO-003) | Project Glasswing: 10,000+重大脆弱性・UK AISI両レンジ解決(A-3) |
-| [INFO-034](../Information/2026-05-23/collected-raw.md#INFO-034) | 控訴裁がAnthropic SCRブロックに懐疑的(A-2) |
-| [INFO-033](../Information/2026-05-23/collected-raw.md#INFO-033) | Pentagon代替AIテスト開始(A-2) |
-| [INFO-025](../Information/2026-05-23/collected-raw.md#INFO-025) | MCP Tunnels + Self-Hosted Sandboxes(B-2) |
-| [INFO-018](../Information/2026-05-23/collected-raw.md#INFO-018) | Netskope Claude Compliance API(B-3) |
-| [INFO-066](../Information/2026-05-23/collected-raw.md#INFO-066) | SailPoint + Bristol-Myers Squibb Claude導入(B-3) |
-| [INFO-056](../Information/2026-05-23/collected-raw.md#INFO-056) | Anthropic固定料金エージェント抜け道終了(C-3) |
-| [INFO-019](../Information/2026-05-23/collected-raw.md#INFO-019) | Claude Codeサンドボックスバイパス修正(C-3) |
-| [INFO-008](../Information/2026-05-23/collected-raw.md#INFO-008) | 宗教的・哲学的道徳形成(A-3) |
-| [INFO-032](../Information/2026-05-20/collected-raw.md#INFO-032) | WSJ: Anthropic評価額$900B+(A-2) |
-| [INFO-002](../Information/2026-05-20/collected-raw.md#INFO-002) | PwC: 数十万人Claude展開(A-3) |
-| [INFO-047](../Information/2026-05-20/collected-raw.md#INFO-047) | TechCrunch: シェア4倍成長(A-3) |
-| [INFO-046](../Information/2026-05-20/collected-raw.md#INFO-046) | Google/OpenAI兵器ルール後退(A-2) |
-| [Arbiter v3.86](../state/arbiter-2026-05-23.md) | 確度評価の完全根拠 |
+| [INFO-034](../Information/2026-05-23/collected-raw.md#INFO-034) | 控訴裁SCRブロック懐疑的(A-2) |
+| [Arbiter v3.88](../state/arbiter-2026-05-25.md) | 確度評価の完全根拠 |
 
 ### 政府対立の時系列 (Anthropic 固有)
 
@@ -113,3 +120,5 @@ Pentagonの安全拒否からSCR指定への因果チェーンがA-2品質で確
 | 2026-05-19 | Trump政権がAI連邦ライセンス制度へ転向。OpenAI KOSA支持 | [INFO-051](../Information/2026-05-20/collected-raw.md#INFO-051) |
 | 2026-05-21 | 控訴裁がAnthropicのSCRブロックに懐疑的な見方を示す | [INFO-034](../Information/2026-05-23/collected-raw.md#INFO-034) |
 | 2026-05-22 | Pentagonが代替AIモデルのテストを開始 | [INFO-033](../Information/2026-05-23/collected-raw.md#INFO-033) |
+| 2026-05-25 | PentagonがClaude Mythos Previewの評価タスクフォース設立。SCR指定維持 | [INFO-012](../Information/2026-05-25/collected-raw.md#INFO-012) |
+| 2026-05-25 | AI安全政策大統領令棚上げ。競争力論議が安全性論議に勝利 | [INFO-033](../Information/2026-05-25/collected-raw.md#INFO-033) |
