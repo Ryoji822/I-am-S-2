@@ -1,6 +1,6 @@
 {
-  "version": "3.89",
-  "last_updated": "2026-05-26",
+  "version": "3.90",
+  "last_updated": "2026-05-27",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.84: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了・DEGRADED条件下）。QHG Y軸再定義採用（凍結17R→解除）。「格差拡大/収斂」→「フロンティア差別化の持続性: 持続/コモディティ化」。シナリオ4件確率全面的再配分（SCN-001 -2%: 20→18%・SCN-002 -2%: 30→28%・SCN-003 ±0%: 35%維持・SCN-004 +4%: 15→19%）。合計100%維持（18+28+35+19=100%）",
   "driving_forces": {
     "axis_x": {
@@ -25,7 +25,7 @@
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 15,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.89: ±0%（15%維持）。COMPLETE。Red採用。MCP RC（A-3）は囲い込み否定の有力証拠だが、15%レベルでの-1%は統計的意義に乏しい。MCP主要採用企業が同時に独自サンドボックス構築（Antigravity/Sandbox Agents/Claude Code）で「開放プロトコル＋围い込み実装」両立。次回蓄積で-1%検討",
+      "probability_rationale": "Arbiter v3.90: ±0%（15%維持）。COMPLETE。MCP 97M + SKILL.md 40K+は围い込み否定。但し各社独自実行環境围い込みは同時進行。「開放標準＋围い込み実装」パターンの定着",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -55,7 +55,7 @@
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 27,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.89: ±0%（27%維持）。COMPLETE。MCP標準化は開放方向を支持。ベンチマーク分散で「勝者」定義希薄化。情報不足で変更保留。2026-07-28 MCPリリース前後で再評価予約",
+      "probability_rationale": "Arbiter v3.90: ±0%（27%維持）。COMPLETE。Gemini首位+Erdős証明はフロンティア差別化支持。価格崩壊は「勝者」定義希薄化。方向混成。2026-07-28 MCPリリース前後で再評価予約",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -82,7 +82,7 @@
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 37,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.89: ±0%（37%維持）。COMPLETE。Red採用。アトラクター効果自覚下での+1%は確証バイアスの正当化として否認。SCN-001围い込み否定とSCN-003围い込み肯定の非対称評価に論理的緊張あり。2026-07-28 MCPリリース前後で全面再評価予約",
+      "probability_rationale": "Arbiter v3.90: ±0%（37%維持）。COMPLETE。価格コモディティ化の終末期は核心前提を強力に支持。アトラクター効果警戒継続。Red指摘: 方向圧力記録が次回+1%を予告する機能に注意。2026-07-28 MCPリリース前後全面再評価予約継続",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -114,7 +114,7 @@
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 21,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.89: ±0%（21%維持）。COMPLETE。価格崩壊（INFO-027）+MCP標準化（INFO-018）は支持。但しARC-AGI-3 <1%（INFO-030）でフロンティア差存在。INFO-046（ワークフローデータが堀）は「誰でも」前提を弱体化",
+      "probability_rationale": "Arbiter v3.90: ±0%（21%維持）。COMPLETE。DeepSeek OSS + Open-Weight商用接近は支持。但し$1B+節約はプラットフォーム優位示唆。±0%妥当",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -140,7 +140,7 @@
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
       "probability": 17,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.89: ±0%（17%維持）。COMPLETE。88%インシデント（INFO-013）+大統領令延期（INFO-019）でリスク蓄積加速。新規大規模実被害A-2報告なし",
+      "probability_rationale": "Arbiter v3.90: ±0%（17%維持）。COMPLETE。TanStack npm攻撃対応+大統領令延期+SCR指定でリスク蓄積加速。新規大規模実被害A-2報告なし",
       "impact": "catastrophic",
       "indicators": [
         "IND-013",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-05-26",
-    "note": "SCN-001(15) + SCN-002(27) + SCN-003(37) + SCN-004(21) = 100%. Arbiter v3.89完了（COMPLETE）"
+    "verified_date": "2026-05-27",
+    "note": "SCN-001(15) + SCN-002(27) + SCN-003(37) + SCN-004(21) = 100%. Arbiter v3.90完了（COMPLETE）"
   }
 }
