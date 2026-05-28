@@ -1,7 +1,8 @@
 {
-  "version": "3.90",
-  "last_updated": "2026-05-27",
+  "version": "3.91",
+  "last_updated": "2026-05-28",
   "structural_changes_log": [
+    "2026-05-28 v3.91: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。5件確度変更（-1%×4・+1%×1・±0%×13・棄却維持×2）。Blue採用3/5（60%）・Red採用1/5（20%）・Blue/Red一致1/5（20%）。主要更新: H-GOV-001 -1%（52→51%）Red採用・Anthropic商業成功4件Iが萎縮効果根本的否定・B-2品質Cのみで±0%根拠薄弱化・正常性バイアス指摘採用・「政府-市場ギャップ」再定義認識・H-GOO-001 -1%（54→53%）Blue採用・6R連続A-3/C-3のみC蓄積の累積的重み・予想下回りは根拠から除外（Red指摘採用）・H-GOO-002 -1%（33→32%）Blue採用・围い込みI 5件目蓄積・開放C 20R不在・low帯深化・H-XAI-002 -1%（62→61%）Blue/Red一致・Reuters B-2高品質I（DL 60%減）+価格I蓄積・H-CAR-001 +1%（30→31%）Blue採用・A-2品質C蓄積（KPMG・BCG）・B-3→A-2格上げ・上限。Pattern B「決定的顕在化」→「構造的深化」に格下げ（Red採用・企業C安全性因果帰属未検証・B-2品質で「極高」過大）。Pattern C「終末期」→「加速する構造的トレンド」に格下げ（Red部分採用・価格≠価値混同）。シナリオ全件±0%（SCN-003 -1%否認・アトラクター効果対策として方向圧力記録形式変更予約）。指標7件更新（全件状態変更なし・7件last_checked更新）。合計100%確認済み（15+27+37+21=100%）",
     "2026-05-27 v3.90: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。5件確度変更（-1%×4・+1%×1・±0%×13・棄却維持×2）。Blue採用4/7（57%）・Red採用5/7（71%）。主要更新: H-ANT-001 -1%（45→44%）Blue/Red一致・16R上限条件未達成+SCR安全性スタンスI・argument from ignoranceリスク記録・上限条件見直しArbiter議題化・low帯深化・H-GOO-001 -1%（55→54%）Red採用・5R連続A-3/C-3のみC蓄積で確度不変はアンカリング・Blue自身の確証バイアス警告を行動に転換・4R条件5R連続未達成・A-2+定量証拠取得時+1%復帰条件・H-GOO-002 -1%（34→33%）Blue/Red一致・围い込みI 4件蓄積・開放C 19R連続不在・low帯深化・H-BTD-002 -1%（52→51%）Blue採用・Red同意・価格コモディティ化3重I・累積I件数インフレ注意・H-CAR-001 +1%（29→30%）Blue/Red一致・99%CEO予測+8社10K+削減+$2T消失定性C蓄積・B-3品質主体で+1%上限。シナリオ全件±0%（SCN-003方向圧力記録継続・アトラクター効果警戒・2026-07-28 MCPリリース前後全面再評価予約）。指標7件更新（全件状態変更なし・7件last_checked更新）。合計100%確認済み（15+27+37+21=100%）",
     "2026-05-25 v3.88: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。8件確度変更（-1%×4・+1%×4・±0%×12・棄却維持×2）。Blue採用6/8（75%）・Red採用2/8（25%）。主要更新: H-OAI-001 -1%（62→61%）Blue採用・Ramp指数初逆転で高診断的I・累積I 20件・コモディティ化下での「支配」定義未解決・H-OAI-002 -1%（46→45%）Blue採用・MCP標準化3重I・累積I 31件・H-ANT-001 -1%（47→46%）Red採用・14R連続上限条件未達成累積ペナルティ・条件緩和否認（確証バイアス）・low帯移行・H-ANT-002 +1%（63→64%）Blue採用・Claude Code startup default・H-GOO-001 +1%（54→55%）Blue採用・3R条件充足・4R目条件: A-2+品質Google固有寄与定量分解・H-GOO-002 -1%（35→34%）Blue/Red一致・18R連続開放C不在・H-GOO-003 +1%（48→49%）Blue採用・フルスタック統合C蓄積・H-BTD-002 -1%（54→53%）Blue採用・コモディティ化I・累積I 17件・H-CAR-001 +1%（28→29%）Blue採用・A-2 Reuters大規模レイオフ。Pattern A確度中-高→中（Red採用・B-3/C-3中心で「量的転換点」断定的過大・情報品質不釣り合い）。シナリオ2件確率変更（SCN-001 -1%: 16→15%MCP囲い込み否定・SCN-003 +1%: 36→37%二層分化核心前提支持・アトラクター効果警告付記・2026-07-28 MCPリリース前後全面再評価予約）。指標7件更新（全件状態変更なし・7件last_checked更新）。合計100%確認済み（15+27+37+21=100%）",
     "2026-05-24 v3.87: Arbiter統合判断（FULLY DEGRADED状態・Phase 1/2/3全失敗）。Arbiter単独確認レビュー。全20仮説±0%（同一データ・新規証拠ゼロ）。DEGRADED制約: 確度変更禁止・バイアスチェック不可・新仮説生成見送り。v3.86条件付き変更（H-ANT-001 20R目上限条件見直し・H-GOO-001 3R連続反証+1%）→同一データのため新規データ時に延期。シナリオ全件±0%。指標7件last_checked更新のみ。合計100%確認済み（16+27+36+21=100%）",
@@ -203,7 +204,7 @@
         "statement": "政府が経済的手段（SCR指定・調達禁止・DPA脅迫）でAI企業の安全性姿勢を抑圧する先例が確立されたことで、AI業界全体に萎縮効果が生じ、安全性研究・倫理的差別化の戦略的価値が構造的に低下する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 52,
+        "confidence_percentage": 51,
         "consistent_evidence": [
           "INFO-128",
           "INFO-058",
@@ -278,7 +279,7 @@
           "INFO-054",
           "INFO-070"
         ],
-        "rationale": "Arbiter v3.88: ±0%（52%維持）。COMPLETE。C/I均衡継続。政府圧力エスカレーション（INFO-012 SCR+033安全政策棚上げ）vs Anthropic商業的成功（INFO-027 B-3）。Anthropic商業成功の矛盾をより重く評価。次回均衡打破条件: 因果チェーン第4段階A-2確認で+1%再検討、またはAnthropic商業成功A-2確認で-1%検討",
+        "rationale": "Arbiter v3.91: -1%（52→51%）。COMPLETE。Red採用。Anthropic商業成功4件I（$380B評価額・70%勝利・App Store首位・Google $40B投資）が萎縮効果命題を根本的に否定。B-2品質C蓄積（SCR/DPA/漁夫の利/大統領令延期）のみで±0%維持の根拠薄弱化。正常性バイアス指摘採用。「政府-市場ギャップ」再定義認識。51%上限条件: 因果チェーン第4段階A-2確認で+1%再検討",
         "confirming_indicators": [
           "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
           "AI安全性研究への民間投資の減少",
@@ -430,7 +431,7 @@
         "statement": "GoogleはGemini統合で検索・Workspace・Cloudのデータ優位を活かし、エンタープライズAI市場でシェアを拡大する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 54,
+        "confidence_percentage": 53,
         "consistent_evidence": [
           "INFO-007",
           "INFO-016",
@@ -480,7 +481,7 @@
           "INFO-051",
           "INFO-025"
         ],
-        "rationale": "Arbiter v3.90: -1%（55→54%）。COMPLETE。Red採用。5R連続A-3/C-3のみC蓄積で確度不変はアンカリング。Blue自身の確証バイアス警告を行動に転換。4R条件（A-2+品質Google固有寄与定量分解）5R連続未達成。代替説明「業界全体押し上げ」未解決。Google I/O大規模発表はgenuineだが業界全体急成長中での固有要因分離不能。A-2+定量証拠取得時に+1%復帰条件",
+        "rationale": "Arbiter v3.91: -1%（54→53%）。COMPLETE。Blue採用。6R連続A-3/C-3のみC蓄積の累積的重み。予想下回りはノイズ範囲として根拠から除外（Red指摘採用）。代替説明「業界全体押し上げ」未解決。A-2+定量証拠取得時+1%復帰条件維持",
         "confirming_indicators": [
           "Vertex AI経由のGemini利用増加",
           "Workspace統合による企業導入拡大",
@@ -498,7 +499,7 @@
         "statement": "GoogleはGemini Tools & Agentsでオープン標準（LangChain等）とのDay 0サポートを維持し、囲い込みを回避する",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 33,
+        "confidence_percentage": 32,
         "inconsistent_evidence": [
           "INFO-076",
           "INFO-071",
@@ -514,9 +515,10 @@
           "INFO-004",
           "INFO-013",
           "INFO-044",
-          "INFO-046"
+          "INFO-046",
+          "INFO-005"
         ],
-        "rationale": "Arbiter v3.90: -1%（34→33%）。COMPLETE。Blue/Red一致。围い込みI 4件蓄積（Managed Agents・Gemini Enterprise・AI Studio・$1B節約）。開放C証拠19R連続不在。low帯深化",
+        "rationale": "Arbiter v3.91: -1%（33→32%）。COMPLETE。Blue採用。围い込みI 5件目蓄積（INFO-005 Gemini Enterprise Agent Platform がVertex AIを置き換え）。開放C証拠20R連続不在。low帯深化",
         "confirming_indicators": [
           "LangChain/LlamaIndex等でのGemini対応維持",
           "Gemini Toolsのオープンソース化",
@@ -620,9 +622,9 @@
         "statement": "xAIはGrokを低価格で提供し、価格競争で市場シェアを獲得する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 62,
-        "inconsistent_evidence": ["INFO-006", "INFO-040", "INFO-026", "INFO-027"],
-        "rationale": "Arbiter v3.89: -1%（63→62%）。COMPLETE。Red部分採用。初I検出（INFO-006 Reuters A-2 政府不採用3/400+・INFO-040 DL 60%減 B-3・INFO-026 DeepSeek 75%カット・INFO-027 API価格崩壊）。A-2品質Iは1件のみで「構造的転換点」は過表現（Red指摘）。DL数の代理指標限界・Grok Build CLI発売直後の時間軸考慮",
+        "confidence_percentage": 61,
+        "inconsistent_evidence": ["INFO-006", "INFO-040", "INFO-026", "INFO-027", "INFO-058"],
+        "rationale": "Arbiter v3.91: -1%（62→61%）。COMPLETE。Blue/Red一致。Reuters B-2高品質I（INFO-058 DL 60%減）+価格I蓄積。Red注記: Grok Build発売直後短期的データ可能性。DL数の代理指標限界考慮",
         "confirming_indicators": [
           "Grok API価格の競合優位性",
           "価格競争でのシェア獲得",
@@ -824,7 +826,7 @@
         "statement": "AI業務自律化が3年以内に中堅企業の業務プロセスを30%以上自動化し、中間層雇用が大幅に削減される",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 30,
+        "confidence_percentage": 31,
         "inconsistent_evidence": [
           "INFO-042",
           "INFO-019",
@@ -853,7 +855,7 @@
           "INFO-032",
           "INFO-038"
         ],
-        "rationale": "Arbiter v3.90: +1%（29→30%）。COMPLETE。Blue/Red一致。99%CEO予測（INFO-022 B-3）+8社10K+削減+20-70%コスト削減（INFO-018 C-3）+$2T消失（INFO-023 C-3）の定性C蓄積。Red指摘: 99%CEO予測は予測非実績・因果帰属に問題。B-3品質主体で+1%は上限。30%閾値の定量確認未達成",
+        "rationale": "Arbiter v3.91: +1%（30→31%）。COMPLETE。Blue採用。A-2品質C蓄積（KPMG 64%/71%・BCG 50-55%）。B-3品質主体→A-2格上げ。Red指摘: A-2品質Cは「予測」非「実績」・KPMG/BCG利益相反リスク認識。矛盾信号（AI≠生産性向上）存在。+1%は上限",
         "confirming_indicators": [
           "中堅企業でのAI自動化率30%超達成",
           "中間層雇用の統計的減少確認",

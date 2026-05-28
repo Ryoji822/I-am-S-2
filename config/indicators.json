@@ -1,6 +1,6 @@
 {
-  "version": "3.90",
-  "last_updated": "2026-05-27",
+  "version": "3.91",
+  "last_updated": "2026-05-28",
   "description": "I&W（Indications and Warning）指標レジストリ. v3.82: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（IND-030 high移行・6件last_checked更新）。IND-013 high維持（MCP token theft INFO-051 B-3+TanStack npm攻撃 INFO-052 A-3+AgentTrap 141タスク INFO-017 B-3。攻撃面拡大加速）・IND-025 elevated維持（Opus 4.6 5ベンチマーク勝利 INFO-021 B-2+DeepSeek V3.2 Speciale INFO-031 C-2。量的向上継続）・IND-026 elevated維持（METR 43%乖離 INFO-038 C-2+Klarna再採用 INFO-027 B-2。high移行4ソース到達。次回検討）・IND-027 high維持（7サンドボックス INFO-009+Grok Build ACP INFO-010+DeerFlow 2.0 INFO-008。標準化爆発的加速継続）・IND-028 elevated維持（AGIタイムライン+Opus 4.6ベンチマーク向上。主観-客観乖離継続）・IND-029 high維持（$1TNデータセンター INFO-026+Mistral $2.3B INFO-033+機関投資家必須 INFO-050。資本流入劇的加速）・IND-030 elevated→high移行（Google兵器誓約削除 INFO-037 B-3+CDT 9機関停止 INFO-019 A-2+UK改名 INFO-054 B-3+Pentagon報酬構造 INFO-016 D-3+NYT安全性限界 INFO-041 A-3。5重C蓄積・能力-リスク二面性の新段階）",
   "structural_changes_log": [
     "2026-05-14 v3.76: Arbiter統合判断（DEGRADED/BOTH-FAILED状態）。Arbiter独自批判分析。7指標更新（全件状態変更なし）。IND-013 high継続（Codex 4層防御 INFO-001 A-3は防御側強化。新規脆弱性なし。critical移行条件未到達）・IND-025 elevated継続（Grok STT/TTS+Imagine+Doubao全モダリティ+Seedance 2.0 #2。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（エージェント成功率77.3% vs 74%ロールバック。期待-実態ギャップ顕在化。high移行条件検討段階）・IND-027 high継続（MCPデファクト化+AAIF 97M SDK+TikTok MCP+Grok BYO MCP+Agent Skills 1000+。標準化爆発的加速）・IND-028 elevated継続（Hassabis AGI 2030+ARC-AGI-3+Meta Llama 4不正。客観的ベンチマーク信頼性問題。主観-客観乖離継続）・IND-029 high継続（Q1 $2555億+Big 4 $7250億+Anthropic $300億+Stargate $5000億。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon SCR+DPA+Google秘密契約+Scale AI $5億+EU AI Act延期+US Safety Institute革新シフト。規制二方向同時深化。能力-リスク二面性加速）",
@@ -15,9 +15,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "TanStack npm攻撃対応（INFO-010 A-3）+Sandbox Agents防御強化（INFO-011 A-3）。攻撃面拡大基調継続。新規A-2大規模実被害なし。critical移行条件未到達",
-      "last_checked": "2026-05-27",
-      "rationale": "Arbiter v3.90: high維持。COMPLETE。攻撃面拡大基調継続。防御側強化。critical移行条件: 大規模実被害A-2+報告"
+      "last_value": "Sandbox Runtime OSS（INFO-017 A-3防御側）+Claude Mythos恐喝能力（INFO-061 B-2リスク側）。攻撃面拡大基調継続。新規A-2大規模実被害なし。critical移行条件未到達",
+      "last_checked": "2026-05-28",
+      "rationale": "Arbiter v3.91: high維持。COMPLETE。攻撃面拡大基調継続。防御側強化（Sandbox Runtime OSS）。critical移行条件: 大規模実被害A-2+報告"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -26,9 +26,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Gemini 3 Pro Deep Think 100.0%（INFO-049 C-3）+3.5 Flash AIME 73.3% GPQA 74.2%（INFO-029 A-3）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-05-27",
-      "rationale": "Arbiter v3.90: elevated維持。COMPLETE。安定監視"
+      "last_value": "Gemini 3 Pro Deep Think 100.0%（INFO-016 C-3）+Gemini 3.5 AIME 73.3% GPQA 74.2%（INFO-039 A-3）+Grok 4.1 97.8%（INFO-016 C-3）+Seedance 2.0（INFO-055 C-3）。量的向上継続。「真の理解」検証未解決",
+      "last_checked": "2026-05-28",
+      "rationale": "Arbiter v3.91: elevated維持。COMPLETE。安定監視"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -37,9 +37,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Fortune 500平均<15エージェント（INFO-038/039 A-3/B-3）+20-70%コスト削減（INFO-018 C-3）。68pt採用ギャップ継続。13%のみガバナンス準備完了。high維持妥当",
-      "last_checked": "2026-05-27",
-      "rationale": "Arbiter v3.90: high維持。COMPLETE。採用ギャップ構造的固定化継続"
+      "last_value": "Fortune 500平均<15エージェント（INFO-023 B-3）+Klarna 700代替11分→2分（INFO-034 B-3）+13%のみガバナンス準備+Gartner 150K予測。68pt採用ギャップ継続。high維持妥当",
+      "last_checked": "2026-05-28",
+      "rationale": "Arbiter v3.91: high維持。COMPLETE。採用ギャップ構造的固定化継続"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -48,9 +48,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "MCP 97M downloads（INFO-034 C-3）+SKILL.md 40K+（INFO-042 C-3）+Google AGENTS.md/SKILL.md採用（INFO-004/044 A-3）。3プラットフォーム同一形式採用。標準化爆発的進展継続",
-      "last_checked": "2026-05-27",
-      "rationale": "Arbiter v3.90: high維持。COMPLETE。標準化の二本柱が同時進展。上昇トレンド確定的"
+      "last_value": "SKILL.md 40K+（INFO-014 C-3）+MCP 97M+A2A GA（INFO-062 A-3）+Copilot MCP server support（INFO-062 A-3）+Agent Client Protocol（INFO-006 A-3）。標準化爆発的進展継続",
+      "last_checked": "2026-05-28",
+      "rationale": "Arbiter v3.91: high維持。COMPLETE。標準化爆発的進展継続。上昇トレンド確定的"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -59,9 +59,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Erdős予想自律的反証（INFO-008 A-3）+ARC-AGI-3 <1%。主観（Altman 2025-2028）vs客観（ARC-AGI-3 <1%）乖離拡大。「特定分野傑出 vs 一般推論限界」構造明確化",
-      "last_checked": "2026-05-27",
-      "rationale": "Arbiter v3.90: elevated維持。COMPLETE。Erdős証明は画期的だが特定分野。主観-客観乖離拡大"
+      "last_value": "Altman 2025-2028（INFO-053 B-3）+Hassabis ~2030+multi-agent科学発見自動化（INFO-056 C-3）。主観-客観乖離継続。科学発見自動化は新規マイルストーンだが「特定分野」性質は不変",
+      "last_checked": "2026-05-28",
+      "rationale": "Arbiter v3.91: elevated維持。COMPLETE。主観-客観乖離継続"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -70,9 +70,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Google capex $180-190B（INFO-003 A-3）+US DC 31→66GW・$5.2T投資必要（INFO-028 A-2）。資本流入劇的加速継続。物理的制約ギャップ確定的",
-      "last_checked": "2026-05-27",
-      "rationale": "Arbiter v3.90: high維持。COMPLETE。Google I/O $180-190Bは前年6倍。物理的制約ギャップ確定的"
+      "last_value": "US DC 31→66GW・$5.2T投資必要（INFO-044 A-3）+ByteDance $30B（INFO-060 B-3）+xAI $20B（INFO-042 B-3）。資本流入劇的加速継続。物理的制約ギャップ確定的",
+      "last_checked": "2026-05-28",
+      "rationale": "Arbiter v3.91: high維持。COMPLETE。資本流入劇的加速継続。物理的制約ギャップ確定的"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -81,9 +81,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Erdős証明（INFO-008 A-3 能力新段階）+大統領令延期（INFO-019 A-2）+SCR指定（INFO-021 A-2）+州規制禁止（INFO-032 A-2）。能力向上とリスク治理後退の同時進行が新段階。4重蓄積加速",
-      "last_checked": "2026-05-27",
-      "rationale": "Arbiter v3.90: high維持。COMPLETE。能力-リスク二面性の新段階。4重蓄積加速。Red指摘: 異質事象蓄積方法論的検討必要と認識"
+      "last_value": "SCR指定+DPA強制+大統領令延期（INFO-025 A-2）+州規制禁止（INFO-054 B-3）+Claude Mythos恐喝能力（INFO-061 B-2）。能力向上とリスク治理後退の同時進行継続。5重蓄積",
+      "last_checked": "2026-05-28",
+      "rationale": "Arbiter v3.91: high維持。COMPLETE。能力-リスク二面性の新段階。5重蓄積加速。Red指摘: 異質事象蓄積方法論的検討必要と認識"
     }
   }
 }
