@@ -9925,8 +9925,526 @@
       "raw_path": "Information/raw/2026-05-31/firecrawl.jsonl",
       "run_date": "2026-05-31",
       "url": "https://eidosdesign.substack.com/p/may-2026-the-data-caught-up-to-the"
+    },
+    "EVD-20260601-0001": {
+      "hash": "sha256:d03ae51019d15588bd30972fb98458c57f77d4bba6f49c00c77a263f7617dc28",
+      "legacy_info_id": "INFO-001",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.anthropic.com/news/finance-agents"
+    },
+    "EVD-20260601-0002": {
+      "hash": "sha256:7d3983debd3db658e1ef3be2a2c3fc0410b7b645609197933432ecbefba04c85",
+      "legacy_info_id": "INFO-002",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.anthropic.com/news/anthropic-kpmg"
+    },
+    "EVD-20260601-0003": {
+      "hash": "sha256:85c4f6682525dcbb4605e6658d8ebc6fdcb1de6acf8238eef04f7d468c391cc8",
+      "legacy_info_id": "INFO-003",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/"
+    },
+    "EVD-20260601-0004": {
+      "hash": "sha256:508d590cdc10684e9da00091794e31aca3ca03d7f1b7fad622b0a3ed1473b6f9",
+      "legacy_info_id": "INFO-004",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://openai.com/index/openai-frontier-governance-framework/"
+    },
+    "EVD-20260601-0005": {
+      "hash": "sha256:5af75ce71f98f6e386d13b8227cd4c569c417343c809d1b29172979d861e86c6",
+      "legacy_info_id": "INFO-005",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex/"
+    },
+    "EVD-20260601-0006": {
+      "hash": "sha256:594e301ba870190fb5e6a07bdb843804ed3a129b1b7111a8146d84c7b6868ad5",
+      "legacy_info_id": "INFO-006",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://x.ai/news/grok-build-0-1"
+    },
+    "EVD-20260601-0007": {
+      "hash": "sha256:4db16ab9e9af5787b6d020b5508568eb2be7415779ac560f0242e94b86c33098",
+      "legacy_info_id": "INFO-007",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://x.ai/news/grok-build-cli"
+    },
+    "EVD-20260601-0008": {
+      "hash": "sha256:15c493f188a72f743ce4d92d7819c01284b847d2cecd952f6c659e2c1819f7a1",
+      "legacy_info_id": "INFO-008",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.kucoin.com/news/flash/bytedance-s-coze-launches-version-2-5-introduces-agent-world-ecosystem"
+    },
+    "EVD-20260601-0009": {
+      "hash": "sha256:d0c34398a592b2e10c56e7f6563f8329a88485487d26b8b461d53ed3fdf6e450",
+      "legacy_info_id": "INFO-009",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.trendforce.com/news/2026/05/28/news-bytedance-reportedly-develops-in-house-cpus-amid-supply-tightness-explores-both-arm-and-risc-v/"
+    },
+    "EVD-20260601-0010": {
+      "hash": "sha256:0844791acba12128219ac27674ecbaa71aa36d425ad0ab920f6987b7e5c6729b",
+      "legacy_info_id": "INFO-010",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.indusface.com/learning/owasp-top-10-agentic-ai/"
+    },
+    "EVD-20260601-0011": {
+      "hash": "sha256:9ce95abbcc6a4e5bc1638f3cb5712ee7e6728cb8618d54a9238648ca72c7985e",
+      "legacy_info_id": "INFO-011",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.linkedin.com/pulse/inflection-point-020-ai-agent-kill-switch-problem-nobody-mason--8j10e"
+    },
+    "EVD-20260601-0012": {
+      "hash": "sha256:c1869bd13fd4c9fbae5c6ed06ed1db2be77eb029106e4911b999106870955aad",
+      "legacy_info_id": "INFO-012",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.ey.com/en_fi/insights/ai/building-an-enterprise-scale-agentic-ai-operating-system"
+    },
+    "EVD-20260601-0013": {
+      "hash": "sha256:3be0650bbea85c9483d4d1c3a78efcef547452bda9a43cc1ba9361a158eb3dd9",
+      "legacy_info_id": "INFO-013",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://vectorinstitute.ai/case-studies/how-agentic-ai-is-changing-enterprise-workflows-lessons-from-vector-institute-and-unilever/"
+    },
+    "EVD-20260601-0014": {
+      "hash": "sha256:af18f159a237a91ad843ad4b4886eb1e5d6f00bbeec438ae4624c6c549bb777f",
+      "legacy_info_id": "INFO-014",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.databricks.com/blog/how-enterprise-leaders-are-scaling-ai-agents-across-their-organization"
+    },
+    "EVD-20260601-0015": {
+      "hash": "sha256:7ca8cb715fb1c514e5423bf5c15e4dea889b60a94a81156ee031987731536726",
+      "legacy_info_id": "INFO-015",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-and-Google-Cloud-Expand-Strategic-Partnership-to-Bring-AI-Agents-for-HR-and-Finance-Into-Employees-Daily-Workflows/default.aspx"
+    },
+    "EVD-20260601-0016": {
+      "hash": "sha256:fde321b1afc6691487a7843d21bbd4843a9882c491c193692724181a419c0555",
+      "legacy_info_id": "INFO-016",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption/"
+    },
+    "EVD-20260601-0017": {
+      "hash": "sha256:982cc7c0112d3c5cb0369909bb4dadd1ba95cc32a32db930854f714c0022dc21",
+      "legacy_info_id": "INFO-017",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://cryptobriefing.com/ey-microsoft-billion-ai-adoption/"
+    },
+    "EVD-20260601-0018": {
+      "hash": "sha256:73ff16035e443576021262cdde7ab3564fd96f6dc88ef8b874e0fddfca6b788a",
+      "legacy_info_id": "INFO-018",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://thenewstack.io/managed-ai-agent-runtimes/"
+    },
+    "EVD-20260601-0019": {
+      "hash": "sha256:5fdc77fe6a58281694030fb637933b9b7e70656beefb6850d1466e42d88954a1",
+      "legacy_info_id": "INFO-019",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview"
+    },
+    "EVD-20260601-0020": {
+      "hash": "sha256:dfa32bdbcb9417726c6db35337b529693a8d9a7821cf1dc7a7523485d2aee0e5",
+      "legacy_info_id": "INFO-020",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/openai-docs/SKILL.md"
+    },
+    "EVD-20260601-0021": {
+      "hash": "sha256:ea66ddcbd4946e5efb3662d78080ebc8c86d97a7ca9a2ac66e17a87c7a4bb756",
+      "legacy_info_id": "INFO-021",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://academy.openai.com/public/clubs/work-users-ynjqu/resources/latest-model"
+    },
+    "EVD-20260601-0022": {
+      "hash": "sha256:05ec28d3711b4b70dd1ea709725db5f76f2fd54dcce8fdd18255cdb8d4d9dd3e",
+      "legacy_info_id": "INFO-022",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://benchlm.ai/multimodal-grounded"
+    },
+    "EVD-20260601-0023": {
+      "hash": "sha256:210aaa55485c91eee75e04127dd86f0453256dcabec71cb9a9d5e2eb15282f13",
+      "legacy_info_id": "INFO-023",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.frontiernews.ai/news/article/why-ai-agents-are-finally-getting-real-time-vision-7a0a7c46"
+    },
+    "EVD-20260601-0024": {
+      "hash": "sha256:cd95058335b9ad3fb8b2ec70d32e58d392c93a52db2fbb15a036a8ba5030f790",
+      "legacy_info_id": "INFO-024",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://github.com/google/agents-cli"
+    },
+    "EVD-20260601-0025": {
+      "hash": "sha256:ed294e62d79e6012a6f7d7c439eeef31f06c24f23eff1081ba1fac574fdc06f7",
+      "legacy_info_id": "INFO-025",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.computerweekly.com/opinion/Agentic-AI-Trading-one-lock-in-for-another"
+    },
+    "EVD-20260601-0026": {
+      "hash": "sha256:8caf2dc91699b559aa7e05aaa5858289ad108acb7059a3b8198190cf0a61d984",
+      "legacy_info_id": "INFO-026",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://drstorm.substack.com/p/anthropics-hidden-strategy-could"
+    },
+    "EVD-20260601-0027": {
+      "hash": "sha256:9ce378738c7ac6dbbacac61e1f9d9cbf5933e5b18d3a684dd896b51f96e83c63",
+      "legacy_info_id": "INFO-027",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://medium.com/google-cloud/vertex-ai-is-gone-here-is-what-google-built-instead-92556d1c64eb"
+    },
+    "EVD-20260601-0028": {
+      "hash": "sha256:26ccfb033405d6aca5b5282ae5429e3b21612dd9167c7011a25a59ccce567852",
+      "legacy_info_id": "INFO-028",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://dynatechconsultancy.com/blog/microsoft-foundry-agent-service-for-enterprise-ai"
+    },
+    "EVD-20260601-0029": {
+      "hash": "sha256:b58e95753acce7df9c3bb29cfbd8522384820fd1f99c81d5ee78e8c92698d185",
+      "legacy_info_id": "INFO-029",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.mindstudio.ai/blog/managed-agents-anthropic-vs-google-comparison/"
+    },
+    "EVD-20260601-0030": {
+      "hash": "sha256:091efcaa51e9e1fbccdb450e25825a76f6e11cc63fbbec3c01239592d0e2b35a",
+      "legacy_info_id": "INFO-030",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.theaiconsultingnetwork.com/blog/enterprise-ai-roi-sticker-shock-cre-investors-2026"
+    },
+    "EVD-20260601-0031": {
+      "hash": "sha256:c47f2099d998013a65a2962f551647d373a35228d21e6d61d61a1a14af144cad",
+      "legacy_info_id": "INFO-031",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://turion.ai/blog/enterprise-ai-agent-use-cases-that-ship-2026/"
+    },
+    "EVD-20260601-0032": {
+      "hash": "sha256:001526cd9e3617a095e9775fc6ea6f14f913e778840468b4f99ab56c7f0a1268",
+      "legacy_info_id": "INFO-032",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.politico.com/news/2026/05/28/it-isnt-canceled-inside-the-white-house-divisions-on-ai-00938557"
+    },
+    "EVD-20260601-0033": {
+      "hash": "sha256:4ded434442bd8a92a80ccbb99881c08f5c0b0180d8e1974a98a8fba895bbb4c5",
+      "legacy_info_id": "INFO-033",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.ciodive.com/news/openai-security-framework-regulations/821545/"
+    },
+    "EVD-20260601-0034": {
+      "hash": "sha256:abd9490f9373f516e5040051bbad9cbcad855c75ca74cde1792ee7660bc52209",
+      "legacy_info_id": "INFO-034",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/faq/how-are-ai-agents-addressed-within-ai-act-0"
+    },
+    "EVD-20260601-0035": {
+      "hash": "sha256:082bc2a798f97155e0522e36e86f99695681df9a32ca3c0426a72858f739a219",
+      "legacy_info_id": "INFO-035",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.workstreet.com/blog/what-is-aiuc-1"
+    },
+    "EVD-20260601-0036": {
+      "hash": "sha256:c00aebb2765e964176f17a7aee9fa8f66629d52d2a7a850017916380e7703cb2",
+      "legacy_info_id": "INFO-036",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.riefkohllaw.com/blog/anthropic-v-department-of-war-preliminary-injunction"
+    },
+    "EVD-20260601-0037": {
+      "hash": "sha256:21a3b16b7d8b27cb8e320c6127f99487cbe849a24fe2aa8ccf471c09bebc16d8",
+      "legacy_info_id": "INFO-037",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.anthropic.com/news/where-stand-department-war"
+    },
+    "EVD-20260601-0038": {
+      "hash": "sha256:dbc9b26cfa87bd0a6a6a60a29e6e104af77b2eb13edbaaaa4aecef3a1e07b7d2",
+      "legacy_info_id": "INFO-038",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.insideprivacy.com/artificial-intelligence/cisa-releases-guidance-on-the-careful-adoption-of-agentic-ai-services/"
+    },
+    "EVD-20260601-0039": {
+      "hash": "sha256:f28d77b833f6539f68f03f2310bf5ec47f237b1262e574ef58de8abf15e9c37e",
+      "legacy_info_id": "INFO-039",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://fortune.com/2026/05/26/standard-chartered-ceo-bill-winters-apologizes-calling-some-workers-lower-value-human-capital-ai-push/"
+    },
+    "EVD-20260601-0040": {
+      "hash": "sha256:6b3a3e3b2eb74b68d2256506d336835111d76051501bdc7df9ec96de0fa4fc22",
+      "legacy_info_id": "INFO-040",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.institutepm.com/knowledge-hub/ai-agents-saas-disruption-strategy"
+    },
+    "EVD-20260601-0041": {
+      "hash": "sha256:dcb8704fd4dedc77ecac8cbfdbcaddb2be2feb47519dfb3161a924cc5a3ea059",
+      "legacy_info_id": "INFO-041",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.proactiveinvestors.com/companies/news/1092827/google-rolls-out-ai-powered-ad-formats-at-marketing-live-1092827.html"
+    },
+    "EVD-20260601-0042": {
+      "hash": "sha256:dcd9922c307c2eb7fad0fb55f6257ff713a93eed9bc3f9cd895b65616e109b07",
+      "legacy_info_id": "INFO-042",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.finout.io/blog/claude-opus-4.8-pricing-2026-everything-you-need-to-know"
+    },
+    "EVD-20260601-0043": {
+      "hash": "sha256:eeea31f56824dcf651a95cce1ea2281d1ad1922516d9c7a2025ed19563b199b5",
+      "legacy_info_id": "INFO-043",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-costs-begin-to-bite-as-agents-may-increase-token-demand-by-24-times-says-goldman-sachs-report-uber-and-microsoft-among-companies-feeling-the-bite-of-tokenized-billing"
+    },
+    "EVD-20260601-0044": {
+      "hash": "sha256:b5d3557ea9503d7481b97acf5b2cbaea5cb46715de19aea365a5e62c19760239",
+      "legacy_info_id": "INFO-044",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://kili-technology.com/blog/ai-benchmarks-guide-the-top-evaluations-in-2026-and-why-theyre-not-enough"
+    },
+    "EVD-20260601-0045": {
+      "hash": "sha256:acae0ff9053f96d69e24334bb553067aecb73ba2f8439753cb0c1b6e5be70073",
+      "legacy_info_id": "INFO-045",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.swfte.com/ai/leaderboard"
+    },
+    "EVD-20260601-0046": {
+      "hash": "sha256:7d5452b09d55973debd90e922c2fa62ae17d6f0168764e3d699fe17a4457749a",
+      "legacy_info_id": "INFO-046",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.opticwise.com/insights/The-LLM-Model-Just-Became-a-Commodity/"
+    },
+    "EVD-20260601-0047": {
+      "hash": "sha256:7884d7b3b6eb3f5f4c9f4ccbd455ff10d421665a0b09f57344d8e22c813a1428",
+      "legacy_info_id": "INFO-047",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html"
+    },
+    "EVD-20260601-0048": {
+      "hash": "sha256:9515bdd6da715163520c2ca49361377364f6ab0176e8cacef06b400109ff6202",
+      "legacy_info_id": "INFO-048",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.startuphub.ai/ai-news/ai-news/2026/four-labs-four-acquisitions-ai-consolidation-may-2026"
+    },
+    "EVD-20260601-0049": {
+      "hash": "sha256:fa91d05e8cc2dda37d4f9df05dbb18d487f0b46c311ec5d172f75c3eaa4a0da7",
+      "legacy_info_id": "INFO-049",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.instagram.com/p/DYxtCU0EdiX/"
+    },
+    "EVD-20260601-0050": {
+      "hash": "sha256:92799c2c51b854b77dcfc98b26ac3ab0589b8d55380bf22965e9ea377b2d7048",
+      "legacy_info_id": "INFO-050",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
+    },
+    "EVD-20260601-0051": {
+      "hash": "sha256:97e5791913932b824cadd7f3e8314aa29e3482d45b6fea4357a96f6059a205e2",
+      "legacy_info_id": "INFO-051",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.mindstudio.ai/blog/what-is-agi-expert-disagreement-explained/"
+    },
+    "EVD-20260601-0052": {
+      "hash": "sha256:e245994ff535fed304f23a1f6f1b4d88cb4f3c56bd9b9e03d3b73d7ac20e7835",
+      "legacy_info_id": "INFO-052",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://adtmag.com/articles/2026/05/27/ai-coding-agents-are-already-spreading-across-github.aspx"
+    },
+    "EVD-20260601-0053": {
+      "hash": "sha256:b365ec7625eb760b586a2c31f399f251d9cc339c2ebcbc91e40f31bacadff771",
+      "legacy_info_id": "INFO-053",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut"
+    },
+    "EVD-20260601-0054": {
+      "hash": "sha256:ad0204f4281abae28bb92ab699962b01485f728231be576354f6585dac112766",
+      "legacy_info_id": "INFO-054",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.themindfinders.com/2026/05/29/120-million-workers-wont-get-the-reskilling-they-need-will-yours/"
+    },
+    "EVD-20260601-0055": {
+      "hash": "sha256:59c58e370eb520500673fe36e03024bd9a7a5038e11e741a90df3fdec3db09a5",
+      "legacy_info_id": "INFO-055",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/telus-digital-research-uncovers-ai-104500545.html"
+    },
+    "EVD-20260601-0056": {
+      "hash": "sha256:ec15a2efb17a8366e3c8c5a353b2e936adfc1afa46aadb527da889c9483e430a",
+      "legacy_info_id": "INFO-056",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.facebook.com/USTglobal/posts/what-does-the-data-really-say-about-the-state-of-enterprise-ai500-business-leade/1433424812158605/"
+    },
+    "EVD-20260601-0057": {
+      "hash": "sha256:67e78882e0825439cafd52ab638cbe3c34745a512079d2a59c91653c1d42f58d",
+      "legacy_info_id": "INFO-057",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.wired.com/story/illinois-pass-major-ai-safety-law-pritzker/"
+    },
+    "EVD-20260601-0058": {
+      "hash": "sha256:eacbc4f078f2e49b7a0c8fed140ed9d1582d451f31be72653825a94fa3563079",
+      "legacy_info_id": "INFO-058",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.ansi.org/standards-news/all-news/5-29-26-nist-expands-and-renames-its-ai-consortium"
+    },
+    "EVD-20260601-0059": {
+      "hash": "sha256:69e9ade334c069f4bf02e6d735e8f3084fc9d08228b620cdc52375f8e292edb5",
+      "legacy_info_id": "INFO-059",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://techcrunch.com/2026/05/28/rsi-is-the-new-agi-and-its-just-as-hard-to-pin-down/"
+    },
+    "EVD-20260601-0060": {
+      "hash": "sha256:651b33acadf0ae0bb1706bbc65df164aa86057c9d099cf2192f2d22d433e819d",
+      "legacy_info_id": "INFO-060",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.intelmarketresearch.com/ai-autonomous-workflow-market-46984"
+    },
+    "EVD-20260601-0061": {
+      "hash": "sha256:957737ac901700fd700ed4f1fcc4e754591873ed43510e2008c6fffd2ba1edf7",
+      "legacy_info_id": "INFO-061",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.storyboard18.com/media-and-entertainment/amagi-uses-ai-and-product-led-growth-as-sales-team-shrinks-ws-l-99418.htm"
+    },
+    "EVD-20260601-0062": {
+      "hash": "sha256:4a701050b7fad769122467d58871c3d92d81de237a0ed9c27b4ddd7a0df7dfb7",
+      "legacy_info_id": "INFO-062",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.hometownstations.com/news/national/as-the-pentagon-pushes-for-battlefield-ai-some-military-leaders-urge-caution/article_1556830d-52b8-50f1-b836-a2a51af53a98.html"
+    },
+    "EVD-20260601-0063": {
+      "hash": "sha256:5a8cb4ac5839d4e6c9186842ce27ecbff6ffd21b3b928030d856e57dfe7ee627",
+      "legacy_info_id": "INFO-063",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.theamericanconservative.com/the-right-needs-ai-realism/"
+    },
+    "EVD-20260601-0064": {
+      "hash": "sha256:f6567d12da13ffea70c1d0c15da8a34a00f9a1e46a1c79cf251e501b379568ab",
+      "legacy_info_id": "INFO-064",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://venturebeat.com/technology/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai"
+    },
+    "EVD-20260601-0065": {
+      "hash": "sha256:ae47860c2da5c5faa0c23717e53dd8d9a198db3f924889eb09ac6d989e3de5b4",
+      "legacy_info_id": "INFO-065",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://ailearnertech.com/agi-timeline-artificial-general-intelligence-when-it-arrives/"
+    },
+    "EVD-20260601-0066": {
+      "hash": "sha256:117859bd5a583b748fb22feab798a4896181935b39c20a96ca74b72fca363eee",
+      "legacy_info_id": "INFO-066",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.instagram.com/p/DY3h0q-kQ9C/"
+    },
+    "EVD-20260601-0067": {
+      "hash": "sha256:3bcba6a612c5d4b35838242d6186b59f7c2ecb1a6bcd9ed33d1dfd201c29f858",
+      "legacy_info_id": "INFO-067",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://af.net/realtime/google-cloud-next-2026-ai-agents-and-full-stack-vertical-integration-target-openai-and-anthropic/"
+    },
+    "EVD-20260601-0068": {
+      "hash": "sha256:c4e0c78f273677db600c6c66041e5e963051ec97624bd2972378b71f85a6c94b",
+      "legacy_info_id": "INFO-068",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://compareai.today/migration-guides"
+    },
+    "EVD-20260601-0069": {
+      "hash": "sha256:1bc6048e807908c57c941317a2fc93d897c914805a77d8ec156ef60f7196afcd",
+      "legacy_info_id": "INFO-069",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://kpmg.com/ca/en/insights/2026/05/the-agentic-shift-ai-next-phase.html"
+    },
+    "EVD-20260601-0070": {
+      "hash": "sha256:e51fd18266d973cb2a29376eb30fffeffc7890a555162a9e3ea9515ff3eed32d",
+      "legacy_info_id": "INFO-070",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.wsj.com/tech/ai/ai-natives-graduates-job-cuts-6bab8ac9"
+    },
+    "EVD-20260601-0071": {
+      "hash": "sha256:68da1c842086f42e361108d911f00ca2d48ae71b4061f4311713f7aedf9974c5",
+      "legacy_info_id": "INFO-071",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://towardsdatascience.com/meta-cognitive-regulation-might-be-the-most-important-ai-skill-nobody-is-talking-about/"
+    },
+    "EVD-20260601-0072": {
+      "hash": "sha256:81e3111a3302b972f7d05f2c1c7c539ecc28a6e6ac768e983d4f9c20af088f95",
+      "legacy_info_id": "INFO-072",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.trefis.com/data/companies/GOOG?source=forbes&from=RIVN-2026-05-20"
+    },
+    "EVD-20260601-0073": {
+      "hash": "sha256:ca4357eb28e6dc373535abdaa2c8b220af6377d6bb4261ca8447be2d2642cee1",
+      "legacy_info_id": "INFO-073",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://boringbot.substack.com/p/how-to-save-millions-in-claude-tokens"
+    },
+    "EVD-20260601-0074": {
+      "hash": "sha256:03a4c535b3fe49252fdec3af2ccaa33b917642fda246eefef38d141135b9e7d3",
+      "legacy_info_id": "INFO-074",
+      "raw_path": "Information/raw/2026-06-01/firecrawl.jsonl",
+      "run_date": "2026-06-01",
+      "url": "https://www.1strespondernews.com/expert-time/Anthropic-Surpasses-OpenAI-in-Valuation-with-65-Billion-Funding-Round-29-3181"
     }
   },
-  "last_updated": "2026-05-31T09:17:51+09:00",
+  "last_updated": "2026-06-01T09:26:14+09:00",
   "schema_version": "1.0"
 }
