@@ -1,6 +1,6 @@
 {
-  "version": "3.95",
-  "last_updated": "2026-06-01",
+  "version": "3.96",
+  "last_updated": "2026-06-02",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.84: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了・DEGRADED条件下）。QHG Y軸再定義採用（凍結17R→解除）。「格差拡大/収斂」→「フロンティア差別化の持続性: 持続/コモディティ化」。シナリオ4件確率全面的再配分（SCN-001 -2%: 20→18%・SCN-002 -2%: 30→28%・SCN-003 ±0%: 35%維持・SCN-004 +4%: 15→19%）。合計100%維持（18+28+35+19=100%）",
   "driving_forces": {
     "axis_x": {
@@ -25,7 +25,7 @@
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 15,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.94: ±0%（15%維持）。COMPLETE。SKILL.md 40K+（INFO-016 C-3）+AAIF 43新メンバー（INFO-015 A-3）+MCP/Grok Build互換（INFO-006 A-3）は围い込み否定。但し各社独自実行環境围い込みは同時進行。「開放標準＋围い込み実装」パターンの定着。Red指摘「围い込み蓄積vs確率不変の不整合」は認識するがSKILL.md否定力が強い",
+      "probability_rationale": "Arbiter v3.96: ±0%（15%維持）。COMPLETE。围い込みI蓄積（H-GOO-002 11件目）と開放進展（MCP RC・Grok Build多プラットフォーム）の同時進行継続。Apple model定着。確率変更根拠不十分。QHG再定義26R連続未実行。次回強制実行",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -54,8 +54,8 @@
       "quadrant_label": "開放 × 差別化持続",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 24,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.95: -1%（25→24%）。COMPLETE。Blue採用。MMLU 88%+飽和（INFO-044 C-3）+LLMコモディティ化（INFO-046 D-3）で「勝者」の性能定義希薄化深化。CEOs安価モデルシフト継続。フロンティア差別化は維持するが客観的基盤侵食進行",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v3.96: ±0%（24%維持）。COMPLETE。Pattern Q（確度中に引き下げ）支持・Pattern T（評価の転換期）はDatacurve不均等性検出でSCN-002部分支持も含む。相殺均衡。QHG再定義26R連続未実行",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -82,7 +82,7 @@
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 35,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.95: ±0%（35%維持）。COMPLETE。Red採用。停滞ペナルティ撤回（围い込みI蓄積はSCN-003支持・-1%は論理矛盾）。围い込みI 9件蓄積（Gemini Enterprise・Vertex移行・Cloud Next垂直統合）はSCN-003支持だが開放（SKILL.md・MCP・agents-cli OSS）も同時進行。QHG再定義24R連続未実行が根本原因。次回Arbiter最初の議題としてQHG再定義強制実行",
+      "probability_rationale": "Arbiter v3.96: ±0%（35%維持）。COMPLETE。围い込みI 11件蓄積（Managed Agents API層・Vertex統合プラットフォーム層）+ Pattern S「方向性の確認」（Jevonsパラドックスデータ層围い込み加速）はSCN-003支持。開放（MCP RC・Grok Build多プラットフォーム）も同時進行。QHG再定義26R連続未実行。次回Arbiter最初の議題として強制実行",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -113,8 +113,8 @@
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 26,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.95: +1%（25→26%）。COMPLETE。Red部分採用。方向妥当（Agent Runtime競争激化+LLMコモディティ化+AI API移行ガイド）だが+2%の証拠品質がC-3/D-3中心（Goldman Sachs 24倍需要 B-3が1件のみ）。+1%が保守性原則に合致。SCN-002「勝者」希薄化も間接支持",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v3.96: ±0%（26%維持）。COMPLETE。Pattern T「評価の転換期」（MMLU飽和+ベンチマーク診断力消失）は支持。Datacurve不均等性検出は部分反証（コモディティ化否定方向）。相殺均衡。QHG再定義26R連続未実行",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-01",
-    "note": "SCN-001(15) + SCN-002(24) + SCN-003(35) + SCN-004(26) = 100%. Arbiter v3.95完了（COMPLETE）"
+    "verified_date": "2026-06-02",
+    "note": "SCN-001(15) + SCN-002(24) + SCN-003(35) + SCN-004(26) = 100%. Arbiter v3.96完了（COMPLETE）"
   }
 }

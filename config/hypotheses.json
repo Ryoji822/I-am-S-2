@@ -1,7 +1,8 @@
 {
-  "version": "3.95",
-  "last_updated": "2026-06-01",
+  "version": "3.96",
+  "last_updated": "2026-06-02",
   "structural_changes_log": [
+    "2026-06-02 v3.96: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。5件確度変更（-1%×2・+1%×2・±0%×13・棄却維持×2）。Blue採用5/5（100%）・Red条件付1/5（20%）・Red指摘採用4/10（40%）。メソドロジー推奨4/4採用（100%）。主要更新: H-OAI-002 -1%（45→44%）Blue採用・OpenAI AWS Bedrock GA围い込みI蓄積34件目・Apple model解釈認識・I限界効率逓減認識・low帯深化・H-GOO-002 -1%（28→27%）Blue採用・围い込みI 11件目蓄積（Managed Agents API層・Vertex統合プラットフォーム層）・開放C 25R連続不在確定・low帯深化・H-GOO-003 +1%（49→50%）Blue採用・5R連続C蓄積方向の漸進的反映・INFO-009+INFO-034+INFO-050+INFO-057多層C蓄積・A-2+品質Google固有寄与定量分解条件未達成（10R）・50%到達でmedium移行・Red注記: 50%アンカリング監視継続・H-GOV-001 -1%（47→46%）Blue採用+Red条件付・9R連続-1%・I側A-2品質蓄積継続（法廷胜利・$965B評価額・Illinois法・EU AI Act）・停止条件カウント1R目宣言（I側A-1品質新規なし3R連続で停止）・46%到達でmedium帯下限・H-CAR-001 +1%（32→33%）Blue採用・A-2品質C蓄積（Reuters・NYT）+B-3定量C（Klarna 38%・SWE求人65%減）・コスト削減口実代替解釈認識・+1%上限。Pattern Q確度中-高→中（Red採用・本番稼働率5%・カレンダー効果）・Pattern R名称「構造的転換点」→「二面性の戦略的深化」（Red採用）・Pattern T名称「評価の危機」→「評価の転換期」（Red採用）・Pattern S名称「確定化」→「方向性の確認」（Red採用）。シナリオ全件±0%（SCN-001 15%・SCN-002 24%・SCN-003 35%・SCN-004 26%）。QHG再定義26R連続未実行・次回強制実行・未実行の場合シナリオ確率凍結ペナルティ。指標7件更新（全件状態変更なし・7件last_checked更新）。合計100%確認済み（15+24+35+26=100%）",
     "2026-06-01 v3.95: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。2件確度変更（-1%×2・±0%×12・棄却維持×2）。Blue採用2/2（100%）・Red条件付1/2（50%）・Red指摘部分採用1/12。メソドロジー推奨4/4採用（100%）。主要更新: H-GOO-002 -1%（29→28%）Blue採用・围い込みI 9件目蓄積（Gemini Enterprise Agent Platform・Vertex移行・Cloud Next垂直統合）・開放C 24R連続不在確定・low帯深化・H-GOV-001 -1%（48→47%）Blue採用+Red条件付・8R連続-1%・I側A-2品質蓄積（Illinois法・EU AI Act・CISA・NIST）・47%到達でmedium帯下限に接近・Red条件: 累積的ペナルティ停止条件明文化必須・次回medium→low移行の明示的基準設定必須・H-CAR-002 ±0%（69%維持）Red指摘部分採用・METR 43%本番破損を明示的に組み込み・「書く能力の定義の変化」vs「価値低下」区別導入・GitHub 22-29%使用率の診断的評価記録・69%上限（METR 43%明示的反証込み）。Pattern M確度中-高→中（Red採用・INFO-052感度リスク再発・3次元独立性未検証）。Pattern L確度高→中-高（Red採用・コモディティ化判定がC-3単一ソース）。シナリオ3件変更（SCN-002 -1%: 25→24% MMLU飽和+LLMコモディティ化で「勝者」希薄化深化・Blue採用・SCN-003 ±0%: 35%維持 Red採用・停滞ペナルティ撤回・围い込みI蓄積はSCN-003支持で-1%は論理矛盾・QHG再定義24R未実行が根本原因・SCN-004 +1%: 25→26% Red部分採用・方向妥当だが証拠品質C-3/D-3中心で+2%は過大）。指標7件更新（全件状態変更なし・7件last_checked更新）。合計100%確認済み（15+24+35+26=100%）",
     "2026-05-31 v3.94: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。6件確度変更（-1%×3・+1%×1・Blue否認±0%×1・±0%×1・±0%×14・棄却維持×2）。Blue採用5/6（83%）・Red採用1/6（17%）。主要更新: H-OAI-001 -1%（59→58%）Blue採用・Anthropic逆転3重確認（Ramp・Designer Fund・評価額）+価格体系混乱（Codex改定・Copilot跳ね上がり）・INFO-052感度制約記録（B-2単一ソースが3判断同時支持の構造的リスク）・58%でmedium帯下限に接近・H-ANT-001 -1%（43→42%）Blue採用・17R連続上限条件未達成ペナルティ・Pattern J「市場が安全性を評価」論理的飛躍判定（Red採用）が上限条件達成難易度示唆・low帯深化・H-GOO-002 -1%（30→29%）Blue採用・围い込みI 8件目蓄積（Enterprise Agent Platform Skill Registry/RAG Engine）・開放C 23R連続不在確定・low帯深化・H-GOV-001 -1%（49→48%）Blue採用+Red条件付き・6R連続-1%・I側A-1+A-2品質累積・Red条件: 次回medium→low移行基準設定必須・自己強化監視・因果チェーン第4段階「未確認」≠「否定」継続明記・H-CAR-001 +1%（31→32%）Blue採用・A-2品質C（Stanford 16%相対雇用減）+強力なI同時存在・+1%上限・H-CAR-002 ±0%（69%維持）Red採用・Blue +1%否認・70%境界越えにMETR 43%（v3.83 Arbiter認定）明示的組み込み不足・Pattern G確度中-高→中（Red採用・4ソース独立性過大評価）・Pattern J確度中-高→中（Red採用・「市場が安全性を評価」論理的飛躍）。シナリオ3件変更（SCN-002 -1%: 26→25%MMLU飽和+CEOs安価モデルシフトで「勝者」希薄化・SCN-003 -1%自動ペナルティ: 36→35% 7R連続±0%+v3.92規則適用+QHG再定義22R未実行・SCN-004 +2%: 23→25% Blue +1%採用+SCN-003再配分+4件直接支持+Pattern H支持）。指標7件更新（全件状態変更なし・7件last_checked更新）。合計100%確認済み（15+25+35+25=100%）",
     "2026-05-30 v3.93: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。5件確度変更（-1%×5・±0%×15・棄却維持×2）。Blue採用3/5（60%）・Red採用2/5（40%）。主要更新: H-GOV-001 -1%（50→49%）Blue採用・Red理由修正統合・I側A-1品質3件（Series H $650億・$965B評価額・OpenAI超え）の累積否定継続・5R連続-1%・因果チェーン第4段階「未確認」≠「否定」の区明記・49%到達・H-ANT-001 -1%（44→43%）Red採用・Blue ±0%否認・16R連続上限条件未達成の累積ペナルティ（他仮説H-GOO-001と基準整合）・KPMG 276K診断的価値「高」→「中」修正（代替説明排除不十分）・low帯深化・H-GOO-001 -1%（53→52%）Red採用・Blue ±0%否認・7R連続A-2+品質条件未達成のアンカリング是正・C蓄積6件全B-2品質vs I側A-1品質2件の品質格差・8R連続条件設定・H-GOO-002 -1%（31→30%）Blue/Red一致・围い込みI 7件目蓄積・開放C 22R連続不在・low帯深化・H-OAI-001 -1%（60→59%）Blue採用・Red条件付き同意・Anthropic首位交代A-1品質2重診断的I・累積I件数品質フィルタリング記録・59%でmedium下限接近。シナリオ3件変更（SCN-002 -1%: 27→26%価格コモディティ化で「勝者」希薄化・SCN-003 -1%自動ペナルティ: 37→36% v3.92規則適用・Blue +1%否認・6R連続±0%・SCN-004 +2%: 21→23% Red過小評価指摘+4件直接支持証拠）。指標7件更新（全件状態変更なし・7件last_checked更新）。合計100%確認済み（15+26+36+23=100%）",
@@ -98,7 +99,7 @@
         "statement": "OpenAIはSkills/Shell/Compactionの独自実行環境でAgent開発者を囲い込み、MCP準拠の開放エコシステム上にプロプライエタリな上位レイヤーを構築する",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 45,
+        "confidence_percentage": 44,
         "inconsistent_evidence": [
           "INFO-006",
           "INFO-018",
@@ -126,9 +127,10 @@
           "INFO-024",
           "INFO-017",
           "INFO-019",
-          "INFO-025"
+          "INFO-025",
+          "INFO-001"
         ],
-        "rationale": "Arbiter v3.89: ±0%（45%維持）。COMPLETE。Red採用。仮説命題「開放エコシステム上にプロプライエタリ上位レイヤー」とMCP開放は論理的に矛盾しない（Apple model: 開放標準＋围い込み両立）。I蓄積33件の論理構造に問題あり。SKILL.md相互運用性・MCP上の固有拡張要監視",
+        "rationale": "Arbiter v3.96: -1%（45→44%）。COMPLETE。Blue採用。OpenAI AWS Bedrock GA（INFO-001 A-3）が围い込みI蓄積34件目。マルチプラットフォーム展開は围い込み戦略と論理的に不整合。Apple model解釈認識（v3.89）だがAWS展開は围い込み否定方向の重みが大きい。I蓄積34件の限界効率逓減認識（A-3品質新規Iは対象外）。low帯深化",
         "confirming_indicators": [
           "Skills/Shell利用開発者数の増加",
           "OpenClawマーケットプレイスのスキル数・取引額増加",
@@ -211,7 +213,7 @@
         "statement": "政府が経済的手段（SCR指定・調達禁止・DPA脅迫）でAI企業の安全性姿勢を抑圧する先例が確立されたことで、AI業界全体に萎縮効果が生じ、安全性研究・倫理的差別化の戦略的価値が構造的に低下する",
         "status": "active",
         "confidence": "medium",
-        "confidence_percentage": 47,
+        "confidence_percentage": 46,
         "consistent_evidence": [
           "INFO-128",
           "INFO-058",
@@ -254,7 +256,10 @@
           "INFO-028",
           "INFO-029",
           "INFO-030",
-          "INFO-048"
+          "INFO-048",
+          "INFO-041",
+          "INFO-026",
+          "INFO-032"
         ],
         "inconsistent_evidence": [
           "INFO-128",
@@ -286,9 +291,14 @@
           "INFO-022",
           "INFO-054",
           "INFO-070",
-          "INFO-048"
+          "INFO-048",
+          "INFO-017",
+          "INFO-037",
+          "INFO-048",
+          "INFO-022",
+          "INFO-003"
         ],
-        "rationale": "Arbiter v3.95: -1%（48→47%）。COMPLETE。Blue採用+Red条件付。8R連続-1%。I側品質累積（A-2: Illinois法 INFO-057 + A-3: EU AI Act INFO-034・CISA INFO-038・NIST INFO-058）。因果チェーン第4段階「未確認」≠「否定」継続。Red条件: 累積的ペナルティ停止条件明文化必須・47%到達で次回medium→low移行の明示的基準設定必須・OpenAI「全合法目的」・Google兵器誓約削除は萎縮効果直接Cとして記録継続",
+        "rationale": "Arbiter v3.96: -1%（47→46%）。COMPLETE。Blue採用+Red条件付。9R連続-1%。I側A-2品質蓄積継続（法廷胜利 INFO-017・$965B評価額 INFO-037・Illinois法 INFO-048・EU AI Act INFO-022）。因果チェーン第4段階「未確認」≠「否定」継続。停止条件カウント1R目宣言: 本ラウンドI側A-1品質新規証拠なし確認。停止条件: I側A-1品質新規なし3R連続で停止・C側A-2品質新規証拠出現でも停止。46%到達でmedium帯下限。次回停止条件不充足で-1%の場合は45%（low帯）移行",
         "confirming_indicators": [
           "他のAI企業が政府圧力を受けて安全性方針を後退・沈黙",
           "AI安全性研究への民間投資の減少",
@@ -510,7 +520,7 @@
         "statement": "GoogleはGemini Tools & Agentsでオープン標準（LangChain等）とのDay 0サポートを維持し、囲い込みを回避する",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 28,        "inconsistent_evidence": [
+        "confidence_percentage": 27,        "inconsistent_evidence": [
           "INFO-076",
           "INFO-071",
           "INFO-023",
@@ -527,9 +537,11 @@
           "INFO-044",
           "INFO-046",
           "INFO-005",
-          "INFO-009"
+          "INFO-009",
+          "INFO-010",
+          "INFO-015"
         ],
-        "rationale": "Arbiter v3.95: -1%（29→28%）。COMPLETE。Blue採用。围い込みI 9件目蓄積（Gemini Enterprise Agent Platform INFO-019 A-3・Vertex AI移行 INFO-027 C-3・Cloud Next垂直統合 INFO-067 C-3）。開放C 24R連続不在確定。agents-cli OSS（INFO-024）は開放C候補だがCLIツールOSS化は围い込み回避の十分条件ではない（Apple model）。low帯深化",
+        "rationale": "Arbiter v3.96: -1%（28→27%）。COMPLETE。Blue採用。围い込みI 11件目蓄積（Managed Agents API層 INFO-010 A-3・Vertex統合プラットフォーム層 INFO-015 A-3）。開放C 25R連続不在確定。I件数独立性: Managed Agents=API層・Vertex統合=プラットフォーム層として独立カウント維持。MCP RC仕様は業界全体標準でGoogle固有開放Cとしては間接的。low帯深化",
         "confirming_indicators": [
           "LangChain/LlamaIndex等でのGemini対応維持",
           "Gemini Toolsのオープンソース化",
@@ -546,8 +558,8 @@
         "pir_id": "PIR-2026-005",
         "statement": "GoogleはDeepMind統合シナジーでエコシステム深度・研究卓越性・インフラ統合を通じて競争力を維持する",
         "status": "active",
-        "confidence": "low",
-        "confidence_percentage": 49,
+        "confidence": "medium",
+        "confidence_percentage": 50,
         "consistent_evidence": [
           "INFO-016",
           "INFO-017",
@@ -572,7 +584,11 @@
           "INFO-008",
           "INFO-019",
           "INFO-038",
-          "INFO-007"
+          "INFO-007",
+          "INFO-009",
+          "INFO-034",
+          "INFO-050",
+          "INFO-057"
         ],
         "inconsistent_evidence": [
           "INFO-041",
@@ -588,7 +604,7 @@
           "INFO-038",
           "INFO-002"
         ],
-        "rationale": "Arbiter v3.89: ±0%（49%維持）。COMPLETE。Red採用。H-GOO-001との二重基準解消。同一4R条件（A-2+品質Google固有寄与定量分解）未達成で±0%。方向は上向き（4R連続C蓄積）。次回A-2+定量分解で+1%条件充足可能性高",
+        "rationale": "Arbiter v3.96: +1%（49→50%）。COMPLETE。Blue採用。5R連続C蓄積方向の漸進的反映。INFO-009（A-3 TPU v8・3.2Q tokens・850万開発者）+INFO-034（A-3 SWE-bench首位）+INFO-050（C-3 未解決数学問題解決）+INFO-057（B-3 Cloud $20B・CAPEX $185B）の多層C蓄積。A-2+品質Google固有寄与定量分解条件は未達成（10R）。50%到達でmedium移行。Red注記: 50%アンカリング監視継続・A-2+条件未達成中の更なる+1%には強い根拠必要",
         "confirming_indicators": [
           "Gemini 3の主要ベンチマークでのトップ性能",
           "DeepMind研究のGemini統合加速",
@@ -837,7 +853,7 @@
         "statement": "AI業務自律化が3年以内に中堅企業の業務プロセスを30%以上自動化し、中間層雇用が大幅に削減される",
         "status": "active",
         "confidence": "low",
-        "confidence_percentage": 32,
+        "confidence_percentage": 33,
         "inconsistent_evidence": [
           "INFO-042",
           "INFO-019",
@@ -866,7 +882,7 @@
           "INFO-032",
           "INFO-038"
         ],
-        "rationale": "Arbiter v3.94: +1%（31→32%）。COMPLETE。Blue採用。A-2品質C（Stanford Digital Economy Lab: 22-25歳AI暴露職業16%相対雇用減 INFO-053 A-2）が初めてAI代替がジュニアタスク層を特異的に対象していることを定量確認。強力なI同時存在（$0.18価値/$1支出・61pt採用ギャップ・Klarna解決率14%・49%パイロット停滞）。+1%は上限",
+        "rationale": "Arbiter v3.96: +1%（32→33%）。COMPLETE。Blue採用。A-2品質C蓄積（Reuters インド内製化 INFO-027 A-2 + NYT レイオフ報道 INFO-038 A-2）+ B-3品質定量C（Klarna 38%削減 INFO-028 + SWE求人65%減 INFO-039）。コスト削減口実代替解釈認識（Red指摘採用）。強力なI同時存在（WEF純増+78M INFO-042）。+1%は上限",
         "confirming_indicators": [
           "中堅企業でのAI自動化率30%超達成",
           "中間層雇用の統計的減少確認",
