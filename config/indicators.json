@@ -1,6 +1,6 @@
 {
-  "version": "3.97",
-  "last_updated": "2026-06-03",
+  "version": "3.98",
+  "last_updated": "2026-06-04",
   "description": "I&W（Indications and Warning）指標レジストリ. v3.82: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（IND-030 high移行・6件last_checked更新）。IND-013 high維持（MCP token theft INFO-051 B-3+TanStack npm攻撃 INFO-052 A-3+AgentTrap 141タスク INFO-017 B-3。攻撃面拡大加速）・IND-025 elevated維持（Opus 4.6 5ベンチマーク勝利 INFO-021 B-2+DeepSeek V3.2 Speciale INFO-031 C-2。量的向上継続）・IND-026 elevated維持（METR 43%乖離 INFO-038 C-2+Klarna再採用 INFO-027 B-2。high移行4ソース到達。次回検討）・IND-027 high維持（7サンドボックス INFO-009+Grok Build ACP INFO-010+DeerFlow 2.0 INFO-008。標準化爆発的加速継続）・IND-028 elevated維持（AGIタイムライン+Opus 4.6ベンチマーク向上。主観-客観乖離継続）・IND-029 high維持（$1TNデータセンター INFO-026+Mistral $2.3B INFO-033+機関投資家必須 INFO-050。資本流入劇的加速）・IND-030 elevated→high移行（Google兵器誓約削除 INFO-037 B-3+CDT 9機関停止 INFO-019 A-2+UK改名 INFO-054 B-3+Pentagon報酬構造 INFO-016 D-3+NYT安全性限界 INFO-041 A-3。5重C蓄積・能力-リスク二面性の新段階）",
   "structural_changes_log": [
     "2026-05-14 v3.76: Arbiter統合判断（DEGRADED/BOTH-FAILED状態）。Arbiter独自批判分析。7指標更新（全件状態変更なし）。IND-013 high継続（Codex 4層防御 INFO-001 A-3は防御側強化。新規脆弱性なし。critical移行条件未到達）・IND-025 elevated継続（Grok STT/TTS+Imagine+Doubao全モダリティ+Seedance 2.0 #2。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（エージェント成功率77.3% vs 74%ロールバック。期待-実態ギャップ顕在化。high移行条件検討段階）・IND-027 high継続（MCPデファクト化+AAIF 97M SDK+TikTok MCP+Grok BYO MCP+Agent Skills 1000+。標準化爆発的加速）・IND-028 elevated継続（Hassabis AGI 2030+ARC-AGI-3+Meta Llama 4不正。客観的ベンチマーク信頼性問題。主観-客観乖離継続）・IND-029 high継続（Q1 $2555億+Big 4 $7250億+Anthropic $300億+Stargate $5000億。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon SCR+DPA+Google秘密契約+Scale AI $5億+EU AI Act延期+US Safety Institute革新シフト。規制二方向同時深化。能力-リスク二面性加速）",
@@ -15,9 +15,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Claude Security Enterprise Beta 10K+脆弱性発見（INFO-059 B-3）。新規A-1脆弱性開示なし。攻撃面拡大基調継続。critical移行条件未到達",
-      "last_checked": "2026-06-03",
-      "rationale": "Arbiter v3.97: high維持。DEGRADED。Claude Security Enterprise Beta 10K+脆弱性発見（INFO-059 B-3）は防御ツール。新規A-1脆弱性開示なし。攻撃面拡大基調継続。critical移行条件未到達"
+      "last_value": "AIセキュリティ認証必須化（INFO-012 C-3）・86%shadow AI（C-3）。攻撃面拡大基調継続。新規A-1脆弱性開示なし",
+      "last_checked": "2026-06-04",
+      "rationale": "Arbiter v3.98: high維持。COMPLETE。AIセキュリティ認証必須化（INFO-012 C-3）+86%shadow AI。攻撃面拡大基調継続。新規A-1脆弱性開示なし。critical移行条件未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -26,9 +26,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Gemini Omni任意入力動画生成（INFO-005 A-3）+Seedance 2.0四模態同時入力（INFO-055 B-3）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-06-03",
-      "rationale": "Arbiter v3.97: elevated維持。DEGRADED。Gemini Omni（INFO-005 A-3）+Seedance 2.0四模態（INFO-055 B-3）。量的向上継続。「真の理解」検証未解決"
+      "last_value": "Gemini 3全モダリティ（INFO-018 A-3）・Voice Agent API（INFO-019 C-3）。量的向上継続。「真の理解」検証未解決",
+      "last_checked": "2026-06-04",
+      "rationale": "Arbiter v3.98: elevated維持。COMPLETE。Gemini 3全モダリティ（INFO-018 A-3）+Voice Agent API（INFO-019 C-3）。量的向上継続。「真の理解」検証未解決"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -37,9 +37,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Fortune 500 51%導入23%ROI（INFO-025 B-3）。大部分パイロット本番未到達（INFO-014 C-3）。ROI未証明。構造的固定化継続",
-      "last_checked": "2026-06-03",
-      "rationale": "Arbiter v3.97: high維持。DEGRADED。Fortune 500 51%導入23%ROI（INFO-025 B-3）+大部分パイロット本番未到達（INFO-014 C-3）。ROI未証明。構造的固定化継続"
+      "last_value": "97%導入5%本番到達（INFO-027 C-2）・Glean 73%→85%（INFO-007 A-3）。期待-実態ギャップ構造的固定化",
+      "last_checked": "2026-06-04",
+      "rationale": "Arbiter v3.98: high維持。COMPLETE。97%導入5%本番到達（INFO-027 C-2）+Glean 73%→85%（INFO-007 A-3）。期待-実態ギャップ構造的固定化"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -48,9 +48,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "MCP SDK 97M月間DL（INFO-015 B-3）。AAIF 43新メンバー（INFO-016 B-3）。Agent Skills marketplace（INFO-022 C-3）。標準化爆発的進展継続",
-      "last_checked": "2026-06-03",
-      "rationale": "Arbiter v3.97: high維持。DEGRADED。MCP 97M DL（INFO-015 B-3）+AAIF 43新メンバー（INFO-016 B-3）+Agent Skills marketplace（INFO-022 C-3）。標準化爆発的進展継続"
+      "last_value": "AAIF 190メンバー（INFO-015 B-3）・Microsoft Skills OSS（INFO-016 A-3）。標準化爆発的進展継続",
+      "last_checked": "2026-06-04",
+      "rationale": "Arbiter v3.98: high維持。COMPLETE。AAIF 190メンバー（INFO-015 B-3）+Microsoft Skills OSS（INFO-016 A-3）。標準化爆発的進展継続"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -59,9 +59,9 @@
       "current_status": "elevated",
       "trend": "rising",
       "alert_level": "elevated",
-      "last_value": "Hassabis AGI 2029年前倒し（INFO-046 B-3）。ARC-AGI v2 GPT-5.5首位（INFO-047 B-3）。SIA自己改善ループ（INFO-049 B-3）。主観的前倒しvs客観的限界乖離継続",
-      "last_checked": "2026-06-03",
-      "rationale": "Arbiter v3.97: elevated維持。DEGRADED。Hassabis 2029年前倒し（INFO-046 B-3）+ARC-AGI v2（INFO-047 B-3）+SIA自己改善（INFO-049 B-3）。主観的前倒しvs客観的限界乖離継続"
+      "last_value": "Erdős予想自律反証（INFO-039 B-2）・ARC-AGI 2 GPT-5.5首位（INFO-017 B-3）。自律的数学推論の画期的マイルストーン。主観-客観乖離継続",
+      "last_checked": "2026-06-04",
+      "rationale": "Arbiter v3.98: elevated維持。COMPLETE。Erdős予想自律反証（INFO-039 B-2）+ARC-AGI 2 GPT-5.5首位（INFO-017 B-3）。自律的数学推論の画期的マイルストーン。主観-客観乖離継続"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -70,9 +70,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Anthropic $65B Series H（INFO-041 A-2）。Alphabet $80B株式調達計画（INFO-057 B-3）。Mistralデータセンター+自社チップ（INFO-040 B-3）。資本流入劇的加速継続",
-      "last_checked": "2026-06-03",
-      "rationale": "Arbiter v3.97: high維持。DEGRADED。Anthropic $65B（INFO-041 A-2）+Alphabet $80B調達計画（INFO-057 B-3）+Mistralデータセンター+チップ（INFO-040 B-3）。資本流入劇的加速継続"
+      "last_value": "Cloud $4,600億バックログ（INFO-034 A-1）・ByteDance CAPEX RMB 2,300億（INFO-032 B-2）・DeepSeek $7.4B（INFO-033 B-2）・Big 4 $7,250億（INFO-042 C-1）。資本流入劇的加速確定的",
+      "last_checked": "2026-06-04",
+      "rationale": "Arbiter v3.98: high維持。COMPLETE。Cloud $4,600億バックログ（INFO-034 A-1）+ByteDance CAPEX RMB 2,300億（INFO-032 B-2）+DeepSeek $7.4B（INFO-033 B-2）+Big 4 $7,250億（INFO-042 C-1）。資本流入劇的加速確定的"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -81,9 +81,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "連邦裁予備的差止（INFO-027 A-3）+Trump大統領令（INFO-029 A-3）+Illinois監査法（INFO-030 B-3）+米中交渉（INFO-050 B-3）+安全性EO取消（INFO-048 B-3）。能力向上と治理多層化の同時進行継続",
-      "last_checked": "2026-06-03",
-      "rationale": "Arbiter v3.97: high維持。DEGRADED。連邦裁差止（INFO-027 A-3）+Trump大統領令（INFO-029 A-3）+Illinois監査法（INFO-030 B-3）+米中交渉（INFO-050 B-3）+安全性EO取消（INFO-048 B-3）。能力向上と治理多層化同時進行継続"
+      "last_value": "Trump大統領令（INFO-023 A-1）・自律兵器論争（INFO-030 B-2）・EU AI Act更新（INFO-037 B-1）・EO実行タイムライン（INFO-047 A-2）。能力向上と治理多層化の同時進行継続",
+      "last_checked": "2026-06-04",
+      "rationale": "Arbiter v3.98: high維持。COMPLETE。Trump大統領令（INFO-023 A-1）+自律兵器論争（INFO-030 B-2）+EU AI Act更新（INFO-037 B-1）+EO実行タイムライン（INFO-047 A-2）。能力向上と治理多層化同時進行継続"
     }
   }
 }
