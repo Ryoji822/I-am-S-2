@@ -1,6 +1,6 @@
 {
-  "version": "3.98",
-  "last_updated": "2026-06-04",
+  "version": "3.99",
+  "last_updated": "2026-06-05",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.84: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了・DEGRADED条件下）。QHG Y軸再定義採用（凍結17R→解除）。「格差拡大/収斂」→「フロンティア差別化の持続性: 持続/コモディティ化」。シナリオ4件確率全面的再配分（SCN-001 -2%: 20→18%・SCN-002 -2%: 30→28%・SCN-003 ±0%: 35%維持・SCN-004 +4%: 15→19%）。合計100%維持（18+28+35+19=100%）",
   "driving_forces": {
     "axis_x": {
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 15,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.98: ±0%（15%維持）。COMPLETE。Google围い込み深化（+5件I・19件蓄積）+Meta OSS→クローズド転換（INFO-040 B-2）はC。但しMCP 97M DL・AAIF 190社開放進展が同時進行。方向圧力: +1%。QHG再定義28R連続未実行・次回ABSOLUTE最優先強制実行宣言",
+      "probability": 16,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v3.99: +1%（15→16%）。COMPLETE。围い込み29件蓄積（エコシステム・データ・インフラ3層深化）+Agent自律決済新次元（AWS Bedrock AgentCore INFO-025 A-3）+Anthropic Partner Network $100M（INFO-002 A-3）で围い込みの「柔和な」形態拡大。Red指摘SCN-001過小評価を部分採用。MAF OSS・AAIF開放進展も同時進行で+2%は過大。QHG再定義30R目で強制実行",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -80,9 +80,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × コモディティ化",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 35,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.98: ±0%（35%維持）。COMPLETE。围い込みI 19件蓄積（+5件）+Cloud $4,600億バックログ（INFO-034 A-1）+価格コモディティ化加速（INFO-028 C-2）はSCN-003支持。MCP/AAIF開放進展も同時進行。方向圧力: ±0%（アンカリング警戒）。QHG再定義28R連続未実行・次回ABSOLUTE最優先強制実行宣言",
+      "probability": 34,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v3.99: -1%（35→34%）。COMPLETE。29R連続固定ペナルティ（v3.92規則精神に基づく暫定措置）+アンカリング是正。围い込みI蓄積・Cloud成長はSCN-003支持だが、29R固定の統計的有意性（構造的固定＝確率が正しいからではない）を是正。SCN-001への再配分。QHG再定義30R目で強制実行",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-04",
-    "note": "SCN-001(15) + SCN-002(24) + SCN-003(35) + SCN-004(26) = 100%. Arbiter v3.98完了（COMPLETE）"
+    "verified_date": "2026-06-05",
+    "note": "SCN-001(16) + SCN-002(24) + SCN-003(34) + SCN-004(26) = 100%. Arbiter v3.99完了（COMPLETE）"
   }
 }
