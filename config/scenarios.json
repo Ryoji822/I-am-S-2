@@ -1,6 +1,6 @@
 {
-  "version": "3.99",
-  "last_updated": "2026-06-05",
+  "version": "4.00",
+  "last_updated": "2026-06-06",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.84: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了・DEGRADED条件下）。QHG Y軸再定義採用（凍結17R→解除）。「格差拡大/収斂」→「フロンティア差別化の持続性: 持続/コモディティ化」。シナリオ4件確率全面的再配分（SCN-001 -2%: 20→18%・SCN-002 -2%: 30→28%・SCN-003 ±0%: 35%維持・SCN-004 +4%: 15→19%）。合計100%維持（18+28+35+19=100%）",
   "driving_forces": {
     "axis_x": {
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 16,
+      "probability": 17,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v3.99: +1%（15→16%）。COMPLETE。围い込み29件蓄積（エコシステム・データ・インフラ3層深化）+Agent自律決済新次元（AWS Bedrock AgentCore INFO-025 A-3）+Anthropic Partner Network $100M（INFO-002 A-3）で围い込みの「柔和な」形態拡大。Red指摘SCN-001過小評価を部分採用。MAF OSS・AAIF開放進展も同時進行で+2%は過大。QHG再定義30R目で強制実行",
+      "probability_rationale": "Arbiter v4.00: +1%（16→17%）。COMPLETE。Blue採用。围い込みI 32件蓄積+次元拡大（ハードウェア: Googlebook・決済: Daybreak予告・SaaS: Workday統合）で围い込みの形態多様化進行。但し围い込み拡散（薄化）リスク記録: 6次元分散は集中戦略より弱い可能性・Daybreakは予告段階・Workdayは排他契約未確認。Google二層戦略（基盤開放・上位围い込み）の可能性。QHG再定義31R目",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -55,7 +55,7 @@
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 24,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.98: ±0%（24%維持）。COMPLETE。MCP 97M DL・AAIF 190社（INFO-015 B-3）・Microsoft Skills OSS（INFO-016 A-3）で開放C蓄積。DeepSeek $7.4B（INFO-033 B-2）で競争維持。但しGoogle围い込み深化がSCN-002前提を部分的に侵食。相殺均衡。QHG再定義28R連続未実行",
+      "probability_rationale": "Arbiter v4.00: ±0%（24%維持）。COMPLETE。MCP対応深化（INFO-016）・agents-cli クロスエージェント（INFO-023）で開放C蓄積。Codex非開発者20%（INFO-003）は勝者強化。AAIF 43新メンバー（INFO-021）。相殺均衡。QHG再定義31R目",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -80,9 +80,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × コモディティ化",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 34,
+      "probability": 33,
       "probability_change": "-1%",
-      "probability_rationale": "Arbiter v3.99: -1%（35→34%）。COMPLETE。29R連続固定ペナルティ（v3.92規則精神に基づく暫定措置）+アンカリング是正。围い込みI蓄積・Cloud成長はSCN-003支持だが、29R固定の統計的有意性（構造的固定＝確率が正しいからではない）を是正。SCN-001への再配分。QHG再定義30R目で強制実行",
+      "probability_rationale": "Arbiter v4.00: -1%（34→33%）。COMPLETE。30R固定ペナルティ継続+SCN-001への再配分。围い込み→SCN-001シフト兆候（围い込みI蓄積・Cloud成長はSCN-003支持だが30R固定の統計的有意性を是正）。QHG再定義31R目。強制実行宣言（v3.99）に基づく",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -114,7 +114,7 @@
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 26,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v3.98: ±0%（26%維持）。COMPLETE。DeepSeek $7.4B（INFO-033 B-2）+API価格$30→$1/M（INFO-028 C-2）でコモディティ化C。Meta OSS→クローズド転換（INFO-040 B-2）はSCN-004前提の部分反証。Big 4 $7,250億投資は二層市場強化。相殺均衡。方向圧力: +1%。QHG再定義28R連続未実行",
+      "probability_rationale": "Arbiter v4.00: ±0%（26%維持）。COMPLETE。コモディティ化C蓄積（API価格低下・ベンチマーク首位交代・Nemotron 3 Ultra OSS）だが围い込み同時進行で相殺。API価格Nano $0.20/$1.25（INFO-037 B-2）は重要なコモディティ化シグナルだが単一データポイント。方向圧力: +1%。次回検討。QHG再定義31R目",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-05",
-    "note": "SCN-001(16) + SCN-002(24) + SCN-003(34) + SCN-004(26) = 100%. Arbiter v3.99完了（COMPLETE）"
+    "verified_date": "2026-06-06",
+    "note": "SCN-001(17) + SCN-002(24) + SCN-003(33) + SCN-004(26) = 100%. Arbiter v4.00完了（COMPLETE）"
   }
 }

@@ -1,146 +1,117 @@
 # Google / DeepMind
 
-> 最終判断更新: 2026-06-01
+> 最終判断更新: 2026-06-06
 > 全体確信度: 中
-> 情報非対称性: Workspace / Gemini 統合の DAU/MAU 非公開。TPU 対 NVIDIA の電力効率が外部から測れない。Vertex AI から Gemini Enterprise Agent Platform への移行影響範囲が非公開。Cloud Next垂直統合のOpenAI/Anthropicへの実際の影響が外部から測れない
+> 情報非対称性: Workspace / Gemini 統合の DAU/MAU 非公開。TPU 対 NVIDIA の電力効率が外部から測れない。Vertex AI から Gemini Enterprise Agent Platform への移行影響範囲が非公開。围い込みI 32件の品質別内訳未開示（次回必須条件化済み）。Cloud Next垂直統合のOpenAI/Anthropicへの実際の影響が外部から測れない
 > 主参照: [H-GOO-001](../config/hypotheses.json) [H-GOO-002](../config/hypotheses.json) [H-GOO-003](../config/hypotheses.json) [IND-001](../config/indicators.json) [IND-006](../config/indicators.json) [IND-025](../config/indicators.json) [IND-027](../config/indicators.json) [IND-030](../config/indicators.json)
 
 ## 0. 一文要約
 
-我々はGoogleを、**围い込みが24件に達しH-GOO-002が28%に低下した一方で、開放C証拠が24R連続で不在、H-GOO-001が52%で推移した企業**と読んでいる。最大の根拠は、Cloud Next垂直統合 [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) と Gemini Enterprise Agent Platform [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) と Vertex AI移行 [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027) による围い込みI 9件目蓄積と、agents-cli OSS [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) が開放C候補だがCLIツールOSS化は围い込み回避の十分条件ではないことだ。Gemini 3.5はAIME 73.3%・GPQA Diamond 74.2%を達成し [INFO-039](../Information/2026-05-28/collected-raw.md#INFO-039)、Gemini 3 Pro Deep Thinkはマルチモーダルベンチマーク100.0%で首位 [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016) だが、8R連続A-3/C-3のみのC蓄積でH-GOO-001は52%で推移した。Google Cloud収益は$20B/四半期に到達し [INFO-072](../Information/2026-06-01/collected-raw.md#INFO-072)、HassabisはAGI 2029到達を示唆し [INFO-033](../Information/2026-05-31/collected-raw.md#INFO-033)、Googleは$400BのTexas DC計画を発表した [INFO-036](../Information/2026-05-31/collected-raw.md#INFO-036)。もし围い込みが規制当局の介入を引き起こすか、Anthropic直接対決勝率がGoogle有利に反転するなら、コア判断の前提が変わる。
+我々はGoogleを、**围い込みが32件に達しH-GOO-002が23%に低下した一方で、開放C証拠が30R連続不在から2件出現で解除され、围い込みの次元がエコシステムからハードウェア・決済・SaaSに拡大する企業**と読んでいる。最大の根拠は、Capex $180-190B围い込み [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) とGooglebook围い込み [INFO-011](../Information/2026-06-06/collected-raw.md#INFO-011) とWorkday SaaS围い込み [INFO-048](../Information/2026-06-06/collected-raw.md#INFO-048) による围い込みI 3件追加蓄積と、Gemini Agent API MCP Server統合 [INFO-016](../Information/2026-06-06/collected-raw.md#INFO-016) とagents-cli クロスエージェント [INFO-023](../Information/2026-06-06/collected-raw.md#INFO-023) による開放C 30R不在解除の同時発生だ。Red指摘の件数インフレリスク（Capex围い込みは業界全体Capex増加中での独立性疑問、Googlebook围い込みはApple・Microsoftの垂直統合と同質、Workday統合はパートナーシップで排他性未確認）を記録する。もし围い込みが規制当局の介入を引き起こすか、開放C 2件が質的転換の開始を示すか、のいずれかが観測されたら、コア判断の前提が変わる。
 
 ## 1. コア判断
 
 Googleの競争力の本体は、20億人規模の配布チャネルとTPUインフラとDeepMindの研究深度の三位一体にある。[H-GOO-003](../config/hypotheses.json)は49%で安定化が続いている。
 
-Gemini Enterprise Agent PlatformがVertex AIを正式に置き換えた [INFO-005](../Information/2026-05-28/collected-raw.md#INFO-005)。これは围い込み18件目に該当し、Google CloudのAI開発プラットフォーム全体をGeminiブランドに統合する構造的変化だ。Managed Agents APIによるホステッド・サンドボックスランタイムとGemini Interactions APIによるエージェント開発パスの提供は、デベロッパーのGemini依存をインフラレベルで不可逆化する。
+围い込みは32件に達した。直近の蓄積はCapex围い込み（INFO-010、I/O 2026でCapex $180-190BとGoogle固有インフラ围い込みを宣言）+Googlebook围い込み（INFO-011、Gemini搭載ラップトップでハードウェア次元に拡大）+Workday SaaS围い込み（INFO-048、HR/財務ワークフローにAIエージェントを直接埋め込む）で围い込みI 3件が同時に蓄積された。围い込みの次元がエコシステム・データ・インフラに加え、ハードウェア・決済・SaaSに拡大している。Red指摘の件数インフレリスク（同一イベント内複数機能別カウント、Capex围い込みは業界全体Capex増加中での独立性疑問、Googlebook围い込みはApple・Microsoftの垂直統合と同質、Workday統合はパートナーシップで排他性未確認）は妥当であり、围い込みI 32件品質別内訳の開示を次回必須条件化した。H-GOO-002は23%に低下しlow帯深化が続く。
 
-GoogleがAnthropicへの$40B投資を検討しているとの報道 [INFO-043](../Information/2026-05-28/collected-raw.md#INFO-043) は围い込み19件目に該当する。Anthropicが初回AI支出の直接対決で70%勝利し、収益の80%がエンタープライズである状況下で、Googleの投資は ecosystem dependency の形での围い込みと評価できる。Google Marketing LiveでのAI広告フォーマット発表 [INFO-037](../Information/2026-05-28/collected-raw.md#INFO-037) は围い込み20件目で、ChatGPT 9億MAUによる非中介化リスクへの対処として広告プラットフォームへのAI围い込みを拡張する。
+開放C証拠が30R連続不在から解除された。Gemini Agent APIがMCP Server統合を提供し [INFO-016](../Information/2026-06-06/collected-raw.md#INFO-016)（A-2品質）、agents-cliがClaude Code・Codex・Antigravityを含むクロスエージェント設計でv0.3.0をリリースした [INFO-023](../Information/2026-06-06/collected-raw.md#INFO-023)（A-3品質）。30R不在後の開放C同時出現は偶然ではなく意図的戦略転換の可能性がある。ただし围い込みIの蓄積速度が開放Cを上回る評価は妥当であり、-1%は保守的である。
 
-Managed Agents API [INFO-004](../Information/2026-05-29/collected-raw.md#INFO-004) は围い込み21件目で、Beta提供のホステッド・サンドボックスランタイムによりデベロッパーのGemini依存をインフラレベルで不可逆化する。Interactions API [INFO-005](../Information/2026-05-29/collected-raw.md#INFO-005) は围い込み22件目で、Gemini 3.5 Flashと3.1 Pro Previewを含むエージェント開発パスの提供により围い込みを拡張する。Skill Registry/RAG Engine [INFO-014](../Information/2026-05-31/collected-raw.md#INFO-014) は围い込み23件目で、Enterprise Agent Platformの拡張としてエージェントのスキル管理とRAGを統合する。
+Gemini Enterprise Agent PlatformがVertex AIを正式に置き換えた [INFO-018](../Information/2026-06-06/collected-raw.md#INFO-018)。Agent Search APIに正式SLAが設定された。これは围い込みの制度化が進行していることを示す。
 
-Cloud Next 2026のAI Agentフルスタック垂直統合 [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) + Gemini Enterprise Agent Platform公式ドキュメント [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) + Vertex AI移行詳細 [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027) は围い込み24件目として蓄積された。OpenAI・Anthropicを直接標的にワンストップAIプロバイダー戦略を推進し、围い込みI 9件目の蓄積確定である。agents-cli OSS [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) はGemini Agent Platform向けCLI・スキルのOSS公開だが、CLIツールOSS化は围い込み回避の十分条件ではない(Apple model)。
+[H-GOO-001](../config/hypotheses.json)は51%±0%。I=0が14R連続で延長した。代替説明「業界全体押し上げ」が14R未解決で、Google固有要因を分離できない状態が継続している。
 
-围い込みは24件に達した。直近の蓄積はCloud Next垂直統合 [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) + Enterprise Agent Platform [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) + Vertex AI移行 [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027) で围い込みI 9件目。開放C証拠は24R連続で不在である。agents-cli OSS [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) は開放C候補だが、CLIツールOSS化は围い込み回避の十分条件ではない(Apple model)。H-GOO-002は28%に低下しlow帯深化が続く。SKILL.md 40K+ と MCP 97M の開放標準爆発的進展 [INFO-014](../Information/2026-05-28/collected-raw.md#INFO-014) は開放側の動きだが、Google固有の開放Cとは評価できない。
-
-Gemini 3.5がAIME 73.3%・GPQA Diamond 74.2%を達成した [INFO-039](../Information/2026-05-28/collected-raw.md#INFO-039)。Gemini 3 Pro Deep Thinkはマルチモーダルベンチマーク100.0%で首位 [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016)。Gemini Omniによる動画生成とGemini 3.5 FlashがGoogle I/Oで発表された [INFO-007](../Information/2026-05-31/collected-raw.md#INFO-007)。これらはA-3品質の強力Cだが、4R条件（A-2+定量分解）は未達成であり、H-GOO-001の+1%復帰には至っていない。8R連続A-3/C-3のみのC蓄積は確度不変のアンカリングを示しており、Arbiter v3.94は-1%を裁定し、v3.95も±0%を維持した。
-
-Google Cloud Q1収益$8.41Bはアナリスト予想$8.64Bを下回ったが [INFO-057](../Information/2026-05-28/collected-raw.md#INFO-057)、YoY 63.4%成長・営業利益率32.9%（前年17.8%から改善）は強力な基調だ。Arbiterは予想下回りをノイズ範囲と評価し、-1%の根拠から除外した。「業界全体押し上げ」の代替説明は18R未解決で、Google固有要因を分離できない。
-
-兵器誓約削除はA-2確認を維持している。DeepMind従業員が軍事AI懸念から労働組合結成を投票した [INFO-030](../Information/2026-05-28/collected-raw.md#INFO-030) は、経営層と従業員の対立リスクを示唆する。AnthropicのSCR指定 [INFO-027](../Information/2026-05-28/collected-raw.md#INFO-027) とOpenAIのPentagon漁夫の利 [INFO-061](../Information/2026-05-28/collected-raw.md#INFO-061) の文脈で、GoogleはPentagon受益者側に位置する。
-
-DeepMind Co-ScientistのNature論文 [INFO-053](../Information/2026-05-20/collected-raw.md#INFO-053) はH-GOO-003「研究卓越性から製品競争力」因果の最も具体的な証拠として継続して有効だ。
-
-HassabisがAGI 2029到達を示唆した [INFO-033](../Information/2026-05-31/collected-raw.md#INFO-033) はH-GOO-003の時間軸に関するA-2品質のCだが、AGI定義の曖昧さから確度への寄与は限定的だ。Googleの$400B Texas DC計画 [INFO-036](../Information/2026-05-31/collected-raw.md#INFO-036) はインフラ投資の構造的拡大を示し、TPUインフラ優位性の継続を支持する。
+HassabisがAGI 2029到達を示唆した [INFO-044](../Information/2026-06-06/collected-raw.md#INFO-044)（A-1品質）はH-GOO-003の時間軸に関するCだが、AGI定義の曖昧さから確度への寄与は限定的だ。Capex $180-190B [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) は2022年$31Bから6倍の増加であり、インフラ投資の構造的拡大を示す。
 
 ## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | Gemini Enterprise Agent Platform: Vertex AIを正式に置き換え | 围い込み18件目。AI開発プラットフォーム全体のGeminiブランド統合。インフラレベルでの依存不可逆化 | C-3 | [INFO-005](../Information/2026-05-28/collected-raw.md#INFO-005) |
-| 高 | Google $40B Anthropic投資検討。Anthropic 70%直接対決勝利 | 围い込み19件目。ecosystem dependency形での围い込み。Google AI支出シェア約5%の現状を反映 | B-3 | [INFO-043](../Information/2026-05-28/collected-raw.md#INFO-043) |
-| 高 | Google Marketing Live: AI広告フォーマット発表・ChatGPT 9億MAU非中介化対処 | 围い込み20件目。広告プラットフォームへのAI围い込み拡張 | B-3 | [INFO-037](../Information/2026-05-28/collected-raw.md#INFO-037) |
-| 高 | Managed Agents API Beta: ホステッド・サンドボックスランタイム | 围い込み21件目。デベロッパーのGemini依存をインフラレベルで不可逆化 | A-3 | [INFO-004](../Information/2026-05-29/collected-raw.md#INFO-004) |
-| 高 | Interactions API: Gemini 3.5 Flash/3.1 Pro Preview含むエージェント開発パス | 围い込み22件目。エージェント開発のGemini依存拡張 | A-3 | [INFO-005](../Information/2026-05-29/collected-raw.md#INFO-005) |
-| 高 | Skill Registry/RAG Engine: Enterprise Agent Platform拡張 | 围い込み23件目。エージェントのスキル管理とRAG統合 | A-3 | [INFO-014](../Information/2026-05-31/collected-raw.md#INFO-014) |
-| 高 | Cloud Next 2026: AI Agentフルスタック垂直統合・OpenAI/Anthropic直接標的 | 围い込み24件目。ワンストップAIプロバイダー戦略。围い込みI 9件目蓄積(Vertex AI移行 [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027) + Enterprise Agent Platform [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) を含む) | C-3 | [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027) |
-| 高 | Google Cloud Q1 2026: $20B/四半期・63.4% YoY・営業利益率32.9% | エコシステム収益が構造的に拡大。$20B到達は節目。H-GOO-001のC蓄積 | B-3 | [INFO-072](../Information/2026-06-01/collected-raw.md#INFO-072) |
-| 高 | Gemini Omni + 3.5 Flash: Google I/O動画生成・高速モデル | フロンティア性能の拡張。Gemini Omniは新モダリティ対応 | A-3 | [INFO-007](../Information/2026-05-31/collected-raw.md#INFO-007) |
-| 高 | Gemini 3.5: AIME 73.3%・GPQA Diamond 74.2% | A-3品質強力Cだが4R条件未達成。フロンティア競争激化継続 | A-3 | [INFO-039](../Information/2026-05-28/collected-raw.md#INFO-039) |
-| 高 | Gemini 3 Pro Deep Think: マルチモーダルベンチマーク100.0%首位 | 研究卓越性の定量指標。H-GOO-003のC蓄積 | C-3 | [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016) |
-| 高 | DeepMind Co-Scientist: Nature論文・91%薬剤再利用・AlphaFold統合 | H-GOO-003「研究卓越性→製品競争力」因果の最も具体的証拠 | A-2 | [INFO-053](../Information/2026-05-20/collected-raw.md#INFO-053) |
-| 高 | 围い込み24件蓄積 + 開放C 24R連続不在 | H-GOO-002 28%。围い込み方向が一貫して強化。非対称性拡大継続。low帯深化 | A-3 | [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027) [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) |
-| 高 | Google/OpenAI兵器ルール後退(A-2) + Anthropic SCR指定 + Pentagon契約 | 安全性後退確定。因果チェーンA-2確認。GoogleはPentagon受益者側 | A-2 | [INFO-046](../Information/2026-05-20/collected-raw.md#INFO-046) [INFO-027](../Information/2026-05-28/collected-raw.md#INFO-027) [INFO-061](../Information/2026-05-28/collected-raw.md#INFO-061) |
-| 高 | Goldman Sachs: 米国DC電力31→66GW倍増・McKinsey $5.2T投資必要 | TPUインフラ外部展開の巨視的文脈確認。電力制約下での優位性指標 | A-3 | [INFO-044](../Information/2026-05-28/collected-raw.md#INFO-044) |
-| 高 | Cloud $8.41B/63.4% YoY・営業利益率32.9% | エコシステム収益が構造的に拡大。予想下回りはノイズ範囲(Arbiter評価) | B-3 | [INFO-057](../Information/2026-05-28/collected-raw.md#INFO-057) |
-| 高 | SaaStr: Gemini +48%(27→40%)。Claude +128%(21→48%)。「業界全体押し上げ」18R未解決 | Google固有要因の分離不能。H-GOO-001 53%押し下げ要因継続 | B-3 | [INFO-025](../Information/2026-05-18/collected-raw.md#INFO-025) |
-| 高 | Google I/O 2026包括分析: 「全テック企業に宣戦布告」的围い込み(継続有効) | 围い込み17件目(前回)のI蓄積。エコシステム依存の包括的深化 | B-3 | [INFO-067](../Information/2026-05-23/collected-raw.md#INFO-067) |
-| 中 | Managed Agents API: Antigravity Agent + AGENTS.md/SKILL.md(継続有効) | 围い込み16件目。デベロッパーのGemini依存をコードレベルで構造化 | A-3 | [INFO-007](../Information/2026-05-23/collected-raw.md#INFO-007) |
-| 中 | Gemini 3.1 Flash-Lite: エンタープライズプレビュー開始 | フロンティア性能の低コスト提供。围い込み価値を強化する一方で独自性を希薄化 | A-3 | [INFO-011](../Information/2026-05-28/collected-raw.md#INFO-011) |
-| 中 | DeepMind従業員組合化投票(軍事AI取引) | 兵器ルール後退の文脈で経営層と従業員の対立激化リスク | C-3 | [INFO-030](../Information/2026-05-28/collected-raw.md#INFO-030) |
-| 中 | agents-cli OSS: Gemini Agent Platform向けCLI・スキル・プラグインシステム | 開放C候補だがCLIツールOSS化は围い込み回避の十分条件ではない(Apple model) | A-3 | [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) |
-| 中 | Gemini Enterprise Agent Platform(前回围い込み14件目、継続有効) | build/deploy/govern/optimize一体化でエコシステム依存を構造的に深化 | A-3 | [INFO-010](../Information/2026-05-20/collected-raw.md#INFO-010) |
-| 中 | Chrome DevTools for Agents v1: エージェント開発者向け(継続有効) | Googleブラウザ依存をエージェント開発に拡張する新ベクトル | A-3 | [INFO-022](../Information/2026-05-23/collected-raw.md#INFO-022) |
+| 高 | Capex $180-190B围い込み: I/O 2026でGoogle固有インフラ围い込みを宣言 | 围い込み25件目（Capex围い込み）。インフラ投資の構造的拡大。Red指摘: 業界全体Capex増加中での独立性疑問 | A-3 | [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) |
+| 高 | Googlebook围い込み: Gemini搭載ラップトップ（Acer/Asus/Dell/HP/Lenovo） | 围い込み26件目（ハードウェア次元）。围い込み次元がエコシステムからハードウェアに拡大。Red指摘: Apple・Microsoftの垂直統合と同質 | A-3 | [INFO-011](../Information/2026-06-06/collected-raw.md#INFO-011) |
+| 高 | Workday SaaS围い込み: HR/財務ワークフローにAIエージェント直接埋め込み | 围い込み27件目（SaaS次元）。围い込み次元がSaaSに拡大。Red指摘: パートナーシップで排他性未確認 | B-2 | [INFO-048](../Information/2026-06-06/collected-raw.md#INFO-048) |
+| 高 | Gemini Agent API MCP Server統合: Deep Research Agent + MCP対応 | 開放C出現（30R不在解除）。Google APIがMCP標準に対応。意図的戦略転換の可能性 | A-2 | [INFO-016](../Information/2026-06-06/collected-raw.md#INFO-016) |
+| 高 | agents-cli クロスエージェント: Claude Code/Codex/Antigravity対応（2.7k Stars） | 開放C出現（30R不在解除）。Googleツールが他社エージェントをサポート | A-3 | [INFO-023](../Information/2026-06-06/collected-raw.md#INFO-023) |
+| 高 | 围い込み32件蓄積 + 開放C 2件出現（30R解除） | H-GOO-002 23%。围い込み方向が一貫して強化しつつ開放C初出現。非対称性は継続。low帯深化 | A-3 | [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) [INFO-011](../Information/2026-06-06/collected-raw.md#INFO-011) [INFO-048](../Information/2026-06-06/collected-raw.md#INFO-048) [INFO-016](../Information/2026-06-06/collected-raw.md#INFO-016) [INFO-023](../Information/2026-06-06/collected-raw.md#INFO-023) |
+| 高 | Gemini Enterprise Agent Platform: Vertex AI正式置き換え・Agent Search API SLA設定 | 围い込みの制度化進行。正式SLA設定で信頼性の商業的裏付け | A-3 | [INFO-018](../Information/2026-06-06/collected-raw.md#INFO-018) |
+| 高 | Gemini Omni: 任意入力→動画生成 + 3.5 Flash 9デモ | 製品能力の拡張。新モダリティ対応 | A-3 | [INFO-012](../Information/2026-06-06/collected-raw.md#INFO-012) |
+| 高 | Google Cloud製造業AIエージェントトレンド: 93%がデジタル/AI支出増計画・「AI成熟」は2%のみ | H-GOO-001のC。採用意欲と成熟度のギャップ確認。Google Cloud経由のエコシステム围い込みと整合 | A-2 | [INFO-052](../Information/2026-06-06/collected-raw.md#INFO-052) |
+| 高 | Hassabis AGI 2029到達示唆 | H-GOO-003の時間軸C。AGI定義の曖昧さから確度寄与は限定的 | A-1 | [INFO-044](../Information/2026-06-06/collected-raw.md#INFO-044) |
+| 中 | 围い込み24件目（前回蓄積分、継続有効） | Cloud Next垂直統合 + Enterprise Agent Platform + Vertex AI移行 | C-3 | [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027) |
+| 中 | agents-cli OSS（前回評価、継続有効） | 開放C候補。CLIツールOSS化は围い込み回避の十分条件ではない(Apple model) | A-3 | [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) |
+| 中 | SaaStr: Gemini +48%（27→40%）。Claude +128%。「業界全体押し上げ」14R未解決 | Google固有要因の分離不能。H-GOO-001 51%押し下げ要因継続 | B-3 | [INFO-025](../Information/2026-05-18/collected-raw.md#INFO-025) |
 
 ## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
 | Workspace 内 Gemini の DAU/MAU または利用率が3四半期連続で頭打ちを示す | 「エコシステム統合優位」のコア判断と [H-GOO-001](../config/hypotheses.json) が崩れる | 180日 | [IND-006](../config/indicators.json) |
-| 围い込み証拠が25件を超え、開放C証拠が引き続き不在のまま規制当局が介入する | [H-GOO-002](../config/hypotheses.json) が棄却水準に到達。围い込みリスクがコア判断の脅威に昇格。現在24件で接近中 | 120日 | [IND-027](../config/indicators.json) |
-| 「業界全体押し上げ」代替説明を20R目でも解決できず、Gemini固有成長の証拠が出ない | H-GOO-001の更なる低下リスク。A-2+定量証拠取得が復帰の必須条件 | 30日 | [IND-006](../config/indicators.json) |
+| 围い込み証拠が35件を超え、規制当局が介入する | [H-GOO-002](../config/hypotheses.json) が棄却水準に到達。围い込みリスクがコア判断の脅威に昇格。現在32件で接近中 | 120日 | [IND-027](../config/indicators.json) |
+| 「業界全体押し上げ」代替説明を20R目でも解決できず、Gemini固有成長の証拠が出ない | H-GOO-001の更なる低下リスク。現在14R未解決 | 30日 | [IND-006](../config/indicators.json) |
+| 開放C証拠が5件以上に拡大し、围い込み蓄積速度を上回る | H-GOO-002の上方修正根拠。30R不在解除が質的転換の開始を示す。現在2件 | 60日 | [IND-027](../config/indicators.json) |
 | DeepMind の研究成果が Gemini 製品に統合されない状態が4四半期続く | [H-GOO-003](../config/hypotheses.json) の「研究卓越性から製品競争力」因果が崩れる | 180日 | [IND-001](../config/indicators.json) |
-| Anthropicが直接対決勝率70%を維持しGoogle AI支出シェアが5%に留まり続ける | Googleの$40B Anthropic投資が依存の承認になり、围い込みが自社プラットフォームではなく ecosystem dependency に反転 | 90日 | [IND-006](../config/indicators.json) |
 | Vertex AI からの移行でエンタープライズ顧客の離反が発生する | Gemini Enterprise Agent Platform移行が围い込みでなく自滅になる可能性 | 90日 | [IND-006](../config/indicators.json) |
 
 ## 4. 進行中の仮説
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:-:|---|---|---|
-| [H-GOO-001](../config/hypotheses.json) | Gemini統合でエコシステム収益を拡大する | 52% | Arbiter v3.95: ±0%。8R連続条件未達成。Google Cloud $20B/四半期 [INFO-072](../Information/2026-06-01/collected-raw.md#INFO-072) はCだが4R条件未達成。代替説明18R未解決。A-2+定量証拠取得時+1%復帰条件 | [INFO-039](../Information/2026-05-28/collected-raw.md#INFO-039) [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016) [INFO-072](../Information/2026-06-01/collected-raw.md#INFO-072) [INFO-011](../Information/2026-05-28/collected-raw.md#INFO-011) [INFO-007](../Information/2026-05-31/collected-raw.md#INFO-007) | 代替説明18R未解決 [INFO-025](../Information/2026-05-18/collected-raw.md#INFO-025)。Anthropic 70%勝利 [INFO-043](../Information/2026-05-28/collected-raw.md#INFO-043) |
-| [H-GOO-002](../config/hypotheses.json) | 围い込み回避で開放維持 | 28% | Arbiter v3.95: -1%(29→28%)。围い込みI 9件目蓄積(Cloud Next垂直統合 [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) + Enterprise Agent Platform [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) + Vertex AI移行 [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027))。開放C 24R連続不在確定。agents-cli OSS [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) は開放C候補だがCLIツールOSS化は围い込み回避の十分条件ではない(Apple model)。low帯深化 | (開放C不在継続) | [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027) [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) |
-| [H-GOO-003](../config/hypotheses.json) | DeepMind統合シナジーで競争力を維持する | 49% | Arbiter v3.95: ±0%。5R連続C蓄積方向だがA-2+定量分解条件未達成。Co-Scientist Nature論文91%有効性(A-2)は「研究→製品」因果の最強C [INFO-053](../Information/2026-05-20/collected-raw.md#INFO-053)。Gemini 3.5強力C(A-3)。Hassabis AGI 2029 [INFO-033](../Information/2026-05-31/collected-raw.md#INFO-033)。ペナルティ停止後安定化継続 | [INFO-053](../Information/2026-05-20/collected-raw.md#INFO-053) [INFO-039](../Information/2026-05-28/collected-raw.md#INFO-039) [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016) [INFO-033](../Information/2026-05-31/collected-raw.md#INFO-033) | [INFO-030](../Information/2026-05-28/collected-raw.md#INFO-030) |
+| [H-GOO-001](../config/hypotheses.json) | Gemini統合でエコシステム収益を拡大する | 51% | Arbiter v3.99: -1%（52→51%）。I=0が14R連続延長。代替説明14R未解決。A-2+条件12R未達成。Capex $180-190Bは規模Cだが業界全体Capex増加中でのGoogle固有性未確認。製造業93%支出増 [INFO-052](../Information/2026-06-06/collected-raw.md#INFO-052) は方向C | [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) [INFO-018](../Information/2026-06-06/collected-raw.md#INFO-018) [INFO-052](../Information/2026-06-06/collected-raw.md#INFO-052) | 代替説明14R未解決 [INFO-025](../Information/2026-05-18/collected-raw.md#INFO-025)。Anthropic 70%勝利 [INFO-043](../Information/2026-05-28/collected-raw.md#INFO-043) |
+| [H-GOO-002](../config/hypotheses.json) | 围い込み回避で開放維持 | 23% | Arbiter v4.00: -1%（24→23%）。围い込みI 32件蓄積（+3件: Capex围い込み [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010)・Googlebook围い込み [INFO-011](../Information/2026-06-06/collected-raw.md#INFO-011)・Workday SaaS围い込み [INFO-048](../Information/2026-06-06/collected-raw.md#INFO-048)）。開放C 2件出現（INFO-016 MCP Server・INFO-023 agents-cli）で30R不在解除。Red指摘件数インフレリスク記録（Capex独立性疑問・Googlebookは標準垂直統合・Workdayは排他性未確認）。品質別内訳次回必須開示。low帯深化 | [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) [INFO-011](../Information/2026-06-06/collected-raw.md#INFO-011) [INFO-048](../Information/2026-06-06/collected-raw.md#INFO-048) | [INFO-016](../Information/2026-06-06/collected-raw.md#INFO-016) [INFO-023](../Information/2026-06-06/collected-raw.md#INFO-023) |
+| [H-GOO-003](../config/hypotheses.json) | DeepMind統合シナジーで競争力を維持する | 49% | Arbiter v3.99: ±0%（50→49%）。11R連続A-2+条件未達成。49%到達。medium維持。次回49%以下継続でlow移行検討。Co-Scientist Nature論文91%有効性(A-2)は「研究→製品」因果の最強C [INFO-053](../Information/2026-05-20/collected-raw.md#INFO-053)。Hassabis AGI 2029 [INFO-044](../Information/2026-06-06/collected-raw.md#INFO-044)。Capex $180-190B [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) | [INFO-053](../Information/2026-05-20/collected-raw.md#INFO-053) [INFO-044](../Information/2026-06-06/collected-raw.md#INFO-044) [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) | [INFO-030](../Information/2026-05-28/collected-raw.md#INFO-030) |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-001](../config/indicators.json) | 主要ベンチマーク性能 | +5pt 以上/期で high | Gemini 3.5 AIME 73.3%・GPQA 74.2% [INFO-039](../Information/2026-05-28/collected-raw.md#INFO-039)。Gemini 3 Pro Deep Think 100.0%首位 [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016)。GPT-5.4・NVIDIA Nemotron追従。フロンティア競争激化継続 | 2026-06-01 |
-| [IND-006](../config/indicators.json) | エージェントスタック競争 | elevated 維持で継続監視 | Gemini Spark(個人エージェント)+Agent-to-UI+Enterprise Agent Platform(Vertex AI置き換え [INFO-005](../Information/2026-05-28/collected-raw.md#INFO-005))+Managed Agents API+Chrome DevTools for Agents+Cloud Next垂直統合 [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067)+agents-cli OSS [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) | 2026-06-01 |
-| [IND-025](../config/indicators.json) | マルチモーダル信頼性 | elevated / stable | Gemini 3 Pro Deep Think 100.0% [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016)+GPT-5.4+NVIDIA Nemotron追従。量的向上継続。「真の理解」検証未解決 | 2026-06-01 |
-| [IND-027](../config/indicators.json) | エコシステム標準化進展 | high / rising | SKILL.md 40K+ [INFO-014](../Information/2026-05-28/collected-raw.md#INFO-014)+agents-cli OSS [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024)+Grok Build。围い込み24件と開放の非対称性拡大継続 | 2026-06-01 |
-| [IND-030](../config/indicators.json) | AI 能力とリスクの二面性 | high / rising | 围い込みI 9重蓄積。SCR指定 [INFO-027](../Information/2026-05-28/collected-raw.md#INFO-027)+DPA強要 [INFO-029](../Information/2026-05-28/collected-raw.md#INFO-029)+大統領令延期 [INFO-025](../Information/2026-05-28/collected-raw.md#INFO-025)+DeepMind組合化投票 [INFO-030](../Information/2026-05-28/collected-raw.md#INFO-030)+Cloud Next垂直統合 [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) | 2026-06-01 |
+| [IND-001](../config/indicators.json) | 主要ベンチマーク性能 | +5pt 以上/期で high | Gemini 3.5 AIME 73.3%・GPQA 74.2%。Gemini 3 Pro Deep Think 100.0%首位。GPT-5.4・NVIDIA Nemotron追従。フロンティア競争激化継続 | 2026-06-06 |
+| [IND-006](../config/indicators.json) | エージェントスタック競争 | elevated 維持で継続監視 | Gemini Agent API MCP Server [INFO-016](../Information/2026-06-06/collected-raw.md#INFO-016) + agents-cli クロスエージェント [INFO-023](../Information/2026-06-06/collected-raw.md#INFO-023) + Gemini Enterprise Agent Platform SLA [INFO-018](../Information/2026-06-06/collected-raw.md#INFO-018) + Capex $180-190B [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) | 2026-06-06 |
+| [IND-025](../config/indicators.json) | マルチモーダル信頼性 | elevated / stable | Gemini Omni任意入力→動画生成 [INFO-012](../Information/2026-06-06/collected-raw.md#INFO-012) + GPT-5.4 + Nemotron 3 Ultra。量的向上継続。「真の理解」検証未解決 | 2026-06-06 |
+| [IND-027](../config/indicators.json) | エコシステム標準化進展 | high / rising | MCP 97M DL [INFO-021](../Information/2026-06-06/collected-raw.md#INFO-021) + Gemini Agent API MCP対応 [INFO-016](../Information/2026-06-06/collected-raw.md#INFO-016) + agents-cli クロスエージェント [INFO-023](../Information/2026-06-06/collected-raw.md#INFO-023)。围い込み32件と開放C 2件の非対称性は継続 | 2026-06-06 |
+| [IND-030](../config/indicators.json) | AI 能力とリスクの二面性 | high / rising | SCR指定 [INFO-028](../Information/2026-06-06/collected-raw.md#INFO-028) + DPA脅迫 [INFO-030](../Information/2026-06-06/collected-raw.md#INFO-030) + 大統領令自発的枠組み [INFO-032](../Information/2026-06-06/collected-raw.md#INFO-032) + Capex围い込み [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010)。5日間5イベント蓄積 | 2026-06-06 |
 
 ## 6. 変化履歴
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
+| 2026-06-06 | H-GOO-002 -1%（24→23%）围い込みI 32件蓄積+開放C 30R解除+围い込み次元拡大（ハードウェア・SaaS）+H-GOO-001 ±0%（51%）I=0 14R連続+H-GOO-003 ±0%（49%）を反映して全面書き直し | [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) [INFO-011](../Information/2026-06-06/collected-raw.md#INFO-011) [INFO-048](../Information/2026-06-06/collected-raw.md#INFO-048) [INFO-016](../Information/2026-06-06/collected-raw.md#INFO-016) [INFO-023](../Information/2026-06-06/collected-raw.md#INFO-023) [INFO-018](../Information/2026-06-06/collected-raw.md#INFO-018) [INFO-044](../Information/2026-06-06/collected-raw.md#INFO-044) | H-GOO-001 52→51%（-1%）・H-GOO-002 24→23%（-1%）・H-GOO-003 49%（±0%）・围い込み24→32件（+8件）・開放C 30R不在→2件出現で解除・围い込み次元: エコシステム→ハードウェア・決済・SaaSに拡大 |
 | 2026-06-01 | Cloud Next垂直統合+Enterprise Agent Platform+Vertex AI移行围い込み24件目+agents-cli OSS開放C評価+Google Cloud $20Bを反映して全面書き直し | [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027) [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) [INFO-072](../Information/2026-06-01/collected-raw.md#INFO-072) | H-GOO-001 52%(±0%)・H-GOO-002 29→28%(-1%)・H-GOO-003 49%(±0%)・围い込み23→24件・開放C 23→24R連続不在・围い込みI 9件目蓄積 |
 | 2026-05-28 | Gemini Enterprise Agent Platform(Vertex AI置き換え)围い込み18件目+$40B Anthropic投資围い込み19件目+Marketing Live围い込み20件目+Gemini 3.5 AIME/GPQA+DC 66GW+$5.2T+DeepMind組合化を反映して全面書き直し | [INFO-005](../Information/2026-05-28/collected-raw.md#INFO-005) [INFO-043](../Information/2026-05-28/collected-raw.md#INFO-043) [INFO-037](../Information/2026-05-28/collected-raw.md#INFO-037) [INFO-039](../Information/2026-05-28/collected-raw.md#INFO-039) [INFO-044](../Information/2026-05-28/collected-raw.md#INFO-044) | H-GOO-001 54→53%・H-GOO-002 33→32%・围い込み17→20件・開放C 20R連続不在・Vertex AI→Gemini Enterprise Agent Platform移行・Anthropic 70%直接対決勝利 |
-| 2026-05-23 | Google I/O包括分析「全テック企業に宣戦布告」(围い込み17件目)+Managed Agents API(围い込み16件目)+Chrome DevTools for Agents v1+Goldman Sachs 66GW+Epoch AI 9x-900x価格下落+DeepSeek V4+Gemma 4 OSSを反映して全面書き直し | [INFO-067](../Information/2026-05-23/collected-raw.md#INFO-067) [INFO-007](../Information/2026-05-23/collected-raw.md#INFO-007) [INFO-013](../Information/2026-05-23/collected-raw.md#INFO-013) [INFO-054](../Information/2026-05-23/collected-raw.md#INFO-054) [INFO-065](../Information/2026-05-23/collected-raw.md#INFO-065) | H-GOO-001 53→54%・H-GOO-002 36→35%・围い込み15→17件・開放C 17R連続不在 |
-| 2026-05-20 | Google I/O 2026結果(Gemini 3.5 Flash+Spark+Agent-to-UI)+Co-Scientist Nature論文+Blackstone $5B JV+兵器ルールA-2昇格を反映して全面書き直し | [INFO-015](../Information/2026-05-20/collected-raw.md#INFO-015) [INFO-053](../Information/2026-05-20/collected-raw.md#INFO-053) [INFO-055](../Information/2026-05-20/collected-raw.md#INFO-055) [INFO-046](../Information/2026-05-20/collected-raw.md#INFO-046) | H-GOO-002 38→37%・围い込み14→15件・開放C 15R連続不在・兵器誓約B-3→A-2昇格 |
-| 2026-05-19 | Google兵器誓約削除+Gemini Enterprise Agent Platform围い込み14件目+Googlebook围い込み+I/O 2026を反映して全面更新 | [INFO-037](../Information/2026-05-19/collected-raw.md#INFO-037) [INFO-011](../Information/2026-05-19/collected-raw.md#INFO-011) [INFO-006](../Information/2026-05-19/collected-raw.md#INFO-006) | H-GOO-002 39→38%・围い込み13→14件・開放C 14R連続不在 |
 
 ## 7. ブラインドスポット
 
+- 围い込みI 32件の品質別内訳が未開示。A-1/A-2品質の独立性「高」件数がいくつあるか不明。Red指摘の件数インフレリスク（同一イベント内複数機能別カウント、ブランド変更の独立性、垂直統合の围い込み分類妥当性）は妥当。次回必須開示条件化済み。
+- 開放C 2件出現の質的転換可能性が未評価。Gemini Agent API MCP対応とagents-cli クロスエージェントがGoogleの二層戦略（基盤開放・上位围い込み）の一部なのか、围い込み方向の転換なのかの判別が不能。
 - Gemini 3.5のAIME 73.3%とGPQA 74.2%がGoogleの自家測定であり、独立ベンチマークでの検証が未完了。Gemini 3 Pro Deep Think 100.0%もBenchLMの集計方法に依存する [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016)。
 - Vertex AIからGemini Enterprise Agent Platformへの移行が既存エンタープライズ顧客に与える影響が不透明。移行コストと離反リスクの定量評価がない。
-- Googleの$40B Anthropic投資検討 [INFO-043](../Information/2026-05-28/collected-raw.md#INFO-043) が実現した場合、GoogleのAI戦略が自社プラットフォーム強化ではなく ecosystem dependency に反転する可能性がある。围い込みと依存の区別が不明確になる。
+- Googleの$40B Anthropic投資検討 [INFO-043](../Information/2026-05-28/collected-raw.md#INFO-043) が実現した場合、GoogleのAI戦略が自社プラットフォーム強化ではなく ecosystem dependency に反転する可能性がある。
 - Co-Scientistの91%有効性はStanford単一施設での結果。他施設での再現性、商業スケールでの実用性が未検証。
-- H-GOO-003の評価指標が依然として不十分。「エコシステム深度・研究卓越性・インフラ統合」の3軸それぞれについて独立評価する定量指標を持っていない。
+- H-GOO-003の評価指標が依然として不十分。「エコシステム深度・研究卓越性・インフラ統合」の3軸それぞれについて独立評価する定量指標を持っていない。49%到達で次回low移行検討。
 - Workspace 内 Gemini の DAU/MAU が公開されていない。「Cloud 顧客の 75% が AI 製品を使用」は投入量であって利用深度ではない。
-- 「業界全体押し上げ」代替説明が18R未解決。Google固有の成長要因をClaude +128%等の他社成長から分離する方法論を持っていない。
-- 围い込み24件蓄積に対する規制当局(EU DMA/DOJ)の動向が外部から不透明。DOJのGoogle分割判断の行方が未確定。
+- 「業界全体押し上げ」代替説明が14R未解決。Google固有の成長要因をClaude +128%等の他社成長から分離する方法論を持っていない。
+- 围い込み32件蓄積に対する規制当局(EU DMA/DOJ)の動向が外部から不透明。DOJのGoogle分割判断の行方が未確定。
 - AGENTS.md/SKILL.md仕様が独自規格であり、MCP等のオープン標準との互換性が不明。围い込みと開放標準の同時進行の帰結が測れない。
 
 ## 付録: 直近30日の参照Evidence
 
 | Evidence | 用途 |
 |---|---|
+| [INFO-010](../Information/2026-06-06/collected-raw.md#INFO-010) | Google I/O 2026: Capex $180-190B围い込み・TPU 8t・3.2Q tokens/月(A-3) |
+| [INFO-011](../Information/2026-06-06/collected-raw.md#INFO-011) | Googlebook: Gemini搭載ラップトップ围い込み(A-3) |
+| [INFO-016](../Information/2026-06-06/collected-raw.md#INFO-016) | Gemini Agent API MCP Server統合・Deep Research Agent・開放C出現(A-2) |
+| [INFO-023](../Information/2026-06-06/collected-raw.md#INFO-023) | agents-cli クロスエージェント: Claude Code/Codex/Antigravity対応・開放C出現(A-3) |
+| [INFO-048](../Information/2026-06-06/collected-raw.md#INFO-048) | Workday × Google Cloud: HR/財務AIエージェント围い込み(B-2) |
+| [INFO-018](../Information/2026-06-06/collected-raw.md#INFO-018) | Vertex AI → Gemini Enterprise Agent Platform改名・SLA設定(A-3) |
+| [INFO-012](../Information/2026-06-06/collected-raw.md#INFO-012) | Gemini Omni + 3.5 Flash 9デモ(A-3) |
+| [INFO-044](../Information/2026-06-06/collected-raw.md#INFO-044) | Hassabis AGI 2029到達示唆(A-1) |
+| [INFO-052](../Information/2026-06-06/collected-raw.md#INFO-052) | Google Cloud製造業AIエージェントトレンド: 93%支出増・2%成熟(A-2) |
+| [INFO-021](../Information/2026-06-06/collected-raw.md#INFO-021) | AAIF: MCP 97M DL・A2A 150組織・43新メンバー(A-2) |
 | [INFO-067](../Information/2026-06-01/collected-raw.md#INFO-067) | Google Cloud Next 2026: AI Agentフルスタック垂直統合(C-3) |
 | [INFO-019](../Information/2026-06-01/collected-raw.md#INFO-019) | Gemini Enterprise Agent Platform公式ドキュメント公開(A-3) |
 | [INFO-027](../Information/2026-06-01/collected-raw.md#INFO-027) | Vertex AI移行: Gemini Enterprise Agent Platformへ再構築(C-3) |
 | [INFO-024](../Information/2026-06-01/collected-raw.md#INFO-024) | agents-cli OSS: Gemini Agent Platform向けCLI・スキル(A-3) |
 | [INFO-072](../Information/2026-06-01/collected-raw.md#INFO-072) | Google Cloud収益Q1 2026: $20B/四半期・63.4% YoY(B-3) |
-| [INFO-005](../Information/2026-05-28/collected-raw.md#INFO-005) | Gemini Enterprise Agent Platform: Vertex AI置き換え(C-3) |
-| [INFO-043](../Information/2026-05-28/collected-raw.md#INFO-043) | Google $40B Anthropic投資検討・Anthropic 70%直接対決勝利(B-3) |
-| [INFO-037](../Information/2026-05-28/collected-raw.md#INFO-037) | Google Marketing Live AI広告フォーマット・ChatGPT非中介化リスク(B-3) |
-| [INFO-039](../Information/2026-05-28/collected-raw.md#INFO-039) | Gemini 3.5 AIME 73.3%・GPQA Diamond 74.2%(A-3) |
-| [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016) | Gemini 3 Pro Deep Think マルチモーダル100.0%首位(C-3) |
-| [INFO-011](../Information/2026-05-28/collected-raw.md#INFO-011) | Gemini 3.1 Flash-Lite エンタープライズプレビュー(A-3) |
-| [INFO-057](../Information/2026-05-28/collected-raw.md#INFO-057) | Google Cloud Q1 $8.41B/63.4% YoY・利益率32.9%(B-3) |
-| [INFO-030](../Information/2026-05-28/collected-raw.md#INFO-030) | DeepMind従業員組合化投票(軍事AI)(C-3) |
-| [INFO-044](../Information/2026-05-28/collected-raw.md#INFO-044) | Goldman Sachs: 米国DC電力31→66GW・$5.2T投資必要(A-3) |
-| [INFO-014](../Information/2026-05-28/collected-raw.md#INFO-014) | SKILL.md 0→40K in 20週(C-3) |
-| [INFO-067](../Information/2026-05-23/collected-raw.md#INFO-067) | Google I/O包括分析: 「全テック企業に宣戦布告」的围い込み(B-3) |
-| [INFO-013](../Information/2026-05-23/collected-raw.md#INFO-013) | Google I/O 2026: 「Agentic Gemini Era」100件発表(A-3) |
-| [INFO-007](../Information/2026-05-23/collected-raw.md#INFO-007) | Managed Agents API: Antigravity Agent + AGENTS.md/SKILL.md(A-3) |
-| [INFO-022](../Information/2026-05-23/collected-raw.md#INFO-022) | Chrome DevTools for Agents v1(A-3) |
-| [INFO-065](../Information/2026-05-23/collected-raw.md#INFO-065) | Epoch AI: トークン価格年9x-900x低下(B-3) |
 | [INFO-053](../Information/2026-05-20/collected-raw.md#INFO-053) | DeepMind Co-Scientist: Nature論文・91%薬剤再利用(A-2) |
-| [INFO-046](../Information/2026-05-20/collected-raw.md#INFO-046) | Google/OpenAI兵器ルール後退(A-2昇格)(A-2) |
-| [INFO-010](../Information/2026-05-20/collected-raw.md#INFO-010) | Gemini Enterprise Agent Platform(包括的スタック)(A-3) |
-| [INFO-025](../Information/2026-05-18/collected-raw.md#INFO-025) | SaaStr: Gemini +48%(27→40%) vs Claude +128%(21→48%)(B-3) |
-| [INFO-027](../Information/2026-05-06/collected-raw.md#INFO-027) | Cloud $20.03B/63% YoY・GenAI 800%・バックログ $462B(A-2) |
-| [Arbiter v3.95](../state/arbiter-2026-06-01.md) | 確度評価の完全根拠 |
-| [Arbiter v3.91](../state/arbiter-2026-05-28.md) | 確度評価の完全根拠(付録のみ参照) |
+| [INFO-025](../Information/2026-05-18/collected-raw.md#INFO-025) | SaaStr: Gemini +48%(27→40%) vs Claude +128%(B-3) |
+| [Arbiter v4.00](../state/arbiter-2026-06-06.md) | 確度評価の完全根拠 |
+| [Arbiter v3.99](../state/arbiter-2026-06-05.md) | 確度評価の完全根拠（付録のみ参照） |

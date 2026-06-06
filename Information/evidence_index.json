@@ -11969,8 +11969,400 @@
       "raw_path": "Information/raw/2026-06-05/firecrawl.jsonl",
       "run_date": "2026-06-05",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/"
+    },
+    "EVD-20260606-0001": {
+      "hash": "sha256:65f9491eabb1ffc81af7cca7518b76eabe9965aa6dd31b7dc5cac5ada627de3e",
+      "legacy_info_id": "INFO-001",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming/"
+    },
+    "EVD-20260606-0002": {
+      "hash": "sha256:d9ac9fdaba844da122b09b532539841a76e6d93324d8e12b37b5264fdfdf1eca",
+      "legacy_info_id": "INFO-002",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/"
+    },
+    "EVD-20260606-0003": {
+      "hash": "sha256:bc189993f05e21d4bcee892e8e0f27f898e58be972729eeda890ae0eb754fd81",
+      "legacy_info_id": "INFO-003",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+    },
+    "EVD-20260606-0004": {
+      "hash": "sha256:2a1eaeff40bb18b4862e52718e3e488c83d84c835375b94b83fc6846e7e4a7b5",
+      "legacy_info_id": "INFO-004",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/"
+    },
+    "EVD-20260606-0005": {
+      "hash": "sha256:5f4510e5490a8bf564ca8651e141ce33b19e91ea79f5d9b29db2358ca659607e",
+      "legacy_info_id": "INFO-005",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex/"
+    },
+    "EVD-20260606-0006": {
+      "hash": "sha256:33d789e1b3cc54afdccb70212bedaf404333a5cfe2f8718efeab655fc62d08ed",
+      "legacy_info_id": "INFO-006",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.anthropic.com/news/where-stand-department-war"
+    },
+    "EVD-20260606-0007": {
+      "hash": "sha256:724dc52a461ffed95f0a7e53bec552ee9105430172bc4ae6943ee9b1a0a930e0",
+      "legacy_info_id": "INFO-007",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.anthropic.com/news/gov-UK-partnership"
+    },
+    "EVD-20260606-0008": {
+      "hash": "sha256:98016a4d407f6530766cc07dfcdeba20243a3dfb011ccc3217c323e8d51d3107",
+      "legacy_info_id": "INFO-008",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.anthropic.com/news/claude-partner-network"
+    },
+    "EVD-20260606-0009": {
+      "hash": "sha256:87dacf6905cfe8d3f4ab8299216279697f7c540096b15a22373e6961cab4fa79",
+      "legacy_info_id": "INFO-009",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.anthropic.com/news/anthropic-kpmg"
+    },
+    "EVD-20260606-0010": {
+      "hash": "sha256:1fec0bbdff410ca65a96f140deaf22d0fa87cd35c2a3ceacc87ac17e6c9d1c62",
+      "legacy_info_id": "INFO-010",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/"
+    },
+    "EVD-20260606-0011": {
+      "hash": "sha256:bb66305545c2b94cb0b16b0c29eb83b67e519945338a667c11d23dc1f5e59993",
+      "legacy_info_id": "INFO-011",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/"
+    },
+    "EVD-20260606-0012": {
+      "hash": "sha256:4ec3e027caf5d274950489fa1c868e5ad830b61ec650a1616ee876f4473b541c",
+      "legacy_info_id": "INFO-012",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/"
+    },
+    "EVD-20260606-0013": {
+      "hash": "sha256:9f0af84ad8e01377b606b8b5d2788b738eb0dc68e1fe02cffd4f77f78b136a5a",
+      "legacy_info_id": "INFO-013",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://x.ai/blog/grok-3"
+    },
+    "EVD-20260606-0014": {
+      "hash": "sha256:e4927825ef54dee8df53d99703233ba8d7f583bc9c1cead4b05a53e29a16c890",
+      "legacy_info_id": "INFO-014",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://openai-agent-sdk.readthedocs.io/en/latest/"
+    },
+    "EVD-20260606-0015": {
+      "hash": "sha256:ad371f4dd5a259f64fcdb7181c1adc9db01bc4a892b89e004669bac372a30528",
+      "legacy_info_id": "INFO-015",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://github.com/anthropics/claude-agent-sdk-typescript/releases"
+    },
+    "EVD-20260606-0016": {
+      "hash": "sha256:3835e89d761f7b5760a0d5acccf240b2e622f0129dbd90ebfcc98a67cb5bea2b",
+      "legacy_info_id": "INFO-016",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://ai.google.dev/gemini-api/docs/agent-api"
+    },
+    "EVD-20260606-0017": {
+      "hash": "sha256:7b9848562e7d2fc33c4c0af668d904067fcd83ecae1be029ab0239884703ac4d",
+      "legacy_info_id": "INFO-017",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://blog.jetbrains.com/ai/2026/05/top-agentic-ai-frameworks/"
+    },
+    "EVD-20260606-0018": {
+      "hash": "sha256:e9311e28a67bb9de3ad216cbeb6a6ab9de788e457ec9cc2a7e8d682831c0a694",
+      "legacy_info_id": "INFO-018",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview"
+    },
+    "EVD-20260606-0019": {
+      "hash": "sha256:9a80f0dc5fc64c0cc1a8a515c166e3fb82445f02ff4a93b59a6bc03e39060bbe",
+      "legacy_info_id": "INFO-019",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://devblogs.microsoft.com/foundry/agent-service-build2026/"
+    },
+    "EVD-20260606-0020": {
+      "hash": "sha256:feac14ddaf64e21eaebac8b98768c5fdb283ac14904c815c94ac82a65fac5e6d",
+      "legacy_info_id": "INFO-020",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://nvidianews.nvidia.com/news/enterprise-software-leaders-build-ai-agents-with-nvidia"
+    },
+    "EVD-20260606-0021": {
+      "hash": "sha256:85462f28c2979b55c7bf04b9b82439a45c6e7fe7c8105d702a3157eafd74dc4b",
+      "legacy_info_id": "INFO-021",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://aaif.io/author/aaif/"
+    },
+    "EVD-20260606-0022": {
+      "hash": "sha256:0e409ae2a296ebf1a1bc1508adb2f1d23ac649f2d58938d21a02385359b0486d",
+      "legacy_info_id": "INFO-022",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://blogs.cisco.com/ai/ai-agents-need-built-in-security-here-is-how-cisco-does-it"
+    },
+    "EVD-20260606-0023": {
+      "hash": "sha256:7ed20512930434f5c8d8058ea2e64e2ba0a1707657a4057f0eaf3625df40fbf6",
+      "legacy_info_id": "INFO-023",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://github.com/google/agents-cli"
+    },
+    "EVD-20260606-0024": {
+      "hash": "sha256:4b47cf3bb805e8cc2d53cd98def76f486dcafd87c3ab48ead6a6bfc0554c6556",
+      "legacy_info_id": "INFO-024",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.mindstudio.ai/blog/portable-ai-agent-stack-avoid-anthropic-lock-in/"
+    },
+    "EVD-20260606-0025": {
+      "hash": "sha256:9426153d910400f2a805c69210931406c78f89aabbcd8ffaa0f3caca215be74d",
+      "legacy_info_id": "INFO-025",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://arxiv.org/html/2603.16572v2"
+    },
+    "EVD-20260606-0026": {
+      "hash": "sha256:8297bcf2968b11123b2e6ff12fe1158559f99d77db4275fcc5741a660813d976",
+      "legacy_info_id": "INFO-026",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.facebook.com/businessinsider/posts/"
+    },
+    "EVD-20260606-0027": {
+      "hash": "sha256:dd2508bd8c8ee9c8d43e5728a728989796b3304e373efc55b5e5530ca8cb9ec1",
+      "legacy_info_id": "INFO-027",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.npifinancial.com/knowledge-center/how-open-source-ai-is-shifting-power-back-to-the-buyer/"
+    },
+    "EVD-20260606-0028": {
+      "hash": "sha256:08a1ad979569e62e14317d74deaf0d1e8b3124c2c04bf3cb864b92836f1dbd51",
+      "legacy_info_id": "INFO-028",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://abcnews.com, https://gisreportsonline.com"
+    },
+    "EVD-20260606-0029": {
+      "hash": "sha256:9f54f420957a2364b1124c2e30544daf71e320f23ea2ac104b863937f9a6a96f",
+      "legacy_info_id": "INFO-029",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://gisreportsonline.com, https://theconversation.com"
+    },
+    "EVD-20260606-0030": {
+      "hash": "sha256:83bf528d0257254a2f069e1db7b7439bb67086fd9358baa6383cf8d4aa53c355",
+      "legacy_info_id": "INFO-030",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://theconversation.com"
+    },
+    "EVD-20260606-0031": {
+      "hash": "sha256:7b849ab092cd29048b0339092e3549bc466aba714d1a7c21c24cb85ace19b632",
+      "legacy_info_id": "INFO-031",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://smallwarsjournal.com"
+    },
+    "EVD-20260606-0032": {
+      "hash": "sha256:419b77c16d4a12b0627650d0f92edc002335d320d2dbf4e30464d62ada070011",
+      "legacy_info_id": "INFO-032",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://atlanticcouncil.org, https://whitehouse.gov/presidential-actions/2026/06/"
+    },
+    "EVD-20260606-0033": {
+      "hash": "sha256:60cd32d8c22e3234b0a91e2afc01069fa933687d4e0229dbbb1c0229ee12ea38",
+      "legacy_info_id": "INFO-033",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://apply.workable.com/trilagen/j/A3615F8459"
+    },
+    "EVD-20260606-0034": {
+      "hash": "sha256:3b94b782c0c52c59414e3ebdd20908a33b7ea01999b465a5c7aa0ce54636cd87",
+      "legacy_info_id": "INFO-034",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.alation.com/blog/enterprise-ai-strategy-roi/"
+    },
+    "EVD-20260606-0035": {
+      "hash": "sha256:3c0ea2df3f4989c44946d727cd06c70c00bedf6664cf5d039bacd87d22468ff7",
+      "legacy_info_id": "INFO-035",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://noesion.ai/blog/eu-ai-act-article-4-compliance-2026-enterprises"
+    },
+    "EVD-20260606-0036": {
+      "hash": "sha256:869e24dca593423cecbd24ac58266ae19713645c0f5b45416cbf53c27f401792",
+      "legacy_info_id": "INFO-036",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.wsj.com/economy/china-steps-up-restrictions-over-outbound-investments-d79f2a99"
+    },
+    "EVD-20260606-0037": {
+      "hash": "sha256:8260bc8846d117bbac8e6ef9dbec5f8dc142c05381ae2d5d10ce5c7a20f3b39a",
+      "legacy_info_id": "INFO-037",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.finout.io/blog/openai-pricing-in-2026, https://costgoat.com/pricing/openai-api"
+    },
+    "EVD-20260606-0038": {
+      "hash": "sha256:39dd76959a385c8e4f7ef707a523c2d16e98b22617a772f129c2378c7a043f00",
+      "legacy_info_id": "INFO-038",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.vellum.ai/llm-leaderboard"
+    },
+    "EVD-20260606-0039": {
+      "hash": "sha256:82f6f198783b32e5ae3477f34f18b97b23e83dedc31661fc30c88fcf2eba4675",
+      "legacy_info_id": "INFO-039",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://news.crunchbase.com/venture/monthly-vc-funding-recap-ai-may-2026/"
+    },
+    "EVD-20260606-0040": {
+      "hash": "sha256:6b5dcc411742c395dfa997c7214874121c8b1274d06fce44a2cb5b7891a9c354",
+      "legacy_info_id": "INFO-040",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://forbes.com, https://nytimes.com"
+    },
+    "EVD-20260606-0041": {
+      "hash": "sha256:94abfa82d4118fac88bd4faeff74c86cd90f3b908405b3e8c79747193b66ea6f",
+      "legacy_info_id": "INFO-041",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://leaderonomics.com"
+    },
+    "EVD-20260606-0042": {
+      "hash": "sha256:9b0c0907a2998e71afd3051a4aafc4bc9cfd8c8e9ab06f422891609cd26068d5",
+      "legacy_info_id": "INFO-042",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://f1jobs.io"
+    },
+    "EVD-20260606-0043": {
+      "hash": "sha256:c2fd76bc3501bfa00422adf5e37a5da440214fe8d0362aa17c6607b6b1763d3b",
+      "legacy_info_id": "INFO-043",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://towardsdatascience.com"
+    },
+    "EVD-20260606-0044": {
+      "hash": "sha256:c9bbe0152c035cdda42b37af08b80dd97ae6f29eeba2fca5d9fa7eec963c61db",
+      "legacy_info_id": "INFO-044",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://msn.com"
+    },
+    "EVD-20260606-0045": {
+      "hash": "sha256:fdd6366c95d9373f10ed6339d7b30e2ed20958683f6f6819ab143795f18799d0",
+      "legacy_info_id": "INFO-045",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://anthropic.com/institute"
+    },
+    "EVD-20260606-0046": {
+      "hash": "sha256:34895b7326e270fabfbf7cd243dd2238cc1a8b3912815654cc4ead97b42e0a98",
+      "legacy_info_id": "INFO-046",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://scmp.com, https://table.media"
+    },
+    "EVD-20260606-0047": {
+      "hash": "sha256:c7162169a299b857aa9fd3db70119ed427b665f3e1bffb95fbaa28b522249c25",
+      "legacy_info_id": "INFO-047",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://x.com/@AINativeF"
+    },
+    "EVD-20260606-0048": {
+      "hash": "sha256:28da15cd0218d0b88f4d7a57a84d0923003a33ef322435aab5ae13e989da6c2a",
+      "legacy_info_id": "INFO-048",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://futurumgroup.com"
+    },
+    "EVD-20260606-0049": {
+      "hash": "sha256:6ad3f22f63e38417d1819b2adf6ae9df1c47a9895607494e04649b223bcde155",
+      "legacy_info_id": "INFO-049",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://techjacksolutions.com"
+    },
+    "EVD-20260606-0050": {
+      "hash": "sha256:1dd3f919ee5a3385e8d0402c877e52df63a30b2787e5131cc48fad654dff70af",
+      "legacy_info_id": "INFO-050",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://aiagentsdirectory.com/news/topic/partnerships"
+    },
+    "EVD-20260606-0051": {
+      "hash": "sha256:c937903bd24d1de7953e139615f3c04cf336aefcba7a627e33bbca1c243f17a5",
+      "legacy_info_id": "INFO-051",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://okta.com/company/careers/customer-first/senior-forward-deployed-engineer-okta-for-ai-agents-7961356/"
+    },
+    "EVD-20260606-0052": {
+      "hash": "sha256:1fc362d9184ae149cddcbf1323868f2c06f09b8e9f60d004cd10ed4e546f8bc9",
+      "legacy_info_id": "INFO-052",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month"
+    },
+    "EVD-20260606-0053": {
+      "hash": "sha256:9b44b09ef5ef8692338c1c419c591ef0257f99dd9c1e688f863372c81f9d88f2",
+      "legacy_info_id": "INFO-053",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://drata.com/learn/agent-gov/agentic-control-plane"
+    },
+    "EVD-20260606-0054": {
+      "hash": "sha256:d9b067914e0eb236e339c17213821466d1d94b1ca779a9d2279f68f6dc2c2241",
+      "legacy_info_id": "INFO-054",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://pricepertoken.com/leaderboards/writing"
+    },
+    "EVD-20260606-0055": {
+      "hash": "sha256:854d1d9ff3b56f0b8d1f26be3d6624b0efe03d37d2eadf613b01928168d2c331",
+      "legacy_info_id": "INFO-055",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption"
+    },
+    "EVD-20260606-0056": {
+      "hash": "sha256:09a562ac00b5443f4014250188f6194c9d1ecae26347caa2d068298997b44355",
+      "legacy_info_id": "INFO-056",
+      "raw_path": "Information/raw/2026-06-06/firecrawl.jsonl",
+      "run_date": "2026-06-06",
+      "url": "https://www.facebook.com/euronews/posts/"
     }
   },
-  "last_updated": "2026-06-05T09:28:36+09:00",
+  "last_updated": "2026-06-06T09:27:43+09:00",
   "schema_version": "1.0"
 }
