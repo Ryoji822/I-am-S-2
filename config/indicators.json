@@ -1,6 +1,6 @@
 {
-  "version": "4.00",
-  "last_updated": "2026-06-06",
+  "version": "4.01",
+  "last_updated": "2026-06-07",
   "description": "I&W（Indications and Warning）指標レジストリ. v3.82: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（IND-030 high移行・6件last_checked更新）。IND-013 high維持（MCP token theft INFO-051 B-3+TanStack npm攻撃 INFO-052 A-3+AgentTrap 141タスク INFO-017 B-3。攻撃面拡大加速）・IND-025 elevated維持（Opus 4.6 5ベンチマーク勝利 INFO-021 B-2+DeepSeek V3.2 Speciale INFO-031 C-2。量的向上継続）・IND-026 elevated維持（METR 43%乖離 INFO-038 C-2+Klarna再採用 INFO-027 B-2。high移行4ソース到達。次回検討）・IND-027 high維持（7サンドボックス INFO-009+Grok Build ACP INFO-010+DeerFlow 2.0 INFO-008。標準化爆発的加速継続）・IND-028 elevated維持（AGIタイムライン+Opus 4.6ベンチマーク向上。主観-客観乖離継続）・IND-029 high維持（$1TNデータセンター INFO-026+Mistral $2.3B INFO-033+機関投資家必須 INFO-050。資本流入劇的加速）・IND-030 elevated→high移行（Google兵器誓約削除 INFO-037 B-3+CDT 9機関停止 INFO-019 A-2+UK改名 INFO-054 B-3+Pentagon報酬構造 INFO-016 D-3+NYT安全性限界 INFO-041 A-3。5重C蓄積・能力-リスク二面性の新段階）",
   "structural_changes_log": [
     "2026-05-14 v3.76: Arbiter統合判断（DEGRADED/BOTH-FAILED状態）。Arbiter独自批判分析。7指標更新（全件状態変更なし）。IND-013 high継続（Codex 4層防御 INFO-001 A-3は防御側強化。新規脆弱性なし。critical移行条件未到達）・IND-025 elevated継続（Grok STT/TTS+Imagine+Doubao全モダリティ+Seedance 2.0 #2。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（エージェント成功率77.3% vs 74%ロールバック。期待-実態ギャップ顕在化。high移行条件検討段階）・IND-027 high継続（MCPデファクト化+AAIF 97M SDK+TikTok MCP+Grok BYO MCP+Agent Skills 1000+。標準化爆発的加速）・IND-028 elevated継続（Hassabis AGI 2030+ARC-AGI-3+Meta Llama 4不正。客観的ベンチマーク信頼性問題。主観-客観乖離継続）・IND-029 high継続（Q1 $2555億+Big 4 $7250億+Anthropic $300億+Stargate $5000億。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon SCR+DPA+Google秘密契約+Scale AI $5億+EU AI Act延期+US Safety Institute革新シフト。規制二方向同時深化。能力-リスク二面性加速）",
@@ -16,8 +16,8 @@
       "trend": "rising",
       "alert_level": "high",
       "last_value": "SmartLoader MCPサーバークローン攻撃（INFO-022 B-2）・ClawHub 46.8%悪意スキル（INFO-025 C-4）。MCPサプライチェーン攻撃の初の具体的事例。スキルエコシステム信頼性の根本的問題。攻撃面拡大加速。critical移行条件: A-1品質での大規模実被害報告",
-      "last_checked": "2026-06-06",
-      "rationale": "Arbiter v4.00: high維持。COMPLETE。SmartLoader MCPサーバークローン攻撃（INFO-022 B-2）+ClawHub 46.8%悪意スキル（INFO-025 C-4）。MCPサプライチェーン攻撃の初の具体的事例。スキルエコシステム信頼性の根本的問題。Pattern DD確度中-高→中に引き下げ（Red採用: C-4品質ClawHubを中-高根拠とする不適切性）。攻撃面拡大加速。critical移行条件未到達"
+      "last_checked": "2026-06-07",
+      "rationale": "Arbiter v4.01: high維持。COMPLETE。新規大規模セキュリティ事故なし。攻撃面拡大基調継続。critical移行条件未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -26,9 +26,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Gemini Omni任意入力→動画生成（INFO-010 A-3）・3.5 Flash 9デモ（INFO-012 A-3）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-06-06",
-      "rationale": "Arbiter v4.00: elevated維持。COMPLETE。Gemini Omni任意入力→動画生成（INFO-010 A-3）+3.5 Flash 9デモ（INFO-012 A-3）。量的向上継続。「真の理解」検証未解決"
+      "last_value": "Seedance 2.0無料無制限（INFO-054 B-2）・Grok Voice Agent API（INFO-004 A-3）。量的向上継続。「真の理解」検証未解決",
+      "last_checked": "2026-06-07",
+      "rationale": "Arbiter v4.01: elevated維持。COMPLETE。Seedance 2.0無料無制限（INFO-054 B-2）+Grok Voice Agent API（INFO-004 A-3）。量的向上継続。「真の理解」検証未解決"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -37,9 +37,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "F500 51%本番稼働/ROI 23%（INFO-033 C-2）・パイロットROI 5%（INFO-034 C-2）・Klarna品質崩壊→再採用（INFO-041 B-2）・IBM「ボトルネックはエージェントロジック」（INFO-055 B-3）。期待-実態ギャップ定量データ確認。Red指摘: C-2品質2件の品質乗算効果に注意",
-      "last_checked": "2026-06-06",
-      "rationale": "Arbiter v4.00: high維持。COMPLETE。F500 51%本番稼働/ROI 23%（INFO-033 C-2）+パイロットROI 5%（INFO-034 C-2）+Klarna品質崩壊→再採用（INFO-041 B-2）+IBM「ボトルネックはエージェントロジック」（INFO-055 B-3）。期待-実態ギャップ定量データ確認。Pattern EE確度中→低-中に引き下げ（Red採用: C-2品質2件を主根拠とする確度中は品質基準不適合）。Red指摘: C-2品質2件の品質乗算効果に注意"
+      "last_value": "PwC 79%本番・66%生産性向上（INFO-056 A-2）vs AIスティッカーショック・ROI 5%（INFO-014 B-2）・Klarna逆戻り（INFO-026 B-2）。期待-実態ギャップのA-2品質定量確認。high維持妥当",
+      "last_checked": "2026-06-07",
+      "rationale": "Arbiter v4.01: high維持。COMPLETE。PwC 79%本番・66%生産性向上（INFO-056 A-2）vs AIスティッカーショック・ROI 5%（INFO-014 B-2）+Klarna逆戻り（INFO-026 B-2）。期待-実態ギャップのA-2品質定量確認。high維持妥当"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -48,20 +48,20 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "MCP 97M DL（INFO-021 A-2）・A2A 150組織・Gemini Agent API MCP対応（INFO-016 A-3）・agents-cli クロスエージェント（INFO-023 A-3）。標準化爆発的加速継続",
-      "last_checked": "2026-06-06",
-      "rationale": "Arbiter v4.00: high維持。COMPLETE。MCP 97M DL（INFO-021 A-2）+A2A 150組織+Gemini Agent API MCP対応（INFO-016 A-3）+agents-cli クロスエージェント（INFO-023 A-3）。標準化爆発的加速継続"
+      "last_value": "ADK OSS（INFO-011 A-3）・ベンダーロックイン回避指針（INFO-009/037 B-2）・マルチベンダー戦略（INFO-036 B-2）。標準化継続加速",
+      "last_checked": "2026-06-07",
+      "rationale": "Arbiter v4.01: high維持。COMPLETE。ADK OSS（INFO-011 A-3）+ベンダーロックイン回避指針（INFO-009/037 B-2）+マルチベンダー戦略（INFO-036 B-2）。標準化継続加速"
     },
     "IND-028": {
       "indicator_id": "IND-028",
       "name": "AGI到達度指標",
       "description": "ARC-AGI-3等の客観的ベンチマークと主観的AGI宣言の乖離度",
-      "current_status": "elevated",
+      "current_status": "high",
       "trend": "rising",
-      "alert_level": "elevated",
-      "last_value": "Hassabis AGI 2029年（INFO-044 A-1）・再帰的自己改善分析（INFO-045 A-3）。主観的AGI宣言前倒し継続。客観的ベンチマーク漸進的改善。主観-客観乖離拡大。high移行条件: A-2品質でのAGI関連技術ブレークスルー報告",
-      "last_checked": "2026-06-06",
-      "rationale": "Arbiter v4.00: elevated維持。COMPLETE。Hassabis AGI 2029年（INFO-044 A-1）+再帰的自己改善分析（INFO-045 A-3）。主観的AGI宣言前倒し継続。客観的ベンチマーク漸進的改善。主観-客観乖離拡大。high移行条件: A-2品質でのAGI関連技術ブレークスルー報告"
+      "alert_level": "high",
+      "last_value": "RSI研究重大進捗「定義された実験ではほぼ超人」（INFO-046 A-1）・Hassabis AGI ~2030（INFO-047 A-2）・AGI定義合意不在（INFO-048 B-2）・米中Geneva AI安全予備合意（INFO-050 A-2）。主観-客観乖離縮小方向。条件: 「定義された実験」限定詞明記・次回RSI外部検証必須収集。critical移行条件: 広範なタスクでのRSI再現・外部検証",
+      "last_checked": "2026-06-07",
+      "rationale": "Arbiter v4.01: 条件付high移行承認。COMPLETE。RSI「定義された実験ではほぼ超人」（INFO-046 A-1）がhigh移行条件（A-2品質でのAGI関連技術ブレークスルー報告）を上回る品質で充足。Hassabis AGI ~2030（INFO-047 A-2）・米中Geneva合意（INFO-050 A-2）も支持。主観-客観乖離は縮小方向だが依然として存在。条件: 「定義された実験」限定条件を明記・AGI定義合意不在（INFO-048）の構造的問題認識・次回RSI外部検証必須"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -70,9 +70,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Capex $180-190B（INFO-010 A-3）・Anthropic $965B評価額（INFO-039 A-1）。資本流入劇的加速確定的。2022年$31Bから6倍",
-      "last_checked": "2026-06-06",
-      "rationale": "Arbiter v4.00: high維持。COMPLETE。Capex $180-190B（INFO-010 A-3）+Anthropic $965B評価額（INFO-039 A-1）。資本流入劇的加速確定的。2022年$31Bから6倍"
+      "last_value": "$300B Q1投資（INFO-033 B-2）・Big Tech $725B capex（INFO-052 A-2）・OpenAI $852B評価額（INFO-033 B-2）。資本流入劇的加速確定的",
+      "last_checked": "2026-06-07",
+      "rationale": "Arbiter v4.01: high維持。COMPLETE。$300B Q1投資（INFO-033 B-2）+Big Tech $725B capex（INFO-052 A-2）+OpenAI $852B評価額（INFO-033 B-2）。資本流入劇的加速確定的"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -81,9 +81,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "SCR指定（INFO-028 A-1）・DPA脅迫（INFO-030 A-1）・大統領令（INFO-032 A-1）・NSA回避（INFO-031 B-2）・囚人のジレンマ（INFO-029 A-1）。5日間に5つの重要イベント。能力向上と治理多層化の同時進行加速",
-      "last_checked": "2026-06-06",
-      "rationale": "Arbiter v4.00: high維持。COMPLETE。SCR指定（INFO-028 A-1）+DPA脅迫（INFO-030 A-1）+大統領令（INFO-032 A-1）+NSA回避（INFO-031 B-2）+囚人のジレンマ（INFO-029 A-1）。5日間に5つの重要イベント。能力向上と治理多層化の同時進行加速"
+      "last_value": "SCR指定（INFO-018 A-1）・Trump EO（INFO-016 A-2）・7社軍事契約（INFO-020 A-2）・AI一時停止提案（INFO-049 A-2）・RSI進捗（INFO-046 A-1）。能力向上とリスク増大の同時進行が新段階に到達",
+      "last_checked": "2026-06-07",
+      "rationale": "Arbiter v4.01: high維持。COMPLETE。SCR指定（INFO-018 A-1）+Trump EO（INFO-016 A-2）+7社軍事契約（INFO-020 A-2）+AI一時停止提案（INFO-049 A-2）+RSI進捗（INFO-046 A-1）。能力向上とリスク増大の同時進行が新段階に到達"
     }
   }
 }
