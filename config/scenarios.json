@@ -1,6 +1,6 @@
 {
-  "version": "4.02",
-  "last_updated": "2026-06-08",
+  "version": "4.03",
+  "last_updated": "2026-06-09",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.84: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了・DEGRADED条件下）。QHG Y軸再定義採用（凍結17R→解除）。「格差拡大/収斂」→「フロンティア差別化の持続性: 持続/コモディティ化」。シナリオ4件確率全面的再配分（SCN-001 -2%: 20→18%・SCN-002 -2%: 30→28%・SCN-003 ±0%: 35%維持・SCN-004 +4%: 15→19%）。合計100%維持（18+28+35+19=100%）",
   "driving_forces": {
     "axis_x": {
@@ -80,9 +80,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × コモディティ化",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 31,
+      "probability": 30,
       "probability_change": "-1%",
-      "probability_rationale": "Arbiter v4.02: -1%（32→31%）。COMPLETE。34R固定ペナルティ統計的是正継続。围い込み→SCN-001シフト兆候認識（品質調整後は確率に反映不適切・SCN-001 ±0%の論理的整合性確認済み）。コモディティ化はSCN-004方向圧力。独立性仮定問題未解決。QHG再定義33R目",
+      "probability_rationale": "Arbiter v4.03: -1%（31→30%）。COMPLETE。35R固定ペナルティ統計的是正継続。コモディティ化はSCN-004方向圧力。围い込み蓄積はSCN-001方向。独立性仮定問題未解決。QHG再定義34R目",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -112,9 +112,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 28,
+      "probability": 29,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.02: +1%（27→28%）。COMPLETE。コモディティ化C蓄積4件（トークン価格10分の1 INFO-022 B-2・OSS-商用ギャップ縮小 INFO-023 B-2・Mistral/DeepSeek台頭 INFO-047 B-2・コーディング商品化40%陳腐化 INFO-037 B-2）。全B-2品質。市場二層分化の同時進行は制約として記録。+1%保守的上限。QHG再定義33R目",
+      "probability_rationale": "Arbiter v4.03: +1%（28→29%）。COMPLETE。コモディティ化C蓄積: トークン年10分の1（INFO-038 A-2）・$1/MTok未満（INFO-039 C-3）・OSS-商用ギャップ7ヶ月遅れ（INFO-041 C-3）・コーディング商品化（INFO-052 C-3）。A-2品質1件+C-3品質3件主体。市場二層分化の同時進行は制約として記録。+1%保守的上限。QHG再定義34R目",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-08",
-    "note": "SCN-001(17) + SCN-002(24) + SCN-003(31) + SCN-004(28) = 100%. Arbiter v4.02完了（COMPLETE）"
+    "verified_date": "2026-06-09",
+    "note": "SCN-001(17) + SCN-002(24) + SCN-003(30) + SCN-004(29) = 100%. Arbiter v4.03完了（COMPLETE）"
   }
 }
