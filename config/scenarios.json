@@ -1,6 +1,6 @@
 {
-  "version": "4.04",
-  "last_updated": "2026-06-10",
+  "version": "4.05",
+  "last_updated": "2026-06-11",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.84: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了・DEGRADED条件下）。QHG Y軸再定義採用（凍結17R→解除）。「格差拡大/収斂」→「フロンティア差別化の持続性: 持続/コモディティ化」。シナリオ4件確率全面的再配分（SCN-001 -2%: 20→18%・SCN-002 -2%: 30→28%・SCN-003 ±0%: 35%維持・SCN-004 +4%: 15→19%）。合計100%維持（18+28+35+19=100%）",
   "driving_forces": {
     "axis_x": {
@@ -24,8 +24,8 @@
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 17,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.00: +1%（16→17%）。COMPLETE。Blue採用。围い込みI 32件蓄積+次元拡大（ハードウェア: Googlebook・決済: Daybreak予告・SaaS: Workday統合）で围い込みの形態多様化進行。但し围い込み拡散（薄化）リスク記録: 6次元分散は集中戦略より弱い可能性・Daybreakは予告段階・Workdayは排他契約未確認。Google二層戦略（基盤開放・上位围い込み）の可能性。QHG再定義31R目",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v4.05: 取消+1%（18→17%）。COMPLETE。Red採用。Blue Agent +1%取消。決済インフラ（Visa/Mastercard）は本質的にnon-exclusive。Visa-OpenAI提携はAnthropic・Google・xAIとの同種提携を排除しない。Oracle Cloudパートナーシップは围い込みIとしても機能。Codex全職種拡大は汎用プラットフォーム化（SCN-002方向）の可能性。17%復帰。QHG再定義37R連続未実行",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -55,7 +55,7 @@
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 24,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.00: ±0%（24%維持）。COMPLETE。MCP対応深化（INFO-016）・agents-cli クロスエージェント（INFO-023）で開放C蓄積。Codex非開発者20%（INFO-003）は勝者強化。AAIF 43新メンバー（INFO-021）。相殺均衡。QHG再定義31R目",
+      "probability_rationale": "Arbiter v4.05: ±0%（24%維持）。COMPLETE。Gemini Skills/CLI OSSで開放C蓄積。MMLU天井到達は「勝者」定義を困難にするが相殺均衡。QHG再定義37R連続未実行",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -81,8 +81,8 @@
       "quadrant_label": "閉鎖 × コモディティ化",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 29,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v4.04: -1%（30→29%）。COMPLETE。Blue採用。36R固定ペナルティ統計的是正継続。コモディティ化圧力（パターンGG・SCN-004方向）が围い込みの価値提案を侵食。Google backstop（INFO-043 A-2）・Apple Gemini依存（INFO-005 C-3）は围い込み蓄積だが独立性仮定問題未解決。パターンGG確度低-中に引き下げ（Red採用）はSCN-004 +1%根拠の制約として記録。QHG再定義35R連続未実行",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v4.05: 取消-1%（28→29%）。COMPLETE。Blue Agent -1%取消。正常化復帰: BlueのSCN-001 +1%とペアの-1%を取消。コモディティ化圧力（MMLU天井・DeepSeek）は围い込み価値提案を侵食する方向だがC-3品質中心で独立-1%根拠としては不十分。37R固定ペナルティの統計的是正は前回（v4.04）適用済み。29%復帰。QHG再定義37R連続未実行",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -113,8 +113,8 @@
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 30,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.04: +1%（29→30%）。COMPLETE。Blue採用。コモディティ化C蓄積: DeepSeek V4 Pro > GPT-5.5 Pro（INFO-038 B-3）・トークンコスト$30→<$1/MTok（INFO-025 A-3）・Nemotron 3 Ultra 550B開放ウェイト（INFO-049 A-3）・Llama 4 > GPT-4o（INFO-027 C-3）・コーディング商品化（INFO-036 C-3）。A-3品質2件+B-3品質1件+C-3品質2件の5件蓄積。パターンGG確度低-中に引き下げ（Red採用）は制約として記録。市場二層分化の同時進行は制約。+1%保守的上限。QHG再定義35R連続未実行",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v4.05: ±0%（30%維持）。COMPLETE。MMLU天井到達はコモディティ化C蓄積（C-3品質2件）だが前回+1%で保守的上限到達。DeepSeek V4 Pro > GPT-5.5 Pro（B-3）は追補だが追加+1%根拠強度は不十分。±0%。QHG再定義37R連続未実行",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-10",
-    "note": "SCN-001(17) + SCN-002(24) + SCN-003(29) + SCN-004(30) = 100%. Arbiter v4.04完了（COMPLETE）"
+    "verified_date": "2026-06-11",
+    "note": "SCN-001(17) + SCN-002(24) + SCN-003(29) + SCN-004(30) = 100%. Arbiter v4.05完了（COMPLETE）"
   }
 }
