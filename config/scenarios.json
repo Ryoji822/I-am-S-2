@@ -1,6 +1,6 @@
 {
-  "version": "4.05",
-  "last_updated": "2026-06-11",
+  "version": "4.06",
+  "last_updated": "2026-06-12",
   "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v3.84: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了・DEGRADED条件下）。QHG Y軸再定義採用（凍結17R→解除）。「格差拡大/収斂」→「フロンティア差別化の持続性: 持続/コモディティ化」。シナリオ4件確率全面的再配分（SCN-001 -2%: 20→18%・SCN-002 -2%: 30→28%・SCN-003 ±0%: 35%維持・SCN-004 +4%: 15→19%）。合計100%維持（18+28+35+19=100%）",
   "driving_forces": {
     "axis_x": {
