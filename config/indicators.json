@@ -1,8 +1,9 @@
 {
-  "version": "4.07",
-  "last_updated": "2026-06-13",
-  "description": "I&W（Indications and Warning）指標レジストリ. v3.82: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（IND-030 high移行・6件last_checked更新）。IND-013 high維持（MCP token theft INFO-051 B-3+TanStack npm攻撃 INFO-052 A-3+AgentTrap 141タスク INFO-017 B-3。攻撃面拡大加速）・IND-025 elevated維持（Opus 4.6 5ベンチマーク勝利 INFO-021 B-2+DeepSeek V3.2 Speciale INFO-031 C-2。量的向上継続）・IND-026 elevated維持（METR 43%乖離 INFO-038 C-2+Klarna再採用 INFO-027 B-2。high移行4ソース到達。次回検討）・IND-027 high維持（7サンドボックス INFO-009+Grok Build ACP INFO-010+DeerFlow 2.0 INFO-008。標準化爆発的加速継続）・IND-028 elevated維持（AGIタイムライン+Opus 4.6ベンチマーク向上。主観-客観乖離継続）・IND-029 high維持（$1TNデータセンター INFO-026+Mistral $2.3B INFO-033+機関投資家必須 INFO-050。資本流入劇的加速）・IND-030 elevated→high移行（Google兵器誓約削除 INFO-037 B-3+CDT 9機関停止 INFO-019 A-2+UK改名 INFO-054 B-3+Pentagon報酬構造 INFO-016 D-3+NYT安全性限界 INFO-041 A-3。5重C蓄積・能力-リスク二面性の新段階）",
+  "version": "4.08",
+  "last_updated": "2026-06-14",
+  "description": "I&W（Indications and Warning）指標レジストリ. v4.08: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（政府がFable 5セーフガードバイパス発見 INFO-002 A-3・72%導入31%セキュア INFO-006 B-3・OpenAI Skills完全コード実行環境 INFO-018 B-3。政府によるバイパス可能発見は攻撃面の新次元）・IND-025 elevated維持（Fable 5視覚科学研究SOTA INFO-001 A-3・Gemini Omni/3.5 INFO-004 A-3・DiffusionGemma 4倍高速 A-3。量的向上継続。「真の理解」検証未解決）・IND-026 high維持（IBM 87%未導入 INFO-023 A-3・Gartner 17%展開済み INFO-024 B-3・95%パイロット失敗 INFO-012 C-3・AI Boomerang Effect INFO-033 B-3。期待-実態ギャップの強力な定量確認）・IND-027 high維持（MCP RC INFO-014 B-3・AAIF振り返り INFO-015 B-3・Gemini Skills OSS INFO-020 A-3・OpenAI Skills Bedrock INFO-018 B-3。標準化と囲い込みの同時加速継続）・IND-028 high維持（Claude Code 80%+/90%自コードベース INFO-037/060 B-3・Amodei 2027/Hassabis 2029-30 INFO-045 B-3・ARC-AGI-2全モデル0点 INFO-036 B-3。RSI具体化と客観的ベンチマーク限界の同時進行）・IND-029 high維持（Google Cloud 63%成長 INFO-051 C-3・Anthropic ~$1T評価額 INFO-035 B-3・JPMorgan $19.8B INFO-007 B-3・市場2033年$182.97B INFO-017 B-3。資本流入の継続）・IND-030 high維持（Fable 5/Mythos 5ローンチ→3日後アクセス停止 INFO-001/002 A-3・NSPM-11制度化 INFO-027 B-3・企業無効化権剥奪 INFO-032 B-3・AI安全用語の武器化 INFO-064 B-3。能力-リスク二面性の最も明確な具体化）",
   "structural_changes_log": [
+    "2026-06-14 v4.08: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。全7指標high/elevated維持。IND-013 critical移行条件（実被害A-2報告）未到達・IND-030 critical移行検討段階継続（Fable 5アクセス停止+NSPM-11+企業無効化権剥奪の3重蓄積だが実際の安全事故発生条件未到達）",
     "2026-05-14 v3.76: Arbiter統合判断（DEGRADED/BOTH-FAILED状態）。Arbiter独自批判分析。7指標更新（全件状態変更なし）。IND-013 high継続（Codex 4層防御 INFO-001 A-3は防御側強化。新規脆弱性なし。critical移行条件未到達）・IND-025 elevated継続（Grok STT/TTS+Imagine+Doubao全モダリティ+Seedance 2.0 #2。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（エージェント成功率77.3% vs 74%ロールバック。期待-実態ギャップ顕在化。high移行条件検討段階）・IND-027 high継続（MCPデファクト化+AAIF 97M SDK+TikTok MCP+Grok BYO MCP+Agent Skills 1000+。標準化爆発的加速）・IND-028 elevated継続（Hassabis AGI 2030+ARC-AGI-3+Meta Llama 4不正。客観的ベンチマーク信頼性問題。主観-客観乖離継続）・IND-029 high継続（Q1 $2555億+Big 4 $7250億+Anthropic $300億+Stargate $5000億。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon SCR+DPA+Google秘密契約+Scale AI $5億+EU AI Act延期+US Safety Institute革新シフト。規制二方向同時深化。能力-リスク二面性加速）",
     "2026-05-11 v3.74: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。7指標更新（全件状態変更なし）。IND-013 high継続（Anthropicサードパーティブロック INFO-015 C-3+Claude Codeバグ INFO-008 C-3は品質問題。新規脆弱性なし。攻撃面拡大基調継続。critical移行条件未到達）・IND-025 elevated継続（Sonnet 4.6 OSWorld大幅改善 INFO-001 A-3+Doubao-Seed-2.0-lite フルマルチモーダル INFO-051 C-3+Seedance 2.0 Video Arena #2 INFO-052 C-3+Grok 4.3 ネイティブ動画 INFO-020 B-3。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（CEO 83%エージェント導入予定 INFO-033 B-2 vs CIO仅25%リアルタイム監視可能+91%ダウンタイム$300K+/時間 INFO-024 D-3。期待-実態ギャップ拡大兆候。high移行条件（3+ソース<10%）: 2ソース不適切継続）・IND-027 high継続（Azure排他性終了 INFO-003 B-2+OpenAI SDK provider-agnostic INFO-017 B-3+157K OpenCode移行 INFO-015 C-3+Multi-framework多様化 INFO-022 C-3。標準化加速。Gemini Enterprise围い込み同時進行）・IND-028 elevated継続（AGI timeline synthesis C-3+AGI arms race trial C-3+Amodei rhetoric shift D-3。客観的ベンチマーク新規なし。主観-客観乖離継続。high移行条件未到達）・IND-029 high継続（Q1 2026 VC $2,672億 C-3+ByteDance AI CAPEX 2,000億元 C-3+SpaceX $3,500億評価額 C-3+Anthropic $3,800億評価額 C-2+OpenAI $1,220億 C-3。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon 7社契約 A-2+DeepMind union 98% B-3+Scale AI $5億 A-2+EU AI Act延期 A-2+中国裁判所AI解雇不可 B-3+Sanders法案 C-3。規制二方向同時進行深化。規制インフラ構築加速）",
     "2026-05-10 v3.73: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。Blue/Red統合評価。7指標更新（全件状態変更なし）。IND-013 high継続（Codex 4層防御 INFO-011 A-3+GPT-5.5-Cyber/TAC INFO-010 A-3+OpenShell OSS INFO-035 A-3は防御側強化。新規脆弱性なし。攻撃面拡大基調継続。critical移行条件未到達）・IND-025 elevated継続（Gemini 3 Pro Deep Think 100% INFO-033 C-3+AI Co-Clinician INFO-034 C-3+Doubao全模態 INFO-094 B-3+Grok 4.3音声 INFO-024 C-3。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（88%本番未到達 INFO-051 C-3 vs 72%導入 INFO-027 C-3の矛盾継続。high移行条件（3+ソース<10%）: 2ソース目にD&B 30%（INFO-050 B-2）は不適切。Auto Modeは自動化深化だが本番到達率に直接関係なし）・IND-027 high継続（AAIF/MCP統合 INFO-030 B-2+OpenShell OSS INFO-035 A-3+Azure排他性終了 INFO-064 C-3の3重C蓄積。Gemini Enterprise統合スタック（INFO-023 A-3）は围い込み同時進行）・IND-028 elevated継続（ARC-AGI-3全1%未満 INFO-061 C-3+Musk/Hassabis予測 INFO-067 C-3+再帰的自己改善 INFO-092 B-3+AGI-26 INFO-093 C-3。主観-客観乖離継続。high移行条件未到達）・IND-029 high継続（Terafab $550-1190億 INFO-003 B-2+Corning $32億 INFO-039 B-2+ByteDance 2000億元 INFO-070 B-3+IREN-NVIDIA INFO-078 B-2+VC $3000億 INFO-091 C-3+OpenAI $250億 INFO-074 B-2。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（中国包括的AI規制 INFO-048 B-3+EU AI Act延期 INFO-049 B-2+安全性テスト INFO-068 B-2+WH距離 INFO-047 B-2+連邦判事違憲 INFO-089 B-2。規制二方向同時進行。規制インフラ構築加速）"
@@ -15,9 +16,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Microsoft Fable 5アクセス制限（INFO-004 C-3）・72%導入31%セキュリティ（INFO-009 C-3）・悪意Skills検出（INFO-022 B-3）。攻撃面拡大基調継続。critical移行条件未到達",
-      "last_checked": "2026-06-13",
-      "rationale": "Arbiter v4.07: high維持。Microsoft Fable 5アクセス制限（INFO-004 C-3）・72%導入31%セキュリティ（INFO-009 C-3）・悪意Skills検出（INFO-022 B-3）。攻撃面拡大基調継続。critical移行条件未到達"
+      "last_value": "政府がFable 5セーフガードバイパス発見（INFO-002 A-3）・72%導入31%セキュア（INFO-006 B-3）・OpenAI Skills完全コード実行環境（INFO-018 B-3）。政府によるセーフガードバイパス可能発見は攻撃面の新次元",
+      "last_checked": "2026-06-14",
+      "rationale": "Arbiter v4.08: high維持。政府がFable 5セーフガードバイパス発見（INFO-002 A-3）・72%導入31%セキュア（INFO-006 B-3）・OpenAI Skills完全コード実行環境（INFO-018 B-3）。政府によるセーフガードバイパス可能発見は攻撃面の新次元。critical移行条件（実被害A-2報告）未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -26,9 +27,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Fable 5視覚・科学研究向上（INFO-001 A-3）・Seedance 2.0動画生成（INFO-056 B-3）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-06-13",
-      "rationale": "Arbiter v4.07: elevated維持。Fable 5視覚・科学研究向上（INFO-001 A-3）・Seedance 2.0動画生成（INFO-056 B-3）。量的向上継続。「真の理解」検証未解決"
+      "last_value": "Fable 5視覚・科学研究SOTA（INFO-001 A-3）・Gemini Omni/3.5（INFO-004 A-3）・DiffusionGemma 4倍高速（A-3）。量的向上継続。「真の理解」検証未解決",
+      "last_checked": "2026-06-14",
+      "rationale": "Arbiter v4.08: elevated維持。Fable 5視覚・科学研究SOTA（INFO-001 A-3）・Gemini Omni/3.5（INFO-004 A-3）・DiffusionGemma 4倍高速（A-3）。量的向上継続。「真の理解」検証未解決"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -37,9 +38,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "IBM 87%導入未進行（INFO-031 A-3）・Gartner 17%展開済み（INFO-033 B-3）・再雇用パターン（INFO-051 B-3）。INFO-031 A-3品質は「AI Control Gap」の強力な定量確認",
-      "last_checked": "2026-06-13",
-      "rationale": "Arbiter v4.07: high維持。IBM 87%導入未進行（INFO-031 A-3）・Gartner 17%展開済み（INFO-033 B-3）・再雇用パターン（INFO-051 B-3）。INFO-031 A-3品質は「AI Control Gap」の強力な定量確認"
+      "last_value": "IBM 87%未導入（INFO-023 A-3）・Gartner 17%展開済み（INFO-024 B-3）・95%パイロット失敗（INFO-012 C-3）・AI Boomerang Effect（INFO-033 B-3）。期待-実態ギャップの強力な定量確認",
+      "last_checked": "2026-06-14",
+      "rationale": "Arbiter v4.08: high維持。IBM 87%未導入（INFO-023 A-3）・Gartner 17%展開済み（INFO-024 B-3）・95%パイロット失敗（INFO-012 C-3）・AI Boomerang Effect（INFO-033 B-3）。期待-実態ギャップの強力な定量確認"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -48,9 +49,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "MCP RC（INFO-016 B-3）・AAIF振り返り（INFO-017 B-3）・Gemini Skills OSS（INFO-021 A-3）・OpenAI Skills Bedrock（INFO-020 A-3）。標準化と囲い込みの同時加速継続",
-      "last_checked": "2026-06-13",
-      "rationale": "Arbiter v4.07: high維持。MCP RC（INFO-016 B-3）・AAIF振り返り（INFO-017 B-3）・Gemini Skills OSS（INFO-021 A-3）・OpenAI Skills Bedrock（INFO-020 A-3）。標準化と囲い込みの同時加速継続"
+      "last_value": "MCP RC公開（INFO-014 B-3）・AAIF振り返り（INFO-015 B-3）・Gemini Skills OSS（INFO-020 A-3）・OpenAI Skills Bedrock（INFO-018 B-3）。標準化と囲い込みの同時加速継続",
+      "last_checked": "2026-06-14",
+      "rationale": "Arbiter v4.08: high維持。MCP RC公開（INFO-014 B-3）・AAIF振り返り（INFO-015 B-3）・Gemini Skills OSS（INFO-020 A-3）・OpenAI Skills Bedrock（INFO-018 B-3）。標準化と囲い込みの同時加速継続"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -59,9 +60,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Claude Code 80%+コード（INFO-073 A-3）・RSI部分加速（INFO-059 B-3）・Clark 60%後継者（INFO-053 A-3）・GPT-5 ARC 96.3%（INFO-043 C-3）。RSI具体化は主観-客観乖離縮小方向だが完全RSI未到達",
-      "last_checked": "2026-06-13",
-      "rationale": "Arbiter v4.07: high維持。Claude Code 80%+コード（INFO-073 A-3）・RSI部分加速（INFO-059 B-3）・Clark 60%後継者（INFO-053 A-3）・GPT-5 ARC 96.3%（INFO-043 C-3）。RSI具体化は主観-客観乖離縮小方向だが完全RSI未到達"
+      "last_value": "Claude Code 80%+/90%自コードベース（INFO-037/060 B-3）・Amodei 2027/Hassabis 2029-30（INFO-045 B-3）・ARC-AGI-2全モデル0点（INFO-036 B-3）。RSI具体化と客観的ベンチマーク限界の同時進行",
+      "last_checked": "2026-06-14",
+      "rationale": "Arbiter v4.08: high維持。Claude Code 80%+/90%自コードベース（INFO-037/060 B-3）・Amodei 2027/Hassabis 2029-30（INFO-045 B-3）・ARC-AGI-2全モデル0点（INFO-036 B-3）。RSI具体化と客観的ベンチマーク限界の同時進行。利益相反証拠（Anthropic自己評価）は主根拠から除外"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -70,9 +71,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "中国$2,950億計画（INFO-040 A-3）・ByteDance 2,000億元上方（INFO-054 B-3）・Anthropic $965B（INFO-069 C-3）・Google $350億チップ（INFO-037 A-3）。国家級投資が新次元",
-      "last_checked": "2026-06-13",
-      "rationale": "Arbiter v4.07: high維持。中国$2,950億計画（INFO-040 A-3）・ByteDance 2,000億元上方（INFO-054 B-3）・Anthropic $965B（INFO-069 C-3）・Google $350億チップ（INFO-037 A-3）。国家級投資が新次元"
+      "last_value": "Google Cloud 63%成長$460Bバックログ$84.75B調達（INFO-051 C-3）・Anthropic ~$1T評価額（INFO-035 B-3）・JPMorgan $19.8B（INFO-007 B-3）・市場2033年$182.97B（INFO-017 B-3）。資本流入の継続",
+      "last_checked": "2026-06-14",
+      "rationale": "Arbiter v4.08: high維持。Google Cloud 63%成長$460Bバックログ$84.75B調達（INFO-051 C-3）・Anthropic ~$1T評価額（INFO-035 B-3）・JPMorgan $19.8B（INFO-007 B-3）・市場2033年$182.97B（INFO-017 B-3）。資本流入の継続"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -81,9 +82,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "NSPM-11制度化（INFO-026 B-3）・WH EO（INFO-034 A-3）・Pentagon包括分析（INFO-072 B-3）・Fable 5セーフガード（INFO-001 A-3）・RSI部分加速（INFO-059 B-3）。能力-リスク二面性の新段階",
-      "last_checked": "2026-06-13",
-      "rationale": "Arbiter v4.07: high維持。NSPM-11制度化（INFO-026 B-3）・WH EO（INFO-034 A-3）・Pentagon包括分析（INFO-072 B-3）・Fable 5セーフガード（INFO-001 A-3）・RSI部分加速（INFO-059 B-3）。能力-リスク二面性の新段階"
+      "last_value": "Fable 5/Mythos 5ローンチ→3日後アクセス停止（INFO-001/002 A-3）・NSPM-11制度化（INFO-027 B-3）・企業無効化権剥奪（INFO-032 B-3）・AI安全用語の武器化（INFO-064 B-3）。能力-リスク二面性の最も明確な具体化",
+      "last_checked": "2026-06-14",
+      "rationale": "Arbiter v4.08: high維持。Fable 5/Mythos 5ローンチ→3日後アクセス停止（INFO-001/002 A-3）・NSPM-11制度化（INFO-027 B-3）・企業無効化権剥奪（INFO-032 B-3）・AI安全用語の武器化（INFO-064 B-3）。能力-リスク二面性の最も明確な具体化。critical移行条件（実際の安全事故発生）未到達。NSPM-11 DoD 3000.09 90日以内更新命令の結果を要監視"
     }
   }
 }
