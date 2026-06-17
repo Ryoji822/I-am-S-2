@@ -1,19 +1,19 @@
 # AI市場全体 - 静的インテリジェンス
 
-> 最終判断更新: 2026-06-15
+> 最終判断更新: 2026-06-17
 > 全体確信度: 中
-> 情報非対称性: ByteDance/DeepSeek グローバルシェア追跡困難。2nd tier不在。Y軸「フロンティア差別化の持続性」の完全な定量評価基準は未設定。H-GOV-001核心命題（業界全体萎縮効果）の証拠ゼロ・C蓄積は全てAnthropic固有。H-ANT-001再定式化実行済み（Kano分析）。H-BTD-002品質内訳（A品質ゼロ・C-3品質60%）で累積ペナルティの脆弱性露呈。品質チェックCONDITIONAL PASS
-> 主参照: [hypotheses.json](../config/hypotheses.json) [H-OAI-001](../config/hypotheses.json) [H-OAI-002](../config/hypotheses.json) [H-OAI-003](../config/hypotheses.json) [H-GOV-001](../config/hypotheses.json) [H-ANT-001](../config/hypotheses.json) [H-ANT-002](../config/hypotheses.json) [H-ANT-003](../config/hypotheses.json) [H-GOO-001](../config/hypotheses.json) [H-GOO-002](../config/hypotheses.json) [H-GOO-003](../config/hypotheses.json) [H-XAI-002](../config/hypotheses.json) [H-XAI-004](../config/hypotheses.json) [H-BTD-001](../config/hypotheses.json) [H-BTD-002](../config/hypotheses.json) [H-BTD-003](../config/hypotheses.json) [H-CAR-001](../config/hypotheses.json) [H-CAR-002](../config/hypotheses.json) [H-CAR-003](../config/hypotheses.json), [scenarios.json](../config/scenarios.json) SCN-001/002/003/004, [indicators.json](../config/indicators.json) [IND-013](../config/indicators.json) [IND-025](../config/indicators.json) [IND-026](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-029](../config/indicators.json) [IND-030](../config/indicators.json)
+> 情報非対称性: ByteDance/DeepSeek グローバルシェア追跡困難。2nd tier不在。Y軸「フロンティア差別化の持続性」の完全な定量評価基準は未設定。H-GOV-001(a)/(b)分割実行済み。(a)Anthropic固有政府介入55% medium・(b)業界全体萎縮効果はH-GOV-002 20% low。H-OAI-001 52% medium帯下限に接近。H-BTD-002判別データ収集期限2026-06-21。品質チェックPASS
+> 主参照: [hypotheses.json](../config/hypotheses.json) [H-OAI-001](../config/hypotheses.json) [H-OAI-002](../config/hypotheses.json) [H-OAI-003](../config/hypotheses.json) [H-GOV-001](../config/hypotheses.json) [H-GOV-002](../config/hypotheses.json) [H-ANT-001](../config/hypotheses.json) [H-ANT-002](../config/hypotheses.json) [H-ANT-003](../config/hypotheses.json) [H-GOO-001](../config/hypotheses.json) [H-GOO-002](../config/hypotheses.json) [H-GOO-003](../config/hypotheses.json) [H-XAI-002](../config/hypotheses.json) [H-XAI-004](../config/hypotheses.json) [H-BTD-001](../config/hypotheses.json) [H-BTD-002](../config/hypotheses.json) [H-BTD-003](../config/hypotheses.json) [H-CAR-001](../config/hypotheses.json) [H-CAR-002](../config/hypotheses.json) [H-CAR-003](../config/hypotheses.json), [scenarios.json](../config/scenarios.json) SCN-001/002/003/004, [indicators.json](../config/indicators.json) [IND-013](../config/indicators.json) [IND-025](../config/indicators.json) [IND-026](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-029](../config/indicators.json) [IND-030](../config/indicators.json)
 
-## プレイヤー一覧スナップショット (2026-06-15時点)
+## プレイヤー一覧スナップショット (2026-06-17時点)
 
 | 企業 | 主力モデル/製品 | 資金規模 | BenchLM | 直近の動向 |
 |---|---|:-:|:-:|---|
-| Anthropic | Claude Fable 5, Mythos 5, Opus 4.8, Claude Code | ほぼ$1T評価額(B-3) | FrontierCode首位 | Kano再定式化実行・安全性差別化次元変化 [INFO-001](../Information/2026-06-15/collected-raw.md#INFO-001)・Mythos Preview全OS脆弱性発見 [INFO-054](../Information/2026-06-15/collected-raw.md#INFO-054)(A-3)・Canada PM AI依存警告 [INFO-046](../Information/2026-06-15/collected-raw.md#INFO-046)(B-3). 秋IPO予定. H-ANT-001 37% |
-| OpenAI | GPT-5.5, Codex, Skills Beta | $852B評価額(C-1)・年間収益$25B(A-2) | ARC-AGI 2首位(85%) | Oracle Cloud提携 [INFO-004](../Information/2026-06-15/collected-raw.md#INFO-004)(A-3)・13R累積ペナルティ継続. H-OAI-001 53% |
-| Google | Gemini 3.1 Pro, 3.5 Flash, Omni, DiffusionGemma | Cloud $4,600億バックログ・63%成長 [INFO-051](../Information/2026-06-14/collected-raw.md#INFO-051)(C-3) | LMArena Elo首位 | Gemini Omni動画生成 [INFO-006](../Information/2026-06-15/collected-raw.md#INFO-006)(A-3)・Interactions API [INFO-014](../Information/2026-06-15/collected-raw.md#INFO-014)(A-3). H-GOO-001 47% low |
+| Anthropic | Claude Fable 5, Mythos 5, Opus 4.8, Claude Code | ほぼ$1T評価額(B-3) | FrontierCode首位 | 全連邦政府使用停止 [INFO-043](../Information/2026-06-17/collected-raw.md#INFO-043)(A-2)・Pentagon提訴 [INFO-044](../Information/2026-06-17/collected-raw.md#INFO-044)(A-2)・法廷係争中 [INFO-053](../Information/2026-06-17/collected-raw.md#INFO-053)(A-2). 秋IPO予定. H-GOV-001(a) 55% medium |
+| OpenAI | GPT-5.5, Codex, Skills Beta | $852B評価額(C-1)・年間収益$25B(A-2) | ARC-AGI 2首位(85%) | Oracle Cloud提携・RSI Safety採用 [INFO-106](../Information/2026-06-17/collected-raw.md#INFO-106)(A-3)・13R累積ペナルティ継続. H-OAI-001 52% |
+| Google | Gemini 3.1 Pro, 3.5 Flash, Omni, DiffusionGemma | Cloud $4,600億バックログ・63%成長 [INFO-051](../Information/2026-06-14/collected-raw.md#INFO-051)(C-3) | LMArena Elo首位 | Gemini Omni動画生成・Interactions API・Pentagon 8社契約参加 [INFO-046](../Information/2026-06-17/collected-raw.md#INFO-046)(B-3). H-GOO-001 47% low |
 | SpaceXAI | Grok 4.3, Grok Build | $20B調達(B-3) | 4位 | (前回から変更なし・最終確認06-11). H-XAI-002 59% |
-| ByteDance | 豆包2.0, Coze 2.5, Seedance 2.1 | CAPEX 2000億元(B-2) | 非公開 | H-BTD-002 ±0%（Red取消・品質内訳A品質ゼロ）. H-BTD-002 45% |
+| ByteDance | 豆包2.0, Coze 2.5, Seedance 2.1 | CAPEX 2000億元(B-2) | 非公開 | 判別データ収集期限2026-06-21. H-BTD-002 45% |
 
 ---
 

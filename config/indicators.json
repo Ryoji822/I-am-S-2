@@ -1,8 +1,9 @@
 {
-  "version": "4.10",
-  "last_updated": "2026-06-16",
-  "description": "I&W（Indications and Warning）指標レジストリ. v4.10: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（72%導入/31%セキュア・Mythosサンドボックス脱出・Amazonセーフガード回避・サイバー兵器分類。攻撃面拡大基調継続・critical移行条件未到達）・IND-025 elevated維持（Fable 5視覚科学研究SOTA・Boston Dynamics×DeepMind・Gemini Robotics On-Device・ARC-AGI-3 <1%。量的向上継続。「真の理解」検証未解決）・IND-026 high維持（Klarna 700人再雇用・Nvidia「コンピュート>>人件費」・Gartner 15万エージェント予測・KPMG 64%採用方針変更。期待-実態ギャップの構造的パターン化）・IND-027 high維持（Sandbox OSS・1000+スキル・Partner Network$150M・Visa-OpenAI決済・Azure Foundry・Salesforce$3.6B。標準化と囲い込みの同時加速継続）・IND-028 high維持（Hassabis AGI 2030±1年・DeepMind AGI→ASI論文・RSI加速・ARC-AGI-3 <1%・LeCun SAI提唱。RSI具体化と客観的ベンチマーク限界の同時進行）・IND-029 high維持（Goldman $5.3T/2030・Forbes $242.6B・ByteDance 2000億元・Prometheus $41B・Anthropic $965B・Mistral €20B。資本流入加速・物理的制約ギャップ確定的）・IND-030 high維持（サイバー兵器分類・サンドボックス脱出・Amazon→WH停止・全連邦政府禁止・DPA脅迫。能力-リスク二面性極大化。critical移行条件見直し5R連続・条件改訂は次回COMPLETEラウンド保留）",
+  "version": "4.11",
+  "last_updated": "2026-06-17",
+  "description": "I&W（Indications and Warning）指標レジストリ. v4.11: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（72%導入/31%セキュア・Zero Trust 2026フレームワーク。ギャップ41pt持続・新規A-2品質脆弱性報告なし）・IND-025 elevated維持（Gemini Robotics On-Device・Boston Dynamics×DeepMind・Gemini Live API・ARC-AGI-2全モデルゼロ。量的向上継続）・IND-026 high維持（KPMG 64%採用方針変更+46pt急増・41%管理層削減・AIブーメラン・117万件削減。期待-実態ギャップ構造的パターン化）・IND-027 high維持（AAIF 170・1000+スキル・Agent Skills VS Code・Sandbox OSS・SkillsMP 160万+。標準化爆発的加速・围い込み同時進行）・IND-028 high維持（DeepMind AGI→ASI論文・Hassabis AGI 2030・RSI加速・ARC-AGI-2全フロンティアゼロ。RSI具体化と客観的ベンチマーク限界の同時進行）・IND-029 high維持（中国2兆元・Goldman $5.3T・DeepSeek $7.4B・Anthropic $965B・Prometheus $12B・Warren上院議員PE監視。資本流入加速・物理的制約ギャップ確定的）・IND-030 high維持（全連邦政府Anthropic使用停止・Pentagon提訴・DOD業務2/3移行・8社契約除外・DPA脅迫・Amazon因果チェーン・法廷否認。能力-リスク二面性極大化。critical移行条件確定6R連続保留解消・主条件: 技術的安全事故A-2報告・起動条件追加: 政府リスク認定事象A-2品質3件同一ラウンド累積・本ラウンド起動条件充足だがcritical移行見送り）",
   "structural_changes_log": [
+    "2026-06-17 v4.11: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。全7指標high/elevated維持。IND-013 critical移行条件（実被害A-2報告）未到達。IND-030 critical移行条件確定（6R連続保留解消・Red中間案部分採用）: 主条件=技術的安全事故A-2品質報告・起動条件（追加）=政府リスク認定事象A-2品質3件以上同一ラウンド累積でcritical移行検討開始。本ラウンドA-2品質3件（INFO-043連邦停止・INFO-044 Pentagon提訴・INFO-053法廷否認）で起動条件充足だが、政治的リスクの技術的発現は技術的安全事故と区別しcritical移行見送り。次回条件: 技術的安全事故A-2品質報告でcritical移行検討",
     "2026-06-16 v4.10: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。全7指標high/elevated維持。IND-013 critical移行条件（実被害A-2報告）未到達・IND-030 critical移行条件見直し5R連続（A-2品質前兆事象3件累積: サイバー兵器分類・Amazonセーフガード回避・連邦政府禁止・但し条件改訂はDEGRADED下保留・次回COMPLETEラウンドでRed交差検証後に決定）",
     "2026-06-14 v4.08: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。全7指標high/elevated維持。IND-013 critical移行条件（実被害A-2報告）未到達・IND-030 critical移行検討段階継続（Fable 5アクセス停止+NSPM-11+企業無効化権剥奪の3重蓄積だが実際の安全事故発生条件未到達）",
     "2026-05-14 v3.76: Arbiter統合判断（DEGRADED/BOTH-FAILED状態）。Arbiter独自批判分析。7指標更新（全件状態変更なし）。IND-013 high継続（Codex 4層防御 INFO-001 A-3は防御側強化。新規脆弱性なし。critical移行条件未到達）・IND-025 elevated継続（Grok STT/TTS+Imagine+Doubao全モダリティ+Seedance 2.0 #2。量的向上継続。「真の理解」検証未解決）・IND-026 elevated継続（エージェント成功率77.3% vs 74%ロールバック。期待-実態ギャップ顕在化。high移行条件検討段階）・IND-027 high継続（MCPデファクト化+AAIF 97M SDK+TikTok MCP+Grok BYO MCP+Agent Skills 1000+。標準化爆発的加速）・IND-028 elevated継続（Hassabis AGI 2030+ARC-AGI-3+Meta Llama 4不正。客観的ベンチマーク信頼性問題。主観-客観乖離継続）・IND-029 high継続（Q1 $2555億+Big 4 $7250億+Anthropic $300億+Stargate $5000億。資本流入加速。物理的制約ギャップ確定的）・IND-030 elevated継続（Pentagon SCR+DPA+Google秘密契約+Scale AI $5億+EU AI Act延期+US Safety Institute革新シフト。規制二方向同時深化。能力-リスク二面性加速）",
@@ -17,9 +18,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "72%導入/31%セキュア（INFO-008 C-3）・Mythosサンドボックス脱出（INFO-075 C-3）・Amazonセーフガード回避発見（INFO-079 A-2）・サイバー兵器分類（INFO-074 A-2）。攻撃面拡大基調継続",
-      "last_checked": "2026-06-16",
-      "rationale": "Arbiter v4.10: high維持。DEGRADED。72%導入/31%セキュア（INFO-008 C-3）・Mythosサンドボックス脱出（INFO-075 C-3）・Amazonセーフガード回避発見（INFO-079 A-2）・サイバー兵器分類（INFO-074 A-2）。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達"
+      "last_value": "72%導入/31%セキュア（INFO-002 C-3）・Zero Trust 2026フレームワーク（INFO-011 C-3）。ギャップ41pt持続。新規A-2品質脆弱性報告なし。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達",
+      "last_checked": "2026-06-17",
+      "rationale": "Arbiter v4.11: high維持。COMPLETE。72%導入/31%セキュア（INFO-002 C-3）・Zero Trust 2026フレームワーク（INFO-011 C-3）。ギャップ41pt持続。新規A-2品質脆弱性報告なし。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -28,9 +29,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Fable 5視覚科学研究SOTA（INFO-001 A-3）・Boston Dynamics×DeepMindロボット提携（INFO-010 B-3）・Gemini Robotics On-Device（INFO-011 B-3）・Seedance 2.0（INFO-054 C-3）。ARC-AGI-3 <1% vs 人間100%（INFO-047 B-2）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-06-16",
-      "rationale": "Arbiter v4.10: elevated維持。DEGRADED。Fable 5視覚科学研究SOTA（INFO-001 A-3）・Boston Dynamics×DeepMindロボット提携（INFO-010 B-3）・Gemini Robotics On-Device（INFO-011 B-3）・Seedance 2.0（INFO-054 C-3）。ARC-AGI-3 <1% vs 人間100%（INFO-047 B-2）で適応知能ギャップ確認。量的向上継続。「真の理解」検証未解決"
+      "last_value": "Gemini Robotics On-Device完全オフライン（INFO-016 B-3）・Boston Dynamics×DeepMind（INFO-017 B-3）・Gemini Live API（INFO-018 A-3）・Vals 21モデル評価（INFO-019 C-3）・Grok 4.1 Fast首位（INFO-020 C-3）・ARC-AGI-2全モデルゼロ（INFO-065 C-3）。量的向上継続。「真の理解」検証未解決",
+      "last_checked": "2026-06-17",
+      "rationale": "Arbiter v4.11: elevated維持。COMPLETE。Gemini Robotics On-Device完全オフライン（INFO-016 B-3）・Boston Dynamics×DeepMind（INFO-017 B-3）・Gemini Live API（INFO-018 A-3）・Vals 21モデル評価（INFO-019 C-3）・Grok 4.1 Fast首位（INFO-020 C-3）・ARC-AGI-2全モデルゼロ（INFO-065 C-3）。量的向上継続。「真の理解」検証未解決"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -39,9 +40,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Klarna 700人再雇用・AI高コスト（INFO-059 B-3）・Nvidia「コンピュート>>人件費」（INFO-078 A-2）・Gartner 2028年15万エージェント予測（INFO-014 B-3）・72%/31%ギャップ（INFO-008 C-3）・KPMG 64%採用方針変更（INFO-069 B-2）。期待-実態ギャップの構造的パターン化",
-      "last_checked": "2026-06-16",
-      "rationale": "Arbiter v4.10: high維持。DEGRADED。Klarna 700人再雇用・AI高コスト（INFO-059 B-3）・Nvidia「コンピュート>>人件費」（INFO-078 A-2）・Gartner 2028年15万エージェント予測（INFO-014 B-3）・72%/31%ギャップ（INFO-008 C-3）・KPMG 64%採用方針変更（INFO-069 B-2）。AI Boomerangで限界が定量確認。期待-実態ギャップの構造的パターン化"
+      "last_value": "KPMG 64%採用方針変更+46pt急増（INFO-081 B-2）・41%管理層削減（INFO-034 B-2）・SoftServe 4週間導入（INFO-035 B-3）・IDC ROI測定破綻（INFO-036 B-3）・AIブーメラン（INFO-055 C-3）・117万件削減（INFO-058 C-3）。期待-実態ギャップの構造的パターン化",
+      "last_checked": "2026-06-17",
+      "rationale": "Arbiter v4.11: high維持。COMPLETE。KPMG 64%採用方針変更+46pt急増（INFO-081 B-2）・41%管理層削減（INFO-034 B-2）・SoftServe 4週間導入（INFO-035 B-3）・IDC ROI測定破綻（INFO-036 B-3）・AIブーメラン（INFO-055 C-3）・117万件削減（INFO-058 C-3）。期待-実態ギャップの構造的パターン化確定"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -50,9 +51,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Sandbox Runtime OSS（INFO-051 A-3）・1000+オープンAgent Skills（INFO-012 C-3）・OpenAI Partner Network$150M（INFO-003 A-3）・Visa-OpenAI決済提携（INFO-006 B-3）・Azure Foundry統合（INFO-013 A-3）・Salesforce$3.6B買収（INFO-063 A-2）。標準化と囲い込みの同時加速継続。決済層のエージェント経済統合が新次元",
-      "last_checked": "2026-06-16",
-      "rationale": "Arbiter v4.10: high維持。DEGRADED。Sandbox Runtime OSS（INFO-051 A-3）・1000+オープンAgent Skills（INFO-012 C-3）・OpenAI Partner Network$150M（INFO-003 A-3）・Visa-OpenAI決済提携（INFO-006 B-3）・Azure Foundry統合（INFO-013 A-3）・Salesforce$3.6B買収（INFO-063 A-2）。標準化と囲い込みの同時加速継続。決済層のエージェント経済統合が新次元"
+      "last_value": "AAIF 170社到達（INFO-013 C-3）・COOCON加盟（INFO-014 B-3）・1000+クロスプラットフォームスキル（INFO-012 C-3）・Agent Skills VS Code（INFO-025 A-3）・Sandbox Runtime OSS（INFO-022 A-3）・SkillsMP 160万+（INFO-024 C-3）。標準化爆発的加速継続。围い込み同時進行（SpaceX-Cursor $60B INFO-102 A-2）も記録",
+      "last_checked": "2026-06-17",
+      "rationale": "Arbiter v4.11: high維持。COMPLETE。AAIF 170社到達（INFO-013 C-3）・COOCON加盟（INFO-014 B-3）・1000+クロスプラットフォームスキル（INFO-012 C-3）・Agent Skills VS Code（INFO-025 A-3）・Sandbox Runtime OSS（INFO-022 A-3）・SkillsMP 160万+（INFO-024 C-3）。標準化爆発的加速継続。围い込み同時進行（SpaceX-Cursor $60B INFO-102 A-2）も記録"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -61,9 +62,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Hassabis AGI 2030±1年（INFO-046 A-2）・DeepMind AGI→ASI 60ページ論文（INFO-072 A-2）・RSI加速・OpenAI採用（INFO-048 B-2）・ARC-AGI-3 <1% vs 人間100%（INFO-047 B-2）・LeCun SAI提唱（INFO-064 C-3）。RSI具体化と客観的ベンチマーク限界の同時進行。研究者間の根本的意見分裂継続",
-      "last_checked": "2026-06-16",
-      "rationale": "Arbiter v4.10: high維持。DEGRADED。Hassabis AGI 2030±1年（INFO-046 A-2）・DeepMind AGI→ASI 60ページ論文（INFO-072 A-2）・RSI加速・OpenAI採用（INFO-048 B-2）・ARC-AGI-3 <1% vs 人間100%（INFO-047 B-2）・LeCun SAI提唱（INFO-064 C-3）。RSI具体化と客観的ベンチマーク限界の同時進行。研究者間の根本的意見分裂（AGI vs SAI）継続"
+      "last_value": "DeepMind AGI→ASI 60ページ論文（INFO-091 A-2）・Hassabis AGI 2030±1年（INFO-094 A-2）・ARC-AGI-2全フロンティアゼロ（INFO-065 C-3）・ARC-AGI-3対話型（INFO-093 C-3）・RSI加速・OpenAI採用（INFO-106 A-3）・Anthropic RSI主張（INFO-092 C-3）。RSI具体化と客観的ベンチマーク限界の同時進行",
+      "last_checked": "2026-06-17",
+      "rationale": "Arbiter v4.11: high維持。COMPLETE。DeepMind AGI→ASI 60ページ論文（INFO-091 A-2）・Hassabis AGI 2030±1年（INFO-094 A-2）・ARC-AGI-2全フロンティアゼロ（INFO-065 C-3）・ARC-AGI-3対話型（INFO-093 C-3）・RSI加速・OpenAI採用（INFO-106 A-3）・Anthropic RSI主張（INFO-092 C-3）。RSI具体化と客観的ベンチマーク限界の同時進行。研究者間根本的意見分裂継続"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -72,9 +73,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Goldman $5.3T/2030（INFO-041 A-2）・Forbes AI 50 $242.6B/総AI投資80%（INFO-039 B-1）・ByteDance 2000億元Capex 25%増額（INFO-053 B-2）・Prometheus $41B（INFO-040 A-2）・Anthropic $965B評価額（INFO-077 A-2）・Mistral €20B（INFO-071 B-2）。資本流入加速・物理的制約ギャップ確定的",
-      "last_checked": "2026-06-16",
-      "rationale": "Arbiter v4.10: high維持。DEGRADED。Goldman $5.3T/2030（INFO-041 A-2）・Forbes AI 50 $242.6B/総AI投資80%（INFO-039 B-1）・ByteDance 2000億元Capex 25%増額（INFO-053 B-2）・Prometheus $41B（INFO-040 A-2）・Anthropic $965B評価額（INFO-077 A-2）・Mistral €20B（INFO-071 B-2）。資本流入加速・物理的制約ギャップ確定的"
+      "last_value": "中国2兆元/$295B計画（INFO-069 A-2）・Goldman $5.3T/2030（INFO-070 A-2）・DeepSeek $7.4B初外部資金（INFO-068 B-2）・Anthropic $965B（INFO-098 A-2）・Prometheus $12B（INFO-103 A-2）・Warren上院議員PE監視要請（INFO-071 B-2）。資本流入加速・物理的制約ギャップ確定的",
+      "last_checked": "2026-06-17",
+      "rationale": "Arbiter v4.11: high維持。COMPLETE。中国2兆元/$295B計画（INFO-069 A-2）・Goldman $5.3T/2030（INFO-070 A-2）・DeepSeek $7.4B初外部資金（INFO-068 B-2）・Anthropic $965B（INFO-098 A-2）・Prometheus $12B（INFO-103 A-2）・Warren上院議員PE監視要請（INFO-071 B-2）。資本流入加速・物理的制約ギャップ確定的"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -83,9 +84,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "サイバー兵器分類（INFO-074 A-2）・Mythosサンドボックス脱出（INFO-075 C-3）・Amazon→WH停止因果チェーン（INFO-079 A-2）・全連邦政府使用禁止（INFO-026 A-2）・DPA脅迫（INFO-022 D-3）。能力-リスク二面性の極大化。critical移行条件見直し5R連続",
-      "last_checked": "2026-06-16",
-      "rationale": "Arbiter v4.10: high維持。DEGRADED。サイバー兵器分類（INFO-074 A-2）・Mythosサンドボックス脱出（INFO-075 C-3）・Amazon→WH停止因果チェーン（INFO-079 A-2）・全連邦政府使用禁止（INFO-026 A-2）・DPA脅迫（INFO-022 D-3）。能力-リスク二面性の極大化。critical移行条件（実際の安全事故A-2品質報告）未到達。critical移行条件見直し5R連続。Blue Agent推奨新条件「A-2品質前兆事象3件以上同一ラウンド累積」を記録するが、DEGRADED下の構造的条件変更は不適切として保留。次回COMPLETEラウンドでRed交差検証後に決定"
+      "last_value": "全連邦政府Anthropic使用停止（INFO-043 A-2）・Pentagon提訴（INFO-044 A-2）・DOD業務2/3移行（INFO-045 B-2）・8社契約除外（INFO-046 B-3）・DPA脅迫（INFO-052 C-3）・Amazon→政府介入因果チェーン（INFO-104 B-2）・法廷否認（INFO-053 A-2）。能力-リスク二面性の極大化。critical移行条件確定（6R連続保留解消）",
+      "last_checked": "2026-06-17",
+      "rationale": "Arbiter v4.11: high維持。COMPLETE。全連邦政府Anthropic使用停止（INFO-043 A-2）・Pentagon提訴（INFO-044 A-2）・DOD業務2/3移行（INFO-045 B-2）・8社契約除外（INFO-046 B-3）・DPA脅迫（INFO-052 C-3）・Amazon→政府介入因果チェーン（INFO-104 B-2）・法廷否認（INFO-053 A-2）。能力-リスク二面性の極大化。critical移行条件確定（6R連続保留解消・Red中間案部分採用）: 主条件=技術的安全事故A-2品質報告（AI能力の暴走・悪用）・起動条件（追加）=政府リスク認定事象（SCR指定・DPA発動等）A-2品質3件以上同一ラウンド累積でcritical移行検討開始。本ラウンドA-2品質3件（INFO-043/044/053）で起動条件充足だが、政治的リスクの技術的発現は技術的安全事故と区別しcritical移行見送り。次回条件: 技術的安全事故A-2品質報告でcritical移行検討"
     }
   }
 }
