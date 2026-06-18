@@ -17632,8 +17632,120 @@
       "raw_path": "Information/raw/2026-06-17/firecrawl.jsonl",
       "run_date": "2026-06-17",
       "url": "https://arxiv.org/html/2606.14315v1"
+    },
+    "EVD-20260618-0001": {
+      "hash": "sha256:86737daec60ae0bd178e13810bb302d221bc90a9f1c03a2d73748f4d73335380",
+      "legacy_info_id": "INFO-001",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://aibusiness.com/ai-ethics/anthropic-defies-pentagon-sparking-an-ai-safety-debate"
+    },
+    "EVD-20260618-0002": {
+      "hash": "sha256:c4dbe5e0db198d33e98b4445e74a40b45be8fc4731532dcaa395030a9986e0b8",
+      "legacy_info_id": "INFO-002",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://insidedefense.com/share/227709"
+    },
+    "EVD-20260618-0003": {
+      "hash": "sha256:46f036a0ba160e0bfb9318e79ab8f2659888436b8c5717d09411d8c775118d97",
+      "legacy_info_id": "INFO-003",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://www.instagram.com/p/DZprgphFa6b/"
+    },
+    "EVD-20260618-0004": {
+      "hash": "sha256:36c310bc2b927bc8e58f7965e2c33222fbe38a1e4d925e68b9df120b69f2db7a",
+      "legacy_info_id": "INFO-004",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://www.wsj.com/tech/ai/openai-considers-drastic-price-cuts-anticipating-war-for-users-with-anthropic-9b8c178e"
+    },
+    "EVD-20260618-0005": {
+      "hash": "sha256:b06c173c7d0fa4521ac0e2108c5f3ec4e224fed386e99e470c0ceb883480cd78",
+      "legacy_info_id": "INFO-005",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://www.klover.ai/anthropic_ipo_strategic_partnerships_to_customer_concentration_indepth_analysis_2026/"
+    },
+    "EVD-20260618-0006": {
+      "hash": "sha256:171bad345c94fa02bb796cff5bb03e4a69a9059b516c4b1583c9b56a31e7cbec",
+      "legacy_info_id": "INFO-006",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://m.sohu.com/a/1036943805_116132"
+    },
+    "EVD-20260618-0007": {
+      "hash": "sha256:72ac3fd8c6888d44a29b5d8e3ca9d8b3af3e8dc4d1f1fb066cc54dff2f1c8d9e",
+      "legacy_info_id": "INFO-007",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://eu.36kr.com/en/p/3855204672574728"
+    },
+    "EVD-20260618-0008": {
+      "hash": "sha256:11eb22c511e9f3b97da72c9addc99ab5ca7a988982f5f455f9223b994c8a1fcb",
+      "legacy_info_id": "INFO-008",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://abcnews.com/Technology/wireStory/cybersecurity-executives-urge-trump-administration-ease-restrictions-anthropic-133901579"
+    },
+    "EVD-20260618-0009": {
+      "hash": "sha256:ed546db799ab7cf7f8e595f99aa441e936ad1283eb0c51cc54ccf74280a6fa1d",
+      "legacy_info_id": "INFO-009",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://www.instagram.com/reel/DZi_xKqjttD/"
+    },
+    "EVD-20260618-0010": {
+      "hash": "sha256:b873c6cecfbe98d728d443aeaf4659402afffd1f1d54064a51b0fa00b2279635",
+      "legacy_info_id": "INFO-010",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://www.anthropic.com/news/fable-mythos-access"
+    },
+    "EVD-20260618-0011": {
+      "hash": "sha256:d684ba0e27231437118867ed6cd9b57dd6175effd5f65bb971f6e7251677ee21",
+      "legacy_info_id": "INFO-011",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/"
+    },
+    "EVD-20260618-0012": {
+      "hash": "sha256:3aadc4d67ef42620185a2444c8302f59dd3659857aa6f589694304908fcf4e0e",
+      "legacy_info_id": "INFO-012",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://x.ai/news/grok-amazon-bedrock"
+    },
+    "EVD-20260618-0013": {
+      "hash": "sha256:818287b682bde09998804e6b8082eb19ea732779b2ea42fe19048a648e7ebdbe",
+      "legacy_info_id": "INFO-013",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://thehill.com/policy/technology/5928204-pentagon-musk-grok-chatbot-iran-strikes/"
+    },
+    "EVD-20260618-0014": {
+      "hash": "sha256:c0ef22800eb1fda3156a79efab13b0a8f344336e6e670943a893447bc15e9ccd",
+      "legacy_info_id": "INFO-014",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes"
+    },
+    "EVD-20260618-0015": {
+      "hash": "sha256:b8c871b09d6007bad3c59f76bdd5a8c075da8692bfbee84e4c842f1ad58e96f6",
+      "legacy_info_id": "INFO-015",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes"
+    },
+    "EVD-20260618-0016": {
+      "hash": "sha256:ae19b01201a881a48ab1a5fce0345ad41346759d873a2e7ac44e543acc69c58a",
+      "legacy_info_id": "INFO-016",
+      "raw_path": "Information/raw/2026-06-18/firecrawl.jsonl",
+      "run_date": "2026-06-18",
+      "url": "https://blog.google/products-and-platforms/devices/pixel/june-2026-pixel-drop/"
     }
   },
-  "last_updated": "2026-06-17T09:36:20+09:00",
+  "last_updated": "2026-06-18T09:40:05+09:00",
   "schema_version": "1.0"
 }

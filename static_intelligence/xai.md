@@ -1,116 +1,97 @@
 # xAI → SpaceXAI
 
-> 最終判断更新: 2026-06-11
+> 最終判断更新: 2026-06-18
 > 全体確信度: 低
-> 情報非対称性: SpaceXAIはSpaceXの内部組織であり、独立企業としての財務・戦略・ロードマップ情報が構造的に入手不可。Colossus貸与条件も非公開
-> 主参照: hypotheses.json#H-XAI-001/002/003/004, indicators.json#IND-013/025/026/027/028/029/030
+> 情報非対称性: SpaceXAIはSpaceXの内部組織であり、独立企業としての財務・戦略・ロードマップ情報が構造的に入手不可。Colossus貸与条件・Cursor統合の詳細・Grok Gov Modelのガードレール内容も非公開
+> 主参照: [H-XAI-001](../config/hypotheses.json) [H-XAI-002](../config/hypotheses.json) [H-XAI-003](../config/hypotheses.json) [H-XAI-004](../config/hypotheses.json) [IND-013](../config/indicators.json) [IND-025](../config/indicators.json) [IND-026](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-029](../config/indicators.json) [IND-030](../config/indicators.json)
 
 ## 0. 一文要約
 
-我々はxAIを、**SpaceXAIとしてGrok製品群を画像生成・音楽・音声エージェント・コーディングに拡大しつつ、エンタープライズ市場で構造的苦戦に直面しH-XAI-002が59%でmedium→low移行審査を控える組織**と読んでいる。最大の根拠は、Gopuff Go agent [INFO-013](../Information/2026-06-11/collected-raw.md#INFO-013), Grok Imagine 1.5 Preview [INFO-014](../Information/2026-06-11/collected-raw.md#INFO-014), Composer 2.5 [INFO-016](../Information/2026-06-11/collected-raw.md#INFO-016), Grok Build 0.1 on API [INFO-017](../Information/2026-06-11/collected-raw.md#INFO-017) が示す製品幅の急拡大と、それにもかかわらずReuters報道によるxAI開発者ログ(DL)が1月20Mから4月8.3Mへ60%減少した定量証拠 [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) が未解決であることの乖離だ。Arbiter v4.05(2026-06-11)はH-XAI-002を59%(±0%)で据え置き、新規I追加なしとしたが、59%以下が継続すれば次ラウンドでmedium→low移行審査が触发される。H-XAI-004も55%(±0%)で据え置き、C蓄積は安定するが構造的変化なし。API価格コモディティ化はLLM API価格$30→$1-5/MTokへの95%以上下落 [INFO-038](../Information/2026-05-28/collected-raw.md#INFO-038) とGitHub Copilot従量制移行 [INFO-039](../Information/2026-06-07/collected-raw.md#INFO-039) で継続加速中。SCN-004(30%)が初めてトップシナリオに浮上し、コモディティ化圧力がxAIの戦略的前提を侵食している。Grok VoiceのVapi統合 [INFO-015](../Information/2026-06-11/collected-raw.md#INFO-015) は音声エージェント分野への外部プラットフォーム展開を示すが、H-XAI-002/H-XAI-004へのC評価には至っていない。もしH-XAI-002が次ラウンドで59%以下に低下する、DL減少傾向が3ヶ月以上継続する、Colossus貸与がAnthropic以外にも拡大する、またはGrok API提供が終了または大幅縮小する、のいずれかが観測されたら、判断を再構築する。
+SpaceXAIを、コーディングエージェントと国家安保基盤の二軸に再編された組織と読んでいる。SpaceXがCursor（Anysphere）を$60B全株式で買収し [INFO-054](../Information/2026-06-18/collected-raw.md#INFO-054)、ほぼ同時期にGrok Gov Modelがイラン作戦「Operation Epic Fury」で96時間・2,000目標・2,000発の弾薬展開を可能にしたことが宣誓供述書で文書化された [INFO-013](../Information/2026-06-18/collected-raw.md#INFO-013)。Colossus 2は「国家安全保障任務に不可欠」と位置付けられた。これが現在地の最大の根拠だ。
+
+ただし仮説の確度は今回動いていない。[H-XAI-002](../config/hypotheses.json)（価格競争力でシェア獲得）は59%のまま、[H-XAI-004](../config/hypotheses.json)（汎用基盤でエンタープライズ獲得）も55%のままだ。構造が動いたのに確度が動かない理由は、買収したCursor自身がシェアを41%から26%に落とし [INFO-061](../Information/2026-06-18/collected-raw.md#INFO-061)、Anthropicがコーディングカテゴリの半数を掌握しているからだ。Grok 4.3がAmazon Bedrockで一般提供されフロンティア最低のハルシネーション率を達成した [INFO-012](../Information/2026-06-18/collected-raw.md#INFO-012) のも、エンタープライズ採用への直結はまだ見えない。もしCursor統合後にGrok系コーディングツールの採用が定量で回復する、Gillibrand法案（人間監視なしのLLM使用禁止）が可決されて軍事利用の枠組みが変わる、DL減少が3ヶ月以上続く、のいずれかが観測されたら判断を見直す。
 
 ## 1. コア判断
 
-SpaceXAIの製品幅が急速に拡大している。Gopuff Go agentはGrokのテキスト・音声・画像モデルを統合したショッピングアシスタントで、13年分の需要インテリジェンスに基づくパーソナライズドカート構築を実現した [INFO-013](../Information/2026-06-11/collected-raw.md#INFO-013)。Grok Imagine 1.5 Previewは画像生成品質の向上を示し [INFO-014](../Information/2026-06-11/collected-raw.md#INFO-014)、IND-025の更新材料となる。Composer 2.5は音楽生成のアップグレード [INFO-016](../Information/2026-06-11/collected-raw.md#INFO-016)、Grok Build 0.1 on APIは$1/MTokでコーディングエージェントのAPIアクセスを提供する [INFO-017](../Information/2026-06-11/collected-raw.md#INFO-017)。Grok VoiceのVapi統合 [INFO-015](../Information/2026-06-11/collected-raw.md#INFO-015) は音声AIプラットフォームへの外部展開を示す。これらはテキスト、画像、音声、音楽、コーディング、ショッピングにまたがる製品幅の拡大を示す。
+確信度は低のまま置く。観測根拠は増えたが、SpaceXAIの内部戦略とCursor統合の結果がまだ外部から読めないからだ。読み方は、組織が二つの軸に沿って再編されたということだ。一つはコーディングエージェントの軸で、SpaceXがCursorを$60B全株式で買収し、Q3 2026中のクローズを予定している [INFO-054](../Information/2026-06-18/collected-raw.md#INFO-054)。2026年4月の時点で両社の間にコンピュート/AI協力パートナーシップが結ばれており、買収権も事前取得済みだった [INFO-061](../Information/2026-06-18/collected-raw.md#INFO-061)。もう一つは国家安保基盤の軸で、Grok Gov Modelがイラン作戦で目標選定から弾薬展開までのワークフローを担い [INFO-013](../Information/2026-06-18/collected-raw.md#INFO-013)、Colossus 2（Memphis）が「国家安全保障任務に不可欠」とされた。Pentagonは分類ネットワーク上のAI業務の3分の2以上をAnthropic以外に移し、xAIをOpenAI・Google・NVIDIA・AWSと並ぶパートナーに加えた [INFO-002](../Information/2026-06-18/collected-raw.md#INFO-002)。
 
-しかしエンタープライズ市場での苦戦が構造化したままである。Reuters報道によるxAI開発者ログ(DL)の1月20Mから4月8.3Mへの60%減少 [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) は未解決であり、DL回復データは不在のままだ。H-XAI-002(価格競争力でシェア獲得)はArbiter v4.05で59%(±0%)と据え置かれたが、新規I追加なしの条件下での据え置きであり、59%以下が継続すれば次ラウンドでmedium→low移行審査が触发される。製品幅の拡大はC蓄積に寄与するが、製品発表のみの評価はメソドロジー(5)で制約される。
+二つの軸が強化されても、エンタープライズ市場での採用という核心課題は解消していない。買収対象のCursor自身、Ramp支出データで市場シェアを2025年6月の41%から2026年5月の約26%に落とし、コーディングカテゴリの半数をAnthropicに奪われている [INFO-061](../Information/2026-06-18/collected-raw.md#INFO-061)。つまり$60Bで買った資産が、買収時点ですでに下落坂にある。[H-XAI-002](../config/hypotheses.json) は59%で据え置かれ、開発者ログ（DL）が1月の20Mから4月の8.3Mへ60%減少した問題 [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) も未解決のままだ。59%以下が続けば次ラウンドでmedium→lowへの移行審査に進む。
 
-価格環境の悪化は継続している。LLM API価格が$30→$1-5/MTokへ95%以上下落し [INFO-038](../Information/2026-05-28/collected-raw.md#INFO-038)、GitHub Copilotが定額から従量制へ移行した [INFO-039](../Information/2026-06-07/collected-raw.md#INFO-039)。DeepSeek V4 ProがGPT-5.5 Proを精度で上回り75%値下げで同等以上の精度を提供する状況 [INFO-051](../Information/2026-06-11/collected-raw.md#INFO-051) は、コモディティ化圧力が更に強まっている。この構造的圧力がSCN-004を30%に押し上げ、初めてトップシナリオとした。
-
-H-XAI-004(汎用AI基盤としてエンタープライズ獲得)は55%(±0%)で据え置き。C蓄積は安定するが、エンタープライズ採用との乖離が解消されておらず、構造的変化は観測されない。$20B Series E [INFO-042](../Information/2026-05-28/collected-raw.md#INFO-042) はColossus拡充の資基盤を維持し、Grok 4.1のマルチモーダルベンチマーク97.8% [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016) は性能面のCを蓄積するが、性能とエンタープライズ採用の乖離がH-XAI-004の構造的課題として残る。Colossus 1(220K GPU)のAnthropic貸与 [INFO-003](../Information/2026-05-15/collected-raw.md#INFO-003) も継続し、SpaceXAIの「モデル開発兼インフラ提供」の二面性は維持されている。H-XAI-001(Xデータ活用差別化)とH-XAI-003(宇宙・製造業特化AI)は引き続き棄却済み(35%)。
+商用面ではGrok 4.3がAmazon Bedrockで一般提供され、Artificial Analysis Omniscienceでフロンティア最低のハルシネーション率、Tau2 TelecomとVals AI Case Law/Corporate Financeで首位を取った [INFO-012](../Information/2026-06-18/collected-raw.md#INFO-012)。入力$1.25/M・出力$2.50/Mトークン、1Mコンテキストで、コストパフォーマンスは他社フロンティア比2〜10倍とされる。性能面の支持証拠は蓄積するが、性能とエンタープライズ採用の乖離は [H-XAI-004](../config/hypotheses.json)（55%）の構造課題として残る。一方で軍事利用の制度化は新しいリスク次元だ。Grok Gov Modelの実戦投入は「能力とリスクの同時進行」 [IND-030](../config/indicators.json) を具体化した事例で、Gillibrand上院議員が人間監視なしのLLM使用禁止法案を提出している [INFO-013](../Information/2026-06-18/collected-raw.md#INFO-013)。[H-XAI-001](../config/hypotheses.json)（Xデータ差別化）と [H-XAI-003](../config/hypotheses.json)（宇宙・製造業特化）は引き続き棄却（35%）で、新たな支持証拠は観測されていない。
 
 ## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | Gopuff Go agent: Grok text/audio/image統合ショッピングアシスタント。13年分の需要データ活用 | 製品幅拡大の直接証拠。コーディング以外のエージェント適用領域拡大。H-XAI-004のC候補 | A-3 | [INFO-013](../Information/2026-06-11/collected-raw.md#INFO-013) |
-| 高 | H-XAI-002 59%据え置き: 新規I追加なし。59%以下継続で次ラウンドmedium→low移行審査 | 価格競争力仮説の信頼度が低下傾向。DL回復データ不在が根拠 | A-3 | [Arbiter v4.05](../state/arbiter-2026-06-11.md) |
-| 高 | DL 60%減少: xAI開発者ログ1月20M→4月8.3M。未解決 | H-XAI-002への定量I。エンタープライズ苦戦の直接証拠として継続蓄積 | B-2 | [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) |
-| 高 | LLM API価格$30→$1-5/MTok: 95%+下落継続。DeepSeek V4 Proが75%値下げで同等精度 | 価格コモディティ化の加速。H-XAI-002の「低価格」独自性の更なる希薄化。SCN-004支援 | C-3 | [INFO-038](../Information/2026-05-28/collected-raw.md#INFO-038) [INFO-051](../Information/2026-06-11/collected-raw.md#INFO-051) |
-| 高 | Grok Build 0.1 on API: $1/MTokでコーディングエージェントAPI提供 | 低価格API戦略の継続。IND-027標準化潮流と整合 | A-3 | [INFO-017](../Information/2026-06-11/collected-raw.md#INFO-017) |
-| 高 | Grok Imagine 1.5 Preview: 画像生成品質向上 | マルチモーダル信頼性指標(IND-025)更新材料。製品幅のC蓄積 | A-3 | [INFO-014](../Information/2026-06-11/collected-raw.md#INFO-014) |
-| 高 | SCN-004 30%でトップシナリオ浮上: API価格コモディティ化でxAI戦略的前提侵食 | 価格競争力仮説が市場構造変化で損なわれる方向への決定的なシフト | A-3 | [Arbiter v4.05](../state/arbiter-2026-06-11.md) |
-| 高 | Colossus 1(220K GPU)全容量をAnthropicに貸与(継続) | SpaceXAIが「AIインフラ提供者」側面を持つ。競合に計算資源を貸す構造は不変 | A-3 | [INFO-003](../Information/2026-05-15/collected-raw.md#INFO-003) |
-| 中 | Grok Voice Vapi統合: 音声AIエージェントの外部プラットフォーム展開 | 音声エージェント分野への進出。H-XAI-004のC候補だが単独では不十分 | A-3 | [INFO-015](../Information/2026-06-11/collected-raw.md#INFO-015) |
-| 中 | Composer 2.5: 音楽生成アップグレード | 製品幅拡大の補強材料。IND-026更新の文脈 | A-3 | [INFO-016](../Information/2026-06-11/collected-raw.md#INFO-016) |
-| 中 | GitHub Copilot定額→従量制移行 | API価格コモディティ化がエージェント製品層に波及。SCN-004方向への圧力 | A-2 | [INFO-039](../Information/2026-06-07/collected-raw.md#INFO-039) |
+| 高 | SpaceXがCursorを$60B全株式で買収、Q3 2026クローズ予定。4月から協力関係 | コーディングエージェント軸への再編。[H-XAI-004](../config/hypotheses.json) の支持材料だが統合結果は未確定 | A-2 | [INFO-054](../Information/2026-06-18/collected-raw.md#INFO-054) |
+| 高 | Grok Gov Modelがイラン作戦で96時間・2,000目標・2,000発弾薬展開を可能にした（Stanley宣誓供述書） | 国家安保基盤軸の確立。能力-リスク二面性 [IND-030](../config/indicators.json) の具体化。新しいリスク次元 | B-2 | [INFO-013](../Information/2026-06-18/collected-raw.md#INFO-013) |
+| 高 | Cursor市場シェア41%(2025-06)→26%(2026-05)、Anthropicがカテゴリ半数掌握（Ramp支出データ） | 買収対象が下落坂。[H-XAI-004](../config/hypotheses.json) の矛盾材料。エンタープライズ獲得に直結しない理由 | A-2 | [INFO-061](../Information/2026-06-18/collected-raw.md#INFO-061) |
+| 高 | Colossus 2（Memphis）を「国家安全保障任務に不可欠」と位置付け | インフラ基盤の国家安保化。[IND-029](../config/indicators.json) と [IND-030](../config/indicators.json) の交点 | B-2 | [INFO-013](../Information/2026-06-18/collected-raw.md#INFO-013) |
+| 高 | Grok 4.3 GA on Bedrock。Omniscience最低ハルシネーション・Tau2/Vals首位。入力$1.25M/出力$2.50Mトークン | 商用性能の支持証拠。採用への直結は未検証。[IND-025](../config/indicators.json) 更新材料 | A-3 | [INFO-012](../Information/2026-06-18/collected-raw.md#INFO-012) |
+| 中 | Pentagon分類AI業務の3分の2以上を非Anthropicに移行、xAIがパートナーシップに加入 | 政府調達でのxAI位置づけ強化。囲い込み方向 [SCN-001](../config/scenarios.json) の材料 | B-2 | [INFO-002](../Information/2026-06-18/collected-raw.md#INFO-002) |
+| 中 | DL 60%減（1月20M→4月8.3M）未解決。[H-XAI-002](../config/hypotheses.json) 59%据え置き | 価格競争力仮説の停滞。59%以下でmedium→low審査触发 | B-2 | [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) |
 
 ## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
-| H-XAI-002が次ラウンドで59%以下に低下する | medium→low移行が確定し、価格競争力仮説の根本的見直しが必要となる | 次ラウンド | [IND-013](../config/indicators.json) |
-| DL減少傾向が3ヶ月以上継続する | H-XAI-002の59%根拠が崩れ、価格競争力仮説の根本的見直しが必要となる | 90日 | [IND-013](../config/indicators.json) |
-| Colossus貸与がAnthropic以外にも拡大し、SpaceXAIが「AIインフラプロバイダー」として定着する | 現在の「モデル開発兼インフラ提供」の二面性が「インフラ提供中心」に移行する | 90日 | [IND-029](../config/indicators.json) |
-| GrokのAPI提供が終了または大幅に縮小される | SpaceXAIが外部市場から撤退し内部利用に特化する場合、H-XAI-002とH-XAI-004が同時に崩れる | 90日 | [IND-013](../config/indicators.json) |
-| Grok Buildのユーザー定着率が低迷し、Codex/Claude Code比で測定可能な差が開く | H-XAI-004の55%根拠が崩れ、コーディングエージェント市場での競争力に疑問 | 90日 | [IND-027](../config/indicators.json) |
-| API価格コモディティ化が更に進行し、Grok独自の価格優位が消滅する | H-XAI-002の根拠が「価格競争」から「コモディティ化での生き残り」に再定義される | 60日 | [IND-013](../config/indicators.json) |
-| SpaceXAIが宇宙・製造業特化AI機能を具体的に発表する | H-XAI-003の棄却が見直される | 180日 | [IND-013](../config/indicators.json) |
+| Cursor統合後にGrok系コーディングツールの採用（DL/API呼び出し量）が定量で回復する | [H-XAI-004](../config/hypotheses.json) のエンタープライズ獲得読みが上方修正される。逆に90日で回復しなければ読みは弱まる | 90日 | [IND-027](../config/indicators.json) |
+| Gillibrand法案（人間監視なしLLM使用禁止）が可決・成立する | 軍事利用の制度化読みが変わり、国家安保基盤軸の前提が変わる | 180日 | [IND-030](../config/indicators.json) |
+| DL減少傾向が3ヶ月以上継続する | [H-XAI-002](../config/hypotheses.json) の59%根拠が崩れ、medium→low移行が確定する | 90日 | [IND-013](../config/indicators.json) |
+| Grok API提供が終了・大幅縮小、またはCursor買収がクローズせず解約金（$1.5B+$8.5Bコンピュート）が触发する | 外部市場撤退（前者）または再編読みの逆転（後者）で [H-XAI-002](../config/hypotheses.json) と [H-XAI-004](../config/hypotheses.json) が同時に揺らぐ | 90日 | [IND-013](../config/indicators.json) [IND-027](../config/indicators.json) |
+| 技術的安全事故（Agent暴走・誤目標）が軍事領域でA-2品質で報告される | 能力-リスク二面性 [IND-030](../config/indicators.json) がcriticalに移行し、SpaceXAIのリスク読みが全面改訂される | 180日 | [IND-030](../config/indicators.json) |
 
 ## 4. 進行中の仮説
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:-:|---|---|---|
-| [H-XAI-002](../config/hypotheses.json) | 価格競争力でシェアを獲得する | 59% | Grok Build低価格はgenuine CだがDL数回復データ不在。API価格95%+下落の構造的I蓄積中。DeepSeek V4 Proが75%値下げで同等精度。59%以下継続で次ラウンドmedium→low移行審査。DL回復観測までは上昇根拠なし | [INFO-017](../Information/2026-06-11/collected-raw.md#INFO-017) $1/MTok API [INFO-042](../Information/2026-05-28/collected-raw.md#INFO-042) $20B資基盤 | [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) DL 60%減 [INFO-038](../Information/2026-05-28/collected-raw.md#INFO-038) API価格下落 [INFO-051](../Information/2026-06-11/collected-raw.md#INFO-051) DeepSeek V4 Pro |
-| [H-XAI-004](../config/hypotheses.json) | 汎用AI基盤としてエンタープライズ市場を獲得する | 55% | Gopuff Go・Grok Imagine 1.5・Composer 2.5・Vapi統合で製品幅拡大のC蓄積。しかしDL 60%減のエンタープライズ苦戦Iが直撃。C蓄積は安定するが構造的変化なし | [INFO-013](../Information/2026-06-11/collected-raw.md#INFO-013) [INFO-014](../Information/2026-06-11/collected-raw.md#INFO-014) [INFO-015](../Information/2026-06-11/collected-raw.md#INFO-015) [INFO-016](../Information/2026-06-11/collected-raw.md#INFO-016) [INFO-048](../Information/2026-05-22/collected-raw.md#INFO-048) | [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) エンタープライズ苦戦 |
-| [H-XAI-001](../config/hypotheses.json) | (棄却) Xデータ活用でリアルタイム特化を差別化する | 35% | 37R+Xデータ活用証拠不在。xAI→SpaceXAI統合で観測の意義自体が低下 | (なし) | 37R+証拠不在 |
-| [H-XAI-003](../config/hypotheses.json) | (棄却) SpaceX統合で宇宙・製造業特化AIを展開する | 35% | 38R+直接的特化AI製品証拠不在 | (なし) | 38R+特化製品証拠不在 |
+| [H-XAI-002](../config/hypotheses.json) | 価格競争力でシェアを獲得する | 59% | Grok Build $1/MTok・Grok 4.3入力$1.25M/MTokは低価格の直接証拠。しかしDL 60%減が未解決で、API価格95%+下落が「低価格」の独自性を薄めている。59%以下が続けば次ラウンドでmedium→low審査。Cursor買収は価格ではなく統合の軸 | [INFO-012](../Information/2026-06-18/collected-raw.md#INFO-012) Grok 4.3 GA [INFO-017](../Information/2026-06-11/collected-raw.md#INFO-017) $1/MTok API | [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) DL 60%減 [INFO-061](../Information/2026-06-18/collected-raw.md#INFO-061) Cursor 26%下落 |
+| [H-XAI-004](../config/hypotheses.json) | 汎用AI基盤としてエンタープライズ市場を獲得する | 55% | Cursor買収でコーディング基盤の支持証拠が加わった。だが買収対象がシェア26%に下落中で統合効果は未検証。DL 60%減の矛盾証拠が直撃する。支持は増えたが採用への転換が見えない | [INFO-054](../Information/2026-06-18/collected-raw.md#INFO-054) Cursor $60B [INFO-012](../Information/2026-06-18/collected-raw.md#INFO-012) Grok 4.3首位 [INFO-013](../Information/2026-06-11/collected-raw.md#INFO-013) Gopuff Go | [INFO-061](../Information/2026-06-18/collected-raw.md#INFO-061) Cursor下落 [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) DL減 |
+| [H-XAI-001](../config/hypotheses.json) | （棄却）Xデータ活用でリアルタイム特化を差別化する | 35% | 37R以上にわたりXデータ活用の直接証拠不在。xAI→SpaceXAI統合で観測の意義自体が低下。Cursor買収・軍事展開でもXデータ利用は観測されず | （なし） | 37R以上の証拠不在 |
+| [H-XAI-003](../config/hypotheses.json) | （棄却）SpaceX統合で宇宙・製造業特化AIを展開する | 35% | 38R以上にわたり直接的特化AI製品証拠不在。Colossusは汎用インフラ扱いで宇宙特化ではない | （なし） | 38R以上の特化製品証拠不在 |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-013](../config/indicators.json) | Grok API採用・DL動向 | DL回復で elevated | DL 60%減未解決 [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058)。H-XAI-002 59%でmedium→low移行審査注視 | 2026-06-11 |
-| [IND-025](../config/indicators.json) | マルチモーダル信頼性 | elevated/stable | Grok Imagine 1.5 Preview [INFO-014](../Information/2026-06-11/collected-raw.md#INFO-014)。量的向上継続。「真の理解」検証未解決 | 2026-06-11 |
-| [IND-026](../config/indicators.json) | 製品幅拡張度 | high/rising | Gopuff Go agent [INFO-013](../Information/2026-06-11/collected-raw.md#INFO-013), Composer 2.5 [INFO-016](../Information/2026-06-11/collected-raw.md#INFO-016), Vapi統合 [INFO-015](../Information/2026-06-11/collected-raw.md#INFO-015)。テキスト・画像・音声・音楽・コーディング・ショッピングに拡大 | 2026-06-11 |
-| [IND-027](../config/indicators.json) | Grokエージェントスタック採用状況 | high/rising | Grok Build 0.1 on API($1/MTok) [INFO-017](../Information/2026-06-11/collected-raw.md#INFO-017)。ACP対応。DL 60%減で採用動向注意 | 2026-06-11 |
-| [IND-028](../config/indicators.json) | AGI到達度指標 | high/rising | RSI「定義された実験ではほぼ超人」 [INFO-046](../Information/2026-06-07/collected-raw.md#INFO-046)。Hassabis AGI ~2030 [INFO-047](../Information/2026-06-07/collected-raw.md#INFO-047)。条件付high移行承認済み | 2026-06-11 |
-| [IND-029](../config/indicators.json) | AIインフラ制約 | high/rising | xAI $20B Series E(Q1 2026最大) [INFO-042](../Information/2026-05-28/collected-raw.md#INFO-042)。Colossus 220K GPU Anthropic貸与 [INFO-003](../Information/2026-05-15/collected-raw.md#INFO-003) | 2026-06-11 |
-| [IND-030](../config/indicators.json) | AI能力とリスクの二面性 | high/rising | Pentagon Task Force [INFO-049](../Information/2026-05-22/collected-raw.md#INFO-049)。SCR指定 [INFO-018](../Information/2026-06-07/collected-raw.md#INFO-018)。能力向上とリスク増大の同時進行が新段階 | 2026-06-11 |
+| [IND-013](../config/indicators.json) | セキュリティ侵害頻度・Grok API/DL動向 | 実被害A-2報告でcritical | high/rising。Grok 4.3 GA・Grok Gov Model稼働。新規A-2脆弱性報告なし。DL 60%減は未解決 | 2026-06-18 |
+| [IND-025](../config/indicators.json) | マルチモーダル信頼性 | 「真の理解」の検証 | elevated/stable。Grok 4.3最低ハルシネーション率（Omniscience #1）。量的向上継続 | 2026-06-18 |
+| [IND-026](../config/indicators.json) | エージェント本番到達率 | 3ソース以上で完了率<10% | high/rising。ALE実世界タスク2-3%。Cursor統合後の本番到達は未計測 | 2026-06-18 |
+| [IND-027](../config/indicators.json) | エコシステム標準化・Grokスタック採用 | 囲い込み反転 | high/rising。Grok 4.3 Bedrock GA・1000+スキルでCursor対応。SpaceX-Cursor統合は囲い込み方向 | 2026-06-18 |
+| [IND-028](../config/indicators.json) | AGI到達度 | 主観-客観乖離 | high/rising。研究者間で意見分裂継続。xAI固有のAGI宣言は今ラウンド不在 | 2026-06-18 |
+| [IND-029](../config/indicators.json) | AIインフラ制約 | 物理的制約の顕在化 | high/rising。Colossus 2「国家安保不可欠」。NVIDIA Rubin供給逼迫。資本流入加速 | 2026-06-18 |
+| [IND-030](../config/indicators.json) | 能力-リスク二面性 | 技術的安全事故A-2でcritical | high/rising。Grok軍事展開96h/2,000目標で二面性極大化。critical移行見送り（設計通りの軍事利用≠技術的安全事故）。Gillibrand法案進捗が关键 | 2026-06-18 |
 
 ## 6. 変化履歴
 
 | 日付 | 変更 | きっかけ |
 |:-:|---|---|
-| 2026-06-11 | Arbiter v4.05反映。H-XAI-002 59%(±0%)据え置き、次ラウンドmedium→low移行審査注記。H-XAI-004 55%(±0%)据え置き。Gopuff Go(INFO-013)・Grok Imagine 1.5(INFO-014)・Vapi統合(INFO-015)・Composer 2.5(INFO-016)・Grok Build 0.1 API(INFO-017)で製品幅拡大反映。SCN-004 30%でトップシナリオ浮上。IND-013/026追加、IND-025にImagine 1.5反映 | [Arbiter v4.05](../state/arbiter-2026-06-11.md) |
-| 2026-06-07 | Arbiter v4.01反映。全xAI仮説±0%据え置き。GitHub Copilot従量制移行でコモディティ化圧力追加。SCN-004 27%に上昇。IND-028条件付high移行。SCR指定がxAI政府ポジショニングへの影響監視追加 | [Arbiter v4.01](../state/arbiter-2026-06-07.md) |
-| 2026-06-01 | Arbiter v3.95反映。全xAI仮説±0%据え置き。SCN-004(26%)>SCN-002(24%)順位交代 | [Arbiter v3.95](../state/arbiter-2026-06-01.md) |
-| 2026-05-28 | Grok Build正式リリース・DL 60%減少・$20B Series E確認・API価格95%+下落・Grok 4.1 97.8%反映。H-XAI-002 63→61%(-2%)・H-XAI-004 56→55%(-1%) | [INFO-006](../Information/2026-05-28/collected-raw.md#INFO-006) [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) |
-| 2026-05-22 | Grok Build 0.1ベータ・Pentagon Task Force参加・$20B調達・API価格-67%反映 | [INFO-010](../Information/2026-05-22/collected-raw.md#INFO-010) [INFO-048](../Information/2026-05-22/collected-raw.md#INFO-048) |
-| 2026-05-15 | Grok Build CLI新規参入・OpenClaw連携で全面書き直し | [INFO-004](../Information/2026-05-15/collected-raw.md#INFO-004) [INFO-010](../Information/2026-05-15/collected-raw.md#INFO-010) |
-| 2026-05-14 | H-XAI-001/003正式棄却 + Grok 5製品連続リリース + Colossus Anthropic提携反映 | 2026-05-14複数INFO |
-| 2026-05-09 | xAI→SpaceXAI統合・Colossus Anthropic貸与・Grok 4.3リリース反映 | 2026-05-09複数INFO |
+| 2026-06-18 | 全面書き直し。SpaceX-Cursor $60B買収（M&A）・Grok 4.3 GA・Grok Gov Model軍事展開を二軸再編として反映。鮮度タイムアウト（7日）解消。仮説確度は据え置き（[H-XAI-002](../config/hypotheses.json) 59%・[H-XAI-004](../config/hypotheses.json) 55%） | [INFO-054](../Information/2026-06-18/collected-raw.md#INFO-054) [INFO-013](../Information/2026-06-18/collected-raw.md#INFO-013) [INFO-012](../Information/2026-06-18/collected-raw.md#INFO-012) |
+| 2026-06-11 | Gopuff Go・Grok Imagine 1.5・Vapi統合・Composer 2.5・Grok Build 0.1 APIで製品幅拡大反映。[H-XAI-002](../config/hypotheses.json) 59%・[H-XAI-004](../config/hypotheses.json) 55%据え置き。[SCN-004](../config/scenarios.json) 30%でトップシナリオ浮上 | 2026-06-11複数INFO |
+| 2026-06-07 | GitHub Copilot従量制移行でコモディティ化圧力追加。[SCN-004](../config/scenarios.json) 27%。[IND-028](../config/indicators.json) 条件付high移行 | 2026-06-07複数INFO |
+| 2026-05-28 | Grok Build正式リリース・DL 60%減・$20B Series E・API価格95%+下落・Grok 4.1 97.8%反映 | 2026-05-28複数INFO |
+| 2026-05-14 | [H-XAI-001](../config/hypotheses.json)/[H-XAI-003](../config/hypotheses.json) 正式棄却 + Grok 5製品連続リリース + Colossus Anthropic提携反映 | 2026-05-14複数INFO |
 
 ## 7. ブラインドスポット
 
-- SpaceXAIの内部戦略が外部から観測不能。Gopuff Go・Vapi統合・Composer 2.5の製品展開は観測できるが、その背景にある意思決定(SpaceX本体の投資判断なのか、SpaceXAI内部の戦略なのか)が判別不能。
-- Colossus 1をAnthropicに貸与した理由が不明。「第1世代クラスタの余剰活用」「Anthropicとの関係構築」「企業金融的動機」のいずれか、または複合。
-- Grok Buildの外部利用データが限定的。DL 60%減少は定量証拠だが、Grok Build発売直後の短期的データ可能性が指摘されている。実際のユーザー数、API呼び出し量、エンタープライズ契約数は引き続き確認できない。
-- API価格95%+下落がGrok API収益モデルに与える圧力を定量できていない。全プロバイダ一律下落はGrok固有の問題ではないが、$20B調達の回収スケジュールとの整合性が不透明。
-- H-XAI-002のmedium→low移行審査が次ラウンドで触发される場合の、判定基準と影響範囲が未定義。59%→58%でも移行するのか、複数ラウンドの傾向を見るのか不明。
-- H-XAI-001/003の棄却後、SpaceXAIとしての新しい仮説フレーム(H-XAI-005)の定義が継続未実行。Colossus貸与の拡大、軌道コンピューティングの進展、Grok製品群の戦略的方向性を統合する枠組みが不在。
-- 性能向上(Grok 4.1 97.8%)とエンタープライズ採用(DL 60%減)の乖離の原因が不明。製品幅の急拡大(Gopuff・Vapi・Composer・Imagine)がこの乖離を解消するのか、逆にリソース分散で悪化させるのかも未検証。
+- SpaceXAIの内部戦略が外部から観測不能。Cursor買収（$60B）とGrok軍事展開は観測できても、SpaceX本体の投資判断なのかSpaceXAI内部の戦略なのか、Colossus 2の軍民分担はどうなっているかが判別不能。
+- Cursor統合の成果が測れない。買収はQ3 2026クローズ予定で、統合後のGrok-Cursor連携、コーディング採用の回復、DL回復はすべて未計測。買収時点でCursorがシェア26%に下落中という出発点の悪さも未消化。
+- Grok Gov Modelのガードレールと人間監視の実効性が不明。宣誓供述書は「可能にした」と記すが、人間がどこで判断を止めたか、誤報率はどの程度かが非公開。Gillibrand法案の進捗も追えていない。
+- 軍事利用のリスク評価枠組みが未整備。「設計通りの軍事利用」を技術的安全事故と区別しているが、この区別がいつ崩れるか（誤目標・民間被害の報告）を定量的に監視できていない。
+- [H-XAI-001](../config/hypotheses.json)/[H-XAI-003](../config/hypotheses.json) の棄却後、SpaceXAIの二軸再編（コーディング＋国家安保）を統合する新仮説フレームが未定義。Cursor買収と軍事展開を一本の筋で説明する仮説が不在。
 
 ## 付録: 直近30日の参照Evidence
 
 | Evidence | 用途 |
 |---|---|
-| [Arbiter v4.05](../state/arbiter-2026-06-11.md) | H-XAI-002 59%(±0%)据え置き。H-XAI-004 55%(±0%)据え置き。SCN-004 30%トップ |
-| [INFO-013](../Information/2026-06-11/collected-raw.md#INFO-013) | Gopuff Go agent: Grok統合ショッピングアシスタント(A-3) |
-| [INFO-014](../Information/2026-06-11/collected-raw.md#INFO-014) | Grok Imagine 1.5 Preview: 画像生成品質向上(A-3) |
-| [INFO-015](../Information/2026-06-11/collected-raw.md#INFO-015) | Grok Voice Vapi統合: 音声エージェント外部展開(A-3) |
-| [INFO-016](../Information/2026-06-11/collected-raw.md#INFO-016) | Composer 2.5: 音楽生成アップグレード(A-3) |
-| [INFO-017](../Information/2026-06-11/collected-raw.md#INFO-017) | Grok Build 0.1 on API: $1/MTokコーディングエージェント(A-3) |
-| [INFO-051](../Information/2026-06-11/collected-raw.md#INFO-051) | DeepSeek V4 Pro精度超過・75%値下げ: コモディティ化加速(B-3) |
-| [INFO-054](../Information/2026-06-11/collected-raw.md#INFO-054) | GPT-5.5 vs Claude Opus 4.7 vs Grok 4.3比較: 各社差別化軸(C-3) |
-| [Arbiter v4.01](../state/arbiter-2026-06-07.md) | 全xAI仮説±0%据え置き判定。SCN-004 27%。IND-028条件付high移行 |
-| [INFO-039](../Information/2026-06-07/collected-raw.md#INFO-039) | GitHub Copilot定額→従量制移行: エージェント層コモディティ化(A-2) |
-| [INFO-046](../Information/2026-06-07/collected-raw.md#INFO-046) | RSI「定義された実験ではほぼ超人」: AGI到達度(A-1) |
-| [INFO-018](../Information/2026-06-07/collected-raw.md#INFO-018) | Pentagon SCR指定: 政府調達環境再編(A-1) |
-| [INFO-006](../Information/2026-05-28/collected-raw.md#INFO-006) | Grok Build正式リリース: ACP対応コーディングエージェント(A-3) |
-| [INFO-016](../Information/2026-05-28/collected-raw.md#INFO-016) | Grok 4.1マルチモーダルベンチマーク97.8%第2位(C-3) |
-| [INFO-038](../Information/2026-05-28/collected-raw.md#INFO-038) | LLM API価格$30→$1-5/MTok 95%+下落(C-3) |
-| [INFO-042](../Information/2026-05-28/collected-raw.md#INFO-042) | xAI $20B Series E(Q1 2026最大)(B-3) |
-| [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) | DL 60%減少(1月20M→4月8.3M)・エンタープライズ苦戦(B-2) |
-| [INFO-048](../Information/2026-05-22/collected-raw.md#INFO-048) | Pentagon代替AIモデルテスト・xAI参加(A-2) |
-| [INFO-003](../Information/2026-05-15/collected-raw.md#INFO-003) | Colossus 1-Anthropic コンピューティング提携(220K+ GPU) |
+| [Arbiter v4.12](../state/arbiter-2026-06-18.md) | [H-XAI-002](../config/hypotheses.json) 59%・[H-XAI-004](../config/hypotheses.json) 55%据え置き（±0%）。xAI仮説はDEGRADED下で直接分析対象外 |
+| [INFO-054](../Information/2026-06-18/collected-raw.md#INFO-054) | SpaceX-Cursor $60B買収（A-2） |
+| [INFO-061](../Information/2026-06-18/collected-raw.md#INFO-061) | Cursor 41%→26%下落・Anthropic半数掌握（A-2） |
+| [INFO-013](../Information/2026-06-18/collected-raw.md#INFO-013) | Grok Gov Model軍事展開96h/2,000目標（B-2） |
+| [INFO-012](../Information/2026-06-18/collected-raw.md#INFO-012) | Grok 4.3 GA on Bedrock・最低ハルシネーション（A-3） |
+| [INFO-002](../Information/2026-06-18/collected-raw.md#INFO-002) | Pentagon分類AI業務3分の2移行・xAI参加（B-2） |
+| [INFO-017](../Information/2026-06-11/collected-raw.md#INFO-017) | Grok Build 0.1 on API $1/MTok（A-3） |
+| [INFO-013](../Information/2026-06-11/collected-raw.md#INFO-013) | Gopuff Go agent・Grok統合ショッピング（A-3） |
+| [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) | DL 60%減少・エンタープライズ苦戦（B-2） |
+| [INFO-042](../Information/2026-05-28/collected-raw.md#INFO-042) | xAI $20B Series E（B-3） |
+| [INFO-003](../Information/2026-05-15/collected-raw.md#INFO-003) | Colossus 1-Anthropicコンピューティング提携 220K+ GPU（A-3） |

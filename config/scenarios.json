@@ -1,7 +1,7 @@
 {
-  "version": "4.11",
-  "last_updated": "2026-06-17",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.11: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。シナリオ2件確率変更（SCN-001 +1%: 15→16%・SCN-002 ±0%: 27%・SCN-003 ±0%: 27%・SCN-004 -1%: 31→30%）。合計100%維持（16+27+27+30=100%）。SCN-001 Red採用（国家レベル围い込みシグナル: 政府8社選別契約+SCR指定。但し技術力围い込みと異なるメカニズムで+1%のみ）。SCN-004 Red採用（SCN-001相殺+コモディティ化否定I A-2品質強化: $965B評価額+13%課金率）。方向圧力評価標準プロセス継続",
+  "version": "4.12",
+  "last_updated": "2026-06-18",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.12: Arbiter統合判断（DEGRADED状態・Blue Agent失敗・Red Agent適応完了）。シナリオ全件±0%（SCN-001 16%・SCN-002 27%・SCN-003 27%・SCN-004 30%）。合計100%維持（16+27+27+30=100%）。DEGRADED制約で確率変更見送り。完全ラウンド持ち越し材料: SCN-001 +2〜4%（政府選別+SpaceX-Cursor収束）・SCN-004 v4.11-1%再検討（OSS追越・市庁舎級公開・600倍価格差）。方向圧力評価標準プロセス継続",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-17",
-    "note": "SCN-001(16) + SCN-002(27) + SCN-003(27) + SCN-004(30) = 100%. Arbiter v4.11完了（COMPLETE）"
+    "verified_date": "2026-06-18",
+    "note": "SCN-001(16) + SCN-002(27) + SCN-003(27) + SCN-004(30) = 100%. Arbiter v4.12完了（DEGRADED・全件±0%）"
   }
 }
