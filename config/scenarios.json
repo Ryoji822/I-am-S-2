@@ -1,7 +1,7 @@
 {
-  "version": "4.12",
-  "last_updated": "2026-06-18",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.12: Arbiter統合判断（DEGRADED状態・Blue Agent失敗・Red Agent適応完了）。シナリオ全件±0%（SCN-001 16%・SCN-002 27%・SCN-003 27%・SCN-004 30%）。合計100%維持（16+27+27+30=100%）。DEGRADED制約で確率変更見送り。完全ラウンド持ち越し材料: SCN-001 +2〜4%（政府選別+SpaceX-Cursor収束）・SCN-004 v4.11-1%再検討（OSS追越・市庁舎級公開・600倍価格差）。方向圧力評価標準プロセス継続",
+  "version": "4.13",
+  "last_updated": "2026-06-19",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.13: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。シナリオ4件変更: SCN-001 +1%（16→17%）Blue/Red中間・政治的围い込み初期条件認める・概念区別維持・SCN-002 +1%（27→28%）Blue採用・開放×差別化持続最整合・SCN-003 -2%（27→25%）Blue採用・標準化加速が围い込み価値侵食・SCN-004 ±0%（30%維持）・SCN-001抑制で正規化相殺不要。合計100%維持（17+28+25+30=100%）。完全ラウンドでv4.12持ち越し材料部分的実行。方向圧力評価標準プロセス継続",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 16,
+      "probability": 17,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.11: +1%（15→16%）。COMPLETE。Red採用。国家レベル围い込みシグナル: 政府8社選別契約（Anthropic除外 INFO-046 B-3）・SCR指定（Huawei級・米国企員初 INFO-043 A-2）は、围い込みの主語が企業から国家に拡大した最初の事例。SpaceX-Cursor $60B買収（INFO-102 A-2）はエコシステム围い込み加速。旧判断「政府介入はSCN-001定義外」は定義による確証バイアスの可能性（Red指摘採用）。但し政府介入は技術力围い込みと異なるメカニズム（政治的要因）のため+1%のみで過大評価回避。围い込み否定I: Sandbox OSS（INFO-022 A-3）・1000+スキル（INFO-012 C-3）・AAIF 170（INFO-013 C-3）・Agent Skills VS Code（INFO-025 A-3）の開放シグナル継続",
+      "probability_rationale": "Arbiter v4.13: +1%（16→17%）。COMPLETE。Blue +2%から調整。政府8社選別契約（Anthropic除外）・SCR指定・順応報酬3社具体化（OpenAI Pentagon・Google誓約削除・xAI Grok軍事）を「国家レベル围い込みの初期条件」として認める。但しRed指摘採用: (1)政治的排除（Anthropic除外）≠技術的围い込み（ベンダーロックイン）——異なるメカニズム・(2)プロトコル層開放（MCP 1.1億DL・AAIF 170社・OpenShell OSS）が围い込みを直接否定する強力な証拠を不当軽視。+2%は概念的不精確さを含むため+1%保守的反映。围い込み否定I: MCP 1.1億DL(INFO-025 C-2)・AAIF 170社(INFO-024 A-3)の開放シグナル継続。二層構造（プロトコル層開放×制度層围い込み）可能性記録",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -53,9 +53,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 差別化持続",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 27,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.11: ±0%（27%維持）。COMPLETE。開放C: Sandbox Runtime OSS（INFO-022 A-3）・1000+オープンAgent Skills（INFO-012 C-3）・AAIF 170社（INFO-013 C-3）・Agent Skills VS Code（INFO-025 A-3）・SkillsMP 160万+（INFO-024 C-3）。差別化持続C: TCS 50K（INFO-006 A-3）・$965B評価額（INFO-098 A-2）・$47Bランレート（INFO-099 B-2）・DeepMind AGI→ASI論文（INFO-091 A-2）・Boston Dynamics提携（INFO-017 B-3）。開放×差別化持続支持継続。前回+1%で27%到達済。保守性原則で±0%",
+      "probability": 28,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v4.13: +1%（27→28%）。COMPLETE。Blue採用。開放×差別化持続の組み合わせが最も整合的。開放C: MCP月間1.1億DL(INFO-025 C-2)・AAIF 170社43新規(INFO-024 A-3)・MLPerf v6.0(INFO-030 A-3)。差別化持続C: Claude Fable 5首位60点(INFO-059 A-3・利用不可)・Grok 4総合#1 73点(INFO-059 A-3)・Anthropic $965億評価額・13%課金率。標準化加速（IND-027 high rising）とフロンティア持続が同時観察。+1%保守的反映",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -80,9 +80,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × コモディティ化",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 27,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.11: ±0%（27%維持）。COMPLETE。围い込みC: スイッチングコスト構造化（INFO-026 E-3・INFO-027 D-3・INFO-079 C-3）・MCP Anthropicサーバー側ディスパッチ（INFO-023 C-3）・SpaceX-Cursor $60B買収（INFO-102 A-2）。但し標準化爆発的加速（Sandbox OSS・1000+スキル・AAIF 170・Agent Skills VS Code・SkillsMP 160万+の5重開放C）がデータ/コンテキスト層围い込み価値を相殺方向。前回-1%で27%。±0%妥当",
+      "probability": 25,
+      "probability_change": "-2%",
+      "probability_rationale": "Arbiter v4.13: -2%（27→25%）。COMPLETE。Blue採用。標準化爆発的加速（MCP月間1.1億DL・AAIF 170社・MLPerf v6.0）がエコシステム围い込み価値を侵食。AI-ERP移行コスト半減（INFO-067 B-3 McKinsey）＝スイッチングコスト溶解。マルチベンダー戦略普及（INFO-068 A-3 IDC）。「静かな囲い込み」の核心前提（モデル性能差縮小→エコシステム围い込みが主戦場）が標準化加速とスイッチングコスト溶解の二重圧力で侵食。-2%は前回27%のアンカリング是正を含む。围い込みC（エージェント型コマース切替コスト不可逆化）は存在するが開放圧力が優位",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -113,8 +113,8 @@
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 30,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v4.11: -1%（31→30%）。COMPLETE。Red採用。SCN-001 +1%の相殺。コモディティ化否定IのA-2品質強化: Anthropic $965B評価額（INFO-098 A-2）・13%有料課金率業界最高（INFO-101 A-2）は差別化持続を示す強力な証拠。31%高止まりに対するコモディティ化C（3 OSSモデルGPT-4超え INFO-067 C-3・DeepSeek $7.4B・OpenAI値下げ・中国2兆元）はC-3品質中心で質的格差。コモディティ化否定I（Fable 5 SOTA・DeepMind研究卓越・$965B評価額・13%課金率）のA-2品質強化が31%高止まりを支えきれない",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v4.13: ±0%（30%維持）。COMPLETE。A-2品質Jevons paradox（トークン90%安価化・支出倍増 INFO-058 A-2）はSCN-004の最強力C証拠。GLM-5.2 OSS首位51点・Llama 4 GPT-4o超え・Mistral 100人4SOTA＝OSS追従。但し国家围い込み（SCN-001 +1%）とフロンティア持続（Claude Fable 5 #1利用不可・Grok 4 #1 73点・Anthropic $965億・ARC-AGI-3全モデル<0.4%）が同時強化。SCN-001の増幅を+2%→+1%に抑制したため正規化相殺不要。±0%維持",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-18",
-    "note": "SCN-001(16) + SCN-002(27) + SCN-003(27) + SCN-004(30) = 100%. Arbiter v4.12完了（DEGRADED・全件±0%）"
+    "verified_date": "2026-06-19",
+    "note": "SCN-001(17) + SCN-002(28) + SCN-003(25) + SCN-004(30) = 100%. Arbiter v4.13完了（COMPLETE・4件変更）"
   }
 }

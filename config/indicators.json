@@ -1,8 +1,9 @@
 {
-  "version": "4.12",
-  "last_updated": "2026-06-18",
-  "description": "I&W（Indications and Warning）指標レジストリ. v4.12: Arbiter統合判断（DEGRADED状態・Blue Agent失敗・Red Agent適応完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Codex Skills実行環境・MCP認可強化・AWS Agent-EvalKit。新規A-2品質脆弱性報告なし）・IND-025 elevated維持（Grok 4.3最低ハルシネーション・Gemini Robotics On-Device・ARC-AGI-2全フロンティア低スコア。量的向上継続）・IND-026 high維持（ALE実世界タスク完了率2-3%・GitHub障害連続・AIブーメラン・Gartner 80%期待外れ。期待-実態ギャップ構造的パターン化）・IND-027 high維持（MCP 2026-07-28 RC・AAIF 170社43新規・1000+スキル・Databricks Omnigent OSS・Salesforce×Databricks提携。標準化爆発的加速・围い込み同時進行）・IND-028 high維持（DeepMind「From AGI to ASI」AGI 2029-2030・ARC-AGI-2全フロンティアゼロ・Claude Fable 5 SWFTE 100/100。RSI具体化と客観的ベンチマーク限界の同時進行）・IND-029 high維持（Goldman $5.3T/2030・ByteDance具身智能460億元・天数智芯5万顆チップ・NVIDIA Rubin供給逼迫・Q1 $330B 80%AI企業。資本流入加速・物理的制約ギャップ確定的）・IND-030 high維持（Grok軍事展開96h/2,000目標/2,000発弾薬・Pentagon業務2/3移行・SCR指定・DPA発動検討・Colossus2「国家安保不可欠」。能力-リスク二面性極大化。critical移行見送り: 設計通りの軍事利用≠技術的安全事故・区別維持・Gillibrand法案進捗が关键）",
+  "version": "4.13",
+  "last_updated": "2026-06-19",
+  "description": "I&W（Indications and Warning）指標レジストリ. v4.13: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（OpenBSD 27年脆弱性発見・GitHub月19件障害・MCP Gateway認証中央集権化。新規A-2品質実被害報告なし）・IND-025 elevated維持（Gemini 3.1 Pro動画推論55.63%・ARC-AGI-3全フロンティア0.37%・Claude Fable 5 SWFTE 100/100。量的向上継続・「真の理解」未解決）・IND-026 high維持（ALE完遂<5%・95%失敗・96%ROI vs 74%ロールバック矛盾。期待-実態ギャップ構造的パターン化確定）・IND-027 high維持（MCP月間1.1億DL・AAIF 170社・MLPerf v6.0初エージェント型。標準化爆発的加速・围い込み同時進行）・IND-028 high維持（DeepMind AGI 2029-2030・ARC-AGI-3 0.37%・LeCun退社。RSI具体化と客観ベンチマーク限界の同時進行・研究者根本的意見分裂）・IND-029 high維持（Dallas Fed $3-5T・ByteDance 2000億元・Q1 $3000億。資本流入加速・物理的制約ギャップ確定的）・IND-030 high維持（Grok軍事96h/2,000目標/2,000発弾薬・Gillibrand法案・Google兵器誓約削除・OpenAI Pentagon。能力-リスク二面性極大化。critical移行見送り継続・KIQ-MIL-001民間被害データ不在は正常性バイアス逆方向リスク記録）",
   "structural_changes_log": [
+    "2026-06-19 v4.13: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。全7指標high/elevated維持。IND-013 high維持（OpenBSD 27年脆弱性発見 INFO-081 B-3・GitHub月19件障害 INFO-020 C-3・MCP Gateway認証中央集権化 INFO-025 C-2。critical移行条件=実被害A-2報告 未到達）。IND-025 elevated維持（Gemini 3.1 Pro動画推論55.63% INFO-031 B-3・ARC-AGI-3全フロンティア0.37% INFO-077 B-3・Claude Fable 5 SWFTE 100/100 INFO-060 C-3。high移行条件=真の理解客観的検証 未到達）。IND-026 high維持（ALE完遂<5% INFO-051 B-2・95%失敗 INFO-076 C-2・96%ROI vs 74%ロールバック矛盾 INFO-040 B-2。期待-実態ギャップ構造的パターン化確定）。IND-027 high維持（MCP月間1.1億DL INFO-025 C-2・AAIF 170社 INFO-024 A-3・MLPerf v6.0初エージェント型 INFO-030 A-3。標準化爆発的加速）。IND-028 high維持（DeepMind AGI 2029-2030 INFO-078 A-2・ARC-AGI-3 0.37% INFO-077 B-3・LeCun退社AMI Labs INFO-080 B-2。RSI具体化と客観ベンチマーク限界の同時進行・研究者根本的意見分裂新次元）。IND-029 high維持（Dallas Fed $3-5T INFO-066 B-2・ByteDance 2000億元Capex INFO-092 B-2・Q1 $3000億 INFO-065 B-2・Anthropic $650億 INFO-064 B-2。資本流入加速・物理的制約ギャップ確定的）。IND-030 high維持（Grok軍事96h/2,000目標/2,000発弾薬 INFO-008 B-2・Gillibrand法案 INFO-009 C-3・Google兵器誓約削除 INFO-015 C-2・OpenAI Pentagon GenAI.mil 300万人 INFO-048/010 B-2/C-3。能力-リスク二面性極大化。critical移行見送り継続: 設計通りの軍事利用≠技術的安全事故・区別維持。Red指摘採用: KIQ-MIL-001民間被害データ不在は正常性バイアス逆方向リスク。Gillibrand法案進捗がcritical移行の关键変数。次回条件: 技術的安全事故A-2品質報告・またはOperation Epic Fury民間被害A-2報告でcritical移行検討",
     "2026-06-18 v4.12: Arbiter統合判断（DEGRADED状態・Blue Agent失敗・Red Agent適応完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。全7指標high/elevated維持。IND-013 critical移行条件（実被害A-2報告）未到達。IND-030 high維持・critical移行見送り継続: Grok軍事展開（INFO-013 B-2・96h/2,000目標/2,000発弾薬・Stanley宣誓供述書）は能力-リスク二面性極大化の新たな主要データポイントだが、「設計通りの軍事利用」は現在の「技術的安全事故」定義（フェイク・Agent暴走）に該当しない。政治的リスクの技術的発現と技術的安全事故の区別維持。Gillibrand法案（人間監視なしLLM使用禁止）進捗がcritical移行の关键変数として監視継続。次回条件: 技術的安全事故A-2品質報告でcritical移行検討",
     "2026-06-17 v4.11: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。全7指標high/elevated維持。IND-013 critical移行条件（実被害A-2報告）未到達。IND-030 critical移行条件確定（6R連続保留解消・Red中間案部分採用）: 主条件=技術的安全事故A-2品質報告・起動条件（追加）=政府リスク認定事象A-2品質3件以上同一ラウンド累積でcritical移行検討開始。本ラウンドA-2品質3件（INFO-043連邦停止・INFO-044 Pentagon提訴・INFO-053法廷否認）で起動条件充足だが、政治的リスクの技術的発現は技術的安全事故と区別しcritical移行見送り。次回条件: 技術的安全事故A-2品質報告でcritical移行検討",
     "2026-06-16 v4.10: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。全7指標high/elevated維持。IND-013 critical移行条件（実被害A-2報告）未到達・IND-030 critical移行条件見直し5R連続（A-2品質前兆事象3件累積: サイバー兵器分類・Amazonセーフガード回避・連邦政府禁止・但し条件改訂はDEGRADED下保留・次回COMPLETEラウンドでRed交差検証後に決定）",
@@ -19,9 +20,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Codex Skills実行環境（INFO-030 C-3）・MCP認可強化（INFO-023 A-3）・AWS Agent-EvalKit評価フレームワーク（INFO-032 A-3）。新規A-2品質脆弱性報告なし。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達",
-      "last_checked": "2026-06-18",
-      "rationale": "Arbiter v4.12: high維持。DEGRADED。Codex Skills実行環境（INFO-030 C-3）・MCP認可強化（INFO-023 A-3）・AWS Agent-EvalKit評価フレームワーク（INFO-032 A-3）。新規A-2品質脆弱性報告なし。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達"
+      "last_value": "OpenBSD 27年未発見脆弱性をフロンティアAIが発見（INFO-081 B-3）・GitHub 2026年5月9件/4月10件サービス劣化（INFO-020 C-3）・MCP Gateway + AI Registry認証ガバナンス中央集権化（INFO-025 C-2）。新規A-2品質実被害報告なし。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達",
+      "last_checked": "2026-06-19",
+      "rationale": "Arbiter v4.13: high維持。COMPLETE。OpenBSD 27年未発見脆弱性をフロンティアAIが発見（INFO-081 B-3）はAI攻撃能力の具体例。GitHub月19件障害（INFO-020 C-3）でSLA問題構造化。MCP Gateway認証中央集権化（INFO-025 C-2）。新規A-2品質実被害報告なし。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -30,9 +31,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Grok 4.3最低ハルシネーション率（INFO-012 A-3）・Gemini Robotics On-Device完全オフライン（INFO-027 B-3）・ARC-AGI-2全フロンティア低スコア（INFO-041 C-3）・Claude Opus 4.6 ARC-AGI 57.3%（INFO-041 C-3）・Vals AI Case Law/Corporate Finance #1（INFO-012 A-3）。量的向上継続。「真の理解」検証未解決",
-      "last_checked": "2026-06-18",
-      "rationale": "Arbiter v4.12: elevated維持。DEGRADED。Grok 4.3最低ハルシネーション率（INFO-012 A-3）・Gemini Robotics On-Device完全オフライン（INFO-027 B-3）・ARC-AGI-2全フロンティア低スコア（INFO-041 C-3）・Claude Opus 4.6 ARC-AGI 57.3%（INFO-041 C-3）。量的向上継続。「真の理解」検証未解決"
+      "last_value": "オムニモーダル長動画推論: 最高Gemini 3.1 Proでも55.63%（INFO-031 B-3）・ARC-AGI-3全フロンティア0.37%・GPT-5.4は0.26% vs人間100%（INFO-077 B-3）・Claude Fable 5 SWFTE 100/100首位357+モデル中（INFO-060 C-3）。量的向上継続・コーディング特化vs汎用推論の二極化。「真の理解」検証未解決",
+      "last_checked": "2026-06-19",
+      "rationale": "Arbiter v4.13: elevated維持。COMPLETE。特定タスク（コーディング）での向上と汎用推論（ARC-AGI-3）での停滞の二極化継続。オムニモーダル長動画推論55.63%（INFO-031 B-3）・ARC-AGI-3 0.37%（INFO-077 B-3）。high移行条件（真の理解の客観的検証）未到達"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -41,9 +42,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "ALE実世界タスク完了率2-3%（INFO-076 B-2・55職業1500+タスク）・GitHub 5月9件/4月10件障害（INFO-019 C-3）・AIブーメラン Klarna/Duolingo/IBM（INFO-037 C-3）・Gartner 80%人員削減期待外れ（INFO-037 C-3）・Fortune500 MTTR 10-30%改善（INFO-046 C-3）・PwC ヒューマンスキル需要増（INFO-047 B-3）。期待-実態ギャップ構造的パターン化",
-      "last_checked": "2026-06-18",
-      "rationale": "Arbiter v4.12: high維持。DEGRADED。ALE実世界タスク完了率2-3%（INFO-076 B-2・55職業1500+タスク）・GitHub 5月9件/4月10件障害（INFO-019 C-3）・AIブーメラン Klarna/Duolingo/IBM（INFO-037 C-3）・Gartner 80%人員削減期待外れ（INFO-037 C-3）・Fortune500 MTTR 10-30%改善（INFO-046 C-3）。期待-実態ギャップの構造的パターン化確定"
+      "last_value": "ALE実世界プロ業務完遂<5%・55職種1500+タスク（INFO-051 B-2）・エンタープライズAI展開95%失敗（INFO-076 C-2）・96%がROI期待達成 vs CX領域74%ロールバック矛盾（INFO-040 B-2）・Gartner 17%展開済・60%+計画（INFO-038 B-3）。期待-実態ギャップ構造的パターン化確定",
+      "last_checked": "2026-06-19",
+      "rationale": "Arbiter v4.13: high維持。COMPLETE。期待-実態ギャップが複数独立ソース（ALE・Gartner・企業事例）で構造的に確認。96%ROI達成 vs 74%ロールバックの矛盾データ（INFO-040 B-2）は「主観的ROI評価」と「客観的ロールバック率」の乖離を実証。本ラウンドで最も強化された指標の一つだが既にhighのため状態変更なし"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -52,9 +53,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "MCP 2026-07-28 RC（INFO-023 A-3・ステートレスコア・Extensions・Tasks・MCP Apps）・AAIF 170社43新規加盟（INFO-024 B-3）・1000+クロスプラットフォームスキル（INFO-026 C-3）・Databricks Omnigent OSS（INFO-051 A-3）・Salesforce×Databricks戦略提携（INFO-025 A-3）。標準化爆発的加速継続。围い込み同時進行（SpaceX-Cursor $60B INFO-054/061 A-2）",
-      "last_checked": "2026-06-18",
-      "rationale": "Arbiter v4.12: high維持。DEGRADED。MCP 2026-07-28 RC（INFO-023 A-3）・AAIF 170社43新規加盟（INFO-024 B-3）・1000+クロスプラットフォームスキル（INFO-026 C-3）・Databricks Omnigent OSS（INFO-051 A-3）・Salesforce×Databricks戦略提携（INFO-025 A-3）。標準化爆発的加速継続。围い込み同時進行（SpaceX-Cursor $60B INFO-054/061 A-2）も記録"
+      "last_value": "MCP月間1.1億ダウンロード到達（INFO-025 C-2）・AAIF 170社43新規加盟（INFO-024 A-3/B-3）・MLCommons MLPerf Training v6.0初のエージェント型インフラベンチマーク（INFO-030 A-3）・エージェントフレームワーク5強+スキルマーケットプレイス乱立（INFO-021/034 C-2）。標準化爆発的加速・围い込み同時進行",
+      "last_checked": "2026-06-19",
+      "rationale": "Arbiter v4.13: high維持。COMPLETE。MCP月間1.1億DL到達（INFO-025 C-2）・AAIF 170社（INFO-024 A-3）・MLPerf v6.0初エージェント型（INFO-030 A-3）。標準化爆発的加速継続。围い込み同時進行も記録。プロトコル層開放と制度層围い込みの二層構造観察"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -63,9 +64,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "DeepMind「From AGI to ASI」AGI 2029-2030予測（INFO-048 A-2）・Hassabis AGI 2030±1年（INFO-048 A-2）・ARC-AGI-2全フロンティア低スコア（INFO-041 C-3・4%）・Claude Fable 5 SWFTE 100/100首位（INFO-066 C-3）・Altman「AGIが見えつつある」（INFO-049 B-2）。RSI具体化と客観的ベンチマーク限界の同時進行",
-      "last_checked": "2026-06-18",
-      "rationale": "Arbiter v4.12: high維持。DEGRADED。DeepMind「From AGI to ASI」AGI 2029-2030予測（INFO-048 A-2）・Hassabis AGI 2030±1年（INFO-048 A-2）・ARC-AGI-2全フロンティア低スコア（INFO-041 C-3）・Claude Fable 5 SWFTE 100/100首位（INFO-066 C-3）。RSI具体化と客観的ベンチマーク限界の同時進行。研究者間根本的意見分裂継続"
+      "last_value": "DeepMind「From AGI to ASI」AGI 2029-2030予測（INFO-078 A-2）・ARC-AGI-3全フロンティア0.37%・GPT-5.4は0.26% vs人間100%（INFO-077 B-3）・DeepMind 5レベル枠組み現状Level 1止まり（INFO-089 B-3）・LeCun退社AMI Labs設立（INFO-080 B-2）・SingularityNET LLM+手続き型世界モデルでARC-AGI-3 33%+（INFO-077 B-3）。RSI具体化と客観ベンチマーク限界の同時進行・研究者根本的意見分裂新次元",
+      "last_checked": "2026-06-19",
+      "rationale": "Arbiter v4.13: high維持。COMPLETE。研究者間の根本的意見分裂が新たな次元で顕在化: LLM-to-AGI vs 世界モデルアプローチ（LeCun退社 INFO-080 B-2）。客観的ベンチマーク（ARC-AGI-3 0.37%）での性能停滞と主観的AGI宣言（DeepMind 2029-2030）の乖離拡大。DeepMind Level 1止まり（INFO-089 B-3）が主観的宣言の制約を示す"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -74,9 +75,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Goldman $5.3T/2030ハイパースケーラー投資（INFO-044 A-2）・全球AI基盤$7.6T/2031予測・190GWハイパースケールDC 777プロジェクト・ByteDance具身智能460億元（INFO-078 B-2）・ByteDance天数智芯5万顆AIチップ調達協議（INFO-079 B-2）・NVIDIA Rubin HBM4/DRAM/MLCC供給逼迫（INFO-070 B-3）・Q1 2026 $330B超80%AI企業（INFO-043 B-2）。資本流入加速・物理的制約ギャップ確定的",
-      "last_checked": "2026-06-18",
-      "rationale": "Arbiter v4.12: high維持。DEGRADED。Goldman $5.3T/2030（INFO-044 A-2）・全球AI基盤$7.6T/2031予測・ByteDance具身智能460億元（INFO-078 B-2）・ByteDance天数智芯5万顆チップ（INFO-079 B-2）・NVIDIA Rubin供給逼迫（INFO-070 B-3）・Q1 2026 $330B超80%AI企業（INFO-043 B-2）。資本流入加速・物理的制約ギャップ確定的"
+      "last_value": "Dallas Fed 3-5年で$3-5兆AI DC投資推計（INFO-066 B-2）・ByteDance 2026年資本支出2000億元超=2025年利益約60%（INFO-092 B-2）・Q1 2026 AI資金調達$3,000億4メガラウンド（INFO-065 B-2）・Anthropic $650億調達$965億評価（INFO-064 B-2）・ByteDance 50K AIチップ調達協議NVIDIA Rubin供給逼迫（INFO-092 B-2）。資本流入加速・物理的制約ギャップ確定的",
+      "last_checked": "2026-06-19",
+      "rationale": "Arbiter v4.13: high維持。COMPLETE。Dallas Fed $3-5T（INFO-066 B-2）・ByteDance 2000億元Capex（INFO-092 B-2）・Q1 $3000億（INFO-065 B-2）・Anthropic $650億（INFO-064 B-2）。資本流入加速継続・物理的制約ギャップ確定的"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -85,9 +86,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Grok軍事展開96h/2,000目標/2,000発弾薬（INFO-013 B-2 The Hill・Stanley宣誓供述書）・Pentagon分類AI業務2/3移行（INFO-002 B-2）・Anthropic SCR指定（INFO-009 B-2）・DPA発動検討（INFO-034 B-2）・Colossus2「国家安保不可欠」・NSPM-11軍AI導入加速（INFO-033 B-2）。能力-リスク二面性の極大化。critical移行見送り（設計通りの軍事利用≠技術的安全事故・区別維持）。Gillibrand法案（人間監視なしLLM使用禁止）進捗が关键",
-      "last_checked": "2026-06-18",
-      "rationale": "Arbiter v4.12: high維持。DEGRADED。Grok軍事展開96h/2,000目標/2,000発弾薬（INFO-013 B-2 The Hill・Stanley宣誓供述書）は能力-リスク二面性極大化の新たな主要データポイント。Pentagon分類AI業務2/3移行（INFO-002 B-2）・SCR指定（INFO-009 B-2）・DPA発動検討（INFO-034 B-2）・NSPM-11（INFO-033 B-2）。critical移行見送り継続: 「設計通りの軍事利用」は現在の「技術的安全事故」定義（フェイク・Agent暴走）に該当しない。政治的リスクの技術的発現と技術的安全事故の区別維持。Gillibrand法案（人間監視なしLLM使用禁止・INFO-013）進捗がcritical移行の关键変数。次回条件: 技術的安全事故A-2品質報告でcritical移行検討"
+      "last_value": "Grok軍事展開96h/2,000目標/2,000発弾薬（INFO-008 B-2）・Gillibrand・Slotkin法案: 核発射・国内監視・完全自律兵器AI使用禁止（INFO-009 C-3）・Google兵器・監視誓約削除（INFO-015 C-2）・OpenAI Pentagon契約GenAI.mil 300万人（INFO-048/010 B-2/C-3）。能力-リスク二面性極大化。critical移行見送り継続（設計通りの軍事利用≠技術的安全事故・区別維持）。KIQ-MIL-001民間被害データ不在は正常性バイアス逆方向リスク。Gillibrand法案進捗が关键変数",
+      "last_checked": "2026-06-19",
+      "rationale": "Arbiter v4.13: high維持。COMPLETE。Grok軍事展開96h/2,000目標/2,000発弾薬（INFO-008 B-2）はLLMがキルチェーンに組み込まれた最初の文書化事例。Gillibrand法案（INFO-009 C-3）・Google兵器誓約削除（INFO-015 C-2）・OpenAI Pentagon（INFO-048 B-2）。能力-リスク二面性極大化。critical移行見送り継続: 設計通りの軍事利用≠技術的安全事故・区別維持。Red指摘採用: KIQ-MIL-001（Operation Epic Fury民間被害データ）不在は正常性バイアス逆方向リスク——観察されていないリスクを不在と断定する兆候。LLMの不確実性（ARC-AGI-3<0.4%・ハルシネーション）を考慮すると「設計通り」と「技術的失敗」の区別は実戦で曖昧化する可能性。Gillibrand法案進捗がcritical移行の关键変数。次回条件: 技術的安全事故A-2品質報告・またはOperation Epic Fury民間被害A-2報告でcritical移行検討"
     }
   }
 }
