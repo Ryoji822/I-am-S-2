@@ -1,7 +1,7 @@
 {
-  "version": "4.13",
-  "last_updated": "2026-06-19",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.13: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。シナリオ4件変更: SCN-001 +1%（16→17%）Blue/Red中間・政治的围い込み初期条件認める・概念区別維持・SCN-002 +1%（27→28%）Blue採用・開放×差別化持続最整合・SCN-003 -2%（27→25%）Blue採用・標準化加速が围い込み価値侵食・SCN-004 ±0%（30%維持）・SCN-001抑制で正規化相殺不要。合計100%維持（17+28+25+30=100%）。完全ラウンドでv4.12持ち越し材料部分的実行。方向圧力評価標準プロセス継続",
+  "version": "4.14",
+  "last_updated": "2026-06-20",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.14: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。シナリオ2件変更: SCN-002 +1%（28→29%）標準化加速+フロンティア持続がSCN-002両軸支持・SCN-001+1%却下再配分・SCN-003 -1%（25→24%）標準化加速が围い込み価値侵食・SCN-001 ±0%（17%維持）Blue自身の概念区別承认と+1%の論理的矛盾・SCN-004 ±0%（30%維持）。合計100%維持（17+29+24+30=100%）。Red提案「地政学的AI市場分裂」第5シナリオをPhase 6申し送り",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -24,8 +24,8 @@
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 17,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.13: +1%（16→17%）。COMPLETE。Blue +2%から調整。政府8社選別契約（Anthropic除外）・SCR指定・順応報酬3社具体化（OpenAI Pentagon・Google誓約削除・xAI Grok軍事）を「国家レベル围い込みの初期条件」として認める。但しRed指摘採用: (1)政治的排除（Anthropic除外）≠技術的围い込み（ベンダーロックイン）——異なるメカニズム・(2)プロトコル層開放（MCP 1.1億DL・AAIF 170社・OpenShell OSS）が围い込みを直接否定する強力な証拠を不当軽視。+2%は概念的不精確さを含むため+1%保守的反映。围い込み否定I: MCP 1.1億DL(INFO-025 C-2)・AAIF 170社(INFO-024 A-3)の開放シグナル継続。二層構造（プロトコル層開放×制度層围い込み）可能性記録",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v4.14: ±0%（17%維持）。COMPLETE。Blue +1%否認。Red指摘採用: Blue自身が「政治的排除≠技術的围い込み」を明示的に認めた上で+1%を実行する論理的矛盾。SCN-001定義は「技術力で圧倒しつつ実行環境・スキル配布・データでエコシステムを囲い込む」——Hegseth商業活動禁止要求（政治的排除）はこの定義に直接寄与しない。二層構造仮説（プロトコル層開放×制度層围い込み）は推測性が高い。プロトコル層開放（MCP Google/AWS/MDN・AAIF 170社・MLPerf v6.0・OpenShell OSS）が围い込みを直接否定。Red提案「地政学的AI市場分裂」第5シナリオ（米国政治的围い込み・同盟国開放競争・中国独立围い込み）をPhase 6申し送り",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -53,9 +53,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 差別化持続",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 28,
+      "probability": 29,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.13: +1%（27→28%）。COMPLETE。Blue採用。開放×差別化持続の組み合わせが最も整合的。開放C: MCP月間1.1億DL(INFO-025 C-2)・AAIF 170社43新規(INFO-024 A-3)・MLPerf v6.0(INFO-030 A-3)。差別化持続C: Claude Fable 5首位60点(INFO-059 A-3・利用不可)・Grok 4総合#1 73点(INFO-059 A-3)・Anthropic $965億評価額・13%課金率。標準化加速（IND-027 high rising）とフロンティア持続が同時観察。+1%保守的反映",
+      "probability_rationale": "Arbiter v4.14: +1%（28→29%）。COMPLETE。標準化加速（MCP Google/AWS/MDN採用・AAIF 170社・MLPerf v6.0・OpenShell OSS）が「開放」軸を押し上げ、フロンティア持続（Fable 5・ARC-AGI-3限界・Anthropic $965億）が「差別化」軸を押し上げる。両者の同時観察はSCN-002（開放×差別化持続）を最も支持。SCN-001 +1%却下に伴う再配分。開放×差別化持続の組み合わせが最も整合的シナリオ継続",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -80,9 +80,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × コモディティ化",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 25,
-      "probability_change": "-2%",
-      "probability_rationale": "Arbiter v4.13: -2%（27→25%）。COMPLETE。Blue採用。標準化爆発的加速（MCP月間1.1億DL・AAIF 170社・MLPerf v6.0）がエコシステム围い込み価値を侵食。AI-ERP移行コスト半減（INFO-067 B-3 McKinsey）＝スイッチングコスト溶解。マルチベンダー戦略普及（INFO-068 A-3 IDC）。「静かな囲い込み」の核心前提（モデル性能差縮小→エコシステム围い込みが主戦場）が標準化加速とスイッチングコスト溶解の二重圧力で侵食。-2%は前回27%のアンカリング是正を含む。围い込みC（エージェント型コマース切替コスト不可逆化）は存在するが開放圧力が優位",
+      "probability": 24,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v4.14: -1%（25→24%）。COMPLETE。Blue採用。標準化爆発的加速（MCP Google/AWS/MDN採用・AAIF 170社・MLPerf v6.0・OpenShell OSS）がエコシステム围い込み価値を更に侵食。Anthropic Agent SDK課金変更の一時停止（開発者抵抗）も围い込み抑制シグナル。スイッチングコスト溶解傾向継続。「静かな囲い込み」の核心前提（モデル性能差縮小→エコシステム围い込みが主戦場）が標準化加速の二重圧力で侵食。围い込みCは存在するが開放圧力が優位",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -114,7 +114,7 @@
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 30,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.13: ±0%（30%維持）。COMPLETE。A-2品質Jevons paradox（トークン90%安価化・支出倍増 INFO-058 A-2）はSCN-004の最強力C証拠。GLM-5.2 OSS首位51点・Llama 4 GPT-4o超え・Mistral 100人4SOTA＝OSS追従。但し国家围い込み（SCN-001 +1%）とフロンティア持続（Claude Fable 5 #1利用不可・Grok 4 #1 73点・Anthropic $965億・ARC-AGI-3全モデル<0.4%）が同時強化。SCN-001の増幅を+2%→+1%に抑制したため正規化相殺不要。±0%維持",
+      "probability_rationale": "Arbiter v4.14: ±0%（30%維持）。COMPLETE。Jevons paradox（Token Index $1.67・-20%）とOSS追従（Mistral 100人4SOTA・Llama 4 SOTA）はC継続。但しフロンティア持続（Fable 5・ARC-AGI-3限界・Anthropic $965億）が同時強化で相反圧力。SCN-001±0%のため正規化相殺不要。±0%維持",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-19",
-    "note": "SCN-001(17) + SCN-002(28) + SCN-003(25) + SCN-004(30) = 100%. Arbiter v4.13完了（COMPLETE・4件変更）"
+    "verified_date": "2026-06-20",
+    "note": "SCN-001(17) + SCN-002(29) + SCN-003(24) + SCN-004(30) = 100%. Arbiter v4.14完了（COMPLETE・2件変更）"
   }
 }
