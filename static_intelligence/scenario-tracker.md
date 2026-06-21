@@ -1,6 +1,6 @@
 # シナリオ追跡 - 静的インテリジェンス
 
-> 最終判断更新: 2026-06-20
+> 最終判断更新: 2026-06-21
 > 全体確信度: 中
 > 主参照: [scenarios.json](../config/scenarios.json), [indicators.json](../config/indicators.json)
 
