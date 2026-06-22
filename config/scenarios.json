@@ -1,7 +1,7 @@
 {
-  "version": "4.15",
-  "last_updated": "2026-06-21",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.15: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。シナリオ2件変更: SCN-002 +1%（29→30%）標準化加速+フロンティア持続の同時観察がSCN-002両軸支持・SCN-003 -1%（24→23%）標準化加速による围い込み価値侵食（本根拠での最終適用宣言・限界効用逓減）・SCN-001 ±0%（17%維持）・SCN-004 ±0%（30%維持）。合計100%維持（17+30+23+30=100%）。第5シナリオ「地政学的AI市場分裂」Phase 6強化記録・次回正式生成強く推奨",
+  "version": "4.16",
+  "last_updated": "2026-06-22",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.16: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗）。シナリオ全件±0%: SCN-001 ±0%（17%維持）・SCN-002 ±0%（30%維持）・SCN-003 ±0%（23%維持）・SCN-004 ±0%（30%維持）。合計100%維持（17+30+23+30=100%）。第5シナリオ「地政学的AI市場分裂」4R連続申し送り・次回COMPLETE正式生成最高優先度",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-21",
-    "note": "SCN-001(17) + SCN-002(30) + SCN-003(23) + SCN-004(30) = 100%. Arbiter v4.15完了（COMPLETE・2件変更）"
+    "verified_date": "2026-06-22",
+    "note": "SCN-001(17) + SCN-002(30) + SCN-003(23) + SCN-004(30) = 100%. Arbiter v4.16完了（DEGRADED・全件±0%）"
   }
 }

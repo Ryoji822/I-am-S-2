@@ -1,8 +1,9 @@
 {
-  "version": "4.15",
-  "last_updated": "2026-06-21",
-  "description": "I&W（Indications and Warning）指標レジストリ. v4.15: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（IND-030 high→critical移行1件・6件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Amazon研究者ガードレール回避論文が輸出管理triggered・Sandbox egress迂回リスク・新規A-2実被害報告なし）・IND-025 elevated維持（Gemini 3 Pro Deep Think MMMU首位・ARC-AGI-3 33%+・量的向上継続・「真の理解」客観的検証未到達）・IND-026 high維持（ALE完遂<5%・72%導入/60%ガバナンス格差・71%運用コスト>構築コスト・期待-実態ギャップ構造化継続）・IND-027 high維持（AAIF中立ガバナンス・MCP Agent Skills・Antigravity CLI・Sandbox OSS・AgentPerf・標準化爆発的加速継続）・IND-028 high維持（ARC-AGI-3 33%+ハイブリッド・HLE 41%・RSI具体化とベンチマーク限界の同時進行・CEO AGIタイムライン分裂）・IND-029 high維持（2日で$6.5億+調達・DC $3,200億/年・2030年$7兆軌道・OpenAI Q1 $5.7B/$3.7Bバーン・資本流入加速・物理的制約ギャップ確定的）・IND-030 high→critical移行（Operation Epic Fury 96h/2,000標的・ミナブ小学校168人死亡・Operation Epic Fury全体600-1,400+民間人死亡・DoD CDAO宣誓陳述書・輸出管理指令・Gillibrand法案・DeepMind AI Control Roadmap。Arbiter v4.14累積トリガー条件（条件1・3）両方充足・軍事AI相転移（実験→実戦制度化）・critical移行承認）",
+  "version": "4.16",
+  "last_updated": "2026-06-22",
+  "description": "I&W（Indications and Warning）指標レジストリ. v4.16: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Fable 5/Mythos 5 jailbreak脆弱性が輸出管理triggered INFO-005 A-1・freefable.org公開書簡。新規A-2実被害報告なし）・IND-025 elevated維持（Gemini Omni動画生成・Live Translate 70+言語・Seedance 4モダリティ同時入力。量的向上継続。「真の理解」客観的検証未到達）・IND-026 high維持（72%導入/60%ガバナンス格差・F500 15万エージェント予測・ALE完遂<2.5%・企業AI成功率10%・Klarna $40B損失。6独立ソースで期待-実態ギャップ構造化確認）・IND-027 high維持（Salesforce×Databricks MCP統合・Grok on Databricks・Agent Bricks拡張・Grok Skills API/MCP server・Vertex→Gemini Enterprise。標準化爆発的加速継続）・IND-028 high維持（OpenAI RSI Safety研究者採用・DeepMind AI意識論文・UK AI Scenarios 2030。RSI具体化とベンチマーク限界の同時進行）・IND-029 high維持（OpenAI Q1 $5.7B/$3.7Bバーン・SpaceX/xAI IPO $1.7T/$75B・Anthropic $65B/$965B・FERC高速グリッド接続4倍電力。資本流入加速・物理的制約ギャップ確定的）・IND-030 critical維持（CDAO宣誓陳述書再確認・Le Monde独立確認・輸出管理措置・200+団体アピール・判事Lin追加詳細。軍事AI相転移の複数独立確認。「設計通り≠技術的安全事故」区別の実質崩壊がINFO-005(jailbreak→輸出管理)で更に進行。条件2未到達）",
   "structural_changes_log": [
+    "2026-06-22 v4.16: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Fable 5/Mythos 5 jailbreak脆弱性が輸出管理triggered INFO-005 A-1 CNN・freefable.org公開書簡。新規A-2品質実被害報告なし。critical移行条件=実被害A-2報告 未到達）。IND-025 elevated維持（Gemini Omni動画生成 INFO-009 A-3・Live Translate 70+言語 INFO-055 B-3・Seedance 4モダリティ同時入力 INFO-052 A-2。量的向上継続・「真の理解」客観的検証未到達）。IND-026 high維持（72%導入/60%ガバナンス格差 INFO-015 B-3・F500 15万エージェント予測 INFO-019 B-2・ALE完遂<2.5% INFO-034 B-2・企業AI成功率10% INFO-041 C-3・Klarna $40B損失 INFO-026 B-2・BCO変革ギャップ INFO-044 B-2。6独立ソースで期待-実態ギャップ構造的パターン化確認）。IND-027 high維持（Salesforce×Databricks MCP統合 INFO-017 A-2・Grok on Databricks INFO-008 A-3・Agent Bricks拡張 INFO-048 A-3・Grok Skills API/MCP server INFO-054 B-3・Vertex→Gemini Enterprise INFO-014 A-3。標準化爆発的加速継続。围い込み同時進行も記録）。IND-028 high維持（OpenAI RSI Safety研究者採用 INFO-040 A-3・DeepMind AI意識論文 INFO-037 A-3・UK AI Scenarios 2030 INFO-057 A-3。RSI具体化と客観ベンチマーク限界の同時進行・CEO AGIタイムライン分裂継続）。IND-029 high維持（OpenAI Q1 $5.7B収益/$3.7Bバーン INFO-002 B-3・SpaceX/xAI IPO $1.7T/$75B INFO-053 B-3・Anthropic $65B/$965B INFO-012 B-3・市場$539.5B 19%成長 INFO-030 B-2・FERC高速グリッド接続4倍電力 INFO-056 A-2。資本流入加速継続・物理的制約ギャップ確定的）。IND-030 critical維持（CDAO宣誓陳述書再確認 INFO-003 A-1・Le Monde独立確認 Grok replacing Claude INFO-004 A-2・輸出管理措置 INFO-005 A-1・200+団体アピール INFO-024 B-2・判事Lin追加詳細 INFO-001 B-3。Arbiter v4.15 critical移行妥当性確認。軍事AI相転移の複数独立A-1/A-2ソース確認。司法・社会逆圧(判事Lin・200+団体・Google従業員600人)は緩和要因として記録継続。条件2（A-2品質技術的安全事故）未到達。「設計通り≠技術的安全事故」区別の実質崩壊がINFO-005(jailbreak脆弱性→輸出管理措置)で更に進行——技術的安全性リスクと政策的介入手段の融合。IND-013/026への波及効果は次回COMPLETE検討課題（自動的波及なし）",
     "2026-06-21 v4.15: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（IND-030 high→critical移行1件・6件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Amazon研究者ガードレール回避論文が輸出管理指令triggered INFO-054 A-1・Sandbox egress迂回リスク INFO-017 B-2・Mitiga Skillgate攻撃検知 INFO-018 B-2。新規A-2品質実被害報告なし。critical移行条件=実被害A-2報告 未到達）。IND-025 elevated維持（Gemini 3 Pro Deep Think MMMU首位100 INFO-015 C-3・ARC-AGI-3 33%+ハイブリッド INFO-038 B-2・Gemini Omni世界モデル INFO-004 A-3。量的向上継続・「真の理解」客観的検証未到達）。IND-026 high維持（ALE完遂<5% 55職種1500+タスク INFO-026 B-2・72%導入/60%ガバナンス格差 INFO-011 C-2・71%運用コスト>構築コスト INFO-020 B-2・Gartner F500 15万エージェント予測 INFO-020 B-2。期待-実態ギャップ構造的パターン化継続）。IND-027 high維持（AAIF中立ガバナンス INFO-013 C-3・MCP Agent Skills INFO-014 B-2・Antigravity CLI INFO-018 B-2・Anthropic Sandbox OSS INFO-017 B-2・AgentPerf AA×NVIDIA INFO-019 B-2・Chrome DevTools・Salesforce×Databricks。標準化爆発的加速継続）。IND-028 high維持（ARC-AGI-3 33%+ハイブリッド INFO-038 B-2・Gemini 3 Deep Think HLE 41% INFO-015 C-3・OpenAI RSI Safety研究者募集 INFO-039 B-2・CEO AGIタイムライン分裂 Amodei 2027/Hassabis 5-10y/Musk今年/LeCun否定。RSI具体化と客観ベンチマーク限界の同時進行）。IND-029 high維持（2日で$6.5億+調達 INFO-032 B-2・DC $3,200億/年・2030年$7兆軌道 INFO-032 B-2・OpenAI Q1 $5.7B/$3.7Bバーン INFO-045 C-2・IPO $1T評価額 INFO-050 B-2・半導体100%関税 INFO-047 A-2・CHIPS Act残$3.2B。資本流入加速・物理的制約ギャップ確定的）。IND-030 high→critical移行承認（Operation Epic Fury 96h/2,000標的/2,000発 INFO-044 A-2・ミナブ小学校168人死亡 INFO-043 B-2・Operation Epic Fury全体600-1,400+民間人死亡 INFO-049 B-2・DoD CDAO宣誓陳述書「独自機能」INFO-053 A-1・商務省輸出管理指令 Fable 5/Mythos 5 INFO-054 A-1・Sen. Gillibrand法案 LLM武力行使禁止・DeepMind AI Control Roadmap シャットダウン抵抗AI備え。Arbiter v4.14累積トリガー条件: 条件1（B-2品質以上民間被害報告2件以上）充足・条件3（軍事AI B-2+証拠5件以上2R連続到達）充足。条件2（A-2品質技術的安全事故報告）未到達。critical移行根拠: (1)累積トリガー2R連続到達・(2)軍事AI相転移（実験→実戦制度化）・(3)2,000標的/96hテンポで意味ある人間監査が物理的に困難・設計通りと技術的安全リスクの境界が実質消滅・(4)Gillibrand法案・DeepMind AI Control Roadmapは立法府・最先端開発者が最高警戒レベルで認識。制約記録: KIQ-MIL-001（Grok AI標的選定関与度）未回答・ミナブ小学校攻撃のAI因果関係は未確定・条件2（A-2技術的安全事故）未到達・司法立法逆圧を緩和要因として記録・「設計通り≠技術的安全事故」区別崩壊のIND-013/026波及効果は次回検討課題（自動的波及なし）",
     "2026-06-20 v4.14: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新・IND-030 critical移行条件見直し実行）。全7指標high/elevated維持。IND-013 high維持（GitHub 2026年5月9件/4月10件サービス劣化 INFO-020 C-2・MCP Gateway認証中央集権化 INFO-025 C-2。新規A-2品質実被害報告なし。critical移行条件=実被害A-2報告 未到達）。IND-025 elevated維持（Gemini 3.1 Pro動画推論55.63% INFO-031 B-3・ARC-AGI-3 0.37% GPT-5.4は0.26% INFO-096 B-2・SingularityNETハイブリッド33%+ INFO-097 B-3。high移行条件=真の理解客観的検証 未到達）。IND-026 high維持（ALE完遂<5% 55職種1500+タスク INFO-054 B-2・Gartner 17%展開済40%2027キャンセル INFO-041 B-2・LangChain agent 30%静かな失敗 INFO-043 C-2・HR agent主張65% vs真の展開<15% INFO-057 C-2。期待-実態ギャップ構造的パターン化確定）。IND-027 high維持（MCP Google/AWS/MDN採用 INFO-025 A-3・AAIF 170社43新規 INFO-024 A-3・MLCommons MLPerf Training v6.0初エージェント型 INFO-032 A-3・NVIDIA OpenShell OSS INFO-033 A-3。標準化爆発的加速）。IND-028 high維持（DeepMind「From AGI to ASI」AGI 2029-2030 INFO-098 A-2・ARC-AGI-3 0.37% INFO-096 B-2・LeCun AMI Labs設立 INFO-102 B-2・SingularityNET 33%+ハイブリッド INFO-097 B-3。RSI具体化と客観ベンチマーク限界の同時進行・研究者根本的意見分裂）。IND-029 high維持（Anthropic $650億$965億評価 INFO-073 B-2・OpenAI Q1 $57億収益/$37億バーン INFO-012 B-2・Alibaba RMB 3,800億投資 INFO-094 B-2・AI DC投資ブーム INFO-076 B-2・NVIDIA $5.014兆 INFO-075 C-2。資本流入加速・物理的制約ギャップ確定的）。IND-030 high維持（Grok AI Operation Epic Fury 96h/2,000目標/2,000発弾薬キルチェーン統合 INFO-006 B-2・ミナブ女子校175+死亡米軍関与濃厚 AI支援目標特定関連可能性 INFO-007 B-2・ペンタゴン ガードレール除去期限付き要求 INFO-008 B-2・Kelly NDAA修正人間究極権限条項 INFO-009 B-2・HRW複数AIシステム軍事依存 LAWS協議 INFO-010 B-2・xAI Grok $200M軍事統合 INFO-052 B-2。6件B-2同一ラウンド到達。critical移行見送り: B-2<A-2閾値。critical移行条件見直し実行: 累積トリガー条件追加「同一ラウンド軍事AI関連B-2証拠5件以上到達でcritical移行検討開始」。本ラウンド6件到達で起動条件充足・移行見送り。次回条件: B-2品質以上民間被害報告追加2件以上 OR A-2品質技術的安全事故報告 OR 起動条件下軍事AI B-2証拠5件以上2R連続到達",
     "2026-06-19 v4.13: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。全7指標high/elevated維持。IND-013 high維持（OpenBSD 27年脆弱性発見 INFO-081 B-3・GitHub月19件障害 INFO-020 C-3・MCP Gateway認証中央集権化 INFO-025 C-2。critical移行条件=実被害A-2報告 未到達）。IND-025 elevated維持（Gemini 3.1 Pro動画推論55.63% INFO-031 B-3・ARC-AGI-3全フロンティア0.37% INFO-077 B-3・Claude Fable 5 SWFTE 100/100 INFO-060 C-3。high移行条件=真の理解客観的検証 未到達）。IND-026 high維持（ALE完遂<5% INFO-051 B-2・95%失敗 INFO-076 C-2・96%ROI vs 74%ロールバック矛盾 INFO-040 B-2。期待-実態ギャップ構造的パターン化確定）。IND-027 high維持（MCP月間1.1億DL INFO-025 C-2・AAIF 170社 INFO-024 A-3・MLPerf v6.0初エージェント型 INFO-030 A-3。標準化爆発的加速）。IND-028 high維持（DeepMind AGI 2029-2030 INFO-078 A-2・ARC-AGI-3 0.37% INFO-077 B-3・LeCun退社AMI Labs INFO-080 B-2。RSI具体化と客観ベンチマーク限界の同時進行・研究者根本的意見分裂新次元）。IND-029 high維持（Dallas Fed $3-5T INFO-066 B-2・ByteDance 2000億元Capex INFO-092 B-2・Q1 $3000億 INFO-065 B-2・Anthropic $650億 INFO-064 B-2。資本流入加速・物理的制約ギャップ確定的）。IND-030 high維持（Grok軍事96h/2,000目標/2,000発弾薬 INFO-008 B-2・Gillibrand法案 INFO-009 C-3・Google兵器誓約削除 INFO-015 C-2・OpenAI Pentagon GenAI.mil 300万人 INFO-048/010 B-2/C-3。能力-リスク二面性極大化。critical移行見送り継続: 設計通りの軍事利用≠技術的安全事故・区別維持。Red指摘採用: KIQ-MIL-001民間被害データ不在は正常性バイアス逆方向リスク。Gillibrand法案進捗がcritical移行の关键変数。次回条件: 技術的安全事故A-2品質報告・またはOperation Epic Fury民間被害A-2報告でcritical移行検討",
@@ -22,9 +23,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Amazon研究者ガードレール回避論文が輸出管理指令triggered（INFO-054 A-1）・Sandbox egress迂回リスク（INFO-017 B-2）・Mitiga Skillgate攻撃検知（INFO-018 B-2）。新規A-2品質実被害報告なし。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達",
-      "last_checked": "2026-06-21",
-      "rationale": "Arbiter v4.15: high維持。COMPLETE。Amazon研究者ガードレール回避論文が輸出管理指令をtriggered（INFO-054 A-1）。Sandbox egress迂回リスク（INFO-017 B-2）・Mitiga Skillgate攻撃検知（INFO-018 B-2）。新規A-2品質実被害報告なし。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達"
+      "last_value": "Fable 5/Mythos 5 jailbreak脆弱性が輸出管理指令triggered（INFO-005 A-1 CNN）・freefable.org公開書簡。新規A-2品質実被害報告なし。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達",
+      "last_checked": "2026-06-22",
+      "rationale": "Arbiter v4.16: high維持。DEGRADED。Fable 5/Mythos 5 jailbreak脆弱性が輸出管理指令をtriggered（INFO-005 A-1 CNN）。freefable.org公開書簡。新規A-2品質実被害報告なし。攻撃面拡大基調継続。critical移行条件（実被害A-2報告）未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -33,9 +34,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Gemini 3 Pro Deep Think MMMU首位100（INFO-015 C-3）・ARC-AGI-3 33%+ハイブリッド（INFO-038 B-2）・Gemini Omni世界モデル（INFO-004 A-3）。量的向上継続・コーディング特化vs汎用推論の二極化。「真の理解」検証未解決",
-      "last_checked": "2026-06-21",
-      "rationale": "Arbiter v4.15: elevated維持。COMPLETE。特定タスク（コーディング）での向上と汎用推論（ARC-AGI-3）での停滞の二極化継続。Gemini 3 Pro Deep Think MMMU首位100（INFO-015 C-3）・ARC-AGI-3 33%+ハイブリッド（INFO-038 B-2）・Gemini Omni世界モデル（INFO-004 A-3）。high移行条件（真の理解の客観的検証）未到達"
+      "last_value": "Gemini Omni動画生成（INFO-009 A-3）・Live Translate 70+言語（INFO-055 B-3）・Seedance 4モダリティ同時入力（INFO-052 A-2）。量的向上継続・コーディング特化vs汎用推論の二極化。「真の理解」検証未解決",
+      "last_checked": "2026-06-22",
+      "rationale": "Arbiter v4.16: elevated維持。DEGRADED。特定タスク（コーディング）での向上と汎用推論での停滞の二極化継続。Gemini Omni動画生成（INFO-009 A-3）・Live Translate 70+言語（INFO-055 B-3）・Seedance 4モダリティ同時入力（INFO-052 A-2）。high移行条件（真の理解の客観的検証）未到達"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -44,9 +45,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "ALE完遂<5% 55職種1,500+タスク（INFO-026 B-2）・72%導入/60%ガバナンス格差（INFO-011 C-2）・71%運用コスト>構築コスト（INFO-020 B-2）・Gartner F500 15万エージェント予測（INFO-020 B-2）。期待-実態ギャップ構造的パターン化確定",
-      "last_checked": "2026-06-21",
-      "rationale": "Arbiter v4.15: high維持。COMPLETE。期待-実態ギャップが複数独立ソース（ALE・Gartner・企業事例）で構造的に確認。ALE完遂<5%（INFO-026 B-2）・72%導入/60%ガバナンス格差（INFO-011 C-2）・71%運用コスト>構築コスト（INFO-020 B-2）。期待-実態ギャップ構造的パターン化確定"
+      "last_value": "72%導入/60%ガバナンス格差（INFO-015 B-3）・F500 15万エージェント予測（INFO-019 B-2）・ALE完遂<2.5%（INFO-034 B-2）・企業AI成功率10%（INFO-041 C-3）・Klarna $40B損失（INFO-026 B-2）・BCO変革ギャップ（INFO-044 B-2）。6独立ソースで期待-実態ギャップ構造的パターン化確認",
+      "last_checked": "2026-06-22",
+      "rationale": "Arbiter v4.16: high維持。DEGRADED。期待-実態ギャップが6独立ソースで構造的に確認。ALE完遂<2.5%（INFO-034 B-2）・72%導入/60%ガバナンス格差（INFO-015 B-3）・F500 15万エージェント予測（INFO-019 B-2）・企業AI成功率10%（INFO-041 C-3）・Klarna $40B損失（INFO-026 B-2）。パターンP-BB参照。期待-実態ギャップ構造的パターン化確定"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -55,9 +56,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "AAIF中立ガバナンス（INFO-013 C-3）・MCP Agent Skills（INFO-014 B-2）・Antigravity CLI（INFO-018 B-2）・Anthropic Sandbox OSS（INFO-017 B-2）・AgentPerf AA×NVIDIA（INFO-019 B-2）・Chrome DevTools・Salesforce×Databricks。標準化爆発的加速・围い込み同時進行",
-      "last_checked": "2026-06-21",
-      "rationale": "Arbiter v4.15: high維持。COMPLETE。AAIF中立ガバナンス（INFO-013 C-3）・MCP Agent Skills（INFO-014 B-2）・Antigravity CLI（INFO-018 B-2）・Anthropic Sandbox OSS（INFO-017 B-2）・AgentPerf（INFO-019 B-2）。標準化爆発的加速継続。围い込み同時進行も記録。プロトコル層開放と制度層围い込みの二層構造観察"
+      "last_value": "Salesforce×Databricks MCP統合（INFO-017 A-2）・Grok on Databricks（INFO-008 A-3）・Agent Bricks拡張（INFO-048 A-3）・Grok Skills API/MCP server（INFO-054 B-3）・Vertex→Gemini Enterprise（INFO-014 A-3）。標準化爆発的加速継続・围い込み同時進行",
+      "last_checked": "2026-06-22",
+      "rationale": "Arbiter v4.16: high維持。DEGRADED。Salesforce×Databricks MCP統合（INFO-017 A-2）・Grok on Databricks（INFO-008 A-3）・Agent Bricks拡張（INFO-048 A-3）・Grok Skills API/MCP server（INFO-054 B-3）。標準化爆発的加速継続。围い込み同時進行も記録。プロトコル層開放と制度層围い込みの二層構造観察"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -66,9 +67,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "ARC-AGI-3 33%+ハイブリッド（INFO-038 B-2）・Gemini 3 Deep Think HLE 41%（INFO-015 C-3）・OpenAI RSI Safety研究者募集（INFO-039 B-2）・CEO AGIタイムライン分裂（Amodei 2027/Hassabis 5-10y/Musk今年/LeCun否定）。RSI具体化と客観ベンチマーク限界の同時進行・研究者根本的意見分裂",
-      "last_checked": "2026-06-21",
-      "rationale": "Arbiter v4.15: high維持。COMPLETE。研究者間の根本的意見分裂が顕在化: CEO AGIタイムライン分裂（Amodei 2027/Hassabis 5-10y/Musk今年/LeCun否定 INFO-039 B-2）。客観的ベンチマーク（ARC-AGI-3 33%+ハイブリッド INFO-038 B-2）と主観的AGI宣言の乖離拡大。OpenAI RSI Safety研究者募集（INFO-039 B-2）でRSI具体化。ベンチマーク限界の同時進行"
+      "last_value": "OpenAI RSI Safety研究者採用（INFO-040 A-3）・DeepMind AI意識論文（INFO-037 A-3）・UK AI Scenarios 2030（INFO-057 A-3）・米国安全評価大統領令準備（INFO-039 B-3）。RSI具体化と客観ベンチマーク限界の同時進行・CEO AGIタイムライン分裂継続",
+      "last_checked": "2026-06-22",
+      "rationale": "Arbiter v4.16: high維持。DEGRADED。OpenAI RSI Safety研究者採用（INFO-040 A-3）でRSI具体化。DeepMind AI意識論文（INFO-037 A-3）・UK AI Scenarios 2030（INFO-057 A-3）。CEO AGIタイムライン分裂継続（Amodei 2027/Hassabis 5-10y/Musk今年/LeCun否定）。客観的ベンチマークと主観的AGI宣言の乖離拡大"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -77,9 +78,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "2日で$6.5億+調達・DC $3,200億/年・2030年$7兆軌道（INFO-032 B-2）・OpenAI Q1 $5.7B収益/$3.7Bバーン（INFO-045 C-2）・IPO $1T評価額（INFO-050 B-2）・半導体100%関税（INFO-047 A-2）・CHIPS Act残$3.2B。資本流入加速・物理的制約ギャップ確定的",
-      "last_checked": "2026-06-21",
-      "rationale": "Arbiter v4.15: high維持。COMPLETE。2日で$6.5億+調達・DC $3,200億/年・2030年$7兆軌道（INFO-032 B-2）・OpenAI Q1 $5.7B収益/$3.7Bバーン（INFO-045 C-2）・IPO $1T評価額（INFO-050 B-2）・半導体100%関税（INFO-047 A-2）。資本流入加速継続・物理的制約ギャップ確定的"
+      "last_value": "OpenAI Q1 $5.7B収益/$3.7Bバーン（INFO-002 B-3）・SpaceX/xAI IPO $1.7T/$75B（INFO-053 B-3）・Anthropic $65B/$965B（INFO-012 B-3）・市場$539.5B 19%成長（INFO-030 B-2）・FERC高速グリッド接続4倍電力（INFO-056 A-2）。資本流入加速継続・物理的制約ギャップ確定的",
+      "last_checked": "2026-06-22",
+      "rationale": "Arbiter v4.16: high維持。DEGRADED。OpenAI Q1 $5.7B収益/$3.7Bバーン（INFO-002 B-3）・SpaceX/xAI IPO $1.7T/$75B（INFO-053 B-3）・Anthropic $65B/$965B（INFO-012 B-3）・市場$539.5B 19%成長（INFO-030 B-2）・FERC高速グリッド接続4倍電力（INFO-056 A-2）。資本流入加速継続・物理的制約ギャップ確定的"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -88,9 +89,9 @@
       "current_status": "critical",
       "trend": "rising",
       "alert_level": "critical",
-      "last_value": "Operation Epic Fury 96h/2,000標的/2,000発（INFO-044 A-2）・ミナブ小学校168人死亡（INFO-043 B-2）・Operation Epic Fury全体600-1,400+民間人死亡（INFO-049 B-2）・DoD CDAO宣誓陳述書「独自機能」（INFO-053 A-1）・商務省輸出管理指令 Fable 5/Mythos 5（INFO-054 A-1）・Sen. Gillibrand法案（LLM武力行使禁止）・DeepMind AI Control Roadmap（シャットダウン抵抗AI備え）。Arbiter v4.14累積トリガー条件（条件1・3）両方充足。軍事AI相転移（実験→実戦制度化）。critical移行承認",
-      "last_checked": "2026-06-21",
-      "rationale": "Arbiter v4.15: high→critical移行承認。COMPLETE。Arbiter v4.14累積トリガー条件: 条件1（B-2品質以上民間被害報告2件以上）充足——INFO-043 ミナブ小学校168人死亡(B-2)・INFO-049 Operation Epic Fury全体600-1,400+民間人死亡(B-2)。条件3（軍事AI B-2+証拠5件以上2R連続到達）充足——前回6件・今回6件（INFO-043/044/046/049/024/053）。条件2（A-2品質技術的安全事故報告）未到達——政府リスク認定A-1は到達したが技術的安全事故ではない。critical移行根拠: (1)累積トリガー2R連続到達・(2)軍事AI相転移（実験→実戦制度化）——Operation Epic Furyは軍事AIが個別実験から構造的実践に移行した初の事象・(3)2,000標的/96hテンポで意味ある人間監査が物理的に困難・設計通りと技術的安全リスクの境界が実質消滅・(4)Sen. Gillibrand法案（LLM人間監視なし武力行使禁止）・DeepMind AI Control Roadmap（シャットダウン抵抗AI備え）は立法府・最先端開発者自身が最高警戒レベルで認識。制約記録: KIQ-MIL-001（Grok AI標的選定関与度）未回答・ミナブ因果関係未確定・条件2（A-2技術的安全事故）未到達・司法立法逆圧（判事Rita Lin・Gillibrand法案）を緩和要因として記録・「設計通り≠技術的安全事故」区別崩壊のIND-013/026波及効果は次回検討課題（自動的波及なし）"
+      "last_value": "CDAO宣誓陳述書再確認（INFO-003 A-1）・Le Monde独立確認 Grok replacing Claude（INFO-004 A-2）・輸出管理措置 Fable 5/Mythos 5（INFO-005 A-1 CNN）・200+団体アピール（INFO-024 B-2）・判事Lin追加詳細（INFO-001 B-3）・Google従業員600人反対（INFO-004 A-2）。Arbiter v4.15 critical移行妥当性確認。軍事AI相転移の複数独立A-1/A-2確認。条件2（A-2技術的安全事故）未到達。「設計通り≠技術的安全事故」区別の実質崩壊がINFO-005(jailbreak→輸出管理)で更に進行",
+      "last_checked": "2026-06-22",
+      "rationale": "Arbiter v4.16: critical維持。DEGRADED。Arbiter v4.15 critical移行妥当性確認。CDAO宣誓陳述書再確認（INFO-003 A-1）・Le Monde独立確認（INFO-004 A-2）・輸出管理措置（INFO-005 A-1 CNN）。軍事AI相転移（実験→実戦制度化）の複数独立A-1/A-2ソース確認。司法・社会の逆圧（判事Lin・200+団体・Google従業員600人）は緩和要因として記録継続。条件2（A-2技術的安全事故）未到達。INFO-005(jailbreak脆弱性→輸出管理)は技術的安全性リスクと政策的介入手段の融合を示す——「設計通り≠技術的安全事故」区別の実質崩壊が進行中。IND-013/026への波及効果は次回COMPLETE検討課題（自動的波及なし）。制約記録: KIQ-MIL-001（Grok AI標的選定関与度）未回答"
     }
   }
 }
