@@ -1,7 +1,7 @@
 {
-  "version": "4.16",
-  "last_updated": "2026-06-22",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.16: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗）。シナリオ全件±0%: SCN-001 ±0%（17%維持）・SCN-002 ±0%（30%維持）・SCN-003 ±0%（23%維持）・SCN-004 ±0%（30%維持）。合計100%維持（17+30+23+30=100%）。第5シナリオ「地政学的AI市場分裂」4R連続申し送り・次回COMPLETE正式生成最高優先度",
+  "version": "4.17",
+  "last_updated": "2026-06-23",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.17: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・2R連続）。シナリオ2件変更: SCN-001 -1%（17→16% プロトコル開放臨界点通過・パターンP-HH・5件A-2/A-3品質開放証拠同一ラウンド）・SCN-002 +1%（30→31% 標準化加速+フロンティア持続同時観察・SCN-001再配分）・SCN-003 ±0%（23%維持）・SCN-004 ±0%（30%維持）。合計100%維持（16+31+23+30=100%）。第5シナリオ「地政学的AI市場分裂」5R連続申し送り・証拠臨界点到達・次回COMPLETE正式生成最優先",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 17,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.15: ±0%（17%維持）。政治的排除(Anthropic)は技術的围い込みと異なるメカニズム。プロトコル層開放（Antigravity CLI・Sandbox OSS・AAIF・MCP Agent Skills）が围い込みを直接否定。司法逆圧(判事Rita Lin)が围い込みを抑制。第5シナリオ「地政学的AI市場分裂」Phase 6強化記録・次回正式生成強く推奨",
+      "probability": 16,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v4.17: -1%（17→16%）。DEGRADED。プロトコル開放が臨界点通過（パターンP-HH）: Antigravity Claude Code/Codexクロス互換(INFO-020 A-2)・NVIDIA OpenShell(INFO-019 A-3)・gpt-oss Google Cloudホスト(INFO-017 A-2)・Agent Skills生態系(INFO-013)・Chrome DevTools(INFO-015 A-3)。5件のA-2/A-3品質開放証拠が同一ラウンドで観察。围い込み戦略の技術的前提が構造的に侵食。Arbiter v4.15「プロトコル層開放が围い込みを直接否定」の更なる強化",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -53,9 +53,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 差別化持続",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 30,
+      "probability": 31,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.15: +1%（29→30%）。COMPLETE。標準化加速（Antigravity CLI・Sandbox OSS・AAIF・MCP Agent Skills・AgentPerf・Chrome DevTools・Salesforce×Databricks）が「開放」軸を押し上げ、フロンティア持続（Fable 5 SWFTE 100・Gemini 3.5 Flash 3.1 Pro超・$2,000/月サブスク）が「差別化」軸を押し上げる両者の同時観察はSCN-002を最も支持。SCN-003 -1%の再配分。Red指摘記録: 標準化=開放の単純化（参加型围い込み可能性）だが現時点でAAIF/MCPガバナンス排除性の証拠は不在",
+      "probability_rationale": "Arbiter v4.17: +1%（30→31%）。DEGRADED。標準化加速（Antigravity・OpenShell・AgentPerf・Interactions API・Salesforce×Databricks MCP）とフロンティア持続（Gemini 3 Pro Deep Think #1・Claude Mythos SWE #1・GPT-5.5 Terminal-Bench #1・API 58倍価格差）の同時観察がSCN-002を最も支持。SCN-001 -1%の再配分",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -81,8 +81,8 @@
       "quadrant_label": "閉鎖 × コモディティ化",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 23,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v4.15: -1%（24→23%）。COMPLETE。標準化加速（Antigravity CLI・Sandbox OSS・AAIF・MCP Agent Skills・AgentPerf）がエコシステム围い込み価値を更に侵食。マルチベンダー28%が4社以上保有がスイッチングコスト溶解を加速。但し本根拠（標準化加速による围い込み価値侵食）での最終適用を宣言——限界効用逓減。次回SCN-003調整には異なる根拠または証拠品質が必要",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v4.17: ±0%（23%維持）。DEGRADED。エコシステム統合のC蓄積だがv4.15限界効用逓減宣言後。本ラウンド開放証拠はSCN-001/002の支持方向。新規围い込みIの質的強化不在で±0%",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -114,7 +114,7 @@
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 30,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.15: ±0%（30%維持）。コモディティ化圧力（OSS性能ギャップほぼ消滅・GLM-5.2オープン重量首位・OpenRouter週次-2%・ChatGPT 50%割れ）はC継続。但しフロンティア持続（Fable 5 SWFTE 100・Gemini 3.5 Flash 3.1 Pro超・$2,000/月サブスク）が同時強化で相反圧力。±0%維持",
+      "probability_rationale": "Arbiter v4.17: ±0%（30%維持）。DEGRADED。コモディティ化圧力（OSS gap急速縮小: Llama 4 Maverick +57%・DeepSeek V3.2 Grok 4 Fast上位・58倍価格差・GLM-5.2首位）継続。同時にフロンティア持続（GPT-5.5 #1・Fable 5最高価格帯・$2,000/月サブスク）で相反圧力。二層市場の構造化はSCN-002とSCN-004の両方を支持。±0%維持",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -163,7 +163,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-22",
-    "note": "SCN-001(17) + SCN-002(30) + SCN-003(23) + SCN-004(30) = 100%. Arbiter v4.16完了（DEGRADED・全件±0%）"
+    "verified_date": "2026-06-23",
+    "note": "SCN-001(16) + SCN-002(31) + SCN-003(23) + SCN-004(30) = 100%. Arbiter v4.17完了（DEGRADED・SCN-001 -1%・SCN-002 +1%）"
   }
 }
