@@ -1,7 +1,7 @@
 {
-  "version": "4.17",
-  "last_updated": "2026-06-23",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ。v4.17: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・2R連続）。シナリオ2件変更: SCN-001 -1%（17→16% プロトコル開放臨界点通過・パターンP-HH・5件A-2/A-3品質開放証拠同一ラウンド）・SCN-002 +1%（30→31% 標準化加速+フロンティア持続同時観察・SCN-001再配分）・SCN-003 ±0%（23%維持）・SCN-004 ±0%（30%維持）。合計100%維持（16+31+23+30=100%）。第5シナリオ「地政学的AI市場分裂」5R連続申し送り・証拠臨界点到達・次回COMPLETE正式生成最優先",
+  "version": "4.18",
+  "last_updated": "2026-06-24",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.18: Arbiter統合判断（COMPLETE状態・Blue/Red両方完了・Red Agent復旧）。SCN-005「地政学的AI市場分裂」正式生成（6R連続申し送り解消・確率10%）。SCN-001 16→12%（-4%: Blue -1%+SCN-005再配分-3%）・SCN-002 31→30%（-1%: Blue +1%→SCN-005再配分-2%）・SCN-003 23→20%（-3%: SCN-005再配分）・SCN-004 30→28%（-2%: SCN-005再配分）。合計100%維持（12+30+20+28+10=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 16,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v4.17: -1%（17→16%）。DEGRADED。プロトコル開放が臨界点通過（パターンP-HH）: Antigravity Claude Code/Codexクロス互換(INFO-020 A-2)・NVIDIA OpenShell(INFO-019 A-3)・gpt-oss Google Cloudホスト(INFO-017 A-2)・Agent Skills生態系(INFO-013)・Chrome DevTools(INFO-015 A-3)。5件のA-2/A-3品質開放証拠が同一ラウンドで観察。围い込み戦略の技術的前提が構造的に侵食。Arbiter v4.15「プロトコル層開放が围い込みを直接否定」の更なる強化",
+      "probability": 12,
+      "probability_change": "-4%",
+      "probability_rationale": "Arbiter v4.18: -4%（16→12%）。COMPLETE。Blue -1%（プロトコル開放臨界点通過・6件A-2/A-3品質開放証拠同一ラウンド: Interactions API GA・AAIF成長・Agent Skills標準・OpenShell・Chrome DevTools・Salesforce-Databricks MCP・围い込み技術的前提の構造的侵食）+ SCN-005再配分-3%（地政学的ブロック化が純粋围い込みを最も包摂・SpaceX/xAI垂直統合は地政学的次元の構成要素として再分類）",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -53,9 +53,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 差別化持続",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 31,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.17: +1%（30→31%）。DEGRADED。標準化加速（Antigravity・OpenShell・AgentPerf・Interactions API・Salesforce×Databricks MCP）とフロンティア持続（Gemini 3 Pro Deep Think #1・Claude Mythos SWE #1・GPT-5.5 Terminal-Bench #1・API 58倍価格差）の同時観察がSCN-002を最も支持。SCN-001 -1%の再配分",
+      "probability": 30,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v4.18: -1%（31→30%）。COMPLETE。Blue +1%（標準化加速+フロンティア持続の同時観察が最支持: Interactions API GA・AAIF成長・Fable 5 SOTA・Gemini 3 Pro #1・API 58倍価格差）→SCN-005再配分-2%で差引-1%。依然最有力シナリオ。Red指摘記録: 標準化=開放の単純化（参加型围い込みの可能性・AAIF 170社の参入障壁形成構造）",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -80,9 +80,9 @@
       "quadrant": "bottom-left",
       "quadrant_label": "閉鎖 × コモディティ化",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
-      "probability": 23,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.17: ±0%（23%維持）。DEGRADED。エコシステム統合のC蓄積だがv4.15限界効用逓減宣言後。本ラウンド開放証拠はSCN-001/002の支持方向。新規围い込みIの質的強化不在で±0%",
+      "probability": 20,
+      "probability_change": "-3%",
+      "probability_rationale": "Arbiter v4.18: -3%（23→20%）。COMPLETE。±0%（Blue通り・v4.15限界効用逓減宣言後・本ラウンド開放証拠はSCN-001/002支持方向・新規围い込みIの質的強化不在）+ SCN-005再配分-3%（規制・データ主権围い込みは地政学的次元と重複・EU AI Act・チップ輸出管理・Trump州規制無効化がブロック間围い込みを形成）",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -112,9 +112,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 30,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.17: ±0%（30%維持）。DEGRADED。コモディティ化圧力（OSS gap急速縮小: Llama 4 Maverick +57%・DeepSeek V3.2 Grok 4 Fast上位・58倍価格差・GLM-5.2首位）継続。同時にフロンティア持続（GPT-5.5 #1・Fable 5最高価格帯・$2,000/月サブスク）で相反圧力。二層市場の構造化はSCN-002とSCN-004の両方を支持。±0%維持",
+      "probability": 28,
+      "probability_change": "-2%",
+      "probability_rationale": "Arbiter v4.18: -2%（30→28%）。COMPLETE。±0%（Blue通り・コモディティ化圧力: OSS gap急速縮小・58倍価格差継続・同時にフロンティア持続で相反圧力・二層市場構造化はSCN-002とSCN-004両方支持）+ SCN-005再配分-2%（コモディティ化は地政学的分裂とやや反発的・中国独自圏・主権AIはコモディティ化阻止方向）",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -130,6 +130,30 @@
         "IND-010",
         "IND-011",
         "IND-017"
+      ]
+    },
+    {
+      "scenario_id": "SCN-005",
+      "name": "地政学的AI市場分裂",
+      "quadrant": "geopolitical",
+      "quadrant_label": "地政学的ブロック化（既存4象限の修飾シナリオ）",
+      "description": "AI市場が地政学的ブロック（SpaceX/xAI・Google-Anthropic・中国独自圏・欧州主権AI等）に分裂する。技術標準（MCP/AAIF）は共有されつつ、規制・チップ輸出管理・データ主権でブロック間の相互運用性が制限される。既存4象限（SCN-001〜004）は各ブロック内での競争ダイナミクスを記述し続ける",
+      "probability": 10,
+      "probability_change": "NEW",
+      "probability_rationale": "Arbiter v4.18: 正式生成（10%）。COMPLETE。6R連続申し送り解消。三極以上の地政学的ブロック化（SpaceX/xAI $1.25兆+Cursor $60B+軍事$200M・Google-Anthropic $40B投資+安全性ブランド・中国独自圏 AI レイオフ違法化+ByteDance/DeepSeek）が競争の主要フレームになる確率。技術標準は共有（MCP/AAIF・Interactions API）されつつ規制・チップ・データ主権でブロック間相互運用性が制限。既存4象限の「代替」でなく「修飾」——各ブロック内でSCN-001〜004が適用。制約記録（Red指摘）: (1)極の定義不安定（米国内2極の可能性）・(2)INFO-062等の提言志向型ソース（Hoover/FII）は推算の可能性・(3)「分裂」vs「並行展開」（同一技術の地政学的セグメンテーション可能性を含む）",
+      "key_assumptions": [
+        "地政学的ブロック化が技術標準化を上回る影響を持つ",
+        "チップ・データ主権規制が相互運用性を阻害する",
+        "各ブロック内で独自の競争動態が展開する"
+      ],
+      "implications": [
+        "ブロック間でのAI能力格差が拡大する",
+        "技術標準の表面的な共有にもかかわらず実質的な相互運用性が低下する",
+        "各ブロックの規制環境が独自の競争構造を生む"
+      ],
+      "indicators": [
+        "IND-029",
+        "IND-030"
       ]
     }
   ],
@@ -163,7 +187,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-23",
-    "note": "SCN-001(16) + SCN-002(31) + SCN-003(23) + SCN-004(30) = 100%. Arbiter v4.17完了（DEGRADED・SCN-001 -1%・SCN-002 +1%）"
+    "verified_date": "2026-06-24",
+    "note": "SCN-001(12) + SCN-002(30) + SCN-003(20) + SCN-004(28) + SCN-005(10) = 100%. Arbiter v4.18完了（COMPLETE・SCN-005正式生成）"
   }
 }
