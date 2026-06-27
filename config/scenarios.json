@@ -1,7 +1,7 @@
 {
-  "version": "4.20",
-  "last_updated": "2026-06-26",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.20: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗）。Blue Agent ±2%提案をDEGRADED制約(±1%制限)で調整。SCN-002 31→30%（-1%: Blue -2%を±1%調整・BenchPress rank-2(B-3)がフロンティア前提挑戦するが標準化加速A-3品質直接支持で-2%は過大・Blue自身代替解釈記録採用）・SCN-003 20→19%（-1%: 開放証拠はSCN-001/002支持方向・SCN-005再配分）・SCN-004 27→28%（+1%: BenchPress rank-2+API価格$30→<$1(A-3)=コモディティ化直接証拠）・SCN-005 10→11%（+1%: Blue +2%を±1%調整・政府介入カスケードは有意だが「単一国家内規制」vs「ブロック間分裂」未検証で+2%過大）・SCN-001 12%は±0%。合計100%維持（12+30+19+28+11=100%）",
+  "version": "4.21",
+  "last_updated": "2026-06-27",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.21: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・2R連続）。Blue Agent ±1%提案を全件承認。SCN-001 12→11%（-1%: 標準化加速・OpenAI Agents SDK provider-agnosticが純粋囲い込み技術的前提を継続侵食）・SCN-002 30→29%（-1%: BenchPress rank-2等性能収束がフロンティア前提挑戦・但しGPT-5.6 Sol+Jalapeño差別化存在で-1%）・SCN-003 19%は±0%（スイッチングコストvs開放代替の相殺）・SCN-004 28→29%（+1%: コモディティ化4重確認: BenchPress rank-2+コスト危機+OSS逆転+業界認識）・SCN-005 11→12%（+1%: Pentagon中国企業ブラックリストA-2=v4.20『単一国家内vsブロック間』未検証問題への直接証拠）。合計100%維持（11+29+19+29+12=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 12,
-      "probability_change": "-4%",
-      "probability_rationale": "Arbiter v4.18: -4%（16→12%）。COMPLETE。Blue -1%（プロトコル開放臨界点通過・6件A-2/A-3品質開放証拠同一ラウンド: Interactions API GA・AAIF成長・Agent Skills標準・OpenShell・Chrome DevTools・Salesforce-Databricks MCP・围い込み技術的前提の構造的侵食）+ SCN-005再配分-3%（地政学的ブロック化が純粋围い込みを最も包摂・SpaceX/xAI垂直統合は地政学的次元の構成要素として再分類）",
+      "probability": 11,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v4.21: -1%（12→11%）。DEGRADED（Red Agent失敗・2R連続・Arbiter独自批判分析）。Blue承認。標準化加速（MCP 2026-07-28 RC・AAIF 60K+プロジェクト・1000+クロスベンダースキル・Sandbox Runtime OSS・Interactions API GA）が囲い込み技術的前提を継続侵食。OpenAI Agents SDK provider-agnosticは最大手プレイヤー自身が囲い込み戦略を放棄する方向のシグナル。API非互換(INFO-027)は技術的ロックイン存在を示すがオープン標準の代替が利用可能",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -53,9 +53,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 差別化持続",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 30,
+      "probability": 29,
       "probability_change": "-1%",
-      "probability_rationale": "Arbiter v4.20: -1%（31→30%）。DEGRADED（Red Agent失敗・Arbiter独自批判分析）。Blue -2%を±1%に調整。BenchPress rank-2(INFO-044 B-3: 84モデル×133ベンチマークが2つの数字で~90%予測可能=モデル差構造的縮小)がフロンティア差別化持続（SCN-002核心前提）を根本的に挑戦。但し標準化加速(MCP RC A-3・Sandbox OSS A-3・Interactions API GA A-3)はSCN-002のA-3品質直接支持であり、B-3品質単独（BenchPress）で-2%覆すは過大。Blue自身の代替解釈記録（-1%妥当）を採用。依然最有力シナリオ。DEGRADED制約: 次回COMPLETEでRed交差検証必須",
+      "probability_rationale": "Arbiter v4.21: -1%（30→29%）。DEGRADED（Red Agent失敗・2R連続・Arbiter独自批判分析）。Blue承認。性能収束（MMLU全社>90%・GPQA Diamond 94.4% vs 94.3%実質同点・BenchPress rank-2: 84モデル×133ベンチマークが2つの数字で~90%予測可能=モデル差構造的縮小）がフロンティア差別化持続（SCN-002核心前提）を継続挑戦。企業支出シェアシフト（Anthropic 40%/OpenAI 27%）も「勝者」の流動性を示す。但しGPT-5.6 Sol新SOTA・Jalapeñoチップ等の差別化要因も存在するため-1%に留める。依然最有力シナリオ",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -81,8 +81,8 @@
       "quadrant_label": "閉鎖 × コモディティ化",
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 19,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v4.20: -1%（20→19%）。DEGRADED（Red Agent失敗・Arbiter独自批判分析）。Blue承認。本ラウンド開放証拠（標準化加速: MCP RC・Sandbox OSS・Interactions API GA）はSCN-001/002支持方向。新規围い込みの質的強化不在。SCN-005再配分（政府介入カスケードで地政学的ブロック化シグナル強化・SCN-003の規制围い込みはSCN-005と重複）",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v4.21: ±0%（19%維持）。DEGRADED（Red Agent失敗・2R連続・Arbiter独自批判分析）。Blue承認。スイッチングコスト高い(INFO-027エンタープライズ顧客コスト離れ・INFO-013 Sandbox移行70%+困難)はSCN-003支持。但しSandbox OSS・MCP開放・OpenAI Agents SDK provider-agnosticが代替手段を提供。相殺。新規囲い込みの質的強化不在",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -112,9 +112,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 28,
+      "probability": 29,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.20: +1%（27→28%）。DEGRADED（Red Agent失敗・Arbiter独自批判分析）。Blue +1%承認。BenchPress rank-2(INFO-044 B-3: 84モデル×133ベンチマークが2つの数字で~90%予測可能=モデル差の数学的構造的縮小)はSCN-004（コモディティ化）の最も直接的な構造的証拠。API価格$30→<$1(INFO-043 A-3)・spending wall 95%ROIなし(INFO-015 B-3)・OSS接近がコモディティ化を多面的に支持。BenchPress rank-2の診断的価値は極高（モデル差の数学的縮小=SCN-004核心命題の直接実証）",
+      "probability_rationale": "Arbiter v4.21: +1%（28→29%）。DEGRADED（Red Agent失敗・2R連続・Arbiter独自批判分析）。Blue承認。コモディティ化証拠の多面的蓄積: BenchPress rank-2(B-3: 84モデル×133ベンチマークが2つの数字で~90%予測可能=モデル差数学的構造的縮小)・GPT-5.5は中国モデル44倍コスト(INFO-023)・OSS特定ドメイン逆転(INFO-025)・HubSpot「全マーケター同ツール化」・HBR「AIモデルはコモディティ化」・Sora撤退→Alibaba台頭。4重確認（数学的+経済的+技術的+業界認識）。BenchPress rank-2の診断的価値は極高",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -138,9 +138,9 @@
       "quadrant": "geopolitical",
       "quadrant_label": "地政学的ブロック化（既存4象限の修飾シナリオ）",
       "description": "AI市場が地政学的ブロック（SpaceX/xAI・Google-Anthropic・中国独自圏・欧州主権AI等）に分裂する。技術標準（MCP/AAIF）は共有されつつ、規制・チップ輸出管理・データ主権でブロック間の相互運用性が制限される。既存4象限（SCN-001〜004）は各ブロック内での競争ダイナミクスを記述し続ける",
-      "probability": 11,
+      "probability": 12,
       "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.20: +1%（10→11%）。DEGRADED（Red Agent失敗・Arbiter独自批判分析）。Blue +2%を±1%に調整。政府介入カスケード(P-GOV-CASCADE)が本ラウンドの最重要構造的変化: Fable 5全面停止(A-3)+GPT 5.6 stagger(B-2)+SCR指定+DPA試行+OpenAI Pentagon契約=政府がAI勝者を選ぶ構造の確立。Anthropic 2028論文(INFO-001 A-3)が計算格差の地政学的フレームを明示。技術標準は共有(MCP/AAIF)しつつ規制・軍事・チップでブロック化進行=SCN-005の核心的前提。Blue +2%を±1%に抑制の理由(Red不在の代替検証): 「単一国家内の規制活性化」vs「ブロック間分裂」の区別が未検証——米国内規制活動を「地政学的ブロック化」と解釈する概念拡大のリスク。次回COMPLETEで同盟国規制連動性・チップ輸出管理ブロック形成効果の実証データによる検証必須",
+      "probability_rationale": "Arbiter v4.21: +1%（11→12%）。DEGRADED（Red Agent失敗・2R連続・Arbiter独自批判分析）。Blue承認。Pentagon Alibaba/BYD/Baidu軍事ブラックリスト(INFO-018 A-2)はv4.20『単一国家内規制vsブロック間分裂』未検証問題に対する最も直接的ブロック間分裂証拠。中国AIエージェント統一身元制度(INFO-017)・EU AI Act第50条。Anthropic 2028論文(INFO-003)が計算格差の地政学的フレームを明示。技術標準は共有(MCP/AAIF)しつつ規制・軍事・チップでブロック化進行=SCN-005核心前提。但し『規制アクティベーション』vs『ブロック間分裂』の概念境界はRed不在で未検証=次回COMPLETE検証必須",
       "key_assumptions": [
         "地政学的ブロック化が技術標準化を上回る影響を持つ",
         "チップ・データ主権規制が相互運用性を阻害する",
@@ -187,7 +187,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-06-26",
-    "note": "SCN-001(12) + SCN-002(30) + SCN-003(19) + SCN-004(28) + SCN-005(11) = 100%. Arbiter v4.20完了（DEGRADED・Blue ±2%提案を±1%調整: SCN-002 -1%・SCN-003 -1%・SCN-004 +1%・SCN-005 +1%）"
+    "verified_date": "2026-06-27",
+    "note": "SCN-001(11) + SCN-002(29) + SCN-003(19) + SCN-004(29) + SCN-005(12) = 100%. Arbiter v4.21完了（DEGRADED・Blue ±1%提案全件承認: SCN-001 -1%・SCN-002 -1%・SCN-004 +1%・SCN-005 +1%）"
   }
 }
