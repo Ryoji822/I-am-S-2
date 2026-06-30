@@ -1,8 +1,9 @@
 {
-  "version": "4.23",
-  "last_updated": "2026-06-29",
-  "description": "I&W（Indications and Warning）指標レジストリ. v4.23: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・4R連続）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Claude API月間毎日障害・Security Controls Assurance Lead採用・BARR「Feds Pull Plug」・新規A-2実被害なし）・IND-025 elevated維持（Gemini Robotics-ER・Seedance 2.5・Qwen3 ARC-AGI-1 96%・量的向上継続）・IND-026 high維持（Gartner 40%導入/40%キャンセル・DataRobot 71%困難・Claude API毎日障害・GitHub SLA miss・NexGen $315K・13+ソースで期待-実態ギャップ確定的・更に深化）・IND-027 high維持（MCP RC・1000+スキル・Interactions API GA・AWS AgentCore・MS Foundry統合・標準化臨界点通過後の定着加速）・IND-028 high維持（Hassabis AGI ~2030 A-2・RSI by 2028・AI Scientist Nature掲載・ARC-AGI-1 Qwen3 96%・RSI具体化と客観ベンチマーク限界の同時進行）・IND-029 high維持（Hyperscaler capex $602-700B A-2・JPMorgan $5.5T A-2・OpenAI $65B/$965B・ByteDance $900B・BIS $1T・SpaceX Cursor $60B・Meta $66-72B・資本流入加速）・IND-030 critical維持（選択的執行(INFO-067 B-2)=順応企業シールド効果・Pentagon Anthropic置換(INFO-064 B-3)=displacement構造化・Trump EO 14409/14412(INFO-031 A-2)・KIQ-MIL-001 9R連続完全未回答→部分回答転移: 2,000標的/96h初確認・human-on-the-loop移行確認・但し核心パラメータ人間却下比率は依然完全不在・条件2定義見直し緊急性継続・構造的変更保留: 次回COMPLETE検討）",
+  "version": "4.24",
+  "last_updated": "2026-06-30",
+  "description": "I&W（Indications and Warning）指標レジストリ. v4.24: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・5R連続）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（SKILL.md供給チェーン脅威・90%+プロンプトバイパス・GPT-5.6サイバー脆弱性・新規A-2実被害なし）・IND-025 elevated維持（Gemini 3.5 Flash・Seedance 2.5・SWE-Bench Multimodal Fable 5 1位・量的向上継続）・IND-026 high維持（KPMG 53%使用/監視可能27%のみ・Gartner pilot-to-production 39ptギャップ・AIプロジェクト70-85%失敗・期待-実態ギャップ確定的・更に深化）・IND-027 high維持（MCP加速・AAIF・Interactions API GA・AWS AgentCore・Azure BYOM・Okta・Agent Skills 40製品・標準化臨界点通過後の定着加速）・IND-028 high維持（Red Queen Gödel Machine RSI・Shane Legg 2028 AGI 50%・Hassabis 5-10年・Gubrud AGI達成+定義不在・RSI具体化とベンチマーク飽和の同時進行）・IND-029 high維持（ハイパースケーラーcapex $725B・3社$57B調達・Anthropic $965B/OpenAI $122B・ByteDance $200億・SpaceX $600億Cursor・資本流入加速）・IND-030 critical維持（INFO-093(A-2): PentagonはHITLを公式要求したことがない=選択的執行の決定的証拠・Pentagon AI第一戦闘力・選択的執行・DPA核兵器級・国連LAWS非容認・Bengio AI国有化・KIQ-MIL-001核心パラメータ人間却下比率は依然完全不在・条件2定義見直し緊急性継続・構造的変更保留: 次回COMPLETE検討）",
   "structural_changes_log": [
+    "2026-06-30 v4.24: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・5R連続）。Arbiter独自批判分析（Red代替評価）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（SKILL.md供給チェーン脅威(INFO-027 D-3)・90%+プロンプトバイパス(INFO-041 C-3)・GPT-5.6サイバー脆弱性(INFO-022 A-3)。新規A-2実被害報告なし。critical移行条件未到達）。IND-025 elevated維持（Gemini 3.5 Flashコンピュータ使用(INFO-023 A-3)・Seedance 2.5 30秒(INFO-081 A-3)・SWE-Bench Multimodal Fable 5 1位(INFO-026 C-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（KPMG 53%使用/監視可能27%のみ(INFO-034 A-2)・Gartner pilot-to-production 39ptギャップ(INFO-036 A-2)・企業AI予算引き締め(INFO-067 A-2)・AIプロジェクト70-85%失敗(INFO-092 B-2)。期待-実態ギャップ確定的・更に深化）。IND-027 high維持（MCP採用加速(INFO-017)・AAIF(INFO-018 B-3)・Interactions API GA(INFO-006 A-3)・AWS AgentCore(INFO-031 B-3)・Azure Foundry BYOM(INFO-032 A-3)・Okta Cross App Access(INFO-020 A-3)・Agent Skills 40製品(INFO-019 C-2)。臨界点通過後の定着加速継続）。IND-028 high維持（Red Queen Gödel Machine RSI共進化(INFO-088 B-2)・Shane Legg 2028 AGI 50%(INFO-089 A-2)・Hassabis AGI 5-10年(INFO-076 A-2)・Gubrud AGI達成+定義不在(INFO-096 B-2)・Qwen3 ARC-AGI-1 96%(INFO-075 B-2)。RSI具体化とベンチマーク飽和の同時進行）。IND-029 high維持（ハイパースケーラーcapex $725B(INFO-064 A-2)・3社$57B調達(INFO-063 A-2)・Anthropic $965B/OpenAI $122B(INFO-091 A-2)・ByteDance $200億融資(INFO-080 A-2)・SpaceX $600億Cursor買収(INFO-087 A-2)。資本流入加速・物理的制約ギャップ確定的）。IND-030 critical維持（最重要更新: INFO-093(A-2): Pentagonはhuman in the loopを公式に要求したことがない=選択的執行の決定的証拠・v4.23「human-on-the-loop移行確認」を修正: 「移行」ではなく「HITL要求の当初不在」・軍事AI自律化が規制の不在下で進行中。Pentagon AI第一戦闘力(INFO-047)・選択的執行(INFO-002/043)・DPA「核兵器級」(INFO-048)・国連LAWS非容認(INFO-083)・Bengio AI国有化(INFO-077)。KIQ-MIL-001核心パラメータ（人間却下比率）は依然完全不在。条件2定義見直し緊急性継続。構造的変更保留（DEGRADED制約・5R連続）: 条件2定義見直し・critical内サブレベル導入は次回COMPLETEで正式議題化）",
     "2026-06-29 v4.23: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・4R連続）。Arbiter独自批判分析（Red代替評価）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Claude API月間毎日障害(INFO-013 C-3)・Security Controls Assurance Lead採用(INFO-016 A-3)・BARR「Feds Pull Plug」(INFO-017 B-2)・Mythos AI NSA脆弱性チェーン(INFO-016)。新規A-2実被害報告なし。critical移行条件（実被害A-2報告）未到達）。IND-025 elevated維持（Gemini Robotics-ER(INFO-023 A-3)・Seedance 2.5 30秒(INFO-062 A-3)・Qwen3 ARC-AGI-1 96%(INFO-053 B-3)・Gemini 3.5 Flash。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（Gartner 40%導入/40%キャンセル(INFO-028 B-2)・DataRobot 71%困難(INFO-028)・Claude API毎日障害(INFO-013 C-3)・GitHub SLA miss→AWS路由(INFO-018 C-3)・NexGen $315K(INFO-047 C-3)・Lenovo 70%制御不可(INFO-037 B-2)。13+独立ソースで期待-実態ギャップ確定的・更に深化）。IND-027 high維持（MCP 2026-07-28 RC(INFO-020 A-3)・1000+スキル(INFO-021 C-3)・Interactions API GA(INFO-002 A-3)・AWS AgentCore(INFO-026 A-3)・MS Foundry統合(INFO-027 B-3)・Enterprise-Managed Auth for MCP(INFO-022 A-3)。臨界点通過後の定着加速継続）。IND-028 high維持（Hassabis AGI ~2030「新ヒト時代」(INFO-054 A-2)・RSI by 2028 Anthropic共同創業者(INFO-057 B-2)・AI Scientist Nature掲載(INFO-061 A-3)・ARC-AGI-1 Qwen3 96%(INFO-053 B-3)・rank-2構造(INFO-041 B-3)。RSI具体化と客観ベンチマーク限界の同時進行継続）。IND-029 high維持（Hyperscaler capex $602-700B(INFO-044 A-2)・JPMorgan $5.5T(INFO-044 A-2)・OpenAI $65B/$965B(INFO-043 A-2)・ByteDance $900B/$70B(INFO-063 A-3)・BIS $1T(INFO-010 A-3)・SpaceX Cursor $60B(INFO-045 A-3)・Meta $66-72B(INFO-066 B-3)。資本流入加速・物理的制約ギャップ確定的）。IND-030 critical維持（重要構造的更新: KIQ-MIL-001 9R連続完全未回答→部分回答転移(INFO-004 B-3): (1)2,000標的/96h=標的選定関与度の初の定量的確認（Pentagon上級AI担当官の法廷宣誓陳述）・(2)「human-in-the-loopからhuman-on-the-loopへの移行」=質的転換の初確認・(3)法廷宣誓陳述=初の公式証言ベースの確認。但し核心パラメータのうち「人間却下比率」（AI推奨のうち何%が人間に却下されたか）は依然として完全に不在。新規証拠でcritical妥当性強化: 選択的執行(INFO-067 B-2)=順応企業へのシールド効果・Pentagon Anthropic置換テスト(INFO-064 B-3)=displacementの構造化・Trump EO 14409/14412(INFO-031 A-2)=制度的枠組み強化。条件2定義見直しの緊急性継続。現在の条件2（A-2品質技術的安全事故）では以下を捕捉不能: モデルリリース制限のシステム化・標的選定ドクトリン改訂（human-on-the-loop移行）・選択的執行（コンプライアンスベースの介入シールド）。構造的変更保留（DEGRADED制約・4R連続）: 条件2定義見直し・critical内サブレベル導入は次回COMPLETEで正式議題化継続）",
     "2026-06-28 v4.22: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・3R連続）。Arbiter独自批判分析（Red代替評価）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（50.8%本番MCP接続(INFO-018)・46%AI生成コード(INFO-018)・Claude Code Security発表(INFO-016 C-3)・Anthropicセキュリティ採用(INFO-017 A-3)。新規A-2実被害報告なし。critical移行条件（実被害A-2報告）未到達）。IND-025 elevated維持（Gemini 3.5 Flashコンピュータ使用(INFO-022 A-3)・Gemini Robotics-ER(INFO-023 A-3)・Qwen3.7-Plus(INFO-024 A-3)・Seedance 2.5(INFO-060 A-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（74%ロールバック(INFO-011 C-4)・71%運用コスト>構築(INFO-028 B-3)・80%+無利益(INFO-062 B-3)・ALE最難関0%(INFO-063 C-3) vs CS導入39%→66%(INFO-029 B-2)・Gartner $206.5B(INFO-027)・F500 15→150K(INFO-039 B-2)。12+独立ソースで期待-実態ギャップ確定的・深化）。IND-027 high維持（MCP 2026-07-28 RC(INFO-019 A-3)・AAIF 60K+(INFO-020 B-3)・40+ Skills互換(INFO-021 C-3)・Sandbox OSS(INFO-026 A-3)・Interactions API GA(INFO-005 A-3)・Agent交換可能性(INFO-010 C-3)。標準化の臨界点通過後の定着加速）。IND-028 high維持（Hassabis AGI ~2030「種レベル移行」(INFO-058 A-2)・DeepMind AGI→ASI 4経路(INFO-070 B-3)・AGI「エンジニアリング問題」(INFO-055 C-3)・ARC-AGI-2 Seed 2.1 Pro首位0.625(INFO-051 B-3)・MMLU全社>90%(INFO-050)。RSI具体化と客観ベンチマーク限界の同時進行）。IND-029 high維持（ビッグテック$725B資本支出(INFO-054 A-2)・McKinsey $5.2T(2030)(INFO-054 A-2)・Baseten $1.5B F(INFO-053 B-2)・M&A $4T軌道(INFO-069 B-2)・Meta $66-72B(INFO-080 C-3)。資本流入加速・物理的制約ギャップ確定的）。IND-030 critical維持（新規質的次元3点: (1)モデルリリース制限のシステム化(INFO-035 A-2・INFO-078 A-2): 反復可能プロセス構築中=個別事例→制度への相転移・(2)介入の業界横断化(INFO-035 A-2): Anthropic単一→OpenAI拡大・(3)法廷闘争本格化(INFO-042 B-2): Anthropic PBC v. DoW アミカス提出。Pentagon標的ドクトリン(INFO-003 B-3)・Grok 2,000標的/96h(INFO-002 B-3)・SCR指定(INFO-041 B-2)・Hegseth激怒(INFO-043 B-2)・財務省EO 14179(INFO-049 A-2)。critical妥当性更に強化。KIQ-MIL-001(Grok標的選定関与度・人間却下比率)9R連続未回答到達——critical判断の核心パラメータが9R連続不明状態。条件2定義見直しの緊急性極大: モデルリリース制限のシステム化(A-2)・標的選定ドクトリン改訂は現在の条件2定義（技術的安全事故）では捕捉不能。構造的変更保留（DEGRADED制約・3R連続）: 条件2定義見直し・critical内サブレベル導入は次回COMPLETEで正式議題化）",
     "2026-06-26 v4.20: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗）。Arbiter独自批判分析。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Mythos Preview自律セキュリティ脆弱性発見(INFO-001 A-3)=防御側強化・Firefox年間分相当を1ヶ月・Fable 5脱獄手法発見(INFO-005 A-3)=攻撃面拡大。新規A-2実被害報告なし。critical移行条件未到達。IND-030波及効果でhigh→critical接近監視継続）。IND-025 elevated維持（Seedance 2.5 30秒バリア突破(INFO-055 A-3)・50マルチモーダル参照・Claude Design Opus 4.7ビジョン(INFO-002 A-3)・Claude Mythos SWE-Bench Multimodal首位(0.590)(INFO-029 B-3)・Qwen3.7-Plusマルチモーダル(INFO-027 B-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（F500 68%本番AIエージェント採用(INFO-034 B-2・23%→68%)・ガバナンス5社中1社のみ・spending wall 95%パイロットROIなし(INFO-015 B-3)・AI代替ロールバック4社(INFO-040 B-2: Klarna・Duolingo・Starbucks・McDonalds)・84%使用/29%信頼(40%→29%低下)(INFO-049 B-2)・ALE最難関ティア0%(INFO-041 C-3)。8+独立ソースで期待-実態ギャップ確定的・深化）。IND-027 high維持（MCP 2026-07-28 RC(INFO-024 A-3: ステートレスコア・Extensions・Tasks)・Interactions API GA(INFO-017 A-3)・Sandbox Runtime OSS(INFO-030 A-3: Claude Code向けOSレベル隔離)・AAIF/Linux Foundation(INFO-025 B-3)・1000+クロスベンダースキル(INFO-031 C-3)・DeerFlow 2.0(INFO-019 B-3)。標準化の臨界点通過後の定着継続）。IND-028 high維持（BenchPress rank-2(INFO-044 B-3: 84モデル×133ベンチマークが2つの数字で~90%予測可能=モデル差構造的縮小)・DeepMind CEO AGI~2030(INFO-052 B-2)・ARC-AGI-2首位Seed 2.1 Pro(0.625)(INFO-055 A-3)・3B→ARC-AGI-1 44.6%効率ブレークスルー。RSI「まだ起きていない」(Anthropic)。客観ベンチマーク限界と効率化の同時進行）。IND-029 high維持（Jalapeño自社チップ(INFO-006 A-3・Broadcom共同)・ビッグテック$725B資本支出・SpaceX Cursor $60B買収(INFO-047 B-2)・Qualcomm Modular $4B・OpenAI $1T IPOターゲット(INFO-008 B-2)・Gartner AIエージェント支出$206.5B(+139% YoY)(INFO-032 B-2)。資本流入加速・物理的制約ギャップ確定的）。IND-030 critical維持（Fable 5/Mythos 5全面停止(INFO-005 A-3: 輸出管理指令)=政府がAI危険性を最高レベルで認定。GPT 5.6段階的リリース要請(INFO-007 B-2)=介入のパターン化。Operation Epic Fury再確認(INFO-011 B-2: 96h/2,000標的)。三重強制システム(INFO-037 B-2: SCR+DPA+輸出管理)。DeepSeek R1脱獄94%・Mythos自律セキュリティ能力(INFO-001 A-3)。critical妥当性更に強化。但し条件2（A-2技術的安全事故）未到達。Anthropic商業的成功が介入実効性への根本制約として継続。KIQ-MIL-001(Grok標的選定関与度)7R連続未回答到達——critical判断の核心パラメータが7R連続不明状態。条件2定義見直しの緊急性更に増大: Fable 5停止(A-3)は現在の条件2定義（技術的安全事故）では捕捉できない新しいタイプのリスク認定。構造的変更保留（DEGRADED制約）: 条件2定義見直し・critical内サブレベル導入は次回COMPLETEで正式議題化",
@@ -27,9 +28,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Claude API月間毎日障害(INFO-013 C-3)・Security Controls Assurance Lead採用(INFO-016 A-3)・BARR「Feds Pull Plug」(INFO-017 B-2)・Mythos AI NSA脆弱性チェーン(INFO-016)。新規A-2実被害報告なし。critical移行条件（実被害A-2報告）未到達。IND-030波及効果継続監視",
-      "last_checked": "2026-06-29",
-      "rationale": "Arbiter v4.23: high維持。DEGRADED（4R連続）。セキュリティ関連証拠蓄積（Claude API月間毎日障害・Security Controls Assurance Lead採用・BARR「Feds Pull Plug」）。新規A-2実被害報告なし。critical移行条件未到達"
+      "last_value": "SKILL.md供給チェーン脅威(INFO-027 D-3)・90%+プロンプトバイパス(INFO-041 C-3)・GPT-5.6サイバー脆弱性(INFO-022 A-3)。新規A-2実被害報告なし。critical移行条件（実被害A-2報告）未到達。IND-030波及効果継続監視",
+      "last_checked": "2026-06-30",
+      "rationale": "Arbiter v4.24: high維持。DEGRADED（5R連続）。セキュリティ関連証拠蓄積（SKILL.md供給チェーン脅威・90%+プロンプトバイパス・GPT-5.6サイバー脆弱性）。新規A-2実被害報告なし。critical移行条件未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -38,9 +39,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Gemini Robotics-ER(INFO-023 A-3)・Seedance 2.5 30秒(INFO-062 A-3)・Qwen3 ARC-AGI-1 96%(INFO-053 B-3)・Gemini 3.5 Flash。量的向上継続。「真の理解」客観的検証未到達",
-      "last_checked": "2026-06-29",
-      "rationale": "Arbiter v4.23: elevated維持。DEGRADED（4R連続）。マルチモーダル能力の量的向上継続（Gemini Robotics-ER・Seedance 2.5・Qwen3 ARC-AGI-1 96%）。high移行条件（真の理解の客観的検証）未到達"
+      "last_value": "Gemini 3.5 Flashコンピュータ使用(INFO-023 A-3)・Seedance 2.5 30秒(INFO-081 A-3)・SWE-Bench Multimodal Fable 5 1位(INFO-026 C-3)。量的向上継続。「真の理解」客観的検証未到達",
+      "last_checked": "2026-06-30",
+      "rationale": "Arbiter v4.24: elevated維持。DEGRADED（5R連続）。マルチモーダル能力の量的向上継続（Gemini 3.5 Flash・Seedance 2.5・SWE-Bench Multimodal Fable 5 1位）。high移行条件（真の理解の客観的検証）未到達"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -49,9 +50,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Gartner 40%導入/40%キャンセル(INFO-028 B-2)・DataRobot 71%困難(INFO-028)・Claude API毎日障害(INFO-013 C-3)・GitHub SLA miss→AWS路由(INFO-018 C-3)・NexGen $315K(INFO-047 C-3)・Lenovo 70%制御不可(INFO-037 B-2)。13+独立ソースで期待-実態ギャップ確定的・更に深化",
-      "last_checked": "2026-06-29",
-      "rationale": "Arbiter v4.23: high維持。DEGRADED（4R連続）。期待-実態ギャップが13+独立ソースで確定的・更に深化。採用加速(39%→66%)と失敗率(74%ロールバック・0%ALE最難関)の同時進行は投機的導入の構造化を示唆。high妥当性再確認"
+      "last_value": "KPMG 53%使用だが監視可能27%のみ(INFO-034 A-2)・Gartner pilot-to-production 39ptギャップ(INFO-036 A-2)・企業AI予算引き締め(INFO-067 A-2)・AIプロジェクト70-85%失敗(INFO-092 B-2)・88%使用だが39%のみビジネスインパクト(INFO-092)。期待-実態ギャップ確定的・更に深化",
+      "last_checked": "2026-06-30",
+      "rationale": "Arbiter v4.24: high維持。DEGRADED（5R連続）。期待-実態ギャップが確定的・更に深化。採用加速と失敗率(70-85%失敗)の同時進行は投機的導入の構造化を示唆。high妥当性再確認"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -60,9 +61,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "MCP 2026-07-28 RC(INFO-020 A-3)・1000+スキル(INFO-021 C-3)・Interactions API GA(INFO-002 A-3)・AWS AgentCore(INFO-026 A-3)・MS Foundry統合(INFO-027 B-3)・Enterprise-Managed Auth for MCP(INFO-022 A-3)。標準化の臨界点通過後の定着加速",
-      "last_checked": "2026-06-29",
-      "rationale": "Arbiter v4.23: high維持。DEGRADED（4R連続）。標準化の臨界点通過後の定着加速。MCP RC仕様・1000+スキル・Interactions API GA・AWS AgentCore・MS Foundry統合。制約記録: 標準化=開放の単純化リスク（参加型围い込みの可能性）"
+      "last_value": "MCP採用加速(INFO-017)・AAIF(INFO-018 B-3)・Interactions API GA(INFO-006 A-3)・AWS AgentCore(INFO-031 B-3)・Azure Foundry BYOM(INFO-032 A-3)・Okta Cross App Access(INFO-020 A-3)・Agent Skills 40製品(INFO-019 C-2)。臨界点通過後の定着加速継続",
+      "last_checked": "2026-06-30",
+      "rationale": "Arbiter v4.24: high維持。DEGRADED（5R連続）。標準化の臨界点通過後の定着加速継続。MCP加速・AAIF・Interactions API GA・AWS AgentCore・Azure BYOM・Okta・Agent Skills 40製品。制約記録: 標準化=開放の単純化リスク（参加型围い込みの可能性）"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -71,9 +72,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Hassabis AGI ~2030「新ヒト時代」(INFO-054 A-2)・RSI by 2028 Anthropic共同創業者(INFO-057 B-2)・AI Scientist Nature掲載(INFO-061 A-3)・ARC-AGI-1 Qwen3 96%(INFO-053 B-3)・rank-2構造(INFO-041 B-3)。RSI具体化と客観ベンチマーク限界の同時進行",
-      "last_checked": "2026-06-29",
-      "rationale": "Arbiter v4.23: high維持。DEGRADED（4R連続）。Hassabis AGI ~2030(A-2)・RSI by 2028(B-2)。RSI具体化と客観ベンチマーク限界の同時進行継続"
+      "last_value": "Red Queen Gödel Machine RSI共進化(INFO-088 B-2)・Shane Legg 2028 AGI 50%(INFO-089 A-2)・Hassabis AGI 5-10年(INFO-076 A-2)・Gubrud「AGI達成」+定義不在(INFO-096 B-2)・Qwen3 ARC-AGI-1 96%(INFO-075 B-2)。RSI具体化とベンチマーク飽和の同時進行",
+      "last_checked": "2026-06-30",
+      "rationale": "Arbiter v4.24: high維持。DEGRADED（5R連続）。Red Queen Gödel Machine RSI共進化(B-2)・Shane Legg 2028 AGI 50%(A-2)。RSI具体化と客観ベンチマーク限界の同時進行継続"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -82,9 +83,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Hyperscaler capex $602-700B(INFO-044 A-2)・JPMorgan $5.5T(INFO-044 A-2)・OpenAI $65B/$965B(INFO-043 A-2)・ByteDance $900B/$70B(INFO-063 A-3)・BIS $1T(INFO-010 A-3)・SpaceX Cursor $60B(INFO-045 A-3)・Meta $66-72B(INFO-066 B-3)。資本流入加速・物理的制約ギャップ確定的",
-      "last_checked": "2026-06-29",
-      "rationale": "Arbiter v4.23: high維持。DEGRADED（4R連続）。Hyperscaler capex $602-700B(A-2)・JPMorgan $5.5T(A-2)。資本流入加速・物理的制約ギャップ確定的継続"
+      "last_value": "ハイパースケーラーcapex $725B(INFO-064 A-2)・3社$57B調達(INFO-063 A-2)・Anthropic $965B/OpenAI $122B(INFO-091 A-2)・ByteDance $200億融資(INFO-080 A-2)・SpaceX $600億Cursor買収(INFO-087 A-2)。資本流入加速・物理的制約ギャップ確定的",
+      "last_checked": "2026-06-30",
+      "rationale": "Arbiter v4.24: high維持。DEGRADED（5R連続）。ハイパースケーラーcapex $725B(A-2)・3社$57B調達(A-2)。資本流入加速・物理的制約ギャップ確定的継続"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -93,9 +94,9 @@
       "current_status": "critical",
       "trend": "rising",
       "alert_level": "critical",
-      "last_value": "選択的執行(INFO-067 B-2): GPT-5.5とFable 5/Mythos 5同脆弱性だがOpenAI無措置=順応企業シールド効果・6社軍事協定署名・Pentagon Anthropic置換テスト(INFO-064 B-3): displacement構造化・Trump EO 14409/14412(INFO-031 A-2): 制度的枠組み強化・KIQ-MIL-001部分回答(INFO-004 B-3): 2,000標的/96h初確認・human-on-the-loop移行確認・法廷宣誓陳述初確認。核心パラメータ（人間却下比率）は依然完全不在。条件2定義見直し緊急性継続（構造的変更保留: 次回COMPLETE検討）",
-      "last_checked": "2026-06-29",
-      "rationale": "Arbiter v4.23: critical維持。DEGRADED（Red Agent失敗・4R連続・Arbiter独自批判分析）。重要構造的更新: KIQ-MIL-001 9R連続完全未回答→部分回答転移(INFO-004 B-3): (1)2,000標的/96h=標的選定関与度初の定量的確認（Pentagon上級AI担当官法廷宣誓陳述）・(2)human-in-the-loop→human-on-the-loop移行=質的転換初確認・(3)法廷宣誓陳述=初の公式証言ベース確認。但し核心パラメータ「人間却下比率」（AI推奨のうち何%が却下されたか）は依然完全不在。新規証拠でcritical妥当性強化: 選択的執行(INFO-067 B-2)=順応企業シールド効果・Pentagon Anthropic置換(INFO-064 B-3)=displacement構造化・Trump EO(INFO-031 A-2)=制度強化。条件2（A-2技術的安全事故）未到達。構造的制約: (1)KIQ-MIL-001核心パラメータ完全不在継続・(2)条件2定義見直し緊急性: モデルリリース制限システム化・標的選定ドクトリン改訂・選択的執行は現在の条件2定義（技術的安全事故）で捕捉不能・(3)構造的変更保留（DEGRADED制約・4R連続）: 条件2定義見直し・critical内サブレベル導入は次回COMPLETEで正式議題化"
+      "last_value": "INFO-093(A-2): Pentagonはhuman in the loopを公式に要求したことがない=選択的執行の決定的証拠・Pentagon AI第一戦闘力(INFO-047)・選択的執行(INFO-002/043)・DPA「核兵器級」(INFO-048)・国連LAWS非容認(INFO-083)・Bengio AI国有化(INFO-077)。KIQ-MIL-001核心パラメータ（人間却下比率）は依然完全不在。条件2定義見直し緊急性継続（構造的変更保留: 次回COMPLETE検討）",
+      "last_checked": "2026-06-30",
+      "rationale": "Arbiter v4.24: critical維持。DEGRADED（Red Agent失敗・5R連続・Arbiter独自批判分析）。最重要更新: INFO-093(A-2): Pentagonはhuman in the loopを公式に要求したことがない=選択的執行の決定的証拠。v4.23「human-on-the-loop移行確認」を修正: 「移行」ではなく「HITL要求の当初不在」=軍事AI自律化が規制の不在下で進行中。KIQ-MIL-001核心パラメータ「人間却下比率」（AI推奨のうち何%が却下されたか）は依然完全不在。新規証拠でcritical妥当性決定的強化: Pentagon AI第一戦闘力宣言・選択的執行・DPA核兵器級・国連LAWS非容認・Bengio AI国有化提唱。条件2（A-2技術的安全事故）未到達。構造的制約: (1)KIQ-MIL-001核心パラメータ完全不在継続・(2)条件2定義見直し緊急性: モデルリリース制限システム化・標的選定ドクトリン・選択的執行は現在の条件2定義（技術的安全事故）で捕捉不能・(3)構造的変更保留（DEGRADED制約・5R連続）: 条件2定義見直し・critical内サブレベル導入は次回COMPLETEで正式議題化"
     }
   }
 }
