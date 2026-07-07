@@ -1,8 +1,9 @@
 {
-  "version": "4.27",
-  "last_updated": "2026-07-03",
-  "description": "I&W（Indications and Warning）指標レジストリ. v4.27: Arbiter統合判断（完全COMPLETE状態・Blue/Red/Arbiter全完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持・IND-025 elevated維持・IND-026 high維持・IND-027 high維持・IND-028 high維持・IND-029 high維持・IND-030 critical維持。KIQ-MIL-001人間却下比率14R連続完全不在。構造的観察: IND-030-SCN-BS-001連動関係の形式的定義を次回議題として記録",
+  "version": "4.28",
+  "last_updated": "2026-07-07",
+  "description": "I&W（Indications and Warning）指標レジストリ. v4.28: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・Arbiter代替評価）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持・IND-025 elevated維持・IND-026 high維持・IND-027 high維持・IND-028 high維持・IND-029 high維持・IND-030 critical維持。KIQ-MIL-001人間却下比率15R連続完全不在。Carnegie Endowmentレポート（INFO-067 A-1）でIND-030 critical妥当性更に強化",
   "structural_changes_log": [
+    "2026-07-07 v4.28: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・Arbiter代替評価）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（初の公表LLMサイバー攻撃（INFO-067 A-1: 中国関連グループがClaude使用）・Moltbook API鍵漏洩・Copilot機密メール漏洩。攻撃面拡大A-1品質確認。但しAIシステム自体の侵害ではなく攻撃道具としての使用。critical移行条件（実被害A-2報告）未到達）。IND-025 elevated維持（Gemini 3 Pro Deep Thinkマルチモーダル#1（95.8）・Sonnet 4.6 OSWorld大幅改善・Seedance 2.5 30秒4K。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（89%パイロット不スケール（Gartner A-2）・F500 80%構築/17%本番・30.3%自律完了（WebArena）・Gartner: AI置換で財務利益ゼロ（A-2）。期待-実態ギャップのA-2品質4件独立確認。high妥当性更に強化）。IND-027 high維持（MCP RC（ステートレスコア+Extensions+Tasks+EMA）・AAIF+Linux Foundation+FINOS・AWS AgentCore移行・Azure Foundry MCP統合・OpenAI Agents SDK provider-agnostic・27フレームワーク比較。制度化フェーズ継続・制約記録: 標準化=開放の単純化リスク）。IND-028 high維持（Amodei G7: SE業務「ほとんど全て」6-12ヶ月以内・Altman AGI「数千日以内」・Hassabis 5-10年・Bengio/LeCun根本分裂。ProgramBench全モデル0%=客観ベンチマーク限界。RSI具体化と客観ベンチマーク限界の同時進行継続）。IND-029 high維持（Hyperscaler capex $750B(2026)→$1T+(2027)・DCリース$850B(204%増)・Together AI $800M・Kling AI $3B・SpaceX-Cursor $60B。資本流入加速。capex>キャッシュフロー（2026Q3〜）・$2T新規収益必要（2030年）。物理的制約ギャップ確定的）。IND-030 critical維持（Carnegie詳細レポート（INFO-067 A-1）: 初の公表LLMサイバー攻撃・国防長官Claude軍事アクセス要求・1オペレーター90エージェント問題・Trumpサイバー戦略AI推進。Pentagon赤ライン詳細（INFO-064 A-1）・Grok in Project Maven確認。5%政府株式提案。KIQ-MIL-001人間却下比率15R連続完全不在（軍事文脈では分類されることが期待される＝不在≠中立）。条件2（v4.26再定義: 構造的ガバナンス・リスクの制度化）の充実継続。critical妥当性更に強化）",
     "2026-07-03 v4.27: Arbiter統合判断（完全COMPLETE状態・Blue/Red/Arbiter全完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Fable 5再デプロイ・99%+ブロック・Glasswing 4軸フレームワーク(INFO-001 A-3)・RSP v3・CSAP初発動(INFO-042 A-1)・レガシーインフラ攻撃経路(INFO-011 C-3)。新規A-2実被害報告なし。critical移行条件（実被害A-2報告）未到達）。IND-025 elevated維持（Gemini Computer Use(INFO-019 C-3)・SWE-Bench Multimodal Mythos 0.590 #1(INFO-020 B-3)・Seedance 2.5 30秒4K(INFO-049 A-1)・Sonnet 5 BrowseComp/OSWorld改善(INFO-002 A-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（89%パイロットスケールせず(INFO-025 A-2)・62%実験・23%スケール(INFO-026 B-3)・Klarna CS半分AI置換$40M削減(INFO-034 B-1)・4社同時ロックイン(INFO-022 B-3)。期待-実態ギャップ構造化継続・P-GG）。IND-027 high維持（Interactions API GA(INFO-003 A-3)・MCP arXiv分析(INFO-014 B-2)・AAIF+Linux Foundation+FINOS(INFO-015 B-2)・1000+スキル(INFO-016 C-3)・Meta MCP+MS Build 10エージェント(INFO-017 B-2)・AWS AgentCore移行(INFO-023 A-3)。制度化フェーズ継続・制約記録: 標準化=開放の単純化リスク）。IND-028 high維持（Hassabis「数年以内・ブレークスルー不要50-50」(INFO-045 A-2/B-2)・ARC-AGI-3公開・RSI国家安保リスク特定(INFO-059 A-2)・ARC-AGI-2全<10%。RSI具体化と客観ベンチマーク限界の同時進行継続）。IND-029 high維持（Amazon $100B+ AI投資(INFO-039 A-1)・NVIDIA Blackwell B200量産・Rubin 2027(INFO-040 A-1)・Anthropic $50B DC・評価額$965B(INFO-047 A-1)・OpenAI-Amazon $38B・Oracle-Meta $20B。資本流入加速・物理的制約ギャップ確定的継続）。IND-030 critical維持（完全因果チェーン文書化(INFO-030 A-2)・DPA発動(INFO-031 A-2)・OpenAI 5%政府株式提案・GPT-5.6延期要請(INFO-063 A-1)・Chatham House完全タイムライン・SCR国内初適用・世界一時停止要請(INFO-064 A-1)・RSP v3・CSAP初発動(INFO-042 A-1)。KIQ-MIL-001人間却下比率14R連続完全不在。条件2（v4.26再定義: 構造的ガバナンス・リスクの制度化）の充実継続: 順応報酬構造システム化・モデルリリース制限制度化。critical妥当性更に強化。構造的観察: IND-030条件2再定義により指標は「構造的脆弱性（重症度）」を測定し「事故確率」とは分離された——IND-030強化とSCN-BS-001不変の論理的整合性を保つが、連動関係の形式的定義を次回議題として記録）",
     "2026-07-02 v4.26: Arbiter統合判断（完全COMPLETE状態・Blue/Red/Arbiter全完了）。前回v4.25 Red-recovered DEGRADED状態から完全復帰。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（新規セキュリティ証拠蓄積なし・既存リスク水準維持・critical移行条件（実被害A-2報告）未到達）。IND-025 elevated維持（マルチモーダル能力の量的向上継続・「真の理解」客観的検証未到達）。IND-026 high維持（期待-実態ギャップ構造化継続・Ford再雇用事例で品質限界A-2確認維持）。IND-027 high維持（標準化制度化フェーズ確認・MCP RC・AAIF 60K+・制約記録: 標準化=開放の単純化リスク）。IND-028 high維持（RSI具体化と客観ベンチマーク限界の同時進行継続）。IND-029 high維持（資本流入加速・物理的制約ギャップ確定的継続）。IND-030 critical維持+条件2定義見直し実行完了: 『A-2品質技術的安全事故』から『A-2品質技術的安全事故 OR 構造的ガバナンス・リスクの制度化（順応報酬構造システム化・モデルリリース制限制度化・標的選定ドクトリン改訂）』へ拡張。KIQ-MIL-001人間却下比率13R連続完全不在。構造的負債IND-030条件2定義見直し解消",
     "2026-07-01 v4.25: Arbiter統合判断（Red-recovered DEGRADED状態・Blue Agent完了・Red Agent復帰完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Agent Skills任意コード実行警告(INFO-016 C-3)・DeepSeek脱獄94%(INFO-001 A-3)・GPT-5.6 Highリスク分類(INFO-065 B-1)。新規A-2実被害報告なし。critical移行条件未到達）。IND-025 elevated維持（Gemini 3.5 Flashコンピュータ使用(INFO-009 A-3)・Seedance 2.5原生4K(INFO-061 A-3)・豆包2.1 Pro Claude超え(INFO-066 B-3)・SWE-Bench Multimodal Mythos 1位(INFO-020 B-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（KPMG 18%オーケストレーション/実際13%統合(INFO-049 A-2)・95%パイロットP&Lゼロ(INFO-055 B-3)・Ford再雇用(INFO-068 A-2)・Gartner 150Kエージェント/F500 2028(INFO-026 A-2)。期待-実態ギャップ更に深化・Ford事例で品質限界初のA-2確認）。IND-027 high維持（MCP RC 2026-07-28(INFO-014 A-3)・AAIF 60K+プロジェクト(INFO-015 B-3)・Okta FedRAMP/HIPAA GA(INFO-017 B-3)・Azure BYOM(INFO-022 A-3)・Agent Skills 40製品(INFO-016 C-3)・AWS AgentCore(INFO-021 B-3)。制度化フェーズ移行確認）。IND-028 high維持（Red Queen Gödel Machine RSI共進化(INFO-057 B-2)・Hassabis 5-10年・Altman<2029・LeCun否定的(INFO-058 A-2)・ARC-AGI-2 Seed 2.1 Pro 0.625(INFO-056 B-3)・GPT-5.6 Agent's Last Exam 50.9%(INFO-065 B-1)。RSI具体化とベンチマーク分化の同時進行）。IND-029 high維持（ハイパースケーラーcapex $725B(INFO-046 A-2)・ByteDance $200億融資/capex $700億(INFO-062 A-2)・SpaceX $600億Cursor(INFO-045 A-2)・Anthropic $47B年率(INFO-044 A-2)・McKinsey $5.2T 2030(INFO-046 A-2)。資本流入加速・物理的制約ギャップ確定的）。IND-030 critical維持（順応報酬構造完全観察(INFO-030/032 A-2×3)・War Force採用(INFO-033 A-3)・輸出禁止2週間で代替出現(INFO-069 A-2)・California連邦対抗(INFO-034 A-2)。KIQ-MIL-001核心パラメータ（人間却下比率）は依然完全不在（12R連続）。Red指摘採用: 12R連続完全不在は「データが存在しないこと自体が情報」・順応報酬構造とHITL却下率は異なる指標で論理連鎖薄弱。条件2定義見直し緊急性更に増大。構造的変更保留（Red復帰ラウンド）: 条件2定義見直し・critical内サブレベル導入は次回完全COMPLETE絶対必須議題化）",
@@ -31,9 +32,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Fable 5再デプロイ・99%+ブロック・Glasswing 4軸フレームワーク(INFO-001 A-3)・RSP v3・CSAP初発動(INFO-042 A-1)・レガシーインフラ攻撃経路(INFO-011 C-3)。新規A-2実被害報告なし。critical移行条件（実被害A-2報告）未到達。IND-030波及効果継続監視",
-      "last_checked": "2026-07-03",
-      "rationale": "Arbiter v4.27: high維持。完全COMPLETE（Blue/Red/Arbiter）。防御側強化（RSP外部トリガー統合・Glasswing 4軸フレームワーク）と攻撃面拡大（レガシー経路）の同時進行。新規A-2実被害報告なし。critical移行条件（実被害A-2報告）未到達"
+      "last_value": "初の公表LLMサイバー攻撃（INFO-067 A-1: 中国関連グループがClaude使用）・Moltbook API鍵漏洩・Copilot機密メール漏洩。攻撃面拡大A-1品質確認。AIシステム自体の侵害ではなく攻撃道具としての使用。critical移行条件（実被害A-2報告）未到達",
+      "last_checked": "2026-07-07",
+      "rationale": "Arbiter v4.28: high維持。DEGRADED（Red Agent失敗・Arbiter代替評価）。初の公表LLMサイバー攻撃（INFO-067 A-1）で攻撃面拡大がA-1品質で確認された。但しAIシステム自体の侵害ではなく攻撃道具としての使用。critical移行条件（実被害A-2報告）未到達"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -42,9 +43,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "Gemini Computer Use(INFO-019 C-3)・SWE-Bench Multimodal Mythos 0.590 #1(INFO-020 B-3)・Seedance 2.5 30秒4K(INFO-049 A-1)・Sonnet 5 BrowseComp/OSWorld改善(INFO-002 A-3)。量的向上継続。「真の理解」客観的検証未到達",
-      "last_checked": "2026-07-03",
-      "rationale": "Arbiter v4.27: elevated維持。完全COMPLETE（Blue/Red/Arbiter）。マルチモーダル能力の量的向上継続。high移行条件（真の理解の客観的検証）未到達"
+      "last_value": "Gemini 3 Pro Deep Thinkマルチモーダル#1（95.8）・Sonnet 4.6 OSWorld大幅改善・Seedance 2.5 30秒4K。量的向上継続。「真の理解」客観的検証未到達",
+      "last_checked": "2026-07-07",
+      "rationale": "Arbiter v4.28: elevated維持。DEGRADED（Red Agent失敗・Arbiter代替評価）。マルチモーダル能力の量的向上継続。high移行条件（真の理解の客観的検証）未到達"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -53,9 +54,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "89%パイロットスケールせず(INFO-025 A-2)・Gartner Agentic AI Nexus(INFO-032 A-1)・62%実験・23%スケール(INFO-026 B-3)・Klarna CS半分AI置換$40M削減(INFO-034 B-1)・4社同時ロックイン・Jalapeno本番崩壊(INFO-022 B-3)。期待-実態ギャップ構造化継続・P-GG",
-      "last_checked": "2026-07-03",
-      "rationale": "Arbiter v4.27: high維持。完全COMPLETE（Blue/Red/Arbiter）。期待-実態ギャップ構造化継続。採用加速（39→66% CS）とスケール失敗（89%）の同時進行=投機的導入。high妥当性再確認"
+      "last_value": "89%パイロット不スケール（Gartner A-2）・F500 80%構築/17%本番・30.3%自律完了（WebArena）・Gartner: AI置換で財務利益ゼロ（A-2）。期待-実態ギャップのA-2品質4件独立確認。high妥当性更に強化",
+      "last_checked": "2026-07-07",
+      "rationale": "Arbiter v4.28: high維持。DEGRADED（Red Agent失敗・Arbiter代替評価）。期待-実態ギャップのA-2品質4件独立確認（Gartner 89%・Gartner財務利益ゼロ）。投資加速と成果低迷の同時進行。high妥当性更に強化"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -64,9 +65,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Interactions API GA(INFO-003 A-3)・MCP arXiv分析(INFO-014 B-2)・AAIF+Linux Foundation+FINOS(INFO-015 B-2)・1000+スキル(INFO-016 C-3)・Meta MCP+MS Build 10エージェント(INFO-017 B-2)・AWS Bedrock Agents Classic→AgentCore移行(INFO-023 A-3)。制度化フェーズ継続",
-      "last_checked": "2026-07-03",
-      "rationale": "Arbiter v4.27: high維持。完全COMPLETE（Blue/Red/Arbiter）。標準化制度化フェーズ継続。制約記録: 標準化=開放の単純化リスク（参加型囲い込みの可能性）"
+      "last_value": "MCP RC（ステートレスコア+Extensions+Tasks+EMA）・AAIF+Linux Foundation+FINOS・AWS AgentCore移行・Azure Foundry MCP統合・OpenAI Agents SDK provider-agnostic・27フレームワーク比較。制度化フェーズ継続",
+      "last_checked": "2026-07-07",
+      "rationale": "Arbiter v4.28: high維持。DEGRADED（Red Agent失敗・Arbiter代替評価）。標準化制度化フェーズ継続。全主要プレイヤーが同時期にエンタープライズ級エージェント基盤を発表。制約記録: 標準化=開放の単純化リスク（参加型囲い込みの可能性）"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -75,9 +76,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Hassabis「数年以内・ブレークスルー不要50-50」(INFO-045 A-2/B-2)・ARC-AGI-3公開・RSI国家安保リスク特定(INFO-059 A-2)・ARC-AGI-2全<10%。RSI具体化と客観ベンチマーク限界の同時進行",
-      "last_checked": "2026-07-03",
-      "rationale": "Arbiter v4.27: high維持。完全COMPLETE（Blue/Red/Arbiter）。RSI具体化（Cambridge-NVIDIA共進化評価器・国際AI安全報告書で国家安保リスク特定）と客観ベンチマーク限界（ARC-AGI-2全<10%）の同時進行継続"
+      "last_value": "Amodei G7: SE業務「ほとんど全て」6-12ヶ月以内・Altman AGI「数千日以内」・Hassabis 5-10年・Bengio/LeCun根本分裂。ProgramBench全モデル0%=客観ベンチマーク限界。RSI具体化（CEO予測）と客観ベンチマーク限界の同時進行継続",
+      "last_checked": "2026-07-07",
+      "rationale": "Arbiter v4.28: high維持。DEGRADED（Red Agent失敗・Arbiter代替評価）。RSI具体化（CEO予測の短期化）と客観ベンチマーク限界（ProgramBench全0%）の同時進行継続。研究者間の根本的分裂不変"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -86,9 +87,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "Amazon $100B+ AI投資(INFO-039 A-1)・NVIDIA Blackwell B200量産・Rubin 2027(INFO-040 A-1)・Anthropic $50B DC・評価額$965B(INFO-047 A-1)・OpenAI-Amazon $38B・Oracle-Meta $20B。資本流入加速・物理的制約ギャップ確定的継続",
-      "last_checked": "2026-07-03",
-      "rationale": "Arbiter v4.27: high維持。完全COMPLETE（Blue/Red/Arbiter）。資本流入加速・物理的制約ギャップ確定的継続"
+      "last_value": "Hyperscaler capex $750B(2026)→$1T+(2027)・DCリース$850B(204%増)・Together AI $800M・Kling AI $3B・SpaceX-Cursor $60B。資本流入加速。capex>キャッシュフロー（2026Q3〜）・$2T新規収益必要（2030年）。物理的制約ギャップ確定的",
+      "last_checked": "2026-07-07",
+      "rationale": "Arbiter v4.28: high維持。DEGRADED（Red Agent失敗・Arbiter代替評価）。資本流入加速・物理的制約ギャップ確定的。OpenAI $13B収益 vs $21B純損失で構造的赤字の定量確認"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -97,9 +98,9 @@
       "current_status": "critical",
       "trend": "rising",
       "alert_level": "critical",
-      "last_value": "完全因果チェーン文書化(INFO-030 A-2)・DPA発動(INFO-031 A-2)・OpenAI 5%政府株式提案・GPT-5.6延期要請(INFO-063 A-1)・Chatham House完全タイムライン・SCR国内初適用・世界一時停止要請(INFO-064 A-1)・RSP v3・CSAP初発動(INFO-042 A-1)。KIQ-MIL-001人間却下比率14R連続完全不在。条件2（v4.26再定義: 構造的ガバナンス・リスクの制度化）充実継続: 順応報酬構造システム化・モデルリリース制限制度化",
-      "last_checked": "2026-07-03",
-      "rationale": "Arbiter v4.27: critical維持。完全COMPLETE（Blue/Red/Arbiter）。条件2（構造的ガバナンス・リスクの制度化）の充実継続: OpenAI 5%株式提案・GPT-5.6延期要請・Chatham House完全タイムライン・世界一時停止要請。KIQ-MIL-001人間却下比率14R連続完全不在（軍事文脈では分類されることが期待される＝不在≠中立）。構造的観察: 条件2再定義により指標は「構造的脆弱性（重症度）」を測定し「事故確率」と分離——IND-030強化とSCN-BS-001不変の論理的整合性を保つが、連動関係の形式的定義を次回議題として記録。critical妥当性更に強化"
+      "last_value": "Carnegie詳細レポート（INFO-067 A-1）: 初の公表LLMサイバー攻撃・国防長官Claude軍事アクセス要求・1オペレーター90エージェント問題・Trumpサイバー戦略AI推進。Pentagon赤ライン詳細（INFO-064 A-1）・Grok in Project Maven確認。5%政府株式提案。KIQ-MIL-001人間却下比率15R連続完全不在。条件2（v4.26再定義: 構造的ガバナンス・リスクの制度化）充実継続",
+      "last_checked": "2026-07-07",
+      "rationale": "Arbiter v4.28: critical維持。DEGRADED（Red Agent失敗・Arbiter代替評価）。Carnegie Endowmentレポート（INFO-067 A-1）が本ラウンド最高品質の構造的リスク証拠: 初の公表LLMサイバー攻撃・1オペレーター90エージェント問題（意味ある人間統制の実効性への定量的疑義）。条件2（構造的ガバナンス・リスクの制度化）の充実継続。KIQ-MIL-001人間却下比率15R連続完全不在（軍事文脈では分類されることが期待される＝不在≠中立）。構造的観察: 条件2再定義により指標は「構造的脆弱性（重症度）」を測定し「事故確率」と分離——IND-030強化とSCN-BS-001不変の論理的整合性を保つ。critical妥当性更に強化"
     }
   }
 }

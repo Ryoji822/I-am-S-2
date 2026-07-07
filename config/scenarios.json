@@ -1,7 +1,7 @@
 {
-  "version": "4.27",
-  "last_updated": "2026-07-03",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.27: Arbiter統合判断（完全COMPLETE・Blue/Red/Arbiter全完了）。Blue SCN-001 -1%・SCN-005 +1%提案を否認・Red採用（±0%）。全5シナリオ±0%維持。SCN-001 6%は±0%（Blue -1%否認: 政治的囲い込みの次元移行で低下は正当化されない）・SCN-002 26%は±0%・SCN-003 20%は±0%・SCN-004 31%は±0%・SCN-005 17%は±0%（Blue +1%否認: N=1未合意提案・確度『中』パターンによる署名変更の内部不整合・アトラクター効果）。合計100%維持（6+26+20+31+17=100%）",
+  "version": "4.28",
+  "last_updated": "2026-07-07",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.28: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・Arbiter代替評価）。全5シナリオ±0%維持。新規の質的転換を示す証拠なし。SCN-001 6%は±0%・SCN-002 26%は±0%・SCN-003 20%は±0%・SCN-004 31%は±0%・SCN-005 17%は±0%。合計100%維持（6+26+20+31+17=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -187,7 +187,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-07-03",
-    "note": "SCN-001(6) + SCN-002(26) + SCN-003(20) + SCN-004(31) + SCN-005(17) = 100%. Arbiter v4.27完了（完全COMPLETE・Blue SCN-001 -1%否認・SCN-005 +1%否認・Red採用・全5シナリオ±0%維持）"
+    "verified_date": "2026-07-07",
+    "note": "SCN-001(6) + SCN-002(26) + SCN-003(20) + SCN-004(31) + SCN-005(17) = 100%. Arbiter v4.28完了（DEGRADED・Red Agent失敗・Arbiter代替評価・全5シナリオ±0%維持）"
   }
 }
