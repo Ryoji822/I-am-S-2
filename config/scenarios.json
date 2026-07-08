@@ -1,7 +1,7 @@
 {
-  "version": "4.28",
-  "last_updated": "2026-07-07",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.28: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・Arbiter代替評価）。全5シナリオ±0%維持。新規の質的転換を示す証拠なし。SCN-001 6%は±0%・SCN-002 26%は±0%・SCN-003 20%は±0%・SCN-004 31%は±0%・SCN-005 17%は±0%。合計100%維持（6+26+20+31+17=100%）",
+  "version": "4.29",
+  "last_updated": "2026-07-08",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.29: Arbiter統合判断（BOTH-FAILED DEGRADED状態・Blue Agent失敗・Red Agent失敗・Arbiter代替評価）。全5シナリオ±0%維持。BOTH-FAILED最大保守性原則適用。標準化加速（MCP RC等）はSCN-002支持・コモディティ化圧力はSCN-004支持・地政学的分化はSCN-005支持だが多方向に分散し正味変化ゼロ。SCN-001 6%は±0%・SCN-002 26%は±0%・SCN-003 20%は±0%・SCN-004 31%は±0%・SCN-005 17%は±0%。合計100%維持（6+26+20+31+17=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
