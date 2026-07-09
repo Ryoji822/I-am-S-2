@@ -1,7 +1,7 @@
 {
-  "version": "4.29",
-  "last_updated": "2026-07-08",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.29: Arbiter統合判断（BOTH-FAILED DEGRADED状態・Blue Agent失敗・Red Agent失敗・Arbiter代替評価）。全5シナリオ±0%維持。BOTH-FAILED最大保守性原則適用。標準化加速（MCP RC等）はSCN-002支持・コモディティ化圧力はSCN-004支持・地政学的分化はSCN-005支持だが多方向に分散し正味変化ゼロ。SCN-001 6%は±0%・SCN-002 26%は±0%・SCN-003 20%は±0%・SCN-004 31%は±0%・SCN-005 17%は±0%。合計100%維持（6+26+20+31+17=100%）",
+  "version": "4.30",
+  "last_updated": "2026-07-09",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.30: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。2R連続BOTH-FAILEDから完全復帰。2件シナリオ変更: SCN-002 -1%（26→25%）・SCN-004 +1%（31→32%）。GLM-5.1 SWE-Bench Pro首位58.4%（GPT-5.4 57.7%・Claude Opus 4.6 57.3%を上回る）はOSS・中国モデルがClosed・米国フロンティアを初めて主要ベンチマークで上回った決定的証拠=二層構造上層亀裂。SCN-002「最有力」同一論理反復の集団浅慮リスク是正。残り3シナリオ±0%。SCN-001 6%・SCN-002 25%・SCN-003 20%・SCN-004 32%・SCN-005 17%。合計100%維持（6+25+20+32+17=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -53,9 +53,9 @@
       "quadrant": "top-right",
       "quadrant_label": "開放 × 差別化持続",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
-      "probability": 26,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.27: ±0%（26%維持）。完全COMPLETE（Blue/Red/Arbiter）。標準タスク収束（DeepSeek V4 1/10-1/50コスト・SWE-bench差縮小）とフロンティア差別化（Fable 5 SWE-bench 79.2%・GPT-5.6サイバー能力・Mythos SWE-Bench Multimodal #1）の同時進行はSCN-002定義に最合致。依然最有力シナリオ。質的転換を示す新規証拠なし",
+      "probability": 25,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v4.30: -1%（26→25%）。完全COMPLETE（Blue/Red/Arbiter）。Red採用。GLM-5.1 SWE-Bench Pro首位58.4%（GPT-5.4 57.7%・Claude Opus 4.6 57.3%を上回る）はフロンティア差別化持続命題への挑戦。SCN-002「最有力」の同一論理反復は分析的判断ではなくカテゴリーラベルの反復適用（集団浅慮リスク・Red指摘採用）。標準化加速（MCP Apple/MS/ERP・AAIF拡大・4クラウド同時再構築）とフロンティア差別化（GPT-5.6 Sol 91.9%・Gemini 3 Pro 95.8%・Anthropic $965B）の同時進行は継続するが、GLM-5.1首位は二層構造上層に亀裂=「存続」と「動揺」は異なる。SCN-004 +1%との正規化。依然最有力シナリオ",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -112,9 +112,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 31,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.27: ±0%（31%維持）。完全COMPLETE（Blue/Red/Arbiter）。コモディティ化証拠認める（DeepSeek V4・OSS台頭・コスト崩壊）。しかし完全コモディティ化ではなく二層構造（Fable 5 SOTA・Mythos能力差別化・Sonnet 5 Opus級）が存続。前回Red指摘の95%パイロットP&Lゼロ=SCN-003支持判断を継続尊重。新規の質的転換なし",
+      "probability": 32,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v4.30: +1%（31→32%）。完全COMPLETE（Blue/Red/Arbiter）。Red採用。GLM-5.1 SWE-Bench Pro首位58.4%（GPT-5.4 57.7%・Claude Opus 4.6 57.3%を上回る）はOSS・中国モデルがClosed・米国フロンティアを初めて主要ベンチマークで上回った決定的証拠=二層構造上層（フロンティア独占）に亀裂。API価格600x開き・MMLU 92%飽和との同時観察は性能フロンティア閉鎖とコスト崩壊の同時進行。Gartner 40%+キャンセルリスク・DataRobot 71%運用コスト>構築・F500 80%構築/17%本番で高価なフロンティアモデルの価値実現困難=安価な代替で十分。但しGPT-5.6 Sol Terminal-Bench 91.9%・Anthropic $965Bで上層存続も確認→完全コモディティ化ではない→+1%上限。SCN-002 -1%との正規化",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -187,7 +187,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-07-07",
-    "note": "SCN-001(6) + SCN-002(26) + SCN-003(20) + SCN-004(31) + SCN-005(17) = 100%. Arbiter v4.28完了（DEGRADED・Red Agent失敗・Arbiter代替評価・全5シナリオ±0%維持）"
+    "verified_date": "2026-07-09",
+    "note": "SCN-001(6) + SCN-002(25) + SCN-003(20) + SCN-004(32) + SCN-005(17) = 100%. Arbiter v4.30完了（完全COMPLETE・Blue/Red/Arbiter完了・SCN-002 -1%・SCN-004 +1%）"
   }
 }
