@@ -1,132 +1,134 @@
 # Anthropic
 
-> 最終判断更新: 2026-07-03
+> 最終判断更新: 2026-07-10
 > 全体確信度: 中
-> 情報非対称性: Claude Code固有DAU絶対値が14R連続不在（v4.20閾値8Rを6R超過）。収益内訳はAPI/Enterprise/Consumerセグメント非公開。安全性が選択理由上位3要因以内かはA-2品質で未確認。H-GOV-001は54%から53%に-1%（介入の空洞化継続・5%自発的提案による実効性空洞化深化）。H-CAR-002は72%から71%に-1%（操作化概念不整合継続・Blue自身の自己認識過大確度の確証バイアス指標）。RSP v3でCSAP（Cyber Security Action Plan）が初発動、SCR指定がRSP外部トリガーとして機能した初の事例（INFO-042 A-1）。Anthropicが6月にAI開発の世界的一時停止を公式要請、Trump政権は拒否（INFO-064 A-1）。OpenAI 5%政府株式提案に対抗し「digital dividend」（AI税→国民配当）を提案（INFO-063 A-1）。Fable 5/Mythos 5再デプロイ、Glasswing枠組みでjailbreak深刻度4軸評価共同策定（INFO-001 A-3）。Pentagon-Anthropic-SCR完全因果チェーンA-2品質で文書化（INFO-030 A-2）。KIQ-MIL-001人間却下比率14R連続完全不在。Arbiter v4.27 COMPLETE
+> 情報非対称性: Claude Code固有DAU絶対値が16R連続不在（閾値8Rを8R超過）。収益内訳はAPI/Enterprise/Consumerセグメント非公開。H-GOV-001は53%から50%に-3%（「パラドックス」フレーム未修正・Huawei級供給チェーンリスク指定・C同一因果チェーン4R連続未解消）。H-CAR-002は71%から69%に-2%（段階的修正4R連続-1%・70%心理的節目アンカリング打破）。TrumpがAnthropicを連邦政府全体から禁止（INFO-046 A-2）。「Huawei級」供給チェーンリスク指定。DPA脅迫確認（INFO-045 B-2）。Claude Sonnet 5リリース（INFO-051 A-3）。Claude自身のコード80%記述（INFO-062 B-3）。エンタープライズ採用率41%首位（INFO-064 B-3）。KIQ-MIL-001人間却下比率18R連続完全不在。Arbiter v4.31 COMPLETE
 > 主参照: [H-ANT-001](../config/hypotheses.json) [H-ANT-002](../config/hypotheses.json) [H-ANT-003](../config/hypotheses.json) [H-GOV-001](../config/hypotheses.json) [H-GOV-002](../config/hypotheses.json) [H-CAR-001](../config/hypotheses.json) [H-CAR-002](../config/hypotheses.json) [H-CAR-003](../config/hypotheses.json) [IND-008](../config/indicators.json) [IND-013](../config/indicators.json) [IND-025](../config/indicators.json) [IND-026](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-029](../config/indicators.json) [IND-030](../config/indicators.json)
 
 ## 0. 一文要約
 
-[H-GOV-001](../config/hypotheses.json) は54%から53%に-1%、「介入の空洞化」が前ラウンド確定以降も継続している。SCR指定の完全因果チェーン（$200M Pentagon契約→2つのレッドライン拒否→SCR指定→輸出規制→法廷闘争→規制解除）がA-2品質で文書化された（[INFO-030](../Information/2026-07-03/collected-raw.md#INFO-030) A-2）。Arbiter v4.27は「5%自発的提案による実効性空洞化深化」を-1%の根拠に記録した。OpenAIが政府に5%株式を自発的に提案する構造は、介入の実効性が強まるのではなく、企業側が取引的に関係を構築していることを示すからである。3つの新たな制度展開が判断の文脈を変える。RSP v3でCSAPが初発動し（[INFO-042](../Information/2026-07-03/collected-raw.md#INFO-042) A-1）、政府のSCR指定が企業内部の安全フレームワークの外部トリガーとして機能した初の事例となった。Anthropicは6月にAI開発の世界的一時停止を公式要請し（[INFO-064](../Information/2026-07-03/collected-raw.md#INFO-064) A-1）、Trump政権に拒否された。OpenAIの5%政府株式提案（Alaska Permanent Fund型）に対し、Anthropicは「digital dividend」（AI税→国民配当）を対抗案として提案した（[INFO-063](../Information/2026-07-03/collected-raw.md#INFO-063) A-1）。3つとも企業の枠を超えた制度的安全性の推進行動であり、H-GOV-001の「先例確立」命題を質的に強化する。だが、介入の実効性が空洞化している構造的矛盾は不変である。
+[H-GOV-001](../config/hypotheses.json) は53%から50%に-3%。TrumpがAnthropicを連邦政府全体から禁止し（[INFO-046](../Information/2026-07-10/collected-raw.md#INFO-046) A-2）、Hegseth国防長官が「Huaweiに以前予約されていた扱い」と同等の供給チェーンリスク指定を発令した。346頁の法廷文書で全容が公開済みである。原因はAnthropicが2つの狭い契約制限の削除を拒否したことにある。DPA（国防生産法）をAnthropicへの強制手段として使用する脅迫が確認された（[INFO-045](../Information/2026-07-10/collected-raw.md#INFO-045) B-2）。Arbiter v4.31は、これまでの政府-AI介入証拠が全て同一因果チェーン（Anthropic-Pentagon対立）に依存していること（4R連続未解消）と、Blue Agentが前回Arbiterで採用された「パラドックス」フレームを修正せず同一論理を再使用したことを-1%の根拠に記録した。50%はmedium帯の下限である。
 
-[H-ANT-002](../config/hypotheses.json) は53% lowで±0%。Claude Code WAUが1月比2倍、$1B ARRに到達した（[INFO-052](../Information/2026-07-03/collected-raw.md#INFO-052) B-1）。Fable 5/Mythos 5が再デプロイされ（[INFO-001](../Information/2026-07-03/collected-raw.md#INFO-001) A-3）、Claude Sonnet 5がリリースされた（[INFO-002](../Information/2026-07-03/collected-raw.md#INFO-002) A-3）。技術リーダーシップの継続は明確だが、DAU絶対値の14R連続不在（閾値8Rを6R超過）が核心パラメータの構造的不在として確定している。availability≠adoptionの制約は不変である。
+[H-CAR-002](../config/hypotheses.json) は71%から69%に-2%。段階的修正プロセス（4R連続-1%）が同一根拠（操作化ギャップ：ステートメントは「価値変容」を測定対象とするが、証拠は「価値低下」のみを測定する）の継続にもかかわらず突然停止した。Arbiter v4.31は70%の心理的節目アンカリングを打破し、-1%を追加適用した。I証拠の質的強度（Klarnaブーメラン・Gartner 50%再採用予測・Forrester 55%後悔）の過小評価も指摘された。ステートメント修正の実行が次回ラウンドの絶対条件として位置づけられている。
 
-[H-CAR-002](../config/hypotheses.json) は72%から71%に-1%。操作化検証で特定された概念不整合（ステートメントは「価値変容」=低下+上昇を測定対象とするが、証拠は「価値低下」のみを測定する）が継続する。Arbiter v4.27はBlue自身が「72%は『低下』確度としては妥当だが『変容』確度としては過大」と認識しながら±0%を維持したことを確証バイアスの構造的指標と判定した。[H-GOV-002](../config/hypotheses.json) は23% lowで±0%、絶対条件が24R連続未達成である。
+[H-ANT-002](../config/hypotheses.json) は53% lowで±0%。Claude Code WAUが1月比2倍・$1B ARRに到達（前回確認）。Claude Sonnet 5がリリースされ（[INFO-051](../Information/2026-07-10/collected-raw.md#INFO-051) A-3）、AWS Bedrockで提供開始（[INFO-032](../Information/2026-07-10/collected-raw.md#INFO-032) A-2）。Claude Code v2.1.197でデフォルトモデルに設定された。Anthropicが米国企業AI有料サブスク採用率41%で首位（[INFO-064](../Information/2026-07-10/collected-raw.md#INFO-064) B-3）。OpenAIは39.5%で横ばい。ただしDAU絶対値の16R連続不在（閾値8Rを8R超過）が核心パラメータの構造的不在として確定している。availability≠adoptionの制約は不変である。
+
+[H-ANT-001](../config/hypotheses.json) は37% lowで±0%。AI Safety Index首位（[INFO-088](../Information/2026-07-10/collected-raw.md#INFO-088) A-2）は安全性制度化の進行を示すが、Kano遷移中期の不確実性は不変。Claudeが自身のコードの80%を記述している事実（[INFO-062](../Information/2026-07-10/collected-raw.md#INFO-062) B-3）は再帰的自己改善の具体化を示す。[H-GOV-002](../config/hypotheses.json) は23% lowで±0%、絶対条件29R連続未達成。Anthropicの$47B+ ARRは決定的反証として機能継続。
 
 ## 1. コア判断
 
-全体確信度は中。本ラウンドの最重要判断は、SCR事案が「政府 vs 企業」の二項対立から「制度的安全性の共構築」の次元に移行したことの確認である。同時に、その制度移行が介入の空洞化を解消するどころか深化させているという構造的矛盾の把握である。
+全体確信度は中。本ラウンドの最重要判断は2つある。第一に、政府-AI関係の介入がエスカレート相転移を迎えたこと。第二に、H-CAR-002の段階的修正が継続したこと。
 
-### SCR事案の制度相転移: RSP v3・CSAP初発動・Glasswing
+### 連邦政府全体禁止とHuawei級供給チェーンリスク指定
 
-AnthropicのResponsible Scaling Policy v3は、ASL-4閾値とCritical Capability Thresholdを定義し、Fable 5/Mythos 5がSCR指定を受けた際にCSAP（Cyber Security Action Plan）を発動した（[INFO-042](../Information/2026-07-03/collected-raw.md#INFO-042) A-1）。政府のSCR指定がRSPの外部トリガーとして機能したのは初の事例である。ここから2つの帰結が生じる。
+TrumpがAnthropicを連邦政府全体から禁止した（[INFO-046](../Information/2026-07-10/collected-raw.md#INFO-046) A-2）。これは特定の契約停止ではなく、連邦政府の全事業領域からの排除である。Hegseth国防長官が供給チェーンリスク指定を発令し、「Huaweiに以前予約されていた扱い」と同等の措置を適用した。346頁の法廷文書でAI使用論争の全容が公開されている。Anthropicは2つの狭い契約制限条項（自律型致死兵器のhuman-in-the-loop不在・国内監視）の削除を拒否した結果、この措置を受けた。
 
-第一に、政府介入と企業安全ガバナンスの間にフィードバックループが形成された。介入は一方的な圧力ではなく、企業の内部フレームワークを起動する制度的シグナルとして機能し始めた。Chatham Houseの完全タイムライン（[INFO-064](../Information/2026-07-03/collected-raw.md#INFO-064) A-1）が示す通り、4月のMythos限定向け公開→6月12日輸出規制→6月13日全面停止→6月26日一部再開→6月30日規制解除→7月1日Fable 5全球公開という経緯は、政府指定と企業対応が同期していることを示す。Fable 5再デプロイに際し、Amazon・Microsoft・Google等のGlasswingパートナーとjailbreak深刻度4軸評価フレームワーク（能力獲得・能力の幅・武器化容易性・発見可能性）を共同策定した（[INFO-001](../Information/2026-07-03/collected-raw.md#INFO-001) A-3）。
+DPAをAnthropicへの強制手段として使用する脅迫が確認された（[INFO-045](../Information/2026-07-10/collected-raw.md#INFO-045) B-2）。Anthropicが供給チェーンリスク指定を受けた際、DPAでコンプライアンスを強制しようとした。Marc AndreessenがPentagon国防革新委員会に加入した。AnthropicはTeresa Carlson（Microsoft/AWS出身）を公共部門責任者として採用し対応している。Fable 5の復帰は何らかの譲歩取引の結果と報じられている。
 
-第二に、この制度移行にもかかわらず、介入の実効性は空洞化している。DPA（Defense Production Act）が6月11日に発動され（[INFO-031](../Information/2026-07-03/collected-raw.md#INFO-031) A-2）、AI企業への経済的圧力に利用可能な状態になった。だが、Anthropicの評価額・収益軌道・人材集積に構造的影響は観測されていない。OpenAIが政府に5%株式を自発的に提案する構造（[INFO-063](../Information/2026-07-03/collected-raw.md#INFO-063) A-1）は、政府と企業が取引的に関係を構築していることを示す。介入が「圧力」から「取引」に変質した場合、先例の実効性は更に低下する。Arbiter v4.27はこの「5%自発的提案による実効性空洞化深化」をH-GOV-001 -1%の主要根拠として記録した。完全評価としては50-52%帯が論理的に整合的であり（v4.26交差検証含意）、段階的修正の継続である。
+この事象は3つの分析的含意を持つ。第一に、介入の質が「契約停止」から「全政府排除」に跳ね上がった。第二に、供給チェーンリスク指定はHuawei級の措置であり、Anthropicを国家安保上の脅威と分類したことを意味する。第三に、DPAによる強制脅迫が確認されたことで、政府が経済的圧力の行使を本格化させている。
 
-### 企業の枠を超えた安全性推進: 一時停止要請とdigital dividend
+但し、この証拠を含めH-GOV-001の全証拠が同一因果チェーン（Anthropic-Pentagon対立）に依存している。この独立性問題が4R連続で未解消である。他のAI企業に対する同種の政府介入→安全フレームワーク起動パターンが観測されない限り、「先例」の一般化可能性は構造的に制約される。
 
-Anthropicは6月にAI開発の世界的一時停止を公式要請した（[INFO-064](../Information/2026-07-03/collected-raw.md#INFO-064) A-1）。フロンティアAI企業が自発的に業界全体の制限を求めたのは史上初である。Trump政権はこれを拒否した。同時期に、AnthropicはOpenAIの5%政府株式提案に対抗して「digital dividend」（AIセクター税による国民配当）を提案した（[INFO-063](../Information/2026-07-03/collected-raw.md#INFO-063) A-1）。Reutersの別記事は、Trump政権とAnthropicは株式取得について議論していないことを確認している。
+### Claude Sonnet 5リリースとエンタープライズ首位
 
-この2つの行動は、政府-AI関係に関する2つの対立的な理論を示す。OpenAIのAlaska Permanent Fund型モデルは、政府がAI企業の株式を保有し配当を受け取る「equity and alignment」の理論である。Anthropicのdigital dividendは、AIセクター全体に課税し国民に配当する「taxation and redistribution」の理論である。Anthropicは株式を政府に渡さず、税を通じて社会還元を制度化する立場をとった。これは企業の自律性を保ちつつ社会的責任を果たすという、第3の道である。
+Claude Sonnet 5がリリースされた（[INFO-051](../Information/2026-07-10/collected-raw.md#INFO-051) A-3）。Sonnet 4.6（2月発表）から4ヶ月での新型リリース。コーディング、エージェント、プロフェッショナルワークでフロンティア性能を提供する。価格は$3 per million input tokens（Sonnet 4.6と同じ）。AWS Bedrockで利用可能（[INFO-032](../Information/2026-07-10/collected-raw.md#INFO-032) A-2）。Claude Code v2.1.197でデフォルトモデルとして設定された（[INFO-013](../Information/2026-07-10/collected-raw.md#INFO-013) A-3）。
 
-国連AIガバナンス世界対話が7月7日の週に開催予定であり（[INFO-064](../Information/2026-07-03/collected-raw.md#INFO-064) A-1）、G7で「信頼パートナー」スキームの交渉が進行中である。国際的な制度構築の場で、Anthropicの安全性姿勢がどのように評価されるかが次の観測点になる。
+Anthropicが米国企業AI有料サブスク採用率41%で首位に立った（[INFO-064](../Information/2026-07-10/collected-raw.md#INFO-064) B-3）。2024年12月の10.6%から急増している。OpenAIは39.5%で横ばい。企業がベンチマークより主権、マルチモデル柔軟性、ビジネス成果を重視し始めた。但し41%はAPI全体であり、Claude Code固有のDAU/WAUではない。16R連続不在の核心パラメータ問題は別次元である。
 
-### 確度修正の累積ドリフト是正
+### H-CAR-002の段階的修正継続
 
-H-CAR-002は72%から71%に-1%。前回の操作化検証で特定された概念不整合が解消されていない。証拠は全て「従来スキルの価値低下軸」（代替率・求人減少率・コスト予測）を測定し、「新スキル価値上昇軸」（設計・評価・方向付け能力の市場価値上昇）を測定していない。Arbiter v4.27は、Blueが自身の分析でこの過大性を認識しながら±0%を維持したことを確証バイアスの構造的指標と判定し、Redの-1%提案を採用した。ステートメント修正推奨（「価値低下+新スキル需要創出の未確証」）は記録継続である。
+H-CAR-002は71%から69%に-2%（2R連続-1%）。操作化検証で特定された概念不整合が未解消である。証拠は全て「従来スキルの価値低下軸」（代替率・求人減少率・コスト予測）を測定し、「新スキル価値上昇軸」（設計・評価・方向付け能力の市場価値上昇）を測定していない。Arbiter v4.31は、段階的修正プロセス（4R連続-1%）が突然停止したことを是正した。70%の心理的節目アンカリングを打破し、-1%を追加適用した。I証拠の質的強度の過小評価も指摘された。Klarnaが700人CS置換後に失望的結果となり（[INFO-049](../Information/2026-07-10/collected-raw.md#INFO-049) B-2）、GartnerはAI理由で雇用削減した企業の50%が2027年までに再採用すると予測する。Forresterは55%の企業が人材削減を後悔している。これらは「価値低下」の可逆性を示すが、「新スキル価値上昇」の定量証拠は不在である。
 
 ## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | RSP v3でCSAP初発動: SCR指定がRSP外部トリガーとして機能した初の事例 | [H-GOV-001](../config/hypotheses.json) 強める方向。政府介入と企業安全ガバナンスのフィードバックループ形成。介入の制度化 | A-1 | [INFO-042](../Information/2026-07-03/collected-raw.md#INFO-042) |
-| 高 | Pentagon-Anthropic-SCR完全因果チェーン: $200M契約→レッドライン拒否→SCR→輸出規制→法廷→解除 | [H-GOV-001](../config/hypotheses.json) 強める方向。介入の質的強化の完全文書化。実効性空洞化の構造的矛盾も同時確認 | A-2 | [INFO-030](../Information/2026-07-03/collected-raw.md#INFO-030) |
-| 高 | AnthropicがAI開発世界的一時停止を公式要請、Trump政権拒否 | [H-GOV-001](../config/hypotheses.json) 強める方向。企業の枠を超えた制度的安全性推進の初の事例。フロンティア企業の自発的制限要請は前例なし | A-1 | [INFO-064](../Information/2026-07-03/collected-raw.md#INFO-064) |
-| 高 | OpenAI 5%政府株式提案に対抗し「digital dividend」提案。Anthropicは株式議論せず | [H-GOV-001](../config/hypotheses.json) 二面性。政府-AI関係の第3の道提示で先例強化。同時に5%自発的提案は介入空洞化深化の証拠 | A-1 | [INFO-063](../Information/2026-07-03/collected-raw.md#INFO-063) |
-| 高 | Fable 5/Mythos 5再デプロイ: Glasswing 4軸jailbreak評価、99%以上ブロック率 | [IND-025](../config/indicators.json) 性能向上継続。[IND-013](../config/indicators.json) セキュリティ体制強化。技術リーダーシップの層の厚さ | A-3 | [INFO-001](../Information/2026-07-03/collected-raw.md#INFO-001) |
-| 高 | Claude Code WAU 1月比2倍・$1B ARR到達。DAU絶対値は14R連続不在 | [H-ANT-002](../config/hypotheses.json) 強める方向（成長）と弱める方向（核心パラメータ不在）の同時観測。53% lowの構造的正当性 | B-1 | [INFO-052](../Information/2026-07-03/collected-raw.md#INFO-052) |
-| 高 | DPA発動（6月11日）・AI企業への経済的圧力利用可能化 | [IND-030](../config/indicators.json) critical妥当性強化。介入の法制化。表現ガバナンスの修正第1条脅威指摘 | A-2 | [INFO-031](../Information/2026-07-03/collected-raw.md#INFO-031) |
-| 中 | Sanctuary Protocol: 解釈可能性フレームワーク・16モデル制御テストでアライメント外行動発見 | [IND-013](../config/indicators.json) 安全研究リード。純粋な最適化によるアライメント外行動の実証 | A-1 | [INFO-043](../Information/2026-07-03/collected-raw.md#INFO-043) |
+| 高 | Trump連邦政府全体禁止: 「Huawei級」供給チェーンリスク指定・346頁法廷文書 | [H-GOV-001](../config/hypotheses.json) 介入の質的飛躍。契約停止→全政府排除。供給チェーンリスク指定の新次元 | A-2 | [INFO-046](../Information/2026-07-10/collected-raw.md#INFO-046) |
+| 高 | DPA脅迫確認: Anthropicへの強制手段として使用 | [IND-030](../config/indicators.json) critical妥当性強化。経済的強制力の行使確認 | B-2 | [INFO-045](../Information/2026-07-10/collected-raw.md#INFO-045) |
+| 高 | Claude Sonnet 5リリース: コーディング・エージェント・プロフェッショナルワークでフロンティア | [IND-025](../config/indicators.json) 性能向上継続。Sonnet 4.6から4ヶ月。$3/M input。Claude Code v2.1.197デフォルト | A-3 | [INFO-051](../Information/2026-07-10/collected-raw.md#INFO-051) |
+| 高 | Anthropic企業AI採用率41%首位（OpenAI 39.5%横ばい）。2024年12月10.6%から急増 | [H-ANT-002](../config/hypotheses.json) 強める方向（API全体）。但しClaude Code固有DAU 16R不在でavailability≠adoption制約不変 | B-3 | [INFO-064](../Information/2026-07-10/collected-raw.md#INFO-064) |
+| 高 | Claude自身のコード80%記述: 再帰的自己改善の具体化 | [IND-028](../config/indicators.json) RSI具体化。[H-ANT-001](../config/hypotheses.json) 技術リーダーシップの層の厚さ | B-3 | [INFO-062](../Information/2026-07-10/collected-raw.md#INFO-062) |
+| 高 | AI Safety Index Summer 2026: Anthropic首位。Great American AI Act超党派草案 | [H-ANT-001](../config/hypotheses.json) 安全性制度化の進行。[IND-030](../config/indicators.json) 規制環境変化 | A-2 | [INFO-088](../Information/2026-07-10/collected-raw.md#INFO-088) |
+| 高 | Klarna 700人CS置換→失望的結果。Gartner 50%再採用予測・Forrester 55%後悔 | [H-CAR-002](../config/hypotheses.json) 価値低下の可逆性を実証。操作化ギャップ継続の文脈強化 | B-2 | [INFO-049](../Information/2026-07-10/collected-raw.md#INFO-049) |
+| 中 | Claude Scienceローンチ: 研究者向け統合ワークスペース（6/30） | [H-ANT-002](../config/hypotheses.json) 製品幅拡大（C方向）。研究加速プラットフォーム | B-3 | [INFO-068](../Information/2026-07-10/collected-raw.md#INFO-068) |
+| 中 | Claude Code Enterprise Governance: 6制御レイヤー・HIPAA準拠Enterprise契約+ BAA | [H-ANT-002](../config/hypotheses.json) エンタープライズ統制の制度化。50席以上のEnterprise契約必要 | C-3 | [INFO-024](../Information/2026-07-10/collected-raw.md#INFO-024) |
 
 ## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
-| [H-GOV-001](../config/hypotheses.json) が50%を割る | 介入の実効性が棄却水準に接近。「先例確立」から「先例不成立」への質的転換 | 180日 | [H-GOV-001](../config/hypotheses.json) |
-| SCR指定取り消し訴訟でAnthropicが勝訴する | 介入の合法性が否定され、H-GOV-001の制度的基盤が弱体化する | 365日 | [IND-030](../config/indicators.json) |
-| RSP外部トリガー・パターンが他社で再現される | 政府介入→企業安全フレームワーク起動のフィードバックループがAnthropic固有ではなく制度的一般化される | 180日 | [IND-030](../config/indicators.json) |
-| Claude Code DAU/WAU絶対値が公表される | 14R連続不在が解消し、H-ANT-002 53% lowの上方・下方いずれかの確定判定が可能になる | 次回 | [H-ANT-002](../config/hypotheses.json) |
-| 国連AIガバナンス世界対話（7月7日週）でAnthropicの安全性姿勢が制度的評価される | digital dividend・一時停止要請が国際的な制度構築に影響を与えるかの初の検証機会 | 30日 | [IND-030](../config/indicators.json) |
-| 全主要AI企業の安全性研究予算が経時的定量データで確認される | [H-GOV-002](../config/hypotheses.json) 絶対条件（24R連続未達成）の充足または棄却。萎縮効果の有無が確定する | 180日 | [H-GOV-002](../config/hypotheses.json) |
+| [H-GOV-001](../config/hypotheses.json) が45%を割る | 介入の実効性が棄却水準に接近。「先例確立」から「先例不成立」への質的転換 | 180日 | [H-GOV-001](../config/hypotheses.json) |
+| 連邦政府全体禁止が解除され、Anthropicが政府契約に復帰する | 「Huawei級」指定の恒久性が否定され、H-GOV-001の制度基盤が弱体化する | 365日 | [IND-030](../config/indicators.json) |
+| H-GOV-001の全証拠が同一因果チェーン依存（4R連続）から脱却する | 他のAI企業に対する同種の政府介入パターンが観測され、「先例」の一般化が可能になる | 180日 | [IND-030](../config/indicators.json) |
+| Claude Code DAU/WAU絶対値が公表される | 16R連続不在が解消し、H-ANT-002 53% lowの上方・下方いずれかの確定判定が可能になる | 次回 | [H-ANT-002](../config/hypotheses.json) |
+| H-CAR-002ステートメントが「価値変容」から「価値低下+新スキル需要創出の未確証」に修正される | 操作化ギャップが解消され、段階的修正プロセスの前提が変わる | 次回 | [H-CAR-002](../config/hypotheses.json) |
+| 全主要AI企業の安全性研究予算が経時的定量データで確認される | [H-GOV-002](../config/hypotheses.json) 絶対条件（29R連続未達成）の充足または棄却。萎縮効果の有無が確定する | 180日 | [H-GOV-002](../config/hypotheses.json) |
 
 ## 4. 進行中の仮説
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:---:|---|---|---|
-| [H-ANT-001](../config/hypotheses.json) | 安全性の制度化は差別化の消失ではなく次元の変化を意味し、規制捕獲戦略の側面も評価が必要 | 37% low | ±0%。Kano再定式化実行済み。企業LLM支出シェア40%は企業市場地位を示すが安全性選択理由かの判別不能。Sanctuary Protocol（INFO-043 A-1）で解釈可能性研究リード。CVE-8.7継続的矛盾 | [INFO-043](../Information/2026-07-03/collected-raw.md#INFO-043) | (判別不能) |
-| [H-ANT-002](../config/hypotheses.json) | Claude Code + Agent SDKで開発者市場を取る | 53% low | ±0%。DAU 14R連続不在（閾値8Rを6R超過）。Claude Code WAU 1月比2倍・$1B ARR（INFO-052 B-1）は成長を示すが絶対値不開示が累積コストとして確定。Fable 5再デプロイ・Claude Sonnet 5で技術リーダーシップ継続。availability≠adoption制約不変 | [INFO-001](../Information/2026-07-03/collected-raw.md#INFO-001) [INFO-002](../Information/2026-07-03/collected-raw.md#INFO-002) | DAU 14R不在 |
-| [H-ANT-003](../config/hypotheses.json) | マルチクラウドで広げる | 6% low | ±0%。棄却候補継続。Google $40B投資でインフラ二重集中加速。$30B調達で独立性の財務的裏付けは強化されたがインフラ依存は不変 | (該当なし) | Google $40B投資 |
-| [H-GOV-001](../config/hypotheses.json) | 政府が経済的手段でAnthropicの安全性姿勢に圧力をかける先例が確立された。(a)命題に特化。(b)はH-GOV-002として分離 | 53% medium | -1%（54→53%）。介入の空洞化継続。RSP v3/CSAP初発動（INFO-042 A-1）で政府SCR指定がRSP外部トリガーとして機能した初の事例。世界初AI一時停止要請（INFO-064 A-1）・digital dividend対抗案（INFO-063 A-1）で先例の質的強化。完全SCR因果チェーンA-2文書化（INFO-030）。5%自発的提案による実効性空洞化深化。完全評価50-52%帯。段階的修正継続。6件中6件同一因果チェーン依存の独立性問題不変 | [INFO-030](../Information/2026-07-03/collected-raw.md#INFO-030) [INFO-042](../Information/2026-07-03/collected-raw.md#INFO-042) [INFO-064](../Information/2026-07-03/collected-raw.md#INFO-064) | [INFO-063](../Information/2026-07-03/collected-raw.md#INFO-063) 5%自発的提案 |
-| [H-GOV-002](../config/hypotheses.json) | 政府のAnthropic圧力先例がAI業界全体に波及し、順応報酬構造を通じて安全性研究の戦略的価値が構造的に低下する | 23% low | ±0%。絶対条件24R連続未達成。$200-300B収益は安全性維持企業の圧倒的成功を示す決定的反証。SCR因果チェーンで順応報酬構造の完全観察は可能（Anthropic排除→OpenAI後継）だが業界全体への波及は観測されず | [INFO-030](../Information/2026-07-03/collected-raw.md#INFO-030) | $200-300B収益反証 |
-| [H-CAR-001](../config/hypotheses.json) | AI業務自律化が3年以内に中堅企業の業務プロセスを30%以上自動化し、中間層雇用が大幅に削減される | 36% low | ±0%。「79%導入」≠「30%自動化達成」の定義ギャップ未解決。WEF+PwC（INFO-065 A-1）でエントリーレベル雇用破壊の定量証拠追加（ジュニア求人-7%、28%スキル陳腐化認識）。方向性支持の蓄積だが変換は未解決 | [INFO-065](../Information/2026-07-03/collected-raw.md#INFO-065) | (因果ギャップ未解決) |
-| [H-CAR-002](../config/hypotheses.json) | AIコーディングツール普及で「書く能力」の価値が変容し、設計・評価・方向付けへの移行でその能力の価値が上昇する | 71% medium | -1%（72→71%）。操作化概念不整合継続。C証拠は全て「価値低下軸」のみ測定し「新スキル価値上昇軸」を未測定。Blue自身の自己認識過大確度の確証バイアス指標。ステートメント修正推奨記録継続（「価値低下+新スキル需要創出の未確証」）。WEF+PwCで28%スキル陳腐化認識・Indeed human-firstルールで人間判断価値上昇の間接証拠 | [INFO-065](../Information/2026-07-03/collected-raw.md#INFO-065) | (操作化ギャップ不変) |
-| [H-CAR-003](../config/hypotheses.json) | バリューチェーン中間工程のビジネス職は3年以内に大規模再編され、価値は上流と下流に集中する | 57% medium | ±0%。方向性支持・速度不確定。AaaSがSaaS置換の趨勢継続。推論コストが2026年に全AI計算の約2/3を占め、モデル自体のコモディティ化が進行（INFO-058 B-2） | [INFO-058](../Information/2026-07-03/collected-raw.md#INFO-058) | (新規弱める証拠なし) |
+| [H-ANT-001](../config/hypotheses.json) | 安全性の制度化は差別化の消失ではなく次元の変化を意味し、規制捕獲戦略の側面も評価が必要 | 37% low | ±0%。AI Safety Index首位（INFO-088 A-2）で安全性研究リード。企業LLM支出シェア40%+は企業市場地位を示すが安全性選択理由かの判別不能。Claude自コード80%（INFO-062）で技術リーダーシップ。CVE-8.7継続的矛盾 | [INFO-088](../Information/2026-07-10/collected-raw.md#INFO-088) [INFO-062](../Information/2026-07-10/collected-raw.md#INFO-062) | (判別不能) |
+| [H-ANT-002](../config/hypotheses.json) | Claude Code + Agent SDKで開発者市場を取る | 53% low | ±0%。DAU 16R連続不在（閾値8Rを8R超過）。Claude Sonnet 5リリース（INFO-051 A-3）・企業AI採用率41%首位（INFO-064 B-3）・Claude Code v2.1.197デフォルトはC方向。availability≠adoption制約不変。API全体採用率≠Claude Code固有DAU | [INFO-051](../Information/2026-07-10/collected-raw.md#INFO-051) [INFO-064](../Information/2026-07-10/collected-raw.md#INFO-064) | DAU 16R不在 |
+| [H-ANT-003](../config/hypotheses.json) | マルチクラウドで広げる | 6% low | ±0%。棄却候補継続。Google $40B投資でインフラ二重集中加速。Sonnet 5のAWS Bedrock展開（INFO-032）で依存深化 | (該当なし) | [INFO-032](../Information/2026-07-10/collected-raw.md#INFO-032) |
+| [H-GOV-001](../config/hypotheses.json) | 政府が経済的手段でAnthropicの安全性姿勢に圧力をかける先例が確立された。(a)命題に特化。(b)はH-GOV-002として分離 | 50% medium | -3%（53→50%、v4.28/v4.29/v4.31で3R連続-1%）。連邦政府全体禁止・Huawei級供給チェーンリスク指定（INFO-046 A-2）は介入の質的飛躍。DPA脅迫確認（INFO-045 B-2）。但し全証拠が同一因果チェーン依存（4R連続未解消）。「パラドックス」フレーム未修正。50%はmedium帯下限。段階的修正プロセスの継続 | [INFO-046](../Information/2026-07-10/collected-raw.md#INFO-046) [INFO-045](../Information/2026-07-10/collected-raw.md#INFO-045) | (同一因果チェーン依存4R) |
+| [H-GOV-002](../config/hypotheses.json) | 政府のAnthropic圧力先例がAI業界全体に波及し、順応報酬構造を通じて安全性研究の戦略的価値が構造的に低下する | 23% low | ±0%。絶対条件29R連続未達成。$47B+ ARRは安全性維持企業の圧倒的成功を示す決定的反証。連邦政府全体禁止は順応報酬構造の完全観察を可能にする（Anthropic排除→OpenAI後継）が、業界全体への波及は観測されず | [INFO-046](../Information/2026-07-10/collected-raw.md#INFO-046) | $47B+ ARR反証 |
+| [H-CAR-001](../config/hypotheses.json) | AI業務自律化が3年以内に中堅企業の業務プロセスを30%以上自動化し、中間層雇用が大幅に削減される | 36% low | ±0%。「79%導入」≠「30%自動化達成」の定義ギャップ未解決。AI関連雇用削減175,796件累積・2026年4月21,490件（INFO-048 B-2）で方向性支持蓄積。変換は未解決 | [INFO-048](../Information/2026-07-10/collected-raw.md#INFO-048) | (因果ギャップ未解決) |
+| [H-CAR-002](../config/hypotheses.json) | AIコーディングツール普及で「書く能力」の価値が変容し、設計・評価・方向付けへの移行でその能力の価値が上昇する | 69% medium | -2%（71→69%、2R連続-1%）。段階的修正4R連続後の突然停止を是正。70%心理的節目アンカリング打破。操作化概念不整合継続（「価値変容」ステートメント vs 「価値低下」のみの証拠）。Klarnaブーメラン・Gartner 50%再採用・Forrester 55%後悔（INFO-049 B-2）で可逆性実証だが「新スキル上昇軸」未測定。ステートメント修正次回絶対条件 | [INFO-049](../Information/2026-07-10/collected-raw.md#INFO-049) [INFO-074](../Information/2026-07-10/collected-raw.md#INFO-074) | (操作化ギャップ不変) |
+| [H-CAR-003](../config/hypotheses.json) | バリューチェーン中間工程のビジネス職は3年以内に大規模再編され、価値は上流と下流に集中する | 57% medium | ±0%。方向性支持・速度不確定。AaaSがSaaS置換の趨勢継続。Gartner $234B SaaS支出破壊予測（INFO-053 A-2）。広告市場+8.6%成長 vs ホールディング収益-1.2%で中間層侵食直接証拠（INFO-054 B-3） | [INFO-053](../Information/2026-07-10/collected-raw.md#INFO-053) [INFO-054](../Information/2026-07-10/collected-raw.md#INFO-054) | (新規弱める証拠なし) |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-008](../config/indicators.json) | エンタープライズLLM支出シェア | 35%以上で elevated | 企業LLM支出シェア40%（Menlo）。Claude Code $1B ARR（INFO-052 B-1）。Anthropic全体ARR $2.5B超。high/rising | 2026-07-03 |
-| [IND-013](../config/indicators.json) | セキュリティ侵害頻度 | 大規模インシデントで critical | Sanctuary Protocol（INFO-043 A-1）で解釈可能性体制強化。16モデル制御テストでアライメント外行動発見（純粋な最適化が原因）。新規A-2実被害報告なし。critical移行条件未到達。high/rising | 2026-07-03 |
-| [IND-025](../config/indicators.json) | マルチモーダル信頼性・性能コモディティ化 | 性能差ベンダー間5%未満で high | Claude Sonnet 5（INFO-002 A-3）・Fable 5再デプロイ（INFO-001 A-3）。Glasswing 4軸jailbreak評価フレームワーク共同策定。99%以上ブロック率。量的向上継続。「真の理解」客観的検証未到達。elevated/stable | 2026-07-03 |
-| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達で high | Gartner 89%パイロットスケールせず（INFO-032 A-1）・Writer 97%展開/8%価値・Forrester 55%後悔。期待-実態ギャップ構造的パターン結晶化。high/rising | 2026-07-03 |
-| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用で high | MCP RC 2026-07-28・AWS Bedrock Agents Classic→AgentCore・Azure BYOM+A2A・Google Interactions API GA（INFO-003 A-3）。制度化フェーズ移行の多面的確認。high/rising | 2026-07-03 |
-| [IND-028](../config/indicators.json) | AGI到達度（客観ベンチマーク vs 主観宣言） | 主観-客観乖離拡大で high | ARC-AGI-3公開（INFO-059 A-2）・Hassabis「AGI 50-50、ブレークスルー不要」（INFO-060 B-2）・RSI国家レベル安全保障リスク特定（INFO-059 A-2）。RSI具体化と研究者根本的意見分裂の同時進行。high/rising | 2026-07-03 |
-| [IND-029](../config/indicators.json) | AIインフラ資本投入 vs 物理制約 | 資本流入が物理制約を上回り続ける限り high | 生成AIエンタープライズ支出$77B予測（INFO-046 B-1）・推論コスト全AI計算の2/3（INFO-058 B-2）。資本流入加速。high/rising | 2026-07-03 |
-| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | （critical到達済み） | **critical/rising**。RSP v3/CSAP初発動（INFO-042 A-1）・完全SCR因果チェーン（INFO-030 A-2）・DPA発動（INFO-031 A-2）・世界初AI一時停止要請（INFO-064 A-1）・digital dividend対抗案（INFO-063 A-1）・Project Glasswing・KIQ-MIL-001 14R連続完全不在（INFO-053 B-2）・国連AIガバナンス対話7月7日週開催予定（INFO-064 A-1）。条件2（構造的ガバナンス・リスク制度化）拡張継続 | 2026-07-03 |
+| [IND-008](../config/indicators.json) | エンタープライズLLM支出シェア | 35%以上で elevated | 企業AI採用率41%首位（INFO-064 B-3）。Claude Code $1B ARR継続。Sonnet 5 AWS Bedrock展開（INFO-032 A-2）。high/rising | 2026-07-10 |
+| [IND-013](../config/indicators.json) | セキュリティ侵害頻度 | 大規模インシデントで critical | SkillCloak全静的スキャナ突破（INFO-022 B-2）・AI生成コード45% OWASP脆弱性（INFO-026 B-2）・AIエージェント本番DB削除（INFO-027 B-3）。攻撃面拡大継続。critical移行条件（実被害A-2報告）未到達。high/rising | 2026-07-10 |
+| [IND-025](../config/indicators.json) | マルチモーダル信頼性・性能コモディティ化 | 性能差ベンダー間5%未満で high | Claude Sonnet 4.6/5（INFO-001/051 A-3）・Fable 5 ECI 161（INFO-030 A-2）・Seedream 5.0 Pro（INFO-081 A-3）。量的向上継続。「真の理解」客観的検証未到達。elevated/stable | 2026-07-10 |
+| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達で high | 88%パイロット停滞（INFO-039 B-2）・71%運用コスト>構築（INFO-039）・97%コミット/18%デプロイ（INFO-039）・リスク完全緩和7%（INFO-026 B-2）・AI DB削除（INFO-027 B-3）。期待-実態ギャップ更に強化（13+独立ソース）。high/rising | 2026-07-10 |
+| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用で high | MCP RC（INFO-021 A-3）・AAIF拡大（INFO-028 B-2）・Google Gemini Enterprise Agent Platform（INFO-036 A-3）・MS Foundry→M365（INFO-037 A-3）・OpenAI Agents SDK provider-agnostic（INFO-015 A-3）・NVIDIA OpenShell（INFO-034 A-3）。制度化フェーズ継続。high/rising | 2026-07-10 |
+| [IND-028](../config/indicators.json) | AGI到達度（客観ベンチマーク vs 主観宣言） | 主観-客観乖離拡大で high | GPT-5.6 Sol ARC-AGI-3 7.8%（INFO-061 A-2）・Claude自コード80%（INFO-062 B-3）・G7 Altman/Hassabis/Amodei AGI討議（INFO-075 B-2）・UN科学パネル発足（INFO-090 B-3）。RSI具体化と客観ベンチマーク限界の同時進行。high/rising | 2026-07-10 |
+| [IND-029](../config/indicators.json) | AIインフラ資本投入 vs 物理制約 | 資本流入が物理制約を上回り続ける限り high | DC $850Bリース+204% YoY（INFO-059 A-2）・ビッグテック$650B/$2B/day（INFO-063 B-3）・H1 $252B投資（INFO-080 B-2）。資本流入加速・物理的制約ギャップ確定的。high/rising | 2026-07-10 |
+| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | （critical到達済み） | **critical/rising**。連邦政府全体禁止・Huawei級指定（INFO-046 A-2）・DPA脅迫確認（INFO-045 B-2）・国連事務総長「道義的に忌まわしい」（INFO-047 A-2）・Warren開示要求（INFO-044 A-2）・human-in-loop法案（INFO-012 B-3）・June 2026 EO（INFO-050 A-2）。KIQ-MIL-001 18R連続不在（17R→18R）。IND-030-SCN-BS-001連動関係形式的定義実行（6R先送り停止）：criticalはBS-001確率自動上昇をトリガーしないが期待損失は上昇。条件2充実継続 | 2026-07-10 |
 
 ## 6. 変更履歴
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
-| 2026-07-03 | 全面書き直し。[H-GOV-001](../config/hypotheses.json) 54→53%（介入空洞化継続・5%自発的提案による実効性空洞化深化・RSP v3/CSAP初発動・世界初AI一時停止要請・digital dividend対抗案・完全SCR因果チェーンA-2文書化）。[H-CAR-002](../config/hypotheses.json) 72→71%（操作化概念不整合継続・Blue確証バイアス指標）。Fable 5再デプロイ/Glasswing。KIQ-MIL-001 14R。Arbiter v4.27 COMPLETE | [INFO-001](../Information/2026-07-03/collected-raw.md#INFO-001) [INFO-030](../Information/2026-07-03/collected-raw.md#INFO-030) [INFO-042](../Information/2026-07-03/collected-raw.md#INFO-042) [INFO-063](../Information/2026-07-03/collected-raw.md#INFO-063) [INFO-064](../Information/2026-07-03/collected-raw.md#INFO-064) | H-GOV-001 54→53%・H-CAR-002 72→71% |
-| 2026-07-02 | 全面書き直し。[H-GOV-001](../config/hypotheses.json) 55→54%（凍結解除・商業成功パラドックス交差検証完了・介入の空洞化確定）。[H-ANT-002](../config/hypotheses.json) 54→53% medium→low正式決定（DAU 13R不在・3要件全充足）。[H-GOV-002](../config/hypotheses.json) 24→23%。[H-CAR-002](../config/hypotheses.json) 73→72%（操作化検証完了・ステートメント修正推奨）。Claude Sonnet 5リリース。Pentagon-SCR因果チェーンA-2文書化。Arbiter v4.26 COMPLETE | [INFO-039](../Information/2026-07-02/collected-raw.md#INFO-039) [INFO-042](../Information/2026-07-02/collected-raw.md#INFO-042) [INFO-053](../Information/2026-07-02/collected-raw.md#INFO-053) | H-GOV-001 55%凍結→54%・H-ANT-002 54%medium→53%low・H-GOV-002 24→23%・H-CAR-002 73→72% |
-| 2026-06-29 | 全面書き直し。[H-GOV-001](../config/hypotheses.json) 55% ±0%凍結。[H-GOV-002](../config/hypotheses.json) 22→23%。[H-ANT-002](../config/hypotheses.json) 57→56%。[H-CAR-002](../config/hypotheses.json) 71→72% | [INFO-067](../Information/2026-06-29/collected-raw.md#INFO-067) [INFO-043](../Information/2026-06-29/collected-raw.md#INFO-043) | H-GOV-001 55%凍結・H-GOV-002 22→23%・H-ANT-002 57→56%・H-CAR-002 71→72% |
+| 2026-07-10 | 全面書き直し。[H-GOV-001](../config/hypotheses.json) 53→50%（連邦政府全体禁止・Huawei級供給チェーンリスク指定・DPA脅迫確認・同一因果チェーン4R連続・「パラドックス」フレーム未修正）。[H-CAR-002](../config/hypotheses.json) 71→69%（段階的修正4R後突然停止是正・70%心理的節目打破）。Claude Sonnet 5リリース・企業AI採用率41%首位・Claude自コード80%・AI Safety Index首位。KIQ-MIL-001 18R。IND-030-SCN-BS-001連動関係形式的定義実行。Arbiter v4.31 COMPLETE | [INFO-046](../Information/2026-07-10/collected-raw.md#INFO-046) [INFO-051](../Information/2026-07-10/collected-raw.md#INFO-051) [INFO-062](../Information/2026-07-10/collected-raw.md#INFO-062) [INFO-064](../Information/2026-07-10/collected-raw.md#INFO-064) [INFO-088](../Information/2026-07-10/collected-raw.md#INFO-088) | H-GOV-001 53→50%・H-CAR-002 71→69% |
+| 2026-07-03 | 全面書き直し。[H-GOV-001](../config/hypotheses.json) 54→53%・[H-CAR-002](../config/hypotheses.json) 72→71%。Fable 5再デプロイ/Glasswing。KIQ-MIL-001 14R | [INFO-001](../Information/2026-07-03/collected-raw.md#INFO-001) [INFO-030](../Information/2026-07-03/collected-raw.md#INFO-030) | H-GOV-001 54→53%・H-CAR-002 72→71% |
+| 2026-07-02 | 全面書き直し。[H-GOV-001](../config/hypotheses.json) 55→54%・[H-ANT-002](../config/hypotheses.json) 54→53% medium→low・[H-GOV-002](../config/hypotheses.json) 24→23%・[H-CAR-002](../config/hypotheses.json) 73→72% | [INFO-039](../Information/2026-07-02/collected-raw.md#INFO-039) | H-GOV-001 55→54%・H-ANT-002 54%medium→53%low・H-GOV-002 24→23%・H-CAR-002 73→72% |
+| 2026-06-29 | 全面書き直し。[H-GOV-001](../config/hypotheses.json) 55% ±0%凍結。[H-GOV-002](../config/hypotheses.json) 22→23%。[H-ANT-002](../config/hypotheses.json) 57→56%。[H-CAR-002](../config/hypotheses.json) 71→72% | [INFO-067](../Information/2026-06-29/collected-raw.md#INFO-067) | H-GOV-001 55%凍結・H-GOV-002 22→23%・H-ANT-002 57→56%・H-CAR-002 71→72% |
 | 2026-06-27 | 全面書き直し。[H-GOV-001](../config/hypotheses.json) 54% ±0%。[H-ANT-002](../config/hypotheses.json) 62→58% | [INFO-018](../Information/2026-06-27/collected-raw.md#INFO-018) | H-GOV-001 54%・H-ANT-002 62→58% |
-| 2026-06-23 | 全面書き直し。Google最大$40B投資報道・Anthropic $1Tセカンダリ+Jumper移籍 | [INFO-045](../Information/2026-06-23/collected-raw.md#INFO-045) | H-GOV-001 56→54%・H-ANT-002 64→62% |
-| 2026-06-21 | 全面書き直し。[H-GOV-001](../config/hypotheses.json) 58→56%（判事Rita Lin「違法な報復」判断）。[IND-030](../config/indicators.json) high→critical | [INFO-046](../Information/2026-06-21/collected-raw.md#INFO-046) | H-GOV-001 58→56%・IND-030 high→critical |
-| 2026-06-17 | H-GOV-001(a)/(b)分割実行。(a)39→55%・(b)H-GOV-002新規20% | 2026-06-17複数INFO | H-GOV-001 39→55%・H-GOV-002新規20% |
 
 ## 7. ブラインドスポット
 
-- [H-GOV-001](../config/hypotheses.json) 53%は段階的修正の結果だが、完全評価は50-52%帯である。Arbiter v4.26/v4.27の2ラウンド連続でこの含意が記録されており、53%は依然保守的に高い可能性がある。5%自発的提案による空洞化深化が次ラウンドも観測されれば、50%台前半への加速が論理的に必要になる。
-- Pentagon-Anthropic-SCR因果チェーン（INFO-030等）の全証拠が同一因果チェーン（Anthropic-Pentagon対立）に依存している。RSP v3/CSAP初発動は新たな制度次元を追加したが、他のAI企業に対する同種の政府介入→安全フレームワーク起動パターンが観測されない限り、「先例」の一般化可能性は構造的に制約される。
-- RSP v3/CSAP初発動は単一事象である。政府が再びSCR指定を行うか、他社のRSPが同様の外部トリガーを持つかは未知である。フィードバックループの制度化か偶発的同期かの判別には、少なくとも2度目の事象が必要である。
-- 世界初のAI一時停止要請はTrump政権に拒否された。拒否された要請の「先例」価値は、受理された場合と質的に異なる。政治的文脈が変化しない限り、この要請はシグナルとして記録されるが制度的成果物として機能しない。
-- digital dividendと5%政府株式はどちらも未実装の提案である。2つの対立的理論の政策デbateは初期段階にあり、いずれが制度化されるか、あるいは双方が却下されるかは不確定である。国連AIガバナンス対話（7月7日週）が最初の検証機会になる。
-- [H-ANT-002](../config/hypotheses.json) 53% low移行後、DAU不在が15R、16Rと延びてもlow帯内での更なる引き下げしか起きない。Claude Code WAU 2倍成長・$1B ARRという強いC証拠と核心パラメータ不在の累積コストが、単一確度で表現できない二面性を維持している。
-- [H-CAR-002](../config/hypotheses.json) 71%のステートメント修正が推奨記録にとどまっている。hypotheses.jsonのステートメントが未更新の場合、静的インテリジェンスの§4とconfigの間に不整合が生じる。修正実施のタイミングと手法が未定義である。
-- KIQ-MIL-001（人間却下比率）が14R連続完全不在である。「データ不在=情報」として評価しているが、この判断自体が逆方向の正常性バイアス（観測されていないリスクを過大評価する）の可能性がある。14R不在が構造的（軍事機密で非公開）か偶発的（報道されていないだけ）かの判別が不能である。
+- [H-GOV-001](../config/hypotheses.json) 50%は3R連続-1%の段階的修正の結果。medium帯下限に到達した。50%を割るとmedium→low移行が Trigger される。連邦政府全体禁止（INFO-046）は介入の質的強化の決定的証拠だが、同一因果チェーン依存問題（4R連続）が解消しない限り、50%以下への自然的ドリフト圧力と介入強化の方向性が対立する。
+- 連邦政府全体禁止とHuawei級供給チェーンリスク指定が、Anthropicの商業的軌道（$47B+ ARR・$965B評価額）に与える影響がまだ観測されていない。346頁の法廷文書が公開済みだが、市場反応・顧客離れ・評価額変動の定量データが不在。
+- 全証拠が同一因果チェーン（Anthropic-Pentagon対立）に依存している構造的問題が4R連続で未解消。この問題自体がH-GOV-001確度の上限を制約している。他社への同種介入が観測されない限り、この制約は構造的に持続する。
+- [H-ANT-002](../config/hypotheses.json) 53% low移行後、DAU不在が17R、18Rと延びてもlow帯内での更なる引き下げしか起きない。企業AI採用率41%首位（API全体）とClaude Code固有DAU不在の二面性が、単一確度で表現できない構造的制約として持続する。
+- [H-CAR-002](../config/hypotheses.json) 69%のステートメント修正が5R以上先送りされている。hypotheses.jsonのステートメントが未更新の場合、静的インテリジェンスの§4とconfigの間に不整合が生じる。Arbiter v4.31が次回修正を絶対条件化したが、実行タイミングと手法が未定義。
+- KIQ-MIL-001（人間却下比率）が18R連続完全不在。Arbiter v4.31が「軍事文脈でのデータ不在=構造的に非対称」の評価基準を策定した。18R不在が構造的（軍事機密で非公開）か偶発的（報道されていないだけ）かの判別は依然不能だが、不在を中立と評価しない原則が制度化された。
+- IND-030-SCN-BS-001連動関係の形式的定義が実行された。IND-030 criticalがBS-001確率の自動上昇をトリガーしないことが確定した。期待損失（確率×重症度）は上昇している。この定義が今後のラウンドでどう適用されるかが次の検証課題。
 
 ## 付録: 直近30日の参照Evidence
 
 | Evidence | 用途 |
 |---|---|
-| [INFO-001](../Information/2026-07-03/collected-raw.md#INFO-001) | Fable 5/Mythos 5再デプロイ・Glasswing 4軸jailbreak評価・99%ブロック率(A-3) |
-| [INFO-002](../Information/2026-07-03/collected-raw.md#INFO-002) | Claude Sonnet 5リリース: Opus 4.8格差縮小・$2/$10導入価格(A-3) |
-| [INFO-030](../Information/2026-07-03/collected-raw.md#INFO-030) | Pentagon-Anthropic-SCR完全因果チェーン: $200M→レッドライン→SCR→輸出規制→法廷→解除(A-2) |
-| [INFO-031](../Information/2026-07-03/collected-raw.md#INFO-031) | DPA発動・AI企業経済的圧力利用可能化・表現ガバナンス修正第1条脅威(A-2) |
-| [INFO-042](../Information/2026-07-03/collected-raw.md#INFO-042) | RSP v3・CSAP初発動・SCR指定がRSP外部トリガーとして機能(A-1) |
-| [INFO-043](../Information/2026-07-03/collected-raw.md#INFO-043) | Sanctuary Protocol・16モデル制御テスト・アライメント外行動発見(A-1) |
-| [INFO-046](../Information/2026-07-03/collected-raw.md#INFO-046) | AI安全性研究予算の周辺化・OpenAI H1純損失$13.5B(B-1) |
-| [INFO-052](../Information/2026-07-03/collected-raw.md#INFO-052) | Claude Code WAU 1月比2倍・$1B ARR。DAU絶対値非開示継続(B-1) |
-| [INFO-053](../Information/2026-07-03/collected-raw.md#INFO-053) | KIQ-MIL-001 14R連続不在・48%自律率≠人力却下率(B-2) |
-| [INFO-059](../Information/2026-07-03/collected-raw.md#INFO-059) | ARC-AGI-3公開・RSI国家レベル安全保障リスク(A-2) |
-| [INFO-060](../Information/2026-07-03/collected-raw.md#INFO-060) | Hassabis「AGI 50-50・ブレークスルー不要」・Davos 3CEO(B-2) |
-| [INFO-061](../Information/2026-07-03/collected-raw.md#INFO-061) | EU AI Act延期・輸出規制の揺り戻し・ジュネーブ米中対話(A-1) |
-| [INFO-063](../Information/2026-07-03/collected-raw.md#INFO-063) | OpenAI 5%政府株式提案・Anthropic digital dividend対抗案・GPT-5.6延期要請(A-1) |
-| [INFO-064](../Information/2026-07-03/collected-raw.md#INFO-064) | Chatham House完全タイムライン・Project Glasswing・世界初AI一時停止要請・国連対話(A-1) |
-| [INFO-065](../Information/2026-07-03/collected-raw.md#INFO-065) | WEF+PwC: ジュニア求人-7%・28%スキル陳腐化・Indeed human-first(A-1) |
-| [Arbiter v4.27](../state/arbiter-2026-07-03.md) | 確度評価の完全根拠 |
+| [INFO-001](../Information/2026-07-10/collected-raw.md#INFO-001) | Claude Sonnet 4.6リリース: コーディング・エージェント・研究でフロンティア(A-3) |
+| [INFO-013](../Information/2026-07-10/collected-raw.md#INFO-013) | Claude Agent SDK TypeScript v2.1.204: Claude Code parity・Claude Code v2.1.197でSonnet 5デフォルト(A-3) |
+| [INFO-024](../Information/2026-07-10/collected-raw.md#INFO-024) | Claude Code Enterprise Governance: 6制御レイヤー・HIPAA・Claude Coworkリモート実行(C-3) |
+| [INFO-030](../Information/2026-07-10/collected-raw.md#INFO-030) | Epoch AI Benchmarks: Claude Fable 5 ECI 161新記録・GPT-5.5 Proを1点上回る(A-2) |
+| [INFO-032](../Information/2026-07-10/collected-raw.md#INFO-032) | Claude Sonnet 5 AWS Bedrock提供開始・Amazon WorkSpaces for AI agents(A-2) |
+| [INFO-044](../Information/2026-07-10/collected-raw.md#INFO-044) | Warren開示要求: Pentagon+7社（SpaceX/OpenAI/Google/NVIDIA/MS/AWS/Oracle）AI契約条件(A-2) |
+| [INFO-045](../Information/2026-07-10/collected-raw.md#INFO-045) | DPA脅迫確認: Anthropicへの強制手段・Marc Andreessen Pentagon国防革新委員会加入(B-2) |
+| [INFO-046](../Information/2026-07-10/collected-raw.md#INFO-046) | Trump連邦政府全体禁止・Huawei級供給チェーンリスク指定・346頁法廷文書・Teresa Carlson採用(A-2) |
+| [INFO-047](../Information/2026-07-10/collected-raw.md#INFO-047) | 国連事務総長: 自律型致死兵器は「道義的に忌まわしい」・国際法禁止要求(A-2) |
+| [INFO-049](../Information/2026-07-10/collected-raw.md#INFO-049) | Klarna 700人CS置換→失望的結果。Gartner 50%再採用予測・Forrester 55%後悔・Duolingo置換停止(B-2) |
+| [INFO-050](../Information/2026-07-10/collected-raw.md#INFO-050) | June 2026 AI Executive Order: ウォーターマーク指針・データガバナンス・リリース前テスト(A-2) |
+| [INFO-051](../Information/2026-07-10/collected-raw.md#INFO-051) | Claude Sonnet 5公式発表: フロンティア性能・$3/M input・Claude Code v2.1.197デフォルト(A-3) |
+| [INFO-062](../Information/2026-07-10/collected-raw.md#INFO-062) | Claude自身のコード80%記述: 再帰的自己改善の具体化・グローバルAI一時停止議論(B-3) |
+| [INFO-064](../Information/2026-07-10/collected-raw.md#INFO-064) | Anthropic企業AI採用率41%首位（OpenAI 39.5%横ばい）。2024年12月10.6%から急増(B-3) |
+| [INFO-068](../Information/2026-07-10/collected-raw.md#INFO-068) | Claude Scienceローンチ: 研究者向け統合ワークスペース・6/30(B-3) |
+| [INFO-075](../Information/2026-07-10/collected-raw.md#INFO-075) | G7: Altman/Hassabis/Amodei AGI討議・米国主導国際AI連合提案・強いAGI 2031-2035(B-2) |
+| [INFO-088](../Information/2026-07-10/collected-raw.md#INFO-088) | AI Safety Index Summer 2026: Anthropic首位。Great American AI Act超党派草案・CAISI設立(A-2) |
+| [Arbiter v4.31](../state/arbiter-2026-07-10.md) | 確度評価の完全根拠 |
