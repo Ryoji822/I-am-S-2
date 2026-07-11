@@ -1,7 +1,7 @@
 {
-  "version": "4.31",
-  "last_updated": "2026-07-10",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.31: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。COMPLETE→COMPLETE連続ラウンド。2件シナリオ変更: SCN-002 -1%（25→24%）・SCN-004 +1%（32→33%）。GLM-5.2オープンウェイト#1・全体4位・DeepSeek V4 Pro $1.74/M input vs Opus 4.8 $5/M input・MMLU 90%超飽和・88%パイロット停滞でコモディティ化証拠更に蓄積。前回v4.30修正の「1ラウンド消費」パターン是正。残り3シナリオ±0%。SCN-001 6%・SCN-002 24%・SCN-003 20%・SCN-004 33%・SCN-005 17%。合計100%維持（6+24+20+33+17=100%）",
+  "version": "4.32",
+  "last_updated": "2026-07-11",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.32: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。COMPLETE→COMPLETE連続ラウンド。主要5シナリオ全件±0%。ブラックスワン1件変更: SCN-BS-001 +1%（17→18%）・完全自律AIドローン人間殺害初確認の「設計通り」判定はKIQ-MIL-001 19R不在下で検証不可能。SCN-001 6%・SCN-002 24%・SCN-003 20%・SCN-004 33%・SCN-005 17%。合計100%維持（6+24+20+33+17=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -162,9 +162,9 @@
       "scenario_id": "SCN-BS-001",
       "name": "AI安全性大事故",
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
-      "probability": 17,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.27: ±0%（17%維持）。完全COMPLETE（Blue/Red/Arbiter）。Red +1%提案否認。新規A-2品質実被害報告なし。v4.26のIND-030条件2再定義（事故確率→構造的脆弱性）により、IND-030「強化」は構造的脆弱性（重症度）の増大を意味し、事故確率の上昇とは同義でない。期待損失（確率×重症度）は上昇しているが、確率自体は新しいトリガー事象指標なしに変更すべきでない。Sanctuary Protocol 16モデル異常行動（INFO-043 A-1）は研究段階の知見であり運用上の事故ではない。但しIND-030-SCN-BS-001連動関係の形式的定義を次回議題として記録",
+      "probability": 18,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v4.32: +1%（17→18%）。完全COMPLETE（Blue/Red/Arbiter）。Red採用。完全自律AIドローン人間殺害初確認（INFO-034 A-2）の「設計通り」判定はKIQ-MIL-001 19R連続不在下で検証不可能（Epistemic Delegation構造的リスク INFO-039 B-3）。v4.31形式的定義（IND-030 critical→SCN-BS-001自動上昇なし）は遵守するが、当該事象はIND-030強化の文脈を超えてSCN-BS-001定義（「自律Agent暴走等」）に直接関連する独立事象。条件付き確率の上昇を評価。期待損失フレームの内部矛盾（Blue Agent自身が期待損失上昇を認めながら確率不変）の解消。国連事務総長LAWS禁止宣言・30カ国条約要求は規制圧力高揚そのもの。但し±1%範囲内の段階的調整",
       "impact": "catastrophic",
       "indicators": [
         "IND-013",
@@ -187,7 +187,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-07-10",
-    "note": "SCN-001(6) + SCN-002(24) + SCN-003(20) + SCN-004(33) + SCN-005(17) = 100%. Arbiter v4.31完了（完全COMPLETE・Blue/Red/Arbiter完了・SCN-002 -1%・SCN-004 +1%）"
+    "verified_date": "2026-07-11",
+    "note": "SCN-001(6) + SCN-002(24) + SCN-003(20) + SCN-004(33) + SCN-005(17) = 100%. Arbiter v4.32完了（完全COMPLETE・Blue/Red/Arbiter完了・主要5シナリオ全件±0%・ブラックスワンSCN-BS-001 +1%）"
   }
 }
