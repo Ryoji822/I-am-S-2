@@ -1,7 +1,7 @@
 {
-  "version": "4.34",
-  "last_updated": "2026-07-13",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.34: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。DEGRADED→COMPLETE復帰ラウンド。シナリオ2件変更（SCN-002 -1%既適用確認・SCN-004 +1%既適用確認）。OSS多面進展（DeepSeek中国・Mistral仏・Meta米国・Decagon米国・Databricks米国=N≥5）で質的転換基準(1)(3)の充足可能性を認めSCN-004+1%。フロンティア存続（GPT-5.6 Sol SOTA）でSCN-002-1%。SCN-001 6%・SCN-002 23%・SCN-003 20%・SCN-004 34%・SCN-005 17%。合計100%維持（6+23+20+34+17=100%）",
+  "version": "4.35",
+  "last_updated": "2026-07-14",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.35: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。COMPLETE→COMPLETE連続ラウンド。シナリオ2件変更（SCN-004 -1%・SCN-005 +1%）。SCN-004 -1%（34→33%）: 80%有料モデル支出+5% ROI確認の同時観察は『価値実現の困難さ』でありSCN-004(コモディティ化)核心前提と矛盾。階層化(低リスク=OSS・高リスク=有料)の示唆。SCN-005 +1%（17→18%）: 4つの独立地政学的シグナルの累積。7/15機能停止は『実装』であり『検討中』ではない。SCN-001 6%・SCN-002 23%・SCN-003 20%・SCN-004 33%・SCN-005 18%。合計100%維持（6+23+20+33+18=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -112,9 +112,9 @@
       "quadrant": "bottom-right",
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
-      "probability": 34,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.34: +1%（33→34%）。v4.34適用確認。Decagon 90% OSS移行(INFO-012 B-3)=質的転換候補。OSS多面進展: DeepSeek V4-Flash $0.14(INFO-011 B-2 中国)・Mistral 8完全OSS(INFO-025 B-3 仏)・Meta Muse Spark II 51(INFO-056 A-3 米)・Databricks Omnigent OSS(INFO-050 B-2 米)=N≥5独立ソース。トークン価格3年で1000分の1(INFO-022 B-2)=構造的コモディティ化。質的転換基準(1)N≥3と(3)構造的要因の充足可能性。但しGPT-5.6 Sol ARC-AGI-3 7.78%(INFO-001 A-3)・Coding Index 80 SOTA(INFO-001)=フロンティア存続。+1%保守的上限",
+      "probability": 33,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v4.35: -1%（34→33%）。Red採用。80%有料モデル支出(INFO-073/078)+5% ROI確認(INFO-041)の同時観察は『価値実現の困難さ』でありSCN-004(誰でもAI=コモディティ化)核心前提と矛盾。コモディティ化=容易な利用可能性ならROI確認は容易なはず。5% ROIは価値創造の困難さを示す。階層化(低リスク=OSS・高リスク=有料)の示唆。OSS 90%性能・トークン価格1/1000等のコモディティ化構造的要因は継続するが、価値実現困難さのシグナルが『容易な利用可能性』前提を弱化。GPT-5.6 Sol ARC-AGI-3 7.78% SOTA(INFO-001 A-3)でフロンティア存続",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -138,9 +138,9 @@
       "quadrant": "geopolitical",
       "quadrant_label": "地政学的ブロック化（既存4象限の修飾シナリオ）",
       "description": "AI市場が地政学的ブロック（SpaceX/xAI・Google-Anthropic・中国独自圏・欧州主権AI等）に分裂する。技術標準（MCP/AAIF）は共有されつつ、規制・チップ輸出管理・データ主権でブロック間の相互運用性が制限される。既存4象限（SCN-001〜004）は各ブロック内での競争ダイナミクスを記述し続ける",
-      "probability": 17,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.34: ±0%（17%維持）。Blue承認。北京AI海外アクセス制限検討(INFO-007 A-1 Reuters)=第2独立シグナル。7/15エージェント機能停止(INFO-008 B-2)=企業が規制実効性を前提に行動。5%株式譲渡検討(INFO-006 B-3)=米国側の地政学的エンタングルメント。Kore.ai/AtosソブリンAI(INFO-057 B-2)=ブロック化の微候。両ブロックでの国家介入同時エスカレーションを構造的動態として記録。但し「検討中」≠実装。確率変更には実装確定が必要",
+      "probability": 18,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v4.35: +1%（17→18%）。Red採用。4つの独立地政学的シグナルの累積: (1)北京AI海外アクセス制限検討(INFO-043 B-2 Reuters)・(2)Doubao/Qwenエージェント機能7/15オフライン(INFO-022 B-2)=企業が規制を実効性ありと前提に行動=『実装』であり『検討中』ではない・(3)米国5%株式取得(INFO-010 B-2)=地政学的エンタングルメントの米国側シグナル・(4)中国AIエージェント・ヒューマノイドAI 3新規制(INFO-069)。単一シグナルの『検討中≠実装』基準は妥当だが、4つの独立シグナルの累積は確率上昇を正当化。18%は保守的",
       "key_assumptions": [
         "地政学的ブロック化が技術標準化を上回る影響を持つ",
         "チップ・データ主権規制が相互運用性を阻害する",
@@ -187,7 +187,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-07-13",
-    "note": "SCN-001(6) + SCN-002(23) + SCN-003(20) + SCN-004(34) + SCN-005(17) = 100%. Arbiter v4.34完了（COMPLETE・Blue完了・Red完了・H-GOV-001 -1%・H-CAR-002 -1%・H-ANT-001 +1%・H-XAI-004 -1%[既適用確認]・SCN-002 -1%[既適用確認]・SCN-004 +1%[既適用確認]・指標全件状態変更なし・7件last_checked/last_value更新）"
+    "verified_date": "2026-07-14",
+    "note": "SCN-001(6) + SCN-002(23) + SCN-003(20) + SCN-004(33) + SCN-005(18) = 100%. Arbiter v4.35完了（COMPLETE・Blue完了・Red完了・H-ANT-001 +1%・H-OAI-001 -1%・H-CAR-002 -1%・H-XAI-004 -1%・SCN-004 -1%・SCN-005 +1%・指標全件状態変更なし・7件last_checked/last_value更新）"
   }
 }
