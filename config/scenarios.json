@@ -1,7 +1,7 @@
 {
-  "version": "4.35",
-  "last_updated": "2026-07-14",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.35: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。COMPLETE→COMPLETE連続ラウンド。シナリオ2件変更（SCN-004 -1%・SCN-005 +1%）。SCN-004 -1%（34→33%）: 80%有料モデル支出+5% ROI確認の同時観察は『価値実現の困難さ』でありSCN-004(コモディティ化)核心前提と矛盾。階層化(低リスク=OSS・高リスク=有料)の示唆。SCN-005 +1%（17→18%）: 4つの独立地政学的シグナルの累積。7/15機能停止は『実装』であり『検討中』ではない。SCN-001 6%・SCN-002 23%・SCN-003 20%・SCN-004 33%・SCN-005 18%。合計100%維持（6+23+20+33+18=100%）",
+  "version": "4.36",
+  "last_updated": "2026-07-15",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.36: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・Arbiter独自Red代替評価）。COMPLETE→DEGRADED。全5シナリオ±0%・ブラックスワン全件±0%。各シナリオの確率変更を正当化する新規独立シグナル検出されず。DEGRADED最大保守性原則。SCN-001 6%・SCN-002 23%・SCN-003 20%・SCN-004 33%・SCN-005 18%。合計100%維持（6+23+20+33+18=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -25,7 +25,7 @@
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
       "probability": 6,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.34: ±0%（6%維持）。Blue承認。AWS Bedrock Classic→AgentCore移行は囲い込みではなく移行。MCP RC・AAIF MCPA認定で標準化加速継続。↓圧力持続だが既に6%で反映済み",
+      "probability_rationale": "Arbiter v4.36: ±0%（6%維持）。DEGRADED。MCP RC(INFO-025)・AAIF MCPA(INFO-026)・agents-cli OSS(INFO-037)・Omnigent OSS(INFO-028)・Open Agent Specification(INFO-017)=標準化加速が囲い込み技術前提を継続侵食。↓圧力持続だが6%で反映済み",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -54,8 +54,8 @@
       "quadrant_label": "開放 × 差別化持続",
       "description": "MCP/A2A等の標準（AAIF傘下）で相互運用性は確保されるが、トップ性能は一部のフロンティア企業に集中する。移植性はあるが、最先端を使うには特定ベンダーが必要",
       "probability": 23,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v4.34: -1%（24→23%）。v4.34適用確認。GPT-5.6 Sol ARC-AGI-3 7.78% SOTA(INFO-001 A-3)・Fable 5 ECI 161(INFO-023 B-2)・Grok 4.5 +16pt(INFO-002 B-2)=フロンティア差別化存続。DeepSeek V4-Flash $0.14(INFO-011 B-2)・Decagon 90% OSS(INFO-012 B-3)・Mistral 8 OSS(INFO-025 B-3)・Meta Muse Spark 51(INFO-056 A-3)=差別化侵食。両方向同時進行。依然最有力シナリオ",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v4.36: ±0%（23%維持）。DEGRADED。GPT-5.6 Sol ARC-AGI-3 7.78%(INFO-067 B-2)・Claude Fable 5 100/100(INFO-054)・80%有料支出(INFO-056)=フロンティア差別化存続(C)。MCP標準化・AAIF MCPA=開放(C)。両方向同時進行で最有力シナリオ維持",
       "key_assumptions": [
         "AAIF（MCP/A2A）が業界標準として定着する",
         "フロンティアモデルの性能優位は維持される",
@@ -82,7 +82,7 @@
       "description": "モデル性能差は小さくなるが、エコシステムのスイッチングコスト（データ・ワークflow・統合）で顧客が固定化される。性能では差がつかないため、データとエコシステムの囲い込みが主戦場になる",
       "probability": 20,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.34: ±0%（20%維持）。Blue承認。Gartner 40%+廃棄予測(INFO-036 B-2)・IDC 33個中4個本番(INFO-036)・MIT 95%パイロットROIゼロ(INFO-037 B-3)=統合困難→ベンダー依存深化C。MCP RC(INFO-016 A-3)・AAIF MCPA認定(INFO-019 A-3)・agents-cli OSS(INFO-055)=ロックイン緩和I。相殺",
+      "probability_rationale": "Arbiter v4.36: ±0%（20%維持）。DEGRADED。57%自信満々な誤答(INFO-043 B-2)・55%後悔(INFO-058 B-2)・40%+廃棄予測(INFO-058)=統合困難→ベンダー依存深化(C)。MCP RC(INFO-025 B-2)・agents-cli OSS(INFO-037)・Omnigent(INFO-028)=ロックイン緩和(I)。相殺",
       "key_assumptions": [
         "AIモデルの性能差が縮小し差別化が困難になる",
         "大手企業のエコシステム統合（検索/メール/クラウド等）がスイッチングコストを形成",
@@ -113,8 +113,8 @@
       "quadrant_label": "開放 × コモディティ化",
       "description": "性能も標準も開放的で、特化型AIが乱立する。モデル性能の差がなく移植性も高いため、差別化は業種・機能特化とコスト効率に集中する",
       "probability": 33,
-      "probability_change": "-1%",
-      "probability_rationale": "Arbiter v4.35: -1%（34→33%）。Red採用。80%有料モデル支出(INFO-073/078)+5% ROI確認(INFO-041)の同時観察は『価値実現の困難さ』でありSCN-004(誰でもAI=コモディティ化)核心前提と矛盾。コモディティ化=容易な利用可能性ならROI確認は容易なはず。5% ROIは価値創造の困難さを示す。階層化(低リスク=OSS・高リスク=有料)の示唆。OSS 90%性能・トークン価格1/1000等のコモディティ化構造的要因は継続するが、価値実現困難さのシグナルが『容易な利用可能性』前提を弱化。GPT-5.6 Sol ARC-AGI-3 7.78% SOTA(INFO-001 A-3)でフロンティア存続",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v4.36: ±0%（33%維持）。DEGRADED。トークン価格97%低下(INFO-001)・OSS 90%性能(INFO-056)・GPT-4o 50%値下げ(INFO-053)=コモディティ化(C)。但し80%有料支出+5% ROI+55%後悔=価値実現困難さ(v4.35 -1%適用済み)。階層化シグナルで±0%",
       "key_assumptions": [
         "AIモデルの性能差がほぼ消失する",
         "OSSモデルが商用モデルと機能同等になる",
@@ -139,8 +139,8 @@
       "quadrant_label": "地政学的ブロック化（既存4象限の修飾シナリオ）",
       "description": "AI市場が地政学的ブロック（SpaceX/xAI・Google-Anthropic・中国独自圏・欧州主権AI等）に分裂する。技術標準（MCP/AAIF）は共有されつつ、規制・チップ輸出管理・データ主権でブロック間の相互運用性が制限される。既存4象限（SCN-001〜004）は各ブロック内での競争ダイナミクスを記述し続ける",
       "probability": 18,
-      "probability_change": "+1%",
-      "probability_rationale": "Arbiter v4.35: +1%（17→18%）。Red採用。4つの独立地政学的シグナルの累積: (1)北京AI海外アクセス制限検討(INFO-043 B-2 Reuters)・(2)Doubao/Qwenエージェント機能7/15オフライン(INFO-022 B-2)=企業が規制を実効性ありと前提に行動=『実装』であり『検討中』ではない・(3)米国5%株式取得(INFO-010 B-2)=地政学的エンタングルメントの米国側シグナル・(4)中国AIエージェント・ヒューマノイドAI 3新規制(INFO-069)。単一シグナルの『検討中≠実装』基準は妥当だが、4つの独立シグナルの累積は確率上昇を正当化。18%は保守的",
+      "probability_change": "±0%",
+      "probability_rationale": "Arbiter v4.36: ±0%（18%維持）。DEGRADED。Doubao/Qwen 7/15オフライン(INFO-016)=実装確認・北京海外アクセス制限(INFO-045 A-2)・5%株式取得(INFO-007 A-2)。v4.35 +1%適用済み。本ラウンドは既知シグナルの確認的実装。新規独立シグナル不在で±0%",
       "key_assumptions": [
         "地政学的ブロック化が技術標準化を上回る影響を持つ",
         "チップ・データ主権規制が相互運用性を阻害する",
@@ -164,7 +164,7 @@
       "description": "主要AIシステムの大規模事故（フェイク情報による社会混乱、自律Agent暴走等）が発生し、厳格な規制導入による市場凍結",
       "probability": 18,
       "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.34: ±0%（18%維持）。Blue承認+Red条件付き支持。本ラウンド新規A-2品質技術的安全事故報告なし。AI自律ランサムウェア攻撃初確認(INFO-060 B-2)は注目だが技術的安全事故定義（フェイク・Agent暴走）との区別。完全自律ドローン人間殺害(INFO-035 C-3)は軍事文脈。国連LAWS宣言(INFO-034 A-1)・30カ国条約要求は規制圧力だが事故報告ではない。IND-030 critical史上最大水準継続。v4.31形式的定義遵守: IND-030 criticalはSCN-BS-001自動トリガーなし。但し期待損失（確率×重症度）は上昇。前回+1%適用済み。トリガー定義改定（『攻撃主体としてのAI』を含める）検討を次回議題として記録。トークン持続時間拡大（4分→数日）のSCN-BS-001含意を次回評価",
+      "probability_rationale": "Arbiter v4.36: ±0%（18%維持）。DEGRADED。新規A-2品質技術的安全事故報告なし。Claude Code RCE(INFO-036 B-2)・Grok CLI(INFO-015 B-3)は脆弱性発見であり事故ではない。Hassabis「壊滅的」警告(INFO-059 B-2)は予測。v4.31形式的定義遵守: 確率変更にはA-2品質実被害報告が必要。IND-030 criticalはSCN-BS-001自動トリガーなし",
       "impact": "catastrophic",
       "indicators": [
         "IND-013",
@@ -187,7 +187,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-07-14",
-    "note": "SCN-001(6) + SCN-002(23) + SCN-003(20) + SCN-004(33) + SCN-005(18) = 100%. Arbiter v4.35完了（COMPLETE・Blue完了・Red完了・H-ANT-001 +1%・H-OAI-001 -1%・H-CAR-002 -1%・H-XAI-004 -1%・SCN-004 -1%・SCN-005 +1%・指標全件状態変更なし・7件last_checked/last_value更新）"
+    "verified_date": "2026-07-15",
+    "note": "SCN-001(6) + SCN-002(23) + SCN-003(20) + SCN-004(33) + SCN-005(18) = 100%. Arbiter v4.36完了（DEGRADED・Blue完了・Red失敗・全9主要仮説±0%・全5シナリオ±0%・ブラックスワン全件±0%・指標全件状態変更なし・7件last_checked/last_value更新）"
   }
 }

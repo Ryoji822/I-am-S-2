@@ -1,8 +1,9 @@
 {
-  "version": "4.35",
-  "last_updated": "2026-07-14",
-  "description": "I&W（Indications and Warning）指標レジストリ. v4.35: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（56%本番展開でセキュリティ未対応(INFO-024 B-2)・91%使用中でNHI戦略10%(INFO-040 B-2)・HBR A-2: ロックイン最高リスク(INFO-077)。critical移行条件（実被害A-2報告）未到達。構造的バイアス記録継続）。IND-025 elevated維持（GPT-5.6 Sol ARC-AGI-3 7.78%(INFO-001 A-3)・RSI Index 57.9%+16.2pt(INFO-061 B-2)・GPT-Liveフルデュプレックス(INFO-003 A-3)・EdgeBench新Scaling Law(INFO-068 A-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（5%のみROI確認(INFO-041 B-2)・55%後悔(INFO-049 B-2)・91%使用/10%NHI戦略(INFO-040 B-2)・40%+廃棄予測。期待-実態ギャップ更に強化（22+独立ソース））。IND-027 high維持（MCP 2026 RC(INFO-027 A-3)・AAIF MCPA認定(INFO-028 A-3)・Databricks Omnigent OSS(INFO-029 A-3)・MS Agent Framework(INFO-023 A-3)・AWS AgentCore(INFO-037 A-2)。制度化フェーズ継続）。IND-028 high維持（RSI Index 57.9%+16.2pt(INFO-061)・ARC-AGI-3 7.78%(INFO-001)・CEO AGIタイムライン分裂(INFO-062 B-2: Hassabis 50% by 2030・Amodei 50-100年→5-10年)・LeCun: LLM不十分(INFO-071 B-2)。RSI具体化と客観ベンチマーク限界の同時進行）。IND-029 high維持（SambaNova $110億(INFO-056 B-2)・Anthropic IPO $1兆目標(INFO-056)・Meta $500億DC(INFO-057 B-2)・ByteDance $390億ブラジルDC(INFO-066 B-2)・可霊 $30億(INFO-067 B-2)・AI VC $1315億 YoY+52%(INFO-056)。資本流入加速・物理的制約ギャップ確定的）。IND-030 critical維持（Senate可決(INFO-008 A-3)・Anthropic SCR指定(INFO-046 B-2)・Warren 7社開示要求(INFO-045 B-2)・5%株式取得(INFO-010 B-2)・FLI A-1: 軍事AI転動=現状リスク(INFO-076 A-1)。KIQ-MIL-001人間却下比率22R連続完全不在（21R→22R）。条件2充実史上最大水準継続）",
+  "version": "4.36",
+  "last_updated": "2026-07-15",
+  "description": "I&W（Indications and Warning）指標レジストリ. v4.36: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・Arbiter独自Red代替評価）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（Claude Code RCE脆弱性(INFO-036 B-2)・Grok CLIシークレットアップロード(INFO-015 B-3)・MCP 7セキュリティリスク(INFO-025 B-2)・1500人セキュリティリーダー調査(INFO-023 B-2)。攻撃面拡大継続。critical移行条件（実被害A-2報告）未到達）。IND-025 elevated維持（GPT-5.6 Sol ARC-AGI-3 7.78%(INFO-067 B-2)・Seedance 2.0/Seedream 5.0(INFO-061 A-3)・Gemini Robotics(INFO-031 A-3)・GPT-Live(INFO-012 A-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（McKinsey 88%使用/57%誤答(INFO-043 B-2)・80%アプリAgent埋込(INFO-043)・50K+レイオフ/55%後悔(INFO-058 B-2)・40%+廃棄(INFO-058)・KPMG重採用+10.2%(INFO-069 B-2)。22+独立ソース。期待-実態ギャップ更に強化）。IND-027 high維持（MCP 2026-07-28 RC(INFO-025 B-2)・AAIF MCPA認定(INFO-026 B-2)・MS Agent Framework(INFO-017 B-3)・AWS Bedrock AgentCore(INFO-040 A-2)・Databricks Omnigent(INFO-028 B-2)・CIO.com全Agent投資企業がMCP統合(INFO-028)。制度化フェーズ継続）。IND-028 high維持（Hassabis AGI 2030±1(INFO-059 B-2)・Amodei 10年以内90%(INFO-059)・ARC-AGI-3 7.78%(INFO-067)・生物医学AI Agent(INFO-064 B-3)・AGI Summit 2026(INFO-064)・AI Safety Institutes(INFO-070)。RSI具体化と客観ベンチマーク限界の同時進行）。IND-029 high維持（AI VC $131.5B +52% YoY(INFO-055 B-2)・AI=グローバル資金50%(INFO-055)・ByteDance 4000億元(INFO-068 B-2)・愛詩科技30億元(INFO-068)。資本流入加速。物理的制約ギャップ確定的）。IND-030 critical維持（5%株式取得提案(INFO-007 A-2 NYT・新次元: 資本結合)・Pentagon $54B自律戦争(INFO-005 B-3)・Warren 7社(INFO-046 B-2)・ガードレール除去要求(INFO-046)・OpenAI for Government $2億(INFO-006 B-3)・FLI軍事AI転動(INFO-071 A-1)・ICRC声明(INFO-050)。KIQ-MIL-001人間却下比率23R連続完全不在（22R→23R）。条件2充実史上最大水準継続・更に強化）",
   "structural_changes_log": [
+    "2026-07-15 v4.36: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・Arbiter独自Red代替評価）。COMPLETE→DEGRADED。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。DEGRADED制約完全遵守。IND-013 high維持（Claude Code RCE脆弱性(INFO-036 B-2)・Grok CLIシークレットアップロード(INFO-015 B-3)・MCP 7セキュリティリスク(INFO-025 B-2)・1500人セキュリティリーダー調査(INFO-023 B-2)。攻撃面拡大継続。critical移行条件（実被害A-2報告）未到達。構造的バイアス記録継続: 実被害A-2報告の不在≠実被害の不在）。IND-025 elevated維持（GPT-5.6 Sol ARC-AGI-3 7.78%(INFO-067 B-2)・Seedance 2.0/Seedream 5.0(INFO-061 A-3)・Gemini Robotics(INFO-031 A-3)・GPT-Live(INFO-012 A-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（McKinsey 88%使用/57%誤答(INFO-043 B-2)・80%アプリAgent埋込(INFO-043)・50K+レイオフ/55%後悔(INFO-058 B-2)・40%+廃棄(INFO-058)・KPMG重採用+10.2%(INFO-069 B-2・カウンターナラティブ)。22+独立ソース。期待-実態ギャップ更に強化）。IND-027 high維持（MCP 2026-07-28 RC(INFO-025 B-2)・AAIF MCPA認定(INFO-026 B-2)・MS Agent Framework(INFO-017 B-3)・AWS Bedrock AgentCore(INFO-040 A-2)・Databricks Omnigent(INFO-028 B-2)・CIO.com全Agent投資企業がMCP統合(INFO-028)。制度化フェーズ継続）。IND-028 high維持（Hassabis AGI 2030±1(INFO-059 B-2)・Amodei 10年以内90%(INFO-059)・ARC-AGI-3 7.78%(INFO-067)・生物医学AI Agent(INFO-064 B-3)・AGI Summit 2026(INFO-064)・AI Safety Institutes(INFO-070)。RSI具体化と客観ベンチマーク限界の同時進行）。IND-029 high維持（AI VC $131.5B +52% YoY(INFO-055 B-2)・AI=グローバル資金50%(INFO-055)・ByteDance 4000億元(INFO-068 B-2)・愛詩科技30億元(INFO-068)。資本流入加速。物理的制約ギャップ確定的）。IND-030 critical維持（5%株式取得提案(INFO-007 A-2 NYT・新次元: 資本結合)・Pentagon $54B自律戦争(INFO-005 B-3)・Warren 7社(INFO-046 B-2)・ガードレール除去要求(INFO-046)・OpenAI for Government $2億(INFO-006 B-3)・FLI軍事AI転動(INFO-071 A-1)・ICRC声明(INFO-050)。KIQ-MIL-001人間却下比率23R連続完全不在（22R→23R・構造的非対称性評価基準[v4.31策定]適用）。条件2充実史上最大水準継続・更に強化: 5%株式取得という資本結合次元が追加(P-II新パターン)。IND-030-SCN-BS-001連動関係形式的定義[v4.31実行]遵守: IND-030 criticalはSCN-BS-001自動トリガーなし。期待損失フレーム: 確率不変でも重症度増大で期待損失上昇。FLI A-1 Existential Safety全社C-以下は重症度増大の専門家合意だが事故確率の直接根拠ではない）",
     "2026-07-14 v4.35: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。COMPLETE→COMPLETE連続ラウンド。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（56%本番展開でセキュリティ未対応(INFO-024 B-2)・91%使用中でNHI戦略10%(INFO-040 B-2)・HBR A-2: ロックイン最高リスク(INFO-077)。攻撃面質的拡大: 攻撃対象→攻撃主体への転換。critical移行条件（実被害A-2報告）未到達。構造的バイアス記録継続）。IND-025 elevated維持（GPT-5.6 Sol ARC-AGI-3 7.78%(INFO-001 A-3)・RSI Index 57.9%+16.2pt(INFO-061 B-2)・GPT-Liveフルデュプレックス(INFO-003 A-3)・EdgeBench新Scaling Law(INFO-068 A-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（5%のみROI確認(INFO-041 B-2)・55%後悔(INFO-049 B-2)・91%使用/10%NHI戦略(INFO-040 B-2)・40%+廃棄予測。期待-実態ギャップ更に強化（22+独立ソース））。IND-027 high維持（MCP 2026 RC(INFO-027 A-3)・AAIF MCPA認定(INFO-028 A-3)・Databricks Omnigent OSS(INFO-029 A-3)・MS Agent Framework(INFO-023 A-3)・AWS Bedrock→AgentCore(INFO-037 A-2)。制度化フェーズ継続）。IND-028 high維持（RSI Index 57.9%+16.2pt(INFO-061)・ARC-AGI-3 7.78%(INFO-001)・CEO AGIタイムライン分裂(INFO-062 B-2: Hassabis 50% by 2030・Amodei 50-100年→5-10年)・LeCun: LLM不十分(INFO-071 B-2)。RSI具体化と客観ベンチマーク限界の同時進行）。IND-029 high維持（SambaNova $110億(INFO-056 B-2)・Anthropic IPO $1兆目標(INFO-056)・Meta $500億DC(INFO-057 B-2)・ByteDance $390億ブラジルDC(INFO-066 B-2)・可霊 $30億(INFO-067 B-2)・AI VC $1315億 YoY+52%(INFO-056)。資本流入加速・物理的制約ギャップ確定的）。IND-030 critical維持（Senate自律兵器規則可決(INFO-008 A-3)・Anthropic SCR指定(INFO-046 B-2)・Warren 7社開示要求(INFO-045 B-2)・調達がルールメイキング代替(INFO-048 B-2)・FLI A-1: 軍事AI転動=現状リスク(INFO-076 A-1)・5%株式取得(INFO-010 B-2)。KIQ-MIL-001人間却下比率22R連続完全不在（21R→22R・構造的非対称性評価基準[v4.31策定]適用）。条件2充実史上最大水準継続。IND-030-SCN-BS-001連動関係形式的定義[v4.31実行]遵守: IND-030 criticalはSCN-BS-001自動トリガーなし。期待損失フレーム: 確率不変でも重症度増大で期待損失上昇。FLI A-1 Existential Safety全社C-以下は重症度増大の専門家合意だが事故確率の直接根拠ではない）",
     "2026-07-13 v4.34: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。DEGRADED→COMPLETE復帰ラウンド。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（MCP Token Theft Claude Code MiTM PoC(INFO-054 B-2)・AI自律ランサムウェア攻撃初確認(INFO-060 B-2)・56%本番展開でセキュリティ未対応(INFO-020 B-2)。攻撃面質的拡大: 攻撃対象→攻撃主体への転換。critical移行条件（実被害A-2報告）未到達。構造的バイアス記録継続）。IND-025 elevated維持（GPT-5.6 Sol ARC-AGI-3 7.78%初の有意義進歩(INFO-001 A-3)・RSI Index 57.9%+16.2pt(INFO-047 A-3)・GPT-Liveフルデュプレックス(INFO-052 A-3)・タスク持続4分→12時間→数日(INFO-046 B-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（Gartner 40%+廃棄予測(INFO-036 B-2)・IDC 33個中4個本番(INFO-036)・MIT 95%パイロットROIゼロ(INFO-037 B-3)・Forrester 55%後悔(INFO-038 B-2)・165,000人AI関連レイオフ(INFO-039 B-2)。期待-実態ギャップ更に強化（20+独立ソース））。IND-027 high維持（MCP 2026 RC(INFO-016 A-3)・AAIF MCPA認定(INFO-019 A-3)・AWS Bedrock→AgentCore(INFO-017 A-3)・MS Agent Framework Go(INFO-018 A-3)・Chrome DevTools for Agents GA(INFO-059 A-2)・Databricks Omnigent OSS(INFO-050 B-2)。制度化フェーズ継続）。IND-028 high維持（GPT-5.6 RSI Index 57.9%+16.2pt(INFO-047 A-3)・ARC-AGI-3 7.78%(INFO-001 A-3)・タスク持続4分→12時間→数日(INFO-046 B-3)・CEO AGIタイムライン分裂(INFO-046)。RSI具体化と客観ベンチマーク限界の同時進行）。IND-029 high維持（SambaNova $110億(INFO-026 B-2)・$1300億+ DCブロック(INFO-027 B-2)・Tencent/可靃$30億(INFO-028 B-2)・OpenAI/Anthropic IPO(INFO-030 B-2)・ByteDance CapEx 1600億元(INFO-010 A-3)・DeepSeek $70億調達(INFO-011 B-2)。資本流入加速・物理的制約ギャップ確定的）。IND-030 critical維持（SCR指定因果公式明文化(INFO-004 A-2)・Pentagon $200M OpenAI契約(INFO-003 B-2)・5%株式譲渡検討(INFO-006 B-3)・Warren 7社開示要求(INFO-005 B-2)・大統領令14409(INFO-032 A-2)・Illinois AI安全法(INFO-033 A-2)・国連LAWS宣言30カ国(INFO-034 A-1)・完全自律ドローン人間殺害確認(INFO-035 C-3)。KIQ-MIL-001人間却下比率21R連続完全不在（20R→21R・構造的非対称性評価基準[v4.31策定]適用）。条件2充実史上最大水準継続。IND-030-SCN-BS-001連動関係形式的定義[v4.31実行]遵守: IND-030 criticalはSCN-BS-001自動トリガーなし。期待損失フレーム: 確率不変でも重症度増大で期待損失上昇。トリガー定義改定（『攻撃主体としてのAI』を含める）検討を次回議題記録）",
     "2026-07-12 v4.33: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・Arbiter独自Red代替評価）。7指標更新（全件状態変更なし・7件last_checked/last_value更新）。IND-013 high維持（MCP Token Theft MiTM(INFO-024 B-2)・Claude Code CLI RCE PoC(INFO-024)・Agent Skills任意コード実行(INFO-025 B-2)。攻撃面拡大継続。critical移行条件（実被害A-2報告）未到達。構造的バイアス記録継続: 実被害A-2報告の不在≠実被害の不在）。IND-025 elevated維持（GPT-5.6 Sol ARC-AGI-3 7.8%初の有意義進歩(INFO-066 A-2)・Fable 5 ECI 161(INFO-018 A-2)・Gemini Liveマルチモーダル(INFO-019 A-3)・GPT-Liveフルデュプレックス(INFO-004 A-3)。量的向上継続。「真の理解」客観的検証未到達）。IND-026 high維持（70%本番失敗(INFO-037 B-2)・95%パイロットROIゼロ(INFO-042 B-2)・40%+プロジェクト廃棄(INFO-044 B-2)・28%採用率(INFO-023 B-2)・69%認証情報共有(INFO-023)・PoC→本番4/33件(INFO-037)。期待-実態ギャップ更に強化（18+独立ソース））。IND-027 high維持（MCP 2026 RC(INFO-014 A-2)・AAIF MCPA認定(INFO-028 B-2)・OpenAI AGENTS.md寄贈(INFO-028)・AWS Bedrock→AgentCore(INFO-021 A-3)・Azure AI Foundry(INFO-022 A-2)・Google agents-cli(INFO-030 A-3)。制度化フェーズ継続。制約記録: 標準化=開放の単純化リスク）。IND-028 high維持（GPT-5.6 Sol ARC-AGI-3 7.8%(初の有意義進歩)(INFO-066 A-2)・CACM: RSIは既存フロンティア内で速度圧縮(INFO-067 B-2)・Jack Clark: タスク持続4分(2024)→12時間(2026)→数日(2027予想)(INFO-067)・CEO AGIタイムライン(INFO-068 B-2): Hassabis 5-10年・Amodei 2026-27・FutureSearch 2031頃。RSI具体化（推論計算効率化）と客観ベンチマーク限界の同時進行）。IND-029 high維持（$130B+ DC ブロック/遅延(INFO-056 B-2)・ビッグテック4社CapEx $7,250億(INFO-056)・ByteDance 1,600億元(INFO-072 B-2)・DeepSeek $70億調達$500億評価(INFO-072)・70ユニコーン17社AI(INFO-054 B-2)・Blue Origin $1,300億(INFO-055 B-2)。資本流入加速。物理的制約ギャップ確定的）。IND-030 critical維持（SCR指定因果公式明文化(INFO-035 A-2)・WSJ「前例なし」(INFO-035)・国連事務総長「道義的に忌まわしい」(INFO-038 A-2)・30カ国LAWS条約要求(INFO-038)・Warren開示要求(INFO-034 A-2)・Pentagon資金問題(INFO-039 B-2)・中国AI海外アクセス制限検討(INFO-031 A-2)・Illinois AI Safety Act署名(INFO-036 B-2)。KIQ-MIL-001人間却下比率20R連続完全不在（19R→20R・構造的非対称性評価基準適用）。条件2充実史上最大水準継続。IND-030-SCN-BS-001連動関係形式的定義遵守: IND-030 criticalはSCN-BS-001自動トリガーなし。DEGRADED最大保守性原則で全件状態変更なし）",
@@ -39,9 +40,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "56%本番展開でセキュリティ未対応(INFO-024 B-2)・91%使用中でNHI戦略10%(INFO-040 B-2)・HBR A-2: ロックイン最高リスク(INFO-077)。攻撃面質的拡大: 攻撃対象→攻撃主体への転換。critical移行条件（実被害A-2報告）未到達。構造的バイアス記録継続: 実被害A-2報告の不在≠実被害の不在",
-      "last_checked": "2026-07-14",
-      "rationale": "Arbiter v4.35: high維持。56%本番展開でセキュリティ未対応・91%使用/NHI戦略10%・HBR A-2ロックイン最高リスクで攻撃面質的拡大継続。critical移行条件（実被害A-2報告）未到達。構造的バイアス記録継続"
+      "last_value": "Claude Code RCE脆弱性(INFO-036 B-2)・Grok CLIシークレットアップロード(INFO-015 B-3)・MCP 7セキュリティリスク(INFO-025 B-2)・1500人セキュリティリーダー調査(INFO-023 B-2)。攻撃面拡大継続。critical移行条件（実被害A-2報告）未到達。構造的バイアス記録継続: 実被害A-2報告の不在≠実被害の不在",
+      "last_checked": "2026-07-15",
+      "rationale": "Arbiter v4.36: high維持。Claude Code RCE・Grok CLIシークレットアップロード・MCP 7セキュリティリスク・1500人調査で攻撃面拡大継続。critical移行条件（実被害A-2報告）未到達。構造的バイアス記録継続"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -50,9 +51,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "GPT-5.6 Sol ARC-AGI-3 7.78%(INFO-001 A-3)・RSI Index 57.9%+16.2pt(INFO-061 B-2)・GPT-Liveフルデュプレックス(INFO-003 A-3)・EdgeBench新Scaling Law(INFO-068 A-3)。量的向上継続。「真の理解」客観的検証未到達",
-      "last_checked": "2026-07-14",
-      "rationale": "Arbiter v4.35: elevated維持。GPT-5.6 Sol ARC-AGI-3 7.78%・RSI Index 57.9%+16.2pt・GPT-Liveフルデュプレックス・EdgeBench新Scaling Lawで量的向上継続。「真の理解」の客観的検証には未到達。high移行条件（真の理解の客観的検証）未到達"
+      "last_value": "GPT-5.6 Sol ARC-AGI-3 7.78%(INFO-067 B-2)・Seedance 2.0/Seedream 5.0(INFO-061 A-3)・Gemini Robotics(INFO-031 A-3)・GPT-Live(INFO-012 A-3)。量的向上継続。「真の理解」客観的検証未到達",
+      "last_checked": "2026-07-15",
+      "rationale": "Arbiter v4.36: elevated維持。GPT-5.6 Sol ARC-AGI-3 7.78%・Seedance 2.0/Seedream 5.0・Gemini Robotics・GPT-Liveで量的向上継続。「真の理解」の客観的検証には未到達。high移行条件（真の理解の客観的検証）未到達"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -61,9 +62,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "5%のみROI確認(INFO-041 B-2)・55%後悔(INFO-049 B-2)・91%使用/10%NHI戦略(INFO-040 B-2)・40%+廃棄予測。期待-実態ギャップ更に強化（22+独立ソース）",
-      "last_checked": "2026-07-14",
-      "rationale": "Arbiter v4.35: high維持。5%のみROI確認・55%後悔・91%使用/10%NHI戦略・40%+廃棄予測で期待-実態ギャップ更に強化（22+独立ソース）。投資加速と成果低迷の同時進行"
+      "last_value": "McKinsey 88%使用/57%誤答(INFO-043 B-2)・80%アプリAgent埋込(INFO-043)・50K+レイオフ/55%後悔(INFO-058 B-2)・40%+廃棄(INFO-058)・KPMG重採用+10.2%(INFO-069 B-2・カウンターナラティブ)。22+独立ソース。期待-実態ギャップ更に強化",
+      "last_checked": "2026-07-15",
+      "rationale": "Arbiter v4.36: high維持。McKinsey 88%使用/57%誤答・80%アプリAgent埋込・50K+レイオフ/55%後悔・40%+廃棄・KPMG重採用+10.2%カウンターナラティブで期待-実態ギャップ更に強化（22+独立ソース）。投資加速と成果低迷の同時進行"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -72,9 +73,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "MCP 2026 RC(INFO-027 A-3)・AAIF MCPA認定(INFO-028 A-3)・Databricks Omnigent OSS(INFO-029 A-3)・MS Agent Framework(INFO-023 A-3)・AWS Bedrock→AgentCore(INFO-037 A-2)。制度化フェーズ継続。制約記録: 標準化=開放の単純化リスク（参加型囲い込み可能性）",
-      "last_checked": "2026-07-14",
-      "rationale": "Arbiter v4.35: high維持。MCP RC・AAIF MCPA認定・Databricks OSS・MS Agent Framework・AWS AgentCoreで制度化フェーズ継続。制約記録: 標準化=開放の単純化リスク（参加型囲い込み可能性）"
+      "last_value": "MCP 2026-07-28 RC(INFO-025 B-2)・AAIF MCPA認定(INFO-026 B-2)・MS Agent Framework(INFO-017 B-3)・AWS Bedrock AgentCore(INFO-040 A-2)・Databricks Omnigent(INFO-028 B-2)・CIO.com全Agent投資企業がMCP統合(INFO-028)。制度化フェーズ継続。制約記録: 標準化=開放の単純化リスク（参加型囲い込み可能性）",
+      "last_checked": "2026-07-15",
+      "rationale": "Arbiter v4.36: high維持。MCP RC・AAIF MCPA認定・MS Agent Framework・AWS Bedrock AgentCore・Databricks Omnigent・CIO.com MCP統合で制度化フェーズ継続。制約記録: 標準化=開放の単純化リスク（参加型囲い込み可能性）"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -83,9 +84,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "RSI Index 57.9%+16.2pt(INFO-061 B-2)・ARC-AGI-3 7.78%(INFO-001 A-3)・CEO AGIタイムライン分裂(INFO-062 B-2: Hassabis 50% by 2030・Amodei 50-100年→5-10年)・LeCun: LLM不十分(INFO-071 B-2)。RSI具体化（推論計算効率化）と客観ベンチマーク限界の同時進行",
-      "last_checked": "2026-07-14",
-      "rationale": "Arbiter v4.35: high維持。RSI Index 57.9%+16.2pt・ARC-AGI-3 7.78%・CEO AGIタイムライン分裂・LeCun否定でRSI具体化と客観ベンチマーク限界の同時進行継続"
+      "last_value": "Hassabis AGI 2030±1(INFO-059 B-2)・Amodei 10年以内90%(INFO-059)・ARC-AGI-3 7.78%(INFO-067)・生物医学AI Agent(INFO-064 B-3)・AGI Summit 2026(INFO-064)・AI Safety Institutes(INFO-070)。RSI具体化と客観ベンチマーク限界の同時進行",
+      "last_checked": "2026-07-15",
+      "rationale": "Arbiter v4.36: high維持。Hassabis AGI 2030±1・Amodei 10年以内90%・ARC-AGI-3 7.78%・生物医学AI Agent・AGI Summit 2026・AI Safety InstitutesでRSI具体化と客観ベンチマーク限界の同時進行継続"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -94,9 +95,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "SambaNova $110億(INFO-056 B-2)・Anthropic IPO $1兆目標(INFO-056)・Meta $500億DC(INFO-057 B-2)・ByteDance $390億ブラジルDC(INFO-066 B-2)・可霊 $30億(INFO-067 B-2)・AI VC $1315億 YoY+52%(INFO-056)。資本流入加速・物理的制約ギャップ確定的",
-      "last_checked": "2026-07-14",
-      "rationale": "Arbiter v4.35: high維持。SambaNova $110億・Anthropic IPO $1兆目標・Meta $500億DC・ByteDance $390億ブラジルDC・可霊$30億・AI VC $1315億 YoY+52%で資本流入加速確認。物理的制約ギャップ確定的"
+      "last_value": "AI VC $131.5B +52% YoY(INFO-055 B-2)・AI=グローバル資金50%(INFO-055)・ByteDance 4000億元(INFO-068 B-2)・愛詩科技30億元(INFO-068)。資本流入加速。物理的制約ギャップ確定的",
+      "last_checked": "2026-07-15",
+      "rationale": "Arbiter v4.36: high維持。AI VC $131.5B +52% YoY・AI=グローバル資金50%・ByteDance 4000億元・愛詩科技30億元で資本流入加速確認。物理的制約ギャップ確定的"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -105,9 +106,9 @@
       "current_status": "critical",
       "trend": "rising",
       "alert_level": "critical",
-      "last_value": "Senate自律兵器規則可決(INFO-008 A-3)・Anthropic SCR指定(INFO-046 B-2)・Warren 7社開示要求(INFO-045 B-2)・調達がルールメイキング代替(INFO-048 B-2)・FLI A-1: 軍事AI転動=現状リスク(INFO-076 A-1)・5%株式取得(INFO-010 B-2)。KIQ-MIL-001人間却下比率22R連続完全不在（21R→22R・構造的非対称性評価基準[v4.31策定]適用）。条件2充実史上最大水準継続。IND-030-SCN-BS-001連動関係形式的定義[v4.31実行]遵守: IND-030 criticalはSCN-BS-001自動トリガーなし。期待損失フレーム: 確率不変でも重症度増大で期待損失上昇",
-      "last_checked": "2026-07-14",
-      "rationale": "Arbiter v4.35: critical維持。Senate可決・SCR指定・Warren要求・調達=ルールメイキング代替・FLI A-1軍事AI現状リスク・5%株式取得で条件2充実史上最大水準継続。KIQ-MIL-001人間却下比率22R連続完全不在（不在≠中立・構造的非対称性評価基準[v4.31策定]適用）。FLI A-1 Existential Safety全社C-以下は重症度増大の専門家合意だが事故確率の直接根拠ではない。IND-030-SCN-BS-001連動関係形式的定義[v4.31実行]遵守。critical妥当性維持"
+      "last_value": "5%株式取得提案(INFO-007 A-2 NYT・新次元: 資本結合)・Pentagon $54B自律戦争(INFO-005 B-3)・Warren 7社(INFO-046 B-2)・ガードレール除去要求(INFO-046)・OpenAI for Government $2億(INFO-006 B-3)・FLI軍事AI転動(INFO-071 A-1)・ICRC声明(INFO-050)。KIQ-MIL-001人間却下比率23R連続完全不在（22R→23R・構造的非対称性評価基準[v4.31策定]適用）。条件2充実史上最大水準継続・更に強化。IND-030-SCN-BS-001連動関係形式的定義[v4.31実行]遵守: IND-030 criticalはSCN-BS-001自動トリガーなし。期待損失フレーム: 確率不変でも重症度増大で期待損失上昇",
+      "last_checked": "2026-07-15",
+      "rationale": "Arbiter v4.36: critical維持。5%株式取得提案(新次元:資本結合)・Pentagon $54B自律戦争・Warren 7社・ガードレール除去要求・OpenAI for Government $2億・FLI軍事AI転動・ICRC声明で条件2充実史上最大水準継続・更に強化。KIQ-MIL-001人間却下比率23R連続完全不在（不在≠中立・構造的非対称性評価基準[v4.31策定]適用）。FLI A-1 Existential Safety全社C-以下は重症度増大の専門家合意だが事故確率の直接根拠ではない。IND-030-SCN-BS-001連動関係形式的定義[v4.31実行]遵守。critical妥当性維持"
     }
   }
 }
