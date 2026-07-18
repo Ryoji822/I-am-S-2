@@ -1,117 +1,128 @@
 # Google / DeepMind
 
-> 最終判断更新: 2026-07-11
-> 全体確信度: 低
-> 情報非対称性: Workspace / Gemini 統合の DAU/MAU 非公開。KIQ-GOO-001がGCP +63% vs Azure +40% vs AWS +28%で初充足されたが、B-2品質かつ低ベース効果（GCPシェア14% vs AWS 28%）の排除が未解決。AlphaEvolve GAで物流・半導体・ゲノミクスの企業実績確認（[INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) A-3）。Gemini 3.5 Proが7月17日に延期・元基盤破棄・長期事前訓練サイクル採用（[INFO-066](../Information/2026-07-11/collected-raw.md#INFO-066) B-3）。囲い込みI品質別内訳未開示。Google固有定量データ不在継続。Arbiter v4.32 COMPLETE
+> 最終判断更新: 2026-07-18
+> 全体確信度: 測定不能（H-GOO-001 indeterminate再分類）
+> 情報非対称性: Workspace / Gemini統合のDAU/MAU非公開。Google固有定量採用データ（シェア・収益・利用率の直接的定量データA-2+）が26R+連続不在。KIQ-GOO-001はGCP +63% vs Azure +40% vs AWS +28%で充足されたがB-2品質かつ低ベース効果未排除。Gemini 3.5 Proリリース再延期: クリティカルベンチマーク不合格・Alphabet株価下落（[INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) B-2）。Vertex AI→Gemini Enterprise Agent Platform改称（[INFO-017](../Information/2026-07-18/collected-raw.md#INFO-017) A-3）。Gemini 3.0 Ultra MMLU 90.0%「Level 4 AGI」主張（[INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) B-2）。Hassabis AGI 2030年±1年（[INFO-059](../Information/2026-07-18/collected-raw.md#INFO-059) B-2）。DeepMind研究者AI軍事契約辞任（[INFO-039](../Information/2026-07-18/collected-raw.md#INFO-039) C-3）。H-GOO-001はlow/50%→indeterminate/50%に再分類（v4.39）。Arbiter v4.39 COMPLETE
 > 主参照: [H-GOO-001](../config/hypotheses.json) [H-GOO-002](../config/hypotheses.json) [H-GOO-003](../config/hypotheses.json) [IND-001](../config/indicators.json) [IND-006](../config/indicators.json) [IND-025](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-030](../config/indicators.json)
 
 ## 0. 一文要約
 
-GoogleがAlphaEvolve（Geminiベースのコード最適化・発見エージェント）をGemini Enterprise Agent PlatformでGA提供開始した（[INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) A-3）。BASF（サプライチェーン80%向上）、Coolblue（需要予測5%向上）、FM Logistic（倉庫ルーティング10.4%改善）、Klarna（訓練スループット2倍）、JetBrains（IDE性能15-20%向上）、Schrödinger（分子発見4倍加速）の企業実績が確認された。Google内部でもTPUシリコン設計最適化・Spanner LSM compaction改善（書き込み増幅20%削減）で成果を上げている。これらは[H-GOO-001](../config/hypotheses.json)のC蓄積（エンタープライズ価値創出の具体例）に加わる。但し、AlphaEvolveの成果はGemini Enterprise全体の活用事例であり、Gemini固有のシェア・収益・利用率の直接的定量データではない。
+[H-GOO-001](../config/hypotheses.json) がlow/50%からindeterminate/50%に再分類された。Arbiter v4.39がBlue Agentの提案を確認し、H-GOO-001の確度ラベルを変更した。根拠はGoogle固有定量採用データ（シェア・収益・利用率の直接的定量データA-2+）が26R+にわたり構造的に不在であり、「low」というラベルが測定不能状態を偽装しているためである。AlphaEvolveの企業実績やGCP成長率は存在するが、これらはGemini固有の競争優位を示す定量データではなく、業界全体押し上げ効果との分離が不能である。indeterminate運用ルール（下位命題分解・方向性偏り記録・復帰条件明文化）の整備が次回絶対条件化された。
 
-一方で、Gemini 3.5 Proのリリースが7月17日に延期された（[INFO-066](../Information/2026-07-11/collected-raw.md#INFO-066) B-3）。元の基盤を破棄し、より長い事前訓練サイクルを採用した。品質優先の戦略的決定と分析される。リリース遅延は[H-GOO-001](../config/hypotheses.json)のI方向（競争力低下）の証拠である。AlphaEvolveのC蓄積とGemini 3.5 Pro延期のI方向が同時に観測された。
+Gemini 3.5 Proのリリースが再延期された（[INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) B-2）。クリティカルベンチマーク不合格が原因であり、Alphabet株価が下落した。前回（07-11）の延期（7月17日予定・元基盤破棄）から更なる遅れである。一方でGemini 3.0 UltraがMMLU 90.0%（人間専門家を初めて上回る）を達成し、「Level 4 AGI」マイルストーン到達を主張した。Gemini 3.1 Proは15ベンチマーク中11勝（ツールコール・長時間タスク・ブラウザエージェントで強力）を記録している。
 
-[H-GOO-001](../config/hypotheses.json) は50% lowで±0%。Google固有定量データ不在が継続する。AlphaEvolveの企業実績はgenuine Cだが、業界全体押し上げ効果との分離が不能。もしWorkspace内GeminiのDAU/MAUが3四半期連続で頭打ちを示すか、囲い込み証拠が35件を超えれば、コア判断が変わる。
+Vertex AIが「Gemini Enterprise Agent Platform」に改称された（[INFO-017](../Information/2026-07-18/collected-raw.md#INFO-017) A-3）。Build・Scale・Govern・Optimizeの4能力軸で統合プラットフォームを提供する。Health AI向けBAA対応・Macquarie GroupのAI全体スケール事例・CX Agent StudioでのMCPサーバー提供が確認された。Gemini Agents API Managed Agentsの無料枠・予算制御・スケジュールトリガーも追加された（[INFO-011](../Information/2026-07-18/collected-raw.md#INFO-011) A-3）。
+
+[H-GOO-002](../config/hypotheses.json) は23% lowで±0%。囲い込みIと開放Cの均衡は不変。[H-GOO-003](../config/hypotheses.json) は48% mediumで±0%。DeepMindの研究卓越性は継続するが、研究者辞任とGemini 3.5 Pro再延期が競争力の不確実性を示す。
 
 ## 1. コア判断
 
-GoogleのGeminiプラットフォーム戦略がエンタープライズ価値創出層で更に深化した。AlphaEvolveがGemini Enterprise Agent PlatformでGA提供開始された（[INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) A-3）。物流・半導体・ゲノミクス・HPC・金融領域で6社以上の企業実績が確認された。同時に、Gemini Enterprise Agent Platformの統合ドキュメントが公開され（[INFO-030](../Information/2026-07-11/collected-raw.md#INFO-030) A-3）、構築・デプロイ・ガバナンス・最適化の統合プラットフォームとして位置付けられた。Cloud API Registry on Vertex AI Agent EngineでMCPデプロイをサポートする。
+全体確信度は測定不能。H-GOO-001のindeterminate再分類は分析の誠実性向上だが、「情報が来るまで待つ」希望的駐車にならないよう、下位命題分解と復帰条件の明文化が必須である。本ラウンドの最重要判断は3つある。第一に、H-GOO-001のindeterminate再分類と構造的データ不在の公式記録。第二に、Gemini 3.5 Pro再延期による競争力低下の確定。第三に、Gemini Enterprise Agent Platform統合によるプラットフォーム深化。
 
-### AlphaEvolve GAと企業実績
+### H-GOO-001 indeterminate再分類と構造的データ不在
 
-AlphaEvolveはGeminiベースのコード最適化・発見エージェントであり、物流・半導体・ゲノミクス・HPC・金融で実績を持つ（[INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) A-3）。具体的な企業実績として、BASF（サプライチェーン80%向上）、Coolblue（需要予測5%向上）、FM Logistic（倉庫ルーティング10.4%改善）、Klarna（訓練スループット2倍）、JetBrains（IDE性能15-20%向上）、Schrödinger（分子発見4倍加速）が確認された。Google内部でもTPUシリコン設計最適化・Spanner LSM compaction改善（書き込み増幅20%削減）で成果を上げている。
+H-GOO-001がlow/50%からindeterminate/50%に再分類された。Arbiter v4.39がBlue Agentの提案を確認した。根拠は、Google固有定量採用データ（シェア・収益・利用率の直接的定量データA-2+品質）がArbiter v4.13が設定した条件達成以来26R+にわたり構造的に不在であり、「low」という確度ラベルが「測定不能」状態を偽装しているためである。
 
-この事象は2つの含意を持つ。第一に、[H-GOO-001](../config/hypotheses.json)のC蓄積に加わる。AlphaEvolveはエージェント実行層の製品証拠（A-3）であり、企業価値創出の具体例を示す。第二に、AlphaEvolveで量子エラー訂正回路の発見（Willow量子プロセッサのエラー率10分の1）が確認され、SCN-BS-002（量子×AI融合）の基礎研究レベルでの実証となった。但し、これらはGemini Enterprise全体の活用事例であり、Gemini固有のシェア・収益・利用率の直接的定量データではない。Arbiter v4.13条件（A-2+品質のGoogle固有定量データ）は未達成である。
+AlphaEvolveの企業実績（BASF・Coolblue・FM Logistic等）やGCP +63% YoY成長率は存在する。但这些はA-3/B-2品質の製品証拠・間接指標であり、Gemini固有のシェア・収益・利用率を示す直接的定量データではない。AlphaEvolveの成果がGemini Enterprise全体の活用事例なのか、Gemini固有の競争優位なのかの分離が不能である。GCP +63%の低ベース効果（GCPシェア14% vs AWS 28%）の排除も未解決である。
 
-### Gemini 3.5 Pro延期と品質優先戦略
+Arbiter v4.39はindeterminate運用ルールの整備を次回絶対条件化した。具体的には下位命題の分解（エンタープライズシェア・収益成長・利用率の個別評価）、方向性偏りの記録（Gemini 3.5 Pro延期を「下方偏り」として記録）、復帰条件の明文化（A-2+品質定量データの公表でlow/mediumに復帰）が必要である。
 
-Google DeepMindがGemini 3.5 Proのリリースを7月17日に延期した（[INFO-066](../Information/2026-07-11/collected-raw.md#INFO-066) B-3）。元の基盤を破棄し、より長い事前訓練サイクルを採用した。品質優先の戦略的決定と分析される。
+### Gemini 3.5 Pro再延期と競争力低下
 
-この事象は[H-GOO-001](../config/hypotheses.json)のI方向（競争力低下）の証拠である。GPT-5.6がGA済み・M365 Copilot優先モデル選定（[INFO-065](../Information/2026-07-11/collected-raw.md#INFO-065) A-3）・RSI 57.9%（[INFO-068](../Information/2026-07-11/collected-raw.md#INFO-068) A-3）の状況で、Gemini 3.5 Proの延期はフロンティア競争での遅れを示す。但し、品質優先の判断自体は[H-GOO-003](../config/hypotheses.json)（DeepMind統合シナジーで競争力維持）の研究卓越性の文脈では、長期的な品質保証として評価できる。短期のI方向と長期のC方向の二面性がある。
+Gemini 3.5 Proのリリースが再延期された（[INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) B-2）。クリティカルベンチマーク不合格が原因であり、Alphabet株価が下落した。前回07-11の延期（7月17日予定・元基盤破棄・長期事前訓練サイクル採用）から更なる遅れである。GPT-5.6 SolがGA済み・ARC-AGI-3 7.8% SOTA達成（[INFO-067](../Information/2026-07-18/collected-raw.md#INFO-067) C-2）、Claude Opus 4.8がSWE-bench Verified 88.6%（[INFO-079](../Information/2026-07-18/collected-raw.md#INFO-079) A-3）を記録する中、Gemini 3.5 Proの再延期はフロンティア競争での構造的な遅れを示す。
 
-### Gemini Enterprise Agent Platform統合プラットフォーム
+但しGemini 3.0 UltraがMMLU 90.0%（人間専門家を初めて上回る）を達成し、「Level 4 AGI」マイルストーン到達を主張した。Gemini 3.1 Proは15ベンチマーク中11勝（ツールコール・長時間タスク・ブラウザエージェントで強力）を記録した。Arbiterは7.8%=92.2%失敗率を際立った失敗ではなく「進歩」と再解釈する正常性バイアスの逆を指摘したが、客観ベンチマークの限界と自己宣言の緊張関係は継続する。
 
-Gemini Enterprise Agent Platformの統合ドキュメントが公開された（[INFO-030](../Information/2026-07-11/collected-raw.md#INFO-030) A-3）。構築・デプロイ・ガバナンス・最適化を統合プラットフォームで提供する。Vertex AI Agent Builderがプロダクション対応エージェント構築スイートとして位置付けられ、Cloud API Registry on Vertex AI Agent EngineでMCPデプロイをサポートする。7月7日にエージェント公開ガイドをリリースした。
+この事象は[H-GOO-001](../config/hypotheses.json)のI方向（競争力低下）の確定証拠であり、方向性偏りの記録の第一号として記録される。短期のI方向とGemini 3.0 Ultra MMLU 90%の長期C方向の二面性があるが、フロンティア競争での遅れは構造的である。
 
-これらは[H-GOO-001](../config/hypotheses.json)のC蓄積である。但し、Skill Registry等の機能はプラットフォーム固有化（囲い込み）の新メカニズムの可能性も持つ（[H-GOO-002](../config/hypotheses.json)）。Cloud API Registry on Vertex AI Agent EngineでのMCPデプロイは開放方向の証拠でもある。囲い込みIと開放Cの品質調整後の均衡は不変。
+### Gemini Enterprise Agent Platform統合
 
-### low維持の理由
+Vertex AIが「Gemini Enterprise Agent Platform」に改称された（[INFO-017](../Information/2026-07-18/collected-raw.md#INFO-017) A-3）。Build・Scale・Govern・Optimizeの4能力軸で統合プラットフォームを提供する。Health AI向けBAA対応、Macquarie GroupのAI全体スケール事例、CX Agent StudioでのMCPサーバー提供が確認された。長時間実行agent向けのSLA・MLOpsが強化された。
 
-low維持の理由は3点変わらない。第一に、Arbiter v4.13が設定した条件（コアエンタープライズAI定量データA-2+）が未達成。第二に、AlphaEvolveの企業実績はA-3品質の製品証拠であり、シェア・収益・利用率の直接的定量データではない。第三に、GCP +63% YoYの低ベース効果（GCPシェア14% vs AWS 28%）の排除が未解決。
+Gemini Agents API Managed Agentsの新機能も発表された（[INFO-011](../Information/2026-07-18/collected-raw.md#INFO-011) A-3）。無料枠の提供、予算制御ガードレール、スケジュールトリガーが追加された。Gemini Enterprise Agent PlatformでParallel Search APIとのグラウンディングが導入された。これらは[H-GOO-001](../config/hypotheses.json)のプラットフォーム深化（C方向）の証拠である。
+
+但し[H-GOO-002](../config/hypotheses.json)の文脈で、Skill Registry等の機能がプラットフォーム固有化（囲い込み）の新メカニズムである可能性は残る。Cloud API Registry on Vertex AI Agent EngineでのMCPデプロイは開放方向の証拠である。囲い込みIと開放Cの品質調整後の均衡は不変である。
+
+### DeepMindの研究卓越性と緊張関係
+
+Demis HassabisがAGI到達を2030年±1年（2029-2031）と予測した（[INFO-059](../Information/2026-07-18/collected-raw.md#INFO-059) B-2）。「AGIのふもとにいる」と表現し、シンギュラリティ開始も2029-2031と予測した。これは[H-GOO-003](../config/hypotheses.json)の研究卓越性（C方向）の証拠である。International AI Safety Reportが30政府と全主要フロンティアラボの支持を獲得した（[INFO-066](../Information/2026-07-18/collected-raw.md#INFO-066) B-1）。
+
+一方で、DeepMindの研究者がGoogleのAI軍事契約に抗議して辞任した（[INFO-039](../Information/2026-07-18/collected-raw.md#INFO-039) C-3）。契約は「あらゆる合法的な政府目的」を含む分類作業で米軍がGoogleのAIモデルを使用することを許可すると報じられた。AI安全性リーダーと軍事応用の緊張が表面化した。これは[H-GOO-003](../config/hypotheses.json)のI方向（研究卓越性と製品競争力の緊張）の証拠である。
 
 ## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | AlphaEvolve GA: BASF 80%向上・Coolblue 5%・FM Logistic 10.4%・Klarna 2x・JetBrains 15-20%・Schrödinger 4x加速。Google内TPU設計最適化・Spanner 20%削減 | [H-GOO-001](../config/hypotheses.json) genuine C（エンタープライズ価値創出）。但しA-3品質・Gemini Enterprise全体≠シェア定量データ | A-3 | [INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) |
-| 高 | Gemini 3.5 Pro延期: 7月17日・元基盤破棄・長期事前訓練サイクル・品質優先戦略 | [H-GOO-001](../config/hypotheses.json) I方向（短期競争力低下）。GPT-5.6 GA済みとの乖離。[H-GOO-003](../config/hypotheses.json) 長期品質保証の二面性 | B-3 | [INFO-066](../Information/2026-07-11/collected-raw.md#INFO-066) |
-| 高 | Gemini Enterprise Agent Platform統合ドキュメント: 構築・デプロイ・ガバナンス・最適化統合・Cloud API Registry on Vertex AI Agent Engine for MCP・7/7エージェント公開ガイド | [H-GOO-001](../config/hypotheses.json) プラットフォーム深化（C方向）。[H-GOO-002](../config/hypotheses.json) MCPデプロイで開放方向 | A-3 | [INFO-030](../Information/2026-07-11/collected-raw.md#INFO-030) |
-| 高 | DeepMind論文: AGI 2030年まで出現警告・G7でHassabis「新人類の時代」・強いAGI 2031-2035コンセンサス | [H-GOO-003](../config/hypotheses.json) 研究卓越性（C方向）。[IND-028](../config/indicators.json) high/rising強化 | B-2 | [INFO-052](../Information/2026-07-11/collected-raw.md#INFO-052) |
-| 高 | GCP +63% YoY（15Q最高）vs Azure +40% vs AWS +28%。市場シェア: AWS 28% / Azure 21% / GCP 14% | [H-GOO-001](../config/hypotheses.json) KIQ-GOO-001初充足。但しB-2品質・低ベース効果 | B-2 | 前回確認（2026-06-16 INFO-055） |
-| 高 | Google最大$40B Anthropic投資 | [H-GOO-001](../config/hypotheses.json) C蓄積。戦略的意図（インフラ依存・影響力・OpenAI対策）は未確定 | B-2 | 前回確認（2026-06-23 INFO-045） |
-| 中 | G7: Hassabis+Amodei米国主導国際AI連合共同提案 | [H-GOO-003](../config/hypotheses.json) 戦略的地位強化（C方向） | B-2 | [INFO-052](../Information/2026-07-11/collected-raw.md#INFO-052) |
-| 中 | DeepMind「AI Control Roadmap」: 高度AIエージェントを「内部脅威」と扱う | [H-GOO-003](../config/hypotheses.json) 研究卓越性証拠。[IND-030](../config/indicators.json) critical文脈 | A-1 | 前回確認（2026-06-21 INFO-048） |
+| 高 | H-GOO-001 indeterminate再分類: Google固有定量データ26R+構造的不在・確度ラベルが測定不能を偽装 | [H-GOO-001](../config/hypotheses.json) low→indeterminate。分析の誠実性向上。運用ルール整備を次回条件化 | Arbiter | [Arbiter v4.39](../state/arbiter-2026-07-18.md) |
+| 高 | Gemini 3.5 Pro再延期: クリティカルベンチマーク不合格・Alphabet株価下落・前回07-11延期から更なる遅れ | [H-GOO-001](../config/hypotheses.json) I方向（競争力低下）確定。方向性偏り記録第1号。GPT-5.6/Claude Opus 4.8との乖離拡大 | B-2 | [INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) |
+| 高 | Gemini 3.0 Ultra MMLU 90.0%: 人間専門家初上回る・「Level 4 AGI」主張・3.1 Pro 15B中11勝 | [H-GOO-003](../config/hypotheses.json) 研究卓越性（C方向）。客観ベンチマーク限界と自己宣言の緊張 | B-2 | [INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) |
+| 高 | Vertex AI→Gemini Enterprise Agent Platform改称: Build/Scale/Govern/Optimize・Health BAA・MCPサーバー | [H-GOO-001](../config/hypotheses.json) プラットフォーム深化（C方向）。[H-GOO-002](../config/hypotheses.json) MCPデプロイで開放方向 | A-3 | [INFO-017](../Information/2026-07-18/collected-raw.md#INFO-017) |
+| 高 | Gemini Agents API Managed Agents: 無料枠・予算制御・スケジュールトリガー・Parallel Search APIグラウンディング | [H-GOO-001](../config/hypotheses.json) プラットフォーム機能拡張（C方向）。開発者獲得競争 | A-3 | [INFO-011](../Information/2026-07-18/collected-raw.md#INFO-011) |
+| 高 | Hassabis AGI 2030年±1年: 「AGIのふもと」・シンギュラリティ2029-2031・真のAGI=全てで人間より優れたembodied AI | [H-GOO-003](../config/hypotheses.json) 研究卓越性（C方向）。[IND-028](../config/indicators.json) high/rising強化 | B-2 | [INFO-059](../Information/2026-07-18/collected-raw.md#INFO-059) |
+| 中 | DeepMind研究者AI軍事契約辞任: 「あらゆる合法的政府目的」条項・分類作業での米軍AI使用許可 | [H-GOO-003](../config/hypotheses.json) I方向（研究卓越性と軍事応用の緊張）。安全性リーダーと軍事契約の二面性 | C-3 | [INFO-039](../Information/2026-07-18/collected-raw.md#INFO-039) |
+| 中 | GCP +63% YoY vs Azure +40% vs AWS +28%（継続） | [H-GOO-001](../config/hypotheses.json) KIQ-GOO-001充足。但しB-2品質・低ベース効果未排除 | B-2 | 前回確認（2026-06-16） |
+| 中 | International AI Safety Report: 30政府・全主要ラボ支持・ジュネーブ拘束力枠組み合意なし | [H-GOO-003](../config/hypotheses.json) 研究卓越性。[IND-030](../config/indicators.json) critical文脈 | B-1 | [INFO-066](../Information/2026-07-18/collected-raw.md#INFO-066) |
 
 ## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
-| GCP成長率が低ベース効果で説明可能と判明し、絶対顧客増加数がAWS/Azureと同等以下になる | [H-GOO-001](../config/hypotheses.json) のC蓄積（GCP固有成長）が崩れる | 60日 | [IND-006](../config/indicators.json) |
-| Workspace内GeminiのDAU/MAUまたは利用率が3四半期連続で頭打ちを示す | 「エコシステム統合優位」のコア判断と[H-GOO-001](../config/hypotheses.json)が崩れる | 180日 | [IND-006](../config/indicators.json) |
-| Gemini 3.5 Proが7月17日を更に延期し、GPT-5.6との性能差が拡大する | [H-GOO-001](../config/hypotheses.json) の競争力前提が崩れ、low帯内での更なる引き下げ圧力 | 30日 | [IND-001](../config/indicators.json) |
-| 囲い込み証拠が35件を超え、規制当局が介入する | [H-GOO-002](../config/hypotheses.json)が棄却水準に到達 | 120日 | [IND-027](../config/indicators.json) |
+| Google固有定量採用データ（A-2+品質のシェア・収益・利用率）が初めて公表される | indeterminate状態が解消し、low/mediumのいずれかに復帰 | 次回 | [H-GOO-001](../config/hypotheses.json) |
+| Workspace内GeminiのDAU/MAUまたは利用率が3四半期連続で頭打ちを示す | 「エコシステム統合優位」のコア判断が崩れる | 180日 | [IND-006](../config/indicators.json) |
+| Gemini 3.5 Proが再延期されずリリースされ、GPT-5.6/Claude Opus 4.8との性能差が縮小する | 競争力低下の下方偏りが緩和され、indeterminate復帰条件の一つが充足される | 90日 | [IND-001](../config/indicators.json) |
+| indeterminate運用ルールが整備され下位命題分解・方向性偏り記録・復帰条件が明文化される | 希望的駐車化が防止され、indeterminateの診断的価値が回復する | 次回 | [H-GOO-001](../config/hypotheses.json) |
+| 囲い込み証拠が35件を超え規制当局が介入する | [H-GOO-002](../config/hypotheses.json)が棄却水準に到達 | 120日 | [IND-027](../config/indicators.json) |
 | DeepMindのAI Control RoadmapがGemini製品に統合されない状態が4四半期続く | [H-GOO-003](../config/hypotheses.json)の「研究卓越性から製品競争力」因果が崩れる | 180日 | [IND-001](../config/indicators.json) |
 
 ## 4. 進行中の仮説
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:---:|---|---|---|
-| [H-GOO-001](../config/hypotheses.json) | Gemini統合でエコシステム収益を拡大する | 50% low | ±0%。AlphaEvolve GA企業実績6社（INFO-007 A-3）・Gemini Enterprise Agent Platform統合ドキュメント（INFO-030 A-3）=C蓄積拡大。Gemini 3.5 Pro延期（INFO-066 B-3）=I方向。Arbiter v4.13条件（コアエンタープライズ定量データA-2+）は未達成。B-2品質・低ベース効果・Google固有定量分解未達成でlow維持 | [INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) [INFO-030](../Information/2026-07-11/collected-raw.md#INFO-030) | [INFO-066](../Information/2026-07-11/collected-raw.md#INFO-066) |
-| [H-GOO-002](../config/hypotheses.json) | 囲い込み回避で開放維持 | 23% low | ±0%。Enterprise Agent PlatformのSkill Registryでプラットフォーム固有化の可能性あるが、Cloud API Registry on Vertex AI Agent Engine for MCPで開放方向。囲い込みIと開放Cの品質調整後均衡不変。low帯深化 | [INFO-030](../Information/2026-07-11/collected-raw.md#INFO-030) (MCPデプロイ) | [INFO-030](../Information/2026-07-11/collected-raw.md#INFO-030) (Skill Registry) |
-| [H-GOO-003](../config/hypotheses.json) | DeepMind統合シナジーで競争力を維持する | 48% medium | ±0%。DeepMind論文AGI 2030年警告（INFO-052 B-2）・G7 Hassabis AI連合共同提案・AlphaEvolve GA企業実績・Robotics-ER商用提供・DeepMind AI Control Roadmap A-1のC蓄積。Gemini 3.5 Pro延期は短期Iだが品質優先で長期Cの二面性。Jumper流出はI方向。medium維持 | [INFO-052](../Information/2026-07-11/collected-raw.md#INFO-052) [INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) | [INFO-066](../Information/2026-07-11/collected-raw.md#INFO-066) Jumper流出 |
+| [H-GOO-001](../config/hypotheses.json) | GoogleはGemini統合で検索・Workspace・Cloudのデータ優位を活かしエンタープライズAI市場でシェアを拡大する | 50% indeterminate | low→indeterminate再分類（v4.39）。Google固有定量採用データ26R+構造的不在。Gemini Enterprise Agent Platform改称（INFO-017 A-3）・Managed Agents無料枠（INFO-011 A-3）=C方向。Gemini 3.5 Pro再延期（INFO-078 B-2）=I方向の下方偏り。AlphaEvolve企業実績はA-3品質。Arbiter v4.13条件（A-2+定量データ）未達成。indeterminate運用ルール整備を次回条件化 | [INFO-017](../Information/2026-07-18/collected-raw.md#INFO-017) [INFO-011](../Information/2026-07-18/collected-raw.md#INFO-011) | [INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) (定量データ26R+不在) |
+| [H-GOO-002](../config/hypotheses.json) | GoogleはGemini Tools & Agentsでオープン標準とのDay 0サポートを維持し囲い込みを回避する | 23% low | ±0%。Enterprise Agent PlatformでMCPデプロイ（INFO-017 A-3）=開放方向。Skill Registryでプラットフォーム固有化の可能性。囲い込みIと開放Cの品質調整後均衡不変。low帯深化 | [INFO-017](../Information/2026-07-18/collected-raw.md#INFO-017) (MCP) | [INFO-017](../Information/2026-07-18/collected-raw.md#INFO-017) (Skill Registry) |
+| [H-GOO-003](../config/hypotheses.json) | GoogleはDeepMind統合シナジーでエコシステム深度・研究卓越性・インフラ統合を通じて競争力を維持する | 48% medium | ±0%。Hassabis AGI 2030年±1年（INFO-059 B-2）・Gemini 3.0 Ultra MMLU 90%「Level 4 AGI」（INFO-078）=研究卓越性C。DeepMind研究者軍事契約辞任（INFO-039 C-3）・Gemini 3.5 Pro再延期=I方向。medium維持 | [INFO-059](../Information/2026-07-18/collected-raw.md#INFO-059) [INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) | [INFO-039](../Information/2026-07-18/collected-raw.md#INFO-039) [INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) (3.5 Pro延期) |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-001](../config/indicators.json) | 主要ベンチマーク性能 | +5pt以上/期でhigh | AlphaEvolve GA企業実績（BASF 80%向上等）・Gemini Enterprise Agent Platform・Robotics-ER。Gemini 3.5 Pro延期（7/17）で次期ベンチマーク検証後送り。Gemini 3.5 FlashはGoogle自家測定・独立検証未完了 | 2026-07-11 |
-| [IND-006](../config/indicators.json) | エージェントスタック競争 | elevated維持で継続監視 | AlphaEvolve GA・GCP +63% YoY最速 + Enterprise Agent Platform統合 + Gemini 3.5 Flashコンピュータ使用 + Google $40B Anthropic投資。Gemini 3.5 Pro延期で一時的競争力低下 | 2026-07-11 |
-| [IND-025](../config/indicators.json) | マルチモーダル信頼性・性能コモディティ化 | 性能差ベンダー間5%未満でhigh | AlphaEvolve量子回路発見（Willow量子プロセッサエラー率1/10）・GPT-5.6 Sol ARC-AGI-3 7.8%・RSI 57.9%・MMLU全社>90%飽和。量的向上継続。「真の理解」未解決。elevated/stable | 2026-07-11 |
-| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用でhigh | MCP 2026 RCステートレスコア（INFO-024 B-2）・AAIF/Linux Foundation寄贈（INFO-025 B-2）・Google Gemini Enterprise Agent Platform（INFO-030 A-3）・AlphaEvolve GA（INFO-007 A-3）・MS Foundry→M365（INFO-029 A-3）・MCP/A2A切り替えコスト19-34%削減（INFO-048 B-3）。標準化加速継続。high/rising | 2026-07-11 |
-| [IND-028](../config/indicators.json) | AGI到達度（客観ベンチマーク vs 主観宣言） | 主観-客観乖離拡大でhigh | DeepMind論文AGI 2030年警告（INFO-052 B-2）・G7 Hassabis「新人類の時代」・RSI 57.9%（+16.2pt）・UN独立科学パネル予備報告（INFO-080 A-1）・AGI定義コンセンサス不在。high/rising | 2026-07-11 |
-| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | （critical到達済み） | **critical/rising**。SCR指定因果関係公式明文化（INFO-032 A-2）・国連事務総長LAWS禁止宣言（INFO-034 A-2）・完全自律AIドローン人間殺害初確認・Epistemic Delegation（INFO-039 B-3）・DeepMind AI Control Roadmapで高度AIを「内部脅威」認定。KIQ-MIL-001 19R不在。条件2充実史上最大水準 | 2026-07-11 |
+| [IND-001](../config/indicators.json) | 主要ベンチマーク性能 | +5pt以上/期でhigh | Gemini 3.0 Ultra MMLU 90.0%（INFO-078 B-2）・Gemini 3.1 Pro 15B中11勝。Gemini 3.5 Pro再延期（クリティカルベンチマーク不合格）。Claude Opus 4.8 SWE-bench 88.6%・GPT-5.6 Sol ARC-AGI-3 7.8%。フロンティア競争での構造的遅れ。elevated/rising | 2026-07-18 |
+| [IND-006](../config/indicators.json) | エージェントスタック競争 | elevated維持で継続監視 | Gemini Enterprise Agent Platform改称（INFO-017 A-3）・Managed Agents無料枠・予算制御（INFO-011 A-3）・GCP +63% YoY。Gemini 3.5 Pro再延期で一時的競争力低下。elevated/rising | 2026-07-18 |
+| [IND-025](../config/indicators.json) | マルチモーダル信頼性・性能コモディティ化 | 性能差ベンダー間5%未満でhigh | Gemini 3.0 Ultra MMLU 90%・Claude Opus 4.8 SWE-bench 88.6%・GPT-5.6 Sol ARC-AGI-3 7.8%・OSS追いつき68%安価。MMLU全社>90%飽和。量的向上継続。「真の理解」未解決。elevated/stable | 2026-07-18 |
+| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用でhigh | MCP AAIF寄贈（INFO-020 B-1）・Google Gemini Enterprise Agent Platform CX Agent Studio MCP（INFO-017 A-3）・Azure Foundry BYOM（INFO-032 A-3）・Agent Skillsオープン標準（INFO-022/028）。標準化加速継続。high/rising | 2026-07-18 |
+| [IND-028](../config/indicators.json) | AGI到達度（客観ベンチマーク vs 主観宣言） | 主観-客観乖離拡大でhigh | Hassabis AGI 2030年±1年（INFO-059 B-2）・Gemini 3.0 Ultra「Level 4 AGI」主張（INFO-078 B-2）・AIDE² RSI Level 1主張（INFO-074 B-3）・GPT-5.6 Sol ARC-AGI-3 7.8%。AGI定義コンセンサス不在。RSI具体化と客観ベンチマーク限界の同時進行。high/rising | 2026-07-18 |
+| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | （critical到達済み） | **critical/rising**。DeepMind研究者軍事契約辞任（INFO-039 C-3）・Pentagon移行期間確認（INFO-072 B-1）・中国AI agent規制7/15施行（INFO-038 B-1）・EU AI Act 8/2施行（INFO-036 B-1）・International AI Safety Report 30政府支持（INFO-066 B-1）。KIQ-MIL-001 26R不在。条件2充実史上最大水準 | 2026-07-18 |
 
 ## 6. 変更履歴
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
-| 2026-07-11 | 全面書き直し。AlphaEvolve GA企業実績6社（INFO-007 A-3）・Gemini Enterprise Agent Platform統合ドキュメント（INFO-030 A-3）・Gemini 3.5 Pro延期7/17（INFO-066 B-3）・DeepMind論文AGI 2030年警告（INFO-052 B-2）を新規反映。仮説確度は全て±0%据え置き。KIQ-MIL-001 19R。Arbiter v4.32 COMPLETE | [INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) [INFO-030](../Information/2026-07-11/collected-raw.md#INFO-030) [INFO-066](../Information/2026-07-11/collected-raw.md#INFO-066) | H-GOO-001 50%(±0%)・H-GOO-002 23%(±0%)・H-GOO-003 48%(±0%) |
-| 2026-07-10 | 全面書き直し。Gemini Enterprise Agent Platform（Skill Registry/RAG Engine/ADK）・Managed Agents機能拡張・G7 Hassabis+Amodei AI連合共同提案を反映。Arbiter v4.31 COMPLETE | [INFO-036](../Information/2026-07-10/collected-raw.md#INFO-036) [INFO-014](../Information/2026-07-10/collected-raw.md#INFO-014) | H-GOO-001 50%(±0%)・H-GOO-002 23%(±0%)・H-GOO-003 48%(±0%) |
-| 2026-06-28 | 全面書き直し。Gemini 3.5 Flashコンピュータ使用・Gemini Robotics-ER商用提供・Vertex AI → Gemini Enterprise Agent Platform改名を反映 | [INFO-022](../Information/2026-06-28/collected-raw.md#INFO-022) | H-GOO-001 50%(±0%)・H-GOO-002 23%(±0%)・H-GOO-003 48%(±0%) |
-| 2026-06-23 | 全面書き直し。Google最大$40B Anthropic投資報道・Jumper DeepMind流出を反映。[H-GOO-001](../config/hypotheses.json) 49→50% | [INFO-045](../Information/2026-06-23/collected-raw.md#INFO-045) | H-GOO-001 49→50% low |
-| 2026-06-21 | 全面書き直し。[IND-030](../config/indicators.json) high→critical移行。DeepMind AI Control Roadmapを反映 | [INFO-048](../Information/2026-06-21/collected-raw.md#INFO-048) | IND-030 critical |
+| 2026-07-18 | 全面書き直し（7日freshness timeout）。[H-GOO-001](../config/hypotheses.json) low→indeterminate再分類（Google固有定量データ26R+構造的不在）。Gemini 3.5 Pro再延期（INFO-078 B-2）・Vertex AI→Gemini Enterprise Agent Platform改称（INFO-017 A-3）・Gemini Agents API Managed Agents（INFO-011 A-3）・Hassabis AGI 2030年±1年（INFO-059 B-2）・DeepMind研究者辞任（INFO-039 C-3）・Gemini 3.0 Ultra MMLU 90%「Level 4 AGI」を新規反映。KIQ-MIL-001 26R。Arbiter v4.39 COMPLETE | [INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) [INFO-017](../Information/2026-07-18/collected-raw.md#INFO-017) [INFO-059](../Information/2026-07-18/collected-raw.md#INFO-059) | H-GOO-001 low→indeterminate/50% |
+| 2026-07-11 | 全面書き直し。AlphaEvolve GA企業実績6社・Gemini Enterprise Agent Platform統合ドキュメント・Gemini 3.5 Pro延期7/17・DeepMind論文AGI 2030年警告を反映 | [INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) [INFO-066](../Information/2026-07-11/collected-raw.md#INFO-066) | H-GOO-001 50%(±0%) |
+| 2026-07-10 | 全面書き直し。Gemini Enterprise Agent Platform（Skill Registry/RAG Engine/ADK）・G7 Hassabis+Amodei AI連合を反映 | [INFO-036](../Information/2026-07-10/collected-raw.md#INFO-036) | H-GOO-001 50%(±0%) |
+| 2026-06-28 | 全面書き直し。Gemini 3.5 Flashコンピュータ使用・Gemini Robotics-ER商用提供・Vertex AI改名を反映 | [INFO-022](../Information/2026-06-28/collected-raw.md#INFO-022) | H-GOO-001 50%(±0%) |
 
 ## 7. ブラインドスポット
 
-- Google固有定量データが継続して不在。Arbiter v4.13条件（コアエンタープライズAI定量データA-2+）が未達成。AlphaEvolveの企業実績はgenuine CだがA-3品質であり、シェア・収益・利用率の直接的定量データではない。AlphaEvolveの成果がGemini Enterprise全体の活用事例なのか、Gemini固有の競争優位なのかの分離が不能。
-- Gemini 3.5 Pro延期（7/17）が品質優先の戦略的決定なのか、技術的困難の表面化なのかの判別が不能。GPT-5.6 GA済み・M365 Copilot優先モデル選定との競争力ギャップが拡大する可能性がある。延期が更に長引けばH-GOO-001 50% lowの引き下げ圧力となる。
-- GCP +63% YoYの低ベース効果（GCPシェア14% vs AWS 28%）の排除が未解決。絶対顧客増加数がAWS/Azureと同等以上であるかの確認が必要。
-- Workspace内GeminiのDAU/MAUが公開されていない。エコシステム統合の実際の利用率・定着率を外部から測る手段がない。
-- Gemini Enterprise Agent PlatformのSkill Registryが、プラットフォーム固有化（囲い込み）の新メカニズムなのか、セキュリティ向上の正当な機能なのかの判別が困難。Cloud API Registry on Vertex AI Agent Engine for MCPは開放方向だが、両者の重量付けが不明。
+- Google固有定量データが26R+にわたり構造的に不在。H-GOO-001のindeterminate再分類は分析の誠実性向上だが、「情報が来るまで待つ」希望的駐車にならないよう、下位命題分解と復帰条件の明文化が必須。Arbiter v4.39が運用ルール整備を次回絶対条件化したが、具体的な下位命題の設計が未完成である。
+- Gemini 3.5 Proの再延期が品質優先の戦略的決定なのか、技術的困難の表面化なのかの判別が不能。クリティカルベンチマーク不合格という具体的理由が判明したことは技術的困難の可能性を強めるが、GPT-5.6/Claude Opus 4.8との競争力ギャップが拡大する可能性がある。更なる延期は方向性偏りの記録を強化する。
+- Gemini 3.0 Ultra MMLU 90%「Level 4 AGI」主張は客観ベンチマークの限界を示す。MMLUが飽和状態（全社>90%）の中で、「Level 4 AGI」の自己宣言と客観的検証の乖離が[IND-028](../config/indicators.json)の監視対象である。Hassabisの2030年±1年予測も主観宣言であり、自己宣言と独立検証の緊張が持続する。
+- GCP +63% YoYの低ベース効果（GCPシェア14% vs AWS 28%）の排除が未解決。絶対顧客増加数がAWS/Azureと同等以上であるかの確認が必要。GCP成長がGemini固有の競争優位によるものなのか、クラウドインフラ全体の成長によるものなのかの分離も不能。
+- Gemini Enterprise Agent PlatformのSkill Registryがプラットフォーム固有化（囲い込み）の新メカニズムなのか、セキュリティ向上の正当な機能なのかの判別が困難。CX Agent StudioでのMCPサーバー提供は開放方向だが、両者の重量付けが不明。
+- DeepMind研究者のAI軍事契約辞任は研究卓越性と軍事応用の緊張を表面化した。H-GOO-003の「研究卓越性から製品競争力」因果チェーンにおいて、研究者流失が長期的な研究競争力にどう影響するかの評価が不在。「あらゆる合法的政府目的」条項の受諾がDeepMindの安全性文化をどう変化させるかも未測定。
 - Google $40B Anthropic投資の最終額とガバナンス条件が未確定。「最大$40B」であり実際の投資額はこれより少ない可能性がある。戦略的意図の判別には取締役席や戦略提携条件の開示が必要。
-- AlphaEvolveで量子エラー訂正回路を発見した（Willow量子プロセッサのエラー率10分の1）。SCN-BS-002（量子×AI融合）の基礎研究レベルでの実証だが、実用化によるAI訓練・推論コスト構造の根本的変化には不十分。
 
 ## 付録: 直近30日の参照Evidence
 
 | Evidence | 用途 |
 |---|---|
-| [INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) | AlphaEvolve GA on Gemini Enterprise Agent Platform: BASF 80%向上・Coolblue 5%・FM Logistic 10.4%・Klarna 2x・JetBrains 15-20%・Schrödinger 4x加速・Google内TPU/Spanner改善(A-3) |
-| [INFO-030](../Information/2026-07-11/collected-raw.md#INFO-030) | Gemini Enterprise Agent Platform統合: 構築・デプロイ・ガバナンス・最適化・Cloud API Registry on Vertex AI Agent Engine for MCP・7/7エージェント公開ガイド(A-3) |
-| [INFO-048](../Information/2026-07-11/collected-raw.md#INFO-048) | MCP/A2A切り替えコスト19-34%削減・マルチエージェント通信の相互運用性向上(B-3) |
-| [INFO-052](../Information/2026-07-11/collected-raw.md#INFO-052) | DeepMind論文AGI 2030年警告・G7 Hassabis「新人類の時代」・強いAGI 2031-2035コンセンサス(B-2) |
-| [INFO-066](../Information/2026-07-11/collected-raw.md#INFO-066) | Gemini 3.5 Pro延期7月17日: 元基盤破棄・長期事前訓練サイクル・品質優先戦略(B-3) |
-| [INFO-024](../Information/2026-07-11/collected-raw.md#INFO-024) | MCP 2026 RC: ステートレスコア・HTTPセッション・開発者体験改善(B-2) |
-| [INFO-025](../Information/2026-07-11/collected-raw.md#INFO-025) | AAIF: MCP寄贈（Linux Foundation）・FINOS協力・CData等加盟(B-2) |
-| [INFO-014](../Information/2026-07-10/collected-raw.md#INFO-014) | Google Managed Agents機能拡張: バックグラウンド実行・リモートMCP・カスタム関数(A-3) |
-| [INFO-036](../Information/2026-07-10/collected-raw.md#INFO-036) | Gemini Enterprise Agent Platform: Skill Registry・RAG Engine・ADK・Agent Builder+Agent Engine統合(A-3) |
-| [Arbiter v4.32](../state/arbiter-2026-07-11.md) | 確度評価の完全根拠 |
+| [INFO-011](../Information/2026-07-18/collected-raw.md#INFO-011) | Gemini Agents API Managed Agents: 無料枠・予算制御・スケジュールトリガー・Parallel Search API(A-3) |
+| [INFO-017](../Information/2026-07-18/collected-raw.md#INFO-017) | Vertex AI→Gemini Enterprise Agent Platform改称: Build/Scale/Govern/Optimize・Health BAA・MCPサーバー(A-3) |
+| [INFO-025](../Information/2026-07-18/collected-raw.md#INFO-025) | Gemini Live: マルチモーダルリアルタイムagent・音声+ビジョン+テキスト・254の個別AIアプリ管理(A-3) |
+| [INFO-039](../Information/2026-07-18/collected-raw.md#INFO-039) | DeepMind研究者AI軍事契約辞任: 「あらゆる合法的政府目的」条項・分類作業米軍AI使用許可(C-3) |
+| [INFO-059](../Information/2026-07-18/collected-raw.md#INFO-059) | Hassabis AGI 2030年±1年: 「AGIのふもと」・シンギュラリティ2029-2031・真のAGI=embodied AI(B-2) |
+| [INFO-066](../Information/2026-07-18/collected-raw.md#INFO-066) | International AI Safety Report: 30政府・全主要ラボ支持・ジュネーブ拘束力枠組み合意なし(B-1) |
+| [INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) | Gemini 3.5 Pro再延期: クリティカルベンチマーク不合格・Alphabet株価下落・3.0 Ultra MMLU 90%「Level 4 AGI」(B-2) |
+| [INFO-020](../Information/2026-07-18/collected-raw.md#INFO-020) | MCP AAIF寄贈: Anthropic 2024年11月発表→2025年12月Linux Foundation配下寄贈(B-1) |
+| [INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) | AlphaEvolve GA: BASF 80%向上・Coolblue 5%・FM Logistic 10.4%・Klarna 2x・JetBrains 15-20%・Schrödinger 4x(A-3) |
+| [Arbiter v4.39](../state/arbiter-2026-07-18.md) | 確度評価の完全根拠 |
