@@ -1,7 +1,7 @@
 {
-  "version": "4.39",
-  "last_updated": "2026-07-18",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.39: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。COMPLETE→COMPLETE連続ラウンド。主要5シナリオ全件±0%。Red条件付きSCN-001/003 +1%検討を採用せず（物理的インフラ資本集中は既存確率に繰り込み済み・1R分の新規シグナルで確率変更閾値超えず）。シナリオC/I重み付け明示化をプロセス改善として記録。技術的囲い込みvs経済的囲い込みの重み付けルール明示化継続。SCN-001 7%・SCN-002 23%・SCN-003 20%・SCN-004 32%・SCN-005 18%。合計100%維持（7+23+20+32+18=100%）",
+  "version": "4.40",
+  "last_updated": "2026-07-19",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.40: Arbiter統合判断（DEGRADED状態・Blue Agent完了・Red Agent失敗・Arbiter独自Red代替評価）。COMPLETE→DEGRADED。主要5シナリオ全件±0%。DEGRADED最大保守性原則: Red不在では確率変更する新規独立シグナルの診断的価値を検証不能・全件±0%。各シナリオC/I重み付け明示化(プロセス改善#9)適用。技術的囲い込みvs経済的囲い込みの重み付けルール明示化継続。SCN-001 7%・SCN-002 23%・SCN-003 20%・SCN-004 32%・SCN-005 18%。合計100%維持（7+23+20+32+18=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -187,7 +187,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-07-18",
-    "note": "SCN-001(7) + SCN-002(23) + SCN-003(20) + SCN-004(32) + SCN-005(18) = 100%. Arbiter v4.39完了（COMPLETE・Blue完了・Red完了・全9主要仮説: 1件確度変更H-OAI-001 -1%・2件ラベル変更H-GOO-001/H-XAI-004 indeterminate再分類・1件ステートメント修正H-BTD-002・全5シナリオ±0%・ブラックスワン全件±0%・指標全件状態変更なし・7件last_checked/last_value更新）"
+    "verified_date": "2026-07-19",
+    "note": "SCN-001(7) + SCN-002(23) + SCN-003(20) + SCN-004(32) + SCN-005(18) = 100%. Arbiter v4.40完了（DEGRADED・Blue完了・Red失敗・Arbiter独自Red代替評価・全9主要仮説全件±0%・全5シナリオ±0%・ブラックスワン全件±0%・指標全件状態変更なし・7件last_checked/last_value更新・Blue +1%提案2件(H-GOV-001/H-ANT-002)保留・DEGRADED最大保守性原則）"
   }
 }
