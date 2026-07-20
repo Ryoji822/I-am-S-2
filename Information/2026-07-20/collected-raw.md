@@ -1827,6 +1827,3 @@
 - **引用URL:** https://medium.com/@adnanmasood/moats-in-the-age-of-ai-where-advantage-goes-when-everyone-can-build-6bc9d779ae7d
 - **Evidence ID:** EVD-20260719-0108
 
-
-
-> ⚠️ DEGRADED: Blue Agent analysis failed. Raw data passed through.
