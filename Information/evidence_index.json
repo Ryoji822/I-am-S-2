@@ -32962,8 +32962,393 @@
       "raw_path": "Information/raw/2026-07-19/firecrawl.jsonl",
       "run_date": "2026-07-19",
       "url": "https://adg.csdn.net/6a54f5f5662f9a54cb8ef426.html"
+    },
+    "EVD-20260721-0001": {
+      "hash": "sha256:f609157208f2244a1a943523241490ba19692700ae6edc71b1bad99995352d0a",
+      "legacy_info_id": "INFO-001",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.promptfoo.dev/docs/providers/openai-codex-sdk/"
+    },
+    "EVD-20260721-0002": {
+      "hash": "sha256:000740783e8a130025286339b1ee11af3950a1ec3ac91377b5419cc20f75493f",
+      "legacy_info_id": "INFO-002",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://github.com/anthropics/claude-agent-sdk-typescript/releases"
+    },
+    "EVD-20260721-0003": {
+      "hash": "sha256:9a803871e8eec4942439746ebccb903f0659a9aca6b185766466cd10859604ca",
+      "legacy_info_id": "INFO-003",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search/"
+    },
+    "EVD-20260721-0004": {
+      "hash": "sha256:3d5ca8a0f7c33865fb7ee039d0b56609a5f88e611c551bddd0acafe46d890143",
+      "legacy_info_id": "INFO-004",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://x.ai/news/grok-build-open-source"
+    },
+    "EVD-20260721-0005": {
+      "hash": "sha256:9eb3f7d6cd6d3b9b18ba081c68754d900c88e011734a23567ee2de361d348261",
+      "legacy_info_id": "INFO-005",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.ainchina.com/blog/china-ai-agent-wars-tencent-alibaba-bytedance-2026/"
+    },
+    "EVD-20260721-0006": {
+      "hash": "sha256:eeebbc434197a6a360bee7578db08341de5558aa123e26760a99386a05cf84de",
+      "legacy_info_id": "INFO-006",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.yaitec.com/en/blog/comparacao-frameworks-ai-2026-langchain-langgraph-autogpt"
+    },
+    "EVD-20260721-0007": {
+      "hash": "sha256:4f67e47d98a807772b4b57ffcf00e514e76edbc543e387cc194768a64a347a6b",
+      "legacy_info_id": "INFO-007",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://flowtivity.ai/blog/agent-frameworks-comparison-2026/"
+    },
+    "EVD-20260721-0008": {
+      "hash": "sha256:2ed6c35f11cd32ac1dcc4d852a3712f54f2c375d1bc3e3382b1d293daae95fee",
+      "legacy_info_id": "INFO-008",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.afp.com/en/infos/86-enterprises-have-deployed-ai-agents-just-34-trust-them-boomi-study-finds"
+    },
+    "EVD-20260721-0009": {
+      "hash": "sha256:d626bc982946efd6813884ec1370eeb2abba8de2a70f558241d8d2990ea46292",
+      "legacy_info_id": "INFO-009",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.linkedin.com/posts/sahil-agarwal_test-llm-resilience-to-injection-jailbreaks-activity-7482839710562914304-c4pq"
+    },
+    "EVD-20260721-0010": {
+      "hash": "sha256:2adb5a70bd478d5f1979e6ec701f022cbf731ded3e7d2d00b02c875f549ad9c9",
+      "legacy_info_id": "INFO-010",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.digitalkin.com/learn/future-mcp-agentic-web"
+    },
+    "EVD-20260721-0011": {
+      "hash": "sha256:fb47229a97d7da576168dafc4b12d4ffdb73d0f3e331f362e0a470dd8f494215",
+      "legacy_info_id": "INFO-011",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://github.com/microsoft/skills"
+    },
+    "EVD-20260721-0012": {
+      "hash": "sha256:3f8ee476e16ea5b79446aefd9a4751320ee9154f43388db8a69de41008e6260a",
+      "legacy_info_id": "INFO-012",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://github.com/browser-use/browser-use"
+    },
+    "EVD-20260721-0013": {
+      "hash": "sha256:6078c75e4b8341fc9b8ec838fb53d1837d998a835b287e2ed8ef5db4c6de7604",
+      "legacy_info_id": "INFO-013",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.facebook.com/unicrewtech/posts/94-of-enterprises-say-they-are-worried-about-ai-vendor-lock-in-according-to-para/1646626880800069/"
+    },
+    "EVD-20260721-0014": {
+      "hash": "sha256:3e6cc5446e48f51fa47e96e2687e9ecb22c7edcf44fcb66a1dc6e618d60c020e",
+      "legacy_info_id": "INFO-014",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://benchlm.ai/best/overall"
+    },
+    "EVD-20260721-0015": {
+      "hash": "sha256:01ab8bac1fb9de50de667adafaa88a6491bd4c25ed7e11dae3dc38cc8705799e",
+      "legacy_info_id": "INFO-015",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://ai.google.dev/gemini-api/docs/deep-research"
+    },
+    "EVD-20260721-0016": {
+      "hash": "sha256:16ca5ee26aa5dc4e754948d746475b770a1a5faee7cefa7adfb27296a11172ef",
+      "legacy_info_id": "INFO-016",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://claudefa.st/blog/guide/sandboxing-guide"
+    },
+    "EVD-20260721-0017": {
+      "hash": "sha256:661e07c04d229e4ddd8d85c87fd4950ceae909d0cefe5b3cf2b0d7e199f3658a",
+      "legacy_info_id": "INFO-017",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-enterprise-search-for-agents-with-amazon-bedrock-managed-knowledge-base/"
+    },
+    "EVD-20260721-0018": {
+      "hash": "sha256:5e28b5e5587272d9ecae89f4ff46b24aba9a01adc136070a326f54acb33e5ab2",
+      "legacy_info_id": "INFO-018",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/ai-gateway"
+    },
+    "EVD-20260721-0019": {
+      "hash": "sha256:43d24064895e38491a10fac4f73d43da52e2a15fb7a5c537cc7c7e01beca8f27",
+      "legacy_info_id": "INFO-019",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.beri.net/article/ai-agent-adoption-enterprise-2026-gartner-idc"
+    },
+    "EVD-20260721-0020": {
+      "hash": "sha256:56b30599a280d8fc238577a1bf931bc2e9992396c08fa573040e8f95070461b9",
+      "legacy_info_id": "INFO-020",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://responsibleailabs.ai/knowledge-hub/articles/eu-ai-act-august-2026-compliance"
+    },
+    "EVD-20260721-0021": {
+      "hash": "sha256:976211a870c6135807ac469b8511f8da2444188e37b0db59df047a0e1787b8f7",
+      "legacy_info_id": "INFO-021",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html"
+    },
+    "EVD-20260721-0022": {
+      "hash": "sha256:975afbe5bb09ccdd0dd359ebe415c5fe7c9eda796b4f0bd41ecaf4a7c33358c5",
+      "legacy_info_id": "INFO-022",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://aigovernance.com/news/ai-governance-weekly-july-16-2026"
+    },
+    "EVD-20260721-0023": {
+      "hash": "sha256:5130084ebfb2cff4c9f43c282286f60f94b38d5f4cb4daf34cde7f5a4174632a",
+      "legacy_info_id": "INFO-023",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.techrepublic.com/fr/article/news-openai-pentagon-deal-anthropic-federal-ban/"
+    },
+    "EVD-20260721-0024": {
+      "hash": "sha256:0e975ceca0fe3d18107c459657b46d8266837a4d7ec639c58e75cfc459cee6d4",
+      "legacy_info_id": "INFO-024",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://x.com/TheZvi/article/2032103789017117090"
+    },
+    "EVD-20260721-0025": {
+      "hash": "sha256:bb364f35f2751dcd7fb4d0cbe444af06e3b5d481cf2004482da9d78ab0edcc73",
+      "legacy_info_id": "INFO-025",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.kavout.com/market-lens/the-ai-ethics-showdown-anthropic-vs-the-pentagon"
+    },
+    "EVD-20260721-0026": {
+      "hash": "sha256:5dd8b0672d4e9d78e3de3f265e01233e1768fb4c6bb488abf3d1cd5dbf3184cd",
+      "legacy_info_id": "INFO-026",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://aireporteramerica.com/analysis/42/1439/deloitte-faces-backlash-after-ai-generated-errors-mar-australian-government-report.html"
+    },
+    "EVD-20260721-0027": {
+      "hash": "sha256:a4e4441b9336609039d04e70fa410f5b4d853bd85002066f2891c85f3f6b3c3a",
+      "legacy_info_id": "INFO-027",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.facebook.com/internationalfinancemagazine/posts/ai-cuts-return-to-haunt-firms-klarna-openai-reveal-why-experienced-staff-are-bac/1661328932666263/"
+    },
+    "EVD-20260721-0028": {
+      "hash": "sha256:401a9950b4e1f107c3fd928b547b82578d1a7e170e1e3d4c3c77a65f1a9bbd3f",
+      "legacy_info_id": "INFO-028",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.ft.com/content/6cb9570b-dccd-46f5-b42a-4d0b7b5de35a"
+    },
+    "EVD-20260721-0029": {
+      "hash": "sha256:9f54fa2230e8d5ddb4e46a21810ad7076222019795bbc9d83c8fe955b19d238c",
+      "legacy_info_id": "INFO-029",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.autoritedelaconcurrence.fr/en/press-release/ai-agents-autorite-de-la-concurrence-issues-its-opinion-competitive-functioning-ai"
+    },
+    "EVD-20260721-0030": {
+      "hash": "sha256:5e293f79c5335b66bb59c9ac3dfb7d2db10d9636ce4db1ada4d6878793ca0a52",
+      "legacy_info_id": "INFO-030",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.linkedin.com/pulse/negotiating-saas-agentic-ai-era-buyers-playbook-unifiedinfotech-emvef"
+    },
+    "EVD-20260721-0031": {
+      "hash": "sha256:7df4ba52a30837da20f74fce01553e518bf4faedcf308a3debe61e7c6fe32e31",
+      "legacy_info_id": "INFO-031",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://benchlm.ai/anthropic/api-pricing"
+    },
+    "EVD-20260721-0032": {
+      "hash": "sha256:0fba32da226d0178bae62cb386d2bb2c80a35297dfe4e645dba11d4f51de71ae",
+      "legacy_info_id": "INFO-032",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.facebook.com/venturebeat/posts/deepseeks-recent-decision-to-cut-pricing-by-75-should-have-been-good-news-instea/1404248248228385/"
+    },
+    "EVD-20260721-0033": {
+      "hash": "sha256:cda6b17dd74b70371ee0c9f015b137b024a173cc30b5975924b99cf3833d123c",
+      "legacy_info_id": "INFO-033",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://benchlm.ai/best"
+    },
+    "EVD-20260721-0034": {
+      "hash": "sha256:f8cdd5c38b8d637f32384d5f7b4fb092cc8714801b51fa4ef746365021ed8c62",
+      "legacy_info_id": "INFO-034",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://benchlm.ai/compare/deepseek-r1-vs-deepseek-v4-pro"
+    },
+    "EVD-20260721-0035": {
+      "hash": "sha256:3a967738bf9565bfe37fbe044a2d29f2b0ab2ad09638cd6df637514ef8798bbd",
+      "legacy_info_id": "INFO-035",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.facebook.com/MarketingMind.in/posts/openai-started-first-but-anthropic-now-leads-in-reported-valuation-heres-how-two/1376210038030377/"
+    },
+    "EVD-20260721-0036": {
+      "hash": "sha256:195cf7febfe4cc853fc8552cae32bc4f5a9925ebea2366dead2e8cf2702b210d",
+      "legacy_info_id": "INFO-036",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.facebook.com/FortuneMagazine/posts/-cursors-25-year-old-ceo-michael-truell-helped-take-the-ai-coding-company-from-a/1387698186553925/"
+    },
+    "EVD-20260721-0037": {
+      "hash": "sha256:f1f2a162cdbce59415f2a934fceb17071430f67eb94624729e1afd861d4c1b5a",
+      "legacy_info_id": "INFO-037",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.avepoint.com/blog/manage/ai-vendor-lock-in-multi-model-strategy"
+    },
+    "EVD-20260721-0038": {
+      "hash": "sha256:3ee5bbe94d24eb87420b572c86309cf08097e770bb8b1dc0c1d263ff2c9eb3df",
+      "legacy_info_id": "INFO-038",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.instagram.com/p/DaxOdgKiAGo/"
+    },
+    "EVD-20260721-0039": {
+      "hash": "sha256:923a0c7c87fdbb7870647723303ca51ed39b7aa1a6616214ef35228295bbd2b9",
+      "legacy_info_id": "INFO-039",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.mapfre.com/en/insights/innovation/reskilling-upskilling-talent-ai/"
+    },
+    "EVD-20260721-0040": {
+      "hash": "sha256:87f132d9d75a7e895fb96c428fb3bad45be315b6e646d232a92a78b936a59430",
+      "legacy_info_id": "INFO-040",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.linkedin.com/posts/ondaro_the-data-problem-hiding-inside-your-ai-investment-activity-7483157409402695681-OVNo"
+    },
+    "EVD-20260721-0041": {
+      "hash": "sha256:1eeb8d81c2622caf4891ea654ed5b79b2cf3537ad5f9826e08b5df9bd1ffb781",
+      "legacy_info_id": "INFO-041",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://medium.com/illumination/gpt-5-6-just-set-a-new-agi-benchmark-record-the-record-is-7-8-3c9e7c4e8c4f"
+    },
+    "EVD-20260721-0042": {
+      "hash": "sha256:07f006a71fa4443bd58bf7ea8edb5d8e49bcb9e38fcfbd273a8d69a36f49cb9f",
+      "legacy_info_id": "INFO-042",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.weco.ai/blog/first-evidence-of-recursive-self-improvement"
+    },
+    "EVD-20260721-0043": {
+      "hash": "sha256:ebc90cc6035ff006e4bc8404bf8e61d4308066173ff0db43d47e954cb16d1d0b",
+      "legacy_info_id": "INFO-043",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.reddit.com/r/singularity/comments/1uw40fb/demis_hassabis_shared_a_rare_essay_on_x_agi_is/"
+    },
+    "EVD-20260721-0044": {
+      "hash": "sha256:3f5b37ca6eca62ab576f627cf71596eb6bc2958d1590fb43786310e5bfb3d2eb",
+      "legacy_info_id": "INFO-044",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.facebook.com/foreign.policy.magazine/posts/the-us-decision-last-month-to-ban-international-access-to-anthropics-latest-mode/1417860986872195/"
+    },
+    "EVD-20260721-0045": {
+      "hash": "sha256:2306c758be9318b37cd8ef24a5a095dbdc5c9d535b7e2d0b96733088370bde90",
+      "legacy_info_id": "INFO-045",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://zhuanlan.zhihu.com/p/2060326789302448929"
+    },
+    "EVD-20260721-0046": {
+      "hash": "sha256:e8ec1b4cb5f6b5e946d1fc6671debd64ff41521326cc4d28704df2bf9e6c25e9",
+      "legacy_info_id": "INFO-046",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.53ai.com/news/LargeLanguageModel/2026071450389.html"
+    },
+    "EVD-20260721-0047": {
+      "hash": "sha256:c44b36cba8e1a640416141bfb6e5606686678f2cc497a07680386ae277e43528",
+      "legacy_info_id": "INFO-047",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.getpanto.ai/blog/claude-ai-statistics"
+    },
+    "EVD-20260721-0048": {
+      "hash": "sha256:45044266d66f375e700de724a3b088f09d680e6ed564ea07b8817b5f7ecc300c",
+      "legacy_info_id": "INFO-048",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.alignmentforum.org/posts/CCt9oy8axcdvaGcPE/a-red-line-and-oversight-framework-for-government-ai"
+    },
+    "EVD-20260721-0049": {
+      "hash": "sha256:af3dd0144e7a307eae4b589582e985f37fc833778332abdf5e03b449140c66da",
+      "legacy_info_id": "INFO-049",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://medium.com/@adnanmasood/ai-governance-and-enterprise-slas-building-contractual-trust-in-non-deterministic-systems-3976ed867008"
+    },
+    "EVD-20260721-0050": {
+      "hash": "sha256:dd04993b1975c3d7baf59b49ce211d5d6df088d6aa4c6039e694ababc38fcd36",
+      "legacy_info_id": "INFO-050",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.facebook.com/PwCMalta/posts/ai-is-reshaping-work-and-not-always-in-the-way-many-people-expect-pwcs-2026-glob/1527164172757242/"
+    },
+    "EVD-20260721-0051": {
+      "hash": "sha256:5295e529fd0156cabb866b52a6a28979ab5f30aed58a62b0a8548a772fc6f7ca",
+      "legacy_info_id": "INFO-051",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.businessofapps.com/data/chatgpt-statistics/"
+    },
+    "EVD-20260721-0052": {
+      "hash": "sha256:fb4d3335d84ca25925aa74bfd02e4ed589a2d98d08209e5aad70634803c1fe30",
+      "legacy_info_id": "INFO-052",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.stcn.com/article/detail/3723104.html"
+    },
+    "EVD-20260721-0053": {
+      "hash": "sha256:0d2e8b6f665342d14ce884585f38073355055d919683daa8868542da0e373343",
+      "legacy_info_id": "INFO-053",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.getpanto.ai/blog/claude-ai-statistics"
+    },
+    "EVD-20260721-0054": {
+      "hash": "sha256:6c00c535bd8a0fb651cada3e513cab2ff2556126dd90ff7230faa75a97ff79b0",
+      "legacy_info_id": "INFO-054",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://www.stcn.com/article/detail/3723104.html"
+    },
+    "EVD-20260721-0055": {
+      "hash": "sha256:91b0fa9e9622d839e94399339a2d1f20e0603fde9b57c78f7f57fe9cd2fd11eb",
+      "legacy_info_id": "INFO-055",
+      "raw_path": "Information/raw/2026-07-21/firecrawl.jsonl",
+      "run_date": "2026-07-21",
+      "url": "https://medium.com/@adnanmasood/ai-governance-and-enterprise-slas-building-contractual-trust-in-non-deterministic-systems-3976ed867008"
     }
   },
-  "last_updated": "2026-07-19T09:26:06+09:00",
+  "last_updated": "2026-07-21T09:18:19+09:00",
   "schema_version": "1.0"
 }
