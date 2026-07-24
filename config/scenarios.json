@@ -1,7 +1,7 @@
 {
-  "version": "4.43",
-  "last_updated": "2026-07-23",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.43: Arbiter統合判断（完全COMPLETE状態・Blue Agent完了・Red Agent完了・Arbiter統合完了）。DEGRADED→COMPLETE復帰ラウンド。主要5シナリオ2件変更（SCN-001 +1%・SCN-002 -1%・100%正規化確認）・ブラックスワン全件±0%。Blue Agent高品質分析+Red Agent8論点完全反証。SCN-001 +1%採用: 物理的インフラ囲い込み累積が確率変更閾値到達（SpaceX-Pentagon DC・OpenAI 5%ステーク・BlackRock-Aligned $40B・AI資金調達活発）。物理的インフラ囲い込みは技術的オープン化（MCP/OSS）では相殺不可——異なる階層の現象。SCN-002 -1%正規化相殺: 物理的インフラ囲い込みがSCN-002「開放」次元を直接挑戦。各シナリオC/I重み付け明示化継続。技術的囲い込みvs物理的囲い込みの層的構造認識。SCN-001 8%・SCN-002 22%・SCN-003 20%・SCN-004 32%・SCN-005 18%。合計100%維持（8+22+20+32+18=100%）",
+  "version": "4.44",
+  "last_updated": "2026-07-24",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.44: Arbiter統合判断（DEGRADED状態・Phase 1収集失敗・新規情報0件・Blue/Red/Arbiter全完了）。全シナリオ±0%・DEGRADED最大保守性原則。Blue/Red数値完全合意。Arbiter構造的改善: SCN-BS-001時間経過ドリフト記録（次回COMPLETE評価基準導入条件付け）。「不作為は行為である」認識採用——情報ブラックアウト中の±0%出力は意思決定者に「状況不変」ではなく「状況の変化を検知不能」として提示すべき。SCN-001 8%・SCN-002 22%・SCN-003 20%・SCN-004 32%・SCN-005 18%。合計100%維持（8+22+20+32+18=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -187,7 +187,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-07-23",
-    "note": "SCN-001(8) + SCN-002(22) + SCN-003(20) + SCN-004(32) + SCN-005(18) = 100%. Arbiter v4.43完了（COMPLETE復帰・Blue/Red/Arbiter全完了・主要5シナリオ2件変更: SCN-001 +1%・SCN-002 -1%・ブラックスワン全件±0%・指標7件状態変更なしlast_checked/last_value更新）"
+    "verified_date": "2026-07-24",
+    "note": "SCN-001(8) + SCN-002(22) + SCN-003(20) + SCN-004(32) + SCN-005(18) = 100%. Arbiter v4.44完了（DEGRADED・Blue/Red/Arbiter全完了・全シナリオ±0%・DEGRADED最大保守性原則・SCN-BS-001時間経過ドリフト記録）"
   }
 }
