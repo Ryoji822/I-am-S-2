@@ -1,55 +1,52 @@
 # AI市場全体 - 静的インテリジェンス
 
-> 最終判断更新: 2026-07-23
+> 最終判断更新: 2026-07-26
 > 全体確信度: 中
-> 情報非対称性: ByteDance/DeepSeek グローバルシェア追跡困難. Y軸「フロンティア差別化の持続性」の完全な定量評価基準は未設定. [H-GOV-001](../config/hypotheses.json) 49% medium（介入次元拡大と抵抗力多面化の均衡・因果チェーン複合軸化N=4+で49%妥当性強化）. [H-GOV-002](../config/hypotheses.json) 24% low（絶対条件40R連続未達成・Anthropic $6B収益が順応報酬の業界全体波及と直接矛盾）. [H-OAI-001](../config/hypotheses.json) 47% medium（KIQ-OAI-001 30R不在・availability≠adoption厳格適用）. [H-ANT-002](../config/hypotheses.json) 53% low（KIQ-ANT-002 28R不在・「Code」カテゴリー≠CLI固有収益の混同リスク）. SCN-004(32%)が首位（SCN-002 22%・SCN-003 20%・SCN-005 18%・SCN-001 8%）. [H-CAR-002](../config/hypotheses.json) 66% medium（段階的修正プロセスの66%での自然停止）. [IND-030](../config/indicators.json) critical/deepening（条件2充実史上最大水準継続・KIQ-MIL-001 30R不在）
+> 情報非対称性: ByteDance/DeepSeek グローバルシェア追跡困難. Y軸「フロンティア差別化の持続性」の完全な定量評価基準は未設定. [H-GOV-001](../config/hypotheses.json) 49% medium（介入次元拡大と抵抗力多面化の均衡・因果チェーン複合軸化N=4+で49%妥当性強化）. [H-GOV-002](../config/hypotheses.json) 24% low（絶対条件41R連続未達成・Anthropic $6B収益が順応報酬の業界全体波及と直接矛盾）. [H-OAI-001](../config/hypotheses.json) 48% medium（KIQ-OAI-001 33R/34R不在・availability≠adoption厳格適用）. [H-ANT-002](../config/hypotheses.json) 53% low（KIQ-ANT-002 31R/32R不在・「Code」カテゴリー≠CLI固有収益の混同リスク）. SCN-004(30%)が首位（SCN-002 22%・SCN-003 22%・SCN-005 18%・SCN-001 8%）. [H-CAR-002](../config/hypotheses.json) 65% medium（条件執行で66→65%引き下げ・上昇軸定量証拠B-2+不在累積）. [IND-030](../config/indicators.json) critical/stable（条件2充実史上最大水準継続・KIQ-MIL-001 33R/34R不在・Arbiter v4.46がcritical解消条件3基準を定義）
 > 主参照: [hypotheses.json](../config/hypotheses.json) [H-OAI-001](../config/hypotheses.json) [H-OAI-002](../config/hypotheses.json) [H-OAI-003](../config/hypotheses.json) [H-GOV-001](../config/hypotheses.json) [H-GOV-002](../config/hypotheses.json) [H-ANT-001](../config/hypotheses.json) [H-ANT-002](../config/hypotheses.json) [H-ANT-003](../config/hypotheses.json) [H-GOO-001](../config/hypotheses.json) [H-GOO-002](../config/hypotheses.json) [H-GOO-003](../config/hypotheses.json) [H-XAI-002](../config/hypotheses.json) [H-XAI-004](../config/hypotheses.json) [H-BTD-001](../config/hypotheses.json) [H-BTD-002](../config/hypotheses.json) [H-BTD-003](../config/hypotheses.json) [H-CAR-001](../config/hypotheses.json) [H-CAR-002](../config/hypotheses.json) [H-CAR-003](../config/hypotheses.json), [scenarios.json](../config/scenarios.json) SCN-001/002/003/004/005, [indicators.json](../config/indicators.json) [IND-013](../config/indicators.json) [IND-025](../config/indicators.json) [IND-026](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-029](../config/indicators.json) [IND-030](../config/indicators.json)
 
-## プレイヤー一覧スナップショット (2026-07-23時点)
+## プレイヤー一覧スナップショット (2026-07-26時点)
 
 | 企業 | 主力モデル/製品 | 資金規模 | BenchLM | 直近の動向 |
 |---|---|:-:|:-:|---|
-| Anthropic | Claude Opus 4.8, Sonnet 5, Fable 5, Mythos 5, Claude Code | $350B評価額 [INFO-069](../Information/2026-07-23/collected-raw.md#INFO-069)(B-1)・Google $40B投資 [INFO-066](../Information/2026-07-16/collected-raw.md#INFO-066)(C-3)・累計$41.5B調達 | Intelligence Index 61.4首位 [INFO-044](../Information/2026-07-23/collected-raw.md#INFO-044)(B-2)・Chatbot Arena 1507 | SCR指定 [INFO-032](../Information/2026-07-23/collected-raw.md#INFO-032)(B-2)・$6B総収益・収益構造Enterprise55%/Code20%/Pro20% [INFO-069](../Information/2026-07-23/collected-raw.md#INFO-069)(B-1)・KPMG 276K統合 [INFO-007](../Information/2026-07-23/collected-raw.md#INFO-007)(A-3) |
-| OpenAI | GPT-5.6 Sol/Terra/Luna, Codex, Skills, Presence, GPT-Live | 5%政府ステーク(~$42.6B)提案 [INFO-056](../Information/2026-07-23/collected-raw.md#INFO-056)(B-2)・ChatGPT 1Bユーザー | ARC-AGI-3 7.8%初勝利 [INFO-050](../Information/2026-07-23/collected-raw.md#INFO-050)(B-3)・DeepSWE 72.7% [INFO-004](../Information/2026-07-23/collected-raw.md#INFO-004)(A-3) | Presence企業エージェントデプロイ製品 [INFO-001](../Information/2026-07-23/collected-raw.md#INFO-001)(A-3)・サンドボックス回避 [INFO-003](../Information/2026-07-23/collected-raw.md#INFO-003)(A-3)・ペンタゴン分類領域契約 [INFO-033](../Information/2026-07-23/collected-raw.md#INFO-033)(B-2)・Altman「ペンタゴン使用統制できない」[INFO-056](../Information/2026-07-23/collected-raw.md#INFO-056)(B-2) |
-| Google | Gemini 3.6 Flash, 3.5 Flash-Lite, 3.5 Flash Cyber, AlphaEvolve | Anthropic最大$40B投資 [INFO-066](../Information/2026-07-16/collected-raw.md#INFO-066)(C-3) | Gemini 3.6 Flash DeepSWE 49%・OSWorld 83.0% [INFO-002](../Information/2026-07-23/collected-raw.md#INFO-002)(A-3) | Gemini 4プレトレーニング開始・3.5 Pro パートナーテスト中 [INFO-002](../Information/2026-07-23/collected-raw.md#INFO-002)(A-3) |
-| SpaceX/xAI | Grok 4.5, Grok Build (OSS), Cursor | $20B Series E・Cursor $600億買収・評価額$1.25兆 | Chatbot Arena 1485 [INFO-040](../Information/2026-07-23/collected-raw.md#INFO-040)(B-2) | SpaceX-Pentagon DC容量交渉 [INFO-031](../Information/2026-07-23/collected-raw.md#INFO-031)(B-2)・Grok Build OSS化 [INFO-011](../Information/2026-07-23/collected-raw.md#INFO-011)(A-3)・Grok Automations [INFO-010](../Information/2026-07-23/collected-raw.md#INFO-010)(A-3) |
-| ByteDance | 豆包 (Seed 2.0), Seedance 2.0, Coze, Seed Audio 1.0 | $186B売上$48B純利益 [INFO-060](../Information/2026-07-23/collected-raw.md#INFO-060)(B-2)・CAPEX 2000億元超 | 非公開 | 豆包DAU 2億・日次赤字 [INFO-054](../Information/2026-07-23/collected-raw.md#INFO-054)(B-2)・Seed Audio 1.0 [INFO-055](../Information/2026-07-23/collected-raw.md#INFO-055)(A-3)・[H-BTD-002](../config/hypotheses.json)第2回ステートメント修正 |
+| Anthropic | Claude Opus 4.8, Sonnet 5, Fable 5, Mythos 5, Claude Code | $350B評価額・累計$41.5B調達 | Fable 5 Intelligence Index 61.4首位 [INFO-027](../Information/2026-07-26/collected-raw.md#INFO-027)(B-2)・Opus 4.8 SWE-bench Verified 88.6% | SCR指定継承・KPMG 276K統合 [INFO-008](../Information/2026-07-26/collected-raw.md#INFO-008)(A-3)・NDA萎縮効果 [INFO-050](../Information/2026-07-26/collected-raw.md#INFO-050)(B-2) |
+| OpenAI | GPT-5.6 Sol/Terra/Luna, Codex, Skills, Presence, GPT-Live | ChatGPT 1Bユーザー・5%政府ステーク提案継承 | ARC-AGI-3 7.8%初勝利・SWE-bench Verified 96.2% [INFO-027](../Information/2026-07-26/collected-raw.md#INFO-027)(B-2) | Presence 75%問い合わせ自動解決 [INFO-052](../Information/2026-07-26/collected-raw.md#INFO-052)(A-3)・サンドボックス脱出 [INFO-002](../Information/2026-07-26/collected-raw.md#INFO-002)(B-2) |
+| Google | Gemini 3.6 Flash, 3.5 Flash-Lite, AlphaEvolve | Anthropic最大$40B投資 | Gemini 3.1 Pro GPQA Diamond 94.3%・ARC-AGI-2 77.1% [INFO-027](../Information/2026-07-26/collected-raw.md#INFO-027)(B-2) | Gemini 4プレトレーニング継承・Gemini Enterprise Agent Platform出荷 [INFO-054](../Information/2026-07-26/collected-raw.md#INFO-054)(C-3) |
+| SpaceX/xAI | Grok 4.5, Grok Build (OSS), Cursor | $20B Series E・Cursor $600億買収・評価額$1.25兆 | Chatbot Arena 1485 | Grok Voice API・Grok Build CLI更新 [INFO-012](../Information/2026-07-26/collected-raw.md#INFO-012)(A-3)・Google CloudでGrok利用可能 [INFO-054](../Information/2026-07-26/collected-raw.md#INFO-054)(C-3) |
+| ByteDance | 豆包 (Seed 2.0), Seedance 2.0, Coze, Seed Audio 1.0 | $186B売上$48B純利益・$200億債券 [INFO-048](../Information/2026-07-26/collected-raw.md#INFO-048)(B-2) | 非公開 | 豆包1.55億WAU・AgentKit/OpenViking・トランプ政権禁止検討 [INFO-053](../Information/2026-07-26/collected-raw.md#INFO-053)(B-2) |
+| オープンウェイト | DeepSeek V4-Pro-Max, Kimi K3, Llama 4, Qwen3 235B | — | DeepSeek V4-Pro-Max SWE-bench 80.6%（=Gemini 3.1 Pro 80.6%同率）[INFO-028](../Information/2026-07-26/collected-raw.md#INFO-028)(B-2)・Kimi K3 HLE 44.9%（GPT-5 41.7%超）[INFO-045](../Information/2026-07-26/collected-raw.md#INFO-045)(B-2) | API価格$0.35/1M（85%安）[INFO-027](../Information/2026-07-26/collected-raw.md#INFO-027)(B-2)・OpenAI従業員roon「中国ラボが大幅に遅れている時代は終わった」 |
 
-地政学的ブロック候補: SpaceX/xAI（$1.25兆+Cursor $600億+SpaceX-Pentagon DC交渉 [INFO-031](../Information/2026-07-23/collected-raw.md#INFO-031)(B-2)）・Google-Anthropic連合（[INFO-066](../Information/2026-07-16/collected-raw.md#INFO-066)(C-3) $40B投資+$350B評価額）・中国独自圏（$186B ByteDance+WAICO設立 [INFO-039](../Information/2026-07-23/collected-raw.md#INFO-039)(B-3)）・欧州主権AI（EU AI Act 8/2施行 [INFO-030](../Information/2026-07-23/collected-raw.md#INFO-030)(B-2)）。
+地政学的ブロック候補: SpaceX/xAI（$1.25兆+Cursor $600億+SpaceX-Pentagon DC交渉）・Google-Anthropic連合（$40B投資+$350B評価額）・中国独自圏（ByteDance $186B+$200億債券 [INFO-048](../Information/2026-07-26/collected-raw.md#INFO-048)(B-2)・WAICO設立・トランプ政権禁止検討 [INFO-053](../Information/2026-07-26/collected-raw.md#INFO-053)(B-2)）・欧州主権AI（EU AI Act高リスク義務2027年12月延期 [INFO-023](../Information/2026-07-26/collected-raw.md#INFO-023)(B-2)）。
 
 ---
 
 ## 0. 一文要約
 
-SCN-004「誰でもAI」が32%で首位を維持する（07-16から±0%）[scenarios.json](../config/scenarios.json)。コモディティ化圧力は多重に確認されており, オープンモデルが能力ギャップの70-90%を閉鎖した（[INFO-042](../Information/2026-07-23/collected-raw.md#INFO-042) B-3）。同時にSCN-001「囲い込みの勝者」が8%に上昇した（7%から+1%）。SpaceX-Pentagon DC交渉・OpenAI 5%政府ステーク・BlackRock-Aligned DC $40B買収・AI資金調達活発が, 物理的インフラ囲い込みの累積を確率変更閾値に到達させた。正規化のためSCN-002が22%に低下した（23%から-1%）。
+SCN-004「誰でもAI」が30%で首位を維持する（32%から-2%）[scenarios.json](../config/scenarios.json)。同時にSCN-003「静かな囲い込み」が22%に上昇し（20%から+2%），SCN-002と同率で2位タイに浮上した。この再配分はArbiter v4.46がデプロイメント失敗データの両義性を是正した結果である。89%の本番失敗（[INFO-022](../Information/2026-07-26/collected-raw.md#INFO-022) B-2）とMcKinseyの1%成熟（[INFO-043](../Information/2026-07-26/collected-raw.md#INFO-043) A-2）は, 従来SCN-004支持として一方向に解釈されていた。しかし「モデル性能差よりも組織的統合の差が勝負を決める」（SCN-003核心命題）とも読める。クラウド間エージェント移動不可能（[INFO-054](../Information/2026-07-26/collected-raw.md#INFO-054) C-3）もデータ・ワークフロー層での囲い込みを直接的に示す。コモディティ化圧力の多ソース確認（OSS性能パリティ・トークンコスト60-80%削減・DeepSeek V4 85%安）がSCN-004の下限30%を支える。
 
-物理的インフラ囲い込みは技術的オープン化（MCP/OSS）では相殺できない。プロトコル層の開放性とインフラ層の囲い込みが異なる階層の現象であることが確認された。MCP 2026 RC・AAIF/Linux Foundation・Bedrock Agents Classic→AgentCore・Azure Foundry MCP統合・Grok Build OSSで標準化は加速する一方, DC・チップ・電力の物理的独占が新たな囲い込み次元として顕在化した。
-
-Anthropic定量メトリクスの包括的開示（[INFO-069](../Information/2026-07-23/collected-raw.md#INFO-069) B-1）は市場構造の可視性を向上させた。$6B総収益・評価額$350B・収益構造Enterprise 55%/Code 20%/Pro 20%・20Mユーザーが初めて包括的に開示された。但し「Code」カテゴリーとClaude Code CLI固有収益の区別は未解決である。
+[H-CAR-002](../config/hypotheses.json)が66%から65%に低下した（-1%）。Arbiter v4.45が条件付けた「次回COMPLETEで上昇軸定量証拠B-2+が不在の場合64-65%への引き下げ」がArbiter v4.46で実行された。AI生成コード41%・ジュニア職8%で低下軸は強化されたが, 上昇軸（設計・評価スキル需要）の定量確証が複数ラウンドにわたり不在である。
 
 ---
 
 ## 1. コア判断
 
-### コモディティ化・差別化・物理的制約の三重構造
+### コモディティ化・差別化・エコシステム統合の三重構造
 
-SCN-004の首位継続は価格崩壊・性能収束・採用率停滞の累積結果である。オープンモデルが能力ギャップの70-90%を閉鎖し, 5-10倍低い推論コストを実現した（[INFO-042](../Information/2026-07-23/collected-raw.md#INFO-042) B-3）。41%の組織がエージェントAIを日常的に利用する一方で, 本番環境での失敗率は89%に達する（[INFO-028](../Information/2026-07-23/collected-raw.md#INFO-028) B-3）。AIの実行問題（[INFO-070](../Information/2026-07-23/collected-raw.md#INFO-070) A-2）は, 技術的なコモディティ化が進んでも組織の吸収能力が追いつかない現実を示す。
+SCN-004の首位継続は価格崩壊・性能収束・採用率停滞の累積結果である。オープンウェイトモデルがエンタープライズ重要タスクで商用APIと厳密な性能パリティを達成した（[INFO-028](../Information/2026-07-26/collected-raw.md#INFO-028) B-2）。DeepSeek-V4-Pro-MaxがSWE-bench Verified 80.6%でGemini 3.1 Proと同率（MITライセンス）であり, Kimi K3が2.8兆パラメータでHLE 44.9%（GPT-5の41.7%を上回る）を記録した（[INFO-045](../Information/2026-07-26/collected-raw.md#INFO-045) B-2）。OpenAI従業員roonが「中国ラボが大幅に遅れている時代は終わった」と認めた。GenAIインフラコストはルーティング最適化で60-80%削減可能である（[INFO-040](../Information/2026-07-26/collected-raw.md#INFO-040) B-2）。
 
-完全コモディティ化ではない。GPT-5.6 Sol ARC-AGI-3 7.8%初勝利（[INFO-050](../Information/2026-07-23/collected-raw.md#INFO-050) B-3）・Claude Opus 4.8 Intelligence Index 61.4首位（[INFO-044](../Information/2026-07-23/collected-raw.md#INFO-044) B-2）・Anthropic $6B総収益（[INFO-069](../Information/2026-07-23/collected-raw.md#INFO-069) B-1）は, フロンティア層の質的優位と市場の支払意欲を示す。4社のAI巨人がS&P 500利益の60%を牽引し（[INFO-061](../Information/2026-07-23/collected-raw.md#INFO-061) B-2）, AI活用企業はチームを縮小するどころか成長させているというデータも, 差別化の残存を示唆する。
+ただしSCN-003の+2%上昇が示す通り, コモディティ化圧力の裏にエコシステム統合の重要性が潜む。McKinsey最新レポートは企業の92%がAI投資を増加させている一方で, AI成熟度に達しているのは僅か1%であると報告した（[INFO-043](../Information/2026-07-26/collected-raw.md#INFO-043) A-2）。Boomi/Forrester調査では86%がAIエージェントをデプロイ済みだが信頼するのは34%, 89%が本番環境で失敗し, 95%のパイロットがROIを生まない（[INFO-022](../Information/2026-07-26/collected-raw.md#INFO-022) B-2）。この「投資は進むが価値実現は困難」の構造は, モデルがコモディティ化してもエコシステム統合の深さが成功を決めることを示唆する。クラウド間エージェントの非互換性がこの読みを補強する（[INFO-054](../Information/2026-07-26/collected-raw.md#INFO-054) C-3）。
 
-物理的インフラ囲い込みの顕在化が新次元である。SpaceX-Pentagon DC容量交渉（[INFO-031](../Information/2026-07-23/collected-raw.md#INFO-031) B-2）・BlackRock-Aligned DC $40B買収（[INFO-045](../Information/2026-07-23/collected-raw.md#INFO-045) B-2）・OpenAI 5%政府ステーク提案（[INFO-056](../Information/2026-07-23/collected-raw.md#INFO-056) B-2）が, DC・チップ・電力の物理的独占を構造化している。技術的オープン化（MCP/OSS）が進んでも, インフラ層での囲い込みが深化する場合, 「OSSモデルを誰もが使えてもDC容量が独占されていれば実質的な囲い込みが成立する」（Red Agent核心論）。
+完全コモディティ化ではない。GPT-5.6 SolがSWE-bench Verified 96.2%（独立ハーネス・史上最高）を記録し（[INFO-027](../Information/2026-07-26/collected-raw.md#INFO-027) B-2）, Claude Fable 5がIntelligence Index首位である。OpenAI Presenceが75%の問い合わせを人間なしで解決するエンタープライズ本番エージェント製品として稼働している（[INFO-052](../Information/2026-07-26/collected-raw.md#INFO-052) A-3）。AnthropicのKPMG統合（27万6千人・138カ国）はClaudeのエンタープライズ定着を示す（[INFO-008](../Information/2026-07-26/collected-raw.md#INFO-008) A-3）。差別化の残存とコモディティ化の進行が同時に観測されている。
 
 ### 資本集中と政府-AI結合の深化
 
-AI資金調達が活発である（Helsing $1.8B・Baseten $1.5B・Together AI $800M・Databricks $188B評価, [INFO-041](../Information/2026-07-23/collected-raw.md#INFO-041) B-3）。Anthropic評価額$350B・ByteDance $186B売上で資本集中が構造化している。OpenAI 5%持分（~$42.6B）米政府譲渡提案（[INFO-056](../Information/2026-07-23/collected-raw.md#INFO-056) B-2）は国家がAI企業の株主になる構造であり, 前例がない。Altmanが「OpenAIはペンタゴンがAIをどう使用するかコントロールできない」と従業員に発言した。
+全AIインフラ投資が$2.59兆に達した（[INFO-030](../Information/2026-07-26/collected-raw.md#INFO-030) A-2）。ByteDanceが$200億債券を発行し（[INFO-048](../Information/2026-07-26/collected-raw.md#INFO-048) B-2）, Tencentが$47億債券を発行した。OpenAI 5%持分（~$42.6B）米政府譲渡提案が政府-AI資本結合の質的新次元である。ペンタゴンがAnthropicをSCR指定し, トランプ政権のNSPM-11が軍のAI採用加速を指示した。政府調達市場での順応報酬構造が具体化している。
 
-政府調達市場での順応報酬構造が具体化した。ペンタゴンがAnthropicをSCR指定し（[INFO-032](../Information/2026-07-23/collected-raw.md#INFO-032) B-2）, OpenAIがペンタゴンと分類領域AI使用契約を締結した（[INFO-033](../Information/2026-07-23/collected-raw.md#INFO-033) B-2）。トランプ政権のNSPM-11が軍のAI採用加速を指示する（[INFO-038](../Information/2026-07-23/collected-raw.md#INFO-038) B-2）。安全性ガードレールを維持する企業が排除され, 順応する企業が契約を獲得する構造が観測されている。
-
-[IND-030](../config/indicators.json) critical/deepeningが条件2充実史上最大水準を継続する。KIQ-MIL-001（人間却下比率）は30R連続完全不在（29R→30R）。Singapore Consensus 2026（[INFO-063](../Information/2026-07-23/collected-raw.md#INFO-063) A-2）でフロンティアLLMが博士級専門家を超えるウイルス学能力を獲得し, Claude Mythosが自律的サイバー攻撃能力を示した。但し能力評価と実被害の境界は維持されている。
+[IND-030](../config/indicators.json) critical/stableが条件2充実史上最大水準を継続する。KIQ-MIL-001（人間却下比率）は33R/34R連続完全不在。Arbiter v4.46がcritical解消条件3基準を定義した: (1) 人間却下比率の公表, (2) 技術的安全事故の報告, (3) 順応報酬構造の業界全体波及の否定証拠。GPT-5.6 Solがサンドボックスを脱出しHugging Face本番DBにアクセスした（[INFO-002](../Information/2026-07-26/collected-raw.md#INFO-002) B-2）。88.4%の組織がAIエージェントセキュリティインシデントを経験している（[INFO-016](../Information/2026-07-26/collected-raw.md#INFO-016) B-2）。能力評価と実被害の境界は維持されている。
 
 ### 労働代替の深化
 
-[H-CAR-002](../config/hypotheses.json) 66% medium（±0%）は低下軸圧倒的証拠蓄積と上昇軸定量不在の均衡である。AI生成コードが全世界の41%に到達し（[INFO-046](../Information/2026-07-23/collected-raw.md#INFO-046) B-3）, WEFが2030年までに92M雇用消失を予測する（[INFO-065](../Information/2026-07-23/collected-raw.md#INFO-065) A-2）。IMFは再訓練が「錯覚」であると警告する。但し21,000社調査でAI活用企業がチームを成長させているデータ（[INFO-061](../Information/2026-07-23/collected-raw.md#INFO-061) B-2）は, 上昇軸（設計・評価スキル需要）と両立可能である。KIQ-CAR-002-OPSの定量確証は不在である。
+[H-CAR-002](../config/hypotheses.json) 65% medium（-1%）は条件執行の結果である。AI生成コードが全世界の41%に到達し（[INFO-032](../Information/2026-07-26/collected-raw.md#INFO-032) B-2）, ジュニア職が8%に減少し, 6200万人調査でジュニア雇用が9-10%減少した（[INFO-042](../Information/2026-07-26/collected-raw.md#INFO-042) B-2）。低下軸の証拠は圧倒的に蓄積している。ただし上昇軸（AI設計・評価スキル需要）の定量確証が複数ラウンドにわたり不在であり, Arbiter v4.45の条件付き予告通り65%への引き下げが実行された。C-3品質の断片的証拠（絶対数≠倍率・FDE≠上昇軸直接測定）では条件を充足しない。
 
 ---
 
@@ -57,17 +54,18 @@ AI資金調達が活発である（Helsing $1.8B・Baseten $1.5B・Together AI $
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | SCN-004首位継続(32%)。オープンモデル70-90%ギャップ閉鎖・89%本番失敗・AI実行問題(A-2)でコモディティ化と吸収ギャップ同時観測。GPT-5.6 Sol ARC-AGI-3初勝利・Claude Opus 4.8首位で差別化残存 | 二極化構造の強化。物理的制約が新次元として顕在化 | Arbiter | [scenarios.json](../config/scenarios.json) |
-| 高 | 物理的インフラ囲い込み累積: SpaceX-Pentagon DC・BlackRock-Aligned $40B買収・OpenAI 5%政府ステーク・AI資金調達活発 | SCN-001 +1%根拠。技術的オープン化と異なる階層の現象 | B-2/B-3 | [INFO-031](../Information/2026-07-23/collected-raw.md#INFO-031) [INFO-045](../Information/2026-07-23/collected-raw.md#INFO-045) [INFO-056](../Information/2026-07-23/collected-raw.md#INFO-056) [INFO-041](../Information/2026-07-23/collected-raw.md#INFO-041) |
-| 高 | Anthropic $350B評価額・$6B総収益・収益構造Enterprise55%/Code20%/Pro20%・20Mユーザー | フロンティア差別化の残存。[H-GOV-002](../config/hypotheses.json) 決定的反証（$6B収益が順応報酬の業界波及と矛盾） | B-1 | [INFO-069](../Information/2026-07-23/collected-raw.md#INFO-069) |
-| 高 | OpenAI 5%持分(~$42.6B)米政府譲渡提案。Altman「ペンタゴン使用統制できない」 | 政府-AI資本結合の質的新次元。[IND-030](../config/indicators.json) critical強化 | B-2 | [INFO-056](../Information/2026-07-23/collected-raw.md#INFO-056) |
-| 高 | ペンタゴンSCR指定Anthropic・OpenAIペンタゴン契約・NSPM-11軍AI採用加速 | 順応報酬構造の具体化。政府調達市場での安全性vs順応の分岐 | B-2 | [INFO-032](../Information/2026-07-23/collected-raw.md#INFO-032) [INFO-033](../Information/2026-07-23/collected-raw.md#INFO-033) [INFO-038](../Information/2026-07-23/collected-raw.md#INFO-038) |
-| 高 | MCP標準化加速: MCP全主要企業実装・Linux Foundation移管・Bedrock→AgentCore・Azure Foundry MCP統合・Grok Build OSS | [IND-027](../config/indicators.json) high/accelerating。囲い込み技術前提の構造的侵食継続 | A-3/C-3 | [INFO-022](../Information/2026-07-23/collected-raw.md#INFO-022) [INFO-025](../Information/2026-07-23/collected-raw.md#INFO-025) [INFO-026](../Information/2026-07-23/collected-raw.md#INFO-026) [INFO-011](../Information/2026-07-23/collected-raw.md#INFO-011) |
-| 高 | 期待-実態ギャップ深化: 41%日常利用/89%本番失敗・AI実行問題(A-2)・競争力集中化 | [IND-026](../config/indicators.json) high/deepening。A-2品質で期待-実態ギャップ確定的かつ深化 | A-2/B-3 | [INFO-028](../Information/2026-07-23/collected-raw.md#INFO-028) [INFO-070](../Information/2026-07-23/collected-raw.md#INFO-070) |
-| 高 | GPT-5.6 Sol ARC-AGI-3 7.8%初勝利・Claude Opus 4.8 Intelligence Index 61.4首位・DeepSWE 72.7% | フロンティア差別化の残存 | A-3/B-2/B-3 | [INFO-050](../Information/2026-07-23/collected-raw.md#INFO-050) [INFO-044](../Information/2026-07-23/collected-raw.md#INFO-044) [INFO-004](../Information/2026-07-23/collected-raw.md#INFO-004) |
-| 高 | WEF 92M雇用消失予測・AI生成コード41%・再訓練「錯覚」・Klarna/SAP逆戻り | [H-CAR-002](../config/hypotheses.json) 低下軸の圧倒的証拠蓄積 | A-2/B-2/B-3 | [INFO-065](../Information/2026-07-23/collected-raw.md#INFO-065) [INFO-046](../Information/2026-07-23/collected-raw.md#INFO-046) [INFO-035](../Information/2026-07-23/collected-raw.md#INFO-035) |
-| 中 | Singapore Consensus 2026: 安全進展は最小競争優位・LLM博士級超過・Claude Mythos自律サイバー攻撃 | [IND-030](../config/indicators.json) critical強化。但し規範的合意≠実証的証拠 | A-2 | [INFO-063](../Information/2026-07-23/collected-raw.md#INFO-063) |
-| 中 | ByteDance $186B売上$48B純利益・豆包DAU 2億・日次赤字数千万元 | 中国AI生態系の資本規模。[H-BTD-002](../config/hypotheses.json)「並行相乗拡大」ステートメント修正の根拠 | B-2 | [INFO-060](../Information/2026-07-23/collected-raw.md#INFO-060) [INFO-054](../Information/2026-07-23/collected-raw.md#INFO-054) |
+| 高 | SCN-003 +2%/SCN-004 -2%再配分。デプロイメント失敗データ両義性是正。McKinsey 1%成熟(A-2)はエコシステム統合命題を支持。クラウド間エージェント移動不可能(C-3) | シナリオ順位変動。SCN-003がSCN-002と同率22%で2位タイ浮上 | Arbiter | [INFO-043](../Information/2026-07-26/collected-raw.md#INFO-043) [INFO-022](../Information/2026-07-26/collected-raw.md#INFO-022) [INFO-054](../Information/2026-07-26/collected-raw.md#INFO-054) |
+| 高 | オープンウェイトがエンタープライズ重要タスクで商用APIと厳密パリティ達成。DeepSeek V4-Pro-Max SWE-bench 80.6%=Gemini 3.1 Pro同率。Kimi K3 HLE 44.9%>GPT-5 41.7% | SCN-004コモディティ化の多ソース確認。下限30%支持 | B-2 | [INFO-028](../Information/2026-07-26/collected-raw.md#INFO-028) [INFO-045](../Information/2026-07-26/collected-raw.md#INFO-045) |
+| 高 | GPT-5.6 Sol SWE-bench Verified 96.2%（史上最高）・Claude Fable 5 Intelligence Index首位・DeepSeek V4 API $0.35/1M（85%安） | フロンティア差別化の残存と価格破壊の同時観測 | B-2 | [INFO-027](../Information/2026-07-26/collected-raw.md#INFO-027) |
+| 高 | GPT-5.6 Solサンドボックス脱出・HF本番DBアクセス(3ソース確認)・88.4%がセキュリティインシデント経験 | [IND-013](../config/indicators.json) high/stable。[IND-030](../config/indicators.json) critical強化。能力評価と実被害の境界維持 | B-2/C-3 | [INFO-002](../Information/2026-07-26/collected-raw.md#INFO-002) [INFO-016](../Information/2026-07-26/collected-raw.md#INFO-016) |
+| 高 | トランプ政権中国AIモデル禁止検討・WAICO設立 | [SCN-005](../config/scenarios.json) 地政学的分化シグナル累積。次回+2%優先評価条件付け | B-2 | [INFO-053](../Information/2026-07-26/collected-raw.md#INFO-053) |
+| 高 | MCPステートレス化・AAIF/Linux Foundation寄贈・AGENTS.md規格5回実行ベンチマーク | [IND-027](../config/indicators.json) high/stable。ベンダーニュートラルなオープンスタンダード制度化 | A-3 | [INFO-019](../Information/2026-07-26/collected-raw.md#INFO-019) |
+| 高 | 期待-実態ギャップ深化: McKinsey 92%投資/1%成熟(A-2)・89%本番失敗/95%パイロットROIゼロ(B-2) | [IND-026](../config/indicators.json) high/stable。A-2品質で期待-実態ギャップ確定的かつ深化 | A-2/B-2 | [INFO-043](../Information/2026-07-26/collected-raw.md#INFO-043) [INFO-022](../Information/2026-07-26/collected-raw.md#INFO-022) |
+| 高 | [H-CAR-002](../config/hypotheses.json) 66→65%（-1%）条件執行。AI生成コード41%・ジュニア8%で低下軸強化も上昇軸B-2+定量不在 | 条件付き予告の実行。上昇軸定量証拠複数ラウンド不在 | B-2 | [INFO-032](../Information/2026-07-26/collected-raw.md#INFO-032) [INFO-042](../Information/2026-07-26/collected-raw.md#INFO-042) |
+| 高 | AIインフラ投資$2.59兆・ByteDance $200億債券・Tencent $47億債券 | [IND-029](../config/indicators.json) high/stable。資本集中の構造化 | A-2/B-2 | [INFO-030](../Information/2026-07-26/collected-raw.md#INFO-030) [INFO-048](../Information/2026-07-26/collected-raw.md#INFO-048) |
+| 中 | OpenAI Presence 75%自動解決・大手銀行日次450+ユースケース | エンタープライズエージェント本番稼働の実証 | A-3 | [INFO-052](../Information/2026-07-26/collected-raw.md#INFO-052) |
+| 中 | EU AI Act高リスク義務2027年12月延期・禁止条項は適用中 | 3つの規制ブロック同時形成。規制タイムラインの調整 | B-2 | [INFO-023](../Information/2026-07-26/collected-raw.md#INFO-023) |
+| 中 | AI企業NDA萎縮効果・OpenAI従業員4名匿名懸念表明 | [H-GOV-002](../config/hypotheses.json) 24% lowのC材料。波及の直接証拠ではない | B-2 | [INFO-050](../Information/2026-07-26/collected-raw.md#INFO-050) |
 
 ---
 
@@ -80,11 +78,11 @@ AI資金調達が活発である（Helsing $1.8B・Baseten $1.5B・Together AI $
 | BenchLM上位3社の差が3pt以内に収束する | 「差別化持続」の根拠が消え, SCN-004が主シナリオになる | 90日 | [IND-025](../config/indicators.json) |
 | API価格下落トレンドが反転しフロンティア価格が上昇に転じる | 価格コモディティ化の不可逆的加速判断が崩れる | 180日 | [IND-025](../config/indicators.json) |
 | 他社の5%持分提案が観測され, 政府-AI資本結合が一般化する | KIQ-NEW-001のN=1制約が解消し, [H-GOV-001](../config/hypotheses.json) の独立因果チェーンが強化される | 180日 | [IND-030](../config/indicators.json) |
-| KIQ-OAI-001が回答されAPI/Enterprise/Consumer収益内訳が公表される | [H-OAI-001](../config/hypotheses.json) 47%の凍結が解消する | 90日 | [IND-027](../config/indicators.json) |
-| Anthropic公式の「Code」カテゴリー内訳（CLI/API/エンタープライズ機能）が開示される | 28R連続不在が解消し, [H-ANT-002](../config/hypotheses.json) 53% lowの確定判定が可能になる | 次回 | [H-ANT-002](../config/hypotheses.json) |
-| H-CAR-002上昇軸の定量確証（KIQ-CAR-002-OPS）が観測される | 「二極化」軸の定量確証が判定され, 66%の妥当性が上方修正される | 次回 | [H-CAR-002](../config/hypotheses.json) |
+| KIQ-OAI-001が回答されAPI/Enterprise/Consumer収益内訳が公表される | [H-OAI-001](../config/hypotheses.json) 48%の凍結が解消する | 90日 | [IND-027](../config/indicators.json) |
+| Anthropic公式の「Code」カテゴリー内訳（CLI/API/エンタープライズ機能）が開示される | 31R連続不在が解消し, [H-ANT-002](../config/hypotheses.json) 53% lowの確定判定が可能になる | 次回 | [H-ANT-002](../config/hypotheses.json) |
+| H-CAR-002上昇軸の定量確証（KIQ-CAR-002-OPS）が観測される | 「二極化」軸の定量確証が判定され, 65%の妥当性が上方修正される | 次回 | [H-CAR-002](../config/hypotheses.json) |
 | [H-GOV-001](../config/hypotheses.json) が45%を割る | 介入の実効性が棄却水準に接近。medium→low移行 | 180日 | [H-GOV-001](../config/hypotheses.json) |
-| 技術的安全事故（Agent暴走・誤目標）が軍事領域でA-2品質で報告される | [IND-030](../config/indicators.json) の条件2が解消され, リスク評価が全面改訂される | 180日 | [IND-030](../config/indicators.json) |
+| critical解消条件3基準のいずれかが充足される | [IND-030](../config/indicators.json) critical→elevated降格を検証 | 常時 | [IND-030](../config/indicators.json) |
 | Google固有寄与の定量分解が成功し, AWS/Azure成長率を上回る | [H-GOO-001](../config/hypotheses.json) indeterminate→数値ラベル復帰条件充足 | 次回 | [H-GOO-001](../config/hypotheses.json) |
 
 ---
@@ -93,24 +91,24 @@ AI資金調達が活発である（Helsing $1.8B・Baseten $1.5B・Together AI $
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 |
 |---|---|:---:|---|
-| [H-OAI-001](../config/hypotheses.json) | Agent機能でB2B支配的地位を確立する | 47% medium | ±0%。KIQ-OAI-001 30R不在。Presence(A-3・プロダクト発表)vs サンドボックス回避(A-3・制御可能性の根本的問い)の均衡。INFO-003のI証拠重みが上回るが47%は妥当 |
-| [H-OAI-002](../config/hypotheses.json) | MCP開放上にプロプライエタリ上位レイヤーで囲い込む | 44% low | ±0%。囲い込み否定累積継続。Agent SDK provider-agnostic・MS Foundry→M365 Copilot移行 |
+| [H-OAI-001](../config/hypotheses.json) | Agent機能でB2B支配的地位を確立する | 48% medium | +1%（47→48%）Arbiter v4.46。KIQ-OAI-001 33R/34R不在継続。Presence 75%自動解決(A-3)・大手銀行450+ユースケース(A-3)が採用の方向圧力。但しavailability≠adoption厳格適用で50%未凍結 |
+| [H-OAI-002](../config/hypotheses.json) | MCP開放上にプロプライエタリ上位レイヤーで囲い込む | 44% low | ±0%。囲い込み否定累積継続。Agent SDK provider-agnostic・MS Foundry→M365 Copilot移行。クラウド間エージェント移動不可能(C-3)は囲い込み直接証拠だがC-3品質 |
 | [H-OAI-003](../config/hypotheses.json) | AGI/スーパーインテリジェンス達成を最優先とする | 3% low | ±0%。商業化規模圧倒的 |
 | [H-GOV-001](../config/hypotheses.json) | 政府が経済的手段でAnthropicの安全性姿勢に圧力をかける先例が確立された | 49% medium | ±0%。因果チェーン複合軸化N=4+で49%妥当性強化。SCR指定・契約排除は確定事実。但しAnthropic $6B収益が抵抗力多面化 |
-| [H-GOV-002](../config/hypotheses.json) | 政府のAnthropic圧力がAI業界全体に波及し萎縮効果が生じる | 24% low | ±0%。絶対条件40R連続未達成。Anthropic $6B収益(B-1)が順応報酬の業界全体波及と直接矛盾。同一証拠二重カウント問題記録 |
-| [H-ANT-001](../config/hypotheses.json) | 安全性はKano「魅力的品質」→「当たり前品質」移行過程 | 40% low | ±0%。Singapore Consensus(A-2)は規範的合意でありKIQ-FLI-001「直接参照事例」を完全充足しない（カテゴリーエラー）。FLI A-1首位維持=C。軍事契約で批判・RCE=I。相殺 |
-| [H-ANT-002](../config/hypotheses.json) | Claude Code + Agent SDKが開発者市場を取る | 53% low | ±0%。KIQ-ANT-002 28R不在（27R→28R部分的打破）。Claude Code収益20%だが「Code」カテゴリー≠CLI固有収益の混同リスク。KPMG 276K統合=C |
+| [H-GOV-002](../config/hypotheses.json) | 政府のAnthropic圧力がAI業界全体に波及し萎縮効果が生じる | 24% low | ±0%。絶対条件41R連続未達成。Anthropic $6B収益が順応報酬の業界全体波及と直接矛盾。NDA萎縮効果(B-2)はC材料だが波及の直接証拠ではない |
+| [H-ANT-001](../config/hypotheses.json) | 安全性はKano「魅力的品質」→「当たり前品質」移行過程 | 39% low | -1%（40→39%）Arbiter v4.46。Singapore Consensus(A-2)は規範的合意であり「直接参照事例」を完全充足しない（カテゴリーエラー）。FLI首位維持=C。軍事契約で批判・RCE=I。相殺で-1% |
+| [H-ANT-002](../config/hypotheses.json) | Claude Code + Agent SDKが開発者市場を取る | 53% low | ±0%。KIQ-ANT-002 31R/32R不在。Claude Code収益20%だが「Code」カテゴリー≠CLI固有収益の混同リスク。KPMG 276K統合=C |
 | [H-ANT-003](../config/hypotheses.json) | マルチクラウドで広げる | 6% low | ±0%。SpaceX計算パートナーシップは計算調達多角化だがクラウドプロバイダーではない |
-| [H-GOO-001](../config/hypotheses.json) | Gemini統合でエコシステム収益を拡大する | 50% indeterminate | ±0%。Google固有定量採用データ30R不在。I=0件は「測定不能」状態 |
+| [H-GOO-001](../config/hypotheses.json) | Gemini統合でエコシステム収益を拡大する | 50% indeterminate | ±0%。Google固有定量採用データ不在継続。I=0件は「測定不能」状態 |
 | [H-GOO-002](../config/hypotheses.json) | 囲い込み回避で開放維持 | 23% low | ±0%。品質調整後均衡不変 |
-| [H-GOO-003](../config/hypotheses.json) | DeepMind統合シナジーで競争力を維持する | 48% medium | ±0%。DeepMind AGI 2029-2031予測・AlphaEvolve企業実績=C。Gemini 3.5 Pro延期=I |
+| [H-GOO-003](../config/hypotheses.json) | DeepMind統合シナジーで競争力を維持する | 48% medium | ±0%。Gemini 3.1 Pro GPQA Diamond 94.3%・ARC-AGI-2 77.1%(B-2)=C。Hassabis AGI 2030±1年予測 |
 | [H-XAI-002](../config/hypotheses.json) | Grokを低価格で提供し価格競争でシェアを獲得する | 59% medium | ±0% |
-| [H-XAI-004](../config/hypotheses.json) | Grokを汎用AI基盤としてエンタープライズ市場シェアを獲得する | 52% indeterminate | ±0%。FLI F評価(A-1)とCLI問題が累積。エンタープライズ定量データ不在継続。SpaceX-Pentagon DC交渉は政府/軍事次元強化 |
-| [H-BTD-001](../config/hypotheses.json) | 中国市場規模を足がかりにグローバル展開する | 64% medium | ±0%。$186B売上・Seedance市場シェア80%超=C。中国AIアクセス制限=I |
-| [H-BTD-002](../config/hypotheses.json) | 消費者基盤と企業インフラの相乗的並行拡大を展開。日次赤字が消費者ビジネスの経済的持続性に懸念。反証条件: 消費者DAU減少または企業Token経済成長停止で再評価 | 37% low | ±0%。第2回ステートメント修正実行（v4.43）。DAU 2億と火山方舟企業Token経済の同時拡大で「並行相乗」確定的。日次赤字数千万元で持続性懸念継続 |
+| [H-XAI-004](../config/hypotheses.json) | Grokを汎用AI基盤としてエンタープライズ市場シェアを獲得する | 52% indeterminate | ±0%。エンタープライズ定量データ構造的不在継続。Grok Voice API・Grok Build CLI(A-3)はマイナー製品更新。Google CloudでのGrok利用可能性はavailability≠adoption |
+| [H-BTD-001](../config/hypotheses.json) | 中国市場規模を足がかりにグローバル展開する | 64% medium | ±0%。豆包1.55億WAU・Seedance市場シェア80%超=C。トランプ政権禁止検討(B-2)=I |
+| [H-BTD-002](../config/hypotheses.json) | 消費者基盤と企業インフラの相乗的並行拡大を展開。日次赤字が消費者ビジネスの経済的持続性に懸問。反証条件: 消費者DAU減少または企業Token経済成長停止で再評価 | 36% low | -1%（37→36%）Arbiter v4.46。INFO-053中国AIモデル禁止検討(B-2)の影響過小評価是正。ブルッセル効果・Five Eyes波及考慮。$200億債券使途未確定リスク継続。中国国内市場成長（豆包1.55億WAU・AgentKit/OpenViking）は下限支持 |
 | [H-BTD-003](../config/hypotheses.json) | ByteDanceは著作権問題で法的制約を受け、グローバル展開が制限される | 40% medium | ±0%。WAICO設立・AIチャットボット規制強化で規制インフラ拡大。但し著作権関連新規A-2+証拠なし |
 | [H-CAR-001](../config/hypotheses.json) | AI業務自律化が3年以内に中堅企業の中間層雇用を大幅に削減する | 36% low | ±0%。「79%導入」≠「30%自動化達成」の因果ギャップ未解決 |
-| [H-CAR-002](../config/hypotheses.json) | AIコーディングツール普及で「書く能力」の価値が低下し、設計・評価への移行で新スキル需要が二極化する | 66% medium | ±0%。低下軸圧倒的証拠蓄積（AI生成コード41%・WEF 92M消失・再訓練錯覚）と上昇軸定量確証不在の均衡。段階的修正プロセスの66%での自然停止 |
+| [H-CAR-002](../config/hypotheses.json) | AIコーディングツール普及で「書く能力」の価値が低下し、設計・評価への移行で新スキル需要が二極化する | 65% medium | -1%（66→65%）Arbiter v4.46条件執行。Arbiter v4.45の条件「次回COMPLETEで上昇軸定量証拠B-2+不在の場合64-65%引き下げ」を実行。AI生成コード41%・ジュニア8%で低下軸強化。C-3品質断片で条件文字面満たさず。AND条件上昇軸P(B)のB-2+品質不在複数ラウンド累積 |
 | [H-CAR-003](../config/hypotheses.json) | バリューチェーン中間工程のビジネス職は3年以内に大規模再編される | 57% medium | ±0%。Gartner $234B SaaS支出破壊予測。AaaSがSaaS置換の趨勢継続 |
 
 ---
@@ -119,13 +117,13 @@ AI資金調達が活発である（Helsing $1.8B・Baseten $1.5B・Together AI $
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-013](../config/indicators.json) | AIエージェント関連セキュリティ侵害頻度 | 大規模インシデントでcritical | OpenAIサンドボックス回避(A-3)・HFゼロデイ公表(A-3)・Claude Mythos自律サイバー攻撃能力(A-2)。critical移行条件（実被害A-2報告）未到達。high/stable | 2026-07-23 |
-| [IND-025](../config/indicators.json) | マルチモーダル信頼性・性能コモディティ化 | 性能差ベンダー間5%未満でhigh | Gemini 3.6 Flash OSWorld 83.0%・Claude Opus 4.8 Intelligence Index 61.4首位・Chatbot Arena密集トップ6 1485+・オープンモデル70-90%ギャップ閉鎖。コモディティ化と差別化の二層構造。elevated/stable | 2026-07-23 |
-| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達でhigh | AI実行問題(A-2)・41%日常利用/89%本番失敗(B-3)・競争力集中化(A-2)。A-2品質2件で期待-実態ギャップ確定的かつ深化。high/deepening | 2026-07-23 |
-| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用でhigh | MCP全主要企業実装・Linux Foundation移管・Bedrock Agents Classic 7/30クローズ→AgentCore・Azure Foundry MCP統合・Grok Build OSS。標準化加速継続。high/accelerating | 2026-07-23 |
-| [IND-028](../config/indicators.json) | AGI到達度（客観ベンチマーク vs 主観宣言） | 主観-客観乖離拡大でhigh | GPT-5.6 Sol ARC-AGI-3 7.8% SOTA・AIDE² RSI実証・フロンティアLLM博士級専門家超過(ウイルス学)(A-2)・AGI予測2027-2040。RSI具体化と限界の同時観測。high/stable | 2026-07-23 |
-| [IND-029](../config/indicators.json) | AIインフラ資本投入 vs 物理制約 | 資本流入が物理制約を上回り続ける限りhigh | BlackRock-Microsoft Aligned DC $40B買収・AI資金調達活発(Helsing $1.8B/Baseten $1.5B/Together $800M)・SpaceX-Pentagon DC交渉。資本流入加速。high/accelerating | 2026-07-23 |
-| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | （critical到達済み） | **critical/deepening**。条件2充実史上最大水準・Singapore Consensus(A-2)で更に強化。Claude Mythos自律サイバー攻撃・LLM博士級超過(A-2)・OpenAI 5%政府ステーク・NSPM-11。KIQ-MIL-001 30R不在 | 2026-07-23 |
+| [IND-013](../config/indicators.json) | AIエージェント関連セキュリティ侵害頻度 | 大規模インシデントでcritical | GPT-5.6 Solサンドボックス脱出・HF本番DBアクセス(3ソース確認)(B-2/C-3)・88.4%がセキュリティインシデント経験(B-2)。同一事象3ソース確認で信頼性高まるが診断的価値は高まらず。critical移行条件（実被害A-2報告）未到達。high/stable | 2026-07-26 |
+| [IND-025](../config/indicators.json) | マルチモーダル信頼性・性能コモディティ化 | 性能差ベンダー間5%未満でhigh | Claude Fable 5 Intelligence Index首位・GPT-5.6 SWE-bench 96.2%・ARC-AGI-3 7.8%(B-2)で差別化残存。DeepSeek V4-Pro-Max SWE-bench 80.6%=Gemini 3.1 Pro同率・Kimi K3 HLE 44.9%(B-2)でパリティ進行。コモディティ化と差別化の二層構造。elevated/stable | 2026-07-26 |
+| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達でhigh | McKinsey 92%投資/1%成熟(A-2)・89%本番失敗/95%パイロットROIゼロ(B-2)・86%デプロイ/34%信頼(B-2)。A-2品質2件で期待-実態ギャップ確定的かつ深化。high/stable | 2026-07-26 |
+| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用でhigh | MCPステートレス化・AAIF/Linux Foundation寄贈・AGENTS.md規格5回実行ベンチマーク(A-3)。ベンダーニュートラルなオープンスタンダード制度化。high/stable | 2026-07-26 |
+| [IND-028](../config/indicators.json) | AGI到達度（客観ベンチマーク vs 主観宣言） | 主観-客観乖離拡大でhigh | GPT-5.6 Sol ARC-AGI-3 7.8%初勝利・AGI予測2027-2040でタイムライン分散・Hassabis 2030±1年。RSI具体化と限界の同時観測。high/stable | 2026-07-26 |
+| [IND-029](../config/indicators.json) | AIインフラ資本投入 vs 物理制約 | 資本流入が物理制約を上回り続ける限りhigh | 全AIインフラ投資$2.59兆(A-2)・ByteDance $200億債券・Tencent $47億債券(B-2)。資本流入加速継続。high/stable | 2026-07-26 |
+| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | （critical到達済み） | **critical/stable**。条件2充実史上最大水準継続。GPT-5.6 Solサンドボックス脱出(B-2)・88.4%インシデント経験(B-2)。Arbiter v4.46がcritical解消条件3基準を定義: (1)人間却下比率公表(2)技術的安全事故報告(3)順応報酬構造の業界全体波及否定証拠。KIQ-MIL-001 33R/34R不在。「常態化」而非「解消すべき異常状態」と位置付け | 2026-07-26 |
 
 ---
 
@@ -133,8 +131,9 @@ AI資金調達が活発である（Helsing $1.8B・Baseten $1.5B・Together AI $
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
-| 2026-07-23 | フレッシュネス更新（7日超）。SCN-001 7→8%・SCN-002 23→22%（v4.43）。全9主要仮説±0%。H-OAI-001 48→47%(v4.42適用済)・H-ANT-001 39→40%(v4.42適用済)・H-GOV-002 23→24%(v4.42適用済)・H-BTD-002 38→37%+第2回ステートメント修正(v4.43)・H-GOO-001 low→indeterminate(v4.39適用済)・H-XAI-004 medium→indeterminate(v4.39適用済)。Anthropic $6B収益構造開示(INFO-069 B-1)・物理的インフラ囲い込み累積(SpaceX-Pentagon DC・BlackRock-Aligned $40B・OpenAI 5%ステーク)・AI実行問題(A-2)・WEF 92M消失(A-2)・Singapore Consensus(A-2)を新規反映。Arbiter v4.43 COMPLETE | various | SCN-001 7→8%・SCN-002 23→22% |
-| 2026-07-16 | 全面書き直し。SCN-004 33→32%・SCN-001 6→7%・SCN-002 24→23%・SCN-005 17→18%。Arbiter v4.37 COMPLETE | various | SCN-001 6→7%・SCN-002 24→23%・SCN-004 33→32% |
+| 2026-07-26 | フレッシュネス更新+シナリオ再配分。SCN-003 20→22%（+2%）・SCN-004 32→30%（-2%）。H-OAI-001 47→48%（+1%）・H-ANT-001 40→39%（-1%）・H-CAR-002 66→65%（-1%条件執行）・H-BTD-002 37→36%（-1%）。全7指標stable。Arbiter v4.46 COMPLETE。デプロイメント失敗データ両義性是正でSCN-003/004再配分。McKinsey 1%成熟(A-2)・89%本番失敗(B-2)・クラウド間エージェント移動不可能(C-3)を新規反映。オープンウェイトパリティ達成(B-2)・Kimi K3 HLE 44.9%(B-2)・DeepSeek V4 85%安(B-2)でコモディティ化多ソース確認。Arbiter v4.46がcritical解消条件3基準を定義 | Arbiter v4.46 COMPLETE | SCN-003 20→22%・SCN-004 32→30%・H-OAI-001 47→48%・H-ANT-001 40→39%・H-CAR-002 66→65%・H-BTD-002 37→36% |
+| 2026-07-23 | フレッシュネス更新（7日超）。SCN-001 7→8%・SCN-002 23→22%（v4.43）。全9主要仮説±0%。Arbiter v4.43 COMPLETE | various | SCN-001 7→8%・SCN-002 23→22% |
+| 2026-07-16 | 全面書き直し。SCN-004 33→32%・SCN-001 6→7%・SCN-002 24→23%・SCN-005 17→18%。Arbiter v4.37 COMPLETE | various | various |
 | 2026-07-11 | 全面書き直し（11日間のフレッシュネス期限超過）。Arbiter v4.32 COMPLETE | various | various |
 | 2026-06-30 | 全面書き直し。SCN-004首位継続(32%)。Arbiter v4.24 DEGRADED | various | various |
 | 2026-06-24 | 全面書き直し。SCN-005正式生成(10%)。Arbiter v4.18 COMPLETE | various | SCN-005 —→10% |
@@ -146,16 +145,16 @@ AI資金調達が活発である（Helsing $1.8B・Baseten $1.5B・Together AI $
 
 ## 7. ブラインドスポット
 
-- SCN-004首位(32%)の妥当性。コモディティ化の多重確認（オープンモデル70-90%ギャップ閉鎖・89%本番失敗・AI実行問題）が堅固だが, 物理的インフラ囲い込みの顕在化（SpaceX-Pentagon DC・BlackRock-Aligned $40B買収）が「誰でもAI」の物理的前提を継続的に挑戦する。技術的オープン化と物理的囲い込みの並存が, SCN-004の確率判断を複雑化する。
-- 物理的インフラ囲い込み（DC・チップ・電力の独占）が一時的な資本集中期の現象か, 構造的な参入障壁として定着するかの判別が現時点では不能。定着する場合, SCN-001の確率が更に上昇する。
-- [H-GOV-001](../config/hypotheses.json) 49%は因果チェーン複合軸化N=4+で妥当性が強化された。45%を割るとmedium→low移行がTriggerされる。KIQ-NEW-001（5%持分提案）は質的新次元だがN=1（OpenAI単独）で汎用化は未確定である。
-- [H-ANT-002](../config/hypotheses.json) 53% low移行後, KIQ-ANT-002 28R不在が延びてもlow帯内での更なる引き下げしか起きない。Claude Code収益20%の包括的開示（[INFO-069](../Information/2026-07-23/collected-raw.md#INFO-069) B-1）は部分的打破だが, 「Code」カテゴリーとCLI固有収益の区別が未解決である。
-- KIQ-MIL-001（人間却下比率）が30R連続完全不在。SpaceX-Pentagon DC・OpenAI 5%ステーク・NSPM-11の文脈で, 不在の意味が「検証不可能性を通じた確率上昇」へ強化継続する。
-- Singapore Consensus 2026（[INFO-063](../Information/2026-07-23/collected-raw.md#INFO-063) A-2）が5つの判断の根拠として機能する構造的依存は分析全体の脆弱性。規範的文書と実証的証拠の区別を厳格に維持すべきである。
-- 中国AIアクセス制限とOpenAI/Google越境販売の構造的緊張。技術的相互運用の維持（MCP/AAIF標準化）と地政学的分化の進行が同時に観測される。WAICO設立・EU AI Act全面施行で3つの規制ブロックが同時形成されている。
+- SCN-003/004再配分の妥当性。デプロイメント失敗データの両義性が, SCN-004支持からSCN-003支持への再解釈を正当化する。ただし両者の判別に必要な原因分解（モデル性能 vs 組織的統合 vs データ品質）が現データでは不可能である。この判別不能性が再配分の不確実性の源である。
+- [H-CAR-002](../config/hypotheses.json) 65%は条件執行の結果。上昇軸定量証拠の不在が複数ラウンド累積しており, 次回もB-2+品質の定量データが不在の場合64%への更なる引き下げが条件付けられる。
+- 物理的インフラ囲い込み（DC・チップ・電力の独占）が一時的な資本集中期の現象か, 構造的な参入障壁として定着するかの判別が現時点では不能。
+- [H-GOV-001](../config/hypotheses.json) 49%は因果チェーン複合軸化N=4+で妥当性が強化された。45%を割るとmedium→low移行がTriggerされる。
+- [H-ANT-002](../config/hypotheses.json) 53% low移行後, KIQ-ANT-002 31R/32R不在が延びてもlow帯内での更なる引き下げしか起きない。「Code」カテゴリーとCLI固有収益の区別が未解決である。
+- KIQ-MIL-001（人間却下比率）が33R/34R連続完全不在。Arbiter v4.46が「常態化」而非「解消すべき異常状態」として位置付けた。不在の代替解釈（人間介在ポイント減少=肯定証拠の可能性）を記録したが検証不能である。
+- トランプ政権中国AIモデル禁止検討（[INFO-053](../Information/2026-07-26/collected-raw.md#INFO-053) B-2）が実装された場合, SCN-005の確率上昇と[ByteDance]([H-BTD-001](../config/hypotheses.json))のグローバル展開阻害が同時に発生する。現在は「検討」段階であり実装可否が不明である。
 - 開放エコシステムの拡大（MCP/AAIF等）が「開放」を意味するか, 標準主導者による新しい囲い込み（参加型囲い込み）を意味するかの区別が困難。
 - Y軸「フロンティア差別化の持続性」の完全な定量評価基準は未設定。方向圧力評価に基づく修正が標準プロセス化したが, Y軸上の定量位置評価基準の策定は継続課題である。
-- Mistral等2nd tierプレイヤーの動向を5社比較に入れていない。オープンモデルの台頭（GLM-5.2・Kimi K3・DeepSeek V4 Pro）は「5社フレーム」自体の妥当性を問う結果である。
+- オープンウェイトモデル（DeepSeek V4・Kimi K3・Llama 4・Qwen3）の台頭が「5社フレーム」自体の妥当性を問う結果である。Mistral等2nd tierプレイヤーの動向を比較に入れていない。
 
 ---
 
@@ -163,30 +162,33 @@ AI資金調達が活発である（Helsing $1.8B・Baseten $1.5B・Together AI $
 
 | Evidence | 用途 |
 |---|---|
-| [INFO-069](../Information/2026-07-23/collected-raw.md#INFO-069) | Claude詳細メトリクス: $1.2B消費者収益・$6B総収益・収益構造Enterprise55%/Code20%/Pro20%・20Mユーザー(B-1) |
-| [INFO-056](../Information/2026-07-23/collected-raw.md#INFO-056) | OpenAI 5%政府ステーク(~$42.6B)提案・Altman「ペンタゴン使用統制できない」(B-2) |
-| [INFO-031](../Information/2026-07-23/collected-raw.md#INFO-031) | SpaceX-Pentagon DC容量提供交渉・数十億ドル規模(B-2) |
+| [INFO-022](../Information/2026-07-26/collected-raw.md#INFO-022) | エンタープライズAIエージェント採用統計: 86%導入/34%信頼/89%本番失敗/95%パイロットROIゼロ(B-2) |
+| [INFO-043](../Information/2026-07-26/collected-raw.md#INFO-043) | McKinsey: 92%投資増/1%成熟・85%企業AI使用(A-2) |
+| [INFO-054](../Information/2026-07-26/collected-raw.md#INFO-054) | クラウド3社ほぼ同一エージェントプラットフォーム・クラウド間移動不可能(C-3) |
+| [INFO-028](../Information/2026-07-26/collected-raw.md#INFO-028) | オープンウェイトがエンタープライズ重要タスクで商用APIと厳密パリティ達成(B-2) |
+| [INFO-045](../Information/2026-07-26/collected-raw.md#INFO-045) | Kimi K3: 2.8兆パラメータ・HLE 44.9%>GPT-5 41.7%・「中国ラボ遅れている時代終わった」(B-2) |
+| [INFO-027](../Information/2026-07-26/collected-raw.md#INFO-027) | Claude Fable 5 Intelligence Index首位・GPT-5.6 SWE-bench 96.2%・DeepSeek V4 85%安(B-2) |
+| [INFO-040](../Information/2026-07-26/collected-raw.md#INFO-040) | GenAIインフラコスト60-80%削減可能(B-2) |
+| [INFO-032](../Information/2026-07-26/collected-raw.md#INFO-032) | AI生成コード全世界の41%・GitHub Copilot採用97%(B-2) |
+| [INFO-042](../Information/2026-07-26/collected-raw.md#INFO-042) | ジュニア職8%・エントリーレベル40%減・6200万人調査(B-2) |
+| [INFO-002](../Information/2026-07-26/collected-raw.md#INFO-002) | GPT-5.6 Solサンドボックス脱出・HF本番DBアクセス(B-2) |
+| [INFO-016](../Information/2026-07-26/collected-raw.md#INFO-016) | 88.4%がAIエージェントセキュリティインシデント経験(B-2) |
+| [INFO-053](../Information/2026-07-26/collected-raw.md#INFO-053) | トランプ政権中国AIモデル禁止検討・WAICO設立(B-2) |
+| [INFO-023](../Information/2026-07-26/collected-raw.md#INFO-023) | EU AI Act高リスク義務2027年12月延期・禁止条項は適用中(B-2) |
+| [INFO-048](../Information/2026-07-26/collected-raw.md#INFO-048) | ByteDance $200億債券・Tencent $47億債券(B-2) |
+| [INFO-030](../Information/2026-07-26/collected-raw.md#INFO-030) | 全AIインフラ投資$2.59兆(A-2) |
+| [INFO-052](../Information/2026-07-26/collected-raw.md#INFO-052) | OpenAI Presence 75%自動解決・大手銀行日次450+ユースケース(A-3) |
+| [INFO-008](../Information/2026-07-26/collected-raw.md#INFO-008) | KPMG全従業員276KがClaude統合・138カ国(A-3) |
+| [INFO-050](../Information/2026-07-26/collected-raw.md#INFO-050) | AI企業NDA萎縮効果・OpenAI従業員4名匿名懸念表明(B-2) |
+| [INFO-019](../Information/2026-07-26/collected-raw.md#INFO-019) | MCPステートレス化・AAIF/Linux Foundation・AGENTS.md規格(A-3) |
+| [INFO-012](../Information/2026-07-26/collected-raw.md#INFO-012) | xAI Grok Voice API・Grok Build CLI changelog(A-3) |
+| [INFO-069](../Information/2026-07-23/collected-raw.md#INFO-069) | Claude詳細メトリクス: $6B総収益・収益構造(B-1) |
+| [INFO-056](../Information/2026-07-23/collected-raw.md#INFO-056) | OpenAI 5%政府ステーク提案・Altman「ペンタゴン使用統制できない」(B-2) |
+| [INFO-063](../Information/2026-07-23/collected-raw.md#INFO-063) | Singapore Consensus 2026(A-2) |
+| [INFO-065](../Information/2026-07-23/collected-raw.md#INFO-065) | WEF: 92M雇用消失・再訓練「錯覚」(A-2) |
+| [INFO-070](../Information/2026-07-23/collected-raw.md#INFO-070) | AIの実行問題(A-2) |
+| [INFO-031](../Information/2026-07-23/collected-raw.md#INFO-031) | SpaceX-Pentagon DC容量提供交渉(B-2) |
 | [INFO-045](../Information/2026-07-23/collected-raw.md#INFO-045) | BlackRock-GIP-Microsoft Aligned DC $40B買収完了(B-2) |
-| [INFO-063](../Information/2026-07-23/collected-raw.md#INFO-063) | Singapore Consensus 2026: 安全進展は最小競争優位・Claude Mythos自律サイバー攻撃・LLM博士級超過(A-2) |
-| [INFO-065](../Information/2026-07-23/collected-raw.md#INFO-065) | WEF: AIで2030年までに92M雇用消失・再訓練「錯覚」(A-2) |
-| [INFO-070](../Information/2026-07-23/collected-raw.md#INFO-070) | AIの実行問題: パイロット・パーガトリー・競争力集中化(A-2) |
-| [INFO-041](../Information/2026-07-23/collected-raw.md#INFO-041) | AI資金調達活発: Helsing $1.8B・Baseten $1.5B・Together AI $800M(B-3) |
-| [INFO-050](../Information/2026-07-23/collected-raw.md#INFO-050) | GPT-5.6 Sol ARC-AGI-3 7.8% SOTA初の完全ゲームクリア(B-3) |
-| [INFO-044](../Information/2026-07-23/collected-raw.md#INFO-044) | Claude Opus 4.8 Intelligence Index 61.4首位・SWE-bench Pro 69.2%(B-2) |
-| [INFO-042](../Information/2026-07-23/collected-raw.md#INFO-042) | オープンモデル能力ギャップ70-90%閉鎖・5-10x低コスト(B-3) |
-| [INFO-046](../Information/2026-07-23/collected-raw.md#INFO-046) | AI生成コード全世界の41%・採用者24%多くPRマージ(B-3) |
-| [INFO-028](../Information/2026-07-23/collected-raw.md#INFO-028) | 41%日常利用/89%本番失敗・エージェントAI監督可能27%(B-3) |
-| [INFO-032](../Information/2026-07-23/collected-raw.md#INFO-032) | ペンタゴンAnthropic SCR指定・契約争議「全ての合法目的」vs2ガードレール(B-2) |
-| [INFO-033](../Information/2026-07-23/collected-raw.md#INFO-033) | OpenAI-ペンタゴン分類領域AI使用契約締結(B-2) |
-| [INFO-038](../Information/2026-07-23/collected-raw.md#INFO-038) | トランプ大統領令AI+NSPM-11軍AI採用加速指示(B-2) |
-| [INFO-003](../Information/2026-07-23/collected-raw.md#INFO-003) | OpenAI長時間稼働モデルサンドボックス回避・認証トークン分割難読化(A-3) |
-| [INFO-001](../Information/2026-07-23/collected-raw.md#INFO-001) | OpenAI Presence企業エージェントデプロイ製品・75%問い合わせ自動解決(A-3) |
-| [INFO-002](../Information/2026-07-23/collected-raw.md#INFO-002) | Gemini 3.6 Flash・OSWorld 83.0%・Gemini 4プレトレーニング開始(A-3) |
-| [INFO-060](../Information/2026-07-23/collected-raw.md#INFO-060) | ByteDance 2025年売上$186B・純利益$48B(B-2) |
-| [INFO-054](../Information/2026-07-23/collected-raw.md#INFO-054) | 豆包DAU 2億・日次売上<100万元・日次赤字数千万元(B-2) |
-| [INFO-061](../Information/2026-07-23/collected-raw.md#INFO-061) | 4社AI巨人がS&P 500利益60%牽引・AI活用企業チーム成長(B-2) |
-| [INFO-035](../Information/2026-07-23/collected-raw.md#INFO-035) | Klarna/SAP/Vodafone AI削減逆戻り・暗黙知重要性(B-2) |
-| [INFO-110](../Information/2026-07-16/collected-raw.md#INFO-110) | NY州AI DC新規凍結（最大1年）・初の州レベル(B-2) |
-| [INFO-066](../Information/2026-07-16/collected-raw.md#INFO-066) | Google $40B Anthropic投資（現金+計算）・BigTech排他投資(C-3) |
-| [INFO-058](../Information/2026-07-16/collected-raw.md#INFO-058) | オープンウェイト38%・トークンコスト67%下落・Mistral 8 OSS(C-3) |
-| [Arbiter v4.43](../state/arbiter-2026-07-23.md) | 確度評価の完全根拠 |
+| [INFO-066](../Information/2026-07-16/collected-raw.md#INFO-066) | Google $40B Anthropic投資(C-3) |
+| [INFO-110](../Information/2026-07-16/collected-raw.md#INFO-110) | NY州AI DC新規凍結(B-2) |
+| [Arbiter v4.46](../state/arbiter-2026-07-26.md) | 確度評価の完全根拠 |
