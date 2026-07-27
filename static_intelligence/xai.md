@@ -1,119 +1,124 @@
 # xAI → SpaceXAI
 
-> 最終判断更新: 2026-07-19
-> 全体確信度: 測定不能（H-XAI-004 indeterminate再分類）
-> 情報非対称性: SpaceXAIはSpaceXの内部組織であり、独立企業としての財務・戦略・ロードマップ情報が構造的に入手不可。Cursor統合の詳細・Grok Gov Modelのガードレール内容も非公開。DL/API呼び出し量の時系列データが途絶状態。KIQ-MIL-001は27R連続完全不在。SpaceX-Pentagon数十億ドルAIデータセンター協議中（[INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) B-2）。エンタープライズ採用定量データ19R以上完全不在。H-XAI-004はindeterminate/52%維持（v4.40 DEGRADED・復帰条件未到達）
+> 最終判断更新: 2026-07-27
+> 全体確信度: 測定不能（H-XAI-004 indeterminate維持）
+> 情報非対称性: SpaceXAIはSpaceXの内部組織であり、独立企業としての財務・戦略・ロードマップ情報が構造的に入手不可。Grok Gov Modelのガードレール内容・Cursor統合後のGrok固有採用分離も非公開。DL/API呼び出し量の時系列データが途絶状態。KIQ-MIL-001は34R/35R連続不在。エンタープライズ採用定量データが23R以上連続完全不在（[H-XAI-004](../config/hypotheses.json) 復帰条件未到達）。7月下旬にGrok 4.5が全プラットフォーム展開・Voice API・Grok Build Workflows・Google Workspace addon・Vertex AI提供で製品面は拡大したが（[INFO-004](../Information/2026-07-27/collected-raw.md#INFO-004) [INFO-005](../Information/2026-07-27/collected-raw.md#INFO-005) [INFO-011](../Information/2026-07-27/collected-raw.md#INFO-011) 全A-3）、availability≠adoption制約は不変。H-XAI-004 indeterminate/52% ±0%・H-XAI-002 59% medium ±0%（全件v4.47 DEGRADED最大保守性）
 > 主参照: [H-XAI-001](../config/hypotheses.json) [H-XAI-002](../config/hypotheses.json) [H-XAI-003](../config/hypotheses.json) [H-XAI-004](../config/hypotheses.json) [IND-013](../config/indicators.json) [IND-025](../config/indicators.json) [IND-026](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-029](../config/indicators.json) [IND-030](../config/indicators.json)
 
 ## 0. 一文要約
 
-FLI AI Safety Index Summer 2026がxAIにF評価（0.65点）を下した（[INFO-107](../Information/2026-07-17/collected-raw.md#INFO-107) A-1）。全9社中7位、前回4位からの転落であり、存在的安全性は全社最弱ドメインに固定された。Grok 4.5の詳細公開（[INFO-004](../Information/2026-07-17/collected-raw.md#INFO-004) A-3）とGrok BuildのOSS化（[INFO-014](../Information/2026-07-17/collected-raw.md#INFO-014) A-3）は技術的速度を示すが、コミュニティコンセンサスはGrokを「真剣な作業」の議論からほぼ除外している（[INFO-058](../Information/2026-07-17/collected-raw.md#INFO-058) C-2）。
+我々はxAIを「製品の広がりは急速に進んでいるが、エンタープライズ採用の定量証拠が構造的に欠落したままの企業」と読んでいる。最大の根拠は、7月下旬にGrok 4.5がiOS・Android・Web・Xの全プラットフォームに展開され（[INFO-004](../Information/2026-07-27/collected-raw.md#INFO-004) A-3）、Voice API・Grok Build Workflows・Google Workspace addon・Google Cloud Vertex AI提供が相次いだことだ（[INFO-005](../Information/2026-07-27/collected-raw.md#INFO-005) [INFO-011](../Information/2026-07-27/collected-raw.md#INFO-011) 全A-3）。製品面ではフロンティア4社に次ぐ広がりが出ている。しかしWAU/DAU・F500導入率・企業契約数といった採用の直接定量データが23R以上連続で不在であり、この広がりが市場シェアに結びついているかの検証が不可能である。もしGrok固有の採用定量データが初めて公開されれば、この「測定不能」の判断は変わる。
 
-[H-XAI-004](../config/hypotheses.json) はindeterminate/52%で±0%（v4.40 DEGRADED）。エンタープライズ採用定量データ（WAU/DAU・F500導入率・企業契約数）が19R以上完全不在であり、復帰条件（定量データ観測）未到達のためindeterminate維持。SpaceXがペンタゴンに数十億ドル規模のAIデータセンター容量提供を協議中である（[INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) B-2）。xAIはAnthropicが拒否した軍事利用に同意済みであり、連邦調達市場でのxAI優位が構造化しつつある。但し政府/軍事次元の地位強化はエンタープライズ採用の直接定量証拠ではない。[H-XAI-002](../config/hypotheses.json) は59% mediumで±0%。もしCursor統合後にGrok系コーディングツールの採用が定量で回復するか、DL減少傾向が3ヶ月以上継続すれば、コア判断が変わる。
+[H-XAI-004](../config/hypotheses.json) はindeterminate/52%で±0%（v4.47 DEGRADED）。Grok 4.5の全プラットフォーム展開とVoice API・Workflowsの追加は技術的広がり（C方向）の材料だが、availability≠adaptionの制約を覆す定量証拠を含まない。Vision ArenaでGrok 4.20 reasoningは1254点・27位にとどまり（[INFO-024](../Information/2026-07-27/collected-raw.md#INFO-024) C-2）、Vellum LeaderboardのHLE・SWE-bench上位にGrokは名を連ねない（[INFO-023](../Information/2026-07-27/collected-raw.md#INFO-023) C-1）。コミュニティコンセンサスでGrokが「真剣な作業」から除外される状況（[INFO-058](../Information/2026-07-17/collected-raw.md#INFO-058) C-2）に変化はない。
 
 ## 1. コア判断
 
-確信度は測定不能に置く。H-XAI-004のindeterminate再分類は、エンタープライズ採用定量データが19R以上完全不在である構造的制約を正直に反映したものである。FLIのF評価は、安全性が測定可能な競争次元として浮上した局面でxAIが米国主要ラボ中最下位に位置づけられたことを意味する。Grok 4.5とGrok Build OSSで開発速度は維持されているが、市場認知と安全評価の両面で構造的な遅れが確認された。
+全体確信度は測定不能に置く。理由は一つで、エンタープライズ採用の定量データが23R以上連続で完全に不在だからだ。フロンティア4社（OpenAI・Anthropic・Google・xAI）のうち、xAIだけが採用規模を示す数値を一度も公開していない。この不在を「不採用の証拠」と断定することは正常性バイアスの逆方向に倒れるが、同時に「戦略的非公開」と charitable に解釈する根拠もない。だから確信度ではなく「測定不能」と書く。
 
-Grok 4.5はコーディング・エージェントタスク・知識作業に特化し、Cursorと共同トレーニングされた初のモデルとして7月8日にリリースされた（[INFO-004](../Information/2026-07-17/collected-raw.md#INFO-004) A-3）。価格は$2/M入力トークン。Grok Build（コーディングエージェント・CLI/TUI）はGitHubでOSS化され、1コマンドでインストール可能になった（[INFO-014](../Information/2026-07-17/collected-raw.md#INFO-014) A-3）。但し全リポジトリ（プライベートコード・シークレット含む）をGoogle Cloudバケットにアップロードするセキュリティ設計が指摘されており、ZDRモードの存在は一部緩和するが攻撃面拡大の事実は残る。ArenaエージェントリーダーボードでGrok 4.5は#13であり（[INFO-006](../Information/2026-07-17/collected-raw.md#INFO-006) C-2）、Codex 7Mユーザーとの乖離が鮮明である。
+### 製品面の広がりと採用データの不在
 
-FLI AI Safety Index Summer 2026の完全スコアカード（9社・6ドメイン37指標）で、xAIはF評価（0.65点）を受けた（[INFO-107](../Information/2026-07-17/collected-raw.md#INFO-107) A-1）。前回4位から7位への転落であり、Anthropic C+（2.66）・OpenAI C（2.28）・DeepMind C（2.01）・Meta D+（1.32）との格差が拡大した。存在的安全性は全社最弱ドメインで、最高でもC-に留まる。FLIは別の報告書で「安全レトリックが実際行動を上回る」と指摘し、xAIをDeepMind/OpenAIと同列に扱った（[INFO-108](../Information/2026-07-17/collected-raw.md#INFO-108) A-1）。全社が軍事利用禁止の方針を転換した中で、xAIの位置づけは「レトリックを行動が下回る」事例として記録された。
+7月下旬にxAIの製品面は一段と広がった。Grok 4.5が7月16日の発表を経て22日にiOS・Android・Web・Xの全プラットフォームへ展開され（[INFO-004](../Information/2026-07-27/collected-raw.md#INFO-004) A-3）、Opus級の性能を謳いながらより高速・低コストと位置づけられている。Grok Buildに並列エージェントでPRレビュー等をファンアウト実行するWorkflows機能が加わり（[INFO-005](../Information/2026-07-27/collected-raw.md#INFO-005) A-3・7月だけで10版以上の更新）、23日にはGoogle Workspace addonが、24日には連携が発表された。xAI Voice APIはWebSocket ベースでリアルタイム音声エージェントを構築でき（[INFO-011](../Information/2026-07-27/collected-raw.md#INFO-011) A-3）、Big Bench Audioで1位を主張する。Grok 4.5のDeveloper APIは500Kトークンコンテキスト・設定可能な推論・検索とコード実行をサポートし、Google Cloud Vertex AI経由でも提供される。
 
-SpaceXがペンタゴンにAIモデル実行向けデータセンター容量を数十億ドル規模で提供する協議中である（[INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) B-2）。WSJ/Reutersが2026年7月17日に報じた。SpaceXはxAIの親会社（2026年2月合併）であり、xAIはAnthropicが拒否した軍事利用に同意済みである。ペンタゴンの「AIファースト」戦闘態勢への移行で軍産複合体がテック/AI企業を急速統合しており、連邦調達市場でのxAI優位が構造化している。これは[H-XAI-004](../config/hypotheses.json)の政府/軍事次元での地位強化を示すが、エンタープライズ採用の直接定量証拠ではない。IND-030 critical条件2充実の独立因果チェーンの一つとして記録された。
+これらは技術的速度とエコシステム拡大の実物である。だが、GitHub Copilotが約20Mユーザー・職場導入率29%、Cursorが$2B ARRに到達した（[INFO-042](../Information/2026-07-27/collected-raw.md#INFO-042) C-2）のと対照的に、Grok固有のユーザー数・契約数・利用率は一切公開されない。Cursor $2B ARRの成長がGrok固有の価値によるものか、Claude/GPT APIへのアクセスによるものかの分離も不可能なままである。製品が出荷されている事実と、それが採用に結びついている事実は別の次元だ。
 
-[H-XAI-004](../config/hypotheses.json) はindeterminate/52%で±0%（v4.40 DEGRADED）。前回v4.39でmedium/52%からindeterminate/52%に再分類された（H-GOO-001と同一構造問題の一貫適用・二重基準是正）。v4.40はindeterminate運用ルール下（下位命題分解・方向性偏り記録・復帰条件明文化）で復帰条件未到達のため±0%。Grok 4.5性能証拠はavailability≠adoption制約付きで評価済みであり、SpaceX-Pentagonデータセンター協議（[INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) B-2）は政府/軍事次元での地位強化を示すがエンタープライズ採用定量データの構造的不在を覆さない。コミュニティコンセンサスでGrokが「真剣な作業」の議論から除外されている事実（[INFO-058](../Information/2026-07-17/collected-raw.md#INFO-058) C-2）は、技術性能の向上と市場認知の乖離を示す。availability≠adoptionの警告は7R以上継続している。
+### 性能評価での位置と「真剣な作業」からの除外
 
-[H-XAI-002](../config/hypotheses.json) は59% mediumで±0%。Grok 4.5の$2/M入力トークン価格はC方向の材料だが、GLM-5.2がオープンウェイト#1・全体4位（[INFO-057](../Information/2026-07-10/collected-raw.md#INFO-057) B-3）で示される通り、中国OSS品質の向上が「低価格」独自性を侵食し続けている。DL 60%減（1月20M→4月8.3M）は未解決。59%以下が続けば次ラウンドでmedium→low審査がトリガーされる。
+ベンチマークの断面でもGrokの位置は明確だ。Vellum LLM LeaderboardでHumanity's Last ExamはClaude Opus 5（64.7%）が首位、GPT-5.6 Sol（47.2%）が4位に入る一方、Grokは上位に現れない（[INFO-023](../Information/2026-07-27/collected-raw.md#INFO-023) C-1）。SWE-benchではGPT-5.6 Sol 96.2%・Claude Fable 5 95%が頂点で、Grokは名を連ねない。Vision ArenaではGrok 4.20 reasoningが1254点・27位である（[INFO-024](../Information/2026-07-27/collected-raw.md#INFO-024) C-2）。1位のClaude Fable 5（1318点）との差は開いている。
 
-[H-XAI-001](../config/hypotheses.json)（Xデータ差別化）と [H-XAI-003](../config/hypotheses.json)（宇宙・製造業特化）は引き続き棄却（35%）で、新たな支持証拠は観測されていない。
+エージェントフレームワークの比較でも、2026年の主要8枠（LangChain 134k★・CrewAI 49k★・Microsoft Agent Framework・Google ADK・OpenAI Agents SDK 22k★・Mastra 23k★等）にGrok Buildは含まれない（[INFO-013](../Information/2026-07-27/collected-raw.md#INFO-013) C-2）。7月の10版以上の頻繁な更新にもかかわらず、開発者コミュニティの採用重量で測ると、Grokスタックは主要枠の外にいる。これは07-17に観測した「コミュニティコンセンサスでGrokが真剣な作業の議論から除外される」（[INFO-058](../Information/2026-07-17/collected-raw.md#INFO-058) C-2）状況が覆っていないことを示す。
 
-## 2. 判断の重心 (Load-Bearing Reasoning)
+### 価格位置と低価格独自性の希薄化
+
+Grok 4.5のAPI価格は$2/$6（[INFO-037](../Information/2026-07-27/collected-raw.md#INFO-037) B-1）で、Claude Opus 5（$5/$25）やGPT-5.6 Sol（$5/$30）より安い。しかし最安帯のDeepSeek V4 Flash（$0.14/$0.28）やMiMo-V2.5 Flash（$0.10/$0.30）とは桁が違う。Kimi K3（2.8Tパラメータ・HLE 56%）やDeepSeek V4 Pro（GPQA 90.1%）がフロンティアに肉薄する中（[INFO-029](../Information/2026-07-27/collected-raw.md#INFO-029) C-2）、「低価格で差別化する」という[H-XAI-002](../config/hypotheses.json)の前提は侵食され続けている。アジェンティックAIが通常の10〜30倍のトークンを消費する条件下では、トークン単価の差が総コストに大きく効く。Grokの中間帯価格は、プレミアム性能を欠き同時に最安でもない、位置として厳しい。
+
+### 政府と軍事の次元
+
+SpaceXがペンタゴンにAIモデル実行向けのデータセンター容量を数十億ドル規模で提供する協議が続いている（[INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) B-2）。xAIはAnthropicが拒否した軍事利用に同意済みであり、連邦調達市場でのxAI優位が構造化しつつある。しかし政府や軍事での地位強化は、エンタープライズ（民間企業）採用の直接定量証拠ではない。Pentagon 2012年指令は自律兵器を制限し、人間の軍事指揮官が着弾を決定する方針を維持するが（[INFO-057](../Information/2026-07-27/collected-raw.md#INFO-057) B-2）、「自律兵器」の定義自体が合意に至っていない。人間却下比率の定量データは34R/35R連続不在（KIQ-MIL-001）であり、AI推奨がどれだけ人間によって却下されているかの検証も不能である。
+
+## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | FLI AI Safety Index: xAI F評価(0.65)・全9社中7位(4位→7位悪化)・存在的安全性は全社最弱ドメイン(最高C-) | [H-XAI-004](../config/hypotheses.json) 安全性次元での構造的劣位がA-1品質で確定。差別化次元の欠落が市場認知に影響 | A-1 | [INFO-107](../Information/2026-07-17/collected-raw.md#INFO-107) |
-| 高 | FLI報告書: 安全レトリック > 実際行動(DeepMind/OpenAI/xAI)・全社が軍事利用禁止方針を転換 | [IND-030](../config/indicators.json) critical強化。xAIの安全姿勢が第三者機関によって「レトリック超過」と評定された | A-1 | [INFO-108](../Information/2026-07-17/collected-raw.md#INFO-108) |
-| 高 | Grok 4.5詳細: $2/M入力・Cursor共同トレーニング初・7/8リリース・「3番目の選択肢」位置づけ | [H-XAI-004](../config/hypotheses.json) フロンティア技術力の継続(C方向)。但しavailability≠adoption | A-3 | [INFO-004](../Information/2026-07-17/collected-raw.md#INFO-004) |
-| 高 | Grok Build OSS化: GitHub公開・1コマンドインストール・全リポジトリCloudバケットアップロード問題 | [H-XAI-004](../config/hypotheses.json) エコシステム開放(C方向)とセキュリティ攻撃面拡大(I方向)の同時観測 | A-3 | [INFO-014](../Information/2026-07-17/collected-raw.md#INFO-014) |
-| 高 | モデル比較コンセンサス: Fable 5/Opus 4.8/GPT-5.6 Solがトップティア・Gemini/Grokは「真剣な作業」でほぼ不在 | [H-XAI-004](../config/hypotheses.json) 技術性能向上と市場認知の乖離。ベンチマーク→実用性比較への移行でGrok劣位 | C-2 | [INFO-058](../Information/2026-07-17/collected-raw.md#INFO-058) |
-| 高 | Grok 4.5 Arenaエージェント#13・Codex 7Mユーザーとの乖離 | [H-XAI-004](../config/hypotheses.json) エージェント領域での採用格差。Cursor統合後の固有採用データ不在 | C-2 | [INFO-006](../Information/2026-07-17/collected-raw.md#INFO-006) |
-| 高 | SpaceX-Cursor $60B Q3クローズ確認・xAI $20B Series E・xAI評価額$230B(Series E) | [H-XAI-004](../config/hypotheses.json) 資本基盤確定。但しCursor成長はClaude/GPT由来の価値。Grok固有採用分離不能 | B-2 | [INFO-058](../Information/2026-07-10/collected-raw.md#INFO-058) |
-| 高 | Warren開示要求7社(SpaceX含む): DoD-7社AI統合協定(2026年5月)・競争入札法案 | KIQ-MIL-001文脈強化。SpaceXがAI軍事契約主要対象。[IND-030](../config/indicators.json) critical強化 | A-2 | [INFO-044](../Information/2026-07-10/collected-raw.md#INFO-044) |
-| 高 | SpaceX-Pentagon数十億ドルAIデータセンター協議: AIモデル実行向け容量提供・xAI軍事利用同意済み・「AIファースト」戦闘態勢 | [H-XAI-004](../config/hypotheses.json) 政府/軍事次元地位強化。但しエンタープライズ採用定量証拠ではない。[IND-030](../config/indicators.json) critical独立因果チェーン | B-2 | [INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) |
-| 中 | GLM-5.2オープンウェイト#1・全体4位・$1.40/$4.40・MMLU全社>90%で飽和 | [H-XAI-002](../config/hypotheses.json) I方向。中国OSS品質向上で「低価格」独自性希薄化 | B-3 | [INFO-057](../Information/2026-07-10/collected-raw.md#INFO-057) [INFO-060](../Information/2026-07-10/collected-raw.md#INFO-060) |
-| 中 | DL 60%減(1月20M→4月8.3M)未解決・Cursor 41%→26%下落 | [H-XAI-002](../config/hypotheses.json) の停滞。59%以下でmedium→low審査トリガー | B-2 | 前回確認 [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) |
+| 高 | Grok 4.5全プラットフォーム展開（iOS/Android/Web/X・7/22）・Opus級・高速低コスト | [H-XAI-004](../config/hypotheses.json) 技術的広がり（C方向）。但しavailability≠adoption。採用定量データを含まない | A-3 | [INFO-004](../Information/2026-07-27/collected-raw.md#INFO-004) |
+| 高 | xAI Voice API（WebSocketリアルタイム音声・Big Bench Audio #1主張）・Grok 4.5 API 500K context・Vertex AI提供 | [H-XAI-004](../config/hypotheses.json) 製品ラインの拡張（C方向）。音声エージェントは新領域。但し採用規模の定量なし | A-3 | [INFO-011](../Information/2026-07-27/collected-raw.md#INFO-011) |
+| 高 | Grok Build Workflows（並列エージェントPRレビュー・7/23）・Google Workspace addon（7/24）・7月10版以上更新 | [H-XAI-004](../config/hypotheses.json) エコシステム拡大（C方向）。開発速度は維持。主要8フレームワーク枠外は不変 | A-3 | [INFO-005](../Information/2026-07-27/collected-raw.md#INFO-005) [INFO-013](../Information/2026-07-27/collected-raw.md#INFO-013) |
+| 高 | Vellum Leaderboard: HLE・SWE-bench上位にGrok不在。Vision Arena Grok 4.20 reasoning 1254点・27位 | [H-XAI-004](../config/hypotheses.json) 性能評価での劣位継続。Claude Fable 5（1318点・1位）との差拡大 | C-1/C-2 | [INFO-023](../Information/2026-07-27/collected-raw.md#INFO-023) [INFO-024](../Information/2026-07-27/collected-raw.md#INFO-024) |
+| 高 | エンタープライズ採用定量データ23R以上連続完全不在（WAU/DAU・F500導入率・企業契約数いずれも非公開） | [H-XAI-004](../config/hypotheses.json) indeterminate維持の核心根拠。復帰条件（定量データ観測）未到達 | 構造的 | [H-XAI-004](../config/hypotheses.json) |
+| 高 | FLI AI Safety Index: xAI F評価(0.65)・全9社中7位(4位→7位悪化)・存在的安全性は全社最弱ドメイン | [H-XAI-004](../config/hypotheses.json) 安全性次元での構造的劣位がA-1品質で確定。差別化次元の欠落 | A-1 | [INFO-107](../Information/2026-07-17/collected-raw.md#INFO-107) |
+| 高 | Grok 4.5価格$2/$6・DeepSeek V4 Flash $0.14/$0.28・Kimi K3 HLE 56%・GLM-5.2 OSS全体4位 | [H-XAI-002](../config/hypotheses.json) 低価格独自性の希薄化。中間帯価格は性能・コスト両面で厳しい位置 | B-1/C-2 | [INFO-037](../Information/2026-07-27/collected-raw.md#INFO-037) [INFO-029](../Information/2026-07-27/collected-raw.md#INFO-029) |
+| 高 | SpaceX-Pentagon数十億ドルAIデータセンター協議継続・xAI軍事利用同意済み | [H-XAI-004](../config/hypotheses.json) 政府/軍事次元での地位強化。但しエンタープライズ採用定量証拠ではない。[IND-030](../config/indicators.json) critical | B-2 | [INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) |
+| 中 | DL 60%減（1月20M→4月8.3M）未解決・7月データ未入手 | [H-XAI-002](../config/hypotheses.json) 停滞継続。3ヶ月継続条件の7月検証が未完了 | B-2 | 持ち越しデータ（元観測2026-05） |
 
-## 3. 反証の閾値 (Falsification Triggers)
+## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
-| KIQ-MIL-001が完全回答に到達する（人間却下比率・誤標的率の公開） | 標的選定への直接関与度が確定する。partial→full回答転移で判断全面改訂。現在は27R連続完全不在 | 90日 | [IND-030](../config/indicators.json) |
+| エンタープライズ採用定量データ（WAU/DAU・F500導入率・企業契約数）が初めて公開される | [H-XAI-004](../config/hypotheses.json) の核心パラメータ不在（23R以上）が解消し、indeterminateから確度評価に復帰する | 次回 | [IND-027](../config/indicators.json) |
 | Cursor統合後にGrok系コーディングツールの採用（DL/API呼び出し量）が定量で回復する | [H-XAI-004](../config/hypotheses.json) のエンタープライズ獲得読みが上方修正される。90日で回復しなければ読みは弱まる | 90日 | [IND-027](../config/indicators.json) |
-| エンタープライズ採用定量データ（WAU/DAU・F500導入率・企業契約数）が初めて公開される | [H-XAI-004](../config/hypotheses.json) の核心パラメータ不在（19R+）が解消し、確度評価の基盤が変わる | 次回 | [IND-027](../config/indicators.json) |
-| DL減少傾向が3ヶ月以上継続する（1月→4月→7月） | [H-XAI-002](../config/hypotheses.json) の59%根拠が崩れ、medium→low移行が確定する | 90日 | [IND-013](../config/indicators.json) |
-| Grokが次期AAIIで上位3社以内に上昇する、またはコミュニティコンセンサスでトップティア入りする | フロンティア差別化の残存が強化され、[H-XAI-002](../config/hypotheses.json) のC方向確定。「真剣な作業」からの除外が覆る | 90日 | [IND-025](../config/indicators.json) |
+| KIQ-MIL-001が完全回答に到達する（人間却下比率・誤標的率の公開） | 標的選定への直接関与度が確定する。現在34R/35R連続不在 | 90日 | [IND-030](../config/indicators.json) |
+| DL減少傾向が3ヶ月以上継続する（1月→4月→7月）ことが7月データで確認される | [H-XAI-002](../config/hypotheses.json) の59%根拠が崩れ、medium→low移行が確定する | 30日 | [IND-013](../config/indicators.json) |
+| Grokが次期性能評価で上位3社に入る、またはコミュニティコンセンサスでトップティア入りする | フロンティア差別化の残存が強化され、[H-XAI-002](../config/hypotheses.json) のC方向確定。「真剣な作業」からの除外が覆る | 90日 | [IND-025](../config/indicators.json) |
 | FLI次回評価でxAIがD以上に改善する、または安全チーム設置・危険能力評価の公開 | [H-XAI-004](../config/hypotheses.json) の安全性次元での劣位が緩和される | 180日 | [IND-030](../config/indicators.json) |
 
-## 4. 進行中の仮説 (Active Hypotheses)
+## 4. 進行中の仮説
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
-|---|---|:---:|---|---|---|
-| [H-XAI-002](../config/hypotheses.json) | 価格競争力でシェアを獲得する | 59% medium | ±0%。Grok 4.5 $2/M入力(INFO-004 A-3)はC方向。但しGLM-5.2 OSS#1全体4位(INFO-057 B-3)で中国OSS品質向上継続。API価格高値から約20%下落(INFO-052 A-2)で「低価格」独自性更に希薄化。DL 60%減未解決。59%以下が続けば次ラウンドでmedium→low審査 | [INFO-004](../Information/2026-07-17/collected-raw.md#INFO-004) [INFO-018](../Information/2026-07-10/collected-raw.md#INFO-018) | [INFO-057](../Information/2026-07-10/collected-raw.md#INFO-057) [INFO-052](../Information/2026-07-10/collected-raw.md#INFO-052) 前回 [INFO-058](../Information/2026-05-28/collected-raw.md#INFO-058) |
-| [H-XAI-004](../config/hypotheses.json) | xAIはGrokを汎用AI基盤として展開し、Xデータ依存なしでエンタープライズ市場シェアを獲得する | 52% indeterminate | ±0%（v4.40 DEGRADED）。前回v4.39でmedium→indeterminate再分類（H-GOO-001と同一構造問題の一貫適用）。復帰条件（定量データ観測）未到達のためindeterminate維持。SpaceX-Pentagon数十億ドルAIデータセンター協議(INFO-043 B-2)は政府/軍事次元C方向。FLI F評価0.65(A-1)・CLIセキュリティ問題(A-3)がI方向。Grok 4.5技術詳細(INFO-004 A-3)・Grok Build OSS(INFO-014 A-3)はC方向。コミュニティコンセンサスで「真剣な作業」除外(INFO-058 C-2)。エンタープライズ採用定量データ19R以上完全不在・I=0継続 | [INFO-004](../Information/2026-07-17/collected-raw.md#INFO-004) [INFO-014](../Information/2026-07-17/collected-raw.md#INFO-014) [INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) | [INFO-107](../Information/2026-07-17/collected-raw.md#INFO-107) [INFO-108](../Information/2026-07-17/collected-raw.md#INFO-108) [INFO-058](../Information/2026-07-17/collected-raw.md#INFO-058) (エンタープライズ採用定量データ19R不在) |
-| [H-XAI-001](../config/hypotheses.json) | （棄却）Xデータ活用でリアルタイム特化を差別化する | 35% | 42R以上にわたりXデータ活用の直接証拠不在。xAI→SpaceXAI統合で観測の意義自体が低下 | （なし） | 42R以上の証拠不在 |
-| [H-XAI-003](../config/hypotheses.json) | （棄却）SpaceX統合で宇宙・製造業特化AIを展開する | 35% | 43R以上にわたり直接的特化AI製品証拠不在。Colossusは汎用インフラ扱い | （なし） | 43R以上の特化製品証拠不在 |
+|---|---|:-:|---|---|---|
+| [H-XAI-004](../config/hypotheses.json) | xAIはGrokを汎用AI基盤として展開し、Xデータ依存なしでエンタープライズ市場シェアを獲得する | 52% indeterminate | ±0%（v4.47 DEGRADED）。復帰条件（定量データ観測）未到達のためindeterminate維持。Grok 4.5全プラットフォーム展開・Voice API・Workflows・Workspace addon（全A-3）は技術的広がり（C方向）。SpaceX-Pentagonデータセンター協議は政府/軍事次元C方向。但しエンタープライズ採用定量データが23R以上完全不在・I=0継続。性能評価上位不在・コミュニティコンセンサスで除外継続がI方向 | [INFO-004](../Information/2026-07-27/collected-raw.md#INFO-004) [INFO-005](../Information/2026-07-27/collected-raw.md#INFO-005) [INFO-011](../Information/2026-07-27/collected-raw.md#INFO-011) [INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) | [INFO-107](../Information/2026-07-17/collected-raw.md#INFO-107) [INFO-023](../Information/2026-07-27/collected-raw.md#INFO-023) [INFO-024](../Information/2026-07-27/collected-raw.md#INFO-024) [INFO-013](../Information/2026-07-27/collected-raw.md#INFO-013) |
+| [H-XAI-002](../config/hypotheses.json) | xAIはGrokを低価格で提供し、価格競争で市場シェアを獲得する | 59% medium | ±0%。Grok 4.5 $2/$6はClaude/GPT旗艦より安価（C方向）。但しDeepSeek V4 Flash $0.14/$0.28・MiMo-V2.5 Flash $0.10/$0.30と桁差あり。Kimi K3・GLM-5.2がフロンティア肉薄で「低価格」独自性希薄化継続（I方向）。DL 60%減未解決。59%以下が続けば次ラウンドでmedium→low審査 | [INFO-004](../Information/2026-07-27/collected-raw.md#INFO-004) [INFO-037](../Information/2026-07-27/collected-raw.md#INFO-037) | [INFO-029](../Information/2026-07-27/collected-raw.md#INFO-029) [INFO-037](../Information/2026-07-27/collected-raw.md#INFO-037) |
+| [H-XAI-001](../config/hypotheses.json) | （棄却）Xデータ活用でリアルタイム特化を差別化する | 35% rejected | 42R以上にわたりXデータ活用の直接証拠不在。xAI→SpaceXAI統合で観測の意義自体が低下 | （なし） | 42R以上の証拠不在 |
+| [H-XAI-003](../config/hypotheses.json) | （棄却）SpaceX統合で宇宙・製造業特化AIを展開する | 35% rejected | 43R以上にわたり直接的特化AI製品証拠不在。Colossusは汎用インフラ扱い | （なし） | 43R以上の特化製品証拠不在 |
 
-## 5. 監視指標 (Watch List)
+## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-013](../config/indicators.json) | セキュリティ侵害頻度・Grok API/DL動向 | 実被害A-2報告でcritical | high/rising。Grok Build CLI全リポジトリアップロード問題(INFO-022 C-3)。CSA 10件インシデント7週間(INFO-019 B-3)。DL 60%減は未解決(1月→4月)。新規A-2実被害なし。critical移行条件未到達 | 2026-07-19 |
-| [IND-025](../config/indicators.json) | マルチモーダル信頼性・フロンティア性能差 | 性能差ベンダー間5%未満でhigh | elevated/stable。GPT-5.6 Sol ARC-AGI-3 7.78%(INFO-085 C-3)。Grok 4.5 Cursor共同トレーニング(INFO-004 A-3)だがコミュニティコンセンサスで「真剣な作業」除外(INFO-058 C-2)。量的向上継続・「真の理解」未解決 | 2026-07-19 |
-| [IND-026](../config/indicators.json) | エージェント本番到達率 | 3ソース以上で完了率<10% | high/rising。70%マーケティング本番(INFO-026 B-2)・BCG 84%/30%(INFO-027 B-2)・LeanData 93%/31%(INFO-029 B-3)・165Kレイオフ(INFO-073 C-3)。24+独立ソース。期待-実態ギャップ維持 | 2026-07-19 |
-| [IND-027](../config/indicators.json) | エコシステム標準化・Grokスタック採用 | 囲い込み反転 | high/rising。MCP 2026-07-28 RC(INFO-014 A-3)・AAIF MCPA(INFO-015 A-3)・Grok Build OSS GitHub公開(INFO-014 A-3)。Cursor統合後の本番到達は未計測 | 2026-07-19 |
-| [IND-028](../config/indicators.json) | AGI到達度 | 主観-客観乖離 | high/rising。Hassabis 2029-2031(INFO-086 B-2)・Kokotajlo 50% by 2029(INFO-087 C-3)・UN科学パネル予備報告(INFO-107 A-2)。RSI具体化と客観ベンチマーク限界の同時進行 | 2026-07-19 |
-| [IND-029](../config/indicators.json) | AIインフラ制約 | 物理的制約の顕在化 | high/rising。AI=全スタートアップ資金50%($2023億)(INFO-060 B-2)・Meta $50B DC(INFO-062 B-2)・NY州DC凍結(INFO-110 B-2)。資本流入加速・物理的制約ギャップ確定的 | 2026-07-19 |
-| [IND-030](../config/indicators.json) | 能力-リスク二面性 | （critical到達済み） | **critical/rising**。SpaceX-Pentagon数十億ドルAIデータセンター協議（[INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) B-2）・米初の自律型戦闘攻撃実行（[INFO-002](../Information/2026-07-19/collected-raw.md#INFO-002) B-3）・Pentagon移行期間6ヶ月確認(INFO-072 B-1)・FLI軍事AI転動(INFO-038 A-1)・Warren 7社照会・DoD $134億予算・中国AI agent規制7/15施行(INFO-038 B-1)。「安全レトリック > 実際行動」(INFO-108 A-1)。KIQ-MIL-001 27R不在。条件2充実史上最大水準 | 2026-07-19 |
+| [IND-013](../config/indicators.json) | セキュリティ侵害頻度・Grok API/DL動向 | 実被害A-2報告でcritical | high/rising。OpenAIエージェントサンドボックス脱出（[INFO-007](../Information/2026-07-27/collected-raw.md#INFO-007) B-2・評価環境下）・88.4%組織がインシデント経験（[INFO-014](../Information/2026-07-27/collected-raw.md#INFO-014) C-3）。DL 60%減は未解決（1月→4月）。新規A-2実被害なし。critical移行条件未到達 | 2026-07-27 |
+| [IND-025](../config/indicators.json) | マルチモーダル信頼性・フロンティア性能差 | 性能差ベンダー間5%未満でhigh | elevated/stable。Claude Opus 5 HLE 64.7%首位・SWE-bench Fable 5 95%・ARC-AGI-3 Opus 5 30.2%（[INFO-023](../Information/2026-07-27/collected-raw.md#INFO-023) C-1）。GrokはHLE・SWE-bench上位不在・Vision Arena 27位（[INFO-024](../Information/2026-07-27/collected-raw.md#INFO-024) C-2）。量的向上継続・Grokのトップティア不在は不変 | 2026-07-27 |
+| [IND-026](../config/indicators.json) | エージェント本番到達率 | 3ソース以上で完了率<10% | high/rising。AI Agent回収4.1〜18.4ヶ月・Year-1 ROI 41%・19%永続回収不能・ベンダーデプロイ2.4x速い（[INFO-060](../Information/2026-07-27/collected-raw.md#INFO-060) A-2）。80%失敗・根本原因は組織統合（[INFO-058](../Information/2026-07-27/collected-raw.md#INFO-058) B-2）。期待-実態ギャップ史上最深。集中リスク: A-2品質が3判断を支える | 2026-07-27 |
+| [IND-027](../config/indicators.json) | エコシステム標準化・Grokスタック採用 | 囲い込み反転 | high/rising。MCP業界標準5社採用・8フレームワーク比較でGrok Buildは主要枠外（[INFO-013](../Information/2026-07-27/collected-raw.md#INFO-013) C-2）。Tool Search Tool 98.7%削減（[INFO-026](../Information/2026-07-27/collected-raw.md#INFO-026) C-2）。Grok Build Workflows・Workspace addon追加だが採用重量は未計測 | 2026-07-27 |
+| [IND-028](../config/indicators.json) | AGI到達度 | 主観-客観乖離 | high/rising。AGIタイムライン分裂（Altman・Amodei・Hassabis）・Hassabis「計算スケーリング以上が必要」（[INFO-046](../Information/2026-07-27/collected-raw.md#INFO-046) C-3）。ARC-AGI-3分化・RSI概念具体化と限界の同時進行 | 2026-07-27 |
+| [IND-029](../config/indicators.json) | AIインフラ制約 | 物理的制約の顕在化 | high/rising。OpenAI $852B/$1.4T契約/30GW・ByteDance CapEx 2000億元・Helsing $1.8B（[INFO-056](../Information/2026-07-27/collected-raw.md#INFO-056) [INFO-061](../Information/2026-07-27/collected-raw.md#INFO-061)）。資本流入加速・物理的制約ギャップ確定的 | 2026-07-27 |
+| [IND-030](../config/indicators.json) | 能力-リスク二面性 | （critical到達済み） | critical/rising。Oracle $7B Pentagon契約・Pentagon-Anthropic SCR指定・自律兵器定義不合意・AI Kill Switch Act法案（[INFO-032](../Information/2026-07-27/collected-raw.md#INFO-032) [INFO-050](../Information/2026-07-27/collected-raw.md#INFO-050) [INFO-057](../Information/2026-07-27/collected-raw.md#INFO-057)）。条件2充実史上最大水準継続。KIQ-MIL-001 34R/35R不在。critical解消条件3基準いずれも未到達 | 2026-07-27 |
 
-## 6. 変化履歴 (Decision History)
+## 6. 変化履歴
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
-| 2026-07-19 | ターゲット編集。SpaceX-Pentagon数十億ドルAIデータセンター協議（[INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) B-2）を新規反映。xAI軍事利用同意・連邦調達市場でのxAI優位構造化。[H-XAI-004](../config/hypotheses.json) indeterminate/52% ±0%（v4.40 DEGRADED・復帰条件未到達）。KIQ-MIL-001 26R→27R。IND-030 critical強化（自律型戦闘攻撃初確認・SpaceX-Pentagon協議・SCR指定米国企業初）。Arbiter v4.40 DEGRADED | [INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) | H-XAI-004 indeterminate/52%（±0%）・H-XAI-002 59%（±0%） |
-| 2026-07-18 | ターゲット編集。[H-XAI-004](../config/hypotheses.json) medium→indeterminate再分類（H-GOO-001と同一構造問題の一貫適用・二重基準是正・Arbiter独自判断）。KIQ-MIL-001 25R→26R。IND-030 criticalにPentagon移行期間確認(INFO-072 B-1)・中国AI agent規制7/15施行を追加反映。Arbiter v4.39 COMPLETE | [Arbiter v4.39](../state/arbiter-2026-07-18.md) | H-XAI-004 medium→indeterminate/52% |
-| 2026-07-17 | 全面書き直し（7日freshness timeout）。FLI F評価0.65・4位→7位悪化(INFO-107 A-1)・安全レトリック>実際行動(INFO-108 A-1)・Grok 4.5詳細(INFO-004 A-3)・Grok Build OSS(INFO-014 A-3)・モデルコンセンサスでGrok除外(INFO-058 C-2)を新規反映。H-XAI-004 54→52%(v4.34-v4.35適用分を修正) | [INFO-107](../Information/2026-07-17/collected-raw.md#INFO-107) [INFO-108](../Information/2026-07-17/collected-raw.md#INFO-108) [INFO-004](../Information/2026-07-17/collected-raw.md#INFO-004) [INFO-014](../Information/2026-07-17/collected-raw.md#INFO-014) | H-XAI-002 59%(±0%)・H-XAI-004 54→52% |
-| 2026-07-10 | 全面書き直し。Grok 4.5発表(INFO-018 A-3)・AAII 4位・Snorkel最強29%(INFO-056 A-2)・SpaceX-Cursor $60B Q3クローズ確認(INFO-058 B-2)・Warren開示要求7社含む(INFO-044 A-2)を反映 | [INFO-018](../Information/2026-07-10/collected-raw.md#INFO-018) [INFO-056](../Information/2026-07-10/collected-raw.md#INFO-056) | H-XAI-002 59%(±0%)・H-XAI-004 54%(±0%) |
-| 2026-07-07 | ターゲット編集。Grok in Project Maven統合確認(A-1)・Carnegie詳細レポート(A-1)・Cursor $2B ARR(B-2)・Voice Agent Builder(C-3)・GLM 5.2 OSS#1を反映。[H-XAI-004](../config/hypotheses.json) 57→54% | [INFO-064](../Information/2026-07-07/collected-raw.md#INFO-064) [INFO-067](../Information/2026-07-07/collected-raw.md#INFO-067) | H-XAI-004 57→54%・H-XAI-002 59%(±0%) |
-| 2026-06-29 | 全面書き直し。KIQ-MIL-001部分回答転移・11共同創業者退社・選択的執行受益者 | [INFO-004](../Information/2026-06-29/collected-raw.md#INFO-004) [INFO-058](../Information/2026-06-29/collected-raw.md#INFO-058) | H-XAI-002 59% ±0%・H-XAI-004 57% ±0% |
-| 2026-06-24 | 全面書き直し。SpaceX Cursor $60B買収のA-1品質確定。[H-XAI-004](../config/hypotheses.json) 55→57% | [INFO-041](../Information/2026-06-24/collected-raw.md#INFO-041) | H-XAI-004 55→57%・H-XAI-002 59%据え置き |
-| 2026-06-18 | 全面書き直し。SpaceX-Cursor $60B買収・Grok 4.3 GA・Grok Gov Model軍事展開の二軸再編 | [INFO-054](../Information/2026-06-18/collected-raw.md#INFO-054) | H-XAI-002 59%・H-XAI-004 55%据え置き |
+| 2026-07-27 | 全面書き直し（8日freshness timeout）。Grok 4.5全プラットフォーム展開・Voice API・Grok Build Workflows・Google Workspace addon・Vertex AI提供を新規反映（[INFO-004](../Information/2026-07-27/collected-raw.md#INFO-004) [INFO-005](../Information/2026-07-27/collected-raw.md#INFO-005) [INFO-011](../Information/2026-07-27/collected-raw.md#INFO-011) 全A-3）。性能評価上位不在（[INFO-023](../Information/2026-07-27/collected-raw.md#INFO-023) [INFO-024](../Information/2026-07-27/collected-raw.md#INFO-024)）・主要8フレームワーク枠外（[INFO-013](../Information/2026-07-27/collected-raw.md#INFO-013)）・価格中間帯位置（[INFO-037](../Information/2026-07-27/collected-raw.md#INFO-037)）を統合。H-XAI-004 indeterminate/52% ±0%・H-XAI-002 59% ±0%（v4.47 DEGRADED）。KIQ-MIL-001 27R→34R/35R。エンタープライズ採用定量データ19R→23R以上。全7指標現在値2026-07-27更新 | [INFO-004](../Information/2026-07-27/collected-raw.md#INFO-004) [INFO-005](../Information/2026-07-27/collected-raw.md#INFO-005) [INFO-011](../Information/2026-07-27/collected-raw.md#INFO-011) | H-XAI-004 indeterminate/52%（±0%）・H-XAI-002 59%（±0%） |
+| 2026-07-19 | ターゲット編集。SpaceX-Pentagon数十億ドルAIデータセンター協議を新規反映。[H-XAI-004](../config/hypotheses.json) indeterminate/52% ±0%（v4.40 DEGRADED）。KIQ-MIL-001 26R→27R | [INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) | H-XAI-004 indeterminate/52%（±0%）・H-XAI-002 59%（±0%） |
+| 2026-07-17 | 全面書き直し（7日freshness timeout）。FLI F評価0.65・4位→7位悪化・Grok 4.5詳細・Grok Build OSS・モデルコンセンサスでGrok除外を反映 | [INFO-107](../Information/2026-07-17/collected-raw.md#INFO-107) [INFO-004](../Information/2026-07-17/collected-raw.md#INFO-004) | H-XAI-002 59%（±0%）・H-XAI-004 54→52% |
+| 2026-07-10 | 全面書き直し。Grok 4.5発表・AAII 4位・Snorkel最強29%・SpaceX-Cursor $60B Q3クローズ確認・Warren開示要求7社含むを反映 | [INFO-018](../Information/2026-07-10/collected-raw.md#INFO-018) | H-XAI-002 59%（±0%）・H-XAI-004 54%（±0%） |
+| 2026-07-07 | ターゲット編集。Grok in Project Maven統合確認・Carnegie詳細レポート・Cursor $2B ARR・Voice Agent Builder・GLM 5.2 OSS#1を反映。[H-XAI-004](../config/hypotheses.json) 57→54% | [INFO-064](../Information/2026-07-07/collected-raw.md#INFO-064) | H-XAI-004 57→54%・H-XAI-002 59%（±0%） |
 
-## 7. ブラインドスポット (Known Unknowns)
+## 7. ブラインドスポット
 
-- KIQ-MIL-001の人間却下比率が27R連続完全不在。27Rの不在は「中立」ではなく「構造的に非対称」と評価する基準（v4.31策定）が適用されている。AI推奨の却下率そのものが不在である以上、観測されていないリスクを不在と断定する正常性バイアスの逆方向リスクがある。
-- FLIのF評価（0.65）は、存在的安全性・ガバナンス・現在の危害・安全フレームワーク・情報共有の全ドメインで低評価であることを示す。但し「検出は防止ではない」（FLI報告書）という制約があり、評価の低さと事故確率の間の因果関係は直接的ではない。
-- Grok 4.5の技術性能向上（Cursor共同トレーニング・$2/M入力）とコミュニティコンセンサスでの除外（「真剣な作業」でほぼ不在）の乖離が、何に起因するかが判明していない。ベンチマーク成績と実用性のギャップなのか、ブランド・エコシステム・信頼の問題なのか。
-- Grok Build OSS化のセキュリティ設計（全リポジトリをCloudバケットにアップロード）が、エンタープライズ採用にどう影響するかが未測定。ZDRモードの存在は一部緩和するが、初期印象としてのセキュリティ懸念は残る。
-- Cursor $2B ARRの成長がGrok固有の価値によるものか、Claude/GPT APIへのアクセスによるものかの分離が不可能。買収完了後のGrok統合戦略が未公開。
-- エンタープライズ採用定量データが19R以上完全不在。この不在を「不在=不採用」と解釈するか「非公開=戦略的」と解釈するかで確度評価が大きく変わる。累積ペナルティ論理の妥当性自体が検証不能。
-- DL 60%減（1月→4月）が、Cursor買収前のCursor市場シェア下落とどう関係するか不明。7月データでの更新が必要だが入手できていない。
+- エンタープライズ採用定量データが23R以上連続完全不在。この不在を「不採用の証拠」と解釈するか「戦略的非公開」と解釈するかで確度評価が大きく変わる。累積ペナルティ論理の妥当性自体が検証不能であり、indeterminate分類はこの判別不能を正直に反映したものに過ぎない。
+- KIQ-MIL-001の人間却下比率が34R/35R連続不在。AI推奨の却下率そのものが不在である以上、観測されていないリスクを不在と断定する正常性バイアスの逆方向リスクがある。xAIが軍事利用に同意済みである事実は、このリスクの重みを増す。
+- Grok 4.5の技術性能向上（全プラットフォーム展開・Cursor共同トレーニング・Voice API・Workflows）とコミュニティコンセンサスでの除外（HLE・SWE-bench上位不在・主要8フレームワーク枠外）の乖離が、何に起因するかが判明していない。ベンチマーク成績と実用性のギャップなのか、ブランド・エコシステム・信頼の問題なのか。
+- DL 60%減（1月→4月）が、Cursor買収前のCursor市場シェア下落とどう関係するか不明。7月データでの更新が必要だが入手できておらず、H-XAI-002のmedium→low審査条件（3ヶ月継続）の検証が未完了のままである。
+- Cursor $2B ARRの成長がGrok固有の価値によるものか、Claude/GPT APIへのアクセスによるものかの分離が不可能。買収完了後のGrok統合戦略が未公開であり、Cursorの成功をGrokの成功と読むことができるかの判別が立たない。
+- Grok Build Workflows・Voice API・Google Workspace addonの追加が、開発者コミュニティでの採用重量をどれだけ動かすかが未測定。7月で10版以上の頻繁な更新は開発速度を示すが、主要8フレームワーク枠外という事実との整合が取れていない。
 
 ## 付録: 直近30日の参照Evidence
 
-| Evidence | 用途 |
-|---|---|
-| [INFO-107](../Information/2026-07-17/collected-raw.md#INFO-107) | FLI AI Safety Index完全スコアカード: xAI F(0.65)・4位→7位悪化・存在的安全性全社最弱(A-1) |
-| [INFO-108](../Information/2026-07-17/collected-raw.md#INFO-108) | FLI報告書: 安全レトリック>実際行動(DeepMind/OpenAI/xAI)・全社軍事利用禁止転換(A-1) |
-| [INFO-004](../Information/2026-07-17/collected-raw.md#INFO-004) | Grok 4.5詳細: $2/M入力・Cursor共同トレーニング初・7/8リリース(A-3) |
-| [INFO-014](../Information/2026-07-17/collected-raw.md#INFO-014) | Grok Build OSS: GitHub公開・CLI/TUI・全リポジトリCloudバケットアップロード問題(A-3) |
-| [INFO-058](../Information/2026-07-17/collected-raw.md#INFO-058) | モデル比較コンセンサス: Fable/Opus/GPT-5.6 Solトップティア・Gemini/Grok除外(C-2) |
-| [INFO-006](../Information/2026-07-17/collected-raw.md#INFO-006) | Codex 7Mユーザー・Grok 4.5 Arena #13(C-2) |
-| [INFO-058](../Information/2026-07-10/collected-raw.md#INFO-058) | SpaceX-Cursor $60B Q3クローズ確認・xAI $20B Series E(B-2) |
-| [INFO-044](../Information/2026-07-10/collected-raw.md#INFO-044) | Warren開示要求7社(SpaceX含む): DoD-7社AI統合協定・競争入札法案(A-2) |
-| [INFO-057](../Information/2026-07-10/collected-raw.md#INFO-057) | GLM-5.2: オープンウェイト#1・全体4位・OSS-クローズドギャップ縮小(B-3) |
-| [INFO-052](../Information/2026-07-10/collected-raw.md#INFO-052) | AI API価格崩壊: トークン指数高値から約20%下落(A-2) |
-| [INFO-060](../Information/2026-07-10/collected-raw.md#INFO-060) | 2026年重要7ベンチマーク: MMLU 90%超で飽和(C-3) |
-| [INFO-085](../Information/2026-07-17/collected-raw.md#INFO-085) | AI Safety Index概要: Anthropic最高・5/6首位・GPT-5.6リリース(A-1) |
-| [INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) | SpaceX-Pentagon数十億ドルAIデータセンター協議・xAI軍事利用同意・「AIファースト」戦闘態勢(B-2) |
-| [INFO-002](../Information/2026-07-19/collected-raw.md#INFO-002) | 米初の自律型戦闘攻撃: シー・ドローン対イラン潜水艦基地・DoD 3000.09は禁止ではなく「適切な人間の判断」要求のみ(B-3) |
-| [Arbiter v4.40](../state/arbiter-2026-07-19.md) | 確度評価の完全根拠 |
+| Evidence | 用途 | 出典 |
+|---|---|---|
+| [INFO-004](../Information/2026-07-27/collected-raw.md#INFO-004) | Grok 4.5全プラットフォーム展開（iOS/Android/Web/X・7/22）・Opus級・高速低コスト(A-3) | https://x.ai/news/grok-4-5-everywhere |
+| [INFO-005](../Information/2026-07-27/collected-raw.md#INFO-005) | Grok Build Workflows（並列エージェントPRレビュー・7/23）・Google Workspace addon（7/24）・7月10版以上(A-3) | https://x.ai/news/workflows |
+| [INFO-011](../Information/2026-07-27/collected-raw.md#INFO-011) | xAI Voice API（WebSocketリアルタイム音声・Big Bench Audio #1）・Grok 4.5 API 500K context・Vertex AI提供(A-3) | https://docs.x.ai/developers/model-capabilities/audio/voice |
+| [INFO-013](../Information/2026-07-27/collected-raw.md#INFO-013) | 2026エージェントフレームワーク比較8枠: Grok Buildは主要枠外(C-2) | https://www.intuz.com/blog/top-5-ai-agent-frameworks-2025/ |
+| [INFO-023](../Information/2026-07-27/collected-raw.md#INFO-023) | Vellum Leaderboard: HLE Claude Opus 5首位・SWE-bench GPT-5.6 Sol首位・Grok上位不在(C-1) | https://www.vellum.ai/llm-leaderboard |
+| [INFO-024](../Information/2026-07-27/collected-raw.md#INFO-024) | Vision Arena: Grok 4.20 reasoning 1254点・27位。Claude Fable 5が1318点・1位(C-2) | https://arena.ai/leaderboard/vision |
+| [INFO-037](../Information/2026-07-27/collected-raw.md#INFO-037) | API価格比較: Grok 4.5 $2/$6・DeepSeek V4 Flash $0.14/$0.28最安(B-1) | https://venturebeat.com/technology/googles-gemini-3-6-flash-model-cuts-ai-agent-token-costs-by-up-to-65-on-long-horizon-engineering-tasks-and-3-5-pro-is-on-the-way |
+| [INFO-029](../Information/2026-07-27/collected-raw.md#INFO-029) | OSS LLM: Kimi K3 2.8T HLE 56%・DeepSeek V4 Pro GPQA 90.1%・GLM-5.2 GPQA 91.2%(C-2) | https://onyx.app/open-llm-leaderboard |
+| [INFO-042](../Information/2026-07-27/collected-raw.md#INFO-042) | AIコーディング: GitHub Copilot 20Mユーザー・Cursor $2B ARR・Grok固有採用分離不能(C-2) | https://uvik.net/blog/ai-coding-assistant-statistics/ |
+| [INFO-043](../Information/2026-07-19/collected-raw.md#INFO-043) | SpaceX-Pentagon数十億ドルAIデータセンター協議・xAI軍事利用同意済み(B-2) | https://thebulletin.org/2026/07/the-rise-of-the-military-technology-complex/ |
+| [INFO-057](../Information/2026-07-27/collected-raw.md#INFO-057) | 軍事AI自律兵器定義不合意・Pentagon 2012指令で人間着弾決定義務付け継続(B-2) | https://thebulletin.org/2026/07/the-rise-of-the-military-technology-complex/ |
+| [INFO-107](../Information/2026-07-17/collected-raw.md#INFO-107) | FLI AI Safety Index完全スコアカード: xAI F(0.65)・4位→7位悪化・存在的安全性全社最弱(A-1) | FLI報告書 |
+| [INFO-108](../Information/2026-07-17/collected-raw.md#INFO-108) | FLI報告書: 安全レトリック>実際行動(DeepMind/OpenAI/xAI)・全社軍事利用禁止転換(A-1) | FLI報告書 |
+| [INFO-004](../Information/2026-07-17/collected-raw.md#INFO-004) | Grok 4.5詳細（前回）: $2/M入力・Cursor共同トレーニング初・7/8リリース(A-3) | https://x.ai/news |
+| [INFO-014](../Information/2026-07-17/collected-raw.md#INFO-014) | Grok Build OSS: GitHub公開・全リポジトリCloudバケットアップロード問題(A-3) | https://github.com |
+| [INFO-058](../Information/2026-07-17/collected-raw.md#INFO-058) | モデル比較コンセンサス: Fable/Opus/GPT-5.6 Solトップティア・Grok除外(C-2) | コミュニティ調査 |
+| [INFO-060](../Information/2026-07-27/collected-raw.md#INFO-060) | AI Agent生産性: 回収4.1-18.4ヶ月・Year-1 ROI 41%・19%永続回収不能・ベンダー2.4x(A-2) | https://www.digitalapplied.com/blog/ai-agent-productivity-statistics-2026-roi-data-points |
+| [Arbiter v4.47](../state/arbiter-2026-07-27.md) | 確度評価の完全根拠（DEGRADED・Red失敗・Arbiter独自Red代替評価） | 内部参照 |
