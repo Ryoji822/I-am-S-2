@@ -1,68 +1,73 @@
 # Google / DeepMind
 
-> 最終判断更新: 2026-07-22
+> 最終判断更新: 2026-07-29
 > 全体確信度: 測定不能（H-GOO-001 indeterminate維持）
-> 情報非対称性: Workspace / Gemini統合のDAU/MAU非公開。Google固有定量採用データ（シェア・収益・利用率の直接的定量データA-2+）が29R+連続不在。KIQ-GOO-001はGCP +63% vs Azure +40% vs AWS +28%で充足されたがB-2品質かつ低ベース効果未排除。Gemini 3.6 Flashリリース: OSWorld-Verified 83.0%・エージェントトークンコスト最大65%削減・$1.50/$7.50（[INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) A-3）。Gemini 4事前学習開始確認（[INFO-004](../Information/2026-07-22/collected-raw.md#INFO-004) A-3）。Gemini 3.5 Proはパートナーテスト中・GA準備中（[INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) A-3）。Chatbot Arena Gemini 3.1 Pro 1504・3.5 Flash 1503（[INFO-061](../Information/2026-07-22/collected-raw.md#INFO-061) A-2）。Vertex AI→Gemini Enterprise Agent Platform統合完了（[INFO-020](../Information/2026-07-22/collected-raw.md#INFO-020) A-3）。DeepMind研究者AI軍事契約辞任（[INFO-050](../Information/2026-07-22/collected-raw.md#INFO-050) B-3）。H-GOO-001 indeterminate/50% ±0%・H-GOO-002 23% low ±0%・H-GOO-003 48% medium ±0%（全件v4.42 DEGRADED）。Arbiter v4.42 DEGRADED
+> 情報非対称性: Workspace / Gemini統合のDAU/MAU非公開。Google固有定量採用データ（シェア・収益・利用率の直接的定量データA-2+）が37R/38R連続不在。Google Cloud Q2 2026収益$248億・YoY+81.8%でAI投資が収益貢献開始（[INFO-059](../Information/2026-07-29/collected-raw.md#INFO-059) B-2）。GCP市場シェア14%・年間最速成長12%→14%（[INFO-033](../Information/2026-07-29/collected-raw.md#INFO-033) B-2）。Gemini API Managed Agents 3.6 Flashデフォルト・環境フック・予算制御・スケジュールトリガー（[INFO-008](../Information/2026-07-29/collected-raw.md#INFO-008) A-3）。Gemini Enterprise Agent Platform: Vertex AI統合・Agents API+Interactions API二層構造（[INFO-022](../Information/2026-07-29/collected-raw.md#INFO-022) A-3）。Google Computer Use: Gemini 3.6 Flash・browser/mobile/desktop・プロンプトインジェクション検出組込み（[INFO-026](../Information/2026-07-29/collected-raw.md#INFO-026) A-3）。Genesis Mission $40M DOE拠出・AlphaEvolve/AlphaFold 3/AlphaGenome提供・Gemini for Government数万名（[INFO-009](../Information/2026-07-29/collected-raw.md#INFO-009) A-3）。Hassabis AGI「あと数年」・Amodei/Altmanと予測収束（[INFO-053](../Information/2026-07-29/collected-raw.md#INFO-053) B-2）。Hassabis国際AGI安全機関提案・リリース前30日レビュー・上院10年モラトリアム削除（[INFO-054](../Information/2026-07-29/collected-raw.md#INFO-054) B-2）。DoD分類ネットワークAI契約各最大$200M（4社）（[INFO-011](../Information/2026-07-29/collected-raw.md#INFO-011) B-3）。gVisor+Cloud Runサンドボックス1000インスタンス平均500ms起動（[INFO-032](../Information/2026-07-29/collected-raw.md#INFO-032) B-1）。H-GOO-001 indeterminate/50% ±0%・H-GOO-002 23% low ±0%・H-GOO-003 48% medium ±0%（全件v4.50 COMPLETE）
 > 主参照: [H-GOO-001](../config/hypotheses.json) [H-GOO-002](../config/hypotheses.json) [H-GOO-003](../config/hypotheses.json) [IND-001](../config/indicators.json) [IND-006](../config/indicators.json) [IND-025](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-030](../config/indicators.json)
 
 ## 0. 一文要約
 
-[H-GOO-001](../config/hypotheses.json) はindeterminate/50%で±0%（v4.42 DEGRADED）。Google固有の定量採用データ（シェア・収益・利用率）が29R以上にわたり構造的に不在であり、「low」でも「medium」でもなく「測定不能」が正直なラベルである。Gemini 3.6 FlashのリリースとGemini 4事前学習の開始は、07-18時点で懸念された競争力低下が一時的な停滞であった可能性を示す。だが、性能向上とエンタープライズ採用の間には観測できない距離がある。この距離を埋める定量データが公表されない限り、H-GOO-001の確度評価は固定される。
+[H-GOO-001](../config/hypotheses.json) はindeterminate/50%で±0%。Google固有の定量採用データ（シェア・収益・利用率）が37ラウンド以上にわたり構造的に不在であり、「low」でも「medium」でもなく「測定不能」が正直なラベルである。07-29バッチで状況は部分的に前進した。Google Cloud Q2収益が$248億・YoY+81.8%に到達し（[INFO-059](../Information/2026-07-29/collected-raw.md#INFO-059) B-2）、GCP市場シェアが年間最速成長で14%に達した（[INFO-033](../Information/2026-07-29/collected-raw.md#INFO-033) B-2）。これはAI投資が収益に貢献し始めた最初の定量シグナルである。だが、Google Cloud収益の成長とGemini固有の採用シェアの間には、依然として観測できない距離がある。この距離を埋めるA-2+品質のGemini固有定量データが公表されない限り、H-GOO-001の確度評価は固定される。
 
-Gemini 3.6 Flashは3.5 Flash比でOSWorld-Verified 78.4%から83.0%に向上し（[INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) A-3）、エージェントタスクのトークンコストを最大65%削減する。3.5 Flash-Liteは350 tok/sで最速・最低コスト、3.5 Flash Cyberは政府・信頼パートナー限定で展開される。3モデル同時発表は、Googleが3.5 Proの再延期で生じた競争力ギャップを、Flash階層の密度で埋める戦略をとっていることを示す。Gemini 3.5 Pro自体もパートナーテスト段階に進み、「準備整い次第GA」となった（[INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) A-3）。07-18時点の「クリティカルベンチマーク不合格・Alphabet株価下落」から、状況は改善している。もしゼロからフロンティアモデルの性能とリリースペースだけでH-GOO-001を評価するなら、方向性はC（採用拡大）に傾く。しかしavailability≠adoptionであり、Chatbot Arenaでトップ6が1503以上に密集する世界（[INFO-061](../Information/2026-07-22/collected-raw.md#INFO-061) A-2）では、性能差5ポイントが採用を決める根拠にならない。Gemini固有の採用シェア・収益寄与・利用率の定量データが出るまでは、判断の基盤が変わらない。
+Gemini 3.6 Flashは3.5 Flash比でOSWorld-Verified 78.4%から83.0%に向上し（[INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) A-3）、エージェントタスクのトークンコストを最大65%削減する。07-29バッチでは、この3.6 FlashをデフォルトとするManaged Agents（[INFO-008](../Information/2026-07-29/collected-raw.md#INFO-008) A-3）、Vertex AIを統合したGemini Enterprise Agent Platformの二層構造（[INFO-022](../Information/2026-07-29/collected-raw.md#INFO-022) A-3）、browser/mobile/desktopを覆盖するComputer Use（[INFO-026](../Information/2026-07-29/collected-raw.md#INFO-026) A-3）が確認された。3.5 Pro自体もパートナーテスト段階に進み、「準備整い次第GA」となった（[INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) A-3）。プラットフォーム機能の密度は極めて高い。しかしavailability≠adoptionであり、Chatbot Arenaでトップ6が1503以上に密集する世界（[INFO-061](../Information/2026-07-22/collected-raw.md#INFO-061) A-2）では、性能差5ポイントが採用を決める根拠にならない。
 
-[H-GOO-002](../config/hypotheses.json) は23% lowで±0%。Vertex AI→Gemini Enterprise Agent Platform統合（[INFO-020](../Information/2026-07-22/collected-raw.md#INFO-020) A-3）はプラットフォーム深化のC方向だが、Skill Registryが囲い込みの新メカニズムになる可能性も残る。[H-GOO-003](../config/hypotheses.json) は48% mediumで±0%。DeepMindの研究力はGemini 3.6 Flash・4事前学習で裏付けられるが、研究者辞任（[INFO-050](../Information/2026-07-22/collected-raw.md#INFO-050) B-3）と軍事AIピボットが長期的な研究卓越性の持続可能性に影を落とす。
+[H-GOO-002](../config/hypotheses.json) は23% lowで±0%。Enterprise Agent PlatformでMCPネイティブサポートが確認される一方、Skill Registryの排他性が囲い込みの新メカニズムになり得る。[H-GOO-003](../config/hypotheses.json) は48% mediumで±0%。HassabisがAGI到達を「あと数年」と予測し（[INFO-053](../Information/2026-07-29/collected-raw.md#INFO-053) B-2）、AmodeiやAltmanと予測が収束した。Genesis Missionが278チームを選定し（[INFO-052](../Information/2026-07-29/collected-raw.md#INFO-052) B-2）、AlphaEvolveの数学的ブレークスルーが研究卓越性を裏付ける。しかし研究者辞任（[INFO-050](../Information/2026-07-22/collected-raw.md#INFO-050) B-3）と軍事AIピボットが長期的な持続可能性に影を落とす。
 
 ## 1. コア判断
 
-全体確信度は測定不能に置く。Gemini 3.6 FlashリリースとGemini 4事前学習開始は、07-18時点の「競争力低下確定」判断を修正する材料である。だが、修正されるのはフロンティアモデルの性能とリリースペースに関する読みであり、エンタープライズ採用の定量評価に関する読みではない。後者が解決されない限り、H-GOO-001のindeterminate分類は維持する。
+全体確信度は測定不能に置く。Google Cloud Q2 +81.8%とGCP最速成長14%は、これまでで最も強力なC方向（採用拡大）の定量シグナルである。だが、Google Cloud収益の成長とGemini固有の採用データは別の問題である。後者が解決されない限り、H-GOO-001のindeterminate分類は維持する。
 
-### Gemini 3.6 Flashと3.5 Pro状況改善による競争力回復シグナル
+### Google Cloud収益成長とプラットフォーム深化の同時確認
 
-07-18時点では、Gemini 3.5 Proがクリティカルベンチマーク不合格で再延期され、Alphabet株価が下落し、GPT-5.6 Sol ARC-AGI-3 7.8%・Claude Opus 4.8 SWE-bench 88.6%との差が拡大していると読んだ。この読みは部分修正を要する。
+07-29バッチで最も重要な新規データはGoogle Cloud Q2 2026収益である。総収益YoY+24.3%、Google Cloud+81.8%で$248億（[INFO-059](../Information/2026-07-29/collected-raw.md#INFO-059) B-2）。AI投資が収益に貢献し始めた証拠とGoogle自身が位置づけている。GCP市場シェアはQ1 2026で14%に達し、年間で12%→14%と最速成長を記録した（[INFO-033](../Information/2026-07-29/collected-raw.md#INFO-033) B-2）。TPU、Vertex AI、BigQueryがAIインフラ優位の源泉とされる。
 
-Gemini 3.6 Flashがリリースされ、3.5 Flash比でOSWorld-Verified 78.4%→83.0%、DeepSWE 37%→49%、MLE Bench 49.7%→63.9%に向上した（[INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) A-3）。エージェントタスクのトークンコストは最大65%削減される。価格は$1.50/1M入力・$7.50/1M出力で、GPT-5.6 Sol $5/$30やClaude Fable 5 $10/$50と比較して中間帯に位置する（[INFO-059](../Information/2026-07-22/collected-raw.md#INFO-059) B-3）。3.5 Flash-Liteは350 tok/s・$0.30/$2.50で最速最低コスト、3.5 Flash Cyberは政府・信頼パートナー限定でCyberGymでフロンティア競争力を示す。3モデル同時発表は、3.5 Proの遅れをFlash階層の厚みで補う戦略的判断である。
+プラットフォーム機能も密度を増している。Gemini API Managed Agentsが3.6 Flashをデフォルトに採用し、環境フック（ツール呼び出し前後のカスタムスクリプト）、予算制御（max_total_tokens）、スケジュールトリガー、フリーティアアクセスを追加した（[INFO-008](../Information/2026-07-29/collected-raw.md#INFO-008) A-3）。Gemini Enterprise Agent PlatformはVertex AIを完全統合し、Agents API（コントロールプレーン）とInteractions API（データプレーン）の二層構造でエージェントの構築・デプロイ・ガバナンスを統一した（[INFO-022](../Information/2026-07-29/collected-raw.md#INFO-022) A-3）。Computer Useはbrowser/mobile/desktopを覆盖し、プロンプトインジェクション検出を組み込み、Playwright統合でブラウザ自動化を提供する（[INFO-026](../Information/2026-07-29/collected-raw.md#INFO-026) A-3）。サンドボックスはgVisor+Cloud Runで1000インスタンスを平均500msで起動する（[INFO-032](../Information/2026-07-29/collected-raw.md#INFO-032) B-1）。
 
-Gemini 3.5 Pro自体も「パートナーテスト中・GA準備中」に進んだ（[INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) A-3）。07-18時点の「クリティカルベンチマーク不合格」から状況は改善している。Gemini 4の事前学習も開始された（[INFO-004](../Information/2026-07-22/collected-raw.md#INFO-004) A-3）。Google自身が「最も野心的な事前学習」と表現した。
+これらは全て[H-GOO-001](../config/hypotheses.json)のプラットフォーム深化（C方向）の証拠である。しかし、機能の発表密度と企業がその機能を採用しているかの定量証拠は別の問題である。Google Cloud調査（2400社）で86%の企業がAIからコスト効率的な成長を実現したと回答したが（[INFO-034](../Information/2026-07-29/collected-raw.md#INFO-034) B-2）、これはGoogle Cloudを利用する企業の自己申告であり、Gemini固有の採用シェアを測定するものではない。
 
-Chatbot Arena 2026年7月ランキングでは、Gemini 3.1 Proが1504 Elo、Gemini 3.5 Flashが1503 Eloで、トップ6が1503以上に密集している（[INFO-061](../Information/2026-07-22/collected-raw.md#INFO-061) A-2）。Claude Fable 5（1510）・GPT-5.6 Sol（1509）・GPT-5.6 Terra（1505）・Grok 4.5（1505）と、Geminiはトップ6に入っている。フロンティアモデル間の性能差は5〜7 Eloポイントに縮小し、ベンチマーク上の差別化は薄れている。ただし、この密集化は[H-GOO-001](../config/hypotheses.json)のI方向（コモディティ化圧力）と、性能向上によるC方向（採用拡大）の両方に解釈できる。どちらがGemini固有の採用に結びつくかは、定量データがないと判別不能である。
+### indeterminate運用の継続と復帰条件の更新
 
-### indeterminate運用の継続と方向性偏りの更新
+H-GOO-001の復帰条件（A-2+品質の定量採用データ公表でlow/mediumに復帰）は未到達である。Google固有のシェア・収益・利用率データが37R/38Rにわたり不在である構造は不変である。
 
-07-18時点で記録した「Gemini 3.5 Pro再延期」による下方偏りは、3.6 Flashリリース・3.5 Proパートナーテスト進展・Gemini 4事前学習開始により、部分緩和された。indeterminate運用ルールの方向性偏り記録を更新する: 07-18の「下方偏り（競争力低下）」から「中間（性能改善だが採用データ不在）」に移行した。
+ただし、Google Cloud Q2 +81.8%は復帰条件に最も近接したデータである。Google Cloud収益の81.8%成長のうち、Gemini固有の需要がどれほど寄与しているかを分離できれば、復帰条件の一部を充足する。現在はその分離が不可能である。GCPシェア14%の低ベース効果（vs AWS 28%）は07-22時点の指摘から弱化している。12%→14%の成長は、絶対値ではなく相対的な加速として意味を持つ。
 
-しかし、H-GOO-001の復帰条件（A-2+品質の定量採用データ公表でlow/mediumに復帰）は未到達である。Google固有のシェア・収益・利用率データが29R以上にわたり不在である構造は不変である。GCP +63% YoY成長率は存在するが、GCPシェア14%（vs AWS 28%）の低ベース効果の排除が未解決であり、AlphaEvolveの企業実績はGemini固有の競争優位との分離が不能である。KPMG 276,000人へのClaude展開（[INFO-001](../Information/2026-07-22/collected-raw.md#INFO-001) A-3）はAnthropic固有の採用データであり、Googleのそれに該当する観測は本バッチにもない。
+Genesis MissionはGemini for Government座席をDOE国立研究所の数万名に提供し（[INFO-009](../Information/2026-07-29/collected-raw.md#INFO-009) A-3）、AlphaEvolve、AlphaFold 3、AlphaGenomeを科学AIツールとして公開した。政府機関でのGemini採用は特定の採用シグナルだが、市場シェアの定量的指標ではない。278チームがGenesis Missionに参加し（[INFO-052](../Information/2026-07-29/collected-raw.md#INFO-052) B-2）、自律科学ワークフローを構築している。これもプラットフォームの利用を示すが、商用エンタープライズ採用シェアの代替にはならない。
 
-Vertex AIが「Gemini Enterprise Agent Platform」に完全統合された（[INFO-020](../Information/2026-07-22/collected-raw.md#INFO-020) A-3・[INFO-040](../Information/2026-07-22/collected-raw.md#INFO-040) B-3）。容量予約でレート制限エラーを完全排除し、SLAを強化した。Managed Agentsにフリーティア・予算制御ガードレール・スケジュールトリガーが追加され、Interactions APIでカスタムエージェントのリモート環境実行が可能になった（[INFO-016](../Information/2026-07-22/collected-raw.md#INFO-016) A-3）。Computer UseがGemini API・Enterpriseの内蔵ツール化され、隔離コンテナでPlaywright対応のサンドボックスが提供される（[INFO-030](../Information/2026-07-22/collected-raw.md#INFO-030) A-3）。これらは[H-GOO-001](../config/hypotheses.json)のプラットフォーム深化（C方向）の証拠である。ただし、プラットフォーム機能の充実と、そのプラットフォームが実際に企業に採用されているかの定量証拠は別の問題である。
+方向性偏りは「中間（性能改善・収益成長だがGemini固有採用データ不在）」を維持する。07-22時点の「下方（競争力低下）」から「中間」への修正は、Gemini 3.6 Flashリリースと3.5 Proパートナーテスト進展で妥当性を保つ。Google Cloud Q2 +81.8%はこの中間評価を強化するが、突破はしない。
 
-### DeepMindの研究卓越性と軍事応用の緊張
+### AGIタイムライン収束と研究卓越性の持続可能性
 
-Demis HassabisがAGI到達を2029-2030年と予測し、「産業革命の10倍のインパクトで10倍速い」と表現した（[INFO-078](../Information/2026-07-22/collected-raw.md#INFO-078) B-3）。AGI Timelines Dashboardの統合予測は2031年（80%信頼区間）である。Hassabisは別途、米国主導のフロンティアAIモデル事前テスト機関設立を要請した（[INFO-079](../Information/2026-07-22/collected-raw.md#INFO-079) B-3）。これらは[H-GOO-003](../config/hypotheses.json)の研究卓越性（C方向）と、安全性制度化への貢献を示す。
+Demis HassabisがAGI到達を「あと数年」と予測し、Dario Amodei「おそらく数年以内」、Sam Altman「2026年前半に大規模ブレークスルー」と予測が収束した（[INFO-053](../Information/2026-07-29/collected-raw.md#INFO-053) B-2）。Hassabisは「丘陵地帯にいる」と表現し、Amodeiは中国製AIモデルへの「深い懸念」を表明した。Hassabisは別途、国際AGI安全機関の創設を提案した（[INFO-054](../Information/2026-07-29/collected-raw.md#INFO-054) B-2）。安全基準策定、リスク評価、高能力モデルのリリース前最大30日レビューを担当する構想である。米上院はAIに関する10年間モラトリアム条項を国内政策法案から削除した。
 
-一方で、DeepMindの研究者がAI軍事契約を理由に辞任した（[INFO-050](../Information/2026-07-22/collected-raw.md#INFO-050) B-3）。AI Safety Index 2026夏号が、2024-2026年の業界全体の軍事AIピボット（Anthropic・OpenAI・Google含む）を新興現行危害リスクに指摘した。DeepMindの「あらゆる合法的政府目的」条項の受諾が、安全性リーダーとしての文化をどう変化させるかは未測定である。研究者流失が長期的な研究競争力に与える影響の評価も不在である。
+AlphaEvolveが異なる数学分野のアイデアを組み合わせる新規手法でブレークスルーを達成し（[INFO-052](../Information/2026-07-29/collected-raw.md#INFO-052) B-2）、Genesis Missionが278チーム（Fermilab、Cornell含む）を選定した。これらは[H-GOO-003](../config/hypotheses.json)の研究卓越性（C方向）を裏付ける。
 
-Gemini 3.6 Flashリリース・Gemini 4事前学習開始は、研究卓越性が製品競争力に結びついていることを示す。しかし、この因果チェーンの持続可能性は、軍事応用への関与が研究者コミュニティの信頼に与える影響に依存する。H-GOO-003の48% mediumはこの二面性を反映している。
+一方で、DeepMindの研究者がAI軍事契約を理由に辞任した件（[INFO-050](../Information/2026-07-22/collected-raw.md#INFO-050) B-3）は未解決である。AI Safety Index 2026夏号が業界全体の軍事AIピボットを新興現行危害リスクに指摘した。DeepMindの「あらゆる合法的政府目的」条項の受諾が安全性文化に与える長期影響は未測定のままである。
 
 ## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | Gemini 3.6 Flashリリース: OSWorld 83.0%・DeepSWE 49%・MLE Bench 63.9%・$1.50/$7.50・エージェントコスト-65% | [H-GOO-001](../config/hypotheses.json) フロンティア性能回復（C方向）。07-18の競争力低下判断を部分修正。但しavailability≠adoption | A-3 | [INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) |
-| 高 | Gemini 4事前学習開始: Google公式「最も野心的な事前学習」・3.5 Proはパートナーテスト中 | [H-GOO-003](../config/hypotheses.json) 研究卓越性（C方向）。07-18の下方偏りを中間に修正 | A-3 | [INFO-004](../Information/2026-07-22/collected-raw.md#INFO-004) [INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) |
-| 高 | Chatbot Arena 7月: Gemini 3.1 Pro 1504・3.5 Flash 1503・トップ6が1503+に密集 | [H-GOO-001](../config/hypotheses.json) フロンティア差別化薄化（I方向）と性能競争力維持（C方向）の同時観測。密集化はコモディティ化圧力の別証拠 | A-2 | [INFO-061](../Information/2026-07-22/collected-raw.md#INFO-061) |
-| 高 | Vertex AI→Gemini Enterprise Agent Platform完全統合: 容量予約SLA・Managed Agents・Interactions API・Computer Use内蔵 | [H-GOO-001](../config/hypotheses.json) プラットフォーム深化（C方向）。[H-GOO-002](../config/hypotheses.json) MCPデプロイ・BYO Modelで開放方向、Skill Registryで囲い込み可能性 | A-3 | [INFO-020](../Information/2026-07-22/collected-raw.md#INFO-020) [INFO-016](../Information/2026-07-22/collected-raw.md#INFO-016) [INFO-030](../Information/2026-07-22/collected-raw.md#INFO-030) |
-| 高 | Google固有定量採用データ29R+構造的不在: H-GOO-001 indeterminate維持の根拠不変 | [H-GOO-001](../config/hypotheses.json) 復帰条件（A-2+定量データ公表）未到達。性能向上と採用の間の観測できない距離 | 該当なし | [H-GOO-001](../config/hypotheses.json) |
-| 中 | DeepMind研究者AI軍事契約辞任: AI Safety Index 2026夏号が軍事AIピボットを新興リスク指摘 | [H-GOO-003](../config/hypotheses.json) 研究卓越性と軍事応用の緊張。研究者流失の長期影響は未測定 | B-3 | [INFO-050](../Information/2026-07-22/collected-raw.md#INFO-050) |
-| 中 | Hassabis AGI 2029-2030年「産業革命10倍・10倍速い」・事前テスト機関設立要請 | [H-GOO-003](../config/hypotheses.json) 研究卓越性（C方向）。[IND-028](../config/indicators.json) high/rising強化 | B-3 | [INFO-078](../Information/2026-07-22/collected-raw.md#INFO-078) [INFO-079](../Information/2026-07-22/collected-raw.md#INFO-079) |
-| 中 | Gemini Enterprise Skill Registry・Gemini Robotics機能安全エンジニア採用 | [H-GOO-002](../config/hypotheses.json) Skill Registryで囲い込み可能性。Roboticsで物理エージェント領域拡大 | B-3 | [INFO-035](../Information/2026-07-22/collected-raw.md#INFO-035) [INFO-031](../Information/2026-07-22/collected-raw.md#INFO-031) |
+| 高 | Google Cloud Q2 2026: 収益$248億・YoY+81.8%・AI投資が収益貢献開始 | [H-GOO-001](../config/hypotheses.json) C方向。復帰条件に最も近接したB-2品質定量データ。但しcloud-levelでありGemini固有採用シェアではない | B-2 | [INFO-059](../Information/2026-07-29/collected-raw.md#INFO-059) |
+| 高 | GCP市場シェア14%・年間最速成長12%→14% | [H-GOO-001](../config/hypotheses.json) C方向。低ベース効果弱化。AWS 28%の半分だが加速継続 | B-2 | [INFO-033](../Information/2026-07-29/collected-raw.md#INFO-033) |
+| 高 | Gemini Enterprise Agent Platform: Vertex AI統合・Agents API+Interactions API二層構造 | [H-GOO-001](../config/hypotheses.json) プラットフォーム深化C方向。[H-GOO-002](../config/hypotheses.json) MCP統合で開放C・Skill Registryで囲い込み可能性I | A-3 | [INFO-022](../Information/2026-07-29/collected-raw.md#INFO-022) |
+| 高 | Google Computer Use: 3.6 Flash・browser/mobile/desktop・プロンプトインジェクション検出・Playwright | [H-GOO-001](../config/hypotheses.json) エージェント機能拡張C方向。セキュリティ組込みは差別化要素 | A-3 | [INFO-026](../Information/2026-07-29/collected-raw.md#INFO-026) |
+| 高 | Gemini API Managed Agents: 3.6 Flashデフォルト・環境フック・予算制御・スケジュールトリガー・フリーティア | [H-GOO-001](../config/hypotheses.json) プラットフォーム機能充実C方向。開発者摩擦低減 | A-3 | [INFO-008](../Information/2026-07-29/collected-raw.md#INFO-008) |
+| 高 | Google固有定量採用データ37R/38R構造的不在: H-GOO-001 indeterminate維持の根拠不変 | [H-GOO-001](../config/hypotheses.json) 復帰条件（A-2+定量データ公表）未到達。収益成長と採用シェアの観測できない距離 | 該当なし | [H-GOO-001](../config/hypotheses.json) |
+| 高 | Gemini 3.6 Flash: OSWorld 83.0%・DeepSWE 49%・MLE Bench 63.9%・$1.50/$7.50・エージェントコスト-65% | [H-GOO-001](../config/hypotheses.json) フロンティア性能回復C方向。但しavailability≠adoption | A-3 | [INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) |
+| 高 | Chatbot Arena 7月: Gemini 3.1 Pro 1504・3.5 Flash 1503・トップ6が1503+に密集 | [H-GOO-001](../config/hypotheses.json) フロンティア差別化薄化I方向と性能競争力維持C方向の同時観測 | A-2 | [INFO-061](../Information/2026-07-22/collected-raw.md#INFO-061) |
+| 中 | Genesis Mission $40M DOE・AlphaEvolve/AlphaFold 3/AlphaGenome・Gemini for Government数万名 | [H-GOO-001](../config/hypotheses.json) 政府・科学採用C方向。[H-GOO-003](../config/hypotheses.json) 研究卓越性C方向 | A-3 | [INFO-009](../Information/2026-07-29/collected-raw.md#INFO-009) |
+| 中 | Hassabis AGI「あと数年」・Amodei/Altmanと予測収束・国際AGI安全機関提案・30日レビュー | [H-GOO-003](../config/hypotheses.json) 研究卓越性C方向。[IND-028](../config/indicators.json) high/rising強化 | B-2 | [INFO-053](../Information/2026-07-29/collected-raw.md#INFO-053) [INFO-054](../Information/2026-07-29/collected-raw.md#INFO-054) |
+| 中 | AlphaEvolve数学ブレークスルー・Genesis Mission 278チーム選定 | [H-GOO-003](../config/hypotheses.json) 研究卓越性C方向。自律科学ワークフローの制度化 | B-2 | [INFO-052](../Information/2026-07-29/collected-raw.md#INFO-052) |
+| 中 | DeepMind研究者AI軍事契約辞任・AI Safety Index軍事ピボット指摘 | [H-GOO-003](../config/hypotheses.json) 研究卓越性と軍事応用の緊張。研究者流失の長期影響は未測定 | B-3 | [INFO-050](../Information/2026-07-22/collected-raw.md#INFO-050) |
 
 ## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
-| Google固有定量採用データ（A-2+品質のシェア・収益・利用率）が初めて公表される | indeterminate状態が解消し、low/mediumのいずれかに復帰。方向性偏り記録も更新 | 次回 | [H-GOO-001](../config/hypotheses.json) |
+| Google固有定量採用データ（A-2+品質のGeminiシェア・収益・利用率）が初めて公表される | indeterminate状態が解消し、low/mediumのいずれかに復帰。方向性偏り記録も更新 | 次回 | [H-GOO-001](../config/hypotheses.json) |
+| Google Cloud収益成長のGemini固有寄与分が定量分離される | 復帰条件の一部を充足。Google Cloud Q2 +81.8%のGemini寄与が定量で示されればC方向の確度上昇根拠 | 90日 | [H-GOO-001](../config/hypotheses.json) |
 | Gemini 3.5 ProがGAされ、GPT-5.6 Sol/Claude Fable 5との性能差が5pt以内に縮小する | 競争力低下の下方偏りが完全に解消され、indeterminate復帰条件の一つが充足される | 90日 | [IND-001](../config/indicators.json) |
-| Gemini 3.6 FlashのOSWorld 83.0%が他社モデル（GPT-5.6 Sol・Claude）で超えられる | Computer Use領域での一時的優位が崩れ、C方向の材料が弱まる | 90日 | [IND-001](../config/indicators.json) |
+| Gemini 3.6 FlashのOSWorld 83.0%が他社モデルで超えられる | Computer Use領域での一時的優位が崩れ、C方向の材料が弱まる | 90日 | [IND-001](../config/indicators.json) |
 | Chatbot Arenaでトップ6の密集が続き、Geminiがトップ3から脱落する | フロンティア差別化の残存が弱まり、[H-GOO-001](../config/hypotheses.json)のC方向根拠が後退する | 120日 | [IND-025](../config/indicators.json) |
 | DeepMindの研究者流失が3人以上に増加し、安全性チームの体制変更が観測される | [H-GOO-003](../config/hypotheses.json)の研究卓越性→製品競争力の因果が揺らぐ | 180日 | [IND-030](../config/indicators.json) |
 | Gemini Enterprise Agent Platformの囲い込み証拠（Skill Registryの排他性・ベンダーロックイン訴訟）が観測される | [H-GOO-002](../config/hypotheses.json)のlow帯が棄却方向に移動する | 120日 | [IND-027](../config/indicators.json) |
@@ -71,25 +76,26 @@ Gemini 3.6 Flashリリース・Gemini 4事前学習開始は、研究卓越性�
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:---:|---|---|---|
-| [H-GOO-001](../config/hypotheses.json) | GoogleはGemini統合で検索・Workspace・Cloudのデータ優位を活かしエンタープライズAI市場でシェアを拡大する | 50% indeterminate | ±0%（v4.42 DEGRADED）。Google固有定量採用データ29R+構造的不在でindeterminate維持。Gemini 3.6 Flashリリース・OSWorld 83.0%（INFO-003 A-3）=性能回復C方向。Gemini Enterprise Agent Platform完全統合・Computer Use内蔵（INFO-020/030 A-3）=プラットフォーム深化C方向。Chatbot Arena密集トップ6 1503+（INFO-061 A-2）=差別化薄化I方向。復帰条件（A-2+定量データ公表）未到達。方向性偏りを「下方」から「中間」に更新 | [INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) [INFO-020](../Information/2026-07-22/collected-raw.md#INFO-020) [INFO-030](../Information/2026-07-22/collected-raw.md#INFO-030) | [INFO-061](../Information/2026-07-22/collected-raw.md#INFO-061)（定量データ29R+不在） |
-| [H-GOO-002](../config/hypotheses.json) | GoogleはGemini Tools & Agentsでオープン標準とのDay 0サポートを維持し囲い込みを回避する | 23% low | ±0%。Gemini Enterprise Agent PlatformでMCPネイティブサポート・Computer Use内蔵（INFO-020/030 A-3）=開放C方向。Skill Registryでプラットフォーム固有化の可能性=囲い込みI方向。囲い込みIと開放Cの品質調整後均衡不変。low帯深化 | [INFO-020](../Information/2026-07-22/collected-raw.md#INFO-020) (MCP統合) | [INFO-035](../Information/2026-07-22/collected-raw.md#INFO-035) (Skill Registry) |
-| [H-GOO-003](../config/hypotheses.json) | GoogleはDeepMind統合シナジーでエコシステム深度・研究卓越性・インフラ統合を通じて競争力を維持する | 48% medium | ±0%。Gemini 3.6 Flashリリース・Gemini 4事前学習開始（INFO-003/004 A-3）=研究卓越性C。Hassabis AGI 2029-2030・事前テスト機関要請（INFO-078/079 B-3）=C方向。DeepMind研究者辞任・AI Safety Index軍事ピボット指摘（INFO-050 B-3）=I方向。medium維持 | [INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) [INFO-004](../Information/2026-07-22/collected-raw.md#INFO-004) [INFO-078](../Information/2026-07-22/collected-raw.md#INFO-078) | [INFO-050](../Information/2026-07-22/collected-raw.md#INFO-050) (研究者辞任) |
+| [H-GOO-001](../config/hypotheses.json) | GoogleはGemini統合で検索・Workspace・Cloudのデータ優位を活かしエンタープライズAI市場でシェアを拡大する | 50% indeterminate | ±0%。Google固有定量採用データ37R/38R構造的不在でindeterminate維持。Google Cloud Q2 +81.8%/$248億(INFO-059 B-2)=収益成長C方向。GCP 14%最速成長(INFO-033 B-2)=C方向。Managed Agents・Enterprise Agent Platform・Computer Use(INFO-008/022/026 A-3)=プラットフォーム深化C方向。Chatbot Arena密集トップ6 1503+(INFO-061 A-2)=差別化薄化I方向。復帰条件（A-2+定量データ公表）未到達。方向性偏り「中間」維持 | [INFO-059](../Information/2026-07-29/collected-raw.md#INFO-059) [INFO-033](../Information/2026-07-29/collected-raw.md#INFO-033) [INFO-008](../Information/2026-07-29/collected-raw.md#INFO-008) [INFO-022](../Information/2026-07-29/collected-raw.md#INFO-022) [INFO-026](../Information/2026-07-29/collected-raw.md#INFO-026) [INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) | [INFO-061](../Information/2026-07-22/collected-raw.md#INFO-061)（定量データ37R/38R不在） |
+| [H-GOO-002](../config/hypotheses.json) | GoogleはGemini Tools & Agentsでオープン標準とのDay 0サポートを維持し囲い込みを回避する | 23% low | ±0%。Enterprise Agent PlatformでMCPネイティブサポート(INFO-022 A-3)=開放C方向。Computer UseでPlaywright統合・yield_to_user(INFO-026 A-3)=開放C方向。Skill Registryでプラットフォーム固有化の可能性=囲い込みI方向。囲い込みIと開放Cの品質調整後均衡不変。low帯深化 | [INFO-022](../Information/2026-07-29/collected-raw.md#INFO-022) (MCP統合) [INFO-026](../Information/2026-07-29/collected-raw.md#INFO-026) (Playwright) | [INFO-035](../Information/2026-07-22/collected-raw.md#INFO-035) (Skill Registry) |
+| [H-GOO-003](../config/hypotheses.json) | GoogleはDeepMind統合シナジーでエコシステム深度・研究卓越性・インフラ統合を通じて競争力を維持する | 48% medium | ±0%。Hassabis AGI「あと数年」・AGI安全機関提案(INFO-053/054 B-2)=C方向。AlphaEvolve数学ブレークスルー・Genesis Mission 278チーム(INFO-052 B-2)=C方向。Gemini 3.6 Flash・Gemini 4事前学習(INFO-003/004 A-3)=研究卓越性C。DeepMind研究者辞任・AI Safety Index軍事ピボット指摘(INFO-050 B-3)=I方向。medium維持 | [INFO-053](../Information/2026-07-29/collected-raw.md#INFO-053) [INFO-052](../Information/2026-07-29/collected-raw.md#INFO-052) [INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) [INFO-004](../Information/2026-07-22/collected-raw.md#INFO-004) | [INFO-050](../Information/2026-07-22/collected-raw.md#INFO-050) (研究者辞任) |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-001](../config/indicators.json) | 主要ベンチマーク性能 | +5pt以上/期でhigh | Gemini 3.6 Flash OSWorld-Verified 83.0%・DeepSWE 49%・MLE Bench 63.9%（INFO-003 A-3）。3.5 Proパートナーテスト中・GA準備中。Chatbot Arena Gemini 3.1 Pro 1504・3.5 Flash 1503・トップ6密集1503+（INFO-061 A-2）。SWE-bench Verified GPT-5.6 Sol 96.2%首位（INFO-062 A-2）。フロンティア競争力回復だがトップではない。elevated/rising | 2026-07-22 |
-| [IND-006](../config/indicators.json) | エージェントスタック競争 | elevated維持で継続監視 | Gemini Enterprise Agent Platform完全統合（INFO-020/040 A-3/B-3）・Managed Agents・Interactions API・Computer Use内蔵（INFO-016/030 A-3）・容量予約SLA。プラットフォーム機能は充実。採用定量データ不在で評価不能。elevated/rising | 2026-07-22 |
-| [IND-025](../config/indicators.json) | マルチモーダル信頼性・性能コモディティ化 | 性能差ベンダー間5%未満でhigh | Gemini 3.6 Flash OSWorld 83.0%（INFO-003 A-3）・Chatbot Arena密集トップ6 1503+（INFO-061 A-2）・SWE-bench GPT-5.6 Sol 96.2%首位・Kimi K3 93.4%（INFO-062 A-2）・オープンモデル70-90%ギャップ閉鎖（INFO-064 B-3）。量的向上+ベンチマーク密集化。真の理解の客観的検証未到達。elevated/rising | 2026-07-22 |
-| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用でhigh | MCP 2026-07-28 RC（INFO-024 B-3）・AAIF/Linux Foundation移管（INFO-025 B-2）・Grok Build OSS（INFO-006 A-3）・Bedrock Agents Classic 7/30クローズ（INFO-038 A-3）・Azure Foundry BYO Model（INFO-039 A-3）。制度化フェーズ加速継続。high/rising | 2026-07-22 |
-| [IND-028](../config/indicators.json) | AGI到達度（客観ベンチマーク vs 主観宣言） | 主観-客観乖離拡大でhigh | Hassabis AGI 2029-2030「産業革命10倍」（INFO-078 B-3）・Kokotajlo 50% by 2029（INFO-078 B-3）・GPT-5.6 Sol ARC-AGI-3 7.8% SOTA（INFO-077 B-3）・AIDE² RSI初実験的証拠[Int]^0.075で高速テイクオフなし。AGI定義コンセンサス不在。RSI具体化と限界の同時観測。high/rising | 2026-07-22 |
-| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | （critical到達済み） | **critical/rising**。DeepMind研究者AI軍事契約辞任（INFO-050 B-3）・AI Safety Index 2026夏号が軍事AIピボットを新興リスク指摘・OpenAI順応→契約獲得・Anthropic安全性拒否→SCR排除の三社同時観測（INFO-049/048/012 B-2/C-3）・OpenAI GPT-5.6 Solサンドボックス脱出「前例のないサイバー事案」（INFO-002 B-2）。KIQ-MIL-001 29R不在。条件2充実史上最大水準継続・更に強化 | 2026-07-22 |
+| [IND-001](../config/indicators.json) | 主要ベンチマーク性能 | +5pt以上/期でhigh | Gemini 3.6 Flash OSWorld-Verified 83.0%・DeepSWE 49%・MLE Bench 63.9%（INFO-003 A-3）。3.5 Proパートナーテスト中・GA準備中。Chatbot Arena Gemini 3.1 Pro 1504・3.5 Flash 1503・トップ6密集1503+（INFO-061 A-2）。07-29バッチで新規Geminiベンチマークデータなし。フロンティア競争力回復だがトップではない。elevated/rising | 2026-07-29 |
+| [IND-006](../config/indicators.json) | エージェントスタック競争 | elevated維持で継続監視 | Gemini Enterprise Agent Platform完全統合・Agents API+Interactions API二層（INFO-022 A-3）。Managed Agents 3.6 Flash・環境フック・予算制御（INFO-008 A-3）。Computer Use browser/mobile/desktop・プロンプトインジェクション検出（INFO-026 A-3）。gVisor+Cloud Runサンドボックス（INFO-032 B-1）。Google ADK Tier 1本番硬化（INFO-018 C-2）。プラットフォーム機能は充実。採用定量データ不在で評価不能。elevated/rising | 2026-07-29 |
+| [IND-025](../config/indicators.json) | マルチモーダル信頼性・性能コモディティ化 | 性能差ベンダー間5%未満でhigh | Gemini 3.6 Flash OSWorld 83.0%（INFO-003 A-3）・Chatbot Arena密集トップ6 1503+（INFO-061 A-2）・Claude Opus 5 HLE 64.7%首位・Kimi K3 56% HLE OSS首位。量的向上+ベンチマーク密集化継続。真の理解の客観的検証未到達。elevated/stable | 2026-07-29 |
+| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用でhigh | Enterprise Agent Platform MCPネイティブサポート（INFO-022 A-3）。MCP仕様RC・AAIF/Linux Foundation移管・Skills ecosystem拡大・3クラウドほぼ同一プラットフォーム。制度化フェーズ加速継続。high/rising | 2026-07-29 |
+| [IND-028](../config/indicators.json) | AGI到達度（客観ベンチマーク vs 主観宣言） | 主観-客観乖離拡大でhigh | Hassabis AGI「あと数年」・Amodei/Altmanと予測収束（INFO-053 B-2）。Hassabis国際AGI安全機関提案・30日レビュー（INFO-054 B-2）。AlphaEvolve数学ブレークスルー（INFO-052 B-2）。ARC-AGI-3 Claude Opus 5 30.2%。AGI定義コンセンサス不在。RSI具体化と限界の同時進行。high/rising | 2026-07-29 |
+| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | （critical到達済み） | **critical/rising**。DeepMind研究者AI軍事契約辞任（INFO-050 B-3）・AI Safety Index軍事AIピボット指摘・OpenAI順応→契約獲得・Anthropic安全性拒否→SCR排除の三社同時観測。KIQ-MIL-001人間却下比率36R/37R連続不在。条件2充実史上最大水準継続。critical解消条件3基準いずれも未到達 | 2026-07-29 |
 
 ## 6. 変化履歴
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
+| 2026-07-29 | 全面書き直し（7日freshness timeout）。07-29バッチのGoogle関連11件を統合。Google Cloud Q2 +81.8%/$248億(INFO-059 B-2)とGCP 14%最速成長(INFO-033 B-2)を追加。Managed Agents・Enterprise Agent Platform・Computer Use(INFO-008/022/026 A-3)の3プラットフォーム機能を統合。Genesis Mission $40M DOE(INFO-009 A-3)・Hassabis AGI「あと数年」(INFO-053 B-2)・AlphaEvolve(INFO-052 B-2)を追加。KIQ-GOO-001 37R/38R更新。§5指標をindicators.json v4.50に同期（IND-025 trend rising→stable）。H-GOO-001 indeterminate/50% ±0%・H-GOO-002 23% low ±0%・H-GOO-003 48% medium ±0%（全件v4.50 COMPLETE） | [INFO-059](../Information/2026-07-29/collected-raw.md#INFO-059) [INFO-033](../Information/2026-07-29/collected-raw.md#INFO-033) [INFO-008](../Information/2026-07-29/collected-raw.md#INFO-008) | 方向性偏り「中間」維持・KIQ-GOO-001 29R+→37R/38R |
 | 2026-07-22 | 全面書き直し。フロンティアモデル新規リリース（Gemini 3.6 Flash・3.5 Flash-Lite・3.5 Flash Cyber）+ Gemini 4事前学習開始を契機に現行判断で再構築。07-18の「競争力低下確定」を「性能回復だが採用データ不在」に修正。方向性偏りを「下方」から「中間」に更新。H-GOO-001 indeterminate/50% ±0%・H-GOO-002 23% low ±0%・H-GOO-003 48% medium ±0%（全件v4.42 DEGRADED）。KIQ-MIL-001 29R | [INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) [INFO-004](../Information/2026-07-22/collected-raw.md#INFO-004) | 方向性偏り「下方（競争力低下）」→「中間（性能改善だが採用データ不在）」 |
 | 2026-07-18 | 全面書き直し（7日freshness timeout）。H-GOO-001 low→indeterminate再分類。Gemini 3.5 Pro再延期・Vertex AI改称・Hassabis AGI 2030年±1年を反映 | [INFO-078](../Information/2026-07-18/collected-raw.md#INFO-078) | H-GOO-001 low→indeterminate/50% |
 | 2026-07-11 | 全面書き直し。AlphaEvolve GA企業実績・Gemini 3.5 Pro延期を反映 | [INFO-007](../Information/2026-07-11/collected-raw.md#INFO-007) | H-GOO-001 50%(±0%) |
@@ -98,34 +104,34 @@ Gemini 3.6 Flashリリース・Gemini 4事前学習開始は、研究卓越性�
 
 ## 7. ブラインドスポット
 
-- Google固有定量データが29R以上にわたり構造的に不在。H-GOO-001のindeterminate分類は分析の誠実性向上だが、「情報が来るまで待つ」希望的駐車にならないよう、下位命題分解と復帰条件の明文化が必須。Arbiter v4.39が運用ルール整備を絶対条件化したが、下位命題の個別評価設計が未完成である。
+- Google固有定量データが37R/38Rにわたり構造的に不在。H-GOO-001のindeterminate分類は分析の誠実性向上だが、「情報が来るまで待つ」希望的駐車にならないよう、下位命題分解と復帰条件の明文化が必須。Arbiter v4.39が運用ルール整備を絶対条件化したが、下位命題の個別評価設計が未完成である。
+- Google Cloud Q2 +81.8%のGemini固有寄与分の分離が不可能。Google Cloud収益成長のうちGemini需要がどれほど寄与しているかを定量で示すデータが存在しない。GCPシェア14%の低ベース効果は07-22時点（12%）から弱化しているが、AWS 28%の半分という構造は不変。
 - Gemini 3.6 Flashの性能向上（OSWorld 83.0%・DeepSWE 49%）が、GPT-5.6 Sol・Claude Fable 5とのフロンティア競争でどれほどの意味を持つかの判別が不能。Chatbot Arenaでトップ6が1503以上に密集しており、5 Eloポイントの差が採用決定要因になるかは不明。ベンチマークの天井効果が進行中であり、性能指標自体の診断的価値が低下している可能性がある。
 - Gemini 3.5 Proのパートナーテストが、品質面の最終調整なのか、戦略的リリースタイミングの調整なのかの判別が不能。07-18時点の「クリティカルベンチマーク不合格」から改善したことは確認できるが、GA時期の目途が「準備整い次第」と不明確である。
-- Gemini Enterprise Agent Platformの完全統合（Vertex AI→改称）が、Googleエコシステムへの囲い込みを強化するのか、オープン標準との共存を可能にするのかの判別が困難。Skill Registryはセキュリティ向上の正当な機能とも、プラットフォーム固有化の新メカニズムとも解釈できる。Computer Useサンドボックスの隔離コンテナ設計が他社エコシステムとの相互運用性にどう影響するかも未測定。
+- Gemini Enterprise Agent Platformの完全統合が、Googleエコシステムへの囲い込みを強化するのか、オープン標準との共存を可能にするのかの判別が困難。Skill Registryはセキュリティ向上の正当な機能とも、プラットフォーム固有化の新メカニズムとも解釈できる。Computer Useのyield_to_userは人間の制御返却を可能にするが、他社エコシステムとの相互運用性にどう影響するかは未測定。
 - DeepMind研究者のAI軍事契約辞任が、個人の良心の表明なのか、組織内の構造的緊張の表面化なのかの判別が不能。「あらゆる合法的政府目的」条項の受諾がDeepMindの安全性文化に与える長期的影響が未測定。研究者流失が3人以上に増加した場合の研究競争力への影響評価も不在。
+- Genesis Mission（278チーム・DOE国立研究所）が、Geminiの商用エンタープライズ採用の代理指標として意味を持つかが不明。政府・科学分野での利用は特定の採用シグナルだが、市場シェアの定量的指標ではない。Gemini for Governmentの数万名という規模も、シェアではなく座席数である。
 - Gemini Robotics（物理エンジニア採用・機能安全エンジニア募集）が、製品化の準備なのか、研究プロジェクトの延長なのかが不明。物理エージェント領域でのGoogleの競争優位が測定可能になる時期の見通しがない。
-- GCP +63% YoYの低ベース効果（GCPシェア14% vs AWS 28%）の排除が未解決。絶対顧客増加数がAWS/Azureと同等以上であるかの確認が必要。GCP成長がGemini固有の競争優位によるものなのか、クラウドインフラ全体の成長によるものなのかの分離が不能。
 
 ## 付録: 直近30日の参照Evidence
 
 | Evidence | 用途 |
 |---|---|
+| [INFO-059](../Information/2026-07-29/collected-raw.md#INFO-059) | Google Cloud Q2 2026: 収益$248億・YoY+81.8%・AI投資が収益貢献開始(B-2) |
+| [INFO-033](../Information/2026-07-29/collected-raw.md#INFO-033) | GCP市場シェア14%・年間最速成長12%→14%(B-2) |
+| [INFO-008](../Information/2026-07-29/collected-raw.md#INFO-008) | Gemini API Managed Agents: 3.6 Flashデフォルト・環境フック・予算制御(A-3) |
+| [INFO-022](../Information/2026-07-29/collected-raw.md#INFO-022) | Gemini Enterprise Agent Platform: Vertex AI統合・二層構造(A-3) |
+| [INFO-026](../Information/2026-07-29/collected-raw.md#INFO-026) | Google Computer Use: 3.6 Flash・browser/mobile/desktop・プロンプトインジェクション検出(A-3) |
+| [INFO-009](../Information/2026-07-29/collected-raw.md#INFO-009) | Genesis Mission $40M DOE・AlphaEvolve/AlphaFold 3/AlphaGenome・Gemini for Government数万名(A-3) |
+| [INFO-052](../Information/2026-07-29/collected-raw.md#INFO-052) | AlphaEvolve数学ブレークスルー・Genesis Mission 278チーム(B-2) |
+| [INFO-053](../Information/2026-07-29/collected-raw.md#INFO-053) | AGIタイムライン収束: Hassabis「あと数年」・Amodei/Altman(B-2) |
+| [INFO-054](../Information/2026-07-29/collected-raw.md#INFO-054) | Hassabis国際AGI安全機関提案・30日レビュー・上院10年モラトリアム削除(B-2) |
+| [INFO-032](../Information/2026-07-29/collected-raw.md#INFO-032) | 4大クラウドエージェントコードサンドボックス: Google gVisor+Cloud Run(B-1) |
+| [INFO-034](../Information/2026-07-29/collected-raw.md#INFO-034) | Google Cloud調査2400社: 86%コスト効率的成長・85%AI採用(B-2) |
+| [INFO-011](../Information/2026-07-29/collected-raw.md#INFO-011) | DoD分類ネットワークAI契約各最大$200M・4社(B-3) |
 | [INFO-003](../Information/2026-07-22/collected-raw.md#INFO-003) | Gemini 3.6 Flash・3.5 Flash-Lite・3.5 Flash Cyber: OSWorld 83.0%・$1.50/$7.50・エージェントコスト-65%(A-3) |
 | [INFO-004](../Information/2026-07-22/collected-raw.md#INFO-004) | Gemini 4事前学習開始: Google公式「最も野心的」(A-3) |
 | [INFO-061](../Information/2026-07-22/collected-raw.md#INFO-061) | Chatbot Arena 7月: Claude Fable 5(1510)首位・GPT-5.6 Sol(1509)・トップ6密集1503+(A-2) |
-| [INFO-062](../Information/2026-07-22/collected-raw.md#INFO-062) | SWE-bench Verified: GPT-5.6 Sol 96.2%首位・ARC-AGI-2 92.5(A-2) |
 | [INFO-020](../Information/2026-07-22/collected-raw.md#INFO-020) | Vertex AI→Gemini Enterprise Agent Platform統合: 容量予約SLA(A-3) |
-| [INFO-016](../Information/2026-07-22/collected-raw.md#INFO-016) | Gemini Enterprise Agent Platform: Managed Agents・Interactions API・Parallel Web Search(A-3) |
-| [INFO-030](../Information/2026-07-22/collected-raw.md#INFO-030) | Computer Use: Gemini API/Enterprise内蔵ツール化・OSWorld 83.0%・サンドボックス(A-3) |
-| [INFO-035](../Information/2026-07-22/collected-raw.md#INFO-035) | Gemini Enterprise Skill Registry: セキュア・プライベート・低レイテンシ(B-3) |
-| [INFO-031](../Information/2026-07-22/collected-raw.md#INFO-031) | Gemini Robotics: 物理エージェント・機能安全エンジニア採用(B-3) |
 | [INFO-050](../Information/2026-07-22/collected-raw.md#INFO-050) | DeepMind研究者辞任・AI Safety Index軍事AIピボット指摘(B-3) |
-| [INFO-078](../Information/2026-07-22/collected-raw.md#INFO-078) | Hassabis AGI 2029-2030「産業革命10倍」・Kokotajlo 50% by 2029(B-3) |
-| [INFO-079](../Information/2026-07-22/collected-raw.md#INFO-079) | Hassabis事前テスト機関設立要請・29カ国中国AI条約署名(B-3) |
-| [INFO-059](../Information/2026-07-22/collected-raw.md#INFO-059) | API価格比較: Gemini 3.6 Flash $1.50/$7.50・DeepSeek $0.14/$0.28・Claude $10/$50(B-3) |
-| [INFO-064](../Information/2026-07-22/collected-raw.md#INFO-064) | オープンモデル70-90%ギャップ閉鎖・GLM-5.2 Arena 1488オープン首位(B-3) |
-| [INFO-024](../Information/2026-07-22/collected-raw.md#INFO-024) | MCP 2026-07-28 RC: ステートレス・MCP Apps・Extensionsファーストクラス化(B-3) |
-| [INFO-025](../Information/2026-07-22/collected-raw.md#INFO-025) | AAIF Linux Foundation移管: MCP中立ガバナンス・Agentgateway ID-JAG(B-2) |
-| [INFO-068](../Information/2026-07-22/collected-raw.md#INFO-068) | Google Project Tembo 2.7GW・Meta Hyperion 5GW/$50B+・$850B DCリース(B-3) |
-| [INFO-010](../Information/2026-07-22/collected-raw.md#INFO-010) | NotebookLM→Gemini Notebook改名: 製品統合強化(A-3) |
-| [Arbiter v4.42](../state/arbiter-2026-07-22.md) | 確度評価の完全根拠 |
+| [INFO-035](../Information/2026-07-22/collected-raw.md#INFO-035) | Gemini Enterprise Skill Registry: セキュア・プライベート・低レイテンシ(B-3) |
