@@ -1,8 +1,8 @@
 # AI市場全体 - 静的インテリジェンス
 
-> 最終判断更新: 2026-07-31
+> 最終判断更新: 2026-08-01
 > 全体確信度: 中
-> 情報非対称性: ByteDance/DeepSeek グローバルシェア追跡困難. Y軸「フロンティア差別化の持続性」の完全な定量評価基準は未設定. [H-GOV-001](../config/hypotheses.json) 49% medium（介入次元拡大と抵抗力多面化の均衡・因果チェーン複合軸化N=4+で49%妥当性強化）. [H-GOV-002](../config/hypotheses.json) 24% low（絶対条件39R連続未達成・Anthropic $6B収益が順応報酬の業界全体波及と直接矛盾）. [H-OAI-001](../config/hypotheses.json) 45% medium（3R連続-1%累積48→45%・KIQ-OAI-001 38R/39R不在・availability≠adoption厳格適用・45%はmedium帯下限到達・次回-1%でlow移行分岐点）. [H-ANT-002](../config/hypotheses.json) 53% low（KIQ-ANT-002 36R/37R不在・「Code」カテゴリー≠CLI固有収益の混同リスク・次回KIQ継続不在 AND 新規A-2品質C証拠不出現で52%引き下げ条件）. **SCN-004(28%)が首位を維持し, SCN-003(24%)が単独2位**（SCN-002 22%・SCN-005 18%・SCN-001 8%）. [H-CAR-002](../config/hypotheses.json) 61% medium（v4.45-v4.51段階的引き下げ66→61%・v4.51でP(B)バンド評価導入・v4.52でP(B)バンド評価初適用結果支持・次回P(B)定量不出現でP(B)バンド下限引き下げ条件）. [IND-030](../config/indicators.json) critical/rising（条件2充実史上最大水準継続・KIQ-MIL-001 38R/39R不在）
+> 情報非対称性: ByteDance/DeepSeek グローバルシェア追跡困難. Y軸「フロンティア差別化の持続性」の完全な定量評価基準は未設定. [H-GOV-001](../config/hypotheses.json) 49% medium（介入次元拡大と抵抗力多面化の均衡・因果チェーン複合軸化N=4+で49%妥当性強化）. [H-GOV-002](../config/hypotheses.json) 24% low（絶対条件39R連続未達成・Anthropic $6B収益が順応報酬の業界全体波及と直接矛盾）. [H-OAI-001](../config/hypotheses.json) 44% low（4R連続-1%累積48→44%・各ラウンド異なる構造的根拠・medium→low移行承認・44%はlow帯上限の保守的配置・独立第2A-1ソース確認でlow確定）. [H-ANT-002](../config/hypotheses.json) 52% low（v4.52条件執行・KIQ-ANT-002 37R/38R不在・次回条件基準緩和A-2→B-1+検討記録）. **SCN-004(28%)が首位を維持し, SCN-003(24%)が単独2位**（SCN-002 22%・SCN-005 18%・SCN-001 8%）. [H-CAR-002](../config/hypotheses.json) 60% medium（v4.45-v4.53段階的引き下げ66→60%・P(B)バンド評価継続・Blue ±0%提案2R連続却下・次回P(B)定量不出現でP(B)バンド下限引き下げ条件）. [IND-030](../config/indicators.json) critical/rising（条件2充実史上最大水準継続・KIQ-MIL-001 39R/40R不在）
 > 主参照: [hypotheses.json](../config/hypotheses.json) [H-OAI-001](../config/hypotheses.json) [H-OAI-002](../config/hypotheses.json) [H-OAI-003](../config/hypotheses.json) [H-GOV-001](../config/hypotheses.json) [H-GOV-002](../config/hypotheses.json) [H-ANT-001](../config/hypotheses.json) [H-ANT-002](../config/hypotheses.json) [H-ANT-003](../config/hypotheses.json) [H-GOO-001](../config/hypotheses.json) [H-GOO-002](../config/hypotheses.json) [H-GOO-003](../config/hypotheses.json) [H-XAI-002](../config/hypotheses.json) [H-XAI-004](../config/hypotheses.json) [H-BTD-001](../config/hypotheses.json) [H-BTD-002](../config/hypotheses.json) [H-BTD-003](../config/hypotheses.json) [H-CAR-001](../config/hypotheses.json) [H-CAR-002](../config/hypotheses.json) [H-CAR-003](../config/hypotheses.json), [scenarios.json](../config/scenarios.json) SCN-001/002/003/004/005, [indicators.json](../config/indicators.json) [IND-013](../config/indicators.json) [IND-025](../config/indicators.json) [IND-026](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-029](../config/indicators.json) [IND-030](../config/indicators.json)
 
 ## プレイヤー一覧スナップショット (2026-07-31時点)
@@ -24,9 +24,9 @@
 
 SCN-004「誰でもAI」が28%で首位を維持し（v4.50で29→28%）[scenarios.json](../config/scenarios.json), SCN-003「静かな囲い込み」が24%で単独2位（v4.50で23→24%）にある. v4.50以降主要5シナリオ全件±0%が3R継続している. SCN-003 +1%提案はv4.49以降4R連続で却下されている（Red反証強度「強」: 全証拠Anthropic中心・「エコシステム成功」≠「エコシステム囲い込み」・主題的而非証拠的独立性）. コモディティ化圧力の多ソース確認（OSS性能パリティ・トークンコスト60-80%削減・DeepSeek V4 85%安）がSCN-004の下限28%を支える.
 
-[H-CAR-002](../config/hypotheses.json)が63%から61%に低下した（累積-2%: v4.50 63→62%・v4.51 62→61%）. v4.51で段階的引き下げメカニズムの設計見直しが実施されP(B)バンド評価が導入された. v4.52でP(B)バンド評価初適用の結果61%が支持された. AI生成コード41%・ジュニア職8%で低下軸は強化されたが, 上昇軸（設計・評価スキル需要）の定量確証が複数ラウンドにわたり不在である. 次回P(B)定量データ不出現でP(B)バンド下限引き下げ条件.
+[H-CAR-002](../config/hypotheses.json)が61%から60%に低下した（累積-6%: v4.45-v4.53段階的引き下げ66→60%）. v4.51で段階的引き下げメカニズムの設計見直しが実施されP(B)バンド評価が導入された. v4.53ではBlue ±0%提案（ドリフト停止）が2R連続で却下されRed推奨の-1%が採用された. AI生成コード41%・ジュニア職8%で低下軸は強化されたが, 上昇軸（設計・評価スキル需要）の定量確証が複数ラウンドにわたり不在である. 次回P(B)定量データ不出現でP(B)バンド下限引き下げ条件.
 
-[H-OAI-001](../config/hypotheses.json)が48%から45%に低下した（3R連続-1%: v4.50 48→47%・v4.51 47→46%・v4.52 46→45%）. 各ラウンド異なる根拠だが機械的ドリフトとの完全な区別は困難である. 45%はmedium帯下限到達であり, 次回-1%でlow移行の重要な分岐点になる. [INFO-077](../Information/2026-07-31/collected-raw.md#INFO-077)(A-2) Copilot ~$1B vs Cursor $4B vs Claude Code $2.5Bと[INFO-088](../Information/2026-07-31/collected-raw.md#INFO-088)(A-2) Anthropic評価額$965B vs OpenAI $852Bが新規I証拠として記録された. 反証C証拠（Codex SWE-bench首位・$5,000億DC計画）は存続する.
+[H-OAI-001](../config/hypotheses.json)が48%から44%に低下しmedium→low移行が承認された（4R連続-1%: v4.50 48→47%・v4.51 47→46%・v4.52 46→45%・v4.53 45→44%）. 各ラウンド異なる構造的根拠（KIQ不在・競争的劣位・評価額逆転・MS競争動態）で機械的ドリフトとの区別を「根拠独立性」で評価した. 44%はlow帯上限の保守的配置であり, 独立第2A-1ソースでMicrosoft-OpenAI競争動態が確認されればlow確定, 未確認なら44%安定化可能性. [INFO-084](../Information/2026-08-01/collected-raw.md#INFO-084)(A-1) Microsoft独占アクセス撤廃・12+自社モデルと[INFO-097](../Information/2026-08-01/collected-raw.md#INFO-097)(A-1) Nadella「ハーネスとモデルを分離」がv4.53の-1%根拠. 反証C証拠（Codex Terminal-Bench首位・300万WAU・$182.6B累積調達）は存続する.
 
 ---
 
@@ -48,7 +48,7 @@ SCN-004の首位継続は価格崩壊・性能収束・採用率停滞の累積�
 
 ### 労働代替の深化
 
-[H-CAR-002](../config/hypotheses.json) 61% medium（-5%累積: v4.45-v4.51段階的引き下げ66→61%）. v4.51で段階的引き下げメカニズムの設計見直しが実施されP(B)バンド評価が導入された. v4.52でP(B)バンド評価初適用の結果61%が支持された. AI生成コードが全世界の41%に到達し（[INFO-032](../Information/2026-07-26/collected-raw.md#INFO-032) B-2）, ジュニア職が8%に減少し, 6200万人調査でジュニア雇用が9-10%減少した（[INFO-042](../Information/2026-07-26/collected-raw.md#INFO-042) B-2）. 低下軸の証拠は圧倒的に蓄積している. ただし上昇軸（AI設計・評価スキル需要）の定量確証が複数ラウンドにわたり不在であり, 次回P(B)定量データ不出現でP(B)バンド下限引き下げ条件.
+[H-CAR-002](../config/hypotheses.json) 60% medium（-6%累積: v4.45-v4.53段階的引き下げ66→60%）. v4.53でBlue ±0%提案（ドリフト停止）が2R連続で却下されRed推奨-1%採用. P(A)低下軸は史上最強確認（6× A-2品質独立ソース）だがP(B)上昇軸B-2+定量データ依然不在. AI生成コードが全世界の41%に到達し（[INFO-032](../Information/2026-07-26/collected-raw.md#INFO-032) B-2）, ジュニア職が8%に減少し, 6200万人調査でジュニア雇用が9-10%減少した（[INFO-042](../Information/2026-07-26/collected-raw.md#INFO-042) B-2）. 次回P(B)定量データ不出現でP(B)バンド下限引き下げ条件.
 
 ---
 
@@ -80,9 +80,9 @@ SCN-004の首位継続は価格崩壊・性能収束・採用率停滞の累積�
 | BenchLM上位3社の差が3pt以内に収束する | 「差別化持続」の根拠が消え, SCN-004が主シナリオになる | 90日 | [IND-025](../config/indicators.json) |
 | API価格下落トレンドが反転しフロンティア価格が上昇に転じる | 価格コモディティ化の不可逆的加速判断が崩れる | 180日 | [IND-025](../config/indicators.json) |
 | 他社の5%持分提案が観測され, 政府-AI資本結合が一般化する | KIQ-NEW-001のN=1制約が解消し, [H-GOV-001](../config/hypotheses.json) の独立因果チェーンが強化される | 180日 | [IND-030](../config/indicators.json) |
-| KIQ-OAI-001が回答されAPI/Enterprise/Consumer収益内訳が公表される | [H-OAI-001](../config/hypotheses.json) 45%の凍結が解消する | 90日 | [IND-027](../config/indicators.json) |
-| Anthropic公式の「Code」カテゴリー内訳（CLI/API/エンタープライズ機能）が開示される | 36R/37R連続不在が解消し, [H-ANT-002](../config/hypotheses.json) 53% lowの確定判定が可能になる | 次回 | [H-ANT-002](../config/hypotheses.json) |
-| H-CAR-002上昇軸の定量確証（KIQ-CAR-002-OPS）が観測される | 「二極化」軸の定量確証が判定され, 61%の妥当性が上方修正される | 次回 | [H-CAR-002](../config/hypotheses.json) |
+| KIQ-OAI-001が回答されAPI/Enterprise/Consumer収益内訳が公表される | [H-OAI-001](../config/hypotheses.json) 44%の凍結が解消する | 90日 | [IND-027](../config/indicators.json) |
+| Anthropic公式の「Code」カテゴリー内訳（CLI/API/エンタープライズ機能）が開示される | 37R/38R連続不在が解消し, [H-ANT-002](../config/hypotheses.json) 52% lowの確定判定が可能になる | 次回 | [H-ANT-002](../config/hypotheses.json) |
+| H-CAR-002上昇軸の定量確証（KIQ-CAR-002-OPS）が観測される | 「二極化」軸の定量確証が判定され, 60%の妥当性が上方修正される | 次回 | [H-CAR-002](../config/hypotheses.json) |
 | [H-GOV-001](../config/hypotheses.json) が45%を割る | 介入の実効性が棄却水準に接近。medium→low移行 | 180日 | [H-GOV-001](../config/hypotheses.json) |
 | critical解消条件3基準のいずれかが充足される | [IND-030](../config/indicators.json) critical→elevated降格を検証 | 常時 | [IND-030](../config/indicators.json) |
 | Google固有寄与の定量分解が成功し, AWS/Azure成長率を上回る | [H-GOO-001](../config/hypotheses.json) indeterminate→数値ラベル復帰条件充足 | 次回 | [H-GOO-001](../config/hypotheses.json) |
@@ -93,13 +93,13 @@ SCN-004の首位継続は価格崩壊・性能収束・採用率停滞の累積�
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 |
 |---|---|:---:|---|
-| [H-OAI-001](../config/hypotheses.json) | Agent機能でB2B支配的地位を確立する | 45% medium | -3%（48→45%）3R連続（v4.50/v4.51/v4.52各-1%）。KIQ-OAI-001 38R/39R不在継続。[INFO-077](../Information/2026-07-31/collected-raw.md#INFO-077)(A-2) Copilot ~$1B vs Cursor $4B vs Claude Code $2.5B・[INFO-088](../Information/2026-07-31/collected-raw.md#INFO-088)(A-2) Anthropic $965B vs OpenAI $852Bが新規I証拠。反証C（Codex SWE-bench首位・$5,000億DC計画）存続。45%はmedium帯下限・次回-1%でlow移行分岐点 |
+| [H-OAI-001](../config/hypotheses.json) | Agent機能でB2B支配的地位を確立する | 44% low | -4%（48→44%）4R連続（v4.50/v4.51/v4.52/v4.53各-1%）。各ラウンド異なる構造的根拠。KIQ-OAI-001 39R/40R不在継続。[INFO-084](../Information/2026-08-01/collected-raw.md#INFO-084)(A-1) MS独占アクセス撤廃・12+自社モデル・[INFO-097](../Information/2026-08-01/collected-raw.md#INFO-097)(A-1) Nadella「ハーネスとモデルを分離」がv4.53根拠。但し同一TechCrunch記事依存。反証C（Codex Terminal-Bench首位・300万WAU・$182.6B累積調達）存続。44%はlow帯上限・独立第2A-1ソース確認でlow確定 |
 | [H-OAI-002](../config/hypotheses.json) | MCP開放上にプロプライエタリ上位レイヤーで囲い込む | 44% low | ±0%。囲い込み否定累積継続。Agent SDK provider-agnostic・MS Foundry→M365 Copilot移行。クラウド間エージェント移動不可能(C-3)は囲い込み直接証拠だがC-3品質 |
 | [H-OAI-003](../config/hypotheses.json) | AGI/スーパーインテリジェンス達成を最優先とする | 3% low | ±0%。商業化規模圧倒的 |
 | [H-GOV-001](../config/hypotheses.json) | 政府が経済的手段でAnthropicの安全性姿勢に圧力をかける先例が確立された | 49% medium | ±0%。因果チェーン複合軸化N=4+で49%妥当性強化。SCR指定・契約排除は確定事実。但しAnthropic $6B収益が抵抗力多面化 |
 | [H-GOV-002](../config/hypotheses.json) | 政府のAnthropic圧力がAI業界全体に波及し萎縮効果が生じる | 24% low | ±0%。絶対条件39R連続未達成。Anthropic $6B収益が順応報酬の業界全体波及と直接矛盾。NDA萎縮効果(B-2)はC材料だが波及の直接証拠ではない |
 | [H-ANT-001](../config/hypotheses.json) | 安全性はKano「魅力的品質」→「当たり前品質」移行過程 | 38% low | -1%（39→38%）Arbiter v4.51。near-miss価値（INFO-045司法検証・INFO-054行動的分化）による引き下げ抑制妥当。KIQ-FLI-001不在継続。FLI首位維持=C。軍事契約で批判・RCE=I |
-| [H-ANT-002](../config/hypotheses.json) | Claude Code + Agent SDKが開発者市場を取る | 53% low | ±0%。KIQ-ANT-002 36R/37R不在。Claude Code収益20%だが「Code」カテゴリー≠CLI固有収益の混同リスク。次回KIQ継続不在 AND 新規A-2品質C証拠不出現で52%引き下げ条件 |
+| [H-ANT-002](../config/hypotheses.json) | Claude Code + Agent SDKが開発者市場を取る | 52% low | -1%（53→52%）v4.52条件執行。KIQ-ANT-002 37R/38R不在。Claude Code $2.5B年率・46%最愛・91% CSAT（[INFO-098](../Information/2026-08-01/collected-raw.md#INFO-098) B-1）は強力B-1定量だがA-2基準過度に厳格とのRed指摘記録。次回条件基準緩和A-2→B-1+検討 |
 | [H-ANT-003](../config/hypotheses.json) | マルチクラウドで広げる | 6% low | ±0%。SpaceX計算パートナーシップは計算調達多角化だがクラウドプロバイダーではない |
 | [H-GOO-001](../config/hypotheses.json) | Gemini統合でエコシステム収益を拡大する | 50% indeterminate | ±0%。Google固有定量採用データ不在継続。I=0件は「測定不能」状態 |
 | [H-GOO-002](../config/hypotheses.json) | 囲い込み回避で開放維持 | 23% low | ±0%。品質調整後均衡不変 |
@@ -110,7 +110,7 @@ SCN-004の首位継続は価格崩壊・性能収束・採用率停滞の累積�
 | [H-BTD-002](../config/hypotheses.json) | 消費者基盤と企業インフラの相乗的並行拡大を展開。日次赤字が消費者ビジネスの経済的持続性に懸問。反証条件: 消費者DAU減少または企業Token経済成長停止で再評価 | 36% low | ±0%（v4.52）。Blue +1%提案が4R連続却下（出所独立性・保護市場・投資≠成果の3条件未解消）。7/30組織再編（[INFO-068](../Information/2026-07-31/collected-raw.md#INFO-068) A-2）はステートメントの組織的裏付け（C方向）だが確率変更根拠不十分。豆包MAU 5.28億・$700億AI投資計画は下限支持 |
 | [H-BTD-003](../config/hypotheses.json) | ByteDanceは著作権問題で法的制約を受け、グローバル展開が制限される | 40% medium | ±0%。WAICO設立・AIチャットボット規制強化で規制インフラ拡大。但し著作権関連新規A-2+証拠なし |
 | [H-CAR-001](../config/hypotheses.json) | AI業務自律化が3年以内に中堅企業の中間層雇用を大幅に削減する | 36% low | ±0%。「79%導入」≠「30%自動化達成」の因果ギャップ未解決 |
-| [H-CAR-002](../config/hypotheses.json) | AIコーディングツール普及で「書く能力」の価値が低下し、設計・評価への移行で新スキル需要が二極化する | 61% medium | v4.45-v4.51段階的引き下げ（66→65→64→63→62→61%）。v4.51でP(B)バンド評価導入・v4.52でP(B)バンド初適用結果支持。AI生成コード41%・ジュニア8%で低下軸強化。AND条件上昇軸P(B)のB-2+品質不在複数ラウンド累積。次回P(B)定量不出現でP(B)バンド下限引き下げ条件・medium維持 |
+| [H-CAR-002](../config/hypotheses.json) | AIコーディングツール普及で「書く能力」の価値が低下し、設計・評価への移行で新スキル需要が二極化する | 60% medium | v4.45-v4.53段階的引き下げ（66→65→64→63→62→61→60%）。P(B)バンド評価継続。v4.53でBlue ±0%提案（ドリフト停止）が2R連続でArbiter却下・Red推奨-1%採用。AI生成コード41%・ジュニア8%で低下軸強化。AND条件上昇軸P(B)のB-2+品質不在複数ラウンド累積。次回P(B)定量不出現でP(B)バンド下限引き下げ条件・medium維持 |
 | [H-CAR-003](../config/hypotheses.json) | バリューチェーン中間工程のビジネス職は3年以内に大規模再編される | 57% medium | ±0%。Gartner $234B SaaS支出破壊予測。AaaSがSaaS置換の趨勢継続 |
 
 ---
@@ -119,13 +119,13 @@ SCN-004の首位継続は価格崩壊・性能収束・採用率停滞の累積�
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-013](../config/indicators.json) | AIエージェント関連セキュリティ侵害頻度 | 大規模インシデントでcritical | GPT-5.6 Solサンドボックス脱出・HF本番DBアクセス(3ソース確認)(B-2/C-3)・88.4%がセキュリティインシデント経験(B-2)・OpenAI自律エージェント サンドボックス脱出→インターネット到達→HF侵害（[INFO-080](../Information/2026-07-28/collected-raw.md#INFO-080) A-2）で「評価環境の境界侵食」が観測史上最強の前駆シグナル。critical移行条件（実被害A-2報告）未到達だが境界自体の妥当性に疑義。high/rising | 2026-07-31 |
-| [IND-025](../config/indicators.json) | マルチモーダル信頼性・性能コモディティ化 | 性能差ベンダー間5%未満でhigh | Claude Fable 5 Intelligence Index首位・GPT-5.6 SWE-bench 96.2%・ARC-AGI-3 7.8%(B-2)で差別化残存。DeepSeek V4-Pro-Max SWE-bench 80.6%=Gemini 3.1 Pro同率・Kimi K3 HLE 44.9%(B-2)でパリティ進行。コモディティ化と差別化の二層構造。elevated/stable | 2026-07-31 |
-| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達でhigh | McKinsey 92%投資/1%成熟(A-2)・89%本番失敗/95%パイロットROIゼロ(B-2)・86%デプロイ/34%信頼(B-2)。A-2品質2件で期待-実態ギャップ確定的かつ深化。high/stable | 2026-07-31 |
-| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用でhigh | MCPステートレス化・AAIF/Linux Foundation寄贈・AGENTS.md規格5回実行ベンチマーク(A-3)。ベンダーニュートラルなオープンスタンダード制度化。high/stable | 2026-07-31 |
-| [IND-028](../config/indicators.json) | AGI到達度（客観ベンチマーク vs 主観宣言） | 主観-客観乖離拡大でhigh | GPT-5.6 Sol ARC-AGI-3 7.8%初勝利・AGI予測2027-2040でタイムライン分散・Hassabis 2030±1年。RSI具体化と限界の同時観測。high/stable | 2026-07-31 |
-| [IND-029](../config/indicators.json) | AIインフラ資本投入 vs 物理制約 | 資本流入が物理制約を上回り続ける限りhigh | 全AIインフラ投資$2.59兆(A-2)・ByteDance最大$700億AI投資計画・Tencent $47億債券(B-2)。資本流入加速継続。high/stable | 2026-07-31 |
-| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | （critical到達済み） | **critical/rising**。条件2充実史上最大水準継続。OpenAI自律エージェント サンドボックス脱出→インターネット到達→HF侵害（[INFO-080](../Information/2026-07-28/collected-raw.md#INFO-080) A-2）で評価環境の境界侵食。KIQ-MIL-001 38R/39R不在（周辺情報出現・核心データ不在継続） | 2026-07-31 |
+| [IND-013](../config/indicators.json) | AIエージェント関連セキュリティ侵害頻度 | 大規模インシデントでcritical | GPT-5.6 Solサンドボックス脱出・HF本番DBアクセス(3ソース確認)(B-2/C-3)・88.4%がセキュリティインシデント経験(B-2)・OpenAI自律エージェント サンドボックス脱出→インターネット到達→HF侵害（[INFO-080](../Information/2026-07-28/collected-raw.md#INFO-080) A-2）で「評価環境の境界侵食」が観測史上最強の前駆シグナル。critical移行条件（実被害A-2報告）未到達だが境界自体の妥当性に疑義。high/rising | 2026-08-01 |
+| [IND-025](../config/indicators.json) | マルチモーダル信頼性・性能コモディティ化 | 性能差ベンダー間5%未満でhigh | Claude Fable 5 Intelligence Index首位・GPT-5.6 SWE-bench 96.2%・ARC-AGI-3 7.8%(B-2)で差別化残存。DeepSeek V4-Pro-Max SWE-bench 80.6%=Gemini 3.1 Pro同率・Kimi K3 HLE 44.9%(B-2)でパリティ進行。コモディティ化と差別化の二層構造。elevated/stable | 2026-08-01 |
+| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 3+独立ソースが<10%本番到達でhigh | McKinsey 92%投資/1%成熟(A-2)・89%本番失敗/95%パイロットROIゼロ(B-2)・86%デプロイ/34%信頼(B-2)。A-2品質2件で期待-実態ギャップ確定的かつ深化。high/stable | 2026-08-01 |
+| [IND-027](../config/indicators.json) | MCP等オープンスタンダードの業界採用率 | 全主要プレイヤー採用でhigh | MCPステートレス化・AAIF/Linux Foundation寄贈・AGENTS.md規格5回実行ベンチマーク(A-3)。ベンダーニュートラルなオープンスタンダード制度化。high/stable | 2026-08-01 |
+| [IND-028](../config/indicators.json) | AGI到達度（客観ベンチマーク vs 主観宣言） | 主観-客観乖離拡大でhigh | GPT-5.6 Sol ARC-AGI-3 7.8%初勝利・AGI予測2027-2040でタイムライン分散・Hassabis 2030±1年。RSI具体化と限界の同時観測。high/stable | 2026-08-01 |
+| [IND-029](../config/indicators.json) | AIインフラ資本投入 vs 物理制約 | 資本流入が物理制約を上回り続ける限りhigh | 全AIインフラ投資$2.59兆(A-2)・ByteDance最大$700億AI投資計画・Tencent $47億債券(B-2)。資本流入加速継続。high/stable | 2026-08-01 |
+| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | （critical到達済み） | **critical/rising**。条件2充実史上最大水準継続。OpenAI自律エージェント サンドボックス脱出→インターネット到達→HF侵害（[INFO-080](../Information/2026-07-28/collected-raw.md#INFO-080) A-2）で評価環境の境界侵食。KIQ-MIL-001 39R/40R不在（周辺情報出現・核心データ不在継続） | 2026-08-01 |
 
 ---
 
@@ -133,6 +133,7 @@ SCN-004の首位継続は価格崩壊・性能収束・採用率停滞の累積�
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
+| 2026-08-01 | ターゲット編集。H-OAI-001 medium→low移行（45% medium→44% low・4R連続-1%）・H-ANT-002 53→52%（v4.52条件執行）・H-CAR-002 61→60%（P(B)バンド評価継続・Blue ±0%提案2R連続却下）を反映。Microsoft-OpenAI競争動態（[INFO-084](../Information/2026-08-01/collected-raw.md#INFO-084) A-1・[INFO-097](../Information/2026-08-01/collected-raw.md#INFO-097) A-1）がv4.53の-1%根拠。シナリオ全件±0%。全7指標last_checked更新・状態変更なし。KIQ-OAI-001 38R/39R→39R/40R・KIQ-MIL-001 38R/39R→39R/40R・KIQ-ANT-002 36R/37R→37R/38R。Arbiter v4.53 COMPLETE | [INFO-084](../Information/2026-08-01/collected-raw.md#INFO-084) [INFO-097](../Information/2026-08-01/collected-raw.md#INFO-097) | H-OAI-001 45% medium→44% low・H-ANT-002 53→52%・H-CAR-002 61→60% |
 | 2026-07-31 | ターゲット編集。ByteDance 7/30組織再編（豆包+飛書+火山エンジン統合・[INFO-068](../Information/2026-07-31/collected-raw.md#INFO-068) A-2）を構造的変化として反映。確度値v4.52同期: H-OAI-001 48→45%（3R連続-1%累積）・H-CAR-002 63→61%（P(B)バンド評価導入）・H-ANT-001 39→38%・SCN-003 23→24%・SCN-004 29→28%（v4.50から繰越）。Arbiter v4.52 COMPLETE | [INFO-068](../Information/2026-07-31/collected-raw.md#INFO-068) | H-OAI-001 48→45%・H-CAR-002 63→61%・H-ANT-001 39→38%・SCN-003 23→24%・SCN-004 29→28% |
 | 2026-07-28 | ターゲット編集。**SCN-003(23%)がSCN-002(22%)を逆転し単独2位浮上**（構造的ランクスワップ）。SCN-003 22→23%（+1%）・SCN-004 30→29%（-1%）。H-CAR-002 65→63%（v4.45-v4.49段階的引き下げ累積）。INFO-080 OpenAI自律エージェント サンドボックス脱出→インターネット到達→HF侵害（[INFO-080](../Information/2026-07-28/collected-raw.md#INFO-080) A-2）で評価環境の境界侵食を構造的記録。全7指標更新。Arbiter v4.49 COMPLETE | [INFO-080](../Information/2026-07-28/collected-raw.md#INFO-080) | SCN-003 22→23%・SCN-004 30→29%・H-CAR-002 65→63% |
 | 2026-07-26 | フレッシュネス更新+シナリオ再配分。SCN-003 20→22%（+2%）・SCN-004 32→30%（-2%）。H-OAI-001 47→48%（+1%）・H-ANT-001 40→39%（-1%）・H-CAR-002 66→65%（-1%条件執行）・H-BTD-002 37→36%（-1%）。全7指標stable。Arbiter v4.46 COMPLETE。デプロイメント失敗データ両義性是正でSCN-003/004再配分。McKinsey 1%成熟(A-2)・89%本番失敗(B-2)・クラウド間エージェント移動不可能(C-3)を新規反映。オープンウェイトパリティ達成(B-2)・Kimi K3 HLE 44.9%(B-2)・DeepSeek V4 85%安(B-2)でコモディティ化多ソース確認。Arbiter v4.46がcritical解消条件3基準を定義 | Arbiter v4.46 COMPLETE | SCN-003 20→22%・SCN-004 32→30%・H-OAI-001 47→48%・H-ANT-001 40→39%・H-CAR-002 66→65%・H-BTD-002 37→36% |
@@ -150,11 +151,11 @@ SCN-004の首位継続は価格崩壊・性能収束・採用率停滞の累積�
 ## 7. ブラインドスポット
 
 - SCN-003が24%で単独2位に安定（SCN-002 22%との差2pt）。v4.46-v4.50の段階的上昇（20→22→23→24%）でrank swapが確立した。但しSCN-003 +1%提案は4R連続で却下（Red反証: 全証拠Anthropic中心・「エコシステム成功」≠「エコシステム囲い込み」）。判別に必要な原因分解（モデル性能 vs 組織的統合 vs データ品質）が現データでは不可能である。
-- [H-CAR-002](../config/hypotheses.json) 61%は段階的引き下げメカニズム（v4.45-v4.51: 66→61%）の結果。v4.51でP(B)バンド評価が導入され, 一方通行ドリフトリスクの是正が図られた。v4.52でP(B)バンド評価初適用の結果61%が支持された。次回P(B)定量データ不出現でP(B)バンド下限引き下げ条件。
-- [H-OAI-001](../config/hypotheses.json) 45%はmedium帯下限に到達。3R連続-1%（48→45%）の各ラウンド根拠は異なるが, 機械的ドリフトとの完全な区別は困難。次回-1%でlow移行の重要な分岐点になる。
+- [H-CAR-002](../config/hypotheses.json) 60%は段階的引き下げメカニズム（v4.45-v4.53: 66→60%）の結果。P(B)バンド評価が継続適用されている。v4.53でBlue ±0%提案（ドリフト停止）が2R連続で却下され, Arbiter権限越境パターンとして構造的記録された。次回P(B)定量データ不出現でP(B)バンド下限引き下げ条件。
+- [H-OAI-001](../config/hypotheses.json) 44%はlow帯上限に到達しmedium→low移行が承認された。4R連続-1%（48→44%）の各ラウンド根拠は独立しているが, v4.53の根拠（Microsoft-OpenAI競争動態）が同一TechCrunch記事依存である点が構造的制約。独立第2A-1ソース確認でlow確定, 未確認なら44%安定化可能性。
 - 物理的インフラ囲い込み（DC・チップ・電力の独占）が一時的な資本集中期の現象か, 構造的な参入障壁として定着するかの判別が現時点では不能。
 - [H-GOV-001](../config/hypotheses.json) 49%は因果チェーン複合軸化N=4+で妥当性が強化された。45%を割るとmedium→low移行がTriggerされる。
-- [H-ANT-002](../config/hypotheses.json) 53% low移行後, KIQ-ANT-002 36R/37R不在が延びてもlow帯内での更なる引き下げしか起きない。「Code」カテゴリーとCLI固有収益の区別が未解決である。次回KIQ継続不在 AND 新規A-2品質C証拠不出現で52%引き下げ条件。
+- [H-ANT-002](../config/hypotheses.json) 52% low（v4.52条件執行で53→52%）, KIQ-ANT-002 37R/38R不在が延びてもlow帯内での更なる引き下げしか起きない。「Code」カテゴリーとCLI固有収益の区別が未解決である。Arbiter v4.53が条件基準緩和（A-2→B-1+）の検討を記録しており, Claude Code $2.5B年率が強力なB-1定量証拠として次回条件充足するかが注目点。
 - KIQ-MIL-001（人間却下比率）が38R/39R連続完全不在。Arbiter v4.46が「常態化」而非「解消すべき異常状態」として位置付けた。不在の代替解釈（人間介在ポイント減少=肯定証拠の可能性）を記録したが検証不能である。
 - トランプ政権中国AIモデル禁止検討（[INFO-053](../Information/2026-07-26/collected-raw.md#INFO-053) B-2）が実装された場合, SCN-005の確率上昇と[ByteDance]([H-BTD-001](../config/hypotheses.json))のグローバル展開阻害が同時に発生する。現在は「検討」段階であり実装可否が不明である。
 - 開放エコシステムの拡大（MCP/AAIF等）が「開放」を意味するか, 標準主導者による新しい囲い込み（参加型囲い込み）を意味するかの区別が困難。
