@@ -1,8 +1,9 @@
 {
-  "version": "4.58",
-  "last_updated": "2026-08-06",
-  "description": "I&W（Indications and Warning）指標レジストリ. v4.58 Arbiter統合判断: 7指標状態変更なし（全件last_checked/last_value更新・状態/トレンド/alert_level維持）。IND-030 critical維持——INFO-053(A-1 Benzinga/Facebook)によるBIS EAR 19日間モデル停止確認だがArbiterは証拠重量をA-2相当として取り扱う（Benzinga Facebook投稿は一次政府文書ではない）。条件2充実史上最大水準継続。KIQ不在カウンター更新: KIQ-OAI-001 45R(システム)/46R(実世界)・KIQ-ANT-002 43R/44R(部分打破深化)・KIQ-MIL-001 45R/46R(人間却下比率定量データ不在継続)・KIQ-CAR-002-OPS B-2+未達継続(要件過剰精密化是正次回絶対条件)・KIQ-FLI-001不在継続(near-miss INFO-052・security≠safety)",
+  "version": "4.59",
+  "last_updated": "2026-08-07",
+  "description": "I&W（Indications and Warning）指標レジストリ. v4.59 Arbiter統合判断: 7指標状態変更なし（全件last_checked/last_value更新・状態/トレンド/alert_level維持）。IND-030 critical維持——★CRS Report（INFO-043, A-1, Congress.gov）がEAR適用→解除完全ライフサイクルを一次政府情報源で確認・Sunset clause「一部充足」（政府系確認あり・Federal Register/BIS直接公告確認不在）。条件2充実史上最大水準継続・強化。KIQ不在カウンター更新: KIQ-OAI-001 46R(システム)/47R(実世界)・KIQ-ANT-002 44R/45R(WAU倍増確認・絶対値/内訳不在)・KIQ-MIL-001 46R/47R(不在継続)・KIQ-CAR-002-OPS B-2+未達継続(シニアエンジニア税は労働負担再配分であり賃金プレミアム定量データではない)・KIQ-FLI-001不在継続(near-miss 2レッドライン・security≠safety)",
   "structural_changes_log": [
+    "2026-08-07 v4.59: Arbiter統合判断（完全COMPLETE状態・Blue完了・Red完了・Arbiter完了・102件有効情報・A-1:1件・A-2:14件・A-3:12件・B-2:24件・B-3:11件・C-3:14件・その他:26件）。7指標状態変更なし（全件last_checked/last_value更新・状態/トレンド/alert_level維持）。IND-013 high維持（OpenAIコンテインメント脱出追加発見(A-3, INFO-041)・CrowdStrike VM隔離・Darktrace×Microsoft統合・critical移行条件[A-2品質実被害報告]未到達・INFO-014（D-3）Claude外部システム侵害は未確認単一ソース）。IND-025 elevated維持（ARC-AGI-3 Prime Agent+Opus 5 95.5%(B-2, INFO-084)・Intelligence Index 6ラボ50pt超え(INFO-060)・SWE-bench Opus 5 96%(INFO-067, B-2)・真の理解の客観的検証未到達・天井効果可能性継続）。IND-026 high維持（75%使用 vs 5%有意向上(B-3, INFO-051)・82%本番障害(A-2, INFO-100)・165K+レイオフ(A-2, INFO-078)・ROI測定33%(B-2, INFO-033)・「シニアエンジニア税」レビュー負担でシニアが設計から離脱(A-2, INFO-100)・期待-実態ギャップ確定的深化）。IND-027 high維持（AAIF Agent Plugins 1.0(B-2, INFO-017)・AWS AgentCore(A-3, INFO-030)・Azure AI Foundry(A-3, INFO-031)・Google Cloud Agent Platform(A-3, INFO-013)・MCP Server Directory(C-3, INFO-015)・制度化フェーズ完了確定継続）。IND-028 high維持（Frontis-MA1 RSI(B-2, INFO-085, arXiv)・Amodei AGI 2027・Altman「特異点」(A-2, INFO-086, Axios)・ARC-AGI-3 95.5%(B-2, INFO-084)・RSI概念具体化と限界の同時進行継続）。IND-029 high維持（OpenAI $3T評価額(A-2, INFO-065)・AI H1 $104.3B(A-2, INFO-066)・Microsoft FY2026 AI収益$24.1B(A-2, INFO-096)・Anthropic×Volta $10B計算契約(B-2, INFO-071)・ビッグテック累計$1T+(B-2, INFO-072)・資本流入空前規模継続）。IND-030 critical維持（★CRS Report（INFO-043, A-1, Congress.gov）がEAR適用→解除完全ライフサイクルを一次政府情報源で確認——Sunset clause「一部充足」（政府系確認あり・Federal Register/BIS直接公告確認不在）・Blue Agent「実質的に充足」は過大評価として修正・EU AI Act執行開始(A-2, INFO-035)・Pentagon 8社同時契約(A-2, INFO-038)・AI Kill Switch Act(B-3, INFO-046)・最低9ヶ国自律型致死兵器開発(A-2, INFO-097)・2レッドライン明示(A-2, INFO-099)・条件2充実史上最大水準継続・強化・KIQ-MIL-001人間却下比率46R/47R不在継続・critical解消条件3基準いずれも未到達）。Arbiter構造的記録: (1)Sunset clause更新: INFO-043（CRS Report, A-1, Congress.gov）出現によりv4.58「次回も一次政府文書確認がない場合INFO-079/053を恒久的にA-2相当に格下げ」条件は解消（CRS Reportは政府系一次情報源・A-1品質妥当）。但し二次分析文書の性質を注記しSunset clauseは「一部充足」——完全充足にはFederal Register/BIS直接公告確認が依然必要。(2)Pattern A診断的価値「高」→「中-高」に抑制——2層構造が過渡状態而非安定均衡の可能性・格差縮小トレンド（30pt+→12pt）の逆読。(3)KIQ不在カウンター更新: KIQ-OAI-001 45R/46R→46R/47R(Microsoft AI収益70% OpenAI確認・政府/民間内訳不在)・KIQ-ANT-002 43R/44R→44R/45R(WAU倍増確認・$2.5B ARR・絶対値/CLI-API/Enterprise内訳不在)・KIQ-MIL-001 45R/46R→46R/47R(不在継続: 99%支持・2レッドライン文脈提供・定量データ不在)・KIQ-CAR-002-OPS B-2+未達継続(シニアエンジニア税は労働負担再配分であり設計/評価スキル賃金プレミアム定量データではない・「複合カテゴリー基準」は要件緩和而非是正の境界を超える)・KIQ-FLI-001不在継続(near-miss 2レッドライン・security≠safety)",
     "2026-08-06 v4.58: Arbiter統合判断（完全COMPLETE状態・Blue完了・Red完了・Arbiter完了・60件有効情報・A-1:5件・A-2:10件・A-3:5件・B-1:7件・B-2:13件・B-3:5件・C-2:3件・C-3:7件+5件暗黙）。7指標状態変更なし（全件last_checked/last_value更新・状態/トレンド/alert_level維持）。IND-013 high維持（CrowdStrike VM隔離(A-3, INFO-016)・Darktrace×Microsoft統合(A-3, INFO-017)・MCP Server SOC2(A-3, INFO-016)・critical移行条件[A-2品質実被害報告]未到達）。IND-025 elevated維持（ARC-AGI-3 Opus 5 30.2%・GPT-5.6 ~40%(B-2, INFO-043)・Vision Arena Fable 5 #1(B-2, INFO-015)・真の理解の客観的検証未到達・天井効果可能性継続）。IND-026 high維持（88%使用/39%利益/12%両方達成(A-2, INFO-056)・55%「AI置換失敗」(A-2, INFO-039)・Fortune 500 ROI測定33%/ガバナンス13%(A-3, INFO-022)・期待-実態ギャップの確定的深化）。IND-027 high維持（MCPステートレス仕様(B-2, INFO-012)・AAIF/Linux Foundation(B-3, INFO-012)・3大クラウド同時プラットフォーム刷新(A-3/B-2, INFO-018/019/020)・Skills marketplace(B-3, INFO-013)・制度化フェーズ完了確定）。IND-028 high維持（ARC-AGI-3 40%(B-2, INFO-043)・AGIタイムライン分裂 Amodei 2027/Altman 2035/Hassabis 2029(A-2, INFO-044)・予測市場コンセンサス2032(A-2, INFO-060)・RSI概念具体化と限界の同時進行継続）。IND-029 high維持（OpenAI $122B調達(A-2)・Anthropic $65B/$965B評価(A-2)・ビッグテック$700B AI投資+77%(A-2, INFO-056)・ByteDance ARR $4B(A-1, INFO-058)・OpenAI/Anthropic同時IPO(A-1, INFO-051)・資本流入空前規模継続）。IND-030 critical維持（★INFO-053(A-1 Benzinga/Facebook) BIS EAR 19日間モデル停止確認・AIモデルEAR初指定——但し証拠重量はA-2相当として取り扱う（Benzinga Facebook投稿は一次政府文書ではない・Sunset clause完全充足には不十分）・条件2充実史上最大水準継続・強化・KIQ-MIL-001人間却下比率45R/46R不在継続・critical解消条件3基準いずれも未到達）。Arbiter構造的記録: (1)INFO-053品質コード・インフレーション——Benzinga Facebook投稿にA-1付与は品質コード体系基準を満たさない。Arbiterは証拠重量をA-2相当として全判断で取り扱う。Phase 1/2品質コード割当プロセス見直し必要。(2)Pattern D診断的価値「高」→「中-高」に抑制——「独立検証達成」の循環論証（過大なA-1品質に基づく）。(3)Sunset clause更新: 次回もFederal Register/BIS公式文書/Anthropic SEC提出書類の直接確認がない場合INFO-079/053を恒久的にA-2相当に格下げ。(4)KIQ不在カウンター更新: KIQ-OAI-001 44R/45R→45R/46R(部分打破: 商業87-97%確認・内訳推移不在)・KIQ-ANT-002 42R/43R→43R/44R(部分打破深化: WAU 2x・DAU 1M+・$2.5B ARR・絶対値/内訳不在)・KIQ-MIL-001 44R/45R→45R/46R(不在継続: 99%支持・2レッドライン文脈提供・定量データ不在)・KIQ-CAR-002-OPS B-2+未達継続(INFO-041/042 B-2品質シグナル・設計/評価固有データ不在・要件過剰精密化是正次回絶対条件)・KIQ-FLI-001不在継続(near-miss INFO-052・security≠safety)",
     "2026-08-05 v4.57: Arbiter統合判断（完全COMPLETE状態・Blue完了・Red完了・Arbiter完了・80件有効情報・A-1:5件・A-2:18件・A-3:16件・B-2:24件・B-3:5件・C-2:3件・C-3:9件）。7指標状態変更なし（全件last_checked/last_value更新・状態/トレンド/alert_level維持）。IND-013 high維持（Darktrace×Microsoft Agent 365統合(A-3)・Obsidian $85M Series D(A-3)・NVIDIA OpenShell(A-3)・クレデンシャルブローカリング(A-3)・critical移行条件[A-2品質実被害報告]未到達）。IND-025 elevated維持（ARC-AGI-3 0.37%→40%が4ヶ月(A-1, INFO-061)・SWE-bench Verified Opus 5 97%首位(B-2)・DeepSeek V4 Flash AA Index 50(A-2)・OSS 70-90%ギャップクローズ(C-3)・真の理解の客観的検証未到達・天井効果可能性継続）。IND-026 high維持（Gartner 40%エンタープライズアプリAIエージェント内蔵(B-3)・RAND 80-90%本番で失敗(B-2)・55%ボス「AI置換失敗」(B-2)・BCG 95% ROIゼロ・5%成功デプロイ(A-2)・期待-実態ギャップの確定的深化）。IND-027 high維持（MCPステートレス仕様(B-2)・AAIF/Linux Foundation(B-3)・3大クラウドGA(A-3)・Skills marketplace出現(C-2)・制度化フェーズ完了確定）。IND-028 high維持（ARC-AGI-3 40%(A-1, INFO-061)・Frontis-MA1 RSI研究(B-2)・OpenAI Lilian Wengリクルート(B-2)・AGIタイムライン分裂(B-2)・RSI概念具体化と限界の同時進行継続）。IND-029 high維持（OpenAI ~$122B調達(A-2)・Anthropic $65B調達(A-2)・Google $150B Anthropicチップ契約(A-2)・Big Tech $500B+年間支出(A-2)・ByteDance CapEx ¥2000億+(A-2)・資本流入空前規模継続）。IND-030 critical維持（米政府19日間モデル停止(A-2, INFO-079・単一ソースkai-waehner.de・EAR標準的執行の可能性・独立検証保留中)・EU AI Act執行開始(A-2)・DPA発動(B-2)・裁判官Lin SCR証拠不十分(A-2)・SOCOM AIリスク警告(A-2)・条件2充実史上最大水準継続・INFO-079は条件2充実に寄与するが単一ソースA-2のため証拠重量は保留・KIQ-MIL-001人間却下比率44R/45R不在継続・critical解消条件3基準いずれも未到達）。Arbiter構造的記録: (1)INFO-079システムクリティカル性——4判断（H-GOV-001・IND-030・Pattern D・Pattern F）集中リスク・独立検証最優先・Arbiter sunset clause設置（次回までの一次情報源確認がない場合C証拠重量を情報記録のみに格下げ）。(2)KIQ不在カウンター更新: KIQ-OAI-001 43R/44R→44R/45R(部分打破深化: Q1 $5.7B収益判明・政府/民間内訳不在継続)・KIQ-ANT-002 41R/42R→42R/43R(部分打破深化: WAU倍増確認・絶対値・CLI/API/Enterprise内訳不在継続)・KIQ-MIL-001 43R/44R→44R/45R(部分打破深化: SOCOM司令官警告・契約上停止権限・人間却下比率定量データ不在継続)・KIQ-CAR-002-OPS初期シグナル蓄積継続(AIエンジニア中央値$131,490(A-2)・KPMG 86% AI>MBA(A-1)・設計/評価固有データ不在継続)・KIQ-FLI-001不在継続(near-miss INFO-075 RFP SOC2/ISO/NIST必須・但しsecurity≠safety)",
     "2026-08-04 v4.56: Arbiter統合判断（完全COMPLETE状態・Blue完了・Red完了・Arbiter完了・86件有効情報・A-1:1件・A-2:21件・A-3:10件・B-2:約40件・B-3/C-2/C-3:約14件）。強制再評価メカニズム発動（全件±0%提案2R連続トリガー）。7指標状態変更なし（全件last_checked/last_value更新・状態/トレンド/alert_level維持）。IND-013 high維持（ISACA AAISM・Snowflake統合監視/コスト管理(A-3)・Microsoft Sentinel AIエージェント統合(A-3)・critical移行条件[A-2品質実被害報告]未到達）。IND-025 elevated維持（ARC-AGI-3 0.37%→100%が4ヶ月(A-2)・Intelligence Index 6社50超え(B-2)・OSS 70-90%ギャップクローズ(B-2)・真の理解の客観的検証未到達・天井効果可能性記録）。IND-026 high維持（86%デプロイ/34%信頼(B-2)・57%「確信を持って誤答」(B-2)・31%本番/13%ガバナンス(B-2)・55%AI置換「失敗」(B-2)・期待-実態ギャップの確定的構造化）。IND-027 high維持（MCP 2026-07-28ステートレス仕様(A-2)・AAIF/Linux Foundation完了(A-2)・Bedrock Agents Classic凍結→AgentCore(B-2)・Skills marketplace出現(C-2)・制度化フェーズ完了確定）。IND-028 high維持（ARC-AGI-3 100%到達(A-2)・Altman「シンギュラリティ」宣言(B-2)・Recursive社$410M AWS契約(B-2)・AGIリスク中央値25%(B-2)・RSI概念具体化と限界の同時進行）。IND-029 high維持（ビッグテック$1T+累計投下・2026年$745B追加(A-2)・AIスタートアップQ1 $242B=全世界VCの80%(A-2)・Anthropic $965B評価(A-2)・資本流入空前規模継続）。IND-030 critical維持（EU AI Act執行開始(A-2)・トランプAI大統領令(A-2)・AI Kill Switch Act(B-2)・IISS人間オーバーライド非現実化(A-2・概念的分析は「問題指摘のA-2品質確認」として分類修正・定量データではない)・条件2充実史上最大水準継続・critical解消条件3基準いずれも未到達）。Arbiter構造的記録: (1)強制再評価メカニズム発動——Arbiter独自2件採用（H-GOV-001 -1%・SCN-004 +1%）・2R連続全件±0%打破。(2)データ品質メタデータ不整合2R連続を構造的リスクとして昇格——63%の品質が「約」表現・A-1品質1件(INFO-050)がメタデータで分類されていない原因の特定を必須項目化・収集パイプライン整合性検証必須。(3)KIQ-MIL-001概念-定量混同修正——IISSの学的指摘は概念的分析であり定量データではない→「部分打破」から「問題指摘のA-2品質確認」に分類修正。(4)KIQ不在カウンター更新: KIQ-OAI-001 42R/43R→43R/44R(部分打破: $47B ARR規模判明・政府/民間内訳不在)・KIQ-ANT-002 40R/41R→41R/42R(部分打破深化: Claude Code $2.5B確認・解決候補特定・CLI/API/Enterprise完全内訳不在)・KIQ-MIL-001 42R/43R→43R/44R(問題指摘のA-2品質確認・人間却下比率定量データ不在)・KIQ-CAR-002-OPS複合カテゴリーでの初期シグナル出現(INFO-080 AI Agent Architect $250K-$300K・985%増 A-2・設計/評価固有データ不在継続)・KIQ-FLI-001不在継続(near-miss INFO-082 RFP SOC2/ISO/NIST必須・但しsecurity≠safety)",
@@ -56,9 +57,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "v4.58: 状態変更なし。CrowdStrike VM隔離(A-3, INFO-016)・Darktrace×Microsoft統合(A-3, INFO-017)・MCP Server SOC2(A-3, INFO-016)。critical移行条件[A-2品質実被害報告]未到達",
-      "last_checked": "2026-08-06",
-      "rationale": "Arbiter v4.58: high維持。攻撃面拡大継続。critical移行条件（A-2品質実被害報告）未到達。構造的バイアス記録継続: 実被害A-2報告の不在≠実被害の不在"
+      "last_value": "v4.59: 状態変更なし。OpenAIコンテインメント脱出追加発見(A-3, INFO-041)・CrowdStrike VM隔離・Darktrace×Microsoft統合・MCP Server SOC2。critical移行条件[A-2品質実被害報告]未到達。INFO-014（D-3）Claude外部システム侵害は未確認単一ソース",
+      "last_checked": "2026-08-07",
+      "rationale": "Arbiter v4.59: high維持。攻撃面拡大継続。critical移行条件（A-2品質実被害報告）未到達。構造的バイアス記録継続: 実被害A-2報告の不在≠実被害の不在"
     },
     "IND-025": {
       "indicator_id": "IND-025",
@@ -67,9 +68,9 @@
       "current_status": "elevated",
       "trend": "stable",
       "alert_level": "elevated",
-      "last_value": "v4.58: 状態変更なし。ARC-AGI-3 Opus 5 30.2%・GPT-5.6 ~40%(B-2, INFO-043)・Vision Arena Fable 5 #1(B-2, INFO-015)。真の理解の客観的検証未到達・天井効果可能性継続",
-      "last_checked": "2026-08-06",
-      "rationale": "Arbiter v4.58: elevated維持。ベンチマーク多軸化・単一指標比較困難化。真の理解の客観的検証未到達・天井効果可能性継続"
+      "last_value": "v4.59: 状態変更なし。ARC-AGI-3 Prime Agent+Opus 5 95.5%(INFO-084, B-2)・Intelligence Index 6ラボ50pt超え(INFO-060)・SWE-bench Opus 5 96%(INFO-067, B-2)。真の理解の客観的検証未到達・天井効果可能性継続",
+      "last_checked": "2026-08-07",
+      "rationale": "Arbiter v4.59: elevated維持。ベンチマーク多軸化・単一指標比較困難化。真の理解の客観的検証未到達・天井効果可能性継続"
     },
     "IND-026": {
       "indicator_id": "IND-026",
@@ -78,9 +79,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "v4.58: 状態変更なし。88%使用/39%利益/12%両方達成(A-2, INFO-056)・55%「AI置換失敗」(A-2, INFO-039)・Fortune 500 ROI測定33%/ガバナンス13%(A-3, INFO-022)。期待-実態ギャップ確定的深化",
-      "last_checked": "2026-08-06",
-      "rationale": "Arbiter v4.58: high維持。期待-実態ギャップ更に深化。88%使用/39%利益/12%両方達成がギャップの定量化。ROI測定方法不統一問題継続"
+      "last_value": "v4.59: 状態変更なし。75%使用 vs 5%有意向上(B-3, INFO-051)・82%本番障害(A-2, INFO-100)・165K+レイオフ(A-2, INFO-078)・ROI測定33%(B-2, INFO-033)・「シニアエンジニア税」レビュー負担でシニアが設計から離脱(A-2, INFO-100)。期待-実態ギャップ確定的深化",
+      "last_checked": "2026-08-07",
+      "rationale": "Arbiter v4.59: high維持。期待-実態ギャップ確定的深化。82%本番障害・レビュー時間441%増・チャーン861%増・「シニアエンジニア税」がA-2品質でギャップの定量的深化を実証。ROI測定方法不統一問題継続"
     },
     "IND-027": {
       "indicator_id": "IND-027",
@@ -89,9 +90,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "v4.58: 状態変更なし。制度化フェーズ完了確定。MCPステートレス仕様(B-2, INFO-012)・AAIF/Linux Foundation(B-3, INFO-012)・3大クラウド同時プラットフォーム刷新(A-3/B-2, INFO-018/019/020)・Skills marketplace(B-3, INFO-013)",
-      "last_checked": "2026-08-06",
-      "rationale": "Arbiter v4.58: high維持。MCP/A2A標準化完全確定。3社同時プラットフォーム刷新で標準化深化。制約記録: プロトコル標準化≠囲い込み防止・スキル配布プラットフォームは上位レイヤー囲い込み初期段階の可能性"
+      "last_value": "v4.59: 状態変更なし。制度化フェーズ完了確定継続。AAIF Agent Plugins 1.0(B-2, INFO-017)・AWS AgentCore(A-3, INFO-030)・Azure AI Foundry(A-3, INFO-031)・Google Cloud Agent Platform(A-3, INFO-013)・MCP Server Directory(C-3, INFO-015)",
+      "last_checked": "2026-08-07",
+      "rationale": "Arbiter v4.59: high維持。MCP/A2A標準化完全確定。AAIF Agent Plugins 1.0（Amazon/Cursor/Microsoft/OpenAI/Vercel共同）で標準化深化。制約記録: プロトコル標準化≠囲い込み防止・スキル配布プラットフォームは上位レイヤー囲い込み初期段階の可能性"
     },
     "IND-028": {
       "indicator_id": "IND-028",
@@ -100,9 +101,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "v4.58: 状態変更なし。AGIタイムライン分裂 Amodei 2027/Altman 2035/Hassabis 2029(A-2, INFO-044)・予測市場コンセンサス2032(A-2, INFO-060)・ARC-AGI-3 40%(B-2, INFO-043)。RSI概念具体化と限界の同時進行継続",
-      "last_checked": "2026-08-06",
-      "rationale": "Arbiter v4.58: high維持。CEO間予測分裂（2027-2035）で不確実性継続。企業自己宣言と客観ベンチマークの乖離を明示的記録継続"
+      "last_value": "v4.59: 状態変更なし。Frontis-MA1 RSI(INFO-085, B-2, arXiv)・Amodei AGI 2027・Altman「特異点」(INFO-086, A-2, Axios)・ARC-AGI-3 Prime Agent+Opus 5 95.5%(INFO-084, B-2)。RSI概念具体化と限界の同時進行継続",
+      "last_checked": "2026-08-07",
+      "rationale": "Arbiter v4.59: high維持。CEO宣言激化（Amodei AGI 2027・Altman「特異点」）とベンチマーク急上昇（ARC-AGI-3 95.5%）の同時観測。但し「真の理解」の客観的検証には到達せず。企業自己宣言と客観ベンチマークの乖離を明示的記録継続"
     },
     "IND-029": {
       "indicator_id": "IND-029",
@@ -111,9 +112,9 @@
       "current_status": "high",
       "trend": "rising",
       "alert_level": "high",
-      "last_value": "v4.58: 状態変更なし。資本流入空前規模継続。ビッグテック$700B AI投資+77%(A-2, INFO-056)・ByteDance ARR $4B(A-1, INFO-058)・OpenAI/Anthropic同時IPO(A-1, INFO-051)・OpenAI $122B調達(A-2)・Anthropic $65B/$965B評価(A-2)",
-      "last_checked": "2026-08-06",
-      "rationale": "Arbiter v4.58: high維持。資本流入空前規模継続。ビッグテック$700B AI投資+77%・OpenAI/Anthropic同時IPOで資本市場統合加速。インフラ制約(国内算力不足・DC電力)ギャップ確定的"
+      "last_value": "v4.59: 状態変更なし。資本流入空前規模継続。OpenAI $3T評価額(A-2, INFO-065)・AI H1 $104.3B(A-2, INFO-066)・Microsoft FY2026 AI収益$24.1B(A-2, INFO-096)・Anthropic×Volta $10B計算契約(B-2, INFO-071)・ビッグテック累計$1T+(B-2, INFO-072)",
+      "last_checked": "2026-08-07",
+      "rationale": "Arbiter v4.59: high維持。資本流入空前規模継続。OpenAI $3T評価額・Microsoft FY2026 AI収益$24.1B（70% OpenAI関連）で資本市場統合加速。インフラ制約（国内算力不足・DC電力）ギャップ確定的"
     },
     "IND-030": {
       "indicator_id": "IND-030",
@@ -122,9 +123,9 @@
       "current_status": "critical",
       "trend": "rising",
       "alert_level": "critical",
-      "last_value": "v4.58: 状態変更なし。条件2充実史上最大水準継続・強化。★INFO-053(A-1 Benzinga/Facebook) BIS EAR 19日間モデル停止確認・AIモデルEAR初指定——Arbiter証拠重量A-2相当として取り扱う（Sunset clause完全充足には不十分）。EU AI Act執行開始(A-2)・EAR AI初指定(A-2相当)・KIQ-MIL-001人間却下比率45R/46R不在継続・critical解消条件3基準いずれも未到達",
-      "last_checked": "2026-08-06",
-      "rationale": "Arbiter v4.58: critical維持。条件2充実史上最大水準継続・強化。INFO-053品質コード・インフレーション問題——Benzinga Facebook投稿にA-1付与は品質コード体系基準を満たさない。Arbiterは全判断で証拠重量をA-2相当として取り扱う。Sunset clause更新: 次回もFederal Register/BIS公式文書/Anthropic SEC提出書類の直接確認がない場合恒久的にA-2相当に格下げ。KIQ-MIL-001人間却下比率45R(システム)/46R(実世界)連続完全不在・99%支持・2レッドライン文脈提供・定量データ不在継続。critical解消条件3基準（(1)KIQ-MIL-001観測 (2)条件2証拠強度低下 (3)政府措置法的確定）いずれも未到達。期待損失フレーム: 確率不変でも重症度増大で期待損失上昇"
+      "last_value": "v4.59: 状態変更なし。条件2充実史上最大水準継続・強化。★CRS Report（INFO-043, A-1, Congress.gov）がEAR適用→解除完全ライフサイクルを一次政府情報源で確認——Sunset clause「一部充足」（政府系確認あり・Federal Register/BIS直接公告確認不在）。EU AI Act執行開始(A-2, INFO-035)・Pentagon 8社同時契約(A-2, INFO-038)・AI Kill Switch Act(B-3, INFO-046)・最低9ヶ国自律型致死兵器開発(A-2, INFO-097)・2レッドライン明示(A-2, INFO-099)。KIQ-MIL-001人間却下比率46R/47R不在継続・critical解消条件3基準いずれも未到達",
+      "last_checked": "2026-08-07",
+      "rationale": "Arbiter v4.59: critical維持。条件2充実史上最大水準継続・強化。★CRS Report（INFO-043, A-1, Congress.gov）出現によりSunset clause更新: v4.58「次回も一次政府文書確認がない場合INFO-079/053を恒久的にA-2相当に格下げ」条件は解消（CRS Reportは政府系一次情報源・A-1品質妥当）。但し二次分析文書の性質を注記しSunset clauseは「一部充足」——完全充足にはFederal Register/BIS直接公告確認が依然必要。KIQ-MIL-001人間却下比率46R(システム)/47R(実世界)連続完全不在・99%支持・2レッドライン文脈提供・定量データ不在継続。critical解消条件3基準（(1)KIQ-MIL-001観測 (2)条件2証拠強度低下 (3)政府措置法的確定）いずれも未到達。期待損失フレーム: 確率不変でも重症度増大で期待損失上昇"
     }
   }
 }
