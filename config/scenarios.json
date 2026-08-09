@@ -1,7 +1,7 @@
 {
-  "version": "4.60",
-  "last_updated": "2026-08-08",
-  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.60 Arbiter統合判断: 主要5シナリオ全件±0%（6+22+25+29+18=100%）。Blue Agent SCN-004 +1%（29→30%）/SCN-002 -1%（22→21%）提案をRed反証強度「中-強」で却下——(a)監視項目→確率変更即時転換パターン4R連続再発。(b)Intelligence Index格差比較のapples-to-oranges問題（DeepSeek→Kimi K3比較対象変更）。(c)Luna -80%はエントリーティア而非フロンティアティア価格プレミアム崩壊。(d)2層構造（エントリーティア・コモディティ化+フロンティア差別化存続: GPQA Diamond 8-12pt・SWE-bench 39pt差）はSCN-002支持而非SCN-004支持。(e)天井効果・ベンチマーク混入リスクの過小評価。Pattern A/D診断的価値「中-高」維持。SCN-001 6%・SCN-002 22%・SCN-003 25%・SCN-004 29%・SCN-005 18%。合計100%維持（6+22+25+29+18=100%）",
+  "version": "4.61",
+  "last_updated": "2026-08-09",
+  "description": "QHG（Quadrant Hypothesis Generation）に基づく4象限シナリオ+第5シナリオ。v4.61 Arbiter統合判断: 主要5シナリオ2件変更（SCN-005 +1%: 18→19%・SCN-001 -1%: 6→5%・100%正規化確認: 5+22+25+29+19=100%）。SCN-005 +1%はRed反証強度「中-高」推奨採用——3規制圏同時執行フェーズ移行＋BIS非AI素材拡大。SCN-001 -1%は正規化相殝＋技術的オープン化更に確定的。Pattern B診断的価値「高」→「中-高」抑制（end-point bias是正）。SCN-001 5%・SCN-002 22%・SCN-003 25%・SCN-004 29%・SCN-005 19%。合計100%維持（5+22+25+29+19=100%）",
   "driving_forces": {
     "axis_x": {
       "name": "ロックインの強さ: 閉鎖（囲い込み）←→ 開放（相互運用）",
@@ -23,9 +23,9 @@
       "quadrant": "top-left",
       "quadrant_label": "閉鎖 × 差別化持続",
       "description": "1-2社が技術力で圧倒しつつ、実行環境・スキル配布・データでエコシステムを囲い込む。後発はプラットフォーム依存を強いられ、スイッチングコストが急上昇する",
-      "probability": 6,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.60: ±0%（6%維持）。MCP標準化確定継続・Agent Plugins 1.0（INFO-018, B-2）で技術的囲い込み困難性不変。圏内最低水準維持",
+      "probability": 5,
+      "probability_change": "-1%",
+      "probability_rationale": "Arbiter v4.61: -1%（6→5%）正規化相殝。MCP 98Kサーバー・AAIF Agent Plugins 1.0・8+マーケットプレイスで技術的オープン化更に確定的。3規制圏同時執行フェーズ移行で地政学的ブロック化が進行し、単一勝者による全世界囲い込み可能性更に低下。圏内最低水準更新",
       "key_assumptions": [
         "フロンティアモデルの性能差が維持・拡大される",
         "実行環境（Shell/Sandbox）がベンダーロックインの主戦場になる",
@@ -138,9 +138,9 @@
       "quadrant": "geopolitical",
       "quadrant_label": "地政学的ブロック化（既存4象限の修飾シナリオ）",
       "description": "AI市場が地政学的ブロック（SpaceX/xAI・Google-Anthropic・中国独自圏・欧州主権AI等）に分裂する。技術標準（MCP/AAIF）は共有されつつ、規制・チップ輸出管理・データ主権でブロック間の相互運用性が制限される。既存4象限（SCN-001〜004）は各ブロック内での競争ダイナミクスを記述し続ける",
-      "probability": 18,
-      "probability_change": "±0%",
-      "probability_rationale": "Arbiter v4.60: ±0%（18%維持）。BIS全世界遮断（INFO-080, B-1）・EU AI Act執行（INFO-073, A-1）・Pentagon Agent Network（INFO-043, B-2）・中国AI擬人化規制（INFO-041, A-2）でC支持。MCP標準共有で制約。18%ベースライン妥当",
+      "probability": 19,
+      "probability_change": "+1%",
+      "probability_rationale": "Arbiter v4.61: +1%（18→19%）Red反証強度「中-高」推奨採用。3規制圏（EU AI Act執行・Trump大統領令・中国規制16標準）の同時期執行フェーズ移行＋BIS輸出管理の非AI素材（タングステン・ブラックマス）への拡大＋WAICO vs Pax Silica二極構造。Blue Agent自身が「C支持強力」と記述しながら±0%とした閾値過剰設定を是正。MCP標準共有は制約として記録継続",
       "key_assumptions": [
         "地政学的ブロック化が技術標準化を上回る影響を持つ",
         "チップ・データ主権規制が相互運用性を阻害する",
@@ -187,7 +187,7 @@
   ],
   "normalization_check": {
     "total_probability": 100,
-    "verified_date": "2026-08-08",
-    "note": "SCN-001(6) + SCN-002(22) + SCN-003(25) + SCN-004(29) + SCN-005(18) = 100%. Arbiter v4.60統合判断完了（主要5シナリオ全件±0%・Blue SCN-004 +1%/SCN-002 -1%提案をRed反証強度「中-強」で却下・Pattern A/D診断的価値「中-高」維持・100%正規化確認）"
+    "verified_date": "2026-08-09",
+    "note": "SCN-001(5) + SCN-002(22) + SCN-003(25) + SCN-004(29) + SCN-005(19) = 100%. Arbiter v4.61統合判断完了（SCN-005 +1%/SCN-001 -1%正規化相殝・Pattern B診断的価値「高」→「中-高」抑制・100%正規化確認）"
   }
 }
