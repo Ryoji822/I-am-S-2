@@ -1,0 +1,1745 @@
+# 収集データ: 2026-08-25
+
+## メタデータ
+- 収集日時: 2026-08-25 08:30 JST（2026-08-24 23:30 UTC）開始 — 同日完了
+- 品質フラグ: FINAL（Phase 1完了・X_postsはPhase 1.5で注入予定）
+- 実行クエリ数: 計画 121/121（KIQ 24/24完了）+ 動的追加 6件 = 計127件
+- 動的追加クエリ（Arbiter優先）: KIQ-BS003-DEBT ×3（OpenAI $30Bシンジケート / Nvidia $500B / Oracle 債務）、KIQ-ANT-002 ×2（JetBrains WAU / Developer Ecosystem Survey 2026）、KIQ-OAI-001 ×1（OpenAI S-1提出窓）。KIQ-GOV-EO・KIQ-BTD-DAU は計画クエリ（INFO-038/113、INFO-102）で充足
+- サイトマップ/マップ: 5件（firecrawl_map）／スクレイプ: 9件（Codex platform・Secure MCP Tunnel/Harpoon・Claude Design・Claude watermark/SynthID-Text・Sydney office・Financial Services・JetBrains Survey 2026・NVIDIA $500B PR・OpenAI GPT-5.6 pricing）
+- 収集情報数: 115件（INFO-001〜115）／Evidence ID採番範囲: EVD-20260825-0001〜EVD-20260825-0115（INFO番号=末尾4桁一致・検証済み）
+- KIQカバレッジ: 24/24（内、該当なし誠実記録: INFO-011 エンタープライズSLA、INFO-078/089 CyberAgent 日本語追跡要）
+- 信頼性分布目安: A-1/A-2一次系を主要トピックで確保（JetBrains調査・OpenAI価格・NVIDIA PR・EU執行・価格戦争等）、D-4フラグ: INFO-100（国際条約 単一ソース）、INFO-109（$110B/$730B ラウンド 未確認）他、B-3噂: $965B評価・Apple Q.ai・Nvidia-Groq 等
+- 既知の制約: Firecrawl一時障害2回（sleep 60リトライで解消）、切り詰め検索出力2件（INFO-055/073に一部反映）
+
+## 収集結果
+
+### INFO-001
+- **タイトル:** Codex as a platform: build on the open agent harness（オープンソースCodexハーネスのプラットフォーム化）
+- **ソース:** OpenAI Developers 公式ブログ
+- **公開日:** 2026-08（Recent掲載・日付ページ記載なし）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-01, KIQ-001-03, KIQ-001-05, KIQ-004-02
+- **関連企業:** OpenAI, GitHub, JetBrains, Cisco, Thrive Holdings
+- **要約:** OpenAIはCodex App/CLI/IDE拡張を支えるオープンソースのCodexハーネスを「プラットフォーム」として外部組織の製品に組み込む提供形態を公式化。app-serverプロトコル・公式Codex SDK・codex execの3層で、任意の業務アプリにエージェントループを埋め込める。ハーネス設計が成績を決定的に左右する例としてARC-AGI-3でGPT-5.6 Solが13.3%→38.3%（トークン6分の1）と示した。
+- **キーファクト:**
+  - GitHubとJetBrainsがCodexをIDEワークフローに取り込み（2026-07-07 changelog）、CiscoはCodex SDKをApp Builderに統合
+  - Thrive Holdings/Creteの税務ワークフローでパイロット7,000件・準備時間約1/3減
+  - ハーネス（文脈保持・コンパクション）がARC-AGI-3スコアを13.3%→38.3%に向上（「ヒーローはモデルではなくハーネス」系の議論と整合）
+  - オープンソース層はハーネスと統合面のみ——モデルアクセスと管理サービスは分離（ロックインはモデル層に残す構造）
+- **引用URL:** https://developers.openai.com/blog/codex-as-a-platform
+- **Evidence ID:** EVD-20260825-0001
+
+### INFO-002
+- **タイトル:** Making private MCP servers reachable without making them public（Secure MCP Tunnel / Harpoon）
+- **ソース:** OpenAI Developers 公式ブログ
+- **公開日:** 2026-08（Recent掲載・日付ページ記載なし）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-02, KIQ-001-03, KIQ-001-05
+- **関連企業:** OpenAI
+- **要約:** OpenAIは企業内ネットワークの私有MCPサーバーを公開エンドポイントなしでChatGPT/Codex等から利用可能にする「Secure MCP Tunnel」を公開。顧客環境で動くオープンソースのクライアントがアウトバウンドHTTPS接続のみでMCPリクエストを中継し、ネットワーク境界を明示的に保持する。
+- **キーファクト:**
+  - アウトバウンド専用接続・明示的宛先設定・MCPストリーミング/認証対応・顧客実行の検査可能クライアントという設計原則
+  - 「Harpoon」でMCP以外の私有REST APIにも同一モデルを拡張（ラベル登録済みターゲットのみ）
+  - tunnel-clientはGitHubで公開（github.com/openai/tunnel-client）・Codexプラグイン同梱
+  - VPN/ピアリング/第三者トンネルprovider排除——エンタープライズ調達・セキュリティレビューの摩擦を低下させる方向
+- **引用URL:** https://developers.openai.com/blog/connect-private-mcp-servers-to-openai-products
+- **Evidence ID:** EVD-20260825-0002
+
+### INFO-003
+- **タイトル:** Introducing Claude Design by Anthropic Labs
+- **ソース:** Anthropic 公式ニュース
+- **公開日:** 2026-04-17
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-01, KIQ-001-04, KIQ-004-03
+- **関連企業:** Anthropic, Canva, Datadog, Brilliant
+- **要約:** Anthropic Labs製品第1弾としてClaude Designをリサーチプレビュー公開。デザイン・プロトタイプ・スライド等のビジュアル制作をClaudeと協働で行うもので、最上位ビジョンモデルClaude Opus 4.7で動作。Pro/Max/Team/Enterprise契約者向けで、チームのデザインシステムをコードベース/デザインファイルから自動構築し全プロジェクトに適用する。
+- **キーファクト:**
+  - オンボーディングでコードベース・デザインファイルを読み込みチームのデザインシステムを自動構築（複数システム保持可）
+  - Canvaへのエクスポート・連携協力（Canva側コメント付き）・PPTX/PDF/HTML出力
+  - Claude Codeへのハンドオフバンドル（デザイン→実装のワン指示引き渡し）——設計〜コーディングのシームレス統合
+  - Enterpriseではデフォルトオフ・管理者がOrganization settingsで有効化（エンタープライズガバナンス配慮）
+  - Brilliant「他ツールで20+プロンプト必要な複雑ページが2プロンプトで完成」・Datadog「1週間の往復が1会話に」等の検証
+- **引用URL:** https://www.anthropic.com/news/claude-design-anthropic-labs
+- **Evidence ID:** EVD-20260825-0003
+
+### INFO-004
+- **タイトル:** How Claude's text watermark works（EU AI Act対応のテキストウォーターマーク）
+- **ソース:** Anthropic 公式ニュース
+- **公開日:** 2026-08-14
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-002-03, KIQ-005-03, KIQ-003-03
+- **関連企業:** Anthropic, Google DeepMind, EU（業界全体）
+- **要約:** Anthropicは将来のClaudeモデルにテキストウォーターマークを実装すると公式説明。方式はGoogle DeepMindがNature掲載したSynthID-Text系（低リスク語選択の乱数源を鍵に切替）。EU AI Act対応で2026-08-02以降EU市場のAIプロバイダに生成コンテンツ標識が義務化され、主要各社が同一のCode of Practiceに署名（計約190署名）。
+- **キーファクト:**
+  - 品質・速度・価格への実質影響なし（追加トークンなし）・個人/組織の識別情報は含まない
+  - コード・校正済みテキスト・事実的記述など「選択の余地が少ない」箇所には適用が希薄
+  - 画像等ファイルにはC2PAコンテンツクレデンシャル（暗号署名メタデータ）を付与
+  - ウォーターマーク検出APIを近日提供予定・2026-08-02以前リリースの旧モデルにも数ヶ月かけて展開
+  - グローバル一律適用（地域別スコープの技術的困難）——他社も同様に実装見込み
+- **引用URL:** https://www.anthropic.com/news/claude-text-watermark
+- **Evidence ID:** EVD-20260825-0004
+
+### INFO-005
+- **タイトル:** Sydney will become Anthropic's fourth office in Asia-Pacific
+- **ソース:** Anthropic 公式ニュース
+- **公開日:** 2026-03-10
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-02
+- **関連企業:** Anthropic
+- **要約:** AnthropicはシドニーにAPAC4番目のオフィス（東京・ベンガルール・ソウルに次ぐ）を開設し豪州・NZ展開を強化。Canva・Quantium・Commonwealth Bank of Australia等と既に協業。人口比でClaude.ai利用は豪州4位・NZ8位（Economic Index）。
+- **キーファクト:**
+  - 豪州でのコンピューティング能力拡大を第三者パートナー経由で検討（データレジデンシー要求対応）・長期インフラは初期協議
+  - 「民主主義国がAI開発を主導すべき」との信念と豪政府の持続可能AIインフラ構想の合致を明記
+  - 金融・アグテック・クリーンエネルギー・医療・深宇宙技術等の国家重要分野での適用を焦点に
+- **引用URL:** https://www.anthropic.com/news/sydney-fourth-office-asia-pacific
+- **Evidence ID:** EVD-20260825-0005
+
+### INFO-006
+- **タイトル:** Claude for Financial Services（金融分析ソリューション）
+- **ソース:** Anthropic 公式ニュース
+- **公開日:** 2025-07-15（2026-04-10更新: パートナー記載1件削除）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-02, KIQ-002-02, KIQ-002-05
+- **関連企業:** Anthropic, Bridgewater(AIA Labs), Commonwealth Bank of Australia, AIG, Palantir, Databricks, Snowflake, FactSet, S&P Global, Accenture
+- **要約:** Claudeの金融機関向け統合ソリューション。市場フィードからDatabricks/Snowflakeの内部データまでを単一インターフェースで統合し、出所への直接ハイパーリンクで検証可能性を確保。MCPコネクタ経由でFactSet・Morningstar・PitchBook・S&P Global等のデータにリアルタイムアクセス。
+- **キーファクト:**
+  - Vals AI Finance AgentベンチマークでClaude 4が他フロンティアモデルを上回る（公式主張）
+  - AIG: 保険アンダーライティング審査時間5分の1圧縮・データ精度75%→90%超
+  - Claude for Enterpriseと金融ソリューションがAWS Marketplaceで調達可能（Google Cloud Marketplaceは準備中）
+  - デフォルトで顧客データをモデル訓練に不使用——機密性担保を明記
+- **引用URL:** https://www.anthropic.com/news/claude-for-financial-services
+- **Evidence ID:** EVD-20260825-0006
+
+### INFO-007
+- **タイトル:** ByteDance、Coze（エージェント構築ツール）とTrae（コーディング基盤）をDoubaoスーパーアプリへ統合・Tencent対抗「Doubao Work」準備
+- **ソース:** Bloomberg / 36kr(独家) / Techmeme / Binance Square
+- **公開日:** 2026-08-24
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-001-01, KIQ-001-03, BYTEDANCE-CHINESE, KIQ-002-05
+- **関連企業:** ByteDance, Tencent
+- **要約:** 複数の情報源によると、ByteDanceはコーディング基盤Traeとエージェント構築ツールCozeの開発チームをChatGPT型チャットボット「豆包（Doubao）」に全面統合する組織再編を完了。TencentのWorkBuddy（企業IM統合AI）に対抗する「Doubao Work」投入を計画している。
+- **キーファクト:**
+  - Trae・CozeチームがDoubaoシステムに完全統合（36krは「office AI製品のチーム統合完了」と報道）
+  - 統合の狙いはスーパーアプリ化——分散したAIツールを単一エントリポイントに集約
+  - Tencent WorkBuddy対抗のDoubao Workローンチ計画（Techmeme引用）
+  - Cozeのエージェント構築機能が独立製品からDoubao機能に格下げされる方向は、開発者エコシステム戦略の転換を示唆
+- **引用URL:** https://www.bloomberg.com/news/articles/2026-08-24/bytedance-folds-ai-tools-into-doubao-super-app-to-fight-tencent
+- **Evidence ID:** EVD-20260825-0007
+
+### INFO-008
+- **タイトル:** Google「Gemini Agents API」新設（antigravityベース）・Vertex AI系は「Gemini Enterprise Agent Platform」へブランド統合
+- **ソース:** Google AI for Developers 公式ドキュメント / Google Cloud docs
+- **公開日:** 2026-08時点の公開ドキュメント
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-01, KIQ-002-01, KIQ-001-04
+- **関連企業:** Google, xAI
+- **要約:** GoogleはGemini API配下に「Agents API」を新設。CreateAgentでbase_agent（antigravity-preview-05-2026）・base_environment（remote/inline sources）・tools（google_search等）を指定してサーバーサイド永続エージェントを構築できる。環境にはAGENTS.mdやGitHubリポジトリを取り込み可能。一方クラウド側は「Gemini Enterprise Agent Platform」（旧Vertex AI系）へブランド統合が進む。
+- **キーファクト:**
+  - Agents API: generativelanguage.googleapis.com/v1beta/agents——エージェントの作成/一覧/取得/削除のCRUD
+  - base_environmentでリモート実行環境・AGENTS.md規約・リポジトリソースを宣言的に注入
+  - Gemini Enterprise Agent PlatformではGrok等パートナーモデルも管理APIとして提供（xAI相互接続の継続確認）
+  - Live API（gemini-live-2.5-flash-native-audio）は音声エージェントでGA——バージイン・感情対話・プロアクティブ音声対応
+- **引用URL:** https://ai.google.dev/api/agents
+- **Evidence ID:** EVD-20260825-0008
+
+### INFO-009
+- **タイトル:** xAI API: grok-4.6がResponses API互換で早期アクセス・「grok-4.20-multi-agent」モデル登場（1Mコンテキスト・$1.25/M）
+- **ソース:** SpaceXAI Docs（docs.x.ai）公式
+- **公開日:** 2026-08時点の公開ドキュメント
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-01, KIQ-003-01, KIQ-001-05
+- **関連企業:** xAI (SpaceX子会社)
+- **要約:** xAI公式ドキュメントで、Grok Buildと同一モデルのgrok-4.6が/v1/responses（Responses API互換）で早期アクセス提供中。さらにマルチエージェント実行向け「grok-4.20-multi-agent-0309」モデルが登場し、1Mトークンコンテキスト・ショートコンテキスト$1.25/M入力という低価格設定。
+- **キーファクト:**
+  - grok-4.6はOpenAI SDKからそのまま呼び出し可能（base_url=api.x.ai/v1）——API互換によるスイッチングコスト低下
+  - grok-4.20-multi-agent-0309: 1M context・ショート$1.25入力/$0.20キャッシュ?（表: $1.25/$0.20/$2.50/$2.50/$0.40/$5.00の多段構造）・ロングコンテキスト≥200k
+  - Batch API discount 20%（grok-4.3、4.20系reasoning/non-reasoning/multi-agent）
+  - grok-imagine-image-2.0で画像生成API
+- **引用URL:** https://docs.x.ai/developers/quickstart
+- **Evidence ID:** EVD-20260825-0009
+
+### INFO-010
+- **タイトル:** Claude Agent SDK更新継続（TS v0.3.241・Python v0.2.143）・8/19 Managed Agentsリリースでドメイン設定とメモリストア
+- **ソース:** GitHub Releases（anthropics/claude-agent-sdk-typescript, python）/ Releasebot
+- **公開日:** 2026-08（直近リリース）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-01
+- **関連企業:** Anthropic
+- **要約:** Claude Agent SDK（TypeScript/Python）は高頻度リリースサイクルを維持（TSはv0.3.241まで到達）。8月19日のManaged Agentsリリースでは、セルフホスト沙箱上でのweb search/fetchドメイン設定とメモリストア機能、バンドルclaude-apiスキルの更新が含まれる。
+- **キーファクト:**
+  - claude-agent-sdk-typescript v0.3.241（Latest）・python v0.2.143
+  - 8/19リリース: web search/fetchのドメイン許可設定・セルフホストサンドボックスのメモリストア
+  - SDK自体はGA前（0.xバージョニング）だが週次ペースで更新
+- **引用URL:** https://github.com/anthropics/claude-agent-sdk-typescript/releases
+- **Evidence ID:** EVD-20260825-0010
+
+### INFO-011
+- **タイトル:** 2026年エージェントハーネス比較: Claude Code 142k stars・OpenCode 199k stars・DeepSeek Harness 8/13開発者プレビュー・「AI agent SDK enterprise SLA incident」系の具体的障害報道は今周期該当なし
+- **ソース:** winder.ai / igmguru / Reddit r/LangChain ほか
+- **公開日:** 2026-08（直近更新）
+- **信頼性コード:** C-3
+- **関連KIQ:** KIQ-001-01, KIQ-001-03, KIQ-003-03
+- **関連企業:** Anthropic, OpenAI, OpenCode(Anomaly), DeepSeek, Alibaba, Linux Foundation(AAIF), Zed
+- **要約:** ハーネス（コーディングエージェント実行基盤）比較で、Claude Code（142k stars・Anthropic専用・カスタムライセンス）、Codex（107k stars・Apache-2.0）、OpenCode（199k stars・MIT・75+プロバイダ）、Qwen Code、DeepSeek Harness（8/13開発者プレビュー・「すべてがプラグイン」設計でClaude Code/Codexをサブエージェント駆動）、Goose（AAIF/Linux Foundation）、Zed Agent（ACP経由で他ハーネス駆動）が並立。計画クエリ「AI agent SDK enterprise SLA incident report」は具体的一次障害報道なし（概念記事のみ）——「該当なし」と記録。
+- **キーファクト:**
+  - OpenCodeはv1.2.23（2026-03）までローカルのみ構成でもセッション命名にGrok無料tierへ全プロンプト送信（HN議論）——マルチプロバイダの副作用リスク
+  - DeepSeek Harness: agent loop自体もプラグイン——The Register 8/14報道で「他ハーネスの前に置けるハーネス」と評価
+  - Reddit r/LangChainでは「LangGraphの存在意義」がフロンティアモデル内蔵機能との対比で議論沸騰——フレームワーク層の希薄化議論
+  - ガバナンス中立性（Goose/AAIF）vs リリース速度（ベンダー製）のトレードオフ構造
+- **引用URL:** https://winder.ai/ai-agent-harness-comparison/
+- **Evidence ID:** EVD-20260825-0011
+
+### INFO-012
+- **タイトル:** Vertex AIは「Gemini Enterprise Agent Platform」に吸収統合——Agent Builder/ADK/Agent Engineを統合しAgent Engineは「Agent...」に改称
+- **ソース:** Google Cloud 公式ドキュメント（リリースノート）+ Medium（Adnan Masood分析）
+- **公開日:** 2026-08（リリースノート現行）
+- **信頼性コード:** A-2
+- **関連KIQ:** KIQ-001-02, KIQ-002-01, KIQ-003-05
+- **関連企業:** Google
+- **要約:** Google Cloud公式リリースノートが「Vertex AI is now part of Gemini Enterprise Agent Platform」と明記。Vertex AI Agent Builder・Agent Development Kit(ADK)・Agent Engineを統合し、Agent Engineは「Agent...」に改称。エンタープライズ向けに構築・デプロイ・ガバナンス・最適化を単一プラットフォームで提供する再編で、モデル情報も同プラットフォーム配下のドキュメントに移管。
+- **キーファクト:**
+  - ブランド再編: Vertex AIブランドを後退させ「Gemini」で統一——エージェント軸のプラットフォーム像を前面化
+  - AIMultiple（2026-08-21取得）が「Claude Managed Agents vs Google Vertex Agent Engine」ベンチマーク公開——両社のマネージドエージェント対決構造
+  - パートナーモデル（Grok等）も同プラットフォームのModel配下で提供
+- **引用URL:** https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes
+- **Evidence ID:** EVD-20260825-0012
+
+### INFO-013
+- **タイトル:** Anthropic、エンタープライズ顧客の安全データ（30日分）を自社クラウド内保持を許可へ——Private Safety Processing（要一次確認）
+- **ソース:** Facebook/entrelligence投稿 + LinkedIn（Sean Burgess: OpenAI zero data retention言及）
+- **公開日:** 2026-08-2x
+- **信頼性コード:** D-4
+- **関連KIQ:** KIQ-001-02, KIQ-002-03
+- **関連企業:** Anthropic, OpenAI
+- **要約:** SNS経由の情報として、Anthropicがエンタープライズ顧客に対し、規制要件で求められる30日分の安全データ（safety data）をAnthropic側へ送信せず顧客自身のクラウドインフラ内に保存することを認める計画と伝わる。一次公式発表は未確認——判別監視項目として記録。
+- **キーファクト:**
+  - 「Anthropic Will Let Companies Keep Claude Safety Data in Their Own Cloud」——公式文書・日付未確認（D-4）
+  - 関連文脈: OpenAI系投稿はフロンティアモデルのZero Data RetentionとSOC 2/HIPAA/ISO 42001/FedRAMP/EU AI Act統制対応を主張
+  - 再提出条件: Anthropic公式ドキュメント・Trust Centerでの一次確認
+- **引用URL:** https://www.facebook.com/entrelligence/posts/1523504482911624/
+- **Evidence ID:** EVD-20260825-0013
+
+### INFO-014
+- **タイトル:** 「Claude Cowork」の安全性ガイド公開——エージェント製品の安全設計を公式ヘルプセンターで説明
+- **ソース:** Anthropic Help Center（support.claude.com）
+- **公開日:** 2026-08（現行記事）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-01, KIQ-001-02
+- **関連企業:** Anthropic
+- **要約:** Anthropicは新製品「Claude Cowork」の安全利用ガイドをヘルプセンターで公開。Coworkが対象者向けに何を構築したか、ユーザーが注意すべき点、自己防衛策を説明——エージェント製品の安全コミュニケーション框架。
+- **キーファクト:**
+  - Coworkはエンタープライズ/チーム向けエージェント実行環境とみられる（提供範囲は記事内記載）
+  - 安全設計の透明性説明を製品公開と同時実施——規制対応期の安全コミュニケーション模範
+- **引用URL:** https://support.claude.com/en/articles/13364135-use-claude-cowork-safely
+- **Evidence ID:** EVD-20260825-0014
+
+### INFO-015
+- **タイトル:** Anthropic「Risk Report August 2026」公開——カタストロフィックリスクの定期評価
+- **ソース:** Anthropic 公式
+- **公開日:** 2026-08
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-005-03, KIQ-001-02
+- **関連企業:** Anthropic
+- **要約:** Anthropicは自社AIシステムが複数カテゴリでもたらすカタストロフィックリスクの程度を評価する「Risk Report August 2026」を公開。能力と安全策の両面からの最新評価を提示。
+- **キーファクト:**
+  - 複数リスクカテゴリの定量/定性評価を含む公式リポート（詳細はPhase 4で一次取得推奨）
+  - 企業安全姿勢の継続的開示——KIQ-002-06（政府圧力と安全姿勢）の基礎データ
+- **引用URL:** https://www.anthropic.com/aug-2026-risk-report
+- **Evidence ID:** EVD-20260825-0015
+
+### INFO-016
+- **タイトル:** エンタープライズAIエージェント導入市場は2025年$6.65B→2035年$142.35B予測（CAGR 36.9%）・Claudeウォーターマークが「契約修正なしのEUコンプライアンスアーティファクト」として企業スタックに継承
+- **ソース:** DataM Intelligence / LinkedIn（Arif Mohamed）ほか
+- **公開日:** 2026-08
+- **信頼性コード:** C-3
+- **関連KIQ:** KIQ-001-02, KIQ-002-02, KIQ-002-03
+- **関連企業:** 業界全体, Anthropic
+- **要約:** 市場調査ではエンタープライズAIエージェント導入市場が2025年$65.5億から2035年$1,423.5億へ拡大予測（CAGR 36.9%）。またAnthropicのグローバルウォーターマーク適用（INFO-004）について、Claudeをスタックに含む全企業が既存ベンダー契約の修正なしにEUコンプライアンス成果物をグローバル出力に「継承」したとの指摘——エンタープライズ契約・ガバナンスへの波及論点。
+- **キーファクト:**
+  - 市場規模: 2025 $6.65B → 2035 $142.35B（CAGR 36.9%）——単一調査会社予測（C-3）
+  - ウォーターマーク: 地域スコープ不可→グローバル適用が契約條項とズレる可能性（D級指摘だが構造論点）
+  - AIセキュリティ人材認証（CAISP・AIUC-1等）が乱立——compliance認証の商品化進行
+- **引用URL:** https://www.datamintelligence.com/research-report/enterprise-ai-agent-adoption-market
+- **Evidence ID:** EVD-20260825-0016
+
+### INFO-017
+- **タイトル:** 【KIQ-ANT-002優先】JetBrains Developer Ecosystem Survey 2026（15,000人超・10年目）: AIコーディングエージェント採用トレンド——Codex認知27%(1月)→65%(5-7月)
+- **ソース:** JetBrains 公式ブログ（blog.jetbrains.com/research）
+- **公開日:** 2026-08
+- **信頼性コード:** A-2
+- **関連KIQ:** KIQ-001-03, KIQ-004-02, 動的KIQ KIQ-ANT-002
+- **関連企業:** JetBrains, OpenAI, Anthropic
+- **要約:** JetBrainsが世界的に代表的な15,000人超のプロフェッショナル開発者を対象としたDeveloper Ecosystem Survey 2026のAIコーディングエージェント採用分析を公開。AIコーディングエージェントが開発者のAIツールキットの主役になる速度が加速し、OpenAI Codexの認知率は2026年1月の27%から5-7月には65%へ急上昇。JetBrains自身もエージェント ecosystem拡大中。
+- **キーファクト:**
+  - 調査規模: 世界15,000人超のプロフェッショナル開発者（10年目の継続時系列）
+  - Codex認知率: 2026-01 27% → 2026-05〜07 65%（OpenAIブランド力を持ちながらも急伸）
+  - 「AIコーディングエージェントがAIツールキットの主力になる率はさらに高い」——エディタ内補完からエージェント実行への移行
+  - H-ANT-002（Claude系WAU採用データ）再提出条件のJetBrains一次資料（方法論明記）に合致——WAU・CLI/API/Enterprise内訳の記載有無はPhase 4詳細取得で確認要
+- **引用URL:** https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/
+- **Evidence ID:** EVD-20260825-0017
+
+### INFO-018
+- **タイトル:** MCP公式ロードマップ更新: HTTPネイティブtransport統一・エージェントIDとエンタープライズセキュリティ・SEP-2322 Multi Round-Trip Requests
+- **ソース:** Model Context Protocol 公式ブログ
+- **公開日:** 2026-08（現行ロードマップ）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-03, KIQ-001-05
+- **関連企業:** 業界標準（Anthropic発・中立化）
+- **要約:** MCP公式が新ロードマップを公開。優先領域は(1)HTTPネイティブtransportの統一と堅牢化（Streamable HTTP over stdio等の展開模式拡大）(2)エージェントIDとエンタープライズ対応セキュリティ（貼り付けAPIキー/長期トークンでなく既存標準の上に構築するagent identity）(3)SDK開発体験改善。
+- **キーファクト:**
+  - SEP-2322 Multi Round-Trip Requestsがserver-initiated requestsを置換——ステートレスサーバーでもelicitation等が動作
+  - Server Card Working Groupが.well-knownメタデータ規約を策定中（接続なしでサーバー発見・推論）
+  - 「エージェントにSDKを指させて構築する」開発スタイルへの適応を docs品質要件と明記
+- **引用URL:** https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
+- **Evidence ID:** EVD-20260825-0018
+
+### INFO-019
+- **タイトル:** Agent2Agent(A2A)プロトコルがAgentic AI Foundation(AAIF)へ移管——MCPと並ぶ形に・v1.0到達・主要クラウドと150+組織が採用
+- **ソース:** Forbes（Janakiram MSV）+ AAIF公式
+- **公開日:** 2026-08-19
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-001-03, KIQ-001-05
+- **関連企業:** Google(A2A発案), Linux Foundation(AAIF), 業界全体
+- **要約:** Google発のAgent2Agent(A2A)プロトコルがv1.0に到達し、Agentic AI Foundation（Linux Foundation傘下・2025年12月設立）にMCPと並んで移管された。A2Aは独立エージェント間の協業を標準化し、主要クラウドプロバイダーと150以上の組織に採用。AAIFはKubernetes/PyTorchと同じ中立ガバナンスをエージェントAI標準に適用する仕組み。
+- **キーファクト:**
+  - A2A v1.0: 独立エージェント間の委譲・タスク管理を標準化
+  - AAIF: 2025-12 Linux Foundation設立——Goose(Apache-2.0)等の中立ガバナンス基盤
+  - OpenAI×StripeのAgentic Commerce Protocol（2025提示）もエコシステム標準群の一部
+- **引用URL:** https://www.forbes.com/sites/janakirammsv/2026/08/19/agent2agent-joins-the-agentic-ai-foundation-alongside-mcp/
+- **Evidence ID:** EVD-20260825-0019
+
+### INFO-020
+- **タイトル:** Okta「Agent SSO」GA——XAA標準でAIエージェントにファーストクラス識別性・2万顧客基盤に適用
+- **ソース:** Okta 公式プレスリリース
+- **公開日:** 2026-08-24
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-03, KIQ-001-02, KIQ-002-03
+- **関連企業:** Okta
+- **要約:** OktaはAgent SSOをGA。オープンなCross App Access（XAA）標準を、2万社超が使う識別プロダクトに直接組み込み、AIエージェントに人間の従業員と同様のファーストクラスID管理を提供する。
+- **キーファクト:**
+  - XAA標準: エージェントが組織の代理としてアプリへ安全にアクセスするための識別フレーム
+  - 「SSO for your AI agents」——エンタープライズID管理層のエージェント対応が一段と具体化
+  - MCPロードマップの「agent identity」優先領域（INFO-018）と業界横断で整合する動き
+- **引用URL:** https://www.okta.com/newsroom/press-releases/okta-brings-first-class-identity-to-ai-agents-with-agent-sso/
+- **Evidence ID:** EVD-20260825-0020
+
+### INFO-021
+- **タイトル:** エージェント・エコシステム提携ラッシュ: Google Cloud $750Mパートナーファンド・Adobe×AWS(Agent Orchestrator×Bedrock AgentCore)・ServiceNow×Google・Skillsマーケットプレイス層の形成
+- **ソース:** DataM Intelligence（Recent Developments集約）/ aiagentsdirectory.com / GitHub各社リポジトリ
+- **公開日:** 2026-08（集約時点）
+- **信頼性コード:** C-3
+- **関連KIQ:** KIQ-001-03, KIQ-001-05, KIQ-002-01
+- **関連企業:** Google, Adobe, AWS, ServiceNow, Accenture, Databricks, Oracle, Microsoft, OpenAI, Anthropic
+- **要約:** エージェント関連の企業間提携が集中：(1) Google CloudはエージェントAI向け$750Mパートナーファンド（2026-04）(2) Adobe×AWSはExperience Platform Agent OrchestratorとAmazon Bedrock AgentCoreの統合 (3) ServiceNow×Google CloudはGemini EnterpriseとServiceNow AI Platformのエージェント相互連鎖 (4) Oracle AI Agent Marketplace（2025-10）等。スキル配布層ではaiagentsdirectory.comがCodex($CODEX_HOME)・anthropics/skills・openai/skills・microsoft/skillsを横断するカタログ化を進行。
+- **キーファクト:**
+  - Google Cloud $750M partner fund——コンサル・ソフトウェア・チャネルをエージェント生態系へ動員
+  - スキルインストールはGitHubリポジトリ直接参照（skill-installerスクリプト）——中央マーケット不在・分散型配布が主流
+  - Microsoftはmicrosoft/skillsでSkills+MCP servers+Custom Agentsを一括提供・パートナーはM365 Copilot拡張で収益化
+  - 96%の企業が何らかの形でAIエージェント利用とする推計も（techaheadcorp引用・C-3）
+- **引用URL:** https://www.datamintelligence.com/research-report/enterprise-ai-agent-adoption-market
+- **Evidence ID:** EVD-20260825-0021
+
+### INFO-022
+- **タイトル:** Azure Foundry上のGPT-5.6ファミリー（sol/terra/luna）仕様公開——1.05Mコンテキスト・マルチエージェントオーケストレーション(preview)・Computer Use対応
+- **ソース:** Microsoft Learn（Azure Foundry公式ドキュメント）
+- **公開日:** 2026-08時点の公開ドキュメント（モデル日付2026-07-09）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-04, KIQ-001-01, KIQ-002-01
+- **関連企業:** OpenAI, Microsoft
+- **要約:** Azure Foundryが直接販売するGPT-5.6系3モデル（gpt-5.6-sol/terra/luna・いずれも2026-07-09版）の能力表を公開。Reasoning・Responses API・マルチエージェントオーケストレーション(preview)・Chat Completions・構造化出力・テキスト+画像処理・Computer Useに対応。コンテキスト1,050,000（入力922k/出力128k）・訓練データ2026年6月まで。
+- **キーファクト:**
+  - 3バリアント同一コンテキスト仕様——差別化は推論努力/価格とみられる（lunaは$0.2/$1.2と低価格: INFO-025参照）
+  - Multi-agent orchestrationがResponses API配下のpreview機能として製品化
+  - 訓練カットオフ2026-06——現行フロンティアの鮮度指標
+- **引用URL:** https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure
+- **Evidence ID:** EVD-20260825-0022
+
+### INFO-023
+- **タイトル:** Google DeepMind「Gemini Robotics ER 2」公開——ビデオ入力でヒューマノイド/非ヒューマノイドロボットの全身制御・Gemini Robotics 2は産業・医療・物流へ
+- **ソース:** nenos-softwareブログ / Facebook(joinlaai) ほか（DeepMind一次発表の二次流通）
+- **公開日:** 2026-08（直近）
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-001-04
+- **関連企業:** Google DeepMind
+- **要約:** Google DeepMindがGemini Robotics ER 2を公開。ビデオ入力を用いてヒューマノイド・非ヒューマノイド両方のロボットを物理形態全体で制御する設計。Gemini Robotics 2は産業・医療・物流での完全な身体知能・自律性・適応性をもたらすと説明（DeepMind公式一次ページの詳細取得はStep 4候補）。
+- **キーファクト:**
+  - ER 2: 動画ストリーミング経由のロボット全身制御
+  - Robotics 2: 実環境適応型の産業用途展開訴求
+  - Gemini 3.7 Flash系を3エージェントグラフループのロボット学習に使う動きも（LinkedIn系・D-4）
+- **引用URL:** https://nenos-software.ro/en/blog/gemini-robotics-2-aduce-inteligenta-complecta-in-roboti-autonomi/
+- **Evidence ID:** EVD-20260825-0023
+
+### INFO-024
+- **タイトル:** Gemini API公式「Computer use」ドキュメント——gemini-3.7-flash + Playwrightエージェントループ・プロンプトインジェクション検出オプション
+- **ソース:** Google AI for Developers 公式ドキュメント
+- **公開日:** 2026-08時点の公開ドキュメント
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-04, KIQ-001-01
+- **関連企業:** Google
+- **要約:** Gemini APIのComputer use機能が公式ドキュメント化。gemini-3.7-flashでcomputerUseツール（ENVIRONMENT_BROWSER/ENVIRONMENT_MOBILE）を指定し、Playwrightで実行するエージェントループの完全な実装例を公開。prompt_injection_detectionフラグや、危険/曖昧な操作時にユーザーへ制御を戻すyield_to_userカスタム関数の設計例も含む。
+- **キーファクト:**
+  - computerUse環境: BROWSER/MOBILE選択・事前定義関数の除外（excluded_predefined_functions）も可能
+  - enable_prompt_injection_detection=True——マルチモーダル操作エージェントのセキュリティ設計が公式API引数に
+  - Human-in-the-loop: yield_to_userパターンを公式サンプルとして提示
+- **引用URL:** https://ai.google.dev/gemini-api/docs/generate-content/computer-use
+- **Evidence ID:** EVD-20260825-0024
+
+### INFO-025
+- **タイトル:** マルチモーダルLeaderboard: Vision Arena首位claude-fable-5（1312）・Meta「Muse Spark」台頭・VideoMMMU首位Qwen3.8 Max 88.7%
+- **ソース:** arena.ai Vision Leaderboard / benchlm.ai（VideoMMMU 2026-08-17スナップショット）
+- **公開日:** 2026-08-17〜24
+- **信頼性コード:** C-2
+- **関連KIQ:** KIQ-001-04, KIQ-003-02
+- **関連企業:** Anthropic, Meta, Alibaba, Google, ByteDance
+- **要約:** Vision系LeaderboardでAnthropic claude-fable-5が1312±9で首位、以下qwen3.8-max（1302）・claude-opus-4-7-high（1301）。Metaの新マルチモーダル「Muse Spark」（コーディング+エージェント用途を標榜）が1294で6位に台頭、muse-spark-1.2(xHigh)は$1.25/$4.25。動画理解VideoMMMU（8/17時点）はQwen3.8 Max 88.7%・Gemini 3 Pro 87.6%・dots3-note Preview 86.8%。ByteDance dola-seed-2.0-proは1258（35位）。
+- **キーファクト:**
+  - Vision Arena上位10中6位までAnthropic（fable-5/opus-4.7-high/opus-4.7/opus-4.6-high/opus-4.6）——ビジョン品質のAnthropic集中
+  - Meta Muse Spark: 「1つのマルチモーダルモデルでコーディングとエージェント」——Llama系からの商品モデル転換シグナル
+  - VideoMMMU: オープン(Qwen)がクローズド(Gemini)を上回る構図
+- **引用URL:** https://arena.ai/leaderboard/vision
+- **Evidence ID:** EVD-20260825-0025
+
+### INFO-026
+- **タイトル:** OpenAI「Agent」を生物リスク「高能力」に分類——ライブモニタリング+ユーザー承認という最厳格プロトコル適用（ChatGPTのコンピュータ横断アクション機能）
+- **ソース:** Business Insider（Facebook経由二次）
+- **公開日:** 2026-08（直近）
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-001-04, KIQ-005-03
+- **関連企業:** OpenAI
+- **要約:** OpenAIがChatGPTにコンピュータ横断のアクション実行（computer use系Agent機能）をロールアウトし、同機能を生物リスク評価で「高能力」に分類。ライブモニタリングとユーザー承認を含む最も厳格な安全プロトコルを適用したと報道。
+- **キーファクト:**
+  - 「高能力」生物リスク分類=当社プロトコルの最上位段階
+  - ライブモニタリング＋ユーザー承認の二重制御——エージェント機能の安全ガード設計事例
+  - 一次（OpenAI公式システムカード）確認は次周期課題
+- **引用URL:** https://www.facebook.com/businessinsider/posts/1430367065628240/
+- **Evidence ID:** EVD-20260825-0026
+
+### INFO-027
+- **タイトル:** Claude Code公式セキュリティ設定: allowedMcpServers許可リスト・OSレベルsandbox（Bashをファイルシステム/ネットワークから隔離）・Docker Sandboxesが公式ドキュメントで推奨参照に
+- **ソース:** Claude Code 公式ドキュメント + Docker公式投稿
+- **公開日:** 2026-08（現行ドキュメント）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-05, KIQ-001-02
+- **関連企業:** Anthropic, Docker
+- **要約:** Claude Codeの設定リファレンスで、MCPサーバー単位の許可リスト（allowedMcpServers）とBashコマンドをファイルシステム/ネットワークから隔離するOSレベルsandbox設定（macOS/Linux/WSL2）が公式化。Docker SandboxesがmicroVMレベル分離の推奨アプローチとして公式ドキュメントに参照された。
+- **キーファクト:**
+  - パーミッションは全ツール（Bash/Read/Edit/WebFetch/MCP）の実行前評価
+  - sandboxとpermissionsは互補——設定スコープは任意の設定ファイルで段階適用
+  - Docker microVM参照: サードパーティ実行環境が公式推奨に昇格
+- **引用URL:** https://code.claude.com/docs/en/settings-reference
+- **Evidence ID:** EVD-20260825-0027
+
+### INFO-028
+- **タイトル:** Google「google/skills」リポジトリ公開——Gemini/Agent Platform/Ads API等のAgent Skillsを`npx skills add`で配布・SKILL.mdファイルシステム規約はClaude Code/Gemini CLI共通
+- **ソース:** GitHub google/skills + Adobe Mysticat AI-Native Guidelines + Google Ads API docs
+- **公開日:** 2026-08（現行）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-001-05, KIQ-001-03
+- **関連企業:** Google, Adobe, Anthropic
+- **要約:** Googleが自社製品・技術向けAgent SkillsをGitHubで公開（Gemini API in Agent Platform・Managed Agents API・Interactions API・Google Ads API等）。インストールは`npx skills add google/skills --agent=antigravity`。AdobeのAIネイティブ開発ガイドラインは「Filesystem-based: エージェントはshellコマンドでSKILL.mdを読む（Claude Code、Gemini CLI等）」と明記——SKILL.mdがデファクト標準フォーマットとしてクロスエージェント定着。
+- **キーファクト:**
+  - `npx skills add`は共通インストール面——openai/skills・anthropics/skills・google/skills・microsoft/skillsが同一CLIで導入可
+  - スキル配布の標準化層（SKILL.md+.agents/skills/配置）はベンダー横断——ロックインはスキル層でなくモデル/実行層に残る構造
+  - Google Ads APIスキル等、収益直結プロダクトのスキル化が進行
+- **引用URL:** https://github.com/google/skills
+- **Evidence ID:** EVD-20260825-0028
+
+### INFO-029
+- **タイトル:** スキルマーケットプレイス「Agensi」4,000+スキル・5,000+ユーザー・350+作成者——ローンチ3ヶ月で2,000スキル到達（SKILL.mdは20+エージェントで横断利用）
+- **ソース:** agensi.io + Business Insider/USA Today/AP配信プレス
+- **公開日:** 2026-08
+- **信頼性コード:** C-2
+- **関連KIQ:** KIQ-001-05, KIQ-001-03
+- **関連企業:** Agensi（第三者マーケット）, GitHub/Microsoft
+- **要約:** GitHub Copilot等向けスキルマーケットプレイスAgensiが4,000+スキル・350+作成者へ拡大（ローンチ3ヶ月で2,000スキル突破と複数メディア配信）。SKILL.mdはオープン形式で、GitHub Copilot用に買ったスキルがClaude Code・Cursor・Codex CLI・Gemini CLI等20+エージェントでそのまま動く——「方法を一度買えば使い続けられる」ロックイン回避を価値提案の中核に。
+- **キーファクト:**
+  - クロスエージェント設計: .github/copilot/skills/配置のファイルが他エージェントでも読み込まれる
+  - エージェント固有のファイル配置依存スキルは「agent-specific」ラベルで明示
+  - 有料スキル（$10等）と無料が併存——スキルの商材化が進行
+- **引用URL:** https://www.agensi.io/copilot-marketplace
+- **Evidence ID:** EVD-20260825-0029
+
+### INFO-030
+- **タイトル:** Forbes「Enterprise AI Vendor Loyalty Is Fading Fast」——マルチモデル企業の出現・ロックインは「内部データ・評価・統制・従業員ルーティン」への付着で後から発生
+- **ソース:** Forbes（Ron Schmelzer）+ worldinsight（GPT-5.6 20%値下げ・OSS追従論）
+- **公開日:** 2026-08-24
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-001-05, KIQ-003-05, KIQ-003-01
+- **関連企業:** 業界全体, OpenAI
+- **要約:** Forbes分析でエンタープライズAIのベンダー忠誠心が急速に失われつつあると指摘。マルチモデル企業では(1)モデル固有コードをコアアプリから分離(2)プロバイダ変更前に共有評価テストを開発(3)見出しトークン価格でなくワークロード別コスト測定が実践され始めた。ロックインは「内部データ・評価・統制・従業員ルーティン」への付着として後から発生するという構造分析。
+- **キーファクト:**
+  - 高級モデル（$10/M入力・$50/M出力）は日常ワークロード向け廉価モデルと使い分けられる——価格階層運用が標準化
+  - モデル交換の技術的障壁低下 vs 組織的付着コスト増大の二層構造
+  - 別系統報道（C-3）: GPT-5.6が20%値下げ・OSSが同等性能到達で「AIベンダーロックインは構造的に崩壊開始」との主張——値下げ一次確認要
+- **引用URL:** https://www.forbes.com/sites/ronschmelzer/2026/08/24/enterprise-ai-vendor-loyalty-is-fading-fast/
+- **Evidence ID:** EVD-20260825-0030
+
+### INFO-031
+- **タイトル:** AWS Bedrock AgentCore三連強化: 「AgentCore Payments」GA（Coinbase×Stripe協業でエージェント自律決済）・AgentCore Gateway（MCPツールアクセスのIAMガバナンス）・runtime instances（永続EC2+GPU）
+- **ソース:** AWS News Blog / AWS Machine Learning Blog 公式
+- **公開日:** 2026-08（直近発表群）
+- **信頼性コード:** A-2
+- **関連KIQ:** KIQ-002-01, KIQ-001-03, KIQ-001-05
+- **関連企業:** Amazon (AWS), Coinbase, Stripe
+- **要約:** AWSはBedrock AgentCoreを3方向に拡大: (1) AgentCore PaymentsがGA——Coinbase・Stripeとの協業でエージェントが安全・自律的に支払いを実行 (2) AgentCore Gateway——MCP経由のツールアクセスをIAMポリシーで統制（例: aws:ViaAWSMCPService条件で破壊的アクション拒否） (3) runtime instances——本番エージェント向けの永続的マネージドEC2基盤（マルチエージェント協調・GPU対応）。
+- **キーファクト:**
+  - Payments: 5月プレビュー→GA——エージェント経済の決済レイヤをクラウドプロバイダが直接提供
+  - Gateway: MCP URL形式（gateway.bedrock-agentcore.<region>.amazonaws.com/mcp/resources）を http タイプで登録
+  - runtime instances: ステートレス呼び出しから永続実行への拡張——長時間エージェントの本番運用
+- **引用URL:** https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/
+- **Evidence ID:** EVD-20260825-0031
+
+### INFO-032
+- **タイトル:** Microsoft Foundry Agent Service——任意フレームワーク/任意モデルのマネージドエージェント基盤・hosted agentsはCode Interpreter/Bing grounding/Azure AI Search統合・マルチエージェントオーケストレーション開始
+- **ソース:** Microsoft Learn（Azure Foundry公式ドキュメント）
+- **公開日:** 2026-08（現行）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-002-01, KIQ-001-01
+- **関連企業:** Microsoft
+- **要約:** Azure Foundry Agent Serviceは構築・デプロイ・スケールの管理プラットフォームで、Foundryカタログ内の任意モデルと任意フレームワークを使用可能。Hosted agentsはCode Interpreter・Web Search（Bing Custom Search グラウンディング）・Azure AI Search等のFoundry管理ツールに完全アクセス。Bing/SharePoint/Databricks等Microsoftサービス群との直接統合とマルチエージェントオーケストレーション機能が報道。
+- **キーファクト:**
+  - 「any framework, any supported model」——モデル中立を掲げるクラウド側戦略
+  - hosted agents: 管理ツール群フルアクセス・エンタープライズセキュリティ/観測性
+  - GPT-5.6系3モデルがAzure Foundry直接販売（INFO-022）——OpenAI関係の深化継続
+- **引用URL:** https://learn.microsoft.com/en-us/azure/foundry/agents/overview
+- **Evidence ID:** EVD-20260825-0032
+
+### INFO-033
+- **タイトル:** 顧客クラウド内AIエージェントサンドボックス比較（Northflank/E2B/Runloop）+ AIMultiple「Claude Managed Agents vs Google Vertex Agent Engine」ベンチマーク
+- **ソース:** Northflankブログ / aimultiple.com
+- **公開日:** 2026-08
+- **信頼性コード:** C-3
+- **関連KIQ:** KIQ-002-01, KIQ-001-05, KIQ-001-02
+- **関連企業:** Northflank, E2B, Runloop, Anthropic, Google
+- **要約:** 顧客自身のクラウドで動くエージェントサンドボックス基盤の比較では、Northflank（BYOC/BYOK Kubernetes・microVM/gVisor分離・SOC 2 Type 2/HIPAA準拠・Northflank SkillsでCodex/Claude Code/Cursor対応）、E2B（Firecracker microVM・顧客VPC）、Runloop（管理/データ面とも顧客環境）が並立。またAIMultiple（8/21取得）がClaude Managed AgentsとGoogle Vertex Agent Engineのプラットフォームベンチマークを公開。
+- **キーファクト:**
+  - サンドボックス比較軸: 境界（boundary）と自社担当作業量——SDK文法や起動速度でなく
+  - Northflank Skillsがマルチエージェント対応スキル配布——スキル層の横断利用拡大（INFO-028/029と整合）
+  - マネージドエージェント対決（Anthropic vs Google）が第三者比較対象に
+- **引用URL:** https://northflank.com/blog/platforms-ai-agent-sandboxes-customer-cloud
+- **Evidence ID:** EVD-20260825-0033
+
+### INFO-034
+- **タイトル:** Forrester調査: 86%のエンタープライズがAIエージェント配備済み・51%の専門職が業務利用——ただし信頼は34%・Gravitee調査では81.7%が今後12ヶ月に大幅増強計画
+- **ソース:** Boomi（Forrester Research引用） / TechCrunchスポンサー記事（Gravitee調査）
+- **公開日:** 2026-08
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-002-02, KIQ-004-01
+- **関連企業:** 業界全体
+- **要約:** Forrester Researchの調査では86%のエンタープライズがAIエージェントを配備済みで、専門職の約51%が業務で使用（先行業界は63%）。一方でエージェントを信頼すると回答したのは34%のみ——配備と信頼のギャップが構造化。別調査（Gravitee系）では企業内のエージェント数が倍増し、81.7%が今後12ヶ月にさらに配備拡大を計画（28%は「大幅に増やす」）。
+- **キーファクト:**
+  - 配備率86% vs 信頼34%——「使うが信じない」状態
+  - 51%の専門職が業務利用・先行業界63%
+  - 81.7%が12ヶ月内の増配計画・28%「significantly more」
+  - 拡大は速度（confidence）が統制（control）を上回る——VentureBeat: 責任あるAI成熟度は平均2.3/4
+- **引用URL:** https://www.facebook.com/Boomi.Official/posts/1084607057422356/
+- **Evidence ID:** EVD-20260825-0034
+
+### INFO-035
+- **タイトル:** Fortune 500の80%がアクティブなAIエージェント稼働・完全なセキュリティ承認は14%のみ——ガバナンスギャップ
+- **ソース:** LinkedIn Pulse（AI agent governance gap）
+- **公開日:** 2026-08
+- **信頼性コード:** D-3
+- **関連KIQ:** KIQ-002-02
+- **関連企業:** 業界全体
+- **要約:** 「80%のFortune 500企業がアクティブなAIエージェントを稼働させる一方、完全なセキュリティ承認を得ているのは14%のみ」というガバナンスギャップ指摘。エンタープライズCSのPypestreamは「Fortune 500で月5,000万インタラクション・10年以上本番運用」を主張（ベンダー自己申告・C-3）。
+- **キーファクト:**
+  - 80%稼働 vs 14%完全セキュリティ承認——統制が導入に未追従
+  - 出所がLinkedIn分析記事のためD-3——一次調査特定は次周期課題
+- **引用URL:** https://www.linkedin.com/pulse/ai-agent-governance-gap-80-deploying-8gstc
+- **Evidence ID:** EVD-20260825-0035
+
+### INFO-036
+- **タイトル:** AIエージェントROI主張群: 初年度138% ROI・5ヶ月回収（RPA比較95%コスト減）・知識レイヤー先行でROI 171%超・Gartner「2026年末までに40%のエンタープライズアプリがタスク特化エージェント統合」
+- **ソース:** Shelf.io / Shogo AI / fwdslash.ai・Hostinger（Gartner予測引用）
+- **公開日:** 2026-08
+- **信頼性コード:** C-3
+- **関連KIQ:** KIQ-002-02, KIQ-004-01
+- **関連企業:** 業界全体
+- **要約:** ベンダー系ROI分析が集中: Tier2（品質・体験）をROI計算に含めた企業の62%が100%超のリターン、ROI 171%超企業はスケール前に知識レイヤーへ先行投資。別分析ではAI自動化は初年度138% ROI・5ヶ月回収・3年でRPA比95%の運用コスト減を主張。Gartner予測（引用経由）では2026年末までにエンタープライズアプリの40%がタスク特化エージェント統合（2025年<5%から急増）、2028年には日常業務意思決定の15%が自律化。
+- **キーファクト:**
+  - Gartner: 2026年末40%アプリ統合予測（<5%→40%）・2028年15%意思決定自律化
+  - ROI主張はベンダー発が中心——独立的検証なし（C-3として記録）
+  - 「スケール前の知識レイヤー投資」が高ROIの共通前提
+- **引用URL:** https://shelf.io/blog/agentic-ai-roi-how-to-measure-the-return-on-your-ai-agent-investment/
+- **Evidence ID:** EVD-20260825-0036
+
+### INFO-037
+- **タイトル:** EU AI Act執行フェーズ開始（2026-08-02）: AI Officeと加盟国当局がGPAI規則の執行を開始・Article 50透明性義務（AIであることの開示）も発効
+- **ソース:** Privacy and Data Security Insight / Lexology / HCL
+- **公開日:** 2026-08
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-002-03, KIQ-005-03
+- **関連企業:** 業界全体（EU市場プレーヤー）, Anthropic
+- **要約:** 2026年8月2日、EU AI Actが新実装段階に入った: (i) 欧州委員会AI Officeと加盟国当局がGPAIモデルを含む適用要件の執行を開始 (ii) Article 50の透明性義務が発効し、AIとの相互作用であることの開示等が一部プロバイダー・利用企業に義務化。執行は本社所在地でなく「AIが使われる場所」基準。
+- **キーファクト:**
+  - 大企業ではAIコンプライアンスがエンタープライズリスク問題に昇格——企業全体のAIインベントリが出発点に
+  - Anthropicのウォーターマーク（INFO-004）はこのArticle 50/Code of Practice対応——一次情報と整合
+  - 2027年には高リスクAIシステムの厳格な説明責任基準が執行予定（Okta分析）
+- **引用URL:** https://www.privacyanddatasecurityinsight.com/2026/08/enforcement-and-transparency-obligations-under-the-eu-ai-act-are-now-in-effect/
+- **Evidence ID:** EVD-20260825-0037
+
+### INFO-038
+- **タイトル:** 【KIQ-GOV-EO関連】米AI規制: 2025-12-11「Ensuring a National Policy Framework for AI」EO（州法先取・AI訴訟タスクフォース）＋EO 14409（2026-06-02署名）で連邦AIガバナンスが「安全」から「セキュリティ/国家安全」へ転換
+- **ソース:** Brookings（連邦追跡） / Akin Gump EO tracker / legis1 / Al Arabiya（業界会談予告）
+- **公開日:** 2026-08時点の分析（EO自体は2025-12-11・2026-06-02）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-002-03, KIQ-002-06, 動的KIQ KIQ-GOV-EO
+- **関連企業:** 業界全体, 米連邦政府
+- **要約:** (1) 2025-12-11のEO（Federal Register 2025-23092・12/16掲載）は州AI法のパッチワークを排除する国家枠組みを設定——州法に挑戦するAI訴訟タスクフォース設置・連邦統一枠組みの立法建議を指示 (2) 2026-06-02署名のEO 14409は連邦AIガバナンスを広域安全性でなくサイバーセキュリティ・国家安全に再指向 (3) Trump大統領はAI業界幹部と会談へ——州規定を無効化する「単一国家ルール」樹立へ動くと報道。
+- **キーファクト:**
+  - EO番号が特定可能: EO 14409（2026-06-02）・国家枠組みEO（2025-12-11、FR番号2025-23092）
+  - 前回INFO-045系譜の「EO番号・一次文書確認」要求に対し、番号+Federal Register番号の候補を提示（INFO-045が指すEOがどちらかは本文未確認のため要継続判別）
+  - 安全（safety）→セキュリティ（security）ピボット——安全性義務の連邦後退が業界安全性姿勢に与える影響はKIQ-002-06監視対象
+  - 州法先取対州権（child safety/infrastructure/government useは州権温存）の争点構造
+- **引用URL:** https://www.brookings.edu/articles/tracking-regulatory-changes-in-the-second-trump-administration/
+- **Evidence ID:** EVD-20260825-0038
+
+### INFO-039
+- **タイトル:** 中国: 習近平が29ヶ国・上海拠点の新AIガバナンス機構を発表（グローバル標準化狙い）・AIコンパニオンアプリ規制強化
+- **ソース:** NY Magazine Intelligencer / DW / World Government Summit
+- **公開日:** 2026-08（直近報道）
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-002-03, KIQ-005-03
+- **関連企業:** 中国政府, ByteDance（コンパニオン規制の影響圏）
+- **要約:** NY Mag分析で「中国はAI安全戦争に勝ちつつある」との論評——習近平が29ヶ国から成る上海拠点の新ガバナンス機構を発表し、グローバルAI規則の標準化を推進。中国は2025年〜本年初頭に世界で最も広範なAI規制（AIの作成・オンライン共有・コンパニオンチャットボット利用年齢等）を導入。DWはAI交際/コンパニオン規制の取り締まり強化を報道。
+- **キーファクト:**
+  - 29ヶ国・上海ベースのガバナンス機構——規制標準の輸出戦略
+  - 中国は2022年からAI専門規制の先駆（有害コンテンツ・プライバシー・データセキュリティ）
+  - AIコンパニオン規制は情動的依存懸念が根拠
+- **引用URL:** https://nymag.com/intelligencer/article/china-us-ai-regulation.html
+- **Evidence ID:** EVD-20260825-0039
+
+### INFO-040
+- **タイトル:** 中国SAMR（2026-08-20）: AI大モデルシステムのプロンプト・レビュールール・注釈仕様が独立した営業秘密と成り得る六大事例公表
+- **ソース:** China IP Law Update
+- **公開日:** 2026-08-20
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-002-03, KIQ-001-05
+- **関連企業:** 中国市場プレーヤー, ByteDance
+- **要約:** 国家市場監督管理総局（SAMR）が営業秘密侵害の六大典型事例を公表。其中、AI大モデルシステムで使われるプロンプト・レビュールール・注釈仕様が、ソースコードの保護とは独立に営業秘密を構成し得るとの判断を示した事例を含む。
+- **キーファクト:**
+  - プロンプト・注釈仕様の営業秘密性が公式に認定——中国でのモデル開発資産の保護範囲拡大
+  - ソースコード保護と分離した独立保護——スキル/エージェント資産の法的位置づけに影響
+- **引用URL:** https://www.chinaiplawupdate.com/
+- **Evidence ID:** EVD-20260825-0040
+
+### INFO-041
+- **タイトル:** 【最重要】Anthropic×ペンタゴン訴訟: 連邦判事Rita Lin氏、国防総省の「サプライチェーンリスク」指定論に懐疑的姿勢——Anthropic側に有利な公判観測
+- **ソース:** ABC News
+- **公開日:** 2026-08（直近報道、正確日時は本文確認要）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-002-06, KIQ-002-04
+- **関連企業:** Anthropic, 米国防総省
+- **要約:** サンフランシスコの連邦地裁（Rita Lin判事）は、国防総省がAnthropicを「サプライチェーンリスク」として指定し契約交渉を打ち切った経緯をめぐる口頭弁論で、政府側の主張に対し懐疑的な見方を示したと報道。同指定の法的根拠と手続きを巡る争点。
+- **キーファクト:**
+  - 対象は「supply chain risk指定+AI技術利用契約交渉の打切り」の適法性
+  - 判事の懐疑姿勢=Anthropic側に有利な公判進行観測（判決自体は未）
+  - 昨日のINFO-038系EO（安全→セキュリティ転換）と同時進行——政権とAI企業の緊張構造の一翼
+- **引用URL:** https://abcnews.com/Politics/judge-appears-skeptical-pentagon-arguments-legal-fight-anthropic/story?id=131377419
+- **Evidence ID:** EVD-20260825-0041
+
+### INFO-042
+- **タイトル:** ペンタゴン、Anthropic禁止直後にOpenAIと classified システム契約合意——8社包括契約、Accenture Federal最大$821M、NODA AI $100M（10倍増）
+- **ソース:** New India Abroad / Instagram（AI-first military解説） / The Defense Post / Facebook（starbizmy他）
+- **公開日:** 2026-08-24（Defense Post）
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-002-06, KIQ-002-04, KIQ-OAI-001
+- **関連企業:** OpenAI, Anthropic, Accenture Federal Services, NODA AI, Amazon（8社契約に言及）
+- **要約:** 米政府のAnthropic禁止から数時間後、OpenAIは国防総省がclassifiedシステムでOpenAIモデル利用する契約に合意したと報道。ペンタゴンはAmazonを含む8つの大手AI企業と契約締結。別件で (i) Accenture Federal Servicesが5年最大$821Mの中核ソフト契約 (ii) NODA AIが自律ミッションコマンド software のJoint Force展開で$100M契約（10倍増）。
+- **キーファクト:**
+  - OpenAI×DoD classified契約——ChatGPTボイコット250万人超との対立構造（ソースはSNS中心で要一次確認）
+  - Anthropic契約打切り額は$200M（quartz系報道とも整合）
+  - ペンタゴン調達全体が「AI-first military」へ加速——代替ベンダー需要が当面続く
+- **引用URL:** https://thedefensepost.com/2026/08/24/noda-ai-autonomous-force-orchestration/
+- **Evidence ID:** EVD-20260825-0042
+
+### INFO-043
+- **タイトル:** Amodei氏、防衛契約拒否の理由を初公開——「大量監視・完全自律兵器へのセーフガードなき全面的利用」拒否・一方でAnthropic AIはイラン等の標的選定に既に使用との報道
+- **ソース:** Instagram reel（Amodei発言解説） / LinkedIn分析 / Der Spiegel（substack転載）
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-002-06, KIQ-002-04
+- **関連企業:** Anthropic, OpenAI
+- **要約:** Dario Amodei CEOは、防衛契約拒否の理由を「AI兵器化・軍事悪用への深い懸念とsafety-first体制の維持」と説明。Anthropicは「米国内での大量監視」「完全自律兵器」へのレッドラインを堅持したまま軍事契約を結ぶ姿勢だったとされる。一方Der Spiegel系報道は、ペンタゴン紛争中もAnthropic AIがイラン等の軍事標的選定に使用されたと主張（要検証）。
+- **キーファクト:**
+  - Anthropicのred line: (1) 米国内大量監視 (2) 完全自律兵器——これなしの「all lawful purposes」利用をDoDが要求したのが拒否理由
+  - イラン標的選定使用報道は単一ソース（B-3）——他ソースでの裏付けなければD-4扱い維持
+  - Anthropicは「分類軍事ネットワークで認可された初のAI企業」だった（quartz系）
+- **引用URL:** https://derspiegel.substack.com/p/how-the-race-for-ai-dominance-is
+- **Evidence ID:** EVD-20260825-0043
+
+### INFO-044
+- **タイトル:** Anthropic×ペンタゴン決裂の波及: 代替軍事AIベンダー需要増大・techUK「AI調達の教訓」レポートで倫理的調達ガイドライン議論
+- **ソース:** Facebook（starbizmy系転載） / techUK / LinkedIn
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-002-06, KIQ-002-05
+- **関連企業:** Anthropic, 代替ベンダー各社
+- **要約:** Anthropicとペンタゴンの決裂（$200M契約打切り）後、代替軍事AIベンダーへの需要が高まっていると複数報道。techUKは新レポート「Lessons from the AI Procurement Frontline」で、契約を超えたAI調達の再設計（buying blind問題）を提言。AI調達での倫理的争点（人間の最終決定のみでは不十分等）が業界団体レベルで議論中。
+- **キーファクト:**
+  - 「Anthropic离脱→代替ベンダー恩恵」構図はOpenAI/AWS等への競争優位転換(KIQ-002-05観点)
+  - AI調達は「契約書だけでは不十分」——ベンダーロックと透明性問題が調達再設計論へ
+  - 透明性: NDAsが内部告発を冷却する効果（GAO 3月報告）——安全研究員の発言抑制(KIQ-002-06)
+- **引用URL:** https://www.techuk.org/accelerating-innovation/digital-ethics-and-assurance.html
+- **Evidence ID:** EVD-20260825-0044
+
+### INFO-045
+- **タイトル:** エントリーレベル雇用のAI置換が現実化: Nomura分析「アジアではAIが雇用を追加——置換は銀行バックオフィス・カスタマーサポート・ジュニア技術職（QA/入門コーディング）に集中」
+- **ソース:** Nomura Connects / Reddit r/jobs / US Career Institute / IT Job Board UK
+- **公開日:** 2026-08
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-002-04
+- **関連企業:** 業界全体（金融・テック）
+- **要約:** 野村（Nomura Connects）分析: アジアではこれまでAIが雇用を純増加させたが、置換は低スキル・定常業務に集中——銀行バックオフィス（照合・コンプラ・データ入力）、カスタマーサポート（チャットボット）、ジュニア技術職（QAテスト・エントリーレベルコーディング）。UK IT求人ではGenAIがコード生成・テスト・バグ特定・ドキュメント生成を支援し新人業務を変革中。
+- **キーファクト:**
+  - 置換集中領域=バックオフィス・サポート・QA/入門コーディング——KIQ-002-04の先行指標と整合
+  - 「キャリアパイプライン断絶」懸念（ジュニア採用減→中堅育成難）がReddit等で議論
+  - OpenAI研究: 米労働者の80%がタスクの10%以上影響——「職務丸ごと」でなくタスク単位の変化
+- **引用URL:** https://www.nomuraconnects.com/focused-thinking-posts/beyond-the-headlines-ai-has-added-jobs-in-asia-so-far/
+- **Evidence ID:** EVD-20260825-0045
+
+### INFO-046
+- **タイトル:** Klarna人員5,500→3,400削減・$10M節約も「サービス品質低下で逆風」——Duolingoは契約社員削減+AI流暢性を昇進条件化（純増員なし）
+- **ソース:** Forbes（FB投稿） / tech.co / Instagram（hirelli.ai解説） / Ken Hughes（FB）
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-002-04, KIQ-002-05
+- **関連企業:** Klarna, Duolingo
+- **要約:** (1) Klarna: 従業員5,500→3,400に削減し$10M節約、「AIが700エージェント分の業務・全チャットの2/3処理・解決時間82%短縮」と宣言も、その後品質低下・成長悪化で一部復職へと報道 (2) Duolingo: 契約社員（contractor）削減+採用・昇進で「AI fluency」優先——ただし正社員headcountはAIの結果として減らしていないと説明。
+- **キーファクト:**
+  - Klarna: 5,500→3,400（38%減）・$10M節約・AI=700エージェント分・チャット2/3処理
+  - 品質低下バックファイヤー構図——「AI置換のコスト」定性情報として重要
+  - Duolingo「AI-first hiring」はフリーランス/契約層から置換——正社員は維持
+  - 「77%のAI活用企業が～」系統計はSNS引用が多く出典注意
+- **引用URL:** https://tech.co/news/companies-replace-workers-with-ai
+- **Evidence ID:** EVD-20260825-0046
+
+### INFO-047
+- **タイトル:** NTT DATA「100万会話を自律処理・解決50%高速化・コスト20%削減」——一方91%が生産性向上期待も「完全稼働は5%のみ」・エージェントの「真の自律完了率」は表示値82%に対し実質65%との指標論
+- **ソース:** NTT DATA（FB投稿） / LinkedIn（Mitch Barham） / ActivTrak CTO（CTO Magazine）
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-002-04, KIQ-002-02
+- **関連企業:** NTT DATA, 業界全体
+- **要約:** NTT DATAは100万会話自律処理・解決時間50%短縮・コスト20%削減を提示。だが同時点の調査では91%がAI生産性向上を期待する一方、完全稼働はわずか5%。LinkedIn識者は「AIエージェントの自律完了率は表向き82%でも真の値は65%」と指摘——ROI・人員計画・権限設計の前提が変わると強調。ActivTrak CTOはライセンス/トークン量では生産性を測れないと指摘。
+- **キーファクト:**
+  - NTT DATA実績: 100万会話・解決50%高速・コスト20%減
+  - 期待(91%)と実稼働(5%)のギャップ——KIQ-002-02の「86%配備・34%信頼」構造と同型
+  - 自律完了率65% vs 82%——エージェントROI測定のインフレリスク
+- **引用URL:** https://www.facebook.com/globalntt/posts/1-million-conversations-handled-autonomously-50-faster-resolution-20-lower-costs/1667439072056311/
+- **Evidence ID:** EVD-20260825-0047
+
+### INFO-048
+- **タイトル:** Google/Metaが「エージェンシー不要」の広告AIツール提供へ——広告主の代理店経由排除（脱中介）が進行・Google買い物代理プロトコルには消費者団体が警鐘
+- **ソース:** Brand IQ（FB投稿） / Digiday（FB投稿） / weareticker（FB投稿）
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-002-05
+- **関連企業:** Google, Meta, 広告代理店業界
+- **要約:** Google・Meta等の大手テックが広告主が代理店を介さず広告制作できるAIツールを導入、代理店不要論が強まっている。Googleの新AIエージェント買い物プロトコルについては消費者ウォッチドッグが懸念を表明（Googleは根拠なしと反論）。広告主側はGoogle自動化への「ブラックボックス」不信が残るも、新アトリビューション・フォーマット別レポートで不信は一定程度解消との指摘も。
+- **キーファクト:**
+  - Google/Metaの自動入札・オーディエンス絞り込み・クリエイティブ生成がAI駆動化——代理店の伝統的役割を内製化
+  - エージェント経由購買の台頭——広告費の帰属と仲介価値が構造変化
+  - Digiday: 「計測可能な高品質インベントリ」への圧力が加速
+- **引用URL:** https://www.facebook.com/brandiqng/posts/advertising-is-becoming-more-than-communicationit-is-becoming-strategic-infrastr/1059052013652678/
+- **Evidence ID:** EVD-20260825-0048
+
+### INFO-049
+- **タイトル:** AIが広告の「時間課金モデル」を崩壊させる——クリエイティブ大量生成で制作コスト圧縮・StackAdapt調査「キャンペーンワークフローが推奨型から意思決定型へ」・保険ブローカーでも82%が役割変化予期（実利用13%）
+- **ソース:** AdTribe（FB投稿/元記事） / StackAdapt（MartechCube転載） / Insurance Business Mag
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-002-05, KIQ-002-04
+- **関連企業:** StackAdapt, 広告代理店・保険ブローカー業界
+- **要約:** AIツールが脚本からビジュアルまで初稿制作を高速化し、広告業界最古の課金モデル「時間課金（billable hour）」が防衛困難に。StackAdaptレポートは、マーケターがAIの推奨を人間が承認する段階から、意思決定そのものをAIに再定義させつつあると分析。保険仲介業界でも82%がAIによる生産性・役割変化を予期するが、複数領域で実利用は13%のみ。
+- **キーファクト:**
+  - 時間課金崩壊→成果課金/サブスクへの移行圧力（$500〜$20K+/月のAI自動化代理店価格帯出現）
+  - 代理店評価（バリュエーション）にAI要因が反映され始め、買い手が線引き開始
+  - 保険ブローカー: 予期82% vs 実利用13%——期待と実装のギャップは広告・金融共通
+- **引用URL:** https://www.martechcube.com/stackadapt-report-reveals-ai-decision-making-shift-in-advertising/
+- **Evidence ID:** EVD-20260825-0049
+
+### INFO-050
+- **タイトル:** 「SaaSはUIを剥がしてAPI課金へ」——エージェントがUI経由しないSaaS活用で相互作用毎課金モデル台頭・エンタープライズは統合エージェント基盤がポイントソリューションを駆逐
+- **ソース:** Ruralbytes（FB投稿） / Kumar Shalabh（LinkedIn） / DataM Intelligence
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-002-05, KIQ-002-01
+- **関連企業:** SaaS業界全体, エージェントプラットフォーム各社
+- **要約:** SaaS製品からUIを取り除き、AIエージェントがAPIで直接アクセスして相互作用ごとに課金するモデルが提唱——「全SaaSに金儲けボタンが内蔵されている」との主張。DataM Intelligenceは、エンタープライズが分断されたポイントソリューションより深く統合されたエージェント対応基盤を優先し、ベンダーダイナミクスが再編中と分析。
+- **キーファクト:**
+  - SaaS課金の座席課金→API/相互作用課金への転換圧力——UI価値の下落
+  - 統合エージェント基盤 vs ポイントソリューションの競争——KIQ-002-01のAgentCore/Foundry統合と整合
+  - エージェントレイヤーの組み込み（計画・アプリ呼出・レコード更新・完了）がSaaS必須機能化
+- **引用URL:** https://www.datamintelligence.com/research-report/enterprise-ai-agent-adoption-market
+- **Evidence ID:** EVD-20260825-0050
+
+### INFO-051
+- **タイトル:** 「アジェンティック・スマイル曲線」: AIが制作コストを圧縮し価値が戦略コンサルティング層へ両極化——創造的代理店の中間層圧縮が理論化される
+- **ソース:** Schoolhouse Lane
+- **公開日:** 2026-08
+- **信頼性コード:** C-3
+- **関連KIQ:** KIQ-002-05
+- **関連企業:** 広告・クリエイティブ業界
+- **要約:** スマイル曲線（付加価値が上流の戦略と下流の集計に集中し中間製造の価値が下がる構造）をエージェンティックAIに適用した分析。AIが制作（中間層）コストを圧縮する一方、ブランド戦略（上流）の価値が拡大——代理店は戦略特化かAI活用のスケールで生き残りを図る必要があると論じる。
+- **キーファクト:**
+  - 中間層（制作実行）の価格破壊と上流（戦略）への価値シフト
+  - スマイル曲線フレームのAI版適用——バリューチェーン分析の理論的裏付け
+  - 供給側（Schoolhouse Lane）の自家分析である点に留意
+- **引用URL:** https://schoolhouselane.ai/blog/the-agentic-smiling-curve-how-ai-is-reshaping-the-creative-agency-value-chain
+- **Evidence ID:** EVD-20260825-0051
+
+### INFO-052
+- **タイトル:** 【一次情報確認済】OpenAI 2026-07-30値下げ: GPT-5.6 Luna 80%減($0.20/$1.20)・Terra 20%減($2/$12)・Sol據え置き($5/$30)——GPT-5.6公開3週間後の値切り、エンドツーエーン提供コスト20%減が根拠
+- **ソース:** OpenAI公式（advancing-the-price-performance-frontier） / CloudZero / dev.to / bleap.finance
+- **公開日:** 2026-07-30
+- **信頼性コード:** A-2（一次ソース存在、詳細は二次分析）
+- **関連KIQ:** KIQ-003-01, KIQ-003-02
+- **関連企業:** OpenAI, Anthropic, Z.ai（競合圧力として言及）
+- **要約:** OpenAIは7/9公開のGPT-5.6ファミリー(通常7/9〜)の3週間後、Luna を$1/$6→$0.20/$1.20（80%減）、Terraを$2.50/$15→$2/$12（20%減）に値下げ、Sol は$5/$30据え置き。推論改善でエンドツーエーン提供コスト20%減が根拠。LunaはGPT-5.4 Mini($0.75/$4.50)の約4分の1で現行ファミリー最低価格。キャッシュ入力10%・Batch API半額・Sol のFast mode（最大2.5倍速）同日導入。2026-03-05以降リリースモデルには地域処理10%アップチャージ。
+- **キーファクト:**
+  - Luna $0.20/$1.20・Terra $2/$12・Sol $5/$30——上下25倍の価格差ファミリー
+  - 長文コンテキスト-rate: Sol $10/$45・Terra $4/$18・Luna $0.40/$1.80（2倍課金）
+  - OpenAI「10億超アクティブユーザー・200万超ビジネス」到達を値下げ後に公表
+  - Anthropic高価格・Z.ai等中国OSS低価格の挟撃が動機と分析——前回C-3扱いの「20%値下げ」はLuna80%/Terra20%の複合でA-2に格上げ
+- **引用URL:** https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/
+- **Evidence ID:** EVD-20260825-0052
+
+### INFO-053
+- **タイトル:** Anthropic 2026-08-11: Sonnet 5初期価格$2/$10を恒久化・9/1の$3/$15値上げを撤回——「予測可能性」を価格戦略の軸に
+- **ソース:** Anthropicプラットフォーム pricing docs / CloudZero / benchlm / Morph
+- **公開日:** 2026-08-11
+- **信頼性コード:** A-2
+- **関連KIQ:** KIQ-003-01, KIQ-003-02
+- **関連企業:** Anthropic
+- **要約:** Anthropicは8/11、Claude Sonnet 5の紹介価格$2/$10を標準価格化し、9/1予定だった$3/$15への引上げを取りやげ。現在のClaude API価格: Haiku 4.5 $1/$5・Sonnet 5 $2/$10・Opus 5 $5/$25・Fable 5 $10/$50（フラッグシップはVision Arena首位、INFO-025参照）。キャッシュ読み込み0.1倍・Batch半額・Claude 4.6以降の米国内推論のみ+10%。廃止予定のMythos Preview $25/$125（Project Glasswing由來）。
+- **キーファクト:**
+  - Sonnet 5 $2/$10恒久化——$2帯は「最も熾烈な価格戦線」(CloudZero)
+  - $3/$15撤回はOpenAI 7/30値下げへの直接応答——価格競争の往復(応酬)開始
+  - Opus 5 $5/$25はGPT-5.5 $5/$30を出力で下回る——フラッグシップ比較優位
+- **引用URL:** https://platform.claude.com/docs/en/about-claude/pricing
+- **Evidence ID:** EVD-20260825-0053
+
+### INFO-054
+- **タイトル:** Google: Gemini 3開発者ガイド公開——新「Interactions API」(gemini-3.1-pro-preview)・画像生成4K対応・gemini-3-pro-image-preview・料金表は1Mトークンあたり表記
+- **ソース:** Google AI for Developers（一次ドキュメント）
+- **公開日:** 2026-08（ドキュメント更新）
+- **信頼性コード:** A-3
+- **関連KIQ:** KIQ-003-01, KIQ-001-01
+- **関連企業:** Google
+- **要約:** Google はGemini 3シリーズ開発者ガイドを公開: 新Interactions APIでは google_search/url_context ツール、JSON schemaレスポンス、画像出力(aspect_ratio/4K image_size指定可)を単一APIで扱う。モデルID gemini-3.1-pro-preview・gemini-3-pro-image-preview。利用tier制(課金cap $250〜$100,000+)、バッチ処理残高トラブル等のフォーラム報告あり。
+- **キーファクト:**
+  - Interactions API: 会話型+探索+構造化+画像の統合エンドポイント /v1beta/interactions
+  - Gemini 3.1 Pro $2/$12 (CloudZero比較表)——Terra/Sonnet 5と同$2入力
+  - Gemini 2.5 Flash $0.25/$1.50・DeepSeek V3.2 $0.28/$0.42 が低価格帯
+- **引用URL:** https://ai.google.dev/gemini-api/docs/gemini-3
+- **Evidence ID:** EVD-20260825-0054
+
+### INFO-055
+- **タイトル:** 【市場構造】LLM API価格: 床$0.20(Luna)・$2帯が主戦場(Sonnet 5/Terra/Gemini 3.1 Pro)・フラッグシップ$5〜$10・GPT-5.5 Pro $30/$180——AIMultiple「新モデル発表価格は$1.69〜$5.62で上昇基調、オープンウェイトは$0.48→$1.35」
+- **ソース:** CloudZero / AIMultiple / benchlm / Reddit各所
+- **公開日:** 2026-08-20（CloudZero比較表）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-01, KIQ-003-02
+- **関連企業:** OpenAI, Anthropic, Google, DeepSeek
+- **要約:** 2026-08-20時点のLLM API価格構造: 最低$0.20(Luna/GPT-5.4 Nano)→中堅$2帯3社同一価格→フラッグシップ$5-10→GPT-5.5 Pro $30/$180。AIMultiple分析: 新規モデル発表価格は$1.69〜$5.62に上昇（GPT-4o miniが2024-07に$0.26だったのと対照的）、一方オープンウェイトは$0.48(2024)→$1.35へ緩やか上昇——高機能化に伴う標準価格上昇と、競争圧力によるその後の値下げが繰り返す二段階パターン。
+- **キーファクト:**
+  - $2帯3社同一価格は「最も奪い合われる顧客層」(CloudZero)——価格対応の正否が収益直結
+  - Reddit反応: 「OpenAIが80%値下げ、Anthropicは沈黙」→8/11 Sonnet恒久化で応答(Info-053)
+  - 価格床($0.20)と天井($30)で150倍のSpread——「トークン単価」単一回答は不可能な市場
+  - CloudZero調査: 260ファイナンスリーダーの42%が信頼できるコスト予測なしにAI支出承認——価格変動リスクの管理需要
+- **引用URL:** https://www.cloudzero.com/blog/llm-api-pricing-comparison/
+- **Evidence ID:** EVD-20260825-0055
+
+### INFO-056
+- **タイトル:** OpenAI「サイバー重大能力時代のモデル開発ペーシング」——フロンティアモデルの監視・アライメント・セキュリティ強化で開発速度を調整
+- **ソース:** OpenAI公式
+- **公開日:** 2026-08（直近投稿）
+- **信頼性コード:** A-3（要旨のみ、本文未精読）
+- **関連KIQ:** KIQ-001-04, KIQ-002-06
+- **関連企業:** OpenAI
+- **要約:** OpenAI はサイバー重大能力(cyber-critical capabilities)時代におけるモデル開発ペーシングに関する投稿を公開。フロンティアモデルの監視(monitoring)・アライメント・セキュリティを強化し、新セーフガードがモデル開発のペースを導くと説明。
+- **キーファクト:**
+  - 「開発速度をセーフガードが導く」枠組み——能力向上と安全性のトレードオフ運用方針
+  - INFO-026(OpenAI Agentバイオリスク「高能力」)・INFO-038(安全→セキュリティ pivot)との整合——Step 4で本文精読予定
+- **引用URL:** https://openai.com/index/pacing-model-development-cyber-capabilities/
+- **Evidence ID:** EVD-20260825-0056
+
+### INFO-057
+- **タイトル:** 【ベンチマーク総覧1】Vellum LLM Leaderboard: Humanity's Last Exam でClaude Opus 5が64.7%首位・Mythos 5 64.5%——GPT-5.6 Sol 47.2%、Gemini 3 Pro 45.8%。タスク別: GPQA Diamond首位Sonnet 5 96.2%・SWE Bench首位Sol 96.2%・OSWorld首位Fable 5 85%・BrowseComp首位Sol 92.2%
+- **ソース:** Vellum LLM Leaderboard
+- **公開日:** 2026-08時点のスナップショット
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-02
+- **関連企業:** Anthropic, OpenAI, Google, Moonshot AI, DeepSeek
+- **要約:** Vellum集計: (1) HLE総合: Opus 5 64.7% > Mythos 5 64.5% > Opus 4.8 57.9% > Sonnet 5 57.4% > Kimi K3 56% > GLM 5.2 54.7% > DeepSeek V4 Flash 51.6% > GPT-5.6 Sol 47.2% > Gemini 3 Pro 45.8% (2) タスク別首位: GPQA Diamond=Sonnet 5 96.2%、SWE Bench=Sol 96.2%、OSWorld=Fable 5 85%、BrowseComp=Sol 92.2%、Terminal-Bench 2.1=Sol 88.8%、AutoBench(業務自動化)=Gemini 3.7 Flash 30.4%。
+- **キーファクト:**
+  - HLE上位7位中5位までAnthropic+中国OSS(Kimi/GLM/DeepSeek)——OpenAI/Google旗艦は47%/46%台
+  - 「文書推論はClaude、探索・ターミナルはSol、フラッシュ価格帯業務自動化はGemini 3.7」という棲み分け
+  - 速度: GLM 5.2 347 t/s・Kimi K2.6 342.6 t/s vs Sonnet 5 56.3 t/s——中国OSSの速度優位
+  - 料金: DeepSeek V4 Flash $0.14/$0.28・GLM 5.2 $0.95/$3——性能/価格でOSS台頭
+- **引用URL:** https://www.vellum.ai/llm-leaderboard
+- **Evidence ID:** EVD-20260825-0057
+
+### INFO-058
+- **タイトル:** 【ベンチマーク総覧2】Artificial Analysis: Claude Opus 5がIntelligence Index 63+Agentic Index 55.3の2冠首位(7/24付)——Fable 5 62/52.8、GPT-5.6 Sol 61/54.0、Grok 4.6 61。Kimi K3はOSS最高のII60。ARC-AGI-3はOpus 5が0.302で次点の約3.75倍
+- **ソース:** Artificial Analysis（felloai/greenflagdigital/benchlm経由） / llm-stats / ARC Prize
+- **公開日:** 2026-07-24（Opus 5首位反映）〜08更新
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-02
+- **関連企業:** Anthropic, OpenAI, xAI, Moonshot AI, Google
+- **要約:** AA Intelligence Index v4.1.1: Opus 5 63（7/24に新首位）> Fable 5 62 > Sol 61 = Grok 4.6 61 > Kimi K3 60（オープンウェイト最高）= GLM-5.3 (max) 60 > Luna 52（$0.05/index task）。ARC-AGI-3（対話型新ベンチ）: Opus 5 0.302、Sol 0.078、Terra 0.008、Luna 0.002——Opus 5が次点の約3.75倍の差をつける。ARC-AGI-2: Gemini 3.7 Flash 84.6%($0.25/task)。
+- **キーファクト:**
+  - Opus 5のAA計測ハルシネーション率50%——能力と捏造率のトレードオフ注意
+  - Gemini 3.1 Pro: ARC-AGI-1 98%($0.52/task)・GPQA 94.1%(Sol と同率)——「安く信頼できる事実作業」評価
+  - Grok 4.6: Solより低ブレンド価格で同等AAスコア(DataCamp)、ただし同一タスクで出力トークン約20%多用
+  - llm-statsのAA表は5モデル限定（Sol 0.590首位）——集計範囲違いに注意
+- **引用URL:** https://felloai.com/best-ai-models/
+- **Evidence ID:** EVD-20260825-0058
+
+### INFO-059
+- **タイトル:** 【ベンチマーク総覧3】AIMultiple Index: Claude Fable 5が92で総合首位・Kimi K3 88・GPT-5.6 Sol 87——ARC-AGI-2はSol 93首位、Opus 4.6 69。HALC-Bench長文ハルシネーションでFable 5が全204トラップ正答
+- **ソース:** AIMultiple LLM Benchmarks
+- **公開日:** 2026-08-21（更新）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-02
+- **関連企業:** Anthropic, Moonshot AI, OpenAI, xAI, Google
+- **要約:** AIMultiple独自Index: Fable 5 92 > Kimi K3 88 > Sol 87 > Grok 4.5 86 > GPT-5.5 83 > Terra 80 = Sol Pro 80 > Opus 4.6 78 > Gemini 3 Pro 77 = Gemini 3.1 Pro 77。分野別: LegalBench Fable 5 89・FinanceReasoning Fable 5/Sol 90・Agentic RAG Fable 5 98・ARC-AGI-2 Sol 93・Agentic LLM Benchmark K3/Grok 4.5 73。長文检索ハルシネーション(HALC-Bench, 204罠)でFable 5が全問回避。
+- **キーファクト:**
+  - Fable 5($10/$50)が評価指数では総合首位——Anthropicの2モデル体制(Opus 5/Fable 5)が指標上位を独占
+  - Kimi K3がオープン系首位(88)——オープンウェイトのフロンティア接近を複数指数が確認
+  - Gemini系はIndex 77で先行3社(OAI/Anthropic/Moonshot)より1〜2ランク下
+  - AIM Enterprise(69実務タスク)等の「コスト効率」評価も展開——実運用視点の指標拡大
+- **引用URL:** https://aimultiple.com/llm
+- **Evidence ID:** EVD-20260825-0059
+
+### INFO-060
+- **タイトル:** 【ベンチマーク総覧4】vals.ai SWE-bench Verified: Claude Opus 5が97.00%首位($1.29/test)——オープンウェイトDeepSeek V4 Proが96.40%で0.6ポイント差の2位($0.10/test)。「86モデル中7モデルが95%超え、フロンティア分解能はほぼ消失」
+- **ソース:** vals.ai（SWE-bench Verified、Mini-SWE-agent harness）
+- **公開日:** 2026-08時点
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-02, KIQ-003-03
+- **関連企業:** Anthropic, DeepSeek, OpenAI, xAI, Z.ai, Moonshot AI, Meta
+- **要約:** SWE-bench Verified(86モデル): Opus 5 97.00% > DeepSeek V4 Pro 96.40% > Sol 96.20% > Grok 4.6 95.60% > Terra 95.40% = GLM 5.3 95.40% > Fable 5 95.00% > Kimi K3 93.40% > Luna 93.00%($0.04/test)。オープンウェイト(V4 Pro)がクローズド首位と0.6ポイント差——コストは約13分の1。Luna は$0.04/test で93%到達。
+- **キーファクト:**
+  - 「オープンウェイト最上位到達」——KIQ-003-03(ギャップ)の直接証拠
+  - コスト/テスト: V4 Pro $0.10 vs Opus 5 $1.29 vs Fable 5 $2.05——性能ほぼ同等で20倍コスト差
+  - 86モデル中7モデル≥95%——コーディング系ベンチの飽和、差別化はAgentic/長文/コストへ移動
+  - Claude Code harness使用のOpus 4.8は85.80%(Mini-SWE-agent 88.60%より低い)——ハarness依存性
+- **引用URL:** https://vals.ai/benchmarks/swebench
+- **Evidence ID:** EVD-20260825-0060
+
+### INFO-061
+- **タイトル:** 【ベンチマーク総覧5】Vision Arena: claude-fable-5が1312で首位(9,562票)・qwen3.8-max 1302・opus-4.7-high 1301——ByteDance dola-seed-2.0-pro が35位(1258)に初出。指示追従: Qwen3.8 Max 97.8%首位・Microsoft MAI-Thinking-1 97.8%・Thinking Machines Inkling-Small 96.4%
+- **ソース:** arena.ai（Vision） / benchlm（Instruction Following）
+- **公開日:** 2026-08時点
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-003-02, KIQ-003-03
+- **関連企業:** Anthropic, Alibaba, Meta, Microsoft, Thinking Machines Lab, ByteDance
+- **要約:** Vision Arena首位はclaude-fable-5(1312±9)、2位qwen3.8-max(1302)、3位opus-4.7-high(1301)——Anthropicが上位独占、Metaの新 proprietary「Muse Spark」系(1294/1292)が続く。ByteDance dola-seed-2.0-pro が35位(1258)で Vision 分野にも参入。指示追従(IFEval/IFBench加重): Qwen3.8 Max 97.8%・Microsoft MAI-Thinking-1 97.8%・Thinking Machines Inkling-Small 96.4%($0.58/$1.44)。
+- **キーファクト:**
+  - Meta がMuse Spark/Muse Glimmer(オープンagentic 30B)で評価上位に復帰——Llama後継体制
+  - Thinking Machines Lab「Inkling」系列が1M ctx・低価格で指示追従上位——新興参入
+  - Microsoft MAI-Thinking-1(proprietary)が指示追従でOpenAI系を上回る
+  - INFO-025(claude-fable-5 Vision首位)を詳細順位付きで補強
+- **引用URL:** https://arena.ai/leaderboard/vision
+- **Evidence ID:** EVD-20260825-0061
+
+### INFO-062
+- **タイトル:** オープンソースとクローズドのギャップ急縮小: Thunder Compute「研究者予想より速く接近」・GLM-5.3/Kimi K3が「フロンティア級コーディングを価格の数分の一で」・ただし「最難問推論では商用首位が依然リード」（LABUSA）・医療 adversarial 評価では商用电 Lastly 上回る（Sonnet 4.5 4.06 vs OSS 2.94-3.57）
+- **ソース:** Thunder Compute / LABUSA / mindshub / ScienceDirect（抗菌薬スチュワードシップ adversarial 評価）
+- **公開日:** 2026-08
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-03
+- **関連企業:** Z.ai, Moonshot AI, DeepSeek, Anthropic, OpenAI
+- **要約:** (1) オープン系はコーディング等でほぼ同等（vals.ai INFO-060: V4 Pro がOpus 5と0.6pt差） (2) 最難問推論では商用がリード・ギャップ主張は急速に陳腐化 (3) 専門領域adversarial評価（抗菌薬管理）では商用4モデル(Sonnet 4.5/Gemini 2.5 Pro/Grok 4/GPT-5)が3.9/5超、オープン系は2.94-3.57と有意に低い (4) ただし危険フラグ率(6.7-16.7%)は商用/OSS間で有意差なし。
+- **キーファクト:**
+  - 「ギャップは量的にほぼ消滅、質的（最難問・専門安全）に残存」構造
+  - Claude系はステッカーより完了タスク単価が高い実態、OpenAIは逆（mindshub）
+  - 専門家領域の安全性検証は商用優位——エンタープライズ採用の判断軸
+- **引用URL:** https://www.thundercompute.com/blog/best-open-source-llms
+- **Evidence ID:** EVD-20260825-0062
+
+### INFO-063
+- **タイトル:** Meta: Llama系に代わる新体制「Muse」登場——proprietary「Muse Spark」(Vision Arena 6位圏)とオープン「Muse Glimmer 30B」(agentic、指示追従84.5%)。Llama 4 Scoutは10M context・2600 t/s最速記録
+- **ソース:** llm-stats / arena.ai / benchlm / azumo
+- **公開日:** 2026-08時点
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-003-03, KIQ-003-02
+- **関連企業:** Meta
+- **要約:** Metaのモデル戦略がLlama 4系（Scout/Maverick、2025-04）から新ブランド「Muse」へ移行中: proprietary API モデルMuse Spark系列（Vision Arena 1294/1292、API $1.25/$4.25）と、オープンagenticモデルMuse Glimmer 30B（research.meta.ai、指示追従84.5%、GPQAでLlama 3.2 3Bに勝利）。旧Llama 4 Scoutは10M context・最速2600 t/s を維持。
+- **キーファクト:**
+  - Llama直接の大規模後継更新は停滞気味——Museブランドで再出発
+  - Metaがproprietary API価格を下げて再参入（$1.25/$4.25）
+  - オープン系最速はLlama 4 Scout 2600 t/s（Vellum）——推論速度はMeta系優位
+- **引用URL:** https://arena.ai/leaderboard/vision
+- **Evidence ID:** EVD-20260825-0063
+
+### INFO-064
+- **タイトル:** DeepSeek V4系拡大: 実験的マルチモーダル版がOpus 4.8に3/11ベンチで勝利・V4-Pro正式版が出荷（Responses API対応+Codex統合）・V4-Flashは「100万語$0.87 vs Anthropic約$50」で最安
+- **ソース:** The Next Web / NVIDIA NIM docs / Morph / DeepSeek公式
+- **公開日:** 2026-08-21（TNW）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-03, KIQ-003-01
+- **関連企業:** DeepSeek, Anthropic
+- **要約:** DeepSeekが実験的マルチモーダルモデルを公開——自社表でOpus 4.8相手に11ベンチ中3つ勝利（DeepSWE +1.3・Agents' Last Exam +1.6・ZeroBench +1.0）、NL2Repoは12pt劣勢。テスト7種中6種でvision版がtext版を上回る（Toolathlon +5.6等）。正式V4-Proはエージェント能力大幅強化・Responses API対応・Codex統合を確認。NVIDIA NIM経由でもV4-Flash-0731提供（Terminal Bench 82.7 等）。
+- **キーファクト:**
+  - 100万語処理コスト: DeepSeek $0.87 vs Anthropic 約$50——約57倍のコスト差が企業購入層に認知
+  - 自己ハーネス(minimal mode, temp 1.0)評価である点はTNWが注意喚起
+  - V4-ProのSWE-bench自己申告80.6%は「緩いverifier」問題——無汚染DeepSWEでは旧プレビュー8% vs GPT-5.5 70%（Morph）——バージョン間の飛躍を要確認
+  - DeepSeekハーネス vs Claude Code比較で「モデル性能の多くはオーケストレーション」(LinkedIn 100時間検証)
+- **引用URL:** https://thenextweb.com/news/deepseek-v4-flash-vision-exp-opus-benchmarks
+- **Evidence ID:** EVD-20260825-0064
+
+### INFO-065
+- **タイトル:** エンタープライズのOSSデプロイ経路拡大: Google EAP Model Garden のself-deploy オープンモデル・Azure Foundry がgpt-oss-120bを直接販売・Mistral×HUMAIN「最強のエンタープライズAIプラットフォーム」・Goldman SachsがOSS活用開始
+- **ソース:** Google Cloud docs / Microsoft Learn / Mistral公式 / techstartups / layer3labs
+- **公開日:** 2026-08-21（techstartups）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-03, KIQ-002-01
+- **関連企業:** Google, Microsoft, Mistral AI, HUMAIN（サウジ）, Goldman Sachs, NVIDIA
+- **要約:** (1) Google: Gemini Enterprise Agent Platform (旧Vertex)のModel Gardenでオープンモデルself-deploy正式化 (2) Azure Foundry: OpenAIのオープンモデルgpt-oss-120bをAzure直接販売（OpenAI-OSS形式） (3) MistralはサウジHUMAIN提携でエンタープライズ向けオープンモデル基盤「最も強力なエンタープライズAIプラットフォーム」展開、Ministral-3 14B等——規制業界・EUデータレジデンシー需要を独占狙い (4) Goldman SachsがOSS活用を開始（techstartups）。
+- **キーファクト:**
+  - 「ハイパースケーラーがOSSを第一級市民に」——EAP/Foundryのセルフデプロイ経路が標準化
+  - Mistralの差別化は規制・データ主権——欧州・中東政府系需要
+  - opennessスペクトラム（真OSS vs オープンウェイト）の整理が業界標準論点に
+  - NVIDIA: Nemotron/Cosmos のオープン推論モデルで9倍高速推論を訴求
+- **引用URL:** https://techstartups.com/2026/08/21/open-source-ai-vs-open-weight-ai-whats-the-difference/
+- **Evidence ID:** EVD-20260825-0065
+
+### INFO-066
+- **タイトル:** 【最重要・収益構造】WSJ: Anthropic収益がQ2に倍増して$11.6Bに達し、OpenAIを上回って初の首位——OpenAIは$6.7B(前期比+18%)で「鈍い成長」と評価
+- **ソース:** WSJ / Reddit（財務スレッド）
+- **公開日:** 2026-08（Q2決算報道）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-04, KIQ-OAI-001, KIQ-002-02
+- **関連企業:** Anthropic, OpenAI
+- **要約:** WSJ報道: OpenAIの第2四半期売上は伸び悩み(前期比+18%の$6.7B)、一方Anthropicは収益を倍増以上の$11.6Bとし、初めてOpenAIの売上を上回った。ペンタゴン問題(INFO-041〜044)の最中での収益逆転——企業向けエージェント需要(Claude Code/Financial Services等)が Anthropic 側に集中した影響。
+- **キーファクト:**
+  - Anthropic Q2収益 $11.6B(倍増超) vs OpenAI $6.7B(+18% QoQ)——年率換算で Anthropic 約$46Bペース
+  - 「収益首位交代」は前回INFO-016系市場分析の前提更新を要す
+  - OpenAIはペンタゴンclassified契約(INFO-042)・広告$102B計画(INFO-067)で巻き返し図る
+- **引用URL:** https://www.wsj.com/tech/ai/openais-second-quarter-sales-show-tepid-growth-compared-with-anthropic-5cb42998
+- **Evidence ID:** EVD-20260825-0066
+
+### INFO-067
+- **タイトル:** 【循環資本リスク】UBS試算: OpenAI+AnthropicでGoogle Cloud収益の27%(2026)→48%超(2027、$124B超・Anthropic単独$76B)——Zitron「2つの赤字企業のためにインフラを建設」・OpenAI 2025年損失$20.9B・計画DC群は年$1.6T収益必要・OAI/Google/Anthropicがエージェント市場84%を握り仏がロックイン警告
+- **ソース:** PPC Land（Bloomberg 7/31インタビュー転載、UBS/Barclays試算引用）
+- **公開日:** 2026-07-31（インタビュー）／08報道
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-04, KIQ-BS003-DEBT, KIQ-005-01
+- **関連企業:** OpenAI, Anthropic, Google, Microsoft, Amazon, Meta
+- **要約:** Ed Zitron(EZ Primary Research)がBloombergでAIキャッペックス波の持続可能性に警鐘: (1) UBS試算でOpenAI+AnthropicがGoogle Cloud収益の27%(今年)→48%超(来年、$124B超、Anthropic単独$76B) (2) 両社は$200B〜$300B調達済みだがMSFT/Google/AMZNが彼らのためにインフラを建設した実効総額は更大 (3) OpenAI 2025年損失$20.9B (4) 計画済みデータセンターは年$1.6T超の収益を必要とする試算 (5) OpenAIはGoogle検索$224B市場を狙う$102B広告収入計画。
+- **キーファクト:**
+  - 「Google Cloud収益の半分近くが2社依存」——サイクルリスクの定量化(UBS)
+  - エージェント市場84%集中(2026-05時点)でフランスがロックインリスク公式警告——KIQ-003-05直結
+  - KIQ-BS003-DEBT(シンジエート融資)の文脈: 負債調達前提の収益計画vs循環構造の対立軸
+- **引用URL:** https://ppc.land/google-cloud-faces-48-revenue-reliance-on-openai-and-anthropic-in-2027/
+- **Evidence ID:** EVD-20260825-0067
+
+### INFO-068
+- **タイトル:** 【M&A大型】Hugging Faceが$13Bでの売却交渉中(TechCrunch 8/24)・SpaceXがCognition買収を試み(Bloomberg Law)・(要検証)AppleがQ.aiを$2Bで、NvidiaがGroqを$20Bで合意との報
+- **ソース:** TechCrunch / Bloomberg Law / fb-answers（SNS集約、B-3）
+- **公開日:** 2026-08-24
+- **信頼性コード:** B-2（TechCrunch/Bloomberg部分）
+- **関連KIQ:** KIQ-003-04, KIQ-001-05
+- **関連企業:** Hugging Face, SpaceX, xAI, Cognition, Apple, Nvidia, Groq
+- **要約:** (1) Hugging Faceが約$13Bでの買収オファーを受けていると報道——ただし創業者らのコミュニティ責任感から売却実現は不透明 (2) SpaceXがAIコーディング企業Cognitionに買収接触——「最近数ヶ月の2度目の大型買収攻勢」(xAI統合後) (3) SNS集約情報: Apple がイスラエルQ.aiを約$2B、NvidiaがGroqを$20Bで買収合意との噂——一次確認必要(B-3)。
+- **キーファクト:**
+  - OSSインフラ企業(Hugging Face)に$13B値付け——オープンエコシステム資産の戦略価値
+  - SpaceX/xAIがコーディングAI(Cognition)統合を模索——ハーネス層の統合継続
+  - 買収主軸は「スタートアップがスタートアップを買う」(Crunchbase)——超高バリュエーション企業の資金活用
+- **引用URL:** https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/
+- **Evidence ID:** EVD-20260825-0068
+
+### INFO-069
+- **タイトル:** 【資金調達】Etched評価額2倍の$21Bで$700M(8/18 Reuters)・Castelion $800M(防衛)・General Intuition $6B事前評価でロボットAgents調達交渉(8/24)・NvidiaがPerplexity $30B超ラウンド参加交渉・Velaura AI $110M(>$1B)
+- **ソース:** Reuters / Crunchbase News / TechCrunch
+- **公開日:** 2026-08-18〜24
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-04
+- **関連企業:** Etched, Castelion, General Intuition, Nvidia, Perplexity, Velaura AI, Higgsfield
+- **要約:** 今週の大型調達: (1) AIチップEtched: Series C($10.3B評価・7月)からわずか1ヶ月で評価額2倍の$21B、$700M調達 (2) Castelion $800M(防衛テック、うち$250Mデットファイナンス) (3) General Intuition(時空間移動を学習するAgent基盤モデル): 6月$320M/$2.3Bから8月に$6B事前評価で追加調達交渉(Valor/Point72/776) (4) Nvidia がPerplexityへの出資を交渉中(評価$30B超) (5) チップ設計Velaura AI $110M Series A(評価$1B超・省電力技術)。
+- **キーファクト:**
+  - チップ・防衛・ロボットAgentsに資金集中——半導体不足/主権AI需要
+  - 評価額ステップアップ平均6.6x・投資$1あたり価値創出$109M(2025)→$1B超(2026)(Volition)
+  - デットファイナンス混在(Castelion $250M)——KIQ-BS003-DEBTの小型版
+- **引用URL:** https://www.reuters.com/technology/ai-chip-startup-etched-valued-21-billion-latest-funding-round-2026-08-18/
+- **Evidence ID:** EVD-20260825-0069
+
+### INFO-070
+- **タイトル:** 【インフラ投資】Morgan Stanley: 米ビッグ4(AMZN/MSFT/META/GOOG)のDC・AI投資は$630B見通し・Allianz: 年間DC投資は$500B(2024)→2027年には$1T超え・政府が構造的ドライバーに・NvidiaがCloverleaf Infrastructureに出資(8/21)
+- **ソース:** Fareed Zakaria FB(Morgan Stanley引用) / Allianz Commercial / Reuters
+- **公開日:** 2026-08-21（Reuters）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-04, KIQ-BS003-DEBT
+- **関連企業:** Amazon, Microsoft, Meta, Alphabet, Nvidia, Cloverleaf
+- **要約:** (1) Morgan Stanley予測: Sillicon Valleyビッグ4のDC/AI投資は$630B (2) Allianz: フロンティア訓練→エージェント配備への移行で年間DC投資$500B(2024)から2027年には$1T超え、電力・送電・冷却・半導体まで拡大 (3) 政府がAIインフラ投資の構造的ドライバー化、投資のグローバル化 (4) Nvidia は電力インフラ開発者Cloverleafに少数出資——DC立地の電力制約対応。
+- **キーファクト:**
+  - $1T/年のDC投資時代突入見通し——KIQ-BS003-DEBT(Nvidia $500B等)の背景インフラ
+  - ボトルネックは計算資本から電力・送電へ移行(Cloverleaf投資が証左)
+  - 中国のDC支出は米の一部に留まる(Zakaria)——米中インフラ格差
+- **引用URL:** https://commercial.allianz.com/news-and-insights/reports/data-center-construction-risks.html
+- **Evidence ID:** EVD-20260825-0070
+
+### INFO-071
+- **タイトル:** 【要検証】「Anthropic評価額$965BでOpenAIを抜き世界最高のAIスタートアップに」——SNS報道(INFO-042系quartz報道の$380Bと3倍近い乖離、一次確認までD-4扱い)
+- **ソース:** Think Marketing Magazine（FB転載）
+- **公開日:** 2026-08
+- **信頼性コード:** D-4（単一SNSソース・既存報道と大幅乖離）
+- **関連KIQ:** KIQ-003-04, KIQ-OAI-001
+- **関連企業:** Anthropic, OpenAI
+- **要約:** Anthropicの評価額が$965Bに達しOpenAIを抜いて「世界で最も価値あるAIスタートアップ」となったとの報道。ただし直近のquartz系報道(INFO-042)は約$380Bとしており、乖離が大きく、調達ラウンドの公式発表がないため未確認。
+- **キーファクト:**
+  - $380B(8月中旬報道)→$965B(8月下旬報道)の急騰説明なし——ラウンド実体の確認急務
+  - Q2収益逆転(INFO-066)と合わせ二次報道が過熱している可能性
+- **引用URL:** https://www.facebook.com/Think.Marketing.Magazine/posts/1519607866858354/
+- **Evidence ID:** EVD-20260825-0071
+
+### INFO-072
+- **タイトル:** スイッチングコスト構造変化: (1) Google API は OpenAI 比60-65%安くバックエンド乗換が進むとの報道 (2) Stanford AI Index系: 2022年末フロンティア同等能力のクエリ単価は$20.00/M→2024-10に$0.07(280倍安) (3) CIO: 「GPU請求書が新しいAWS請求書」——移行コスト判断を3つの質問で
+- **ソース:** FB（価格戦争解説） / Egan-Jones（AOL転載） / CIO.com
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-003-05, KIQ-003-01
+- **関連企業:** Google, OpenAI, Anthropic
+- **要約:** (1) 価格戦争により Google API は業務用途でOpenAIより60-65%安いとされ、バックエンドのGoogle Cloud乗換が多数発生との報道 (2) Egan-Jones分析: 2022年末のフロンティア能力を持つクエリのコストは23ヶ月で280分の1に低下 (3) CIO記事: AI機能の存続を決めるのは「リクエストあたりコスト」——ワークロード形状が課金モデル選択を決め、オープンウェイトは再分析自由・proprietary endpointは他社の価格裁量に縛られると指摘。
+- **キーファクト:**
+  - 推論単価の桁違い下落→価格系スイッチングコストは低下、一方ワークフロー統合の固定性が新ロックインに
+  - 「柔軟性にはドル価値がある」——契約単価と並列で移行コストを評価する実務化
+  - Workday買収議論: 「真のスイッチングコスト堀」を持つプラットフォームとAIネイティブ代替脆弱層の分化(Futurum)
+- **引用URL:** https://www.cio.com/article/4211613/the-gpu-bill-is-the-new-aws-bill.html
+- **Evidence ID:** EVD-20260825-0072
+
+### INFO-073
+- **タイトル:** コード移行ベンチ新登場: Vals Code Migration(48モデル)でClaude Opus 5が57.47%首位・Fable 5 55.06%・Sol 52.92%——API/フレームワーク移行作業の自動化精度が差別化指標に
+- **ソース:** benchlm（Code Migration Leaderboard）
+- **公開日:** 2026-08-13
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-003-05, KIQ-003-02
+- **関連企業:** Anthropic, OpenAI
+- **要約:** 「Code Migration」(コード基盤移行)スコア(48モデル): Opus 5 57.47% > Fable 5 55.06% > Sol 52.92% > 47.25%…——ベンダー移行・レガシー移行タスク自体がベンチマーク化。Anthropic上位はエージェント的コーディング優位(INFO-060)と整合し、「移行支援によるロックイン緩和」をClaudeが担う構図。
+- **キーファクト:**
+  - 移行タスクの自動化精度は首位でも57%台——完全自動移行は未成熟、移行コストは依然実在
+  - OpenRouterでGPT-5.6 Sol価格50%減の報(HN)——市場価格の流動化が移行判断を頻繁化
+- **引用URL:** https://benchlm.ai/benchmarks/codemigration
+- **Evidence ID:** EVD-20260825-0073
+
+### INFO-074
+- **タイトル:** BCG「Cognition Lock-in」概念: ベンダーの技術依存から「ベンダーの判断力依存」への移行が静かな脅威——AWS「multi-everything環境」でロックイン回避アーキテクチャ原則公開・医療では統合経由の不可逆依存リスク
+- **ソース:** LinkedIn（Martin Bouza/BCG引用） / AWS ML Blog / Epstein Becker Green
+- **公開日:** 2026-08
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-05, KIQ-002-01
+- **関連企業:** AWS, BCG, 医療機関
+- **要約:** BCGは「cognition lock-in」を提唱: エージェント依存の深化で、ベンダーの技術だけでなく「判断(judgment)」への依存が形成される——従来の調達枠組みでない-lock-inリスク。AWS はエージェントAIをロックインなしにスケールするアーキテクチャ原則(複数フレームワーク/モデル/プロバイダー共存の「multi-everything」)を公開。医療分野ではAI統合が不可逆依存を作るとの法務指摘。
+- **キーファクト:**
+  - 「判断への依存」——プロンプト/運用知識/エージェント設計が新 switching cost
+  - 大多数のエンタープライズは単一標準化せず複数プロバイダ運用(AWS公式認識)
+  - AI Vendor Risk Management が伝統的調達と異なる独立リスクカテゴリに(agamisoft)
+- **引用URL:** https://aws.amazon.com/blogs/machine-learning/scaling-agentic-ai-enterprise-patterns-without-vendor-lock-in/
+- **Evidence ID:** EVD-20260825-0074
+
+### INFO-075
+- **タイトル:** 【対応済INFO-030補強】Forbes(8/24): エンタープライズAIベンダーロイヤルティ急速低下・マルチベンダー戦略が主流に——AvePoint「マルチモデル戦略で依存低減・レジリエンス向上」・仏当局の84%集中警告(INFO-067)と呼応
+- **ソース:** Forbes（Ron Schmelzer） / AvePoint
+- **公開日:** 2026-08-24
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-003-05
+- **関連企業:** OpenAI, Google, Anthropic, AvePoint
+- **要約:** Forbes: エンタープライズAI市場で単一プロバイダコミットからマルチベンダー戦略への有意なシフトが進行。モデル・価格・能力の変化に追随するための依存低減が動機。AvePointはマルチモデル戦略の便益を依存低減・レジリエンス・適応力と整理。仏の「OpenAI/Google/Anthropic 84%集中」警告(INFO-067)と整合し、EUでの規制介入可能性と企業側の自衛が並走。
+- **キーファクト:**
+  - INFO-030(同Forbes記事一次確認)をA-2相当の公式URL付きで確定
+  - マルチベンダー化=価格交渉力の企業側回復——$2帯価格戦(INFO-055)と相互強化
+  - エージェント市場予測: $6.65B(2025)→$142.35B(2035) C-3(INFO-016再掲)
+- **引用URL:** https://www.forbes.com/sites/ronschmelzer/2026/08/24/enterprise-ai-vendor-loyalty-is-fading-fast/
+- **Evidence ID:** EVD-20260825-0075
+
+### INFO-076
+- **タイトル:** KPMG調査: 「洗練されたAI活用は依然稀」・Stanford研究「AI露出職の若年層は相対的に16%雇用減」・従業員の13%のみがワークフロー内にAIエージェント統合を認識・コンプライアンス責任者調査「AIが初級業務を自動化し、AI出力を評価する専門性を育てる機会が減少」
+- **ソース:** Newsweek（KPMG） / News13（調査転載） / KPMG 2026 CCO Survey（PDF） / ResultSense
+- **公開日:** 2026-08-18（ResultSense）／08（Newsweek）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-004-01, KIQ-002-02
+- **関連企業:** KPMG, 業界全体
+- **要約:** (1) KPMG: 高度なAI活用は仍稀で「顧客は技術でなく人を信頼する」——データサイエンス等非伝統経路から人材流入 (2) Stanford: AI露出役職の若年労働者で16%の相対的雇用減、ただし経済学者は remote work 等をより大きい要因と指摘し見解分かれる (3) 別調査: 3分の1以上がAI利用する中、ワークフローへのエージェント統合を認識する従業員は13%のみ (4) KPMG CCO調査: 初級タスク自動化で「AI出力を評価する専門性」の育成機会が減少——ジュニア育成パイプライン問題を正式文書化。
+- **キーファクト:**
+  - 16%相対減(若年・AI露出)——INFO-045の雇用構造と整合する定量化
+  - エージェント統合認識13%——「86%配備」(INFO-034)との温度差、実感ギャップ
+  - 評価能力の育成断絶——KIQ-004-02「AIに書かせて評価できる」人材不足の組織的証拠
+- **引用URL:** https://www.newsweek.com/what-sophisticated-ai-use-looks-like-kpmg-12352611
+- **Evidence ID:** EVD-20260825-0076
+
+### INFO-077
+- **タイトル:** AI解雇の実態: 2026年米国企業の解雇理由でAIが初の第1位(年間87,714件・全体22%、5月時点)・テック12万件超削減・Forrester「AI解雇した雇用主の55%が後悔、約半分は最終的に巻き戻す」・Meta 2026年5月に全社10%削減+AI pivot・CEOらはメッセージを「AIで解雇」から回避へ修正(Axios 8/20)
+- **ソース:** LinkedIn（Challenger系データ引用） / Instagram / tech.co / Axios / Forrester（FB転載）
+- **公開日:** 2026-08-20（Axios）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-004-01
+- **関連企業:** Meta, 業界全体, Forrester
+- **要約:** (1) AIが米国 job cuts の首位理由に(87,714件/22%)——初めて (2) 2026年にテック12万件超削減、AIが第一位理由 (3) Forrester: AI関連レイオフ実施雇用主の55%が後悔、AI帰因削減の約半分は最終的に逆転(再採用・低賃金での再雇用報道も)と予測 (4) Meta は2026年5月に労働力10%削減とAI注力を発表 (5) Axios: 投資家はAI支出の成果証明を、従業員は代替懸念を聞きたくない——CEOメッセージングが二元論的に分裂。
+- **キーファクト:**
+  - Klarnaの「品質低下で逆風」(INFO-046)が構造化——55%後悔・半分巻き戻し
+  - 「低賃金再雇用」パターン——一時的置換のコスト発覚
+  - Meta 10%削減(2026-05)はKIQ-002-06のAnthropic系レイオフ文脈と別系統の大手再編
+- **引用URL:** https://www.axios.com/2026/08/20/ceos-shift-messaging-around-ai-and-layoffs
+- **Evidence ID:** EVD-20260825-0077
+
+### INFO-078
+- **タイトル:** 広告運用の自律化段階モデル: 「単発→バッチ→常時最適化→完全自律」4段階の実務定義が流通・CDP進化形「Marketing AI」が予測+自律実行を主張(Uniphore)——一方CyberAgent固有のAI広告自動化情報は今週該当なし(日本のAI活用率44%との関連報道のみ)
+- **ソース:** LinkedIn（Vinay Jain） / Uniphore / teadifyz / FB（日本AI活用率44%）
+- **公開日:** 2026-08
+- **信頼性コード:** C-3
+- **関連KIQ:** KIQ-004-01
+- **関連企業:** Uniphore, CyberAgent（該当なし）, 日本企業全体
+- **要約:** 広告AIの段階: Level1単発生成→Level2バッチ運用→Level3常時最適化(疲弊広告検出・勝ち広告増量・フィードバック自己改善)→Level4完全自律。UniphoreはCDPの次の進化として「Marketing AI」(結果予測+自律実行+継続改善)を主張。CyberAgent固有の「AI広告自動化目標」に関する今週の英語圏情報は確認できず(該当なし)——日本語・決算資料での追加確認が必要。
+- **キーファクト:**
+  - 段階3(常時最適化)が現状の実務上限との暗黙前提——Level4完全自律の事例は未確認
+  - 日本のAI活用率44%との報道——日本企業の採用遅れ指摘(KIQ-004-04の所属条件とも関連)
+  - 「Ad Operations Automation Lead」職の求人出現(built in)——再編ではなく新職種シグナル
+- **引用URL:** https://www.uniphore.com/platform/business-ai-cloud/marketing-ai/
+- **Evidence ID:** EVD-20260825-0078
+
+### INFO-079
+- **タイトル:** コーディングツール三極: Cursor が$4B ARR(収益首位)・GitHub Copilot 有料470万人(ユーザー首位)・Claude Code がベンチマーク首位——GitHub 1.8億開発者「Copilotは5年で最大90%のコーディングを自動化し得る」
+- **ソース:** valueaddvc / Tech Insider / LinkedIn / Forbes（FB投稿）
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-004-02, KIQ-001-01
+- **関連企業:** Anysphere(Cursor), GitHub/Microsoft, Anthropic, JetBrains
+- **要約:** 2026年のAIコーディングツール競争: Claude Code がベンチマーク最高、Cursor は$4B ARRで収益最大、GitHub Copilot は有料470万人でユーザー最大(Copilot Pro $10/月は価格首位)。GitHubは開発者1.8億人(毎秒1人新規)規模で「Copilotは5年内に最大90%のコーディングを自動化、開発者はシステムとプロンプト設計に移行」と主張。JetBrains Junie も対抗。
+- **キーファクト:**
+  - $4B ARR(Cursor)は前回INFO-017系JetBrains調査( Codex認知27%→65%)と併せハーネス層の急成長を確認
+  - GitHub Copilot agent-mode SWE-bench Verified 56%(2025-04記録)——モデル上位陣95%台(INFO-060)と開き、ハーネス差が如実
+  - 企業採用は「エンジニアはCursor/Claude Code、企業契約はCopilot」の二層(元GitHub A-Team談)
+- **引用URL:** https://valueaddvc.com/blog/cursor-vs-claude-code-vs-copilot-in-2026-which-ai-coding-tool-wins-for-your-workflow
+- **Evidence ID:** EVD-20260825-0079
+
+### INFO-080
+- **タイトル:** 【一次研究】NPR(8/18)+Stanford(Brynjolfsson): 22-25歳のAI露出職(ソフト開発・マーケ等)は2022年末以降16%相対雇用減——ジュニア採用は2026年に入り-67%(2022比)、求人リストは2020比-35%・2022比3.5分の1。ただし低下開始はChatGPT公開6ヶ月前で remote work 要因も有力、経済学者は見解分断
+- **ソース:** NPR / Stanford Digital Economy（Canaries in the Coal Mine） / LinkedIn（Roman Shmyhelskyi）
+- **公開日:** 2026-08-18
+- **信頼性コード:** A-2（Stanford一次論文ベース）
+- **関連KIQ:** KIQ-004-02, KIQ-004-01
+- **関連企業:** 業界全体
+- **要約:** Stanford の Payroll データ研究: LLM登場(2022年末)以降、22-25歳のAI露出職は16%の相対的雇用減。ソフトウェアエンジニア求人は2020年比35%減・2022ブーム比で3.5分の1、エントリーレベル開発職は2022年以降約67%減、一部チームはジュニア0:シニア5比率で運用。一方でNPRは反証も併記: 低下はChatGPT前6ヶ月に始まり remote work 再編が主因との研究、経済学者は分裂。
+- **キーファクト:**
+  - 「Canaries in the Coal Mine」——若年AI露出職の相対16%減(INFO-076と同一研究の一次確認)
+  - ジュニア採用67%減・0:5比率運用——育成パイプライン断絶の定量
+  - 因果は未確定(AI vs remote work)——断定的引用は回避要
+- **引用URL:** https://www.npr.org/2026/08/18/nx-s1-5910677/recent-college-graduates-employment-job-artificial-intelligence
+- **Evidence ID:** EVD-20260825-0080
+
+### INFO-081
+- **タイトル:** コーディング能力のコモディティ化とメタスキル移行: 「ポートフォリオは実装証拠でなく判断証拠(trade-offs の擁護)を」・METR試験「AI使用で開発者は19%遅くなったが20%速く感じた」・AIエンジニア中央値$180K・AIコード訓練の外包職(Alignerr $50-70/hr)急増
+- **ソース:** Medium（シニアエンジニア採点記事） / larridin（METR引用） / programs.com / Alignerr求人
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-004-02, KIQ-004-03
+- **関連企業:** Alignerr, METR, 業界全体
+- **要約:** (1) 「AIコードは一発で動く。だからこそポートフォリオにならない」——採用側は実装証拠でなく判断証拠(設計trade-offの弁護・デバッグ思考)を10分で見る (2) METR: 経験豊富な開発者はAIツールで実際は19%低速化、本人は20%高速と感知——「認知と実測の逆説」 (3) AI関連職の中央値: AIエンジニア$180K(最高) (4) AIモデル訓練のためのコード評価外包(Software Engineer AI Training/Code Ranking)が$50-70/hr・10-40h/週で大量募集。
+- **キーファクト:**
+  - 「書ける」から「評価できる」移行の採用実態証拠——判断証拠ポートフォリオ論
+  - METR 19%低下/20%体感——生産性主張(INFO-002系138%/171%)への重要な反例
+  - 訓練データ作成職の新興労働市場——データラベリングの高スキル版(INFO-061 Inkling等OSS台頭の裏面)
+- **引用URL:** https://medium.com/@andrewwint/what-a-senior-engineer-actually-reads-in-your-portfolio-project-52cdfe5b41d1
+- **Evidence ID:** EVD-20260825-0081
+
+### INFO-082
+- **タイトル:** WEF: 「コーディングは開発者の日課の5分の1未満」・AI採用でエンジニア/DevOps採用は増加予測——IMF「世界の10職中4職がAI影響」・PwC「2030年代半ばまでに最大30%自動化」・開発者のAI信頼は採用より遅い
+- **ソース:** WEF（FB投稿） / IMF（FB投稿） / Medium（Halil Özel）
+- **公開日:** 2026-08
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-004-02, KIQ-004-03
+- **関連企業:** WEF, IMF, PwC
+- **要約:** WEF: 開発者の日常タスクのコーディングは5分の1未満で、AI採用はエンジニアリング/DevOps採用を増やす方向——ただしジュニア育成設計は必須と指摘。IMF: AIは世界の10職中4職に影響、PwC: 2030年代半ばまでに最大30%の職が自動化(タスク単位の変化が主)。開発者AI採用率は出力への信頼を上回り「採用と信頼の乖離」が継続。
+- **キーファクト:**
+  - 「コーディング<1/5」前提なら全面自動化の雇用インパクトは限定——相反証拠(67%減)とどう統合するかがKIQ-004-02の論点
+  - タスク単位変化(PwC)はOpenAI 80%/10%研究(INFO-045)と整合
+- **引用URL:** https://halilozel1903.medium.com/will-ai-take-software-jobs-or-change-what-software-work-means-fbbe3570d908
+- **Evidence ID:** EVD-20260825-0082
+
+### INFO-083
+- **タイトル:** AI困難能力の市場価値: 「デジタル流暢性×人間系ソフトスキル複合で最大56%の賃金プレミアム」・自動化抵抗職の条件設定(EQ・状況読み・創造・日々の変動)・「文脈判断・システム設計・倫理ガバナンス・クリエイティブディレクション」がAI-Proof技能に
+- **ソース:** Instagram（賃金プレミアム解説） / US Career Institute / fueler / Fox News（研究転載）
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-004-03
+- **関連企業:** 業界全体
+- **要約:** 複数の就職市場解説が一致して示すAI-Proof技能: 文脈判断(contextual judgment)・感情的知能・システムアーキテクチャ・倫理ガバナンス・クリエイティブディレクション。デジタル流暢性と置換困難なソフトスキル(複雑問題解決等)を併せる人材に最大56%の給与プレミアム。身体性(持久力・反射・航海能力等)を基準とした自動化抵抗職ランキングも発表。
+- **キーファクト:**
+  - 「56%プレミアム」はSNS系出典——定量化の一次確認要だが方向性は複数ソース一致
+  - AI-Proof技能リストが「課題定義・対人・異領域統合」(KIQ設問)とほぼ一致
+- **引用URL:** https://fueler.io/blog/ai-proof-skills-what-professionals-should-learn-for-the-future
+- **Evidence ID:** EVD-20260825-0083
+
+### INFO-084
+- **タイトル:** 新職種シグナル: 「Generative AI Creative Strategist」(映画的ストーリーテリング×AI制作)・「Director, Forward-Deployed AI Engineer」(Mastercard、埋込AI変革リーダー)・「Director, AI」($175-250K)等の求人が成立・「AIスキルはnice-to-haveでなく職場の基本要素に」
+- **ソース:** LinkedIn Jobs / Indeed / Mastercard Careers / Instagram
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-004-03
+- **関連企業:** Mastercard, Atlas Cloud, AMETEK
+- **要約:** 求人市場に新職種が定着: (1) Generative AI Creative Strategist(ストーリー駆動AI動画・顧客向け創造) (2) Mastercard の Forward-Deployed AI Engineer Director(生産グレードAIソリューション+組織動員) (3) 事業部AI価値創造を率いる Director of AI($175-250K)。戦略+実装+変革管理の統合職が中心。
+- **キーファクト:**
+  - 「Forward-Deployed」職の企業内常設化——Palantir型人材配置の一般化
+  - 創造職も「AI×戦略」複合のみが生存——単純制作職はINFO-051の中間層圧縮と整合
+- **引用URL:** https://careers.mastercard.com/us/en/job/R-282419/Director-Forward-Deployed-AI-Engineer-AI-Mobilization-Transformation
+- **Evidence ID:** EVD-20260825-0084
+
+### INFO-085
+- **タイトル:** WEF Future of Jobs: AIで2030年までに9,200万職消失・1.7億職新設(純+7,800万)・86%の企業が業界変革予期・既存スキルの39%が変質・インフラ企業の40%が「人材獲得が変革最大の障壁」
+- **ソース:** Pew Research（FB転載） / getapeptalk / girlboss / research.com / LinkedIn
+- **公開日:** 2026-08（再引用波）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-004-03, KIQ-002-02
+- **関連企業:** WEF, 業界全体
+- **要約:** WEF Future of Jobs Report(2025)の2026年再流通: AI等で9,200万職が消失する一方170百万職が創出(純増7,800万)。86%の企業がAI・情報処理技術による2030年までの業界変革を予期、既存スキルセットの39%が変質、2027年までに全従業員の50%がリスキリング必要(2024版)、インフラ業の40%が人材獲得を最大の変革障壁と回答。
+- **キーファクト:**
+  - 純増(+7,800万)だが「消失→新設」の職種不一致が移行摩擦——INFO-080の若年雇用減と整合
+  - 39%スキル変質——「AI-Proof技能」(INFO-083)への企業投資根拠
+- **引用URL:** https://getapeptalk.com/journal/world-economic-forum-future-of-jobs-report-2025
+- **Evidence ID:** EVD-20260825-0085
+
+### INFO-086
+- **タイトル:** リスキリング市場の拡大と限界: Randstad「77%が大規模リスキリング計画・41%はAIによる人員削減予期・半数近くがリスク職を高価値職へ転換」・ワークフォース変革市場は2032年に$96.9B・「職務ベース」から「スキルベース」組織モデル移行
+- **ソース:** Randstad US（FB投稿） / CXO Today / teletimes
+- **公開日:** 2026-08
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-004-03, KIQ-004-04
+- **関連企業:** Randstad, 業界全体
+- **要約:** (1) Randstad調査: AI投資急増するもスキルギャップがROIを阻害——77%が大規模upskilling/reskilling計画、41%はAIによる人員減を予期、半数近くがリスク職を高価値職へ移行予定 (2) ワークフォース変革(人材開発)市場はAI牽引で2032年$96.9B予測 (3) 従来の職務ベースからスキルベース人材モデルへの移行が加速。
+- **キーファクト:**
+  - 77%リスキリング計画 vs 41%人員削減予期——増強と削減の同時進行が主流シナリオ
+  - スキルギャップがAI投資ROIの主要制約——KIQ-004-04「勝つ企業条件」の1つ
+- **引用URL:** https://cxotoday.com/research/ai-and-upskilling-drive-workforce-transformation-market-to-96-9b-by-2032/
+- **Evidence ID:** EVD-20260825-0086
+
+### INFO-087
+- **タイトル:** 課題定義・デザイン思考の価値上昇: KPMG「AI搭載デザイン思考」メソッド公開・「出力に価値があるならAIが奪う。思考に価値があるならAIは助手」・Lucid「AI単独では既存の模倣、市場を定義する新規性は人間-AI協調で」
+- **ソース:** KPMG International / LinkedIn（Double Diamond論） / Lucid / Communication Arts
+- **公開日:** 2026-08
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-004-03
+- **関連企業:** KPMG, Lucid
+- **要約:** KPMG が「AI-Powered Design Thinking」(共感中心の手法へのAI統合)を公式メソッド化。識者: 「あなたの価値が成果物にあるならAIの標的、思考プロセスにあるならAIは助手——天井が上がっただけ」。Lucid: 生成AIは学習データの反復で真の新規性は出せず、市場を定義するイノベーションには人間-AI協調とガバナンス・データ基盤が必須。
+- **キーファクト:**
+  - 課題再定義(redefine problems)が設計思考×AIの中核——KIQ-004-03設問への直接回答
+  - 「人間 authored 意味への深い共感が長期価値を作る」(Doug Martin)
+- **引用URL:** https://kpmg.com/cy/en/insights/2026/08/ai-powered-design-thinking.html
+- **Evidence ID:** EVD-20260825-0087
+
+### INFO-088
+- **タイトル:** 「AIで勝つ企業」の条件: $500B投資に対し全面スケール化は7%のみ・87%がROI実感・70%がAIスキル研修投資・ワークフロー再設計が鍵(UBS)・保険90%が支出増計画——人材戦略がAI変革成否を規定
+- **ソース:** LinkedIn（Vivek Agarwal） / Instagram（調査解説） / LOMA/Accenture / UBS（FB投稿）
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-004-04, KIQ-002-02
+- **関連企業:** Accenture, UBS, 保険業界
+- **要約:** (1) AI投資は$500B到達だが企業全体でスケール化は7%のみ (2) 一方87%がAI投資ROIを実感、70%がAIスキル研修に投資、67%が(体制整備等)を実施との調査 (3) UBS: ワークフロー再設計がAI成功の鍵——人員見通しは32%減・43%不変・13%増と分裂 (4) Accenture: 保険幹部の90%がAI支出増計画。人材戦略がAI変革の成否を分ける。
+- **キーファクト:**
+  - 7%スケール vs 87%ROI実感——「部分ROIは普遍・全面化は稀」構造(INFO-047の5%完全稼働と整合)
+  - ワークフロー再設計——a16z/Gartner系「仕事自体の再設計」論(INFO-002系)と一致
+- **引用URL:** https://www.loma.org/en/news/marketfacts/2026/talent-strategy-will-shape-ai-transformation-success/
+- **Evidence ID:** EVD-20260825-0088
+
+### INFO-089
+- **タイトル:** CyberAgent固有情報は今週の英語圏で該当なし(note の旧版就職ガイドがAI Lab のデータ運用最適化に言及するのみ)——日本語・決算一次資料での追加収集が必要
+- **ソース:** note（旧版 CyberAgent 求人ガイド）
+- **公開日:** 2026-08時点の検索結果
+- **信頼性コード:** C-3
+- **関連KIQ:** KIQ-004-04
+- **関連企業:** CyberAgent
+- **要約:** 「CyberAgent AI Lab AI investment revenue results」への英語圏の今週情報は確認できず(該当なし)。間接情報として、 CyberAgent がAI Lab 等の研究開発組織を通じデータによる運用最適化を収益機構に組み込むとの旧解説のみ。同社の「AI広告自動化」目標の進捗は決算資料・日本語ソースでの確認が必須。
+- **キーファクト:**
+  - 該当なし記録(フェーズ1ルールに基づく)——捏造せず記録
+  - 次回収集では日本語クエリ(サイバーエージェント 決算 AI等)を動的追加候補に
+- **引用URL:** https://note.com/jobhuntkeyence/n/n88f8567cea94
+- **Evidence ID:** EVD-20260825-0089
+
+### INFO-090
+- **タイトル:** 広告代理店の生存条件: 「2030年の代理店はより小さく・シニア中心・柔軟に——AIが実行を担い専門人材は必要時調達」(AdTribe)・メディア代理店は「広告購入超え」へ(thisdaylive 8/15)・「Brand Doom Loop」——AIが情報収集を変えブランド構築が複雑化
+- **ソース:** AdTribe（FB投稿） / ThisDay Live / Digital Journal / redwerk
+- **公開日:** 2026-08-15（thisdaylive）
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-004-04, KIQ-002-05
+- **関連企業:** 広告代理店業界
+- **要約:** (1) AdTribe: AIが選択肢を生成する時代の代理店の対価は「判断・統合・責任」に移行、2030年像は「小規模・シニア中心・AI実行+専門家オンデマンド」 (2) メディア代理店は広告購入(機械が安く速くやる)を超えた価値(戦略・データ・効果設計)へ移行しないと生存不可 (3) 「Brand Doom Loop」: 顧客の情報収集がAI経由になり、ブランド構築の複雑化・従来マーケの効率低下が進行。
+- **キーファクト:**
+  - 代理店の生存モデル=シニア集約+AI実行——KIQ-002-05の中間層圧縮(INFO-051)と対応
+  - AI経由の情報収集が「ブランド露出→認知」の連鎖を破壊——広告市場構造変化の第二次効果
+- **引用URL:** https://www.thisdaylive.com/2026/08/15/media-agencies-must-move-beyond-ad-buying-to-survive-ai-disruption/
+- **Evidence ID:** EVD-20260825-0090
+
+### INFO-091
+- **タイトル:** McKinsey: 「AI競争は最良のモデルだけでなく独自データへのアクセスで決まる」——公開モデル×企業独自データの組み合わせに優位。Wing VC: 「仕事をすることで生成されるデータが堀であり、顧客・ユースケース・結果ごとに拡大する複利優位」・企業境界内でのモデル訓練(Anyscale系)が潮流
+- **ソース:** McKinsey（FB投稿） / Wing VC Thesis / LinkedIn（Kalyan Veeramachaneni）
+- **公開日:** 2026-08
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-004-04
+- **関連企業:** McKinsey, Wing VC, Anyscale
+- **要約:** McKinsey は「AI競争の優位は強力な公開モデル×proprietary な企業データの結合から生じる」と表明。Wing VC の投資テーゼ: 「業務遂行が生むデータこそ堀(moat)であり、顧客・ユースケース・結果のたびに拡大」——独自運用データを持つドメインではモデル企業が内部で優位を捕捉し外部データ供給者は自然限界に直面。企業データワークフロー内でモデル訓練・推論を完結させる「境界内AI」が実務化。
+- **キーファクト:**
+  - 「データ複利優位」——KIQ-004-04の独自データ基盤条件を理論化
+  - モデル性能差の縮小(INFO-060飽和)により差別化の重心がデータ・運用へシフト
+  - 企業境界内訓練——プライバシー・主権要件とOSSモデル(INFO-065)の合流点
+- **引用URL:** https://www.wing.vc/thesis
+- **Evidence ID:** EVD-20260825-0091
+
+### INFO-092
+- **タイトル:** 【最重要】NVIDIA「AVO」がARC-AGI-3で100%達成——Claude Opus 5(モデル単体30.2%)をAVOエージェントシステムで包んだ結果、全183レベル完走。7月中旬にはSchema社がハーネス型で約99%。「モデル能力」より「エージェント・アーキテクチャ」がベンチ上限を引き上げる時代に
+- **ソース:** NVIDIA Developer Blog / The New Stack / Reddit r/LocalLLaMA
+- **公開日:** 2026-08（NVIDIAブログ金曜公開）
+- **信頼性コード:** A-2（一次ブログ＋詳細二次解説）
+- **関連KIQ:** KIQ-005-01, KIQ-003-02
+- **関連企業:** NVIDIA, Anthropic, Schema
+- **要約:** NVIDIAの5人チーム(ソフトウェアエンジニア・ML専門家・研究インターン)による汎用コーディングエージェント「AVO」が、ARC-AGI-3インタラクティブ推論ベンチで100%(183レベル全部)を達成。ベースのClaude Opus 5単体は30.2%——AVOの「実行可能世界モデル・長期自律エージェント構造」が3倍以上に引き上げ。ARC-AGI-3では Tycho(明示的実行可能世界モデル)やVISTA(直接対話ハーネス)など多様なエージェント構造が探索中。Schema は7月中旬にハーネス型解で約99%に到達済み。
+- **キーファクト:**
+  - INFO-058(Opus 5が0.302で次点3.75倍)を大幅更新: 「ハーネス込みなら解けた」——ARC-AGI-3は(チャンピオン的に)モデル単体指標でなくエージェント系指標に
+  - 「frontier-level general-purpose architecture for long-horizon autonomous agents」——長期自律の実証
+  - 汎用コーディングエージェントが推理タスクを解く——コーディング能力の汎用性証明(KIQ-004-02関連)
+- **引用URL:** https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/
+- **Evidence ID:** EVD-20260825-0092
+
+### INFO-093
+- **タイトル:** MIT Technology Review(8/18): 「AIの再帰的自己改善はそう速く来ないかもしれない」——RLは自動検証可能なタスクでしか効かず、汎用自己改善への一般化は未解決。philschmid: 「訓練コードを改善するモデル」が再帰ループの核心・AI4AI-Bench が自己改善アルゴリズム設計評価を新設
+- **ソース:** MIT Technology Review / philschmid.de / alphaxiv（AI4AI-Bench）
+- **公開日:** 2026-08-18
+- **信頼性コード:** A-2（MIT TR + 技術一次解説）
+- **関連KIQ:** KIQ-005-01, KIQ-005-02
+- **関連企業:** 業界全体
+- **要約:** MIT TR: モデルは強化学習で「訓練できる」タスク(成功を自動検証できるもの)は向上するが、再帰的自己改善(RSI)の全般化は楽観より遅い可能性。philschmid解説: self-play・student-teacher・reasoning traces等の自己出力改善は既存で、「モデルが自分を訓練するコードを改善する」のがRSIの一行定義——バリデーションロスが下がる変更のみ採用する数分訓練ループ等が実験段階。AI4AI-Bench はLLMエージェントの「自己改善のためのアルゴリズム設計能力」評価ベンチとして新設。
+- **キーファクト:**
+  - RSI減速論——「AGI爆発」タイムライン情報の主要チェック材料
+  - 「自動検証可能性」が能力向上のボトルネック——コーディング得意・開放タスク苦手構造の理論的理由
+  - AI4AI-Bench 登場——RSI能力そのものの測定開始
+- **引用URL:** https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/
+- **Evidence ID:** EVD-20260825-0093
+
+### INFO-094
+- **タイトル:** 自律科学研究: arXiv論文「Quo Vadis? AI時代の科学発見」——フロンティアAIは「高度に自律的な研究活動」が可能な段階に到達・self-driving lab(ハイブリッドAI実験系)が台頭・Sakana AI「AI Scientist」は構想から出版まで自律処理。制約: 物理世界との接続欠如
+- **ソース:** arXiv（2608.17970） / Technology Review（FB投稿） / LinkedIn
+- **公開日:** 2026-08
+- **信頼性コード:** A-3（一次論文要旨）
+- **関連KIQ:** KIQ-005-01
+- **関連企業:** Sakana AI, 研究機関
+- **要約:** arXiv総説: フロンティアAIシステムは高度に自律的な研究活動を実行可能で、Scientific AI Agents→Hybrid AI Experimental Systems(自律/自己運転実験室)へ進化中。Sakana AI の AI Scientist は構想→実験→執筆→出版までの自律システム。ただし「生物学から材料科学までラジカルな解を生成するが物理世界との接続がない」——実験検証・実装のギャップが信頼性課題。
+- **キーファクト:**
+  - 「autonomous research activities」の学術確認——AGI構成要素の一つ
+  - 自己運転実験室(self-driving labs)——ロボティクス×AI の合流(INFO-069 General Intuitionの資金集中と整合)
+- **引用URL:** https://arxiv.org/pdf/2608.17970v1
+- **Evidence ID:** EVD-20260825-0094
+
+### INFO-095
+- **タイトル:** AGIマイルストーン言説: 「AIが自己複製に成功——専門家が恐れるマイルストーン」報道(Democracy Now)・「毎回マイルストーンを達成すると専門家がゴールポストを動かす」「次のマイルストーンは機械の知能でなく我々のガバナンス構造が追いつく瞬間」・Shield AI Hivemind がLEO衛星で初の軌道上AIパイロット飛行
+- **ソース:** Democracy Now / lorkaai / LinkedIn（Jessica Love） / Shield AI
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-005-01, KIQ-005-03
+- **関連企業:** Shield AI, Sedaro
+- **要約:** (1) 「AI can now replicate itself」が専門家を恐れさせるマイルストーンとして報道——自己複製の検証条件・実験環境の詳細は要確認 (2) AGI定義は移動的——「5年後」「永遠に来ない」に分裂 (3) 識者: 真の節目は機械知能でなく「ガバナンス構造がAIを管理可能になる瞬間」 (4) Shield AI の Hivemind AIパイロットが低軌道衛星 NOVI で初飛行——信頼できる自律性の宇宙実証。
+- **キーファクト:**
+  - 「自己複製」主張は単一報道——再現・条件の一次確認まで格付け維持(B-3)
+  - ガバナンス能力をAGI節目とする再定義——KIQ-005-03と接続
+  - 軌道上AI自律飛行——物理世界統合の進展(INFO-094の制約への反例)
+- **引用URL:** https://shield.ai/shield-ai-and-sedaro-demonstrate-trusted-autonomy-capabilities-on-novi-satellite/
+- **Evidence ID:** EVD-20260825-0095
+
+### INFO-096
+- **タイトル:** 【AGIタイムライン総覧】Altmanが「自分は非常に間違っていた」と認め予測を2025→2030へ後ろ倒し(超知能は2028年末)・Hassabis「産業革命の10倍・2029-30」・Amodei/Musk「2026〜27年初め」・悲観側2倍でも2035以内——AltmanのAGI定義はMicrosoft契約の$100B利益条項と財務的に絡む
+- **ソース:** Times of India / smallwarsjournal / Moneywise / CNBC系
+- **公開日:** 2026-08
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-005-02, KIQ-OAI-001
+- **関連企業:** OpenAI, Google DeepMind, Anthropic, Microsoft
+- **要約:** (1) Altman: 「 Reflections」(2025-01)の「AGI構築法を把握」予測と「2025年にエージェント就労」が外れ、2025年末には2030へスライド——超知能は「2028年末に人類の知的容量の大半がDCへ」 (2) Hassabis: AGI は産業革命の10倍のインパクト、2029-30到達 (3) Amodei/Musk: 2026〜27年初め (4) 悲観タイムラインを2倍にしても2035以内(smallwarsjournal) (5) Microsoft契約がAGIを$100B利益と結びつけ、タイムライン発表が財務的声明を兼ねる指摘。
+- **キーファクト:**
+  - OpenAI 2029年まで初黒字なし・評価$500B(当時)・$3.7B収益で$5B損失——KIQ-OAI-001(IPOゲート)文脈
+  - 「最も声の大きい加速主義者が忍耐を説く」逆転現象
+  - AGI宣言の契約財務インセンティブ——自己申告タイムラインの信頼性割引根拠
+- **引用URL:** https://timesofindia.indiatimes.com/technology/tech-news/sam-altman-admits-hes-been-very-wrong-on-the-timeline-that-he-always-says-is-the-goal-of-openai-says-i-thought-when-we-got-to-/articleshow/133452067.cms
+- **Evidence ID:** EVD-20260825-0096
+
+### INFO-097
+- **タイトル:** Yann LeCun: 「AGIは過大評価」・物理タスク(作文を超えた行動)の学習こそ必須・「内部世界モデルによる行動効果のシミュレーション」がAGI条件——Bengio/Hintonは進歩速度に警鐘継続。ASI直接追求(AGI飛び越し)を唱える声も台頭
+- **ソース:** Gadgets Now / Reddit r/antiai / Instagram解説 / Glenn（Millennium Project）
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-005-02
+- **関連企業:** Meta, 業界全体
+- **要約:** LeCun: AGIは「過大評価」——現在のモデルは作文以上の物理タスクを実行できず、効率的な物理行動学習と「既知の内部表現を通じた行動効果の内部シミュレーション」が必要。AGI到達は「数十年先」(Instagram解説)。Bengio・Hinton は進歩速度への警鐘を維持。一方、スケーリング志向の研究コミュニティではAGIを飛び越しASI(人工超知能)直接追求を唱える声も記録されている。
+- **キーファクト:**
+  - LeCun のAGI条件=世界モデル×行動——V-JEPA系研究路線の延長
+  - 「AGIは単一イベントとして来ない」(LeCun 従来主張)はINFO-093(MIT TR減速論)と整合
+  - AGI定義の不一致が続く——MIT AI Agent Index も「定義が霧的」と明記
+- **引用URL:** https://www.facebook.com/GadgetsNow/posts/1517070253795811/
+- **Evidence ID:** EVD-20260825-0097
+
+### INFO-098
+- **タイトル:** 元OpenAI予測担当 Kokotajlo: 「超知能は2030年前に到達し得る」——絶滅確率の試算は議論余地あるが「透明性の欠如」批判は否定困難(Diary of a CEO出演)。Anthropic「最後まで立つAI企業」野心論も流通
+- **ソース:** Medium（James Donaghue） / LinkedIn
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** KIQ-005-02, KIQ-005-03
+- **関連企業:** OpenAI, Anthropic
+- **要約:** OpenAI 元フォーキャスター Daniel Kokotajlo が超知能2030年前到達の可能性を主張——絶滅リスク試算は論争対象だが、彼が指摘する「理解不能なAIを構築しながら作成者の警告だけに依存する透明性構造」の問題は深刻と評される。またAnthropic を「最後に残るAI企業にしたい」との批判的言説も出回り、Amodei の野心解釈が流通。
+- **キーファクト:**
+  - 内部者の透明性批判——KIQ-002-06(内部告発保護)と接続
+  - 「最後の企業」言説——Anthropic批判の常套句化、一次発言の確認要
+- **引用URL:** https://medium.com/@JamesDonaghue/were-building-ai-we-can-t-understand-and-trusting-its-creators-to-warn-us-0775c477f822
+- **Evidence ID:** EVD-20260825-0098
+
+### INFO-099
+- **タイトル:** 米州モラトリアム攻防: 2025歳出調整法案の「州AI法案10年モラトリアム」案はByrd Rule違反の可能性・「Frontier Act」先取条項が州AI安全策を制限(下限基準+先取固定)・州 level ではKentucky/Texas が公共部門AIのプライバシー規定(データ管理責任者設置等)を可決・「AIはモラトリアムを超え進化する」
+- **ソース:** actondems / jessicacraven101 / CDT / futurecaucus
+- **公開日:** 2026-08（CDT更新）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-005-03, KIQ-002-03
+- **関連企業:** 米連邦・州政府, OpenAI, Google
+- **要約:** (1) 連邦歳出法案への州AI規制10年モラトリアム条項はByrd Rule(歳出無関係条項制限)で違反の可能性が指摘された (2) 「Frontier Act」は最低基準を設ける一方で先取(preemption)を固定し州AI安全策を制限——「床ではなく天井になる」批判 (3) 州レベルは独自立法が継続: Kentucky・Texas が公共部門AIへのプライバシー規定(機関毎データ管理責任者)を成立 (4) Altman・Pichai が「規制を求める」側に回った構図も強調。
+- **キーファクト:**
+  - 先取条項 vs 州権の攻防が米AIガバナンスの主戦場(INFO-038のEO構造と同一争点)
+  - CDT の州・連邦立法追跡が継続更新——次回も要確認ソース
+- **引用URL:** https://cdt.org/insights/2026-state-and-federal-ai-legislation-updates/
+- **Evidence ID:** EVD-20260825-0099
+
+### INFO-100
+- **タイトル:** 【要検証】「国際AI条約枠組み」報道: 78ヶ国+EU+政府間機関が交渉、主要AI企業はオブザーバー参加——単一ソース(zyvenpress)で条約名称・署名日等の一次確認できずD-4
+- **ソース:** Zyven Press
+- **公開日:** 2026-08
+- **信頼性コード:** D-4
+- **関連KIQ:** KIQ-005-03
+- **関連企業:** 78ヶ国・EU・主要AI企業(名称未確認)
+- **要約:** 2026年の国際AIガバナンスについて「78ヶ国・EU・政府間機関が交渉した条約と安全プロトコル」との詳細記事。ただし条約の正式名称・署名状況・締約国一覧が他ソースで確認できず、単一出典のため信頼性評価はD-4とする。INFO-039(中国主導29ヶ国上海機構)やBletchley/ソウル系列との関係も未確認。
+- **キーファクト:**
+  - 国際条約系の主張は一次文書(条約テキスト・外務省発表)確認まで採用不可
+  - Seoul/G7系列の既知コミットメント(ドイツAIセキュリティ研究所等、INFO-100以降)との整合確認が次ステップ
+- **引用URL:** https://zyvenpress.com/global-ai-governance-in-2026-inside-the-international-ai-treaty-framework-and-its-safety-protocols/
+- **Evidence ID:** EVD-20260825-0100
+
+### INFO-101
+- **タイトル:** ドイツ、AIセキュリティ研究所(AI Security Institute)を正式設立(2026-06-08国家安全評議会決定)——2024ソウルコミットメント実施・アライメント研究資金は拡大継続(MATS Winter 2027 フル資助フェローシップ募集・Cambridge ERA:AI 2027・NSF CAREER で OPENALIGN 等が採択)
+- **ソース:** Institute for Law and AI / LinkedIn・Instagram（フェローシップ） / Northwestern（NSF）
+- **公開日:** 2026-08（告知群）
+- **信頼性コード:** B-2
+- **関連KIQ:** KIQ-005-03
+- **関連企業:** 独連邦政府, MATS, Cambridge, NSF
+- **要約:** (1) ドイツが国家安全保障評議会(2026-06-08)決定でAIセキュリティ研究所を正式設立——2024年ソウル首脳宣言のコミットメント実施 (2) アライメント研究の人材投資は拡大: MATS Research Winter 2027(アライメント研究者・フィールドビルダー向けフル資助)、Cambridge ERA:AI フェローシップ2027(10週間・1月開始)、NSF CAREER Award で「OPENALIGN: 開放世界での選好アライメント」等が助成。
+- **キーファクト:**
+  - ソウルコミットメントの国内実装が進行——日英米に続きドイツ
+  - 安全研究の人材パイプライン(フェローシップ)は資金拡大基調
+  - NSF の「開放世界アライメント」助会——訓練環境と運用環境の乖離への学術対応
+- **引用URL:** https://law-ai.org/germany-establishes-an-ai-security-institute/
+- **Evidence ID:** EVD-20260825-0101
+
+### INFO-102
+- **タイトル:** 【KIQ-BTD-DAU回答】QuestMobile: 2026年6月時点で豆包月活3.82億・日活1.4億超——中国最大のAIネイティブアプリ。火山引擎は中国パブリッククラウド大モデルAPI呼出シェア49.5%・豆包エージェントDAU国内首位圏
+- **ソース:** cnyes（邵詩巍律師コラム、QuestMobile引用） / Sina AI応用週度観察（2026.08.17-08.23）
+- **公開日:** 2026-08（6月データ参照照会）
+- **信頼性コード:** B-2（QuestMobile数据の二次引用）
+- **関連KIQ:** KIQ-BTD-DAU, BYTEDANCE-CHINESE, KIQ-001-01
+- **関連企業:** ByteDance（豆包/火山引擎）, Tencent（比較対象）
+- **要約:** QuestMobileデータ: 2026年6月時点で豆包(Doubao)月間アクティブ3.82億・日活1.4億超——中国最大のAIネイティブ応用。週次観察(8/17-23): 豆包智能体のDAUは国内前列、火山引擎(Volcano Engine)は中国パブリッククラウド大モデル調用市場シェア49.5%(約半数)。
+- **キーファクト:**
+  - MAU 382M/DAU 140M+——Arbiter要求の豆包DAU一次データ(QuestMobile)を特定・記録
+  - 火山引擎49.5%シェア——中国LLM API市場の事実上の標準
+  - 「3年で国内大模型総ユーザー数第一」(X)——ただし有料購読の成績は「惨憺たる」との非公式評価
+- **引用URL:** https://m.cnyes.com/news/id/6585629
+- **Evidence ID:** EVD-20260825-0102
+
+### INFO-103
+- **タイトル:** 豆包が「臨界点」通過後に職場(オフィス)戦場へ: 36kr「AIがコーディング業界を変えた後、より広い職場への進出時」—— FORCE原動力大会で豆包2.1 Pro・Seedance 2.5発表・Web版に「新工作任務」独立タブ・8/17スマホでPCリモート操作機能・ホテル推薦で手数料徴収開始(収益化模索)
+- **ソース:** 36kr / Sina / Sohu / cnyes
+- **公開日:** 2026-08-17〜23
+- **信頼性コード:** B-2
+- **関連KIQ:** BYTEDANCE-CHINESE, KIQ-002-04, KIQ-004-01
+- **関連企業:** ByteDance（豆包/火山引擎）
+- **要約:** 36kr分析: 豆包は「臨界点(質変点)」を越え、谭待(火山引擎CEO)はSeedance 2.0も同様に越えたと強調。FORCE原動力大会で豆包2.1 Pro・Seedance 2.5等の成果と企業向けAIツール群を発表。豆包Web版は「新工作任務(仕事タスク)」を「新対話」と並ぶ独立主戦場化、8/17にスマホからのPCリモート操作、次々とオフィス機能を投入。収益化ではホテル推薦の手数料徴収を開始——「AI推薦は信頼できるか」論争も発生。
+- **キーファクト:**
+  - DAU志向の流量製品→オフィス職場製品へ戦略転換——「工作」が独立タブに
+  - 有料購読は不調、アフィリエイト/手数料型収益化探索
+  - スマホ→PCリモート操作(8/17)——端末横断エージェント機能の実装
+- **引用URL:** https://m.36kr.com/p/3867066152713092
+- **Evidence ID:** EVD-20260825-0103
+
+### INFO-104
+- **タイトル:** 豆包モデル体系の現況: Seedance 2.0が豆包に全面統合・無料公開(公式サイト)・Seedance 2.5は即梦(Dreamina)で7月正式上線・Doubao-Seed-2.0 Pro(2026年2月、長鎖推論・複雑タスク安定性・視覚推理/運動感知/指令追従で第一梯隊)+Lite/Mini
+- **ソース:** doubao.com公式 / Zhihu大模型一覧（2026-08-21更新） / Threads/FB（Seedance 2.5解説）
+- **公開日:** 2026-08-21（Zhihu一覧）
+- **信頼性コード:** B-2（公式サイト+一覧表）
+- **関連KIQ:** BYTEDANCE-CHINESE, KIQ-003-02
+- **関連企業:** ByteDance（Seed/豆包/即梦）
+- **要約:** (1) 公式: Seedance 2.0動画生成モデルが豆包に全面接入・ログインで無料利用可能 (2) Seedance 2.5: 7月初正式上線、即梦(Dreamina)経由、多参照動画生成・一鏡到底(ワンショット)生成 (3) モデル体系: 2026年2月にDoubao-Seed-2.0 Lite/Mini(通用)とDoubao-Seed-2.0 Pro(推論: 長鎖推論・複雑任務安定性強化、視覚推理・運動感知・指令追従・実世界任務で業界第一梯隊)を発表済み。
+- **キーファクト:**
+  - 動画生成を豆包無料枠に統合——コスト競争の中国版(INFO-064 DeepSeekと同構造)
+  - Seed-2.0 Proの「実世界任務」評価——物理世界統合(INFO-094)の中国側進展
+  - 即梦=動画生成の消費者出口、豆包=統合スーパーアプリ
+- **引用URL:** https://www.doubao.com/chat/?channel=airukou
+- **Evidence ID:** EVD-20260825-0104
+
+### INFO-105
+- **タイトル:** Coze(扣子)の生態系: 一站式AI智能体開発・ワークフロー編成プラットフォーム(低/ゼロコード)——淘寶で100+ワークフローテンプレート商品群・教育市場は「作れる」と「企業で走らせられる」の溝・企業統合の壁「機能は内部満載、対外極度封閉」
+- **ソース:** 3DM攻略 / TaoBao / SegmentFault / Tencent Cloud開発者記事 / Zhihu
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** BYTEDANCE-CHINESE, KIQ-001-05, KIQ-002-01
+- **関連企業:** ByteDance（Coze）, Tencent Cloud, Dify
+- **要約:** Coze(扣子)はバイトダンス傘下のAIエージェント開発・ワークフロー編成のワンストップ平台(低コード/ビジュアル)。100+完成ワークフローテンプレートが淘寶で販売される副次市場が成立。教育市場は「Coze/Difyで作れる」と「企業で本当に稼働させる」の gap で工程化コース需要が発生。企業統合の実際の壁として「機能対内拉満、対外極度封閉(対内充実・対外封闭)」——大模型+知識庫+ワークフローの閉鎖性が指摘される。
+- **キーファクト:**
+  - INFO-009(Coze/Trae→豆包統合)後もCoze自体は開発者平台として存続・拡大
+  - テンプレート転売市場——エージェント開発の大衆化と、その未成熟さの両面
+  - 「対外封闭」問題——MCP/A2A等開放標準(INFO-018/020)との対照が中国側課題
+- **引用URL:** https://shouyou.3dmgame.com/gl/633328.html
+- **Evidence ID:** EVD-20260825-0105
+
+### INFO-106
+- **タイトル:** 【KIQ-BS003-DEBT関連】ByteDanceが$30B(300亿美元)シンジケートローン枠獲得——Citi・JPMorgan幹事、銀行コミット期限8/19(X報道)。加えて2026年AI DCに最大$70B検討・メモリ価格高騰で年間capex ¥1,600億→¥2,000億超へ引上げ・ゲーム(沐瞳科技)をサウジPIF系に売却しAIに再配分・阿里も880億香港ドル調達
+- **ソース:** X（sixpanny159920） / cnyes（大廠AI資本周期） / 日経中文網 / 网易 / 新浪財経
+- **公開日:** 2026-08-19（コミット期限）〜08-24
+- **信頼性コード:** B-3（$30BはX単独、capex系はB-2）
+- **関連KIQ:** KIQ-BS003-DEBT, BYTEDANCE-CHINESE, KIQ-003-04
+- **関連企業:** ByteDance, Citi, JPMorgan, Alibaba, Tencent, サウジPIF
+- **要約:** (1) X報道: ByteDanceが最新のデットファイナンスで$30Bシンジケートローン枠を獲得、Citi と JPMorgan が幹事、参加銀行のコミット期限は8/19 (2) Bloomberg系: ByteDanceは2026年に最大$70B(約¥4,767億)をAI DC建設に投入検討——騰訊・阿里・百度3社合計に匹敵する規模 (3) メモリ価格高騰で年間capexを¥1,600億から¥2,000億超へ引上げ (4) 3月に上海沐瞳科技(ゲーム)をサウジPIF系基金に売却——AI投資原資の再配分 (5) 阿里巴巴も880億香港ドル調達をAIに全額投入、Tencent は単季capex ¥528億で中国記録。
+- **キーファクト:**
+  - ByteDance $30Bシンジケート——OpenAI $30B(別件、Arbiter情報)と同規模の債務調達が中国側でも発生中。X単独報道のためB-3、期限8/19の完了状況は要追跡
+  - capex $70B検討——中国AI投資の上限更新、メモリ価格(部品インフレ)がcapexを押し上げる新構造
+  - 「ゲーム売却→AI再投資」——非中核事業選別が日経も報道(INFO-070の政府系ドライバーと中国版並行)
+- **引用URL:** https://x.com/sixpanny159920/status/2090650970879565975
+- **Evidence ID:** EVD-20260825-0106
+
+### INFO-107
+- **タイトル:** ByteDance が自動運転に参入探索——Seedの世界モデルチーム(周畅率いる)が担当、VLA 2.0・AIVAを発表済み・年内予定(36kr独家)。別件: フィリピンで貸金ライセンス取得、「海外信贷帝国」の輪郭
+- **ソース:** 36kr（独家） / 36kr（菲律宾牌照）
+- **公開日:** 2026-08
+- **信頼性コード:** B-3
+- **関連KIQ:** BYTEDANCE-CHINESE, KIQ-005-01
+- **関連企業:** ByteDance（Seed）
+- **要約:** (1) 36kr独家: ByteDance が自動運転領域を探索、Seed 傘下の周畅世界モデルチームが担当——VLA 2.0 を投入済み、AIVA を正式発表、年内の展開予定 (2) ByteDance はフィリピンで貸金業ライセンスを取得——海外クレジット事業の拡大輪郭。
+- **キーファクト:**
+  - 世界モデル×自動運転——物理世界統合(INFO-094/097)への中国側の直接参入
+  - VLA(Vision-Language-Action)2.0——ロボティクス自動運転のモデル統一路線
+  - フィリピン金融——AI以外の収益多元化(規制情報として記録)
+- **引用URL:** https://www.36kr.com/p/3953699726343556
+- **Evidence ID:** EVD-20260825-0107
+
+### INFO-108
+- **タイトル:** 【KIQ-BS003-DEBT回答】NVIDIA $500B第三者資本モビライズ: Apollo・BlackRock・Blackstone・Brookfield・Goldman Sachs・KKR の6社と「AIコンピュート基盤ファイナンス・プラットフォーム」設立(公式発表)——ただし$500Bは「目標」でコミット済み現金ではない(MoU段階)・SECが土木的証券化規制を緩和し調達容易化・The Information「ピッチの隙間」検証
+- **ソース:** NVIDIA公式発表(nvidianews) / Yahoo Finance / The Information / Quartz / Instagram解説
+- **公開日:** 2026-08-10発表、〜08-24分析
+- **信頼性コード:** A-2（公式発表あり、批判的分析込み）
+- **関連KIQ:** KIQ-BS003-DEBT, KIQ-003-04
+- **関連企業:** NVIDIA, Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR, SEC
+- **要約:** NVIDIA が6金融機関(Apollo・BlackRock・Blackstone・Brookfield・Goldman Sachs・KKR)と、$500B超の第三者資本をAIインフラに動員する「AIコンピュート基盤ファイナンス・プラットフォーム」設立を発表。Jensen Huang:「AI工場という投資可能な新資産クラスを創造する」。ただし (1) $500Bは目標値で、6社はMoU署名段階——コミット済み現金ではない (2) SEC が関連証券化・ファイナンス規制を静かに緩和し調達を容易化 (3) The Information は「$500Bピッチの隙間」を検証——需要前提の不確実性を指摘。副次文脈: 某社四半期債務$35.1B・CAPEX $6.42B(LinkedIn分析)。
+- **キーファクト:**
+  - 「ターゲット vs コミット」の区別が最重要——ArbiterのNvidia $500B債務質問への正確な回答
+  - Nvidia は债务ではなく「第三者資本動員プラットフォーム」——リスクをNvidia貸借対照表から切り離す構造
+  - SEC緩和——規制側がAIインフラファイナンスを後押し(INFO-038 EO構造と金融規制の両面で政府の後押し)
+- **引用URL:** https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital
+- **Evidence ID:** EVD-20260825-0108
+
+### INFO-109
+- **タイトル:** 【KIQ-BS003-DEBT/OpenAI】OpenAI $110Bラウンド(プレマネー$730B)でSoftBank $30B追加コミット(累計約$65B)——Arbiterの「OpenAI $30B JPM/MS/SMBC/MUFGシンジケート」はそのままでは未確認、別経路の情報: OpenAIローンシンジケートにGoldman Sachs Bank USA・JPMorgan Chase Bank NA 参加。Anthropic はIPO前に$10B超クレジットファシリティを目標・JPMorgan が$15Bデータセンター債務ファイナンスをアレンジ
+- **ソース:** TechTimes / Annex Wealth Management(FB) / Instagram（SoftBank） / Yahoo Finance
+- **公開日:** 2026-08
+- **信頼性コード:** B-3（$110B/$730Bは単一系ソース、AnthropicクレジットはB-2）
+- **関連KIQ:** KIQ-BS003-DEBT, KIQ-OAI-001
+- **関連企業:** OpenAI, SoftBank, Goldman Sachs, JPMorgan, Anthropic, SMBC, MUFG, Morgan Stanley
+- **要約:** (1) OpenAI が$110B調達をクローズ(プレマネー$730B)——SoftBank が$30B追加コミットし累計約$65B(Annex/Instagram系報道、要一次確認) (2) OpenAI 関連ローンシンジケートに Goldman Sachs Bank USA・JPMorgan Chase Bank NA が参加(TechTimes、SoftBankリテール債文脈) (3) Anthropic は上場前に$10B超クレジットファシリティを目標、JPMorgan が大規模データセンター向け$15B債務ファイナンスを手配(Yahoo Finance)。Arbiter情報の「JPM/MS/SMBC/MUFG $30Bシンジケート」構成は今週の公開ソースでは直接確認できず——SoftBank $30B(エクイティ)と混同の可能性を指摘。
+- **キーファクト:**
+  - $110Bラウンド・$730BプレマネーはINFO-042($380B評価)と大幅不整合——D-4級の噂扱い、要継続追跡
+  - Anthropic $10B+クレジットファシリティ+JPM $15B DC債務——Anthropic側の債務調達は初の明確報道
+  - 「$30B」が複数文脈(OpenAI/SoftBank/ByteDance)で同時出現——数値の交叉検証必須
+- **引用URL:** https://finance.yahoo.com/technology/ai/articles/anthropic-targets-10b-credit-facility-173031496.html
+- **Evidence ID:** EVD-20260825-0109
+
+### INFO-110
+- **タイトル:** 【KIQ-BS003-DEBT/Oracle】Oracle はFY2027に約$40Bの債務+エクイティファイナンス(うち$20Bエクイティ発行)を計画——AIデータセンターブームが債務負担を上回れるかが焦点(単一ソース)
+- **ソース:** Entarabi
+- **公開日:** 2026-08
+- **信頼性コード:** B-3（単一ソース、B-2級の数値だが要交叉)
+- **関連KIQ:** KIQ-BS003-DEBT, KIQ-003-04
+- **関連企業:** Oracle
+- **要約:** Oracle はFY2027に約$40Bの債務・エクイティファイナンスを計画、うち$20Bはエクイティ発行。AIデータセンターブームの成長が債務負担を上回れるかが投資家の焦点。既存のOCI拡張(RAI契約等、INFO-067のUBS分析と接続)に必要な資本調達構造。
+- **キーファクト:**
+  - Oracle も「債務でAI拡張」グループ——ただしエクイティ発行併用が特徴
+  - 単一ソースのためB-3、10-Q/決算資料での確認が望ましい
+- **引用URL:** https://entarabi.com/en/2026/08/oracle-bets-billions-on-ai-can-the-data-center-boom-outpace-its-debt-burden/
+- **Evidence ID:** EVD-20260825-0110
+
+### INFO-111
+- **タイトル:** 【KIQ-OAI-001回答】OpenAI CFO Sarah Friar が全社ミーティングで「2027年までに上場企業になる、成長が続けばより早く」と発言——S-1は2026年後半提出・2027年上場計画、$1T IPO報道・予測市場(Kalshi)は「月」を取引、決着条件はSEC がS-1を有効化かIPOプライシングかティッカー割当
+- **ソース:** TheStreet / Yahoo Finance / OddsShopper(Kalshi) / Quartz(FB) / ValueAddVC
+- **公開日:** 2026-08
+- **信頼性コード:** A-2（CFO発言の複数報道）
+- **関連KIQ:** KIQ-OAI-001, KIQ-002-02
+- **関連企業:** OpenAI, SEC, Kalshi
+- **要約:** OpenAI CFO Sarah Friar が全社ミーティングで「2027年に上場、成長が変曲点を維持すればそれより早い」と述べた。報道: 2026年後半にS-1提出、2027年上場、潜在的には$1兆IPOとして史上最大級に。予測市場(Kalshi等)は上場「月」を取引しており、決着条件は (1) SEC がForm S-1を有効宣言 (2) IPOプライス決定 (3) 取引所がティッカー割当のいずれか earliest。CFOのタイムラインはS-1提出まで非公式と注釈。
+- **キーファクト:**
+  - 「S-1は2026年後半」——Arbiterの8日後に始まる提出窓の直接回答
+  - 決着条件の明確化——Phase 2で追跡すべき3イベント特定
+  - $1T IPO規模報道——$730Bプレマネー(INFO-109)よりさらに高い、不整合継続
+- **引用URL:** https://finance.yahoo.com/technology/ai/articles/openai-cfo-just-told-employees-135036521.html
+- **Evidence ID:** EVD-20260825-0111
+
+### INFO-112
+- **タイトル:** 【一次データ/KIQ-ANT-002回答・Step 4スクレイプ】JetBrains Developer Ecosystem Survey 2026(15,000人超・5-7月実施・10回目)「AIコーディングエージェント採用動向」——職場で週1回以上エージェント利用90%・毎日68%。Claude Code が職場利用39%(1月18%→、米国47%)でCopilot(21%)の約2倍・「最も使うツール」31%(転換率約80%)。Codex 3%→16%(5倍)・認知27%→65%。Cursor 18%→12%に減少(中国28%→16%)。OpenCode 7%(認知42%)。Antigravity 6%(インド15%)。**JetBrains AI(Junie含む)は職場利用 約9%**
+- **ソース:** JetBrains Research 公式ブログ（一次、2026-08-18公開、08-19更新）
+- **公開日:** 2026-08-18
+- **信頼性コード:** A-1（JetBrains公式調査報告・方法論公開・統計的再重み付け実施）
+- **関連KIQ:** KIQ-ANT-002, KIQ-001-02, KIQ-001-04, KIQ-004-02
+- **関連企業:** Anthropic（Claude Code）, OpenAI（Codex）, GitHub/Microsoft（Copilot）, Cursor, JetBrains, Google（Antigravity）, OpenCode
+- **要約:** Step 4で公式ブログ本文を直接取得。Developer Ecosystem Survey 2026(世界のプロ開発者15,000人超、8言語、地域割当+再重み付け、サンプル約90%がDeveloper/SWE職)より: (1) 職場でのAIコーディングエージェント週次利用90%・日次68%——エージェントの標準化完了 (2) Claude Code が職場利用39%(1月比2倍超)で首位、Copilot の約2倍。米国では47%。31%の開発者の「最も使うツール」(正規利用→主要ツール転換率約80%) (3) Codex は3%→16%と約5倍増、認知は27%→65% (4) GitHub Copilot は29%→21%で首位陥落、ただし認知79%(欧米86-90%)・Copilot利用者の39%はJetBrains IDEでも使用 (5) Cursor は18%→12%に低下、中国では28%→16%と最大幅で落ちる (6) OpenCode 7%・認知42%(大企業なし) (7) Antigravity 6%・認知29%→47%、インド15%でCursor と同率3位 (8) **JetBrains AI(IDE内+Junie)は職場利用約9%**——KIQ-ANT-002の一次回答 (9) Air(プレビュー中のエージェント開発環境)・JetBrains Central・ACP(Agent Client Protocol)でエージェント横断戦略。
+- **キーファクト:**
+  - Claude Code 39% vs Copilot 21% vs Codex 16% vs Cursor 12% vs JetBrains AI 9% vs OpenCode 7% vs Antigravity 6%(職場利用、2026年5-7月)
+  - Cursor の後退——CLI/エージェント型(Claude Code/Codex)への需要シフト、中国での急落は国産・無料ツール(豆包/Trae)競合と整合(INFO-102/104)
+  - JetBrains は自社AIより「マルチエージェント基盤」(ACP/Air/Central)に賭ける——OpenCode等を含む相互運用層
+  - 方法論の透明性: 地域割当・8言語・再重み付け——A-1評価の根拠
+- **引用URL:** https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/
+- **Evidence ID:** EVD-20260825-0112
+
+### INFO-113
+- **タイトル:** 【KIQ-GOV-EO追加確認】CSIS×Institute for Law and AI ライブ: 「Frame breaking」アプローチの後継として2031年Trump-Hegseth「 FRAME突破」戦略が焦点に。2023年White House方式(外部安全テスト・透かし誓約+テック指導者招集)との対比で議論
+- **ソース:** CSIS（ライブ告知）
+- **公開日:** 2026-08
+- **信頼性コード:** B-3（イベント告知、内容は未開催/報道未確認）
+- **関連KIQ:** KIQ-GOV-EO, KIQ-005-03
+- **関連企業:** CSIS, Institute for Law and AI, White House
+- **要約:** CSIS と Institute for Law and AI が「Frame...」(破枠)アプローチの報道をテーマにライブ議論を開催。2023年にWhite Houseが外部安全テスト・ウォーターマーキングの誓約と指導者招集で用いた類似アプローチとの比較対象。EO 14409(INFO-038)後の連邦政府のAI業界関与構造の変化を追跡する文脈。イベント自体の結論は未報道のため参考記録に留める。
+- **キーファクト:**
+  - 2023年誓約方式(安全テスト・透かし)との構造比較——KIQ-002-06(内部告発)・INFO-037(EU執行開始)と接続
+  - イベント告知ベースのため要フォローアップ
+- **引用URL:** https://www.facebook.com/CSIS.org/posts/1505078638330908/
+- **Evidence ID:** EVD-20260825-0113
+
+### INFO-114
+- **タイトル:** 【一次データ/Step 4スクレイプ】OpenAI公式「GPT-5.6で価格性能フロンティアを前進」(2026-07-30)——Luna −80%($0.20/$1.20 per M tokens)・Terra −20%($2/$12)・Sol 価格据置き+Fast mode(Priority Processing代替、2.5倍速/2倍価格)。Luna は1年前のフロンティア級性能を「ドル換算6セント・9倍速」で提供・Agents' Last Exam で Fable 5 に約99%低コストで勝利。Sol が自律的にプロダクションカーネルを書き換え提供コスト20%削減・トークン生成効率15%超改善(帰納的効率化)
+- **ソース:** OpenAI 公式ブログ（一次）
+- **公開日:** 2026-07-30
+- **信頼性コード:** A-1（公式一次・価格表同梱）
+- **関連KIQ:** KIQ-003-02, KIQ-002-05, KIQ-004-02
+- **関連企業:** OpenAI, Replit, Notion, Ramp, Blitzy, Cognition, Dust
+- **要約:** Step 4で公式本文取得。価格: 7/30より Luna $0.20/M入力・$1.20/M出力(−80%)、Terra $2/$12(−20%)、Sol 変更なし。Fast mode は API の Priority Processing を代替(2.5倍速・2倍価格・知能不変、後方互換)。効率: Luna は1年前のフロンティア級モデル相当の性能を約6セント/ドル・約9倍速で提供、Agents' Last Exam では Fable 5 を約99%低いタスクコストで上回る。帰納的効率化: 人主導プロセス内で Sol がプロダクションカーネルを自律書換え(提供コスト20%減)・数百実験を設計実施(トークン生成効率15%+改善)。顧客証言: Blitzy「Luna は GPT-5.4 mini 比で87%低成本・prompt-cache再利用24%→90%」、Dust「40%高速・40%安価」、Cognition は Devin Fusion に Luna 統合。競合チャートには DeepSeek V4 Pro・Claude Opus 5・GLM-5.2 Max・Gemini 3.6 Flash 等が並ぶ。併載ニュース: GPT-5.6 in Kiro(8/24)・ChatGPT Ads 欧州拡大(8/18)・ChatGPT for Teens(8/18)。
+- **キーファクト:**
+  - INFO-052/053の価格戦争を一次確認——「モデル自已効率化→価格還元」ループの公式説明
+  - Sol による自己改善(kernel rewrite)は「AIがAIの提供コストを下げる」最初の公式詳細事例——INFO-093(再帰的自己改善は予想より遅い)との対比点
+  - Fable 5(Maker系?)との比較言及——競合セット拡大
+  - ChatGPT Ads 欧州拡大・Teens——消費者側収益化の並行展開
+- **引用URL:** https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/
+- **Evidence ID:** EVD-20260825-0114
+
+### INFO-115
+- **タイトル:** 【一次データ/Step 4スクレイプ】NVIDIA $500Bプレスリリース本文確認(2026-08-10)——6社(Apollo/BlackRock/Blackstone/Brookfield/GS/KKR)とMoU、「独立したコンピュートファイナンス・プラットフォーム」で「NVIDIAコンピュートを投資可能資産クラス化」。Jensen Huang「AIにおいて、コンピュートは収益である」。GS の Solomon「NVIDIAコンピュートを裏付けとするクレジット市場創造」。ただしSPV・借手・返済機構は一切未特定・「最終契約締結が条件」——$500Bはあくまで動員目標
+- **ソース:** NVIDIA Newsroom 公式（一次）
+- **公開日:** 2026-08-10
+- **信頼性コード:** A-1（公式一次）
+- **関連KIQ:** KIQ-BS003-DEBT, KIQ-003-04
+- **関連企業:** NVIDIA, Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR
+- **要約:** Step 4で公式本文全文確認: (1) 2026-08-10発表、6金融機関とのMoU——「独立したコンピュートファイナンス・プラットフォーム」(NVIDIA顧客向けの大規模専用資金プール)は「世界初の同種プラットフォーム」 (2) Huang: 「In AI, compute is revenue」——コンピュートを収益連動・長期デュレーションの投資可能資産クラス化、顧客は「稀少なコンピュートをスケールで調達」し DSX AI 工場を建設 (3) 各社トップ発言: Zelter(Apollo)「現代のコンピュートは稀少でミッションクリティカルな資産クラス」、Fink(BlackRock)「前例なき投資が必要」、Solomon(GS)「NVIDIAコンピュート裏付けクレジット市場の創造」、KKR 共同CEO「難しいのは野心ではなく実行」 (4) **重要な留保**: SPV・借手・返済の機構は発表に一切なし、「最終契約締結が条件」、$500Bは「時間をかけて」の動員目標——コミット金額・パートナー毎内訳なし (5) チップシステム(GB300等)の特定なし、DSX AI工場への一般言及のみ (6) 関連: NVIDIA は KKR の Helix Digital Infrastructure の創設投資家。
+- **キーファクト:**
+  - INFO-108を一次補強——「$500B=目標、MoU段階」の評価が公式文書で確定
+  - 「compute is revenue」——需要リスクを金融機関の独立アンダーライティングに移転する構造設計
+  - 返済源は「使用量連動収益」——AI DCキャッシュフロー証券化の骨格
+  - KKR「実行が課題」——プラットフォーム側自身の慎重論
+- **引用URL:** https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital
+- **Evidence ID:** EVD-20260825-0115
