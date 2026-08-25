@@ -1745,6 +1745,3 @@
   - KKR「実行が課題」——プラットフォーム側自身の慎重論
 - **引用URL:** https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital
 - **Evidence ID:** EVD-20260825-0115
-
-
-> ⚠️ DEGRADED: Blue Agent analysis failed. Raw data passed through.
