@@ -1278,6 +1278,3 @@
   - Coze敗因: 「過程を交付し結果を交付しない」ワークフローの限界
 - **引用URL:** https://www.36kr.com/p/3954701826047361
 - **Evidence ID:** EVD-20260827-0081
-
-
-> ⚠️ DEGRADED: Blue Agent analysis failed. Raw data passed through.
