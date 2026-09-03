@@ -1351,6 +1351,3 @@
   - HLE: Sonnet 4.6は34.6%(無工具)/46.8%(有工具)に更新
 - **引用URL:** https://www.anthropic.com/news/claude-sonnet-5
 - **Evidence ID:** EVD-20260901-0090
-
-
-> ⚠️ DEGRADED: Blue Agent analysis failed. Raw data passed through.
