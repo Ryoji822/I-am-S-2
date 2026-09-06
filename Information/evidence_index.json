@@ -54508,8 +54508,505 @@
       "raw_path": "Information/raw/2026-09-05/firecrawl.jsonl",
       "run_date": "2026-09-05",
       "url": "https://www.yangyuanhua.com/news/jy604.html"
+    },
+    "EVD-20260906-0001": {
+      "hash": "sha256:032a6d3488c739c8ce08d77e015e316e68025546fbf641f89702beaed1b5bf92",
+      "legacy_info_id": "INFO-001",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://openai.com/index/gpt-6-astra/"
+    },
+    "EVD-20260906-0002": {
+      "hash": "sha256:9b7aa756781ad6ec3efa15dec01f3776d9812c73514fa82c04908a71e65af8c2",
+      "legacy_info_id": "INFO-002",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://openai.com/index/gpt-6-astra/"
+    },
+    "EVD-20260906-0003": {
+      "hash": "sha256:1229f6bb93d7e524468b92db479532d7f6e135f8c8b607198f14442267d8e7ee",
+      "legacy_info_id": "INFO-003",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://openai.com/index/gpt-6-astra/"
+    },
+    "EVD-20260906-0004": {
+      "hash": "sha256:84edae57fef843b4c2ee4a8312e513141462f2e1a17c32d06911ca6b7634a816",
+      "legacy_info_id": "INFO-004",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/"
+    },
+    "EVD-20260906-0005": {
+      "hash": "sha256:a929f2fefff01fcb95c4df14d66bdd74ba66eccf36e1a2732e677bd320ce21c1",
+      "legacy_info_id": "INFO-005",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/"
+    },
+    "EVD-20260906-0006": {
+      "hash": "sha256:f4538ebe4ff2609097509912cb722231495dcb2f8588af824b50a65b5c0f132e",
+      "legacy_info_id": "INFO-006",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/"
+    },
+    "EVD-20260906-0007": {
+      "hash": "sha256:b76639cfe62aae4d17570703b6f683e5494311991f435faef3da8795816b4649",
+      "legacy_info_id": "INFO-007",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://x.ai/news/grok-bot-for-enterprise"
+    },
+    "EVD-20260906-0008": {
+      "hash": "sha256:30240ae2b7d4008be1b99010a2addb1b1ff1732f4c09d89cfffdb58e50350bac",
+      "legacy_info_id": "INFO-008",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/"
+    },
+    "EVD-20260906-0009": {
+      "hash": "sha256:92b7bc25729ce3b1fcf1245073e7d755584ac809275bb69dc287c5d8438b1ca6",
+      "legacy_info_id": "INFO-009",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.anthropic.com/news/claude-partner-network"
+    },
+    "EVD-20260906-0010": {
+      "hash": "sha256:0a432e8008e05693e23a2aa3de380bd6ae2dce045b8a86fc2e8d659f3c310658",
+      "legacy_info_id": "INFO-010",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://github.com/anthropics/claude-code/releases"
+    },
+    "EVD-20260906-0011": {
+      "hash": "sha256:82198538790c19186ef5377f229cef6845055d836275f4462c2723092dd80235",
+      "legacy_info_id": "INFO-011",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview"
+    },
+    "EVD-20260906-0012": {
+      "hash": "sha256:dce68e7a531afcac2fa30fa7a7573a45a73a745cb0fa8bc14760d7200d600164",
+      "legacy_info_id": "INFO-012",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://intuitionlabs.ai/articles/long-running-ai-agents-reliability"
+    },
+    "EVD-20260906-0013": {
+      "hash": "sha256:eb51d2aae3188e2356a8d1b3f1ae072dda37298c3fe3ab27fbb9afe734fa79af",
+      "legacy_info_id": "INFO-013",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://support.claude.com/en/articles/15167101-get-started-with-claude-compliance-api-integrations"
+    },
+    "EVD-20260906-0014": {
+      "hash": "sha256:4cf332be5e36e92b98574de18ca3eb848fe745a9a80d63a3d3105e622f3d2648",
+      "legacy_info_id": "INFO-014",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.develeap.com/news/securing-claude-code-the-new-compliance-api-local-visibility/"
+    },
+    "EVD-20260906-0015": {
+      "hash": "sha256:c4c1cce9bfc9f10a1311803d3e3bcb052c2b80ac30d299f8cd4422bdc230f017",
+      "legacy_info_id": "INFO-015",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.facebook.com/carahsoft/posts/piazza-consulting-groups-new-partnership-with-carahsoft-is-making-it-easier-for-/1669257771871430/"
+    },
+    "EVD-20260906-0016": {
+      "hash": "sha256:c8218d54f96d3abd92f3f574c6f0dbaf4b8e9297bc03d047a4a3f9fa1dda5d4a",
+      "legacy_info_id": "INFO-016",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://openai.com/index/ai-native-company-workflows/"
+    },
+    "EVD-20260906-0017": {
+      "hash": "sha256:b04d29fd75e5f298a5698b11fb056e3c92302fdd3cdd6600da502e144aa07c3f",
+      "legacy_info_id": "INFO-017",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.dutchstartup.ai/en/news/ai-agent-platforms-raise-tens-of-millions-as-enterprise-adoption-accelerates"
+    },
+    "EVD-20260906-0018": {
+      "hash": "sha256:e809340f4737965059d58672c977b07c2933ab64e5659c457e4f04cdf0302455",
+      "legacy_info_id": "INFO-018",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.gsa.gov/artificial-intelligence/ai-community-of-practice/events-and-training/mcp-server-and-ai-agent-government-hackathon"
+    },
+    "EVD-20260906-0019": {
+      "hash": "sha256:1ff5398a2b5c510e77163f87631fc011d193d387dce24b8edea0d98f6c7b4e81",
+      "legacy_info_id": "INFO-019",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://hginsights.com/blog/what-is-an-mcp-server/"
+    },
+    "EVD-20260906-0020": {
+      "hash": "sha256:0e777b2c77b717e0de66b2a0d64daafc36c5cb5594381847ef1d583497f2db61",
+      "legacy_info_id": "INFO-020",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://deploymentsafety.openai.com/gpt-6-astra"
+    },
+    "EVD-20260906-0021": {
+      "hash": "sha256:70df401057304d15b3d5a6ec4c06b1a41e975051a70b05d3c8577be5fa3fe742",
+      "legacy_info_id": "INFO-021",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.threads.com/@simplifyinai/post/Dczwj1dEiIn"
+    },
+    "EVD-20260906-0022": {
+      "hash": "sha256:d8f84077406aa57cedb5723fc6805306ec2c7f3f49235cae5f0aa1c88a6a619b",
+      "legacy_info_id": "INFO-022",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://benchlm.ai/best/multimodal"
+    },
+    "EVD-20260906-0023": {
+      "hash": "sha256:21e396792b173e8b9126de913497756f54ffe1fe357aa98ccf74593094a39088",
+      "legacy_info_id": "INFO-023",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://github.com/google/skills"
+    },
+    "EVD-20260906-0024": {
+      "hash": "sha256:f27b93f67a2615e30930122fcab3caa35589e3796420122ca32ff7504019a0de",
+      "legacy_info_id": "INFO-024",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.kai-waehner.de/blog/2026/09/01/the-ai-agent-harness-where-vendor-lock-in-went-after-the-model-became-swappable/"
+    },
+    "EVD-20260906-0025": {
+      "hash": "sha256:8e2c2336224ed2ca917f925ea361ed6ab66b2e413c753b0f638591064b0f1d2e",
+      "legacy_info_id": "INFO-025",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://atlan.com/know/ai-agent/context-layer/single-stack-lock-in-vs-neutral-context-layer/"
+    },
+    "EVD-20260906-0026": {
+      "hash": "sha256:6c1562bf93c44c94ad2cdb8b35571734bc3c7cea1986c45b679fab50a463bce4",
+      "legacy_info_id": "INFO-026",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://fortune.com/2026/09/01/pentagon-chatgpt-grok-government-military-ai-members-pete-hegseth-defense-department/"
+    },
+    "EVD-20260906-0027": {
+      "hash": "sha256:4b39ae1b0886a00b27b98cb77b85fc6183791a684ae06c3e8927bd51a14b3150",
+      "legacy_info_id": "INFO-027",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://qz.com/pentagon-anthropic-supply-chain-risk-designation-090326"
+    },
+    "EVD-20260906-0028": {
+      "hash": "sha256:42b087d3f71d47cb36f8ebebcbac0b4626627b8a818072b465b7d52aa671d42f",
+      "legacy_info_id": "INFO-028",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.lawfaremedia.org/article/governance-by-shakedown"
+    },
+    "EVD-20260906-0029": {
+      "hash": "sha256:0a43619433a49dc354fddb2941f456e3b2446f1ff84021e5e4460992583c734f",
+      "legacy_info_id": "INFO-029",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.theguardian.com/us-news/2026/sep/01/top-pentagon-official-ai-stock-holdings"
+    },
+    "EVD-20260906-0030": {
+      "hash": "sha256:67096c33c6fd8755360ee85edea5d753e10656a2366daaf6117a2f2b139f7c2b",
+      "legacy_info_id": "INFO-030",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://internetlab.org.br/wp-content/uploads/2026/09/Anthropic-PBC-v.-U.S.-Department-of-War-et-al.pdf"
+    },
+    "EVD-20260906-0031": {
+      "hash": "sha256:d49e780357fd04b471c2d3394117f628c66b873a3eaa0242253c1b17a6ffca8c",
+      "legacy_info_id": "INFO-031",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.facebook.com/WGNTV/posts/the-pentagon-announced-on-monday-that-it-brought-on-starshield-ais-grok-for-gove/1634640051592029/"
+    },
+    "EVD-20260906-0032": {
+      "hash": "sha256:4889f09b8cf1b4c3c391ad2066677a5b6344a07aa284f4b047003c35b3c89c4d",
+      "legacy_info_id": "INFO-032",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://reason.com/2026/08/31/anthropic-win-reaffirms-private-sectors-right-to-put-conditions-on-government-dealings/"
+    },
+    "EVD-20260906-0033": {
+      "hash": "sha256:2de8a0052fa4e0be128f2a3d1285b12f75ad19a043a2bfe09d26862c59ba47c6",
+      "legacy_info_id": "INFO-033",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.facebook.com/GartnerInc/posts/enterprises-are-rapidly-adding-ai-agents-across-platforms-this-is-creating-overl/1514680404020618/"
+    },
+    "EVD-20260906-0034": {
+      "hash": "sha256:e83f368d909385effec9e36c45178b887ac3a7db811ad8bc3dc55e521b7bfd17",
+      "legacy_info_id": "INFO-034",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/"
+    },
+    "EVD-20260906-0035": {
+      "hash": "sha256:3969a5c7928f8fad4b1a109f900bee5f6f916adf3a5a855a953b4dcaa4d56af4",
+      "legacy_info_id": "INFO-035",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://tech.co/news/companies-replace-workers-with-ai"
+    },
+    "EVD-20260906-0036": {
+      "hash": "sha256:89cc4390fbfd979c9da12cacefad6cb6121d68c4d955b869ec0ae5f9081a6e86",
+      "legacy_info_id": "INFO-036",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.nature.com/articles/s41598-026-66277-8"
+    },
+    "EVD-20260906-0037": {
+      "hash": "sha256:93799a77e6f5e3b54c57e4495ae62044c154d5e291d3950df13a56833e1941d7",
+      "legacy_info_id": "INFO-037",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.facebook.com/TheStartupsMag/posts/is-the-old-marketing-agency-business-model-officially-dead-or-hotter-than-ever-w/1548533940621336/"
+    },
+    "EVD-20260906-0038": {
+      "hash": "sha256:0a9c69a14605ff73390141a209fb242dc117036bdbfdc72a364dbf38a3e002d9",
+      "legacy_info_id": "INFO-038",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://agentguides.dev/leaderboard/"
+    },
+    "EVD-20260906-0039": {
+      "hash": "sha256:18203404cb6fd5b4836bd7b00d65d5d45aac3c41f2d5eb8faa11433077befe8a",
+      "legacy_info_id": "INFO-039",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://kie.ai/blog/gpt-6-astra-vs-claude-fable-5-1"
+    },
+    "EVD-20260906-0040": {
+      "hash": "sha256:3c5a7fe88a96d23f28ac08708661ea7bc9bcee5285a29ba1a82e537e2984f46a",
+      "legacy_info_id": "INFO-040",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.technology.org/2026/08/31/open-weight-ai-acquisitions-nvidia-hugging-face/"
+    },
+    "EVD-20260906-0041": {
+      "hash": "sha256:d1053ffb21be62434ec206db422cf243c9bed83eb6c671cac793cfd1365ff6bb",
+      "legacy_info_id": "INFO-041",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.secondtalent.com/resources/ai-startup-funding-investment/"
+    },
+    "EVD-20260906-0042": {
+      "hash": "sha256:368f0e5055ca8cdbd08d835ac36bb3a1b3d1e8cdede469f5f97ddb10d9d630d9",
+      "legacy_info_id": "INFO-042",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.techtimes.com/articles/326399/20260903/bytedance-locks-record-296b-loan-tighter-terms-ai-race-funded-debt-not-disclosure.htm"
+    },
+    "EVD-20260906-0043": {
+      "hash": "sha256:16040c026e7e37c1996774942204f187251ccec08d0358029c251aa0b8bf94ac",
+      "legacy_info_id": "INFO-043",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://siliconangle.com/2026/08/25/alice-raises-140m-as-its-ai-security-business-grows-more-than-500/"
+    },
+    "EVD-20260906-0044": {
+      "hash": "sha256:29d8037111c004ddef12c414575a1728a9ff3610efc7f4a0f101c17301616f1e",
+      "legacy_info_id": "INFO-044",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-already-raised-130-billion-135300760.html"
+    },
+    "EVD-20260906-0045": {
+      "hash": "sha256:c4337799f1f8b00e69b5c07e7d1587333db453dfae9899b474d6bc6630fb3577",
+      "legacy_info_id": "INFO-045",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
+    },
+    "EVD-20260906-0046": {
+      "hash": "sha256:ff27ebb0559d8fe2c5371ba090929e727a318d706ebd0a1ca9b0091584eb99f4",
+      "legacy_info_id": "INFO-046",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://securitybrief.news/story/crowdstrike-launches-safemind-agentic-cybersecurity-system"
+    },
+    "EVD-20260906-0047": {
+      "hash": "sha256:65e16904219628aa8bdedf00da71e10b2dac5130ae6dceb60f8b4537d40b0bb0",
+      "legacy_info_id": "INFO-047",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://newmarketpitch.com/blogs/news/ai-code-assistant-is-growing"
+    },
+    "EVD-20260906-0048": {
+      "hash": "sha256:9739d288bba091c22c4b7198de86679a3cdbd408cf3a7acd5e9d0ccdc3550596",
+      "legacy_info_id": "INFO-048",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.facebook.com/TheEconomist/posts/uptake-of-ai-has-been-strongest-among-software-developers-many-of-whom-work-with/1592611746230673/"
+    },
+    "EVD-20260906-0049": {
+      "hash": "sha256:80f37cea990a2384a36db3ee50bd1d72699e20ea34e677233879f591999368a1",
+      "legacy_info_id": "INFO-049",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://github.com/orgs/community/discussions/198015"
+    },
+    "EVD-20260906-0050": {
+      "hash": "sha256:ddc90b50a5cf18420cf0cb299e395632e92aa64f9d2f078a24ba7c48b289cf98",
+      "legacy_info_id": "INFO-050",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://global.fujitsu/en-global/insight/tl-token_management_ai_agents-20260904"
+    },
+    "EVD-20260906-0051": {
+      "hash": "sha256:a2ba30b695461480ca6dc8fa4699707c58ac714bc3a5c3ccf4e55b5f0af2cc60",
+      "legacy_info_id": "INFO-051",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/"
+    },
+    "EVD-20260906-0052": {
+      "hash": "sha256:d97f9285cc06bf0b14df4edd850998dde95dcc74360b1c7fd52f58c69a3d4708",
+      "legacy_info_id": "INFO-052",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.afaqs.com/news/digital/martin-sorrell-sees-ais-biggest-disruption-in-media-not-creative-12460220"
+    },
+    "EVD-20260906-0053": {
+      "hash": "sha256:af3908ad81c03d6e44320c7224aa94d7f5c28084f11defb483ead89464c8692e",
+      "legacy_info_id": "INFO-053",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.bcg.com/publications/2026/why-ai-pilots-rarely-deliver-value"
+    },
+    "EVD-20260906-0054": {
+      "hash": "sha256:42920cf8f2604f22bca852bf65b803780d56ddc77f4e39e6e1ae41b2057c5729",
+      "legacy_info_id": "INFO-054",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://arcprize.org/blog/astra"
+    },
+    "EVD-20260906-0055": {
+      "hash": "sha256:f71ba084f6bb963c9d34119ab76a45d37a92b55c9614634fbd4ed9ff26ff019c",
+      "legacy_info_id": "INFO-055",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://the-decoder.com/benchmarks-disagree-on-gpt-6-astra-but-its-human-beating-efficiency-on-arc-agi-3-pulls-chollets-agi-forecast-forward/"
+    },
+    "EVD-20260906-0056": {
+      "hash": "sha256:71d05208aee1c7b1a6e59d2bb97588817d9271853788d211d7364dfbd5cfa02a",
+      "legacy_info_id": "INFO-056",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.businessinsider.com/astra-model-launch-agi-milestone-openai-greg-brockman-2026-9"
+    },
+    "EVD-20260906-0057": {
+      "hash": "sha256:b2f069dab55443c9c2c3d653109c767d5f3ce8e588f68dea33fa27f752e98b40",
+      "legacy_info_id": "INFO-057",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.wsj.com/cio-journal/yes-were-entering-the-era-of-artificial-general-intelligence-d9b0920e"
+    },
+    "EVD-20260906-0058": {
+      "hash": "sha256:4f936e2c2e29a458853d8cc50cdee19fdbf961ad3fe261a02122209e1fff7add",
+      "legacy_info_id": "INFO-058",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://felloai.com/when-will-agi-happen/"
+    },
+    "EVD-20260906-0059": {
+      "hash": "sha256:c357e5695189a79beab802d135b3786c630df3a1ab0a493b2a7cefbb2ac344a3",
+      "legacy_info_id": "INFO-059",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.science.org/content/article/bernie-sanders-aims-ban-ai-superintelligence-experts-can-t-agree-what-term-means"
+    },
+    "EVD-20260906-0060": {
+      "hash": "sha256:bfa977e44df91543de7dd0a5b60623c189010f994b07da2996c7b26d7ba772ef",
+      "legacy_info_id": "INFO-060",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.facebook.com/gettheinformation/posts/anthropic-is-breaking-with-openai-and-google-over-a-massachusetts-proposal-that-/1709022217893434/"
+    },
+    "EVD-20260906-0061": {
+      "hash": "sha256:8dace403a1a7c43b1a6081a515eba103c83cbd07c96be84551f317a5c6683867",
+      "legacy_info_id": "INFO-061",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.greaterwrong.com/posts/g4eaRCynouiBi2LjQ/almost-nobody-is-funded-to-figure-out-what-work-would-solve"
+    },
+    "EVD-20260906-0062": {
+      "hash": "sha256:96d219f7c8ca151b6db492c2889b62b95a2cde0c52e6bddd8a1016c12b203ae4",
+      "legacy_info_id": "INFO-062",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://ai-frontiers.org/articles/its-too-early-to-ban-ai-personhood"
+    },
+    "EVD-20260906-0063": {
+      "hash": "sha256:154bbb8a7617a61e333b99d040fff3fd0ffd69d61a2ffbe025b5a91f95f6df1b",
+      "legacy_info_id": "INFO-063",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://arcprize.org/blog/astra"
+    },
+    "EVD-20260906-0064": {
+      "hash": "sha256:60686d84d3b188853381ac3e5acf41c8811414be94d3ed80fb1246877f4303d0",
+      "legacy_info_id": "INFO-064",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.lawfaremedia.org/article/governance-by-shakedown"
+    },
+    "EVD-20260906-0065": {
+      "hash": "sha256:d1f58094eb000f7fda10c76e03b45ec680fd761632934d5cbd45a63172916201",
+      "legacy_info_id": "INFO-065",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://fortune.com/2026/09/01/pentagon-chatgpt-grok-government-military-ai-members-pete-hegseth-defense-department/"
+    },
+    "EVD-20260906-0066": {
+      "hash": "sha256:0f876117e686aab68d9d0f84170987d8cd06ae1a34b02fbf059da14e9cb02e87",
+      "legacy_info_id": "INFO-066",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2133022&type=S-1&dateb=&owner=include&count=10"
+    },
+    "EVD-20260906-0067": {
+      "hash": "sha256:70b45d7495243cc0f597ec43f880666a7928decd51b63065c04f9f64885698f9",
+      "legacy_info_id": "INFO-067",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://newmarketpitch.com/blogs/news/ai-code-assistant-is-growing"
+    },
+    "EVD-20260906-0068": {
+      "hash": "sha256:f03daae686996a496b3119fcb90e3ecfc3138fbcb3bddcbbffe8b6c1dddc2028",
+      "legacy_info_id": "INFO-068",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation"
+    },
+    "EVD-20260906-0069": {
+      "hash": "sha256:d1edee2162f8a7e1a37655feb2b8876bea7ae30ca62afaaeb29a197eec32e28f",
+      "legacy_info_id": "INFO-069",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.technology.org/2026/08/31/open-weight-ai-acquisitions-nvidia-hugging-face/"
+    },
+    "EVD-20260906-0070": {
+      "hash": "sha256:28975d57166b88732a6b71f183462d8843584096ca7e4cf9bd1f948eb09bd4b8",
+      "legacy_info_id": "INFO-070",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.technology.org/2026/09/04/eu-designates-chatgpt-vlose-digital-services-act/"
+    },
+    "EVD-20260906-0071": {
+      "hash": "sha256:deb77d0f8a60e319167818a8aa0f4926d3b00217203ea0cc3b6a58aa47f66da5",
+      "legacy_info_id": "INFO-071",
+      "raw_path": "Information/raw/2026-09-06/firecrawl.jsonl",
+      "run_date": "2026-09-06",
+      "url": "https://www.technology.org/2026/09/04/uber-cuts-3300-jobs-robotaxi-strategy/"
     }
   },
-  "last_updated": "2026-09-05T10:11:27+09:00",
+  "last_updated": "2026-09-06T10:01:29+09:00",
   "schema_version": "1.0"
 }
