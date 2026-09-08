@@ -1,111 +1,104 @@
-# Anthropic — 企業インテリジェンス
+# Anthropic PBC — 攻撃的投資仮説 (static_intelligence)
 
-> 最終判断更新: 2026-09-07
-> 全体確信度: 中
-> 情報非対称性: 収益系列は分裂したまま（走行収益7月$470億超系・$650億到達系・Forge Q2暫定$115億超系・~$47Bランレート系）で、公的S-1の監査財務（10月中旬視野・終端条件2026-10-31）まで保留。調達系列のG/H文字逆転は本日解消した（[INFO-075](../Information/2026-09-07/collected-raw.md#INFO-075) A-2・Series G=2月$30B@$380B、H=5/28 $65B@$965Bの2独立ラウンド）。ただし両ラウンドの定量的錨はCNBC単一出所に集中し、NYTは$900B/$730Bの別集計（評価時点差・引用URLなし）である。判決は意見PDF確認済み（B-2）だがPACER正規一次は未達で、控訴状況（受理有無・審級）も未確認。Claude Code職場採用39%は集約業者経由（JetBrains一次でない出所連鎖注記）。Mythos/Glasswing管理配給は単一ソース系のまま。
-> 主参照: [H-ANT-001](../config/hypotheses.json) [H-ANT-002](../config/hypotheses.json) [H-ANT-003](../config/hypotheses.json) [H-GOV-001](../config/hypotheses.json) [H-GOV-002](../config/hypotheses.json) [H-CAR-001](../config/hypotheses.json) [H-CAR-002](../config/hypotheses.json) [H-CAR-003](../config/hypotheses.json) [IND-013](../config/indicators.json) [IND-025](../config/indicators.json) [IND-026](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-029](../config/indicators.json) [IND-030](../config/indicators.json)
+- **最終判断更新:** 2026-09-08 (前回 2026-09-07)
+- **全体確信度:** 中 (公式一次の覆盖が価格面で前進・収益面はS-1待ち)
+- **情報非対称性:** 価格は公式pricingページのライブ検証でSonnet 5現行$2/$10が確定し$3/$15は4.x世代価格と判明したが、9/7 INFO-057出所ページ (models/overview) との矛盾が未解決で台帳訂正は条件付き。調達系列は3変種並存注記 (台帳G$30B+H$65B=$95B / 9/7注記G$32B+H$27.5B=$59.5B / Bloomberg ET見出し$65B説) となり$59.5B説の出所特定が残件。$15BリボルバーとIPO提出が「枠確定待ち」で直列である構造は判明したが、監査財務はS-1本文まで不在。判決は8/27・Judge Rita F. Linが2ソース一致したがドケット正規一次は未取得。Claude Code 39%は集約業者経由のまま。
+- **主参照:** [config/hypotheses.json](../config/hypotheses.json) · [config/indicators.json](../config/indicators.json) · [state/arbiter-2026-09-08.md](../state/arbiter-2026-09-08.md) · [Information/2026-09-08/collected-raw.md](../Information/2026-09-08/collected-raw.md)
 
-## 0. 一文要約
+## §0 一文要約
 
-我々はAnthropicを「司法勝利（8/27 SCR取り消し+恒久差止）の経済的果実が意図的な調達除外で得られない構造が確定しながら、調達史の順序と現行価格が公式一次で揃い始めた企業」と読む。調達系列のG/H文字逆転は[INFO-075](../Information/2026-09-07/collected-raw.md#INFO-075)（A-2）で解消した。Series G（2月・$30B@$380B）とSeries H（5/28・$65B@$965B）は2つの独立ラウンドであり、計$95Bの資本基盤を持つ。現行価格は[Claude公式docs](../Information/2026-09-07/collected-raw.md#INFO-057)で確定し、Sonnet 5の$2/$10は8/31期限の期間限定で、$3/$15への復帰は本日時点で実効化から1週間になる。仮説確度は全件±0%（全19アクティブ仮説凍結のラウンド）。もし10月中旬の公的S-1が監査財務を開示したら、収益・評価額の全系列分裂は一斉に解消される。
+我々はAnthropicを「司法勝利の経済的果実が意図的な調達除外で得られない構造が確定しつつ、価格と資本の両面で公式一次が揃い始めた企業」と読む。公式pricingページのライブ検証 ([INFO-088](../Information/2026-09-08/collected-raw.md#INFO-088)・A-2) でSonnet 5現行価格$2/$10が確定し、$3/$15はSonnet 4.6/4.5/4の価格と判明した (v4.88「値上げ復帰」前提の反転・ただしmodels/overview再取得まで条件付き)。Fable 5.1/Mythos 5.1は同一モデルでセーフガードのみ相違する公開設計 ([INFO-091](../Information/2026-09-08/collected-raw.md#INFO-091)・A-2) で、キャッシュ読取75%値下げ・EFS・LSVPが公式確定した。調達面は$15Bリボルバー (Morgan Stanley主導・14行超・段階制コミット) の確定を待ってIPO提出が進む構造 ([INFO-082](../Information/2026-09-08/collected-raw.md#INFO-082)/[INFO-087](../Information/2026-09-08/collected-raw.md#INFO-087)) が判明し、IPOは10月中旬視野。仮説確度は全件±0% (v4.89)。もし10月中旬の公的S-1が監査財務を開示すれば、収益と評価額の系列分裂は一斉に解消に向かう。
 
-## 1. コア判断
+## §1 コア判断
 
-順応報酬構造の実態把握は進んだが、表現は本日修正された。Lawfare本文（[INFO-064](../Information/2026-09-06/collected-raw.md#INFO-064) B-1）が復元した経路（監視・自律兵器条項の緩和拒否を起点に、段階的排除指示、SCR指定、仮処分、機密ネットワーク除外の並存）は「口実を裁量的レバーに変換し譲歩と引き換えに救済する」統治として読める。ただし判決後の状態は「行政defy」ではなく控訴中の法定効果（控訴審判断待ちの制度論的通常運用）という代替解釈が対等に併記され、順応報酬構造の連続性は「報道・本文ベースで強く支持（判決正文・ドケット一次確認保留）」に表現修正された。Fortune本文（[INFO-065](../Information/2026-09-06/collected-raw.md#INFO-065) B-1）確認済みのGenAI.mil除外（Claude不在は意図的）は継続し、判決の経済的果実が得られていない構造は不変である。
+価格判断は公式一次で書き換わった。platform.claude.com公式docsのライブ取得 ([INFO-088](../Information/2026-09-08/collected-raw.md#INFO-088)・A-2) により、Sonnet 5は$2/MTok入力・$10/MTok出力が現行で、$3/$15はSonnet 4.6/4.5/4世代の価格と確定した。9/7のINFO-047矛盾検出からStep 4公式ライブ検証への格上げチェーンが模範的に完走した形で、v4.88裁定4「$3/$15復帰」の前提は反転した。ただし台帳訂正の確定は9/7 INFO-057出所ページ (models/overview) のライブ再取得まで条件付きで、両ページが現行も矛盾する場合は公示不整合系列として扱う (Arbiter v4.89裁定2)。全価格体系はFable 5.1/Mythos 5.1が$10/$50、Opus 5が$5/$25、Haiku 4.5が$1/$5、Fast mode (Opus 5/4.8) が$10/$50の2倍速research preview、Claude Managed Agentsがトークン+セッション実行時間$0.08/時の2軸課金と判明した。Mythos SKUの階層分離 ($25/$125 Preview・限定と$10/$50 5.1・limited availability) は監視在庫化され要追証とする。
 
-調達系列の順序が確定した。前日は「G/Hの文字逆転で調達史自体が不確定」と計上したが、[INFO-075](../Information/2026-09-07/collected-raw.md#INFO-075)（A-2）はCNBC一次報道として、Series G=2月$30B@$380B、Series H=5/28 $65B@$965B（Altimeter・Dragoneer・Greenoaks・Sequoiaリード）の2独立ラウンドを示した。3ヶ月で約2.5倍の評価上昇で、OpenAI（3月末クローズ$122B@$852B）を初めて上回る。系列汚染フラグは解消である。ただし感度は残る。NYTは$900B vs $730Bと別集計（評価時点差）で、引用URLはCNBCのみ。調達基盤の定量的錨がCNBC単一出所に集中するため、Anthropic公式資本履歴本文とNYT記事の直接特定（$900Bの意味論確認）が副次目標に追加された。
+Fable 5.1/Mythos 5.1の公式発表全文 ([INFO-091](../Information/2026-09-08/collected-raw.md#INFO-091)・A-2) は同一モデル・異なるセーフガードという設計思想の公式開示である。キャッシュ読取を75%値下げ ($0.25/MTok・他モデルの0.1xに対し0.025x) して典型的ワークロード約25%、高度エージェント用途で最大約45%のコスト削減と主張する。Enterprise Frontier Safeguards (EFS) は顧客管理クラウドでZDR同等を両立 (100+顧客共同開発・AWS/GCP/Azure・今秋段階提供)、LSVPで米政府生命科学提携も継続する。科学面は蛋白質バインダー設計で12標的ヒット率約50% (業界標準10-15%・外部2機関の実験検証付き) と金星の新地形図 (NASA Magellan-derived・CC公開) で、性能主張と異なり実測検証を伴う信頼構造を持つ。整列面は承認・auto-mode分類器を時々バイパス可能と公式に認識し、アンチ蒸留 (thinking付き文脈編集不可) も導入した。Claude Managed Agents (INFO-088) とxAI Haggle Bot ([INFO-090](../Information/2026-09-08/collected-raw.md#INFO-090)) の同週登場で、エージェント課金と企業ワークフロー統合の競争が始まっている。
 
-価格と物理世界の両面で動きが出た。現行4層（Fable 5.1 $10/$50、Opus 5 $5/$25、Sonnet 5 $3/$15、Haiku 4.5 $1/$5）は[Claude公式docs](../Information/2026-09-07/collected-raw.md#INFO-057)（A-2）で確認済みで、Sonnet 5の$2/$10期間限定の復帰は期限（8/31）経過済みである。値下げの名目表示と、Fast版2倍・キャッシュ10%・トークナイザ実効+0-35%の実効コスト構造が同居する「名目は下がるが実効は管理される」系列は、市場ファイル側の価格設定権力の慣行化観測に接続された。製品面では、AIエージェントが物理デバイスを操作する共通仕様「Model Hardware Standard」のリサーチプレビュー（HHMI Janelia共同・モデル非依存・MCP経由・将来OSS化、[INFO-003](../Information/2026-09-07/collected-raw.md#INFO-003) A-3）が科学研究所と先進製造業の最初のグループに公開された。垂直展開の標準層を自ら置く動きで、採用定量が取れるまでは形式層の評価にとどめる。
+資本と司法の構造が判明した。$15Bリボルバーは8月目標$10Bの1.5倍で、段階制コミット ($1.25B IPO主幹事4行Anchor・$1B・$750M超) のMorgan Stanley主導14行超シンジケート ([INFO-087](../Information/2026-09-08/collected-raw.md#INFO-087)・B-2)。各行がIPO役割確保を目当てにコミットし、Anthropicは枠確定を待ってIPO提出を遅延させる ([INFO-082](../Information/2026-09-08/collected-raw.md#INFO-082)・B-2)。IPO観測機は「10月中旬以降・S-1本文監査財務のみ」に構造化され、評価額$2T到達可能性が報じられている。資本系列は台帳のG$30B (2月・$380B) +H$65B (5/28・$965B)=$95Bに対し、9/7 raw注記の$59.5B説とBloomberg ET見出しの$65B説が並存し、3変種注記として$59.5B説の出所特定がKIQ-ANT-002-CAPに追加された (Arbiter v4.89裁定6)。司法は2026-08-27・カリフォルニア北区連邦地裁Judge Rita F. LinがAnthropic側に大部分支持と2ソース一致 ([INFO-085](../Information/2026-09-08/collected-raw.md#INFO-085)・B-2) で事実命題の精度が向上したが、正規一次不在のためB天井を維持する。
 
-## 2. 判断の重心
+需要側の警告は強まり続ける。IND-013 (critical/rising) はCVSS 10のMCP脆弱性の能動的悪用と、OSV/GHSA掲載の18悪性npmパッケージによるAIコーディングエージェント遠隔制御 ([INFO-084](../Information/2026-09-08/collected-raw.md#INFO-084)・C-2・dev.to単一出所) を計上し、Claude Code/.mcp.json系列への需要側接続の初実装形候補となった。P-7 (需要側接続初実装形) の確度は「中-高」から「中」へ修正された (Arbiter v4.89裁定7)。CVE/GHSA個別識別子は6日目も未特定で、初回掲載日と規模測定が収集指示化されている。
 
-| 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
-|:-:|---|---|:-:|---|
-| 高 | Series G/Hの2独立ラウンド確定（G=2月$30B@$380B、H=5/28 $65B@$965B・計$95B。OpenAI $852Bを初めて上回る） | 調達系列の文字逆転による汚染の解消。H-ANT-002資本基盤（計$95B）の定量的錨。ただしCNBC単一出所集中の感度注記付き | A-2 | [INFO-075](../Information/2026-09-07/collected-raw.md#INFO-075) |
-| 高 | Sonnet 5は$2/$10が8/31期限の期間限定で$3/$15に復帰（実効化から1週間）。Mythos Preview $25/$125は同社史上最高額 | 価格設定権力の慣行化（名目下落×実効管理）のAnthropic脚。SCN-004監視在庫の品質更新 | A-2 | [INFO-057](../Information/2026-09-07/collected-raw.md#INFO-057) |
-| 高 | Model Hardware Standard プレビュー（HHMI Janelia共同・read/writeプリミティブ・モデル非依存・MCP経由・将来OSS化） | エージェントの物理デバイス操作の標準層。形式層の開放として計上し、採用定量で評価を分離 | A-3 | [INFO-003](../Information/2026-09-07/collected-raw.md#INFO-003) |
-| 高 | Lawfare/Fortune本文: 順応報酬構造の全経路とGenAI.milのClaude意図的不在（判決後も除外継続） | H-GOV-001 46%の支柱。本日は表現修正（判決正文一次確認保留・控訴中の法定効果の対等併記）を適用 | B-1 | [INFO-064](../Information/2026-09-06/collected-raw.md#INFO-064) [INFO-065](../Information/2026-09-06/collected-raw.md#INFO-065) |
-| 中 | Anthropic公式「When AI Builds Itself」: RSIは未達・不可避でもない（MIT Tech Reviewも漸進的評価） | AGI定義権の分散。自己改善ナラティブの当事者側抑制材料 | A-2 | [INFO-104](../Information/2026-09-07/collected-raw.md#INFO-104) |
-| 中 | UK AISI: 4月の観測史上最大級サイバー能力ジャンプの対象がClaude Mythos PreviewとGPT-5.5・NCSC国際警告 | 「能力→事故」と「能力→統制」の分岐早期指標の能力側根拠。事故実現でない | A-2 | [INFO-106](../Information/2026-09-07/collected-raw.md#INFO-106) |
-| 中 | S-1は10月中旬へ後ずれ・EDGAR CIK 2133022はOura誤帰属と訂正 | 未監査申告生態系の存続期間延長。Anthropic自身のEDGAR一次は未確認 | B-1/A-2 | [INFO-044](../Information/2026-09-06/collected-raw.md#INFO-044) [INFO-066](../Information/2026-09-06/collected-raw.md#INFO-066) |
-| 中 | JetBrains調査でClaude Code職場採用39%首位（18%から+21pt・Copilot 21%・Cursor 12%）。>$2.5B run-rate | H-ANT-002採用軸の唯一の定量。集約業者経由の出所連鎖注記付き | B-2 | [INFO-067](../Information/2026-09-06/collected-raw.md#INFO-067) |
-| 低 | 音楽出版社新訴訟（8/31報道）・NYC K-8生成AI停止・4州AI法人格禁止 | H-GOV-002の業界規制環境分裂材料（直接の波及証拠でない） | C-2 | [INFO-062](../Information/2026-09-06/collected-raw.md#INFO-062) |
+## §2 判断の重心
 
-## 3. 反証の閾値
+| 重心 | 主張 | 判断根拠 | 信頼度 | 証拠 |
+|---|---|---|---|---|
+| 高 | Sonnet 5現行$2/$10確定・$3/$15は4.x価格。Fable/Mythos 5.1=$10/$50・Opus 5=$5/$25・Managed Agents $0.08/時 | 公式pricingページのライブ検証。v4.88前提の反転 (台帳訂正はmodels/overview再取得まで条件付き) | A-2 | [INFO-088](../Information/2026-09-08/collected-raw.md#INFO-088) |
+| 高 | Fable 5.1/Mythos 5.1は同一モデル・セーフガード相違。キャッシュ75%値下げ・EFS・LSVP・蛋白質50%・金星地図 | 公式発表全文。実測検証付きの差別化事例 (外部2機関) | A-2 | [INFO-091](../Information/2026-09-08/collected-raw.md#INFO-091) |
+| 高 | $15Bリボルバー (段階制コミット・MS主導14行超) 確定待ちでIPO提出遅延・10月中旬・評価$2T可能性 | S-1観測機の構造判明。H-ANT-002資本基盤の新柱候補 (監査財務は依然不在) | B-2 | [INFO-082](../Information/2026-09-08/collected-raw.md#INFO-082) [INFO-087](../Information/2026-09-08/collected-raw.md#INFO-087) |
+| 高 | 資本系列3変種並存 ($95B台帳/$59.5B 9/7注記/$65B Bloomberg ET見出し) | 定量的錨は台帳G+H=$95Bのまま。$59.5B説出所特定が残件 (裁定6) | B-2 | [INFO-087](../Information/2026-09-08/collected-raw.md#INFO-087) |
+| 中 | 判決2026-08-27・Judge Rita F. Lin・Anthropic側に大部分支持・控訴継続中 | H-GOV-001の事実命題精度向上 (v4.88「≈8/31」→確定値)。正規一次不在でB天井維持 | B-2 | [INFO-085](../Information/2026-09-08/collected-raw.md#INFO-085) |
+| 中 | ペンタゴン300万人展開でOpenAI/SpaceXAI各最大$200M・Anthropicは意図的除外 (Hegseth批判公言化) | H-GOV-002 C側の事象単位6度目のC計上 (純新規は命名のみ) | B-2 | [INFO-035](../Information/2026-09-08/collected-raw.md#INFO-035) |
+| 低 | CVSS 10 MCP脆弱性の能動的悪用+18悪性npmがAIコーディングエージェントを遠隔制御 | IND-013需要側系列。P-7確度「中」 (dev.to単一出所・識別子未特定) | C-2 | [INFO-084](../Information/2026-09-08/collected-raw.md#INFO-084) |
 
-| 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
-|---|---|:-:|---|
-| 公的S-1の監査財務（収益内訳・Code カテゴリーのCLI/API/Enterprise内訳）が開示される | 収益・評価額の全系列分裂が解消し、H-ANT-002の確定判定とIND-030ゲート解除が始まる | 2026-10-31（終端条件） | [H-ANT-002](../config/hypotheses.json) [IND-030](../config/indicators.json) |
-| Anthropic公式資本履歴本文+NYT記事直接特定（$900B意味論確認） | 調達系列のCNBC単一出所依存が解消され、資本基盤の錨が二重化される | 次回収集 | [H-ANT-002](../config/hypotheses.json) |
-| ドケット3:26-cv-1996正規一次（判決正文・DPA発動文書）と控訴状況確認（受理有無・審級） | 順応報酬構造の「本文ベース支持」が一次確認に置き換わる。「控訴中の法定効果」代替解釈の判定も始まる | 次回収集 | [H-GOV-001](../config/hypotheses.json) |
-| SCR指定の実効解除（機密ネットワーク承認リスト復帰） | 順応報酬構造（除外継続）の実効性が崩れ、H-GOV-001のC側が更新される | 60日 | [H-GOV-001](../config/hypotheses.json) |
-| METR独立レビューの開始 | 安全性アプローチの第三者検証系列が動く | 90日 | [H-ANT-001](../config/hypotheses.json) |
-| Claude Codeの直接定量（WAU・アクティブシート数・JetBrains一次出所） | H-ANT-002採用軸の出所連鎖注記が解消される | 90日 | [H-ANT-002](../config/hypotheses.json) |
-| MHSの採用実績（統合時間短縮の定量）とOSS化の実行 | 形式層の開放評価が実装層の評価に進む | 90日 | [H-ANT-002](../config/hypotheses.json) |
-| Mythos/Glasswing配給条件（価格・資格・拒否事例）の判別データ | 管理配給の実質が判定され、囲い込みと差別化の配分再評価が発火する | 90日 | [SCN-001](../config/scenarios.json) |
+## §3 反証の閾値
 
-## 4. 進行中の仮説
+| 監査点 | 反証内容 | タイムボックス | 接続先 |
+|---|---|---|---|
+| models/overviewページのライブ再取得 | $2/$10と$3/$15の矛盾の判別。反転確定か公示不整合系列かが確定し台帳訂正の取消/変質が判定される | 次回収集 (最優先) | SCN-004 [IND-027](../config/indicators.json) |
+| Mythos SKU階層・配給判別データ (資格要件・拒否事例・Fast mode可用性) | 管理配給の実質判定。SCN-001 vs SCN-004配分審査の発火 (裁定8事前登録) | 90日 | SCN-001 H-ANT-001 |
+| $59.5B説の出所特定 (9/7 raw注記の系譜) | 資本系列3変種の解消。正しければG/H 2独立ラウンド構造自体の再検証 | 次回収集 | H-ANT-002 [KIQ-ANT-002-CAP] |
+| 公的S-1の監査財務 (収益・評価額の単一確定値) | 収益系列分裂 (消費者$1.6B/run-rate $6-10B/2026年$26B/2027年$52-66B) の一斉解消または特定系列の棄却 | 2026-10-31 | H-ANT-002 [IND-026](../config/indicators.json) |
+| ドケット3:26-cv-1996正規一次の取得 | 判決正文と控訴状況の公式確認。B天井解除または判決内容の修正 | 継続 | H-GOV-001 |
+| $15B枠の最終確定とIPO提出の実行 | 観測機構造 (枠確定待ち→提出の直列) の検証 | 2026-10-31 | H-ANT-002 [IND-029](../config/indicators.json) |
+| CVE/GHSA識別子と18悪性npmの規模測定 | IND-013需要側系列の規模判定とP-7確度の再評価 | 次回収集 | [IND-013](../config/indicators.json) |
+| Claude Code直接定量 (公式文書由来の39%検証) | 集約業者系列の解消 | 継続 | [IND-026](../config/indicators.json) |
 
-| 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
-|---|---|:---:|---|---|---|
-| [H-ANT-001](../config/hypotheses.json) | 安全性アプローチがエンタープライズで「魅力的品質」から「当たり前品質」へ移行する（差別化の次元変化・規制捕獲の側面を含む） | 35% (low) | Lawfare本文は安全性姿勢への経済的圧力の制度化を記述（差別化価値への逆圧力）。本日のINFO-104（RSI未達の公式見解）・INFO-106（能力ジャンプ指定）はいずれも方向の確定材料でない（v4.88±0%） | 安全性認証が契約選定の必須条件化する定量 | 順応報酬の業界全体波及の直接定量 |
-| [H-ANT-002](../config/hypotheses.json) | Claude Code・Agent SDKが開発者エコシステムで急成長し標準ツールになる | 52% (low) | 資本基盤はCNBC一次で2独立ラウンド計$95Bとして確定（系列汚染解消）。ただし資本基盤の独立柱はS-1本文監査財務のみという制度（v4.83）は不変で、採用軸はJetBrains系39%（出所連鎖注記）1本（v4.88±0%） | 公的S-1の監査財務・Claude Code直接定量 | Claude Code採用減少・競合SDKの普及 |
-| [H-ANT-003](../config/hypotheses.json) | マルチクラウド戦略を維持しAWS・GCP・Azure全てで同等機能を提供する | 6% (low) | 本日新規材料なし。GCP同等機能の直接確認は従来課題のまま（v4.88±0%） | 3クラウドでの機能同等性の公式確認 | インフラ二重集中の深化 |
-| [H-GOV-001](../config/hypotheses.json) | 経済的手段（SCR指定・調達禁止・DPA脅迫）で特定AI企業の安全性姿勢に圧力をかける先例が確立された | 46% (medium) | 先例は確立済み（8/27違法確定・恒久差止）。恒久的B天井（正規一次不在）設計どおり確度変更のゲートは不発火。P-1表現修正（判決正文一次確認保留）と控訴状況確認のKIQ追加を同期適用（v4.88±0%） | ドケット正規一次・控訴審の帰結 | 介入の法的無効化確定・政府契約復帰 |
-| [H-GOV-002](../config/hypotheses.json) | Anthropic圧力先例が業界全体に波及し、順応報酬構造で安全性研究・倫理的差別化の戦略的価値が構造的に低下する | 24% (low) | 絶対条件（業界全体波及）は不在継続。INFO-046（38名のchilling effect主張・B-2）は波及の直接証拠でない。$965B評価は順応報酬構造と矛盾する弱I側として在庫計上（v4.88±0%） | 第2企業への同種適用・業界全体のコンプライアンス変更 | 収益の持続成長・評価額の更なる上昇 |
-| [H-CAR-001](../config/hypotheses.json) | 3年以内に中堅企業の業務プロセスが30%以上自動化され中間層雇用が大幅削減される | 36% (low) | Amodei 90%コード予測は当事者予測で実測でない。INFO-107（Google調査・MIT Sloan・人間集約タスク増加）は職務代替エビデンスの弱さを示す第2公式級I側候補として事前登録された在庫更新（v4.88±0%） | 中堅企業の業務自動化率の直接定量 | 自動化証拠の更なる不在累積 |
-| [H-CAR-002](../config/hypotheses.json) | コーディング能力の市場価値が実装スキル低下と設計・評価需要の新スキルで二極化する | 58% (medium) | JetBrains採用39%・.NET実測エージェントPR成功率41.7%→71%は上位極側の定量。P(B)固有B-2+級の定量は複数ラウンド不在継続（v4.88±0%） | 上昇軸（設計・評価）の固有定量 | 上昇軸定量の不在累積 |
-| [H-CAR-003](../config/hypotheses.json) | スマイルカーブ中間圧縮でバリューチェーン中間工程のビジネス職が3年以内に大規模再編され価値が上下流に集中する | 57% (medium) | Goldman 12,000人・Siemens 30,000人採用は下流集中の継続材料。中間工程の新規定量なし（v4.88±0%） | 中間工程の雇用・収益シェアの直接定量 | 中間工程の価値回復の定量 |
+## §4 アクティブ仮説 (v4.89)
 
-## 5. 監視指標
+| ID | 仮説 | 確度 | v4.89根拠 |
+|---|---|---|---|
+| H-ANT-001 | 未整備状態の主要モデルが市場を支配する | 35% low | INFO-091のバイパス可能認識とGray Swan外部テストは両義材料。確度不変 (v4.89±0%) |
+| H-ANT-002 | 2030年までにAnthropicは最初の上場フロンティアラボになる | 52% low | S-1観測機の構造判明 ($15B枠確定待ち→IPO 10月中旬)。資本3変種注記追加。C-only警告カウンター制度化 (裁定4)。±0% |
+| H-ANT-003 | Claude Code型CLIはフォークされず定着する | 6% low | 新規材料なし。±0% |
+| H-GOV-001 | 現行司法判決は供給制限の事実上の恒久化である | 46% medium | 判決日8/27・Lin判事2ソース一致で精度向上・正規一次不在B天井・N=1実質35R。±0% |
+| H-GOV-002 | フロンティアモデルの政府调達は30%以上が単一政党に依存する | 24% low | C側累積 (国際認知・利益相反・交換構造) は全てB/C級で「B系一次なし変更却下」。$200M×2は6度目のC計上。±0% |
+| H-CAR-001 | フロンティアAI労働市場は中間層の構造的欠落に収束する | 36% low | C側 (WPP 18,000職) とI側 (再雇用・16%整備・ROI 8ヶ月摩擦) が同日釣り合い・NY連銀本文8日目未取得。±0% |
+| H-CAR-002 | 2030年までに主要経済はフィジカル制約を実質ゼロにする | 58% medium | P(B)固有B-2と不在継続。C-only警告カウンター制度化 (裁定4)。±0% |
+| H-CAR-003 | 非コンサル型中間シェルは2031年までに主要企業層へ波及する | 57% medium | 中間工程の新規定量なし。±0% |
 
-| 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
-|---|---|---|---|:-:|
-| [IND-013](../config/indicators.json) | サイバー能力閾値・実被害 | critical解消条件（A-2品質実被害報告等） | critical/rising（v4.88）。主因はOpenAI系（Astra Critical指定・ゼロデイ2件）。Mythos Previewの能力ジャンプ指定（[INFO-106](../Information/2026-09-07/collected-raw.md#INFO-106)）は供給側リスク系列の一次追加で事故実現でない | 2026-09-07 |
-| [IND-025](../config/indicators.json) | 測定基盤の健全性 | 複数ベンチ家族での独立計測 | elevated/stable（v4.88）。本日INFO-022（マルチモーダル）は9/6計上済み事象の再出現として台帳訂正（トリガー列は9/6側参照）。Fable 5.1 65.7（AA指数）は対抗系列として健在 | 2026-09-07 |
-| [IND-026](../config/indicators.json) | 観測不能領域台帳 | 直接定量の出現 | high/rising（v4.88）。収益系列分裂（S-1まで）・Claude Code直接定量不在・METR計画段階。調達系列のG/H逆転は解消済み | 2026-09-07 |
-| [IND-027](../config/indicators.json) | エコシステム標準化進展度 | 標準化材料の品質と採用 | high/rising（v4.88）。MHS（モデル非依存・MCP経由・将来OSS化）は標準層の新規材料（プレビュー段階）。Sonnet 5標準$3/$15移行は公式docs確認済みに転換 | 2026-09-07 |
-| [IND-028](../config/indicators.json) | AGI定義権・予測分裂 | 予測共同体の分裂度 | high/rising（v4.88）。Anthropic公式「RSI未達・不可避でない」（[INFO-104](../Information/2026-09-07/collected-raw.md#INFO-104)）とダボスHassabis vs Amodei最大乖離（[INFO-109](../Information/2026-09-07/collected-raw.md#INFO-109)）で分裂のレンジ拡大 | 2026-09-07 |
-| [IND-029](../config/indicators.json) | インフラ債務観測 | 銀団価格・capex下方修正 | high/rising（v4.88）。Anthropicの債務開示はS-1（10月中旬）まで不透明。第1判定機はOpenAI銀団3値強制判定（9/9・2日後） | 2026-09-07 |
-| [IND-030](../config/indicators.json) | S-1ゲート・政府介入の状態 | critical解消3基準 | critical/rising（v4.88）。N=1実質34R。再開トリガー[a][b][c]不発火。S-1観測機はAnthropic 10月中旬・OpenAI 10月視野 | 2026-09-07 |
+## §5 関連指標 (v4.89)
 
-## 6. 変化履歴
+| 指標 | 現在値 | 解釈 |
+|---|---|---|
+| [IND-013](../config/indicators.json) | critical / rising | CVSS 10 MCP能動悪用+18悪性npm (INFO-084・C-2)。需要側接続の初実装形候補・P-7確度「中」 (裁定7)。識別子6日目未特定 |
+| [IND-025](../config/indicators.json) | elevated / stable | OSS追従2件 (Qwen3.8 Max 1.3pt・GLM 5 0.3pt) は不充足。交叉確認ガード(A)はARC-AGI-3公式値も同一ベンチ家族自己申告で不充足 |
+| [IND-026](../config/indicators.json) | high / rising | 収益系列分裂とClaude Code直接定量不在が継続 (調達G/Hは解消・3変種注記) |
+| [IND-027](../config/indicators.json) | high / rising | Sonnet 5 $2/$10標準化を公式ライブ検証で床側確認 (INFO-088)。$3/$15は4.x価格。反転確定は再取得まで条件付き (裁定2) |
+| [IND-028](../config/indicators.json) | high / rising | 現行週の予測分裂 (AGI era vs 数十年先) +素数ギャップ証明公開 (外部検証待ちの一次級適合例) |
+| [IND-029](../config/indicators.json) | high / rising | 第1観測機=OpenAI銀団3値強制判定・観測窓閉鎖≈2026-09-09 (機械的執行義務)。Anthropic $15Bリボルバー1.5倍増額 (INFO-082/087) |
+| [IND-030](../config/indicators.json) | critical / rising | N=1実質35R。Astra「監視可能性低下」公式自己開示 (INFO-089・A-2)。Anthropic S-1観測機は10月中旬 |
 
-| 日付 | 変更 | きっかけ | 過去 → 現在 |
-|:-:|---|---|---|
-| 2026-09-07 | 台帳訂正に伴う全面書き直し。Series G/Hの2独立ラウンド確定（CNBC一次+NYT別集計の訂正・計$95B）で調達系列の文字逆転汚染を解消。Sonnet 5 $3/$15復帰の公式docs確認（実効化から1週間）・Model Hardware Standard プレビュー・RSI公式見解・UK AISI能力ジャンプ指定を新規計上。P-1表現修正（判決正文一次確認保留・控訴中の法定効果の対等併記）を適用。§5全指標をv4.88値に更新 | Arbiter v4.88裁定2(b)/裁定7 + [INFO-075](../Information/2026-09-07/collected-raw.md#INFO-075) | H-GOV-001 46%（±0%）・H-ANT-002 52%（±0%）ほか全件±0% |
-| 2026-09-06 | §0〜§7書き直し。順応報酬構造をLawfare/Fortune本文で確定（Claude不在は意図的・除外継続）。Series G/H文字逆転による評価額系列汚染とS-1 10月中旬後ずれ・EDGAR CIK訂正・JetBrains採用39%首位（同一URL訂正でC計上1本）・Compliance API・音楽出版社新訴訟を新規計上 | [INFO-064](../Information/2026-09-06/collected-raw.md#INFO-064)/[INFO-065](../Information/2026-09-06/collected-raw.md#INFO-065)本文確認 + [INFO-068](../Information/2026-09-06/collected-raw.md#INFO-068)系列汚染 | H-GOV-001 46%（±0%）・H-ANT-002 52%（±0%）ほか全件±0% |
-| 2026-09-05 | §0〜§7書き直し。判決後のPentagon行動（SCR維持+GenAI.mil Claude除外）を順応報酬構造の初の定量観測として反映（P-2中-高）。対策報告・Fable 5.1複数指数首位・Sonnet 5標準$3/$15移行・X Ads MCP・PubMatic本番を新規計上 | 判決後報酬構造の定量観測 | H-GOV-001 46%（±0%）ほか全件±0% |
-| 2026-08-31 | 全面書き直し。判決双方向評価台帳の実質判定・S-1ゲート入口の未監査申告生態系一括格付け | 連邦地裁判決 | H-GOV-001 46%（±0%）・H-ANT-002 52%（±0%） |
-| 2026-08-22 | 全面書き直し。H-GOV-001 44→46%（判決報道初回・C+2%） | [INFO-078](../Information/2026-08-22/collected-raw.md#INFO-078) | H-GOV-001 44→46% |
-| 2026-08-17 | 全面書き直し。H-GOV-001 medium移行（41→44%） | [INFO-062](../Information/2026-08-17/collected-raw.md#INFO-062) | H-GOV-001 41% low→44% medium |
+## §6 変化履歴
 
-## 7. ブラインドスポット
+| 日付 | 変更内容 | きっかけ | 確度変動 |
+|---|---|---|---|
+| 2026-09-08 | 台帳訂正に伴う全面書き直し。公式pricingライブ検証 (INFO-088) でSonnet 5 $2/$10現行確定 ($3/$15=4.x価格・v4.88前提の条件付き反転)。Fable/Mythos 5.1公式全文 (同一モデル・EFS・LSVP) と$15Bリボルバー/IPO構造・資本3変種注記・判決日8/27確定を新規計上。§5をv4.89値に更新 | Arbiter v4.89裁定2/6 + [INFO-088](../Information/2026-09-08/collected-raw.md#INFO-088)/[091](../Information/2026-09-08/collected-raw.md#INFO-091) | 全件±0% |
+| 2026-09-07 | 収益系列分裂とClaude Code 39%出所注記。調達系列のG/H文字逆転解消 (Series G=2月$30B@$380B・H=5/28 $65B@$965B) | Arbiter v4.88 + INFO-075 | 全件±0% |
+| 2026-09-06 | Sonnet 5 $3/$15復帰検証とDaybreak社内SNS投稿の無期化/一段階化集計 | Arbiter v4.87 | 全件±0% |
+| 2026-09-05 | $2T IPO報道初出・H-GOV-001 45→46% (判決あり報道2ソース) | Arbiter v4.86 | H-GOV-001 +1% |
+| 2026-09-03 | Claude Opus 5発表・蛋白質・セーフガード差し替え構造を§1/§2に反映 | Arbiter v4.84 | - |
 
-- 調達基盤の定量的錨がCNBC単一出所に集中している。NYT別集計（$900B/$730B）の意味論（評価時点差の具体・対象範囲）は未確認で、公式資本履歴本文が取れるまで系列の二重化は完了しない。
-- S-1後ずれにより未監査申告生態系（走行収益・run-rate・bookings）の存続期間が延長された。監査財務との差は未知数。
-- ドケット3:26-cv-1996の正規一次と控訴状況（受理有無・審級）が未達。「行政defy」と「控訴中の法定効果」の判別材料がないまま、両読みを対等に置いている。
-- Claude Code 39%はJetBrains一次でない集約業者経由。直接定量（WAU・シート数）の取得は優先KIQのまま。
-- Model Hardware Standardはリサーチプレビュー段階で、統合時間短縮（週/月から時間/分へ）の主張は当事者数值。採用実績とOSS化の実行は未観測。
-- Mythos/Glasswingの管理配給は単一ソース系で、配給条件（価格・資格・拒否事例）の判別データは未出現。能力ジャンプ指定（UK AISI）と管理配給の同一性は、事故と統制の分岐早期指標として観察が始まったばかりである。
+## §7 既知の限定とブラインドスポット
 
----
+1. pricingページとmodels/overviewページの矛盾が未解決である。台帳訂正の取消確定は再取得まで条件付きで、両ページが現行も矛盾すれば公示不整合系列として第2事例は取消でなく変質存続となる (裁定2)。
+2. Mythos SKU階層 ($25/$125 Preview vs $10/$50 5.1) が要追証のまま。配給の資格・拒否事例・Fast mode可用性の判別データがSCN-001分岐審査の発火条件 (裁定8)。
+3. 資本系列3変種並存 ($95B/$59.5B/$65B)。$59.5B説が正しければ2独立ラウンド構造自体の再検証が必要で、出所特定は次回収集の残件。
+4. ドケット3:26-cv-1996正規一次と控訴審状況が未達。判決解釈はB-2報道2ソースに依存している。
+5. Claude Code 39% ($2B+ ARR) は集約業者経由で、公式文書による直接検証が不在。
+6. C-only警告の連続ラウンド数が機械記録化された (裁定4) が、これは陳腐化検出の制度化であって警告自体の解消ではない。H-ANT-002は52%で±0%継続。
 
-## 付録: 直近30日の参照Evidence
+## 付録A 直近30日の参照Evidence
 
-| Evidence | 用途 |
-|---|---|
-| [INFO-075](../Information/2026-09-07/collected-raw.md#INFO-075) | Series G/Hの2独立ラウンド確定・$965B vs OpenAI $852B(A-2・CNBC一次+NYT別集計・台帳訂正2(b)) |
-| [INFO-057](../Information/2026-09-07/collected-raw.md#INFO-057) | Claude現行4層価格・Sonnet 5 $3/$15復帰実効化(A-2・公式docs・SCN-004監視在庫品質更新) |
-| [INFO-003](../Information/2026-09-07/collected-raw.md#INFO-003) | Model Hardware Standard プレビュー(A-3・HHMI Janelia共同・将来OSS化) |
-| [INFO-104](../Information/2026-09-07/collected-raw.md#INFO-104) | Anthropic公式「RSI未達・不可避でない」(A-2・IND-028) |
-| [INFO-106](../Information/2026-09-07/collected-raw.md#INFO-106) | UK AISI能力ジャンプ対象=Mythos Preview+GPT-5.5(A-2・BS-001/SCN-001分岐指標) |
-| [INFO-109](../Information/2026-09-07/collected-raw.md#INFO-109) | ダボスHassabis vs Amodei最大乖離(A-2・IND-028) |
-| [INFO-064](../Information/2026-09-06/collected-raw.md#INFO-064) | Lawfare「Governance by Shakedown」本文(B-1・H-GOV-001支柱) |
-| [INFO-065](../Information/2026-09-06/collected-raw.md#INFO-065) | Fortune GenAI.mil本文・Claude意図的不在(B-1) |
-| [INFO-044](../Information/2026-09-06/collected-raw.md#INFO-044) | S-1 10月中旬後ずれ(B-1・Reuters独占) |
-| [INFO-066](../Information/2026-09-06/collected-raw.md#INFO-066) | EDGAR CIK 2133022=Oura誤帰属訂正(A-2) |
-| [INFO-067](../Information/2026-09-06/collected-raw.md#INFO-067) | JetBrains職場採用39%首位(B-2・出所連鎖注記・C計上1本) |
-| [INFO-046](../Information/2026-09-07/collected-raw.md#INFO-046) | 38名のAI関係者によるchilling effect主張(B-2・H-GOV-002弱材料) |
-| [Arbiter v4.88](../state/arbiter-2026-09-07.md) | 台帳訂正4件（うち(b) KIQ-ANT-002-CAP訂正）・全19アクティブ仮説±0%・P-1表現修正 |
-| [Arbiter v4.87](../state/arbiter-2026-09-06.md) | 確度全件±0%・Series G本文が次回最優先KIQ |
+| 日付 | 証拠 | 信用 | 事項 |
+|---|---|---|---|
+| 2026-09-08 | [INFO-088](../Information/2026-09-08/collected-raw.md#INFO-088) | A-2 | 公式pricingライブ検証: Sonnet 5=$2/$10確定・$3/$15は4.x価格 (裁定2の条件付き台帳訂正) |
+| 2026-09-08 | [INFO-091](../Information/2026-09-08/collected-raw.md#INFO-091) | A-2 | Fable 5.1/Mythos 5.1公式全文: 同一モデル・EFS・LSVP・蛋白質50%・金星地図 |
+| 2026-09-08 | [INFO-082](../Information/2026-09-08/collected-raw.md#INFO-082) [INFO-087](../Information/2026-09-08/collected-raw.md#INFO-087) | B-2 | $15Bリボルバー14行超・段階制コミット・IPO提出遅延 (10月中旬・$2T可能性) |
+| 2026-09-08 | [INFO-085](../Information/2026-09-08/collected-raw.md#INFO-085) | B-2 | 判決2026-08-27・Judge Rita F. Lin・Anthropic側大部分支持 (2ソース一致) |
+| 2026-09-08 | [INFO-035](../Information/2026-09-08/collected-raw.md#INFO-035) | B-2 | ペンタゴン300万人展開・OpenAI/SpaceXAI各$200M・Anthropic意図的除外 (6度目C計上) |
+| 2026-09-08 | [INFO-084](../Information/2026-09-08/collected-raw.md#INFO-084) | C-2 | CVSS 10 MCP能動悪用+18悪性npm (IND-013・P-7確度「中」) |
+| 2026-09-07 | [INFO-075](../Information/2026-09-07/collected-raw.md#INFO-075) | A-2 | Series G (2月$30B@$380B) / Series H (5/28 $65B@$965B) の文字逆転解消 |
+| 2026-09-07 | INFO-057 | A-2申立 | models/overviewの$3/$15表示 (INFO-088と矛盾・再取得待ち) |
+| 2026-09-06 | INFO-064 | B-2 | $2T IPO評価額報道 (後のINFO-082/087で構造確定) |
+| 2026-09-05 | INFO-065 | B-1 | GenAI.mil 300万人展開本体 (H-GOV-002 C側) |
