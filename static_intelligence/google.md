@@ -1,129 +1,122 @@
 # Google / DeepMind
 
-> 最終判断更新: 2026-09-07
+> 最終判断更新: 2026-09-15
 > 全体確信度: 測定不能（H-GOO-001 indeterminate維持）
-> 情報非対称性: Geminiアプリ月間10億ユーザーはGoogle自身が公表した（[INFO-013](../Information/2026-08-19/collected-raw.md#INFO-013) A-1）が、Gemini固有のエンタープライズ定量採用データ（シェア・収益・利用率の直接定量A-2+）は57R超にわたり構造的に不在（v4.70計上）。MAUは消費者指標でありエンタープライズ採用シェアではない。UBS試算はGoogle Cloud収益の27%（2026）→48%超（2027・$124B超）がOpenAI+Anthropicの2社依存と定量化し（[INFO-067](../Information/2026-08-25/collected-raw.md#INFO-067) B-2）、Cloud収益成長とGemini固有需要の分離不能性が拡大したまま。GEAP公式ドキュメント（[INFO-008](../Information/2026-09-05/collected-raw.md#INFO-008) A-2）は文書層の整備であって採用定量ではない。3.6〜3.8 Flashのキャンペーン価格$0.75/$3.75（キャッシュ$0.075）→2027年1月1日$1.50/$7.50移行は公式料金ページで公示済み（[INFO-059](../Information/2026-09-07/collected-raw.md#INFO-059) A-3）。半額$0.38/$1.88報道（[INFO-045](../Information/2026-08-23/collected-raw.md#INFO-045) B-2）がどの枠組みの価格かは未判別。antigravityの企業ガバナンス統合はGoogle Cloud公式Facebook投稿（[INFO-013](../Information/2026-09-07/collected-raw.md#INFO-013) A-2）で、公式ドキュメント確認までは「発表」域として割引付きで扱う。Deep Thinkグラウンデッド視覚推論95首位（[INFO-010](../Information/2026-09-05/collected-raw.md#INFO-010)）はC-2品質。
+> 情報非対称性: Gemini固有のエンタープライズ定量採用データ（シェア・収益・利用率の直接定量A-2+）は60R超にわたり構造的に不在。MAUは消費者指標でありエンタープライズ採用シェアではない。UBS試算はGoogle Cloud収益の27%（2026）→48%超（2027）がOpenAI+Anthropicの2社依存と定量化し、Cloud収益成長とGemini固有需要の分離不能性が拡大したまま。Interactions APIはv1betaのdocs層でGA・課金単位・採用条件は未公告（[INFO-006](../Information/2026-09-15/collected-raw.md#INFO-006) A-3）。Hassabis「もはやDeepMindを率いない」報道は要追証（[INFO-093](../Information/2026-09-15/collected-raw.md#INFO-093) B-2）。フィンランド€13B投資は報道ベース（[INFO-081](../Information/2026-09-15/collected-raw.md#INFO-081) B-2）。Flash系3.6〜3.8の期限付き価格と2027/1/1倍額移行は公式公示済み（[INFO-066](../Information/2026-09-15/collected-raw.md#INFO-066) A-3）。
 > 主参照: [H-GOO-001](../config/hypotheses.json) [H-GOO-002](../config/hypotheses.json) [H-GOO-003](../config/hypotheses.json) [IND-025](../config/indicators.json) [IND-026](../config/indicators.json) [IND-027](../config/indicators.json) [IND-028](../config/indicators.json) [IND-030](../config/indicators.json)
 
 ## 0. 一文要約
 
-我々はGoogleを「GEAPの文書層を整備しSKILL.md配給形式を公共財化しながら、固有の採用定量だけが57R超にわたり現れない企業」と読む枠組みを維持する。確度の変化は1件である。[H-GOO-002](../config/hypotheses.json)はgoogle/skillsとgoogle/agents-cliの公開（[INFO-021](../Information/2026-09-01/collected-raw.md#INFO-021) A-1・GitHub公式・任意のコーディングエージェント向け）で24%から25%へ上がった（v4.84・9/1裁定）。配給形式の開放はデプロイ実体の開放でないため、次の+1%にはGCP公式self-deploy利用定量または同等のデプロイ実体の開放定量を要求する条件が新しく事前登録された。
-
-[H-GOO-003](../config/hypotheses.json) 48% mediumは、v4.06が事前登録した「48%以下継続でmedium→low移行検討」が長期未執行のままだったプロセス負債を本日解消した。審査の結果は移行しないである。Gemini 3.8 FlashがDeepSWEでAstraを上回る（73.8% vs 73.3%・[INFO-047](../Information/2026-09-05/collected-raw.md#INFO-047) B-1）第三者勝利とDeep Thinkのグラウンデッド首位（[INFO-010](../Information/2026-09-05/collected-raw.md#INFO-010)）が移行反対方向に効いた。旧条件は明示解除され、Google固有の採用定量出現時または2026-12-31のいずれか早い方で確度ラベルを再審査する新条件に置き換わった。[H-GOO-001](../config/hypotheses.json) 50% indeterminateはC-onlyの駐車化注記付きで据え置きである。
+我々はGoogleを「Interactions APIというエージェント対話単位の新API形状とサブエージェント階層を想定したモデル編成で開発者面の供給を広げながら、固有の採用定量だけが現れ続けない企業」と読む。Gemini API公式docsにInteractions API（v1beta/interactions・generateContentと別系統）が登場し、Gemini 3.8 Flashは長時間ソフトウェアエンジニアリングと自律エージェント向け、3.5 Flash-Liteはサブエージェント向けと明記された ([INFO-006](../Information/2026-09-15/collected-raw.md#INFO-006) A-3)。価格面では3.8 Flashの導入価格$0.75/$3.75と2027-01-01からの倍額移行が期限付きで公示された ([INFO-066](../Information/2026-09-15/collected-raw.md#INFO-066) A-3)。HassabisがDeepMindを率いないと報じられ減速提案を支持した一方 ([INFO-093](../Information/2026-09-15/collected-raw.md#INFO-093) B-2・要追証)、上院duty of care法案の対象はGoogle等の最先端モデルである ([INFO-107](../Information/2026-09-15/collected-raw.md#INFO-107) A-2)。仮説確度は3件とも±0% (v4.91・Blue失敗6日連続による保留) である。
 
 ## 1. コア判断
 
-全体確信度は測定不能に置く。Gemini固有の定量採用データが構造的に不在である以上、この座標軸は今回の更新でも変わらない。変わったのは3点である。配給形式の公共財化がA-1品質で確定したこと、研究卓越性仮説の条件が運用可能な形に入れ替わったこと、そして第三者ベンチで「全部勝ち」の反例が取れたことである。
+### API形状とモデル編成の拡張
 
-### 配給形式の公共財化と新しい条件
+Interactions APIはgenerateContent系統と別の、エージェントインタラクション単位の新しいAPI形状である ([INFO-006](../Information/2026-09-15/collected-raw.md#INFO-006) A-3・docs最終更新9/10)。モデル編成はエージェント階層を前提にした設計を見せる。Gemini 3.8 Flashは「最も知的なFlash」として長時間ソフトウェアエンジニアリング・自律エージェント・複雑なエンタープライズワークフロー向けと位置付けられ、Gemini 3.5 Flash-Liteは低レイテンシ高スループットのサブエージェント向けと明記された。オーケストレータに3.8 Flash、ワーカーに3.5 Flash-Liteというマルチエージェント階層の価格階層設計である。Gemini 3.1 Pro（マルチモーダル理解で世界最高）・Nano Banana 2/Pro・Omni Flash・3.5 Transcribe・Roboticsが同じdocs族で確認できる。ただしInteractions APIはv1betaの文書層であり、GA時期・課金単位・採用条件は未公告である。9/8 INFO-011のGemini 3.8示唆（fairwind画像URL）が公式docsで実体化した。
 
-v4.84（9/1裁定）はgoogle/skillsとgoogle/agents-cliの公開を「SKILL.md配給形式の公共財化」として認定し、再評価条件「A-2以上の開放C出現」の条件充足を形式的に満たすとして[H-GOO-002](../config/hypotheses.json)を+1%（24→25%）とした。審査は条件充足性のみで実施し（審査前アンカリングの排除）、逆方向材料の層混同も排除された。GEAP中央統制（プラットフォーム層）と紹介価格の2倍予約（価格層）は形式層命題の反証として不適格である（v4.69層区別原則）。9/4にはgemini-skills公式リポジトリ（[INFO-013](../Information/2026-09-05/collected-raw.md#INFO-013) A-2）が続き、Gemini Enterpriseドキュメントでスキルを再利用可能なカスタム命令として管理する機能が定義された。ただし配給形式の開放はデプロイ実体の開放でない。同一証拠クラスからの反復積み上げを防ぐため、次回以降の+1%には「GCP公式self-deploy利用定量または同等のデプロイ実体の開放定量」を要求する条件文言の改訂が事前登録済みである。
+### 期限付き価格の明示
 
-### 研究卓越性仮説の条件入替
+3.8 FlashのAPI価格は入力$0.75・出力$3.75/100万トークンの導入価格で、2027-01-01に$1.50/$7.50へ上昇する ([INFO-066](../Information/2026-09-15/collected-raw.md#INFO-066) A-3・9/2発効)。3.7 Flash（8/13発効）と同額に統一され、3.6 Flashは出力$9から$7.50へ値下げした。Pro系は200K超のロングコンテキストで$2/$12から$4/$18へ倍増する。割引を先遣し期限を明示する価格設計は異例で、導入期の囲い込みと期限後の値上げを同じ仕組みに載せた形である。コンシューマー側はAI Plus $4.99/Pro $19.99/Ultra $99.99+の階層が確認された。
 
-[H-GOO-003](../config/hypotheses.json)のv4.06条件（48%以下継続でmedium→low移行検討）は前提が「鑑別証拠の長期不在」であり、A-2+品質の研究卓越性定量が20R連続未達成だった時代の産物だった。本日の審査では、Gemini 3.8 FlashのDeepSWE第三者勝利（[INFO-047](../Information/2026-09-05/collected-raw.md#INFO-047) B-1）とDeep Thinkのグラウンデッド視覚推論95首位（[INFO-010](../Information/2026-09-05/collected-raw.md#INFO-010) C-2）が鑑別証拠として現れたため移行は不支持となり、旧条件を明示解除した。新条件は「Google固有の採用定量（GEAP利用実績・デプロイ実体・事業KPI影響の一次確認）出現時または2026-12-31のいずれか早い方で確度ラベル再審査」である。BenchLMマルチモーダル総合ではQwen3.8 Max 87.1・Kimi K3 86.2・Claude Opus 5 85.9が上位を占め（[INFO-010](../Information/2026-09-05/collected-raw.md#INFO-010)）、Geminiは部分指標（グラウンデッド）首位に留まる。DeepSWEの勝利は「全部勝ち」でない反例としてAstra評価分裂の対極に位置する第三者横断データである。
+### 資本とインフラの展開
 
-### GEAP文書層とエコシステムの逆流
+フィンランドへの€130億（約$150億）投資（3新設+1拡張+エネルギー支援・原子力協定）は欧州最大の単一投資である ([INFO-081](../Information/2026-09-15/collected-raw.md#INFO-081) B-2)。2026年の世界AIインフラ投資は$1兆超（Goldman・前年比+42%）・米国企業が58%という文脈で、Googleは欧州側の最大級プレーヤーになる。一方で2027年目標データセンターの約60%がまだ着工していないという「発表と実施のギャップ」が同じ報告群にある。履行率は次期検証点である。
 
-GEAP公式ドキュメント（[INFO-008](../Information/2026-09-05/collected-raw.md#INFO-008) A-2・9/2更新）は、構築・デプロイ・ガバナンス・最適化の統合プラットフォームを文書層で確定させた。Anthropic側記事で「Google Agent Platform」へのClaude提供が言及され、競合モデルの自社プラットフォーム搭載という同居構造が温存されている。エコシステム全体では逆流も観測される。機械トラフィックが57.5%で人間を超え（2026年6月）、OpenAI・Google・Anthropicの3社でエージェント市場84%を保有する（フランス競争当局・[INFO-026](../Information/2026-09-05/collected-raw.md#INFO-026) B-2）。Googleのトークン処理は9.7兆（2024-05）から3.2京超（2026-05）へ約7倍に伸びた。他方でクロスエージェント4,500スキルの流通（[INFO-014](../Information/2026-09-05/collected-raw.md#INFO-014) C-2）が形式層の開放を底上げし、84%集中と開放流通が逆方向に同時進行する構造（層区別原則の再確認）は[SCN-003](../config/scenarios.json) 25%の材料である。規制面ではAnthropicがマサチューセッツ州安全法案を支持してOpenAI/Googleと決別し（[INFO-053](../Information/2026-09-05/collected-raw.md#INFO-053)）、業界の規制戦線が一枚岩でないことをGoogleはEU AI法執行と並んで受け止める。Google自身は新規コードの75%がAI生成（2026年4月・エンジニア承認済み・[INFO-049](../Information/2026-09-05/collected-raw.md#INFO-049) B-2）と、採用側の最大値を申告している。
+### DeepMind指揮系統の変数
+
+HassabisがAmodei減速提案を「正しい進路」と支持した発言とともに、「もはやDeepMindを率いない」との報道が副次的に確認された ([INFO-093](../Information/2026-09-15/collected-raw.md#INFO-093) B-2・要追証)。8/15の組織再編（Koray統括・Hassabis専任）の延長線だが、統合シナリーの指揮系統が移ったなら[H-GOO-003](../config/hypotheses.json)（DeepMind統合シナジー）の前提条件が変わる。研究卓越性の指標面は分裂したままである。MMLU-Pro単体はGemini 3 Proが90%で首位（269モデル中）、AA Intelligence Indexの更新版では3.8 Flashの急上昇が話題化し ([INFO-071](../Information/2026-09-15/collected-raw.md#INFO-071) C-2)、FACTS Grounding（文書忠実度）はGemini系が系統的に強い ([INFO-073](../Information/2026-09-15/collected-raw.md#INFO-073) C-2)。ただしBenchLMマルチモーダル総合では3.5 Flashが86.9で6位・3.8 Flashは82.8に留まり ([INFO-029](../Information/2026-09-15/collected-raw.md#INFO-029) C-2)、Code Arena WebDevの人間投票上位5社にはGeminiが入っていない ([INFO-070](../Information/2026-09-15/collected-raw.md#INFO-070) C-2)。ベンチ毎の首位が全く異なる「総合首位の不存在」がGoogleでも例外でない。
+
+### 規制環境と業界構造
+
+上院交渉団のAI法案はAI開発者に注意義務を創設し、米政府に危険と判断されたモデルのリリース阻止権を与える構造で、対象は最先端モデル（Google/Anthropic/OpenAI等）である ([INFO-107](../Information/2026-09-15/collected-raw.md#INFO-107) A-2)。州法先行排除条項はトランプEO（州規制封じ・[INFO-046](../Information/2026-09-15/collected-raw.md#INFO-046) B-2）と同じ連邦集中化の方向である。GoogleはAnthropic・OpenAIと7月からAI安全の共通標準団体創設を協議していると報じられ ([INFO-079](../Information/2026-09-15/collected-raw.md#INFO-079) B-2)、Anthropicへの$20億出資も「代理戦争」構造の一部として報じられた ([INFO-078](../Information/2026-09-15/collected-raw.md#INFO-078) B-2)。規制と資本の両面で、Googleは3社協調の中心にいる。
 
 ## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
 |:-:|---|---|:-:|---|
-| 高 | google/skills+google/agents-cli公開（9/1・GitHub公式・任意のコーディングエージェント向け） | [H-GOO-002](../config/hypotheses.json) +1%（24→25%・v4.84）の直接根拠。SKILL.md配給形式の公共財化 | A-1 | [INFO-021](../Information/2026-09-01/collected-raw.md#INFO-021) |
-| 高 | gemini-skills公式リポジトリ（9/4）: スキルを軽量な文脈追加手法と定義・Gemini Enterpriseで再利用可能カスタム命令として管理 | v4.84と同一キャンペーン族の反響。context層（Gemini）とshell層（SKILL.md）の設計思想の対比のみ注記 | A-2 | [INFO-013](../Information/2026-09-05/collected-raw.md#INFO-013) |
-| 高 | Gemini 3.8 FlashがDeepSWEでAstra超え（73.8% vs 73.3%・第三者計測） | [H-GOO-003](../config/hypotheses.json)条件入替審査のC側材料。「全部勝ち」でない反例として測定基盤文脈でも重要 | B-1 | [INFO-047](../Information/2026-09-05/collected-raw.md#INFO-047) |
-| 高 | GEAP公式ドキュメント公開（9/2更新）: 構築・デプロイ・ガバナンス・最適化の統合プラットフォーム。ClaudeのGoogle Agent Platform搭載言及も | [H-GOO-001](../config/hypotheses.json) C-side（C-only警告付き）。文書層の整備で採用定量ではない | A-2 | [INFO-008](../Information/2026-09-05/collected-raw.md#INFO-008) |
-| 高 | 機械トラフィック57.5%で人間超え（6月）・エージェントは人間比5倍トークン（85%超がキャッシュ再読み）・3社でエージェント市場84%（仏競争当局） | [SCN-003](../config/scenarios.json) 25%の集中材料。Googleトークン処理3.2京超（約7倍YoY） | B-2 | [INFO-026](../Information/2026-09-05/collected-raw.md#INFO-026) |
-| 中 | Deep Thinkグラウンデッド視覚推論95首位（BenchLM部分指標・総合はQwen3.8 Max 87.1首位） | [H-GOO-003](../config/hypotheses.json)移行反対方向の第二材料。C-2品質で計上留保 | C-2 | [INFO-010](../Information/2026-09-05/collected-raw.md#INFO-010) |
-| 中 | Google新規コード75%AI生成（2026年4月・エンジニア承認済み）・採用84% vs 信頼33%の乖離 | [IND-026](../config/indicators.json)三次定量。採用側最大値の当事者申告 | B-2 | [INFO-049](../Information/2026-09-05/collected-raw.md#INFO-049) |
-| 中 | 9月価格表: Gemini 3.1 Flash-Lite $0.25/$1.50・3.6 Flash $1.50/$7.50・3.1 Pro $2/$12（プレビュー） | 低価格帯の拡大継続。2027年1月倍増予約（3.7 Flash）はSCN-003材料として蓄積 | C-2 | [INFO-029](../Information/2026-09-05/collected-raw.md#INFO-029) |
-| 中 | Gemini 3.6〜3.8 Flashキャンペーン価格が公式料金ページで公示（$0.75/$3.75・キャッシュ$0.075→2027/1/1に$1.50/$7.50移行） | 価格層の一次確認。「定義未統一」注記の公式側確定。半額報道との枠組み判別は残る | A-3 | [INFO-059](../Information/2026-09-07/collected-raw.md#INFO-059) |
-| 中 | antigravityがGemini Enterpriseのセキュリティ・コンプライアンス保護下に統合（Google Cloud公式Facebook投稿） | [SCN-001](../config/scenarios.json)判別データのA-2級2点目（Daybreak系譜）だが「発表」域・ソース形態注記付き | A-2 | [INFO-013](../Information/2026-09-07/collected-raw.md#INFO-013) |
-| 中 | Anthropicがマサチューセッツ安全法案支持でOpenAI/Googleと決別・Amodei「too blunt」批判・AI DCモラトリアム法提出 | 規制戦線の分裂。GoogleはEU AI法執行と州規制乱立の両方に曝される | B-2 | [INFO-053](../Information/2026-09-05/collected-raw.md#INFO-053) |
-| 中 | Google Ads MCPは読み取り専用（2025-10・OSS）のまま、X Ads MCPは本番書き込み10ツールで先行 | 広告MCP標準化競争でのGoogleの位置。書き込み権限の標準化は攻撃表面の拡大 | B-2 | [INFO-025](../Information/2026-09-05/collected-raw.md#INFO-025) |
+| 高 | Interactions API新設（v1beta/interactions・generateContentと別系統）+ モデル編成の階層化（3.8 Flash=長時間SWE/自律エージェント・3.5 Flash-Lite=サブエージェント） | エージェント階層を想定した供給面の拡張。GA・課金単位は未公告で文書層の域 | A-3 | [INFO-006](../Information/2026-09-15/collected-raw.md#INFO-006) |
+| 高 | 3.8 Flash導入価格$0.75/$3.75（2026-12-31まで）→2027-01-01に倍額。3.6/3.7/3.8 Flash同額統一・Pro系ロングコンテキスト2倍 | 期限付き割引の明示は異例。[H-GOO-002](../config/hypotheses.json)価格層と[SCN-003](../config/scenarios.json)材料の一次確定 | A-3 | [INFO-066](../Information/2026-09-15/collected-raw.md#INFO-066) |
+| 高 | Hassabis「もはやDeepMindを率いない」報道・減速提案支持 | [H-GOO-003](../config/hypotheses.json)（DeepMind統合シナジー）の前提条件に関わる変数。要追証 | B-2 | [INFO-093](../Information/2026-09-15/collected-raw.md#INFO-093) |
+| 高 | フィンランド€130億投資（3新設+1拡張+エネルギー支援・原子力協定）= 欧州最大単一投資 | インフラ統合の実体。[IND-029](../config/indicators.json)文脈。2027年対象DCの60%未着工という履行ギャップが対にある | B-2 | [INFO-081](../Information/2026-09-15/collected-raw.md#INFO-081) |
+| 高 | 上院duty of care法案（リリース阻止権+連邦地裁チャレンジ・州法先行排除）の対象は最先端モデル（Google/Anthropic/OpenAI等） | 規制リスクの構造化。条文提出時の検証が残る | A-2 | [INFO-107](../Information/2026-09-15/collected-raw.md#INFO-107) |
+| 中 | MMLU-Pro Gemini 3 Pro 90%首位（269モデル中）・AA更新版で3.8 Flash急上昇・FACTS GroundingはGemini系が系統的に強い | [H-GOO-003](../config/hypotheses.json)の研究卓越性材料。ただし単一ベンチ毎の分裂（総合首位不存在）は不変 | C-2 | [INFO-071](../Information/2026-09-15/collected-raw.md#INFO-071) [INFO-073](../Information/2026-09-15/collected-raw.md#INFO-073) |
+| 中 | BenchLMマルチモーダル総合で3.5 Flash 86.9（6位）・3.8 Flash 82.8・Code Arena WebDev上位5社にGemini不在 | 部分指標首位と総合中位の併存。自家選択リスクの対抗データ | C-2 | [INFO-029](../Information/2026-09-15/collected-raw.md#INFO-029) [INFO-070](../Information/2026-09-15/collected-raw.md#INFO-070) |
+| 中 | 3社（Google/Anthropic/OpenAI）が7月からAI安全共通標準団体創設を協議 | 業界主導の民間標準化。[H-GOV-002](../config/hypotheses.json)の代替統制構造 | B-2 | [INFO-079](../Information/2026-09-15/collected-raw.md#INFO-079) |
+| 中 | GoogleのAnthropicへの$20億出資報道（Amazon/Microsoft/Googleが双方に出資する「代理戦争」構造） | 資本面での3社協調と競争の同居。[SCN-005](../config/scenarios.json)文脈 | B-2 | [INFO-078](../Information/2026-09-15/collected-raw.md#INFO-078) |
+| 低 | トランプEOで州独自AI規制を封じ（連邦単一アプローチ・業界の規制強化要請を事実上拒否） | 規制権限の連邦集中。EO番号未確認・FB経由で一次確認待ち | B-2 | [INFO-046](../Information/2026-09-15/collected-raw.md#INFO-046) |
 
 ## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
-| Gemini固有の定量採用データ（A-2+品質のシェア・収益・利用率）が初めて公表される | [H-GOO-001](../config/hypotheses.json) indeterminate状態が解消し、low/mediumのいずれかに復帰する。[H-GOO-003](../config/hypotheses.json)新条件の発火点でもある | 2026-12-31（新条件の期限） | [H-GOO-001](../config/hypotheses.json) |
-| GCP公式self-deploy利用定量または同等のデプロイ実体の開放定量が出現する | [H-GOO-002](../config/hypotheses.json)次回+1%審査の必須条件（v4.84事前登録）が充足される | 90日 | [H-GOO-002](../config/hypotheses.json) |
-| 2026-12-31までにGoogle固有の採用定量が出ない | [H-GOO-003](../config/hypotheses.json)の確度ラベル再審査が期限で強制発火する（新条件） | 2026-12-31 | [H-GOO-003](../config/hypotheses.json) |
-| 旧Vertex顧客の移行率・解約率・GEAP固有の採用数が定量で観測される | プラットフォーム統合の採用実態が初めて測定され、開放と統合の重心判別が始まる | 90日 | [IND-026](../config/indicators.json) |
-| Extensions EOL（2026-11-26）までの移行完了率・機能ギャップ報告 | 強制移行の実害が判定され、[H-GOO-002](../config/hypotheses.json)囲い込みI側の確定または失効が始まる | 2026-11-26 | [H-GOO-002](../config/hypotheses.json) |
-| 3.x系価格が2027年1月1日に実際に倍増する、または期間延長・撤回 | 価格権力の事前告知の検証。SCN-003材料の確定または失効 | 2027-01-01 | [IND-027](../config/indicators.json) |
-| Google Cloud収益の対AIラボ依存度（UBS試算27%→48%）が四半期開示で検証される | [H-GOO-001](../config/hypotheses.json)のCloud-level成長解釈が変わり、分離不能性の実態判定が始まる | 90日 | [H-GOO-001](../config/hypotheses.json) |
-| antigravity統合の公式ドキュメント確認（移行ガイド・機能一覧・管理コンソール） | 「発表」域から実装確認に進み、[SCN-001](../config/scenarios.json)判別データの格付けが上がる | 90日 | [SCN-001](../config/scenarios.json) |
+| Interactions APIのGA公告（課金単位・採用条件・v1betaからの移行） | エージェント対話単位の商モデルが確定し、形式層と実行層の重心判別が始まる | 90日 | [IND-027](../config/indicators.json) |
+| Hassabisの組織離脱/残留の一次確認（Google公式・組織公告） | [H-GOO-003](../config/hypotheses.json)の前提（DeepMind統合シナジー）の再審査が発火する | 次回収集 | [H-GOO-003](../config/hypotheses.json) |
+| Gemini固有の定量採用データ（A-2+品質のシェア・収益・利用率）の初公表 | [H-GOO-001](../config/hypotheses.json)のindeterminateが解消し、[H-GOO-003](../config/hypotheses.json)新条件も発火する | 2026-12-31 | [H-GOO-001](../config/hypotheses.json) |
+| GCP公式self-deploy利用定量または同等のデプロイ実体の開放定量 | [H-GOO-002](../config/hypotheses.json)次回+1%審査の必須条件（v4.84事前登録）が充足される | 90日 | [H-GOO-002](../config/hypotheses.json) |
+| 3.x系価格が2027-01-01に実際に倍増、または期間延長・撤回 | 価格権力の事前告知の検証。[SCN-003](../config/scenarios.json)材料の確定または失効 | 2027-01-01 | [IND-027](../config/indicators.json) |
+| Extensions EOL（2026-11-26）までの移行完了率・機能ギャップ報告 | 強制移行の実害が判定され、[H-GOO-002](../config/hypotheses.json)囲い込み側の確定または失効が始まる | 2026-11-26 | [H-GOO-002](../config/hypotheses.json) |
+| 上院法案の条文提出とGoogle対象条項の確定 | duty of careの実質（リスク緩和義務の範囲）が判定される | 条文提出時 | [IND-030](../config/indicators.json) |
+| フィンランド投資の着工進捗と2027年対象DCの履行率 | 発表と実施のギャップの定量。[IND-029](../config/indicators.json)の観測点 | 2027-06-30 | [IND-029](../config/indicators.json) |
 
 ## 4. 進行中の仮説
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:---:|---|---|---|
-| [H-GOO-001](../config/hypotheses.json) | GoogleはGemini統合で検索・Workspace・Cloudのデータ優位を活かし、エンタープライズAI市場でシェアを拡大する | 50% indeterminate | v4.88 ±0%（v4.70のindeterminate維持以来）。GEAP公式docs（[INFO-008](../Information/2026-09-05/collected-raw.md#INFO-008) A-2）はGCP側進捗の実質証拠だがGoogle固有の採用定量は構造的不在（57R超）。C-only不定状態の駐車化注記継続（確証而非観測限界）。強制再評価条件の本章拡張が検討事項のまま | [INFO-008](../Information/2026-09-05/collected-raw.md#INFO-008) [INFO-026](../Information/2026-09-05/collected-raw.md#INFO-026) | [INFO-067](../Information/2026-08-25/collected-raw.md#INFO-067)（2社依存の定量化） |
-| [H-GOO-002](../config/hypotheses.json) | GoogleはGemini Tools & Agentsでオープン標準（LangChain等）とのDay 0サポートを維持し、囲い込みを回避する | 25% low | v4.84 +1%（24→25%・9/1裁定）を反映。google/skills+agents-cli公開（A-1・GitHub公式）が再評価条件「A-2以上の開放C出現」を形式的に充足（SKILL.md配給形式の公共財化）。層区別原則でGEAP統制・価格2倍予約は形式層命題の反証から除外。次回+1%には「GCP公式self-deploy利用定量または同等のデプロイ実体の開放定量」を要求（条件文言改訂の事前登録）。gemini-skills（[INFO-013](../Information/2026-09-05/collected-raw.md#INFO-013)）は同一キャンペーン族の反響で低評価 | [INFO-021](../Information/2026-09-01/collected-raw.md#INFO-021) [INFO-013](../Information/2026-09-05/collected-raw.md#INFO-013) [INFO-014](../Information/2026-09-05/collected-raw.md#INFO-014) | [INFO-010](../Information/2026-08-23/collected-raw.md#INFO-010)（Extensions EOL） [INFO-012](../Information/2026-08-25/collected-raw.md#INFO-012)（GEAP統合） |
-| [H-GOO-003](../config/hypotheses.json) | GoogleはDeepMind統合シナジーでエコシステム深度・研究卓越性・インフラ統合を通じて競争力を維持する | 48% medium | v4.88 ±0%・プロセス負債解消ラウンド（v4.86で執行）。v4.06条件「48%以下継続でmedium→low移行検討」の長期未執行を本日審査執行し移行せず: DeepSWE第三者勝利（[INFO-047](../Information/2026-09-05/collected-raw.md#INFO-047) B-1）・Deep Think 95首位（[INFO-010](../Information/2026-09-05/collected-raw.md#INFO-010) C-2）が移行反対方向。旧条件を明示解除し「Google固有の採用定量出現時または2026-12-31のいずれか早い方で確度ラベル再審査」を新登録 | [INFO-047](../Information/2026-09-05/collected-raw.md#INFO-047) [INFO-010](../Information/2026-09-05/collected-raw.md#INFO-010) | A-2+研究卓越性定量の連続未達成・研究者流失2人目（[INFO-056](../Information/2026-08-17/collected-raw.md#INFO-056) C-3） |
+| [H-GOO-001](../config/hypotheses.json) | GoogleはGemini統合で検索・Workspace・Cloudのデータ優位を活かし、エンタープライズAI市場でシェアを拡大する | 50% (indeterminate) | v4.88以来±0%（本日Blue評価なし・60R超の採用定量不在継続）。Interactions APIとモデル階層化（INFO-006・A-3）は供給面の拡張だが採用定量でない。フィンランド€13B（INFO-081）はインフラ文脈で採用診断力なし。C-only不定状態の駐車化注記継続 | Gemini固有の採用定量（シェア・収益・利用率のA-2+） | UBS試算（2社依存48%超）の四半期開示による検証 |
+| [H-GOO-002](../config/hypotheses.json) | GoogleはGemini Tools & Agentsでオープン標準（LangChain等）とのDay 0サポートを維持し、囲い込みを回避する | 25% (low) | v4.84 +1%（24→25%）以降±0%。次回+1%には「GCP公式self-deploy利用定量または同等のデプロイ実体の開放定量」を要求（事前登録済み）。Interactions API（INFO-006）は形式層の拡張でこの条件を充足しない。期限付き価格の明示（INFO-066）は価格層の材料で形式層命題の反証から除外（層区別原則） | self-deploy利用定量・デプロイ実体の開放 | Extensions EOL移行の実害・価格倍増の執行 |
+| [H-GOO-003](../config/hypotheses.json) | GoogleはDeepMind統合シナジーでエコシステム深度・研究卓越性・インフラ統合を通じて競争力を維持する | 48% (medium) | v4.86条件入替以降±0%（本日評価なし）。Hassabis「DeepMindを率いない」報道（INFO-093・B-2・要追証）は統合シナジー前提の変数として監視在庫。研究卓越性はMMLU-Pro首位・FACTS強さ（INFO-071/073・C-2）と総合中位（INFO-029/070・C-2）が併存。新条件（採用定量出現時または2026-12-31の再審査）は不変 | DeepMind指揮系統の一次確認・A-2+研究卓越性定量の連続出現 | Hassabis離脱の確定・研究者流失の累積 |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
 |---|---|---|---|:-:|
-| [IND-025](../config/indicators.json) | マルチモーダル信頼性・測定慣行 | 複数ベンチマーク×複数ラボで再現ならhigh | elevated/stable（v4.88）。Gemini 3.8 FlashのDeepSWE勝利（73.8%・[INFO-047](../Information/2026-09-05/collected-raw.md#INFO-047)）は第三者単一ベンチで閾値不充足。ARC-AGI-3標準62.7% vs Provider 99.9%の37.2pt差が測定慣行問題の一次立証（A-1）として同一指標に計上済み。本日のマルチモーダル計測（[INFO-022](../Information/2026-09-07/collected-raw.md#INFO-022)）は9/6計上事象の再出現として台帳訂正（トリガー列は9/6側参照）。high移行候補在庫（AVO・DeepSeek V4-Pro）継続 | 2026-09-07 |
-| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 期待-実態ギャップの定量蓄積 | high/rising（v4.88）。三次定量: 配備26-50体→76-100体/四半期 vs 成熟ガバナンス21%・採用84% vs 信頼33%（Google新規コード75%AI生成・[INFO-049](../Information/2026-09-05/collected-raw.md#INFO-049)を含む） | 2026-09-07 |
-| [IND-027](../config/indicators.json) | エコシステム標準化進展度 | 攻撃表面の標準化進行 | high/rising（v4.88）。google/skills+agents-cli公開・gemini-skills反響（[INFO-021](../Information/2026-09-01/collected-raw.md#INFO-021)/[INFO-013](../Information/2026-09-05/collected-raw.md#INFO-013)）・クロスエージェント4,500スキル（[INFO-014](../Information/2026-09-05/collected-raw.md#INFO-014)）で形式層標準化が継続。Flashキャンペーン価格の公式公示（[INFO-059](../Information/2026-09-07/collected-raw.md#INFO-059)）で価格層も一次確認。Google Ads MCPは読み取り専用のまま（[INFO-025](../Information/2026-09-05/collected-raw.md#INFO-025)）。2027年倍額移行はKIQ-MONETIZATION監視継続 | 2026-09-07 |
-| [IND-028](../config/indicators.json) | AGI到達度（予測分裂） | 分裂の深化・法制化圧力 | high/rising（v4.88）。Hassabis「2030年まで50%」でフロンティアCEO中最も保守的な位置は不変。ダボスでAmodeiと最大乖離（[INFO-109](../Information/2026-09-07/collected-raw.md#INFO-109) A-2）。Chollet「sooner」前倒し・Sanders超知能禁止法案（[INFO-052](../Information/2026-09-05/collected-raw.md#INFO-052)）で予測分裂のレンジ拡大 | 2026-09-07 |
-| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | critical解消3基準 | critical/rising（v4.88）。N=1実質34R。DoD 4社$200M契約の一角（GenAI.milはGoogle以外にも拡大・[INFO-018](../Information/2026-09-05/collected-raw.md#INFO-018)）。EU AI法執行・AI DCモラトリアム法案提出（[INFO-053](../Information/2026-09-05/collected-raw.md#INFO-053)）。critical解消3基準いずれも未到達 | 2026-09-07 |
+| [IND-025](../config/indicators.json) | マルチモーダル信頼性・測定慣行 | 複数ベンチマーク×複数ラボで再現ならhigh | elevated/stable（v4.91・状態変更なし）。MMLU-Pro Gemini 3 Pro 90%首位・FACTS Gemini系強さ（INFO-071/073・C-2）は単一ベンチ毎の観測で閾値不充足。ベンチ毎の首位分裂（総合首位不存在）が測定慣行問題の継続実態 | 2026-09-15 |
+| [IND-026](../config/indicators.json) | エージェント本番環境到達率 | 期待-実態ギャップの定量蓄積 | high/rising（v4.91・状態変更なし）。Gemini固有の採用定量は不在継続。Interactions APIは文書層で到達率の直接材料でない | 2026-09-15 |
+| [IND-027](../config/indicators.json) | エコシステム標準化進展度 | 攻撃表面の標準化進行 | high/rising（v4.91・状態変更なし）。Interactions API（INFO-006・A-3）と期限付き価格の公示（INFO-066・A-3）で供給・価格両層が一次確認された。2027-01-01倍額移行はKIQ-MONETIZATION監視継続 | 2026-09-15 |
+| [IND-028](../config/indicators.json) | AGI到達度（予測分裂） | 分裂の深化・法制化圧力 | high/rising（v4.91・状態変更なし）。CEO公式レンジは2027（Amodei）〜2030（Altman）に収束（INFO-094・C-2）。Hassabisは減速側に明確化（INFO-093） | 2026-09-15 |
+| [IND-030](../config/indicators.json) | AI能力-リスク二面性 | critical解消3基準 | critical/rising（v4.91・状態変更なし）。N=1実質35R。上院duty of care法案（INFO-107・A-2）は条文提出時の再審査発火を事前登録。GoogleはDoD 4社$200M契約の一角（INFO-052移行先） | 2026-09-15 |
 
 ## 6. 変化履歴
 
 | 日付 | 変更 | きっかけ | 過去 → 現在 |
 |:-:|---|---|---|
-| 2026-09-07 | ターゲット編集。Flashキャンペーン価格の公式料金ページ確認（[INFO-059](../Information/2026-09-07/collected-raw.md#INFO-059) A-3）でヘッダーの価格非対称性注記を一次確認済みに更新。antigravity企業ガバナンス統合（[INFO-013](../Information/2026-09-07/collected-raw.md#INFO-013) A-2・Facebook投稿=ソース形態注記）を[SCN-001](../config/scenarios.json)判別データの「発表」域として§2/§3に計上。§5をv4.88値に更新（IND-030カウンター32R→34R・台帳訂正同期） | Arbiter v4.88（裁定2(d)/裁定9・付録参照） | H-GOO-001 50%（±0%）・H-GOO-002 25%（±0%）・H-GOO-003 48%（±0%） |
-| 2026-09-05 | §0〜§7書き直し（鮮度タイムアウト7日）。[H-GOO-002](../config/hypotheses.json) +1%（24→25%・v4.84・google/skills+agents-cli公開のA-1）を反映し、次回+1%条件（デプロイ実体の開放定量）を明記。[H-GOO-003](../config/hypotheses.json) 48%の条件入替（v4.06旧条件の明示解除・採用定量出現時または2026-12-31で再審査の新条件）を反映。Gemini 3.8 Flash DeepSWE勝利・GEAP公式docs・gemini-skills・機械トラフィック57.5%/84%集中・Google新規コード75%を新規計上。§5全指標をv4.86値に更新 | 鮮度タイムアウト7日 + H-GOO-003条件入替（v4.86） | H-GOO-001 50%（±0%）・H-GOO-002 24→25%・H-GOO-003 48%（±0%・条件入替） |
-| 2026-08-29 | 全面書き直し（8日freshness timeout）。GEAP吸収統合・Extensions EOL・A2A v1.0 AAIF移管・UBS 2社依存定量化を新規反映。H-GOO-002 23→24%（v4.76）を遅って反映 | 鮮度タイムアウト + Arbiter v4.76〜v4.81 | H-GOO-001 50%（±0%）・H-GOO-002 23→24%・H-GOO-003 48%（±0%） |
-| 2026-08-21 | 鮮度タイムアウト更新。08-15〜08-19バッチ統合（10億MAU・組織再編・3.7 Flash価格設計等） | 鮮度タイムアウト（7日） | H-GOO-001 50%（±0%）・H-GOO-002 23%（±0%）・H-GOO-003 48%（±0%） |
-| 2026-08-14 | ターゲット編集（フロンティアモデル新規リリース: Gemini 3.7 Flash） | [INFO-001](../Information/2026-08-14/collected-raw.md#INFO-001) | H-GOO-001 50%（±0%） |
-| 2026-08-12 | 全面書き直し（CEO交代・新モデル群: 9.5億MAU・Koray新CEO・Gemini 3.1 Pro等） | [INFO-005](../Information/2026-08-12/collected-raw.md#INFO-005) | KIQ-GOO-001 44R/45R→46R/47R |
+| 2026-09-15 | 全面書き直し（鮮度タイムアウト8日）。Interactions APIとモデル階層化（INFO-006・A-3）・期限付き価格の公示（INFO-066・A-3）・Hassabis報道（INFO-093・要追証）・フィンランド€13B（INFO-081）・上院法案の対象指定（INFO-107）・3社標準団体（INFO-079）を新規計上。§5をv4.91値に更新 | 鮮度タイムアウト + [INFO-006](../Information/2026-09-15/collected-raw.md#INFO-006)/[066](../Information/2026-09-15/collected-raw.md#INFO-066)/[081](../Information/2026-09-15/collected-raw.md#INFO-081)/[093](../Information/2026-09-15/collected-raw.md#INFO-093) | H-GOO-001 50%（±0%）・H-GOO-002 25%（±0%）・H-GOO-003 48%（±0%） |
+| 2026-09-07 | ターゲット編集。Flashキャンペーン価格の公式確認（INFO-059・A-3）・antigravity統合（INFO-013・A-2）を計上。§5をv4.88値に更新 | Arbiter v4.88（裁定2(d)/裁定9） | H-GOO-001 50%（±0%）・H-GOO-002 25%（±0%）・H-GOO-003 48%（±0%） |
+| 2026-09-05 | §0〜§7書き直し（鮮度タイムアウト7日）。H-GOO-002 +1%とH-GOO-003条件入替を反映。Gemini 3.8 Flash DeepSWE勝利・GEAP公式docs等を新規計上 | 鮮度タイムアウト + Arbiter v4.86 | H-GOO-002 24→25%・H-GOO-003 48%（条件入替） |
+| 2026-08-29 | 全面書き直し（8日freshness timeout）。GEAP吸収統合・Extensions EOL・A2A v1.0 AAIF移管・UBS 2社依存定量化を新規反映 | 鮮度タイムアウト + Arbiter v4.76〜v4.81 | H-GOO-002 23→24% |
 
 ## 7. ブラインドスポット
 
-- google/skills公開の+1%（v4.84）は配給形式の評価である。デプロイ実体（誰が・どの規模で実際にself-deployしているか）は依然測定できておらず、新条件が充足されないまま同一キャンペーン族の反響（gemini-skills）が積み上がる危険を、条件文言の改訂で封じたに過ぎない。
-- H-GOO-003の新条件は期限（2026-12-31）つきである。採用定量が出ないまま期限を迎えた場合の再審査が今度こそ執行されるか、プロセス負債の再発を防ぐ担保は運用規律しかない。
-- Gemini固有定量データが57R超構造的に不在。indeterminate分類の駐車化対処（強制再評価条件の本章拡張）が記録されたまま実施されていない。下位命題分解の評価設計も未完成である。
-- UBSの2社依存試算（27%→48%）は単一試算で前提が開示されていない。Cloud収益のGemini寄与分の分離は四半期開示でもそのまま残る可能性がある。
-- Deep Thinkグラウンデッド95首位はC-2品質で、BenchLM総合ではQwen3.8 Maxが首位である。部分指標の選択性が誰の視点で行われているか（Google自家選択か集計側か）が読めない。
-- 公式料金ページ（[INFO-059](../Information/2026-09-07/collected-raw.md#INFO-059) A-3）でキャンペーン価格と2027/1/1倍額移行は確認できたが、半額$0.38/$1.88報道がどの枠組み（リージョン・バッチ・契約形態）の価格かは未判別のまま。
-- GEAPドキュメントは文書層の完成で、旧Vertex顧客の移行率・解約率・GEAP固有採用数は取れていない。ClaudeのGoogleプラットフォーム搭載がGEAP戦略の差別化なのか中立化なのかも、利用定量なしには判別できない。
+- Interactions APIはv1betaの文書層である。課金単位（インタラクション単位かトークン換算か）・GA時期・採用条件が公告されるまで、エージェント対話単位の商モデルについての判断は先走りうる。
+- Hassabis「DeepMindを率いない」報道は単一報道で要追証である。8/15組織再編（専任）との差分（完全離脱か役割変更か）を区別できていない。
+- Gemini固有定量データが60R超構造的に不在。indeterminate分類の駐車化対処（強制再評価条件の拡張）が記録されたまま実施されていない。
+- MMLU-Pro首位・FACTS強さは部分指標で、総合系（BenchLMマルチモーダル・Code Arena WebDev）では中位に留まる。部分指標の選択性がGoogle自家選択か集計側か読めないのは不変である。
+- フィンランド€13Bは報道ベースで、着工スケジュール・原子力協定の条項は未確認。2027年対象DCの60%未着工というギャップのGoogle側の該当分も不明である。
+- UBSの2社依存試算（27%→48%）は単一試算で前提が開示されていない。Cloud収益のGemini寄与分の分離は四半期開示でも残る可能性がある。
+
+---
 
 ## 付録: 直近30日の参照Evidence
 
 | Evidence | 用途 |
 |---|---|
-| [INFO-059](../Information/2026-09-07/collected-raw.md#INFO-059) | Gemini 3.6〜3.8 Flashキャンペーン価格の公式公示・2027/1/1倍額移行(A-3・価格非対称性の一次確認) |
-| [INFO-013](../Information/2026-09-07/collected-raw.md#INFO-013) | antigravity→Gemini Enterpriseガバナンス統合(A-2・Facebook投稿=ソース形態注記・裁定2(d)) |
-| [INFO-109](../Information/2026-09-07/collected-raw.md#INFO-109) | ダボスHassabis vs Amodei最大乖離(A-2・IND-028) |
-| [INFO-022](../Information/2026-09-07/collected-raw.md#INFO-022) | マルチモーダル計測の再出現(B-3→9/6計上事象の台帳訂正) |
-| [INFO-021](../Information/2026-09-01/collected-raw.md#INFO-021) | google/skills+google/agents-cli公開・任意のコーディングエージェント向け(A1・H-GOO-002 +1%の直接根拠・v4.84) |
-| [INFO-013](../Information/2026-09-05/collected-raw.md#INFO-013) | gemini-skills公式リポジトリ・Gemini Enterpriseのスキル管理(A2・同一キャンペーン族の反響) |
-| [INFO-008](../Information/2026-09-05/collected-raw.md#INFO-008) | GEAP公式ドキュメント・ClaudeのGoogle Agent Platform搭載言及(A2・H-GOO-001 C-only材料) |
-| [INFO-047](../Information/2026-09-05/collected-raw.md#INFO-047) | Gemini 3.8 Flash DeepSWE 73.8%>Astra 73.3%(B1・H-GOO-003条件入替のC側) |
-| [INFO-010](../Information/2026-09-05/collected-raw.md#INFO-010) | Deep Thinkグラウンデッド95首位・BenchLM総合はQwen3.8 Max首位(C2) |
-| [INFO-026](../Information/2026-09-05/collected-raw.md#INFO-026) | 機械トラフィック57.5%・3社84%・Googleトークン3.2京超(B2・SCN-003材料) |
-| [INFO-049](../Information/2026-09-05/collected-raw.md#INFO-049) | Google新規コード75%AI生成・採用84% vs 信頼33%(B2・IND-026) |
-| [INFO-014](../Information/2026-09-05/collected-raw.md#INFO-014) | Agensi クロスエージェント4,500スキル・5,500ユーザー・400クリエイター(C2・形式層標準化) |
-| [INFO-029](../Information/2026-09-05/collected-raw.md#INFO-029) | 9月価格表: Flash-Lite $0.25/$1.50・3.6 $1.50/$7.50・3.1 Pro $2/$12(C2) |
-| [INFO-025](../Information/2026-09-05/collected-raw.md#INFO-025) | 広告MCP比較: Google読み取り専用 vs X本番書き込み10ツール(B2) |
-| [INFO-053](../Information/2026-09-05/collected-raw.md#INFO-053) | AnthropicがOpenAI/Googleと決別・AI DCモラトリアム法案(B2・規制戦線分裂) |
-| [INFO-037](../Information/2026-09-05/collected-raw.md#INFO-037) | ECB警告: 米テック5社（Google含む）債務+18%・計$142B(C2・IND-029文脈) |
-| [INFO-012](../Information/2026-08-25/collected-raw.md#INFO-012) | Vertex AI→GEAP吸収統合(A-2) |
-| [INFO-067](../Information/2026-08-25/collected-raw.md#INFO-067) | UBS試算: 2社依存27%→48%超・$124B超(B-2) |
-| [INFO-002](../Information/2026-08-24/collected-raw.md#INFO-002) | Grok 4.6 on GEAP: $2/$6・500k ctx(A-3) |
-| [INFO-010](../Information/2026-08-23/collected-raw.md#INFO-010) | Vertex AI Extensions 2026-11-26 EOL(A-3) |
-| [INFO-013](../Information/2026-08-19/collected-raw.md#INFO-013) | Gemini月間10億ユーザー・Google公式(A-1) |
-| [INFO-066](../Information/2026-08-19/collected-raw.md#INFO-066) | 3.7 Flash $0.75/$3.75→2027/1/1倍増予約(A-1) |
-| [INFO-133](../Information/2026-08-15/collected-raw.md#INFO-133) | 組織再編: Koray統括・Hassabis専任(B-1) |
-| [INFO-116](../Information/2026-08-17/collected-raw.md#INFO-116) | Hassabis「2030年まで50%」・最も保守的(B-2) |
-| [Arbiter v4.88](../state/arbiter-2026-09-07.md) | 台帳訂正4件（INFO-013ソース形態注記=裁定2(d)）・全19アクティブ仮説±0% |
-| [Arbiter v4.86](../state/arbiter-2026-09-05.md) | H-GOO-003条件入替（プロセス負債解消）・全仮説±0%・指標全件維持 |
-| [Arbiter v4.84](../state/arbiter-2026-09-01.md) | H-GOO-002 +1%（24→25%・条件(ii)形式的充足・条件文言改訂の事前登録） |
+| [INFO-006](../Information/2026-09-15/collected-raw.md#INFO-006) | Interactions API新設・Gemini 3.8 Flash（長時間SWE/自律エージェント）・3.5 Flash-Lite（サブエージェント）(A-3・docs最終更新9/10) |
+| [INFO-066](../Information/2026-09-15/collected-raw.md#INFO-066) | 3.8 Flash期限付き価格$0.75/$3.75→2027/1/1倍額・Pro系ロングコンテキスト2倍 (A-3・価格層の一次確定) |
+| [INFO-081](../Information/2026-09-15/collected-raw.md#INFO-081) | フィンランド€130億投資・欧州最大単一投資・2027年対象DC60%未着工 (B-2・IND-029文脈) |
+| [INFO-093](../Information/2026-09-15/collected-raw.md#INFO-093) | Hassabis「DeepMindを率いない」報道・減速提案支持 (B-2・要追証・H-GOO-003の変数) |
+| [INFO-107](../Information/2026-09-15/collected-raw.md#INFO-107) | 上院duty of care法案全文（リリース阻止権・州法排除・最先端モデル対象）(A-2) |
+| [INFO-071](../Information/2026-09-15/collected-raw.md#INFO-071)/[INFO-073](../Information/2026-09-15/collected-raw.md#INFO-073) | MMLU-Pro Gemini 3 Pro 90%首位・AA更新版3.8 Flash急上昇・FACTS Gemini系強さ (C-2) |
+| [INFO-029](../Information/2026-09-15/collected-raw.md#INFO-029)/[INFO-070](../Information/2026-09-15/collected-raw.md#INFO-070) | BenchLM総合で3.5 Flash 86.9（6位）・Code Arena WebDev上位5社にGemini不在 (C-2・自家選択リスクの対抗データ) |
+| [INFO-079](../Information/2026-09-15/collected-raw.md#INFO-079) | 3社安全共通標準団体創設協議 (B-2・民間標準化) |
+| [INFO-078](../Information/2026-09-15/collected-raw.md#INFO-078) | GoogleのAnthropic $20億出資報道・「代理戦争」構造 (B-2) |
+| [INFO-046](../Information/2026-09-15/collected-raw.md#INFO-046) | トランプEO州規制封じ (B-2・EO番号未確認) |
+| [INFO-059](../Information/2026-09-07/collected-raw.md#INFO-059) | Flash系キャンペーン価格の公式公示・2027/1/1倍額移行 (A-3・前回更新の基盤) |
+| [INFO-013](../Information/2026-09-07/collected-raw.md#INFO-013) | antigravity→Gemini Enterpriseガバナンス統合 (A-2・ソース形態注記) |
+| [INFO-021](../Information/2026-09-01/collected-raw.md#INFO-021) | google/skills+google/agents-cli公開 (A-1・H-GOO-002 +1%の直接根拠・v4.84) |
+| [INFO-047](../Information/2026-09-05/collected-raw.md#INFO-047) | Gemini 3.8 Flash DeepSWE 73.8%>Astra 73.3% (B-1・H-GOO-003条件入替の材料) |
+| [INFO-008](../Information/2026-09-05/collected-raw.md#INFO-008) | GEAP公式ドキュメント (A-2・H-GOO-001 C-only材料) |
+| [INFO-013](../Information/2026-08-19/collected-raw.md#INFO-013) | Gemini月間10億ユーザー・Google公式 (A-1) |
+| [INFO-067](../Information/2026-08-25/collected-raw.md#INFO-067) | UBS試算: 2社依存27%→48%超 (B-2) |
+| [Arbiter v4.91](../state/arbiter-2026-09-15.md) | Blue失敗6日連続・rawパススルー・全仮説±0%（保留維持） |
+| [Arbiter v4.86](../state/arbiter-2026-09-05.md) | H-GOO-003条件入替（プロセス負債解消）・指標全件維持 |
