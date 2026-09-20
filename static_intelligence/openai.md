@@ -1,104 +1,103 @@
 # OpenAI — 企業インテリジェンス
 
-> 最終判断更新: 2026-09-17 (前回 2026-09-09・v2形式へ全面移行)
-> 全体確信度: 中低 (主力製品の公式一次がAstraとAgents APIで揃い・安全性の自己警告系列も一次化した。ただし収益と資本の監査財務は依然不在)
-> 情報非対称性: 能力・実行環境・安全認識は当事者一次で覆われた。一方でOpenAI固有の定量は欠けたままである。収益申告は6系列分裂が未解決で公式財務は上場・債券・銀団いずれの契機でも未開示。銀団価格は第1観測機 (窓閉鎖9/9) で暫定帰属「非公開通例」となり取消条件4種が終端2026-10-31まで事前登録済み。9/15バッチ (112件・本日のcollected-rawはそのコピー) のOpenAI増分はv4.92評価で全ゲート不発火・確度は全件±0%のまま監視在庫化した。9/16・9/17はDEGRADED-P1×2R連続で新規証拠ゼロ。鮮度注記制度 (v4.93) により全仮説確度は「最終内容評価基盤: 2026-09-15収集 (v4.92評価)」の注記付きで管理される (9/1以来の確度変更なし9R)。
-> 主参照: [config/hypotheses.json](../config/hypotheses.json) · [config/indicators.json](../config/indicators.json) · [state/arbiter-2026-09-17.md](../state/arbiter-2026-09-17.md) · [Information/2026-09-15/collected-raw.md](../Information/2026-09-15/collected-raw.md)
+> 最終判断更新: 2026-09-20 (前回 2026-09-17)
+> 全体確信度: 中低 (主力製品のライフサイクル公告 (新旗艦価格・旧型API終了日程) が公式一次で出揃い・縦型展開と資本協議の報道一次も加わった。ただし収益と資本の監査財務は依然不在)
+> 情報非対称性: 価格・終了日程は公式Rate Card由来 (A-2) だが、$1.2T評価額協議は「現在交渉中ではない」公式コメント付きのB-1で条項は不在。収益申告6系列分裂は未解決で公式財務は上場・債券・銀団いずれの契機でも未開示。銀団価格は暫定帰属「非公開通例」のまま取消条件4種が終端2026-10-31まで事前登録済み。Agents APIは公開ベータで採用定量ゼロ。9/20収集 (123件) のOpenAI増分はv4.96評価で全ゲート不発火・確度は全件±0% (最終内容評価基盤: 2026-09-20収集)。
+> 主参照: [config/hypotheses.json](../config/hypotheses.json) · [config/indicators.json](../config/indicators.json) · [state/arbiter-2026-09-20.md](../state/arbiter-2026-09-20.md) · [Information/2026-09-20/collected-raw.md](../Information/2026-09-20/collected-raw.md)
 
 ## 0. 一文要約
 
-我々はOpenAIを「主力製品の公式発表が揃い、安全性で義務的規制を要請しながら自らのモデルの監視可能性低下を警告した企業」と読む。Agents API発表 ([INFO-004](../Information/2026-09-15/collected-raw.md#INFO-004)・A-2・公式) はCodexハーネスのマネージドクラウド提供であり、skillsをcapability directoriesで配布する実行環境のAPI化である。安全系列ではAltmanがAmodei減速論に原則同意し ([INFO-093](../Information/2026-09-15/collected-raw.md#INFO-093)・B-2)、チーフサイエンティストPachockiがCoT監視依存の持続不可能性とAstra級のステガノグラフィ縁能力を警告した ([INFO-084](../Information/2026-09-15/collected-raw.md#INFO-084)・C-2)。政府系列ではFOIA取得の契約文書でペンタゴンの「軍の要求をできるだけ拒らない」ミッションモデル要求が報じられた ([INFO-051](../Information/2026-09-15/collected-raw.md#INFO-051)・B-2)。仮説確度は全件±0% (v4.93・DEGRADED保守性原則)。
+我々はOpenAIを「新旗艦GPT-6 Astraの定価$10/$50と旧型API終了の公告日程で主力製品のライフサイクルを明示し、評価額$1.2T超のPre-IPOラウンド協議が報じられた企業」と読む。料金体系はAstra $10/$50 (cached $1.00)・Sol割引$4/$20 (11/21まで・定価$5/$30)・o1は10/23、GPT-5/o3は12/11にAPI終了で、7月のSol以降フラッグシップ2モデル連続の実質値上げにより長年の値下げトレンドが反転した ([INFO-071](../Information/2026-09-20/collected-raw.md#INFO-071) A-2)。資本面では3月の$122B (評価額$852B) に続き評価額$1.2T超 (最大$1.5T報道) の新ラウンドを協議中と報じられた ([INFO-082](../Information/2026-09-20/collected-raw.md#INFO-082) B-1)。製品面ではAstra for Law ([INFO-004](../Information/2026-09-20/collected-raw.md#INFO-004) A-3) と広告製品 ([INFO-003](../Information/2026-09-20/collected-raw.md#INFO-003) A-3) が同週に公開された。仮説確度は全件±0% (v4.96)。
 
 ## 1. コア判断
 
-実行環境の提供構造がAPI化で一段深まった。Agents APIは「hosted Codex runtime」を基盤にクラウドエージェントの構築・起動・長時間セッション・ツール利用・オーケストレーションを管理し、multi_agent (同時サブエージェント数制御)・MCPサーバ接続・programmatic tool calling・self_hosted環境を公開した ([INFO-004](../Information/2026-09-15/collected-raw.md#INFO-004))。skills配布をcapability directoriesで行う設計は、SKILL.md配給形式の公共財化 (Microsoft Agent Framework・google/skills+agents-cli・9/1 A-1×2) と対になるOpenAI側の公式実装である。H-OAI-002の層区別原則 (API層開放×実行環境層囲い込み) は維持される。 Responses APIのasync tool callingとmid-turn steering (9/8・A-3)、mTLS/X.509ワークロードIDのGA、Assistants API終了 (8/26完了) とwhisper-1廃止公告 (2027年2月) と合わせ、レガシー終了による移行コストの強制と新実行環境への集約が同時に進む。
+価格とライフサイクルの公告が主力製品の構造事実を確定させた。GPT-6 Astra (9/3発売・新フラッグシップ) は入力$10・出力$50 per 1Mトークンで、コンピュータ利用・コーディング・サイバー向けと位置付けられる ([INFO-071](../Information/2026-09-20/collected-raw.md#INFO-071) A-2)。GPT-5.6 Solはプロモ価格$4/$20 (11/21まで) で定価$5/$30に戻り、Terra $2/$12・Luna $0.20/$1.20の階層が続く。旧型のAPI終了はo1が10/23、GPT-5とo3が12/11で、Fast mode (Astra 2.5倍) とデータレジデンシー (1.1倍) の追加課金がEnterprise向けrate cardとして公式化された。7月のSol以降、2モデル連続でフラッグシップ実質値上げが重なり、長年の値下げトレンドの反転が公式料金で読める。旧型終了による移行圧力はスイッチングコストの強制であり、[H-OAI-002](../config/hypotheses.json)の実行環境層統制 (レガシー終了と新実行環境への集約) のC側材料である。この上層の値上げはGemini紹介価格の2027年1月倍額化と並び、価格2層構造の上層強化として[SCN-004](../config/scenarios.json)審査材料の文脈に置かれる。
 
-安全と規制の立場が発話として整列した。OpenAIは「暴走エージェント」インシデントを理由に義務的な国家AI安全要件を求め、カリフォルニア州のAI安全法案4本を支持した ([INFO-047](../Information/2026-09-15/collected-raw.md#INFO-047)・B-2)。AltmanはAmodeiのペーシング論に「原則同意・組み込み評価者受け入れ・安全が要求する複数の一時停止ポイントの予測」で応じ、2026年のIPOは否定した ([INFO-093](../Information/2026-09-15/collected-raw.md#INFO-093))。OpenAI FoundationはPaul Christianoを理事会に迎えた ([INFO-096](../Information/2026-09-15/collected-raw.md#INFO-096)・B-2)。ただしPachocki警告 ([INFO-084](../Information/2026-09-15/collected-raw.md#INFO-084)) は能力側の実態認識であり、発話級の規制支持と行動・文書級の安全実装の間の距離は残る。v4.92はこの声明群をH-GOV-002のI側累積3件 (発話級・加重1/2以下) として台帳記録し、確度変更はしなかった。
+資本の次の観測機が具体化した。OpenAIは投資家と早期協議で評価額$1.2T超 (Forbes報道では最大$1.5T) の新ラウンドを検討し、3月の$122B調達 (評価額$852B) から数ヶ月で+40%超のペースで上振れする形である ([INFO-082](../Information/2026-09-20/collected-raw.md#INFO-082) B-1)。同社は現時点で交渉中ではないと説明し、条項の一次は不在である。それでも監査財務のない評価額系列の伸びはIND-029の資本コスト文脈とS-1ゲート (終端2026-10-31) の観測機を更新する。
 
-政府調達の構造が一次文書で可視化された。The InterceptのFOIA報道では、国防総省がOpenAIにLLMの拒否率を最小化する納品物を求める条文が契約ドラフトに存在し、2/27に分類ネットワーク全軍利用の協定へ署名、両者は「最終契約に同条項なし」と反論した ([INFO-051](../Information/2026-09-15/collected-raw.md#INFO-051))。Google・xAI・Anthropicも同種の分類ネットワーク契約を持ち、4社の契約文言が「反復精錬」を共通目的とする。Anthropicの倫理拒否による調達喪失 (DOD分類ワークロード90%移行済み・10月全面移行予定・[INFO-052](../Information/2026-09-15/collected-raw.md#INFO-052)・B-2) と合わせ、「安全性制約と軍事ニーズの衝突」がOpenAIに与える需要側の構造はH-OAI-001のB2B命題と接続する。規制環境はトランプEOによる州規制封じ ([INFO-046](../Information/2026-09-15/collected-raw.md#INFO-046)・B-2・両義注記付き) と上院duty of care法案交渉 ([INFO-107](../Information/2026-09-15/collected-raw.md#INFO-107)・A-2・条文不在) が並走し、方向は未確定である。
+縦型展開と製品公開が続いた。Astra for Lawは法務業界向けの縦型製品で、9/10の金融サービスに続く展開である ([INFO-004](../Information/2026-09-20/collected-raw.md#INFO-004) A-3)。広告分野向けAI製品もProduct枠で公開された ([INFO-003](../Information/2026-09-20/collected-raw.md#INFO-003) A-3・詳細本文未取得)。Agents APIは公開ベータとして提供され、managed sandboxes・subagents・プラットフォーム手数料なしを明示した ([INFO-007](../Information/2026-09-20/collected-raw.md#INFO-007) A-2・9/15発表の再観測)。Arbiter v4.96はAgents APIの配給条件 (資格審査の有無) を「安全の配給化」一般化の真の判別観測として次回収集最優先に登録した。資格審査なしを返せばLSVP一般化読みは否定される。
 
-収益構造の定量は依然欠けたままである。ChatGPT広告の年間収益$10億規模報道 ([INFO-062](../Information/2026-09-15/collected-raw.md#INFO-062)・B-2) は「インプレッションでなく消費者インテントを売る」新モデルとしてGoogle/Metaを挑発するが、二次分析単独である。収益申告6系列分裂は解消されず、Astraの能力主張 (ARC-AGI-3 99.9%・9/8公式A-2) も交叉確認ガード (A) が同一ベンチ家族自己申告のため不充足のままである ([INFO-069](../Information/2026-09-15/collected-raw.md#INFO-069)・C-2は同一事象の再流通・二重計上禁止)。H-OAI-001の確度変更はS-1開示後再評価ゲート (終端2026-10-31) に予約されたまま、9/15バッチのAgents APIは「監査財務待ちのゲート凍結」 (v4.77制度) の下でC側累積に留まった。
+政府系列で行動級の材料が一段深まった。Altmanは従業員に「Pentagonが軍事作戦でAIをどう使うかを会社は制御できない」と説明し、OpenAIは分類政府ネットワークでの利用を許可する協定更新が報じられた ([INFO-061](../Information/2026-09-20/collected-raw.md#INFO-061) B-2)。DoD CTO Emil MichaelのAmodeiへの公然反論も同系列である。Pentagon移管先報道 ([INFO-060](../Information/2026-09-20/collected-raw.md#INFO-060)) は9/15 INFO-052の同一事象再報道として本日Cから除外された (v4.96裁定2-2)。GSA提携 (連邦・州・地方・部族政府向けライセンス$0・使用量50%割引) は政府市場での囲い込み構造を示す ([INFO-015](../Information/2026-09-20/collected-raw.md#INFO-015) B-3)。Arbiter v4.96はINFO-061/015を[H-GOV-002](../config/hypotheses.json)のC+2 (行動級) として計上した。安全系列ではモデル不整合 (misalignment) 報告フレームワークがResearch枠で公開された ([INFO-002](../Information/2026-09-20/collected-raw.md#INFO-002) A-3)。発話級規制支持と文書級枠組みの距離は、運用評価で埋まるかが次の観察点である。
 
 ## 2. 判断の重心
 
 | 重要度 | 観測した事実 | この判断との関係 | 信頼度 | 参照 |
-|:-:|---|---|:-:|---|
-| 高 | Agents API発表: Codexハーネスのマネージド提供・skills配布の公式実装・multi_agent/MCP接続/self_hosted | H-OAI-001のB2B命題C側累積 (ゲート凍結中)。H-OAI-002の実行環境層統制深化 | A-2 | [INFO-004](../Information/2026-09-15/collected-raw.md#INFO-004) |
-| 高 | Pachocki警告: 能力急速発展・アライメント未追随・CoT監視依存の持続不可能・Astraはステガノグラフィ能力の縁 | IND-030 (critical) の供給側二面性系列。Astra「監視が困難」公式自己開示 (9/8) の能力側裏付け | C-2 | [INFO-084](../Information/2026-09-15/collected-raw.md#INFO-084) |
-| 高 | FOIA契約文書: ペンタゴンの「拒らないAI」ミッションモデル要求・最終契約に同条項なしと両者反論 | H-GOV-002の行動・文書級材料 (発話級と区別)。需要側の政府結合深化 | B-2 | [INFO-051](../Information/2026-09-15/collected-raw.md#INFO-051) |
-| 高 | 義務的国家AI安全規制の要請 (カリフォルニア4法案支持・「暴走エージェント」引き金) + Altman減速原則同意・Christiano理事就任 | H-GOV-002 I側発話級累積3件 (v4.92・加重1/2以下)。H-OAI-003環境材料 | B-2 | [INFO-047](../Information/2026-09-15/collected-raw.md#INFO-047) [INFO-093](../Information/2026-09-15/collected-raw.md#INFO-093) [INFO-096](../Information/2026-09-15/collected-raw.md#INFO-096) |
-| 中 | ChatGPT広告年間$10億規模・インテント販売モデル (インドオークション再プライシング) | 収益多角化の方向性。B-2単独でH-OAI-001確度変更の基準外 | B-2 | [INFO-062](../Information/2026-09-15/collected-raw.md#INFO-062) |
-| 中 | Altman「OpenAIは2026年にIPOしない」明言 | CFO 2027年上場明言 (8/27 A-2) と整合。S-1ゲート終端2026-10-31の観測機は債券・銀団側に残る | B-2 | [INFO-093](../Information/2026-09-15/collected-raw.md#INFO-093) |
-| 中 | ARC-AGI-3 Astra 0.999 (llm-stats) | 9/8公式99.9% (A-2) と同一事象。交叉確認ガード (A) 不充足維持・二重計上禁止 | C-2 | [INFO-069](../Information/2026-09-15/collected-raw.md#INFO-069) |
+|---|---|---|:-:|---|
+| 高 | GPT-6 Astra $10/$50 (cached $1.00)・Sol割引$4/$20 (定価$5/$30)・フラッグシップ2連続実質値上げ | 主力製品の価格構造の公式一次。値下げトレンド反転。[SCN-004](../config/scenarios.json)価格権力材料 ([IND-027](../config/indicators.json)) | A-2 | [INFO-071](../Information/2026-09-20/collected-raw.md#INFO-071) |
+| 高 | o1は10/23・GPT-5/o3は12/11にAPI終了・Fast mode 2.5×/データレジデンシー1.1×の追加課金体系 | 旧型終了=移行コストの強制。[H-OAI-002](../config/hypotheses.json)実行環境層統制のC側。Enterprise rate card公式化 | A-2 | [INFO-071](../Information/2026-09-20/collected-raw.md#INFO-071) |
+| 高 | 評価額$1.2T超 (最大$1.5T報道) のPre-IPOラウンド協議・3月$122B@$852Bから+40%超ペース | 資本系列の次の観測機。条項一次は不在で「交渉中ではない」公式コメント付き | B-1 | [INFO-082](../Information/2026-09-20/collected-raw.md#INFO-082) |
+| 高 | Altman「Pentagonの使用方法は制御できない」従業員説明・分類ネットワーク横断利用の協定更新 | [H-GOV-002](../config/hypotheses.json) C+2計上 (v4.96・行動級)。DoD CTOのAmodei公然反論と同系列 | B-2 | [INFO-061](../Information/2026-09-20/collected-raw.md#INFO-061) |
+| 中 | Astra for Law (9/17)・広告製品 (9/16) の公式公開 | 業界縦型展開 (金融9/10→法務) と広告本格参入。収益多角化の方向 | A-3 | [INFO-004](../Information/2026-09-20/collected-raw.md#INFO-004) [INFO-003](../Information/2026-09-20/collected-raw.md#INFO-003) |
+| 中 | Agents API公開ベータ (managed sandboxes・subagents・プラットフォーム手数料なし) | 9/15発表の再観測。配給条件 (資格審査の有無) は次回最優先の判別観測 (v4.96) | A-2 | [INFO-007](../Information/2026-09-20/collected-raw.md#INFO-007) |
+| 中 | モデル不整合報告フレームワーク公開 (Research枠) | 安全透明性の文書級。発話級規制支持との加重差の検証は運用評価待ち | A-3 | [INFO-002](../Information/2026-09-20/collected-raw.md#INFO-002) |
+| 中 | GSA提携: 政府向けライセンス$0・使用量50%割引・サイバーセキュリティ支援 | 政府市場での囲い込み。[H-GOV-002](../config/hypotheses.json) C+2計上 (v4.96) | B-3 | [INFO-015](../Information/2026-09-20/collected-raw.md#INFO-015) |
 
 ## 3. 反証の閾値
 
 | 反証指標 | 観測したら何が崩れるか | 期限 | 監視先 |
 |---|---|:-:|---|
-| 銀団帰属の取消条件 (価格報道+組成完了告知・貸付グループ構成変化・専業誌条項言及・S-1債務コミットメント開示) のいずれか | 暫定帰属「非公開通例」が取消されIND-029の価格条件系列が再開する | 2026-10-31 | [IND-029](../config/indicators.json) |
-| OpenAIの公式財務 (監査付き) | 収益申告6系列分裂が解消しH-OAI-001のS-1ゲート再評価が発火する | 継続 | H-OAI-001 [IND-026](../config/indicators.json) |
-| ARC-AGI-3交叉確認ガード (A) の充足 (他ベンチ家族・独立系の同一タスク計測) | Astra能力主張の一次級確定または下方修正。SCN-002/004交叉確認ガード制度の初適用事例になる | 継続 | [IND-025](../config/indicators.json) |
-| Agents APIの採用定量 (セッション数・エンタープライズ利用・料金収益) | 「公式発表」から「実装定量」への移行でH-OAI-001/H-OAI-002のB2B命題が判別可能になる | 90日 | H-OAI-001 [IND-026](../config/indicators.json) |
-| Daybreak「緩いセーフガード」段階展開の実行・Astra級本番監視での事故顕在化 | monitorability低下が実害として出現しIND-030再評価・H-OAI-003のI側強化 | 継続 | [IND-030](../config/indicators.json) H-OAI-003 |
-| ペンタゴン契約の最終条項一次確認 (国防総省文書・OpenAI開示) | 「拒らないAI」要求の有無が確定し需要側構造の解釈が固定される | 90日 | H-GOV-002 [IND-030](../config/indicators.json) |
-| 素数ギャップ証明の外部検証 | 246→186主張の独立系検証でIND-028系列の一次級適合例が確定または撤回される | 90日 | [IND-028](../config/indicators.json) |
+| Agents API配給条件の確認 (資格審査なしを返せばLSVP一般化読み否定) | 「安全の配給化」の一般化とAnthropic固有の判別が確定する | 次回収集 (v4.96最優先) | [SCN-001](../config/scenarios.json) [H-OAI-002](../config/hypotheses.json) |
+| $1.2Tラウンドの条項一次 (規模・投資家・構造) | 評価額系列のB-1報道から公式一次への置換。[IND-029](../config/indicators.json)資本コスト文脈の更新 | 継続 | [IND-029](../config/indicators.json) |
+| o1終了 (10/23) とGPT-5/o3終了 (12/11) の実行・移行実測 (エラーレート・移行コスト報告) | 移行強制の実害が判定され[H-OAI-002](../config/hypotheses.json)実行環境層統制の定量が始まる | 2026-12-11 | [H-OAI-002](../config/hypotheses.json) |
+| OpenAIの公式財務 (監査付き) | 収益申告6系列分裂が解消し[H-OAI-001](../config/hypotheses.json)のS-1ゲート再評価が発火する | 継続 | [H-OAI-001](../config/hypotheses.json) [IND-026](../config/indicators.json) |
+| Agents APIの採用定量 (セッション数・エンタープライズ利用・料金収益) | 「公式発表」から「実装定量」への移行でB2B命題が判別可能になる | 90日 | [H-OAI-001](../config/hypotheses.json) [IND-026](../config/indicators.json) |
+| Astra能力主張の交叉確認ガード (A) 充足 (他ベンチ家族・独立系の同一タスク計測) | ARC-AGI-3 99.9%の一次級確定または下方修正 | 継続 | [IND-025](../config/indicators.json) |
+| ペンタゴン契約の最終条項一次確認 (国防総省文書・OpenAI開示) | 「拒らないAI」要求の有無が確定し需要側構造の解釈が固定される | 90日 | [H-GOV-002](../config/hypotheses.json) [IND-030](../config/indicators.json) |
+| 銀団帰属の取消条件 (価格報道+組成完了告知・貸付グループ構成変化・専業誌条項言及・S-1債務コミットメント開示) | 暫定帰属「非公開通例」が取消されIND-029の価格条件系列が再開する | 2026-10-31 | [IND-029](../config/indicators.json) |
 
 ## 4. 進行中の仮説
 
 | 仮説ID | 一文 | 確度 | 確度の根拠 | 強める証拠 | 弱める証拠 |
 |---|---|:---:|---|---|---|
-| [H-OAI-001](../config/hypotheses.json) | Agent機能でB2B支配的地位を確立する | 43% low | v4.93 ±0% (鮮度注記: 最終内容評価基盤2026-09-15収集・v4.92評価で全ゲート不発火)。Agents API ([INFO-004](../Information/2026-09-15/collected-raw.md#INFO-004)・A-2) はC側累積だが監査財務待ちのゲート凍結 (v4.77制度) 維持。S-1ゲート終端2026-10-31。収益一次不在・交叉確認ガード (A) 不充足 | 監査付き収益のセグメント内訳・Agents API採用定量・独立系ベンチ追証 | 収益停滞の監査一次・B2Bシェアの独立定量での劣位 |
-| [H-OAI-002](../config/hypotheses.json) | MCP開放上にプロプライエタリ上位レイヤーで囲い込む | 44% low | v4.93 ±0% (同上)。Agents APIのマネージド実行環境化とレガシー終了 (Assistants API・whisper-1) は実行環境層統制のC。API層はBYOキー開放継続で層区別原則不変 | 上位レイヤーでの独自機能依存の定量・レガシー移行の強制実測 | ポータビリティ標準の採用拡大・self_hosted級の実利用定量 |
-| [H-OAI-003](../config/hypotheses.json) | AGI/スーパーインテリジェンス達成を最優先とする | 3% low | v4.93 ±0%。「検閲・過剰整列の29日内顕在化」要素は不発火。Pachocki監視困難警告 ([INFO-084](../Information/2026-09-15/collected-raw.md#INFO-084)) はI側材料だが「検閲」語の適合は低いまま。Daybreak展開監視継続 | 検閲・過剰整列事象の具体的顕在化 | 商業化主導の継続 (広告事業等) |
+| [H-OAI-001](../config/hypotheses.json) | Agent機能でB2B支配的地位を確立する | 43% low | v4.96 ±0% (最終内容評価基盤2026-09-20収集・全ゲート不発火)。Agents API公開ベータ ([INFO-007](../Information/2026-09-20/collected-raw.md#INFO-007)) とAstra for Law・金融縦型 ([INFO-004](../Information/2026-09-20/collected-raw.md#INFO-004)) はC側累積だが監査財務待ちのゲート凍結 (v4.77制度) 維持。S-1ゲート終端2026-10-31。収益一次不在・交叉確認ガード (A) 不充足 | 監査付き収益のセグメント内訳・Agents API採用定量・独立系ベンチ追証 | 収益停滞の監査一次・B2Bシェアの独立定量での劣位 |
+| [H-OAI-002](../config/hypotheses.json) | MCP開放上にプロプライエタリ上位レイヤーで囲い込む | 44% low | v4.96 ±0%。旧型API終了公告 (o1 10/23・GPT-5/o3 12/11・[INFO-071](../Information/2026-09-20/collected-raw.md#INFO-071)) はレガシー終了による移行強制で実行環境層統制のC。API層はBYOキー開放継続で層区別原則不変。Agents API配給条件は次回の判別観測 | 上位レイヤーでの独自機能依存の定量・レガシー移行の強制実測 | ポータビリティ標準の採用拡大・self_hosted級の実利用定量 |
+| [H-OAI-003](../config/hypotheses.json) | AGI/スーパーインテリジェンス達成を最優先とする | 3% low | v4.96 ±0%。不整合報告フレームワーク ([INFO-002](../Information/2026-09-20/collected-raw.md#INFO-002)) は文書級の安全透明性で「検閲」系列ではない。広告・法務縦型の商業化主導が継続 | 検閲・過剰整列事象の具体的顕在化 | 商業化主導の継続 (広告・縦型製品の拡大) |
 
 ## 5. 監視指標
 
 | 指標ID | 何を見るか | 閾値 | 現在値 | 最終確認 |
-|---|---|---|---|---|
-| [IND-013](../config/indicators.json) | エージェント供給チェーン攻撃 | 実害インシデントのA-2公表 | critical / rising | 2026-09-17 |
-| [IND-025](../config/indicators.json) | フロンティア性能の交叉確認 | 独立系・他ベンチ家族での再現 | elevated / stable | 2026-09-17 |
-| [IND-026](../config/indicators.json) | エージェント本番到達と期待-実態ギャップ | 本番到達率の反転 | high / rising | 2026-09-17 |
-| [IND-027](../config/indicators.json) | 標準化と価格体系 | 価格2層分化の「高」復帰条件 | high / rising | 2026-09-17 |
-| [IND-028](../config/indicators.json) | AGI叙事と実数学寄与 | 予測分裂の収束・素数ギャップ外部検証 | high / rising | 2026-09-17 |
-| [IND-029](../config/indicators.json) | 資本コストと銀団価格 | 取消条件4種・テキサス監査 (終端12/10) | high / rising | 2026-09-17 |
-| [IND-030](../config/indicators.json) | 能力-リスク二面性 (監視可能性) | critical解消3基準 | critical / rising | 2026-09-17 |
-
-IND-013はCVE-2026-59176 (functype-mcp-server・Package Alias RCE) を在庫事案 (18悪性npm・[INFO-084](../Information/2026-09-08/collected-raw.md#INFO-084)) と非同一の独立事案と確定した (v4.93・確度高・在庫事案の格下げ仮説は支持材料として監視)。IND-029は第1観測機 (9/9窓閉鎖) の暫定帰属「非公開通例」条件付き批准を維持し次の実質観測機はテキサス474GW監査帰結 (終端12/10) とS-1終端。IND-030はN=1実質35R・Astra「監視が困難」自己開示にPachocki警告 ([INFO-084](../Information/2026-09-15/collected-raw.md#INFO-084)) が加わりcritical維持。
+|---|---|---|---|:-:|
+| [IND-013](../config/indicators.json) | エージェント供給チェーン攻撃 | 実害インシデントのA-2公表 | critical/rising (v4.96・状態変更なし)。HF事件=約700エージェント協調攻撃・RubyGems未報告前兆 ([INFO-123](../Information/2026-09-20/collected-raw.md#INFO-123) B-1) で検知された/されなかった系列の分岐監視を強化 | 2026-09-20 |
+| [IND-025](../config/indicators.json) | フロンティア性能の交叉確認 | 独立系・他ベンチ家族での再現 | elevated/stable (v4.96・状態変更なし)。Astra ARC-AGI-3 0.999の交叉確認ガード (A) は不充足継続 | 2026-09-20 |
+| [IND-026](../config/indicators.json) | エージェント本番到達と期待-実態ギャップ | 本番到達率の反転 | high/rising (v4.96・状態変更なし)。Deloitte一次特定 (80%効用認識 vs 37% EBIT影響) で測定単位の方向は整合も「方向的整合」格下げ (v4.96) | 2026-09-20 |
+| [IND-027](../config/indicators.json) | 標準化と価格体系 | 価格2層分化の「高」復帰条件 | high/rising (v4.96・状態変更なし)。上層はAstra $10/$50・フラッグシップ2連続値上げ・旧型終了公告 ([INFO-071](../Information/2026-09-20/collected-raw.md#INFO-071))、床側はSeed2.0約1桁安 ([INFO-117](../Information/2026-09-20/collected-raw.md#INFO-117)) で二層の分化が同週に重なった | 2026-09-20 |
+| [IND-028](../config/indicators.json) | AGI叙事と到達度指標 | 予測分裂の収束・外部検証 | high/rising (v4.96・状態変更なし) | 2026-09-20 |
+| [IND-029](../config/indicators.json) | 資本コストと銀団価格 | 取消条件4種・AI個別発行体スプレッド | high/rising (v4.96)。$1.2T評価額協議 ([INFO-082](../Information/2026-09-20/collected-raw.md#INFO-082)) を資本系列の観測機に追加。新監視ライン「AI個別発行体スプレッド」 (Oracle CDS>150bps初アンカー) 登録 | 2026-09-20 |
+| [IND-030](../config/indicators.json) | 能力-リスク二面性 (監視可能性) | critical解消3基準 | critical/rising (v4.96・N=1実質37R・rising40R自動発火事前登録)。LSVP脅威モデルのBS-001交差計上・HF事件700エージェントの追加 | 2026-09-20 |
 
 ## 6. 変化履歴
 
 | 日付 | 変更 | きっかけ |
 |:---:|---|---|
-| 2026-09-17 | v2形式へ全面書き直し。9/15バッチ (Agents API・減速要請・Pachocki警告・ペンタゴンFOIA・広告$1B) を初回計上。9/1のCursor供給終了 ([INFO-001](../Information/2026-09-01/collected-raw.md#INFO-001)・A-1) とv4.84裁定分も反映。§4/§5をv4.93値に更新 (9/16・17はDEGRADED-P1×2Rで新規証拠ゼロ) | 鮮度タイムアウト (8日) + 9/15バッチ未吸収 |
+| 2026-09-20 | 全面書き直し。GPT-6 Astra価格と旧型API終了日程 (INFO-071・A-2) を主力製品のライフサイクル構造事実として計上。$1.2T評価額協議 (INFO-082)・Astra for Law/広告製品 (INFO-004/003)・不整合報告フレームワーク (INFO-002)・Agents API公開ベータ (INFO-007)・ペンタゴン系列 (INFO-061/015・C+2計上) を新規計上。§4/§5をv4.96値に更新 | [INFO-071](../Information/2026-09-20/collected-raw.md#INFO-071)/[082](../Information/2026-09-20/collected-raw.md#INFO-082) + Arbiter v4.96 |
+| 2026-09-17 | v2形式へ全面書き直し。9/15バッチ (Agents API・減速要請・Pachocki警告・ペンタゴンFOIA・広告$1B) を初回計上。§4/§5をv4.93値に更新 | 鮮度タイムアウト (8日) + 9/15バッチ未吸収 |
 | 2026-09-09 | IND-029第1観測機閉鎖反映: 暫定帰属「非公開通例」条件付き批准・取消条件4種拡張事前登録 | [Arbiter v4.90](../state/arbiter-2026-09-09.md) |
-| 2026-09-08 | Astra公式全文 (INFO-089) と公式changelog計上で§0〜§2全面更新。日付問題解消・「監視可能性低下」自己開示のIND-030計上 | [Arbiter v4.89](../state/arbiter-2026-09-08.md) |
-| 2026-09-07 | Astra日付不整合とLuna/Terra価格出所を申し送り | Arbiter v4.88 |
-| 2026-09-06 | ARC-AGI-3系列分裂を§1に計上 | Arbiter v4.87 |
+| 2026-09-08 | Astra公式全文 (INFO-089) と公式changelog計上で§0〜§2全面更新。「監視可能性低下」自己開示のIND-030計上 | [Arbiter v4.89](../state/arbiter-2026-09-08.md) |
 
 ## 7. ブラインドスポット
 
-1. Agents APIの評価は公式発表文書のみに基づく。採用・利用・収益の定量が一切なく、発表と実装の乖離 (Anthropic EFS「今秋提供」前例) を割り引いて読む必要がある。
-2. 減速要請・義務的規制支持・Christiano就任は発話級であり、行動・文書級 (安全を理由に獲得した契約・価格プレミアム) との加重差 (1/2以下・v4.92制度) が実際の審査で機能するか未検証である。
-3. ペンタゴン契約の「拒らないAI」条項はドラフト段階のFOIA文書で、最終契約の内容は両当事者主張に依存する。需要側構造の解釈が一次確認なしに固定されるリスクがある。
-4. 収益申告6系列分裂が解消されていない。広告$1B報道も二次分析単独で、収益構造の変化を測る監査一次は依然不在である。
-5. 銀団「非公開通例」帰属は「静かな難航」と観測上ほぼ同値で判別は事前確率依存。取消条件が出るまでの観測は実質的に停止状態にある。
-6. Pachocki警告はC-2 (ニュースレター経由) で、発言の一次文脈 (対面・文書種別) が未確認である。
+1. Astra価格・旧型終了日程は公式Rate Card集成由来 (A-2) で、元帳票の6系列分裂の教訓からも料金表の頁単位での再取得が価値を持つ。Fast mode 2.5×の実測コスト検証はない。
+2. $1.2T評価額協議は「現在交渉中ではない」公式コメント付きのB-1で、評価額の伸びを資本調達の確定と読むのは先走る。
+3. Agents API・Astra for Law・広告製品はいずれも公開文書のみで採用・利用・収益の定量がなく、発表と実装の乖離を割り引いて読む必要がある。
+4. ペンタゴン系列の行動級材料 (分類ネットワーク拡大・GSA提携) は報道ベースで、最終条項の一次確認がないまま需要側構造の解釈が進むリスクがある。
+5. 収益申告6系列分裂が解消されていない。広告$1B報道も二次分析単独のままである。
+6. 不整合報告フレームワークは文書の公開で、報告件数・対応の運用データは未来の時点である。発話級と文書級の加重差の実運用はまだ一度も審査で使われていない。
 
 ## 付録: 直近30日の参照Evidence
 
 | Evidence | 信用 | 事項 |
 |---|:-:|---|
-| [INFO-004](../Information/2026-09-15/collected-raw.md#INFO-004) | A-2 | Agents API発表 (公式): Codexハーネスのマネージド提供・skills配布の公式実装 |
-| [INFO-047](../Information/2026-09-15/collected-raw.md#INFO-047) | B-2 | 義務的国家AI安全規制要請・カリフォルニア4法案支持 |
-| [INFO-051](../Information/2026-09-15/collected-raw.md#INFO-051) | B-2 | ペンタゴンFOIA: 「拒らないAI」ミッションモデル要求の契約ドラフト |
-| [INFO-052](../Information/2026-09-15/collected-raw.md#INFO-052) | B-2 | DOD分類ワークロード90%移行・Anthropic調達喪失の構造 (需要側背景) |
-| [INFO-062](../Information/2026-09-15/collected-raw.md#INFO-062) | B-2 | ChatGPT広告年間$10億規模・インテント販売モデル |
-| [INFO-084](../Information/2026-09-15/collected-raw.md#INFO-084) | C-2 | Pachocki警告: CoT監視依存の持続不可能・Astraのステガノグラフィ縁能力 |
-| [INFO-093](../Information/2026-09-15/collected-raw.md#INFO-093) | B-2 | Altman減速原則同意・組み込み評価者・2026年IPO否定 |
-| [INFO-096](../Information/2026-09-15/collected-raw.md#INFO-096) | B-2 | ChristianoのOpenAI Foundation理事就任 |
-| [INFO-069](../Information/2026-09-15/collected-raw.md#INFO-069) | C-2 | ARC-AGI-3 Astra 0.999 (9/8公式99.9%と同一事象) |
-| [INFO-046](../Information/2026-09-15/collected-raw.md#INFO-046) | B-2 | トランプEO州規制封じ (規制環境・両義注記) |
-| [INFO-107](../Information/2026-09-15/collected-raw.md#INFO-107) | A-2 | 上院duty of care法案交渉 (条文不在・規制環境) |
-| [Arbiter v4.90](../state/arbiter-2026-09-09.md) | 裁定 | 銀団第1観測機閉鎖・暫定帰属「非公開通例」条件付き批准 |
-| [Arbiter v4.92](../state/arbiter-2026-09-16.md) | 裁定 | 9/15バッチ初回評価 (全ゲート不発火)・発話級/行動級2段階加重制度 |
-| [Arbiter v4.93](../state/arbiter-2026-09-17.md) | 裁定 | 全仮説±0%・鮮度注記制度登録・CVE-2026-59176判定確定 |
+| [INFO-071](../Information/2026-09-20/collected-raw.md#INFO-071) | A-2 | GPT-6 Astra $10/$50・Sol割引$4/$20 (定価$5/$30)・o1 10/23・GPT-5/o3 12/11 API終了・フラッグシップ2連続値上げ |
+| [INFO-082](../Information/2026-09-20/collected-raw.md#INFO-082) | B-1 | 評価額$1.2T超 (最大$1.5T) Pre-IPOラウンド協議・3月$122B@$852B |
+| [INFO-004](../Information/2026-09-20/collected-raw.md#INFO-004) | A-3 | Astra for Law発表 (法務縦型・金融9/10に続き) |
+| [INFO-003](../Information/2026-09-20/collected-raw.md#INFO-003) | A-3 | Reimagining advertising with AI 公開 (詳細本文未取得) |
+| [INFO-002](../Information/2026-09-20/collected-raw.md#INFO-002) | A-3 | モデル不整合報告フレームワーク (Research枠・9/16) |
+| [INFO-007](../Information/2026-09-20/collected-raw.md#INFO-007) | A-2 | Agents API公開ベータ (managed sandboxes・プラットフォーム手数料なし・9/15の再観測) |
+| [INFO-061](../Information/2026-09-20/collected-raw.md#INFO-061) | B-2 | Altman「Pentagonの使用方法は制御できない」・分類ネットワーク拡大・DoD CTO反論 |
+| [INFO-015](../Information/2026-09-20/collected-raw.md#INFO-015) | B-3 | GSA提携: 政府$0ライセンス・50%使用割引 |
+| [INFO-123](../Information/2026-09-20/collected-raw.md#INFO-123) | B-1 | HF事件=約700エージェント協調攻撃・RubyGems前兆 (IND-013/BS-001文脈) |
+| [INFO-004](../Information/2026-09-15/collected-raw.md#INFO-004) | A-2 | Agents API発表 (9/15・前回計上の基盤) |
+| [INFO-051](../Information/2026-09-15/collected-raw.md#INFO-051) | B-2 | ペンタゴンFOIA: 「拒らないAI」ミッションモデル要求 (前回計上の継続) |
+| [INFO-084](../Information/2026-09-15/collected-raw.md#INFO-084) | C-2 | Pachocki警告: CoT監視依存の持続不可能 (前回計上の継続) |
+| [Arbiter v4.96](../state/arbiter-2026-09-20.md) | 裁定 | 全仮説±0%・H-GOV-002 C+2 (INFO-061/015)・Agents API配給条件を次回最優先 |
+| [Arbiter v4.93](../state/arbiter-2026-09-17.md) | 裁定 | 全仮説±0%・鮮度注記制度登録 (前回更新の基盤) |
