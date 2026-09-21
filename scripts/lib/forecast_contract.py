@@ -34,11 +34,12 @@ RISKS = {"MD-SOC", "MD-CO", "MD-IND", "RISK-SAFETY", "RISK-DEMAND", "RISK-SUPPLY
 
 
 def instant(value):
-    if not isinstance(value, str):
-        raise ValueError("timestamp must be an ISO string")
-    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
-    if parsed.tzinfo is None:
-        raise ValueError("timestamp requires timezone")
+    require(isinstance(value, str), "timestamp must be an ISO string")
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        raise ContractViolation('timestamp must be valid ISO 8601') from None
+    require(parsed.tzinfo is not None, "timestamp requires timezone")
     return parsed.astimezone(timezone.utc)
 
 

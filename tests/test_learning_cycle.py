@@ -61,6 +61,7 @@ class CycleTests(unittest.TestCase):
         self.assertEqual(manifest["outcome"], "failed")
         self.assertEqual(path.read_text(), "Existing official report")
         self.assertNotIn("Secret provider", json.dumps(manifest))
+        self.assertEqual(manifest['error_location'][-1]['function'], 'fail')
 
     def test_red_rejection_keeps_ledger_unchanged(self):
         def reject(stage, *args):

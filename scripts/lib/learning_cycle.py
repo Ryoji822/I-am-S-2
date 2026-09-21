@@ -5,6 +5,7 @@ import json
 import re
 import subprocess
 import tempfile
+import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -129,7 +130,9 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
             validate_stage(stage, result, policy)
             if stage == "collect" and runner is run_model:
                 captured, capture_gaps = capture_collected(result["records"])
-                quality = ('partial' if captured else 'failed') if capture_gaps else result['quality']
+                quality = result['quality']
+                if capture_gaps and quality in {'complete', 'partial'}:
+                    quality = 'partial' if captured else 'failed'
                 result = {**result, "records": captured, 'quality': quality,
                           'gaps': result['gaps'] + capture_gaps}
             if stage == "collect" and result['quality'] in {'complete', 'partial'}:
@@ -200,6 +203,9 @@ def run_locked(root, now, run_id, stage_runner, policy):
         metadata = directory / "stage-metadata.json"
         if isinstance(error, ContractViolation):
             manifest = {**manifest, "validation_failure": str(error)}
+        manifest = {**manifest, 'error_location': [
+            {'file': Path(frame.filename).name, 'function': frame.name, 'line': frame.lineno}
+            for frame in traceback.extract_tb(error.__traceback__)[-4:]]}
         if metadata.exists():
             manifest = {**manifest, "usage": read_json(metadata)}
         try:
