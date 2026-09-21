@@ -140,7 +140,7 @@
                 "const": "public"
               },
               "statement": {"type": "string"},
-              "horizon": {"type": "string"},
+              "horizon": {"enum": ["short", "medium", "long", "exploration"]},
               "mission_ids": {
                 "type": "array",
                 "items": {"type": "string"}
@@ -180,7 +180,7 @@
               },
               "hypothesis_id": {"type": "string"},
               "reviewed_at": {"type": "string"},
-              "assessment": {"type": "string"},
+              "assessment": {"enum": ["supported", "weakened", "undetermined"]},
               "supporting_evidence_ids": {
                 "type": "array",
                 "items": {"type": "string"}
@@ -235,7 +235,7 @@
               "published_at": {"type": "string"},
               "retrieved_at": {"type": "string"},
               "source_group": {"type": "string"},
-              "claim_type": {"type": "string"},
+              "claim_type": {"enum": ["observed_fact", "announced_plan", "reported_claim", "expert_opinion", "analysis"]},
               "summary": {"type": "string"},
               "content_hash": {"type": "string"}
             },
@@ -268,8 +268,8 @@
               },
               "statement": {"type": "string"},
               "metric_id": {"type": "string"},
-              "horizon": {"type": "string"},
-              "forecast_type": {"type": "string"},
+              "horizon": {"enum": ["short", "medium", "long", "exploration"]},
+              "forecast_type": {"enum": ["binary", "numeric", "time"]},
               "event_family_id": {"type": "string"},
               "mission_ids": {
                 "type": "array",
@@ -286,9 +286,9 @@
               "window_start": {"type": "string"},
               "deadline": {"type": "string"},
               "resolution_due": {"type": "string"},
-              "operator": {"type": "string"},
+              "operator": {"enum": [">=", ">", "<=", "<", "=="]},
               "threshold": {"type": "number"},
-              "resolution_mode": {"type": "string"},
+              "resolution_mode": {"enum": ["event", "period"]},
               "minimum_cases": {
                 "type": "integer",
                 "minimum": 0
@@ -305,7 +305,7 @@
                   "null"
                 ]
               },
-              "missing_policy": {"type": "string"},
+              "missing_policy": {"enum": ["unresolvable"]},
               "source_priority": {
                 "type": "array",
                 "items": {"type": "string"}
@@ -374,7 +374,7 @@
                 "minItems": 2,
                 "maxItems": 2
               },
-              "confidence": {"type": "string"},
+              "confidence": {"enum": ["low", "medium", "high"]},
               "confidence_reason": {"type": "string"},
               "evidence_ids": {
                 "type": "array",
@@ -487,7 +487,7 @@
                 "const": "public"
               },
               "question_id": {"type": "string"},
-              "status": {"type": "string"},
+              "status": {"enum": ["draft", "open", "awaiting_data", "resolved_true", "resolved_false", "resolved_value", "unresolvable", "invalidated", "condition_not_met"]},
               "outcome": {
                 "type": [
                   "number",
@@ -588,7 +588,7 @@
               },
               "link_id": {"type": "string"},
               "reviewed_at": {"type": "string"},
-              "assessment": {"type": "string"},
+              "assessment": {"enum": ["supported", "weakened", "undetermined"]},
               "evidence_ids": {
                 "type": "array",
                 "items": {"type": "string"}
@@ -636,7 +636,7 @@
               },
               "risk_id": {"type": "string"},
               "issued_at": {"type": "string"},
-              "level": {"type": "string"},
+              "level": {"enum": ["normal", "watch", "warning", "critical"]},
               "evidence_ids": {
                 "type": "array",
                 "items": {"type": "string"}
@@ -696,7 +696,7 @@
                 "items": {"type": "string"}
               },
               "recorded_at": {"type": "string"},
-              "status": {"type": "string"},
+              "status": {"enum": ["proposed", "chosen", "executed", "reviewed"]},
               "action": {"type": "string"},
               "conditions": {"type": "string"},
               "cost": {
