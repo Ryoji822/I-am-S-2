@@ -2,18 +2,20 @@
   "name": "static-update",
   "phase": 5,
   "description": "スタティック・インテリジェンスの増分更新",
-  "model": "glm-5",
+  "model": null,
   "prompt_file": "prompts/phase5-static-update.md",
-  "timeout_seconds": 900,
-  "max_retries": 1,
+  "timeout_seconds": 600,
+  "max_retries": 0,
   "inputs": [
-    "state/arbiter-{date}.md",
-    "Information/{date}/collected-raw.md",
+    "config/learning_policy.json",
     "config/hypotheses.json",
-    "config/scenarios.json",
-    "static_intelligence/"
+    "data/forecast_ledger/transactions/"
   ],
-  "outputs": ["static_intelligence/*.md", "state/static-update-{date}.md"],
-  "validation": "更新有無の明示",
-  "fallback": "skip"
+  "outputs": [
+    "state/runs/{run_id}/manifest.json"
+  ],
+  "validation": "strict structured records plus temporal/reference checks",
+  "fallback": "preserve_saved_state",
+  "entrypoint": "./ias2 run",
+  "standalone_execution": false
 }

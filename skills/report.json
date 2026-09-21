@@ -2,20 +2,20 @@
   "name": "report",
   "phase": 6,
   "description": "日本語インテリジェンス・レポート生成",
-  "model": "glm-5",
+  "model": null,
   "prompt_file": "prompts/phase6-report.md",
-  "timeout_seconds": 900,
-  "max_retries": 1,
+  "timeout_seconds": 600,
+  "max_retries": 0,
   "inputs": [
-    "state/arbiter-{date}.md",
-    "Information/{date}/processed.md",
-    "state/red-team-{date}.md",
-    "Information/{date}/collected-raw.md",
+    "config/learning_policy.json",
     "config/hypotheses.json",
-    "config/scenarios.json",
-    "config/indicators.json"
+    "data/forecast_ledger/transactions/"
   ],
-  "outputs": ["Intelligence/{date}.md"],
-  "validation": "今日のポイントセクションが存在、1000バイト以上",
-  "fallback": "stub_report"
+  "outputs": [
+    "state/runs/{run_id}/manifest.json"
+  ],
+  "validation": "strict structured records plus temporal/reference checks",
+  "fallback": "preserve_saved_state",
+  "entrypoint": "./ias2 run",
+  "standalone_execution": false
 }

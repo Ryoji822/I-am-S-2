@@ -1,0 +1,87 @@
+{
+  "source_commit": "9cfcabb",
+  "archived_at": "2026-09-22",
+  "purpose": "旧版の保存。過去の確度パーセントは新しい予測の確率へ流用しない。",
+  "files": [
+    {
+      "path": "config/hypotheses.json",
+      "sha256": "eb31f6151b3805c9e858e0ce739b2855fd06e69de3a1ad49a964952fa0ee6630"
+    },
+    {
+      "path": "config/scenarios.json",
+      "sha256": "49b9b895177757337aa6778a5d3a71bb54ab9297dc90c92b600dfb06d27eb2d6"
+    },
+    {
+      "path": "config/indicators.json",
+      "sha256": "18f55eb8f855a2b4373598fc4740c262b2dc01c8f86f2c7208f46f26c00d2d5b"
+    },
+    {
+      "path": "config/pirs.json",
+      "sha256": "96be083a8ed29361f144ce1a320f1c8ae8ffa35b683040f9b57298d967f43962"
+    },
+    {
+      "path": "config/collection_plan.json",
+      "sha256": "d70577b44dad0d7092b13bccf0f025d3f5c68162748294b7ff253a5c612a1f97"
+    },
+    {
+      "path": "config/arbiter_log.json",
+      "sha256": "4c7713e6b05c1bff877e0869d1719b573c7aa513997d2c74912d50ae93d0a776"
+    },
+    {
+      "path": "static_intelligence/bytedance.md",
+      "sha256": "ce0862ace3a482dd07243cba2b441483a3ddc0d776ebe75aea17078d1b85c9d3"
+    },
+    {
+      "path": "static_intelligence/xai.md",
+      "sha256": "f58d39cd6fff3df18bd9c52615d973c0a8c6213365d8f63ff55c571ba93c7014"
+    },
+    {
+      "path": "static_intelligence/anthropic.md",
+      "sha256": "6bd0a04a9f5a1abbdfbc6f726cf343c5001fccdfb66174df5a16edb8d00678b8"
+    },
+    {
+      "path": "static_intelligence/market-overview.md",
+      "sha256": "1426d064489d6b7f7c6388015702093d17efe02fe2448b3ae5127d6d89a57dc6"
+    },
+    {
+      "path": "static_intelligence/openai.md",
+      "sha256": "780b9dd6039b9d12ff0334ead0ccba1af61cd31200e06a1adb08f77e46c69fbf"
+    },
+    {
+      "path": "static_intelligence/scenario-tracker.md",
+      "sha256": "740758d7c35114219333fbebb587a0e313b53a7425ee0b9ea71bc9cd30699cc9"
+    },
+    {
+      "path": "static_intelligence/google.md",
+      "sha256": "d448fe3f16deccf35cc1e091b3f930e432e4532fc220f643d0e92f4223e7d9f8"
+    },
+    {
+      "path": "Intelligence/2026-09-15.md",
+      "sha256": "98bd09a10874a811add178e4f9ac8432f3dfd32ffdd858ad548601bdb719036c"
+    },
+    {
+      "path": "Intelligence/2026-09-16.md",
+      "sha256": "98ade9445edaa55f239018908869bdcb5af7dee5c025b45e93f14c303f4ea567"
+    },
+    {
+      "path": "Intelligence/2026-09-17.md",
+      "sha256": "49cd88121a3a83187ed059f5c0276ae0c0aa8817a48a07c2ec766fc5e9d09fc9"
+    },
+    {
+      "path": "Intelligence/2026-09-18.md",
+      "sha256": "1c83392f9e1db62f111a038f8716d342272bf2e0117a84d3d75361e0930bbd52"
+    },
+    {
+      "path": "Intelligence/2026-09-19.md",
+      "sha256": "abb6725dd77a79bc056eb31f7d46d82ecd891bb6d6f90604f4866359fdaeb5fb"
+    },
+    {
+      "path": "Intelligence/2026-09-20.md",
+      "sha256": "f049afda92d9f05b35c16c6a824d8e2c37b26e93d0f2ea8a4958dec081a88905"
+    },
+    {
+      "path": "Intelligence/2026-09-21.md",
+      "sha256": "53ba5144fd384bb30c53c0e96c6a52fd0fa1c2711e8ca5415987b13e9c51e703"
+    }
+  ]
+}

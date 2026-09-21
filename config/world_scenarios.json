@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "mutually_exclusive": false,
+  "probability_normalization": false,
+  "scenarios": [
+    {
+      "id": "W1",
+      "name": "人とAIで仕事の需要が広がる",
+      "supports": "時間短縮に加えて顧客需要・採用・実質賃金も増える",
+      "weakens": "生産性は上がるが新人採用や総労働時間は減り続ける",
+      "assessment": "undetermined",
+      "probability": null,
+      "reason": "成立条件を個別に検証する。旧シナリオの数値を引き継がない。"
+    },
+    {
+      "id": "W2",
+      "name": "AIや顧客接点の所有者に利益が集中する",
+      "supports": "利用条件・顧客接点・価格の決定権が少数へ集まる",
+      "weakens": "実務で代替でき、安く乗り換えられ、参入企業の利益も増える",
+      "assessment": "undetermined",
+      "probability": null,
+      "reason": "成立条件を個別に検証する。旧シナリオの数値を引き継がない。"
+    },
+    {
+      "id": "W3",
+      "name": "知的作業が安く広く使える",
+      "supports": "同品質の代替が安くなり、小規模な会社や個人の参入が増える",
+      "weakens": "高品質のAIやデータが一部の企業にしか使えない",
+      "assessment": "undetermined",
+      "probability": null,
+      "reason": "成立条件を個別に検証する。旧シナリオの数値を引き継がない。"
+    },
+    {
+      "id": "W4",
+      "name": "仕事以外の仕組みが生活を支える",
+      "supports": "労働所得の低下と、実際の給付や公共サービスの拡大が重なる",
+      "weakens": "新しい仕事へ移れて賃金が回復する、政策が議論のまま止まる",
+      "assessment": "undetermined",
+      "probability": null,
+      "reason": "成立条件を個別に検証する。旧シナリオの数値を引き継がない。"
+    },
+    {
+      "id": "W5",
+      "name": "所有と分配のルールが変わる",
+      "supports": "法的な所有・支配の変更と、公共・共同所有による供給が継続する",
+      "weakens": "補助金や一時対応にとどまり、所有と市場取引の実態は変わらない",
+      "assessment": "undetermined",
+      "probability": null,
+      "reason": "成立条件を個別に検証する。旧シナリオの数値を引き継がない。"
+    }
+  ]
+}

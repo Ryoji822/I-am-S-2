@@ -1,0 +1,112 @@
+{
+  "version": "1.0",
+  "risks": [
+    {
+      "id": "MD-SOC",
+      "mission_ids": [
+        "MIS-SOC"
+      ],
+      "path": "採用と育成が減り、次の仕事や所得保障が間に合わない",
+      "watch": "新人採用、再就職後の所得、実際の支援到達率",
+      "level": null,
+      "quality": "partial",
+      "loss": null,
+      "irreversibility": null,
+      "response_lead_time_days": null,
+      "estimated_time_to_impact_days": null,
+      "evidence_quality": "未評価",
+      "reason": "初期の検証候補。危険の発生を確認した意味ではない。",
+      "assessment": "unassessed"
+    },
+    {
+      "id": "MD-CO",
+      "mission_ids": [
+        "MIS-CO"
+      ],
+      "path": "AI提供者が顧客業務を直接引き受け、自社が顧客と利益を失う",
+      "watch": "提供機能の範囲、顧客の乗換え、粗利益、代替供給の試験",
+      "level": null,
+      "quality": "partial",
+      "loss": null,
+      "irreversibility": null,
+      "response_lead_time_days": null,
+      "estimated_time_to_impact_days": null,
+      "evidence_quality": "未評価",
+      "reason": "初期の検証候補。危険の発生を確認した意味ではない。",
+      "assessment": "unassessed"
+    },
+    {
+      "id": "MD-IND",
+      "mission_ids": [
+        "MIS-IND"
+      ],
+      "path": "今の仕事と移行先の仕事が減り、所得と交渉力が落ちる",
+      "watch": "実際の求人・受注・報酬と、次の仕事までの所要期間",
+      "level": null,
+      "quality": "partial",
+      "loss": null,
+      "irreversibility": null,
+      "response_lead_time_days": null,
+      "estimated_time_to_impact_days": null,
+      "evidence_quality": "未評価",
+      "reason": "初期の検証候補。危険の発生を確認した意味ではない。",
+      "assessment": "unassessed"
+    },
+    {
+      "id": "RISK-SAFETY",
+      "mission_ids": [
+        "MIS-SOC",
+        "MIS-CO",
+        "MIS-IND"
+      ],
+      "path": "制御できない行動や事故で損害・提供制限が起きる",
+      "watch": "実被害、再現と独立検証、正式な利用制限",
+      "level": null,
+      "quality": "partial",
+      "loss": null,
+      "irreversibility": null,
+      "response_lead_time_days": null,
+      "estimated_time_to_impact_days": null,
+      "evidence_quality": "未評価",
+      "reason": "初期の検証候補。危険の発生を確認した意味ではない。",
+      "assessment": "unassessed"
+    },
+    {
+      "id": "RISK-DEMAND",
+      "mission_ids": [
+        "MIS-SOC",
+        "MIS-CO",
+        "MIS-IND"
+      ],
+      "path": "所得減から売上減と追加の雇用縮小が続く",
+      "watch": "所得・消費・返済・給付を並べ、価格低下や新需要も調べる",
+      "level": null,
+      "quality": "partial",
+      "loss": null,
+      "irreversibility": null,
+      "response_lead_time_days": null,
+      "estimated_time_to_impact_days": null,
+      "evidence_quality": "未評価",
+      "reason": "初期の検証候補。危険の発生を確認した意味ではない。",
+      "assessment": "unassessed"
+    },
+    {
+      "id": "RISK-SUPPLY",
+      "mission_ids": [
+        "MIS-CO",
+        "MIS-IND"
+      ],
+      "path": "電力・計算資源・資金・地域の制約で供給が途切れる",
+      "watch": "稼働情報、供給契約、資金と電力の実供給",
+      "level": null,
+      "quality": "partial",
+      "loss": null,
+      "irreversibility": null,
+      "response_lead_time_days": null,
+      "estimated_time_to_impact_days": null,
+      "evidence_quality": "未評価",
+      "reason": "初期の検証候補。危険の発生を確認した意味ではない。",
+      "assessment": "unassessed"
+    }
+  ]
+}

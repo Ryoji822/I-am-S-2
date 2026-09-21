@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "mode": "shadow",
+  "shadow_days": 14,
+  "activation_requires": "14日分の実行で記録の保存・再実行・欠測・失敗時保全を確認する。予測精度の証明とは扱わない。",
+  "timezone": "Asia/Tokyo",
+  "schedule": {
+    "daily": "08:00",
+    "weekly": "Monday",
+    "monthly": "first_day",
+    "quarterly": "first_day",
+    "semiannual": "January_and_July_first_day"
+  },
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "max_retries_per_stage": 0,
+  "max_new_evidence": 20,
+  "stage_timeout_seconds": 600,
+  "daily_budget": null,
+  "monthly_budget": null,
+  "cost_policy": "金額上限は未設定。未計測を無料やゼロと表示しない。実測費用を実行ごとに残す。",
+  "minimum_calibration_families": 30,
+  "automatic_calibration": false,
+  "evidence_stale_days": 7,
+  "public_only": true,
+  "publish_by_default": false,
+  "notify_by_default": false
+}

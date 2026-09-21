@@ -2,19 +2,20 @@
   "name": "analyze",
   "phase": 2,
   "description": "Blue Agent: ACH更新、シナリオ確率更新、I&W評価",
-  "model": "glm-5",
+  "model": "glm-5.1",
   "prompt_file": "prompts/phase2-analyze.md",
-  "timeout_seconds": 1200,
-  "max_retries": 1,
+  "timeout_seconds": 600,
+  "max_retries": 0,
   "inputs": [
-    "Information/{date}/collected-raw.md",
+    "config/learning_policy.json",
     "config/hypotheses.json",
-    "config/scenarios.json",
-    "config/indicators.json",
-    "config/pirs.json",
-    "state/arbiter-latest.md"
+    "data/forecast_ledger/transactions/"
   ],
-  "outputs": ["Information/{date}/processed.md"],
-  "validation": "ACH更新セクションが存在",
-  "fallback": "passthrough_raw"
+  "outputs": [
+    "state/runs/{run_id}/manifest.json"
+  ],
+  "validation": "strict structured records plus temporal/reference checks",
+  "fallback": "preserve_saved_state",
+  "entrypoint": "./ias2 run",
+  "standalone_execution": false
 }

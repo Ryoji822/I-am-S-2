@@ -1,0 +1,686 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Learning update plan v2",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{1,100}$"
+    },
+    "expected_revision": {"type": "string"},
+    "quality": {
+      "enum": [
+        "complete",
+        "partial"
+      ]
+    },
+    "review_complete": {"type": "boolean"},
+    "records": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "metric"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "unit": {"type": "string"},
+              "region": {"type": "string"},
+              "population": {"type": "string"},
+              "quality_protocol": {"type": "string"}
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "unit",
+              "region",
+              "population",
+              "quality_protocol"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "hypothesis"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "statement": {"type": "string"},
+              "horizon": {"type": "string"},
+              "mission_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "causal_link_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "confirming_observation": {"type": "string"},
+              "refuting_observation": {"type": "string"}
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "statement",
+              "horizon",
+              "mission_ids",
+              "causal_link_ids",
+              "confirming_observation",
+              "refuting_observation"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "hypothesis_review"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "hypothesis_id": {"type": "string"},
+              "reviewed_at": {"type": "string"},
+              "assessment": {"type": "string"},
+              "supporting_evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "opposing_evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "alternative_explanations": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "reason": {"type": "string"},
+              "next_check": {"type": "string"},
+              "supersedes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "hypothesis_id",
+              "reviewed_at",
+              "assessment",
+              "supporting_evidence_ids",
+              "opposing_evidence_ids",
+              "alternative_explanations",
+              "reason",
+              "next_check",
+              "supersedes"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "evidence"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "url": {"type": "string"},
+              "published_at": {"type": "string"},
+              "retrieved_at": {"type": "string"},
+              "source_group": {"type": "string"},
+              "claim_type": {"type": "string"},
+              "summary": {"type": "string"},
+              "content_hash": {"type": "string"}
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "url",
+              "published_at",
+              "retrieved_at",
+              "source_group",
+              "claim_type",
+              "summary",
+              "content_hash"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "question"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "statement": {"type": "string"},
+              "metric_id": {"type": "string"},
+              "horizon": {"type": "string"},
+              "forecast_type": {"type": "string"},
+              "event_family_id": {"type": "string"},
+              "mission_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "scenario_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "causal_link_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "window_start": {"type": "string"},
+              "deadline": {"type": "string"},
+              "resolution_due": {"type": "string"},
+              "operator": {"type": "string"},
+              "threshold": {"type": "number"},
+              "resolution_mode": {"type": "string"},
+              "minimum_cases": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "condition_question_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "successor_of": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "missing_policy": {"type": "string"},
+              "source_priority": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "statement",
+              "metric_id",
+              "horizon",
+              "forecast_type",
+              "event_family_id",
+              "mission_ids",
+              "scenario_ids",
+              "causal_link_ids",
+              "window_start",
+              "deadline",
+              "resolution_due",
+              "operator",
+              "threshold",
+              "resolution_mode",
+              "minimum_cases",
+              "condition_question_id",
+              "successor_of",
+              "missing_policy",
+              "source_priority"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "vintage"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "question_id": {"type": "string"},
+              "issued_at": {"type": "string"},
+              "knowledge_cutoff": {"type": "string"},
+              "probability": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "point": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "interval": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {"type": "number"},
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "confidence": {"type": "string"},
+              "confidence_reason": {"type": "string"},
+              "evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "method_version": {"type": "string"},
+              "baseline_probability": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "baseline_point": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "question_id",
+              "issued_at",
+              "knowledge_cutoff",
+              "probability",
+              "point",
+              "interval",
+              "confidence",
+              "confidence_reason",
+              "evidence_ids",
+              "method_version",
+              "baseline_probability",
+              "baseline_point"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "observation"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "metric_id": {"type": "string"},
+              "value": {"type": "number"},
+              "unit": {"type": "string"},
+              "region": {"type": "string"},
+              "population": {"type": "string"},
+              "quality_protocol": {"type": "string"},
+              "period_start": {"type": "string"},
+              "period_end": {"type": "string"},
+              "published_at": {"type": "string"},
+              "retrieved_at": {"type": "string"},
+              "cases": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "complete": {"type": "boolean"},
+              "evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "supersedes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "metric_id",
+              "value",
+              "unit",
+              "region",
+              "population",
+              "quality_protocol",
+              "period_start",
+              "period_end",
+              "published_at",
+              "retrieved_at",
+              "cases",
+              "complete",
+              "evidence_ids",
+              "supersedes"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "resolution"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "question_id": {"type": "string"},
+              "status": {"type": "string"},
+              "outcome": {
+                "type": [
+                  "number",
+                  "string",
+                  "null"
+                ]
+              },
+              "observation_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "resolved_at": {"type": "string"},
+              "rule_reason": {"type": "string"},
+              "supersedes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "question_id",
+              "status",
+              "outcome",
+              "observation_ids",
+              "resolved_at",
+              "rule_reason",
+              "supersedes"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "review"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "question_id": {"type": "string"},
+              "resolution_id": {"type": "string"},
+              "reviewed_at": {"type": "string"},
+              "cause_hypotheses": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "supporting_evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "opposing_evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "affected_link_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "next_check": {"type": "string"},
+              "method_change": {"type": "string"}
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "question_id",
+              "resolution_id",
+              "reviewed_at",
+              "cause_hypotheses",
+              "supporting_evidence_ids",
+              "opposing_evidence_ids",
+              "affected_link_ids",
+              "next_check",
+              "method_change"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "link_review"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "link_id": {"type": "string"},
+              "reviewed_at": {"type": "string"},
+              "assessment": {"type": "string"},
+              "evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "review_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "reason": {"type": "string"},
+              "next_check": {"type": "string"},
+              "supersedes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "link_id",
+              "reviewed_at",
+              "assessment",
+              "evidence_ids",
+              "review_ids",
+              "reason",
+              "next_check",
+              "supersedes"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "warning"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "risk_id": {"type": "string"},
+              "issued_at": {"type": "string"},
+              "level": {"type": "string"},
+              "evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "reason": {"type": "string"},
+              "response_days": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "time_to_impact_days": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "next_check": {"type": "string"},
+              "supersedes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "risk_id",
+              "issued_at",
+              "level",
+              "evidence_ids",
+              "reason",
+              "response_days",
+              "time_to_impact_days",
+              "next_check",
+              "supersedes"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "decision"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_@.:-]{1,120}$"
+              },
+              "visibility": {
+                "const": "public"
+              },
+              "mission_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "recorded_at": {"type": "string"},
+              "status": {"type": "string"},
+              "action": {"type": "string"},
+              "conditions": {"type": "string"},
+              "cost": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "response_days": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "reversible": {"type": "boolean"},
+              "evidence_ids": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "outcome": {
+                "type": [
+                  "number",
+                  "string",
+                  "null"
+                ]
+              },
+              "supersedes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "type",
+              "id",
+              "visibility",
+              "mission_ids",
+              "recorded_at",
+              "status",
+              "action",
+              "conditions",
+              "cost",
+              "response_days",
+              "reversible",
+              "evidence_ids",
+              "outcome",
+              "supersedes"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "expected_revision",
+    "quality",
+    "review_complete",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$comment": "Structural contract only. Timestamp, immutable ID, scope, reference and deterministic resolution checks are enforced by scripts/lib/forecast_contract.py and forecast_learning.py."
+}

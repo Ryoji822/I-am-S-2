@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "region": "Japan",
+  "initial_sectors": [
+    "広告・マーケティング",
+    "ソフトウェア開発",
+    "事務・顧客対応"
+  ],
+  "population_codes": null,
+  "owner": "利用者",
+  "loss_tolerance": null,
+  "internal_results": "未提供。ニュースから自社・個人の実績を推定しない。",
+  "missions": [
+    {
+      "id": "MIS-SOC",
+      "name": "人が生活を支えられる仕事を続けられるか",
+      "metrics": [
+        "MET-LABOR",
+        "MET-REGIME"
+      ],
+      "success": "雇用だけでなく、実質賃金・総労働時間・新人採用・再就職後の所得も保たれる",
+      "not_success": "一部の高所得者だけに仕事が残る、低賃金の仕事だけが増える"
+    },
+    {
+      "id": "MIS-CO",
+      "name": "会社が顧客と利益を保てるか",
+      "metrics": [
+        "MET-COST",
+        "MET-FIRM"
+      ],
+      "success": "品質を保ち、同業と比べた利益・顧客維持・切替の自由を保つ",
+      "not_success": "人員を減らして一時的に利益が出ても、顧客接点や将来の需要を失う"
+    },
+    {
+      "id": "MIS-IND",
+      "name": "個人が所得と仕事の選択肢を保てるか",
+      "metrics": [
+        "MET-PERSON",
+        "MET-LABOR"
+      ],
+      "success": "労働所得・資産所得を分け、転職・受注・裁量も確かめる",
+      "not_success": "資産所得が増えたことだけで、仕事への需要の低下を隠す"
+    }
+  ]
+}

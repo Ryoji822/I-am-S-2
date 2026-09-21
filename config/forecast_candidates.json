@@ -1,0 +1,171 @@
+{
+  "version": "1.0",
+  "maximum_initial_candidates": 10,
+  "note": "すべて未発行。基準値・比較条件・確率の根拠が揃ってから将来の期限で登録する。過去の日報には遡って発行しない。",
+  "candidates": [
+    {
+      "id": "F-S01",
+      "horizon": "short",
+      "statement": "同じ品質で5業務を終える費用が基準より30%以上増える",
+      "scenario_ids": [
+        "W2"
+      ],
+      "causal_link_ids": [
+        "LINK-PRICE-COST"
+      ],
+      "status": "draft",
+      "probability": null,
+      "deadline": null,
+      "missing": "固定5業務、品質基準、基準4週間、各業務20件",
+      "next_review": "2026-09-29"
+    },
+    {
+      "id": "F-S02",
+      "horizon": "short",
+      "statement": "固定5業務のうち3業務で、別の提供先が同品質・半分以下の費用で済む",
+      "scenario_ids": [
+        "W3"
+      ],
+      "causal_link_ids": [
+        "LINK-PRICE-COST"
+      ],
+      "status": "draft",
+      "probability": null,
+      "deadline": null,
+      "missing": "固定5業務、比較先、品質基準、基準値",
+      "next_review": "2026-09-29"
+    },
+    {
+      "id": "F-S03",
+      "horizon": "short",
+      "statement": "現在提供している5業務のうち3業務を、AI提供会社が日本で標準提供する",
+      "scenario_ids": [
+        "W2"
+      ],
+      "causal_link_ids": [
+        "LINK-OWNERSHIP-PROFIT"
+      ],
+      "status": "draft",
+      "probability": null,
+      "deadline": null,
+      "missing": "現在の5業務、受入条件、対象提供会社、基準日の機能表",
+      "next_review": "2026-09-29"
+    },
+    {
+      "id": "F-S04",
+      "horizon": "short",
+      "statement": "OpenAIかAnthropicが安全上の理由で既存法人機能を7日以上制限する",
+      "scenario_ids": [
+        "W2",
+        "W3"
+      ],
+      "causal_link_ids": [
+        "LINK-SAFETY-SUPPLY"
+      ],
+      "status": "draft",
+      "probability": null,
+      "deadline": null,
+      "missing": "一般法人向けの対象機能と利用条件。既知の研究用評価停止は除外",
+      "next_review": "2026-09-29"
+    },
+    {
+      "id": "F-S05",
+      "horizon": "short",
+      "statement": "固定20業務のうち16業務を、人の修正なしで品質基準内に終える",
+      "scenario_ids": [
+        "W1",
+        "W3"
+      ],
+      "causal_link_ids": [
+        "LINK-AUTO-HOURS"
+      ],
+      "status": "draft",
+      "probability": null,
+      "deadline": null,
+      "missing": "固定20業務、調整に使わない試験、各3回の合格基準",
+      "next_review": "2026-09-29"
+    },
+    {
+      "id": "F-M01",
+      "horizon": "medium",
+      "statement": "新人向け求人の伸びが全経験層より10ポイント以上低くなる",
+      "scenario_ids": [
+        "W2",
+        "W4"
+      ],
+      "causal_link_ids": [
+        "LINK-HOURS-INCOME"
+      ],
+      "status": "draft",
+      "probability": null,
+      "deadline": null,
+      "missing": "職種コード、地域、重複除去規則、基準と比較の3か月",
+      "next_review": "2026-09-29"
+    },
+    {
+      "id": "F-M02",
+      "horizon": "medium",
+      "statement": "同じ品質の納品量を保ち、人の作業時間が20%以上減る",
+      "scenario_ids": [
+        "W1",
+        "W2"
+      ],
+      "causal_link_ids": [
+        "LINK-AUTO-HOURS"
+      ],
+      "status": "draft",
+      "probability": null,
+      "deadline": null,
+      "missing": "許可された自社集計、固定顧客・業務、基準期間",
+      "next_review": "2026-09-29"
+    },
+    {
+      "id": "F-M05",
+      "horizon": "medium",
+      "statement": "日本でAIによる職業移行を対象にした新しい所得支援が支給開始まで進む",
+      "scenario_ids": [
+        "W4"
+      ],
+      "causal_link_ids": [
+        "LINK-INCOME-DEMAND"
+      ],
+      "status": "draft",
+      "probability": null,
+      "deadline": null,
+      "missing": "既存制度一覧、対象者、法律・予算・支給を照合する公式情報源",
+      "next_review": "2026-09-29"
+    },
+    {
+      "id": "F-L01",
+      "horizon": "long",
+      "statement": "対象職種の実質賃金中央値が基準より10%以上低い状態が4四半期続く",
+      "scenario_ids": [
+        "W4"
+      ],
+      "causal_link_ids": [
+        "LINK-HOURS-INCOME"
+      ],
+      "status": "draft",
+      "probability": null,
+      "deadline": null,
+      "missing": "職種コード、地域、固定賃金系列、物価系列、基準期間、公表遅れ。新人採用は別の指標で追う",
+      "next_review": "2026-09-29"
+    },
+    {
+      "id": "F-L02",
+      "horizon": "long",
+      "statement": "固定したAI関連企業群で上位3社の営業利益構成比が基準より10ポイント以上高くなる",
+      "scenario_ids": [
+        "W2"
+      ],
+      "causal_link_ids": [
+        "LINK-OWNERSHIP-PROFIT"
+      ],
+      "status": "draft",
+      "probability": null,
+      "deadline": null,
+      "missing": "比較可能な公開営業利益の系列、固定企業群、赤字企業の扱い、基準4四半期と比較4四半期。開示不足なら未発行",
+      "next_review": "2026-09-29"
+    }
+  ]
+}

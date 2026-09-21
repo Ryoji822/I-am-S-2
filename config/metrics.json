@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "metrics": [
+    {
+      "id": "MET-COST",
+      "name": "同じ品質で仕事を終える総費用",
+      "unit": "ratio_to_baseline",
+      "definition": "料金・実行環境・失敗と再試行・人の確認と修正の費用を、合格成果物数で割る",
+      "source": "公式料金表と固定業務の実測",
+      "frequency": "weekly",
+      "population": null,
+      "baseline": null,
+      "quality_protocol": null,
+      "series_id": null,
+      "missing_policy": "do_not_impute",
+      "status": "definition_candidate"
+    },
+    {
+      "id": "MET-AUTO",
+      "name": "人が直さずに仕事を終えられる割合",
+      "unit": "proportion",
+      "definition": "固定した業務と品質基準で、成功率・介入時間・重大な失敗を別々に測る",
+      "source": "固定業務試験。提供会社のベンチマークは別欄",
+      "frequency": "monthly",
+      "population": null,
+      "baseline": null,
+      "quality_protocol": null,
+      "series_id": null,
+      "missing_policy": "do_not_impute",
+      "status": "definition_candidate"
+    },
+    {
+      "id": "MET-LABOR",
+      "name": "仕事と報酬がどれだけ残るか",
+      "unit": "series_specific",
+      "definition": "職種・経験層別の雇用、総時間、物価調整後の賃金、新人採用、移行後の所得",
+      "source": "総務省・厚生労働省の統計と重複除去した求人",
+      "frequency": "release_calendar",
+      "population": null,
+      "baseline": null,
+      "quality_protocol": null,
+      "series_id": null,
+      "missing_policy": "do_not_impute",
+      "status": "definition_candidate"
+    },
+    {
+      "id": "MET-FIRM",
+      "name": "会社の顧客と利益",
+      "unit": "series_specific",
+      "definition": "同業比較の利益、既存顧客維持、売上集中、提供先を変える所要日数",
+      "source": "公開企業開示と、公開を許可された自社集計だけ",
+      "frequency": "monthly",
+      "population": null,
+      "baseline": null,
+      "quality_protocol": null,
+      "series_id": null,
+      "missing_policy": "do_not_impute",
+      "status": "definition_candidate"
+    },
+    {
+      "id": "MET-PERSON",
+      "name": "個人の所得と選べる仕事",
+      "unit": "series_specific",
+      "definition": "労働所得と資産所得、受注先の集中、採用機会、裁量を分けて測る",
+      "source": "本人が提供した非公開原本から、公開を許可された集計だけ",
+      "frequency": "monthly",
+      "population": null,
+      "baseline": null,
+      "quality_protocol": null,
+      "series_id": null,
+      "missing_policy": "do_not_impute",
+      "status": "definition_candidate"
+    },
+    {
+      "id": "MET-REGIME",
+      "name": "所有と所得分配のルール",
+      "unit": "series_specific",
+      "definition": "所有・議決・利用条件の決定権、所得構成、法律・予算・実際の受給を分ける",
+      "source": "法令、政府予算、執行報告、公的統計",
+      "frequency": "monthly",
+      "population": null,
+      "baseline": null,
+      "quality_protocol": null,
+      "series_id": null,
+      "missing_policy": "do_not_impute",
+      "status": "definition_candidate"
+    },
+    {
+      "id": "MET-SAFETY",
+      "name": "安全上の問題と利用の継続",
+      "unit": "series_specific",
+      "definition": "評価実験と一般提供を分け、実被害、独立検証、利用制限と復旧を追う",
+      "source": "当事者の事故報告、独立評価、稼働情報",
+      "frequency": "daily",
+      "population": null,
+      "baseline": null,
+      "quality_protocol": null,
+      "series_id": null,
+      "missing_policy": "do_not_impute",
+      "status": "definition_candidate"
+    }
+  ]
+}

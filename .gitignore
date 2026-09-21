@@ -10,3 +10,9 @@ __pycache__/
 
 # GAS viewer (deployed separately via clasp, not part of the pipeline)
 .gas-viewer/
+
+# Local locks and incomplete atomic writes are never published
+**/.write.lock
+state/.learning-cycle.lock
+**/.pending-*
+private/

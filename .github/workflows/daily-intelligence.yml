@@ -1,112 +1,72 @@
-name: Daily Intelligence Pipeline
+name: Daily Intelligence Learning Cycle
 
 on:
   schedule:
-    # 08:00 JST = 23:00 UTC (previous day)
+    # 08:00 JST = previous day 23:00 UTC
     - cron: '0 23 * * *'
   workflow_dispatch:
-    inputs:
-      date:
-        description: 'Override date (YYYY-MM-DD format, default: today)'
-        required: false
-        type: string
 
 permissions:
   contents: write
 
-env:
-  TZ: Asia/Tokyo
-  GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
-  FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
-  SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-  SLACK_USER_ID: ${{ secrets.SLACK_USER_ID }}
-  # Phase 1 of Agentic Intelligence Redesign — Evidence ID + raw/processed split
-  ENABLE_EVIDENCE_PHASE1: "1"
+concurrency:
+  group: intelligence-learning-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
-  intelligence-pipeline:
+  intelligence:
     runs-on: ubuntu-latest
-    timeout-minutes: 260
-
+    timeout-minutes: 55
+    env:
+      TZ: Asia/Tokyo
+      PIPELINE_RUN_ID: gha-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
-
-      - name: Install OpenCode
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned OpenCode
+        run: npm install --global opencode-ai@1.18.31
+      - name: Check contracts and failure handling
+        run: |
+          python3 -m unittest discover -s tests -q
+          bash scripts/validate-output.sh
+      - name: Run cycle
+        id: cycle
+        continue-on-error: true
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+        run: bash scripts/run-pipeline.sh
+      - name: Persist verified public derivatives
+        if: steps.cycle.outcome == 'success'
         run: |
-          OPENCODE_VERSION=$(gh api repos/anomalyco/opencode/releases/latest --jq .tag_name | sed 's/^v//')
-          echo "Installing OpenCode v${OPENCODE_VERSION}"
-          curl -fsSL https://opencode.ai/install | bash -s -- --version "$OPENCODE_VERSION"
-
-      - name: Configure Git
-        run: |
-          git config user.name "I-am-S-2 Bot"
-          git config user.email "bot@i-am-s-2.github.io"
-
-      - name: Validate secrets
-        run: |
-          if [[ -z "$GLM_API_KEY" ]]; then
-            echo "::error::GLM_API_KEY secret is not set"
-            exit 1
-          fi
-          if [[ -z "$FIRECRAWL_API_KEY" ]]; then
-            echo "::error::FIRECRAWL_API_KEY secret is not set"
-            exit 1
-          fi
-          echo "✅ Required secrets are configured"
-          if [[ -z "${SLACK_BOT_TOKEN:-}" ]]; then
-            echo "::warning::SLACK_BOT_TOKEN is not set. Slack notifications will be skipped."
-          fi
-
-      - name: Run intelligence pipeline
-        run: |
-          chmod +x scripts/run-pipeline.sh
-          chmod +x scripts/validate-output.sh
-          bash scripts/run-pipeline.sh
-        timeout-minutes: 250
-        env:
-          PIPELINE_DATE: ${{ inputs.date }}
-
-      - name: Upload artifacts
+          git -C "$GITHUB_WORKSPACE" config user.name "I-am-S-2 Bot"
+          git -C "$GITHUB_WORKSPACE" config user.email "bot@i-am-s-2.github.io"
+          python3 scripts/publish-generated.py "$PIPELINE_RUN_ID"
+      - name: Upload run records
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: intelligence-${{ github.run_number }}
+          name: learning-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
-            Intelligence/
-            Information/
-            X_posts/
-            state/
-            static_intelligence/
+            state/runs/
+            state/shadow/data/forecast_ledger/transactions/
+            state/shadow/Intelligence/
+            state/shadow/reviews/
+            state/shadow/state/scores/
+            data/forecast_ledger/transactions/
+            reviews/
+            state/scores/
           retention-days: 30
-
-      - name: Report status
+      - name: Report actual run result
         if: always()
+        env:
+          CYCLE_OUTCOME: ${{ steps.cycle.outcome }}
         run: |
-          TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)
-          if [[ -f "Intelligence/$TODAY.md" ]]; then
-            echo "## ✅ Pipeline completed" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "### Files generated:" >> $GITHUB_STEP_SUMMARY
-            echo "- \`Intelligence/$TODAY.md\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`Information/$TODAY/collected-raw.md\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`Information/$TODAY/processed.md\`" >> $GITHUB_STEP_SUMMARY
-
-            # Show executive summary
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "### Executive Summary:" >> $GITHUB_STEP_SUMMARY
-            sed -n '/エグゼクティブ・サマリー\|今日のポイント/,/^---/p' "Intelligence/$TODAY.md" | head -10 >> $GITHUB_STEP_SUMMARY
-          else
-            echo "## ❌ Pipeline failed" >> $GITHUB_STEP_SUMMARY
-            echo "Daily intelligence report was not generated." >> $GITHUB_STEP_SUMMARY
-          fi
+          ./ias2 status >> "$GITHUB_STEP_SUMMARY"
+          test "$CYCLE_OUTCOME" = success

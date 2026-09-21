@@ -1,0 +1,126 @@
+{
+  "version": "1.0",
+  "links": [
+    {
+      "id": "LINK-PRICE-COST",
+      "from": "料金・利用条件が変わる",
+      "to": "同品質の総費用が変わる",
+      "alternative_explanation": "性能向上や手直し削減で値上げを相殺できるか",
+      "metric_ids": [
+        "MET-COST"
+      ],
+      "scenario_ids": [
+        "W2",
+        "W3"
+      ],
+      "lag": "未測定",
+      "assessment": "undetermined",
+      "probability": null
+    },
+    {
+      "id": "LINK-COST-PROFIT",
+      "from": "仕事の総費用が変わる",
+      "to": "会社の利益が変わる",
+      "alternative_explanation": "販売価格・需要・顧客構成の変化も見る",
+      "metric_ids": [
+        "MET-COST",
+        "MET-FIRM"
+      ],
+      "scenario_ids": [
+        "W1",
+        "W2",
+        "W3"
+      ],
+      "lag": "未測定",
+      "assessment": "undetermined",
+      "probability": null
+    },
+    {
+      "id": "LINK-AUTO-HOURS",
+      "from": "AIで任せられる仕事が増える",
+      "to": "人の総作業時間が変わる",
+      "alternative_explanation": "同じ業務と品質で測る。新しい需要による仕事増も見る",
+      "metric_ids": [
+        "MET-AUTO",
+        "MET-LABOR"
+      ],
+      "scenario_ids": [
+        "W1",
+        "W2",
+        "W3"
+      ],
+      "lag": "未測定",
+      "assessment": "undetermined",
+      "probability": null
+    },
+    {
+      "id": "LINK-HOURS-INCOME",
+      "from": "人の作業時間が変わる",
+      "to": "雇用・賃金・個人所得が変わる",
+      "alternative_explanation": "新人採用、再配置、新需要、景気の影響を別に見る",
+      "metric_ids": [
+        "MET-LABOR",
+        "MET-PERSON"
+      ],
+      "scenario_ids": [
+        "W1",
+        "W4"
+      ],
+      "lag": "未測定",
+      "assessment": "undetermined",
+      "probability": null
+    },
+    {
+      "id": "LINK-OWNERSHIP-PROFIT",
+      "from": "AIと顧客接点の決定権が集まる",
+      "to": "会社と個人の交渉力が変わる",
+      "alternative_explanation": "標準の開放と、顧客・データを移せることは別に確かめる",
+      "metric_ids": [
+        "MET-FIRM",
+        "MET-REGIME"
+      ],
+      "scenario_ids": [
+        "W2",
+        "W3",
+        "W5"
+      ],
+      "lag": "未測定",
+      "assessment": "undetermined",
+      "probability": null
+    },
+    {
+      "id": "LINK-INCOME-DEMAND",
+      "from": "労働所得が減る",
+      "to": "購買力と売上が減る",
+      "alternative_explanation": "給付、物価下落、資産所得、新需要が相殺するか",
+      "metric_ids": [
+        "MET-LABOR",
+        "MET-REGIME",
+        "MET-FIRM"
+      ],
+      "scenario_ids": [
+        "W4",
+        "W5"
+      ],
+      "lag": "未測定",
+      "assessment": "undetermined",
+      "probability": null
+    },
+    {
+      "id": "LINK-SAFETY-SUPPLY",
+      "from": "安全上の問題が起きる",
+      "to": "AIの利用条件や供給が変わる",
+      "alternative_explanation": "研究用の停止と一般顧客向けの停止を区別する",
+      "metric_ids": [
+        "MET-SAFETY"
+      ],
+      "scenario_ids": [
+        "W2",
+        "W3"
+      ],
+      "lag": "未測定",
+      "assessment": "undetermined",
+      "probability": null
+    }
+  ]
+}
