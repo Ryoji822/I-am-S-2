@@ -32,6 +32,18 @@ class ModelBoundaryTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 read_model_json(output)
 
+    def test_progress_text_is_not_concatenated_with_final_json(self):
+        output = '\n'.join(json.dumps({'type': 'text', 'part': {'text': text}}) for text in
+                           ['I will inspect the sources.', 'The tool is finished.', '```json\n{"records":[]}\n```'])
+        result, _ = read_model_json(output)
+        self.assertEqual(result, {'records': []})
+
+    def test_invalid_final_text_does_not_fall_back_to_earlier_json(self):
+        output = '\n'.join(json.dumps({'type': 'text', 'part': {'text': text}}) for text in
+                           ['{"records":[]}', 'The collection failed.'])
+        with self.assertRaises(ValueError):
+            read_model_json(output)
+
     def test_source_hash_is_computed_from_received_content(self):
         response = MagicMock()
         response.__enter__.return_value.read.return_value = b"public content"

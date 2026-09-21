@@ -12,7 +12,7 @@ from zoneinfo import ZoneInfo
 from .forecast_contract import FIELDS, instant, require
 from .forecast_learning import apply_plan, append_records, digest, load_state, validate_plan
 from .forecast_scoring import resolve
-from .learning_model import SOURCE_HOSTS, capture_collected, model_config, run_model
+from .learning_model import SOURCE_HOSTS, ModelResponseError, capture_collected, model_config, run_model
 from .learning_render import atomic_text, write_failure_snapshot, write_outputs
 from .legacy_information import historical_context
 from .report_knowledge import load_dossiers, merge_dossiers
@@ -116,7 +116,11 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
             stage_context = {**context, "now": stage_now, "previous_stages": outputs,
                              "instructions": (root / "prompts" / prompt).read_text(encoding="utf-8")}
             require(len(json.dumps(stage_context, ensure_ascii=False).encode()) <= 400_000, "model context budget exceeded")
-            result, cost = runner(stage, stage_context, Path(temporary) / stage, policy)
+            try:
+                result, cost = runner(stage, stage_context, Path(temporary) / stage, policy)
+            except ModelResponseError as error:
+                atomic_text(run_directory / "stage-metadata.json", json.dumps({**usage, stage: error.metadata}, ensure_ascii=False, indent=2) + "\n")
+                raise
             validate_stage(stage, result, policy)
             if stage == "collect" and runner is run_model:
                 result = {**result, "records": capture_collected(result["records"])}
@@ -169,7 +173,8 @@ def run_locked(root, now, run_id, stage_runner, policy):
         write_outputs(root, accepted, manifest, plan["records"], dossiers)
     except (ValueError, KeyError, TypeError, OSError, RuntimeError, subprocess.SubprocessError) as error:
         manifest = {**manifest, "outcome": "failed", "quality": "failed", "error_type": type(error).__name__,
-                    "finished_at": now, "gaps": ["収集・反証・検証・保存のいずれかが完了しませんでした。新しい正式判断は公表していません。"],
+                    "finished_at": datetime.now(timezone.utc).isoformat() if stage_runner is run_model else now,
+                    "gaps": ["収集・反証・検証・保存のいずれかが完了しませんでした。新しい正式判断は公表していません。"],
                     "revision_after": load_state(ledger_root)["revision"]}
         metadata = directory / "stage-metadata.json"
         if metadata.exists():

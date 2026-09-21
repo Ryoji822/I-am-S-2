@@ -66,6 +66,12 @@ def model_config(directory):
                 "models": {"glm-5.1": {"name": "GLM-5.1"}}}}}
 
 
+class ModelResponseError(ValueError):
+    def __init__(self, metadata):
+        super().__init__('model final response is not valid JSON')
+        self.metadata = metadata
+
+
 def read_model_json(output):
     texts, usage = [], []
     for line in output.splitlines():
@@ -78,15 +84,22 @@ def read_model_json(output):
             texts.append(part["text"])
         if event.get("type") == "step_finish":
             usage.append({k: part.get(k) for k in ("cost", "tokens")})
-    result = "\n".join(texts).strip()
+    # OpenCode emits completed text parts for both progress and the final reply.
+    # Only the final reply is the stage result; never reuse an earlier proposal.
+    result = texts[-1].strip() if texts else ''
+    costs = [step["cost"] for step in usage]
+    metadata = {"cost": sum(costs) if costs and all(isinstance(c, (int, float)) for c in costs) else None,
+                "unit": "provider_reported_USD", "steps": usage}
     if result.startswith("```json") and result.endswith("```"):
         result = result[7:-3].strip()
-    require(bool(result), "model returned no JSON")
-    parsed = json.loads(result)
+    try:
+        parsed = json.loads(result)
+    except json.JSONDecodeError as error:
+        raise ModelResponseError({**metadata, 'status': 'invalid_final_json', 'text_parts': len(texts),
+                                  'final_characters': len(result), 'error_line': error.lineno,
+                                  'error_column': error.colno}) from None
     require(isinstance(parsed, dict), "model result must be an object")
-    costs = [step["cost"] for step in usage]
-    return parsed, {"cost": sum(costs) if costs and all(isinstance(c, (int, float)) for c in costs) else None,
-                    "unit": "provider_reported_USD", "steps": usage}
+    return parsed, metadata
 
 
 def run_model(stage, context, directory, policy):
