@@ -59,6 +59,7 @@ def model_config(directory):
                   "webfetch": "allow", "websearch": "allow", "bash": "deny", "edit": "deny",
                   "task": "deny", "external_directory": "deny"}
     return {"$schema": "https://opencode.ai/config.json", "share": "disabled", "snapshot": False,
+            "compaction": {"auto": False},
             "autoupdate": False, "permission": permission,
             "agent": {"learning": {"mode": "primary", "permission": permission}},
             "provider": {"zai": {"npm": "@ai-sdk/openai-compatible", "name": "Z.ai",

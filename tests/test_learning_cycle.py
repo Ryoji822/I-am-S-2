@@ -85,6 +85,7 @@ class CycleTests(unittest.TestCase):
         for action in ["bash", "edit", "task", "external_directory"]:
             self.assertEqual(permission[action], "deny")
         self.assertEqual(config["share"], "disabled")
+        self.assertFalse(config['compaction']['auto'])
 
     def test_model_receives_valid_record_values_not_only_field_names(self):
         context = current_context(self.root, load_state(self.root), NOW)

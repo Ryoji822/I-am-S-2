@@ -35,6 +35,19 @@ def validate_dossiers(dossiers):
         require(any('https://' in section['body'] for section in sections), 'dossier needs sources')
 
 
+def collection_index(dossiers):
+    """Give the collector navigation, while analysis and rendering retain full text."""
+    return {subject: {'title': dossier['title'], 'available_on': dossier['available_on'],
+                     'overview': dossier['sections'][0]['body'].split('\n\n')[0],
+                     'scope': '収集用索引。分析・反証・出力には別途全文を渡す。',
+                     'sections': [{'id': section['id'], 'title': section['title'],
+                                   'record_id': section.get('record_id'),
+                                   'reviewed_at': section.get('reviewed_at'),
+                                   'source_urls': sorted(set(re.findall(r'https://[^\s)]+', section['body'])))}
+                                  for section in dossier['sections']]}
+            for subject, dossier in dossiers.items()}
+
+
 def merge_dossiers(baseline, state, now):
     dossiers = copy.deepcopy(baseline)
     updates = sorted(state['records']['dossier_section'].values(), key=lambda row: (instant(row['reviewed_at']), row['id']))
@@ -76,5 +89,7 @@ def relocate_links(text, target_directory):
         if re.match(r'[a-zA-Z][a-zA-Z0-9+.-]*:', url) or url.startswith(('#', '/')):
             return match.group(0)
         path = posixpath.normpath(posixpath.join('static_intelligence', url))
+        if target_directory.startswith('state/shadow/') and path.startswith('static_intelligence/'):
+            path = posixpath.join('state/shadow', path)
         return f'[{label}]({posixpath.relpath(path, target_directory)})'
     return re.sub(r'\[([^\]]+)\]\(([^\s)]+)\)', replacement, text)

@@ -15,7 +15,7 @@ from .forecast_scoring import resolve
 from .learning_model import SOURCE_HOSTS, ModelResponseError, capture_collected, model_config, run_model
 from .learning_render import atomic_text, write_failure_snapshot, write_outputs
 from .legacy_information import historical_context
-from .report_knowledge import load_dossiers, merge_dossiers
+from .report_knowledge import collection_index, load_dossiers, merge_dossiers
 
 
 STAGES = {"collect": "phase1-collect.md", "blue": "phase2-analyze.md",
@@ -116,6 +116,9 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
             stage_now = datetime.now(timezone.utc).isoformat() if runner is run_model else now
             stage_context = {**context, "now": stage_now, "previous_stages": outputs,
                              "instructions": (root / "prompts" / prompt).read_text(encoding="utf-8")}
+            if stage == 'collect':
+                stage_context = {**stage_context, 'dossiers': collection_index(context['dossiers']),
+                                 'max_source_documents': 5}
             require(len(json.dumps(stage_context, ensure_ascii=False).encode()) <= 400_000, "model context budget exceeded")
             try:
                 result, cost = runner(stage, stage_context, Path(temporary) / stage, policy)

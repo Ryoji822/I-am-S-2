@@ -7,7 +7,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from lib.report_knowledge import load_dossiers, merge_dossiers, dossier_text, validate_dossiers, relocate_links
+from lib.report_knowledge import load_dossiers, merge_dossiers, dossier_text, validate_dossiers, relocate_links, collection_index
 from lib.legacy_information import search_information
 from lib.forecast_learning import empty_state, append_records, validate_plan
 from lib.forecast_contract import instant
@@ -134,6 +134,21 @@ class KnowledgeTests(unittest.TestCase):
     def test_future_baseline_is_not_retroactively_available(self):
         with self.assertRaises(ValueError):
             load_dossiers(self.root, '2026-09-21T00:00:00Z')
+
+    def test_collection_index_preserves_sources_without_replacing_full_dossiers(self):
+        dossiers = load_dossiers(self.root, NOW)
+        original = json.dumps(dossiers, ensure_ascii=False)
+        index = collection_index(dossiers)
+        self.assertEqual(set(index), set(dossiers))
+        self.assertIn('https://openai.com/index/accelerating-the-next-phase-ai/',
+                      index['openai']['sections'][0]['source_urls'])
+        self.assertLess(len(json.dumps(index, ensure_ascii=False)), len(original) / 2)
+        self.assertEqual(json.dumps(dossiers, ensure_ascii=False), original)
+
+    def test_shadow_links_use_the_same_snapshot_and_root_archives(self):
+        text = '[company](openai.md) [archive](../archive/original.md)'
+        self.assertEqual(relocate_links(text, 'state/shadow/Intelligence'),
+                         '[company](../static_intelligence/openai.md) [archive](../../../archive/original.md)')
 
     def test_render_retry_uses_saved_baseline_even_if_config_changes(self):
         with patch('lib.learning_cycle.write_outputs', side_effect=OSError('disk unavailable')):
