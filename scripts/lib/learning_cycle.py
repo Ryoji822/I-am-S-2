@@ -128,13 +128,25 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
             atomic_text(run_directory / "stage-metadata.json", json.dumps({**usage, stage: {**cost, "status": "returned"}}, ensure_ascii=False, indent=2) + "\n")
             validate_stage(stage, result, policy)
             if stage == "collect" and runner is run_model:
-                result = {**result, "records": capture_collected(result["records"])}
+                captured, capture_gaps = capture_collected(result["records"])
+                quality = ('partial' if captured else 'failed') if capture_gaps else result['quality']
+                result = {**result, "records": captured, 'quality': quality,
+                          'gaps': result['gaps'] + capture_gaps}
             if stage == "collect" and result['quality'] in {'complete', 'partial'}:
                 validation = {"run_id": "validate-collection", "expected_revision": state['revision'],
                               "quality": result['quality'], "review_complete": False, "records": result['records']}
                 validate_plan(state, validation, instant(datetime.now(timezone.utc).isoformat() if runner is run_model else now))
             outputs, usage = {**outputs, stage: result}, {**usage, stage: cost}
             atomic_text(run_directory / "stage-metadata.json", json.dumps(usage, ensure_ascii=False, indent=2) + "\n")
+            if stage == 'collect' and result['quality'] == 'partial':
+                # Partial evidence cannot authorize any judgment or dossier update.
+                reason = '部分収集のため新しい判断を作らず、検証済み資料と欠測だけを保存します。'
+                outputs = {**outputs, 'blue': {'records': [], 'reason': reason},
+                           'red': {'accepted': True, 'issues': [], 'reason': reason},
+                           'arbiter': {'records': [], 'reason': reason}}
+                usage = {**usage, **{key: {'status': 'skipped_partial_collection'} for key in ['blue', 'red', 'arbiter']}}
+                atomic_text(run_directory / "stage-metadata.json", json.dumps(usage, ensure_ascii=False, indent=2) + "\n")
+                break
             # Only accepted public derivatives are persisted after the entire run validates.
     return outputs, usage
 

@@ -5,6 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import MagicMock, patch
+from urllib.error import HTTPError, URLError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from lib.learning_model import public_source, read_model_json, capture_evidence, capture_collected, run_model
@@ -71,10 +72,30 @@ class ModelBoundaryTests(unittest.TestCase):
         original = [{"type": "evidence", "id": "E-1", "retrieved_at": "old"},
                     {"type": "observation", "id": "O-1", "retrieved_at": "old"}]
         with patch("lib.learning_model.capture_evidence", side_effect=lambda r, now: {**r, "content_hash": "hash"}):
-            captured = capture_collected(original)
+            captured, gaps = capture_collected(original)
+        self.assertEqual(gaps, [])
         self.assertEqual(captured[0]["retrieved_at"], captured[1]["retrieved_at"])
         self.assertNotEqual(captured[0]["retrieved_at"], "old")
         self.assertEqual(original[0]["retrieved_at"], "old")
+
+    def test_unavailable_source_removes_only_dependent_records(self):
+        original = [{'type': 'evidence', 'id': 'E-1', 'url': 'https://openai.com/missing'},
+                    {'type': 'evidence', 'id': 'E-2', 'url': 'https://google.com/news'},
+                    {'type': 'observation', 'id': 'O-1', 'evidence_ids': ['E-1', 'E-2']},
+                    {'type': 'observation', 'id': 'O-2', 'evidence_ids': ['E-2']}]
+        for error in [HTTPError(original[0]['url'], 403, 'private error detail', {}, None),
+                      URLError('private error detail'), TimeoutError('private error detail')]:
+            with patch('lib.learning_model.capture_evidence', side_effect=[error, original[1]]):
+                captured, gaps = capture_collected(original)
+            self.assertEqual([r['id'] for r in captured], ['E-2', 'O-2'])
+            self.assertEqual(len(gaps), 1)
+            self.assertNotIn('private error detail', str(gaps))
+            self.assertNotIn('retrieved_at', original[1])
+
+    def test_invalid_source_contract_is_not_hidden_as_network_gap(self):
+        with patch('lib.learning_model.capture_evidence', side_effect=ValueError('unsafe source')):
+            with self.assertRaises(ValueError):
+                capture_collected([{'type': 'evidence', 'id': 'E-1'}])
 
 
 if __name__ == "__main__":

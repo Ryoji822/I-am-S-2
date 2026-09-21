@@ -129,6 +129,19 @@ class CycleTests(unittest.TestCase):
         self.assertEqual(manifest["outcome"], "failed")
         self.assertEqual(load_state(self.root / "state/shadow")["sequence"], 0)
 
+    def test_partial_collection_saves_facts_without_calling_judgment_models(self):
+        def collect_only(stage, *args):
+            self.assertEqual(stage, 'collect')
+            return {'quality': 'partial', 'records': [initial_records()[1]], 'gaps': ['One source unavailable']}, {}
+        manifest = run_cycle(self.root, NOW, 'partial-source', collect_only)
+        self.assertEqual(manifest['outcome'], 'partial')
+        self.assertEqual(manifest['gaps'], ['One source unavailable'])
+        self.assertEqual(manifest['usage']['blue']['status'], 'skipped_partial_collection')
+        records = load_state(self.root / 'state/shadow')['records']
+        self.assertEqual(len(records['evidence']), 1)
+        self.assertEqual(len(records['vintage']), 0)
+        self.assertEqual(len(records['dossier_section']), 0)
+
     def test_render_failure_can_resume_saved_plan_without_model_calls(self):
         with patch("lib.learning_cycle.write_outputs", side_effect=OSError("render unavailable")):
             failed = self.run_cycle(run_id="render-recovery")

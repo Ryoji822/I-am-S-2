@@ -6,6 +6,7 @@ import os
 import subprocess
 from datetime import datetime, timezone
 from urllib.parse import urlparse
+from urllib.error import HTTPError, URLError
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 from .forecast_contract import require
@@ -49,9 +50,17 @@ def capture_evidence(record, now):
 
 def capture_collected(records):
     started = datetime.now(timezone.utc).isoformat()
-    captured = [capture_evidence(r, started) if r["type"] == "evidence" else dict(r) for r in records]
+    captured, unavailable, gaps = [], set(), []
+    for record in records:
+        try:
+            captured.append(capture_evidence(record, started) if record['type'] == 'evidence' else dict(record))
+        except (URLError, TimeoutError) as error:
+            unavailable.add(record['id'])
+            reason = f'HTTP {error.code}' if isinstance(error, HTTPError) else '接続失敗またはタイムアウト'
+            gaps.append(f"{urlparse(record['url']).hostname} の原資料を再取得できませんでした（{reason}）。関連する記録は採用していません。")
+    captured = [record for record in captured if not unavailable.intersection(record.get('evidence_ids', []))]
     retrieved = datetime.now(timezone.utc).isoformat()
-    return [{**record, "retrieved_at": retrieved} for record in captured]
+    return [{**record, "retrieved_at": retrieved} for record in captured], gaps
 
 
 def model_config(directory):
