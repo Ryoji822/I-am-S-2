@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from .forecast_contract import FIELDS, instant, require
+from .forecast_contract import ContractViolation, FIELDS, instant, require
 from .forecast_learning import apply_plan, append_records, digest, load_state, validate_plan
 from .forecast_scoring import resolve
 from .learning_model import SOURCE_HOSTS, ModelResponseError, capture_collected, model_config, run_model
@@ -121,6 +121,7 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
             except ModelResponseError as error:
                 atomic_text(run_directory / "stage-metadata.json", json.dumps({**usage, stage: error.metadata}, ensure_ascii=False, indent=2) + "\n")
                 raise
+            atomic_text(run_directory / "stage-metadata.json", json.dumps({**usage, stage: {**cost, "status": "returned"}}, ensure_ascii=False, indent=2) + "\n")
             validate_stage(stage, result, policy)
             if stage == "collect" and runner is run_model:
                 result = {**result, "records": capture_collected(result["records"])}
@@ -177,6 +178,8 @@ def run_locked(root, now, run_id, stage_runner, policy):
                     "gaps": ["収集・反証・検証・保存のいずれかが完了しませんでした。新しい正式判断は公表していません。"],
                     "revision_after": load_state(ledger_root)["revision"]}
         metadata = directory / "stage-metadata.json"
+        if isinstance(error, ContractViolation):
+            manifest = {**manifest, "validation_failure": str(error)}
         if metadata.exists():
             manifest = {**manifest, "usage": read_json(metadata)}
         try:

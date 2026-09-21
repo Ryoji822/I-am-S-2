@@ -42,9 +42,13 @@ def instant(value):
     return parsed.astimezone(timezone.utc)
 
 
+class ContractViolation(ValueError):
+    """Developer-authored validation message, never provider text or record values."""
+
+
 def require(condition, message):
     if not condition:
-        raise ValueError(message)
+        raise ContractViolation(message)
 
 
 def number(value):

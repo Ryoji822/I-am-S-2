@@ -66,6 +66,7 @@ class CycleTests(unittest.TestCase):
             return ({"accepted": False, "issues": ["unverified"], "reason": "Missing source"}, {}) if stage == "red" else successful_stage(stage, *args)
         manifest = run_cycle(self.root, NOW, "test-reject", reject)
         self.assertEqual(manifest["outcome"], "failed")
+        self.assertEqual(manifest['validation_failure'], 'red review rejected proposal')
         self.assertEqual(load_state(self.root / "state/shadow")["sequence"], 0)
 
     def test_arbiter_cannot_add_a_new_unreviewed_judgment(self):
