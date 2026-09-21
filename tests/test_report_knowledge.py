@@ -35,7 +35,7 @@ class KnowledgeTests(unittest.TestCase):
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()
         self.root = Path(self.temporary.name)
-        for directory in ['config', 'prompts']:
+        for directory in ['config', 'prompts', 'schemas']:
             shutil.copytree(ROOT / directory, self.root / directory)
 
     def tearDown(self):

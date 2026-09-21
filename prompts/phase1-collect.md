@@ -7,7 +7,7 @@
 出力は厳密なJSON一つだけです。
 {"quality":"complete|partial|stale|failed","records":[],"gaps":[]}
 
-recordsはcontext.record_fieldsで示すevidenceとobservationだけ。各記録にはtype,id,visibility="public"と、その型の全フィールドを持たせ、追加フィールドは禁止します。取得できない資料を作らず、公開時刻が不明ならgapsにURLと不足を残します。evidenceのretrieved_atはcontext.now、content_hashはsha256:に続けて64個の0を仮置きしてください。保存前にプログラムがURLを再取得し、実データのハッシュと取得時刻に置き換えます。これは性能や公開日時の独立検証とは別です。
+recordsはcontext.record_schemaに定義したevidenceとobservationだけ。フィールドの型・enum・必須項目を厳守します。claim_typeはobserved_fact / announced_plan / reported_claim / expert_opinion / analysisの5種類だけです。source_typeやpublication等の別分類をclaim_typeへ代入しません。各記録にはtype,id,visibility="public"と、その型の全フィールドを持たせ、追加フィールドは禁止します。取得できない資料を作らず、公開時刻が不明ならgapsにURLと不足を残します。evidenceのretrieved_atはcontext.now、content_hashはsha256:に続けて64個の0を仮置きしてください。保存前にプログラムがURLを再取得し、実データのハッシュと取得時刻に置き換えます。これは性能や公開日時の独立検証とは別です。
 
 observationは登録済みmetricと地域・母集団・単位・品質基準が完全に一致する実測値だけです。未登録の自社・個人データ、推定の基準値、例示値を入れません。period_start/endは測定対象期間、published_atは実績公表時刻、retrieved_atは取得時刻です。日時はタイムゾーン必須です。統計訂正は新IDとsupersedesで残します。完全な対象範囲を測れていない場合はcomplete=falseです。
 

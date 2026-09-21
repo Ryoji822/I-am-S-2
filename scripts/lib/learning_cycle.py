@@ -57,6 +57,7 @@ def current_context(root, state, now):
     selected["evidence"] = list({**evidence, **{key: records["evidence"][key] for key in linked_evidence}}.values())
     return {"now": now, "revision": state["revision"], "catalogs": catalogs,
             "records": selected, "record_fields": FIELDS,
+            "record_schema": read_json(root / "schemas/learning-plan.schema.json")["properties"]["records"],
             "dossiers": merge_dossiers(load_dossiers(root, now), state, now),
             "legacy_information": historical_context(root, now),
             "allowed_source_domains": SOURCE_HOSTS,
@@ -125,6 +126,10 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
             validate_stage(stage, result, policy)
             if stage == "collect" and runner is run_model:
                 result = {**result, "records": capture_collected(result["records"])}
+            if stage == "collect" and result['quality'] in {'complete', 'partial'}:
+                validation = {"run_id": "validate-collection", "expected_revision": state['revision'],
+                              "quality": result['quality'], "review_complete": False, "records": result['records']}
+                validate_plan(state, validation, instant(datetime.now(timezone.utc).isoformat() if runner is run_model else now))
             outputs, usage = {**outputs, stage: result}, {**usage, stage: cost}
             atomic_text(run_directory / "stage-metadata.json", json.dumps(usage, ensure_ascii=False, indent=2) + "\n")
             # Only accepted public derivatives are persisted after the entire run validates.

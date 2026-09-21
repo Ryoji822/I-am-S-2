@@ -34,6 +34,7 @@ class CycleTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         shutil.copytree(ROOT / "config", self.root / "config")
         shutil.copytree(ROOT / "prompts", self.root / "prompts")
+        shutil.copytree(ROOT / "schemas", self.root / "schemas")
 
     def tearDown(self):
         self.temp.cleanup()
@@ -84,6 +85,13 @@ class CycleTests(unittest.TestCase):
         for action in ["bash", "edit", "task", "external_directory"]:
             self.assertEqual(permission[action], "deny")
         self.assertEqual(config["share"], "disabled")
+
+    def test_model_receives_valid_record_values_not_only_field_names(self):
+        context = current_context(self.root, load_state(self.root), NOW)
+        variants = context['record_schema']['items']['oneOf']
+        evidence = next(row for row in variants if row['properties']['type']['const'] == 'evidence')
+        self.assertEqual(set(evidence['properties']['claim_type']['enum']),
+                         {'observed_fact', 'announced_plan', 'reported_claim', 'expert_opinion', 'analysis'})
 
     def test_historical_live_run_is_rejected(self):
         with self.assertRaises(ValueError):
