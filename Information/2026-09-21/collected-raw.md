@@ -1883,6 +1883,3 @@
   - AnthropicのUK ASIへのモデル留保が新規的事实
 - **引用URL:** https://www.atlanticcouncil.org/dispatches/what-the-proposed-ai-slowdown-means-for-the-us-china-and-humanity-at-large/
 - **Evidence ID:** EVD-20260920-0123
-
-
-> ⚠️ DEGRADED: Blue Agent analysis failed. Raw data passed through.
