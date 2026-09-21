@@ -7,6 +7,7 @@ from datetime import datetime
 from pathlib import Path
 
 from .forecast_scoring import scorecard
+from .report_knowledge import dossier_text, relocate_links, validate_dossiers
 
 
 LABELS = {"short": "短期（1〜3か月）", "medium": "中期（3か月超〜1年）",
@@ -42,13 +43,20 @@ def evidence_line(record):
     return f"- {record['summary']} [原資料]({record['url']})（{record['id']}、公開 {record['published_at'][:10]}）"
 
 
-def report_text(state, manifest, proposed):
+def report_text(state, manifest, proposed, dossiers):
     records = state["records"]
-    lines = [f"# {manifest['date']} — 仮説と実績の確認", "",
+    lines = [f"# {manifest['date']} — AI企業と市場の現状", "",
              f"作成：{manifest['finished_at']}。運用：{manifest['mode']}。資料の状態：{manifest['quality']}。", "",
+             "当日採用した資料と、これまでに確認した継続状態を分けて記載します。各節の基準日を確認してください。新情報がないことは市場に変化がなかったことを意味しません。", "",
              "## 今日わかったこと", ""]
     new = [r for r in proposed if r["type"] == "evidence"]
     lines += [evidence_line(r) for r in new] or ["新しい根拠として採用できる資料はありません。前回の資料を今日の発見として扱いません。"]
+    changes = [r for r in proposed if r['type'] == 'dossier_section']
+    lines += ["", "## 継続状態と今回の更新", ""]
+    lines += [f"- {r['subject']} / {r['section']}：{r['analysis']}（{r['id']}）" for r in changes]
+    if not changes:
+        lines.append("企業・市場の本文は前回までの確認内容を引き継いでいます。今回の資料だけで既知の情報を消したり、基準日を新しく見せたりしません。")
+    lines += ["", *[dossier_text(dossier, heading=2) for dossier in dossiers.values()]]
     lines += ["", "## 仮説の見直し", ""]
     reviews = [r for r in proposed if r["type"] in {"hypothesis_review", "review", "link_review"}]
     for review in reviews:
@@ -83,9 +91,26 @@ def review_due(date):
             "semiannual": day.day == 1 and day.month in {1, 7}}
 
 
-def write_outputs(root, state, manifest, proposed):
+def write_failure_snapshot(root, state, manifest, dossiers):
+    base = root / ("state/shadow" if manifest['mode'] == 'shadow' else '.')
+    path = base / 'Intelligence' / f"{manifest['date']}.md"
+    if path.exists():
+        return
+    validate_dossiers(dossiers)
+    text = "> 収集・検証に失敗しました。以下は以前の確認済み情報を持ち越した参考資料です。当日の新しい判断は含みません。\n\n"
+    text += report_text(state, manifest, [], dossiers)
+    atomic_text(path, relocate_links(text, path.parent.relative_to(root).as_posix()))
+
+
+def write_outputs(root, state, manifest, proposed, dossiers):
+    validate_dossiers(dossiers)
     base = root / ("state/shadow" if manifest["mode"] == "shadow" else ".")
-    atomic_text(base / "Intelligence" / f"{manifest['date']}.md", report_text(state, manifest, proposed))
+    daily = report_text(state, manifest, proposed, dossiers)
+    daily_dir = (base / 'Intelligence').relative_to(root).as_posix()
+    atomic_text(base / "Intelligence" / f"{manifest['date']}.md", relocate_links(daily, daily_dir))
+    static_dir = (base / 'static_intelligence').relative_to(root).as_posix()
+    for subject, dossier in dossiers.items():
+        atomic_text(base / 'static_intelligence' / f'{subject}.md', relocate_links(dossier_text(dossier), static_dir))
     scores = scorecard(state, manifest["finished_at"])
     atomic_text(base / "state/scores/latest.json", json.dumps(scores, ensure_ascii=False, indent=2) + "\n")
     for period, due in review_due(manifest["date"]).items():

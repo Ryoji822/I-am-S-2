@@ -8,9 +8,10 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from lib.forecast_contract import require
-from lib.forecast_learning import apply_plan, load_state, resolve, scorecard
+from lib.forecast_contract import instant, require
+from lib.forecast_learning import apply_plan, load_state, resolve, scorecard, validate_plan
 from lib.learning_cycle import read_json, run_cycle
+from lib.report_knowledge import load_dossiers, merge_dossiers
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -38,7 +39,9 @@ def validate_repository():
     definitions = read_json(ROOT / "config/hypotheses.json")["hypotheses"]
     require(len({r["id"] for r in definitions}) == len(definitions), "duplicate hypothesis IDs")
     for root in [ROOT, ROOT / "state/shadow"]:
-        load_state(root)
+        state = load_state(root)
+        now = datetime.now(ZoneInfo("Asia/Tokyo")).isoformat()
+        merge_dossiers(load_dossiers(ROOT, now), state, now)
     for path in (ROOT / "state/runs").glob("*/manifest.json"):
         require(read_json(path)["outcome"] in {"complete", "partial", "failed"}, "unknown outcome")
     return {"valid": True, "hypotheses": len(definitions), "mode": policy["mode"]}
@@ -68,7 +71,10 @@ def main():
                   "review_complete": True, "records": records}
     else:
         require(args.plan is not None, "--plan is required")
-        result = {"revision": apply_plan(root, read_json(args.plan), now)["revision"]}
+        plan = read_json(args.plan)
+        candidate = validate_plan(load_state(root), plan, instant(now))
+        merge_dossiers(load_dossiers(ROOT, now), candidate, now)
+        result = {"revision": apply_plan(root, plan, now)["revision"]}
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 1 if isinstance(result, dict) and result.get("outcome") == "failed" else 0
 

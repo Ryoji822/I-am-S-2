@@ -16,6 +16,8 @@ SOURCE_HOSTS = (
     "x.ai", "bytedance.com", "volcengine.com", "coze.com", "oracle.com",
     "stat.go.jp", "mhlw.go.jp", "e-stat.go.jp", "meti.go.jp", "cao.go.jp",
     "boj.or.jp", "gov.ca.gov", "gov.uk", "govinfo.gov", "arxiv.org", "metr.org",
+    "stanford.edu", "jil.go.jp", "oecd.org", "spacex.com",
+    "github.com", "byteplus.com",
 )
 
 

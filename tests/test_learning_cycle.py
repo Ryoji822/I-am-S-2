@@ -143,6 +143,8 @@ class CycleTests(unittest.TestCase):
         specification.loader.exec_module(module)
         self.assertTrue(module.allowed("state/shadow/data/forecast_ledger/transactions/00000001-cycle.json"))
         self.assertTrue(module.allowed("state/runs/test/manifest.json"))
+        self.assertTrue(module.allowed("state/shadow/static_intelligence/openai.md"))
+        self.assertFalse(module.allowed("static_intelligence/private.md"))
         for path in [".env", "private/income.json", "config/hypotheses.json", "state/.learning-cycle.lock", "state/runs/a/../../private.json"]:
             self.assertFalse(module.allowed(path))
 

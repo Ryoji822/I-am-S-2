@@ -18,3 +18,11 @@ vintageはcontext.nowで発行し、knowledge_cutoffもその時刻です。根�
 危険は起こりやすさと影響の大きさを分け、warningに対応所要日数・影響までの日数・理由を残します。資料不足を理由に警戒を下げません。行動はdecisionとして費用、条件、戻せるか、結果を残します。実行していない行動をexecutedにしません。
 
 collectがpartialなら判断記録は空配列にします。判断を変える根拠がなければrecords=[]が正しい出力です。
+
+## 企業・市場の本文を維持する
+
+context.dossiersには各社と市場・シナリオの全体像があり、sections[].idで節を指定できます。新しい情報で更新が必要な節はdossier_sectionを提案します。単なる仮説の理由に会社情報を閉じ込めないでください。更新しない節はプログラムがそのまま保持するので出力不要です。
+
+subjectはopenai/anthropic/google/xai/bytedance/market-overview/scenario-tracker。sectionは既存の節ID。bodyにはその節の更新後の全文を書きます。新着だけに切り詰めず、既知の有効な製品・日付・数値・顧客・条件・経緯も引き継ぎ、失効した条件は何がどう変わったかを明記します。body内に採用したevidenceのURLをMarkdownで引用し、evidence_idsにも列挙します。新規の引用URLは検証済みevidenceのURLに限り、引き継ぐ既存引用は保持できます。根拠のない数値・最新性・採用実績を作りません。
+
+analysisに事実が事業・仕事・所得のどこへ影響するかと別の説明、uncertaintyに範囲・残る制約・見直し条件を書きます。reviewed_atはcontext.now、supersedesはその節のrecord_id（まだなければnull）。同じ節を同じ実行で2回更新しません。1実行で特に重要な3節以内を目安にし、取りこぼしはreasonに記載します。partialなら本文の変更も出力しません。価格や企業の利用人数を違う母集団の利益へ換算しません。W1〜W5は併存します。

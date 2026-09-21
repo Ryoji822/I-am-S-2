@@ -12,8 +12,10 @@ from zoneinfo import ZoneInfo
 from .forecast_contract import FIELDS, instant, require
 from .forecast_learning import apply_plan, append_records, digest, load_state, validate_plan
 from .forecast_scoring import resolve
-from .learning_model import capture_collected, model_config, run_model
-from .learning_render import atomic_text, write_outputs
+from .learning_model import SOURCE_HOSTS, capture_collected, model_config, run_model
+from .learning_render import atomic_text, write_failure_snapshot, write_outputs
+from .legacy_information import historical_context
+from .report_knowledge import load_dossiers, merge_dossiers
 
 
 STAGES = {"collect": "phase1-collect.md", "blue": "phase2-analyze.md",
@@ -41,6 +43,9 @@ def current_context(root, state, now):
     for kind, values in records.items():
         if kind in selected:
             continue
+        if kind == "dossier_section":
+            selected[kind] = []  # Latest complete sections and their IDs are supplied below.
+            continue
         subset = [r for r in values.values() if "question_id" not in r or r["question_id"] in ids]
         selected[kind] = subset if kind in {"vintage", "resolution", "review"} else subset[-40:]
     linked_evidence = set()
@@ -52,6 +57,9 @@ def current_context(root, state, now):
     selected["evidence"] = list({**evidence, **{key: records["evidence"][key] for key in linked_evidence}}.values())
     return {"now": now, "revision": state["revision"], "catalogs": catalogs,
             "records": selected, "record_fields": FIELDS,
+            "dossiers": merge_dossiers(load_dossiers(root, now), state, now),
+            "legacy_information": historical_context(root, now),
+            "allowed_source_domains": SOURCE_HOSTS,
             "context_limit": "期限順20予測、種類ごと直近40記録。全履歴は保存。対象外を未確認とする。"}
 
 
@@ -107,7 +115,7 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
             stage_now = datetime.now(timezone.utc).isoformat() if runner is run_model else now
             stage_context = {**context, "now": stage_now, "previous_stages": outputs,
                              "instructions": (root / "prompts" / prompt).read_text(encoding="utf-8")}
-            require(len(json.dumps(stage_context, ensure_ascii=False).encode()) <= 200_000, "model context budget exceeded")
+            require(len(json.dumps(stage_context, ensure_ascii=False).encode()) <= 400_000, "model context budget exceeded")
             result, cost = runner(stage, stage_context, Path(temporary) / stage, policy)
             validate_stage(stage, result, policy)
             if stage == "collect" and runner is run_model:
@@ -122,7 +130,7 @@ def manifest_base(run_id, date, now, policy, state, root):
     prompts = {key: digest((root / "prompts" / file).read_text(encoding="utf-8")) for key, file in STAGES.items()}
     return {"schema_version": "2.0", "run_id": run_id, "date": date, "started_at": now,
             "mode": policy["mode"], "model": policy["model"], "opencode_version": policy["opencode_version"],
-            "code_version": "learning-v2", "prompt_hashes": prompts, "revision_before": state["revision"],
+            "code_version": "learning-v3-dossiers", "prompt_hashes": prompts, "revision_before": state["revision"],
             "quality": "failed", "outcome": "failed", "gaps": [], "usage": {},
             "daily_budget": policy["daily_budget"], "monthly_budget": policy["monthly_budget"]}
 
@@ -143,18 +151,22 @@ def run_locked(root, now, run_id, stage_runner, policy):
         if plan_path.exists():
             saved = read_json(plan_path)
             plan, usage, gaps, finished = (saved[k] for k in ["plan", "usage", "gaps", "finished_at"])
+            dossiers = saved["dossiers"]
         else:
             outputs, usage = execute_stages(root, state, initial_definitions(root, state), now, stage_runner, policy, directory)
             finished = datetime.now(timezone.utc).isoformat() if stage_runner is run_model else now
             plan = update_plan(state, run_id, outputs, initial_definitions(root, state), finished)
-            validate_plan(state, plan, instant(finished))
+            candidate = validate_plan(state, plan, instant(finished))
+            dossiers = merge_dossiers(load_dossiers(root, finished), candidate, finished)
             gaps = outputs["collect"]["gaps"]
-            atomic_text(plan_path, json.dumps({"plan": plan, "usage": usage, "gaps": gaps, "finished_at": finished}, ensure_ascii=False, indent=2) + "\n")
+            atomic_text(plan_path, json.dumps({"plan": plan, "usage": usage, "gaps": gaps,
+                        "finished_at": finished, "dossiers": dossiers}, ensure_ascii=False, indent=2) + "\n")
         accepted = apply_plan(ledger_root, plan, now=finished)
         accepted = load_state(ledger_root, through_run=run_id)
         manifest = {**manifest, "quality": plan["quality"], "outcome": plan["quality"], "gaps": gaps,
-                    "finished_at": finished, "revision_after": accepted["revision"], "usage": usage}
-        write_outputs(root, accepted, manifest, plan["records"])
+                    "finished_at": finished, "revision_after": accepted["revision"], "usage": usage,
+                    "dossier_hash": digest(dossiers)}
+        write_outputs(root, accepted, manifest, plan["records"], dossiers)
     except (ValueError, KeyError, TypeError, OSError, RuntimeError, subprocess.SubprocessError) as error:
         manifest = {**manifest, "outcome": "failed", "quality": "failed", "error_type": type(error).__name__,
                     "finished_at": now, "gaps": ["収集・反証・検証・保存のいずれかが完了しませんでした。新しい正式判断は公表していません。"],
@@ -162,6 +174,11 @@ def run_locked(root, now, run_id, stage_runner, policy):
         metadata = directory / "stage-metadata.json"
         if metadata.exists():
             manifest = {**manifest, "usage": read_json(metadata)}
+        try:
+            prior_dossiers = merge_dossiers(load_dossiers(root, now), state, now)
+            write_failure_snapshot(root, state, manifest, prior_dossiers)
+        except (ValueError, KeyError, TypeError, OSError):
+            pass  # Preserve the failed manifest even when no baseline can be rendered.
         # The exception message may include provider secrets or private input; do not persist it.
     atomic_text(manifest_path, json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     return manifest

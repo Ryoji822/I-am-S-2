@@ -19,6 +19,7 @@ FIELDS = {
     "link_review": "link_id reviewed_at assessment evidence_ids review_ids reason next_check supersedes",
     "warning": "risk_id issued_at level evidence_ids reason response_days time_to_impact_days next_check supersedes",
     "decision": "mission_ids recorded_at status action conditions cost response_days reversible evidence_ids outcome supersedes",
+    "dossier_section": "subject section reviewed_at body analysis uncertainty evidence_ids supersedes",
 }
 KINDS = tuple(FIELDS)
 HORIZONS = {"short": (28, 93), "medium": (93, 366),
@@ -162,7 +163,8 @@ def validate_record(record, records, now):
     validate_shape(record)
     kind = record["type"]
     validator = {"evidence": validate_evidence, "question": validate_question,
-                 "vintage": validate_vintage, "observation": validate_observation}.get(kind)
+                 "vintage": validate_vintage, "observation": validate_observation,
+                 "dossier_section": validate_dossier_section}.get(kind)
     if validator:
         validator(record, records, now)
     elif kind == "metric":
@@ -257,3 +259,26 @@ def validate_warning(record, records):
     if levels.index(record["level"]) < levels.index(old["level"]):
         new_evidence = [records["evidence"][i] for i in record["evidence_ids"] if i not in old["evidence_ids"]]
         require(any(instant(e["retrieved_at"]) > instant(old["issued_at"]) for e in new_evidence), "warning reduction requires new evidence")
+
+
+def validate_dossier_section(record, records, now):
+    subjects = {'openai', 'anthropic', 'google', 'xai', 'bytedance', 'market-overview', 'scenario-tracker'}
+    require(record['subject'] in subjects, 'unknown dossier subject')
+    require(re.fullmatch(r'section-\d{2}', record['section']), 'invalid dossier section')
+    reviewed = instant(record['reviewed_at'])
+    require(0 <= (now - reviewed).total_seconds() <= 3600, 'dossier review must be current')
+    for key in ['body', 'analysis', 'uncertainty']:
+        require(isinstance(record[key], str) and bool(record[key].strip()) and len(record[key]) <= 8000,
+                'dossier needs bounded facts, interpretation and limits')
+    evidence_refs(record, records, reviewed)
+    citations = set(re.findall(r'https://[^\s)]+', record['body']))
+    require(all(records['evidence'][key]['url'] in citations for key in record['evidence_ids']),
+            'dossier facts must cite their evidence')
+    prior = [row for row in records['dossier_section'].values()
+             if (row['subject'], row['section']) == (record['subject'], record['section'])]
+    if prior:
+        latest = max(prior, key=lambda row: instant(row['reviewed_at']))
+        require(record['supersedes'] == latest['id'], 'dossier must replace the latest section')
+        require(reviewed > instant(latest['reviewed_at']), 'dossier revision must be newer')
+    else:
+        require(record['supersedes'] is None, 'dossier supersedes a different section')

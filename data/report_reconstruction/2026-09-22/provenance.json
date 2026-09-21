@@ -1,0 +1,92 @@
+{
+  "reconstructed_on": "2026-09-22",
+  "baseline_publications_through": "2026-09-10",
+  "basis": "日付のある公表資料を後日確認した復元。当日朝8時に把握した情報集合の再現ではない。",
+  "events": [
+    {
+      "published_on": "2026-09-15",
+      "title": "Googleの音声製品",
+      "body": "Google は9月15日、Gemini 3.8 Live／Extended Thinking と3.5 Transcribeを発表しました。会話を継続しながら道具を使う機能と文字起こしを区別します。窓口や社内支援では回答の品質に加えて操作の完了確認が必要です。[公式発表](https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/)"
+    },
+    {
+      "published_on": "2026-09-17",
+      "title": "OpenAIの法務への展開",
+      "body": "OpenAI は9月17日、Astra for Lawを発表しました。法務向けの検索・指示・文脈を加え、Harvey、Legora等のAPI顧客や専門ツールとの接続を説明しています。専門業務の入口へ直接進むことと、既存業務ソフトの供給元になることが併存します。発表は、法務職全体の代替や顧客利益の実測を意味しません。[公式発表](https://openai.com/index/astra-for-law/)"
+    },
+    {
+      "published_on": "2026-09-17",
+      "title": "Anthropicの用途別アクセス",
+      "body": "Anthropic は9月17日、Life Sciences Verification Programを発表しました。審査済み組織にStandard Useと追加審査のHigh-risk Useを設け、対象トラフィックの30日保存などを求めます。初期は直接APIとEnterprise／Teamが対象で、第三者プラットフォームには未対応。数十組織の先行参加は会社説明であり、初週数百組織は見込みです。利用を可能にする面と手続きの負担を両方評価します。[公式説明](https://www.anthropic.com/news/life-sciences-verification-program)"
+    },
+    {
+      "published_on": "2026-09-18",
+      "title": "カリフォルニアの独立監督",
+      "body": "州政府は9月18日、SB 813・AB 1405の実施を早め、専門家に2か月以内の提案を求める行政命令を公表しました。常駐評価や緊急停止機能等には検討対象が含まれ、全てがこの日に一般企業の実施義務になったとは読めません。実際の対象・施行・監督費・利用制限を順に追う必要があります。[州政府説明](https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/)"
+    }
+  ],
+  "days": {
+    "2026-09-15": {
+      "overview_source": "3b0c030",
+      "included_event_dates": [
+        "2026-09-15"
+      ],
+      "collection_status": "partial"
+    },
+    "2026-09-16": {
+      "overview_source": "3b0c030",
+      "included_event_dates": [
+        "2026-09-15"
+      ],
+      "collection_status": "failed_or_stale"
+    },
+    "2026-09-17": {
+      "overview_source": "3b0c030",
+      "included_event_dates": [
+        "2026-09-15",
+        "2026-09-17",
+        "2026-09-17"
+      ],
+      "collection_status": "failed_or_stale"
+    },
+    "2026-09-18": {
+      "overview_source": "3b0c030",
+      "included_event_dates": [
+        "2026-09-15",
+        "2026-09-17",
+        "2026-09-17",
+        "2026-09-18"
+      ],
+      "collection_status": "failed_or_stale"
+    },
+    "2026-09-19": {
+      "overview_source": "3b0c030",
+      "included_event_dates": [
+        "2026-09-15",
+        "2026-09-17",
+        "2026-09-17",
+        "2026-09-18"
+      ],
+      "collection_status": "partial"
+    },
+    "2026-09-20": {
+      "overview_source": "3b0c030",
+      "included_event_dates": [
+        "2026-09-15",
+        "2026-09-17",
+        "2026-09-17",
+        "2026-09-18"
+      ],
+      "collection_status": "partial"
+    },
+    "2026-09-21": {
+      "overview_source": "3b0c030",
+      "included_event_dates": [
+        "2026-09-15",
+        "2026-09-17",
+        "2026-09-17",
+        "2026-09-18"
+      ],
+      "collection_status": "failed_or_stale"
+    }
+  }
+}

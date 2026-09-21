@@ -57,6 +57,7 @@ jobs:
             state/runs/
             state/shadow/data/forecast_ledger/transactions/
             state/shadow/Intelligence/
+            state/shadow/static_intelligence/
             state/shadow/reviews/
             state/shadow/state/scores/
             data/forecast_ledger/transactions/

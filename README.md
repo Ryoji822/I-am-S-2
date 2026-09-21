@@ -16,7 +16,7 @@ AIの変化が、**社会の仕事と所得・会社の顧客と利益・個人�
 
 現在は測定対象と基準値を準備している段階です。新方式の成績は未評価です。[予測候補](config/forecast_candidates.json)には、不足と次の確認日を記載しています。
 
-過去のInformationは原本を保持しています。新しい日次処理からの検索・自動取り込みは未実装で、旧資料を使うための変換・索引の追加が必要です。
+過去のInformationは原本・形式・旧IDを保持しています。会社・日付・旧ID・URLで検索でき、日次処理にも各社の過去資料を探索候補として渡します。公開日時や主張を再検証するまで、新しい事実や採点の根拠へは昇格させません。
 
 ## 実行
 
@@ -27,6 +27,7 @@ Python 3.11以上とOpenCode 1.18.31を使用します。GLM_API_KEYを環境変
 ./ias2 run
 ./ias2 status
 ./ias2 score
+python3 scripts/search-information.py Agents --company openai --before 2026-09-20
 ```
 
 初期設定は14日間の試行（shadow）です。出力は`state/shadow/`、実行結果は`state/runs/`です。ローカル実行では公開・通知しません。失敗後の再試行は`./ias2 run --run-id retry-20260922-1`のように別のIDを付けます。同じIDは処理を重複させません。
@@ -37,8 +38,9 @@ Python 3.11以上とOpenCode 1.18.31を使用します。GLM_API_KEYを環境変
 
 ## ファイルの見方
 
-- [日報](Intelligence/2026-09-21.md)：わかったこと、仮説への影響、次の確認。
-- [Static Intelligence](static_intelligence/market-overview.md)：背景と継続して検証する問い。
+- [日報](Intelligence/2026-09-21.md)：当日差分、5社の継続状態、市場・雇用、短中長期の判断を一冊に掲載。
+- [Static Intelligence](static_intelligence/market-overview.md)：各社の製品・顧客・規模・資金・販路・経緯・制約を持つ企業資料。
+- `config/dossiers/`：再調査した7冊の基礎本文。日々の節更新は台帳へ追記し、日報とStaticが同じ確定本文を使う。
 - [仮説](config/hypotheses.json)：21の問いと、支持・反証になる観測。
 - `data/forecast_ledger/transactions/`：正式な発行・実績・判定・見直しの追記専用履歴。
 - `state/runs/<ID>/manifest.json`：成功・一部不足・失敗、使用モデル、費用。
@@ -54,7 +56,7 @@ python3 -m unittest discover -s tests -v
 bash -n ias2 scripts/run-pipeline.sh scripts/validate-output.sh
 ```
 
-テストは一時ディレクトリと模擬モデルを使い、外部APIを呼びません。過去の書き換え、未来情報、欠測、統計訂正、条件付き予測、採点、失敗と再実行を確認します。
+テストは一時ディレクトリと模擬モデルを使い、外部APIを呼びません。過去の書き換え、未来情報、欠測、統計訂正、条件付き予測、採点、失敗と再実行に加え、企業情報の持ち越し・節更新・原本を変えない検索を確認します。[内容復元の検証](docs/report-recovery.md)。
 
 ## RSSHubとX投稿
 

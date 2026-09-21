@@ -17,6 +17,7 @@ def allowed(path):
     patterns = [r"state/runs/[A-Za-z0-9_-]+/(manifest|accepted-plan|stage-metadata)\.json",
                 r"(?:state/shadow/)?data/forecast_ledger/transactions/[A-Za-z0-9_-]+\.json",
                 r"(?:state/shadow/)?Intelligence/\d{4}-\d{2}-\d{2}\.md",
+                r"(?:state/shadow/)?static_intelligence/(openai|anthropic|google|xai|bytedance|market-overview|scenario-tracker)\.md",
                 r"(?:state/shadow/)?reviews/(weekly|monthly|quarterly|semiannual)/\d{4}-\d{2}-\d{2}\.md",
                 r"(?:state/shadow/)?state/scores/latest\.json"]
     return any(re.fullmatch(pattern, path) for pattern in patterns)
