@@ -1,0 +1,130 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-35676062281-1",
+  "date": "2026-09-22",
+  "started_at": "2026-09-22T10:31:34.661621+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "fc9dcd3b2864de09396a83f9cb77615195001868c65ac82cfb253e98a564bd9e",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "OpenAI: https://openai.com/news/ は 2026-09-22T01:31:35+00:00 時点でHTTP 403により取得不能。OpenAIの安全上の提供制限・公式料金と利用条件の変更（優先1、F-S04/RISK-SAFETY相当）を今回確認できず、別経路での再試行が必要。",
+    "Anthropic「Improving our alignment and security efforts」(https://www.anthropic.com/news/improving-alignment-security-efforts): 本文を当日再取得し旧INFO-001の内容（7/30の無権限アクセス3事案・8/4 UK AISI事案、METR独立レビュー計画、サンドボックス分類器の構築・展開、外部評価者向けの隔離・事前検証・スコープ明示・監視の運用基準、高リスクRLの一時停止と大半の再開）を確認。ページ表記が日付 Aug 31, 2026 のみで公開時刻を確認できないためevidenceから除外。内容検証は完了、時刻検証は未完了。",
+    "Anthropic「Introducing the Life Sciences Verification Program」(https://www.anthropic.com/news/life-sciences-verification-program): 本文取得済み。ライフサイエンス向けにセーフガードを緩和したMythos/Opus/Sonnetへのアクセス制度（Standard Use=年更新、High-risk Use=プロジェクト単位・半年更新で生物学的ブロックを解除、監視のため30日間のデータ保持、Mythosの高リスク付与は米政府協議中で少数限定）を発表・ベータ開始。表記が Sep 17, 2026 のみで公開時刻を確認できないためevidenceから除外。",
+    "Anthropic「Developing Enterprise Frontier Safeguards」(https://www.anthropic.com/news/enterprise-frontier-safeguards): 本文取得済み。監視データを顧客管理のクラウドへ保持しZDR相当の秘密性と濫用検知を両立させるEFSを100社超と共同開発、今秋から段階提供・追加課金なし（予定段階）。表記が Sep 1, 2026 のみで公開時刻を確認できないためevidenceから除外。F-S04の「一般法人向け利用条件」の基準値候補。",
+    "Anthropic脅威インテリジェンス報告 (https://www.anthropic.com/threat-intelligence-report-september-2026): 本文取得済み（一部切捨て）。2025年12月〜2026年8月に阻止した誤用を公表（露系諜報GTG-20006、ShinyHunters系GTG-50014、AIサプライチェイン窃盗GTG-50020等。盗まれた鍵は顧客環境由来でAnthropic自社システムの侵害はないと明記）。一覧表記が Sep 10, 2026 のみで公開時刻を確認できないためevidenceから除外。",
+    "Claude Agent SDK (TypeScript) リリースフィード (https://github.com/anthropics/claude-agent-sdk-typescript/releases.atom) を当日再取得: 最新は v0.3.278（2026-09-19T03:10:32Z、Claude Code v2.1.278パリティ）で EVD-20260921-0001 の記録範囲と同一、新規リリースなし。前日資料の再登録は行わない。",
+    "未取得の新着: https://www.anthropic.com/news/accenture-embedded-evaluation（一覧表記 Sep 18, 2026）と https://www.anthropic.com/institute/measuring-pace-of-ai-development（同 Sep 17, 2026）は原資料5件の上限により本文未確認。",
+    "検索2回・原資料5件の上限により今回未確認: xAI (https://x.ai/build/changelog)、Google (https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes)、ByteDance (https://seed.bytedance.com/zh/blog)、日本の公的統計（https://www.mhlw.go.jp/toukei/ 、https://www.stat.go.jp/data/ ）。METRによるAnthropic独立レビューの公表有無も未確認。",
+    "Anthropic記事ページの公開時刻は本文・一覧では日付のみで、HTMLメタデータの確認は取得結果の切捨てにより不可能だった。次回は別方式での時刻確認が必要な限界。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.2165946,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.050284,
+          "tokens": {
+            "total": 30950,
+            "input": 28632,
+            "output": 63,
+            "reasoning": 2255,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.02614248,
+          "tokens": {
+            "total": 36129,
+            "input": 4796,
+            "output": 73,
+            "reasoning": 2652,
+            "cache": {
+              "write": 0,
+              "read": 28608
+            }
+          }
+        },
+        {
+          "cost": 0.01403124,
+          "tokens": {
+            "total": 36576,
+            "input": 2953,
+            "output": 103,
+            "reasoning": 176,
+            "cache": {
+              "write": 0,
+              "read": 33344
+            }
+          }
+        },
+        {
+          "cost": 0.01285128,
+          "tokens": {
+            "total": 37524,
+            "input": 674,
+            "output": 64,
+            "reasoning": 498,
+            "cache": {
+              "write": 0,
+              "read": 36288
+            }
+          }
+        },
+        {
+          "cost": 0.03825088,
+          "tokens": {
+            "total": 51122,
+            "input": 11268,
+            "output": 105,
+            "reasoning": 2821,
+            "cache": {
+              "write": 0,
+              "read": 36928
+            }
+          }
+        },
+        {
+          "cost": 0.07503472,
+          "tokens": {
+            "total": 81479,
+            "input": 27986,
+            "output": 1088,
+            "reasoning": 4213,
+            "cache": {
+              "write": 0,
+              "read": 48192
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-09-22T01:35:33.887546+00:00",
+  "revision_after": "6182e7df03af4e3f3ae0c0fa7197fb74970d811c4212d65e38d0a0e547fe13c3",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
