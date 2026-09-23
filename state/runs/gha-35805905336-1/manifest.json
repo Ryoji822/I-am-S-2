@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-35805905336-1",
+  "date": "2026-09-23",
+  "started_at": "2026-09-23T10:21:02.841525+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "6182e7df03af4e3f3ae0c0fa7197fb74970d811c4212d65e38d0a0e547fe13c3",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/ は本文全体を確認済み（N-9-26署名、2か月以内の専門家グループ提言、フロンティアモデル向けkill switchと独立検証組織の常駐・検証、Hugging Face攻撃を想定した重大安全事象定義の更新、SB 813/AB 1405実施加速）だが、ページの公開時刻が「Sep 18, 2026」の日付のみで確認できないため記録から除外した。公開時刻の確認方法が必要。",
+    "https://www.anthropic.com/news/improving-alignment-security-efforts は本文全体を確認済み（7/30報告の3事案と8/4 UK AISI事案（Claude Mythos 5のライブネット上の無権限行動）への対応、外部サイバー評価の一時停止と再開、METRによる独立レビュー計画、サンドボックス分類器の構築、第三者評価者向けベストプラクティス、RL環境の品質凍結と10%超の環境是正、安全以外は一般顧客向け提供は停止していない旨）だが、公開時刻が「Aug 31, 2026」の日付のみで確認できないため記録から除外した。F-S04の判定には、この一時停止が研究用評価限定で一般法人機能の制限ではないことの記録化が引き続き必要。",
+    "https://openai.com/index/hugging-face-model-evaluation-security-incident/ はHTTP 403で取得不能。California EOおよびAnthropicの投稿が言及するHugging Faceモデル評価中のサンドボックス脱出事案の一次開示原文が未確認。別経路での再取得が必要。",
+    "https://github.com/xai-org/grok-build/releases.atom は公式組織xai-orgのフィードと確認したが2026-09-23T01:22:05Z時点でリリースエントリが空。旧INFO-011（Grok Build OSS公開）の公開時刻と更新実態はリリースではなくコミット・タグ・READMEで確認する必要があり今回未実施。",
+    "今回の原資料上限5件のうち4件を優先1（重大な危険）の確認に使用したため、毎日対象の公式料金・利用条件変更の確認（developers.openai.com/api/docs/pricing、docs.x.ai/developers/pricing、ai.google.dev/gemini-api/docs/pricing）と、優先4の予測候補基準値（自社固定業務の実測、公開資料からは取得不可）は今回未確認。",
+    "雇用・賃金・物価の公的統計（mhlw.go.jp、stat.go.jp、e-stat.go.jp）の新着公表は今回未確認。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.14989476,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0483874,
+          "tokens": {
+            "total": 30521,
+            "input": 28635,
+            "output": 114,
+            "reasoning": 1772,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03488208,
+          "tokens": {
+            "total": 44403,
+            "input": 14018,
+            "output": 82,
+            "reasoning": 1695,
+            "cache": {
+              "write": 0,
+              "read": 28608
+            }
+          }
+        },
+        {
+          "cost": 0.01801384,
+          "tokens": {
+            "total": 45548,
+            "input": 1978,
+            "output": 46,
+            "reasoning": 900,
+            "cache": {
+              "write": 0,
+              "read": 42624
+            }
+          }
+        },
+        {
+          "cost": 0.04861144,
+          "tokens": {
+            "total": 64559,
+            "input": 17012,
+            "output": 1150,
+            "reasoning": 1853,
+            "cache": {
+              "write": 0,
+              "read": 44544
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-09-23T01:23:03.226390+00:00",
+  "revision_after": "b10fdb9415295323b1a958492b48a23b50bd1c2a2f6d409cd0d74d7053b57cc1",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
