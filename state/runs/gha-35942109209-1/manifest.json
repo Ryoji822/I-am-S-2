@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-35942109209-1",
+  "date": "2026-09-24",
+  "started_at": "2026-09-24T10:15:37.804239+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "b10fdb9415295323b1a958492b48a23b50bd1c2a2f6d409cd0d74d7053b57cc1",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "https://www.anthropic.com/news/improving-alignment-security-efforts — 公開時刻を確認できない（ページ表示は「Aug 31, 2026」のみで時刻なし）。7/30・8/4事案の深度分析、METRによる独立レビュー計画、外部サイバー評価の一時停止と再開、RL環境停止、安全性を理由とした一般顧客向け機能制限の有無（F-S04・RISK-SAFETY）を時刻付きで記録できなかった。時刻を確認できる公表手段（公表フィード等）の探索が必要。",
+    "https://www.anthropic.com/news 一覧の新着記事（Claude Opus 5.5【Sep 22、「実行費用がOpus 5より40%低い」というMET-COST関連主張】、Developing Enterprise Frontier Safeguards【Sep 1】、脅威情報報告 September 2026【Sep 10】、Partnering with Accenture on embedded evaluation【Sep 18】）はいずれも公開日のみで時刻が確認できず記録から除外した。",
+    "https://openai.com/index/priorities-principles-third-party-assessments/ — 記事本文の取得が403で失敗。公式RSSのpubDateが2026-09-22T00:00:00Zちょうどで、実公開時刻か日付のみの既定値か区別できないため published_at を確定できず記録から除外した。第三者評価の原則・優先事項（Safety分類、LINK-SAFETY-SUPPLY関連）の本文確認が残る。",
+    "UK AISIによる8/4事案の報告書（aisi.gov.uk）は context.allowed_source_domains の対象外のため未確認。Anthropic記事内の言及のみ。",
+    "MET-COST/F-S01/F-S02 の基準値に使う料金表（https://developers.openai.com/api/docs/pricing/ 、https://claude.com/pricing ）は公開時刻のない常時更新のため今回のevidence化を見送った。改訂履歴や時刻付きの公表手段での取得方法の検討が必要。",
+    "残りの収集計画（雇用・賃金統計 mhlw.go.jp/stat.go.jp、Google/xAI/ByteDanceの最新掲載、前回反対証拠の原URL再検証）は原資料5件・検索2回以内の制約で今回実施できず未確認。次回以降に実施する。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.16320816,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0439126,
+          "tokens": {
+            "total": 29789,
+            "input": 29053,
+            "output": 66,
+            "reasoning": 670,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03277832,
+          "tokens": {
+            "total": 41653,
+            "input": 10156,
+            "output": 60,
+            "reasoning": 2445,
+            "cache": {
+              "write": 0,
+              "read": 28992
+            }
+          }
+        },
+        {
+          "cost": 0.03680864,
+          "tokens": {
+            "total": 55408,
+            "input": 15032,
+            "output": 25,
+            "reasoning": 1247,
+            "cache": {
+              "write": 0,
+              "read": 39104
+            }
+          }
+        },
+        {
+          "cost": 0.0497086,
+          "tokens": {
+            "total": 64727,
+            "input": 3733,
+            "output": 2042,
+            "reasoning": 4872,
+            "cache": {
+              "write": 0,
+              "read": 54080
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-09-24T01:18:35.653016+00:00",
+  "revision_after": "e52f5617c1c714fc600420190cd0feb64797baee2896024fc37f63f1e4fcb323",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
