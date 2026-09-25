@@ -1,0 +1,632 @@
+{
+  "plan": {
+    "run_id": "gha-36081401480-1",
+    "expected_revision": "e52f5617c1c714fc600420190cd0feb64797baee2896024fc37f63f1e4fcb323",
+    "quality": "partial",
+    "review_complete": true,
+    "records": [
+      {
+        "type": "evidence",
+        "id": "EVD-20260925-0001",
+        "visibility": "public",
+        "url": "https://openai.com/news/rss.xml",
+        "published_at": "2026-09-22T00:00:00Z",
+        "retrieved_at": "2026-09-25T01:21:12.187553+00:00",
+        "source_group": "openai.com/news",
+        "claim_type": "reported_claim",
+        "summary": "OpenAI公式RSSフィード（lastBuildDate 2026-09-25T00:35:49Z）で「Priorities and principles for effective third party assessments」（Safety分類）が2026-09-22T00:00:00Zに公開されたことを確認。説明文は「フロンティアモデルとセーフガードに関する厳密で安全な独立した第三者AI安全性評価の優先事項と原則を提示」と述べる。OpenAI自身の立場表明であり、第三者評価の実際の実施・結果や独立検証を含まない。F-S04・RISK-SAFETY・H-GOV-002（安全対策と契約・提供条件）の観測材料。記録の根拠はフィードの標題・説明文で、記事本文は個別URLで403となるため未確認。",
+        "content_hash": "sha256:9c4633df5ffc660e999eb4a76b039953278514b6d1133c7a93cde7d435a5e8ec"
+      },
+      {
+        "type": "evidence",
+        "id": "EVD-20260925-0002",
+        "visibility": "public",
+        "url": "https://openai.com/news/rss.xml",
+        "published_at": "2026-09-23T10:00:00Z",
+        "retrieved_at": "2026-09-25T01:21:12.187553+00:00",
+        "source_group": "openai.com/news",
+        "claim_type": "observed_fact",
+        "summary": "OpenAI公式RSSフィードで「Introducing MentalHealthBench」（Publication分類）が2026-09-23T10:00:00Zに公開されたことを確認。説明文は「現実的なメンタルヘルス会話での有用かつ安全な応答を評価する、専門家の助言を得たベンチマーク」と述べる。記録するのはベンチマーク公表という事実のみで、ベンチマークの妥当性・測定結果は未検証。MET-SAFETY周辺の評価手法公開という観測材料。記事本文は未確認で、根拠はフィードの標題・説明文。",
+        "content_hash": "sha256:9c4633df5ffc660e999eb4a76b039953278514b6d1133c7a93cde7d435a5e8ec"
+      },
+      {
+        "type": "evidence",
+        "id": "EVD-20260925-0003",
+        "visibility": "public",
+        "url": "https://openai.com/news/rss.xml",
+        "published_at": "2026-09-23T02:00:00Z",
+        "retrieved_at": "2026-09-25T01:21:12.187553+00:00",
+        "source_group": "openai.com/news",
+        "claim_type": "observed_fact",
+        "summary": "OpenAI公式RSSフィードで「ChatGPT Ads expands to Southeast Asia and Taiwan」（Product分類）が2026-09-23T02:00:00Zに公開されたことを確認。説明文は「適格な企業が60か国以上で人にリーチする新たな方法を得るとして、ChatGPT Adsを東南アジアと台湾へ拡大」と述べる。広告・マーケティング（初期業種）における顧客接点の提供範囲変更の公表事実であり、W2（顧客接点の集中）・MET-FIRMの観測材料。広告収益・効果の数値は含まれず、記事本文は未確認。",
+        "content_hash": "sha256:9c4633df5ffc660e999eb4a76b039953278514b6d1133c7a93cde7d435a5e8ec"
+      },
+      {
+        "type": "evidence",
+        "id": "EVD-20260925-0004",
+        "visibility": "public",
+        "url": "https://openai.com/news/rss.xml",
+        "published_at": "2026-09-23T16:00:00Z",
+        "retrieved_at": "2026-09-25T01:21:12.187553+00:00",
+        "source_group": "openai.com/news",
+        "claim_type": "observed_fact",
+        "summary": "OpenAI公式RSSフィードで「Two years of OpenAI Academy」（Company分類）が2026-09-23T16:00:00Zに公開されたことを確認。説明文は「OpenAI Academyの2年間を振り返り、より多くの地域コミュニティへAIスキルを広げる」と述べる。今回確認時点のフィールド最新項目の公表事実で、教育・技能提供の継続を示す。利用者数や効果の実測値は含まれず、記事本文は未確認。",
+        "content_hash": "sha256:9c4633df5ffc660e999eb4a76b039953278514b6d1133c7a93cde7d435a5e8ec"
+      },
+      {
+        "type": "evidence",
+        "id": "EVD-20260925-0005",
+        "visibility": "public",
+        "url": "https://openai.com/news/rss.xml",
+        "published_at": "2026-09-23T12:00:00Z",
+        "retrieved_at": "2026-09-25T01:21:12.187553+00:00",
+        "source_group": "openai.com/news",
+        "claim_type": "reported_claim",
+        "summary": "OpenAI公式RSSフィードで「Ringg's AI agents resolve up to 65% of customer calls with OpenAI」が2026-09-23T12:00:00Zに公開されたことを確認。説明文は「GPT-5.6を使い、音声・チャット・WhatsApp・ウェブで多言語エージェントを運用し、GPT-4.1比で90%低いコスト」と述べる。事務・顧客対応（初期業種）の自動化に関するOpenAI掲載の顧客側主張（最大65%の電話解決を含む）であり、独立検証された実測値ではなくMET-AUTO・LINK-AUTO-HOURSの探索材料。記事本文は未確認。",
+        "content_hash": "sha256:9c4633df5ffc660e999eb4a76b039953278514b6d1133c7a93cde7d435a5e8ec"
+      },
+      {
+        "type": "evidence",
+        "id": "EVD-20260925-0006",
+        "visibility": "public",
+        "url": "https://openai.com/news/rss.xml",
+        "published_at": "2026-09-23T12:00:00Z",
+        "retrieved_at": "2026-09-25T01:21:12.187553+00:00",
+        "source_group": "openai.com/news",
+        "claim_type": "reported_claim",
+        "summary": "OpenAI公式RSSフィードで「How invideo improves color grading 3x with GPT-6 Astra」が2026-09-23T12:00:00Zに公開されたことを確認。説明文は「GPT-6 Astraで編集計画の精度を上げ、カラー補正・グレーディングを3倍改善し、1日で50のカスタムエフェクトを制作」と述べる。広告・映像制作（初期業種の広告・マーケティング）に関するOpenAI掲載の顧客側性能主張であり、独立検証ではない。MET-COST・MET-AUTOの探索材料。記事本文は未確認。",
+        "content_hash": "sha256:9c4633df5ffc660e999eb4a76b039953278514b6d1133c7a93cde7d435a5e8ec"
+      },
+      {
+        "type": "evidence",
+        "id": "EVD-20260925-0007",
+        "visibility": "public",
+        "url": "https://openai.com/news/rss.xml",
+        "published_at": "2026-09-23T12:00:00Z",
+        "retrieved_at": "2026-09-25T01:21:12.187553+00:00",
+        "source_group": "openai.com/news",
+        "claim_type": "reported_claim",
+        "summary": "OpenAI公式RSSフィードで「Harvey turns legal context into stronger drafts with GPT-6 Astra」（Startup分類）が2026-09-23T12:00:00Zに公開されたことを確認。説明文は「GPT-6 Astraがより構造化された文脈を踏まえた法務文書を生成し、弁護士は戦略に集中できる」と述べる。法務文書の起草・業務変更に関するOpenAI掲載の顧客側主張であり、品質・効率の改善は独立検証されていない。記事本文は未確認。",
+        "content_hash": "sha256:9c4633df5ffc660e999eb4a76b039953278514b6d1133c7a93cde7d435a5e8ec"
+      },
+      {
+        "type": "evidence",
+        "id": "EVD-20260925-0008",
+        "visibility": "public",
+        "url": "https://openai.com/news/rss.xml",
+        "published_at": "2026-09-23T01:00:00Z",
+        "retrieved_at": "2026-09-25T01:21:12.187553+00:00",
+        "source_group": "openai.com/news",
+        "claim_type": "reported_claim",
+        "summary": "OpenAI公式RSSフィードで「Airbnb widens access to GPT-6 Astra and OpenAI frontier models」が2026-09-23T01:00:00Zに公開されたことを確認。説明文は「エンジニアリング組織全体でGPT-6 Astraとフロンティアモデルの利用を拡大し、バグ解決・システム設計・リリース高速化に使う」と述べる。大企業での利用拡大に関するOpenAI掲載の顧客側報告であり、H-OAI-001（法人事業の継続利用）の探索材料で、継続率・採算の実測は含まれない。記事本文は未確認。",
+        "content_hash": "sha256:9c4633df5ffc660e999eb4a76b039953278514b6d1133c7a93cde7d435a5e8ec"
+      },
+      {
+        "type": "evidence",
+        "id": "EVD-20260925-0009",
+        "visibility": "public",
+        "url": "https://openai.com/news/rss.xml",
+        "published_at": "2026-09-22T12:00:00Z",
+        "retrieved_at": "2026-09-25T01:21:12.187553+00:00",
+        "source_group": "openai.com/news",
+        "claim_type": "reported_claim",
+        "summary": "OpenAI公式RSSフィードで「Parallel cut research time and cost in half with GPT-6 Astra」（Startup分類）が2026-09-22T12:00:00Zに公開されたことを確認。説明文は「Parallelのエージェントが労働市場データの調査・統合を従来モデル比で半分の時間・半分の費用で行えた」と述べる。調査業務の時間と費用の削減に関するOpenAI掲載の顧客側主張であり、MET-COST・LINK-AUTO-HOURSの探索材料で独立検証ではない。記事本文は未確認。",
+        "content_hash": "sha256:9c4633df5ffc660e999eb4a76b039953278514b6d1133c7a93cde7d435a5e8ec"
+      },
+      {
+        "type": "evidence",
+        "id": "EVD-20260925-0010",
+        "visibility": "public",
+        "url": "https://openai.com/news/rss.xml",
+        "published_at": "2026-09-21T10:00:00Z",
+        "retrieved_at": "2026-09-25T01:21:12.187553+00:00",
+        "source_group": "openai.com/news",
+        "claim_type": "reported_claim",
+        "summary": "OpenAI公式RSSフィードで「Building standards for the next phase of AI」（Global Affairs分類）が2026-09-21T10:00:00Zに公開されたことを確認。説明文は「協調された評価・報告・統治による共通の世界的AI標準への道筋を示す」と述べる。MET-REGIME（制度・統治の動き）の観測材料となるOpenAI自身の政策提起であり、実際の制度変更や合意形成を意味しない。記事本文は未確認で、根拠はフィードの標題・説明文。",
+        "content_hash": "sha256:9c4633df5ffc660e999eb4a76b039953278514b6d1133c7a93cde7d435a5e8ec"
+      }
+    ]
+  },
+  "usage": {
+    "collect": {
+      "cost": 0.16931176,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0512286,
+          "tokens": {
+            "total": 32559,
+            "input": 30677,
+            "output": 75,
+            "reasoning": 1807,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.05150856,
+          "tokens": {
+            "total": 51996,
+            "input": 16786,
+            "output": 134,
+            "reasoning": 4420,
+            "cache": {
+              "write": 0,
+              "read": 30656
+            }
+          }
+        },
+        {
+          "cost": 0.02009224,
+          "tokens": {
+            "total": 52379,
+            "input": 4680,
+            "output": 84,
+            "reasoning": 191,
+            "cache": {
+              "write": 0,
+              "read": 47424
+            }
+          }
+        },
+        {
+          "cost": 0.04648236,
+          "tokens": {
+            "total": 59907,
+            "input": 477,
+            "output": 3803,
+            "reasoning": 3531,
+            "cache": {
+              "write": 0,
+              "read": 52096
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "gaps": [
+    "xAIの変更ログ https://x.ai/build/changelog は403で取得できず、当日の料金・利用条件の変更を確認できなかった。別経路での再取得が必要。",
+    "Anthropic「Introducing Claude Opus 5.5」（https://www.anthropic.com/claude-opus-5-5 、ニュース一覧では2026-09-22）は、公開時刻を確認できないため記録から除外した。「Fable 5.1と同等の性能で実行コスト40%減」というMET-COSTに関わる主張は未検証のまま。",
+    "Anthropicの安全関連 新着（Partnering with Accenture on embedded evaluation https://www.anthropic.com/news/accenture-embedded-evaluation 2026-09-18、Detecting and countering misuse of AI: September 2026 https://www.anthropic.com/threat-intelligence-report-september-2026 2026-09-10、Claude discovers a novel enzyme system https://www.anthropic.com/news/claude-discovers-novel-enzyme-system 2026-09-23）は、いずれも公開時刻が日付のみで確認できないため未記録。RISK-SAFETY・H-ANT-001の観測として次回 本文で時刻を確認する必要がある。",
+    "AnthropicのRSSフィード https://www.anthropic.com/rss.xml は404で存在しない。公開時刻付きの一覧取得手段が不明。",
+    "Googleのリリースノート https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes は、原資料上限（5件）に達したため今回未確認。",
+    "F-S01/F-S02の費用基準値に必要な公式料金表（https://developers.openai.com/api/docs/pricing/ 、https://ai.google.dev/gemini-api/docs/pricing 、xAI料金は https://x.ai/ 配下）は今回未取得。料金ページは公開時刻の表記がない可能性が高く、取得時の スナップショットとして記録方法を検討する必要がある。",
+    "雇用・賃金の公的統計（https://www.mhlw.go.jp/toukei/ 、https://www.stat.go.jp/data/ ）の月次公表は今回の枠で未確認。MET-LABOR の基準値は依然未取得。",
+    "OpenAIの個別記事本文は403で取得できず、今回の全記録の根拠は公式RSSフィードの標題・説明文・pubDateに限る。",
+    "OpenAI RSSの2026-09-21以前の未登録項目（Advisory Group on Mathematics and AI、Australian Youth Safety Blueprint、ChatGPT for Financial Services 等）は優先順位により今回記録を見送り。全量は保存済みフィードで確認可能。"
+  ],
+  "finished_at": "2026-09-25T01:21:12.964630+00:00",
+  "dossiers": {
+    "openai": {
+      "schema_version": "1.0",
+      "subject": "openai",
+      "title": "OpenAI：消費者の利用基盤から、企業の仕事を動かす基盤へ",
+      "available_on": "2026-09-22",
+      "introduction": "基準日：2026年9月21日。再調査・改稿：9月22日（日本時間）。以下は会社発表、製品仕様、分析を区別した企業資料です。随時更新される料金表だけは9月22日の確認値を明記します。",
+      "required_sections": [
+        "section-01",
+        "section-02",
+        "section-03",
+        "section-04",
+        "section-05",
+        "section-06",
+        "section-07",
+        "section-08"
+      ],
+      "sections": [
+        {
+          "id": "section-01",
+          "title": "会社の全体像",
+          "body": "OpenAI は ChatGPT を個人・法人に提供し、開発者にはモデル API とエージェントの実行機能を販売しています。企業に対する接点は、従業員が使う ChatGPT、開発者が使う Codex、自社製品に組み込む API の三つです。同社はこの接点を統合する方針を示しており、モデルを選ぶだけでなく、仕事を開始して結果を受け取る場所を提供しようとしています。[事業・資金調達の説明](https://openai.com/index/accelerating-the-next-phase-ai/)\n\nこの会社を理解するうえで押さえるべき点は、既に大きな消費者基盤を持つことと、その規模を企業向けの継続収益へ移す途中であることです。3月31日の自社公表では ChatGPT の週間利用者は9億人超、有料契約者は5,000万人超、法人事業は売上の40%超でした。これは公表当時の値で、9月の実績や監査済み決算ではありません。[同発表](https://openai.com/index/accelerating-the-next-phase-ai/)\n\n**現在の評価は、企業向け製品の幅と販売力は強い一方、それが利用企業の利益や OpenAI 自身の持続的な利益にどれだけ結び付くかは別途確認が必要、というものです。** 製品の提供は確度が高く、優位が長く続くという評価は中程度です。収益・利用の公表には当事者の利害があり、顧客維持率や利益率を同じ基準で比較できる資料が不足しています。"
+        },
+        {
+          "id": "section-02",
+          "title": "製品、顧客、提供形態",
+          "body": "| 製品・機能 | 顧客が購入するもの | 事業上の役割 |\n|---|---|---|\n| ChatGPT／法人向けプラン | 会話、調査、資料作成などを行う利用環境 | 個人の日常利用から企業契約につながる入口 |\n| Codex | コードベースを読み、変更・確認を進める開発用エージェント | 開発者の継続利用と実務への接続 |\n| GPT-6 Astra | 9月3日から段階提供された、コンピューター操作・専門業務・開発を扱うモデル | 難しい仕事を任せられる範囲を広げる上位製品 |\n| Agents API | 9月10日公開ベータ。Codex の実行機構を使ったクラウドエージェント | セッション、ツール、実行環境の管理を企業の実装に取り込む |\n| Astra for Law | 9月17日発表。法務向け検索・指示・文脈を加えた Astra | 業界の業務に近い層で直接販売とパートナー販売を広げる |\n\n出典：[Astra](https://openai.com/index/gpt-6-astra/)、[Agents API](https://openai.com/index/introducing-the-agents-api/)、[法務向け発表](https://openai.com/index/astra-for-law/)。Astra for Law には Harvey、Legora のような API 顧客も含まれます。業界向け製品の拡張は、既存の業務ソフト会社と競合する可能性と、それらの会社の供給元になる可能性を同時に持ちます。\n\nAgents API は長いセッション、ツール利用、複数エージェントの仕事を扱います。実行環境は OpenAI ホストだけでなく、自社環境やパートナー環境を選べます。基盤となる Codex のコードを公開する方針も示しています。[公開時の仕様](https://openai.com/index/introducing-the-agents-api/)\n\nここから読み取れるのは「実行環境の選択肢がある」ことです。モデルやセッション履歴、認証、評価を含むシステム全体が他社へ無加工で移せることまでは意味しません。逆に、管理サービスを使うだけで必ず囲い込まれるとも断定できません。移行の難しさはどの機能に依存するかで変わります。"
+        },
+        {
+          "id": "section-03",
+          "title": "価格と利用企業の費用",
+          "body": "9月22日に確認した公式 API 料金表の Standard・短いコンテキストの価格です。単位は100万トークン当たりの米ドル。入力・出力とも通常料金で、キャッシュ、長いコンテキスト、Batch、Fast mode、ツール等の費用は別条件です。\n\n| モデル | 入力 | 出力 | 読み方 |\n|---|---:|---:|---|\n| GPT-6 Astra | $10 | $50 | 最上位の能力に高い単価を付ける |\n| GPT-5.6 Sol | $4 | $20 | 少なくとも11月21日までのプロモーション価格 |\n| GPT-5.6 Terra | $2 | $12 | 中間の価格帯 |\n| GPT-5.6 Luna | $0.20 | $1.20 | 大量処理を検討できる低価格帯 |\n\n[公式料金表](https://developers.openai.com/api/docs/pricing/)。この表を9月15日時点の価格確認として遡及利用しません。旧版にあった Sol の割引終了後の確定価格や、二次集成由来の追加料金は、ここでは断定していません。\n\n価格差は利用企業の選択に直結します。例えば単価の高いモデルでも、再試行や人の手直しが少なければ仕事一件当たりでは安くなる場合があります。一方で、高い推論設定、長いセッション、確認待ちを含めると支出が増えることもあります。広告レポート、コード変更、社内資料作成を同じ「1トークン」で比較しても業務の採算は分かりません。納品物の合格率と人の確認時間まで含めて選ぶ必要があります。"
+        },
+        {
+          "id": "section-04",
+          "title": "売上、資金、計算資源",
+          "body": "3月31日、OpenAI は1,220億ドルのコミット済み資金と、資金調達後評価額8,520億ドルを公表しました。同時に月間売上20億ドル、約47億ドルの未使用リボルビング融資枠を説明しています。調達額・評価額・月間売上・融資枠はそれぞれ違う量です。調達額を売上、評価額を手元資金として扱ってはいけません。[資金調達発表](https://openai.com/index/accelerating-the-next-phase-ai/)\n\n同発表で示す計算資源の調達先には Microsoft、Oracle、AWS、CoreWeave、Google Cloud があり、半導体も NVIDIA を中心に複数の方式を組み合わせています。顧客には統一された製品を提供しながら、供給元は分散させる構造です。供給の確保は成長を支えますが、契約額や設備規模だけで利益を評価することはできません。\n\n分析上の争点は、利用拡大に伴う収入が、推論費用・研究費・インフラ負担を上回るかです。規模が大きいほど単価が下がる経路と、能力向上や安全監視のため計算量が増える経路が併存します。9月3日の安全説明では、Astra のツール利用時の監視に相応の計算費用をかけると公表しています。[Astra の安全説明](https://openai.com/index/safety-overview-gpt-6-astra/)"
+        },
+        {
+          "id": "section-05",
+          "title": "能力と運用上の制約",
+          "body": "Astra の発表は、コンピューター操作、専門業務、科学、開発における性能向上を中心にしています。掲載されたベンチマークや顧客の初期評価は、能力が広がった根拠にはなりますが、あらゆる企業で人の仕事を代替できる実績ではありません。与えた道具、試行回数、推論設定、合格条件が変われば結果も変わります。[能力評価](https://openai.com/index/gpt-6-astra/)\n\nOpenAI は Astra のサイバー能力を自社の Preparedness Framework で Critical と評価し、安全対策と監視を強化しました。同時に、書かれた推論の監視しやすさが Sol より低下した試験結果も開示しています。モデルが賢くなることと、全ての行動を監督しやすくなることは一致しません。[安全説明](https://openai.com/index/safety-overview-gpt-6-astra/)\n\n利用企業への含意は、許可範囲、外部への書き込み、機密情報へのアクセス、異常時の停止を仕事ごとに設計する必要があるということです。事業に組み込んだ後の停止や制限変更は、単なる使い勝手の問題から納期・顧客対応の問題に変わります。"
+        },
+        {
+          "id": "section-06",
+          "title": "競争上の位置と別の解釈",
+          "body": "OpenAI の強みは、消費者の利用基盤と開発者の仕事場を持ち、モデル・実行管理・業界向け機能を同じ提供元で揃えられることです。企業は部品を組み合わせる負担を減らせます。その反面、提供元の仕様変更に業務が左右される範囲も広がります。\n\n| 説明 | 支える材料 | この説明だけでは説明できないこと |\n|---|---|---|\n| 企業の標準的な仕事場へ進む | ChatGPT、Codex、Agents API、法務向け製品が同じ業務につながる | 発表だけでは契約更新・利益・業務完了率を証明できない |\n| 顧客の実装負担を減らす共通部品になる | 自社・パートナーの実行環境を選択でき、業務ソフト企業にも供給する | 履歴・運用・評価の移行まで容易とは限らない |\n| 利用規模を維持するため製品と資金を拡張している | 大きな資金需要、広い価格帯、複数の供給元 | 拡張が苦しい採算の結果なのか、成長投資なのかは公表値だけでは決まらない |\n\n現時点では最初の二つが同時に進んでいると読むのが妥当です。「閉じた独占」か「完全に開いた部品」かの二択にすると、実行環境の開放とサービスへの依存が同居する実態を見失います。"
+        },
+        {
+          "id": "section-07",
+          "title": "経緯と次の判断",
+          "body": "| 時点 | 確認した節目 | 現在の理解につながる点 |\n|---|---|---|\n| 3月31日 | 大型資金調達と事業規模を公表 | 利用基盤と供給確保が既に大規模 |\n| 9月3日 | Astra の段階提供、安全説明 | 能力拡大と監督費用を併せて評価する必要 |\n| 9月10日 | Agents API 公開ベータ | 企業がエージェントを動かす基盤へ拡張 |\n| 9月17日 | Astra for Law 発表 | 汎用基盤から業界の仕事へ近づく |\n\n短期は、対象業務での完了率、確認時間、実行環境の選択条件を見ます。中期は、業務ソフト会社が OpenAI の上で売上を伸ばすのか、標準機能に置き換えられるのかを見ます。長期は、顧客接点と価格決定権を誰が持ち続けるかが争点になります。\n\n継続仮説は H-OAI-001（法人利用と利益）、H-OAI-002（移行の難しさ）、H-OAI-003（任せられる仕事の範囲）です。反対材料として重視するのは、同じ品質の仕事を別環境へ短期間で移せる事例、利用拡大に反して更新や採算が悪化する事例、能力評価の上昇に実務の改善が伴わない事例です。現在の記述は予測の発行や採点を意味しません。"
+        },
+        {
+          "id": "section-08",
+          "title": "この資料で確定していないこと",
+          "body": "9月時点の監査済み利益率、同じ顧客群の契約更新率、Agents API の本番利用規模は今回確認した一次資料では揃っていません。旧資料にあった評価額1.2兆ドル超の新ラウンド協議、政府契約の最終条項、広告の売上推計は、上記の確定した事業規模に混ぜていません。追加する際は報道・交渉・契約締結・売上計上を分けます。\n\n[旧版と旧根拠](../archive/pre-learning-2026-09-22/static_intelligence/openai.md)は保存しています。旧版の確度パーセントや警戒水準をこの資料の結論として引き継いではいません。"
+        }
+      ]
+    },
+    "anthropic": {
+      "schema_version": "1.0",
+      "subject": "anthropic",
+      "title": "Anthropic：企業の実務に入り込み、能力と利用条件を一緒に売る",
+      "available_on": "2026-09-22",
+      "introduction": "基準日：2026年9月21日。再調査・改稿：9月22日（日本時間）。財務数値は公表当時の会社説明として扱い、年率換算売上、実際の年間売上、調達額を分けます。",
+      "required_sections": [
+        "section-01",
+        "section-02",
+        "section-03",
+        "section-04",
+        "section-05",
+        "section-06",
+        "section-07",
+        "section-08",
+        "section-09"
+      ],
+      "sections": [
+        {
+          "id": "section-01",
+          "title": "会社の全体像",
+          "body": "Anthropic は Claude のモデル、会話型サービス、開発用の Claude Code、一般業務向けの Cowork、API を提供する会社です。基盤モデルだけでなく、仕事を継続して進める道具と、その仕事を安全に任せるための利用条件を企業に提供しています。研究と製品の両方を進め、資金調達発表でも安全性・解釈可能性の研究、計算資源、製品・提携の拡張を資金用途に挙げています。[5月28日の会社説明](https://www.anthropic.com/news/series-h)\n\n企業にとっての選択肢は、Claude を直接契約することだけではありません。同社は AWS、Google Cloud、Microsoft Azure の3大クラウドでの提供を説明し、AWS を主なクラウド提供元・訓練パートナーと位置付けています。[同発表](https://www.anthropic.com/news/series-h)\n\n**現在の評価は、企業が難しい仕事を任せる供給元として製品と販売経路を広げているが、高い能力ほど利用条件・監督・供給制約が事業の一部になっている、というものです。** 製品と契約上の仕組みは一次資料で確認できます。顧客の利益改善や、全クラウドで同じ条件を提供できるかの評価は限定的です。"
+        },
+        {
+          "id": "section-02",
+          "title": "製品と使い分け",
+          "body": "| 製品・モデル | 確認した位置付け | 企業にとっての意味 |\n|---|---|---|\n| Claude Sonnet 5 | 6月30日発表。日常的な自律タスク、ブラウザー・端末操作、開発、知識業務を重視 | 大量の日常業務で能力と費用を両立する候補 |\n| Claude Opus 5 | 7月24日発表。Fable 5 に近い能力を低い費用で使う日常用上位モデルと説明 | 難しい仕事を高価な最上位だけに依存させない編成 |\n| Claude Code | 開発者がコードとツールを扱う実行環境 | モデル単体の回答を、変更・確認を伴う開発作業につなぐ |\n| Cowork | 会社発表で拡張対象に挙げる業務用製品 | 開発以外の仕事にも利用を広げる入口 |\n| Mythos／Fable 系 | 高能力モデルと、用途に応じた安全策・アクセス制度 | 型名だけで利用可否を判断できず、用途・資格・提供面を確認する必要 |\n\n出典：[Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5)、[Opus 5](https://www.anthropic.com/news/claude-opus-5)、[事業の説明](https://www.anthropic.com/news/series-h)、[用途別アクセス](https://www.anthropic.com/news/life-sciences-verification-program)。性能の形容や比較は会社の評価であり、全ての業務で同じ優位を保証するものではありません。\n\nSonnet 5 は入力100万トークン当たり $2、出力 $10。8月10日の訂正で導入価格が恒久化され、9月から $3／$15 へ戻す予定は撤回されました。同じ入力でも新しいトークナイザーにより旧型比でおおむね1.0〜1.35倍のトークンになる場合があると説明しています。値札が下がった割合を、そのまま仕事の費用削減率にしてはいけません。[価格・訂正履歴・脚注](https://www.anthropic.com/news/claude-sonnet-5)"
+        },
+        {
+          "id": "section-03",
+          "title": "売上、資金調達、供給基盤",
+          "body": "| 公表日 | 数値・事実 | その数値が表すもの |\n|---|---|---|\n| 5月28日 | Series H 650億ドル、資金調達後評価額9,650億ドル | 調達と評価額。650億ドルには既存の大手クラウドからのコミット150億ドルを含む |\n| 同日 | 5月に年率換算売上470億ドルを超えたと公表 | 直近の売上ペースを年換算した会社説明。年間実績・利益ではない |\n| 同日 | Amazon と最大5GW、Google／Broadcom と次世代 TPU 5GW の契約を説明 | 将来の計算資源確保。全量が稼働済みとは読まない |\n| 同日 | SpaceX の Colossus 1・2 の GPU 能力へのアクセス | AI 分野で競合する企業グループからも資源を調達 |\n| 6月1日 | SEC に非公開の S-1 草案を提出したと発表 | 上場の選択肢を作る手続き。上場実施日や募集条件の確定ではない |\n\n[資金・計算資源](https://www.anthropic.com/news/series-h)、[S-1 草案の発表](https://www.anthropic.com/news/confidential-draft-s1-sec)。この組み合わせは、大きな需要に備えて複数の供給元を押さえる戦略を示します。一方、予約した能力を十分に利用できるか、利用料から研究・推論・契約負担を賄えるかが採算の争点です。\n\n旧資料には調達額と年率換算売上を混同しかねない650億ドルという別系列がありました。本資料で確定している650億ドルは5月28日公表の調達額です。7月時点の売上ペース等の報道値を加える場合は、日付と定義を別行で示す必要があります。"
+        },
+        {
+          "id": "section-04",
+          "title": "販売経路と導入の実態",
+          "body": "クラウド3社で買えることは、既存の調達・請求・情報管理を使いたい企業にとって利点です。ただし、同じ Claude の型名でも、特別なアクセス制度、公開の時期、管理機能が一致するとは限りません。9月17日開始の生命科学向け制度は、初期段階で Anthropic の直接 API と Enterprise／Team が対象で、第三者プラットフォームには未対応でした。[LSVP の提供範囲](https://www.anthropic.com/news/life-sciences-verification-program)\n\n企業への入り方は API のセルフサービスに限りません。7月9日には UST との提携を公表し、半導体・自動車・製造業などの設計・検証環境に Claude を組み込み、世界で2万人の技術者等を訓練する計画を示しました。2万人は訓練計画の対象規模で、既に2万人全員が業務成果を出したという実績ではありません。[UST との取り組み](https://www.anthropic.com/news/ust-claude)\n\nこの販売方法は、業務を知る提携先が導入の負担を引き受けるという点で、単にチャットの席を売る方法とは異なります。利用企業から見れば、モデルの比較に加えて、既存の工程に接続できる人と管理体制がいるかを比較することになります。"
+        },
+        {
+          "id": "section-05",
+          "title": "能力の実績をどこまで読めるか",
+          "body": "6月18日の Project Fetch は、Claude をロボットを伴う作業に使った試験です。共通する4作業について、AI 側9分35秒、人間側181分・361分という比較を示しました。ただし研究者による接続・承認・進行補助があり、試行も限定されています。特定の作業を速くできた根拠であって、研究職全体を約20倍・40倍速くした実績ではありません。[Project Fetch 第2段階](https://www.anthropic.com/news/project-fetch-phase-two)\n\nOpus 5 や Sonnet 5 の発表も、複数の開発・知識業務の評価と初期顧客の証言を示しています。実務への適用範囲が広がっていることは読めますが、提供元が選んだ評価と成功例が中心です。会社としての導入判断では、難しい失敗例、停止した作業、手直しを含めると成果が残るかが重要です。"
+        },
+        {
+          "id": "section-06",
+          "title": "安全性、アクセス条件、運用の制約",
+          "body": "8月31日、Anthropic は7月30日に報告した3件の無許可アクセスと、8月4日に英国 AISI が報告した別件への対応を公表しました。問題のモデルは評価のためサイバー安全策を外しており、前者には第三者評価環境の誤設定がありました。外部の未公開モデルのサイバー評価を停止し、内部評価は対策後に再開したと説明しています。通常の全顧客向けサービスが一律停止したという意味ではありません。[対応説明](https://www.anthropic.com/news/improving-alignment-security-efforts)\n\n事業上の意味は、能力の高いモデルを配るときに、評価環境、利用者の権限、異常を止める監視まで提供条件になることです。独立レビューとして METR との作業を計画していますが、この発表時点でレビュー完了を確認したわけではありません。\n\n9月17日の LSVP はこの構造を具体化しています。資格・安全体制等を審査し、チーム単位の Standard Use と、特定の研究案件を対象に追加審査する High-risk Use を分けます。他の安全策は維持し、対象トラフィックの30日保存を求めています。早期利用は数十組織が参加済みという会社説明で、「初週に数百組織」は見込みです。[制度の条件](https://www.anthropic.com/news/life-sciences-verification-program)\n\n利用企業は、能力が必要な仕事について、直接契約・クラウド経由の違い、保存条件、権限の更新、監督担当を確認する必要があります。安全策が負担になる場合と、従来使えなかった業務へのアクセスを可能にする場合の両方があります。"
+        },
+        {
+          "id": "section-07",
+          "title": "競争上の位置と代替説明",
+          "body": "| 説明 | 根拠 | 判断を弱める条件 |\n|---|---|---|\n| 企業の専門業務に深く入る | Code、Cowork、複数クラウド、UST の業務接続、分野別のアクセス制度 | 試験利用から継続契約へ進まない、提携先が別モデルへ容易に移る |\n| 安全性と監督を調達理由にする | アクセス審査、監視、事故後の運用見直し | 審査の遅さや停止が利用企業の納期を損ない、代替へ移る |\n| 高能力モデルを広く販売するため制約を管理する | 汎用・上位モデルの価格帯と用途別アクセス | 監督費用・供給不足が性能改善の利益を吸収する |\n\nこれらは排他的ではありません。「安全を重視する会社だから商業化しない」「利用制限があるから事業が進んでいない」という読みはいずれも資料と合いません。何を許可するかを細かく設計しながら、企業向けの販売を拡張しています。"
+        },
+        {
+          "id": "section-08",
+          "title": "経緯と期間別の見通し",
+          "body": "| 時点 | 主な出来事 | 見るべき変化 |\n|---|---|---|\n| 5月28日 | 大型調達・計算資源の契約 | 需要拡大に供給が追い付くか |\n| 6月1日 | 非公開 S-1 草案提出 | 公開資料が出れば資金と収益の確認精度が上がる |\n| 6月30日／7月24日 | Sonnet 5／Opus 5 | 高能力を日常業務の費用へ下ろす |\n| 8月10日 | Sonnet 5 の価格恒久化 | 旧い値上げ予定を判断に残さない |\n| 8月31日 | 評価事故への対策を説明 | 研究・検証の進め方にも運用制約が加わる |\n| 9月17日 | LSVP 開始 | 専門用途の提供条件が具体化 |\n\n短期は、同じ業務で Sonnet と Opus のどちらが合格成果物を安く作るか、審査やクラウド差で業務が止まらないかを見ます。中期は、顧客の契約更新と供給能力の稼働、提携先が実装を広げるかを見ます。長期は、Claude に蓄積する業務知識や運用の仕組みが、顧客の生産性と Anthropic の収益の双方に残るかが争点です。\n\n継続仮説は H-ANT-001〜003。確認すべき対象は製品発表の数ではなく、利用の継続、他社への移行条件、能力と監督の両立です。正式な期限付き予測とその成績は別途記録し、この企業資料の評価を的中率として扱いません。"
+        },
+        {
+          "id": "section-09",
+          "title": "未解決の点と旧版からの修正",
+          "body": "会社全体の利益率、顧客群を固定した更新・解約、クラウド別の機能・審査期間の比較は揃っていません。政府調達をめぐる旧版の報道値は、契約本文や公的記録による再確認を終えていないため、確定した売上や利用停止として書いていません。\n\n[旧版](../archive/pre-learning-2026-09-22/static_intelligence/anthropic.md)の情報量は保持すべきでしたが、根拠の薄い確度パーセント、収集日を発生日にした記述、年率換算と実績の混同は引き継ぎません。本資料は、既知の事業・製品・供給・制約を先に示したうえで、残る論点を特定しています。"
+        }
+      ]
+    },
+    "google": {
+      "schema_version": "1.0",
+      "subject": "google",
+      "title": "Google／DeepMind：検索・業務ソフト・クラウドを通じて AI を供給する",
+      "available_on": "2026-09-22",
+      "introduction": "基準日：2026年9月21日。再調査・改稿：9月22日（日本時間）。決算説明の数値はその対象期間の値です。更新型の仕様・料金は確認日を別記します。",
+      "required_sections": [
+        "section-01",
+        "section-02",
+        "section-03",
+        "section-04",
+        "section-05",
+        "section-06",
+        "section-07",
+        "section-08"
+      ],
+      "sections": [
+        {
+          "id": "section-01",
+          "title": "会社と事業の全体像",
+          "body": "Google の AI 事業は、Gemini という一つのアプリに閉じていません。検索・YouTube の広告、Workspace の業務利用、Google Cloud の計算資源と企業向けサービス、Gemini の直接利用にまたがります。Google DeepMind のモデル開発を、既存の顧客接点とクラウドに配る構造です。[2026年7月22日の CEO 決算説明](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)\n\n**現在の評価は、既存事業の規模と AI の供給網を同時に持つことが強みであり、AI を売る収入と、既存製品を AI で強くする収入を分けて見る必要がある、というものです。** 「Gemini の企業採用データがないので何も分からない」という旧版の整理は誤りでした。利用と事業成長を示す資料はあり、分からないのは主に Gemini 単独の利益・市場シェア・利用企業の成果です。\n\n確度は、製品の配置と公表された利用規模について高く、AI 投資が長期の利益率を高めるという判断について中程度です。自社の決算説明と顧客数の公表を使っていますが、各製品への利益配分までは開示されていません。"
+        },
+        {
+          "id": "section-02",
+          "title": "製品と顧客の対応",
+          "body": "| 領域 | 主な製品・機能 | 顧客と対価 |\n|---|---|---|\n| 消費者・検索 | Gemini アプリ、AI Mode、検索の AI 機能、YouTube 内の AI | 利用者の継続利用と広告接点、個人向け契約 |\n| 従業員の仕事 | Workspace と Gemini Enterprise | 社内データを検索し、資料作成・調査・業務を行う企業 |\n| 開発と実行管理 | Gemini API、AI Studio、Antigravity、Gemini Enterprise Agent Platform | モデルを組み込み、エージェントを動かす開発者と企業 |\n| 音声 | Gemini 3.8 Live、Extended Thinking、3.5 Transcribe | 会話しながら作業する窓口・支援・文字起こし |\n| 計算資源・周辺機能 | TPU を含む基盤、データ、セキュリティ、クラウド | 自社・他社モデルを運用する組織 |\n| 公開モデル | Gemma 系 | 自分で動かせるモデルを必要とする開発者 |\n\n[決算説明](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)、[Gemini Enterprise の導入時の説明](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-enterprise-sundar-pichai/)、[9月15日の音声モデル発表](https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/)。同じ Gemini という名称でも、個人アプリ、API、従業員向け契約、クラウド基盤は別の購入対象です。"
+        },
+        {
+          "id": "section-03",
+          "title": "規模、成長、投資",
+          "body": "7月22日の第2四半期決算説明では、Alphabet 全体の売上成長率は前年同期比24%、Search and Other は17%、YouTube Ads は13%、Cloud は82%と公表しています。Cloud の受注残は5,140億ドルです。受注残は将来の契約収入に関わる指標で、その四半期の売上や現金とは異なります。[CEO 決算説明](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)\n\n同資料の利用規模は、Gemini アプリ月間9.5億人、Antigravity 週間240万人超、モデル API 毎分約220億トークン、Gemini Enterprise は Fortune 100 の約90%が利用というものです。アプリの人数、開発ツールの人数、処理量、企業数は別の母集団なので足し合わせられません。企業数だけでは全従業員への展開や有料利用の深さも分かりません。[同説明](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)\n\n6月3日の投資家向け説明では、第1四半期 Cloud 売上約200億ドル、営業利益約70億ドル、利益率約33%、2026年の設備投資見込み1,800〜1,900億ドルを説明しました。これらは6月時点の対象期間・予算で、9月の更新値と混ぜません。[投資家説明](https://blog.google/alphabet/investor-presentation-june-2026/)\n\n読み取れるのは、AI は既に売上を持つ事業の中で拡大しており、投資規模も大きいことです。Cloud 売上には計算資源、他社モデル、データや業務サービスも含まれるため、Cloud 成長率を Gemini 単独のシェア上昇率に置き換えることはできません。一方で、顧客の企業数と API の利用量を無視し、全てを他社モデル向けのインフラ需要と決めつけることもできません。"
+        },
+        {
+          "id": "section-04",
+          "title": "直近の技術・製品の状態",
+          "body": "Gemini 3.8 Flash の公式説明は、長いソフトウェア開発、複数段階のエージェント、複雑な企業業務を対象としています。Managed Agents の Antigravity エージェントと SDK の既定モデルにも位置付けています。新しいモデルを出すだけでなく、そのモデルを使って仕事を進める仕組みまで揃えています。[Gemini 3.8 Flash の説明](https://ai.google.dev/gemini-api/docs/latest-model?hl=en)\n\n9月15日の音声発表は、3.8 Live と Extended Thinking、文字起こし用の3.5 Transcribe を区別しています。会話を継続しながら裏でツールや API を使う方向であり、音声をテキストに変換するだけの機能とは異なります。窓口対応や社内支援にとっては、回答品質だけでなく、処理が終わったことをどう確認するかが導入条件になります。[開発者向け発表](https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/)\n\nGemini Enterprise の Skills は、仕事の指示や補助資料を再利用する機能です。管理者が作成・共有を有効にする必要があり、Standard／Plus／従量課金と Frontline で作成可否が異なります。確認した文書では、assistant では使える一方、agents では使えないという制約があります。「スキルに対応したので全ての実行環境で同じ手順を使える」とは読めません。[9月22日確認の仕様](https://docs.cloud.google.com/gemini/enterprise/docs/skills)"
+        },
+        {
+          "id": "section-05",
+          "title": "価格と導入の費用",
+          "body": "9月22日に確認した Gemini 3.8 Flash の導入価格は、100万トークン当たり入力 $0.75、出力 $3.75。公式文書は2026年12月31日までとし、2027年1月1日から入力 $1.50、出力 $7.50 と説明しています。出力には思考トークンを含み、キャッシュ等は別料金です。[モデル説明](https://ai.google.dev/gemini-api/docs/latest-model?hl=en)、[公式料金表](https://ai.google.dev/gemini-api/docs/pricing)\n\n長期契約や顧客向け価格を設計する際は、期間限定の単価だけで採算を決められません。今の価格で試験し、予定価格でも粗利が残るかを確認する必要があります。逆に、この値上げ予定だけから Google 全体の価格支配力が確立したとまでは言えません。割引継続、競合への移行、少ないトークンで同じ仕事を処理できる改善も結果を変えます。\n\n企業の導入費用には既存データの接続、権限の整理、ログ・監督、手直しが含まれます。Google の利点はこれらを既存の Cloud や Workspace の運用に寄せられることですが、複数の製品で提供条件が違うことは確認負担になります。"
+        },
+        {
+          "id": "section-06",
+          "title": "競争の強みと制約",
+          "body": "Google は利用者との接点、モデル開発、独自の計算基盤、法人販売を同時に持ちます。AI が検索の利用を増やすなら広告にも利益が及び、企業が Gemini 以外を選んでも Cloud の資源が使われる可能性があります。この複数の収益経路は、モデル API を売る事業だけとは異なる強みです。\n\nただし、既存事業を持つことは調整の難しさも生みます。検索体験の改善が広告や外部サイトへの送客とどう両立するか、モデル性能の更新を全製品へどう配るか、膨らむ設備投資の回収をどう進めるかが論点です。利用者数が増えても、利益の増え方を同時に見る必要があります。\n\n| 説明 | 支える事実 | 反対の材料・未確定部分 |\n|---|---|---|\n| 既存製品への AI 統合が成長を増幅する | 検索・Cloud の売上成長、Gemini と Antigravity の利用 | 同じ顧客群の因果効果や Gemini 単独利益は未開示 |\n| Cloud の需要全体が伸び、Gemini の成功とは一部別に進む | Cloud は多様な基盤・サービスを含む | Gemini Enterprise の導入や自社 API 利用もあり、他社需要だけでは説明できない |\n| 管理機能の統合で企業の移行費用が上がる | 業務データ、権限、実行管理が同じ環境へ集まる | 公開モデルや共通形式もあり、顧客が依存箇所を減らせる余地はある |\n\n現在は一番目と二番目を分けて追うのが妥当です。売上と利用の観測があることは確かですが、そこから一つのモデルが企業市場を独占すると結論づける材料はありません。"
+        },
+        {
+          "id": "section-07",
+          "title": "経緯と次に判断を変える観測",
+          "body": "| 時点 | 出来事 | 事業上の意味 |\n|---|---|---|\n| 2025年10月9日 | Gemini Enterprise 発表 | 企業の情報・仕事への入口を整備 |\n| 2026年6月3日 | 投資家向けに Cloud と設備投資を説明 | 成長と供給投資を同じ資料で確認できる |\n| 7月22日 | 第2四半期の成長・利用規模を説明 | 「採用の観測がない」という見方を修正する根拠 |\n| 9月15日 | 3.8 Live／3.5 Transcribe 発表 | 音声と作業実行を結び付ける |\n| 9月の確認状態 | 3.8 Flash、Skills、管理機能 | モデル単体から企業での運用へ広がる |\n\n短期は Flash の導入価格と予定価格で仕事の採算が残るか、音声や Skills の提供条件が対象業務に合うかを見ます。中期は Gemini Enterprise の契約更新、部署への展開、Cloud の利益と投資回収を確認します。長期は検索・Workspace・Cloud を通じた顧客接点が、AI 利用の標準的な入口として残るかが争点です。\n\n継続仮説は H-GOO-001（企業利用と収益）、H-GOO-002（移行の自由度）、H-GOO-003（研究と計算設備が品質を保った総費用の改善につながるか）です。同じ企業群で利用が縮む、予定価格で他社へ移る、性能改善が利用に届かないという結果があれば、統合の優位という評価を弱めます。"
+        },
+        {
+          "id": "section-08",
+          "title": "残る情報ギャップ",
+          "body": "Gemini の単独利益率、企業の有料利用深度、利用企業の成果を揃えた比較は不足しています。旧版にあった Hassabis の組織離脱報道や、Cloud の売上を特定2社へ帰属させる推計は、今回一次資料で確定していないため、経営体制や顧客構成の事実にはしていません。\n\n[旧版](../archive/pre-learning-2026-09-22/static_intelligence/google.md)の Antigravity 管理 API の細部は保存された収集資料へ戻れますが、今回 AI Studio の記事本文を再取得できなかったため、確定仕様は現行の開発者文書で確認できた範囲に限定しました。資料の取得不足と、会社に製品・顧客が存在しないことは区別します。"
+        }
+      ]
+    },
+    "xai": {
+      "schema_version": "1.0",
+      "subject": "xai",
+      "title": "xAI／SpaceXAI：計算資源、X の接点、開発ツールをつなぐ事業",
+      "available_on": "2026-09-22",
+      "introduction": "基準日：2026年9月21日。再調査・改稿：9月22日（日本時間）。本文で仕様と公開日を確認できた製品を扱います。検索結果だけから最新モデルや発表時刻を断定しません。",
+      "required_sections": [
+        "section-01",
+        "section-02",
+        "section-03",
+        "section-04",
+        "section-05",
+        "section-06",
+        "section-07",
+        "section-08"
+      ],
+      "sections": [
+        {
+          "id": "section-01",
+          "title": "所属と事業の全体像",
+          "body": "xAI は Grok のモデルと利用サービス、Grok Build の開発環境、API、Colossus の計算基盤を持つ AI 事業です。2026年2月2日に SpaceX による買収を公式発表しています。旧版の「SpaceXAI という表記はあるが統合の一次発表がない」は収集漏れであり、買収そのものを未確定に戻すべきではありません。[買収発表](https://x.ai/news/xai-joins-spacex)\n\nただし、買収が成立したことと、事業・組織の統合が全て終わったことは異なります。6月5日付の SpaceX の EU 目論見書も、AI 部門には統合・拡大・実行のリスクが残ると説明しています。AI 部門の数値には X の広告・購読等が含まれ、Grok だけの事業損益とは一致しません。[目論見書 §1.3.3、§5.6.1.3](https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf)\n\n**現在の評価は、消費者向けサービスから開発・業務ツールへ接点を広げ、低めの価格と公開した実行コードで利用を増やす一方、計算資源への支出が先行している、というものです。** 製品と買収の事実は確度が高く、低価格が継続的な市場シェアや利益へ結び付くかは中低程度の確度です。"
+        },
+        {
+          "id": "section-02",
+          "title": "製品、提供条件、販売先",
+          "body": "| 製品・機能 | 確認した状態 | 誰が何に使うか |\n|---|---|---|\n| Grok | Web・モバイル・X を通じた AI 利用 | 個人の対話・調査・生成、業務での利用 |\n| Grok 4.6 | 8月12日発表。長いエージェント作業、開発、知識業務を重視 | 開発者と企業が API や対応ツールで使うモデル |\n| Grok Build の端末版 | 仕事を進める実行ループ、コード編集、ツール、拡張機能を備える | コードベースを使う開発作業 |\n| Grok Build の Web・モバイル版 | 8月19日に全プランへ拡張と発表 | アプリ・サイト・ゲーム等の作成と共有 |\n| プラグイン市場 | 6月11日開始。技能、外部ツール接続等をまとめて追加 | 既存の開発・監視・データ基盤へつなぐ |\n\n出典：[Grok 4.6](https://x.ai/news/grok-4-6)、[Web・モバイル](https://x.ai/news/grok-build-for-everyone)、[プラグイン](https://x.ai/news/grok-plugin-marketplace)。\n\nGrok 4.6 は Grok Build と Cursor に加え、API、OpenRouter、Vercel、Cloudflare などの経路で提供すると説明しています。ユーザーを自社の画面に集める方法と、他社の仕事場にモデルを供給する方法が併存しています。[Grok 4.6 の提供先](https://x.ai/news/grok-4-6)\n\nWeb 版では作ったアプリを grok.me 上で公開し、独自ドメインや GitHub への書き出し、X 上の共有、アプリからのモデル利用に対応します。これにより、作品を作る作業と、それを見つけてもらう場所が接続します。利用者数や売上の増加をこの機能だけで証明することはできませんが、販売経路の設計は読み取れます。[8月19日の説明](https://x.ai/news/grok-build-for-everyone)"
+        },
+        {
+          "id": "section-03",
+          "title": "価格と能力",
+          "body": "Grok 4.6 の発売時価格は100万トークン当たり入力 $2、出力 $6 からで、Fast 版は2倍と説明されています。7月16日の Grok 4.5 も入力 $2、出力 $6 で公表されています。能力を上げても基本単価を据え置くという見せ方です。[4.6](https://x.ai/news/grok-4-6)、[4.5](https://x.ai/news/grok-4-5)\n\n4.6 の発表では、Artificial Analysis Intelligence Index が61、Terminal-Bench v3.0 が26%など、評価ごとに異なる結果を示しています。全体指数が競合と同等でも、個別の開発作業では差が残ります。比較対象の数字は各社公表や公開順位表を含むため、全モデルを同じ実行環境で再試験した独立比較とは区別します。[評価表と注記](https://x.ai/news/grok-4-6)\n\n利用企業にとっては、安い単価と低い仕事の費用は同じではありません。コード変更ならテストに通るまでの回数とレビュー時間、資料作成なら事実確認と修正時間を足して比較する必要があります。旧版にあった異なる Grok 世代の価格や、分母が不明な「幻覚率」を混ぜて優劣を決めることは避けます。"
+        },
+        {
+          "id": "section-04",
+          "title": "公開コードが意味すること",
+          "body": "Grok Build のコード公開日は7月15日です。公開対象はモデルの重みそのものではなく、文脈を組み立て、モデルの応答から道具を呼び、端末画面を表示する実行側の仕組みです。公式発表はローカルの推論先へ向けて実行できることも説明しています。[コード公開](https://x.ai/news/grok-build-open-source)\n\nこれは利用者が内部の動作を調べたり、モデルを差し替える構成を試したりできる材料です。一方で、公開コードがあることだけで、ホスト型サービスの運用、サポート、全ての連携機能を同条件で再現できるとは限りません。モデル本体、実行ソフト、ホスティング、販売経路を分けて評価する必要があります。\n\n競争への含意は、企業が管理サービスに依存せず使える部分が増えることです。同時に xAI は、その公開ソフトで使われるモデルや自社サービスを販売できます。公開と商業化を二者択一にする必要はありません。"
+        },
+        {
+          "id": "section-05",
+          "title": "資金と計算資源、実際の負担",
+          "body": "1月6日、xAI は Series E で200億ドルを調達したと発表し、NVIDIA と Cisco Investments を戦略投資家に含めています。発表は2025年末の Colossus I・II を合計100万 H100 相当超と表現しています。「相当」は計算能力の換算であり、100万枚の同一チップを実数確認した意味ではありません。[資金調達発表](https://x.ai/news/series-e)\n\n6月5日の目論見書では、AI 部門の営業損失は2025年63.55億ドル、2026年1〜3月24.69億ドル。調整後 EBITDA も同四半期はマイナス6.09億ドルです。これは非 GAAP の調整指標で、営業損失やキャッシュ消費額と置き換えられません。本文はクラウド費、GPU 減価償却、データセンター、人件費などを負担増の要因に挙げています。[目論見書 §5.4.4.3、§5.4.5.3（冊子123〜124頁）](https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf)\n\nここからは「資金の情報がない」ではなく、「大きな投資負担が開示されている」と読むべきです。低価格の提供が新規利用を呼び、その利用から費用を回収できるかが事業の争点になります。SpaceX に入ったことは資源を組み合わせる余地を生みますが、AI 部門の負担が消えるわけではありません。"
+        },
+        {
+          "id": "section-06",
+          "title": "制約と競争上の位置",
+          "body": "計算資源が多いことは、学習やサービス供給の選択肢を増やします。しかし、電力・冷却・施設の許認可・設備稼働、顧客需要、モデル性能が揃って初めて収益につながります。AI 部門が大きな損失を計上している以上、GPU の規模だけで持続可能性を評価できません。\n\n消費者接点では X、開発者接点では Cursor などの外部ツール、実行基盤では公開した Grok Build を使えます。これは自社アプリへの集客だけに依存しない利点です。一方、他社ツール経由の利用は、利用者が同じ画面で別モデルへ切り替える余地も大きくします。安い価格が使い続ける理由になるか、難しい仕事での品質が理由になるかを区別して追う必要があります。\n\n| 説明 | 支持する事実 | 判断を変える条件 |\n|---|---|---|\n| 低価格と外部販売で利用を増やす | 4.5・4.6 の価格、複数の販売先 | 同価格でも品質不足で使われない、値引きを止めると利用が消える |\n| 公開ソフトで自社の利用圏を広げる | Grok Build のコード、プラグイン、ローカル推論 | 公開版の利用が増えても Grok の収益につながらない |\n| 資源の規模で能力と供給を押し上げる | 調達、Colossus、SpaceX への所属 | 設備費用と稼働の差、損失拡大、供給制約が続く |\n\n最初の二つは製品の設計から確認できる方向です。三つ目が事業として成功するかは、費用と利用の両方の実績が必要です。"
+        },
+        {
+          "id": "section-07",
+          "title": "経緯と期間別の見通し",
+          "body": "| 日付 | 節目 | 現在へのつながり |\n|---|---|---|\n| 1月6日 | Series E 200億ドル | 計算資源と製品拡張の資金 |\n| 2月2日 | SpaceX が買収 | 所属・資源配分の前提が変わる |\n| 6月5日 | SpaceX の目論見書 | AI 部門の負担を財務資料で確認できる |\n| 6月11日 | プラグイン市場 | 外部の仕事道具と接続 |\n| 7月15日／16日 | Build コード公開／Grok 4.5 | 開放した実行ソフトとモデル販売を組み合わせる |\n| 8月12日／19日 | Grok 4.6／Build の全プラン拡張 | 開発と一般利用の範囲を広げる |\n\n短期は、同じ業務で価格の安さがレビュー込みの費用に残るかを見ます。中期は、外部の開発ツール経由の利用が継続し、AI 部門の収入と費用の差が改善するかを見ます。長期は、計算資源・消費者接点・公開ソフトの組み合わせが、他社が模倣しにくい利益を生むかを確認します。\n\n継続仮説 H-XAI-001 は X の情報の実務価値、H-XAI-002 は仕事の総費用、H-XAI-003 は特定産業での継続利用、H-XAI-004 は X を使わない法人業務で選ばれるか、という問いです。買収後の統合はこれらを評価する事業上の背景です。既に成立した買収の確率を、利用者数が不明という理由で未判定に戻すことはしません。"
+        },
+        {
+          "id": "section-08",
+          "title": "未解決の点",
+          "body": "Grok 単独の収益、顧客維持率、販売経路ごとの採算は AI 部門の合算損益から分離できません。公開版とホスト版の機能差・ライセンスの実務上の条件も、採用する版で確認する必要があります。これらは事業を評価するための残りの論点で、買収や既存製品の存在を疑う理由ではありません。\n\n[旧版](../archive/pre-learning-2026-09-22/static_intelligence/xai.md)を保存し、買収の未確認扱いとコード公開日の誤りを本資料で訂正しました。"
+        }
+      ]
+    },
+    "bytedance": {
+      "schema_version": "1.0",
+      "subject": "bytedance",
+      "title": "ByteDance：消費者向けの配信・制作と、企業向け AI を並行して広げる",
+      "available_on": "2026-09-22",
+      "introduction": "基準日：2026年9月21日。再調査・改稿：9月22日（日本時間）。製品仕様は公式資料、資金調達は確認した報道として区別します。中国向けと海外向けの提供条件を一括りにしません。",
+      "required_sections": [
+        "section-01",
+        "section-02",
+        "section-03",
+        "section-04",
+        "section-05",
+        "section-06",
+        "section-07",
+        "section-08",
+        "section-09"
+      ],
+      "sections": [
+        {
+          "id": "section-01",
+          "title": "会社と AI 事業の全体像",
+          "body": "ByteDance は TikTok、Douyin、CapCut、TikTok Shop、Lark／Feishu など、コンテンツの閲覧・制作・商取引・仕事の接点を持つ会社です。AI 事業は、Doubao の利用サービス、Seed のモデル開発、TRAE の開発環境、火山引擎（Volcano Engine）の法人向け提供、動画・画像生成にまたがります。[会社の製品一覧](https://www.bytedance.com/)、[Seed2.0 の提供先](https://seed.bytedance.com/en/blog/seed-2-0-official-launch)\n\n**現在の評価は、日常の消費者利用と企業の処理需要を別々の経路で取り込み、文章・コード・映像まで広く供給している会社、というものです。** 既存製品の顧客接点は強みです。ただし、Doubao の人数が増えれば法人 API の利益も増える、という関係が自動的に成立するわけではありません。両方の収入と費用を分けて見る必要があります。\n\n製品の供給と開発の進展は確度が高く、中国外での収益化・各 AI 事業の利益については中低程度です。公開財務の粒度が米国上場企業と異なり、アプリの人数や収益に関する推計には定義の差があります。"
+        },
+        {
+          "id": "section-02",
+          "title": "製品群と提供経路",
+          "body": "| 領域 | 製品・系列 | 確認した状態 |\n|---|---|---|\n| 汎用モデル | Seed2.0／Seed2.1 | 2.0 は2月14日、2.1 は6月23日発表。2.1 は Doubao と火山引擎で利用開始と説明 |\n| 日常利用 | Doubao | 会話や専門業務の入口。モデルを一般利用者に届ける |\n| ソフトウェア開発 | TRAE、Seed Code 系 | 開発の成果物へつなぐ接点。2.0 発表では Pro／Code の展開先を明記 |\n| 動画制作 | Seedance 2.0／2.5 | 2.0 は2月12日、2.5 は7月31日発表。2.5 は最大30秒の一括生成と複数回の延長 |\n| 画像・音声 | Seedream 5.0 Pro、Seed Audio 1.0、SeedRealtime | 7〜8月に公式ブログで発表。生成とリアルタイムの入出力を拡張 |\n| エージェントの実行 | Coze Studio、DeerFlow | 視覚的な構築や、道具・記憶・実行環境を組み合わせる公開ソフト |\n\n出典：[Seed2.1](https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity)、[Seedance 2.5](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)、[公式発表一覧](https://seed.bytedance.com/en/blog?view_from=homepage_tab)、[Coze Studio](https://github.com/coze-dev/coze-studio)、[DeerFlow](https://github.com/bytedance/deer-flow)。公開リポジトリの存在は確認していますが、9月22日の全機能を過去の日報へ遡って適用しません。\n\n旧版は9月20日に再取得した Seed2.0 と Seedance 2.0 を新しい供給の中心として扱っていました。両方とも2月の発表であり、基準日までに Seed2.1 と Seedance 2.5 が発表されています。最新の製品構成を把握するため、旧い記事の再取得だけで更新を完了させないことが必要です。"
+        },
+        {
+          "id": "section-03",
+          "title": "モデルの能力と、読み違えてはいけない比較",
+          "body": "Seed2.1 は、複数の道具・環境にまたがる業務、要件確認から実装・検証までの開発、画像・動画の理解を中心に説明しています。社内評価と公開評価を組み合わせ、最も難しい自由度の高い仕事には改善余地が残ると認めています。単発の回答より、資料を読んで仕事を完了することへ重点を移しています。[6月23日の発表](https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity)\n\n2月の Seed2.0 発表は Pro・Lite・Mini と Code を用意し、性能に対するトークン価格が業界上位モデルよりおよそ一桁低いと主張しました。これは発表時の会社比較です。9月の他社モデル、最新の Seed2.1、地域別の販売価格まで同じ優位が続くという証拠ではありません。[Seed2.0 発表](https://seed.bytedance.com/en/blog/seed-2-0-official-launch)\n\n低価格の効果を判断するには、同じ資料・同じ合格条件で、再実行や人の確認も含めて比較する必要があります。日本語の業務、専門用語、顧客の情報管理条件が加わると、公式の総合順位だけでは選べません。用途別の成功率を確かめれば、全部を一つのモデルへ集めず、文書の大量処理と難しい判断で使い分ける余地があります。"
+        },
+        {
+          "id": "section-04",
+          "title": "動画・画像の事業上の意味",
+          "body": "Seedance 2.5 は、最大30秒の音声付き動画生成に加え、画像30枚・動画10本・音声10本までの参照、時間位置を指定した編集を説明しています。7月31日時点では Jimeng AI、Doubao Pro 等への提供開始とし、BytePlus ModelArk の API は今後提供と書いています。発表の「提供予定」をその日の API 稼働実績にしてはいけません。[Seedance 2.5 発表](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)\n\n広告や制作の仕事では、生成の長さよりも、同じ人物・商品・音・画角を維持し、依頼された箇所だけ直せるかが採算に関わります。制作ツールや配信先を既に持つ ByteDance は、モデルを制作工程へ近づけやすい位置にいます。ただし、良いデモから、顧客の承認、権利処理、配信後の売上までを飛び越えて評価することはできません。\n\n生成の品質が上がると、試作品や複数案の制作費が下がる可能性があります。一方で、その節約を顧客への値下げに渡すのか、作る本数を増やすのか、制作会社の利益に残すのかは市場の競争で変わります。これが、モデル性能だけでなく広告・制作業の構造まで追う理由です。"
+        },
+        {
+          "id": "section-05",
+          "title": "資金、設備投資、採算",
+          "body": "9月4日の Reuters の独自取材は、ByteDance が約30行から296億ドルの融資を確保したと報じています。関係者によれば、当初200億ドルから増額、無担保、当初3年で2年延長の選択肢があり、中国外の案件に使うとされています。同記事時点では署名は近く予定とされ、会社は取材に直ちには回答していません。[Reuters 配信記事](https://uk.marketscreener.com/news/bytedance-secures-29-6-billion-loan-in-ai-push-sources-say-ce785bdad189f22c)\n\nこのため、本資料は融資条件を契約原本で確認済みとは扱いません。とはいえ、金額・期間・用途を伴う報道は、資金の規模を判断する材料です。融資が供給拡張を支える説明と、返済・設備稼働の負担を増やす説明を両方残します。銀行の参加数や融資規模は、AI 事業が既に利益を出している証拠ではありません。\n\n旧資料の Doubao 日間利用者2億人超、日収100万元未満、月間利用者約610万人減という数字は、第三者推計の引用が重なり、対象・期間・収益の範囲を揃えられていません。これらを計算して一人当たり採算や会社の損失を確定させることはしません。採算の判断に必要なのは、アプリの課金、法人 API、制作サービスを分けた継続的な収入・費用です。"
+        },
+        {
+          "id": "section-06",
+          "title": "地域と提供条件の制約",
+          "body": "中国の火山引擎と、海外向けの BytePlus ModelArk は、提供モデルや公開時期を同一と仮定できません。例えば Seedance 2.5 の発表自体が、アプリでの公開と海外 API の予定を分けています。日本の企業が採用を判断する際は、契約する提供面、利用できるモデル、保存・処理地域、商用利用条件を確認する必要があります。\n\n権利処理も制作の一部です。Seedance 2.0 の公式説明は、実在人物の参照に本人確認または事前の適法な許諾が必要と明記しています。この注意は、全ての生成物や素材について権利が保証されるという意味ではありません。実際に使う版とサービスの条件を読み、人物・音声・商品素材を持ち込めるかを業務側で確かめる必要があります。[公式の参照素材に関する説明](https://seed.bytedance.com/en/blog/seedance-2-0-official-launch)"
+        },
+        {
+          "id": "section-07",
+          "title": "競争上の位置と代替説明",
+          "body": "| 説明 | 支える材料 | 反対材料・見直し条件 |\n|---|---|---|\n| 消費者の利用と企業向け供給が相互に支える | Doubao、TRAE、火山引擎に同じ研究成果を配る | 利用者が増えても課金・更新が増えず、費用だけ増える |\n| 制作から配信までの接点で価値を取る | 動画・画像モデルと既存の制作・配信製品 | 制作の利益が他社や顧客に移り、モデル側の収益に残らない |\n| 低価格と公開ソフトで選ばれる | 2.0 の価格主張、Coze Studio、DeerFlow | 最新モデル・同じ仕事・契約条件で比較すると優位が消える |\n\n現在は、複数の製品と経路を持つことは確認でき、利益の相互補完は未確定と判断します。「消費者向けから法人向けへ全面転換した」と読む材料はなく、並行して事業を広げていると理解する方が資料に合います。"
+        },
+        {
+          "id": "section-08",
+          "title": "経緯と期間別の判断",
+          "body": "| 日付 | 節目 | 現在へのつながり |\n|---|---|---|\n| 2月12日／14日 | Seedance 2.0／Seed2.0 | 動画と汎用・開発モデルの土台 |\n| 6月23日 | Seed2.1 | 一連の業務を完了する能力へ重点 |\n| 7月8日／20日 | Seedream 5.0 Pro／Seed Audio 1.0 | 画像・音の制作領域を広げる |\n| 7月31日 | Seedance 2.5 | 長さ、参照、編集を制作工程へ近づける |\n| 8月5日 | 音声・映像の全二重モデル発表 | 入力を受けながら応答する利用へ拡張 |\n| 9月4日 | 大型融資の Reuters 報道 | 海外の供給拡張と負担を追う材料 |\n\n短期は、日本で契約できる提供面とモデルを特定し、文章・開発・制作のそれぞれで合格成果物当たりの費用を比べます。中期は、消費者課金と法人利用が継続し、設備と資金の拡張に見合う収入が生まれるかを確認します。長期は、制作・配信の顧客接点を持つ強みが、中国外でも続くかが争点です。\n\n継続仮説は H-BTD-001（利用者基盤と継続収益）、H-BTD-002（消費者・法人それぞれの採算）、H-BTD-003（著作権条件による提供範囲と費用への影響）です。利用数だけで三つを同時に支持したことにはしません。"
+        },
+        {
+          "id": "section-09",
+          "title": "未解決の点と参照",
+          "body": "最新モデルの地域別実売価格、AI 事業別の利益、融資契約の最終条件、著作権対応に伴う実際の費用が残る論点です。報道と推計が多い領域は、その状態を明示して監視を続けます。数値が不揃いであることを理由に、確認できる製品と事業経路まで省く必要はありません。\n\n[旧版と過去の収集根拠](../archive/pre-learning-2026-09-22/static_intelligence/bytedance.md)を保存しています。旧版の Coze 3.0 に関する二次記事を公式仕様として扱った箇所や、2月の発表を9月の新展開とした箇所は引き継いでいません。"
+        }
+      ]
+    },
+    "market-overview": {
+      "schema_version": "1.0",
+      "subject": "market-overview",
+      "title": "AI市場：仕事を実行する仕組みと、利益を受け取る場所の競争",
+      "available_on": "2026-09-22",
+      "introduction": "基準日：2026年9月21日。9月22日に一次資料を再調査して再構成。仕様を後日確認した箇所は確認日を明記します。対象は主要5社と、それらを支える供給・制度・労働市場です。世界の全事業者を網羅した市場シェア調査ではありません。",
+      "required_sections": [
+        "section-01",
+        "section-02",
+        "section-03",
+        "section-04",
+        "section-05",
+        "section-06",
+        "section-07",
+        "section-08"
+      ],
+      "sections": [
+        {
+          "id": "section-01",
+          "title": "現在の市場構造",
+          "body": "**競争の対象は、モデルが回答できることから、顧客のデータを使って仕事を実行し、その利用を継続してもらうことへ広がっています。** OpenAI の Agents API、Anthropic の Claude Code／Cowork、Google の Antigravity と企業向け基盤、xAI の Grok Build、ByteDance の TRAE／Coze は、形は異なっても作業の実行に関わる製品です。[OpenAI](https://openai.com/index/introducing-the-agents-api/)、[Anthropic](https://www.anthropic.com/news/claude-sonnet-5)、[Google](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)、[xAI](https://x.ai/news/grok-build-open-source)、[ByteDance](https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity)。\n\n顧客にとって重要なのは、モデル単体の試験点数に加え、必要なデータを読めるか、権限を守って操作できるか、失敗を検出できるか、監督込みで安くなるかです。供給企業にとっては、その仕事の入口、実行環境、計算資源のどこを売上にできるかが争点です。\n\n| 層 | 提供するもの | 主な位置にいる企業 | 競争と利益の論点 |\n|---|---|---|---|\n| 計算資源 | GPU・TPU、電力、設備、クラウド | Google、Microsoft、AWS、Oracle等。xAIも自社設備 | 大きな固定費を稼働と契約で回収できるか |\n| モデル | 言語・画像・音声・動画の能力 | 本資料の5社など | 品質を保った仕事当たり費用と供給条件 |\n| 実行と管理 | 複数段階の作業、権限、監督、接続 | Agents API、Claude、Googleの企業基盤、Build、Coze等 | 運用負担を減らす対価と、移行の難しさ |\n| 顧客の仕事場 | 開発、法務、広告、社内業務、制作 | 自社サービスとCursor・Harvey等の提携先 | 顧客関係・業務データ・成果の責任を誰が持つか |\n| 消費者への配信 | 検索、対話、SNS、動画、商取引 | ChatGPT、Google、X、ByteDanceの各サービス | 発見される場所と需要を作る力 |\n\n同じ会社が複数の層にいます。モデルを別会社へ替えられても、顧客データや監督の手順を別の実行環境へ移す費用が残ることがあります。逆に、外部モデルを選べる顧客接点はモデル供給者に対する交渉力を持ちます。"
+        },
+        {
+          "id": "section-02",
+          "title": "5社を同じ軸で比較する",
+          "body": "| 企業 | 既にある資産・販売経路 | 直近の方向 | 事業上の制約 |\n|---|---|---|---|\n| OpenAI | ChatGPTの利用基盤、API、Codex、企業・専門業種への販売 | Astra、Agents API、法務への展開 | 実行の安全性、監督費、パートナーとの利益配分 |\n| Anthropic | Claude、Code、Cowork、主要クラウドでの提供 | 企業の仕事と研究の実行、用途別の利用条件 | 能力向上と安全管理の両立、供給契約の実現 |\n| Google | 検索・YouTube・Workspace・Cloud、TPU | モデル・仕事場・管理・計算資源を統合 | 巨額投資、製品間の条件差、既存事業との採算配分 |\n| xAI | Grok、X、Build、Colossus、SpaceXへの所属 | 低めのモデル価格、外部開発ツール、公開コード | AI部門の大きな損失、設備の回収、継続利用 |\n| ByteDance | Doubao、TRAE、制作製品、動画・広告・商取引の接点 | Seed2.1、Seedance2.5、企業向け基盤 | 市場別の提供差、権利処理、海外投資の費用 |\n\n各行の根拠と経緯は [OpenAI](openai.md)、[Anthropic](anthropic.md)、[Google](google.md)、[xAI](xai.md)、[ByteDance](bytedance.md) にあります。これは売上順位ではなく、各社が利益を得ようとしている場所の比較です。"
+        },
+        {
+          "id": "section-03",
+          "title": "需要は拡大しているが、数字の意味は異なる",
+          "body": "OpenAI は3月31日に月間売上20億ドル、企業向けが売上の40%超と説明しました。Anthropic は5月28日に年換算売上ペース470億ドルを公表しました。前者の月次値と後者の年換算値は、期間も測定方法も違い、そのまま年間売上ランキングにはできません。[OpenAIの資金・事業説明](https://openai.com/index/accelerating-the-next-phase-ai/)、[Anthropicの資金調達発表](https://www.anthropic.com/news/series-h)。\n\nGoogle の7月決算説明では Cloud の前年同期比成長率82%、Gemini Enterprise は Fortune 100 の約90%が利用としています。法人需要を示す材料ですが、Cloudには他社モデル用の計算資源等も含まれ、導入企業数は全社員の有料利用率ではありません。[第2四半期の説明](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)。\n\nこの3社には需要拡大の具体的な公表があります。一方で、利用企業側の利益や新人採用が増えたことまでは示しません。AI供給者の売上、導入企業の利益、働く人の所得を分けて追う必要があります。"
+        },
+        {
+          "id": "section-04",
+          "title": "価格競争と、実務で支払う費用",
+          "body": "Sonnet 5 は8月10日の公式訂正で100万トークン当たり入力2ドル・出力10ドルを恒久化しました。Grok 4.6 は8月12日の発表で入力2ドル・出力6ドルからです。モデル間でトークンの切り方、思考量、品質、速度、キャッシュ条件が異なるため、出力単価だけで順位を決められません。[Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5)、[Grok 4.6](https://x.ai/news/grok-4-6)。\n\n同品質の仕事当たり費用は、モデル利用料、外部ツール、再試行、人の確認・修正、接続と運用、失敗時のやり直しを含みます。例えば安いモデルで3回やり直す仕事と、高いモデルで1回で終わる仕事では単価の優劣が逆転します。これは計算の考え方であり、本資料で各社の業務費用を実測した結果ではありません。\n\n利用者が得られる利益は、安くなった分を販売価格に渡すか、粗利に残すか、新しい仕事を受けるかでも変わります。広告・制作・開発では、生成量が増えても顧客の予算や注意が同じなら、成果物単価だけ下がる可能性があります。需要が増えたかを、処理量とは別に測る理由です。"
+        },
+        {
+          "id": "section-05",
+          "title": "資本、供給、回収の制約",
+          "body": "OpenAI の3月の調達はコミット済み資本1,220億ドル、Anthropic の5月の調達は650億ドルで既公表分を含みます。調達額は営業収益や利益ではありません。Google は6月の投資家説明で2026年設備投資1,800〜1,900億ドルを見込みました。資金の確保と設備が稼働する時期の間には距離があります。[OpenAI](https://openai.com/index/accelerating-the-next-phase-ai/)、[Anthropic](https://www.anthropic.com/news/series-h)、[Google](https://blog.google/alphabet/investor-presentation-june-2026/)。\n\nSpaceX の6月5日目論見書では、Xの事業を含むAI部門の2026年1〜3月営業損失は24.69億ドルです。大規模な能力・供給の獲得が、そのまま黒字の証拠にならない例です。[目論見書 §5.4.4.3](https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf)。\n\nByteDance については9月4日に Reuters が296億ドルの融資を関係者情報で報じています。契約原文で確認した確定値とは分けます。[Reuters配信記事](https://uk.marketscreener.com/news/bytedance-secures-29-6-billion-loan-in-ai-push-sources-say-ce785bdad189f22c)。資金調達、設備発注、受電、稼働、課金利用、利益回収を順番に追わなければ、供給能力を過大評価します。"
+        },
+        {
+          "id": "section-06",
+          "title": "安全と制度が変える提供条件",
+          "body": "Anthropic の8月31日の説明は、7〜8月の事案を受けた実験・評価環境の見直しです。9月17日の Life Sciences Verification Program は、確認済みの組織に用途に応じた利用条件を設ける制度です。安全のための制約が全市場で一律に強まるというより、用途・組織・接続先に応じて細かくなる例です。[安全対応](https://www.anthropic.com/news/improving-alignment-security-efforts)、[LSVP](https://www.anthropic.com/news/life-sciences-verification-program)。\n\nカリフォルニア州は9月18日、独立検証・監査制度の実施を早め、専門家に2か月以内の提案を求める州知事の行政命令を公表しました。常駐評価や緊急停止機能等は検討対象を含み、全てがこの日に全事業者の実施義務になったわけではありません。[州政府の説明](https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/)。\n\n含意は、権限、ログ、評価、停止と復旧が、導入時の付随作業から製品選択の条件へ近づいていることです。ただし規制に対応できる大手が有利になる面と、共通の検証で新規事業者への信頼が高まる面があり、一方向の独占強化と決めつけません。"
+        },
+        {
+          "id": "section-07",
+          "title": "仕事と所得について既に分かること",
+          "body": "Stanford の8月12日改訂研究は、米国ADPの給与データを2026年6月まで分析し、AIへの露出が高い職種の22〜25歳の雇用が、露出の低い同年代と同じ伸びをした場合より19%少ないと報告しました。主に採用減であり、経済全体の大量失業を確認したという結論ではありません。教育を考慮すると差が縮むなどの限界があり、著者も因果効果の推定と区別しています。[研究概要](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/)。\n\n日本のJILPT調査は、2024年に雇用者2.2万人へ行ったWeb調査を2025年5月に公表したものです。AI利用者では仕事の質について改善の回答が悪化を上回り、訓練や労使の対話との関連も示しました。自己申告の過去の調査であり、2026年の全国の雇用効果ではありません。[調査No.256](https://www.jil.go.jp/institute/research/2025/256.html)。\n\n両者は矛盾とは限りません。既に職に就く利用者の仕事が改善しながら、新人の入口が狭まることはあり得ます。企業の生産性だけを見ていると、この違いを見逃します。日本の広告・開発・管理業務については、新人求人、採用、総労働時間、実質賃金、転職後所得を別々に確認すべき段階です。"
+        },
+        {
+          "id": "section-08",
+          "title": "期間別の判断と見直し条件",
+          "body": "短期1〜3か月は、業務ごとの品質・確認時間・供給条件を比較します。実行基盤の機能が増えたため試す価値はありますが、顧客データと手順の移行費用まで契約前に測ることが重要です。中期3か月超〜1年は、試験から本番への移行、顧客維持、利益、採用を追います。利用量増加だけで利益が残らない場合、需要拡大という評価を「処理量の拡大」に限定し直します。\n\n長期1年超〜3年では、時間短縮が需要と所得に届くか、顧客接点・計算資源の所有者へ利益が偏るかが分岐です。若年採用の回復と実質賃金の上昇が広がれば補完の説明が強まり、採用減と利益集中が続けば分配と移行の問題が大きくなります。個人については非公開の所得実績がないため、本人の改善・悪化を代入していません。\n\n[シナリオ別の検討](scenario-tracker.md)・[元の資料](../archive/pre-learning-2026-09-22/static_intelligence/market-overview.md)。以前の確率や断定は原本に残し、今回の判断と混ぜません。"
+        }
+      ]
+    },
+    "scenario-tracker": {
+      "schema_version": "1.0",
+      "subject": "scenario-tracker",
+      "title": "5つの未来：現在の証拠から、仕事・利益・生活の分岐を読む",
+      "available_on": "2026-09-22",
+      "introduction": "基準日：2026年9月21日。9月22日に再構成。これは9月21日時点に発行した確率予測ではなく、公表済み資料を用いた後日の評価です。5つの未来は同時に進み得るため、確率を合計100%にしません。",
+      "required_sections": [
+        "section-01",
+        "section-02",
+        "section-03",
+        "section-04",
+        "section-05",
+        "section-06",
+        "section-07"
+      ],
+      "sections": [
+        {
+          "id": "section-01",
+          "title": "現在の位置",
+          "body": "**AIを使う入口と実行機能は拡大しています。一方、その利益が雇用・所得へ広く届く経路は、まだ一方向に決まっていません。** 供給企業の売上・投資、製品の価格や公開コードは観測できます。労働面では既存の利用者の改善と、若年採用への圧力が併存する材料があります。給付や所有構造の転換は、今回の資料だけでは実施の広がりを確認できません。\n\n| 世界像 | 現在の証拠が支える範囲 | 判断を超えてはいけない範囲 |\n|---|---|---|\n| W1 人とAIで仕事の需要が広がる | 作業を支援する製品、利用者の改善、企業向け需要 | 全国の採用・実質所得が一律に増えるとは未確認 |\n| W2 AIや顧客接点の所有者に利益が集中する | 大規模投資、仕事場とモデルの統合、条件を決める力 | 高売上や高評価額を、そのまま高利益・独占としない |\n| W3 知的作業が安く広く使える | 低価格のモデル、公開された実行コード、制作機能の普及 | 実務の総費用や小企業の利益改善は別途必要 |\n| W4 仕事以外の仕組みが生活を支える | 雇用移行を支える必要性を示す材料 | 支援の必要性は、給付が実施・利用された証拠ではない |\n| W5 所有と分配のルールが変わる | 監査・公共関与の議論と制度化 | 安全規制や企業買収を、公共・共同所有の実現に数えない |\n\n数値の確率を置いていないのは判断を放棄するためではありません。どの段階まで証拠があるかを明示し、後の実績で変えられる判断にするためです。"
+        },
+        {
+          "id": "section-02",
+          "title": "W1：補完から、新しい需要と仕事へ",
+          "body": "この経路は、AIが作業の一部を短縮し、人が顧客理解・責任・判断を担い、価格低下や新しい提供物で需要が増える場合に成立します。需要の増え方が必要な労働時間の減り方を上回れば、雇用も増え得ます。単に同じ納品物を少人数で作るだけなら、企業の利益が増えてもこの経路の後半は成立しません。\n\n支持材料には、企業の仕事を実行する Agents API や Claude、Google の法人利用があります。日本のJILPTの2024年労働者調査も、AI利用者の仕事の質の改善と訓練・対話の関係を報告しています。[Agents API](https://openai.com/index/introducing-the-agents-api/)、[Google決算説明](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)、[JILPT](https://www.jil.go.jp/institute/research/2025/256.html)。\n\n逆方向の材料は、米国ADPを用いたStanfordの研究です。AIへの露出が高い職種の若年層の雇用は、低露出の同年代を基準とする比較で弱く、主に採用に差が出ています。これは全雇用の消滅でも日本の因果効果でもありませんが、「生産性向上なら自動的に全員の雇用も改善する」という説明を弱めます。[8月改訂の研究](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/)。\n\n短期は完成品質と確認時間、中期は新しい受注と新人採用、長期は移行後所得と実質賃金が分岐です。人の役割が高度化したという企業説明だけで、入口の職が減った問題を解決済みにしません。"
+        },
+        {
+          "id": "section-03",
+          "title": "W2：供給と顧客接点を持つ企業へ利益が集まる",
+          "body": "AIを実行するための設備と、顧客が普段使う画面の両方に規模の利点があれば、利用が増えるほど一部の供給者に交渉力が集まります。モデルの単価が下がっても、運用・管理・配信をまとめて売る会社が利益を取ることは可能です。\n\nGoogle の検索・Workspace・Cloud、OpenAI の ChatGPT・Codex、ByteDance の制作・配信の接点は、この経路を考える材料です。OpenAI と Anthropic の大型調達、Google の設備投資計画は、参入に必要な資本が大きいことも示します。[OpenAI](https://openai.com/index/accelerating-the-next-phase-ai/)、[Anthropic](https://www.anthropic.com/news/series-h)、[Google投資家説明](https://blog.google/alphabet/investor-presentation-june-2026/)、[ByteDance](https://www.bytedance.com/)。\n\nただし資本集中と利益集中は同じではありません。SpaceX のAI部門の営業損失は投資回収の難しさを示し、Grok Build の公開や Agents API の実行先の選択肢は、一部の移行を容易にする方向の材料です。[SpaceX目論見書](https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf)、[Build公開](https://x.ai/news/grok-build-open-source)、[Agents API](https://openai.com/index/introducing-the-agents-api/)。\n\nこのシナリオが強まるのは、利用企業が値上げ・条件変更に直面しても移行できず、供給者の利益率と顧客維持が同時に上がる場合です。逆に、同品質の代替へ短期間で移れ、新規の提供企業にも利益が残れば弱まります。モデルを替える操作だけでなく、データ・接続・監督の移行費を見ます。"
+        },
+        {
+          "id": "section-04",
+          "title": "W3：知的作業へのアクセスが広がる",
+          "body": "安価なモデルと再利用できる実行ソフトがあれば、以前は専門家や大きな開発予算が必要だった作業に小企業や個人が参加できます。Sonnet 5 の価格維持、Grok 4.6 の価格、Build のコード公開、Seedance 2.5 の制作機能は、この経路の入口を支えます。[Sonnet](https://www.anthropic.com/news/claude-sonnet-5)、[Grok](https://x.ai/news/grok-4-6)、[Seedance 2.5](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)。\n\n制約は、安い利用料でも品質確認、顧客獲得、権利処理、運用の費用が残ることです。動画を作れることと広告成果が得られること、アプリを作れることと継続して保守・販売できることは別です。アクセスが広がるほど成果物が増え、販売価格が下がる可能性もあります。\n\n短期は同じ仕事を同じ品質で終える費用、中期は小規模事業者の参入・継続・利益、長期は教育や専門サービスへのアクセスを見ます。W2とW3は両立し得ます。利用者の入口が安くなっても、計算資源や集客の持ち主に利益が集まる場合があるためです。"
+        },
+        {
+          "id": "section-05",
+          "title": "W4：仕事以外の所得とサービスが生活を支える",
+          "body": "AIで一部の労働需要が減り、新しい職への移行が追いつかない場合、給付、保険、公共サービス、資産所得が生活を支える割合を増す経路です。採用の入口の縮小は検討の理由になりますが、米国の研究だけで日本にこの制度移行が必要・実現済みと断定できません。\n\n今回確認した資料では、AIによる恒常的な所得減を補う新しい全国制度の支給額・受給者・生活改善を比較可能な形で把握していません。ここは「制度がない」という断定ではなく、実施結果を収集できていないという判断です。AI企業の成長や安全規制を、給付実績の代用品にはしません。\n\n短期は失職と再就職の間の所得、中期は申請条件・支給開始・利用率・財源、長期は実質的な生活水準を見ます。再就職後の賃金が回復するなら労働を中心とした経路が強まり、給付が実際に不足を埋めればW4の根拠が増えます。政策の発表と利用できる制度を分けることが読者の判断に直結します。"
+        },
+        {
+          "id": "section-06",
+          "title": "W5：所有と分配のルールそのものが変わる",
+          "body": "この経路には、計算資源・モデル・データ・利益への権利について、公共や共同の所有・決定権が制度として広がることが必要です。国が監督するだけで所有が変わったことにはならず、xAI が SpaceX に入る企業買収も公共化とは異なります。[xAIの買収発表](https://x.ai/news/xai-joins-spacex)。\n\nカリフォルニアの9月18日の行政命令は、独立した検証や監査を強める方向の材料です。しかし、これは安全を管理する制度であり、計算資源や会社の所有権を公共に移す決定ではありません。[州政府説明](https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/)。\n\n3〜10年の探索では、法的な権利の変更、持続する財源、利用者が意思決定に参加できるか、供給と分配が継続するかを追います。公開コードの存在も、会社の利益への所有権を利用者へ与えるものとは限りません。現在の資料はW5の実現を強く支持する段階にはありません。"
+        },
+        {
+          "id": "section-07",
+          "title": "読者の判断へどう結び付けるか",
+          "body": "会社は、AIが安くなることと、自社に利益が残ることを別に検証する必要があります。顧客との関係、業務知識、品質の責任を保持しつつ、モデルや実行環境を替えられる構成の価値が高まります。個人には、作業速度だけでなく、顧客の問題を定め、結果を検証し、別の職や取引先へ移れる能力が重要になるという含意があります。これは現在の構造からの推論であり、本人の所得を測った結論ではありません。\n\n社会については、既存社員の効率化と新人の経験形成を一緒に評価する必要があります。入口の業務を自動化しても育成の代替経路がなければ、将来の熟練者を作る仕組みが弱くなる可能性があります。訓練の実施だけでなく、修了後の採用・賃金まで追います。\n\n期限付き予測の[候補](../config/forecast_candidates.json)は、対象・基準・閾値・判定資料が揃ってから発行します。この復元で後付けの的中を作りません。既存の[仮説定義](../config/hypotheses.json)と[因果関係](../config/causal_links.json)を使い、実績が違えば該当する経路だけを修正します。\n\n[市場の具体的な状況](market-overview.md)・[旧版の保存先](../archive/pre-learning-2026-09-22/static_intelligence/scenario-tracker.md)。"
+        }
+      ]
+    }
+  }
+}

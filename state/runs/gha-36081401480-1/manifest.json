@@ -1,0 +1,104 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-36081401480-1",
+  "date": "2026-09-25",
+  "started_at": "2026-09-25T10:18:20.861519+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "e52f5617c1c714fc600420190cd0feb64797baee2896024fc37f63f1e4fcb323",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "xAIの変更ログ https://x.ai/build/changelog は403で取得できず、当日の料金・利用条件の変更を確認できなかった。別経路での再取得が必要。",
+    "Anthropic「Introducing Claude Opus 5.5」（https://www.anthropic.com/claude-opus-5-5 、ニュース一覧では2026-09-22）は、公開時刻を確認できないため記録から除外した。「Fable 5.1と同等の性能で実行コスト40%減」というMET-COSTに関わる主張は未検証のまま。",
+    "Anthropicの安全関連 新着（Partnering with Accenture on embedded evaluation https://www.anthropic.com/news/accenture-embedded-evaluation 2026-09-18、Detecting and countering misuse of AI: September 2026 https://www.anthropic.com/threat-intelligence-report-september-2026 2026-09-10、Claude discovers a novel enzyme system https://www.anthropic.com/news/claude-discovers-novel-enzyme-system 2026-09-23）は、いずれも公開時刻が日付のみで確認できないため未記録。RISK-SAFETY・H-ANT-001の観測として次回 本文で時刻を確認する必要がある。",
+    "AnthropicのRSSフィード https://www.anthropic.com/rss.xml は404で存在しない。公開時刻付きの一覧取得手段が不明。",
+    "Googleのリリースノート https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes は、原資料上限（5件）に達したため今回未確認。",
+    "F-S01/F-S02の費用基準値に必要な公式料金表（https://developers.openai.com/api/docs/pricing/ 、https://ai.google.dev/gemini-api/docs/pricing 、xAI料金は https://x.ai/ 配下）は今回未取得。料金ページは公開時刻の表記がない可能性が高く、取得時の スナップショットとして記録方法を検討する必要がある。",
+    "雇用・賃金の公的統計（https://www.mhlw.go.jp/toukei/ 、https://www.stat.go.jp/data/ ）の月次公表は今回の枠で未確認。MET-LABOR の基準値は依然未取得。",
+    "OpenAIの個別記事本文は403で取得できず、今回の全記録の根拠は公式RSSフィードの標題・説明文・pubDateに限る。",
+    "OpenAI RSSの2026-09-21以前の未登録項目（Advisory Group on Mathematics and AI、Australian Youth Safety Blueprint、ChatGPT for Financial Services 等）は優先順位により今回記録を見送り。全量は保存済みフィードで確認可能。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.16931176,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0512286,
+          "tokens": {
+            "total": 32559,
+            "input": 30677,
+            "output": 75,
+            "reasoning": 1807,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.05150856,
+          "tokens": {
+            "total": 51996,
+            "input": 16786,
+            "output": 134,
+            "reasoning": 4420,
+            "cache": {
+              "write": 0,
+              "read": 30656
+            }
+          }
+        },
+        {
+          "cost": 0.02009224,
+          "tokens": {
+            "total": 52379,
+            "input": 4680,
+            "output": 84,
+            "reasoning": 191,
+            "cache": {
+              "write": 0,
+              "read": 47424
+            }
+          }
+        },
+        {
+          "cost": 0.04648236,
+          "tokens": {
+            "total": 59907,
+            "input": 477,
+            "output": 3803,
+            "reasoning": 3531,
+            "cache": {
+              "write": 0,
+              "read": 52096
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-09-25T01:21:12.964630+00:00",
+  "revision_after": "6b8ecba2e8c6b5fbf654416038931152606410533afec0339bb642a7f4856d73",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
