@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-36208097257-1",
+  "date": "2026-09-26",
+  "started_at": "2026-09-26T10:20:50.096241+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "6b8ecba2e8c6b5fbf654416038931152606410533afec0339bb642a7f4856d73",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "Anthropic Newsroom（https://www.anthropic.com/news）で新着「Introducing Claude Opus 5.5」（Sep 22, 2026、Fable 5.1相当の性能で実行費40%減と説明）「The Situation Report」（Sep 22, 2026）「Claude discovers a novel enzyme system with CRISPR-like repeats」（Sep 23, 2026）「Partnering with Accenture on embedded evaluation」（Sep 18, 2026）を確認したが、一覧の表示は日付のみで公開時刻を確認できないためevidence化せず除外。時刻付きの公表日時を確認できる場合は再取得して記録する。",
+    "Anthropic「Improving our alignment and security efforts」（Aug 31, 2026）「Detecting and countering misuse of AI: September 2026」（Sep 10, 2026）も同様に日付のみで公開時刻不明のため未記録。RISK-SAFETY・MET-SAFETYの優先確認対象として次回残す。",
+    "今回の検索・取得はOpenAI RSSとAnthropic Newsroomの2回で上限に到達。Google（https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes）、xAI（https://x.ai/build/changelog）、ByteDance（https://seed.bytedance.com/zh/blog）、厚生労働省・総務省・e-Statの統計（https://www.mhlw.go.jp/toukei/ 等）は今回未確認。",
+    "OpenAIの個別記事本文（例: https://openai.com/index/proaction）は403で未確認。今回の全記録の根拠はRSSフィードの標題・説明文のみ。",
+    "予測候補F-S01〜F-S05・F-M01等に必要な基準値（固定業務の総費用・成功率の実測、公式料金表の現行値）は今回も未取得。OpenAIフィード上では2026-09-22のprompt caching以降、新しい料金・利用条件変更の掲載はなし。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.11801276,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0513686,
+          "tokens": {
+            "total": 34774,
+            "input": 33879,
+            "output": 56,
+            "reasoning": 839,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.06664416,
+          "tokens": {
+            "total": 56595,
+            "input": 14070,
+            "output": 1918,
+            "reasoning": 6751,
+            "cache": {
+              "write": 0,
+              "read": 33856
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-09-26T01:22:29.551823+00:00",
+  "revision_after": "e1ec103e75d42db97a32952ef0d1a4fa7cac63971020bf93de3515a147b523fb",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
