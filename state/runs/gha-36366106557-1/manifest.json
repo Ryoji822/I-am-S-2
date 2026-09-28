@@ -1,0 +1,126 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-36366106557-1",
+  "date": "2026-09-28",
+  "started_at": "2026-09-28T10:28:47.381754+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "e1ec103e75d42db97a32952ef0d1a4fa7cac63971020bf93de3515a147b523fb",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "https://www.anthropic.com/news/claude-opus-5-5 「Introducing Claude Opus 5.5」（Newsroom一覧では2026-09-22、Opus 5.5は大多数の仕事でClaude Fable 5.1相当の性能でOpus 5比40%低い運用費用と主張）は公開時刻を確認できないため記録から除外。記事ページ本体は取得したが出力から公開時刻（datePublished等）を確認できなかった。MET-COST・F-S02・W3に関わる費用変更要件として次回最優先で再確認が必要。",
+    "https://www.anthropic.com/rss.xml と https://www.anthropic.com/news/rss.xml はいずれも404。Anthropic側はRSSで公開時刻を検証できず、Newsroom一覧（https://www.anthropic.com/news）は日付のみの表示のため時刻付き記録が作れない。",
+    "https://www.anthropic.com/news 一覧で日付のみ確認できた他の新着（2026-09-23「Claude discovers a novel enzyme system with CRISPR-like repeats」、2026-09-22「The Situation Report」、2026-09-18「Partnering with Accenture on embedded evaluation」）は公開時刻を確認できないため未記録。",
+    "F-S04（OpenAIかAnthropicが安全上の理由で既存法人機能を7日以上制限）：OpenAI公式フィード（2026-09-28T01:12:49Z時点、新着なし）とAnthropic Newsroom一覧の範囲では該当掲載を確認しなかった。ただしAnthropic側は時刻検証不足を含み、継続監視が必要。",
+    "今回の予算（原資料5件・検索2回）を使い切ったため、xAI・Google・ByteDanceの料金・利用条件変更、政府統計（MET-LABOR・MET-REGIME関係の公表カレンダー）、予測候補F-S01〜F-L02の基準値収集、前回反対証拠の再確認は未実施。次回以降へ繰り越す。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.17483028,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0539926,
+          "tokens": {
+            "total": 36329,
+            "input": 35285,
+            "output": 53,
+            "reasoning": 991,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03397744,
+          "tokens": {
+            "total": 50591,
+            "input": 14210,
+            "output": 26,
+            "reasoning": 1091,
+            "cache": {
+              "write": 0,
+              "read": 35264
+            }
+          }
+        },
+        {
+          "cost": 0.01558772,
+          "tokens": {
+            "total": 50872,
+            "input": 1145,
+            "output": 27,
+            "reasoning": 228,
+            "cache": {
+              "write": 0,
+              "read": 49472
+            }
+          }
+        },
+        {
+          "cost": 0.0155474,
+          "tokens": {
+            "total": 51337,
+            "input": 339,
+            "output": 34,
+            "reasoning": 404,
+            "cache": {
+              "write": 0,
+              "read": 50560
+            }
+          }
+        },
+        {
+          "cost": 0.0150288,
+          "tokens": {
+            "total": 51660,
+            "input": 544,
+            "output": 54,
+            "reasoning": 182,
+            "cache": {
+              "write": 0,
+              "read": 50880
+            }
+          }
+        },
+        {
+          "cost": 0.04069632,
+          "tokens": {
+            "total": 57918,
+            "input": 460,
+            "output": 1239,
+            "reasoning": 4827,
+            "cache": {
+              "write": 0,
+              "read": 51392
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-09-28T01:31:14.542683+00:00",
+  "revision_after": "3955abc90c6cb044ebcf61c755053a1edf9005d4ca05941def3eed179a86b82f",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}

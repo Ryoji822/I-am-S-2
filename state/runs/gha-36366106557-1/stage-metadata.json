@@ -1,0 +1,95 @@
+{
+  "collect": {
+    "cost": 0.17483028,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.0539926,
+        "tokens": {
+          "total": 36329,
+          "input": 35285,
+          "output": 53,
+          "reasoning": 991,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      },
+      {
+        "cost": 0.03397744,
+        "tokens": {
+          "total": 50591,
+          "input": 14210,
+          "output": 26,
+          "reasoning": 1091,
+          "cache": {
+            "write": 0,
+            "read": 35264
+          }
+        }
+      },
+      {
+        "cost": 0.01558772,
+        "tokens": {
+          "total": 50872,
+          "input": 1145,
+          "output": 27,
+          "reasoning": 228,
+          "cache": {
+            "write": 0,
+            "read": 49472
+          }
+        }
+      },
+      {
+        "cost": 0.0155474,
+        "tokens": {
+          "total": 51337,
+          "input": 339,
+          "output": 34,
+          "reasoning": 404,
+          "cache": {
+            "write": 0,
+            "read": 50560
+          }
+        }
+      },
+      {
+        "cost": 0.0150288,
+        "tokens": {
+          "total": 51660,
+          "input": 544,
+          "output": 54,
+          "reasoning": 182,
+          "cache": {
+            "write": 0,
+            "read": 50880
+          }
+        }
+      },
+      {
+        "cost": 0.04069632,
+        "tokens": {
+          "total": 57918,
+          "input": 460,
+          "output": 1239,
+          "reasoning": 4827,
+          "cache": {
+            "write": 0,
+            "read": 51392
+          }
+        }
+      }
+    ]
+  },
+  "blue": {
+    "status": "skipped_partial_collection"
+  },
+  "red": {
+    "status": "skipped_partial_collection"
+  },
+  "arbiter": {
+    "status": "skipped_partial_collection"
+  }
+}
