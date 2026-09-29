@@ -1,0 +1,113 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-36512997144-1",
+  "date": "2026-09-29",
+  "started_at": "2026-09-29T11:31:41.465603+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "3955abc90c6cb044ebcf61c755053a1edf9005d4ca05941def3eed179a86b82f",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "https://openai.com/index/how-we-will-do-better-for-australia — 記事本文が403で取得できず。オーストラリア政府サイト関与の事故の内容・経緯・対策の詳細・影響範囲はフィードの標題・説明文のみで確認未了（公開時刻のみ2026-09-29T01:00:00Zに確認済み）。独立検証・被害の実態は未確認。",
+    "https://www.anthropic.com/claude-sonnet-5-5 — 公開時刻を確認できない（本文・ニュース一覧とも日付のみ「September 28, 2026」、時刻なし）。本文では、Sonnet 5比30%+高速・タスクあたり最大30%低コスト、トークン単価はSonnet 5と同一（入力$2/1M・出力$10/1M・キャッシュ読み取り$0.20/1M）、Sonnet初のサイバー安全策と蒸留（reasoning extraction）防止分類器、AWS/Google Cloud/Azureでの提供開始、を確認したが、公開時刻が日付のみのため公開時刻を確認できないとして記録から除外。時刻付き一次フィード（RSS等）は未発見。",
+    "https://www.anthropic.com/claude-opus-5-5 — 公開時刻を確認できない（ニュース一覧は日付のみ「Sep 22, 2026」）。「Opus 5.5はほとんどの作業でClaude Fable 5.1相当の性能で、Opus 5比40%低コスト」という料金関連発表の本文詳細・時刻は未確認のため記録から除外。Anthropicの料金・利用条件変更（MET-COST・LINK-PRICE-COSTの日次項目）の一次記録化は次回の課題。",
+    "https://www.anthropic.com/news — その他の新着（脅威インテリジェンス報告2026-09-10、Claudeによる新規酵素系の発見2026-09-23等）も公開時刻が日付のみのため未記録。RISK-SAFETY関連のAnthropic側当日確認は一覧の水準で終わり、本文検証は未実施。",
+    "今回の確認範囲外（優先順と資料5件・検索2回の制限により未実施）: 雇用・賃金統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）、Google・xAI・ByteDanceの最新掲載、予測候補F-S01〜F-S05等に必要な固定業務・品質基準・基準値の収集。これらは未解決のまま残す。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.18579616,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0530574,
+          "tokens": {
+            "total": 36651,
+            "input": 36069,
+            "output": 53,
+            "reasoning": 529,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03705972,
+          "tokens": {
+            "total": 52953,
+            "input": 15587,
+            "output": 69,
+            "reasoning": 1265,
+            "cache": {
+              "write": 0,
+              "read": 36032
+            }
+          }
+        },
+        {
+          "cost": 0.03461864,
+          "tokens": {
+            "total": 62386,
+            "input": 8774,
+            "output": 67,
+            "reasoning": 1961,
+            "cache": {
+              "write": 0,
+              "read": 51584
+            }
+          }
+        },
+        {
+          "cost": 0.01943992,
+          "tokens": {
+            "total": 62708,
+            "input": 2206,
+            "output": 108,
+            "reasoning": 42,
+            "cache": {
+              "write": 0,
+              "read": 60352
+            }
+          }
+        },
+        {
+          "cost": 0.04162048,
+          "tokens": {
+            "total": 68681,
+            "input": 570,
+            "output": 1614,
+            "reasoning": 3969,
+            "cache": {
+              "write": 0,
+              "read": 62528
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-09-29T02:34:50.693870+00:00",
+  "revision_after": "2f4c3e2a91598c438f0b29afdf1bbd32ad6c7ebbb22184903980cee42f064dec",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
