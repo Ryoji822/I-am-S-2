@@ -1,0 +1,117 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-36803363405-1",
+  "date": "2026-10-01",
+  "started_at": "2026-10-01T10:55:22.855724+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "2f4c3e2a91598c438f0b29afdf1bbd32ad6c7ebbb22184903980cee42f064dec",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "Anthropic Newsroomの新着は公開日付のみで時刻が確認できないため記録から除外した。対象: Introducing Claude Sonnet 5.5（https://www.anthropic.com/claude-sonnet-5-5 、2026-09-28掲載、「Sonnet 5比で30%高速・最大30%安価」はMET-COST/F-S01/F-S02に関わる価格主張）、Introducing Claude Opus 5.5（https://www.anthropic.com/claude-opus-5-5 、2026-09-22掲載、「Opus 5比で40%低コスト」）、Detecting and countering misuse of AI: September 2026（https://www.anthropic.com/threat-intelligence-report-september-2026 、2026-09-10掲載、脅威インテリジェンス報告・MET-SAFETY）。各URLとも公開時刻を確認できない。",
+    "Anthropicの公式RSS/Atomフィードを探したが https://www.anthropic.com/rss.xml は404で存在しない。公開時刻の検証手段がなく、Anthropic発表のevidence化は次回の課題。",
+    "Claude Sonnet 5.5ページの本文は取得したが出力が途切れ、保存データも本環境では読めないため、価格条件（30%削減の適用範囲・適用日）の詳細は未確認。",
+    "OpenAIフィード項目の既存記録との時刻不整合: 「How we will do better for Australia」は今回のフィードでは2026-09-28T19:00:00Zと表示されているが、既記録EVD-20260929-0001は2026-09-29T01:00:00Zとしている。再登録はせず、訂正が必要なら新IDとsupersedesで対応すること。",
+    "OpenAI個別記事の本文（/index/ 各URL）は今回も未確認（前回まで403）。全記録の根拠は公式RSSフィードの標題・説明文のみ。",
+    "F-S04（OpenAIかAnthropicが安全上の理由で既存法人機能を7日以上制限）: OpenAIフィードには該当する正式な制限の掲載なし（2026-10-01T01:25:26Z時点）。Anthropic側の稼働状況・制限情報（status.anthropic.com 等）は今回の文書数上限で未確認。",
+    "今回の原資料5件上限に達したため未確認: OpenAI API料金ページ（https://developers.openai.com/api/docs/pricing/ 、F-S01/F-S02の基準値）、Google（release-notes・料金）、xAI（changelog・料金）、ByteDance（Seed blog）、日本の公的統計（mhlw.go.jp・stat.go.jp、MET-LABOR）。",
+    "observationは0件。全metricがdefinition_candidateで地域・母集団・品質基準が未確定のため、一致する公式実測値の登録条件を満たす系列がまだない。",
+    "予測候補F-S01〜F-L02のnext_review（2026-09-29）を過ぎたが、基準値・比較条件が未取得のため未発行のまま。次回は料金ページと公的統計の取得を優先する必要がある。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.24465928,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0567416,
+          "tokens": {
+            "total": 38224,
+            "input": 37148,
+            "output": 58,
+            "reasoning": 1018,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.0550818,
+          "tokens": {
+            "total": 58404,
+            "input": 16073,
+            "output": 73,
+            "reasoning": 5138,
+            "cache": {
+              "write": 0,
+              "read": 37120
+            }
+          }
+        },
+        {
+          "cost": 0.04954844,
+          "tokens": {
+            "total": 77128,
+            "input": 23211,
+            "output": 53,
+            "reasoning": 680,
+            "cache": {
+              "write": 0,
+              "read": 53184
+            }
+          }
+        },
+        {
+          "cost": 0.02901792,
+          "tokens": {
+            "total": 79098,
+            "input": 972,
+            "output": 29,
+            "reasoning": 1745,
+            "cache": {
+              "write": 0,
+              "read": 76352
+            }
+          }
+        },
+        {
+          "cost": 0.05426952,
+          "tokens": {
+            "total": 86313,
+            "input": 1812,
+            "output": 2773,
+            "reasoning": 4416,
+            "cache": {
+              "write": 0,
+              "read": 77312
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-01T01:58:51.092812+00:00",
+  "revision_after": "ef2276b8bd8bab68c3b469ffde000f96099b02270eb49e564e9740fbbad4b1f4",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
