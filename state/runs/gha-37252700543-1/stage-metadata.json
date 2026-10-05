@@ -1,0 +1,82 @@
+{
+  "collect": {
+    "cost": 0.20543324,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.0605142,
+        "tokens": {
+          "total": 41808,
+          "input": 41147,
+          "output": 55,
+          "reasoning": 606,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      },
+      {
+        "cost": 0.04351648,
+        "tokens": {
+          "total": 58097,
+          "input": 14002,
+          "output": 61,
+          "reasoning": 2946,
+          "cache": {
+            "write": 0,
+            "read": 41088
+          }
+        }
+      },
+      {
+        "cost": 0.0381668,
+        "tokens": {
+          "total": 69346,
+          "input": 13030,
+          "output": 51,
+          "reasoning": 1225,
+          "cache": {
+            "write": 0,
+            "read": 55040
+          }
+        }
+      },
+      {
+        "cost": 0.02155072,
+        "tokens": {
+          "total": 69938,
+          "input": 1508,
+          "output": 34,
+          "reasoning": 364,
+          "cache": {
+            "write": 0,
+            "read": 68032
+          }
+        }
+      },
+      {
+        "cost": 0.04168504,
+        "tokens": {
+          "total": 75224,
+          "input": 518,
+          "output": 965,
+          "reasoning": 4237,
+          "cache": {
+            "write": 0,
+            "read": 69504
+          }
+        }
+      }
+    ]
+  },
+  "blue": {
+    "status": "skipped_partial_collection"
+  },
+  "red": {
+    "status": "skipped_partial_collection"
+  },
+  "arbiter": {
+    "status": "skipped_partial_collection"
+  }
+}

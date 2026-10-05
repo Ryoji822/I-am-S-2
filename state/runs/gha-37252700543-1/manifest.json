@@ -1,0 +1,114 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-37252700543-1",
+  "date": "2026-10-05",
+  "started_at": "2026-10-05T10:46:06.644250+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "65bd2195b42c666ebdbb3eb92607940b9f3a8196a2f33d1b56df126948b96c65",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "Anthropic「Introducing Claude Sonnet 5.5」（https://www.anthropic.com/claude-sonnet-5-5、ニュースルーム掲載日2026-09-28）：「Sonnet 5比で30%高速・最大30%低コスト」という料金・利用条件に関わる発表。ニュースルーム一覧は日付のみで、個別記事から公開時刻（時分・タイムゾーン）を確認できずevidence化できなかった。MET-COST・LINK-PRICE-COST・F-S01/F-S02の費用基準に関わるため、時刻付きの一次資料（料金ページや時刻付きフィード）での検証が今後必要。",
+    "Anthropic「Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap」（https://www.anthropic.com/news 掲載、2026-10-02）：公開時刻を確認できないためevidence化できず。MIS-SOC・MET-LABOR（採用・育成）関連。",
+    "Anthropic「Barclays scales Claude to upgrade operations and improve client experience」（https://www.anthropic.com/news 掲載、2026-10-01）：公開時刻を確認できないためevidence化できず。H-ANT-002・MET-FIRM関連。",
+    "Anthropic「Claude discovers a novel enzyme system with CRISPR-like repeats」（https://www.anthropic.com/news 掲載、2026-09-23、Science分類）：公開時刻を確認できないためevidence化せず。",
+    "OpenAI API料金ページ（https://developers.openai.com/api/docs/pricing/）は今回未確認。GPT-6.1 Sol「Astra標準価格の5分の1」（EVD-20261001-0003）の実価格・MET-COST基準値の検証は未実施。",
+    "今回の確認対象外（資料5件・検索上限のため）：xAI（https://x.ai/build/changelog）、Google（https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes）、ByteDance（https://seed.bytedance.com/zh/blog）、日本の公的統計（https://www.mhlw.go.jp/toukei/ 、https://www.stat.go.jp/data/ ）。F-S01〜F-S05・F-M01等の基準値収集は次回以降に残す。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.20543324,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0605142,
+          "tokens": {
+            "total": 41808,
+            "input": 41147,
+            "output": 55,
+            "reasoning": 606,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.04351648,
+          "tokens": {
+            "total": 58097,
+            "input": 14002,
+            "output": 61,
+            "reasoning": 2946,
+            "cache": {
+              "write": 0,
+              "read": 41088
+            }
+          }
+        },
+        {
+          "cost": 0.0381668,
+          "tokens": {
+            "total": 69346,
+            "input": 13030,
+            "output": 51,
+            "reasoning": 1225,
+            "cache": {
+              "write": 0,
+              "read": 55040
+            }
+          }
+        },
+        {
+          "cost": 0.02155072,
+          "tokens": {
+            "total": 69938,
+            "input": 1508,
+            "output": 34,
+            "reasoning": 364,
+            "cache": {
+              "write": 0,
+              "read": 68032
+            }
+          }
+        },
+        {
+          "cost": 0.04168504,
+          "tokens": {
+            "total": 75224,
+            "input": 518,
+            "output": 965,
+            "reasoning": 4237,
+            "cache": {
+              "write": 0,
+              "read": 69504
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-05T01:48:20.039069+00:00",
+  "revision_after": "9281b9ba659ae6c7d6e84952b56c1b4bde62428ad957aeae327471bee5503bd7",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
