@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-37560730037-1",
+  "date": "2026-10-07",
+  "started_at": "2026-10-07T11:11:13.589307+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "dbd20b2084cf33f852b59539b5cb8a3ddc69ad5fe0136b9b6f518be87df87e97",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "Anthropic個別記事の公開時刻（時刻・タイムゾーン付き）を確認できず、記録から除外した。ニュースルーム一覧（https://www.anthropic.com/news、当日取得）で日付は確認できるが時刻は掲載されない。個別記事ページのHTML取得を試みたが出力が切断され、公開時刻のメタデータ（article:published_time等）の確認に至らなかった。対象: https://www.anthropic.com/news/cyber-verification-program （Cyber Verification Program拡大、一覧表示2026-10-06、H-ANT-001・H-GOV-002・MET-SAFETY関連）、https://www.anthropic.com/claude-sonnet-5-5 （Claude Sonnet 5.5発表、一覧表示2026-09-28、「30%高速・最大30%低コスト」の費用主張を含む、MET-COST・LINK-PRICE-COST関連）、https://www.anthropic.com/claude-opus-5-5 （Opus 5.5、2026-09-22、40%低コスト主張）、https://www.anthropic.com/news/claude-frontier-academy （1億ドル投資・10,000人エンジニア育成、2026-10-02、MIS-SOC・雇用関連のannounced_plan候補）、https://www.anthropic.com/news/barclays-scales-claude （Barclays導入、2026-10-01、reported_claim候補）。いずれも公開時刻を確認できないため今回記録していない。",
+    "OpenAI「How we will do better for Australia」のpubDateが、今回取得のフィードでは2026-09-28T19:00:00Zと表示され、既記録EVD-20260929-0001の2026-09-29T01:00:00Zと異なる。フィード側の更新・修正の可能性があるが、原記事本文が403で検証できず、どちらが公開元の示した時刻か確定できない。",
+    "OpenAI個別記事（jump-trading、sharing-ai-progress-in-mathematics、advancing-computer-use-with-ironclad、atlassian-partnership）の本文は従来どおり403で未確認。記録の根拠はRSSフィードの標題・説明文・pubDateに限る。",
+    "今回の当日確認は優先順位に従いOpenAI RSSフィードとAnthropicニュースルームに限定した。Google（gemini-enterprise-agent-platform release-notes）、xAI（x.ai/build/changelog）、ByteDance（seed.bytedance.com/zh/blog）、公的統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）の当日確認は今回行っておらず、次回以降の課題。特にMET-LABOR・MET-REGIMEの登録済み系列に対応する公的統計の新着公表は未確認のまま。",
+    "observationは登録済みmetric（MET-*）がすべてstatus=definition_candidateで、地域・母集団・単位・品質基準が完全に一致する実測値の系列がまだ登録されていないため、今回も記録なし。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.16940596,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0618836,
+          "tokens": {
+            "total": 42979,
+            "input": 42408,
+            "output": 48,
+            "reasoning": 523,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.04869648,
+          "tokens": {
+            "total": 61635,
+            "input": 15698,
+            "output": 65,
+            "reasoning": 3504,
+            "cache": {
+              "write": 0,
+              "read": 42368
+            }
+          }
+        },
+        {
+          "cost": 0.02181188,
+          "tokens": {
+            "total": 62134,
+            "input": 3753,
+            "output": 101,
+            "reasoning": 232,
+            "cache": {
+              "write": 0,
+              "read": 58048
+            }
+          }
+        },
+        {
+          "cost": 0.037014,
+          "tokens": {
+            "total": 67041,
+            "input": 760,
+            "output": 2164,
+            "reasoning": 2357,
+            "cache": {
+              "write": 0,
+              "read": 61760
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-07T02:13:24.575263+00:00",
+  "revision_after": "ca0c5d8dcb47c86298560810de146bea2f1905d7cbb70fd21353fe5b93bcee19",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
