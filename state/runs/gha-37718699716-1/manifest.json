@@ -1,0 +1,76 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-37718699716-1",
+  "date": "2026-10-08",
+  "started_at": "2026-10-08T11:36:45.281498+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "ca0c5d8dcb47c86298560810de146bea2f1905d7cbb70fd21353fe5b93bcee19",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "https://www.anthropic.com/news「Introducing Claude Haiku 5.5」（Oct 7, 2026表示）：速く安い小型モデルという価格関連の重要発表だが、一覧ページは日付のみで公開時刻を確認できない。個別記事ページで公開時刻を確認する必要がある",
+    "https://www.anthropic.com/news「Expanding the Cyber Verification Program」（Oct 6, 2026表示）：安全・利用条件（アクセス範囲の拡大）に関わるが公開時刻を確認できない",
+    "https://www.anthropic.com/news「Anthropic invests $100 million to train 10,000 engineers…」（Oct 2, 2026表示）、「Barclays scales Claude…」（Oct 1, 2026表示）：いずれも公開時刻を確認できない（日付のみの表示）",
+    "OpenAI RSSフィードの時刻表記の不整合：「How we will do better for Australia」のpubDateが現在は2026-09-28T19:00:00Zと表示されるが、既記録EVD-20260929-0001は2026-09-29T01:00:00Z。「Introducing GPT-6.1 Sol」が09-29の17:00と10:00の2重掲載。今回の再登録はせず、要否を次回判断",
+    "OpenAI新着3件の個別記事本文（teens-learn-and-plan、radisson、gpt-6-for-everyone）は今回直接取得しておらず、従来同様403となる可能性がある",
+    "今回の確認は検索2回の制限でOpenAIフィードとAnthropic Newsroomに限定。Google（docs.cloud.google.comリリースノート）、xAI（x.ai/build/changelog）、ByteDance（seed.bytedance.com）、日本の公的統計（mhlw.go.jp・stat.go.jp）の当日確認は次回以降に未実施",
+    "MET-COSTの基準値（固定業務の総費用・API実価格）は今回も未取得。developers.openai.comの料金ページ確認が残課題"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.12392075999999999,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0621716,
+          "tokens": {
+            "total": 43114,
+            "input": 42510,
+            "output": 53,
+            "reasoning": 551,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.06174916,
+          "tokens": {
+            "total": 63479,
+            "input": 13875,
+            "output": 1542,
+            "reasoning": 5566,
+            "cache": {
+              "write": 0,
+              "read": 42496
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-08T02:38:53.974362+00:00",
+  "revision_after": "578fe9ea2825857ea5889bb6abc6a2bbc87ed4dce40fe495e1c798a53812ffe5",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
