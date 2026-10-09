@@ -1,0 +1,125 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-37876548629-1",
+  "date": "2026-10-09",
+  "started_at": "2026-10-09T11:51:45.072324+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "578fe9ea2825857ea5889bb6abc6a2bbc87ed4dce40fe495e1c798a53812ffe5",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "https://www.anthropic.com/news/2026-usage-policy-update — Anthropicの年次Usage Policy改訂の本文を確認（欺瞞工作の新節、選挙節の再編とDo Not Undermine Democratic Processesへの改称、武器禁止の明確化、監視・法執行条項の精密化、高リスク用途の人間介在要件、モデルへの虐待行為の禁止、提供地域方針の明確化、2026-11-12発効）。ページの公開表記が日付のみ（Oct 8, 2026）で公開時刻を確認できないためevidenceから除外。公式利用条件の変更（daily確認対象）として発効日までに再取得と時刻確認が必要。",
+    "https://www.anthropic.com/news — newsroom一覧と関連記事で、Claude Haiku 5.5発表（Oct 7）、Anthropic Cyber Mission（Oct 8、https://www.anthropic.com/news/anthropic-cyber-mission）、Genesis Mission支援1.5億ドル（Oct 8、https://www.anthropic.com/news/genesis-mission-commitment）、Cyber Verification Program拡大（Oct 6、https://www.anthropic.com/news/cyber-verification-program）、1億ドルで1万人のエンジニア育成（Oct 2、個別URL未確認）を確認したが、いずれも公開時刻が日付のみで確認できないため記録から除外。MIS-SOC・H-ANT-001・MET-COST関連の未記録材料。",
+    "OpenAI個別記事本文（https://openai.com/index/oracle, https://openai.com/index/pollo-ai, https://openai.com/index/legalon-halves-codex-costs, https://openai.com/index/disrupting-ai-enabled-false-front-operations）は従来403のため未確認。根拠はRSSフィードの標題・説明文のみ。",
+    "今回の原資料上限・検索回数上限により未確認の残課題: Google（https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes）、xAI（https://x.ai/build/changelog）、ByteDance（https://seed.bytedance.com/zh/blog）の変更確認、雇用・賃金の公的統計（https://www.mhlw.go.jp/toukei/, https://www.stat.go.jp/data/）、OpenAI/Anthropic API料金ページ（MET-COST・F-S01/F-S02の基準値）。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.23623904,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0628168,
+          "tokens": {
+            "total": 43412,
+            "input": 42732,
+            "output": 55,
+            "reasoning": 625,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.04624688,
+          "tokens": {
+            "total": 60178,
+            "input": 13936,
+            "output": 87,
+            "reasoning": 3467,
+            "cache": {
+              "write": 0,
+              "read": 42688
+            }
+          }
+        },
+        {
+          "cost": 0.02203056,
+          "tokens": {
+            "total": 60888,
+            "input": 3884,
+            "output": 56,
+            "reasoning": 372,
+            "cache": {
+              "write": 0,
+              "read": 56576
+            }
+          }
+        },
+        {
+          "cost": 0.01700416,
+          "tokens": {
+            "total": 61166,
+            "input": 668,
+            "output": 32,
+            "reasoning": 50,
+            "cache": {
+              "write": 0,
+              "read": 60416
+            }
+          }
+        },
+        {
+          "cost": 0.02582036,
+          "tokens": {
+            "total": 65638,
+            "input": 3405,
+            "output": 25,
+            "reasoning": 1152,
+            "cache": {
+              "write": 0,
+              "read": 61056
+            }
+          }
+        },
+        {
+          "cost": 0.06232028,
+          "tokens": {
+            "total": 82225,
+            "input": 10885,
+            "output": 2139,
+            "reasoning": 4753,
+            "cache": {
+              "write": 0,
+              "read": 64448
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-09T02:55:30.829228+00:00",
+  "revision_after": "58483ef98a633c167b5eba335e6ebb26af2f9404578b2633e13ad460261d0f65",
+  "dossier_hash": "71d3d32feacf1ffa38417ab19412926f8070e31663673c66c628e951a587e52a"
+}
