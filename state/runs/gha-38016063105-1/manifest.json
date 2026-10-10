@@ -1,0 +1,135 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-38016063105-1",
+  "date": "2026-10-10",
+  "started_at": "2026-10-10T11:12:01.851418+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "58483ef98a633c167b5eba335e6ebb26af2f9404578b2633e13ad460261d0f65",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "Anthropic「2026 Usage Policy update」（https://www.anthropic.com/news/2026-usage-policy-update、2026-10-08公開、新規約2026-11-12発効）は本文を確認したが、公開時刻が日付のみで確認できないためevidenceから除外した。内容は欺瞞キャンペーン・武器・監視・高リスク用途（human in the loop・告知義務）・ハードウェア自律動作への要件・モデルへの虐待行為禁止などの利用条件変更で、日常監視対象（利用条件の変更）に該当。ただし一般法人向け既存機能を安全上の理由で7日以上制限する内容（F-S04）ではなかった。公開時刻を確認できる情報源の発見が必要。",
+    "Anthropic Newsroom（https://www.anthropic.com/news）の他の新着（Introducing Claude Haiku 5.5〔Oct 7〕、Introducing the Anthropic Cyber Mission〔Oct 8〕、Building on our commitment to American scientific discovery〔Oct 8〕、Expanding the Cyber Verification Program〔Oct 6〕、Anthropic invests $100 million to train 10,000 engineers〔Oct 2〕、Barclays scales Claude〔Oct 1〕、Introducing Claude Sonnet 5.5〔Sep 28〕、Introducing Claude Opus 5.5〔Sep 22〕）は一覧で日付のみ確認し、個別記事の公開時刻が確認できなかったためevidence化できなかった。Sonnet 5.5（最大30%安く30%高速）・Haiku 5.5（最安の小型モデル）はMET-COSTの基準値、1万人エンジニア育成への1億ドル投資はMIS-SOC・MD-SOCに関係。推測URL（https://www.anthropic.com/news/claude-haiku-5-5）は404で、正しい個別URLと時刻の確認が次回必要。",
+    "Google（https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes）・xAI（https://x.ai/build/changelog）・ByteDance（https://seed.bytedance.com/zh/blog）の最新掲載は、原資料5件と優先順位の制約から今回未確認。次回の確認対象。",
+    "OpenAI RSSの未記録残項目（Two years of OpenAI Academy〔2026-09-23T16:00:00Z〕、Introducing MentalHealthBench〔2026-09-23T10:00:00Z〕、How workers are unlocking new ways of working〔2026-09-16T09:00:00Z〕等）は今回の優先順位（料金・利用条件・安全・雇用関連）から外れ記録を見送った。うち経済調査関連はMIS-SOCに関係するため次回候補。",
+    "公的統計（https://www.mhlw.go.jp/toukei/ ・https://www.stat.go.jp/data/ ）の今回事の公表確認は未実施。MET-LABOR等は基準値・quality_protocolが未登録のままで、observationは作成できていない。月次公表値とrelease_calendarの確認が次回必要。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.19612816,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0642552,
+          "tokens": {
+            "total": 43908,
+            "input": 42980,
+            "output": 53,
+            "reasoning": 875,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.04942204,
+          "tokens": {
+            "total": 61328,
+            "input": 14211,
+            "output": 81,
+            "reasoning": 4092,
+            "cache": {
+              "write": 0,
+              "read": 42944
+            }
+          }
+        },
+        {
+          "cost": 0.08245092,
+          "tokens": {
+            "total": 77643,
+            "input": 7523,
+            "output": 4073,
+            "reasoning": 8895,
+            "cache": {
+              "write": 0,
+              "read": 57152
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.2267226,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.2267226,
+          "tokens": {
+            "total": 96609,
+            "input": 66119,
+            "output": 6601,
+            "reasoning": 23889,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.14255988,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.14255988,
+          "tokens": {
+            "total": 81753,
+            "input": 68675,
+            "output": 902,
+            "reasoning": 9488,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.13132848,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.13132848,
+          "tokens": {
+            "total": 79182,
+            "input": 68648,
+            "output": 6178,
+            "reasoning": 1668,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-10T02:27:11.772742+00:00",
+  "revision_after": "8cb8c171b8d4b00d43db84a46c0a63e4a40ce2544fb9550c67d99f423c6c32f1",
+  "dossier_hash": "23d2d65a98e96c4522cc86201057ddaa30da88f448eedb784a14517789368d97"
+}
