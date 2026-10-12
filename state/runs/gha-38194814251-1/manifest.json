@@ -1,0 +1,76 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-38194814251-1",
+  "date": "2026-10-12",
+  "started_at": "2026-10-12T11:11:45.840824+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "8cb8c171b8d4b00d43db84a46c0a63e4a40ce2544fb9550c67d99f423c6c32f1",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "OpenAI公式RSS（https://openai.com/news/rss.xml、lastBuildDate 2026-10-12T02:04:37Z）の当日確認では、最新項目は2026-10-09T07:00:00Z（既記録EVD-20261010-0001 Sophos・EVD-20261010-0002 Asana）のままで新着なし。公式料金変更・安全上の事故・一般法人向け機能の正式な利用制限の新規掲載はなく（F-S04・RISK-SAFETY・MET-COSTの当日確認結果）、新着がないため記録対象なし。",
+    "Anthropic Newsroom一覧（https://www.anthropic.com/news）で2026-10-01以降の新着を日付のみで確認（2026-10-08「2026 Usage Policy update」「Introducing the Anthropic Cyber Mission」「Building on our commitment to American scientific discovery」、2026-10-07「Introducing Claude Haiku 5.5」、2026-10-06「Expanding the Cyber Verification Program」、2026-10-02「Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap」、2026-10-01「Barclays scales Claude to upgrade operations and improve client experience」）。一覧ページでは公開時刻と個別記事URLが確認できず、公開時刻を確認できない資料としてevidenceから除外した。次回は個別記事のURL・公開時刻（タイムゾーン含む）・本文を確認する。",
+    "Anthropic「2026 Usage Policy update」（2026-10-08付け）は公式利用条件の変更（daily確認対象）であり、F-S04（安全上の理由による既存法人機能の7日以上制限）の該非判定にも必要だが、変更内容・適用範囲・公開時刻が未確認。WRN-20261010-0001（RISK-SAFETY）の日次監視ではAnthropic側の正式な提供制限の有無を本文で確認する必要がある。",
+    "Anthropicの2026-09-22「Introducing Claude Opus 5.5」（Opus 5比40%低コスト等の主張）と2026-09-28「Introducing Claude Sonnet 5.5」（30%高速・最大30%低コスト等の主張）も一覧で日付のみ確認。MET-COST・F-S02の比較材料として個別記事の公開時刻と価格詳細が未取得。",
+    "xAI（https://x.ai/build/changelog）、Google（https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes）、ByteDance（https://seed.bytedance.com/zh/blog）の最新掲載は、検索回数の上限（2回）に達したため今回未確認。料金・利用条件・安全上の変更の確認を次回行う。",
+    "雇用・賃金・労働力の公的統計（https://www.mhlw.go.jp/toukei/ 、https://www.stat.go.jp/data/ ）の月次公表（MET-LABOR・F-M01/F-L01の基準値）は今回未確認。",
+    "OpenAI公式RSSの2026-09-17〜09-25の項目のうち未記録の可能性があるもの（Proaction、Two years of OpenAI Academy、invideo、Harvey、MentalHealthBench、Grab ほか）の記録漏れ有無を次回確認する。今回は優先順に従い新着・安全・利用条件の確認を優先した。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.14201892,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.06713788,
+          "tokens": {
+            "total": 46184,
+            "input": 44739,
+            "output": 53,
+            "reasoning": 944,
+            "cache": {
+              "write": 0,
+              "read": 448
+            }
+          }
+        },
+        {
+          "cost": 0.07488104,
+          "tokens": {
+            "total": 69247,
+            "input": 14248,
+            "output": 858,
+            "reasoning": 8957,
+            "cache": {
+              "write": 0,
+              "read": 45184
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-12T02:14:48.038999+00:00",
+  "revision_after": "dac6a857bdb8813c76e5cdcb50f536b221c85c76d6c19305f14664e257b2c1dc",
+  "dossier_hash": "23d2d65a98e96c4522cc86201057ddaa30da88f448eedb784a14517789368d97"
+}

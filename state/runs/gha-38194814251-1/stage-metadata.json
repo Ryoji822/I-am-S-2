@@ -1,0 +1,43 @@
+{
+  "collect": {
+    "cost": 0.14201892,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.06713788,
+        "tokens": {
+          "total": 46184,
+          "input": 44739,
+          "output": 53,
+          "reasoning": 944,
+          "cache": {
+            "write": 0,
+            "read": 448
+          }
+        }
+      },
+      {
+        "cost": 0.07488104,
+        "tokens": {
+          "total": 69247,
+          "input": 14248,
+          "output": 858,
+          "reasoning": 8957,
+          "cache": {
+            "write": 0,
+            "read": 45184
+          }
+        }
+      }
+    ]
+  },
+  "blue": {
+    "status": "skipped_partial_collection"
+  },
+  "red": {
+    "status": "skipped_partial_collection"
+  },
+  "arbiter": {
+    "status": "skipped_partial_collection"
+  }
+}
