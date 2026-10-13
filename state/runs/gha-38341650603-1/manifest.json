@@ -1,0 +1,102 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-38341650603-1",
+  "date": "2026-10-13",
+  "started_at": "2026-10-13T12:25:59.706096+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "dac6a857bdb8813c76e5cdcb50f536b221c85c76d6c19305f14664e257b2c1dc",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "OpenAI公式RSSフィード（https://openai.com/news/rss.xml、lastBuildDate 2026-10-13T02:53:39Z）を当日確認し、前回記録（2026-10-09T07:00:00ZのSophos記事）以降の新着はなかった。公式料金変更・安全上の事故の正式報告・一般法人向け機能の正式な利用制限の新規掲載もなし（F-S04・RISK-SAFETY・MET-COSTの当日確認結果、WRN-20261010-0001の日次監視分）。新着なしのため該当源からの記録は空。",
+    "Anthropic「2026 Usage Policy update」（https://www.anthropic.com/news/2026-usage-policy-update、2026-10-08付け）は新Usage Policyを公表し2026-11-12に発効。欺瞞キャンペーン禁止の新設・選挙条項の再編・武器ソフト禁止の明確化・監視・ハイリスク用途・自律的物理動作への要件追加・モデルへの虐待行為禁止・Supported Regions Policyの執行明確化を含む。ページの公開表記が日付のみで公開時刻を確認できないためevidence化できず未記録。MET-REGIME・MET-SAFETY・LINK-SAFETY-SUPPLY・F-S04・RISK-SAFETYの優先確認対象。sitemapのlastmod等で公開時刻を確認できれば記録が必要。",
+    "Anthropic「Introducing Claude Haiku 5.5」（https://www.anthropic.com/claude-haiku-5-5、2026-10-07付け）は小型モデル最安を発表。Haiku 4.5比で平均約75%低コスト（10万トークンまでは90%低）、Sonnet 5.5のキャッシュ読取を半額（100万トークン$0.10）にしてエージェント業務で約20%安く、Max/Team向け月次APIクレジット（$100〜$500）を新設。ベンチマーク数値・値下げ効果はAnthropicの主張。公開時刻が日付のみのためevidence化できず未記録。MET-COST・LINK-PRICE-COST・F-S02の費用基準に関わる。",
+    "Anthropic「Expanding the Cyber Verification Program」（https://www.anthropic.com/news/cyber-verification-program、2026-10-06付け）はcyber能力の限定開放プログラムの拡大。公開時刻が日付のみのため未記録。MET-SAFETY・H-ANT-001関連。",
+    "Anthropic「Anthropic invests $100 million to train 10,000 engineers」（https://www.anthropic.com/news/claude-frontier-academy、2026-10-02付け）はエンジニア育成への1億ドル投資計画。MIS-SOC・MD-SOC・W1/W4関連。同様に「Introducing the Anthropic Cyber Mission」（https://www.anthropic.com/news/anthropic-cyber-mission、2026-10-08付け）、「Building on our commitment to American scientific discovery」（https://www.anthropic.com/news/genesis-mission-commitment、2026-10-08付け、1.5億ドル/3年のGenesis Mission支援）、「Barclays scales Claude」（https://www.anthropic.com/news/barclays-scales-claude、2026-10-01付け）も公開時刻が日付のみのため未記録。",
+    "OpenAIフィード内の2026-09-21〜25の項目で、今回表示された既存evidence一覧（直近約40記録）に含まれず登録済みか確認できないもの（Proaction 2026-09-25T19:00:00Z、Two years of OpenAI Academy 2026-09-23T16:00:00Z、Introducing MentalHealthBench 2026-09-23T10:00:00Z、Harvey・invideo 2026-09-23T12:00:00Z、Grab 2026-09-23T00:00:00Z、Higgsfield 2026-09-21T12:00:00Z、Building standards for the next phase of AI 2026-09-21T10:00:00Z、V7 2026-09-21T00:00:00Z）は、全履歴との照合がないため重複登録を避けて未記録とした。次回は全履歴照合の上、漏れがあれば記録する。",
+    "今回の原資料取得は上限5件（OpenAI RSS、Anthropicニュースルーム一覧2形式、Usage Policy update、Haiku 5.5）に達し、Anthropicのsitemap（https://www.anthropic.com/sitemap.xml）や記事のHTTP応答ヘッダー等による公開時刻の確認、およびGoogle・xAI・ByteDance・政府統計の確認は今回未実施。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.20119628,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0660354,
+          "tokens": {
+            "total": 45816,
+            "input": 45185,
+            "output": 53,
+            "reasoning": 578,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03916584,
+          "tokens": {
+            "total": 60879,
+            "input": 13880,
+            "output": 30,
+            "reasoning": 1785,
+            "cache": {
+              "write": 0,
+              "read": 45184
+            }
+          }
+        },
+        {
+          "cost": 0.02420988,
+          "tokens": {
+            "total": 63990,
+            "input": 4351,
+            "output": 70,
+            "reasoning": 561,
+            "cache": {
+              "write": 0,
+              "read": 59008
+            }
+          }
+        },
+        {
+          "cost": 0.07178516,
+          "tokens": {
+            "total": 81949,
+            "input": 8915,
+            "output": 1220,
+            "reasoning": 8518,
+            "cache": {
+              "write": 0,
+              "read": 63296
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-13T03:31:14.729997+00:00",
+  "revision_after": "57f25c87ca71d7f92278d422b7f20d16687d8a64718c8977c5f4e54dbcd47010",
+  "dossier_hash": "23d2d65a98e96c4522cc86201057ddaa30da88f448eedb784a14517789368d97"
+}
