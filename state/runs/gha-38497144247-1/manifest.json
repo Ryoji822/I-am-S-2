@@ -1,0 +1,136 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-38497144247-1",
+  "date": "2026-10-14",
+  "started_at": "2026-10-14T10:42:32.519890+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "57f25c87ca71d7f92278d422b7f20d16687d8a64718c8977c5f4e54dbcd47010",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "Anthropic「2026 Usage Policy update」（https://www.anthropic.com/news/2026-usage-policy-update、ページ掲載は2026-10-08の日付のみで公開時刻を確認できないため記録から除外）。本文は確認済みで、利用規約新版の公開と2026-11-12発効、欺瞞工作の新セクション統合、武器のソフトウェア・部品禁止の明確化、監視・法執行の禁止精度向上、高リスク用途のhuman-in-the-loop要件の明記、ハードウェア自律動作への操作者要件、モデルへの持続的虐待行為の禁止、サポート地域方針の執行明確化を含む。MET-REGIME・LINK-SAFETY-SUPPLY・F-S04（Anthropic側の利用条件変更）の監視対象。発効日2026-11-12までに、公開時刻付き一次情報（フィード等）での記録化と実際の執行変化の確認が必要。",
+    "Anthropic「Claude Haiku 5.5」（https://www.anthropic.com/claude-haiku-5-5、2026-10-07付け日付のみで公開時刻を確認できないため記録から除外）。Haiku 4.5比で平均約75%の実行費用低下（10万トークン以下の要件で90%安）、キャッシュ読み$0.01/100k超$0.05、入力$0.10/$0.50、出力$0.50/$2.50（1Mトークン）、Sonnet 5.5キャッシュ読み取り半額で多くのエージェント業務で約20%安、Max/Team向け月次APIクレジット（$100〜$500）を含む。MET-COST・LINK-PRICE-COST・F-S01/F-S02の費用基準に関わる公式価格値だが、公開時刻が確認でき次第evidence化が必要。",
+    "Anthropic「Claude Frontier Academy」（https://www.anthropic.com/news/claude-frontier-academy、2026-10-02付け日付のみで公開時刻を確認できないため記録から除外）。1億ドルを投じ2027年末までに1万人のFrontier Deployed Engineersを養成する計画で、Accenture・Bain・Capgemini・Deloitte・McKinsey等の第1期コホートが実施中。MIS-SOC・MET-LABOR（技能形成・人材需要）の観測材料。",
+    "その他のAnthropic新着（Barclays scales Claude 2026-10-01、Expanding the Cyber Verification Program 2026-10-06、Introducing the Anthropic Cyber Mission 2026-10-08、Genesis Missionへの1.5億ドル commitments 2026-10-08）は本文・公開時刻とも未確認。ニュース一覧（https://www.anthropic.com/news）では時刻なしの日付のみの掲載で、個別記録には公開時刻の裏取り手段が必要。",
+    "OpenAIフィードの「How we will do better for Australia」記事のpubDateが現フィードでは2026-09-28T19:00:00Zだが、既存記録EVD-20260929-0001はpublished_at 2026-09-29T01:00:00Zとしており、6時間の差異がある。元記事またはアーカイブでの時刻検証と、必要なら訂正記録（supersedes）を要する。",
+    "今回の予算（原資料5件・検索2回）をOpenAIフィードとAnthropic4件に使用したため、Google（Gemini release notes）、xAI（changelog）、ByteDance（Seed blog）、公的統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）の当日確認と、月次の雇用・賃金公表値の確認は未実施。WRN-20261010-0001の次回チェック（2026-10-17頃）までに、OpenAI・Anthropicの安全・利用条件の毎日確認を継続し、未確認の提供元を優先する。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.18124084,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0664168,
+          "tokens": {
+            "total": 45902,
+            "input": 45184,
+            "output": 48,
+            "reasoning": 670,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.052138,
+          "tokens": {
+            "total": 65072,
+            "input": 15794,
+            "output": 98,
+            "reasoning": 4060,
+            "cache": {
+              "write": 0,
+              "read": 45120
+            }
+          }
+        },
+        {
+          "cost": 0.06268604,
+          "tokens": {
+            "total": 82420,
+            "input": 15995,
+            "output": 1546,
+            "reasoning": 4015,
+            "cache": {
+              "write": 0,
+              "read": 60864
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.12865428,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.12865428,
+          "tokens": {
+            "total": 82344,
+            "input": 74177,
+            "output": 720,
+            "reasoning": 4759,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.10910388,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.10910388,
+          "tokens": {
+            "total": 77538,
+            "input": 73645,
+            "output": 569,
+            "reasoning": 636,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.10561308,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.10561308,
+          "tokens": {
+            "total": 76551,
+            "input": 73361,
+            "output": 357,
+            "reasoning": 145,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-14T01:47:28.203463+00:00",
+  "revision_after": "71b526b273168c56713b7350dc1226e1ce82a0fa0b3bab8979ca4dfedb778c48",
+  "dossier_hash": "23d2d65a98e96c4522cc86201057ddaa30da88f448eedb784a14517789368d97"
+}
