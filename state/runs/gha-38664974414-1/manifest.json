@@ -1,0 +1,134 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-38664974414-1",
+  "date": "2026-10-15",
+  "started_at": "2026-10-15T10:19:14.731415+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "71b526b273168c56713b7350dc1226e1ce82a0fa0b3bab8979ca4dfedb778c48",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "Anthropic「2026 Usage Policy update」（https://www.anthropic.com/news/2026-usage-policy-update）は公式利用条件の変更（偽装キャンペーン節の新設、選挙節の再編・個人向け選挙ターゲティング全面禁止の解除、武器関連ソフト禁止の明確化、監視・法執行節の明確化、高リスク用途のヒューマンインザループ要件の整理、自律的な物理動作をするハードウェア接続時の要件追加、モデルへの虐待行為の禁止、2026-11-12発効）として日次確認対象だが、公開元が示す時刻が日付のみ（Oct 8, 2026）で公開時刻を確認できないためevidenceから除外した。MET-REGIME・LINK-SAFETY-SUPPLY・F-S04関連。時刻を確認できる情報源（RSS・サイトメタデータ）を次回探す。",
+    "Anthropic Newsroom（https://www.anthropic.com/news）の他の新着項目（2026-10-14 Policy「Preparing for the 2026 US midterms」、2026-10-14「Anthropic opens Singapore office and signs MOU with the Government of Singapore」、2026-10-08「Introducing the Anthropic Cyber Mission」「Building on our commitment to American scientific discovery」、2026-10-07「Introducing Claude Haiku 5.5」、2026-10-06「Expanding the Cyber Verification Program」、2026-10-02「Claude Frontier Academy $100M」、2026-10-01「Barclays scales Claude」、2026-09-28「Claude Sonnet 5.5」等）も公開時刻が日付のみで確認できないため未記録。今回の確認範囲では、これらに安全上の事故の正式報告・一般法人向け既存機能の7日以上の利用制限・公式料金変更は見当たらなかった。",
+    "OpenAIの今回新着5件の個別記事本文（例: https://openai.com/index/amp-beyond-coding、https://openai.com/index/sentinelone、https://openai.com/index/third-moment-research、https://openai.com/index/block-ai-powered-security、https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic）は従来個別URLで403のため未確認。根拠はRSSフィードの標題・説明文のみ。",
+    "原資料5件・検索2回の上限により、Anthropicの稼働状況（status.anthropic.com）、Google release notes、xAI changelog、ByteDance Seed blog、日本の公的統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）の当日確認、および予測候補F-S01〜F-L02の基準値収集は今回未実施。次回以降に繰り越す。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.16163384,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.066273,
+          "tokens": {
+            "total": 45990,
+            "input": 45361,
+            "output": 53,
+            "reasoning": 576,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.04312212,
+          "tokens": {
+            "total": 63162,
+            "input": 15733,
+            "output": 32,
+            "reasoning": 2085,
+            "cache": {
+              "write": 0,
+              "read": 45312
+            }
+          }
+        },
+        {
+          "cost": 0.05223872,
+          "tokens": {
+            "total": 73009,
+            "input": 5498,
+            "output": 2562,
+            "reasoning": 3957,
+            "cache": {
+              "write": 0,
+              "read": 60992
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.16073588,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.16073588,
+          "tokens": {
+            "total": 90463,
+            "input": 75391,
+            "output": 3109,
+            "reasoning": 9275,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.12696408,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.12696408,
+          "tokens": {
+            "total": 84036,
+            "input": 77222,
+            "output": 565,
+            "reasoning": 3561,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.124753,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.124753,
+          "tokens": {
+            "total": 82625,
+            "input": 79599,
+            "output": 2513,
+            "reasoning": 513,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-15T01:25:33.108136+00:00",
+  "revision_after": "58ed3701931688597fe2e8abbe1686c998070a566299bf7c199b470996254f03",
+  "dossier_hash": "77a1f9345b0ed1e21c9d33e71c42ba933cc4784dec5fbf8ca09f6646c2017a01"
+}
