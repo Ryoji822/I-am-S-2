@@ -26,22 +26,25 @@ OpenAI の企業に対する接点は、従業員が使う ChatGPT、開発者�
 | Astra for Law | 9月17日発表。法務向け検索・指示・文脈を加えた Astra | 業界の業務に近い層で直接販売とパートナー販売を広げる |
 | dots | 9月29日発表。複雑なプロジェクトと日常のタスクを横断して作業を進め続けるプロアクティブなアシスタント | 仕事の開始から進行まで提供側が担う接点の拡張 |
 | Daybreak | セキュリティ運用に関わる提供。Sophos（脅威調査時間96%短縮・MDR案件52%自動化の主張、10月9日）、SentinelOne（マルウェア解析を数週間から数時間の主張、10月14日）、Block（脅威調査の高速化・修正案提案、10月14日）、Third Moment Research（サイバーセキュリティ向けに利用、10月14日）の事例と、ウクライナ政府へのアクセス拡大（9月23日）で名称を確認 | 政府・セキュリティ分野への専門提供（範囲・料金は未確認） |
+| GPT-Rosalind Academic Plan | 10月15日発表。対象の学術研究所に GPT-Rosalind へのスポンサードアクセスとライフサイエンス研究を進めるツールを提供する計画 | 研究機関への提供枠の拡張（Rosalind 自身の単独発表・利用条件は未確認） |
 
-出典：[Astra](https://openai.com/index/gpt-6-astra/)、[Agents API](https://openai.com/index/introducing-the-agents-api/)、[法務向け発表](https://openai.com/index/astra-for-law/)。9月22日以降の製品項目（GPT-6 Sol/Luna、GPT-6.1 Sol、dots、広告の拡大、10月7日の GPT-6 と Intelligent UI の ChatGPT での世界展開、Daybreak 関係）は [OpenAI の公式フィード](https://openai.com/news/rss.xml)の標題・説明文で確認したもので、記事本文は未確認です。9月29日の DevDay では Astra、ChatGPT、Codex、API、セキュリティ関連を含む20以上の発表があったと公表されています。
+出典：[Astra](https://openai.com/index/gpt-6-astra/)、[Agents API](https://openai.com/index/introducing-the-agents-api/)、[法務向け発表](https://openai.com/index/astra-for-law/)。9月22日以降の製品項目（GPT-6 Sol/Luna、GPT-6.1 Sol、dots、広告の拡大、10月7日の GPT-6 と Intelligent UI の ChatGPT での世界展開、Daybreak 関係、GPT-Rosalind Academic Plan）は [OpenAI の公式フィード](https://openai.com/news/rss.xml)の標題・説明文で確認したもので、記事本文は未確認です。9月29日の DevDay では Astra、ChatGPT、Codex、API、セキュリティ関連を含む20以上の発表があったと公表されています。
 
-エージェントの適用範囲を広げる顧客報告も続いています（いずれも OpenAI 掲載の主張で独立検証なし）。Amp は GPT-6 Astra、Ultrafast、GPT-Live-1、Sign in with ChatGPT を使い、コードを超えた業務へエージェントを広げると報じられ（10月14日）、Third Moment Research は GPT-6 Astra・GPT-6.1 Sol・Codex・サイバーセキュリティ向け Daybreak を組み合わせ、1万エージェント・36時間超の連続実行を構築したと述べました（10月14日）。制作分野では Higgsfield が GPT-6 Astra で1分超の長尺動画、GPT-Image-2.5、GPT-Live を使う映像制作を報じています（10月13日）。Ultrafast・GPT-Live（-1）・Sign in with ChatGPT はこの時点で顧客事例の標題・説明文にのみ現れる名称で、単独の公式発表・利用条件は未確認です。
+エージェントの適用範囲を広げる顧客報告も続いています（いずれも OpenAI 掲載の主張で独立検証なし）。Amp は GPT-6 Astra、Ultrafast、GPT-Live-1、Sign in with ChatGPT を使い、コードを超えた業務へエージェントを広げると報じられ（10月14日）、Third Moment Research は GPT-6 Astra・GPT-6.1 Sol・Codex・サイバーセキュリティ向け Daybreak を組み合わせ、1万エージェント・36時間超の連続実行を構築したと述べました（10月14日）。制作分野では Higgsfield が GPT-6 Astra で1分超の長尺動画、GPT-Image-2.5、GPT-Live を使う映像制作を報じています（10月13日）。法務実務では Sullivan & Cromwell が OpenAI との協働で、契約書ドラフトの問題点を特定する Agreement Analyzer を開発・運用すると報じられました（10月15日）。Ultrafast・GPT-Live（-1）・Sign in with ChatGPT はこの時点で顧客事例の標題・説明文にのみ現れる名称で、単独の公式発表・利用条件は未確認です。
+
+教育・研究向けの提供も公表されています。教師の日に合わせてブラジルポルトガル語版の AI for Educators と、Study Mode による教師の学習支援の紹介が公表され（10月15日）、学術研究向けには GPT-Rosalind Academic Plan が発表されました（10月15日、上表）。いずれも提供の公表事実のみで、教育効果・研究実績・利用規模は未確認です。
 
 Agents API は長いセッション、ツール利用、複数エージェントの仕事を扱います。実行環境は OpenAI ホストだけでなく、自社環境やパートナー環境を選べます。基盤となる Codex のコードを公開する方針も示されています。ここから読み取れるのは「実行環境の選択肢がある」ことです。モデルやセッション履歴、認証、評価を含むシステム全体が他社へ無加工で移せることまでは意味しません。移行の難しさはどの機能に依存するかで変わります。
 
-Astra for Law には Harvey、Legora のような API 顧客も含まれます。業界向け製品の拡張は、既存の業務ソフト会社と競合する可能性と、それらの会社の供給元になる可能性を同時に持ちます。
+Astra for Law には Harvey、Legora のような API 顧客も含まれます。業界向け製品の拡張は、既存の業務ソフト会社と競合する可能性と、それらの会社の供給元になる可能性を同時に持ちます。Sullivan & Cromwell の事例は、法律事務所自身が OpenAI 技術で業務ツールを構築・運用する形の公表例です。
 
 広告の拡大は、消費者の注意力を広告主へ販売する収益経路を企業契約と並べて持つ変更です。Radisson Hotel Group が Accenture と組み ChatGPT 内でホテルの検索・比較・予約を助けるプラグインを構築した事例も、顧客接点が ChatGPT 側に集まる方向の公表例です。いずれも収益・利用規模の数値は今回の資料にはありません。
 
-事実は事業・仕事・所得の三層に別々に効きます。事業では、Daybreak のセキュリティ運用向け事例が Sophos に加え SentinelOne・Block・Third Moment と公表レベルで重なり、専門分野への販売経路が広がりつつあることを示します（MET-FIRM、W2 の材料）。仕事では、dots・Agents API・Astra for Law の拡張に加え、1万エージェント・36時間超の連続実行やコードを超えた適用という顧客報告は、実行と判断を提供側が担う範囲が広がる方向の主張です（LINK-AUTO-HOURS・LINK-OWNERSHIP-PROFIT）。所得では、GPT-6 Sol/Luna・GPT-6.1 Sol の低価格帯と、GPT-Image-2.5・GPT-Live を使った制作の報告は、小規模事業者や個人の参加費用障壁を下げる方向です（W3、MET-COST）。別の説明として、顧客事例は提供会社が選んだ成功例の選別であり更新率・採算・失敗の分布は公表されない可能性、長時間・大量実行の主張は特定顧客の運用条件と人的監視に依存する可能性があります。
+事実は事業・仕事・所得の三層に別々に効きます。事業では、Sullivan & Cromwell の Agreement Analyzer は法務という専門業務での協働事例が Astra for Law（9月17日）以降も続いたことを示し、業界向け販売経路（MET-FIRM・W2 の材料）が公表レベルで重なっています。仕事では、契約書ドラフトの問題特定は事務・法務業務の自動化範囲（MET-AUTO・LINK-AUTO-HOURS）の探索材料ですが、OpenAI 掲載の当事者報告で利用規模・精度は未確認です。所得・アクセスでは、GPT-Rosalind Academic Plan は研究機関へのスポンサードアクセスという提供形態で、フロンティア能力へのアクセス拡大（W3 の入口条件）と研究・技能基盤（MIS-SOC）に関わりますが、提供実績を伴わない計画です。AI for Educators・Study Mode は教育機関・個人への接点拡大の公表にとどまります。別の説明として、学術・教育向けの提供は研究コミュニティとの関係構築や規制対応の一環でもあり、商用契約と同じ採算構造とは限りません。顧客事例は提供会社が選んだ成功例の選別であり、更新率・採算・失敗の分布は公表されない可能性があります。
 
-残る限界：新規項目の根拠は公式フィードの標題・説明文のみで、記事本文は個別URLが403等のため未確認です。Ultrafast・GPT-Live（-1）・Sign in with ChatGPT の提供条件・価格は不明で、単独の公式発表待ちです。Daybreak の提供範囲・契約条件・料金、dots の利用条件、Intelligent UI の到達範囲と品質も不明です。利用規模・更新率・採算を示す数値はなく、1万エージェント・36時間超・数週間から数時間といった数値もすべて当事者主張です。見直し条件は、Daybreak・dots・新名称の公式発表と契約条件の確認、第三者による利用実態調査の出現です。
+残る限界：新規3件（GPT-Rosalind Academic Plan、AI for Educators、Sullivan & Cromwell）の根拠は公式フィードの標題・説明文のみで、記事本文は個別URLが403等のため未確認です。GPT-Rosalind の単独発表・利用条件・価格・対象研究所の範囲は不明で、Ultrafast・GPT-Live（-1）・Sign in with ChatGPT と同じく説明文にのみ現れる名称の扱いです。Agreement Analyzer の利用規模・精度・採算、AI for Educators の利用実績・教育効果は不明です。利用規模・更新率・採算を示す数値はなく、今回の新着に独立検証はありません。見直し条件は、GPT-Rosalind Academic Plan の対象条件・契約形態の公式確認、法務分野の協働事例がさらに重なるか、第三者による利用実態調査の出現です。
 
-確認更新：2026-10-15T01:21:16.083935+00:00（DS-OAI-20261015-0001）。
+確認更新：2026-10-16T01:06:59.767242+00:00（DS-OAI-20261016-0001）。
 
 ## 価格と利用企業の費用
 
