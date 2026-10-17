@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-38989746116-1",
+  "date": "2026-10-17",
+  "started_at": "2026-10-17T10:11:09.287567+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "3c53d3a2d91c3c62e0d3b76f864e8dc4cad22bf49160fd9d0f16255f17b6a94a",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "Anthropicニュース一覧（https://www.anthropic.com/news）で日付のみの新着を確認したが、公開時刻が確認できないためevidenceから除外し本文も未確認。個別URLで公開時刻と本文の確認が必要：https://www.anthropic.com/news/2026-usage-policy-update（2026-10-08付け。利用条件の変更候補でF-S04・MET-REGIME・LINK-SAFETY-SUPPLYの監視対象）、https://www.anthropic.com/news/an-update-on-independent-evaluators（2026-10-15付け。独立評価に関する更新でMET-SAFETY関連）、https://www.anthropic.com/news/anthropic-cyber-mission（2026-10-08付け）、https://www.anthropic.com/news/cyber-verification-program（2026-10-06付け）、https://www.anthropic.com/news/singapore-office-opening（2026-10-14付け）。",
+    "今回の検索上限（2回）に到達したため、上記Anthropic個別記事の公開時刻・本文の確認は次回以降。F-S04（OpenAIかAnthropicの法人機能制限）のAnthropic側の当日確認は一覧レベルにとどまった。",
+    "Google・xAI・ByteDanceの最新掲載・料金・提供条件の当日確認は今回未実施（優先順位により次回以降）。",
+    "雇用・賃金・物価等の公的統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）の月次公表の確認は今回未実施。MET-LABOR・MET-FIRM・MET-REGIMEのobservationは引きくり登録なし。",
+    "予測候補F-S01/F-S02/F-S05等に必要な固定業務・品質基準・基準値の取得は未実施（すべてstatus=draftのまま）。",
+    "OpenAI個別記事の本文は従来どおり直接取得できておらず、根拠はRSSフィードの標題・説明文のみ。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.14596872,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0681432,
+          "tokens": {
+            "total": 47013,
+            "input": 46238,
+            "output": 30,
+            "reasoning": 745,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03346528,
+          "tokens": {
+            "total": 60221,
+            "input": 13402,
+            "output": 25,
+            "reasoning": 586,
+            "cache": {
+              "write": 0,
+              "read": 46208
+            }
+          }
+        },
+        {
+          "cost": 0.04436024,
+          "tokens": {
+            "total": 68260,
+            "input": 3102,
+            "output": 1420,
+            "reasoning": 4154,
+            "cache": {
+              "write": 0,
+              "read": 59584
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-17T01:12:40.256517+00:00",
+  "revision_after": "7e69492847d6413773e3ac1b2bb6d91facb2e3b59cf2532d2e900895665936ba",
+  "dossier_hash": "5933cd177bf0581d3d9fa8a22912ef2c16f8be0cea088a277f316fc5e5871eec"
+}
