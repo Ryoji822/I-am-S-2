@@ -28,6 +28,15 @@ def successful_stage(stage, context, directory, policy):
     return {"records": [], "reason": "Keep prior judgment"}, {}
 
 
+def issued_records():
+    initial = initial_records()
+    initial[-1] = {**initial[-1], "issued_at": NOW, "knowledge_cutoff": NOW}
+    return initial
+
+
+EXCLUDED = "正式判断として公表せず除外しました"
+
+
 class CycleTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -72,13 +81,101 @@ class CycleTests(unittest.TestCase):
         self.assertEqual(load_state(self.root / "state/shadow")["sequence"], 0)
 
     def test_arbiter_cannot_add_a_new_unreviewed_judgment(self):
+        evidence = initial_records()[1]
+        stray = {"type": "warning", "id": "SECRET PROVIDER TEXT", "reason": "SECRET_PROVIDER_TEXT"}
         def invented(stage, *args):
+            if stage == "collect":
+                return {"quality": "complete", "records": [evidence], "gaps": []}, {}
             if stage == "arbiter":
-                return {"records": [{"type": "warning", "id": "invented"}], "reason": "New idea"}, {}
+                return {"records": [stray], "reason": "New idea"}, {}
             return successful_stage(stage, *args)
         manifest = run_cycle(self.root, NOW, "test-invented", invented)
+        state = load_state(self.root / "state/shadow")
+        self.assertEqual(manifest["outcome"], "complete")
+        self.assertNotEqual(manifest["revision_after"], manifest["revision_before"])
+        self.assertIn("EVD-1", state["records"]["evidence"])
+        self.assertEqual(state["records"]["warning"], {})
+        self.assertEqual(manifest["gaps"], [f"裁定が主分析にない記録を含めていたため、その記録は{EXCLUDED}（1件）。"])
+        published = json.dumps(manifest, ensure_ascii=False) + (self.root / "state/shadow/Intelligence/2026-09-22.md").read_text()
+        self.assertNotIn("SECRET_PROVIDER_TEXT", published)
+        self.assertNotIn("SECRET PROVIDER TEXT", published)
+        self.assertEqual(load_state(self.root)["sequence"], 0)
+
+    def test_stray_arbiter_record_keeps_verbatim_reviewed_judgments(self):
+        initial = issued_records()
+        reviewed = [initial[0], *initial[2:]]
+        stray = {"type": "warning", "id": "invented", "reason": "SECRET_PROVIDER_TEXT"}
+        unsafe = {"type": "warning", "id": "SECRET PROVIDER TEXT", "reason": "SECRET_PROVIDER_TEXT"}
+        def stages(stage, *args):
+            if stage == "collect":
+                return {"quality": "complete", "records": [initial[1]], "gaps": ["One source thin"]}, {}
+            if stage == "blue":
+                return {"records": reviewed, "reason": "Reviewed proposal"}, {}
+            if stage == "arbiter":
+                return {"records": [*reviewed, stray, unsafe], "reason": "Added an extra record"}, {}
+            return successful_stage(stage, *args)
+        manifest = run_cycle(self.root, NOW, "test-stray", stages)
+        state = load_state(self.root / "state/shadow")
+        saved = json.loads((self.root / "state/runs/test-stray/accepted-plan.json").read_text())
+        saved_ids = [record["id"] for record in saved["plan"]["records"]]
+        self.assertEqual(manifest["outcome"], "complete")
+        self.assertNotEqual(manifest["revision_after"], manifest["revision_before"])
+        self.assertEqual(manifest["gaps"], [
+            "One source thin",
+            f"裁定が主分析にない記録を含めていたため、その記録は{EXCLUDED}（2件。表示できる識別子：warning:invented）。"])
+        for identifier in ["MET-1@1", "EVD-1", "F-1", "F-1-v1"]:
+            self.assertIn(identifier, saved_ids)
+            self.assertIn(identifier, {row["id"] for rows in state["records"].values() for row in rows.values()})
+        self.assertNotIn("invented", saved_ids)
+        self.assertEqual(state["records"]["warning"], {})
+        published = json.dumps({"manifest": manifest, "plan": saved["plan"]}, ensure_ascii=False)
+        published += (self.root / "state/shadow/Intelligence/2026-09-22.md").read_text()
+        self.assertNotIn("SECRET_PROVIDER_TEXT", published)
+        self.assertNotIn("SECRET PROVIDER TEXT", published)
+        self.assertIn("warning:invented", published)
+        self.assertEqual(load_state(self.root)["sequence"], 0)
+        def should_not_call(*args):
+            raise AssertionError("model must not repeat")
+        self.assertEqual(manifest, run_cycle(self.root, NOW, "test-stray", should_not_call))
+
+    def test_edited_arbiter_copy_is_not_published(self):
+        initial = issued_records()
+        reviewed = [initial[0], *initial[2:]]
+        mutated = {**initial[-1], "probability": 0.99, "confidence_reason": "SECRET_PROVIDER_TEXT"}
+        def stages(stage, *args):
+            if stage == "collect":
+                return {"quality": "complete", "records": [initial[1]], "gaps": []}, {}
+            if stage == "blue":
+                return {"records": reviewed, "reason": "Reviewed proposal"}, {}
+            if stage == "arbiter":
+                return {"records": [initial[0], initial[2], mutated], "reason": "Changed the probability"}, {}
+            return successful_stage(stage, *args)
+        manifest = run_cycle(self.root, NOW, "test-mutated", stages)
+        state = load_state(self.root / "state/shadow")
+        saved_ids = [record["id"] for record in json.loads(
+            (self.root / "state/runs/test-mutated/accepted-plan.json").read_text())["plan"]["records"]]
+        self.assertEqual(manifest["outcome"], "complete")
+        self.assertIn("F-1", state["records"]["question"])
+        self.assertIn("EVD-1", state["records"]["evidence"])
+        self.assertNotIn("F-1-v1", saved_ids)
+        self.assertEqual(state["records"]["vintage"], {})
+        self.assertIn("vintage:F-1-v1", manifest["gaps"][0])
+        published = json.dumps(manifest, ensure_ascii=False) + (self.root / "state/shadow/Intelligence/2026-09-22.md").read_text()
+        self.assertNotIn("SECRET_PROVIDER_TEXT", published)
+        self.assertNotIn("0.99", published)
+
+    def test_reviewed_evidence_from_arbiter_still_rejects_the_run(self):
+        evidence = initial_records()[1]
+        def rewrite(stage, *args):
+            if stage in {"blue", "arbiter"}:
+                return {"records": [evidence], "reason": "Smuggle evidence through review"}, {}
+            return successful_stage(stage, *args)
+        manifest = run_cycle(self.root, NOW, "test-rewrite", rewrite)
         self.assertEqual(manifest["outcome"], "failed")
+        self.assertEqual(manifest["validation_failure"], "arbiter cannot rewrite evidence or resolve forecasts")
+        self.assertEqual(manifest["revision_after"], manifest["revision_before"])
         self.assertEqual(load_state(self.root / "state/shadow")["sequence"], 0)
+        self.assertFalse((self.root / "state/runs/test-rewrite/accepted-plan.json").exists())
 
     def test_model_has_no_write_shell_or_delegation_permission(self):
         config = model_config(self.root)

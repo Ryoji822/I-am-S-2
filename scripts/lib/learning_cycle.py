@@ -87,17 +87,48 @@ def validate_stage(stage, result, policy):
         require(result["accepted"] and not result["issues"], "red review rejected proposal")
 
 
+def safe_record_label(record):
+    if not isinstance(record, dict):
+        return None
+    kind, identifier = record.get("type"), record.get("id")
+    if kind not in FIELDS or not isinstance(identifier, str):
+        return None
+    if re.fullmatch(r"[A-Za-z0-9_@.:-]{1,120}", identifier) is None:
+        return None
+    return f"{kind}:{identifier}"
+
+
+def unreviewed_gap(dropped):
+    """Developer-authored gap. Never copy arbiter text or unsafe identifiers."""
+    labels = []
+    for record in dropped:
+        label = safe_record_label(record)
+        if label:
+            labels.append(label)
+    shown = ""
+    if labels and len(labels) == len(dropped):
+        shown = "：" + "、".join(labels)
+    elif labels:
+        shown = "。表示できる識別子：" + "、".join(labels)
+    return ("裁定が主分析にない記録を含めていたため、その記録は正式判断として公表せず除外しました"
+            f"（{len(dropped)}件{shown}）。")
+
+
 def update_plan(state, run_id, outputs, bootstrap, now):
     collected = outputs["collect"]
     require(collected["quality"] in {"complete", "partial"}, "no usable fresh collection")
     accepted = outputs["arbiter"]["records"]
     blue = outputs["blue"]["records"]
-    require(all(record in blue for record in accepted), "arbiter introduced an unreviewed record")
-    require(all(record["type"] not in {"evidence", "observation", "resolution"} for record in accepted), "arbiter cannot rewrite evidence or resolve forecasts")
-    proposed = bootstrap + collected["records"] + accepted
+    # Membership is verbatim equality with the red-accepted blue proposal.
+    # A stray or edited arbiter record is excluded, not published and not fatal.
+    reviewed, dropped = [], []
+    for record in accepted:
+        (reviewed if record in blue else dropped).append(record)
+    require(all(record["type"] not in {"evidence", "observation", "resolution"} for record in reviewed), "arbiter cannot rewrite evidence or resolve forecasts")
+    proposed = bootstrap + collected["records"] + reviewed
     quality = collected["quality"]
     if quality == "partial":
-        require(not accepted, "partial run cannot change judgments")
+        require(not reviewed, "partial run cannot change judgments")
         # Definitions are initialized only on a complete run.
         proposed = collected["records"]
     plan = {"run_id": run_id, "expected_revision": state["revision"], "quality": quality,
@@ -106,7 +137,7 @@ def update_plan(state, run_id, outputs, bootstrap, now):
     proposed = [r for r in proposed if state["records"][r["type"]].get(r["id"]) != r]
     resolutions = [resolve(candidate, q, now) for q in candidate["records"]["question"]]
     resolutions = [r for r in resolutions if r["id"] not in candidate["records"]["resolution"]]
-    return {**plan, "records": proposed + resolutions}
+    return {**plan, "records": proposed + resolutions}, ([] if not dropped else [unreviewed_gap(dropped)])
 
 
 def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
@@ -183,10 +214,10 @@ def run_locked(root, now, run_id, stage_runner, policy):
         else:
             outputs, usage = execute_stages(root, state, initial_definitions(root, state), now, stage_runner, policy, directory)
             finished = datetime.now(timezone.utc).isoformat() if stage_runner is run_model else now
-            plan = update_plan(state, run_id, outputs, initial_definitions(root, state), finished)
+            plan, quarantine_gaps = update_plan(state, run_id, outputs, initial_definitions(root, state), finished)
             candidate = validate_plan(state, plan, instant(finished))
             dossiers = merge_dossiers(load_dossiers(root, finished), candidate, finished)
-            gaps = outputs["collect"]["gaps"]
+            gaps = outputs["collect"]["gaps"] + quarantine_gaps
             atomic_text(plan_path, json.dumps({"plan": plan, "usage": usage, "gaps": gaps,
                         "finished_at": finished, "dossiers": dossiers}, ensure_ascii=False, indent=2) + "\n")
         accepted = apply_plan(ledger_root, plan, now=finished)
