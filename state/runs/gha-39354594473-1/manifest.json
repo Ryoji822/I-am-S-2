@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-39354594473-1",
+  "date": "2026-10-20",
+  "started_at": "2026-10-20T10:39:10.512791+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "dcd2b3ca6a0f45d813213d9f87ee1a21ca0de0bf8239fae09fef0bb9d805c4e4",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "https://www.anthropic.com/news/2026-usage-policy-update 本文を取得したが公開時刻が日付のみ（2026-10-08）で時刻・タイムゾーンを確認できないため記録から除外。内容：利用ポリシー新版の発表（2026-11-12発効）、欺瞞工作・選挙・武器・監視・高リスク用途・モデルへの虐待行為の各節変更。公式利用条件の変更という日次確認対象の重要資料（MET-REGIME・LINK-SAFETY-SUPPLY・H-ANT-001周辺）。",
+    "https://www.anthropic.com/news/an-update-on-independent-evaluators 公開時刻が日付のみ（2026-10-15）のため除外。要旨：安全評価のためMETRのチームにemployee-likeアクセスを提供し、Hugging Face等他組織と初期協議。MET-SAFETY・独立評価の観測材料。",
+    "https://www.anthropic.com/news/public-benefit-fund 公開時刻が日付のみ（2026-10-18）のため除外。要旨：Anthropic株式の一部をAnthropic Public Benefit Fundへ割り当てる方針。W5・MET-REGIMEの観測材料。",
+    "Anthropic Newsroomの他の新着（2026-10-14 Preparing for the 2026 US midterms、2026-10-14 Singapore office/MOU、2026-10-08 Anthropic Cyber Mission、2026-10-06 Claude Haiku 5.5・Cyber Verification Program拡大、2026-10-02 Frontier Academy 1億ドル、2026-10-01 Barclays）も公開時刻が日付のみで記録不可。",
+    "https://openai.com/index/low-resource-programming-languages 記事本文は未確認（openai.comの個別記事URLは従来403）。根拠はRSSフィードの標題・説明文のみ。",
+    "検索2回・原資料3件の予算内で実施したため、Google・xAI・ByteDance各社の最新掲載と公的統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）は今回未確認。F-S01/F-S02の費用基準値、MET-LABOR/MET-FIRM/MET-PERSONの実測基準は未取得のまま。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.17741363999999998,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0693492,
+          "tokens": {
+            "total": 47673,
+            "input": 46804,
+            "output": 31,
+            "reasoning": 838,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03525924,
+          "tokens": {
+            "total": 61215,
+            "input": 13467,
+            "output": 30,
+            "reasoning": 934,
+            "cache": {
+              "write": 0,
+              "read": 46784
+            }
+          }
+        },
+        {
+          "cost": 0.02825904,
+          "tokens": {
+            "total": 65421,
+            "input": 3422,
+            "output": 34,
+            "reasoning": 1741,
+            "cache": {
+              "write": 0,
+              "read": 60224
+            }
+          }
+        },
+        {
+          "cost": 0.04454616,
+          "tokens": {
+            "total": 73491,
+            "input": 5148,
+            "output": 1077,
+            "reasoning": 3650,
+            "cache": {
+              "write": 0,
+              "read": 63616
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-20T01:41:22.404957+00:00",
+  "revision_after": "4257abb60a7fca3d06c9fbbb421a4cc1d658ef7d9dfcbb4af3ed728512e7bc8e",
+  "dossier_hash": "5933cd177bf0581d3d9fa8a22912ef2c16f8be0cea088a277f316fc5e5871eec"
+}
