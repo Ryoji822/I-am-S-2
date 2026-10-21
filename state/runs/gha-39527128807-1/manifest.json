@@ -1,0 +1,136 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-39527128807-1",
+  "date": "2026-10-21",
+  "started_at": "2026-10-21T10:24:46.215682+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "4257abb60a7fca3d06c9fbbb421a4cc1d658ef7d9dfcbb4af3ed728512e7bc8e",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "Anthropic公式ニュース一覧（https://www.anthropic.com/news、2026-10-21取得）は日付のみで公開時刻が示されないため、規則により証拠記録から除外した。特に「2026 Usage Policy update」（Policy、2026-10-08）は利用条件の変更という日次確認対象に直結し、「An update on independent evaluators」（METRへの従業員同様のアクセス、2026-10-15）はMET-SAFETY・独立検証に関わる。「Introducing Claude Opus 5.5」（2026-09-22、典型的ワークロードでOpus 5比40%低コストの主張）はMET-COSTに関わる。次回は個別記事URLを取得し公開時刻（時分・タイムゾーン）を確認する必要がある。",
+    "OpenAI新着3件（Franchisee・Terminal X・Orchestra Bio）の個別記事本文は従来どおり403で未確認。根拠はRSSフィードの標題・説明文のみ。",
+    "今回の原資料上限（5件）と検索上限（2回）の範囲で、Google（gemini-enterprise-agent-platformリリースノート）、xAI（x.ai/build/changelog）、ByteDance（seed.bytedance.com/zh/blog）の当日確認は実施していない。料金・利用条件変更と安全上の提供制限の確認が次回優先。",
+    "厚生労働省・総務省の雇用・賃金・労働力統計（MET-LABOR月次確認）は今回未実施。次回の公表カレンダー確認が必要。",
+    "MET-COST・MET-AUTO・MET-FIRMの基準値（固定業務の総費用・成功率・利益の系列）は依然未取得。公開資料からは得られず、固定業務試験と公開企業開示の整理が必要で、予測候補F-S01/F-S02/F-S05/F-L02は基準値不足のまま。",
+    "WRN-20261010-0001（RISK-SAFETY、watch）関連：今回、OpenAIフィードとAnthropic一覧の当日確認で新たな安全上の事故の正式報告・一般法人向け機能の正式な利用制限は確認されなかった。日次監視を継続し、水準見直しの期限が経過しているため次回warningの再評価を優先する。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.15001388,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0682142,
+          "tokens": {
+            "total": 47518,
+            "input": 46955,
+            "output": 35,
+            "reasoning": 528,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03780752,
+          "tokens": {
+            "total": 61753,
+            "input": 13230,
+            "output": 35,
+            "reasoning": 1576,
+            "cache": {
+              "write": 0,
+              "read": 46912
+            }
+          }
+        },
+        {
+          "cost": 0.04399216,
+          "tokens": {
+            "total": 69839,
+            "input": 4834,
+            "output": 1876,
+            "reasoning": 3033,
+            "cache": {
+              "write": 0,
+              "read": 60096
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.2023082,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.2023082,
+          "tokens": {
+            "total": 102628,
+            "input": 83085,
+            "output": 4536,
+            "reasoning": 15007,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.14644548,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.14644548,
+          "tokens": {
+            "total": 92802,
+            "input": 83585,
+            "output": 621,
+            "reasoning": 5908,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.16008108,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.16008108,
+          "tokens": {
+            "total": 95721,
+            "input": 83321,
+            "output": 3940,
+            "reasoning": 5772,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-21T01:34:22.995317+00:00",
+  "revision_after": "e3a17820ae5e2aebe0855e3d2ca05bfea76ff8c0143a1c3d7e67fcd39395a733",
+  "dossier_hash": "00240fd31d925dea4dfcffcf808c310d9192f0500f0e3ccb85f9fa7a40820c3d"
+}
