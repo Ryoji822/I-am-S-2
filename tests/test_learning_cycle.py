@@ -9,7 +9,7 @@ from unittest.mock import patch
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from lib.learning_cycle import run_cycle, model_config, current_context
+from lib.learning_cycle import current_context, model_config, run_cycle, update_plan
 from lib.forecast_learning import load_state, scorecard
 from test_forecast_learning import initial_records, actual_records, LATER
 
@@ -72,13 +72,90 @@ class CycleTests(unittest.TestCase):
         self.assertNotIn("Secret provider", json.dumps(manifest))
         self.assertEqual(manifest['error_location'][-1]['function'], 'fail')
 
-    def test_red_rejection_keeps_ledger_unchanged(self):
-        def reject(stage, *args):
-            return ({"accepted": False, "issues": ["unverified"], "reason": "Missing source"}, {}) if stage == "red" else successful_stage(stage, *args)
-        manifest = run_cycle(self.root, NOW, "test-reject", reject)
+    def rejected_proposal(self, red, run_id):
+        evidence = initial_records()[1]
+        judgment = {**issued_records()[-1], "confidence_reason": "SECRET_PROVIDER_TEXT"}
+        unsafe = {"type": "warning", "id": "SECRET PROVIDER TEXT", "reason": "SECRET_PROVIDER_TEXT"}
+        called = []
+
+        def stages(stage, *args):
+            called.append(stage)
+            if stage == "collect":
+                return {"quality": "complete", "records": [evidence], "gaps": ["One source thin"]}, {}
+            if stage == "blue":
+                return {"records": [judgment, unsafe], "reason": "SECRET_PROVIDER_TEXT"}, {}
+            if stage == "red":
+                return red, {}
+            raise AssertionError("arbiter must not publish a rejected proposal")
+
+        manifest = run_cycle(self.root, NOW, run_id, stages)
+        state = load_state(self.root / "state/shadow")
+        saved = json.loads((self.root / "state/runs" / run_id / "accepted-plan.json").read_text())
+        saved_ids = [record["id"] for record in saved["plan"]["records"]]
+        self.assertEqual(manifest["outcome"], "complete")
+        self.assertNotIn("validation_failure", manifest)
+        self.assertEqual(manifest["usage"]["arbiter"]["status"], "skipped_red_rejection")
+        self.assertNotIn("arbiter", called)
+        self.assertIn("EVD-1", state["records"]["evidence"])
+        self.assertIn("EVD-1", saved_ids)
+        self.assertNotIn("F-1-v1", saved_ids)
+        self.assertEqual(state["records"]["vintage"], {})
+        self.assertEqual(state["records"]["warning"], {})
+        self.assertEqual(manifest["gaps"], [
+            "One source thin",
+            f"反対点検が変更案を採用しなかったため、その判断は{EXCLUDED}（2件。表示できる識別子：vintage:F-1-v1）。"])
+        published = json.dumps({"manifest": manifest, "plan": saved["plan"]}, ensure_ascii=False)
+        published += (self.root / "state/shadow/Intelligence/2026-09-22.md").read_text()
+        self.assertNotIn("SECRET_PROVIDER_TEXT", published)
+        self.assertNotIn("SECRET PROVIDER TEXT", published)
+        self.assertIn("vintage:F-1-v1", published)
+        self.assertIn("Fixed task baseline", published)
+        self.assertEqual(load_state(self.root)["sequence"], 0)
+        def should_not_call(*args):
+            raise AssertionError("model must not repeat")
+        self.assertEqual(manifest, run_cycle(self.root, NOW, run_id, should_not_call))
+        return manifest
+
+    def test_red_rejection_records_a_gap_and_keeps_collection(self):
+        self.rejected_proposal(
+            {"accepted": False, "issues": ["SECRET_PROVIDER_TEXT"], "reason": "SECRET_PROVIDER_TEXT"},
+            "test-reject")
+
+    def test_red_issues_withhold_the_proposal_even_when_accepted_is_true(self):
+        self.rejected_proposal(
+            {"accepted": True, "issues": ["SECRET_PROVIDER_TEXT"], "reason": "SECRET_PROVIDER_TEXT"},
+            "test-issues")
+
+    def test_rejected_proposal_is_withheld_even_if_arbiter_copies_it(self):
+        evidence = initial_records()[1]
+        judgment = {**issued_records()[-1], "confidence_reason": "SECRET_PROVIDER_TEXT"}
+        outputs = {
+            "collect": {"quality": "complete", "records": [evidence], "gaps": []},
+            "blue": {"records": [judgment], "reason": "SECRET_PROVIDER_TEXT"},
+            "red": {"accepted": False, "issues": ["SECRET_PROVIDER_TEXT"], "reason": "SECRET_PROVIDER_TEXT"},
+            "arbiter": {"records": [judgment], "reason": "SECRET_PROVIDER_TEXT"},
+        }
+        plan, gaps = update_plan(load_state(self.root), "direct-reject", outputs, [], NOW)
+        self.assertIn(evidence, plan["records"])
+        self.assertNotIn("F-1-v1", [record["id"] for record in plan["records"]])
+        self.assertEqual(gaps, [f"反対点検が変更案を採用しなかったため、その判断は{EXCLUDED}（1件：vintage:F-1-v1）。"])
+        published = json.dumps({"plan": plan, "gaps": gaps}, ensure_ascii=False)
+        self.assertNotIn("SECRET_PROVIDER_TEXT", published)
+
+    def test_malformed_red_review_still_saves_nothing(self):
+        def malformed(stage, *args):
+            if stage == "collect":
+                return {"quality": "complete", "records": [initial_records()[1]], "gaps": []}, {}
+            if stage == "red":
+                return {"accepted": "no", "issues": [], "reason": "SECRET_PROVIDER_TEXT"}, {}
+            return successful_stage(stage, *args)
+        manifest = run_cycle(self.root, NOW, "test-malformed-red", malformed)
         self.assertEqual(manifest["outcome"], "failed")
-        self.assertEqual(manifest['validation_failure'], 'red review rejected proposal')
+        self.assertEqual(manifest["validation_failure"], "invalid red review")
+        self.assertEqual(manifest["revision_after"], manifest["revision_before"])
         self.assertEqual(load_state(self.root / "state/shadow")["sequence"], 0)
+        self.assertFalse((self.root / "state/runs/test-malformed-red/accepted-plan.json").exists())
+        self.assertNotIn("SECRET_PROVIDER_TEXT", json.dumps(manifest))
 
     def test_arbiter_cannot_add_a_new_unreviewed_judgment(self):
         evidence = initial_records()[1]

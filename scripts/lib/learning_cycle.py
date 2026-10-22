@@ -84,7 +84,11 @@ def validate_stage(stage, result, policy):
         require(sum(r.get("type") == "evidence" for r in result["records"]) <= policy["max_new_evidence"], "evidence limit exceeded")
     if stage == "red":
         require(type(result["accepted"]) is bool and isinstance(result["issues"], list), "invalid red review")
-        require(result["accepted"] and not result["issues"], "red review rejected proposal")
+
+
+def red_rejected(result):
+    """A well-formed refusal. Rejection is expected; a broken result is not."""
+    return not (result["accepted"] and not result["issues"])
 
 
 def safe_record_label(record):
@@ -98,32 +102,51 @@ def safe_record_label(record):
     return f"{kind}:{identifier}"
 
 
-def unreviewed_gap(dropped):
-    """Developer-authored gap. Never copy arbiter text or unsafe identifiers."""
+def exclusion_detail(records):
+    """Count plus safe type:id labels. Never copy model text."""
     labels = []
-    for record in dropped:
+    for record in records:
         label = safe_record_label(record)
         if label:
             labels.append(label)
     shown = ""
-    if labels and len(labels) == len(dropped):
+    if labels and len(labels) == len(records):
         shown = "：" + "、".join(labels)
     elif labels:
         shown = "。表示できる識別子：" + "、".join(labels)
+    return f"（{len(records)}件{shown}）"
+
+
+def unreviewed_gap(dropped):
+    """Developer-authored gap. Never copy arbiter text or unsafe identifiers."""
     return ("裁定が主分析にない記録を含めていたため、その記録は正式判断として公表せず除外しました"
-            f"（{len(dropped)}件{shown}）。")
+            f"{exclusion_detail(dropped)}。")
+
+
+def rejection_gap(withheld):
+    """Developer-authored gap. Never copy red text or unsafe identifiers."""
+    return ("反対点検が変更案を採用しなかったため、その判断は正式判断として公表せず除外しました"
+            f"{exclusion_detail(withheld)}。")
 
 
 def update_plan(state, run_id, outputs, bootstrap, now):
     collected = outputs["collect"]
     require(collected["quality"] in {"complete", "partial"}, "no usable fresh collection")
-    accepted = outputs["arbiter"]["records"]
     blue = outputs["blue"]["records"]
-    # Membership is verbatim equality with the red-accepted blue proposal.
-    # A stray or edited arbiter record is excluded, not published and not fatal.
-    reviewed, dropped = [], []
-    for record in accepted:
-        (reviewed if record in blue else dropped).append(record)
+    quarantine = []
+    if red_rejected(outputs["red"]):
+        # The whole proposal stays unpublished. Arbiter output cannot replace it.
+        reviewed = []
+        quarantine.append(rejection_gap(blue))
+    else:
+        accepted = outputs["arbiter"]["records"]
+        # Membership is verbatim equality with the red-accepted blue proposal.
+        # A stray or edited arbiter record is excluded, not published and not fatal.
+        reviewed, dropped = [], []
+        for record in accepted:
+            (reviewed if record in blue else dropped).append(record)
+        if dropped:
+            quarantine.append(unreviewed_gap(dropped))
     require(all(record["type"] not in {"evidence", "observation", "resolution"} for record in reviewed), "arbiter cannot rewrite evidence or resolve forecasts")
     proposed = bootstrap + collected["records"] + reviewed
     quality = collected["quality"]
@@ -137,7 +160,7 @@ def update_plan(state, run_id, outputs, bootstrap, now):
     proposed = [r for r in proposed if state["records"][r["type"]].get(r["id"]) != r]
     resolutions = [resolve(candidate, q, now) for q in candidate["records"]["question"]]
     resolutions = [r for r in resolutions if r["id"] not in candidate["records"]["resolution"]]
-    return {**plan, "records": proposed + resolutions}, ([] if not dropped else [unreviewed_gap(dropped)])
+    return {**plan, "records": proposed + resolutions}, quarantine
 
 
 def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
@@ -179,6 +202,13 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
                            'red': {'accepted': True, 'issues': [], 'reason': reason},
                            'arbiter': {'records': [], 'reason': reason}}
                 usage = {**usage, **{key: {'status': 'skipped_partial_collection'} for key in ['blue', 'red', 'arbiter']}}
+                atomic_text(run_directory / "stage-metadata.json", json.dumps(usage, ensure_ascii=False, indent=2) + "\n")
+                break
+            if stage == "red" and red_rejected(result):
+                # Keep the verified collection. Do not ask the arbiter to publish a refused proposal.
+                reason = "反対点検が変更案を採用しなかったため、新しい判断を作らず、検証済み資料だけを保存します。"
+                outputs = {**outputs, "arbiter": {"records": [], "reason": reason}}
+                usage = {**usage, "arbiter": {"status": "skipped_red_rejection"}}
                 atomic_text(run_directory / "stage-metadata.json", json.dumps(usage, ensure_ascii=False, indent=2) + "\n")
                 break
             # Only accepted public derivatives are persisted after the entire run validates.
