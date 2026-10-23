@@ -8,7 +8,8 @@ from unittest.mock import MagicMock, patch
 from urllib.error import HTTPError, URLError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from lib.learning_model import public_source, read_model_json, capture_evidence, capture_collected, run_model
+from lib.learning_model import (ModelResponseError, public_source, read_model_json, capture_evidence,
+                                capture_collected, run_model)
 
 
 class ModelBoundaryTests(unittest.TestCase):
@@ -30,7 +31,9 @@ class ModelBoundaryTests(unittest.TestCase):
 
     def test_invalid_model_output_is_rejected(self):
         for output in ["nothing", '{"type":"text","part":{"text":"Not JSON"}}',
-                       '{"type":"text","part":{"text":"[]"}}']:
+                       '{"type":"text","part":{"text":"[]"}}',
+                       json.dumps({"type": "text", "part": {"text": "```json\n[]\n```"}}),
+                       json.dumps({"type": "text", "part": {"text": "```json\n[{\"records\":[]}]\n```"}})]:
             with self.assertRaises(ValueError):
                 read_model_json(output)
 
@@ -45,6 +48,58 @@ class ModelBoundaryTests(unittest.TestCase):
                            ['{"records":[]}', 'The collection failed.'])
         with self.assertRaises(ValueError):
             read_model_json(output)
+
+    def test_preamble_or_code_fence_around_one_object_is_unwrapped(self):
+        # Run 39883452942 failed in read_model_json at line 1 column 1. The exact
+        # ```json wrapper did not match, so a prefixed or differently fenced reply
+        # rejected the whole day before validation.
+        payload = {"records": [], "reason": "維持"}
+        encoded = json.dumps(payload, ensure_ascii=False)
+        quoted = {"records": [], "reason": "例は ```json\n{\"records\":[{\"id\":\"x\"}]}\n``` で、採用しない"}
+        nested = {"records": [{"nested": {"a": 1}}], "reason": "ok"}
+        embedded = {"records": [], "reason": "shown as\n```json\n{\"id\":\"x\"}\n```\nend"}
+        samples = [
+            (f"分析結果です。\n```json\n{encoded}\n```\n", payload),
+            (f"```JSON\n{encoded}\n```", payload),
+            (f"``` JSON \n{encoded}\n```", payload),
+            (f"```\n{encoded}\n```", payload),
+            (f"~~~\n{encoded}\n~~~", payload),
+            (f"結果だけ返します。\n{encoded}", payload),
+            (f"```json\n補足してから示します。\n{encoded}\n```", payload),
+            (f"```json\n{encoded}\n```\n以上です。", payload),
+            ("\ufeff" + encoded, payload),
+            ("前置き\n" + json.dumps(quoted, ensure_ascii=False), quoted),
+            ("```json\n" + json.dumps(nested, ensure_ascii=False) + "\n```", nested),
+            ("分析結果です。\n```json\n" + json.dumps(embedded, ensure_ascii=False, indent=2) + "\n```\n補足", embedded),
+        ]
+        progress = json.dumps({"type": "text", "part": {"text": '{"records":[{"type":"warning"}]}'}})
+        for wrapped, expected in samples:
+            output = progress + "\n" + json.dumps({"type": "text", "part": {"text": wrapped}}, ensure_ascii=False)
+            result, usage = read_model_json(output)
+            self.assertEqual(result, expected)
+            self.assertNotIn("warning", json.dumps(usage))
+
+    def test_ambiguous_or_broken_final_json_stays_rejected(self):
+        encoded = json.dumps({"records": []}, ensure_ascii=False)
+        other = json.dumps({"records": [{"id": "x"}]}, ensure_ascii=False)
+        samples = [
+            f"{encoded}\n補足の文章",
+            f"{encoded}{other}",
+            f"例:{encoded}\n{other}",
+            f"```json\n{encoded}\n```\n```json\n{other}\n```",
+            f"```json\n{encoded}\n{other}\n```",
+            f"前置き {encoded} 続きの文章",
+            "説明だけでJSONがない",
+            '{"records":[]',
+            '```json\n{"records":[}\n```',
+        ]
+        for text in samples:
+            output = json.dumps({"type": "text", "part": {"text": text}}, ensure_ascii=False)
+            with self.assertRaises(ModelResponseError) as caught:
+                read_model_json(output)
+            self.assertEqual(caught.exception.metadata["status"], "invalid_final_json")
+            self.assertNotIn(text, json.dumps(caught.exception.metadata, ensure_ascii=False))
+            self.assertNotIn(text, str(caught.exception))
 
     def test_source_hash_is_computed_from_received_content(self):
         response = MagicMock()

@@ -3,6 +3,7 @@
 import hashlib
 import json
 import os
+import re
 import subprocess
 from datetime import datetime, timezone
 from urllib.parse import urlparse
@@ -82,6 +83,66 @@ class ModelResponseError(ValueError):
         self.metadata = metadata
 
 
+_CODE_FENCE = re.compile(
+    r"(?P<open>`{3,}|~{3,})[ \t]*(?P<lang>[A-Za-z0-9_+-]*)[ \t]*\r?\n"
+    r"(?P<body>.*?)\r?\n[ \t]*(?P<close>`{3,}|~{3,})",
+    re.DOTALL,
+)
+
+
+def _json_objects(text):
+    decoder = json.JSONDecoder()
+    found, index = [], 0
+    while True:
+        start = text.find("{", index)
+        if start < 0:
+            return found
+        try:
+            value, end = decoder.raw_decode(text, start)
+        except json.JSONDecodeError:
+            index = start + 1
+            continue
+        if isinstance(value, dict):
+            found.append((start, end, value))
+            index = end
+        else:
+            index = start + 1
+
+
+def _closing_fence_only(suffix):
+    return re.fullmatch(r"`{3,}|~{3,}", suffix.strip()) is not None
+
+
+def _unwrap_final_json(text):
+    """Return one JSON value when a preamble or a single fence wraps it.
+
+    Broken JSON is not repaired. Two objects are ambiguous and are not chosen.
+    """
+    fences = [match for match in _CODE_FENCE.finditer(text)
+              if match.group("open")[0] == match.group("close")[0]]
+    if len(fences) == 1:
+        body = fences[0].group("body").strip().lstrip("\ufeff")
+        try:
+            value = json.loads(body)
+        except json.JSONDecodeError:
+            value = None
+        else:
+            outside = text[:fences[0].start()] + text[fences[0].end():]
+            # A parsed fence is the payload. Another object outside it is ambiguous.
+            if _json_objects(outside):
+                return None
+            return value
+    objects = _json_objects(text)
+    suffixes = [(start, value) for start, end, value in objects
+                if text[end:].strip() == "" or _closing_fence_only(text[end:])]
+    if len(suffixes) != 1:
+        return None
+    start, value = suffixes[0]
+    if any(other < start for other, _, _ in objects):
+        return None
+    return value
+
+
 def read_model_json(output):
     texts, usage = [], []
     for line in output.splitlines():
@@ -96,18 +157,20 @@ def read_model_json(output):
             usage.append({k: part.get(k) for k in ("cost", "tokens")})
     # OpenCode emits completed text parts for both progress and the final reply.
     # Only the final reply is the stage result; never reuse an earlier proposal.
-    result = texts[-1].strip() if texts else ''
+    result = texts[-1].strip().lstrip("\ufeff") if texts else ''
     costs = [step["cost"] for step in usage]
     metadata = {"cost": sum(costs) if costs and all(isinstance(c, (int, float)) for c in costs) else None,
                 "unit": "provider_reported_USD", "steps": usage}
-    if result.startswith("```json") and result.endswith("```"):
-        result = result[7:-3].strip()
     try:
         parsed = json.loads(result)
     except json.JSONDecodeError as error:
-        raise ModelResponseError({**metadata, 'status': 'invalid_final_json', 'text_parts': len(texts),
-                                  'final_characters': len(result), 'error_line': error.lineno,
-                                  'error_column': error.colno}) from None
+        # A value that has already started is not reinterpreted. Column 1 is a prefix
+        # such as a preamble or code fence, which the exact ```json wrapper missed.
+        parsed = _unwrap_final_json(result) if error.lineno == 1 and error.colno == 1 else None
+        if parsed is None:
+            raise ModelResponseError({**metadata, 'status': 'invalid_final_json', 'text_parts': len(texts),
+                                      'final_characters': len(result), 'error_line': error.lineno,
+                                      'error_column': error.colno}) from None
     require(isinstance(parsed, dict), "model result must be an object")
     return parsed, metadata
 
