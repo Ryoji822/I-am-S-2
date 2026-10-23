@@ -17,6 +17,7 @@ from .learning_model import SOURCE_HOSTS, ModelResponseError, capture_collected,
 from .learning_render import atomic_text, write_failure_snapshot, write_outputs
 from .legacy_information import historical_context
 from .report_knowledge import collection_index, load_dossiers, merge_dossiers
+from .resume_cycle import JUDGMENT_STAGES, checkpoint_document
 
 
 STAGES = {"collect": "phase1-collect.md", "blue": "phase2-analyze.md",
@@ -129,6 +130,88 @@ def rejection_gap(withheld):
             f"{exclusion_detail(withheld)}。")
 
 
+def accept_collection(state, result, moment):
+    require(result["quality"] in {"complete", "partial"}, "no usable fresh collection")
+    validation = {"run_id": "validate-collection", "expected_revision": state["revision"],
+                  "quality": result["quality"], "review_complete": False, "records": result["records"]}
+    validate_plan(state, validation, instant(moment))
+
+
+def checkpoint_reusable(stage, result):
+    if stage == "collect":
+        return result["quality"] in {"complete", "partial"}
+    return stage in {"blue", "red", "arbiter"}
+
+
+def write_stage_checkpoint(run_directory, stage, result, run_id, date, validated_at):
+    payload = checkpoint_document(stage, result, run_id=run_id, date=date, validated_at=validated_at)
+    atomic_text(run_directory / "checkpoints" / f"{stage}.json",
+                json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+
+
+def withhold_judgment_checkpoints(run_directory):
+    """Drop unpublished judgment bodies after a successful save. Collection stays."""
+    for stage in JUDGMENT_STAGES:
+        path = Path(run_directory) / "checkpoints" / f"{stage}.json"
+        try:
+            path.unlink(missing_ok=True)
+        except OSError:
+            pass
+
+
+def checkpoint_folder(directory):
+    directory = Path(directory)
+    direct = directory / "collect.json"
+    if direct.is_file():
+        return directory
+    found = next((path for path in directory.rglob("collect.json") if path.is_file()), None)
+    require(found is not None, "collection checkpoint required")
+    return found.parent
+
+
+def accepted_checkpoint_result(document, stage, now, cycle_date):
+    require(isinstance(document, dict), "checkpoint must be an object")
+    require(document.get("schema_version") == "1.0", "unknown checkpoint")
+    require(document.get("publication") == "withheld", "checkpoint is not a publication")
+    require(document.get("stage") == stage, "checkpoint stage mismatch")
+    require(document.get("date") == cycle_date, "checkpoint date is not the cycle date")
+    require(instant(now) <= instant(document["expires_at"]), "checkpoint expired")
+    require(isinstance(document.get("result"), dict), "checkpoint result missing")
+    return document["result"]
+
+
+def load_resume_outputs(directory, state, now, policy):
+    """Load a contiguous prefix of verified stages. A later corrupt file is ignored."""
+    folder = checkpoint_folder(directory)
+    cycle_date = instant(now).astimezone(ZoneInfo("Asia/Tokyo")).date().isoformat()
+    outputs = {}
+    for stage in STAGES:
+        path = folder / f"{stage}.json"
+        if not path.exists():
+            break
+        try:
+            document = read_json(path)
+            result = accepted_checkpoint_result(document, stage, now, cycle_date)
+            validate_stage(stage, result, policy)
+            if stage == "collect":
+                accept_collection(state, result, now)
+        except (ValueError, KeyError, TypeError, OSError):
+            if stage == "collect":
+                raise
+            break
+        outputs[stage] = result
+    require("collect" in outputs, "collection checkpoint required")
+    return outputs
+
+
+def usable_resume_directory(root, directory, now):
+    root = Path(root)
+    policy = read_json(root / "config/learning_policy.json")
+    ledger = root / "state/shadow" if policy["mode"] == "shadow" else root
+    outputs = load_resume_outputs(directory, load_state(ledger), now, policy)
+    return checkpoint_folder(directory), [stage for stage in STAGES if stage in outputs]
+
+
 def update_plan(state, run_id, outputs, bootstrap, now):
     collected = outputs["collect"]
     require(collected["quality"] in {"complete", "partial"}, "no usable fresh collection")
@@ -163,38 +246,60 @@ def update_plan(state, run_id, outputs, bootstrap, now):
     return {**plan, "records": proposed + resolutions}, quarantine
 
 
-def execute_stages(root, state, bootstrap, now, runner, policy, run_directory):
+def execute_stages(root, state, bootstrap, now, runner, policy, run_directory, resumed=None, run_id="checkpoint"):
+    resumed = resumed or {}
+    prefix = []
+    for stage in STAGES:
+        if stage not in resumed:
+            break
+        prefix.append(stage)
+    for stage in STAGES:
+        if stage in prefix:
+            continue
+        stale = run_directory / "checkpoints" / f"{stage}.json"
+        if stale.exists():
+            stale.unlink()
     outputs, usage = {}, {}
     context = current_context(root, append_records(state, bootstrap), now)
+    date = instant(now).astimezone(ZoneInfo("Asia/Tokyo")).date().isoformat()
     with tempfile.TemporaryDirectory(prefix="ias2-model-") as temporary:
         for stage, prompt in STAGES.items():
-            stage_now = datetime.now(timezone.utc).isoformat() if runner is run_model else now
-            stage_context = {**context, "now": stage_now, "previous_stages": outputs,
-                             "instructions": (root / "prompts" / prompt).read_text(encoding="utf-8")}
-            if stage == 'collect':
-                stage_context = {**stage_context, 'dossiers': collection_index(context['dossiers']),
-                                 'max_source_documents': 5}
-            require(len(json.dumps(stage_context, ensure_ascii=False).encode()) <= 400_000, "model context budget exceeded")
-            try:
-                result, cost = runner(stage, stage_context, Path(temporary) / stage, policy)
-            except ModelResponseError as error:
-                atomic_text(run_directory / "stage-metadata.json", json.dumps({**usage, stage: error.metadata}, ensure_ascii=False, indent=2) + "\n")
-                raise
-            atomic_text(run_directory / "stage-metadata.json", json.dumps({**usage, stage: {**cost, "status": "returned"}}, ensure_ascii=False, indent=2) + "\n")
-            validate_stage(stage, result, policy)
-            if stage == "collect" and runner is run_model:
-                captured, capture_gaps = capture_collected(result["records"])
-                quality = result['quality']
-                if capture_gaps and quality in {'complete', 'partial'}:
-                    quality = 'partial' if captured else 'failed'
-                result = {**result, "records": captured, 'quality': quality,
-                          'gaps': result['gaps'] + capture_gaps}
-            if stage == "collect" and result['quality'] in {'complete', 'partial'}:
-                validation = {"run_id": "validate-collection", "expected_revision": state['revision'],
-                              "quality": result['quality'], "review_complete": False, "records": result['records']}
-                validate_plan(state, validation, instant(datetime.now(timezone.utc).isoformat() if runner is run_model else now))
+            if stage in prefix:
+                result = resumed[stage]
+                cost = {"status": "resumed_from_checkpoint"}
+                validate_stage(stage, result, policy)
+                if stage == "collect":
+                    accept_collection(state, result, now)
+            else:
+                stage_now = datetime.now(timezone.utc).isoformat() if runner is run_model else now
+                stage_context = {**context, "now": stage_now, "previous_stages": outputs,
+                                 "instructions": (root / "prompts" / prompt).read_text(encoding="utf-8")}
+                if stage == 'collect':
+                    stage_context = {**stage_context, 'dossiers': collection_index(context['dossiers']),
+                                     'max_source_documents': 5}
+                require(len(json.dumps(stage_context, ensure_ascii=False).encode()) <= 400_000, "model context budget exceeded")
+                try:
+                    result, cost = runner(stage, stage_context, Path(temporary) / stage, policy)
+                except ModelResponseError as error:
+                    atomic_text(run_directory / "stage-metadata.json", json.dumps({**usage, stage: error.metadata}, ensure_ascii=False, indent=2) + "\n")
+                    raise
+                atomic_text(run_directory / "stage-metadata.json", json.dumps({**usage, stage: {**cost, "status": "returned"}}, ensure_ascii=False, indent=2) + "\n")
+                validate_stage(stage, result, policy)
+                if stage == "collect" and runner is run_model:
+                    captured, capture_gaps = capture_collected(result["records"])
+                    quality = result['quality']
+                    if capture_gaps and quality in {'complete', 'partial'}:
+                        quality = 'partial' if captured else 'failed'
+                    result = {**result, "records": captured, 'quality': quality,
+                              'gaps': result['gaps'] + capture_gaps}
+                if stage == "collect" and result['quality'] in {'complete', 'partial'}:
+                    moment = datetime.now(timezone.utc).isoformat() if runner is run_model else now
+                    accept_collection(state, result, moment)
             outputs, usage = {**outputs, stage: result}, {**usage, stage: cost}
             atomic_text(run_directory / "stage-metadata.json", json.dumps(usage, ensure_ascii=False, indent=2) + "\n")
+            if checkpoint_reusable(stage, result):
+                validated_at = datetime.now(timezone.utc).isoformat() if runner is run_model else now
+                write_stage_checkpoint(run_directory, stage, result, run_id, date, validated_at)
             if stage == 'collect' and result['quality'] == 'partial':
                 # Partial evidence cannot authorize any judgment or dossier update.
                 reason = '部分収集のため新しい判断を作らず、検証済み資料と欠測だけを保存します。'
@@ -224,7 +329,12 @@ def manifest_base(run_id, date, now, policy, state, root):
             "daily_budget": policy["daily_budget"], "monthly_budget": policy["monthly_budget"]}
 
 
-def run_locked(root, now, run_id, stage_runner, policy):
+def resumed_stage_names(usage):
+    return [stage for stage in STAGES if isinstance(usage.get(stage), dict)
+            and usage[stage].get("status") == "resumed_from_checkpoint"]
+
+
+def run_locked(root, now, run_id, stage_runner, policy, resume_from=None):
     directory = root / "state/runs" / run_id
     manifest_path = directory / "manifest.json"
     ledger_root = root / "state/shadow" if policy["mode"] == "shadow" else root
@@ -242,7 +352,9 @@ def run_locked(root, now, run_id, stage_runner, policy):
             plan, usage, gaps, finished = (saved[k] for k in ["plan", "usage", "gaps", "finished_at"])
             dossiers = saved["dossiers"]
         else:
-            outputs, usage = execute_stages(root, state, initial_definitions(root, state), now, stage_runner, policy, directory)
+            resumed = load_resume_outputs(resume_from, state, now, policy) if resume_from else None
+            outputs, usage = execute_stages(root, state, initial_definitions(root, state), now, stage_runner, policy,
+                                            directory, resumed=resumed, run_id=run_id)
             finished = datetime.now(timezone.utc).isoformat() if stage_runner is run_model else now
             plan, quarantine_gaps = update_plan(state, run_id, outputs, initial_definitions(root, state), finished)
             candidate = validate_plan(state, plan, instant(finished))
@@ -255,7 +367,11 @@ def run_locked(root, now, run_id, stage_runner, policy):
         manifest = {**manifest, "quality": plan["quality"], "outcome": plan["quality"], "gaps": gaps,
                     "finished_at": finished, "revision_after": accepted["revision"], "usage": usage,
                     "dossier_hash": digest(dossiers)}
+        resumed_stages = resumed_stage_names(usage)
+        if resumed_stages:
+            manifest = {**manifest, "resumed_stages": resumed_stages}
         write_outputs(root, accepted, manifest, plan["records"], dossiers)
+        withhold_judgment_checkpoints(directory)
     except (ValueError, KeyError, TypeError, OSError, RuntimeError, subprocess.SubprocessError) as error:
         manifest = {**manifest, "outcome": "failed", "quality": "failed", "error_type": type(error).__name__,
                     "finished_at": datetime.now(timezone.utc).isoformat() if stage_runner is run_model else now,
@@ -269,6 +385,9 @@ def run_locked(root, now, run_id, stage_runner, policy):
             for frame in traceback.extract_tb(error.__traceback__)[-4:]]}
         if metadata.exists():
             manifest = {**manifest, "usage": read_json(metadata)}
+            resumed_stages = resumed_stage_names(manifest["usage"])
+            if resumed_stages:
+                manifest = {**manifest, "resumed_stages": resumed_stages}
         try:
             prior_dossiers = merge_dossiers(load_dossiers(root, now), state, now)
             write_failure_snapshot(root, state, manifest, prior_dossiers)
@@ -279,7 +398,7 @@ def run_locked(root, now, run_id, stage_runner, policy):
     return manifest
 
 
-def run_cycle(root, now, run_id=None, stage_runner=run_model):
+def run_cycle(root, now, run_id=None, stage_runner=run_model, resume_from=None):
     root = Path(root)
     policy = read_json(root / "config/learning_policy.json")
     require(policy["mode"] in {"shadow", "live"}, "invalid operation mode")
@@ -292,4 +411,4 @@ def run_cycle(root, now, run_id=None, stage_runner=run_model):
     (root / "state").mkdir(exist_ok=True)
     with (root / "state/.learning-cycle.lock").open("a") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
-        return run_locked(root, now, run_id, stage_runner, policy)
+        return run_locked(root, now, run_id, stage_runner, policy, resume_from=resume_from)

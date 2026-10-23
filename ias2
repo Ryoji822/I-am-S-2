@@ -6,6 +6,7 @@ if [[ $# == 0 || "$1" == help || "$1" == --help ]]; then
 I-am-S-2 — 仮説を残し、実績で確かめる
   ./ias2 run                      今日の収集・反証・検証を実行（初期設定は試行）
   ./ias2 run --run-id retry-1      失敗後に別IDで再試行
+  ./ias2 run --resume-from DIR     検証済みチェックポイントの次の段階から続ける
   ./ias2 status --date YYYY-MM-DD  ファイルの有無ではなく実行結果を確認
   ./ias2 validate                 設定と履歴の整合性を検査
   ./ias2 score                    短期・中期・長期の採点を表示

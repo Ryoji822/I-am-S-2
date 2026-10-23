@@ -5,10 +5,27 @@ on:
     # 08:00 JST = previous day 23:00 UTC
     - cron: '0 23 * * *'
   workflow_dispatch:
+    inputs:
+      resume_from_run_id:
+        description: '再開する元のrun_id（省略時は当日JSTの最新の失敗実行）'
+        required: false
+        type: string
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/**'
+      - 'tests/**'
+      - 'prompts/**'
+      - 'schemas/**'
+      - 'config/**'
 
 permissions:
   contents: write
+  actions: read
 
+# Same ref shares one queue. Do not cancel: cancelling drops a finished checkpoint.
 concurrency:
   group: intelligence-learning-${{ github.ref }}
   cancel-in-progress: false
@@ -24,23 +41,42 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Decide whether to resume
+        id: resume
+        if: github.event_name != 'schedule'
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REQUESTED_RUN_ID: ${{ github.event_name == 'workflow_dispatch' && inputs.resume_from_run_id || '' }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/prepare-resume.py
+      - name: Record why resume did nothing
+        if: github.event_name != 'schedule' && steps.resume.outputs.action == 'skip'
+        env:
+          RESUME_REASON: ${{ steps.resume.outputs.reason }}
+        run: echo "$RESUME_REASON" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/setup-node@v4
+        if: github.event_name == 'schedule' || steps.resume.outputs.action == 'resume'
+        with:
+          node-version: '22'
       - name: Install pinned OpenCode
+        if: github.event_name == 'schedule' || steps.resume.outputs.action == 'resume'
         run: npm install --global opencode-ai@1.18.31
       - name: Check contracts and failure handling
+        if: github.event_name == 'schedule' || steps.resume.outputs.action == 'resume'
         run: |
           python3 -m unittest discover -s tests -q
           bash scripts/validate-output.sh
       - name: Run cycle
         id: cycle
         continue-on-error: true
+        if: github.event_name == 'schedule' || steps.resume.outputs.action == 'resume'
         env:
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          RESUME_CHECKPOINT_DIR: ${{ steps.resume.outputs.checkpoint_dir }}
+          REQUIRE_RESUME: ${{ github.event_name != 'schedule' && 'true' || '' }}
         run: bash scripts/run-pipeline.sh
       - name: Persist verified public derivatives
         if: steps.cycle.outcome == 'success'
@@ -48,8 +84,19 @@ jobs:
           git -C "$GITHUB_WORKSPACE" config user.name "I-am-S-2 Bot"
           git -C "$GITHUB_WORKSPACE" config user.email "bot@i-am-s-2.github.io"
           python3 scripts/publish-generated.py "$PIPELINE_RUN_ID"
+      - name: Separate checkpoint artifact from run records
+        if: always() && (github.event_name == 'schedule' || steps.resume.outputs.action == 'resume')
+        run: python3 scripts/prepare-resume.py export "$GITHUB_WORKSPACE" "$GITHUB_WORKSPACE/checkpoint-stage"
+      - name: Upload checkpoint
+        if: always() && (github.event_name == 'schedule' || steps.resume.outputs.action == 'resume')
+        uses: actions/upload-artifact@v4
+        with:
+          name: checkpoint-${{ github.run_id }}-${{ github.run_attempt }}
+          path: checkpoint-stage/
+          retention-days: 30
+          if-no-files-found: ignore
       - name: Upload run records
-        if: always()
+        if: always() && (github.event_name == 'schedule' || steps.resume.outputs.action == 'resume')
         uses: actions/upload-artifact@v4
         with:
           name: learning-${{ github.run_id }}-${{ github.run_attempt }}
@@ -65,7 +112,7 @@ jobs:
             state/scores/
           retention-days: 30
       - name: Report actual run result
-        if: always()
+        if: always() && (github.event_name == 'schedule' || steps.resume.outputs.action == 'resume')
         env:
           CYCLE_OUTCOME: ${{ steps.cycle.outcome }}
         run: |
