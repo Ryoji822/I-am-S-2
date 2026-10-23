@@ -23,6 +23,7 @@ def command_line():
     parser.add_argument("--date", help="状態を読む日付。runは今日だけ")
     parser.add_argument("--run-id", help="同じIDは重複しない。失敗の再試行は別ID")
     parser.add_argument("--plan", type=Path, help="applyで検証する変更案")
+    parser.add_argument("--resume-from", type=Path, help="検証済みチェックポイント。落ちた段階の次から続ける")
     return parser.parse_args()
 
 
@@ -55,7 +56,7 @@ def main():
     root = selected_root()
     if args.command == "run":
         require(date == now[:10], "past dates cannot issue live forecasts; use retrospective reports")
-        result = run_cycle(ROOT, now, args.run_id)
+        result = run_cycle(ROOT, now, args.run_id, resume_from=args.resume_from)
     elif args.command == "validate":
         result = validate_repository()
     elif args.command == "status":
