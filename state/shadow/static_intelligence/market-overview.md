@@ -22,13 +22,21 @@
 
 | 企業 | 既にある資産・販売経路 | 直近の方向 | 事業上の制約 |
 |---|---|---|---|
-| OpenAI | ChatGPTの利用基盤、API、Codex、企業・専門業種への販売 | Astra、Agents API、法務への展開 | 実行の安全性、監督費、パートナーとの利益配分 |
+| OpenAI | ChatGPTの利用基盤、API、Codex、企業・専門業種への販売 | Astra、Agents API、法務への展開、Google Cloud経由のモデル提供発表、広告の26か国拡大、Orchestra Bio買収による垂直展開 | 実行の安全性、監督費、パートナーとの利益配分 |
 | Anthropic | Claude、Code、Cowork、主要クラウドでの提供 | 企業の仕事と研究の実行、用途別の利用条件 | 能力向上と安全管理の両立、供給契約の実現 |
-| Google | 検索・YouTube・Workspace・Cloud、TPU | モデル・仕事場・管理・計算資源を統合 | 巨額投資、製品間の条件差、既存事業との採算配分 |
+| Google | 検索・YouTube・Workspace・Cloud、TPU | モデル・仕事場・管理・計算資源を統合、Model GardenでのOpenAIモデル提供を発表 | 巨額投資、製品間の条件差、既存事業との採算配分 |
 | xAI | Grok、X、Build、Colossus、SpaceXへの所属 | 低めのモデル価格、外部開発ツール、公開コード | AI部門の大きな損失、設備の回収、継続利用 |
 | ByteDance | Doubao、TRAE、制作製品、動画・広告・商取引の接点 | Seed2.1、Seedance2.5、企業向け基盤 | 市場別の提供差、権利処理、海外投資の費用 |
 
 各行の根拠と経緯は [OpenAI](openai.md)、[Anthropic](anthropic.md)、[Google](google.md)、[xAI](xai.md)、[ByteDance](bytedance.md) にあります。これは売上順位ではなく、各社が利益を得ようとしている場所の比較です。
+
+10月21日、OpenAI はフロンティアモデルと Codex ワークフローを Google Cloud の Gemini Model Garden へ Google Cloud Marketplace 経由で提供すると発表しました（[OpenAI の公式フィード](https://openai.com/news/rss.xml)）。モデル層で競合する企業同士が、計算資源と販路の層では協力する構造の具体例です。顧客は Google Cloud の契約・請求の中で OpenAI のモデルを選べる可能性が生じる一方、提供開始・価格・利用条件は未確認です。同じ日に、ChatGPT Ads の26か国への拡大と10万超の広告主の利用が報告され、消費者接点の収益化が並行して進んでいます（広告主数は OpenAI の報告値）。法人需要では、Uber が ChatGPT Work を3万人超の全従業員へ展開したと報じられました（10月22日）。いずれも当事者報告で、継続率・採算・独立検証の実測はありません。
+
+この発表は、モデル層の競争と計算・販路の層の協力が同時に進むことを示す事業上の変化です。Google にとっては Cloud の需要が Gemini とは別に増える経路（google section-02・H-GOO-002）、OpenAI にとっては競合クラウドの顧客接点への到達（MET-FIRM・W2・H-OAI-002）です。仕事・所得への影響は間接的で、同品質の業務の総費用（MET-COST）や移行費用が実際に下がるかは、提供開始後の固定業務試験と移行試験待ちです。別の説明として、この提携は双方の販売戦略（Google は Cloud 利用の増加、OpenAI は Google Cloud 既存顧客の獲得）であり、顧客の移行の自由度や交渉力（LINK-OWNERSHIP-PROFIT）を実際に高めるかは、権限・データを含む移行が可能になったかで判断する必要があります。広告の26か国拡大と10万超の広告主は W2 の入口条件の材料ですが、掲載条件・収益の開示はありません。
+
+残る限界：OpenAI モデルの Google Cloud 提供は announced_plan で、提供開始日・対象モデル・価格・Codex ワークフローの範囲・契約条件はすべて未確認、根拠はフィードの標題・説明文で記事本文は未確認です。10万超の広告主・26か国・Uber の3万人超も当事者報告値で独立検証がありません。Anthropic の新着（Haiku 5.5、Sonnet 5.5、Usage Policy 更新、Public Benefit Fund 等）は公開時刻が確認できていないため、本表の Anthropic 行は9月22日時点のままです。見直し条件は、Model Garden・Marketplace での実際の提供開始と価格の公表、利用企業の移行事例、Anthropic 個別記事の公開時刻確認、次回の主要決算・公表値です。
+
+確認更新：2026-10-24T01:29:50.657704+00:00（DS-MKT-20261024-0001）。
 
 ## 需要は拡大しているが、数字の意味は異なる
 

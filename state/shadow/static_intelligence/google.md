@@ -19,9 +19,16 @@ Google の AI 事業は、Gemini という一つのアプリに閉じていま�
 | 開発と実行管理 | Gemini API、AI Studio、Antigravity、Gemini Enterprise Agent Platform | モデルを組み込み、エージェントを動かす開発者と企業 |
 | 音声 | Gemini 3.8 Live、Extended Thinking、3.5 Transcribe | 会話しながら作業する窓口・支援・文字起こし |
 | 計算資源・周辺機能 | TPU を含む基盤、データ、セキュリティ、クラウド | 自社・他社モデルを運用する組織 |
+| 他社モデルの提供 | 10月21日、OpenAI のフロンティアモデルと Codex ワークフローを Gemini Model Garden へ Google Cloud Marketplace 経由で提供する発表 | Google Cloud の契約・請求の中で OpenAI のモデルを選びうる開発者と企業（提供開始・価格・条件は未確認） |
 | 公開モデル | Gemma 系 | 自分で動かせるモデルを必要とする開発者 |
 
-[決算説明](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)、[Gemini Enterprise の導入時の説明](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-enterprise-sundar-pichai/)、[9月15日の音声モデル発表](https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/)。同じ Gemini という名称でも、個人アプリ、API、従業員向け契約、クラウド基盤は別の購入対象です。
+[決算説明](https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/)、[Gemini Enterprise の導入時の説明](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-enterprise-sundar-pichai/)、[9月15日の音声モデル発表](https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/)。同じ Gemini という名称でも、個人アプリ、API、従業員向け契約、クラウド基盤は別の購入対象です。OpenAI モデルの提供は [OpenAI の公式フィード](https://openai.com/news/rss.xml)の標題・説明文で確認したもので、Google Cloud 側の公式文書・記事本文は今回未確認です。
+
+この発表は、Google Cloud の収益が Gemini 単独の成長とは別に増える経路の具体例です（market-overview section-02）。競合モデルが同じ販路で買えることは、Cloud の計算資源・データ・請求の仕組みを使い続ける限りにおいて、顧客がモデルを替えやすくする方向の材料で、H-GOO-002（共通の経路が実際の乗換えにつながるか）と LINK-OWNERSHIP-PROFIT の代替説明の検討対象です。ただし announced_plan であり、権限・データを含む移行試験を含まないため、H-GOO-002 の確認観察（移行試験の成功）の実測にはなりません。仕事・所得への影響は、同品質の業務の総費用（MET-COST）と移行費用が下がるかで判断します。別の説明として、Google にとっては Cloud 利用を増やす販売戦略、OpenAI にとっては Google Cloud 既存顧客への販路拡大であり、両社のモデル競争の継続と矛盾しません。
+
+残る限界：提供開始日・対象モデル・価格・契約条件・Codex ワークフローの範囲はすべて未確認。根拠は OpenAI 公式フィードの標題・説明文のみで、記事本文と Google Cloud 側の公式文書（Model Garden・Marketplace の掲載情報）は未確認です。Gemini Enterprise Skills の仕様（assistant では可・agents では不可）は9月22日確認のままです。見直し条件は、Model Garden・Marketplace での実際の掲載と価格公表、Google 側公式文書の確認、利用企業の移行事例、次回決算での Cloud 内訳の説明です。
+
+確認更新：2026-10-24T01:29:50.657704+00:00（DS-GOO-20261024-0001）。
 
 ## 規模、成長、投資
 
