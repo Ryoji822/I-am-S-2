@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-40148592109-1",
+  "date": "2026-10-25",
+  "started_at": "2026-10-25T09:55:52.205098+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "32ab8ae7fe58295f3fdab696dd3bc1167490cd66b68ab78c76f9f0672f84deaf",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "OpenAI公式RSSフィード（https://openai.com/news/rss.xml、lastBuildDate 2026-10-24T23:57:30Z）を当日確認したところ、最新掲載は2026-10-23T17:00:00Z「Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)」（既記録EVD-20261024-0001）のままで新着なし。公式料金変更・安全上の事故の正式報告・一般法人向け機能の正式な利用制限の新規掲載はなかった（WRN-20261021-0001の日次監視継続、next_check 2026-10-28頃）。",
+    "Anthropic News一覧（https://www.anthropic.com/news）で公開日が日付のみで時刻が確認できず、evidence化できなかった重要項目：『2026 Usage Policy update』(2026-10-08, Policy。利用条件の変更で日次監視対象)、『An update on independent evaluators』(2026-10-15, Policy。METRチームへの従業員級アクセス付与と他組織との早期協議。MET-SAFETY・独立評価)、『Strengthening our defenses against distillation attacks』(2026-10-12, Safeguards。蒸留率90%超削減の主張)、『Investing in the public benefit』(2026-10-18。Anthropic Public Benefit Fundへの持分一部充当。W5・MET-REGIME関連)、『Introducing Claude Opus 5.5』(2026-09-22。Opus 5比40%低コスト主張)、『Introducing Claude Sonnet 5.5』(2026-09-28。30%以上高速・最大30%低コスト主張)、『Introducing Claude Haiku 5.5』(2026-10-07)、『Anthropic invests $100 million to train 10,000 engineers』(2026-10-02, Claude Frontier Academy。MD-SOC・雇用育成関連)、『Barclays scales Claude』(2026-10-01)、『Anthropic opens Singapore office and signs MOU』(2026-10-14)、『Scenarios for our economic future』(2026-09-09, 経済・雇用・賃金の2030年シナリオモデル)。各記事のURLと公開時刻（タイムゾーン付き）の再確認が必要。",
+    "Anthropic Newsページ冒頭に「October 25, 2026」の日付表示があったが対応記事を特定できず。一覧上の最上位は2026-10-22『Donating Agent Skills to the Agentic AI Foundation』（70以上のプラットフォームが統合と自称）で、当日新着の有無は個別記事の公開時刻確認が必要。",
+    "OpenAI個別記事本文（openai.com/index/...）は従来どおり未確認（根拠はRSSフィードの標題・説明文のみ）。",
+    "検索回数上限（2回）に達したため、OpenAI料金表・Google・xAI・ByteDance・政府統計（mhlw.go.jp, stat.go.jp, e-stat.go.jp）の当日確認、F-S01/F-S02/F-S05等の基準値（固定業務・品質基準・費用系列）の取得は今回未実施。次回以降に繰り越す。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.13710376,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.070931,
+          "tokens": {
+            "total": 49720,
+            "input": 49279,
+            "output": 53,
+            "reasoning": 388,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.06617276,
+          "tokens": {
+            "total": 72505,
+            "input": 16365,
+            "output": 811,
+            "reasoning": 6113,
+            "cache": {
+              "write": 0,
+              "read": 49216
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-25T00:57:25.568425+00:00",
+  "revision_after": "e2c309d1f0d017757ac642fe8e182f2612fbb5418e11a8378bdae8a5479da693",
+  "dossier_hash": "819df5b92fd7f6d3a97148eb69185007dd565616778472fba89f0f89955e78d2"
+}
