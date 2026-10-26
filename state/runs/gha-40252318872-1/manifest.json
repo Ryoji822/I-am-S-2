@@ -1,0 +1,124 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-40252318872-1",
+  "date": "2026-10-26",
+  "started_at": "2026-10-26T10:03:45.079305+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "e2c309d1f0d017757ac642fe8e182f2612fbb5418e11a8378bdae8a5479da693",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "当日確認結果：OpenAI公式RSSフィード（https://openai.com/news/rss.xml、lastBuildDate 2026-10-26T00:11:42Z）を取得し、最新掲載が前回記録済みの2026-10-23T17:00:00Z（Storage Part II、EVD-20261024-0001）のまま新着がないことを確認。公式料金変更・安全上の事故の正式報告・一般法人向け既存機能の正式な利用制限の新規掲載はなかった（F-S04・RISK-SAFETY・MET-COSTの日次確認。WRN-20261021-0001の監視継続、next_check 2026-10-28頃）。",
+    "フィード各項目の記事本文（個別URL）は今回も未確認。根拠はフィードの標題・説明文のみで、性能主張の独立検証は未実施。",
+    "OpenAI公式料金表（https://developers.openai.com/api/docs/pricing/）は今回未確認。料金ページには公開時刻の表示がなく、変更の有無をpublished_at付きのevidenceとして記録する手段がないため、変更検知の方法検討が必要。",
+    "Anthropic（https://www.anthropic.com/news）・Google（https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes）・xAI（https://x.ai/build/changelog）・ByteDance（https://seed.bytedance.com/zh/blog）の当日確認は未実施。検索2回・原資料5件の制約から日次監視対象のOpenAIを優先した。次回以降で確認する。",
+    "予測候補（F-S01〜F-L02）の基準値に必要な固定業務の総費用・成功率の実測値は公開資料から取得できない。自社実測の業務固定・品質基準・基準期間の確定が引き続き必要（全候補がdraftのまま、next_review 2026-09-29を経過）。",
+    "月次タスク（採用・実質賃金・顧客維持・所得分配の公表値、厚生労働省・総務省統計）の今回の確認は未実施。observation登録にはmetricの地域・母集団・品質基準の確定も必要で、MET-*はすべて定義候補のまま。",
+    "仮説レビューHRV-20261010-0001/0002の次回確認（2026-11-07頃・月次）は未到期。反対証拠の探索は今回未実施。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.1146756,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0710332,
+          "tokens": {
+            "total": 49748,
+            "input": 49286,
+            "output": 30,
+            "reasoning": 432,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.0436424,
+          "tokens": {
+            "total": 65164,
+            "input": 13020,
+            "output": 671,
+            "reasoning": 2193,
+            "cache": {
+              "write": 0,
+              "read": 49280
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.14835428,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.14835428,
+          "tokens": {
+            "total": 98629,
+            "input": 91495,
+            "output": 879,
+            "reasoning": 3567,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.13754988,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.13754988,
+          "tokens": {
+            "total": 95913,
+            "input": 91113,
+            "output": 602,
+            "reasoning": 1510,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.1342442,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.1342442,
+          "tokens": {
+            "total": 94273,
+            "input": 93519,
+            "output": 343,
+            "reasoning": 411,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-26T01:06:52.972445+00:00",
+  "revision_after": "d627c7695f2b5f13beb4bf551b94ede2d4cf942ba6662336398357ee74b915a2",
+  "dossier_hash": "819df5b92fd7f6d3a97148eb69185007dd565616778472fba89f0f89955e78d2"
+}
