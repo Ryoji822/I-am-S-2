@@ -1,0 +1,116 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-40435377436-1",
+  "date": "2026-10-27",
+  "started_at": "2026-10-27T10:55:26.659375+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "d627c7695f2b5f13beb4bf551b94ede2d4cf942ba6662336398357ee74b915a2",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "Anthropic S-1登録の公告（2026-10-26付け、URL: https://www.anthropic.com/news/s1-sec）：W2・MET-FIRM・資本と計算資源の重要事象だが、公開時刻が日付のみで確認できないため記録から除外した。個別記事ページのHTMLから時刻のメタデータを抽出できなかった。",
+    "Anthropic「2026 Usage Policy update」（2026-10-08付け、URL: https://www.anthropic.com/news/2026-usage-policy-update）：利用条件の変更で日次確認対象だが、公開時刻が日付のみのため記録から除外した。",
+    "Anthropic「An update on independent evaluators」（2026-10-15付け、URL: https://www.anthropic.com/news/an-update-on-independent-evaluators）：METRチームへの従業員同様のアクセス付与というMET-SAFETY・H-GOV-002・独立検証の重要材料だが、公開時刻が日付のみのため記録から除外した。",
+    "Anthropic「Investing in the public benefit」（2026-10-18付け、URL: https://www.anthropic.com/news/public-benefit-fund）：株式の一部を公益基金にコミットする仕組みでW5・MET-REGIME関連だが、公開時刻が日付のみのため記録から除外した。",
+    "Claude Opus 5.5（2026-09-22、URL: https://www.anthropic.com/claude-opus-5-5）/Sonnet 5.5（2026-09-28、URL: https://www.anthropic.com/claude-sonnet-5-5）/Haiku 5.5（2026-10-07、URL: https://www.anthropic.com/claude-haiku-5-5）の価格低下・高速化主張（40% less／up to 30% less）：MET-COST・F-S02の比較基準に関わるが、公開時刻が日付のみのため記録から除外した。",
+    "OpenAI GPT-6.1 Terra（EVD-20261027-0007）の料金表での実価格・利用条件の確認は今回未実施（URL: https://developers.openai.com/api/docs/pricing/）。",
+    "今回記録したOpenAI 7件の記事本文（個別URL）は未確認。根拠は公式RSSフィードの標題・説明文・公開日時。",
+    "Google・xAI・ByteDanceの当日確認は今回未実施。収集計画の優先順位（重大な危険・日次監視）に従いOpenAI・Anthropicを確認した。残りは次回以降に対応する。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.27883428,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.071573,
+          "tokens": {
+            "total": 49870,
+            "input": 49285,
+            "output": 28,
+            "reasoning": 557,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.0915616,
+          "tokens": {
+            "total": 63389,
+            "input": 62450,
+            "output": 25,
+            "reasoning": 914,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.0464588,
+          "tokens": {
+            "total": 71335,
+            "input": 21132,
+            "output": 59,
+            "reasoning": 864,
+            "cache": {
+              "write": 0,
+              "read": 49280
+            }
+          }
+        },
+        {
+          "cost": 0.0204438,
+          "tokens": {
+            "total": 71637,
+            "input": 1101,
+            "output": 102,
+            "reasoning": 34,
+            "cache": {
+              "write": 0,
+              "read": 70400
+            }
+          }
+        },
+        {
+          "cost": 0.04879708,
+          "tokens": {
+            "total": 78716,
+            "input": 531,
+            "output": 3178,
+            "reasoning": 3519,
+            "cache": {
+              "write": 0,
+              "read": 71488
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-27T01:57:33.833415+00:00",
+  "revision_after": "88cdb1874539a23a5b4ec5676b4405672589c48a07cb9084c3f1046219f2acd3",
+  "dossier_hash": "819df5b92fd7f6d3a97148eb69185007dd565616778472fba89f0f89955e78d2"
+}
