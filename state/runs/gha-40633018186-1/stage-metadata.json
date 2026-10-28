@@ -1,0 +1,76 @@
+{
+  "collect": {
+    "status": "resumed_from_checkpoint"
+  },
+  "blue": {
+    "cost": 0.42983896,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.2769612,
+        "tokens": {
+          "total": 129258,
+          "input": 97258,
+          "output": 1747,
+          "reasoning": 30253,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      },
+      {
+        "cost": 0.15287776,
+        "tokens": {
+          "total": 126245,
+          "input": 42,
+          "output": 7988,
+          "reasoning": 20999,
+          "cache": {
+            "write": 0,
+            "read": 97216
+          }
+        }
+      }
+    ],
+    "attempts": 2
+  },
+  "red": {
+    "cost": 0.1838906,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.1838906,
+        "tokens": {
+          "total": 112459,
+          "input": 103643,
+          "output": 676,
+          "reasoning": 8140,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      }
+    ]
+  },
+  "arbiter": {
+    "cost": 0.17668028,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.17668028,
+        "tokens": {
+          "total": 111379,
+          "input": 100753,
+          "output": 7048,
+          "reasoning": 890,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  }
+}
