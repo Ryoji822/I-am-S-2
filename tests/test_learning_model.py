@@ -101,6 +101,52 @@ class ModelBoundaryTests(unittest.TestCase):
             self.assertNotIn(text, json.dumps(caught.exception.metadata, ensure_ascii=False))
             self.assertNotIn(text, str(caught.exception))
 
+    def test_literal_newlines_inside_one_fenced_object_match_run_40618753545(self):
+        # Run 40618753545 blue failed in read_model_json: text_parts 1,
+        # final_characters 6969, error line 1 column 1, after PR #4.
+        # checkpoint-40618753545-1 is only the verified collect stage.
+        # The learning artifact records the same metadata and not the model text.
+        # Output was 4397 tokens against a 131072 token cap, so the reply was
+        # finished, and the stage requires full markdown section bodies. A
+        # preamble or fence around one object whose strings contain those
+        # literal newlines reproduces the recorded column-1 failure.
+        body = "# 企業\n\n既知の製品と日付を残します。\n- 条件が変わった点を明記します。"
+        reason = "今回の更新\nと、変えない理由"
+        payload = {"records": [{"type": "dossier_section", "body": body}], "reason": reason}
+        raw = ('{\n  "records": [{"type": "dossier_section", "body": "' + body
+               + '"}],\n  "reason": "' + reason + '"\n}')
+        wrapped = f"今回の判断です。\n```json\n{raw}\n```\n"
+        with self.assertRaises(json.JSONDecodeError) as decode_error:
+            json.loads(wrapped)
+        self.assertEqual((decode_error.exception.lineno, decode_error.exception.colno), (1, 1))
+        progress = json.dumps({"type": "text", "part": {"text": '{"records":[{"type":"warning"}]}'}})
+        output = progress + "\n" + json.dumps({"type": "text", "part": {"text": wrapped}}, ensure_ascii=False)
+        result, usage = read_model_json(output)
+        self.assertEqual(result, payload)
+        self.assertEqual(usage["json_recovery"], ["string_controls"])
+        self.assertNotIn(body, json.dumps(usage, ensure_ascii=False))
+        self.assertNotIn("warning", json.dumps(usage))
+        direct, direct_usage = read_model_json(json.dumps({"type": "text", "part": {"text": raw}}))
+        self.assertEqual(direct, payload)
+        self.assertEqual(direct_usage["json_recovery"], ["string_controls"])
+        comma = '{\n  "records": [],\n  "reason": "維持",\n}'
+        # A trailing comma is syntax, not a second value.
+        comma_text = "補足してから示します。\n```json\n" + comma + "\n```"
+        parsed, comma_usage = read_model_json(json.dumps({"type": "text", "part": {"text": comma_text}}))
+        self.assertEqual(parsed, {"records": [], "reason": "維持"})
+        self.assertEqual(comma_usage["json_recovery"], ["trailing_commas"])
+
+    def test_literal_newline_repair_does_not_invent_a_closed_object(self):
+        unfinished = '前置き\n```json\n{"records": [], "reason": "一行\n二行"\n```'
+        second = json.dumps({"records": [{"id": "x"}]}, ensure_ascii=False)
+        doubled = '説明です。\n{"records": [], "reason": "一行\n二行"}\n' + second
+        for text in (unfinished, doubled, '{"records": [], "reason": "一行\n二行"}\n' + second):
+            output = json.dumps({"type": "text", "part": {"text": text}}, ensure_ascii=False)
+            with self.assertRaises(ModelResponseError) as caught:
+                read_model_json(output)
+            self.assertEqual(caught.exception.metadata["status"], "invalid_final_json")
+            self.assertNotIn(text, json.dumps(caught.exception.metadata, ensure_ascii=False))
+
     def test_source_hash_is_computed_from_received_content(self):
         response = MagicMock()
         response.__enter__.return_value.read.return_value = b"public content"
@@ -109,6 +155,59 @@ class ModelBoundaryTests(unittest.TestCase):
         with patch("lib.learning_model.build_opener", return_value=opener):
             captured = capture_evidence({"url": "https://openai.com/news/", "content_hash": "invented"}, "time")
         self.assertEqual(captured["content_hash"], "sha256:" + hashlib.sha256(b"public content").hexdigest())
+
+    def _model_events(self, text, cost):
+        return "\n".join([
+            json.dumps({"type": "text", "part": {"text": text}}, ensure_ascii=False),
+            json.dumps({"type": "step_finish", "part": {"cost": cost, "tokens": {"output": 10}}}),
+        ])
+
+    def test_unreadable_final_json_is_retried_once_and_both_costs_are_kept(self):
+        context = {"instructions": "Return the complete collection JSON."}
+        bad = self._model_events("説明だけでJSONがない", 0.1)
+        good = self._model_events('{"records":[]}', 0.2)
+        responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout=bad, returncode=0),
+                     MagicMock(stdout=good, returncode=0)]
+        policy = dict(opencode_version="1.18.31", model="zai/glm-5.1", stage_timeout_seconds=600,
+                      max_retries_per_stage=1)
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"GLM_API_KEY": "dummy"}), \
+                patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
+            result, usage = run_model("blue", context, Path(temporary) / "stage", policy)
+        self.assertEqual(result, {"records": []})
+        self.assertAlmostEqual(usage["cost"], 0.3)
+        self.assertEqual(usage["attempts"], 2)
+        self.assertEqual(len(usage["steps"]), 2)
+        self.assertEqual(command.call_count, 3)
+        self.assertNotIn("説明だけでJSONがない", json.dumps(usage, ensure_ascii=False))
+
+    def test_unreadable_final_json_stays_failed_when_the_retry_is_also_unusable(self):
+        context = {"instructions": "Return the complete collection JSON."}
+        truncated = self._model_events('{"records": [], "reason": "途中', 0.15)
+        responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout=truncated, returncode=0),
+                     MagicMock(stdout=truncated, returncode=0)]
+        policy = dict(opencode_version="1.18.31", model="zai/glm-5.1", stage_timeout_seconds=600,
+                      max_retries_per_stage=1)
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"GLM_API_KEY": "dummy"}), \
+                patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
+            with self.assertRaises(ModelResponseError) as caught:
+                run_model("blue", context, Path(temporary) / "stage", policy)
+        self.assertEqual(caught.exception.metadata["status"], "invalid_final_json")
+        self.assertEqual(caught.exception.metadata["attempts"], 2)
+        self.assertAlmostEqual(caught.exception.metadata["cost"], 0.3)
+        self.assertEqual(command.call_count, 3)
+        self.assertNotIn("途中", json.dumps(caught.exception.metadata, ensure_ascii=False))
+        self.assertNotIn("途中", str(caught.exception))
+
+    def test_model_process_failure_is_not_retried(self):
+        context = {"instructions": "Return the complete collection JSON."}
+        responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout="", returncode=1)]
+        policy = dict(opencode_version="1.18.31", model="zai/glm-5.1", stage_timeout_seconds=600,
+                      max_retries_per_stage=1)
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"GLM_API_KEY": "dummy"}), \
+                patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
+            with self.assertRaises(ValueError):
+                run_model("blue", context, Path(temporary) / "stage", policy)
+        self.assertEqual(command.call_count, 2)
 
     def test_long_context_reaches_model_via_stdin_without_file_line_truncation(self):
         context = {'body': 'a' * 50000, 'instructions': 'Return the complete collection JSON.'}
