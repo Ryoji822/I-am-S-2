@@ -1,0 +1,87 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-40805152817-1",
+  "date": "2026-10-29",
+  "started_at": "2026-10-29T11:14:31.314488+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "0645bb619955a4fda907f417947ae806e2efc598393e1b4fc59953ef59d387d3",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "Anthropic公式ニュース一覧（https://www.anthropic.com/news）を2026-10-29に確認し重要な新着を確認したが、一覧の表示は日付のみで公開時刻が確認できないため、規則に従い記録から除外した。除外対象: Anthropic files S-1 with the SEC for proposed IPO（2026-10-26、MET-FIRM・W2・資本と計算資源）、Expanding partnership with GSA（Claude Enterprise・Government・APIの40%割引、2026-10-27、H-GOV-001・MET-COST・LINK-PRICE-COST）、AI for Science expands to foundations and research institutions（2026-10-28）、Early progress on accelerating drug development with Claude（2026-10-27）、Investing in the public benefit（Anthropic Public Benefit Fund、2026-10-18、W5・MET-REGIME・LINK-OWNERSHIP-PROFIT）、An update on independent evaluators（METR等へemployee-like access、2026-10-15、MET-SAFETY・H-GOV-002）。検索回数上限（2回）に達したため個別記事URLでの公開時刻確認は未実施。次回、個別記事ページで公開時刻を確認して記録する。",
+    "OpenAI RSSフィードの2026-10-08〜10-14付けの項目（SentinelOne、Third Moment Research、Higgsfield、Asana、Pollo AI、LegalOn、Jump Trading、Radisson等）は、可視範囲の記録（EVD-20261015-0001等の参照）で一部が過去収録済みと推定されるが全数の重複確認ができず、前日の資料の再登録を避けるため今回記録しなかった。保存済み全履歴との照合を推奨する。",
+    "今回のOpenAI関連3件を含む全記録で、記事本文は個別URLで未確認。根拠はRSSフィードの標題・説明文のみ。",
+    "OpenAI公式料金表（developers.openai.com/api/docs/pricing/）の今回の直接確認は未実施。フィード上に公式料金変更の発表はなかったが、MET-COSTの実価格確認は次回実施が必要。",
+    "公的統計（厚生労働省・総務省の雇用・賃金・物価、e-stat）は今回確認せず。MET-LABOR・MET-REGIMEのobservationは登録済みmetricの品質基準が未確定（definition_candidate）のため作成できず、F-M05・F-L01の基準値材料（職種コード・固定賃金系列・物価系列）も未取得のまま。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.16863848,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0727052,
+          "tokens": {
+            "total": 51103,
+            "input": 50716,
+            "output": 30,
+            "reasoning": 357,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.04161688,
+          "tokens": {
+            "total": 66038,
+            "input": 13034,
+            "output": 36,
+            "reasoning": 2280,
+            "cache": {
+              "write": 0,
+              "read": 50688
+            }
+          }
+        },
+        {
+          "cost": 0.0543164,
+          "tokens": {
+            "total": 76129,
+            "input": 5672,
+            "output": 1951,
+            "reasoning": 4826,
+            "cache": {
+              "write": 0,
+              "read": 63680
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-10-29T02:16:50.906410+00:00",
+  "revision_after": "7a3b137f23b1d02e4d9d4b2a20ffc64509d8fc7f5734a3494152d50d665666d2",
+  "dossier_hash": "a3c0ab284d704b3ddd90b382f2b61d461e203232cb2355a8577551d406f7e575"
+}
