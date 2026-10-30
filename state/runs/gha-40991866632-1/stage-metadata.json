@@ -1,0 +1,118 @@
+{
+  "collect": {
+    "cost": 0.19991524,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.073967,
+        "tokens": {
+          "total": 51460,
+          "input": 50819,
+          "output": 53,
+          "reasoning": 588,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      },
+      {
+        "cost": 0.05827736,
+        "tokens": {
+          "total": 72319,
+          "input": 16516,
+          "output": 39,
+          "reasoning": 4948,
+          "cache": {
+            "write": 0,
+            "read": 50816
+          }
+        }
+      },
+      {
+        "cost": 0.06767088,
+        "tokens": {
+          "total": 88467,
+          "input": 14282,
+          "output": 2250,
+          "reasoning": 4607,
+          "cache": {
+            "write": 0,
+            "read": 67328
+          }
+        }
+      }
+    ]
+  },
+  "blue": {
+    "cost": 0.42524304,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.28551408,
+        "tokens": {
+          "total": 137556,
+          "input": 102868,
+          "output": 3020,
+          "reasoning": 28980,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      },
+      {
+        "cost": 0.13972896,
+        "tokens": {
+          "total": 131070,
+          "input": 20,
+          "output": 5901,
+          "reasoning": 19613,
+          "cache": {
+            "write": 0,
+            "read": 105536
+          }
+        }
+      }
+    ],
+    "attempts": 2
+  },
+  "red": {
+    "cost": 0.19612228,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.19612228,
+        "tokens": {
+          "total": 120239,
+          "input": 107267,
+          "output": 639,
+          "reasoning": 9645,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  },
+  "arbiter": {
+    "cost": 0.17471528,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.17471528,
+        "tokens": {
+          "total": 115174,
+          "input": 106974,
+          "output": 5323,
+          "reasoning": 189,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  }
+}
