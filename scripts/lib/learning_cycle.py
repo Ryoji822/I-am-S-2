@@ -16,7 +16,7 @@ from .forecast_scoring import resolve
 from .learning_model import SOURCE_HOSTS, ModelResponseError, capture_collected, model_config, run_model
 from .learning_render import atomic_text, write_failure_snapshot, write_outputs
 from .legacy_information import historical_context
-from .report_knowledge import collection_index, load_dossiers, merge_dossiers
+from .report_knowledge import collection_index, load_dossiers, merge_dossiers, partition_dossier_updates
 from .resume_cycle import JUDGMENT_STAGES, checkpoint_document
 
 
@@ -130,6 +130,26 @@ def rejection_gap(withheld):
             f"{exclusion_detail(withheld)}。")
 
 
+def citation_gap(withheld):
+    """Developer-authored gap. Never copy section text or unreviewed URLs."""
+    return ("報告書の更新に未審査の引用があったため、その更新は正式判断として公表せず除外しました"
+            f"{exclusion_detail(withheld)}。")
+
+
+def without_unreviewed_citations(state, collected, reviewed, dossiers, now):
+    """Drop section updates whose citations are not already reviewed. Keep the rest."""
+    sections = [record for record in reviewed if record.get("type") == "dossier_section"]
+    if not sections:
+        return reviewed, []
+    require(dossiers is not None, "dossier baseline required")
+    preview = append_records(state, collected)
+    kept, dropped = partition_dossier_updates(dossiers, preview, sections, now)
+    kept_ids = {record["id"] for record in kept}
+    publishable = [record for record in reviewed
+                   if record.get("type") != "dossier_section" or record["id"] in kept_ids]
+    return publishable, dropped
+
+
 def accept_collection(state, result, moment):
     require(result["quality"] in {"complete", "partial"}, "no usable fresh collection")
     validation = {"run_id": "validate-collection", "expected_revision": state["revision"],
@@ -212,7 +232,7 @@ def usable_resume_directory(root, directory, now):
     return checkpoint_folder(directory), [stage for stage in STAGES if stage in outputs]
 
 
-def update_plan(state, run_id, outputs, bootstrap, now):
+def update_plan(state, run_id, outputs, bootstrap, now, dossiers=None):
     collected = outputs["collect"]
     require(collected["quality"] in {"complete", "partial"}, "no usable fresh collection")
     blue = outputs["blue"]["records"]
@@ -231,12 +251,18 @@ def update_plan(state, run_id, outputs, bootstrap, now):
         if dropped:
             quarantine.append(unreviewed_gap(dropped))
     require(all(record["type"] not in {"evidence", "observation", "resolution"} for record in reviewed), "arbiter cannot rewrite evidence or resolve forecasts")
-    proposed = bootstrap + collected["records"] + reviewed
     quality = collected["quality"]
     if quality == "partial":
         require(not reviewed, "partial run cannot change judgments")
         # Definitions are initialized only on a complete run.
         proposed = collected["records"]
+    else:
+        # Unreviewed citations stay out of the ledger. The URL check itself is unchanged.
+        reviewed, citation_dropped = without_unreviewed_citations(
+            state, collected["records"], reviewed, dossiers, now)
+        if citation_dropped:
+            quarantine.append(citation_gap(citation_dropped))
+        proposed = bootstrap + collected["records"] + reviewed
     plan = {"run_id": run_id, "expected_revision": state["revision"], "quality": quality,
             "review_complete": True, "records": proposed}
     candidate = validate_plan(state, plan, instant(now))
@@ -356,7 +382,8 @@ def run_locked(root, now, run_id, stage_runner, policy, resume_from=None):
             outputs, usage = execute_stages(root, state, initial_definitions(root, state), now, stage_runner, policy,
                                             directory, resumed=resumed, run_id=run_id)
             finished = datetime.now(timezone.utc).isoformat() if stage_runner is run_model else now
-            plan, quarantine_gaps = update_plan(state, run_id, outputs, initial_definitions(root, state), finished)
+            plan, quarantine_gaps = update_plan(state, run_id, outputs, initial_definitions(root, state), finished,
+                                                dossiers=load_dossiers(root, finished))
             candidate = validate_plan(state, plan, instant(finished))
             dossiers = merge_dossiers(load_dossiers(root, finished), candidate, finished)
             gaps = outputs["collect"]["gaps"] + quarantine_gaps
