@@ -1,0 +1,86 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-41263336426-1",
+  "date": "2026-11-01",
+  "started_at": "2026-11-01T11:00:06.683138+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "fedd6c47e7614fd0e786a92bb6e484f0e01b8dc8311785afcc4e4a09640e9307",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "Anthropic Newsroom（https://www.anthropic.com/news）は当日確認したが、一覧の掲載は日付のみで公開時刻を確認できず、規定によりevidence記録から除外した。次回は個別記事URLの本文で公開時刻を確認する必要がある。確認できた主な対象: S-1登録表明（2026-10-26、https://www.anthropic.com/news/confidential-draft-s1-sec）、2026 Usage Policy update（2026-10-08、利用条件の変更でF-S04・MET-REGIME関連）、GSA提携拡大とClaude Enterprise/API等の40%割引（2026-10-27、MET-COST・H-GOV-001関連）、METRへの従業員同等アクセスを含む独立評価者の更新（2026-10-15、MET-SAFETY・RISK-SAFETYの独立検証関連）、Anthropic Public Benefit Fundへの株式の一部拠出（2026-10-18、W5・MET-REGIME関連）、蒸留攻撃防御の90%超減少の主張（2026-10-12）、Claude Frontier Academyでの1万人育成・1億ドル投資（2026-10-02、MET-LABOR・MD-SOC関連）、Agent Skillsの財団寄贈と70超プラットフォーム統合（2026-10-22、H-GOO-002・W3関連）、Claude Haiku 5.5（2026-10-07）、Opus 5.5（2026-09-22、比較で40%低コスト）、Sonnet 5.5（2026-09-28、最大30%安く30%超高速）。",
+    "OpenAI RSSフィードの個別記事本文（例: https://openai.com/index/helping-websites-express-ai-training-preferences 、https://openai.com/index/credit-saison ）は今回も未確認。全記録の根拠はフィードの標題・説明文のみ。",
+    "公式料金ページ（https://developers.openai.com/api/docs/pricing/ およびAnthropic・Google・xAIの価格ページ）の当日確認は未実施。MET-COST・F-S01・F-S02に必要な基準値（固定5業務の定義、品質基準、比較先、基準期間）は依然未取得。",
+    "Google（https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes ）、xAI（https://x.ai/build/changelog ）、ByteDance（https://seed.bytedance.com/zh/blog ）、日本の公的統計（https://www.mhlw.go.jp/toukei/ 、https://www.stat.go.jp/data/ ）は今回の原資料5件・検索2回の予算内で未確認。月次予定の雇用・実質賃金・顧客維持・所得分配の公表値確認と、H-OAI-001・H-OAI-003の仮説レビュー（next_check 2026-11-07頃）は次回以降。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.18228676,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0738458,
+          "tokens": {
+            "total": 51862,
+            "input": 51449,
+            "output": 25,
+            "reasoning": 388,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03735572,
+          "tokens": {
+            "total": 65719,
+            "input": 13015,
+            "output": 28,
+            "reasoning": 1284,
+            "cache": {
+              "write": 0,
+              "read": 51392
+            }
+          }
+        },
+        {
+          "cost": 0.07108524,
+          "tokens": {
+            "total": 79905,
+            "input": 4649,
+            "output": 2260,
+            "reasoning": 8612,
+            "cache": {
+              "write": 0,
+              "read": 64384
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-01T02:02:52.627164+00:00",
+  "revision_after": "a2d399d2e25b8373c6af2868b4487b371003c2f764b98f81221eaa1033274fce",
+  "dossier_hash": "ea0ff4ba5137bc3fa7aebf3585aed8e206c080a88bc30e4c08625441ecbc1e76"
+}
