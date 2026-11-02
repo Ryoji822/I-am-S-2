@@ -1,0 +1,103 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-41376576815-1",
+  "date": "2026-11-02",
+  "started_at": "2026-11-02T11:14:03.253115+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "a2d399d2e25b8373c6af2868b4487b371003c2f764b98f81221eaa1033274fce",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "OpenAI公式RSS(https://openai.com/news/rss.xml)を当日確認(2026-11-02T02:14:04Z取得、lastBuildDate 2026-11-02T02:06:14Z)。最新掲載は2026-10-30T09:30:00Z(robots.txt記事、EVD-20261101-0001)のまま新着なし。公式料金変更の発表・安全上の事故の正式報告・一般法人向け既存機能の正式な利用制限の新規掲載なし(F-S04・RISK-SAFETY・MET-COSTの日次確認完了、非発生。WRN-20261028-0001の監視継続、next_check 2026-11-04頃)。",
+    "Anthropic S-1提出発表(2026-10-26付): https://www.anthropic.com/news/s1-sec — ニュース一覧では日付のみで公開時刻を確認できず、個別記事HTMLからのタイムスタンプ抽出もできなかったため記録から除外。MET-FIRM・資本と計算資源・W2の重要材料。公開時刻確認後に再登録が必要。",
+    "Anthropicと米GSA提携拡大(政府向けClaude Enterprise・Claude for Government・Claude APIの40%割引、2026-10-27付): https://www.anthropic.com/news/expanding-partnership-gsa — 公開時刻を確認できないため除外。H-GOV-001(政府調達がAI企業の選択を変えるか)・MET-COST(利用条件・価格の変更)・LINK-SAFETY-SUPPLYの直接材料。",
+    "Anthropic独立評価者更新(METRチームへの従業員同様アクセス、他組織と早期協議、2026-10-15付): https://www.anthropic.com/news/an-update-on-independent-evaluators — 公開時刻を確認できないため除外。HRV-20261010-0002の次回確認(2026-11-07頃)が問うMETR独立評価・MET-SAFETY・RISK-SAFETYの直接材料。",
+    "Anthropic Public Benefit Fund(自社株式の一部拠出、2026-10-18付): https://www.anthropic.com/news/public-benefit-fund — 公開時刻を確認できないため除外。W5(所有と分配のルール)・MET-REGIME・LINK-OWNERSHIP-PROFITの重要材料。",
+    "Anthropicその他の新着はすべて日付のみで公開時刻を確認できず未記録: AI for Science拡大・創薬早期進捗(2026-10-27)、Agent SkillsのAgentic AI Foundation寄贈・ライフサイエンスGuest Investigators公募(2026-10-22)、利用ポリシー2026年更新・Anthropic Cyber Mission・Genesis Mission 1.5億ドル(2026-10-08)、Claude Frontier Academy 1億ドル・1万人研修(2026-10-02、MD-SOC採用・育成の重要材料)、Barclays拡大(2026-10-01)。各記事のmeta情報等で公開時刻を確認する必要がある。",
+    "OpenAI RSSの2026-10-16T00:00:00Z付け2件(Benefit Street Partners answers questions faster with Codex、Stack Overflow for Agents triples signups with ChatGPT plugin)の登録済み否かを直近40記録の範囲では確認できない(EVD-20261017-0002のいずれかに該当の可能性)。重複登録を避けるため本日は未登録。2026-10-13〜10-15付けの記事(Higgsfield、Amp、SentinelOne、Third Moment Research、Block、The EU's next chapter in AI is agentic、Sullivan & Cromwell、Teaching students)も同様に登録状況未確認。",
+    "原資料はcontext.max_source_documents=5件の上限に到達(OpenAI RSS、Anthropicニュース一覧、S-1・GSA・独立評価者の3記事)。Google・xAI・ByteDanceの最新掲載と日本の公的統計(mhlw.go.jp・stat.go.jp・e-stat.go.jp)は今回未確認。月次予定(採用・実質賃金・顧客維持・所得分配の公表値)とF-M05の公式情報源照合は次回以降。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.2284936,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0766238,
+          "tokens": {
+            "total": 53062,
+            "input": 52283,
+            "output": 53,
+            "reasoning": 726,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.07596104,
+          "tokens": {
+            "total": 80326,
+            "input": 20422,
+            "output": 108,
+            "reasoning": 7572,
+            "cache": {
+              "write": 0,
+              "read": 52224
+            }
+          }
+        },
+        {
+          "cost": 0.031576,
+          "tokens": {
+            "total": 80939,
+            "input": 7942,
+            "output": 160,
+            "reasoning": 197,
+            "cache": {
+              "write": 0,
+              "read": 72640
+            }
+          }
+        },
+        {
+          "cost": 0.04433276,
+          "tokens": {
+            "total": 86536,
+            "input": 947,
+            "output": 1077,
+            "reasoning": 3936,
+            "cache": {
+              "write": 0,
+              "read": 80576
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-02T02:18:38.514987+00:00",
+  "revision_after": "b450c1eb4f5c6fe018736850beb82c44ffeaaf28ffa36b9312e34a477e5a3282",
+  "dossier_hash": "ea0ff4ba5137bc3fa7aebf3585aed8e206c080a88bc30e4c08625441ecbc1e76"
+}
