@@ -1,0 +1,114 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-41763996432-1",
+  "date": "2026-11-04",
+  "started_at": "2026-11-04T11:57:17.381164+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "b450c1eb4f5c6fe018736850beb82c44ffeaaf28ffa36b9312e34a477e5a3282",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "Anthropicの個別記事は公開時刻（時刻・タイムゾーン付き）を確認できなかった（一覧・記事ページの表示は日付のみ。HTML取得も試みたが出力が切り詰められdatePublished等の確認に至らず）。公開時刻を確認できないためevidenceから除外した高優先度項目：https://www.anthropic.com/news/s1-sec（2026-10-26、S-1登録説明書のSEC提出・IPO準備の発表。資本構造・MET-FIRM・anthropic section-03に関わる重大項目）、https://www.anthropic.com/news/2026-usage-policy-update（2026-10-08、利用ポリシー新版。日次監視対象の利用条件の変更）、https://www.anthropic.com/news/expanding-partnership-gsa（2026-10-27、GSA提携拡大で政府向け40%割引。料金条件・H-GOV-001）",
+    "同様に日付のみで時刻未確認のため未記録のAnthropic項目：METR独立評価者への従業員同等アクセス（2026-10-15、https://www.anthropic.com/news/an-update-on-independent-evaluators。MET-SAFETY・H-ANT-001関連）、Claude Frontier Academy 1億ドル・1万人育成（2026-10-02）、Agent SkillsのAgentic AI Foundation寄贈（2026-10-22）、Anthropic Public Benefit Fund（2026-10-18）、Claude Opus 5.5（実行費40%減主張、2026-09-22）・Sonnet 5.5（最大30%安、2026-09-28）・Haiku 5.5（2026-10-07）",
+    "OpenAIフィード既存項目「Introducing GPT-6.1 Terra」のpubDateが今回の取得では2026-10-26T18:00:00Zと表示され、記録済みEVD-20261104より前のEVD-20261027-0007（2026-10-26T00:00:00Z）と異なる。メタデータ不整合の可能性があり、次回個別記事で公開時刻を確認する必要がある（本日は再登録していない）",
+    "今回の予算（原資料5件・検索2回）で未確認の情報源：Google（docs.cloud.google.comリリースノート）、xAI（x.ai/build/changelog）、ByteDance（seed.bytedance.com）、各社公式料金ページ（developers.openai.com等）。F-S04（OpenAIかAnthropicの法人機能7日以上制限）のうちAnthropic側の安全上の事故・提供制限の当日確認はできていない",
+    "MET-LABOR関連の公的統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）の最新公表値・11月の公示は今回未確認。採用・実質賃金の月次公表値（月次計画）の確認が残る",
+    "observationは今回なし。全metricがdefinition_candidateでpopulation・quality_protocolが未登録のため、地域・母集団・単位・品質基準が完全一致する公開実測値は今回の確認範囲になかった"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.27115392,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0792202,
+          "tokens": {
+            "total": 53648,
+            "input": 52277,
+            "output": 63,
+            "reasoning": 1308,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.05382444,
+          "tokens": {
+            "total": 73107,
+            "input": 17213,
+            "output": 28,
+            "reasoning": 3642,
+            "cache": {
+              "write": 0,
+              "read": 52224
+            }
+          }
+        },
+        {
+          "cost": 0.03588776,
+          "tokens": {
+            "total": 80776,
+            "input": 10770,
+            "output": 89,
+            "reasoning": 541,
+            "cache": {
+              "write": 0,
+              "read": 69376
+            }
+          }
+        },
+        {
+          "cost": 0.02407748,
+          "tokens": {
+            "total": 81481,
+            "input": 903,
+            "output": 159,
+            "reasoning": 291,
+            "cache": {
+              "write": 0,
+              "read": 80128
+            }
+          }
+        },
+        {
+          "cost": 0.07814404,
+          "tokens": {
+            "total": 94706,
+            "input": 1041,
+            "output": 4640,
+            "reasoning": 8001,
+            "cache": {
+              "write": 0,
+              "read": 81024
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-04T03:02:46.938677+00:00",
+  "revision_after": "679aed0adffb6e17bdaaaaf552a7405256b0c99e77c2bee9ba13db7e6a4f97f9",
+  "dossier_hash": "ea0ff4ba5137bc3fa7aebf3585aed8e206c080a88bc30e4c08625441ecbc1e76"
+}
