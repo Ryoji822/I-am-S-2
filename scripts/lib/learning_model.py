@@ -13,6 +13,13 @@ from urllib.request import HTTPRedirectHandler, Request, build_opener
 from .forecast_contract import require
 
 
+# OpenCode 1.18.31 sends min(model limit, 32000) unless this process env is set.
+# GLM-5.1 counts reasoning toward that same budget. A blue reply that lands on
+# exactly 32000 tokens is cut off, and the unfinished JSON cannot be read.
+OUTPUT_TOKEN_MAX = 65536
+MODEL_CONTEXT_TOKENS = 204800
+
+
 SOURCE_HOSTS = (
     "openai.com", "anthropic.com", "google.com", "google", "deepmind.com",
     "x.ai", "bytedance.com", "volcengine.com", "coze.com", "oracle.com",
@@ -74,7 +81,8 @@ def model_config(directory):
             "agent": {"learning": {"mode": "primary", "permission": permission}},
             "provider": {"zai": {"npm": "@ai-sdk/openai-compatible", "name": "Z.ai",
                 "options": {"baseURL": "https://api.z.ai/api/coding/paas/v4", "apiKey": "{env:GLM_API_KEY}"},
-                "models": {"glm-5.1": {"name": "GLM-5.1"}}}}}
+                "models": {"glm-5.1": {"name": "GLM-5.1",
+                    "limit": {"context": MODEL_CONTEXT_TOKENS, "output": OUTPUT_TOKEN_MAX}}}}}}
 
 
 class ModelResponseError(ValueError):
@@ -293,6 +301,7 @@ def run_model(stage, context, directory, policy):
     require(bool(env.get("GLM_API_KEY")), "GLM_API_KEY is required")
     env.update({"HOME": str(directory), "XDG_CONFIG_HOME": str(directory / "config"),
                 "XDG_DATA_HOME": str(directory / "data"), "XDG_CACHE_HOME": str(directory / "cache"),
+                "OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX": str(OUTPUT_TOKEN_MAX),
                 "OPENCODE_CONFIG_CONTENT": json.dumps(model_config(directory))})
     version = subprocess.run(["opencode", "--version"], cwd=directory, env=env,
                              capture_output=True, text=True, timeout=15, check=True)

@@ -261,6 +261,9 @@ class CycleTests(unittest.TestCase):
             self.assertEqual(permission[action], "deny")
         self.assertEqual(config["share"], "disabled")
         self.assertFalse(config['compaction']['auto'])
+        limit = config["provider"]["zai"]["models"]["glm-5.1"]["limit"]
+        self.assertGreater(limit["output"], 32000)
+        self.assertGreaterEqual(limit["context"] - limit["output"], 112000)
 
     def test_model_receives_valid_record_values_not_only_field_names(self):
         context = current_context(self.root, load_state(self.root), NOW)
