@@ -8,8 +8,8 @@ from unittest.mock import MagicMock, patch
 from urllib.error import HTTPError, URLError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from lib.learning_model import (ModelResponseError, public_source, read_model_json, capture_evidence,
-                                capture_collected, run_model)
+from lib.learning_model import (ModelResponseError, OUTPUT_TOKEN_MAX, public_source, read_model_json,
+                                capture_evidence, capture_collected, model_config, run_model)
 
 
 class ModelBoundaryTests(unittest.TestCase):
@@ -221,6 +221,15 @@ class ModelBoundaryTests(unittest.TestCase):
             self.assertEqual(json.loads(options['input']), context)
             self.assertNotIn('--file', arguments[0])
             self.assertIn(context['instructions'], arguments[0][-1])
+            self.assertEqual(options['env']['OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX'], str(OUTPUT_TOKEN_MAX))
+
+    def test_output_budget_is_above_the_opencode_32k_clamp(self):
+        # Runs 41960895241 and 42155661151 failed in blue: both attempts had
+        # output + reasoning == 32000, then invalid_final_json at line 1 column 1.
+        limit = model_config(Path('.'))['provider']['zai']['models']['glm-5.1']['limit']
+        self.assertEqual(limit['output'], OUTPUT_TOKEN_MAX)
+        self.assertGreater(limit['output'], 32000)
+        self.assertGreaterEqual(limit['context'] - limit['output'], 112000)
 
     def test_recaptured_evidence_and_observations_share_actual_retrieval_time(self):
         original = [{"type": "evidence", "id": "E-1", "retrieved_at": "old"},
