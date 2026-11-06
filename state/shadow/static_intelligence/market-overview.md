@@ -70,9 +70,17 @@ OpenAI の低価格帯の拡充はモデル間の価格競争を強め、W3（�
 
 OpenAI の3月の調達はコミット済み資本1,220億ドル、Anthropic の5月の調達は650億ドルで既公表分を含みます。調達額は営業収益や利益ではありません。Google は6月の投資家説明で2026年設備投資1,800〜1,900億ドルを見込みました。資金の確保と設備が稼働する時期の間には距離があります。[OpenAI](https://openai.com/index/accelerating-the-next-phase-ai/)、[Anthropic](https://www.anthropic.com/news/series-h)、[Google](https://blog.google/alphabet/investor-presentation-june-2026/)。
 
-SpaceX の6月5日目論見書では、Xの事業を含むAI部門の2026年1〜3月営業損失は24.69億ドルです。大規模な能力・供給の獲得が、そのまま黒字の証拠にならない例です。[目論見書 §5.4.4.3](https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf)。
+計算資源の拡張は電力網・地域社会との調整に依存しています。OpenAI は11月2日に Grid Protectors Program を発表し、電力会社と協力して将来のコンピュートキャンパスが系統の信頼性を支え、消費者の電力コストを守れるようにすると説明しました。11月5日には National Community Compact と Compute Campus Policy Blueprint を導入し、地域の資源を守り、雇用を作り、責任ある AI インフラ開発を導くと発表しました。いずれも方針の発表（announced_plan）であり、電力契約の実態・系統への影響・雇用の実績は未確認です（[OpenAI の公式フィード](https://openai.com/news/rss.xml)の標題・説明文で確認、記事本文は未確認）。
+
+SpaceX の6月5日目論見書では、X の事業を含む AI 部門の2026年1〜3月営業損失は24.69億ドルです。大規模な能力・供給の獲得が、そのまま黒字の証拠にならない例です。[目論見書 §5.4.4.3](https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf)。
 
 ByteDance については9月4日に Reuters が296億ドルの融資を関係者情報で報じています。契約原文で確認した確定値とは分けます。[Reuters配信記事](https://uk.marketscreener.com/news/bytedance-secures-29-6-billion-loan-in-ai-push-sources-say-ce785bdad189f22c)。資金調達、設備発注、受電、稼働、課金利用、利益回収を順番に追わなければ、供給能力を過大評価します。
+
+事実が効くのは主に事業層です。Grid Protectors Program と National Community Compact／Compute Campus Policy Blueprint（11月2日・5日）は、計算資源の拡張が電力網・地域社会との調整に依存していることを提供者自身が示した材料で、RISK-SUPPLY（電力・計算資源・資金・地域の制約で供給が途切れる経路）の観測材料です。ただし announced_plan であり、電力契約・系統投資・雇用の実績は未確認のため、供給制約が緩和された実績として扱いません。仕事・所得への影響は間接的で、データセンター建設・運用の雇用と電力コストの帰結は公表値で判断します。別の説明として、これらの公表は地域の受容を得るための広報であり、実質的な電力確保は契約と稼働で決まる可能性があります。
+
+残る限界：Grid Protectors Program・National Community Compact・Compute Campus Policy Blueprint の対象地域・電力会社・資金規模・時期はいずれも未確認で、根拠は公式フィードの標題・説明文のみです。設備投資の数値（OpenAI 1,220億ドル調達、Google 1,800〜1,900億ドル設備投資、Anthropic 650億ドル調達、xAI の AI 部門営業損失、ByteDance 296億ドル融資）はいずれも公表・報道時点の値です。見直し条件は、電力会社との契約・系統投資の実施公表、コンピュートキャンパスの稼働情報、Google・xAI・ByteDance・Anthropic の公式資料の当日確認（今回未実施）、次回の主要決算です。
+
+確認更新：2026-11-06T04:32:03.410377+00:00（DS-MKT-20261106-0001）。
 
 ## 安全と制度が変える提供条件
 

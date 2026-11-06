@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-42163031347-1",
+  "date": "2026-11-06",
+  "started_at": "2026-11-06T13:32:02.377687+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "679aed0adffb6e17bdaaaaf552a7405256b0c99e77c2bee9ba13db7e6a4f97f9",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "Anthropic公式ニュース一覧（https://www.anthropic.com/news）は日付のみで公開時刻が確認できないためevidenceから除外した。S-1登録（2026-10-26）、GSA提携拡大・Claude Enterprise/政府向け/API 40%割引（2026-10-27）、Anthropic Public Benefit Fund（2026-11-06時点で一覧では2026-10-18）、METR独立評価者アクセス（2026-10-15）などは個別記事URLで公開時刻を確認する必要がある。",
+    "今回記録した12件のOpenAI記事の本文は未確認（個別URLは403、原資料5件の上限にも到達）。GPT-6 Cyber・Images 2.6・Daybreak RedのAPI価格・利用条件はフィードから確認できず、MET-COST/F-S02の基準値取得には developers.openai.com/api/docs/pricing/ の当日確認が残る。",
+    "Google（https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes）、xAI（https://x.ai/build/changelog）、ByteDance（https://seed.bytedance.com/zh/blog）の当日確認は今回実施せず次回以降に残す。",
+    "雇用・賃金の公的統計（https://www.mhlw.go.jp/toukei/ 、https://www.stat.go.jp/data/ ）の当日確認は今回実施せず。MET-LABOR等の指標はすべて定義候補でregion・population・quality_protocolが未登録のため、今回observation記録は作成できていない。",
+    "WRN-20261028-0001（RISK-SAFETY、watch、next_check 2026-11-04頃）の水準見直しは今回の収集記録（evidence/observationのみ）の範囲外。今回の当日確認で新たな安全上の事故の正式報告・公式料金変更・一般法人向け既存機能の正式な利用制限は確認されなかったが、警告の更新は評価ステージで行う必要がある。"
+  ],
+  "usage": {
+    "collect": {
+      "status": "resumed_from_checkpoint"
+    },
+    "blue": {
+      "cost": 0.2786892,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.2786892,
+          "tokens": {
+            "total": 141438,
+            "input": 114546,
+            "output": 7732,
+            "reasoning": 19160,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.22612128,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.22612128,
+          "tokens": {
+            "total": 134529,
+            "input": 118226,
+            "output": 827,
+            "reasoning": 12788,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.19894588,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.19894588,
+          "tokens": {
+            "total": 128288,
+            "input": 118131,
+            "output": 7147,
+            "reasoning": 322,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-06T04:49:45.007426+00:00",
+  "revision_after": "d4154b71815d9d087dea18a4523385902f06d409cdf36d7d51796d9ebfd9de35",
+  "dossier_hash": "e3f21734c437b07fc4162d01cb5f43736a4148f49d7fe750eab2f38bda2ae448",
+  "resumed_stages": [
+    "collect"
+  ]
+}
