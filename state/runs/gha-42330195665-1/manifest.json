@@ -1,0 +1,134 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-42330195665-1",
+  "date": "2026-11-07",
+  "started_at": "2026-11-07T11:38:08.323148+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "d4154b71815d9d087dea18a4523385902f06d409cdf36d7d51796d9ebfd9de35",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "Anthropicニュース索引 https://www.anthropic.com/news を2026-11-07に確認した。索引上の最新は2026-10-28（AI for Scienceの拡大）で、それ以降の新着掲載はなく、安全上の事故の正式報告・一般法人向け既存機能の正式な利用制限の掲載は確認されなかった（F-S04・RISK-SAFETY日次確認の一部）。ただし索引の各記事は日付のみの表示で公開時刻を確認できないため、個別記事（例：S-1提出2026-10-26、METR調査員への従業員級アクセス付与2026-10-15、GSA提携拡大・Claude Enterprise等40%割引2026-10-27）は公開時刻不明としてevidence化せず除外した。これらの公開時刻の確認方法が残課題。",
+    "OpenAIの個別記事本文（Hacktron提携、BioBasicsBench）は未確認。根拠はRSSフィードの標題・説明文のみ。",
+    "今回の確認は日次監視（OpenAIフィード・Anthropic索引）が中心。月次相当の雇用・賃金統計（mhlw.go.jp、stat.go.jp、e-stat.go.jp）、Google・xAI・ByteDanceの最新公表、METR等による独立評価の有無（HRV-20261106-0001/0002のnext_check 2026-12-06頃）は今回未実施。",
+    "F-S04の未取得基準（一般法人向けの対象機能と利用条件の定義、既知の研究用評価停止の除外範囲）は今回も未解決のまま。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.15861296,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0783934,
+          "tokens": {
+            "total": 54566,
+            "input": 53899,
+            "output": 25,
+            "reasoning": 642,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03555148,
+          "tokens": {
+            "total": 67772,
+            "input": 13183,
+            "output": 30,
+            "reasoning": 671,
+            "cache": {
+              "write": 0,
+              "read": 53888
+            }
+          }
+        },
+        {
+          "cost": 0.04466808,
+          "tokens": {
+            "total": 75978,
+            "input": 4074,
+            "output": 1361,
+            "reasoning": 3535,
+            "cache": {
+              "write": 0,
+              "read": 67008
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.21730368,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.21730368,
+          "tokens": {
+            "total": 121365,
+            "input": 101858,
+            "output": 4924,
+            "reasoning": 11895,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.19968068,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.19968068,
+          "tokens": {
+            "total": 119815,
+            "input": 105459,
+            "output": 778,
+            "reasoning": 10890,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.18840528,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.18840528,
+          "tokens": {
+            "total": 117129,
+            "input": 105278,
+            "output": 4595,
+            "reasoning": 4568,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-07T02:46:33.422330+00:00",
+  "revision_after": "1aa03a5e651343d0567d2588578cd80f6a6f39bd9839830d7939d854791a1a27",
+  "dossier_hash": "34ddf40bd0af03d5a1aac80cc54f04c52127bf42d20c1b30f6b7d9a5d4f4f6f9"
+}

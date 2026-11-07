@@ -1,0 +1,104 @@
+{
+  "collect": {
+    "cost": 0.15861296,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.0783934,
+        "tokens": {
+          "total": 54566,
+          "input": 53899,
+          "output": 25,
+          "reasoning": 642,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      },
+      {
+        "cost": 0.03555148,
+        "tokens": {
+          "total": 67772,
+          "input": 13183,
+          "output": 30,
+          "reasoning": 671,
+          "cache": {
+            "write": 0,
+            "read": 53888
+          }
+        }
+      },
+      {
+        "cost": 0.04466808,
+        "tokens": {
+          "total": 75978,
+          "input": 4074,
+          "output": 1361,
+          "reasoning": 3535,
+          "cache": {
+            "write": 0,
+            "read": 67008
+          }
+        }
+      }
+    ]
+  },
+  "blue": {
+    "cost": 0.21730368,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.21730368,
+        "tokens": {
+          "total": 121365,
+          "input": 101858,
+          "output": 4924,
+          "reasoning": 11895,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  },
+  "red": {
+    "cost": 0.19968068,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.19968068,
+        "tokens": {
+          "total": 119815,
+          "input": 105459,
+          "output": 778,
+          "reasoning": 10890,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  },
+  "arbiter": {
+    "cost": 0.18840528,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.18840528,
+        "tokens": {
+          "total": 117129,
+          "input": 105278,
+          "output": 4595,
+          "reasoning": 4568,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  }
+}
