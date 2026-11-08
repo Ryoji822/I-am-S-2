@@ -1,0 +1,104 @@
+{
+  "collect": {
+    "cost": 0.19475736,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.0799334,
+        "tokens": {
+          "total": 55261,
+          "input": 54405,
+          "output": 54,
+          "reasoning": 802,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      },
+      {
+        "cost": 0.062699,
+        "tokens": {
+          "total": 79360,
+          "input": 20423,
+          "output": 106,
+          "reasoning": 4431,
+          "cache": {
+            "write": 0,
+            "read": 54400
+          }
+        }
+      },
+      {
+        "cost": 0.05212496,
+        "tokens": {
+          "total": 88093,
+          "input": 8582,
+          "output": 1111,
+          "reasoning": 3584,
+          "cache": {
+            "write": 0,
+            "read": 74816
+          }
+        }
+      }
+    ]
+  },
+  "blue": {
+    "cost": 0.25630508,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.25630508,
+        "tokens": {
+          "total": 131191,
+          "input": 103269,
+          "output": 3245,
+          "reasoning": 21989,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  },
+  "red": {
+    "cost": 0.22061048,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.22061048,
+        "tokens": {
+          "total": 124282,
+          "input": 105034,
+          "output": 749,
+          "reasoning": 15811,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  },
+  "arbiter": {
+    "cost": 0.15955668,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.15955668,
+        "tokens": {
+          "total": 110205,
+          "input": 104739,
+          "output": 2552,
+          "reasoning": 226,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  }
+}

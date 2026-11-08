@@ -22,7 +22,7 @@
 
 | 企業 | 既にある資産・販売経路 | 直近の方向 | 事業上の制約 |
 |---|---|---|---|
-| OpenAI | ChatGPTの利用基盤、API、Codex、企業・専門業種への販売 | Astra、Agents API、法務への展開、Google Cloud経由のモデル提供発表、Oracleとの提携拡大（業務アプリとエージェントをChatGPT内へ）、広告の26か国拡大、Orchestra Bio買収による垂直展開 | 実行の安全性、監督費、パートナーとの利益配分 |
+| OpenAI | ChatGPTの利用基盤、API、Codex、企業・専門業種への販売 | Astra、Agents API、法務への展開、Google Cloud経由のモデル提供発表、Oracle・ServiceNowとの提携拡大（業務アプリとエージェントのChatGPT内への接続）、広告の26か国拡大、Orchestra Bio・Pierre Computer買収の発表、Daybreak RedのAWS GovCloud提供とセキュリティモデルGPT-6 Cyberの公表 | 実行の安全性、監督費、パートナーとの利益配分 |
 | Anthropic | Claude、Code、Cowork、主要クラウドでの提供 | 企業の仕事と研究の実行、用途別の利用条件 | 能力向上と安全管理の両立、供給契約の実現 |
 | Google | 検索・YouTube・Workspace・Cloud、TPU | モデル・仕事場・管理・計算資源を統合、Model GardenでのOpenAIモデル提供を発表 | 巨額投資、製品間の条件差、既存事業との採算配分 |
 | xAI | Grok、X、Build、Colossus、SpaceXへの所属 | 低めのモデル価格、外部開発ツール、公開コード | AI部門の大きな損失、設備の回収、継続利用 |
@@ -30,15 +30,19 @@
 
 各行の根拠と経緯は [OpenAI](openai.md)、[Anthropic](anthropic.md)、[Google](google.md)、[xAI](xai.md)、[ByteDance](bytedance.md) にあります。これは売上順位ではなく、各社が利益を得ようとしている場所の比較です。
 
-10月21日、OpenAI はフロンティアモデルと Codex ワークフローを Google Cloud の Gemini Model Garden へ Google Cloud Marketplace 経由で提供すると発表しました（[OpenAI の公式フィード](https://openai.com/news/rss.xml)）。モデル層で競合する企業同士が、計算資源と販路の層では協力する構造の具体例です。顧客は Google Cloud の契約・請求の中で OpenAI のモデルを選べる可能性が生じる一方、提供開始・価格・利用条件は未確認です。同じ日に、ChatGPT Ads の26か国への拡大と10万超の広告主の利用が報告され、消費者接点の収益化が並行して進んでいます（広告主数は OpenAI の報告値）。法人需要では、Uber が ChatGPT Work を3万人超の全従業員へ展開したと報じられました（10月22日）。いずれも当事者報告で、継続率・採算・独立検証の実測はありません。
+10月21日、OpenAI はフロンティアモデルと Codex ワークフローを Google Cloud の Gemini Model Garden へ Google Cloud Marketplace 経由で提供すると発表しました（[OpenAI の公式フィード](https://openai.com/news/rss.xml)）。モデル層で競合する企業同士が、計算資源と販路の層では協力する構造の具体例です。同日に ChatGPT Ads の26か国への拡大と10万超の広告主の利用が報告され、10月22日には Uber が ChatGPT Work を3万人超の全従業員へ展開したと報じられました。いずれも当事者報告で、継続率・採算・独立検証の実測はありません。
 
-10月27日には、OpenAI と Oracle が提携を拡大し、ビジネスアプリケーションと AI エージェントを ChatGPT 内へ届けると発表しました（[OpenAI の公式フィード](https://openai.com/news/rss.xml)）。モデルを競合クラウドの販路へ出す Google Cloud 経由の提供とは逆に、業務アプリケーション側の顧客接点を ChatGPT 内へ取り込む方向です。提供開始・利用条件・費用は未確認で、Oracle での従来の利用報告（10月8日）に続く公表です。あわせて、約100か国・165の作業活動での仕事利用を示す OpenAI Signals の分析公表（10月26日）、月1億回の通話を支えるという Retell の主張（10月27日）、運用要求の最大80%を自律解決するという Grupo Boticário の主張（10月16日）など、仕事での利用を示す当事者報告が続いていますが、いずれも母集団・手法が本文未確認で、公的統計による雇用・所得の観測ではありません。
+10月27日の Oracle に続き、10月28日には ServiceNow との提携拡大が発表されました。いずれもビジネスアプリケーションと AI エージェントを ChatGPT 内へ届ける方向で、ServiceNow では OpenAI のモデルとエージェントを ServiceNow へ、ServiceNow のワークフローを ChatGPT と Codex へ持ち込む双方向の接続と説明されます（[OpenAI の公式フィード](https://openai.com/news/rss.xml)）。提供開始・利用条件・費用はいずれも未確認で、Oracle での従来の利用報告（10月8日）に続く公表です。
 
-10月21日の Google Cloud 経由提供は、モデル層の競争と計算・販路の層の協力が同時に進むことを示す事業上の変化です。Google にとっては Cloud の需要が Gemini とは別に増える経路（google section-02・H-GOO-002）、OpenAI にとっては競合クラウドの顧客接点への到達（MET-FIRM・W2・H-OAI-002）です。10月27日の Oracle との提携拡大は逆方向で、業務アプリケーションの接点を ChatGPT 内へ取り込む変化であり、顧客が仕事で使う画面の決定権が AI 提供者へ集まる W2・MD-CO の入口条件に関わります。いずれも announced_plan で、権限・データを含む移行試験を含まないため、H-GOO-002・H-OAI-002 の確認観察（移行試験の成功）の実測にはなりません。仕事・所得への影響は間接的で、同品質の業務の総費用（MET-COST）や移行費用が実際に下がるかは、提供開始後の固定業務試験と移行試験待ちです。別の説明として、両提携はそれぞれの販売戦略（Google は Cloud 利用の増加、OpenAI は既存顧客接点の獲得と維持）であり、顧客の移行の自由度や交渉力（LINK-OWNERSHIP-PROFIT）を実際に高めるか下げるかは、権限・データを含む移行が可能になったかで判断する必要があります。OpenAI Signals の利用分析や Retell・Boticário の規模主張は仕事利用の広がりの当事者データですが、母集団・手法が未確認で、雇用・所得（MET-LABOR）への影響の観測値には使えません。広告の26か国拡大と10万超の広告主は W2 の入口条件の材料ですが、掲載条件・収益の開示はありません。
+11月は接点の拡張と専門市場への投入が続きました。11月4日には Pierre Computer Company の買収（コードの構築・理解・レビューのための Codex 道具の拡張。完了・金額は未公表）、Daybreak Red の AWS GovCloud（US東）提供開始（Amazon Bedrock 経由で認可済み顧客に GPT-5.6 Cyber）、画像生成・編集と API 制御を更新する Images 2.6 が相次ぎ、11月5日にはセキュリティモデル GPT-6 Cyber の公表が続きました（いずれも [OpenAI の公式フィード](https://openai.com/news/rss.xml)、記事本文は未確認。API価格・認可制度は未確認）。
 
-残る限界：OpenAI モデルの Google Cloud 提供も Oracle との提携拡大も announced_plan で、提供開始日・対象・価格・契約条件はすべて未確認、根拠はフィードの標題・説明文で記事本文は未確認です。10万超の広告主・26か国・Uber の3万人超も当事者報告値で独立検証がありません。OpenAI Signals の約100か国・165活動、Retell の月1億回の通話・従業員1人あたり年間160万ドル、Boticário の最大80%も当事者主張で、母集団・測定方法が本文未確認です。Anthropic の行は9月22日時点のまま（個別記事の公開時刻未確認）。Google・xAI・ByteDance の公式資料は今回未確認。見直し条件は、Model Garden・Marketplace での実際の提供開始と価格公表、Oracle 提携の提供開始・条件の公表、利用企業の移行事例、Anthropic 個別記事の公開時刻確認、次回の主要決算・公表値です。
+仕事での利用を示す当事者報告も続いています（いずれも OpenAI 掲載の主張で、母集団・手法は本文未確認）。日本企業では Credit Saison が ChatGPT Enterprise パイロットで954% ROI を主張しました（10月29日。算出方法・期間・対象業務は未公表）。海外では Heimstaden（不動産管理のコスト削減、11月3日）、Cisco（セキュリティ運用、11月3日）、DevRev（GPT-6.1 Sol による法人セルフサービス、11月4日）、Merge（開発・マーケティング・事務、11月5日）、Cult.fit（Codex での業務運用、11月5日）、Franklin Templeton（投資リサーチ、11月5日）の報告、広告では Evernote（有料サブスクリプションへの転換、10月28日）と Flipsnack（登録増と登録あたりコスト低下、11月5日）の成果主張があります。約100か国・165の作業活動を示す OpenAI Signals の分析（10月26日）、月1億回の通話を支えるという Retell の主張（10月27日）、運用要求の最大80%を自律解決するという Grupo Boticário の主張（10月16日）も仕事利用の当事者データです。いずれも公的統計による雇用・所得の観測ではありません。
 
-確認更新：2026-10-28T04:34:07.427404+00:00（DS-MKT-20261028-0001）。
+事実が効くのは主に事業層です。Oracle（10月27日）・ServiceNow（10月28日）との提携拡大は業務アプリケーションの接点を ChatGPT 内へ取り込む連続例で、顧客が仕事で使う画面の決定権が AI 提供者へ集まる W2・MD-CO の入口条件の観測材料です。ただしいずれも announced_plan で、権限・データを含む移行試験を含まないため、H-OAI-002・H-GOO-002 の確認観察（移行試験の成功）の実測にはなりません。Pierre Computer 買収は開発道具の統合による Codex 接点の深化、Daybreak Red の GovCloud 提供と GPT-6 Cyber は認可付きの政府・セキュリティ市場への拡張で、提供条件・価格が未確認のため H-OAI-001 の支持根拠には扱いません。仕事層では、Credit Saison（日本企業）を含む顧客報告は法人利用の広がり（MET-AUTO・MET-FIRM・LINK-AUTO-HOURS）の探索材料ですが、ROI の算出方法が不明で基準値には使えません。所得に直接効く事実は今回の資料にはありません。別の説明として、提携の連続は提供者への接点集中（W2）であると同時に、ServiceNow の双方向接続のように提携先のワークフロー資産を ChatGPT 側へ取り込む相互依存でもあり、提携先・顧客の売上と利益の公表値が出るまでは囲い込みとも共生とも断定しません。
+
+残る限界：ServiceNow・Pierre Computer・Daybreak Red・GPT-6 Cyber・Images 2.6 の提供開始日・価格・契約条件・認可制度はすべて未確認で、根拠は OpenAI 公式フィードの標題・説明文のみ（記事本文未確認、GPT-6 Cyber は403）。Credit Saison の ROI 算出方法・期間・対象業務、Evernote・Flipsnack の広告成果、Uber の3万人超、10万超の広告主、Retell・Boticário・Signals の規模主張も当事者報告値で独立検証なし。Anthropic・Google・xAI・ByteDance の公式資料は今回未確認で、Anthropic では時刻付き公開元での確認が取れていない公表が残っているため証拠化後に本節と企業資料へ反映します。見直し条件は、Model Garden・Marketplace・Oracle・ServiceNow 提携の実際の提供開始と価格公表、Pierre Computer 買収の完了条件、GPT-6 Cyber の認可・料金の公表、Anthropic 関連公表の時刻付き再確認、WRN-20261106-0001 の次回確認（2026-11-13頃）、次回の主要決算・公表値。
+
+確認更新：2026-11-08T02:14:38.304790+00:00（DS-MKT-20261108-0001）。
 
 ## 需要は拡大しているが、数字の意味は異なる
 
