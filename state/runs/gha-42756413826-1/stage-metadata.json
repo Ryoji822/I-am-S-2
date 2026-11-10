@@ -1,0 +1,104 @@
+{
+  "collect": {
+    "cost": 0.16018591999999998,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.0773024,
+        "tokens": {
+          "total": 54661,
+          "input": 54402,
+          "output": 25,
+          "reasoning": 234,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      },
+      {
+        "cost": 0.0353148,
+        "tokens": {
+          "total": 67887,
+          "input": 12724,
+          "output": 25,
+          "reasoning": 738,
+          "cache": {
+            "write": 0,
+            "read": 54400
+          }
+        }
+      },
+      {
+        "cost": 0.04756872,
+        "tokens": {
+          "total": 76752,
+          "input": 4154,
+          "output": 2025,
+          "reasoning": 3501,
+          "cache": {
+            "write": 0,
+            "read": 67072
+          }
+        }
+      }
+    ]
+  },
+  "blue": {
+    "cost": 0.29063408,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.29063408,
+        "tokens": {
+          "total": 143581,
+          "input": 109998,
+          "output": 8061,
+          "reasoning": 22834,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  },
+  "red": {
+    "cost": 0.21214768,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.21214768,
+        "tokens": {
+          "total": 130145,
+          "input": 116454,
+          "output": 843,
+          "reasoning": 10160,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  },
+  "arbiter": {
+    "cost": 0.19813888,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.19813888,
+        "tokens": {
+          "total": 126908,
+          "input": 116376,
+          "output": 7121,
+          "reasoning": 723,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-42756413826-1",
+  "date": "2026-11-10",
+  "started_at": "2026-11-10T13:31:52.550567+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "70861e4ec1809fe3bde1fc8fbb8f87dca801f25b7332ddff39fb3320ffb705c0",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "https://www.anthropic.com/news（一覧）で2026-11-09付けの新モデル発表「Introducing Claude Fable 5.2 and Claude Mythos 5.2」を確認したが、一覧は日付のみで公開時刻を確認できないためevidenceから除外した。個別記事URLの取得と公開時刻の確認が次回必要（今回の検索2回の枠で本文未確認）。",
+    "https://www.anthropic.com/news の個別記事「An update on independent evaluators」（2026-10-15、METRへの従業員級アクセス・Hugging Face等との協議）は一覧が日付のみで公開時刻を確認できない。H-OAI-003・F-S04周辺の独立評価（METR）確認材料として原資料の再取得と時刻確認が残る。",
+    "OpenAI新着4件（AWS Marketplace提供開始、Control Room、CodeRabbit、Kuken）の記事本文は未確認。根拠はRSSフィードの標題・説明文のみ。",
+    "Google（docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes）、xAI（x.ai/build/changelog）、ByteDance（seed.bytedance.com/zh/blog）の今回の変更確認は、検索2回・原資料5件の制限で未実施。",
+    "MET-LABOR・MET-COST等の基準値となる日本の公的統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）の新規取得は今回未実施。基準値が足りない予測候補（F-S01・F-S02等）は引き続きmissingのまま。",
+    "RISK-SAFETYの日次監視（WRN-20261106-0001、next_check 2026-11-13頃）継続中。今回の当日確認（OpenAIフィード＋Anthropicニュース一覧）では、安全上の事故の正式報告・一般法人向け既存機能の正式な利用制限・公式料金変更の新規掲載は両社とも確認されなかった。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.16018591999999998,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0773024,
+          "tokens": {
+            "total": 54661,
+            "input": 54402,
+            "output": 25,
+            "reasoning": 234,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.0353148,
+          "tokens": {
+            "total": 67887,
+            "input": 12724,
+            "output": 25,
+            "reasoning": 738,
+            "cache": {
+              "write": 0,
+              "read": 54400
+            }
+          }
+        },
+        {
+          "cost": 0.04756872,
+          "tokens": {
+            "total": 76752,
+            "input": 4154,
+            "output": 2025,
+            "reasoning": 3501,
+            "cache": {
+              "write": 0,
+              "read": 67072
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.29063408,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.29063408,
+          "tokens": {
+            "total": 143581,
+            "input": 109998,
+            "output": 8061,
+            "reasoning": 22834,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.21214768,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.21214768,
+          "tokens": {
+            "total": 130145,
+            "input": 116454,
+            "output": 843,
+            "reasoning": 10160,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.19813888,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.19813888,
+          "tokens": {
+            "total": 126908,
+            "input": 116376,
+            "output": 7121,
+            "reasoning": 723,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-10T04:42:15.538141+00:00",
+  "revision_after": "3fef00ca1d85fc65fed5202fcd2b708f131932484119efff0a167413454fd797",
+  "dossier_hash": "209e42a6bce90e1ae89635169ef64e0c365e9742e8ee81c689623755ed78b241"
+}
