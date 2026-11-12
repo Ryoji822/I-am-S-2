@@ -1,0 +1,135 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-43149832589-1",
+  "date": "2026-11-12",
+  "started_at": "2026-11-12T12:41:18.960365+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "3fef00ca1d85fc65fed5202fcd2b708f131932484119efff0a167413454fd797",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "Anthropic公式ニュース一覧（https://www.anthropic.com/news）を当日確認した。2026-11-10の「Anthropic launches roadshow for proposed initial public offering」、2026-11-09の「Introducing Claude Fable 5.2 and Claude Mythos 5.2」、およびページ冒頭に表示された2026-11-12付けAnnouncements項目（テキスト抽出で標題が欠落）を確認できたが、いずれも公開時刻（時・分）がページから確認できないため、公開時刻不明の資料を作らず記録から除外した。個別記事URLの本文確認も未実施。",
+    "OpenAIの個別記事本文（例: https://openai.com/index/ai-effect-on-freelance-work 、https://openai.com/index/introducing-businesses-chatgpt ほか新着9件）は従来どおり取得できておらず、根拠はRSSフィードの標題・説明文のみ。特に「Work at the Frontier」の研究手法・対象期間・データは未確認で、MET-LABORの観測値への利用はできない。",
+    "今回の検索は2回（OpenAI RSS、Anthropicニュース一覧）と原資料5件の上限に達したため、Google（release-notes）、xAI（changelog）、ByteDance（Seedブログ）の最新確認、および雇用・賃金の公的統計（mhlw.go.jp、stat.go.jp、e-stat.go.jp）の月次確認は今回未実施。次回以降の課題。",
+    "F-S04（OpenAIかAnthropicが安全上の理由で既存法人機能を7日以上制限する）の当日確認として両社の公開資料を確認し新規掲載はなかったが、一般法人向け機能制限の有無を本文レベルでは検証できていない。WRN-20261106-0001のnext_check（2026-11-13頃）を迎えるため、次回の水準見直しが必要。",
+    "未取得の基準値（MET-COST・MET-AUTOの固定業務・品質基準・基準期間）は今回も入手できず、F-S01・F-S02・F-S05の発行条件は引き続き未充足。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.17210468,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0780064,
+          "tokens": {
+            "total": 54866,
+            "input": 54468,
+            "output": 31,
+            "reasoning": 367,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.03747524,
+          "tokens": {
+            "total": 68518,
+            "input": 12841,
+            "output": 40,
+            "reasoning": 1173,
+            "cache": {
+              "write": 0,
+              "read": 54464
+            }
+          }
+        },
+        {
+          "cost": 0.05662304,
+          "tokens": {
+            "total": 79270,
+            "input": 4564,
+            "output": 3904,
+            "reasoning": 3538,
+            "cache": {
+              "write": 0,
+              "read": 67264
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.25910348,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.25910348,
+          "tokens": {
+            "total": 124177,
+            "input": 92049,
+            "output": 10315,
+            "reasoning": 19125,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.20543228,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.20543228,
+          "tokens": {
+            "total": 118039,
+            "input": 100937,
+            "output": 813,
+            "reasoning": 13601,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.18483108,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.18483108,
+          "tokens": {
+            "total": 113256,
+            "input": 100789,
+            "output": 9615,
+            "reasoning": 164,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-12T03:54:32.870806+00:00",
+  "revision_after": "5bcfbec03d36a6c8a46b0c83c6fbca5f1e0f18d46aa30deb36e3fd9c30fb1a30",
+  "dossier_hash": "cdfc95644cdb0dd9a60179d96d8b2cc724ebf2cc7e0b431ddd3dafd288ddad89"
+}
