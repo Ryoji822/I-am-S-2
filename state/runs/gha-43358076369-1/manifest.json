@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-43358076369-1",
+  "date": "2026-11-13",
+  "started_at": "2026-11-13T12:18:51.925895+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "5bcfbec03d36a6c8a46b0c83c6fbca5f1e0f18d46aa30deb36e3fd9c30fb1a30",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "https://www.anthropic.com/news/roadshow-launch（Anthropic、IPOロードショー開始、掲載日2026-11-10）は公開時刻を確認できないため記録から除外した。ニュース一覧と個別記事ページの両方で時刻付きの公開日時を確認できなかった。MET-FIRM・資金調達（dossiers anthropic section-03）の重要事象なので時刻の確認方法を次回検討する。",
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2（Anthropic、Claude Fable 5.2／Mythos 5.2発表、掲載日2026-11-09）は公開時刻を確認できないため記録から除外した。MET-COST・MET-AUTO（新モデルの価格・能力）の重要材料。",
+    "https://www.anthropic.com/news/s1-sec（AnthropicのS-1提出、掲載日2026-10-26）も一覧で日付のみ確認できたため今回記録していない。",
+    "OpenAIの今回新着4記事（children-first-declaration等）の本文は未確認。根拠はRSSフィードの標題・説明文のみ。",
+    "今回確認したのはOpenAI公式フィードとAnthropicニュース一覧・個別記事2件まで。Google、xAI、ByteDance、公的統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）の当日確認は未実施。MET-LABOR・MET-REGIMEの公表値収集は次回以降。",
+    "予測候補F-S01〜F-L02の未取得基準値（固定業務・品質基準・基準期間等）の収集は今回未実施。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.20701152,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0796656,
+          "tokens": {
+            "total": 54984,
+            "input": 54088,
+            "output": 53,
+            "reasoning": 843,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.051438,
+          "tokens": {
+            "total": 76278,
+            "input": 20098,
+            "output": 65,
+            "reasoning": 2035,
+            "cache": {
+              "write": 0,
+              "read": 54080
+            }
+          }
+        },
+        {
+          "cost": 0.02335996,
+          "tokens": {
+            "total": 76649,
+            "input": 2269,
+            "output": 53,
+            "reasoning": 151,
+            "cache": {
+              "write": 0,
+              "read": 74176
+            }
+          }
+        },
+        {
+          "cost": 0.05254796,
+          "tokens": {
+            "total": 84133,
+            "input": 425,
+            "output": 2005,
+            "reasoning": 5287,
+            "cache": {
+              "write": 0,
+              "read": 76416
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-13T03:21:49.078766+00:00",
+  "revision_after": "4f109bef7b3e0fce8805c8592f0b8febe20d5023fe63ee410c701e0a017acb10",
+  "dossier_hash": "cdfc95644cdb0dd9a60179d96d8b2cc724ebf2cc7e0b431ddd3dafd288ddad89"
+}
