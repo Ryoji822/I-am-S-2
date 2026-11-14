@@ -1,0 +1,122 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-43549058657-1",
+  "date": "2026-11-14",
+  "started_at": "2026-11-14T11:57:32.985548+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "4f109bef7b3e0fce8805c8592f0b8febe20d5023fe63ee410c701e0a017acb10",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "Anthropic公式ニュース一覧（https://www.anthropic.com/news）を当日確認したが、公開元が日付のみ表示し公開時刻・タイムゾーンを確認できないためevidenceから除外した。次回、時刻を確認できる手段（RSS等）で再取得が必要。対象: https://www.anthropic.com/news/roadshow-launch（2026-11-10、IPOロードショー開始。MET-FIRM・資本）、https://www.anthropic.com/claude-fable-and-mythos-5-2（2026-11-09、Claude Fable 5.2 / Mythos 5.2発表。MET-AUTO・MET-COST）、https://www.anthropic.com/news/expanding-partnership-gsa（2026-10-27、GSA向け40%割引。MET-COST・MET-REGIME・H-GOV-001）、https://www.anthropic.com/news/s1-sec（2026-10-26、S-1登録。MET-FIRM）",
+    "OpenAIの新着2件の個別記事本文（https://openai.com/index/introducing-chatgpt-wallet 、https://openai.com/business/customer-stories/shield）は未確認（従来個別URLは403）。根拠はRSSフィードの標題・説明文のみで、料金・利用条件・測定条件の詳細は不明",
+    "検索は2回で上限に達したため、Google（https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes）、xAI（https://x.ai/build/changelog）、ByteDance（https://seed.bytedance.com/zh/blog）、厚生労働省・総務省の雇用・賃金統計（https://www.mhlw.go.jp/toukei/ 、https://www.stat.go.jp/data/）の当日確認は未実施。MET-LABOR・MET-REGIMEの公表値確認が未達",
+    "OpenAI公式料金ページ（https://developers.openai.com/api/docs/pricing/）の当日直接確認は未実施。RSSフィード上に料金変更の発表は確認されなかったが、ページ自体の無告知変更は検知できない（MET-COST・LINK-PRICE-COST）",
+    "observationは登録済みmetric（MET-COST等はすべてdefinition_candidateでbaseline・quality_protocol未設定）と地域・母集団・単位・品質基準が完全に一致する実測値が今回の資料になく、登録できなかった"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.14295968,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0798774,
+          "tokens": {
+            "total": 55341,
+            "input": 54541,
+            "output": 54,
+            "reasoning": 746,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.06308228,
+          "tokens": {
+            "total": 79273,
+            "input": 19991,
+            "output": 1551,
+            "reasoning": 3203,
+            "cache": {
+              "write": 0,
+              "read": 54528
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.25207528,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.25207528,
+          "tokens": {
+            "total": 125504,
+            "input": 96338,
+            "output": 9445,
+            "reasoning": 17033,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.20515748,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.20515748,
+          "tokens": {
+            "total": 120232,
+            "input": 104245,
+            "output": 825,
+            "reasoning": 12474,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.18474968,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.18474968,
+          "tokens": {
+            "total": 115480,
+            "input": 104078,
+            "output": 8481,
+            "reasoning": 233,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-14T03:06:34.799125+00:00",
+  "revision_after": "38aa494ea4e2a1325f3d4dbb3b106876d9c3f42018619ac3fca480a5ac8092f7",
+  "dossier_hash": "1d357266d2e5595a523f762ee052541a594961cecdbd4c3efaab9a8a6aad229d"
+}
