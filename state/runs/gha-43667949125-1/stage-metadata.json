@@ -1,0 +1,114 @@
+{
+  "collect": {
+    "cost": 0.246587,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.0829874,
+        "tokens": {
+          "total": 56791,
+          "input": 55631,
+          "output": 62,
+          "reasoning": 1098,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      },
+      {
+        "cost": 0.06077116,
+        "tokens": {
+          "total": 81341,
+          "input": 22293,
+          "output": 57,
+          "reasoning": 3375,
+          "cache": {
+            "write": 0,
+            "read": 55616
+          }
+        }
+      },
+      {
+        "cost": 0.05890088,
+        "tokens": {
+          "total": 96823,
+          "input": 14888,
+          "output": 26,
+          "reasoning": 4021,
+          "cache": {
+            "write": 0,
+            "read": 77888
+          }
+        }
+      },
+      {
+        "cost": 0.04392756,
+        "tokens": {
+          "total": 100044,
+          "input": 4113,
+          "output": 1075,
+          "reasoning": 2120,
+          "cache": {
+            "write": 0,
+            "read": 92736
+          }
+        }
+      }
+    ]
+  },
+  "blue": {
+    "cost": 0.31053148,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.31053148,
+        "tokens": {
+          "total": 138212,
+          "input": 95491,
+          "output": 8623,
+          "reasoning": 31410,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      }
+    ]
+  },
+  "red": {
+    "cost": 0.3086368,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.18800728,
+        "tokens": {
+          "total": 115139,
+          "input": 102492,
+          "output": 135,
+          "reasoning": 9824,
+          "cache": {
+            "write": 0,
+            "read": 2688
+          }
+        }
+      },
+      {
+        "cost": 0.12062952,
+        "tokens": {
+          "total": 153102,
+          "input": 39230,
+          "output": 1230,
+          "reasoning": 7490,
+          "cache": {
+            "write": 0,
+            "read": 105152
+          }
+        }
+      }
+    ]
+  },
+  "arbiter": {
+    "status": "skipped_red_rejection"
+  }
+}

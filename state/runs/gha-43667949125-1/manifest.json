@@ -1,0 +1,146 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-43667949125-1",
+  "date": "2026-11-15",
+  "started_at": "2026-11-15T11:28:42.307335+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "38aa494ea4e2a1325f3d4dbb3b106876d9c3f42018619ac3fca480a5ac8092f7",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "OpenAI公式RSSフィード（https://openai.com/news/rss.xml、lastBuildDate 2026-11-15T01:50:48Z）を当日確認し、前回記録（ChatGPT Wallet、2026-11-13T15:00:00Z、EVD-20261114-0001）以降の新着は0件。安全上の事故の正式報告・一般法人向け既存機能の正式な利用制限・公式料金変更の発表はなし（RISK-SAFETY・MET-COSTの日次確認結果。WRN-20261114-0001の監視継続、next_check 2026-11-21頃）。",
+    "https://developers.openai.com/api/docs/pricing/ は公開時刻を確認できない（更新日のない頁）ため記録から除外。当日の直接確認（WRN-20261114-0001が指摘した未実施項目）で確認した内容: gpt-6-cyberのAPI価格 $20.00入力/$100.00出力（1Mトークン、短文脈・長文脈$40/$150、Daybreak trusted access）が掲載（EVD-20261106-0010の未確認事項を補完）、GPT-5.6 Solの販促価格は2026-11-30まで、GPT-6 Astra for Law販促価格は2026-12-31以降まで、セルフサービスfine-tuningは新規利用者向け停止、データ常駐型・FedRAMPエンドポイントは+10%アップチャージ。料金変更の発表時刻が取れないためevidence化は次回以降も困難、頁の内容変化の検知方法の検討が必要。",
+    "https://developers.openai.com/api/docs/deprecations は公開時刻を確認できないため記録から除外。期限付きの正式な提供終了・制限（安全性理由ではなくライフサイクル為、F-S04の発生材料ではない）: 2026-11-30に/v1/prompts・Evalsダッシュボード（読取専用）・Agent Builder、2026-12-01にgpt-image-1.5/gpt-image-1-mini/chatgpt-image-latest、2026-12-11にgpt-5系・o3系、2027-01-06にセルフサービスfine-tuningの新規ジョブ作成終了（既存顧客含む、通知2026-05-07）、2027-02-01にgpt-5.5-cyber-preview、2027-02-10にgpt-image-2。2026-11-30・12-11の期限はMET-COST（利用条件の変更）・RISK-SUPPLY・MD-COの監視対象。各通知日に時刻がなくevidence化不可。",
+    "https://www.anthropic.com/news は記事ごとに日付のみで公開時刻を確認できないため記録から除外。最新はIPOロードショー開始（2026-11-10）、Claude Fable 5.2・Claude Mythos 5.2発表（2026-11-09）。安全上の事故・正式な提供制限の見出しは確認できず。Latest news欄に2026-11-15付けの項目らしきものがあるが標題・本文を特定できず（https://www.anthropic.com/news/all は404）。次回、個別記事URLを特定し、Fable 5.2・Mythos 5.2の価格・利用条件とあわせ確認する。",
+    "今回の予算内で未実施の残課題: MET-LABOR系公的統計（mhlw.go.jp・stat.go.jp）の月次公表の当日確認は未実施。MET-COSTの固定業務基準値（F-S01/F-S02に必要な固定5業務・品質基準・4週間基準）は依然未取得。Anthropic S-1提出（2026-10-26）・ロードショー（2026-11-10）の一次文書（sec.gov等）は許可ドメイン外または未確認。H-OAI-001・H-OAI-003の月次レビュー（HRV-20261106-0001/0002）のnext_checkは2026-12-06頃で本次未実施。検索0回・原資料5件（4件成功・1件404）で予算を使い切った。",
+    "反対点検が変更案を採用しなかったため、その判断は正式判断として公表せず除外しました（2件：dossier_section:DS-OAI-20261115-0001、dossier_section:DS-OAI-20261115-0002）。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.246587,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0829874,
+          "tokens": {
+            "total": 56791,
+            "input": 55631,
+            "output": 62,
+            "reasoning": 1098,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.06077116,
+          "tokens": {
+            "total": 81341,
+            "input": 22293,
+            "output": 57,
+            "reasoning": 3375,
+            "cache": {
+              "write": 0,
+              "read": 55616
+            }
+          }
+        },
+        {
+          "cost": 0.05890088,
+          "tokens": {
+            "total": 96823,
+            "input": 14888,
+            "output": 26,
+            "reasoning": 4021,
+            "cache": {
+              "write": 0,
+              "read": 77888
+            }
+          }
+        },
+        {
+          "cost": 0.04392756,
+          "tokens": {
+            "total": 100044,
+            "input": 4113,
+            "output": 1075,
+            "reasoning": 2120,
+            "cache": {
+              "write": 0,
+              "read": 92736
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.31053148,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.31053148,
+          "tokens": {
+            "total": 138212,
+            "input": 95491,
+            "output": 8623,
+            "reasoning": 31410,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.3086368,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.18800728,
+          "tokens": {
+            "total": 115139,
+            "input": 102492,
+            "output": 135,
+            "reasoning": 9824,
+            "cache": {
+              "write": 0,
+              "read": 2688
+            }
+          }
+        },
+        {
+          "cost": 0.12062952,
+          "tokens": {
+            "total": 153102,
+            "input": 39230,
+            "output": 1230,
+            "reasoning": 7490,
+            "cache": {
+              "write": 0,
+              "read": 105152
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "status": "skipped_red_rejection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-15T02:41:17.898350+00:00",
+  "revision_after": "0d5b2b6198bdef26ba5631b6fba9cdc5f16c599aa394fa48a87d01dffb5198e5",
+  "dossier_hash": "1d357266d2e5595a523f762ee052541a594961cecdbd4c3efaab9a8a6aad229d"
+}
