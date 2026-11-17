@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-44020883106-1",
+  "date": "2026-11-17",
+  "started_at": "2026-11-17T13:59:34.136099+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "e303eb04a5b30456ce78a1bcbf118f7c98e1335ccbb3f69f7f7ffa4ced5121f6",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "個別記事の本文が未確認：https://openai.com/index/our-first-phase-of-embedded-assessments は当日の直接取得で403。組み込み評価（Apollo Research・METR・Transluce・Goodfire）の対象範囲・開始時期・結果の公表予定を本文から確認できない。他の8件の個別URLも同様に本文未確認で、フィードの標題・説明文のみに依存している。",
+    "公式料金ページ（https://developers.openai.com/api/docs/pricing/）の当日直接確認は今回も未実施（検索2回の制限でRSSフィードと上記記事の2回を使用）。フィード確認だけでは無告知の価格変更を検知できず、WRN-20261114-0001が指摘した限界が残る。",
+    "「Advancing computer-use agents for healthcare teams」はフィードにdescription要素がなく、内容の詳細を確認できなかった。",
+    "収集計画の残り項目は今回未実施：Anthropic・Google・xAI・ByteDance各社の最新公表の確認、雇用・賃金等の公的統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）の月次公表確認、予測候補（F-S01〜F-L02）に必要な基準値の収集。次回以降に着手する。",
+    "OpenAI以外の提供元に関する安全上の事故・提供制限・料金変更は、今回の確認範囲外で未確認のまま。",
+    "反対点検が変更案を採用しなかったため、その判断は正式判断として公表せず除外しました（2件：dossier_section:DS-OAI-20261117-0001、dossier_section:DS-MKT-20261117-0001）。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.17633379999999998,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0821044,
+          "tokens": {
+            "total": 56681,
+            "input": 55764,
+            "output": 30,
+            "reasoning": 887,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.04120724,
+          "tokens": {
+            "total": 70921,
+            "input": 13355,
+            "output": 41,
+            "reasoning": 1781,
+            "cache": {
+              "write": 0,
+              "read": 55744
+            }
+          }
+        },
+        {
+          "cost": 0.05302216,
+          "tokens": {
+            "total": 78320,
+            "input": 1898,
+            "output": 3767,
+            "reasoning": 3599,
+            "cache": {
+              "write": 0,
+              "read": 69056
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.2846492,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.2846492,
+          "tokens": {
+            "total": 133603,
+            "input": 101068,
+            "output": 9469,
+            "reasoning": 23066,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.1994206,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.1994206,
+          "tokens": {
+            "total": 119639,
+            "input": 108997,
+            "output": 801,
+            "reasoning": 9841,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "status": "skipped_red_rejection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-17T05:08:49.909836+00:00",
+  "revision_after": "f617d6c17b0db6a0621e85c31b7f81d89992155811728500d93a4ddb1b5c3415",
+  "dossier_hash": "1d357266d2e5595a523f762ee052541a594961cecdbd4c3efaab9a8a6aad229d"
+}
