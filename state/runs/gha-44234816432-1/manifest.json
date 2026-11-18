@@ -1,0 +1,135 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-44234816432-1",
+  "date": "2026-11-18",
+  "started_at": "2026-11-18T13:05:14.417700+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "f617d6c17b0db6a0621e85c31b7f81d89992155811728500d93a4ddb1b5c3415",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "https://developers.openai.com/api/docs/pricing/ — 2026-11-18に直接取得して確認済み。gpt-6.2-astra（標準・ショート文脈 $8.00/$40.00 per 1Mトークン）、gpt-6.2-sol（$2.00/$10.00）、gpt-6.2-astra-law（$8.00/$40.00、プロモーション価格は少なくとも2026-12-31まで）、gpt-6-astra（$10.00/$50.00）、Batchは標準の半額、GPT-6.2のUltrafastは2027-02-28まで標準の3倍・2027-03-01以降6倍の予定、Fine-tuningの新規利用停止、GPT-5.6 Solプロモーション価格は2026-11-30まで、を確認。ただしページ自体に公開日時の表示がなくevidenceのpublished_atを確認できないため記録から除外した。MET-COST基準値の一次資料とする場合は再度取得して内容と時刻を固定する必要がある。Fine-tuning新規停止がフィード等でいつ正式発表されたかも未確認。",
+    "個別記事本文（https://openai.com/index/introducing-gpt-6-2-astra-sol 等、今回の新着5件）は当日直接取得を試みたが403。モデル性能・低コスト主張・提供条件の本文確認は未実施で、根拠はフィードの標題・説明文のみ。",
+    "Anthropic（https://www.anthropic.com/news）、Google（https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes）、xAI（https://x.ai/build/changelog）、ByteDance（https://seed.bytedance.com/zh/blog）の公式情報源は今回未確認。収集計画の優先順位（重大な危険・料金と安全の日次監視）に従いOpenAIを確認した残りは次回以降に残す。",
+    "雇用・賃金・物価の公的統計（https://www.mhlw.go.jp/toukei/ 、https://www.stat.go.jp/data/ 、https://www.e-stat.go.jp/）の月次公表の確認は今回未実施。MET-LABOR・F-M01・F-L01の基準値構築に必要。",
+    "H-OAI-001・H-OAI-003の反対証拠（同一顧客群の更新率・採算、固定業務の成功率・介入時間の実測、第三者調査による解約・継続情報）は今回の公開資料では確認できず。embedded assessments（EVD-20261117-0005、Apollo Research・METR・Transluce・Goodfire）の評価実施結果の公表はまだ確認できない。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.22489863999999998,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.0853358,
+          "tokens": {
+            "total": 59077,
+            "input": 58201,
+            "output": 36,
+            "reasoning": 840,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.04175996,
+          "tokens": {
+            "total": 73324,
+            "input": 13339,
+            "output": 66,
+            "reasoning": 1743,
+            "cache": {
+              "write": 0,
+              "read": 58176
+            }
+          }
+        },
+        {
+          "cost": 0.09780288,
+          "tokens": {
+            "total": 97458,
+            "input": 11684,
+            "output": 4204,
+            "reasoning": 10082,
+            "cache": {
+              "write": 0,
+              "read": 71488
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.349544,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.349544,
+          "tokens": {
+            "total": 150265,
+            "input": 103874,
+            "output": 10621,
+            "reasoning": 35770,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.2518138,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.2518138,
+          "tokens": {
+            "total": 134072,
+            "input": 112701,
+            "output": 686,
+            "reasoning": 20685,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.2005504,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.2005504,
+          "tokens": {
+            "total": 122306,
+            "input": 112532,
+            "output": 9523,
+            "reasoning": 251,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-18T04:20:43.732597+00:00",
+  "revision_after": "a0079784c1b2a052c2644e0072806e5f5e729894294f497b4bf6ba404ebff34b",
+  "dossier_hash": "994fd2d539ff078d538959959b6000541fa581952447250a38016e8d917aee89"
+}

@@ -1,0 +1,104 @@
+{
+  "collect": {
+    "cost": 0.22489863999999998,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.0853358,
+        "tokens": {
+          "total": 59077,
+          "input": 58201,
+          "output": 36,
+          "reasoning": 840,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      },
+      {
+        "cost": 0.04175996,
+        "tokens": {
+          "total": 73324,
+          "input": 13339,
+          "output": 66,
+          "reasoning": 1743,
+          "cache": {
+            "write": 0,
+            "read": 58176
+          }
+        }
+      },
+      {
+        "cost": 0.09780288,
+        "tokens": {
+          "total": 97458,
+          "input": 11684,
+          "output": 4204,
+          "reasoning": 10082,
+          "cache": {
+            "write": 0,
+            "read": 71488
+          }
+        }
+      }
+    ]
+  },
+  "blue": {
+    "cost": 0.349544,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.349544,
+        "tokens": {
+          "total": 150265,
+          "input": 103874,
+          "output": 10621,
+          "reasoning": 35770,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      }
+    ]
+  },
+  "red": {
+    "cost": 0.2518138,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.2518138,
+        "tokens": {
+          "total": 134072,
+          "input": 112701,
+          "output": 686,
+          "reasoning": 20685,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      }
+    ]
+  },
+  "arbiter": {
+    "cost": 0.2005504,
+    "unit": "provider_reported_USD",
+    "steps": [
+      {
+        "cost": 0.2005504,
+        "tokens": {
+          "total": 122306,
+          "input": 112532,
+          "output": 9523,
+          "reasoning": 251,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      }
+    ]
+  }
+}
