@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-44670845202-1",
+  "date": "2026-11-20",
+  "started_at": "2026-11-20T12:54:57.057135+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "a0079784c1b2a052c2644e0072806e5f5e729894294f497b4bf6ba404ebff34b",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "Anthropic（https://www.anthropic.com/news、2026-11-20取得）：ニュースルーム一覧の公開日は日付のみで時刻が確認できないためevidence記録から除外した。未記録の重要項目：(1) Anthropic prices initial public offering（2026-11-18表示）— IPO価格決定。RISK-SUPPLY・MET-FIRM・H-ANT・Anthropic dossier section-03（売上、資金調達、供給基盤）に直接関連する重大事象。(2) Anthropic launches roadshow for proposed IPO（2026-11-10表示）。(3) Introducing Claude Fable 5.2 and Claude Mythos 5.2（2026-11-09表示）— 新モデル発表、MET-COST・H-ANT関連。個別記事URLの特定と時刻付き公開日時の確認が必要。RSS（https://www.anthropic.com/news/rss.xml）は404で取得できず、SEC提出書類（govinfo.gov等）での日時確認が次善。",
+    "OpenAI公式料金ページ（https://developers.openai.com/api/docs/pricing/、2026-11-20T03:54Z頃直接取得）：gpt-6.2-astra標準$8.00/$40.00・gpt-6.2-sol $2.00/$10.00・gpt-6-astra $10.00/$50.00・gpt-6.2-astra-law $8.00/$40.00（プロモーションは少なくとも2026-12-31まで）を確認し、2026-11-18記録（EVD-20261118-0001要約）と同一で既存モデルの料金変更は検知されなかった。ただしページ自体に公開日時の表示がなく、変更日時を証明できないためevidence記録不可。MET-COSTの観測には時刻付きの変更履歴・公表手段が未確認。",
+    "OpenAIフィード新着12件（EVD-20261120-0001〜0012）の個別記事本文は従来403のため未確認。根拠はフィードの標題・説明文のみで、性能主張（Performance Factory、jagged frontier、チップ設計等）の本文検証は未実施。",
+    "HRV-20261106-0002（H-OAI-003）のnext_checkが求めるMETR等による独立評価の進捗：OpenAI側はembedded assessments（EVD-20261117-0005、METR含む）の開始発表済み。Anthropic側の「An update on independent evaluators」（METRへの従業員等同等アクセス、2026-10-15表示）は公開時刻が日付のみのため未記録。評価の実施結果・時期はいずれも未公表。",
+    "日本の公的統計（mhlw.go.jp・stat.go.jp・e-stat.go.jp）：MET-LABOR/F-M01/F-L01に必要な職種・経験層別の雇用・賃金系列の基準値取得は今回の対象外（優先順位は日次監視が上位）。次回以降の確認課題。",
+    "反対点検が変更案を採用しなかったため、その判断は正式判断として公表せず除外しました（2件：warning:WRN-20261120-0001、dossier_section:DS-OAI-20261120-0001）。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.23673255999999998,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.093386,
+          "tokens": {
+            "total": 62575,
+            "input": 60648,
+            "output": 48,
+            "reasoning": 1879,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.06063448,
+          "tokens": {
+            "total": 82814,
+            "input": 17610,
+            "output": 53,
+            "reasoning": 4543,
+            "cache": {
+              "write": 0,
+              "read": 60608
+            }
+          }
+        },
+        {
+          "cost": 0.08271208,
+          "tokens": {
+            "total": 102233,
+            "input": 14444,
+            "output": 5372,
+            "reasoning": 4209,
+            "cache": {
+              "write": 0,
+              "read": 78208
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.2838016,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.2838016,
+          "tokens": {
+            "total": 144029,
+            "input": 116642,
+            "output": 7518,
+            "reasoning": 19869,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.3528554,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.3528554,
+          "tokens": {
+            "total": 163846,
+            "input": 122689,
+            "output": 1450,
+            "reasoning": 39707,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "status": "skipped_red_rejection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-20T04:10:57.471614+00:00",
+  "revision_after": "ca588c20b6ebc3ec338db34f1fc1018c0ddf3277e2f9bc01bb490d1d465a5547",
+  "dossier_hash": "994fd2d539ff078d538959959b6000541fa581952447250a38016e8d917aee89"
+}
