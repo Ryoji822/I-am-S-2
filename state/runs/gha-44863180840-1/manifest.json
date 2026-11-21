@@ -1,0 +1,147 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-44863180840-1",
+  "date": "2026-11-21",
+  "started_at": "2026-11-21T12:51:14.225217+09:00",
+  "mode": "shadow",
+  "model": "zai/glm-5.1",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "ff7cf827147c43346fbd9440ff6fe45d4870d1f9f7ec385343474ea6e2c23142",
+    "blue": "c95132e89e0b3c568d21a022c9adee62705d57f812484192423a81ae4dfd36f4",
+    "red": "dee800c4560f9cf31338e6bb0105b8aa5f669bb41dd09de95af34892434ce74f",
+    "arbiter": "f4fa0e6a7fae60f6afae3eaac5ad04d5c186caaf34fefb6e74ff9ebacaec5a56"
+  },
+  "revision_before": "ca588c20b6ebc3ec338db34f1fc1018c0ddf3277e2f9bc01bb490d1d465a5547",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "https://developers.openai.com/api/docs/pricing/ — 当日直接取得し、gpt-6.2-astra標準$8.00/$40.00・gpt-6.2-sol $2.00/$10.00・gpt-6-astra $10.00/$50.00は2026-11-18・2026-11-20の記録と同一で、既存モデルの値上げは確認されなかった。ただしページに公開日時の表示がなくevidence記録のpublished_atを確認できないため記録から除外。同ページにはGPT-5.6 Solのプロモーション価格が2026-11-30まで、GPT-6.2系Ultrafastが2027-02-28までは標準の3倍・2027-03-01以降6倍（Pacific time）との将来の価格変更記載があり、MET-COST・F-S01の基準値整理時に公開元文書での日時・条件の確認が必要。",
+    "https://www.anthropic.com/news — 当日取得で最新記事はIPOクロージング（合計1,127,000,000株・公開価格1株$83.00・2026-11-20）だが、一覧の各記事は日付のみで公開時刻が確認できないため記録から除外（同じ理由でIPOプライシング2026-11-18、ロードショー開始2026-11-10、Claude Fable 5.2／Mythos 5.2発表2026-11-09も除外）。MET-FIRM・資本系列（anthropic.comセクション03）に関わる重要情報のため、個別記事URLと公開時刻の確認が残課題。一覧上に安全上の事故の正式報告・法人向け既存機能の正式な利用制限の掲載はなく、F-S04（OpenAIかAnthropic）の当日確認として発生なし。ページ先頭の「November 21, 2026」表示が当日日付の表示か当日付け記事の存在を示すかは取得内容から判別できず未確認。",
+    "OpenAIフィード各記事の本文は従来通り個別URL（openai.com/index/…）が403のため未確認。今次日時の根拠はフィードのpubDate・標題・説明文のみ。",
+    "今回の確認対象外（優先順位と件数・検索数制限による残課題）：MET-LABORに関わる厚生労働省・総務省統計の新着、MET-COST／MET-AUTOの固定業務基準値の設計、Google・xAI・ByteDanceの公開資料、HRV-20261106-0001／0002（H-OAI-001・H-OAI-003）のnext_check 2026-12-06頃に向けた独立評価（METR等）・更新率情報の探索。次回以降の実施予定。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.22867768,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.090332,
+          "tokens": {
+            "total": 61780,
+            "input": 60500,
+            "output": 35,
+            "reasoning": 1245,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.0382688,
+          "tokens": {
+            "total": 74920,
+            "input": 13664,
+            "output": 29,
+            "reasoning": 747,
+            "cache": {
+              "write": 0,
+              "read": 60480
+            }
+          }
+        },
+        {
+          "cost": 0.04035752,
+          "tokens": {
+            "total": 86188,
+            "input": 10682,
+            "output": 34,
+            "reasoning": 1360,
+            "cache": {
+              "write": 0,
+              "read": 74112
+            }
+          }
+        },
+        {
+          "cost": 0.05971936,
+          "tokens": {
+            "total": 96611,
+            "input": 4854,
+            "output": 2109,
+            "reasoning": 4912,
+            "cache": {
+              "write": 0,
+              "read": 84736
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.3070316,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.3070316,
+          "tokens": {
+            "total": 146899,
+            "input": 113108,
+            "output": 10143,
+            "reasoning": 23648,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.24776944,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.24776944,
+          "tokens": {
+            "total": 139256,
+            "input": 121564,
+            "output": 816,
+            "reasoning": 16812,
+            "cache": {
+              "write": 0,
+              "read": 64
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.2127078,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.2127078,
+          "tokens": {
+            "total": 131157,
+            "input": 121461,
+            "output": 9409,
+            "reasoning": 287,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-21T04:02:45.586622+00:00",
+  "revision_after": "6260b0d6468b7573fe20f11607794ac98ae8c55558b618e7583e717c281fdff6",
+  "dossier_hash": "47df68d1941fb771b03d3a7f55db1bef4cc352cad5bde31ea7b4a347ffb66677"
+}
