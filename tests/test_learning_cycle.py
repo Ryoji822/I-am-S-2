@@ -10,6 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from lib.learning_cycle import current_context, model_config, run_cycle, update_plan
+from lib.learning_brief import next_checks, short_sentence
 from lib.forecast_learning import digest, load_state, scorecard
 from test_forecast_learning import initial_records, actual_records, LATER
 
@@ -86,6 +87,14 @@ class CycleTests(unittest.TestCase):
             self.assertIn(guidance.strip(), seen[stage])
         self.assertNotIn(guidance.strip(), seen["red"])
         self.assertEqual(manifest["prompt_hashes"], {stage: digest(text) for stage, text in seen.items()})
+
+    def test_daily_brief_keeps_the_sentence_complete_when_a_note_contains_punctuation(self):
+        sentence = "公開時刻を確認する（前回と同じ条件。価格は未確認）。"
+        value = f"判断を進めるために次に見る資料・実績：{sentence}価格は次回確認する。"
+        notes = next_checks([{"type": "dossier_section", "uncertainty": value}], {},
+                            "detail.md", lambda *_: "企業発表", [])
+        self.assertEqual(notes, [f"- **企業発表**　{sentence}"])
+        self.assertEqual(short_sentence("公開時刻を確認する（前回と同じ条件。"), "")
 
     def test_model_dossiers_keep_historical_text_without_repeating_evidence_summaries(self):
         from lib.report_knowledge import dossier_model_context

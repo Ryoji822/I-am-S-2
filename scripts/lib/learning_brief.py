@@ -9,10 +9,15 @@ from urllib.parse import urlparse
 def short_sentence(value, limit=185):
     """Return a complete sentence, or leave lengthy material in the detail."""
     line = value.strip().partition("\n")[0]
-    sentence = re.split(r"(?<=。)\s*|(?<=[!?])\s+|(?<=\.)\s+", line, maxsplit=1)[0]
-    if not 0 < len(sentence) <= limit:
-        return ""
-    return re.sub(r"([\\\[\]*_`])", r"\\\1", html.escape(sentence, quote=False))
+    pairs = ("()", "（）", "「」", "『』", "【】")
+    for boundary in re.finditer(r"。|[.!?](?=\s)|$", line):
+        end = boundary.end()
+        if end > limit:
+            break
+        sentence = line[:end]
+        if sentence and all(sentence.count(left) == sentence.count(right) for left, right in pairs):
+            return re.sub(r"([\\\[\]*_`])", r"\\\1", html.escape(sentence, quote=False))
+    return ""
 
 
 def evidence_headline(summary, feed):
@@ -93,7 +98,7 @@ def next_checks(proposed, dossiers, detail, heading, gaps):
     changes = [row for row in proposed if row["type"] == "dossier_section"]
     notes = []
     for row in changes[:2]:
-        value = row["uncertainty"].removeprefix("判断を進めるために次に見る資料：").strip()
+        value = re.sub(r"^判断を進めるために次に見る資料(?:・実績)?[：:]\s*", "", row["uncertainty"])
         note = short_sentence(value)
         if note:
             notes.append(f"- **{heading(dossiers, row)}**　{note}")
