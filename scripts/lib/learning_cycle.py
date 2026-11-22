@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 from .forecast_contract import ContractViolation, FIELDS, instant, require
 from .forecast_learning import apply_plan, append_records, digest, load_state, validate_plan
 from .forecast_scoring import resolve
-from .learning_model import SOURCE_HOSTS, ModelResponseError, capture_collected, model_config, run_model
+from .learning_model import SOURCE_HOSTS, ModelAuthenticationError, ModelResponseError, capture_collected, model_config, run_model
 from .learning_render import atomic_text, write_failure_snapshot, write_outputs
 from .legacy_information import historical_context
 from .report_knowledge import collection_index, dossier_model_context, load_dossiers, merge_dossiers, partition_dossier_updates
@@ -331,7 +331,7 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory, r
                         "model context budget exceeded")
                 try:
                     result, cost = runner(stage, stage_context, Path(temporary) / stage, policy)
-                except ModelResponseError as error:
+                except (ModelAuthenticationError, ModelResponseError) as error:
                     atomic_text(run_directory / "stage-metadata.json", json.dumps({**usage, stage: error.metadata}, ensure_ascii=False, indent=2) + "\n")
                     raise
                 atomic_text(run_directory / "stage-metadata.json", json.dumps({**usage, stage: {**cost, "status": "returned"}}, ensure_ascii=False, indent=2) + "\n")

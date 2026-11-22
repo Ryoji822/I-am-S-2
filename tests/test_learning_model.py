@@ -8,7 +8,7 @@ from unittest.mock import MagicMock, patch
 from urllib.error import HTTPError, URLError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from lib.learning_model import (ModelResponseError, OUTPUT_TOKEN_MAX, _opencode_token, public_source, read_model_json,
+from lib.learning_model import (ModelAuthenticationError, ModelResponseError, OUTPUT_TOKEN_MAX, _opencode_token, public_source, read_model_json,
                                 capture_evidence, capture_collected, model_config, run_model)
 
 
@@ -244,12 +244,13 @@ class ModelBoundaryTests(unittest.TestCase):
             "ACTIONS_ID_TOKEN_REQUEST_TOKEN": "github-bearer",
         }
         responses = [MagicMock(stdout="1.18.31\n"),
+                     MagicMock(stdout='{"access_token":"console-1"}\n200', returncode=0),
                      MagicMock(stdout=self._model_events("missing JSON", 0.1), returncode=0),
+                     MagicMock(stdout='{"access_token":"console-2"}\n200', returncode=0),
                      MagicMock(stdout=self._model_events('{}', 0.2), returncode=0)]
         opener = MagicMock()
         opener.open.side_effect = [
-            self._auth_response("value", "github-jwt-1"), self._auth_response("access_token", "console-1"),
-            self._auth_response("value", "github-jwt-2"), self._auth_response("access_token", "console-2"),
+            self._auth_response("value", "github-jwt-1"), self._auth_response("value", "github-jwt-2"),
         ]
         with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", env, clear=True), \
                 patch("lib.learning_model.build_opener", return_value=opener), \
@@ -259,11 +260,14 @@ class ModelBoundaryTests(unittest.TestCase):
         requests = [call.args[0] for call in opener.open.call_args_list]
         self.assertEqual(requests[0].get_header("Authorization"), "Bearer github-bearer")
         self.assertIn("audience=https%3A%2F%2Fopencode.ai%2Fconsole", requests[0].full_url)
-        self.assertEqual(requests[1].full_url, "https://opencode.ai/console/auth/oauth/token")
-        self.assertIn(b"subject_token=github-jwt-1", requests[1].data)
-        self.assertIn(b"client_id=client-id", requests[1].data)
-        self.assertIn(b"subject_token=github-jwt-2", requests[3].data)
-        model_envs = [call.kwargs["env"] for call in command.call_args_list[1:]]
+        exchanges = command.call_args_list[1::2]
+        endpoint = "https://opencode.ai/console/auth/oauth/token"
+        self.assertTrue(all(call.args[0][-1] == endpoint for call in exchanges))
+        self.assertIn("subject_token=github-jwt-1", exchanges[0].kwargs["input"])
+        self.assertIn("client_id=client-id", exchanges[0].kwargs["input"])
+        self.assertIn("subject_token=github-jwt-2", exchanges[1].kwargs["input"])
+        self.assertTrue(all("github-jwt" not in ' '.join(call.args[0]) for call in exchanges))
+        model_envs = [call.kwargs["env"] for call in command.call_args_list[2::2]]
         self.assertEqual([item["OPENCODE_API_KEY"] for item in model_envs], ["console-1", "console-2"])
         for item in model_envs:
             self.assertTrue(env.keys().isdisjoint(item))
@@ -276,12 +280,15 @@ class ModelBoundaryTests(unittest.TestCase):
             "ACTIONS_ID_TOKEN_REQUEST_TOKEN": "github-bearer",
         }
         opener = MagicMock()
-        opener.open.side_effect = [
-            self._auth_response("value", "github-jwt"), self._auth_response("access_token", ""),
-        ]
-        with patch.dict("os.environ", env, clear=True), patch("lib.learning_model.build_opener", return_value=opener):
-            with self.assertRaisesRegex(ValueError, "OpenCode Console OIDC token exchange failed"):
+        opener.open.return_value = self._auth_response("value", "github-jwt")
+        failure = MagicMock(stdout='{"error":"invalid_grant","error_description":"PRIVATE"}\n400', returncode=0)
+        with patch.dict("os.environ", env, clear=True), patch("lib.learning_model.build_opener", return_value=opener), \
+                patch("lib.learning_model.subprocess.run", return_value=failure):
+            with self.assertRaisesRegex(ModelAuthenticationError, "OpenCode Console OIDC token exchange failed") as caught:
                 _opencode_token()
+        self.assertEqual(caught.exception.metadata["http_status"], 400)
+        self.assertEqual(caught.exception.metadata["oauth_error"], "invalid_grant")
+        self.assertNotIn("PRIVATE", json.dumps(caught.exception.metadata))
 
     def _auth_response(self, field, value):
         response = MagicMock()

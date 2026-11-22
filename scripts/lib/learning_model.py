@@ -92,16 +92,59 @@ class NoAuthRedirect(HTTPRedirectHandler):
         return None
 
 
+class ModelAuthenticationError(ValueError):
+    def __init__(self, message, **metadata):
+        super().__init__(message)
+        self.metadata = {"status": "authentication_failed", **metadata}
+
+
+def _token_field(payload, field):
+    token = payload.get(field) if isinstance(payload, dict) else None
+    if (isinstance(token, str) and token and token.isascii() and token.isprintable()
+            and not any(char.isspace() for char in token)):
+        return token
+    return None
+
+
 def _read_auth_token(opener, request, field, failure):
     try:
         with opener.open(request, timeout=20) as response:
             payload = json.loads(response.read(65536))
     except (URLError, TimeoutError, ValueError):
         raise ValueError(failure) from None
-    token = payload.get(field) if isinstance(payload, dict) else None
-    require(isinstance(token, str) and bool(token) and token.isascii() and token.isprintable()
-            and not any(char.isspace() for char in token), failure)
+    token = _token_field(payload, field)
+    require(token is not None, failure)
     return token
+
+
+def _exchange_console_token(client_id, subject):
+    data = urlencode({
+        "grant_type": "urn:ietf:params:oauth:grant-type:token-exchange",
+        "subject_token_type": "urn:ietf:params:oauth:token-type:jwt",
+        "client_id": client_id,
+        "subject_token": subject,
+    })
+    command = ["curl", "-q", "--silent", "--show-error", "--proto", "=https", "--max-time", "20",
+               "--header", "Content-Type: application/x-www-form-urlencoded", "--data-binary", "@-",
+               "--write-out", "\n%{http_code}", f"{OPENCODE_AUDIENCE}/auth/oauth/token"]
+    message = "OpenCode Console OIDC token exchange failed"
+    try:
+        response = subprocess.run(command, input=data, capture_output=True, text=True, timeout=25, check=False)
+    except (OSError, subprocess.TimeoutExpired):
+        raise ModelAuthenticationError(message, transport="curl") from None
+    body, _, status = response.stdout.rpartition("\n")
+    try:
+        payload = json.loads(body)
+    except ValueError:
+        payload = {}
+    token = _token_field(payload, "access_token")
+    if response.returncode == 0 and status == "200" and token:
+        return token
+    code = payload.get("error") if isinstance(payload, dict) else None
+    allowed = ("invalid_request", "invalid_client", "invalid_grant", "unauthorized_client",
+               "unsupported_grant_type", "invalid_scope", "invalid_target", "access_denied")
+    raise ModelAuthenticationError(message, http_status=int(status) if re.fullmatch(r"[0-9]{3}", status) else None,
+                                   oauth_error=code if code in allowed else None, transport_status=response.returncode)
 
 
 def _opencode_token():
@@ -121,13 +164,7 @@ def _opencode_token():
         github_url + separator + urlencode({"audience": OPENCODE_AUDIENCE}),
         headers={"Authorization": f"Bearer {github_token}"},
     ), "value", "GitHub Actions OIDC token request failed")
-    exchange = Request(f"{OPENCODE_AUDIENCE}/auth/oauth/token", data=urlencode({
-        "grant_type": "urn:ietf:params:oauth:grant-type:token-exchange",
-        "subject_token_type": "urn:ietf:params:oauth:token-type:jwt",
-        "client_id": client_id,
-        "subject_token": subject,
-    }).encode("ascii"), headers={"Content-Type": "application/x-www-form-urlencoded"})
-    return _read_auth_token(opener, exchange, "access_token", "OpenCode Console OIDC token exchange failed")
+    return _exchange_console_token(client_id, subject)
 
 
 class ModelResponseError(ValueError):
