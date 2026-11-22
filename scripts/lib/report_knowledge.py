@@ -48,6 +48,14 @@ def collection_index(dossiers):
             for subject, dossier in dossiers.items()}
 
 
+def dossier_model_context(dossiers):
+    return {subject: {**dossier, "sections": [
+        {**{key: value for key, value in section.items() if key != "sources"},
+         "evidence_ids": [source["id"] for source in section.get("sources", [])]}
+        for section in dossier["sections"]]}
+        for subject, dossier in dossiers.items()}
+
+
 def merge_dossiers(baseline, state, now):
     dossiers = copy.deepcopy(baseline)
     updates = sorted(state['records']['dossier_section'].values(), key=lambda row: (instant(row['reviewed_at']), row['id']))
@@ -114,9 +122,23 @@ def partition_dossier_updates(baseline, state, updates, now):
     return [], dropped
 
 
-def dossier_text(dossier, heading=1):
+def dossier_text(dossier, heading=1, navigation=False):
     lines = ['#' * heading + ' ' + dossier['title'], '', dossier['introduction'], '']
+    if navigation:
+        revisions = [section for section in dossier['sections'] if section.get('reviewed_at')]
+        revisions.sort(key=lambda section: instant(section['reviewed_at']), reverse=True)
+        summary = ['[企業・市場資料の一覧](README.md) · [日報一覧](../Intelligence/README.md)', '']
+        if revisions:
+            summary += ['## 最近見直した節', '']
+            for section in revisions[:3]:
+                date = instant(section['reviewed_at']).astimezone(ZoneInfo('Asia/Tokyo')).date()
+                summary.append(f"- {date} JST · [{section['title']}](#section-{section['id']})")
+        else:
+            summary += [f"初版の確認日 {dossier['available_on']} JST"]
+        lines[2:2] = summary + ['']
     for section in dossier['sections']:
+        if navigation:
+            lines += [f'<a name="section-{section["id"]}"></a>', '']
         lines += ['#' * (heading + 1) + ' ' + section['title'], '', section['body'], '']
         if section.get('record_id'):
             lines += [section['analysis'], '', '残る限界：' + section['uncertainty'], '',

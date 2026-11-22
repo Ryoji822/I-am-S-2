@@ -24,6 +24,7 @@ on:
 permissions:
   contents: write
   actions: read
+  id-token: write
 
 # Same ref shares one queue. Do not cancel: cancelling drops a finished checkpoint.
 concurrency:
@@ -74,7 +75,7 @@ jobs:
         continue-on-error: true
         if: github.event_name == 'schedule' || steps.resume.outputs.action == 'resume'
         env:
-          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENCODE_OIDC_CLIENT_ID: ${{ vars.OPENCODE_OIDC_CLIENT_ID }}
           RESUME_CHECKPOINT_DIR: ${{ steps.resume.outputs.checkpoint_dir }}
           REQUIRE_RESUME: ${{ github.event_name != 'schedule' && 'true' || '' }}
         run: bash scripts/run-pipeline.sh
@@ -108,6 +109,8 @@ jobs:
             state/shadow/reviews/
             state/shadow/state/scores/
             data/forecast_ledger/transactions/
+            Intelligence/
+            static_intelligence/
             reviews/
             state/scores/
           retention-days: 30

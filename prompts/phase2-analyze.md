@@ -26,3 +26,5 @@ context.dossiersには各社と市場・シナリオの全体像があり、sect
 subjectはopenai/anthropic/google/xai/bytedance/market-overview/scenario-tracker。sectionは既存の節ID。bodyにはその節の更新後の全文を書きます。新着だけに切り詰めず、既知の有効な製品・日付・数値・顧客・条件・経緯も引き継ぎ、失効した条件は何がどう変わったかを明記します。body内に採用したevidenceのURLをMarkdownで引用し、evidence_idsにも列挙します。新規の引用URLは検証済みevidenceのURLに限り、引き継ぐ既存引用は保持できます。根拠のない数値・最新性・採用実績を作りません。
 
 analysisに事実が事業・仕事・所得のどこへ影響するかと別の説明、uncertaintyに範囲・残る制約・見直し条件を書きます。reviewed_atはcontext.now、supersedesはその節のrecord_id（まだなければnull）。同じ節を同じ実行で2回更新しません。1実行で特に重要な3節以内を目安にし、取りこぼしはreasonに記載します。partialなら本文の変更も出力しません。価格や企業の利用人数を違う母集団の利益へ換算しません。W1〜W5は併存します。
+
+analysisの冒頭で、今回の原資料から何が分かったかを一文で伝えてください。次に、関連する以前の確認日と資料を示し、今回変わった点と判断を保留した点を書きます。価格、導入件数、性能などを過去と比べるときは、対象、単位、測定条件がそろうものを使います。uncertaintyには、今回確認できなかった点と、判断を進めるために次に見る資料や実績を書いてください。

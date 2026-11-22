@@ -16,12 +16,23 @@ from .forecast_scoring import resolve
 from .learning_model import SOURCE_HOSTS, ModelResponseError, capture_collected, model_config, run_model
 from .learning_render import atomic_text, write_failure_snapshot, write_outputs
 from .legacy_information import historical_context
-from .report_knowledge import collection_index, load_dossiers, merge_dossiers, partition_dossier_updates
+from .report_knowledge import collection_index, dossier_model_context, load_dossiers, merge_dossiers, partition_dossier_updates
 from .resume_cycle import JUDGMENT_STAGES, checkpoint_document
 
 
 STAGES = {"collect": "phase1-collect.md", "blue": "phase2-analyze.md",
           "red": "phase3-red-team.md", "arbiter": "phase4-arbiter.md"}
+REPORT_WRITING_STAGES = {"collect", "blue", "arbiter"}
+MODEL_CONTEXT_BYTES = 600_000
+
+
+def stage_instructions(root, stage):
+    prompts = root / "prompts"
+    instructions = (prompts / STAGES[stage]).read_text(encoding="utf-8")
+    if stage in REPORT_WRITING_STAGES:
+        guidance = (prompts / "report-writing.md").read_text(encoding="utf-8")
+        return instructions.rstrip() + "\n\n" + guidance
+    return instructions
 
 
 def read_json(path):
@@ -272,6 +283,23 @@ def update_plan(state, run_id, outputs, bootstrap, now, dossiers=None):
     return {**plan, "records": proposed + resolutions}, quarantine
 
 
+def build_stage_context(root, stage, context, outputs, now):
+    common = {"now": now, "previous_stages": outputs, "instructions": stage_instructions(root, stage)}
+    if stage == "collect":
+        return {**context, **common, "dossiers": collection_index(context["dossiers"]),
+                "max_source_documents": 5}
+    if stage == "arbiter":
+        return common
+    dossiers = dossier_model_context(context["dossiers"])
+    if stage == "red":
+        sections = {(record.get("subject"), record.get("section")) for record in outputs["blue"]["records"]
+                    if record.get("type") == "dossier_section"}
+        dossiers = {subject: {**dossier, "sections": [
+            section for section in dossier["sections"] if (subject, section["id"]) in sections]}
+            for subject, dossier in dossiers.items() if any(key == subject for key, _ in sections)}
+    return {**context, **common, "dossiers": dossiers}
+
+
 def execute_stages(root, state, bootstrap, now, runner, policy, run_directory, resumed=None, run_id="checkpoint"):
     resumed = resumed or {}
     prefix = []
@@ -289,7 +317,7 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory, r
     context = current_context(root, append_records(state, bootstrap), now)
     date = instant(now).astimezone(ZoneInfo("Asia/Tokyo")).date().isoformat()
     with tempfile.TemporaryDirectory(prefix="ias2-model-") as temporary:
-        for stage, prompt in STAGES.items():
+        for stage in STAGES:
             if stage in prefix:
                 result = resumed[stage]
                 cost = {"status": "resumed_from_checkpoint"}
@@ -298,12 +326,9 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory, r
                     accept_collection(state, result, now)
             else:
                 stage_now = datetime.now(timezone.utc).isoformat() if runner is run_model else now
-                stage_context = {**context, "now": stage_now, "previous_stages": outputs,
-                                 "instructions": (root / "prompts" / prompt).read_text(encoding="utf-8")}
-                if stage == 'collect':
-                    stage_context = {**stage_context, 'dossiers': collection_index(context['dossiers']),
-                                     'max_source_documents': 5}
-                require(len(json.dumps(stage_context, ensure_ascii=False).encode()) <= 400_000, "model context budget exceeded")
+                stage_context = build_stage_context(root, stage, context, outputs, stage_now)
+                require(len(json.dumps(stage_context, ensure_ascii=False).encode()) <= MODEL_CONTEXT_BYTES,
+                        "model context budget exceeded")
                 try:
                     result, cost = runner(stage, stage_context, Path(temporary) / stage, policy)
                 except ModelResponseError as error:
@@ -347,7 +372,7 @@ def execute_stages(root, state, bootstrap, now, runner, policy, run_directory, r
 
 
 def manifest_base(run_id, date, now, policy, state, root):
-    prompts = {key: digest((root / "prompts" / file).read_text(encoding="utf-8")) for key, file in STAGES.items()}
+    prompts = {stage: digest(stage_instructions(root, stage)) for stage in STAGES}
     return {"schema_version": "2.0", "run_id": run_id, "date": date, "started_at": now,
             "mode": policy["mode"], "model": policy["model"], "opencode_version": policy["opencode_version"],
             "code_version": "learning-v3-dossiers", "prompt_hashes": prompts, "revision_before": state["revision"],

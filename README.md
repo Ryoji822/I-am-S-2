@@ -2,7 +2,7 @@
 
 AIの変化が、**社会の仕事と所得・会社の顧客と利益・個人の選択肢**にどう影響するかを調べます。仮説を残し、期限を決めて予想し、実績が出たら外れた理由まで見直します。
 
-最初に読む資料は[市場の見取り図](static_intelligence/market-overview.md)、[五つの未来](static_intelligence/scenario-tracker.md)、[9月15〜21日の振り返り](reviews/weekly/2026-09-21.md)です。
+日報で今回の変化と次に確かめることを読み、必要に応じて当日の詳細記録へ進めます。企業・市場資料では最終確認日から更新した節を開けます。 [日報一覧](Intelligence/README.md) · [企業・市場資料](static_intelligence/README.md) · [定期レビュー](reviews/) · [レポートの設計](docs/report-design.md)
 
 ## どう使うか
 
@@ -20,7 +20,11 @@ AIの変化が、**社会の仕事と所得・会社の顧客と利益・個人�
 
 ## 実行
 
-Python 3.11以上とOpenCode 1.18.31を使用します。GLM_API_KEYを環境変数または実行環境のSecretsに設定してください。キーをファイルへ書き込みません。
+Python 3.11以上とOpenCode 1.18.31を使用します。モデルはOpenCode ConsoleのGLM 5.3です。
+
+ローカルで実行する場合は、OpenCode ConsoleのAPIキーを環境変数 `OPENCODE_API_KEY` で渡してください。パイプラインはキーをファイルに保存せず、環境変数から読み取ります。
+
+GitHub Actionsでは、OpenCode Consoleでこのリポジトリを許可したサービスアカウントを使います。そのクライアントIDをGitHubのリポジトリ変数 `OPENCODE_OIDC_CLIENT_ID` に登録してください。パイプラインはモデルの呼び出し前に毎回OIDCトークンを交換します。
 
 ```bash
 ./ias2 validate
@@ -32,6 +36,10 @@ python3 scripts/search-information.py Agents --company openai --before 2026-09-2
 
 初期設定は14日間の試行（shadow）です。出力は`state/shadow/`、実行結果は`state/runs/`です。ローカル実行では公開・通知しません。失敗後の再試行は`./ias2 run --run-id retry-20260922-1`のように別のIDを付けます。同じIDは処理を重複させません。
 
+GitHub Actionsは、試行運用で採用した日報と企業・市場資料を`Intelligence/`と`static_intelligence/`にも反映します。資料に試行運用と表示し、予測の台帳は`state/shadow/`に保存します。
+
+収集・分析で使う報告文の指示は[報告文の書き方](prompts/report-writing.md)にあります。手作業で推敲する場合も、同梱の[explain-before-shorten](.opencode/skills/explain-before-shorten/SKILL.md)を使えます。
+
 過去日を指定した新規予測や、モデル単独での正式更新はできません。判定案だけを見るには`./ias2 resolve`、明示的な変更案を検証して追記するには`./ias2 apply --plan PATH`を使います。
 
 毎朝08:00 JSTのGitHub Actionsは、一つの処理内で週・月・四半期・半年のレビューを作ります。生成物だけを指定したパスで保存し、全ファイルの一括追加やSlack送信はしません。モデル費用の金額上限は未設定で、時間・件数に上限を置き、返された実測費用を記録します。
@@ -40,7 +48,7 @@ python3 scripts/search-information.py Agents --company openai --before 2026-09-2
 
 ## ファイルの見方
 
-- [日報](Intelligence/2026-09-21.md)：当日差分、5社の継続状態、市場・雇用、短中長期の判断を一冊に掲載。
+- [日報一覧](Intelligence/README.md)で、今回の要点、前回の確認、次に確かめることを読みます。
 - [Static Intelligence](static_intelligence/market-overview.md)：各社の製品・顧客・規模・資金・販路・経緯・制約を持つ企業資料。
 - `config/dossiers/`：再調査した7冊の基礎本文。日々の節更新は台帳へ追記し、日報とStaticが同じ確定本文を使う。
 - [仮説](config/hypotheses.json)：21の問いと、支持・反証になる観測。

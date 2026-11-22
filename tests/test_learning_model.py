@@ -8,7 +8,7 @@ from unittest.mock import MagicMock, patch
 from urllib.error import HTTPError, URLError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from lib.learning_model import (ModelResponseError, OUTPUT_TOKEN_MAX, public_source, read_model_json,
+from lib.learning_model import (ModelResponseError, OUTPUT_TOKEN_MAX, _opencode_token, public_source, read_model_json,
                                 capture_evidence, capture_collected, model_config, run_model)
 
 
@@ -168,9 +168,9 @@ class ModelBoundaryTests(unittest.TestCase):
         good = self._model_events('{"records":[]}', 0.2)
         responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout=bad, returncode=0),
                      MagicMock(stdout=good, returncode=0)]
-        policy = dict(opencode_version="1.18.31", model="zai/glm-5.1", stage_timeout_seconds=600,
+        policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3", stage_timeout_seconds=600,
                       max_retries_per_stage=1)
-        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"GLM_API_KEY": "dummy"}), \
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}), \
                 patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
             result, usage = run_model("blue", context, Path(temporary) / "stage", policy)
         self.assertEqual(result, {"records": []})
@@ -185,9 +185,9 @@ class ModelBoundaryTests(unittest.TestCase):
         truncated = self._model_events('{"records": [], "reason": "途中', 0.15)
         responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout=truncated, returncode=0),
                      MagicMock(stdout=truncated, returncode=0)]
-        policy = dict(opencode_version="1.18.31", model="zai/glm-5.1", stage_timeout_seconds=600,
+        policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3", stage_timeout_seconds=600,
                       max_retries_per_stage=1)
-        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"GLM_API_KEY": "dummy"}), \
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}), \
                 patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
             with self.assertRaises(ModelResponseError) as caught:
                 run_model("blue", context, Path(temporary) / "stage", policy)
@@ -201,9 +201,9 @@ class ModelBoundaryTests(unittest.TestCase):
     def test_model_process_failure_is_not_retried(self):
         context = {"instructions": "Return the complete collection JSON."}
         responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout="", returncode=1)]
-        policy = dict(opencode_version="1.18.31", model="zai/glm-5.1", stage_timeout_seconds=600,
+        policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3", stage_timeout_seconds=600,
                       max_retries_per_stage=1)
-        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"GLM_API_KEY": "dummy"}), \
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}), \
                 patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
             with self.assertRaises(ValueError):
                 run_model("blue", context, Path(temporary) / "stage", policy)
@@ -213,8 +213,8 @@ class ModelBoundaryTests(unittest.TestCase):
         context = {'body': 'a' * 50000, 'instructions': 'Return the complete collection JSON.'}
         events = json.dumps({'type': 'text', 'part': {'text': '{"records":[]}'}})
         responses = [MagicMock(stdout='1.18.31\n'), MagicMock(stdout=events, returncode=0)]
-        policy = dict(opencode_version='1.18.31', model='zai/glm-5.1', stage_timeout_seconds=600)
-        with tempfile.TemporaryDirectory() as temporary, patch.dict('os.environ', {'GLM_API_KEY': 'dummy'}), \
+        policy = dict(opencode_version='1.18.31', model='opencode/glm-5.3', stage_timeout_seconds=600)
+        with tempfile.TemporaryDirectory() as temporary, patch.dict('os.environ', {'OPENCODE_API_KEY': 'dummy'}), \
                 patch('lib.learning_model.subprocess.run', side_effect=responses) as command:
             run_model('collect', context, Path(temporary) / 'stage', policy)
             arguments, options = command.call_args
@@ -226,10 +226,67 @@ class ModelBoundaryTests(unittest.TestCase):
     def test_output_budget_is_above_the_opencode_32k_clamp(self):
         # Runs 41960895241 and 42155661151 failed in blue: both attempts had
         # output + reasoning == 32000, then invalid_final_json at line 1 column 1.
-        limit = model_config(Path('.'))['provider']['zai']['models']['glm-5.1']['limit']
+        provider = model_config(Path('.'))['provider']['opencode']
+        self.assertEqual(provider['options']['baseURL'], 'https://opencode.ai/inference/openai/v1')
+        self.assertEqual(provider['options']['apiKey'], '{env:OPENCODE_API_KEY}')
+        limit = provider['models']['glm-5.3']['limit']
         self.assertEqual(limit['output'], OUTPUT_TOKEN_MAX)
         self.assertGreater(limit['output'], 32000)
         self.assertGreaterEqual(limit['context'] - limit['output'], 112000)
+
+    def test_github_run_exchanges_oidc_again_for_each_model_attempt(self):
+        context = {"instructions": "Return JSON."}
+        policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3",
+                      stage_timeout_seconds=600, max_retries_per_stage=1)
+        env = {
+            "OPENCODE_OIDC_CLIENT_ID": "client-id",
+            "ACTIONS_ID_TOKEN_REQUEST_URL": "https://example.actions.githubusercontent.com/token?api-version=2",
+            "ACTIONS_ID_TOKEN_REQUEST_TOKEN": "github-bearer",
+        }
+        responses = [MagicMock(stdout="1.18.31\n"),
+                     MagicMock(stdout=self._model_events("missing JSON", 0.1), returncode=0),
+                     MagicMock(stdout=self._model_events('{}', 0.2), returncode=0)]
+        opener = MagicMock()
+        opener.open.side_effect = [
+            self._auth_response("value", "github-jwt-1"), self._auth_response("access_token", "console-1"),
+            self._auth_response("value", "github-jwt-2"), self._auth_response("access_token", "console-2"),
+        ]
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", env, clear=True), \
+                patch("lib.learning_model.build_opener", return_value=opener), \
+                patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
+            result, _ = run_model("blue", context, Path(temporary), policy)
+        self.assertEqual(result, {})
+        requests = [call.args[0] for call in opener.open.call_args_list]
+        self.assertEqual(requests[0].get_header("Authorization"), "Bearer github-bearer")
+        self.assertIn("audience=https%3A%2F%2Fopencode.ai%2Fconsole", requests[0].full_url)
+        self.assertEqual(requests[1].full_url, "https://opencode.ai/console/auth/oauth/token")
+        self.assertIn(b"subject_token=github-jwt-1", requests[1].data)
+        self.assertIn(b"client_id=client-id", requests[1].data)
+        self.assertIn(b"subject_token=github-jwt-2", requests[3].data)
+        model_envs = [call.kwargs["env"] for call in command.call_args_list[1:]]
+        self.assertEqual([item["OPENCODE_API_KEY"] for item in model_envs], ["console-1", "console-2"])
+        for item in model_envs:
+            self.assertTrue(env.keys().isdisjoint(item))
+
+    def test_oidc_failure_does_not_fall_back_to_a_local_key(self):
+        env = {
+            "OPENCODE_API_KEY": "local-key",
+            "OPENCODE_OIDC_CLIENT_ID": "client-id",
+            "ACTIONS_ID_TOKEN_REQUEST_URL": "https://example.actions.githubusercontent.com/token",
+            "ACTIONS_ID_TOKEN_REQUEST_TOKEN": "github-bearer",
+        }
+        opener = MagicMock()
+        opener.open.side_effect = [
+            self._auth_response("value", "github-jwt"), self._auth_response("access_token", ""),
+        ]
+        with patch.dict("os.environ", env, clear=True), patch("lib.learning_model.build_opener", return_value=opener):
+            with self.assertRaisesRegex(ValueError, "OpenCode Console OIDC token exchange failed"):
+                _opencode_token()
+
+    def _auth_response(self, field, value):
+        response = MagicMock()
+        response.__enter__.return_value.read.return_value = json.dumps({field: value}).encode()
+        return response
 
     def test_recaptured_evidence_and_observations_share_actual_retrieval_time(self):
         original = [{"type": "evidence", "id": "E-1", "retrieved_at": "old"},

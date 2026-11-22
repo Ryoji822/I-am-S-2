@@ -10,7 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from lib.learning_cycle import current_context, model_config, run_cycle, update_plan
-from lib.forecast_learning import load_state, scorecard
+from lib.forecast_learning import digest, load_state, scorecard
 from test_forecast_learning import initial_records, actual_records, LATER
 
 
@@ -71,6 +71,34 @@ class CycleTests(unittest.TestCase):
         self.assertEqual(path.read_text(), "Existing official report")
         self.assertNotIn("Secret provider", json.dumps(manifest))
         self.assertEqual(manifest['error_location'][-1]['function'], 'fail')
+
+    def test_report_writing_guidance_reaches_stages_that_write_report_text(self):
+        guidance = (self.root / "prompts/report-writing.md").read_text(encoding="utf-8")
+        seen = {}
+
+        def runner(stage, context, directory, policy):
+            seen[stage] = context["instructions"]
+            return successful_stage(stage, context, directory, policy)
+
+        manifest = run_cycle(self.root, NOW, "report-style", runner)
+        self.assertEqual(manifest["outcome"], "complete")
+        for stage in ("collect", "blue", "arbiter"):
+            self.assertIn(guidance.strip(), seen[stage])
+        self.assertNotIn(guidance.strip(), seen["red"])
+        self.assertEqual(manifest["prompt_hashes"], {stage: digest(text) for stage, text in seen.items()})
+
+    def test_model_dossiers_keep_historical_text_without_repeating_evidence_summaries(self):
+        from lib.report_knowledge import dossier_model_context
+
+        section = {"id": "section-01", "body": "確認済みの過去の本文", "record_id": "D-1",
+                   "sources": [{"id": "E-1", "summary": "大きな出典本文" * 50000}]}
+        dossiers = {"openai": {"sections": [section]}}
+        model_section = dossier_model_context(dossiers)["openai"]["sections"][0]
+        self.assertEqual(model_section["body"], section["body"])
+        self.assertEqual(model_section["record_id"], "D-1")
+        self.assertEqual(model_section["evidence_ids"], ["E-1"])
+        self.assertNotIn("sources", model_section)
+        self.assertIn("sources", section)
 
     def rejected_proposal(self, red, run_id):
         evidence = initial_records()[1]
@@ -261,7 +289,7 @@ class CycleTests(unittest.TestCase):
             self.assertEqual(permission[action], "deny")
         self.assertEqual(config["share"], "disabled")
         self.assertFalse(config['compaction']['auto'])
-        limit = config["provider"]["zai"]["models"]["glm-5.1"]["limit"]
+        limit = config["provider"]["opencode"]["models"]["glm-5.3"]["limit"]
         self.assertGreater(limit["output"], 32000)
         self.assertGreaterEqual(limit["context"] - limit["output"], 112000)
 

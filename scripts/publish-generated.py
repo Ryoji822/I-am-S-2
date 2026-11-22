@@ -8,6 +8,7 @@ import subprocess
 from pathlib import Path
 
 from lib.forecast_contract import require
+from lib.learning_render import project_shadow_reports
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,7 +18,9 @@ def allowed(path):
     patterns = [r"state/runs/[A-Za-z0-9_-]+/(manifest|accepted-plan|stage-metadata)\.json",
                 r"(?:state/shadow/)?data/forecast_ledger/transactions/[A-Za-z0-9_-]+\.json",
                 r"(?:state/shadow/)?Intelligence/\d{4}-\d{2}-\d{2}\.md",
+                r"Intelligence/(?:README\.md|details/\d{4}-\d{2}-\d{2}\.md)",
                 r"(?:state/shadow/)?static_intelligence/(openai|anthropic|google|xai|bytedance|market-overview|scenario-tracker)\.md",
+                r"static_intelligence/README\.md",
                 r"(?:state/shadow/)?reviews/(weekly|monthly|quarterly|semiannual)/\d{4}-\d{2}-\d{2}\.md",
                 r"(?:state/shadow/)?state/scores/latest\.json"]
     return any(re.fullmatch(pattern, path) for pattern in patterns)
@@ -33,6 +36,8 @@ def publish(run_id):
     manifest = json.loads((ROOT / "state/runs" / run_id / "manifest.json").read_text())
     require(manifest["outcome"] in {"complete", "partial"}, "failed run cannot publish")
     require(not git("diff", "--cached", "--name-only").strip(), "index already contains unrelated changes")
+    if manifest["mode"] == "shadow":
+        project_shadow_reports(ROOT, manifest)
     changed = git("ls-files", "--modified", "--others", "--exclude-standard", "-z").split("\0")
     paths = sorted({path for path in changed if allowed(path) and (ROOT / path).is_file()})
     if not paths:

@@ -6,7 +6,7 @@ import os
 import re
 import subprocess
 from datetime import datetime, timezone
-from urllib.parse import urlparse
+from urllib.parse import urlencode, urlparse
 from urllib.error import HTTPError, URLError
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
@@ -14,10 +14,11 @@ from .forecast_contract import require
 
 
 # OpenCode 1.18.31 sends min(model limit, 32000) unless this process env is set.
-# GLM-5.1 counts reasoning toward that same budget. A blue reply that lands on
-# exactly 32000 tokens is cut off, and the unfinished JSON cannot be read.
+# Reasoning counts toward the output budget. A truncated reply can leave
+# the stage's JSON unreadable.
 OUTPUT_TOKEN_MAX = 65536
-MODEL_CONTEXT_TOKENS = 204800
+MODEL_CONTEXT_TOKENS = 1_000_000
+OPENCODE_AUDIENCE = "https://opencode.ai/console"
 
 
 SOURCE_HOSTS = (
@@ -79,10 +80,54 @@ def model_config(directory):
             "compaction": {"auto": False},
             "autoupdate": False, "permission": permission,
             "agent": {"learning": {"mode": "primary", "permission": permission}},
-            "provider": {"zai": {"npm": "@ai-sdk/openai-compatible", "name": "Z.ai",
-                "options": {"baseURL": "https://api.z.ai/api/coding/paas/v4", "apiKey": "{env:GLM_API_KEY}"},
-                "models": {"glm-5.1": {"name": "GLM-5.1",
+            "provider": {"opencode": {"npm": "@ai-sdk/openai-compatible", "name": "OpenCode Console",
+                "options": {"baseURL": "https://opencode.ai/inference/openai/v1",
+                            "apiKey": "{env:OPENCODE_API_KEY}"},
+                "models": {"glm-5.3": {"name": "GLM-5.3", "reasoning": True, "tool_call": True,
                     "limit": {"context": MODEL_CONTEXT_TOKENS, "output": OUTPUT_TOKEN_MAX}}}}}}
+
+
+class NoAuthRedirect(HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
+def _read_auth_token(opener, request, field, failure):
+    try:
+        with opener.open(request, timeout=20) as response:
+            payload = json.loads(response.read(65536))
+    except (URLError, TimeoutError, ValueError):
+        raise ValueError(failure) from None
+    token = payload.get(field) if isinstance(payload, dict) else None
+    require(isinstance(token, str) and bool(token) and token.isascii() and token.isprintable()
+            and not any(char.isspace() for char in token), failure)
+    return token
+
+
+def _opencode_token():
+    client_id = os.environ.get("OPENCODE_OIDC_CLIENT_ID")
+    github_url = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_URL")
+    github_token = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_TOKEN")
+    if "OPENCODE_OIDC_CLIENT_ID" not in os.environ and not (github_url or github_token):
+        api_key = os.environ.get("OPENCODE_API_KEY")
+        require(bool(api_key), "OPENCODE_API_KEY is required")
+        return api_key
+
+    require(bool(client_id and github_url and github_token),
+            "OpenCode OIDC requires OPENCODE_OIDC_CLIENT_ID and GitHub Actions id-token: write")
+    opener = build_opener(NoAuthRedirect())
+    separator = "&" if urlparse(github_url).query else "?"
+    subject = _read_auth_token(opener, Request(
+        github_url + separator + urlencode({"audience": OPENCODE_AUDIENCE}),
+        headers={"Authorization": f"Bearer {github_token}"},
+    ), "value", "GitHub Actions OIDC token request failed")
+    exchange = Request(f"{OPENCODE_AUDIENCE}/auth/oauth/token", data=urlencode({
+        "grant_type": "urn:ietf:params:oauth:grant-type:token-exchange",
+        "subject_token_type": "urn:ietf:params:oauth:token-type:jwt",
+        "client_id": client_id,
+        "subject_token": subject,
+    }).encode("ascii"), headers={"Content-Type": "application/x-www-form-urlencoded"})
+    return _read_auth_token(opener, exchange, "access_token", "OpenCode Console OIDC token exchange failed")
 
 
 class ModelResponseError(ValueError):
@@ -297,8 +342,7 @@ def read_model_json(output):
 def run_model(stage, context, directory, policy):
     directory.mkdir(parents=True, exist_ok=True)
     (directory / "context.json").write_text(json.dumps(context, ensure_ascii=False), encoding="utf-8")
-    env = {k: os.environ[k] for k in ["PATH", "GLM_API_KEY", "SSL_CERT_FILE", "SSL_CERT_DIR"] if k in os.environ}
-    require(bool(env.get("GLM_API_KEY")), "GLM_API_KEY is required")
+    env = {k: os.environ[k] for k in ["PATH", "SSL_CERT_FILE", "SSL_CERT_DIR"] if k in os.environ}
     env.update({"HOME": str(directory), "XDG_CONFIG_HOME": str(directory / "config"),
                 "XDG_DATA_HOME": str(directory / "data"), "XDG_CACHE_HOME": str(directory / "cache"),
                 "OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX": str(OUTPUT_TOKEN_MAX),
@@ -317,7 +361,8 @@ def run_model(stage, context, directory, policy):
     payload = json.dumps(context, ensure_ascii=False)
     failures = []
     for attempt in range(retries + 1):
-        result = subprocess.run(command, cwd=directory, env=env, capture_output=True, text=True,
+        model_env = {**env, "OPENCODE_API_KEY": _opencode_token()}
+        result = subprocess.run(command, cwd=directory, env=model_env, capture_output=True, text=True,
                                 input=payload, timeout=policy["stage_timeout_seconds"], check=False)
         require(result.returncode == 0, "model stage failed")
         try:

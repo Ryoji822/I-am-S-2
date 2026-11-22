@@ -79,13 +79,87 @@ class KnowledgeTests(unittest.TestCase):
             manifest = run_cycle(self.root, NOW, name, runner)
             self.assertEqual(manifest['outcome'], quality)
             daily = (self.root / 'state/shadow/Intelligence/2026-09-23.md').read_text()
+            self.assertIn('収集を完了' if quality == 'complete' else '一部の資料を取得できませんでした', daily)
+            self.assertLess(daily.index('## 今日の更新'), daily.index('## 確認できなかったこと'))
+            self.assertLess(daily.index('## 確認できなかったこと'), daily.index('## 企業・市場の詳しい情報'))
             for subject, dossier in load_dossiers(self.root, NOW).items():
-                self.assertIn(dossier['title'], daily)
+                self.assertIn(f'../static_intelligence/{subject}.md', daily)
                 static = (self.root / 'state/shadow/static_intelligence' / (subject + '.md')).read_text()
                 for section in dossier['sections']:
-                    self.assertTrue(relocate_links(section['body'], 'state/shadow/Intelligence') in daily, section['title'])
                     self.assertTrue(relocate_links(section['body'], 'state/shadow/static_intelligence') in static, section['title'])
             self.assertFalse((self.root / 'static_intelligence').exists())
+
+    def test_public_reports_use_the_verified_shadow_snapshot(self):
+        from lib.learning_render import project_shadow_reports
+
+        manifest = run_cycle(self.root, NOW, 'public-projection', successful_stage)
+        self.assertEqual(manifest['outcome'], 'complete')
+        self.assertFalse((self.root / 'Intelligence').exists())
+        with self.assertRaises(ValueError):
+            project_shadow_reports(self.root, {**manifest, 'dossier_hash': 'mismatch'})
+        self.assertFalse((self.root / 'Intelligence').exists())
+
+        project_shadow_reports(self.root, manifest)
+        daily = (self.root / f"Intelligence/{manifest['date']}.md").read_text()
+        static = (self.root / 'static_intelligence/openai.md').read_text()
+        self.assertIn('試行運用', daily)
+        self.assertIn('試行運用', static)
+        self.assertIn('## 今回分かったこと', daily)
+        self.assertNotIn('企業・市場の全文', daily)
+        self.assertIn(f"../state/shadow/Intelligence/{manifest['date']}.md", daily)
+        self.assertIn(f"({manifest['date']}.md)", (self.root / 'Intelligence/README.md').read_text())
+        self.assertIn('[OpenAI](openai.md)', (self.root / 'static_intelligence/README.md').read_text())
+        self.assertIn('https://openai.com/index/accelerating-the-next-phase-ai/', static)
+        self.assertEqual(load_state(self.root)['sequence'], 0)
+
+    def test_public_daily_uses_accepted_evidence_and_links_to_past_work(self):
+        from lib.learning_render import project_shadow_reports
+
+        evidence, update = update_records(self.root)
+        archive = self.root / 'state/shadow/Intelligence'
+
+        def runner(stage, *args):
+            if stage == 'collect':
+                return dict(quality='complete', records=[evidence], gaps=[]), {}
+            if stage in {'blue', 'arbiter'}:
+                return dict(records=[update], reason='Accepted update'), {}
+            return successful_stage(stage, *args)
+
+        first = run_cycle(self.root, NOW, 'first-brief', runner)
+        project_shadow_reports(self.root, first)
+        daily = (self.root / 'Intelligence/2026-09-23.md').read_text()
+        self.assertIn('New enterprise product.', daily)
+        self.assertIn('契約社数・利益は未開示。', daily)
+        self.assertIn(f'#evidence-{evidence["id"]}', daily)
+        self.assertIn(f'name="evidence-{evidence["id"]}"', (archive / '2026-09-23.md').read_text())
+        self.assertLess(len(daily), 3000)
+
+        next_monday = '2026-09-28T09:00:00+09:00'
+        second = run_cycle(self.root, next_monday, 'later-brief', successful_stage)
+        project_shadow_reports(self.root, second)
+        carry = (self.root / 'Intelligence/2026-09-28.md').read_text()
+        self.assertIn('新たに採用した資料はありません', carry)
+        self.assertIn('2026-09-23.md', carry)
+        weekly = (self.root / 'reviews/weekly/2026-09-28.md').read_text()
+        self.assertIn('2026-09-23', weekly)
+        self.assertIn('## 期間中の更新', weekly)
+        self.assertNotIn('New enterprise product.', carry)
+
+    def test_multiple_feed_entries_do_not_read_as_multiple_sources(self):
+        evidence = {**update_records(self.root)[0], "url": "https://openai.com/news/rss.xml"}
+        another = {**evidence, "id": "E-other", "claim_type": "reported_claim", "summary": "Company claim."}
+
+        def runner(stage, *args):
+            if stage == 'collect':
+                return dict(quality='complete', records=[evidence, another], gaps=[]), {}
+            return successful_stage(stage, *args)
+
+        manifest = run_cycle(self.root, NOW, 'same-source', runner)
+        daily = (self.root / f"state/shadow/Intelligence/{manifest['date']}.md").read_text()
+        self.assertIn('2件（1出所・1 URL）', daily)
+        self.assertIn('フィードで確認した記述', daily)
+        self.assertIn('発表元の説明', daily)
+        self.assertEqual(daily.count('https://openai.com/news/rss.xml'), 1)
 
     def test_update_replaces_only_reviewed_section_and_keeps_history(self):
         prior = empty_state()
@@ -113,10 +187,16 @@ class KnowledgeTests(unittest.TestCase):
         later = '2026-09-24T09:00:00+09:00'
         manifest = run_cycle(self.root, later, 'carry', successful_stage)
         self.assertEqual(manifest['outcome'], 'complete')
-        for target in ['Intelligence/2026-09-24.md', 'static_intelligence/openai.md']:
+        for target in ['static_intelligence/openai.md']:
             body = (self.root / 'state/shadow' / target).read_text()
             self.assertIn('確認した新しい企業向け製品', body)
             self.assertIn('2026-09-23T09:00:00+09:00', body)
+        daily = (self.root / 'state/shadow/Intelligence/2026-09-24.md').read_text()
+        history = daily.split('## 過去の調査とのつながり', 1)[1].split('## 仮説の見直し', 1)[0]
+        self.assertIn('2026-09-23', history)
+        self.assertIn(f'[E-new]({URL})', history)
+        self.assertIn('契約社数・利益は未開示。', history)
+        self.assertNotIn('<summary>企業・市場の全文</summary>', daily)
 
     def test_unknown_section_fails_before_committing_any_records(self):
         records = update_records(self.root)
