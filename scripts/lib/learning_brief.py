@@ -62,7 +62,9 @@ def prior_sections(records, changes, date, local_date, limit=2):
     previous = [sections[row["supersedes"]] for row in changes if row["supersedes"] in sections]
     if not previous:
         recent = sorted(sections.values(), key=lambda row: (row["reviewed_at"], row["id"]), reverse=True)
-        previous = [row for row in recent if local_date(row["reviewed_at"]) < date]
+        topics = {(row["subject"], row["section"]) for row in changes}
+        previous = [row for row in recent if local_date(row["reviewed_at"]) < date
+                    and (not topics or (row["subject"], row["section"]) in topics)]
     unique = {}
     for row in previous:
         if local_date(row["reviewed_at"]) < date:

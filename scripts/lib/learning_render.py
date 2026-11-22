@@ -232,6 +232,7 @@ def review_updates(base, state, manifest, dossiers, period):
         months = {"monthly": 1, "quarterly": 3, "semiannual": 6}[period]
         year, month = divmod(end.year * 12 + end.month - 1 - months, 12)
         start = end.replace(year=year, month=month + 1, day=1)
+    start += timedelta(days=1)
     sections = state["records"]["dossier_section"]
     latest = {}
     for row in sorted(sections.values(), key=lambda item: instant(item["reviewed_at"])):
@@ -243,7 +244,7 @@ def review_updates(base, state, manifest, dossiers, period):
     if not latest:
         return lines + ["この期間に企業・市場資料の節を更新した記録はありません。"]
     lines += ["| 論点 | 期間前の確認 | 期間中の最終更新 |", "|---|---|---|"]
-    for current, first in reversed(list(latest.values())):
+    for current, first in sorted(latest.values(), key=lambda pair: instant(pair[0]["reviewed_at"]), reverse=True):
         day = local_date(current["reviewed_at"])
         previous = sections.get(first["supersedes"])
         earlier = local_date(previous["reviewed_at"]) if previous else None

@@ -145,6 +145,20 @@ class KnowledgeTests(unittest.TestCase):
         self.assertIn('## 期間中の更新', weekly)
         self.assertNotIn('New enterprise product.', carry)
 
+    def test_period_review_does_not_count_previous_boundary_twice(self):
+        from lib.learning_render import review_updates
+
+        state = empty_state()
+        _, update = update_records(self.root)
+        dossiers = load_dossiers(self.root, NOW)
+        boundary = {**update, 'reviewed_at': '2026-09-28T09:00:00+09:00'}
+        state["records"]["dossier_section"][boundary["id"]] = boundary
+        first = review_updates(self.root, state, {'date': '2026-09-28'}, dossiers, 'weekly')
+        self.assertTrue(any('2026-09-28' in row for row in first[4:]))
+        following = review_updates(self.root, state, {'date': '2026-10-05'}, dossiers, 'weekly')
+        self.assertIn('2026-09-29〜2026-10-05 JST', following)
+        self.assertFalse(any('2026-09-28' in row for row in following))
+
     def test_multiple_feed_entries_do_not_read_as_multiple_sources(self):
         evidence = {**update_records(self.root)[0], "url": "https://openai.com/news/rss.xml"}
         another = {**evidence, "id": "E-other", "claim_type": "reported_claim", "summary": "Company claim."}

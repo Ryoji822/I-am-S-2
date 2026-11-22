@@ -170,7 +170,7 @@ class ModelBoundaryTests(unittest.TestCase):
                      MagicMock(stdout=good, returncode=0)]
         policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3", stage_timeout_seconds=600,
                       max_retries_per_stage=1)
-        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}), \
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}, clear=True), \
                 patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
             result, usage = run_model("blue", context, Path(temporary) / "stage", policy)
         self.assertEqual(result, {"records": []})
@@ -187,7 +187,7 @@ class ModelBoundaryTests(unittest.TestCase):
                      MagicMock(stdout=truncated, returncode=0)]
         policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3", stage_timeout_seconds=600,
                       max_retries_per_stage=1)
-        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}), \
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}, clear=True), \
                 patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
             with self.assertRaises(ModelResponseError) as caught:
                 run_model("blue", context, Path(temporary) / "stage", policy)
@@ -203,7 +203,7 @@ class ModelBoundaryTests(unittest.TestCase):
         responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout="", returncode=1)]
         policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3", stage_timeout_seconds=600,
                       max_retries_per_stage=1)
-        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}), \
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}, clear=True), \
                 patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
             with self.assertRaises(ValueError):
                 run_model("blue", context, Path(temporary) / "stage", policy)
@@ -214,7 +214,7 @@ class ModelBoundaryTests(unittest.TestCase):
         events = json.dumps({'type': 'text', 'part': {'text': '{"records":[]}'}})
         responses = [MagicMock(stdout='1.18.31\n'), MagicMock(stdout=events, returncode=0)]
         policy = dict(opencode_version='1.18.31', model='opencode/glm-5.3', stage_timeout_seconds=600)
-        with tempfile.TemporaryDirectory() as temporary, patch.dict('os.environ', {'OPENCODE_API_KEY': 'dummy'}), \
+        with tempfile.TemporaryDirectory() as temporary, patch.dict('os.environ', {'OPENCODE_API_KEY': 'dummy'}, clear=True), \
                 patch('lib.learning_model.subprocess.run', side_effect=responses) as command:
             run_model('collect', context, Path(temporary) / 'stage', policy)
             arguments, options = command.call_args
