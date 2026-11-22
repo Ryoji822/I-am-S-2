@@ -1,0 +1,73 @@
+name: Verify Intelligence on Main
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/verify-intelligence.yml']
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: intelligence-learning-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    env:
+      TZ: Asia/Tokyo
+      PIPELINE_RUN_ID: verify-${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check contracts and failure handling
+        run: |
+          python3 -m unittest discover -s tests -q
+          bash scripts/validate-output.sh
+      - name: Run from collection with OpenCode Go
+        env:
+          OPENCODE_OIDC_CLIENT_ID: ${{ vars.OPENCODE_OIDC_CLIENT_ID }}
+        run: |
+          npm install --global opencode-ai@1.18.31
+          bash scripts/run-pipeline.sh
+      - name: Verify report projection
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          from shutil import copyfile
+
+          from scripts.lib.learning_render import project_shadow_reports
+
+          root = Path.cwd()
+          run = os.environ["PIPELINE_RUN_ID"]
+          manifest = json.loads((root / "state/runs" / run / "manifest.json").read_text())
+          assert manifest["model"] == "opencode-go/glm-5.3"
+          assert not manifest.get("resumed_stages")
+          assert manifest["usage"]["collect"]["steps"]
+          project_shadow_reports(root, manifest)
+          output = root / "verify-output"
+          output.mkdir()
+          copyfile(root / "Intelligence" / f"{manifest['date']}.md", output / "daily.md")
+          copyfile(root / "static_intelligence/README.md", output / "dossiers.md")
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: intelligence-verification-${{ github.run_id }}
+          path: |
+            state/runs/${{ env.PIPELINE_RUN_ID }}/manifest.json
+            state/runs/${{ env.PIPELINE_RUN_ID }}/stage-metadata.json
+            verify-output/
+          retention-days: 7
