@@ -173,6 +173,49 @@ class ModelResponseError(ValueError):
         self.metadata = metadata
 
 
+class ModelProcessError(ValueError):
+    def __init__(self, metadata):
+        super().__init__("model stage failed")
+        self.metadata = metadata
+
+
+def model_process_failure(result):
+    metadata = {"status": "model_process_failed", "exit_code": result.returncode}
+    for line in reversed(result.stdout.splitlines()):
+        try:
+            event = json.loads(line)
+        except ValueError:
+            continue
+        if not isinstance(event, dict) or event.get("type") != "error":
+            continue
+        error = event.get("error")
+        if not isinstance(error, dict):
+            break
+        name = error.get("name")
+        known = ("APIError", "UnknownError", "ProviderAuthError", "ProviderModelNotFoundError",
+                 "ConfigInvalidError", "ContextOverflowError", "MessageAbortedError")
+        if name in known:
+            metadata["error_name"] = name
+        data = error.get("data")
+        if not isinstance(data, dict):
+            break
+        status = data.get("statusCode")
+        if type(status) is int and 100 <= status <= 599:
+            metadata["http_status"] = status
+        try:
+            body = json.loads(data.get("responseBody") or "{}")
+            api_error = body["error"]["type"]
+        except (ValueError, TypeError, KeyError):
+            break
+        types = ("authentication_error", "invalid_request_error", "permission_error", "not_found_error",
+                 "rate_limit_error", "insufficient_quota", "billing_error", "api_error",
+                 "provider_error", "overloaded_error")
+        if api_error in types:
+            metadata["api_error"] = api_error
+        break
+    return metadata
+
+
 _CODE_FENCE = re.compile(
     r"(?P<open>`{3,}|~{3,})[ \t]*(?P<lang>[A-Za-z0-9_+-]*)[ \t]*\r?\n"
     r"(?P<body>.*?)\r?\n[ \t]*(?P<close>`{3,}|~{3,})",
@@ -401,7 +444,8 @@ def run_model(stage, context, directory, policy):
         model_env = {**env, "OPENCODE_API_KEY": _opencode_token()}
         result = subprocess.run(command, cwd=directory, env=model_env, capture_output=True, text=True,
                                 input=payload, timeout=policy["stage_timeout_seconds"], check=False)
-        require(result.returncode == 0, "model stage failed")
+        if result.returncode != 0:
+            raise ModelProcessError(model_process_failure(result))
         try:
             parsed, usage = read_model_json(result.stdout)
         except ModelResponseError as error:

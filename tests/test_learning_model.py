@@ -8,7 +8,7 @@ from unittest.mock import MagicMock, patch
 from urllib.error import HTTPError, URLError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from lib.learning_model import (ModelAuthenticationError, ModelResponseError, OUTPUT_TOKEN_MAX, _opencode_token, public_source, read_model_json,
+from lib.learning_model import (ModelAuthenticationError, ModelProcessError, ModelResponseError, OUTPUT_TOKEN_MAX, _opencode_token, public_source, read_model_json,
                                 capture_evidence, capture_collected, model_config, run_model)
 
 
@@ -200,14 +200,21 @@ class ModelBoundaryTests(unittest.TestCase):
 
     def test_model_process_failure_is_not_retried(self):
         context = {"instructions": "Return the complete collection JSON."}
-        responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout="", returncode=1)]
+        event = {"type": "error", "error": {"name": "APIError", "data": {
+            "message": "PRIVATE", "statusCode": 401,
+            "responseBody": '{"error":{"type":"authentication_error","message":"PRIVATE"}}',
+        }}}
+        responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout=json.dumps(event), returncode=1)]
         policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3", stage_timeout_seconds=600,
                       max_retries_per_stage=1)
         with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}, clear=True), \
                 patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
-            with self.assertRaises(ValueError):
+            with self.assertRaises(ModelProcessError) as caught:
                 run_model("blue", context, Path(temporary) / "stage", policy)
         self.assertEqual(command.call_count, 2)
+        self.assertEqual(caught.exception.metadata["http_status"], 401)
+        self.assertEqual(caught.exception.metadata["api_error"], "authentication_error")
+        self.assertNotIn("PRIVATE", json.dumps(caught.exception.metadata))
 
     def test_long_context_reaches_model_via_stdin_without_file_line_truncation(self):
         context = {'body': 'a' * 50000, 'instructions': 'Return the complete collection JSON.'}
