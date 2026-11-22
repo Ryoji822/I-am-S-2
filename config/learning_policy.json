@@ -11,7 +11,7 @@
     "quarterly": "first_day",
     "semiannual": "January_and_July_first_day"
   },
-  "model": "opencode/glm-5.3",
+  "model": "opencode-go/glm-5.3",
   "opencode_version": "1.18.31",
   "max_retries_per_stage": 1,
   "max_new_evidence": 20,

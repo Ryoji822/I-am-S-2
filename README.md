@@ -20,7 +20,7 @@ AIの変化が、**社会の仕事と所得・会社の顧客と利益・個人�
 
 ## 実行
 
-Python 3.11以上とOpenCode 1.18.31を使用します。モデルはOpenCode ConsoleのGLM 5.3です。
+Python 3.11以上とOpenCode 1.18.31を使用します。モデルはOpenCode GoのGLM 5.3です。契約済みのGoの利用枠を使います。
 
 ローカルで実行する場合は、OpenCode ConsoleのAPIキーを環境変数 `OPENCODE_API_KEY` で渡してください。パイプラインはキーをファイルに保存せず、環境変数から読み取ります。
 

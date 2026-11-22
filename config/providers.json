@@ -7,7 +7,7 @@
     }
   },
   "llm": {
-    "provider": "opencode/glm-5.3",
+    "provider": "opencode-go/glm-5.3",
     "fallback": null,
     "runner": "opencode"
   },

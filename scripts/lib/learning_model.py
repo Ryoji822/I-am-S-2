@@ -80,8 +80,8 @@ def model_config(directory):
             "compaction": {"auto": False},
             "autoupdate": False, "permission": permission,
             "agent": {"learning": {"mode": "primary", "permission": permission}},
-            "provider": {"opencode": {"npm": "@ai-sdk/openai-compatible", "name": "OpenCode Console",
-                "options": {"baseURL": "https://opencode.ai/inference/openai/v1",
+            "provider": {"opencode-go": {"npm": "@ai-sdk/openai-compatible", "name": "OpenCode Go",
+                "options": {"baseURL": "https://opencode.ai/inference/go/openai/v1",
                             "apiKey": "{env:OPENCODE_API_KEY}"},
                 "models": {"glm-5.3": {"name": "GLM-5.3", "reasoning": True, "tool_call": True,
                     "limit": {"context": MODEL_CONTEXT_TOKENS, "output": OUTPUT_TOKEN_MAX}}}}}}

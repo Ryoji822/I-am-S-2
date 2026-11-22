@@ -289,7 +289,7 @@ class CycleTests(unittest.TestCase):
             self.assertEqual(permission[action], "deny")
         self.assertEqual(config["share"], "disabled")
         self.assertFalse(config['compaction']['auto'])
-        limit = config["provider"]["opencode"]["models"]["glm-5.3"]["limit"]
+        limit = config["provider"]["opencode-go"]["models"]["glm-5.3"]["limit"]
         self.assertGreater(limit["output"], 32000)
         self.assertGreaterEqual(limit["context"] - limit["output"], 112000)
 

@@ -168,7 +168,7 @@ class ModelBoundaryTests(unittest.TestCase):
         good = self._model_events('{"records":[]}', 0.2)
         responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout=bad, returncode=0),
                      MagicMock(stdout=good, returncode=0)]
-        policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3", stage_timeout_seconds=600,
+        policy = dict(opencode_version="1.18.31", model="opencode-go/glm-5.3", stage_timeout_seconds=600,
                       max_retries_per_stage=1)
         with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}, clear=True), \
                 patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
@@ -185,7 +185,7 @@ class ModelBoundaryTests(unittest.TestCase):
         truncated = self._model_events('{"records": [], "reason": "途中', 0.15)
         responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout=truncated, returncode=0),
                      MagicMock(stdout=truncated, returncode=0)]
-        policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3", stage_timeout_seconds=600,
+        policy = dict(opencode_version="1.18.31", model="opencode-go/glm-5.3", stage_timeout_seconds=600,
                       max_retries_per_stage=1)
         with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}, clear=True), \
                 patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
@@ -205,7 +205,7 @@ class ModelBoundaryTests(unittest.TestCase):
             "responseBody": '{"error":{"type":"authentication_error","message":"PRIVATE"}}',
         }}}
         responses = [MagicMock(stdout="1.18.31\n"), MagicMock(stdout=json.dumps(event), returncode=1)]
-        policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3", stage_timeout_seconds=600,
+        policy = dict(opencode_version="1.18.31", model="opencode-go/glm-5.3", stage_timeout_seconds=600,
                       max_retries_per_stage=1)
         with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}, clear=True), \
                 patch("lib.learning_model.subprocess.run", side_effect=responses) as command:
@@ -220,7 +220,7 @@ class ModelBoundaryTests(unittest.TestCase):
         context = {'body': 'a' * 50000, 'instructions': 'Return the complete collection JSON.'}
         events = json.dumps({'type': 'text', 'part': {'text': '{"records":[]}'}})
         responses = [MagicMock(stdout='1.18.31\n'), MagicMock(stdout=events, returncode=0)]
-        policy = dict(opencode_version='1.18.31', model='opencode/glm-5.3', stage_timeout_seconds=600)
+        policy = dict(opencode_version='1.18.31', model='opencode-go/glm-5.3', stage_timeout_seconds=600)
         with tempfile.TemporaryDirectory() as temporary, patch.dict('os.environ', {'OPENCODE_API_KEY': 'dummy'}, clear=True), \
                 patch('lib.learning_model.subprocess.run', side_effect=responses) as command:
             run_model('collect', context, Path(temporary) / 'stage', policy)
@@ -233,8 +233,8 @@ class ModelBoundaryTests(unittest.TestCase):
     def test_output_budget_is_above_the_opencode_32k_clamp(self):
         # Runs 41960895241 and 42155661151 failed in blue: both attempts had
         # output + reasoning == 32000, then invalid_final_json at line 1 column 1.
-        provider = model_config(Path('.'))['provider']['opencode']
-        self.assertEqual(provider['options']['baseURL'], 'https://opencode.ai/inference/openai/v1')
+        provider = model_config(Path('.'))['provider']['opencode-go']
+        self.assertEqual(provider['options']['baseURL'], 'https://opencode.ai/inference/go/openai/v1')
         self.assertEqual(provider['options']['apiKey'], '{env:OPENCODE_API_KEY}')
         limit = provider['models']['glm-5.3']['limit']
         self.assertEqual(limit['output'], OUTPUT_TOKEN_MAX)
@@ -243,7 +243,7 @@ class ModelBoundaryTests(unittest.TestCase):
 
     def test_github_run_exchanges_oidc_again_for_each_model_attempt(self):
         context = {"instructions": "Return JSON."}
-        policy = dict(opencode_version="1.18.31", model="opencode/glm-5.3",
+        policy = dict(opencode_version="1.18.31", model="opencode-go/glm-5.3",
                       stage_timeout_seconds=600, max_retries_per_stage=1)
         env = {
             "OPENCODE_OIDC_CLIENT_ID": "client-id",

@@ -1,14 +1,14 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "provider": {
-    "opencode": {
+    "opencode-go": {
       "options": {
-        "baseURL": "https://opencode.ai/inference/openai/v1",
+        "baseURL": "https://opencode.ai/inference/go/openai/v1",
         "apiKey": "{env:OPENCODE_API_KEY}"
       }
     }
   },
-  "model": "opencode/glm-5.3",
+  "model": "opencode-go/glm-5.3",
   "mcp": {
     "firecrawl": {
       "type": "remote",
