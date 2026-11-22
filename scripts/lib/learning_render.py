@@ -124,7 +124,7 @@ def dossier_history_lines(records, dossiers, changes, date):
     previous = prior_sections(records, changes, date, local_date, limit=3)
     if not previous:
         return ["関連する過去の記録は、末尾の企業・市場資料に基準日と出典を記載しています。"]
-    lines = ["今回更新した節の前回記録、または直近の節更新を掲載します。", ""]
+    lines = ["今回の更新に関連する過去の記録です。", ""]
     for row in previous:
         heading = dossier_heading(dossiers, row)
         sources = source_links(row["evidence_ids"], records["evidence"])

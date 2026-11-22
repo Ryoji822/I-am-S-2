@@ -60,6 +60,9 @@ def highlight_lines(new, detail, detail_text, claim_labels, local_date):
 def prior_sections(records, changes, date, local_date, limit=2):
     sections = records["dossier_section"]
     previous = [sections[row["supersedes"]] for row in changes if row["supersedes"] in sections]
+    for row in changes:
+        cited = re.findall(r"[A-Za-z0-9_@.:-]+", row["analysis"])
+        previous.extend(sections[key] for key in cited if key in sections)
     if not previous:
         recent = sorted(sections.values(), key=lambda row: (row["reviewed_at"], row["id"]), reverse=True)
         topics = {(row["subject"], row["section"]) for row in changes}
@@ -90,7 +93,8 @@ def next_checks(proposed, dossiers, detail, heading, gaps):
     changes = [row for row in proposed if row["type"] == "dossier_section"]
     notes = []
     for row in changes[:2]:
-        note = short_sentence(row["uncertainty"])
+        value = row["uncertainty"].removeprefix("判断を進めるために次に見る資料：").strip()
+        note = short_sentence(value)
         if note:
             notes.append(f"- **{heading(dossiers, row)}**　{note}")
     for row in [item for item in proposed if item["type"] == "warning"][:1]:
@@ -123,7 +127,13 @@ def brief_text(state, manifest, proposed, dossiers, directory, archive_dir, deta
     lines = [f"# AI市場の調査日報｜{date}", "", f"[日報一覧](README.md) · {index}", "",
              "## 今回分かったこと", "", *highlight_lines(new, detail, archived, claim_labels, local_date),
              "", f"{mode} · 採用 {len(new)}件・出所 {len(groups)}系統 · 確認できなかった点 {len(manifest['gaps'])}件",
-             collection_labels[manifest["quality"]], "", "## 前回の確認", ""]
+             collection_labels[manifest["quality"]], ""]
+    if changes:
+        links = [relative_link(heading(dossiers, row), directory,
+                               f"{dossier_index_dir}/{row['subject']}.md", f"#section-{row['section']}")
+                 for row in changes[:3]]
+        lines += [f"見直した資料　{' · '.join(links)}", ""]
+    lines += ["## 前回の確認", ""]
     lines += history or ["同じ論点の過去記録は、企業・市場資料から確認できます。"]
     lines += ["", "## 次に確かめること", "", *next_checks(proposed, dossiers, detail, heading, manifest["gaps"]),
               "", f"[出典・分析・採点の詳しい記録]({detail})", ""]

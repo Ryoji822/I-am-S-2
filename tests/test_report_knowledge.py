@@ -159,6 +159,18 @@ class KnowledgeTests(unittest.TestCase):
         self.assertIn('2026-09-29〜2026-10-05 JST', following)
         self.assertFalse(any('2026-09-28' in row for row in following))
 
+    def test_cross_topic_archive_link_uses_a_saved_review_id(self):
+        from lib.learning_brief import prior_sections
+        from lib.learning_render import local_date
+
+        state = empty_state()
+        _, update = update_records(self.root)
+        earlier = {**update, 'id': 'DS-earlier', 'subject': 'market-overview'}
+        state['records']['dossier_section'][earlier['id']] = earlier
+        current = {**update, 'reviewed_at': '2026-09-24T09:00:00+09:00',
+                   'analysis': '前の市場資料（DS-earlier）を確認。'}
+        self.assertEqual(prior_sections(state['records'], [current], '2026-09-24', local_date), [earlier])
+
     def test_multiple_feed_entries_do_not_read_as_multiple_sources(self):
         evidence = {**update_records(self.root)[0], "url": "https://openai.com/news/rss.xml"}
         another = {**evidence, "id": "E-other", "claim_type": "reported_claim", "summary": "Company claim."}
