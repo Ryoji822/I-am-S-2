@@ -1,0 +1,97 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-45019037983-1",
+  "date": "2026-11-22",
+  "started_at": "2026-11-22T20:47:48.602116+09:00",
+  "mode": "shadow",
+  "model": "opencode-go/glm-5.3",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "3293affdf19227604695a500794835d7a342c16c5abb97739f8e2d0bd54c259c",
+    "blue": "b0def38c1450525ce1fabe01e95d35e96b0c04f88c4fff6846ae2205cbad9075",
+    "red": "58ed0bf6605ac1592199f8f9646d2097ddcd2f71e263e68388317b24c57b86dc",
+    "arbiter": "2f81179202237dc5dba9f6e886c939fd32be761855efc5dfa8ea1b5c0ee5e630"
+  },
+  "revision_before": "6260b0d6468b7573fe20f11607794ac98ae8c55558b618e7583e717c281fdff6",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "https://www.anthropic.com/news/ipo-close — 公開時刻を確認できない（記事のPublished表記は日付Nov 20, 2026のみ）。本文は当日直接取得して確認済みで、Anthropic IPOクローズ（Class A株1,127,000,000株・1株83.00ドル・総額約935億ドル、うちAnthropic受領分約916億ドル、2026-11-19にNasdaq「ANT」で取引開始、AMD・Broadcom・Google・Micron・Microsoft・NVIDIA・TSMC PartnersへのClass N株約313,253,007株・約260億ドルの同時私募を含む合計約1,195億ドル）を伝える重大な資本事象。日付のみのためevidence記録から除外。W2・MET-FIRM・MD-CO・anthropic dossier section-03に関わる。時刻付きの公式二次資料（SECフォーム等、govinfo.gov域）での取得を次回試みる必要がある。",
+    "https://www.anthropic.com/news/anthropic-prices-initial-public-offering — 公開時刻を確認できない（日付Nov 18, 2026のみ）。IPOプライシング（1株83.00ドル・980,000,000株、2026-11-19取引開始予定・2026-11-20クローズ予定、引受権利付き追加147,000,000株）の本文を確認したが、記録から除外。",
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2 — 公開時刻を確認できない（日付November 9, 2026のみ、本文に11月11日編集の記述あり）。Claude Fable 5.2/Mythos 5.2の発表本文（API価格 入力8ドル/出力40ドル per 1Mトークン、fastモード16ドル/80ドル、各種性能主張、UK AI Security Institute・Frontier Design・METRによる事前テスト実施の記述、サンドボックス脱出評価など安全テスト内容）を確認したが、記録から除外。MET-COST・W3・H-OAI-003/HRV-20261106-0002（METR等の独立評価の有無）に関わる内容を含む。",
+    "https://www.anthropic.com/news — 一覧は公開日付のみで時刻なし。IPO roadshow公告（Nov 10, 2026、/news/roadshow-launch）など他の個別記事は、今回の原資料上限（5件）に達したため本文未取得。",
+    "https://developers.openai.com/api/docs/pricing/ — OpenAI公式料金ページの当日直接確認は未実施（原資料上限到達）。フィード上に料金変更の発表はないが、ページの無告知変更はフィード確認では検知できない。前回の直接確認は2026-11-20（EVD-20261120-0001要旨）。",
+    "Google・xAI・ByteDanceの公式資料の当日確認は、今回の優先順位（重大な危険の日次監視。F-S04の対象はOpenAI/Anthropic）と原資料上限により未実施。次回の調査対象として繰り越す。"
+  ],
+  "usage": {
+    "collect": {
+      "status": "resumed_from_checkpoint"
+    },
+    "blue": {
+      "cost": 0.2944158,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.2944158,
+          "tokens": {
+            "total": 131562,
+            "input": 94819,
+            "output": 2715,
+            "reasoning": 34028,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.241271,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.241271,
+          "tokens": {
+            "total": 95515,
+            "input": 59665,
+            "output": 795,
+            "reasoning": 35055,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.034955,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.034955,
+          "tokens": {
+            "total": 14320,
+            "input": 9351,
+            "output": 2102,
+            "reasoning": 2867,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-22T11:59:33.426031+00:00",
+  "revision_after": "aabf4237349e55135542f289fe40b4d81d54aa4bc8f496c8353848044734d963",
+  "dossier_hash": "1741b7f9cbe02fdcc9f48f155f733a8a5e9449399756e84b5d4b4ab9bc3b20c3",
+  "resumed_stages": [
+    "collect"
+  ]
+}

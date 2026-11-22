@@ -5,7 +5,7 @@
 | 企業・市場資料 | 最終更新（JST） |
 |---|---|
 | [OpenAI](openai.md) | 2026-11-21 |
-| [Anthropic](anthropic.md) | 2026-09-22（初版） |
+| [Anthropic](anthropic.md) | 2026-11-22 |
 | [Google／DeepMind](google.md) | 2026-10-24 |
 | [xAI／SpaceXAI](xai.md) | 2026-09-22（初版） |
 | [ByteDance](bytedance.md) | 2026-09-22（初版） |
