@@ -59,8 +59,13 @@ jobs:
           project_shadow_reports(root, manifest)
           output = root / "verify-output"
           output.mkdir()
-          copyfile(root / "Intelligence" / f"{manifest['date']}.md", output / "daily.md")
-          copyfile(root / "static_intelligence/README.md", output / "dossiers.md")
+          daily = root / "Intelligence" / f"{manifest['date']}.md"
+          assert "## 今回分かったこと" in daily.read_text(encoding="utf-8")
+          copyfile(daily, output / "daily.md")
+          for dossier in (root / "static_intelligence").glob("*.md"):
+              destination = output / "static_intelligence" / dossier.name
+              destination.parent.mkdir(exist_ok=True)
+              copyfile(dossier, destination)
           PY
       - uses: actions/upload-artifact@v4
         if: always()

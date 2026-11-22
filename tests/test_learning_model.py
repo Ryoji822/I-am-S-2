@@ -1,5 +1,6 @@
 import hashlib
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -215,6 +216,27 @@ class ModelBoundaryTests(unittest.TestCase):
         self.assertEqual(caught.exception.metadata["http_status"], 401)
         self.assertEqual(caught.exception.metadata["api_error"], "authentication_error")
         self.assertNotIn("PRIVATE", json.dumps(caught.exception.metadata))
+
+    def test_collection_uses_its_own_timeout_and_reports_only_safe_progress(self):
+        events = [
+            {"type": "step_start"},
+            {"type": "tool_use", "part": {"tool": "webfetch", "state": {"output": "PRIVATE"}}},
+            {"type": "tool_use", "part": {"tool": "PRIVATE"}},
+            {"type": "step_finish"},
+            {"type": "text", "part": {"text": "PRIVATE"}},
+        ]
+        output = "\n".join(map(json.dumps, events)).encode() + b'\n{"type":'
+        timeout = subprocess.TimeoutExpired(["opencode", "run"], 900, output=output, stderr=b"PRIVATE")
+        policy = dict(opencode_version="1.18.31", model="opencode-go/glm-5.3",
+                      stage_timeout_seconds=600, collect_timeout_seconds=900, max_retries_per_stage=1)
+        with tempfile.TemporaryDirectory() as temporary, patch.dict("os.environ", {"OPENCODE_API_KEY": "dummy"}, clear=True), \
+                patch("lib.learning_model.subprocess.run", side_effect=[MagicMock(stdout="1.18.31\n"), timeout]) as command:
+            with self.assertRaises(ModelProcessError) as caught:
+                run_model("collect", {"instructions": "Return JSON."}, Path(temporary) / "stage", policy)
+        self.assertEqual(command.call_count, 2)
+        self.assertEqual(command.call_args.kwargs["timeout"], 900)
+        self.assertEqual(caught.exception.metadata, {"status": "model_timeout", "timeout_seconds": 900,
+                         "started_steps": 1, "completed_steps": 1, "finished_tool_calls": {"webfetch": 1}})
 
     def test_long_context_reaches_model_via_stdin_without_file_line_truncation(self):
         context = {'body': 'a' * 50000, 'instructions': 'Return the complete collection JSON.'}

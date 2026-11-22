@@ -216,6 +216,30 @@ def model_process_failure(result):
     return metadata
 
 
+def model_timeout_progress(error):
+    output = error.stdout or ""
+    if isinstance(output, bytes):
+        output = output.decode("utf-8", errors="replace")
+    steps, tools = {"step_start": 0, "step_finish": 0}, {}
+    for line in output.splitlines():
+        try:
+            event = json.loads(line)
+        except ValueError:
+            continue
+        if not isinstance(event, dict):
+            continue
+        event_type = event.get("type")
+        if event_type in ("step_start", "step_finish"):
+            steps[event_type] += 1
+        if event_type == "tool_use" and isinstance(event.get("part"), dict):
+            tool = event["part"].get("tool")
+            if tool in ("webfetch", "websearch"):
+                tools[tool] = tools.get(tool, 0) + 1
+    return {"status": "model_timeout", "timeout_seconds": error.timeout,
+            "started_steps": steps["step_start"], "completed_steps": steps["step_finish"],
+            "finished_tool_calls": tools}
+
+
 _CODE_FENCE = re.compile(
     r"(?P<open>`{3,}|~{3,})[ \t]*(?P<lang>[A-Za-z0-9_+-]*)[ \t]*\r?\n"
     r"(?P<body>.*?)\r?\n[ \t]*(?P<close>`{3,}|~{3,})",
@@ -439,11 +463,16 @@ def run_model(stage, context, directory, policy):
     command = ["opencode", "run", "--pure", "--format", "json", "--agent", "learning",
                "--model", policy["model"], "--title", f"Intelligence {stage}", "--", prompt]
     payload = json.dumps(context, ensure_ascii=False)
+    timeout_key = "collect_timeout_seconds" if stage == "collect" else "stage_timeout_seconds"
+    timeout = policy.get(timeout_key, policy["stage_timeout_seconds"])
     failures = []
     for attempt in range(retries + 1):
         model_env = {**env, "OPENCODE_API_KEY": _opencode_token()}
-        result = subprocess.run(command, cwd=directory, env=model_env, capture_output=True, text=True,
-                                input=payload, timeout=policy["stage_timeout_seconds"], check=False)
+        try:
+            result = subprocess.run(command, cwd=directory, env=model_env, capture_output=True, text=True,
+                                    input=payload, timeout=timeout, check=False)
+        except subprocess.TimeoutExpired as error:
+            raise ModelProcessError(model_timeout_progress(error)) from None
         if result.returncode != 0:
             raise ModelProcessError(model_process_failure(result))
         try:
