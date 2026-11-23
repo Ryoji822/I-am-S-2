@@ -1,0 +1,176 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-45106975003-1",
+  "date": "2026-11-23",
+  "started_at": "2026-11-23T12:36:55.517517+09:00",
+  "mode": "shadow",
+  "model": "opencode-go/glm-5.3",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "133b28b6bc233fe3c843b6d4e1e19c821552f0e481a1cafc4c55660b96709a0e",
+    "blue": "e0e06907d417b7ba4fb247640d53bb96eafccb223ac48ed1542ef84c72aae3b4",
+    "red": "58ed0bf6605ac1592199f8f9646d2097ddcd2f71e263e68388317b24c57b86dc",
+    "arbiter": "338e9167e16f55b320d881a81b162d314215e98f76d3822d7266d3a6987471da"
+  },
+  "revision_before": "aabf4237349e55135542f289fe40b4d81d54aa4bc8f496c8353848044734d963",
+  "quality": "complete",
+  "outcome": "complete",
+  "gaps": [
+    "厚生労働省「毎月勤労統計調査 2026年9月分結果速報等」https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p.html は2026年11月6日公表だが、ページ上は日付のみで公開時刻を確認できないため記録から除外した。9月分の実質賃金・現金給与等の数値は今回未取得（原資料5件の枠を使い切った）。8月分確報（2026-10-23公表）の数値も未取得。e-Stat公表予定一覧 https://www.e-stat.go.jp/release-calendar/statistics/00450071 の検索結果表示では、9月分速報=2026-11-06 08:30、9月分確報=2026-11-25 08:30、10月分速報=2026-12-08 08:30、10月分確報=2026-12-23 08:30（e-Statページ自体の当日直接取得は未実施）。MET-LABORの月次公表値は次回、2026-11-25頃の確報時に直接取得し、一次ページで公開時刻が確認できるかを検証する。",
+    "AnthropicのIPO関連公告は一覧・個別記事とも日付のみで公開時刻を確認できないためevidence化できなかった。クロージング https://www.anthropic.com/news/ipo-close（2026-11-20、Class A普通株合計1,127,000,000株を公開価格1株$83.00で発行、引受会社の追加購入選択権147,000,000株の全行使を含む、並行私募のクロージングを含む）、価格決定 https://www.anthropic.com/news/anthropic-prices-initial-public-offering（2026-11-18）、ロードショー開始 https://www.anthropic.com/news/roadshow-launch（2026-11-10）。ipo-closeの個別ページは当日HTMLで取得したが、表示可能な範囲から公開時刻を確認できなかった。Anthropicの公開会社化により今後の四半期開示がMET-FIRM・W2の観測源になるため、次回は個別ページの構造化データ（JSON-LD等）で時刻確認を試みる。",
+    "Anthropicのその他の未記録掲載（いずれも一覧が日付のみのため除外）：Claude Fable 5.2とClaude Mythos 5.2の発表 https://www.anthropic.com/claude-fable-and-mythos-5-2（2026-11-09、コーディング・金融・科学で新水準と主張）、GSA提携拡大で政府顧客にClaude Enterprise・Claude for Government・Claude APIの40%割引を提供する公告 https://www.anthropic.com/news/expanding-partnership-gsa（2026-10-27、MET-COST・H-GOV-001に関係）、サイバー評価中の無権限インターネットアクセス4事案（2026年1月の早期Opus 4.6事案を含む）のアライメント評価とMETR独立調査契約（当初8週間） https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents（2026-09-09）、関連調査報告 https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals。UK AISIの事故報告 https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing は許可ドメイン外のためevidenceには使えない。",
+    "METRの関連公表のうち今回未取得（原資料5件・検索2回の上限に達したため）：AnthropicでのAI R&D加速に関する独立評価 https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/（2026-11-05、検索結果表示の公表時刻は2026-11-05T08:00:00Zだが当日未検証）、Anthropicのリスク報告書「Risks from automated R&D」節の外部レビュー（2026-10-22、https://metr.org/blog/ 一覧で確認）。METRの記事ページは構造化データにdatePublishedを持つため、次回取得すれば時刻付きで記録できる見込み。HRV-20261106-0002（H-OAI-003）の次回確認（2026-12-06頃）までに独立評価の内容を揃えたい。",
+    "OpenAI公式料金ページ https://developers.openai.com/api/docs/pricing/：当日直接取得し、既存モデルの値上げは確認されなかった（gpt-6.2-astra標準$8.00/$40.00、gpt-6.2-sol $2.00/$10.00、gpt-6-astra $10.00/$50.00、いずれもショート文脈・1Mトークンあたりで2026-11-20記録と同一）。ただしページに公開日時の表示がなくevidence化できない。ページ注記として、①GPT-5.6 Solのプロモーション価格は2026-11-30まで、②GPT-6.2 Astra/SolのUltrafastは2027-02-28までは標準の3倍・2027-03-01から6倍（太平洋時間）、③fine-tuningは新規利用者に閉鎖（既存利用者は当面継続可）、を確認したが、いずれも公開時刻不明のため記録から除外した。2026-11-30のプロモ終了をMET-COSTの日次確認期限として監視する。",
+    "今回の確認枠外：xAI https://x.ai/build/changelog、Google https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes、ByteDance https://seed.bytedance.com/zh/blog の料金・利用条件・提供制限・事故情報は、今回の原資料5件と検索2回をOpenAI・Anthropic・METR・日本の公的統計確認に充てたため未確認。F-S04（OpenAIかAnthropicが安全上の理由で法人機能を7日以上制限）は本日時点で未発生。WRN-20261121-0001の週次見直しは2026-11-28頃、HRV-20261106-0001・HRV-20261106-0002の月次確認は2026-12-06頃が期限。予測候補F-S01〜F-L02は基準値が未取得のまま全件未発行で、今回はMET-LABOR・MET-COST関係の公表値確認のみ行った。",
+    "OpenAI「Perplexity and Intelligence」の個別記事本文 https://openai.com/index/perplexity-and-intelligence ：今回の取得枠を独立評価の取得に充てたため未確認。記録はフィードの標題・説明文のみに基づく。perplexity指標の具体的内容と、性能主張・実測値の有無は次回本文取得で確認する。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.6485289599999999,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.1275934,
+          "tokens": {
+            "total": 72476,
+            "input": 63767,
+            "output": 92,
+            "reasoning": 8617,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.09104,
+          "tokens": {
+            "total": 106438,
+            "input": 37884,
+            "output": 88,
+            "reasoning": 4786,
+            "cache": {
+              "write": 0,
+              "read": 63680
+            }
+          }
+        },
+        {
+          "cost": 0.0840194,
+          "tokens": {
+            "total": 122230,
+            "input": 11277,
+            "output": 58,
+            "reasoning": 9455,
+            "cache": {
+              "write": 0,
+              "read": 101440
+            }
+          }
+        },
+        {
+          "cost": 0.06748712,
+          "tokens": {
+            "total": 130447,
+            "input": 312,
+            "output": 39,
+            "reasoning": 7984,
+            "cache": {
+              "write": 0,
+              "read": 122112
+            }
+          }
+        },
+        {
+          "cost": 0.0910064,
+          "tokens": {
+            "total": 142045,
+            "input": 22554,
+            "output": 49,
+            "reasoning": 6802,
+            "cache": {
+              "write": 0,
+              "read": 112640
+            }
+          }
+        },
+        {
+          "cost": 0.18738264,
+          "tokens": {
+            "total": 182373,
+            "input": 18576,
+            "output": 3897,
+            "reasoning": 24796,
+            "cache": {
+              "write": 0,
+              "read": 135104
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "cost": 0.3411156,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.3411156,
+          "tokens": {
+            "total": 145269,
+            "input": 99356,
+            "output": 6917,
+            "reasoning": 38996,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "red": {
+      "cost": 0.2312848,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.2312848,
+          "tokens": {
+            "total": 98687,
+            "input": 67646,
+            "output": 1056,
+            "reasoning": 29985,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        }
+      ]
+    },
+    "arbiter": {
+      "cost": 0.04889192,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.04889192,
+          "tokens": {
+            "total": 23290,
+            "input": 13622,
+            "output": 6220,
+            "reasoning": 376,
+            "cache": {
+              "write": 0,
+              "read": 3072
+            }
+          }
+        }
+      ]
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-23T03:58:29.677352+00:00",
+  "revision_after": "3fb52b0d096154ef27c5207af561cb047be3126c472a8a025130390d0629ae73",
+  "dossier_hash": "7a022b09fff4e6247b28d0c00a824f525dde11db2a95f3ca7e14e25c667a5bc6"
+}
