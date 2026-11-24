@@ -1,0 +1,114 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-45343549924-1",
+  "date": "2026-11-24",
+  "started_at": "2026-11-24T15:51:35.257634+09:00",
+  "mode": "shadow",
+  "model": "opencode-go/glm-5.3",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "133b28b6bc233fe3c843b6d4e1e19c821552f0e481a1cafc4c55660b96709a0e",
+    "blue": "e0e06907d417b7ba4fb247640d53bb96eafccb223ac48ed1542ef84c72aae3b4",
+    "red": "58ed0bf6605ac1592199f8f9646d2097ddcd2f71e263e68388317b24c57b86dc",
+    "arbiter": "338e9167e16f55b320d881a81b162d314215e98f76d3822d7266d3a6987471da"
+  },
+  "revision_before": "3fb52b0d096154ef27c5207af561cb047be3126c472a8a025130390d0629ae73",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "AnthropicのIPO関連公告（クロージング https://www.anthropic.com/news/ipo-close は2026-11-20日付、価格決定は2026-11-18、ロードショーは2026-11-10）の個別ページは今回の原資料取得枠（5件をOpenAIフィード・Anthropic一覧・METR3件に使用）で直接取得できず、検索結果の要約でしか確認していない。検索経由の本文では、IPOクロージングが1,127,000,000株・公募価格83.00ドル・総額約935億ドル（うちAnthropic受け取り約916億ドル）・Nasdaq「ANT」で2026-11-19に取引開始・AMD/Broadcom/Google/Micron/Microsoft/NVIDIA/TSMC Partnersへの約313,253,007株・約260億ドルの同時私募（合計約1,195億ドル）と報じるが、前回の調査でAnthropic側の一覧・個別記事は公開時刻が日付のみと判明しており、時刻が確認できないままevidence化できない。次回、個別ページの直接取得と構造化データの時刻確認を優先する（WRN-20261123-0001のnext_check項目）。",
+    "Anthropic公式ニュース一覧に2026-11-24日付の掲載が存在すると読み取れたが、取得した一覧テキストからは標題・分類を確認できなかった。周辺の同日報道（The Vergeが2026-11-23T20:00Zに初報のClaudeによるプルリクエストレビュー・修正出荷、AWSブログのAmazon Bedrock Trusted Access APIとAnthropic EFS/EDC一般提供開始、DXCのClaude Mythos利用サービス発表）はいずれも許可ドメイン外（theverge.com、aws.amazon.com、prnewswire.com）のためevidence化できない。anthropic.com上の該当記事の特定と時刻付き確認を次回行う。今回の確認範囲ではAnthropic・OpenAIとも安全上の事故の正式報告・一般法人向け既存機能の正式な利用制限はなかった。",
+    "OpenAI公式料金ページ（https://developers.openai.com/api/docs/pricing/）の当日直接確認は取得枠を使い切ったため未実施。同ページには公開日時の表示がなく、無告知の料金変更はフィード確認では検知できない（WRN-20261114-0001指摘の限界）。今回のフィード確認（lastBuildDate 2026-11-24T06:17:06 GMT）では料金変更の発表はなかったが、ページ自体の再取得と前回確認値（gpt-6.2-astra標準$8.00/$40.00等、2026-11-20・11-23確認）との比較を次回行う。",
+    "METR Q4 2026 capability update（https://metr.org/blog/2026-11-20-q4-2026-capability-update/）は、直接取得したHTMLの表示が前半で切り詰められ、本文の主張は検索結果が示した冒頭部分と標題・説明文の範囲しか視認できなかった。保存済み出力の再読み込みが本環境の権限で許可されなかったため、本文の数値・手法・結論の全体確認を次回行う（EVD-20261124-0003は公表の事実と主題の確認まで）。同様に、加速評価（EVD-20261124-0001）も取得HTMLの表示が末尾（残りの主要日付・制約・付録の詳細）で切り詰まっており、末尾部の確認を次回行う。",
+    "METRの関連公表のうち「How an assessor could investigate evidence of acceleration from the automation of AI R&D」（https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/、2026-10-14）と、今回取得した加速評価・節レビューの本文中で参照されている経緯説明ポスト（https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/）は今回未取得。独立した根拠としての本文確認を次回行う。",
+    "予測候補（F-S01〜F-L02）の基準値（固定5業務・20業務の定義、品質基準、基準期間、比較先、固定企業群）と、MET-LABOR・MET-REGIME系の公表値（厚生労働省・総務省の統計、政府予算・執行報告）は、今回の取得枠を重大な危険・独立評価の確認に充てたため未着手。予測はすべて未発行のまま。次回はこれらの基準値取得と固定業務試験の設計確定を優先する。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.56710288,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.10868156,
+          "tokens": {
+            "total": 70486,
+            "input": 66799,
+            "output": 106,
+            "reasoning": 3325,
+            "cache": {
+              "write": 0,
+              "read": 256
+            }
+          }
+        },
+        {
+          "cost": 0.09523204,
+          "tokens": {
+            "total": 101138,
+            "input": 24209,
+            "output": 258,
+            "reasoning": 9727,
+            "cache": {
+              "write": 0,
+              "read": 66944
+            }
+          }
+        },
+        {
+          "cost": 0.14182072,
+          "tokens": {
+            "total": 144842,
+            "input": 39482,
+            "output": 133,
+            "reasoning": 14155,
+            "cache": {
+              "write": 0,
+              "read": 91072
+            }
+          }
+        },
+        {
+          "cost": 0.07694812,
+          "tokens": {
+            "total": 160169,
+            "input": 29269,
+            "output": 106,
+            "reasoning": 362,
+            "cache": {
+              "write": 0,
+              "read": 130432
+            }
+          }
+        },
+        {
+          "cost": 0.14442044,
+          "tokens": {
+            "total": 183631,
+            "input": 297,
+            "output": 5323,
+            "reasoning": 17947,
+            "cache": {
+              "write": 0,
+              "read": 160064
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-24T06:58:55.085773+00:00",
+  "revision_after": "d68fb2b0415146481b44e1c0edf73229ccb46524e60c4836739d907adc4c6a56",
+  "dossier_hash": "7a022b09fff4e6247b28d0c00a824f525dde11db2a95f3ca7e14e25c667a5bc6"
+}
