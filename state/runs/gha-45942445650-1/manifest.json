@@ -1,0 +1,129 @@
+{
+  "schema_version": "2.0",
+  "run_id": "gha-45942445650-1",
+  "date": "2026-11-27",
+  "started_at": "2026-11-27T13:52:45.820645+09:00",
+  "mode": "shadow",
+  "model": "opencode-go/glm-5.3",
+  "opencode_version": "1.18.31",
+  "code_version": "learning-v3-dossiers",
+  "prompt_hashes": {
+    "collect": "133b28b6bc233fe3c843b6d4e1e19c821552f0e481a1cafc4c55660b96709a0e",
+    "blue": "e0e06907d417b7ba4fb247640d53bb96eafccb223ac48ed1542ef84c72aae3b4",
+    "red": "58ed0bf6605ac1592199f8f9646d2097ddcd2f71e263e68388317b24c57b86dc",
+    "arbiter": "338e9167e16f55b320d881a81b162d314215e98f76d3822d7266d3a6987471da"
+  },
+  "revision_before": "d68fb2b0415146481b44e1c0edf73229ccb46524e60c4836739d907adc4c6a56",
+  "quality": "partial",
+  "outcome": "partial",
+  "gaps": [
+    "Anthropic公式ニュース一覧（https://www.anthropic.com/news）の「Latest news」枠に「November 27, 2026」日付の掲載があるが、標題も個別URLも今回の取得（markdown・HTML両方）で確認できなかった（HTML出力は切り詰められ、保存済み出力の追加検証も権限上できなかった）。前回（2026-11-24取得）から残っていた標題未確認の2026-11-24日付掲載が同項目に相当する可能性もある。同日実施した2回の検索ではAnthropicの安全上の事故・正式な提供制限を伝える報道は見つからず、表示範囲（最新は2026-11-20のIPOクロージング公告）でも該当標題はなかったが、当該項目が事故・制限でないことの完全な確認はできていない。次回の優先確認対象。",
+    "Anthropicの2026-11-24の製品発表（Skills over MCPの公開ベータ、TasksとElicitationの一般提供、File Uploadsの順次提供開始予定、Claude Artifactsの「Install as app」ベータ（Mac・Windows））は、一次資料がclaude.com（https://claude.com/resources/articles/skills-over-mcp-tasks-and-more 等）にあり、context.allowed_source_domainsにclaude.comが含まれないためevidence化できなかった。二次報道（The Vergeが2026-11-24T19:56Z初報、ClaudeDevsの2026-11-24投稿、Anthropic公式一覧外の記事）で発表の存在と11-24の日付は確認できるが、公開元ページ自体の時刻付き検証は今回行っていない。MD-CO・H-ANT-002（Claude Codeの実務での継続利用）に関わるため、anthropic.com側への転載有無も含め次回確認したい。",
+    "AnthropicのIPO関連公告（価格決定2026-11-18 https://www.anthropic.com/news/anthropic-prices-initial-public-offering、クロージング2026-11-20 https://www.anthropic.com/news/ipo-close、ロードショー2026-11-10 https://www.anthropic.com/news/roadshow-launch）は、一覧も記事も公開時刻が日付のみでタイムゾーン付きの時刻を確認できないため、規則により記録から除外したまま。クロージング公告の内容（公開価格1株83.00ドル・合計1,127,000,000株・主幹事側追加購入権を行使済み・並行私募のクロージングを含む）を一覧記載として確認したが、時刻付きの一次確認ができなければ記録できない。",
+    "OpenAI公式料金ページ（https://developers.openai.com/api/docs/pricing/）には公開日時の表示がなくevidence化できない。2026-11-27取得時点で既存モデル（gpt-6.2-astra標準$8.00/$40.00、gpt-6.2-sol $2.00/$10.00、gpt-6-astra $10.00/$50.00等）の値上げは確認されなかった。あわせて、GPT-6 CyberのAPI料金（ショート文脈$20.00/$100.00、ロング文脈$40.00/$150.00、Daybreakの信頼済みアクセス扱い）が同ページに掲載されていることを今回確認した（EVD-20261106-0010で未確認として残していた点の補充）。gpt-6.2-astra-law $8.00/$40.00のプロモーションは少なくとも2026-12-31まで、GPT-5.6 Solのプロモーションは2026-11-30まで、GPT-6.2 Astra/SolのUltrafastは2027-02-28まで標準の3倍・2027-03-01（太平洋時間）から6倍との記載も確認した。いずれも掲載開始日時が不明のため記録対象外。",
+    "今回フィードで確認したOpenAI個別記事の本文（タンパク質設計 https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities、系外惑星、Intentful、iFood、Clayの各記事）は未確認。原資料5件の取得枠をMETR本文の確認に割り当てたため今回開いておらず、個別記事URLは過去の実行で403が続いている経緯もある。実験条件・測定方法の確認には次回本文取得が必要。",
+    "METRのQ4 2026 capability update（https://metr.org/blog/2026-11-20-q4-2026-capability-update/）は今回概要節〜第3.B.2節冒頭までを直接確認したが、それ以降（第3.B.2節の残り・第3.Cの傾向詳細・第4頑健性検査・第5考察・付録）は出力の切り詰めのため未視認。主要結論は概要節で直接読んだが、MCIの開発者別傾向変化の詳細、reward hacking・拒否の確認、swarm実験などの詳細は次回本文で確認する。",
+    "今回は重大な危険（RISK-SAFETY日次監視）、前回未確認だったMETR本文、OpenAI・Anthropic公式掲載の確認に取得枠（5件）と検索（2回）を使い切り、計画の残り項目は今回確認していない。月次公表値（厚生労働省・総務省の雇用・賃金統計、e-STAT）とGoogle・xAI・ByteDanceの各社節（製品・価格・資本・販路）は次回優先確認が必要。F-S01〜F-S03・F-M01・F-M05の基準値（固定5業務・品質基準・比較先・職種コード・既存制度一覧）は公開資料のみでは埋まらず、固定業務試験と自社集計の設計待ち。",
+    "H-OAI-001・H-OAI-003の次回確認（HRV-20261106-0001・HRV-20261106-0002、next_check 2026-12-06頃）とH-ANT-001の次回確認（HRV-20261123-0001、next_check 2026-12-23頃）は今回の期限外。今回のOpenAIフィード新着5件（EVD-20261127-0001・0003〜0006）とMETR本文確認（EVD-20261127-0002）はその一部材料であり、同一顧客群の更新率・採算の実測は引き続き未取得のまま。"
+  ],
+  "usage": {
+    "collect": {
+      "cost": 0.4609634,
+      "unit": "provider_reported_USD",
+      "steps": [
+        {
+          "cost": 0.1084736,
+          "tokens": {
+            "total": 71929,
+            "input": 69338,
+            "output": 92,
+            "reasoning": 2499,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "cost": 0.07548888,
+          "tokens": {
+            "total": 104454,
+            "input": 32474,
+            "output": 132,
+            "reasoning": 2600,
+            "cache": {
+              "write": 0,
+              "read": 69248
+            }
+          }
+        },
+        {
+          "cost": 0.04058752,
+          "tokens": {
+            "total": 108755,
+            "input": 5726,
+            "output": 103,
+            "reasoning": 1294,
+            "cache": {
+              "write": 0,
+              "read": 101632
+            }
+          }
+        },
+        {
+          "cost": 0.03910132,
+          "tokens": {
+            "total": 111326,
+            "input": 277,
+            "output": 87,
+            "reasoning": 2290,
+            "cache": {
+              "write": 0,
+              "read": 108672
+            }
+          }
+        },
+        {
+          "cost": 0.04697344,
+          "tokens": {
+            "total": 117131,
+            "input": 8110,
+            "output": 115,
+            "reasoning": 1642,
+            "cache": {
+              "write": 0,
+              "read": 107264
+            }
+          }
+        },
+        {
+          "cost": 0.15033864,
+          "tokens": {
+            "total": 151809,
+            "input": 13476,
+            "output": 5481,
+            "reasoning": 17588,
+            "cache": {
+              "write": 0,
+              "read": 115264
+            }
+          }
+        }
+      ]
+    },
+    "blue": {
+      "status": "skipped_partial_collection"
+    },
+    "red": {
+      "status": "skipped_partial_collection"
+    },
+    "arbiter": {
+      "status": "skipped_partial_collection"
+    }
+  },
+  "daily_budget": null,
+  "monthly_budget": null,
+  "finished_at": "2026-11-27T04:57:14.864729+00:00",
+  "revision_after": "3433c24847ab3e0aca9c87d92d1ff69fad40403297cf15f1b7f3ce05b4e5edd5",
+  "dossier_hash": "7a022b09fff4e6247b28d0c00a824f525dde11db2a95f3ca7e14e25c667a5bc6"
+}
